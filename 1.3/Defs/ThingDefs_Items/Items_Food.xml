@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="MealFineBase">
+        <defName>MealFine_Hay</defName>
+        <label>hay fine meal</label>
+        <description>A complex dish assembled with care from vegetarian ingredients.</description>
+        <graphicData>
+        <texPath>Things/Item/Food/FineHay</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MealLavishBase">
+        <defName>MealLavish_Hay</defName>
+        <label>hay lavish meal</label>
+        <graphicData>
+        <texPath>Things/Item/Food/LavishHay</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+</Defs>

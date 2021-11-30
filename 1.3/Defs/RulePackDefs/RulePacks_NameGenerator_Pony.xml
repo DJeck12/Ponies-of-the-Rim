@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <RulePackDef>
+        <defName>NameGeneratorPony</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->[First] [Last]</li>
+                <li>name->[First] [Word]</li>
+                <li>name->[Word] [Last]</li>
+            </rulesStrings>
+
+            <rulesRaw>
+                <li Class="Rule_File">
+                <keyword>First</keyword>
+                <path>Names/Name_Pony/Name_Pony_First</path>
+                </li>
+                <li Class="Rule_File">
+                <keyword>Last</keyword>
+                <path>Names/Name_Pony/Name_Pony_Last</path>
+                </li>
+                <li Class="Rule_File">
+                <keyword>Word</keyword>
+                <path>Names/Name_Pony/Name_Pony_Word</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

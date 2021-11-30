@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HairDef>
+        <defName>No_Hair_Ponix</defName>
+        <label>No Hair</label>
+        <styleGender>Any</styleGender>
+        <texPath>Things/Pony/Hair/No_hair</texPath>
+        <category>Misc</category>
+        <hairTags>
+            <li>Ponix</li>
+        </hairTags>
+    </HairDef>
+</Defs>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="LeatherBase">
+		<defName>Pony_Fur</defName>
+		<label>pony fur</label>
+		<description>Fluffy and silky pony fur. A very beautiful, but not durable material obtained when butchering any pony corpses. Its pink color is reminiscent of cupcakes.</description>
+		<graphicData>
+			<color>(242,199,248)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.5</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(242,199,248)</color>
+			<commonality>0.0025</commonality>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<Beauty>2.0</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+</Defs>
