@@ -193,6 +193,16 @@
                         <li>Teeth</li>
                         <li>FullHead</li>
                     </groups>
+                    <parts>
+                        <li>
+                        <def>Tongue</def>
+                        <coverage>0</coverage>
+                        <depth>Inside</depth>
+                        <groups>
+                            <li>FullHead</li>
+                        </groups>
+                        </li>
+                    </parts>
                     </li>
                 </parts>
                 </li>
@@ -419,8 +429,8 @@
             </groups>
             </li>
             <li>
-            <def>Pony_Dock</def>
-            <customLabel>dock</customLabel>
+            <def>Pony_Tail</def>
+            <customLabel>tail</customLabel>
             <coverage>0.025</coverage>
             <height>Bottom</height>
             <groups>
@@ -431,21 +441,21 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>left thigh</customLabel>
-            <coverage>0.14</coverage>
-            <height>Bottom</height>         
+            <coverage>0.12</coverage>        
             <groups>       
                 <li>Legs</li>
             </groups>
+            <woundAnchorTag>LeftLeg</woundAnchorTag>
             <parts>
                 <li>
                 <def>Leg</def>
-                <customLabel>left leg</customLabel>
-                <coverage>0.14</coverage>
+                <customLabel>rear left leg</customLabel>
+                <coverage>0.1</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
+                    <li>RearLegs</li>
                 </groups>
-                <woundAnchorTag>LeftLeg</woundAnchorTag>
                 <parts>
                     <li>
                     <def>Femur</def>
@@ -467,7 +477,7 @@
                     </li>
                     <li>
                     <def>Pony_CannonBone</def>
-                    <customLabel>left cannon bone</customLabel>
+                    <customLabel>rear left cannon bone</customLabel>
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
@@ -476,10 +486,10 @@
                     </li>
                     <li>
                     <def>Pony_RearHoof</def>
-                    <customLabel>left hoof</customLabel>
+                    <customLabel>rear left hoof</customLabel>
                     <coverage>0.25</coverage>
                     <groups>
-                        <li>Feet</li>
+                        <li>Hooves</li>
                     </groups>
                     </li>
                 </parts>
@@ -489,21 +499,21 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>right thigh</customLabel>
-            <coverage>0.14</coverage>
-            <height>Bottom</height>         
+            <coverage>0.12</coverage>      
             <groups>       
                 <li>Legs</li>
             </groups>
+            <woundAnchorTag>RightLeg</woundAnchorTag>
             <parts>
                 <li>
                 <def>Leg</def>
-                <customLabel>right leg</customLabel>
-                <coverage>0.14</coverage>
+                <customLabel>rear right leg</customLabel>
+                <coverage>0.1</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
+                    <li>RearLegs</li>
                 </groups>
-                <woundAnchorTag>RightLeg</woundAnchorTag>
                 <parts>
                     <li>
                     <def>Femur</def>
@@ -525,7 +535,7 @@
                     </li>
                     <li>
                     <def>Pony_CannonBone</def>
-                    <customLabel>right cannon bone</customLabel>
+                    <customLabel>rear right cannon bone</customLabel>
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
@@ -534,10 +544,10 @@
                     </li>
                     <li>
                     <def>Pony_RearHoof</def>
-                    <customLabel>right hoof</customLabel>
+                    <customLabel>rear right hoof</customLabel>
                     <coverage>0.25</coverage>
                     <groups>
-                        <li>Feet</li>
+                        <li>Hooves</li>
                     </groups>
                     </li>
                 </parts>

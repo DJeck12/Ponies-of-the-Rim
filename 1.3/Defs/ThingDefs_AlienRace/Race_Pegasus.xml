@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AlienRace.ThingDef_AlienRace ParentName="BasePony">
+        <defName>Pony_Pegasus</defName>
+        <label>Pegasus</label>
+        <description>Pony</description>
+<!--Stats-->
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <MoveSpeed>4.75</MoveSpeed>
+            <PsychicSensitivity>1.25</PsychicSensitivity>
+            <ComfyTemperatureMin>6</ComfyTemperatureMin>
+            <ComfyTemperatureMax>36</ComfyTemperatureMax>
+            <CarryingCapacity>85</CarryingCapacity>
+            <Mass>85</Mass>
+            <LeatherAmount>65</LeatherAmount>
+            <PainShockThreshold>0.75</PainShockThreshold>
+            <PawnBeauty>1</PawnBeauty>   
+            <RoyalFavorValue>4</RoyalFavorValue>
+        </statBases>
+<!--Settings-->
+        <alienRace>		
+            <generalSettings>
+                <alienPartGenerator>
+                    <colorChannels>
+                        <li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(85, 85, 85)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(242, 199, 248)</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(248, 234, 98)</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(194, 197, 213 )</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(185, 223, 128)</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(205, 184, 230)</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(87, 35, 79)</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(230, 74, 87)</only>
+									</li>
+                                    <li>
+										<weight>10</weight>
+										<only>RGB(155, 219, 245)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(255, 255, 255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+                    </colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+            <graphicPaths>
+            
+            </graphicPaths>
+            <thoughtSettings>
+
+            </thoughtSettings>
+            <relationSettings>
+
+            </relationSettings>
+            <raceRestriction>
+
+            </raceRestriction>
+            <compatibility>
+
+            </compatibility>
+        </alienRace>
+<!--Race Settings-->
+        <race>
+		<body>Pegasus</body>
+		</race>
+
+    </AlienRace.ThingDef_AlienRace>
+</Defs>

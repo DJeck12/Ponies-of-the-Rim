@@ -6,7 +6,7 @@
     <BodyPartDef>
         <defName>Pony_Eye</defName>
         <label>eye</label>
-        <hitPoints>15</hitPoints>
+        <hitPoints>12</hitPoints>
         <permanentInjuryChanceFactor>10</permanentInjuryChanceFactor>
         <delicate>true</delicate>
         <skinCovered>false</skinCovered>
@@ -27,7 +27,7 @@
     <BodyPartDef>
         <defName>Pony_Ear</defName>
         <label>ear</label>
-        <hitPoints>12</hitPoints>
+        <hitPoints>14</hitPoints>
         <frostbiteVulnerability>5</frostbiteVulnerability>
         <skinCovered>true</skinCovered>
         <beautyRelated>true</beautyRelated>
@@ -52,7 +52,7 @@
     <BodyPartDef>
         <defName>Pony_Horn</defName>
         <label>horn</label>
-        <hitPoints>25</hitPoints>
+        <hitPoints>20</hitPoints>
         <skinCovered>false</skinCovered>
         <solid>true</solid>
         <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
@@ -71,8 +71,8 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>Pony_Dock</defName>
-        <label>dock</label>
+        <defName>Pony_Tail</defName>
+        <label>tail</label>
         <hitPoints>8</hitPoints>
         <skinCovered>true</skinCovered>
         <beautyRelated>true</beautyRelated>

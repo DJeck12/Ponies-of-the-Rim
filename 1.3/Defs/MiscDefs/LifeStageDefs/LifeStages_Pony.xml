@@ -30,8 +30,8 @@
     </LifeStageDef>
 
     <LifeStageDef>
-        <defName>PonyFilly</defName>
-        <label>filly</label>
+        <defName>PonyYoungster</defName>
+        <label>youngster</label>
         <bodySizeFactor>0.5</bodySizeFactor>
         <healthScaleFactor>0.5</healthScaleFactor>
         <hungerRateFactor>0.6</hungerRateFactor>
@@ -43,8 +43,8 @@
     </LifeStageDef>
 
     <LifeStageDef>
-        <defName>PonyYoungster</defName>
-        <label>youngster</label>
+        <defName>PonyTeenager</defName>
+        <label>teenager</label>
         <reproductive>true</reproductive>
         <bodySizeFactor>0.85</bodySizeFactor>
         <healthScaleFactor>0.90</healthScaleFactor>
