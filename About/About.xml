@@ -16,7 +16,7 @@
     <packageId>Pony.PoniesOfTheRim.Core</packageId>
 	<loadAfter>
 	<li>erdelf.HumanoidAlienRaces</li>
-   </loadAfter>
+    </loadAfter>
 	<description>My first mod. Adds ponies
 </description>
 </ModMetaData>

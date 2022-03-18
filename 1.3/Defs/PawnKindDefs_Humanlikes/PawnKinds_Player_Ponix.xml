@@ -4,7 +4,7 @@
     <PawnKindDef Name="BasePonixPawnKind" Abstract="True">
         <labelMale>stallion</labelMale>
         <labelFemale>mare</labelFemale>
-        <race>Pony_Ponix</race>
+        <race>PonyPonix</race>
         <combatPower>30</combatPower>
         <isFighter>false</isFighter>
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>

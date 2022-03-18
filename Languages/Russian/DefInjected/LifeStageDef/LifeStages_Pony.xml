@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <PonyFoal.label>жеребёнок</PonyFoal.label>
+    <PonyYearling.label>стригунок</PonyYearling.label>
+    <PonyYoungster.label>юноша</PonyYoungster.label>
+    <PonyTeenager.label>подросток</PonyTeenager.label>
+    <PonyAdult.label>взрослый</PonyAdult.label>
+
+</LanguageData>

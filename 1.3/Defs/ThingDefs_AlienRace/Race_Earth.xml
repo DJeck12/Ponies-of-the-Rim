@@ -2,7 +2,7 @@
 <Defs>
 
     <AlienRace.ThingDef_AlienRace ParentName="BasePony">
-        <defName>Pony_Earth</defName>
+        <defName>PonyEarth</defName>
         <label>Earthpony</label>
         <description>Pony</description>
 <!--Stats-->

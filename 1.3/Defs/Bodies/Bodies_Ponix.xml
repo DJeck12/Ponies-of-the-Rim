@@ -441,17 +441,17 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>left thigh</customLabel>
-            <coverage>0.12</coverage>        
+            <coverage>0.1</coverage>
+            <height>Bottom</height>
             <groups>       
                 <li>Legs</li>
             </groups>
             <woundAnchorTag>LeftLeg</woundAnchorTag>
             <parts>
                 <li>
-                <def>Leg</def>
+                <def>Pony_RearLeg</def>
                 <customLabel>rear left leg</customLabel>
-                <coverage>0.1</coverage>
-                <height>Bottom</height>
+                <coverage>0.64</coverage>
                 <groups>
                     <li>Legs</li>
                     <li>RearLegs</li>
@@ -499,17 +499,17 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>right thigh</customLabel>
-            <coverage>0.12</coverage>      
+            <coverage>0.1</coverage>    
+            <height>Bottom</height>  
             <groups>       
                 <li>Legs</li>
             </groups>
             <woundAnchorTag>RightLeg</woundAnchorTag>
             <parts>
                 <li>
-                <def>Leg</def>
+                <def>Pony_RearLeg</def>
                 <customLabel>rear right leg</customLabel>
-                <coverage>0.1</coverage>
-                <height>Bottom</height>
+                <coverage>0.64</coverage>
                 <groups>
                     <li>Legs</li>
                     <li>RearLegs</li>

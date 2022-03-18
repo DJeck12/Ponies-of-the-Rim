@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AlienRace.BackstoryDef>
+        <defName>Pony_ForeignChild</defName>
+		<title>Ребёнок чужой расы</title>
+		<titleShort>Чуждый</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_BulliedChild</defName>
+		<title>Угнетённое дитя</title>
+		<titleShort>Угнетённый</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_UnicornFriend</defName>
+		<title>Друг единорогов</title>
+		<titleShort>Друг единорогов</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_WizardsApprentice</defName>
+		<title>Ученик волшебника</title>
+		<titleShort>Волшебник</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_BasiliskStricken</defName>
+		<title>Поражённый василиском</title>
+		<titleShort>Поражённый</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_ChildOfLight</defName>
+		<title>Дитя Света</title>
+		<titleShort>Дитя Света</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_ChildOfDarkness</defName>
+		<title>Дитя Тьмы</title>
+		<titleShort>Дитя Тьмы</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_MagicBorn</defName>
+		<title>Рождённый из Магии</title>
+		<titleShort>Магический</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_FriendshipSchoolStudent</defName>
+		<title>Ученик школы дружбы</title>
+		<titleShort>Ученик дружбы</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_MagicSchoolStudent</defName>
+		<title>Ученик школы магии</title>
+		<titleShort>Ученик магии</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AdoptedByAnAlicorn</defName>
+		<title>Под опекой аликорна</title>
+		<titleShort>Усыновлённый</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_Imitator</defName>
+		<title>Подражатель</title>
+		<titleShort>Подражатель</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+</Defs>

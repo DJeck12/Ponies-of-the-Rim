@@ -2,7 +2,7 @@
 <Defs>
 
     <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Pony_Ponix</defName>
+        <defName>PonyPonix</defName>
         <label>Ponix</label>
         <description>No one knows how and when Ponixes appeared, but it seems that their anthropomorphic body combined the best qualities of both races: ponies and humans. Their fast legs, keen eyes and dexterous hands made them good soldiers, but even ponies who have arrieved to this place cannot understand their origin.</description>
 <!--Stats-->
@@ -178,7 +178,7 @@
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>120</lifeExpectancy>
-            <leatherDef>Pony_Fur</leatherDef>
+            <leatherDef>PonyFur</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>Ponix</body>
 		    <meatLabel>Pony meat</meatLabel>
@@ -229,12 +229,12 @@
                 <points>
                 <li>(14,0)</li>
                 <li>(16,100)</li>
-                <li>(50,100)</li>
-                <li>(80,50)</li>
-                <li>(105,20)</li>
-                <li>(130,5)</li>
-                <li>(155,1)</li>
-                <li>(180,0)</li>
+                <li>(60,100)</li>
+                <li>(80,35)</li>
+                <li>(100,20)</li>
+                <li>(120,5)</li>
+                <li>(140,1)</li>
+                <li>(160,0)</li>
                 </points>
             </ageGenerationCurve>
             <hediffGiverSets>
@@ -243,7 +243,16 @@
             </hediffGiverSets>
         </race>
         <recipes>
+            <li>ExciseCarcinoma</li>
+            <li>AdministerMechSerumHealer</li>
+            <li>RemoveBodyPart</li>
+            <li>Euthanize</li>
+            <li>Anesthetize</li>
+            <li>CureScaria</li> 
+            <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
         </recipes>
+
     </AlienRace.ThingDef_AlienRace>
   
 </Defs>

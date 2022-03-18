@@ -17,9 +17,9 @@
                 </forcedRaceTraitEntries>
                 <maxDamageForSocialfight>6</maxDamageForSocialfight>
                 <notXenophobistTowards>
-                    <li>Pony_Earth</li>
-                    <li>Pony_Unicorn</li>
-                    <li>Pony_Pegasus</li>
+                    <li>PonyEarth</li>
+                    <li>PonyUnicorn</li>
+                    <li>PonyPegasus</li>
                 </notXenophobistTowards>
                 <humanRecipeImport>true</humanRecipeImport>
             </generalSettings>
@@ -117,7 +117,7 @@
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>120</lifeExpectancy>
-            <leatherDef>Pony_Fur</leatherDef>
+            <leatherDef>PonyFur</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
 		    <meatLabel>Pony meat</meatLabel>
             <baseBodySize>1</baseBodySize>

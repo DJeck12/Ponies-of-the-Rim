@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AlienRace.BackstoryDef>
+        <defName>Pony_PartyPlanner</defName>
+		<title>Party planner</title>
+		<titleShort>Funny pony</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_RoyalGuard</defName>
+		<title>Royal guard</title>
+		<titleShort>Guard</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_ElementOfHarmonyKeeper</defName>
+		<title>Element of harmony keeper</title>
+		<titleShort>Keeper</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_RacistSlaver</defName>
+		<title>Racist slaver</title>
+		<titleShort>Slaver</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_EternalDayZealot</defName>
+		<title>Eternal Day zealot</title>
+		<titleShort>Zealot</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_EternalNightZealot</defName>
+		<title>Eternal Night zealot</title>
+		<titleShort>Zealot</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_Ritualist</defName>
+		<title>Ritualist</title>
+		<titleShort>Ritualist</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_WindigosFighter</defName>
+		<title>Windigos fighter</title>
+		<titleShort>Fighter</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_MagicAnimalHunter</defName>
+		<title>Magic animal hunter</title>
+		<titleShort>Hunter</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_MagicRebel</defName>
+		<title>Magic rebel</title>
+		<titleShort>Rebel</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_HarmonyPreacher</defName>
+		<title>Harmony preacher</title>
+		<titleShort>Preacher</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_Equestriologist</defName>
+		<title>Equestriologist</title>
+		<titleShort>Equestriologist</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AlicornServant</defName>
+		<title>Alicorn servant</title>
+		<titleShort>Servant</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_Transformed</defName>
+		<title>Transformed</title>
+		<titleShort>Transformed</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_CosmagicPilot</defName>
+		<title>Cosmagic pilot</title>
+		<titleShort>Pilot</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_CosmagicCaptain</defName>
+		<title>Cosmagic captain</title>
+		<titleShort>Captain</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_CosmagicAdventurer</defName>
+		<title>Cosmagic adventurer</title>
+		<titleShort>Adventurer</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_CosmagicMechanic</defName>
+		<title>Cosmagic mechanic</title>
+		<titleShort>Mechanic</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_CosmagicTrader</defName>
+		<title>Cosmagic trader</title>
+		<titleShort>Trader</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_CosmagicSmuggler</defName>
+		<title>Cosmagic smuggler</title>
+		<titleShort>Smuggler</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>PonyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+</Defs>

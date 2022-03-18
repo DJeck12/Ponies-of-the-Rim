@@ -4,7 +4,7 @@
     <PawnKindDef>
         <defName>AncientSoldier</defName>
         <label>ancient soldier</label>
-        <race>Pony_Ponix</race>
+        <race>PonyPonix</race>
         <combatPower>85</combatPower>
         <baseRecruitDifficulty>0.30</baseRecruitDifficulty>
         <defaultFactionType>AncientsHostile</defaultFactionType>
