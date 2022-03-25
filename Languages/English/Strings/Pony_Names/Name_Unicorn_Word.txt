@@ -1,0 +1,7 @@
+Sorcery
+Spell
+Hex
+Knowledge
+Theurgy
+Gem
+Magic

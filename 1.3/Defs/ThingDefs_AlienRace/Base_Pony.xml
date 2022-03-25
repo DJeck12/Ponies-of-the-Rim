@@ -111,7 +111,6 @@
         </tools>
 <!--Race Settings-->
         <race>
-            <nameGenerator>NameGeneratorPony</nameGenerator>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>

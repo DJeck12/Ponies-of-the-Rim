@@ -100,6 +100,7 @@
         </alienRace>
 <!--Race Settings-->
         <race>
+		<nameGenerator>NameGeneratorPegasus</nameGenerator>
 		<body>Pegasus</body>
 		</race>
 

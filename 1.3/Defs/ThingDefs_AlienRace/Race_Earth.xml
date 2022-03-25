@@ -101,6 +101,7 @@
         </alienRace>
 <!--Race Settings-->
         <race>
+		<nameGenerator>NameGeneratorEarth</nameGenerator>
 		<body>Pony</body>
 		</race>
 
