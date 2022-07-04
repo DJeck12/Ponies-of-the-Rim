@@ -36,7 +36,7 @@ Flashing
 Kind
 Rare
 Sweetie
-Sacrlet
+Scarlet
 Royal
 Goldie
 Flaming
@@ -54,7 +54,6 @@ Lunar
 Sunny
 Bumble
 Power
-Flaming
 High
 Clear
 Misty

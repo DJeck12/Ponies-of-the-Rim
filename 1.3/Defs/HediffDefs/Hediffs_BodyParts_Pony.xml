@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--Hoof-->
+
+   <HediffDef ParentName="AddedBodyPartBase">
+		<defName>PegHoof</defName>
+		<label>wooden hoof</label>
+		<labelNoun>a wooden hoof</labelNoun>
+		<description>An installed wooden hoof.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.8</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallWoodenPartBase">
+		<defName>InstallPegHoof</defName>
+		<label>install wooden hoof</label>
+		<description>Install a wooden hoof.</description>
+		<descriptionHyperlinks><ThingDef>WoodLog</ThingDef></descriptionHyperlinks>
+		<jobString>Installing wooden hoof.</jobString>
+		<appliedOnFixedBodyParts>
+            <li>Pony_FrontHoof</li>
+            <li>Pony_RearHoof</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PegHoof</addsHediff>
+	</RecipeDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>SimpleProstheticHoof</defName>
+        <label>prosthetic hoof</label>
+        <labelNoun>a prosthetic hoof</labelNoun>
+        <description>An installed prosthetic hoof.</description>
+        <descriptionHyperlinks><ThingDef>SimpleProstheticHoof</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>SimpleProstheticHoof</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.0</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartProstheticMakeableBase">
+        <defName>SimpleProstheticHoof</defName>
+        <label>prosthetic hoof</label>
+        <description>A hoof prosthesis.</description>
+        <descriptionHyperlinks><RecipeDef>InstallSimpleProstheticHoof</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>4</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>InstallSimpleProstheticHoof</defName>
+        <label>install prosthetic hoof</label>
+        <description>Install a prosthetic hoof.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SimpleProstheticHoof</ThingDef>
+            <HediffDef>SimpleProstheticHoof</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing prosthetic hoof.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SimpleProstheticHoof</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SimpleProstheticHoof</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Pony_FrontHoof</li>
+            <li>Pony_RearHoof</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>SimpleProstheticHoof</addsHediff>
+    </RecipeDef>
+
+<!--Wing-->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticWing</defName>
+		<label>prosthetic wing</label>
+		<labelNoun>a prosthetic wing</labelNoun>
+		<description>An installed prosthetic wing.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticWing</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticWing</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticWing</defName>
+		<label>prosthetic wing</label>
+		<description>A prosthetic wing.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticWing</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticWing</defName>
+		<label>install prosthetic wing</label>
+		<description>Install a prosthetic wing.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticWing</ThingDef>
+			<HediffDef>SimpleProstheticWing</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic wing.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Wing</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticWing</addsHediff>
+	</RecipeDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>BionicWing</defName>
+        <label>bionic wing</label>
+        <labelNoun>a bionic wing</labelNoun>
+        <description>An installed bionic wing.</description>
+        <descriptionHyperlinks><ThingDef>BionicWing</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>BionicWing</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>BionicWing</defName>
+        <label>bionic wing</label>
+        <description>An advanced artificial wing.</description>
+        <descriptionHyperlinks><RecipeDef>InstallBionicWing</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+        <statBases>
+            <Mass>5</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallBionicWing</defName>
+        <label>install bionic wing</label>
+        <description>Install a bionic wing.</description>
+        <descriptionHyperlinks>
+        <ThingDef>BionicWing</ThingDef>
+        <HediffDef>BionicWing</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic wing.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicWing</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        <thingDefs>
+            <li>BionicWing</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Pony_Wing</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicWing</addsHediff>
+    </RecipeDef>
+
+<!--Horn-->
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>NaturalHorn</defName>
+        <label>horn</label>
+        <description>A biological unicorn horn.</description>
+        <descriptionHyperlinks><RecipeDef>InstallNaturalHorn</RecipeDef></descriptionHyperlinks>
+        <statBases>
+            <MarketValue>750</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>InstallNaturalHorn</defName>
+        <label>install horn</label>
+        <description>Install a horn.</description>
+        <descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+        <jobString>Installing horn.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NaturalHorn</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        <thingDefs>
+            <li>NaturalHorn</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+           <li>Pony_Horn</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>BionicHorn</defName>
+        <label>bionic horn</label>
+        <labelNoun>a bionic horn</labelNoun>
+        <description>An installed bionic horn.</description>
+        <descriptionHyperlinks><ThingDef>BionicHorn</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>BionicHorn</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>BionicHorn</defName>
+        <label>bionic horn</label>
+        <description>An advanced artificial horn.</description>
+        <descriptionHyperlinks><RecipeDef>InstallBionicHorn</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+        <statBases>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallBionicHorn</defName>
+        <label>install bionic horn</label>
+        <description>Install a bionic horn.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BionicHorn</ThingDef>
+            <HediffDef>BionicHorn</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic horn.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicHorn</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        <thingDefs>
+            <li>BionicHorn</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Pony_Horn</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicHorn</addsHediff>
+    </RecipeDef>
+
+</Defs>

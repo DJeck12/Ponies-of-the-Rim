@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <Horn.label>Рог</Horn.label>
+    <Wings.label>Крылья</Wings.label>
+    <Tail.label>Хвост</Tail.label>
+    <RearLegs.label>Задние ноги</RearLegs.label>
+    <Hooves.label>Копыта</Hooves.label>
+
+</LanguageData>

@@ -2,24 +2,68 @@
 <Defs>
 
     <AlienRace.BackstoryDef>
-        <defName>Pony</defName>
-		<title>test test</title>
-		<titleShort>test</titleShort>
-		<baseDescription>{PAWN_nameDef} test.</baseDescription>
+        <defName>Pony_AnimalFriend</defName>
+		<title>Animal friend</title>
+		<titleShort>Animal friend</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
 		<slot>Adulthood</slot>
 		<spawnCategories>
-			<li>PonyGeneral</li>
+			<li>EarthponyGeneral</li>
 		</spawnCategories>
     </AlienRace.BackstoryDef>
 
-    <AlienRace.BackstoryDef>
-        <defName>Pony1</defName>
-		<title>test test1</title>
-		<titleShort>test1</titleShort>
-		<baseDescription>{PAWN_nameDef} test1.</baseDescription>
-		<slot>Childhood</slot>
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AnimalFriend</defName>
+		<title>Animal friend</title>
+		<titleShort>Animal friend</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
 		<spawnCategories>
-			<li>PonyGeneral</li>
+			<li>EarthponyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AnimalFriend</defName>
+		<title>Animal friend</title>
+		<titleShort>Animal friend</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>EarthponyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AnimalFriend</defName>
+		<title>Animal friend</title>
+		<titleShort>Animal friend</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>EarthponyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AnimalFriend</defName>
+		<title>Animal friend</title>
+		<titleShort>Animal friend</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>EarthponyGeneral</li>
+		</spawnCategories>
+    </AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+        <defName>Pony_AnimalFriend</defName>
+		<title>Animal friend</title>
+		<titleShort>Animal friend</titleShort>
+		<baseDescription>{PAWN_nameDef}.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>EarthponyGeneral</li>
 		</spawnCategories>
     </AlienRace.BackstoryDef>
 

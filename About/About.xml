@@ -13,7 +13,7 @@
 		<downloadUrl>https://github.com/RimWorld-CCL-Reborn/AlienRaces</downloadUrl>
 	</li>
     </modDependencies>
-    <packageId>Pony.PoniesOfTheRim.Core</packageId>
+	<packageId>Pony.PoniesOfTheRim</packageId>
 	<loadAfter>
 	<li>erdelf.HumanoidAlienRaces</li>
     </loadAfter>

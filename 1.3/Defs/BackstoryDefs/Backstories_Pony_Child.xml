@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
     <AlienRace.BackstoryDef>
@@ -26,7 +26,7 @@
 	<AlienRace.BackstoryDef>
         <defName>Pony_UnicornFriend</defName>
 		<title>Friend of unicorns</title>
-		<titleShort>Friend</titleShort>
+		<titleShort>Friendly</titleShort>
 		<baseDescription>{PAWN_nameDef}.</baseDescription>
 		<slot>Childhood</slot>
 		<spawnCategories>
@@ -81,7 +81,7 @@
 	<AlienRace.BackstoryDef>
         <defName>Pony_MagicBorn</defName>
 		<title>Magic born</title>
-		<titleShort>Magic</titleShort>
+		<titleShort>Magic child</titleShort>
 		<baseDescription>{PAWN_nameDef}.</baseDescription>
 		<slot>Childhood</slot>
 		<spawnCategories>

@@ -1,23 +1,34 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef ParentName="MealFineBase">
         <defName>MealFine_Hay</defName>
         <label>hay fine meal</label>
-        <description>A complex dish assembled with care from vegetarian ingredients.</description>
+        <description>A complex dish assembled with care from vegetarian ingredients and hay. Being not expensive to prepare, it is the most popular dish among ponies.</description>
         <graphicData>
-        <texPath>Things/Item/Food/FineHay</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Food/FineHay</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
+        <comps>
+            <li Class="CompProperties_Ingredients">
+            <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="MealLavishBase">
         <defName>MealLavish_Hay</defName>
         <label>hay lavish meal</label>
+        <description>A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul. Very much appreciated by pony cookery enthusiasts.</description>
         <graphicData>
-        <texPath>Things/Item/Food/LavishHay</texPath>
-        <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Food/LavishHay</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
+        <comps>
+            <li Class="CompProperties_Ingredients">
+            <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
 <!--Earthpony-->
+
     <BodyDef>
         <defName>Pony</defName>
         <label>earthpony</label>
         <corePart>
-        <def>Torso</def>
+        <def>Body</def>
         <height>Middle</height>
         <depth>Outside</depth>
         <groups>
@@ -108,7 +109,7 @@
             </li>
             <li>
             <def>Neck</def>
-            <coverage>0.075</coverage>
+            <coverage>0.1</coverage>
             <height>Top</height>
             <groups>
                 <li>Neck</li>
@@ -125,7 +126,7 @@
                 <parts>
                     <li>
                     <def>Skull</def>
-                    <coverage>0.18</coverage>
+                    <coverage>0.2</coverage>
                     <depth>Inside</depth>
                     <groups>
                         <li>UpperHead</li>
@@ -165,7 +166,7 @@
                     <li>
                     <def>Pony_Ear</def>
                     <customLabel>left ear</customLabel>
-                    <coverage>0.1</coverage>
+                    <coverage>0.08</coverage>
                     <groups>
                         <li>UpperHead</li>
                         <li>FullHead</li>
@@ -174,7 +175,7 @@
                     <li>
                     <def>Pony_Ear</def>
                     <customLabel>right ear</customLabel>
-                    <coverage>0.1</coverage>
+                    <coverage>0.08</coverage>
                     <groups>
                         <li>UpperHead</li>
                         <li>FullHead</li>
@@ -212,7 +213,7 @@
             <li>
             <def>Shoulder</def>
             <customLabel>left shoulder</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.12</coverage>
             <woundAnchorTag>LeftShoulder</woundAnchorTag>     
             <groups>       
                 <li>Shoulders</li>
@@ -221,7 +222,7 @@
                 <li>
                 <def>Pony_FrontLeg</def>
                 <customLabel>front left leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -270,7 +271,7 @@
             <li>
             <def>Shoulder</def>
             <customLabel>right shoulder</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.12</coverage>
             <woundAnchorTag>RightShoulder</woundAnchorTag>     
             <groups>       
                 <li>Shoulders</li>
@@ -279,7 +280,7 @@
                 <li>
                 <def>Pony_FrontLeg</def>
                 <customLabel>front right leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -334,7 +335,6 @@
             </li>
             <li>
             <def>Pony_Tail</def>
-            <customLabel>tail</customLabel>
             <coverage>0.025</coverage>
             <groups>
                 <li>Torso</li>
@@ -344,7 +344,7 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>left thigh</customLabel>
-            <coverage>0.1</coverage>        
+            <coverage>0.12</coverage>        
             <groups>       
                 <li>Legs</li>
             </groups>
@@ -353,7 +353,7 @@
                 <li>
                 <def>Pony_RearLeg</def>
                 <customLabel>rear left leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -402,7 +402,7 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>right thigh</customLabel>
-            <coverage>0.1</coverage>      
+            <coverage>0.12</coverage>      
             <groups>       
                 <li>Legs</li>
             </groups>
@@ -411,7 +411,7 @@
                 <li>
                 <def>Pony_RearLeg</def>
                 <customLabel>rear right leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -462,13 +462,14 @@
     </BodyDef>
 
 
-
 <!--Pegasus-->
+
+
     <BodyDef>
         <defName>Pegasus</defName>
         <label>pegasus</label>
         <corePart>
-        <def>Torso</def>
+        <def>Body</def>
         <height>Middle</height>
         <depth>Outside</depth>
         <groups>
@@ -570,7 +571,7 @@
             </li>
            <li>
             <def>Neck</def>
-            <coverage>0.075</coverage>
+            <coverage>0.1</coverage>
             <height>Top</height>
             <groups>
                 <li>Neck</li>
@@ -587,7 +588,7 @@
                 <parts>
                     <li>
                     <def>Skull</def>
-                    <coverage>0.18</coverage>
+                    <coverage>0.2</coverage>
                     <depth>Inside</depth>
                     <groups>
                         <li>UpperHead</li>
@@ -627,7 +628,7 @@
                     <li>
                     <def>Pony_Ear</def>
                     <customLabel>left ear</customLabel>
-                    <coverage>0.1</coverage>
+                    <coverage>0.08</coverage>
                     <groups>
                         <li>UpperHead</li>
                         <li>FullHead</li>
@@ -636,7 +637,7 @@
                     <li>
                     <def>Pony_Ear</def>
                     <customLabel>right ear</customLabel>
-                    <coverage>0.1</coverage>
+                    <coverage>0.08</coverage>
                     <groups>
                         <li>UpperHead</li>
                         <li>FullHead</li>
@@ -674,7 +675,7 @@
             <li>
             <def>Shoulder</def>
             <customLabel>left shoulder</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.12</coverage>
             <woundAnchorTag>LeftShoulder</woundAnchorTag>     
             <groups>       
                 <li>Shoulders</li>
@@ -683,7 +684,7 @@
                 <li>
                 <def>Pony_FrontLeg</def>
                 <customLabel>front left leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -732,7 +733,7 @@
             <li>
             <def>Shoulder</def>
             <customLabel>right shoulder</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.12</coverage>
             <woundAnchorTag>RightShoulder</woundAnchorTag>     
             <groups>       
                 <li>Shoulders</li>
@@ -741,7 +742,7 @@
                 <li>
                 <def>Pony_FrontLeg</def>
                 <customLabel>front right leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -790,7 +791,7 @@
             <li>
             <def>Pony_Wing</def>
             <customLabel>left wing</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.05</coverage>
             <groups>
                 <li>Wings</li>
             </groups>
@@ -798,7 +799,7 @@
             <li>
             <def>Pony_Wing</def>
             <customLabel>right wing</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.05</coverage>
             <groups>
                 <li>Wings</li>
             </groups>
@@ -812,7 +813,6 @@
             </li>
             <li>
             <def>Pony_Tail</def>
-            <customLabel>tail</customLabel>
             <coverage>0.025</coverage>
             <groups>
                 <li>Torso</li>
@@ -822,7 +822,7 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>left thigh</customLabel>
-            <coverage>0.1</coverage>        
+            <coverage>0.12</coverage>        
             <groups>       
                 <li>Legs</li>
             </groups>
@@ -831,7 +831,7 @@
                 <li>
                 <def>Pony_RearLeg</def>
                 <customLabel>rear left leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -880,7 +880,7 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>right thigh</customLabel>
-            <coverage>0.1</coverage>      
+            <coverage>0.12</coverage>      
             <groups>       
                 <li>Legs</li>
             </groups>
@@ -889,7 +889,7 @@
                 <li>
                 <def>Pony_RearLeg</def>
                 <customLabel>rear right leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -940,13 +940,14 @@
     </BodyDef>
 
 
-
 <!--Unicorn-->
+
+
     <BodyDef>
         <defName>Unicorn</defName>
         <label>unicorn</label>
         <corePart>
-        <def>Torso</def>
+        <def>Body</def>
         <height>Middle</height>
         <depth>Outside</depth>
         <groups>
@@ -1048,7 +1049,7 @@
             </li>
             <li>
             <def>Neck</def>
-            <coverage>0.075</coverage>
+            <coverage>0.1</coverage>
             <height>Top</height>
             <groups>
                 <li>Neck</li>
@@ -1065,7 +1066,7 @@
                 <parts>
                     <li>
                     <def>Skull</def>
-                    <coverage>0.18</coverage>
+                    <coverage>0.2</coverage>
                     <depth>Inside</depth>
                     <groups>
                         <li>UpperHead</li>
@@ -1084,7 +1085,6 @@
                     </li>
                     <li>
                     <def>Pony_Horn</def>
-                    <customLabel>horn</customLabel>
                     <coverage>0.1</coverage>
                     <groups>
                         <li>UpperHead</li>
@@ -1115,7 +1115,7 @@
                     <li>
                     <def>Pony_Ear</def>
                     <customLabel>left ear</customLabel>
-                    <coverage>0.1</coverage>
+                    <coverage>0.08</coverage>
                     <groups>
                         <li>UpperHead</li>
                         <li>FullHead</li>
@@ -1124,7 +1124,7 @@
                     <li>
                     <def>Pony_Ear</def>
                     <customLabel>right ear</customLabel>
-                    <coverage>0.1</coverage>
+                    <coverage>0.08</coverage>
                     <groups>
                         <li>UpperHead</li>
                         <li>FullHead</li>
@@ -1162,7 +1162,7 @@
             <li>
             <def>Shoulder</def>
             <customLabel>left shoulder</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.12</coverage>
             <woundAnchorTag>LeftShoulder</woundAnchorTag>     
             <groups>       
                 <li>Shoulders</li>
@@ -1171,7 +1171,7 @@
                 <li>
                 <def>Pony_FrontLeg</def>
                 <customLabel>front left leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -1220,7 +1220,7 @@
             <li>
             <def>Shoulder</def>
             <customLabel>right shoulder</customLabel>
-            <coverage>0.1</coverage>
+            <coverage>0.12</coverage>
             <woundAnchorTag>RightShoulder</woundAnchorTag>     
             <groups>       
                 <li>Shoulders</li>
@@ -1229,7 +1229,7 @@
                 <li>
                 <def>Pony_FrontLeg</def>
                 <customLabel>front right leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -1284,7 +1284,6 @@
             </li>
             <li>
             <def>Pony_Tail</def>
-            <customLabel>tail</customLabel>
             <coverage>0.025</coverage>
             <groups>
                 <li>Torso</li>
@@ -1294,7 +1293,7 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>left thigh</customLabel>
-            <coverage>0.1</coverage>        
+            <coverage>0.12</coverage>        
             <groups>       
                 <li>Legs</li>
             </groups>
@@ -1303,7 +1302,7 @@
                 <li>
                 <def>Pony_RearLeg</def>
                 <customLabel>rear left leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -1352,7 +1351,7 @@
             <li>
             <def>Pony_Thigh</def>
             <customLabel>right thigh</customLabel>
-            <coverage>0.1</coverage>      
+            <coverage>0.12</coverage>      
             <groups>       
                 <li>Legs</li>
             </groups>
@@ -1361,7 +1360,7 @@
                 <li>
                 <def>Pony_RearLeg</def>
                 <customLabel>rear right leg</customLabel>
-                <coverage>0.2</coverage>
+                <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
                     <li>Legs</li>
@@ -1411,4 +1410,4 @@
         </corePart>
     </BodyDef>
     
-    </Defs>
+</Defs>

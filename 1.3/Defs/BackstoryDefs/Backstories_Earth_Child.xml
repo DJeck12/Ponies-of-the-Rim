@@ -14,7 +14,7 @@
 
     <AlienRace.BackstoryDef>
         <defName>Pony_GiftedByNature</defName>
-		<title>Gifted by nёature</title>
+		<title>Gifted by nature</title>
 		<titleShort>Natural child</titleShort>
 		<baseDescription>{PAWN_nameDef}.</baseDescription>
 		<slot>Childhood</slot>
@@ -58,7 +58,7 @@
 
 	<AlienRace.BackstoryDef>
         <defName>Pony_SacredIdol</defName>
-		<title>Sacred Idol</title>
+		<title>Sacred idol</title>
 		<titleShort>Living Idol</titleShort>
 		<baseDescription>{PAWN_nameDef}.</baseDescription>
 		<slot>Childhood</slot>

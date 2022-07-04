@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <!--Head-->
+<!--Head-->
 
     <BodyPartDef>
         <defName>Pony_Eye</defName>
@@ -57,10 +57,13 @@
         <solid>true</solid>
         <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
         <alive>false</alive>
-        <bleedRate>0</bleedRate>       
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>     
     </BodyPartDef>
 
-    <!--Body-->
+<!--Body-->
 
     <BodyPartDef>
         <defName>Pony_Wing</defName>
@@ -79,7 +82,7 @@
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     </BodyPartDef>
 
-    <!--Limb-->
+<!--Limb-->
 
     <BodyPartDef>
         <defName>Pony_Thigh</defName>
@@ -144,7 +147,7 @@
         </tags>
     </BodyPartDef>
 
-    <!--Bones-->
+<!--Bones-->
 
     <BodyPartDef>
     <defName>Pony_CannonBone</defName>

@@ -2,6 +2,7 @@
 <Defs>
 
 <!--Pony-->
+
     <RulePackDef>
         <defName>NameGeneratorPony</defName>
         <rulePack>
@@ -19,6 +20,7 @@
     </RulePackDef>
 
 <!--Earthpony-->
+
     <RulePackDef>
         <defName>NameGeneratorEarth</defName>
         <include>
@@ -47,6 +49,7 @@
     </RulePackDef>
 
 <!--Pegasus-->
+
     <RulePackDef>
         <defName>NameGeneratorPegasus</defName>
         <include>
@@ -75,6 +78,7 @@
     </RulePackDef>
 
 <!--Unicorn-->
+
     <RulePackDef>
         <defName>NameGeneratorUnicorn</defName>
         <include>

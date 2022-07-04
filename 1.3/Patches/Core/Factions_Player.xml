@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerColony"]/basicMemberKind</xpath>
+      <value>
+        <basicMemberKind>EarthPony</basicMemberKind>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerColony"]/pawnSingular</xpath>
+      <value>
+        <pawnSingular>pony</pawnSingular>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerColony"]/pawnsPlural</xpath>
+      <value>
+        <pawnsPlural>ponies</pawnsPlural>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerColony"]/backstoryFilters</xpath>
+      <value>
+        <backstoryFilters>
+          <li>
+            <categories>
+              <li>Offworld</li>
+              <li>PonyGeneral</li>
+              <li>EarthponyGeneral</li>
+              <li>PegasusGeneral</li>
+              <li>UnicornGeneral</li>
+            </categories>
+          </li>
+        </backstoryFilters>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerTribe"]/basicMemberKind</xpath>
+      <value>
+        <basicMemberKind>EarthPony</basicMemberKind>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerTribe"]/pawnSingular</xpath>
+      <value>
+        <pawnSingular>pony</pawnSingular>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerTribe"]/pawnsPlural</xpath>
+      <value>
+        <pawnsPlural>ponies</pawnsPlural>
+      </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/FactionDef[defName="PlayerTribe"]/backstoryFilters</xpath>
+      <value>
+        <backstoryFilters>
+          <li>
+            <categories>
+              <li>Tribe</li>
+              <li>PonyGeneral</li>
+            </categories>
+          </li>
+        </backstoryFilters>
+      </value>
+  </Operation>
+
+</Patch>

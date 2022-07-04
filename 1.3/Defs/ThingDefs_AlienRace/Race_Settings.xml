@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--Earthpony-->
+
+	<AlienRace.RaceSettings>
+		<defName>Earthpony_settings</defName>
+	
+		<pawnKindSettings>
+            <startingColonists>
+			<li>
+				<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>EarthPony</li>
+					</kindDefs>
+					<chance>20</chance>
+				</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+			<li>
+				<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>TribeEarthPony</li>
+					</kindDefs>
+					<chance>20</chance>
+				</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerTribe</li>
+				</factionDefs>
+			</li>
+			</startingColonists>
+        </pawnKindSettings>
+
+	</AlienRace.RaceSettings>
+
+<!--Pegasus-->
+
+    <AlienRace.RaceSettings>
+		<defName>Pegasus_settings</defName>
+	
+		<pawnKindSettings>
+            <startingColonists>
+			<li>
+				<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>PegasusPony</li>
+					</kindDefs>
+					<chance>40</chance>
+				</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+			<li>
+				<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>TribePegasusPony</li>
+					</kindDefs>
+					<chance>40</chance>
+				</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerTribe</li>
+				</factionDefs>
+			</li>
+			</startingColonists>
+        </pawnKindSettings>
+
+	</AlienRace.RaceSettings>
+
+<!--Unicorn-->
+
+    <AlienRace.RaceSettings>
+		<defName>Unicorn_settings</defName>
+	
+		<pawnKindSettings>
+            <startingColonists>
+			<li>
+				<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>UnicornPony</li>
+					</kindDefs>
+					<chance>40</chance>
+				</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li>
+				</factionDefs>
+			</li>
+			<li>
+				<pawnKindEntries>
+				<li>
+					<kindDefs>
+						<li>TribeUnicornPony</li>
+					</kindDefs>
+					<chance>40</chance>
+				</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerTribe</li>
+				</factionDefs>
+			</li>
+			</startingColonists>
+        </pawnKindSettings>
+
+	</AlienRace.RaceSettings>
+
+</Defs>

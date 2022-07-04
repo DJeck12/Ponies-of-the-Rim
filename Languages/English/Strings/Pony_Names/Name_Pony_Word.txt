@@ -27,7 +27,6 @@ Burst
 Orange
 Flower
 Love
-Hurricane
 Steel
 Miracle
 Butter
@@ -57,7 +56,6 @@ Sweet
 Energy
 Fire
 Angel
-Flower
 Shard
 Surprise
 Party

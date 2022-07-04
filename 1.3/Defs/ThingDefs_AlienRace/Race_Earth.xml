@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
 
     <AlienRace.ThingDef_AlienRace ParentName="BasePony">
@@ -6,8 +6,8 @@
         <label>Earthpony</label>
         <description>Pony</description>
 <!--Stats-->
-        <statBases>
-            <MarketValue>2000</MarketValue>
+		<statBases>
+			<MarketValue>2000</MarketValue>
             <MoveSpeed>4.8</MoveSpeed>
             <PsychicSensitivity>1.1</PsychicSensitivity>
             <ComfyTemperatureMin>12</ComfyTemperatureMin>

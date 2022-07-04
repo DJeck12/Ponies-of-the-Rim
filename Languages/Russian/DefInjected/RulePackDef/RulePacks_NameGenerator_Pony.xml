@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <NameGeneratorPony.rulePack.rulesStrings.0>r_name->[First] [Last]</NameGeneratorPony.rulePack.rulesStrings.0>
+    <NameGeneratorPony.rulePack.rulesStrings.1>r_name->[First] [Word]</NameGeneratorPony.rulePack.rulesStrings.1>
+    <NameGeneratorPony.rulePack.rulesStrings.2>r_name->[Word] [Last]</NameGeneratorPony.rulePack.rulesStrings.2>
+
+    <NameGeneratorEarth.rulePack.rulesStrings.0>r_name->[Earth_First] [Earth_Last]</NameGeneratorEarth.rulePack.rulesStrings.0>
+    <NameGeneratorEarth.rulePack.rulesStrings.1>r_name->[Earth_First] [Earth_Word]</NameGeneratorEarth.rulePack.rulesStrings.1>
+    <NameGeneratorEarth.rulePack.rulesStrings.2>r_name->[Earth_Word] [Earth_Last]</NameGeneratorEarth.rulePack.rulesStrings.2>
+    <NameGeneratorEarth.rulePack.rulesStrings.3>r_name->[First] [Earth_Last]</NameGeneratorEarth.rulePack.rulesStrings.3>
+    <NameGeneratorEarth.rulePack.rulesStrings.4>r_name->[First] [Earth_Word]</NameGeneratorEarth.rulePack.rulesStrings.4>
+    <NameGeneratorEarth.rulePack.rulesStrings.5>r_name->[Word] [Earth_Last]</NameGeneratorEarth.rulePack.rulesStrings.5>
+    <NameGeneratorEarth.rulePack.rulesStrings.6>r_name->[Earth_First] [Last]</NameGeneratorEarth.rulePack.rulesStrings.6>
+    <NameGeneratorEarth.rulePack.rulesStrings.7>r_name->[Earth_First] [Word]</NameGeneratorEarth.rulePack.rulesStrings.7>
+    <NameGeneratorEarth.rulePack.rulesStrings.8>r_name->[Earth_Word] [Last]</NameGeneratorEarth.rulePack.rulesStrings.8>
+
+    <NameGeneratorPegasus.rulePack.rulesStrings.0>r_name->[Pegasus_First] [Pegasus_Last]</NameGeneratorPegasus.rulePack.rulesStrings.0>
+    <NameGeneratorPegasus.rulePack.rulesStrings.1>r_name->[Pegasus_First] [Pegasus_Word]</NameGeneratorPegasus.rulePack.rulesStrings.1>
+    <NameGeneratorPegasus.rulePack.rulesStrings.2>r_name->[Pegasus_Word] [Pegasus_Last]</NameGeneratorPegasus.rulePack.rulesStrings.2>
+    <NameGeneratorPegasus.rulePack.rulesStrings.3>r_name->[First] [Pegasus_Last]</NameGeneratorPegasus.rulePack.rulesStrings.3>
+    <NameGeneratorPegasus.rulePack.rulesStrings.4>r_name->[First] [Pegasus_Word]</NameGeneratorPegasus.rulePack.rulesStrings.4>
+    <NameGeneratorPegasus.rulePack.rulesStrings.5>r_name->[Word] [Pegasus_Last]</NameGeneratorPegasus.rulePack.rulesStrings.5>
+    <NameGeneratorPegasus.rulePack.rulesStrings.6>r_name->[Pegasus_First] [Last]</NameGeneratorPegasus.rulePack.rulesStrings.6>
+    <NameGeneratorPegasus.rulePack.rulesStrings.7>r_name->[Pegasus_First] [Word]</NameGeneratorPegasus.rulePack.rulesStrings.7>
+    <NameGeneratorPegasus.rulePack.rulesStrings.8>r_name->[Pegasus_Word] [Last]</NameGeneratorPegasus.rulePack.rulesStrings.8>
+
+    <NameGeneratorUnicorn.rulePack.rulesStrings.0>r_name->[Unicorn_First] [Unicorn_Last]</NameGeneratorUnicorn.rulePack.rulesStrings.0>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.1>r_name->[Unicorn_First] [Unicorn_Word]</NameGeneratorUnicorn.rulePack.rulesStrings.1>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.2>r_name->[Unicorn_Word] [Unicorn_Last]</NameGeneratorUnicorn.rulePack.rulesStrings.2>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.3>r_name->[First] [Unicorn_Last]</NameGeneratorUnicorn.rulePack.rulesStrings.3>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.4>r_name->[First] [Unicorn_Word]</NameGeneratorUnicorn.rulePack.rulesStrings.4>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.5>r_name->[Word] [Unicorn_Last]</NameGeneratorUnicorn.rulePack.rulesStrings.5>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.6>r_name->[Unicorn_First] [Last]</NameGeneratorUnicorn.rulePack.rulesStrings.6>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.7>r_name->[Unicorn_First] [Word]</NameGeneratorUnicorn.rulePack.rulesStrings.7>
+    <NameGeneratorUnicorn.rulePack.rulesStrings.8>r_name->[Unicorn_Word] [Last]</NameGeneratorUnicorn.rulePack.rulesStrings.8>
+
+</LanguageData>

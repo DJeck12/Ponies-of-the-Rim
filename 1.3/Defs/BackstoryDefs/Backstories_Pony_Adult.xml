@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
     <AlienRace.BackstoryDef>
@@ -92,7 +92,7 @@
 	<AlienRace.BackstoryDef>
         <defName>Pony_MagicAnimalHunter</defName>
 		<title>Magic animal hunter</title>
-		<titleShort>Hunter</titleShort>
+		<titleShort>Huntsman</titleShort>
 		<baseDescription>{PAWN_nameDef}.</baseDescription>
 		<slot>Adulthood</slot>
 		<spawnCategories>
