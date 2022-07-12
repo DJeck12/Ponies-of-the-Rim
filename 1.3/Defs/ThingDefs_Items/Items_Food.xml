@@ -4,7 +4,7 @@
     <ThingDef ParentName="MealFineBase">
         <defName>MealFine_Hay</defName>
         <label>hay fine meal</label>
-        <description>A complex dish assembled with care from vegetarian ingredients and hay. Being not expensive to prepare, it is the most popular dish among ponies.</description>
+        <description>A complex dish assembled with care from vegetarian ingredients and hay. While being not too difficult to prepare, it is the most popular dish among ponies.</description>
         <graphicData>
             <texPath>Things/Item/Food/FineHay</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -19,7 +19,7 @@
     <ThingDef ParentName="MealLavishBase">
         <defName>MealLavish_Hay</defName>
         <label>hay lavish meal</label>
-        <description>A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul. Very much appreciated by pony cookery enthusiasts.</description>
+        <description>A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul. Very much appreciated by equestrian cookery enthusiasts.</description>
         <graphicData>
             <texPath>Things/Item/Food/LavishHay</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

@@ -102,6 +102,7 @@
         <race>
 		<nameGenerator>NameGeneratorPegasus</nameGenerator>
 		<body>Pegasus</body>
+		<useMeatFrom>PonyEarth</useMeatFrom>
 		</race>
 
     </AlienRace.ThingDef_AlienRace>

@@ -144,7 +144,7 @@
                     </parts>
                     </li>
                     <li>
-                    <def>Pony_Eye</def>
+                    <def>Eye</def>
                     <customLabel>left eye</customLabel>
                     <coverage>0.12</coverage>
                     <groups>
@@ -154,7 +154,7 @@
                     <woundAnchorTag>LeftEye</woundAnchorTag>
                     </li>
                     <li>
-                    <def>Pony_Eye</def>
+                    <def>Eye</def>
                     <customLabel>right eye</customLabel>
                     <coverage>0.12</coverage>
                     <groups>
@@ -164,7 +164,7 @@
                     <woundAnchorTag>RightEye</woundAnchorTag>
                     </li>
                     <li>
-                    <def>Pony_Ear</def>
+                    <def>Ear</def>
                     <customLabel>left ear</customLabel>
                     <coverage>0.08</coverage>
                     <groups>
@@ -173,7 +173,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Ear</def>
+                    <def>Ear</def>
                     <customLabel>right ear</customLabel>
                     <coverage>0.08</coverage>
                     <groups>
@@ -182,7 +182,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Nose</def>
+                    <def>Nose</def>
                     <coverage>0.1</coverage>
                     <groups>
                         <li>FullHead</li>
@@ -225,7 +225,7 @@
                 <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
-                    <li>Legs</li>
+                    <li>Arms</li>
                     <li>FrontLeftLeg</li>
                 </groups>
                 <parts>
@@ -235,7 +235,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -244,7 +244,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -253,7 +253,7 @@
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -261,6 +261,7 @@
                     <customLabel>front left hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Hands</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -283,7 +284,7 @@
                 <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
-                    <li>Legs</li>
+                    <li>Arms</li>
                     <li>FrontRightLeg</li>
                 </groups>
                 <parts>
@@ -293,7 +294,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -302,7 +303,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -311,7 +312,7 @@
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -319,6 +320,7 @@
                     <customLabel>front right hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Hands</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -392,6 +394,7 @@
                     <customLabel>rear left hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Feet</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -450,6 +453,7 @@
                     <customLabel>rear right hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Feet</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -606,7 +610,7 @@
                     </parts>
                     </li>
                     <li>
-                    <def>Pony_Eye</def>
+                    <def>Eye</def>
                     <customLabel>left eye</customLabel>
                     <coverage>0.12</coverage>
                     <groups>
@@ -616,7 +620,7 @@
                     <woundAnchorTag>LeftEye</woundAnchorTag>
                     </li>
                     <li>
-                    <def>Pony_Eye</def>
+                    <def>Eye</def>
                     <customLabel>right eye</customLabel>
                     <coverage>0.12</coverage>
                     <groups>
@@ -626,7 +630,7 @@
                     <woundAnchorTag>RightEye</woundAnchorTag>
                     </li>
                     <li>
-                    <def>Pony_Ear</def>
+                    <def>Ear</def>
                     <customLabel>left ear</customLabel>
                     <coverage>0.08</coverage>
                     <groups>
@@ -635,7 +639,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Ear</def>
+                    <def>Ear</def>
                     <customLabel>right ear</customLabel>
                     <coverage>0.08</coverage>
                     <groups>
@@ -644,7 +648,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Nose</def>
+                    <def>Nose</def>
                     <coverage>0.1</coverage>
                     <groups>
                         <li>FullHead</li>
@@ -687,7 +691,7 @@
                 <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
-                    <li>Legs</li>
+                    <li>Arms</li>
                     <li>FrontLeftLeg</li>
                 </groups>
                 <parts>
@@ -697,7 +701,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -706,7 +710,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -715,7 +719,7 @@
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -723,6 +727,7 @@
                     <customLabel>front left hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Hands</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -745,7 +750,7 @@
                 <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
-                    <li>Legs</li>
+                    <li>Arms</li>
                     <li>FrontRightLeg</li>
                 </groups>
                 <parts>
@@ -755,7 +760,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -764,7 +769,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -773,7 +778,7 @@
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -781,6 +786,7 @@
                     <customLabel>front right hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Hands</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -870,6 +876,7 @@
                     <customLabel>rear left hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Feet</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -928,6 +935,7 @@
                     <customLabel>rear right hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Feet</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -1093,7 +1101,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Eye</def>
+                    <def>Eye</def>
                     <customLabel>left eye</customLabel>
                     <coverage>0.12</coverage>
                     <groups>
@@ -1103,7 +1111,7 @@
                     <woundAnchorTag>LeftEye</woundAnchorTag>
                     </li>
                     <li>
-                    <def>Pony_Eye</def>
+                    <def>Eye</def>
                     <customLabel>right eye</customLabel>
                     <coverage>0.12</coverage>
                     <groups>
@@ -1113,7 +1121,7 @@
                     <woundAnchorTag>RightEye</woundAnchorTag>
                     </li>
                     <li>
-                    <def>Pony_Ear</def>
+                    <def>Ear</def>
                     <customLabel>left ear</customLabel>
                     <coverage>0.08</coverage>
                     <groups>
@@ -1122,7 +1130,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Ear</def>
+                    <def>Ear</def>
                     <customLabel>right ear</customLabel>
                     <coverage>0.08</coverage>
                     <groups>
@@ -1131,7 +1139,7 @@
                     </groups>
                     </li>
                     <li>
-                    <def>Pony_Nose</def>
+                    <def>Nose</def>
                     <coverage>0.1</coverage>
                     <groups>
                         <li>FullHead</li>
@@ -1174,7 +1182,7 @@
                 <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
-                    <li>Legs</li>
+                    <li>Arms</li>
                     <li>FrontLeftLeg</li>
                 </groups>
                 <parts>
@@ -1184,7 +1192,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -1193,7 +1201,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -1202,7 +1210,7 @@
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -1210,6 +1218,7 @@
                     <customLabel>front left hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Hands</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -1232,7 +1241,7 @@
                 <coverage>0.32</coverage>
                 <height>Bottom</height>
                 <groups>
-                    <li>Legs</li>
+                    <li>Arms</li>
                     <li>FrontRightLeg</li>
                 </groups>
                 <parts>
@@ -1242,7 +1251,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -1251,7 +1260,7 @@
                     <coverage>0.1</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -1260,7 +1269,7 @@
                     <coverage>0.075</coverage>
                     <depth>Inside</depth>
                     <groups>
-                        <li>Legs</li>
+                        <li>Arms</li>
                     </groups>
                     </li>
                     <li>
@@ -1268,6 +1277,7 @@
                     <customLabel>front right hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Hands</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -1341,6 +1351,7 @@
                     <customLabel>rear left hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Feet</li>
                         <li>Hooves</li>
                     </groups>
                     </li>
@@ -1399,6 +1410,7 @@
                     <customLabel>rear right hoof</customLabel>
                     <coverage>0.15</coverage>
                     <groups>
+                        <li>Feet</li>
                         <li>Hooves</li>
                     </groups>
                     </li>

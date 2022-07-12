@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="Hay"]/ingestible</xpath>
         <value>
-            <preferability>RawBad</preferability>
-            <tasteThought>AteRawFood</tasteThought>
-            <ingestEffect>EatVegetarian</ingestEffect>
-            <ingestSound>RawVegetable_Eat</ingestSound>
+            <ingestible>
+                <foodType>VegetableOrFruit</foodType>
+                <preferability>RawBad</preferability>
+                <tasteThought>AteRawHay</tasteThought>
+                <ingestEffect>EatVegetarian</ingestEffect>
+                <ingestSound>RawVegetable_Eat</ingestSound>
+            </ingestible>
         </value>
     </Operation>
 
@@ -17,5 +20,4 @@
             <socialPropernessMatters>true</socialPropernessMatters>
         </value>
     </Operation>
-
 </Patch>

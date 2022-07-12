@@ -102,6 +102,7 @@
         <race>
 		<nameGenerator>NameGeneratorUnicorn</nameGenerator>
 		<body>Unicorn</body>
+		<useMeatFrom>PonyEarth</useMeatFrom>
 		</race>
 
     </AlienRace.ThingDef_AlienRace>

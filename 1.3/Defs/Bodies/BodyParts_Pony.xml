@@ -4,52 +4,6 @@
 <!--Head-->
 
     <BodyPartDef>
-        <defName>Pony_Eye</defName>
-        <label>eye</label>
-        <hitPoints>12</hitPoints>
-        <permanentInjuryChanceFactor>10</permanentInjuryChanceFactor>
-        <delicate>true</delicate>
-        <skinCovered>false</skinCovered>
-        <canScarify>true</canScarify>
-        <socketed>true</socketed>
-        <beautyRelated>true</beautyRelated>
-        <tags>
-            <li>SightSource</li>
-        </tags>
-        <hitChanceFactors>
-            <li>
-                <key>Blunt</key>
-                <value>0</value>
-            </li>
-        </hitChanceFactors>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>Pony_Ear</defName>
-        <label>ear</label>
-        <hitPoints>14</hitPoints>
-        <frostbiteVulnerability>5</frostbiteVulnerability>
-        <skinCovered>true</skinCovered>
-        <beautyRelated>true</beautyRelated>
-        <tags>
-            <li>HearingSource</li>
-        </tags>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>Pony_Nose</defName>
-        <label>nose</label>
-        <hitPoints>18</hitPoints>
-        <frostbiteVulnerability>5</frostbiteVulnerability>
-        <skinCovered>true</skinCovered>
-        <canScarify>true</canScarify>
-        <beautyRelated>true</beautyRelated>
-        <solid>true</solid>
-        <bleedRate>0</bleedRate>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-  </BodyPartDef>
-
-    <BodyPartDef>
         <defName>Pony_Horn</defName>
         <label>horn</label>
         <hitPoints>20</hitPoints>
@@ -60,7 +14,8 @@
         <bleedRate>0</bleedRate>
         <tags>
             <li>ManipulationLimbCore</li>
-        </tags>     
+        </tags>
+        <spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
     </BodyPartDef>
 
 <!--Body-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <Booped.stages.booped_me.label>бупнул(а) меня</Booped.stages.booped_me.label>
+    <Booped.stages.booped_me.labelSocial>{OTHERPAWN_gender ? бупнул : бупнула} меня</Booped.stages.booped_me.labelSocial>
+    <BoopedMood.stages.booped.label>буп в нос</BoopedMood.stages.booped.label>
+    <BoopedMood.stages.booped.description>Меня приятно удивили неожиданному прикосновению в мой нос! Это было очень мило!</BoopedMood.stages.booped.description>
+
+</LanguageData>

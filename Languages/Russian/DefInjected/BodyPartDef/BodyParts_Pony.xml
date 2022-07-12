@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <Pony_Eye.label>глаз</Pony_Eye.label>
-    <Pony_Ear.label>ухо</Pony_Ear.label>
-    <Pony_Nose.label>нос</Pony_Nose.label>
     <Pony_Horn.label>рог</Pony_Horn.label>
     <Pony_Wing.label>крыло</Pony_Wing.label>
     <Pony_Tail.label>хвост</Pony_Tail.label>

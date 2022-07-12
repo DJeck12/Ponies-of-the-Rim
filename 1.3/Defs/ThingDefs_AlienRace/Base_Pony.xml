@@ -4,6 +4,7 @@
     <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="BasePony" Abstract="True">
 
 <!--Settings-->
+
         <alienRace>	
             <generalSettings>
                 <maleGenderProbability>0.4</maleGenderProbability>
@@ -25,12 +26,28 @@
             </generalSettings>
 
             <thoughtSettings>
-				<cannotReceiveThoughts>
-					<li>Naked</li>
-				</cannotReceiveThoughts>
+                <cannotReceiveThoughts>
+                    <li>Naked</li>
+                    <li>AteRawHay</li>
+                </cannotReceiveThoughts>
             </thoughtSettings>
+
+            <raceRestriction>
+                <recipeList>
+                    <li>CookMealFine_Hay</li>
+                    <li>CookMealFineBulk_Hay</li>
+                    <li>CookMealLavish_Hay</li>
+                    <li>CookMealLavishBulk_Hay</li>
+                </recipeList>
+                <foodList>
+                    <li>MealFine_Hay</li>
+                    <li>MealLavish_Hay</li>
+                </foodList>
+            </raceRestriction>
         </alienRace>
+
 <!--Attacks-->
+
         <tools>
             <li>
                 <label>front left hoof</label>
@@ -109,7 +126,9 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+
 <!--Race Settings-->
+
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
@@ -118,11 +137,11 @@
             <lifeExpectancy>120</lifeExpectancy>
             <leatherDef>PonyFur</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
-		    <meatLabel>Pony meat</meatLabel>
             <baseBodySize>1</baseBodySize>
             <baseHealthScale>1</baseHealthScale>
-            <foodType>VegetarianAnimal</foodType>
             <fleshType>Normal</fleshType>
+            <meatColor>(242,199,248)</meatColor>
+            <foodType>VegetarianAnimal</foodType>
             <gestationPeriodDays>30</gestationPeriodDays>
             <litterSizeCurve>
                 <points>

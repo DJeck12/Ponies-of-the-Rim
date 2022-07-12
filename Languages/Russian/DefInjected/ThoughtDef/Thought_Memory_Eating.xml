@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <AteRawHay.stages.ate_hay.label>{PAWN_gender ? Съел : Съела} сено</AteRawHay.stages.ate_hay.label>
+    <AteRawHay.stages.ate_hay.description>Я {PAWN_gender ? съел : съела} безвкусное сено. Несмотря на его питательность, я не порекомендую пробовать этот корм для лошадей снова.</AteRawHay.stages.ate_hay.description>
+
+</LanguageData>

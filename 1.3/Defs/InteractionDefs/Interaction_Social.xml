@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <InteractionDef>
+        <defName>Pony_Boop</defName>
+        <label>boop</label>
+        <workerClass>InteractionWorker_DeepTalk</workerClass>
+        <symbol>Things/Mote/SpeechSymbols/Boop</symbol>
+        <initiatorThought>DeepTalk</initiatorThought>
+        <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+        <initiatorXpGainAmount>10</initiatorXpGainAmount>
+        <recipientThought>Booped</recipientThought>
+        <logRulesInitiator>
+            <rulesStrings>
+                <li>r_logentry->[INITIATOR_nameDef] [kindly] booped [RECIPIENT_nameDef] after [talkedabout] [subject].</li>
+                <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] while [kindly] booping [RECIPIENT_nameDef].</li>
+
+                <li>talkedabout->communicated thoughts about</li>
+                <li>talkedabout->exchanged thoughts about</li>
+                <li>talkedabout->exchanged ideas about</li>
+                <li>talkedabout->shared views on</li>
+                <li>talkedabout->shared beliefs on</li>
+                <li>talkedabout->discussed the topic of</li>
+                <li>talkedabout->had a heartfelt conversation about</li>
+                <li>talkedabout->talked quietly about</li>
+                <li>talkedabout->talked deeply about</li>
+                <li>talkedabout->connected on the topic of</li>
+
+                <li>kindly(p=3)->kindly</li>
+                <li>kindly(p=3)->friendly</li>
+                <li>kindly(p=3)->mildly</li>
+                <li>kindly(p=3)->politely</li>
+                <li>kindly(p=3)->gracefully</li>
+
+            </rulesStrings>
+        </logRulesInitiator>
+    </InteractionDef>
+
+    <InteractionDef>
+        <defName>Pony_Boop2</defName>
+        <label>kind boop</label>
+        <workerClass>InteractionWorker_KindWords</workerClass>
+        <symbol>Things/Mote/SpeechSymbols/Boop</symbol>
+        <recipientThought>Booped</recipientThought>
+        <logRulesInitiator>
+            <rulesStrings>
+                    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef]'s [PersonalCharacteristic] after sharing a boop.</li>
+                    
+                    <li>complimented(p=3)->complimented</li>
+                    <li>complimented->praised</li>
+                    <li>complimented->commended</li>
+                    <li>complimented->lauded</li>
+                    <li>complimented->applauded</li>
+                    <li>complimented->celebrated</li>
+                    <li>complimented->saluted</li>
+                    <li>complimented->spoke kindly of</li>
+                    <li>complimented->expressed good things about</li>
+                    <li>complimented->offered kinds words about</li>
+                    <li>complimented->verbally appreciated</li>
+                    <li>complimented->expressed appreciation for</li>
+                    <li>complimented->said good things about</li>
+            </rulesStrings>
+        </logRulesInitiator>
+    </InteractionDef>
+
+</Defs>

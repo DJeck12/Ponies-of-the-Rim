@@ -103,6 +103,7 @@
         <race>
 		<nameGenerator>NameGeneratorEarth</nameGenerator>
 		<body>Pony</body>
+        <meatLabel>Pony meat</meatLabel>
 		</race>
 
     </AlienRace.ThingDef_AlienRace>
