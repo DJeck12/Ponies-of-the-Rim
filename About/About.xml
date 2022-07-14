@@ -5,18 +5,24 @@
 	<supportedVersions>
 	<li>1.3</li>
 	</supportedVersions>
-    <modDependencies>
+	<modDependencies>
 	<li>
 		<packageId>erdelf.HumanoidAlienRaces</packageId>
 		<displayName>Humanoid Alien Races 2.0</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
 		<downloadUrl>https://github.com/RimWorld-CCL-Reborn/AlienRaces</downloadUrl>
 	</li>
-    </modDependencies>
-	<packageId>Pony.PoniesOfTheRim</packageId>
+	<li>
+		<packageId>Mlie.PawnkindRaceDiversification</packageId>
+		<displayName>Pawnkind Race Diversification (Continued)</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2828866565</steamWorkshopUrl>
+		<downloadUrl>https://github.com/emipa606/PawnkindRaceDiversification</downloadUrl>
+	</li>
+	</modDependencies>
+	<packageId>Pony.PoniesOfTheRim.Core</packageId>
 	<loadAfter>
-	<li>erdelf.HumanoidAlienRaces</li>
-    </loadAfter>
+		<li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
 	<description>My first mod. Adds ponies
 </description>
 </ModMetaData>

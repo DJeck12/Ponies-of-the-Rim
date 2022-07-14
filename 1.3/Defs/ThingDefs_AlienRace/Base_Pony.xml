@@ -23,6 +23,11 @@
                     <li>PonyPegasus</li>
                 </notXenophobistTowards>
                 <humanRecipeImport>true</humanRecipeImport>
+
+                <alienPartGenerator>
+                    <useGenderedHeads>false</useGenderedHeads>
+                    <useGenderedBodies>false</useGenderedBodies>
+                <alienPartGenerator>
             </generalSettings>
 
             <thoughtSettings>
@@ -130,7 +135,7 @@
 <!--Race Settings-->
 
         <race>
-            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeMain>Pony</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
@@ -210,4 +215,5 @@
         </recipes>
 
     </AlienRace.ThingDef_AlienRace>
+    
 </Defs>

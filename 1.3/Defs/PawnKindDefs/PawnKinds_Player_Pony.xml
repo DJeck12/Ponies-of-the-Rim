@@ -27,7 +27,7 @@
             <li>Simple</li>
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
-        <initialResistanceRange>10~18</initialResistanceRange>
+        <initialResistanceRange>13~21</initialResistanceRange>
     </PawnKindDef>
 
     <PawnKindDef ParentName="BasePonyPawnKind" Name="BaseTribePonyPawnKind" Abstract="True">
@@ -40,7 +40,6 @@
         <li>
             <categories>
             <li>Tribe</li>
-            <li>PonyGeneral</li>
             </categories>
         </li>
         </backstoryFiltersOverride>
@@ -51,7 +50,7 @@
         <li>Poor</li>
         </techHediffsTags>
         <techHediffsChance>0.02</techHediffsChance>
-        <initialResistanceRange>7~13</initialResistanceRange>
+        <initialResistanceRange>9~15</initialResistanceRange>
     </PawnKindDef>
 
 <!--Colony-->
@@ -64,8 +63,6 @@
         <li>
             <categories>
             <li>Offworld</li>
-            <li>PonyGeneral</li>
-            <li>EarthponyGeneral</li>
             </categories>
         </li>
         </backstoryFiltersOverride>
@@ -79,8 +76,6 @@
         <li>
             <categories>
             <li>Offworld</li>
-            <li>PonyGeneral</li>
-            <li>PegasusGeneral</li>
             </categories>
         </li>
         </backstoryFiltersOverride>
@@ -94,8 +89,6 @@
         <li>
             <categories>
             <li>Offworld</li>
-            <li>PonyGeneral</li>
-            <li>UnicornGeneral</li>
             </categories>
         </li>
         </backstoryFiltersOverride>
@@ -104,19 +97,19 @@
 <!--Tribe-->
 
     <PawnKindDef ParentName="BaseTribePonyPawnKind">
-        <defName>TribeEarthPony</defName>
+        <defName>EarthPonyTribe</defName>
         <label>earthpony</label>
         <race>PonyEarth</race>
     </PawnKindDef>
 
     <PawnKindDef ParentName="BaseTribePonyPawnKind">
-        <defName>TribePegasusPony</defName>
+        <defName>PegasusPonyTribe</defName>
         <label>pegasus</label>
         <race>PonyPegasus</race>
     </PawnKindDef>
 
     <PawnKindDef ParentName="BaseTribePonyPawnKind">
-        <defName>TribeUnicornPony</defName>
+        <defName>UnicornPonyTribe</defName>
         <label>unicorn</label>
         <race>PonyUnicorn</race>
     </PawnKindDef>
