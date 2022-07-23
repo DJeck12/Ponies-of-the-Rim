@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <EarthPonySlave.label>земнопони-раб<EarthPonySlave.label>
+    <EarthPonySlave.labelFemale>земнопони-рабыня<EarthPonySlave.labelFemale>
+    <EarthPonyRefugee.label>земнопони-беженец<EarthPonyRefugee.label>
+    <EarthPonyRefugee.labelFemale>земнопони-беженка<EarthPonyRefugee.labelFemale>
+    <EarthPonyVillager.label>земнопони-житель<EarthPonyVillager.label>
+    <EarthPonyVillager.labelFemale>земнопони-жительница<EarthPonyVillager.labelFemale>
+
+    <PegasusPonySlave.label>пегас-раб<PegasusPonySlave.label>
+    <PegasusPonySlave.labelFemale>пегаска-рабыня<PegasusPonySlave.labelFemale>
+    <PegasusPonyRefugee.label>пегас-беженец<PegasusPonyRefugee.label>
+    <PegasusPonyRefugee.labelFemale>пегаска-беженка<PegasusPonyRefugee.labelFemale>
+    <PegasusPonyVillager.label>пегас-житель<PegasusPonyVillager.label>
+    <PegasusPonyVillager.labelFemale>пегаска-жительница<PegasusPonyVillager.labelFemale>
+
+    <UnicornPonySlave.label>единорог-раб<UnicornPonySlave.label>
+    <UnicornPonySlave.labelFemale>единорожка-рабыня<UnicornPonySlave.labelFemale>
+    <UnicornPonyRefugee.label>единорог-беженец<UnicornPonyRefugee.label>
+    <UnicornPonyRefugee.labelFemale>единорожка-беженка<UnicornPonyRefugee.labelFemale>
+    <UnicornPonyVillager.label>единорог-житель<UnicornPonyVillager.label>
+    <UnicornPonyVillager.labelFemale>единорожка-жительница<UnicornPonyVillager.labelFemale>
+
+</LanguageData>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
     <AlienRace.ThingDef_AlienRace ParentName="BasePony">
@@ -25,84 +25,61 @@
                 <alienPartGenerator>
                     <colorChannels>
                         <li>
-							<name>skin</name>
-							<first Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>10</weight>
-										<only>RGB(255, 255, 255)</only>
-									</li>
-									<li>
-										<weight>10</weight>
-										<only>RGB(85, 85, 85)</only>
-									</li>
-									<li>
-										<weight>10</weight>
-										<only>RGB(242, 199, 248)</only>
-									</li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
                                     <li>
-										<weight>10</weight>
-										<only>RGB(248, 234, 98)</only>
-									</li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+                                    </li>
                                     <li>
-										<weight>10</weight>
-										<only>RGB(194, 197, 213 )</only>
-									</li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.000, 0.500, 1.000, 1.000)</only>
+                                    </li>
                                     <li>
-										<weight>10</weight>
-										<only>RGB(185, 223, 128)</only>
-									</li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.000, 0.000, 1.000, 1.000)</only>
+                                    </li>
+                                </options>
+                            </first>
+                            <second Class="ColorGenerator_Options">
+                                <options>
                                     <li>
-										<weight>10</weight>
-										<only>RGB(205, 184, 230)</only>
-									</li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                    </li>
+                                </options>
+                            </second>
+                        </li>
+                        <li>
+                            <name>hair</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
                                     <li>
-										<weight>10</weight>
-										<only>RGB(87, 35, 79)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(230, 74, 87)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(155, 219, 245)</only>
-									</li>
-								</options>
-							</first>
-							<second Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>10</weight>
-										<only>RGB(255, 255, 255)</only>
-									</li>
-								</options>
-							</second>
-						</li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
                     </colorChannels>
+					<bodyAddons>
+						<li>
+							<path>Things/Races/Pony/Horns/Unicorn</path>
+							<bodyPart>Horn</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<drawnInBed>true</drawnInBed>
+							<colorChannel>skin</colorChannel>
+						</li>
+					</bodyAddons>
                 </alienPartGenerator>
             </generalSettings>
-            <graphicPaths>
-            
-            </graphicPaths>
-            <thoughtSettings>
-
-            </thoughtSettings>
-            <relationSettings>
-
-            </relationSettings>
-            <raceRestriction>
-
-            </raceRestriction>
-            <compatibility>
-
-            </compatibility>
         </alienRace>
 <!--Race Settings-->
         <race>
-		<nameGenerator>NameGeneratorUnicorn</nameGenerator>
-		<body>Unicorn</body>
-		<useMeatFrom>PonyEarth</useMeatFrom>
+			<nameGenerator>NameGeneratorUnicorn</nameGenerator>
+			<body>Unicorn</body>
+			<useMeatFrom>PonyEarth</useMeatFrom>
 		</race>
 
     </AlienRace.ThingDef_AlienRace>

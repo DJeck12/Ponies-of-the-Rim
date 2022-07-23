@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<ThingDef ParentName="LeatherBase">
 		<defName>PonyFur</defName>
 		<label>pony fur</label>
 		<description>Soft fluffy skin taken from one of the pony races. Many consider the use of this attractive material to be unethical due to the mere thought of butchering such a creature. Its pink color is somewhat reminiscent of cupcakes.</description>
 		<graphicData>
-			<color>(242,199,248)</color>
+			<color>(245,200,245)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>4.5</MarketValue>
@@ -15,7 +15,7 @@
 			<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-			<color>(242,199,248)</color>
+			<color>(245,200,245)</color>
 			<commonality>0.0025</commonality>
 			<statFactors>
 				<MaxHitPoints>0.8</MaxHitPoints>

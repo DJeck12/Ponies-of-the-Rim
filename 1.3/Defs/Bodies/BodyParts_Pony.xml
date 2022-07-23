@@ -26,6 +26,9 @@
         <hitPoints>20</hitPoints>
         <skinCovered>true</skinCovered>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>
     </BodyPartDef>
 
     <BodyPartDef>

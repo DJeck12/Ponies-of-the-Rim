@@ -36,13 +36,6 @@
         <apparelTags>
             <li>Neolithic</li>
         </apparelTags>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Tribe</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
         <apparelMoney>200~200</apparelMoney>
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <techHediffsMoney>50~50</techHediffsMoney>
@@ -100,18 +93,39 @@
         <defName>EarthPonyTribe</defName>
         <label>earthpony</label>
         <race>PonyEarth</race>
+        <backstoryFiltersOverride>
+        <li>
+            <categories>
+            <li>Tribe</li>
+            </categories>
+        </li>
+        </backstoryFiltersOverride>
     </PawnKindDef>
 
     <PawnKindDef ParentName="BaseTribePonyPawnKind">
         <defName>PegasusPonyTribe</defName>
         <label>pegasus</label>
         <race>PonyPegasus</race>
+        <backstoryFiltersOverride>
+        <li>
+            <categories>
+            <li>Tribe</li>
+            </categories>
+        </li>
+        </backstoryFiltersOverride>
     </PawnKindDef>
 
     <PawnKindDef ParentName="BaseTribePonyPawnKind">
         <defName>UnicornPonyTribe</defName>
         <label>unicorn</label>
         <race>PonyUnicorn</race>
+        <backstoryFiltersOverride>
+        <li>
+            <categories>
+            <li>Tribe</li>
+            </categories>
+        </li>
+        </backstoryFiltersOverride>
     </PawnKindDef>
 
 </Defs>

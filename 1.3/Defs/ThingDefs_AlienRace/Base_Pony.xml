@@ -5,15 +5,15 @@
 
 <!--Settings-->
 
-        <alienRace>	
+        <alienRace>
             <generalSettings>
                 <maleGenderProbability>0.4</maleGenderProbability>
                 <forcedRaceTraitEntries>
                     <li>
                         <defName>Gay</defName>
-                        <chance>10</chance>
-                        <commonalityMale>50</commonalityMale>
-                        <commonalityFemale>100</commonalityFemale>
+                        <chance>8</chance>
+                        <commonalityMale>40</commonalityMale>
+                        <commonalityFemale>80</commonalityFemale>
                     </li>
                 </forcedRaceTraitEntries>
                 <maxDamageForSocialfight>6</maxDamageForSocialfight>
@@ -25,10 +25,48 @@
                 <humanRecipeImport>true</humanRecipeImport>
 
                 <alienPartGenerator>
-                    <useGenderedHeads>false</useGenderedHeads>
+                    <aliencrowntypes>
+                        <li>Pony</li>
+                    </aliencrowntypes>		
+                    <alienbodytypes>
+                        <li>Pony</li>
+                    </alienbodytypes>
+                    <useGenderedHeads>true</useGenderedHeads>
                     <useGenderedBodies>false</useGenderedBodies>
-                <alienPartGenerator>
+                </alienPartGenerator>
             </generalSettings>
+
+            <graphicPaths>
+                <li>
+                    <body>Things/Races/Pony/Bodies/</body>
+                    <head>Things/Races/Pony/Heads/</head>
+                    <stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+                </li>
+            </graphicPaths>
+
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>true</hasStyle>
+                        <styleTagsOverride>
+                            <li>Pony</li>
+                        </styleTagsOverride>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+            </styleSettings>
 
             <thoughtSettings>
                 <cannotReceiveThoughts>
@@ -57,8 +95,8 @@
             <li>
                 <label>front left hoof</label>
                 <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
+                    <li>Blunt</li>
+                    <li>Poke</li>
                 </capacities>
                 <power>6.4</power>
                 <cooldownTime>2</cooldownTime>
@@ -75,8 +113,8 @@
             <li>
                 <label>front right hoof</label>
                 <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
+                    <li>Blunt</li>
+                    <li>Poke</li>
                 </capacities>
                 <power>6.4</power>
                 <cooldownTime>2</cooldownTime>
@@ -93,8 +131,8 @@
             <li>
                 <label>rear legs strike</label>
                 <capacities>
-                <li>Blunt</li>
-                <li>Poke</li>
+                    <li>Blunt</li>
+                    <li>Poke</li>
                 </capacities>
                 <power>10.8</power>
                 <cooldownTime>3.5</cooldownTime>
@@ -111,7 +149,7 @@
             <li>
                 <label>teeth</label>
                 <capacities>
-                <li>Bite</li>
+                    <li>Bite</li>
                 </capacities>
                 <power>8.2</power>
                 <cooldownTime>2</cooldownTime>
@@ -123,7 +161,7 @@
             <li>
                 <label>head</label>
                 <capacities>
-                <li>Blunt</li>
+                    <li>Blunt</li>
                 </capacities>
                 <power>7.5</power>
                 <cooldownTime>2</cooldownTime>
@@ -145,8 +183,9 @@
             <baseBodySize>1</baseBodySize>
             <baseHealthScale>1</baseHealthScale>
             <fleshType>Normal</fleshType>
-            <meatColor>(242,199,248)</meatColor>
+            <meatColor>(245,200,245)</meatColor>
             <foodType>VegetarianAnimal</foodType>
+            <nuzzleMtbHours>24</nuzzleMtbHours>
             <gestationPeriodDays>30</gestationPeriodDays>
             <litterSizeCurve>
                 <points>
@@ -209,11 +248,11 @@
             <li>RemoveBodyPart</li>
             <li>Euthanize</li>
             <li>Anesthetize</li>
-            <li>CureScaria</li> 
+            <li>CureScaria</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
         </recipes>
 
     </AlienRace.ThingDef_AlienRace>
-    
+
 </Defs>

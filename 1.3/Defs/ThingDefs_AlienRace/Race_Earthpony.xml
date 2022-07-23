@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <AlienRace.ThingDef_AlienRace ParentName="BasePony">
+        <defName>PonyEarth</defName>
+        <label>Earthpony</label>
+        <description>Pony</description>
+<!--Stats-->
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <MoveSpeed>4.8</MoveSpeed>
+            <PsychicSensitivity>1.1</PsychicSensitivity>
+            <ComfyTemperatureMin>12</ComfyTemperatureMin>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+            <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <Mass>85</Mass>
+            <LeatherAmount>65</LeatherAmount>
+            <PainShockThreshold>0.8</PainShockThreshold>
+            <PawnBeauty>1</PawnBeauty>
+            <RoyalFavorValue>4</RoyalFavorValue>
+        </statBases>
+<!--Settings-->
+        <alienRace>	
+            <generalSettings>
+                <alienPartGenerator>
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.000, 0.500, 1.000, 1.000)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.000, 0.000, 1.000, 1.000)</only>
+                                    </li>
+                                </options>
+                            </first>
+                            <second Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                    </li>
+                                </options>
+                            </second>
+                        </li>
+                        <li>
+                            <name>hair</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                    </colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+        </alienRace>
+<!--Race Settings-->
+        <race>
+			<nameGenerator>NameGeneratorEarth</nameGenerator>
+			<body>Pony</body>
+			<meatLabel>Pony meat</meatLabel>
+		</race>
+
+    </AlienRace.ThingDef_AlienRace>
+</Defs>

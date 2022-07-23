@@ -25,7 +25,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>TribeEarthPony</li>
+								<li>EarthPonyTribe</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
@@ -107,7 +107,7 @@
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>TribePegasusPony</li>
+							<li>PegasusPonyTribe</li>
 						</kindDefs>
 						<chance>40.0</chance>
 					</li>
@@ -189,7 +189,7 @@
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>TribeUnicornPony</li>
+							<li>UnicornPonyTribe</li>
 						</kindDefs>
 						<chance>40</chance>
 					</li>
