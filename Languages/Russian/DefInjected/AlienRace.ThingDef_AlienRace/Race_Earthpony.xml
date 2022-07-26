@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <PonyEarth.label>Земнопони</PonyEarth.label>
+    <PonyEarth.description>Не смотря на своё земляное название, земнопони считаются самой развитой и прогрессивной расой среди других пони. Они славятся своей врождённой связью с природой и способностью к работе с растениями и животными, а так же своей изобретательностью. Однако, другие часто называют земнопони самыми скучными из-за их схожести со всеми другими пони.
+
+Пони - обобщённый вид магических разумных лошадей, прибывших с планеты Фоенум. Среди множества других разумных существ с их планеты, пони быстро распространили своё влияние и разделились на большое количество разных рас, таких как земнопони, пегасы, единороги и другие. Будучи не воинственными, большинство пони придерживаются принципа гармонии и равенства, используя магию для решения проблем и конфликтов.</PonyEarth.description>
+    <PonyEarth.tools.front_left_hoof.label>Переднее левое копыто</PonyEarth.tools.front_left_hoof.label>
+    <PonyEarth.tools.front_right_hoof.label>переднее правое копыто</PonyEarth.tools.front_right_hoof.label>
+    <PonyEarth.tools.rear_legs_strike.label>Удар задними копытами</PonyEarth.tools.rear_legs_strike.label>
+    <PonyEarth.tools.teeth.label>Зубы</PonyEarth.tools.teeth.label>
+    <PonyEarth.tools.head.label>Голова</PonyEarth.tools.head.label>
+<!--	<PonyEarth.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>Кожа</PonyEarth.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name> -->
+    <PonyEarth.race.meatLabel>Мясо пони</PonyEarth.race.meatLabel>
+
+</LanguageData>

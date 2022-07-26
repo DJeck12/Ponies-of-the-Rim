@@ -24,49 +24,15 @@
                 </notXenophobistTowards>
                 <humanRecipeImport>true</humanRecipeImport>
 
-                <alienPartGenerator>
-                    <aliencrowntypes>
-                        <li>Pony</li>
-                    </aliencrowntypes>		
-                    <alienbodytypes>
-                        <li>Pony</li>
-                    </alienbodytypes>
-                    <useGenderedHeads>true</useGenderedHeads>
-                    <useGenderedBodies>false</useGenderedBodies>
+			    <alienPartGenerator>
+                    <headOffsetDirectional>
+                        <south>(0, -0.19)</south>
+                        <north>(0, -0.05)</north>
+                        <east>(0.125, -0.1)</east>
+                        <west>(-0.125, -0.1)</west>
+				    </headOffsetDirectional>
                 </alienPartGenerator>
             </generalSettings>
-
-            <graphicPaths>
-                <li>
-                    <body>Things/Races/Pony/Bodies/</body>
-                    <head>Things/Races/Pony/Heads/</head>
-                    <stump>Things/Races/Pony/Heads/Pony_Stump</stump>
-                </li>
-            </graphicPaths>
-
-            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-                        <hasStyle>true</hasStyle>
-                        <styleTagsOverride>
-                            <li>Pony</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-                <li>
-                    <key>BeardDef</key>
-                    <value>
-                        <hasStyle>false</hasStyle>
-                    </value>
-                </li>
-                <li>
-                    <key>TattooDef</key>
-                    <value>
-                        <hasStyle>false</hasStyle>
-                    </value>
-                </li>
-            </styleSettings>
 
             <thoughtSettings>
                 <cannotReceiveThoughts>

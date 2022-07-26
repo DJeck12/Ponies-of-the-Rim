@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <PonyUnicorn.label>Единорог</PonyUnicorn.label>
+    <PonyUnicorn.description>Первые, кого представляют, говоря про волшебство и заклинания - это единороги, живое представление магии пони. С помощью своего рога на лбу, единороги первыми обуздали природу магии и научили других использовать её во благо. Как бы то ни было, единороги печально известны случаями контроля разума и попытками захвата мира, что однажды чуть не привело к колоссальным разрушениям.
+
+Пони - обобщённый вид магических разумных лошадей, прибывших с планеты Фоенум. Среди множества других разумных существ с их планеты, пони быстро распространили своё влияние и разделились на большое количество разных рас, таких как земнопони, пегасы, единороги и другие. Будучи не воинственными, большинство пони придерживаются принципа гармонии и равенства, используя магию для решения проблем и конфликтов.</PonyUnicorn.description>
+    <PonyUnicorn.tools.front_left_hoof.label>Переднее левое копыто</PonyUnicorn.tools.front_left_hoof.label>
+    <PonyUnicorn.tools.front_right_hoof.label>переднее правое копыто</PonyUnicorn.tools.front_right_hoof.label>
+    <PonyUnicorn.tools.rear_legs_strike.label>Удар задними копытами</PonyUnicorn.tools.rear_legs_strike.label>
+    <PonyUnicorn.tools.teeth.label>Зубы</PonyUnicorn.tools.teeth.label>
+    <PonyUnicorn.tools.head.label>Голова</PonyUnicorn.tools.head.label>
+<!--	<PonyUnicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>Кожа</PonyUnicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name> -->
+    <PonyUnicorn.race.meatLabel>Мясо пони</PonyUnicorn.race.meatLabel>
+
+</LanguageData>
