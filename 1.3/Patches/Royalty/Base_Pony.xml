@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/raceRestriction/whiteApparelList</xpath>
+            <value>
+                    <li>Apparel_PackJump</li>
+                    <li>Apparel_PackBroadshield</li>
+
+                    <li>Apparel_PsyfocusHelmet</li>
+                    <li>Apparel_EltexSkullcap</li>
+                    <li>Apparel_PsyfocusShirt</li>
+                    <li>Apparel_PsyfocusVest</li>
+                    <li>Apparel_PsyfocusRobe</li>
+
+                    <li>Apparel_ShirtRuffle</li>
+                    <li>Apparel_Corset</li>
+                    <li>Apparel_VestRoyal</li>
+                    <li>Apparel_RobeRoyal</li>
+                    <li>Apparel_HatLadies</li>
+                    <li>Apparel_HatTop</li>
+                    <li>Apparel_Coronet</li>
+                    <li>Apparel_Crown</li>
+                    <li>Apparel_CrownStellic</li>
+                    <li>Apparel_Cape</li>
+                    <li>Apparel_Beret</li>
+
+                    <li>Apparel_ArmorReconPrestige</li>
+                    <li>Apparel_ArmorHelmetReconPrestige</li>
+                    <li>Apparel_ArmorMarinePrestige</li>
+                    <li>Apparel_ArmorMarineHelmetPrestige</li>
+                    <li>Apparel_ArmorCataphract</li>
+                    <li>Apparel_ArmorHelmetCataphract</li>
+                    <li>Apparel_ArmorCataphractPrestige</li>
+                    <li>Apparel_ArmorHelmetCataphractPrestige</li>
+                    <li>Apparel_ArmorLocust</li>
+                    <li>Apparel_ArmorMarineGrenadier</li>
+                    <li>Apparel_ArmorCataphractPhoenix</li>
+                    <li>Apparel_Gunlink</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

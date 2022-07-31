@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <HairDef>
-        <defName>No_Hair_Pony</defName>
-        <label>No Hair</label>
+        <defName>Pony_TestHair</defName>
+        <label>dash hair</label>
         <styleGender>Any</styleGender>
-        <texPath>Things/Races/Pony/Hair/No_hair</texPath>
+        <texPath>Things/Races/Pony/Hair/Pony_Hair</texPath>
         <category>Pony</category>
         <hairTags>
             <li>Pony</li>

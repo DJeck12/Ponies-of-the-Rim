@@ -96,7 +96,7 @@
 						<kindDefs>
 							<li>PegasusPony</li>
 						</kindDefs>
-						<chance>40.0</chance>
+						<chance>20.0</chance>
 					</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -109,7 +109,7 @@
 						<kindDefs>
 							<li>PegasusPonyTribe</li>
 						</kindDefs>
-						<chance>40.0</chance>
+						<chance>20.0</chance>
 					</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -122,7 +122,7 @@
 					<kindDefs>
 						<li>PegasusPonySlave</li>
 					</kindDefs>
-					<chance>40.0</chance>
+					<chance>20.0</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -130,7 +130,7 @@
 					<kindDefs>
 						<li>PegasusPonyRefugee</li>
 					</kindDefs>
-					<chance>40.0</chance>
+					<chance>20.0</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>
@@ -140,7 +140,7 @@
 							<kindDefs>
 								<li>PegasusPonyVillager</li>
 							</kindDefs>
-							<chance>40.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -153,7 +153,7 @@
 							<kindDefs>
 								<li>PegasusPonyTribe</li>
 							</kindDefs>
-							<chance>40.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -204,7 +204,7 @@
 					<kindDefs>
 						<li>UnicornPonySlave</li>
 					</kindDefs>
-					<chance>40.0</chance>
+					<chance>20.0</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -212,7 +212,7 @@
 					<kindDefs>
 						<li>UnicornPonyRefugee</li>
 					</kindDefs>
-					<chance>40.0</chance>
+					<chance>20.0</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>
@@ -222,7 +222,7 @@
 							<kindDefs>
 								<li>UnicornPonyVillager</li>
 							</kindDefs>
-							<chance>40.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -235,7 +235,7 @@
 							<kindDefs>
 								<li>UnicornPonyTribe</li>
 							</kindDefs>
-							<chance>40.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>

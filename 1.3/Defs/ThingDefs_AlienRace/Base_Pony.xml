@@ -17,20 +17,15 @@
                     </li>
                 </forcedRaceTraitEntries>
                 <maxDamageForSocialfight>6</maxDamageForSocialfight>
-                <notXenophobistTowards>
-                    <li>PonyEarth</li>
-                    <li>PonyUnicorn</li>
-                    <li>PonyPegasus</li>
-                </notXenophobistTowards>
                 <humanRecipeImport>true</humanRecipeImport>
 
-			    <alienPartGenerator>
+                <alienPartGenerator>
                     <headOffsetDirectional>
                         <south>(0, -0.19)</south>
                         <north>(0, -0.05)</north>
                         <east>(0.125, -0.1)</east>
                         <west>(-0.125, -0.1)</west>
-				    </headOffsetDirectional>
+                    </headOffsetDirectional>
                 </alienPartGenerator>
             </generalSettings>
 
@@ -42,6 +37,42 @@
             </thoughtSettings>
 
             <raceRestriction>
+                <whiteApparelList>
+                    <li>Apparel_ShieldBelt</li>
+
+                    <li>Apparel_CowboyHat</li>
+                    <li>Apparel_BowlerHat</li>
+                    <li>Apparel_TribalHeaddress</li>
+                    <li>Apparel_Tuque</li>
+                    <li>Apparel_WarMask</li>
+                    <li>Apparel_WarVeil</li>
+                    <li>Apparel_SimpleHelmet</li>
+                    <li>Apparel_AdvancedHelmet</li>
+                    <li>Apparel_PowerArmorHelmet</li>
+                    <li>Apparel_ArmorHelmetRecon</li>
+                    <li>Apparel_PsychicFoilHelmet</li>
+                    <li>Apparel_HatHood</li>
+
+                    <li>Apparel_SmokepopBelt</li>
+
+                    <li>Apparel_PsychicShockLance</li>
+                    <li>Apparel_PsychicInsanityLance</li>
+
+                    <li>Apparel_TribalA</li>
+                    <li>Apparel_Parka</li>
+                    <li>Apparel_Pants</li>
+                    <li>Apparel_BasicShirt</li>
+                    <li>Apparel_CollarShirt</li>
+                    <li>Apparel_Duster</li>
+                    <li>Apparel_Jacket</li>
+                    <li>Apparel_PlateArmor</li>
+                    <li>Apparel_FlakVest</li>
+                    <li>Apparel_FlakPants</li>
+                    <li>Apparel_FlakJacket</li>
+                    <li>Apparel_PowerArmor</li>
+                    <li>Apparel_ArmorRecon</li>
+                </whiteApparelList>
+                <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
                 <recipeList>
                     <li>CookMealFine_Hay</li>
                     <li>CookMealFineBulk_Hay</li>
