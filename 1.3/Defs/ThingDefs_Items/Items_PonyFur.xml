@@ -3,7 +3,7 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>PonyFur</defName>
 		<label>pony fur</label>
-		<description>Soft fluffy skin taken from one of the pony races. Many consider the use of this attractive material to be unethical due to the mere thought of butchering such a creature. Its pink color is somewhat reminiscent of cupcakes.</description>
+		<description>Soft fluffy skin taken from one of the pony races. Many consider the use of this material to be unethical due to the mere thought of butchering such a creature. Its pink color is somewhat reminiscent of cupcakes.</description>
 		<graphicData>
 			<color>(245,200,245)</color>
 		</graphicData>

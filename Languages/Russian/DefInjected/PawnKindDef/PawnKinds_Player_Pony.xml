@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <EarthPony.label>земнопони</EarthPony.label>
-    <EarthPony.labelFemale>кобылка</EarthPony.labelFemale>
-    <EarthPony.labelMale>жеребец</EarthPony.labelMale>
-    <PegasusPony.label>пегас</PegasusPony.label>
-    <PegasusPony.labelFemale>кобылка</PegasusPony.labelFemale>
-    <PegasusPony.labelMale>жеребец</PegasusPony.labelMale>
-    <UnicornPony.label>единорог</UnicornPony.label>
-    <UnicornPony.labelFemale>кобылка</UnicornPony.labelFemale>
-    <UnicornPony.labelMale>жеребец</UnicornPony.labelMale>
+    <EarthPonyColonist.label>земнопони</EarthPonyColonist.label>
+    <EarthPonyColonist.labelFemale>кобылка</EarthPonyColonist.labelFemale>
+    <EarthPonyColonist.labelMale>жеребец</EarthPonyColonist.labelMale>
+    <PegasusPonyColonist.label>пегас</PegasusPonyColonist.label>
+    <PegasusPonyColonist.labelFemale>кобылка</PegasusPonyColonist.labelFemale>
+    <PegasusPonyColonist.labelMale>жеребец</PegasusPonyColonist.labelMale>
+    <UnicornPonyColonist.label>единорог</UnicornPonyColonist.label>
+    <UnicornPonyColonist.labelFemale>кобылка</UnicornPonyColonist.labelFemale>
+    <UnicornPonyColonist.labelMale>жеребец</UnicornPonyColonist.labelMale>
     <EarthPonyTribe.label>земнопони</EarthPonyTribe.label>
     <EarthPonyTribe.labelFemale>кобылка</EarthPonyTribe.labelFemale>
     <EarthPonyTribe.labelMale>жеребец</EarthPonyTribe.labelMale>

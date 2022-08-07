@@ -3,107 +3,107 @@
 
 <!--Pony-->
 
-    <RulePackDef>
-        <defName>NameGeneratorPony</defName>
-        <rulePack>
-            <rulesStrings>
-                <li>r_name->[First] [Last]</li>
-                <li>r_name->[First] [Word]</li>
-                <li>r_name->[Word] [Last]</li>
-            </rulesStrings>
-            <rulesFiles>
-                <li>First->Pony_Names/Name_Pony_First</li>
-                <li>Last->Pony_Names/Name_Pony_Last</li>
-                <li>Word->Pony_Names/Name_Pony_Word</li>
-            </rulesFiles>
-        </rulePack>
-    </RulePackDef>
+	<RulePackDef>
+		<defName>NameGeneratorPony</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[First] [Last]</li>
+				<li>r_name->[First] [Word]</li>
+				<li>r_name->[Word] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>First->Pony_Names/Name_Pony_First</li>
+				<li>Last->Pony_Names/Name_Pony_Last</li>
+				<li>Word->Pony_Names/Name_Pony_Word</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 
 <!--Earthpony-->
 
-    <RulePackDef>
-        <defName>NameGeneratorEarth</defName>
-        <include>
-            <li>NameGeneratorPony</li>
-        </include>
-        <rulePack>
-            <rulesStrings>
-                <li>r_name->[Earth_First] [Earth_Last]</li>
-                <li>r_name->[Earth_First] [Earth_Word]</li>
-                <li>r_name->[Earth_Word] [Earth_Last]</li>
+	<RulePackDef>
+		<defName>NameGeneratorEarth</defName>
+		<include>
+			<li>NameGeneratorPony</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Earth_First] [Earth_Last]</li>
+				<li>r_name->[Earth_First] [Earth_Word]</li>
+				<li>r_name->[Earth_Word] [Earth_Last]</li>
 
-                <li>r_name->[First] [Earth_Last]</li>
-                <li>r_name->[First] [Earth_Word]</li>
-                <li>r_name->[Word] [Earth_Last]</li>
+				<li>r_name->[First] [Earth_Last]</li>
+				<li>r_name->[First] [Earth_Word]</li>
+				<li>r_name->[Word] [Earth_Last]</li>
 
-                <li>r_name->[Earth_First] [Last]</li>
-                <li>r_name->[Earth_First] [Word]</li>
-                <li>r_name->[Earth_Word] [Last]</li>
-            </rulesStrings>
-            <rulesFiles>
-                <li>Earth_First->Pony_Names/Name_Earth_First</li>
-                <li>Earth_Last->Pony_Names/Name_Earth_Last</li>
-                <li>Earth_Word->Pony_Names/Name_Earth_Word</li>
-            </rulesFiles>
-        </rulePack>
-    </RulePackDef>
+				<li>r_name->[Earth_First] [Last]</li>
+				<li>r_name->[Earth_First] [Word]</li>
+				<li>r_name->[Earth_Word] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Earth_First->Pony_Names/Name_Earth_First</li>
+				<li>Earth_Last->Pony_Names/Name_Earth_Last</li>
+				<li>Earth_Word->Pony_Names/Name_Earth_Word</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 
 <!--Pegasus-->
 
-    <RulePackDef>
-        <defName>NameGeneratorPegasus</defName>
-        <include>
-            <li>NameGeneratorPony</li>
-        </include>
-        <rulePack>
-            <rulesStrings>
-                <li>r_name->[Pegasus_First] [Pegasus_Last]</li>
-                <li>r_name->[Pegasus_First] [Pegasus_Word]</li>
-                <li>r_name->[Pegasus_Word] [Pegasus_Last]</li>
+	<RulePackDef>
+		<defName>NameGeneratorPegasus</defName>
+		<include>
+			<li>NameGeneratorPony</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Pegasus_First] [Pegasus_Last]</li>
+				<li>r_name->[Pegasus_First] [Pegasus_Word]</li>
+				<li>r_name->[Pegasus_Word] [Pegasus_Last]</li>
 
-                <li>r_name->[First] [Pegasus_Last]</li>
-                <li>r_name->[First] [Pegasus_Word]</li>
-                <li>r_name->[Word] [Pegasus_Last]</li>
+				<li>r_name->[First] [Pegasus_Last]</li>
+				<li>r_name->[First] [Pegasus_Word]</li>
+				<li>r_name->[Word] [Pegasus_Last]</li>
 
-                <li>r_name->[Pegasus_First] [Last]</li>
-                <li>r_name->[Pegasus_First] [Word]</li>
-                <li>r_name->[Pegasus_Word] [Last]</li>
-            </rulesStrings>
-            <rulesFiles>
-                <li>Pegasus_First->Pony_Names/Name_Pegasus_First</li>
-                <li>Pegasus_Last->Pony_Names/Name_Pegasus_Last</li>
-                <li>Pegasus_Word->Pony_Names/Name_Pegasus_Word</li>
-            </rulesFiles>
-        </rulePack>
-    </RulePackDef>
+				<li>r_name->[Pegasus_First] [Last]</li>
+				<li>r_name->[Pegasus_First] [Word]</li>
+				<li>r_name->[Pegasus_Word] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Pegasus_First->Pony_Names/Name_Pegasus_First</li>
+				<li>Pegasus_Last->Pony_Names/Name_Pegasus_Last</li>
+				<li>Pegasus_Word->Pony_Names/Name_Pegasus_Word</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 
 <!--Unicorn-->
 
-    <RulePackDef>
-        <defName>NameGeneratorUnicorn</defName>
-        <include>
-            <li>NameGeneratorPony</li>
-        </include>
-        <rulePack>
-            <rulesStrings>
-                <li>r_name->[Unicorn_First] [Unicorn_Last]</li>
-                <li>r_name->[Unicorn_First] [Unicorn_Word]</li>
-                <li>r_name->[Unicorn_Word] [Unicorn_Last]</li>
+	<RulePackDef>
+		<defName>NameGeneratorUnicorn</defName>
+		<include>
+			<li>NameGeneratorPony</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Unicorn_First] [Unicorn_Last]</li>
+				<li>r_name->[Unicorn_First] [Unicorn_Word]</li>
+				<li>r_name->[Unicorn_Word] [Unicorn_Last]</li>
 
-                <li>r_name->[First] [Unicorn_Last]</li>
-                <li>r_name->[First] [Unicorn_Word]</li>
-                <li>r_name->[Word] [Unicorn_Last]</li>
+				<li>r_name->[First] [Unicorn_Last]</li>
+				<li>r_name->[First] [Unicorn_Word]</li>
+				<li>r_name->[Word] [Unicorn_Last]</li>
 
-                <li>r_name->[Unicorn_First] [Last]</li>
-                <li>r_name->[Unicorn_First] [Word]</li>
-                <li>r_name->[Unicorn_Word] [Last]</li>
-            </rulesStrings>
-            <rulesFiles>
-                <li>Unicorn_First->Pony_Names/Name_Unicorn_First</li>
-                <li>Unicorn_Last->Pony_Names/Name_Unicorn_Last</li>
-                <li>Unicorn_Word->Pony_Names/Name_Unicorn_Word</li>
-            </rulesFiles>
-        </rulePack>
-    </RulePackDef>
+				<li>r_name->[Unicorn_First] [Last]</li>
+				<li>r_name->[Unicorn_First] [Word]</li>
+				<li>r_name->[Unicorn_Word] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Unicorn_First->Pony_Names/Name_Unicorn_First</li>
+				<li>Unicorn_Last->Pony_Names/Name_Unicorn_Last</li>
+				<li>Unicorn_Word->Pony_Names/Name_Unicorn_Word</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 
 </Defs>

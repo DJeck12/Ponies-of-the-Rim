@@ -6,7 +6,17 @@
 	<supportedVersions>
 	<li>1.3</li>
 	</supportedVersions>
-	<description>My first mod. Adds ponies</description>
+	<description>Simple mod that adds three pony races from the popular TV-show - My Little Pony™.
+
+Mod overview:
+> 3 new races: Earthponies, Pegasi and Unicorns.
+> Over 500 pony names to choose from.
+> New hair styles with tails and manes.
+> New Hay Meals to satisfy vegetarian needs of ponies.
+> Ponies can wear human clothes with a custom look for their bodies.
+> High compatability with other mods.
+
+Ponies of the Rim: Core   v0.3</description>
 	<modDependencies>
 	<li>
 		<packageId>erdelf.HumanoidAlienRaces</packageId>

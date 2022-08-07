@@ -1,275 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <AlienRace.ThingDef_AlienRace ParentName="BasePony">
-        <defName>PonyEarth</defName>
-        <label>Earthpony</label>
-        <description>Pony</description>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
+		<defName>Pony_Earthpony</defName>
+		<label>earthpony</label>
+		<description>Pony</description>
 
 <!--Stats-->
 
-        <statBases>
-            <MarketValue>2000</MarketValue>
-            <MoveSpeed>4.8</MoveSpeed>
-            <PsychicSensitivity>1.1</PsychicSensitivity>
-            <ComfyTemperatureMin>12</ComfyTemperatureMin>
-            <ComfyTemperatureMax>30</ComfyTemperatureMax>
-            <ImmunityGainSpeed>1.1</ImmunityGainSpeed>
-            <CarryingCapacity>100</CarryingCapacity>
-            <Mass>85</Mass>
-            <LeatherAmount>65</LeatherAmount>
-            <PainShockThreshold>0.8</PainShockThreshold>
-            <PawnBeauty>1</PawnBeauty>
-            <RoyalFavorValue>4</RoyalFavorValue>
-        </statBases>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>4.75</MoveSpeed>
+			<PsychicSensitivity>1.1</PsychicSensitivity>
+			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<CarryingCapacity>100</CarryingCapacity>
+			<Mass>75</Mass>
+			<LeatherAmount>65</LeatherAmount>
+			<PainShockThreshold>0.8</PainShockThreshold>
+			<PawnBeauty>1</PawnBeauty>
+			<RoyalFavorValue>4</RoyalFavorValue>
+		</statBases>
 		
 <!--Settings-->
 
-        <alienRace>	
-            <generalSettings>
-                <notXenophobistTowards>
-                    <li>PonyUnicorn</li>
-                    <li>PonyPegasus</li>
-                </notXenophobistTowards>
-                <alienPartGenerator>
-                    <aliencrowntypes>
-                        <li>Pony</li>
-                    </aliencrowntypes>		
-                    <alienbodytypes>
-                        <li>Pony</li>
-                    </alienbodytypes>
-                    <useGenderedHeads>true</useGenderedHeads>
-                    <useGenderedBodies>false</useGenderedBodies>
-                    <colorChannels>
-                        <li>
+		<alienRace>	
+			<generalSettings>
+				<notXenophobistTowards>
+					<li>Pony_Unicorn</li>
+					<li>Pony_Pegasus</li>
+				</notXenophobistTowards>
+				<alienPartGenerator>
+					<aliencrowntypes>
+						<li>Pony</li>
+					</aliencrowntypes>		
+					<alienbodytypes>
+						<li>Pony</li>
+					</alienbodytypes>
+					<useGenderedHeads>true</useGenderedHeads>
+					<useGenderedBodies>false</useGenderedBodies>
+					<colorChannels>
+						<li>
 							<name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
 										<weight>10</weight>
-										<only>RGB(255, 255, 255)</only>
+										<min>RGB(50, 150, 50)</min>
+										<max>RGB(255, 255, 255)</max>
 									</li>
 									<li>
-										<weight>10</weight>
-										<only>RGB(85, 85, 85)</only>
+										<weight>5</weight>
+										<min>RGB(180, 180, 180)</min>
+										<max>RGB(255, 255, 255)</max>
 									</li>
 									<li>
-										<weight>10</weight>
-										<only>RGB(242, 199, 248)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(248, 234, 98)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(194, 197, 213 )</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(185, 223, 128)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(205, 184, 230)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(87, 35, 79)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(230, 74, 87)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(155, 219, 245)</only>
+										<weight>5</weight>
+										<min>RGB(35, 35, 35)</min>
+										<max>RGB(255, 255, 255)</max>
 									</li>
 								</options>
 							</first>
 						</li>
-                        <li>
+						<li>
 							<name>hair</name>
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>10</weight>
-										<only>RGB(255, 255, 255)</only>
-									</li>
-									<li>
-										<weight>10</weight>
-										<only>RGB(85, 85, 85)</only>
-									</li>
-									<li>
-										<weight>10</weight>
-										<only>RGB(242, 199, 248)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(248, 234, 98)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(194, 197, 213 )</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(185, 223, 128)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(205, 184, 230)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(87, 35, 79)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(230, 74, 87)</only>
-									</li>
-                                    <li>
-										<weight>10</weight>
-										<only>RGB(155, 219, 245)</only>
+										<min>RGB(35, 35, 35)</min>
+										<max>RGB(255, 255, 255)</max>
 									</li>
 								</options>
 							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGB(35, 35, 35)</min>
+										<max>RGB(255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
 						</li>
-                    </colorChannels>
-                    <bodyAddons>
-                        <li>
-                            <path>Things/Races/Pony/Tails/Pony_Tail</path>
-                            <bodyPart>Pony_Tail</bodyPart>
-                            <inFrontOfBody>false</inFrontOfBody>
-                            <alignWithHead>true</alignWithHead>
-                            <drawnInBed>true</drawnInBed>
-                            <colorChannel>hair</colorChannel>
-                            <offsets>
-                                <south>
-                                    <bodyTypes>
-                                        <Pony>(0, 0.51)</Pony>
-                                    </bodyTypes>
-                                </south>
-                                <north>
-                                    <layerOffset>0.5</layerOffset>
-                                    <bodyTypes>
-                                        <Pony>(0, -0.65)</Pony>
-                                    </bodyTypes>
-                                </north>
-                                <east>
-                                    <bodyTypes>
-                                        <Pony>(0.59, -0.35)</Pony>
-                                    </bodyTypes>
-                                </east>
-                            </offsets>
-                        </li>
-                        <li>
-                            <path>Things/Races/Pony/Ears/Pony_EarRight</path>
-                            <bodyPart>right ear</bodyPart>
-                            <inFrontOfBody>true</inFrontOfBody>
-                            <alignWithHead>true</alignWithHead>
-                            <drawnInBed>true</drawnInBed>
-                            <colorChannel>skin</colorChannel>
-                            <offsets>
-                                <south>
-                                    <layerOffset>0.5</layerOffset>
-                                </south>
-                                <north>
-                                    <layerOffset>-0.5</layerOffset>
-                                </north>
-                                <east>
-                                    <layerOffset>0.5</layerOffset>
-                                </east>
-                                <west>
-                                    <layerOffset>-0.5</layerOffset>
-                                </west>
-                            </offsets>
-                        </li>
-                        <li>
-                            <path>Things/Races/Pony/Ears/Pony_EarLeft</path>
-                            <bodyPart>left ear</bodyPart>
-                            <inFrontOfBody>true</inFrontOfBody>
-                            <alignWithHead>true</alignWithHead>
-                            <drawnInBed>true</drawnInBed>
-                            <colorChannel>skin</colorChannel>
-                            <offsets>
-                                <south>
-                                    <layerOffset>0.5</layerOffset>
-                                </south>
-                                <north>
-                                    <layerOffset>-0.5</layerOffset>
-                                </north>
-                                <east>
-                                    <layerOffset>-0.5</layerOffset>
-                                </east>
-                                <west>
-                                    <layerOffset>0.5</layerOffset>
-                                </west>
-                            </offsets>
-                        </li>
-                        <li>
-                            <path>Things/Races/Pony/Cutiemarks/QTMark</path>
-                            <bodyPart>Torso</bodyPart>
-                            <inFrontOfBody>true</inFrontOfBody>
-                            <drawSize>(0.25, 0.25)</drawSize>
-                            <drawnInBed>false</drawnInBed>
-                            <colorChannel>none</colorChannel>
-                            <offsets>
-                                <east>
-                                    <layerOffset>0.5</layerOffset>
-                                    <bodyTypes>
-                                        <Pony>(0.22, -0.18)</Pony>
-                                    </bodyTypes>
-                                </east>
-                            </offsets>
-                            <hiddenUnderApparelFor>
-                                <li>Torso</li>
-                            </hiddenUnderApparelFor>
-                        </li>
-                    </bodyAddons>
-                </alienPartGenerator>
-            </generalSettings>
-            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-                        <hasStyle>true</hasStyle>
-                        <styleTagsOverride>
-                            <li>Pony</li>
-                        </styleTagsOverride>
-                    </value>
-                </li>
-                <li>
-                    <key>BeardDef</key>
-                    <value>
-                        <hasStyle>false</hasStyle>
-                    </value>
-                </li>
-                <li>
-                    <key>TattooDef</key>
-                    <value>
-                        <hasStyle>false</hasStyle>
-                    </value>
-                </li>
-            </styleSettings>
+					</colorChannels>
+					<bodyAddons>
+					<!--Tail-->
+						<li>
+							<path>Things/Races/Pony/Tails/Pony_Tail</path>
+							<bodyPart>Pony_Tail</bodyPart>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>hair</colorChannel>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Pony>(0, 0.66)</Pony>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>0.5</layerOffset>
+									<bodyTypes>
+										<Pony>(0, -0.36)</Pony>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Pony>(0.38, -0.1)</Pony>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+					<!--Ears-->
+						<li>
+							<path>Things/Races/Pony/Ears/Pony_EarRight</path>
+							<bodyPart>right ear</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>skin</colorChannel>
+							<offsets>
+								<south>
+									<layerOffset>-0.268</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.5</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.268</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.5</layerOffset>
+								</west>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
+							<bodyPart>left ear</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>skin</colorChannel>
+							<offsets>
+								<south>
+									<layerOffset>-0.268</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.5</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.5</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.268</layerOffset>
+								</west>
+							</offsets>
+						</li>
+					<!--Cutiemark-->
+						<li>
+							<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+							<bodyPart>Torso</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<drawSize>(0.25, 0.25)</drawSize>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>none</colorChannel>
+							<offsets>
+								<east>
+									<layerOffset>0.5</layerOffset>
+									<bodyTypes>
+										<Pony>(0.22, -0.18)</Pony>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>Torso</li>
+							</hiddenUnderApparelFor>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Pony</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
 
-            <graphicPaths>
-                <li>
-                    <body>Things/Races/Pony/Bodies/</body>
-                    <head>Things/Races/Pony/Heads/</head>
-                    <stump>Things/Races/Pony/Heads/Pony_Stump</stump>
-                </li>
-            </graphicPaths>
-        </alienRace>
+			<graphicPaths>
+				<li>
+					<body>Things/Races/Pony/Bodies/</body>
+					<head>Things/Races/Pony/Heads/</head>
+					<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+				</li>
+			</graphicPaths>
+		</alienRace>
 
 <!--Race Settings-->
 
-        <race>
+		<race>
 			<nameGenerator>NameGeneratorEarth</nameGenerator>
 			<body>Pony</body>
-			<meatLabel>Pony meat</meatLabel>
+			<meatLabel>pony meat</meatLabel>
 		</race>
 
-    </AlienRace.ThingDef_AlienRace>
+	</AlienRace.ThingDef_AlienRace>
 
 </Defs>

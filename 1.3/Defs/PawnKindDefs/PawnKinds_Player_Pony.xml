@@ -1,131 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <PawnKindDef Name="BasePonyPawnKind" Abstract="True">
-        <labelMale>stallion</labelMale>
-        <labelFemale>mare</labelFemale>
-        <combatPower>30</combatPower>
-        <isFighter>false</isFighter>
-        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-        <forceNormalGearQuality>true</forceNormalGearQuality>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <initialWillRange>0~0</initialWillRange>
-    </PawnKindDef>
+	<PawnKindDef Name="BasePonyPawnKind" Abstract="True">
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<initialWillRange>0~0</initialWillRange>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="BasePonyPawnKind" Name="BaseColonyPonyPawnKind" Abstract="True">
-        <defaultFactionType>PlayerColony</defaultFactionType>
-        <chemicalAddictionChance>0.06</chemicalAddictionChance>
-        <apparelTags>
-            <li>IndustrialBasic</li>
-        </apparelTags>
-        <apparelMoney>350~600</apparelMoney>
-        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-        <techHediffsChance>0.03</techHediffsChance>
-        <techHediffsMoney>50~800</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
-        <initialResistanceRange>13~21</initialResistanceRange>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BasePonyPawnKind" Name="BaseColonyPonyPawnKind" Abstract="True">
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelMoney>350~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="BasePonyPawnKind" Name="BaseTribePonyPawnKind" Abstract="True">
-        <defaultFactionType>PlayerTribe</defaultFactionType>
-        <chemicalAddictionChance>0.05</chemicalAddictionChance>
-        <apparelTags>
-            <li>Neolithic</li>
-        </apparelTags>
-        <apparelMoney>200~200</apparelMoney>
-        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-        <techHediffsMoney>50~50</techHediffsMoney>
-        <techHediffsTags>
-        <li>Poor</li>
-        </techHediffsTags>
-        <techHediffsChance>0.02</techHediffsChance>
-        <initialResistanceRange>9~15</initialResistanceRange>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BasePonyPawnKind" Name="BaseTribePonyPawnKind" Abstract="True">
+		<defaultFactionType>PlayerTribe</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+		<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>9~15</initialResistanceRange>
+	</PawnKindDef>
 
 <!--Colony-->
 
-    <PawnKindDef ParentName="BaseColonyPonyPawnKind">
-        <defName>EarthPony</defName>
-        <label>earthpony</label>
-        <race>PonyEarth</race>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Offworld</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseColonyPonyPawnKind">
+		<defName>EarthPonyColonist</defName>
+		<label>earthpony</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+			<li>Offworld</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="BaseColonyPonyPawnKind">
-        <defName>PegasusPony</defName>
-        <label>pegasus</label>
-        <race>PonyPegasus</race>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Offworld</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseColonyPonyPawnKind">
+		<defName>PegasusPonyColonist</defName>
+		<label>pegasus</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+			<li>Offworld</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="BaseColonyPonyPawnKind">
-        <defName>UnicornPony</defName>
-        <label>unicorn</label>
-        <race>PonyUnicorn</race>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Offworld</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseColonyPonyPawnKind">
+		<defName>UnicornPonyColonist</defName>
+		<label>unicorn</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+			<li>Offworld</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 
 <!--Tribe-->
 
-    <PawnKindDef ParentName="BaseTribePonyPawnKind">
-        <defName>EarthPonyTribe</defName>
-        <label>earthpony</label>
-        <race>PonyEarth</race>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Tribe</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseTribePonyPawnKind">
+		<defName>EarthPonyTribe</defName>
+		<label>earthpony</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+			<li>Tribe</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="BaseTribePonyPawnKind">
-        <defName>PegasusPonyTribe</defName>
-        <label>pegasus</label>
-        <race>PonyPegasus</race>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Tribe</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseTribePonyPawnKind">
+		<defName>PegasusPonyTribe</defName>
+		<label>pegasus</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+			<li>Tribe</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 
-    <PawnKindDef ParentName="BaseTribePonyPawnKind">
-        <defName>UnicornPonyTribe</defName>
-        <label>unicorn</label>
-        <race>PonyUnicorn</race>
-        <backstoryFiltersOverride>
-        <li>
-            <categories>
-            <li>Tribe</li>
-            </categories>
-        </li>
-        </backstoryFiltersOverride>
-    </PawnKindDef>
+	<PawnKindDef ParentName="BaseTribePonyPawnKind">
+		<defName>UnicornPonyTribe</defName>
+		<label>unicorn</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+			<li>Tribe</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
 
 </Defs>

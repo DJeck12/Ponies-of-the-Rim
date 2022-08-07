@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <MealFine_Hay.label>Вкусное блюдо из сена</MealFine_Hay.label>
+    <MealFine_Hay.label>вкусное блюдо из сена</MealFine_Hay.label>
     <MealFine_Hay.description>Комплексное блюдо из ингридиентов растительного происхождения и сена. Будучи не сложным в приготовлении, является самым популярным блюдом среди пони.</MealFine_Hay.description>
         
-    <MealLavish_Hay.label>Шикарное блюдо из сена</MealLavish_Hay.label>
+    <MealLavish_Hay.label>шикарное блюдо из сена</MealLavish_Hay.label>
     <MealLavish_Hay.description>Шедевр кулинарного искусства. Эта еда питает тело, разум и душу. Очень высоко ценится любителями эквестрийской кулинарии.</MealLavish_Hay.description>
 
 </LanguageData>

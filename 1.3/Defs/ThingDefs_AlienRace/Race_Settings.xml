@@ -7,12 +7,12 @@
 		<defName>Earthpony_settings</defName>
 	
 		<pawnKindSettings>
-            <startingColonists>
+			<startingColonists>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>EarthPony</li>
+								<li>EarthPonyColonist</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
@@ -79,22 +79,22 @@
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
-        </pawnKindSettings>
+		</pawnKindSettings>
 
 	</AlienRace.RaceSettings>
 
 <!--Pegasus-->
 
-    <AlienRace.RaceSettings>
+	<AlienRace.RaceSettings>
 		<defName>Pegasus_settings</defName>
 	
 		<pawnKindSettings>
-            <startingColonists>
+			<startingColonists>
 				<li>
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>PegasusPony</li>
+							<li>PegasusPonyColonist</li>
 						</kindDefs>
 						<chance>20.0</chance>
 					</li>
@@ -161,22 +161,22 @@
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
-        </pawnKindSettings>
+		</pawnKindSettings>
 
 	</AlienRace.RaceSettings>
 
 <!--Unicorn-->
 
-    <AlienRace.RaceSettings>
+	<AlienRace.RaceSettings>
 		<defName>Unicorn_settings</defName>
 	
 		<pawnKindSettings>
-            <startingColonists>
+			<startingColonists>
 				<li>
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>UnicornPony</li>
+							<li>UnicornPonyColonist</li>
 						</kindDefs>
 						<chance>40</chance>
 					</li>
@@ -243,7 +243,7 @@
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
-        </pawnKindSettings>
+		</pawnKindSettings>
 
 	</AlienRace.RaceSettings>
 

@@ -4,5 +4,11 @@ Rustic
 Strong
 Weak
 Forging
-Fresh
 Woody
+Hitch
+Fresh
+Brave
+Scary
+Sour
+Forged
+Blacksmile

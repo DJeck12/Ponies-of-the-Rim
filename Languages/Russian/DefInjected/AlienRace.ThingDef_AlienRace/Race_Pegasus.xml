@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <PonyPegasus.label>Пегас</PonyPegasus.label>
-    <PonyPegasus.description>От других пони, пегасы отличаются парой крыльев на своей спине и более утеплённой шкуркой, для полётов на больших высотах. Будучи прирождёнными гонщиками, пегасы вечно любят соревноваться с другими, из-за чего впоследствии стали считаться самой воинственной расой пони. Не смотря на это, большинство пегасов предпочитает жить мирно наравне с другими пони и использовать свои лётные способности для помощи окружающим.
+    <Pony_Pegasus.label>пегас</Pony_Pegasus.label>
+    <Pony_Pegasus.description>От других пони, пегасы отличаются парой крыльев на своей спине и более утеплённой шкуркой, для полётов на больших высотах. Будучи прирождёнными гонщиками, пегасы вечно любят соревноваться с другими, из-за чего впоследствии стали считаться самой воинственной расой пони. Не смотря на это, большинство пегасов предпочитает жить мирно наравне с другими пони и использовать свои лётные способности для помощи окружающим.
 
-Пони - обобщённый вид магических разумных лошадей, прибывших с планеты Фоенум. Среди множества других разумных существ с их планеты, пони быстро распространили своё влияние и разделились на большое количество разных рас, таких как земнопони, пегасы, единороги и другие. Будучи не воинственными, большинство пони придерживаются принципа гармонии и равенства, используя магию для решения проблем и конфликтов.</PonyPegasus.description>
-    <PonyPegasus.tools.front_left_hoof.label>Переднее левое копыто</PonyPegasus.tools.front_left_hoof.label>
-    <PonyPegasus.tools.front_right_hoof.label>переднее правое копыто</PonyPegasus.tools.front_right_hoof.label>
-    <PonyPegasus.tools.rear_legs_strike.label>Удар задними копытами</PonyPegasus.tools.rear_legs_strike.label>
-    <PonyPegasus.tools.teeth.label>Зубы</PonyPegasus.tools.teeth.label>
-    <PonyPegasus.tools.head.label>Голова</PonyPegasus.tools.head.label>
-<!--	<PonyPegasus.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>Кожа</PonyPegasus.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name> -->
-    <PonyPegasus.race.meatLabel>Мясо пони</PonyPegasus.race.meatLabel>
+Пони - обобщённый вид магических разумных лошадей, прибывших с планеты Фоенум. Среди множества других разумных существ с их планеты, пони быстро распространили своё влияние и разделились на большое количество разных рас, таких как земнопони, пегасы, единороги и другие. Будучи не воинственными, большинство пони придерживаются принципа гармонии и равенства, используя магию для решения проблем и конфликтов.</Pony_Pegasus.description>
+    <Pony_Pegasus.tools.front_left_hoof.label>переднее левое копыто</Pony_Pegasus.tools.front_left_hoof.label>
+    <Pony_Pegasus.tools.front_right_hoof.label>переднее правое копыто</Pony_Pegasus.tools.front_right_hoof.label>
+    <Pony_Pegasus.tools.rear_legs_strike.label>удар задними копытами</Pony_Pegasus.tools.rear_legs_strike.label>
+    <Pony_Pegasus.tools.teeth.label>зубы</Pony_Pegasus.tools.teeth.label>
+    <Pony_Pegasus.tools.head.label>голова</Pony_Pegasus.tools.head.label>
+<!-- <Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>Кожа</Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name> -->
+    <Pony_Pegasus.race.meatLabel>мясо пони</Pony_Pegasus.race.meatLabel>
 
 </LanguageData>

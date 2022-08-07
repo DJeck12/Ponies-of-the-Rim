@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThinkTreeDef ParentName="HumanThinkTree">
-    <defName>Pony</defName>
-    <thinkRoot Class="ThinkNode_Priority">
-      <subNodes>
-        <!-- If on colonist team, do forced and emergency work -->
-        <li Class="ThinkNode_ConditionalColonist">
-          <subNodes>
-            <!-- Nuzzle randoms -->
-            <li Class="ThinkNode_ChancePerHour_Nuzzle">
-              <subNodes>
-                <li Class="ThinkNode_Tagger">
-                  <tagToGive>Misc</tagToGive>
-                  <subNodes>
-                    <li Class="JobGiver_Nuzzle" />
-                  </subNodes>
-                </li>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-      </subNodes>
-    </thinkRoot>
-  </ThinkTreeDef>
+	<ThinkTreeDef ParentName="HumanThinkTree">
+		<defName>Pony</defName>
+		<thinkRoot Class="ThinkNode_Priority">
+		<subNodes>
+			<!-- If on colonist team, do forced and emergency work -->
+			<li Class="ThinkNode_ConditionalColonist">
+			<subNodes>
+				<!-- Nuzzle randoms -->
+				<li Class="ThinkNode_ChancePerHour_Nuzzle">
+				<subNodes>
+					<li Class="ThinkNode_Tagger">
+					<tagToGive>Misc</tagToGive>
+					<subNodes>
+						<li Class="JobGiver_Nuzzle"/>
+					</subNodes>
+					</li>
+				</subNodes>
+				</li>
+			</subNodes>
+			</li>
+		</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
 
 </Defs>

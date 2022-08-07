@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/RecipeDef[defName="InstallPegLeg"]/appliedOnFixedBodyParts</xpath>
-        <value>
-            <li>Pony_FrontLeg</li>
-            <li>Pony_RearLeg</li>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="InstallPegLeg"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_FrontLeg</li>
+			<li>Pony_RearLeg</li>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticLeg"]/appliedOnFixedBodyParts</xpath>
-        <value>
-            <li>Pony_FrontLeg</li>
-            <li>Pony_RearLeg</li>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="InstallSimpleProstheticLeg"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_FrontLeg</li>
+			<li>Pony_RearLeg</li>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/RecipeDef[defName="InstallBionicLeg"]/appliedOnFixedBodyParts</xpath>
-        <value>
-            <li>Pony_FrontLeg</li>
-            <li>Pony_RearLeg</li>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="InstallBionicLeg"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_FrontLeg</li>
+			<li>Pony_RearLeg</li>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/RecipeDef[defName="InstallArchotechLeg"]/appliedOnFixedBodyParts</xpath>
-        <value>
-            <li>Pony_FrontLeg</li>
-            <li>Pony_RearLeg</li>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="InstallArchotechLeg"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_FrontLeg</li>
+			<li>Pony_RearLeg</li>
+		</value>
+	</Operation>
 
 </Patch>

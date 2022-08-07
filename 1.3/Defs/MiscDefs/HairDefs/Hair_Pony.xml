@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <HairDef>
-        <defName>Pony_TestHair</defName>
-        <label>dash hair</label>
-        <styleGender>Any</styleGender>
-        <texPath>Things/Races/Pony/Hair/Pony_Hair</texPath>
-        <category>Pony</category>
-        <hairTags>
-            <li>Pony</li>
-        </hairTags>
-    </HairDef>
+
+	<HairDef>
+		<defName>Pony_TestHair</defName>
+		<label>dash hair</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Pony_Hair</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+	
 </Defs>

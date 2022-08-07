@@ -18,3 +18,10 @@ Gust
 Cloud
 Breeze
 Flutter
+Glider
+Weather
+Jet
+Fog
+Sunshower
+Swoop
+Helium

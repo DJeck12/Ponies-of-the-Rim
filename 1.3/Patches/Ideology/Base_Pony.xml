@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Ideology</li>
-        </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/raceRestriction/whiteApparelList</xpath>
-            <value>
-                    <li>Apparel_Headwrap</li>
-                    <li>Apparel_Broadwrap</li>
-                    <li>Apparel_VisageMask</li>
-                    <li>Apparel_Slicecap</li>
-                    <li>Apparel_Collar</li>
-                    <li>Apparel_AuthorityCap</li>
-                    <li>Apparel_Tailcap</li>
-                    <li>Apparel_Shadecone</li>
-                    <li>Apparel_Flophat</li>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+					<li>Apparel_Headwrap</li>
+					<li>Apparel_Broadwrap</li>
+					<li>Apparel_VisageMask</li>
+					<li>Apparel_Slicecap</li>
+					<li>Apparel_Collar</li>
+					<li>Apparel_AuthorityCap</li>
+					<li>Apparel_Tailcap</li>
+					<li>Apparel_Shadecone</li>
+					<li>Apparel_Flophat</li>
 
-                    <li>Apparel_BodyStrap</li>
-                    <li>Apparel_Burka</li>
-                    <li>Apparel_Robe</li>
-                    <li>Apparel_TortureCrown</li>
-                    <li>Apparel_Blindfold</li>
-            </value>
-        </match>
-    </Operation>
+					<li>Apparel_BodyStrap</li>
+					<li>Apparel_Burka</li>
+					<li>Apparel_Robe</li>
+					<li>Apparel_TortureCrown</li>
+					<li>Apparel_Blindfold</li>
+			</value>
+		</match>
+	</Operation>
 
 </Patch>
