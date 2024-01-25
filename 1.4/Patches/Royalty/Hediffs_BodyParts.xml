@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallDrillArm"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>Pony_FrontLeg</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallFieldHand"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>Pony_FrontHoof</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallElbowBlade"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>Pony_FrontLeg</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="InstallKneeSpike"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>Pony_RearLeg</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HairDef>
+		<defName>Pony_Hair</defName>
+		<label>dash hair</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Pony_Hair</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+			<li>Solid_Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_Striped_Hair</defName>
+		<label>striped dash hair</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Pony_Striped_Hair</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+			<li>Striped_Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_Bicolor_Hair</defName>
+		<label>bicolor dash hair</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Pony_Bicolor_Hair</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+			<li>Bicolor_Pony</li>
+		</hairTags>
+	</HairDef>
+	
+</Defs>

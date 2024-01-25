@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <Pony_Unicorn.label>единорог</Pony_Unicorn.label>
-    <Pony_Unicorn.description>Первые, кого представляют, говоря про волшебство и заклинания - это единороги, живое представление магии пони. С помощью своего рога на лбу, единороги первыми обуздали природу магии и научили других использовать её во благо. Как бы то ни было, единороги печально известны случаями контроля разума и попытками захвата мира, что однажды чуть не привело к колоссальным разрушениям.
+	<Pony_Unicorn.label>единорог</Pony_Unicorn.label>
+	<Pony_Unicorn.description>Первые, кого представляют, говоря про волшебство и заклинания - это единороги, живое представление магии пони. С помощью своего рога на лбу, единороги первыми обуздали природу магии и научили других использовать её во благо. Как бы то ни было, единороги печально известны случаями контроля разума и попытками захвата мира, что однажды чуть не привело к колоссальным разрушениям.
 
 Пони - обобщённый вид магических разумных лошадей, прибывших с планеты Фоенум. Среди множества других разумных существ с их планеты, пони быстро распространили своё влияние и разделились на большое количество разных рас, таких как земнопони, пегасы, единороги и другие. Будучи не воинственными, большинство пони придерживаются принципа гармонии и равенства, используя магию для решения проблем и конфликтов.</Pony_Unicorn.description>
-    <Pony_Unicorn.tools.front_left_hoof.label>переднее левое копыто</Pony_Unicorn.tools.front_left_hoof.label>
-    <Pony_Unicorn.tools.front_right_hoof.label>переднее правое копыто</Pony_Unicorn.tools.front_right_hoof.label>
-    <Pony_Unicorn.tools.rear_legs_strike.label>удар задними копытами</Pony_Unicorn.tools.rear_legs_strike.label>
-    <Pony_Unicorn.tools.teeth.label>зубы</Pony_Unicorn.tools.teeth.label>
-    <Pony_Unicorn.tools.head.label>голова</Pony_Unicorn.tools.head.label>
-<!-- <Pony_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>Кожа</Pony_Unicorn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name> -->
-    <Pony_Unicorn.race.meatLabel>мясо пони</Pony_Unicorn.race.meatLabel>
+	<Pony_Unicorn.tools.0.label>переднее левое копыто</Pony_Unicorn.tools.0.label>
+	<Pony_Unicorn.tools.1.label>переднее правое копыто</Pony_Unicorn.tools.1.label>
+	<Pony_Unicorn.tools.2.label>удар задними копытами</Pony_Unicorn.tools.2.label>
+	<Pony_Unicorn.tools.3.label>зубы</Pony_Unicorn.tools.3.label>
+	<Pony_Unicorn.tools.4.label>голова</Pony_Unicorn.tools.4.label>
+	<Pony_Unicorn.tools.5.label>рог</Pony_Unicorn.tools.5.label>
+	<Pony_Unicorn.race.meatLabel>мясо пони</Pony_Unicorn.race.meatLabel>
 
 </LanguageData>

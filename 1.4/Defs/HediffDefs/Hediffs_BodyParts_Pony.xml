@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--Tail-->
+
+   <HediffDef ParentName="AddedBodyPartBase">
+		<defName>ArtificialTail</defName>
+		<label>artificial tail</label>
+		<labelNoun>an artificial tail</labelNoun>
+		<description>An installed artificial tail.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallArtificialTail</defName>
+		<label>install artificial tail</label>
+		<description>Install an artificial tail.</description>
+		<descriptionHyperlinks><ThingDef>Cloth</ThingDef></descriptionHyperlinks>
+		<jobString>Installing artificial tail.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArtificialTail</addsHediff>
+	</RecipeDef>
+
+<!--Hoof-->
+
+   <HediffDef ParentName="AddedBodyPartBase">
+		<defName>PegHoof</defName>
+		<label>wooden hoof</label>
+		<labelNoun>a wooden hoof</labelNoun>
+		<description>An installed wooden hoof.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.8</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+	</HediffDef>
+
+	<RecipeDef ParentName="SurgeryInstallWoodenPartBase">
+		<defName>InstallPegHoof</defName>
+		<label>install wooden hoof</label>
+		<description>Install a wooden hoof.</description>
+		<descriptionHyperlinks><ThingDef>WoodLog</ThingDef></descriptionHyperlinks>
+		<jobString>Installing wooden hoof.</jobString>
+		<appliedOnFixedBodyParts>
+			<li>Pony_FrontHoof</li>
+			<li>Pony_RearHoof</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PegHoof</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticHoof</defName>
+		<label>prosthetic hoof</label>
+		<labelNoun>a prosthetic hoof</labelNoun>
+		<description>An installed prosthetic hoof.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticHoof</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticHoof</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticHoof</defName>
+		<label>prosthetic hoof</label>
+		<description>A hoof prosthesis. Equipped with a mechanical piston and an arrangement of internal joints that completely repeat the natural movements of the hoof.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticHoof</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticHoof</defName>
+		<label>install prosthetic hoof</label>
+		<description>Install a prosthetic hoof.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticHoof</ThingDef>
+			<HediffDef>SimpleProstheticHoof</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic hoof.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticHoof</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticHoof</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_FrontHoof</li>
+			<li>Pony_RearHoof</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticHoof</addsHediff>
+	</RecipeDef>
+
+<!--Wing-->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SimpleProstheticWing</defName>
+		<label>prosthetic wing</label>
+		<labelNoun>a prosthetic wing</labelNoun>
+		<description>An installed prosthetic wing.</description>
+		<descriptionHyperlinks><ThingDef>SimpleProstheticWing</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>SimpleProstheticWing</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.8</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>SimpleProstheticWing</defName>
+		<label>prosthetic wing</label>
+		<description>A wing prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior in maneuverability to a real wing.</description>
+		<descriptionHyperlinks><RecipeDef>InstallSimpleProstheticWing</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>InstallSimpleProstheticWing</defName>
+		<label>install prosthetic wing</label>
+		<description>Install a prosthetic wing.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SimpleProstheticWing</ThingDef>
+			<HediffDef>SimpleProstheticWing</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic wing.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SimpleProstheticWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SimpleProstheticWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Wing</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SimpleProstheticWing</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicWing</defName>
+		<label>bionic wing</label>
+		<labelNoun>a bionic wing</labelNoun>
+		<description>An installed bionic wing.</description>
+		<descriptionHyperlinks><ThingDef>BionicWing</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicWing</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicWing</defName>
+		<label>bionic wing</label>
+		<description>An advanced artificial wing. Tiny nylon nano-webs, equipped with mini-servos, allow precise control of wing movements in all weather conditions. Thanks to the lattice-dust healing system, this prosthesis is suitable for replacing almost all types of wings.</description>
+		<descriptionHyperlinks><RecipeDef>InstallBionicWing</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicWing</defName>
+		<label>install bionic wing</label>
+		<description>Install a bionic wing.</description>
+		<descriptionHyperlinks>
+		<ThingDef>BionicWing</ThingDef>
+		<HediffDef>BionicWing</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic wing.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>BionicWing</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Wing</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicWing</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ArchotechWing</defName>
+		<label>archotech wing</label>
+		<labelNoun>an archotech wing</labelNoun>
+		<description>An installed archotech wing.</description>
+		<descriptionHyperlinks><ThingDef>ArchotechWing</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechWing</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>ArchotechWing</defName>
+		<label>archotech wing</label>
+		<description>An artificial wing built by an archotech. With a pair of such wings, their owner is able to accelerate in flight faster than the speed of sound and even move in outer space. The wing is almost weightless and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Such a prosthesis does not bestow the wearer with pegasus magic and cannot be used by non-winged creatures. Its internal workings are a mystery to human minds.</description>
+		<descriptionHyperlinks><RecipeDef>InstallArchotechWing</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallArchotechWing</defName>
+		<label>install archotech wing</label>
+		<description>Install an archotech wing.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechWing</ThingDef>
+			<HediffDef>ArchotechWing</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech wing.</jobString>
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>ArchotechWing</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>ArchotechWing</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Wing</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechWing</addsHediff>
+	</RecipeDef>
+
+<!--Horn-->
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>NaturalHorn</defName>
+		<label>horn</label>
+		<description>A biological unicorn horn. Gives the ability to cast magic.</description>
+		<descriptionHyperlinks><RecipeDef>InstallNaturalHorn</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>InstallNaturalHorn</defName>
+		<label>install horn</label>
+		<description>Install a horn.</description>
+		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+		<jobString>Installing horn.</jobString>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>NaturalHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>NaturalHorn</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+		   <li>Pony_Horn</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicHorn</defName>
+		<label>bionic horn</label>
+		<labelNoun>a bionic horn</labelNoun>
+		<description>An installed bionic horn.</description>
+		<descriptionHyperlinks><ThingDef>BionicHorn</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicHorn</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicHorn</defName>
+		<label>bionic horn</label>
+		<description>An advanced artificial horn. Carved from a powerful energy crystal, the horn connects directly to the brain through a neurogel interface, expanding the wearer's magical boundaries. The prosthesis is available to all types of unicorns, thanks to flexibly customizable neurosensors.</description>
+		<descriptionHyperlinks><RecipeDef>InstallBionicHorn</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallBionicHorn</defName>
+		<label>install bionic horn</label>
+		<description>Install a bionic horn.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicHorn</ThingDef>
+			<HediffDef>BionicHorn</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic horn.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>BionicHorn</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Horn</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicHorn</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ArchotechHorn</defName>
+		<label>archotech horn</label>
+		<labelNoun>an archotech horn</labelNoun>
+		<description>An installed archotech horn.</description>
+		<descriptionHyperlinks><ThingDef>ArchotechHorn</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechHorn</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>ArchotechHorn</defName>
+		<label>archotech horn</label>
+		<description>An artificial horn built by an archotech. Endows its owner with transcendental magical power, comparable to the magic of draconequuses. The integrated internal subpersona AI automatically analyzes and archives all possible combinations of spells, as well as collects and displays information about all visible sources of magic. Such a prosthesis does not bestow the wearer with unicorn magic and cannot be used by non-horned creatures. Its internal workings are a mystery to human minds.</description>
+		<descriptionHyperlinks><RecipeDef>InstallArchotechHorn</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallArchotechHorn</defName>
+		<label>install archotech horn</label>
+		<description>Install an archotech horn.</description>
+		<descriptionHyperlinks>
+		<ThingDef>ArchotechHorn</ThingDef>
+		<HediffDef>ArchotechHorn</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech horn.</jobString>
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>ArchotechHorn</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>ArchotechHorn</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_Horn</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechHorn</addsHediff>
+	</RecipeDef>
+
+</Defs>

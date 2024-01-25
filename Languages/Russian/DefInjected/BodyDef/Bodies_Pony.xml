@@ -3,112 +3,112 @@
 
 <!--Earthpony-->
 
-    <Pony.label>земнопони</Pony.label>
-    <Pony.corePart.parts.left_lung.customLabel>левое лёгкое</Pony.corePart.parts.left_lung.customLabel>
-    <Pony.corePart.parts.right_lung.customLabel>правое лёгкое</Pony.corePart.parts.right_lung.customLabel>
-    <Pony.corePart.parts.left_kidney.customLabel>левая почка</Pony.corePart.parts.left_kidney.customLabel>
-    <Pony.corePart.parts.right_kidney.customLabel>правая почка</Pony.corePart.parts.right_kidney.customLabel>
-    <Pony.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
-    <Pony.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
-    <Pony.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
-    <Pony.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
-    <Pony.corePart.parts.left_shoulder.customLabel>левое плечо</Pony.corePart.parts.left_shoulder.customLabel>
-    <Pony.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
-    <Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
-    <Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
-    <Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
-    <Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
-    <Pony.corePart.parts.right_shoulder.customLabel>правое плечо</Pony.corePart.parts.right_shoulder.customLabel>
-    <Pony.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
-    <Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
-    <Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
-    <Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
-    <Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
-    <Pony.corePart.parts.left_thigh.customLabel>левое бедро</Pony.corePart.parts.left_thigh.customLabel>
-    <Pony.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
-    <Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
-    <Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
-    <Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
-    <Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
-    <Pony.corePart.parts.right_thigh.customLabel>правое бедро</Pony.corePart.parts.right_thigh.customLabel>
-    <Pony.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
-    <Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
-    <Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
-    <Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
-    <Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+	<Pony.label>земнопони</Pony.label>
+	<Pony.corePart.parts.left_lung.customLabel>левое лёгкое</Pony.corePart.parts.left_lung.customLabel>
+	<Pony.corePart.parts.right_lung.customLabel>правое лёгкое</Pony.corePart.parts.right_lung.customLabel>
+	<Pony.corePart.parts.left_kidney.customLabel>левая почка</Pony.corePart.parts.left_kidney.customLabel>
+	<Pony.corePart.parts.right_kidney.customLabel>правая почка</Pony.corePart.parts.right_kidney.customLabel>
+	<Pony.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony.corePart.parts.left_shoulder.customLabel>левое плечо</Pony.corePart.parts.left_shoulder.customLabel>
+	<Pony.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony.corePart.parts.right_shoulder.customLabel>правое плечо</Pony.corePart.parts.right_shoulder.customLabel>
+	<Pony.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony.corePart.parts.left_thigh.customLabel>левое бедро</Pony.corePart.parts.left_thigh.customLabel>
+	<Pony.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony.corePart.parts.right_thigh.customLabel>правое бедро</Pony.corePart.parts.right_thigh.customLabel>
+	<Pony.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
 
 <!--Pegasus-->
 
-    <Pegasus.label>пегас</Pegasus.label>
-    <Pegasus.corePart.parts.left_lung.customLabel>левое лёгкое</Pegasus.corePart.parts.left_lung.customLabel>
-    <Pegasus.corePart.parts.right_lung.customLabel>правое лёгкое</Pegasus.corePart.parts.right_lung.customLabel>
-    <Pegasus.corePart.parts.left_kidney.customLabel>левая почка</Pegasus.corePart.parts.left_kidney.customLabel>
-    <Pegasus.corePart.parts.right_kidney.customLabel>правая почка</Pegasus.corePart.parts.right_kidney.customLabel>
-    <Pegasus.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pegasus.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
-    <Pegasus.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pegasus.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
-    <Pegasus.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pegasus.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
-    <Pegasus.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pegasus.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
-    <Pegasus.corePart.parts.left_shoulder.customLabel>левое плечо</Pegasus.corePart.parts.left_shoulder.customLabel>
-    <Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
-    <Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
-    <Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
-    <Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
-    <Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
-    <Pegasus.corePart.parts.right_shoulder.customLabel>правое плечо</Pegasus.corePart.parts.right_shoulder.customLabel>
-    <Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
-    <Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
-    <Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
-    <Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
-    <Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
-    <Pegasus.corePart.parts.left_wing.customLabel>левое крыло</Pegasus.corePart.parts.left_wing.customLabel>
-    <Pegasus.corePart.parts.right_wing.customLabel>правое крыло</Pegasus.corePart.parts.right_wing.customLabel>
-    <Pegasus.corePart.parts.left_thigh.customLabel>левое бедро</Pegasus.corePart.parts.left_thigh.customLabel>
-    <Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
-    <Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
-    <Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
-    <Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
-    <Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
-    <Pegasus.corePart.parts.right_thigh.customLabel>правое бедро</Pegasus.corePart.parts.right_thigh.customLabel>
-    <Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
-    <Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
-    <Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
-    <Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
-    <Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+	<Pegasus.label>пегас</Pegasus.label>
+	<Pegasus.corePart.parts.left_lung.customLabel>левое лёгкое</Pegasus.corePart.parts.left_lung.customLabel>
+	<Pegasus.corePart.parts.right_lung.customLabel>правое лёгкое</Pegasus.corePart.parts.right_lung.customLabel>
+	<Pegasus.corePart.parts.left_kidney.customLabel>левая почка</Pegasus.corePart.parts.left_kidney.customLabel>
+	<Pegasus.corePart.parts.right_kidney.customLabel>правая почка</Pegasus.corePart.parts.right_kidney.customLabel>
+	<Pegasus.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pegasus.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pegasus.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pegasus.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pegasus.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pegasus.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pegasus.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pegasus.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pegasus.corePart.parts.left_shoulder.customLabel>левое плечо</Pegasus.corePart.parts.left_shoulder.customLabel>
+	<Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pegasus.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pegasus.corePart.parts.right_shoulder.customLabel>правое плечо</Pegasus.corePart.parts.right_shoulder.customLabel>
+	<Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pegasus.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pegasus.corePart.parts.left_wing.customLabel>левое крыло</Pegasus.corePart.parts.left_wing.customLabel>
+	<Pegasus.corePart.parts.right_wing.customLabel>правое крыло</Pegasus.corePart.parts.right_wing.customLabel>
+	<Pegasus.corePart.parts.left_thigh.customLabel>левое бедро</Pegasus.corePart.parts.left_thigh.customLabel>
+	<Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pegasus.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pegasus.corePart.parts.right_thigh.customLabel>правое бедро</Pegasus.corePart.parts.right_thigh.customLabel>
+	<Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pegasus.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
 
 <!--Unicorn-->
 
-    <Unicorn.label>единорог</Unicorn.label>
-    <Unicorn.corePart.parts.left_lung.customLabel>левое лёгкое</Unicorn.corePart.parts.left_lung.customLabel>
-    <Unicorn.corePart.parts.right_lung.customLabel>правое лёгкое</Unicorn.corePart.parts.right_lung.customLabel>
-    <Unicorn.corePart.parts.left_kidney.customLabel>левая почка</Unicorn.corePart.parts.left_kidney.customLabel>
-    <Unicorn.corePart.parts.right_kidney.customLabel>правая почка</Unicorn.corePart.parts.right_kidney.customLabel>
-    <Unicorn.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Unicorn.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
-    <Unicorn.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Unicorn.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
-    <Unicorn.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Unicorn.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
-    <Unicorn.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Unicorn.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
-    <Unicorn.corePart.parts.left_shoulder.customLabel>левое плечо</Unicorn.corePart.parts.left_shoulder.customLabel>
-    <Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
-    <Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
-    <Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
-    <Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
-    <Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
-    <Unicorn.corePart.parts.right_shoulder.customLabel>правое плечо</Unicorn.corePart.parts.right_shoulder.customLabel>
-    <Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
-    <Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
-    <Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
-    <Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
-    <Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
-    <Unicorn.corePart.parts.left_thigh.customLabel>левое бедро</Unicorn.corePart.parts.left_thigh.customLabel>
-    <Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
-    <Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
-    <Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
-    <Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
-    <Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
-    <Unicorn.corePart.parts.right_thigh.customLabel>правое бедро</Unicorn.corePart.parts.right_thigh.customLabel>
-    <Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
-    <Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
-    <Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
-    <Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
-    <Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+	<Unicorn.label>единорог</Unicorn.label>
+	<Unicorn.corePart.parts.left_lung.customLabel>левое лёгкое</Unicorn.corePart.parts.left_lung.customLabel>
+	<Unicorn.corePart.parts.right_lung.customLabel>правое лёгкое</Unicorn.corePart.parts.right_lung.customLabel>
+	<Unicorn.corePart.parts.left_kidney.customLabel>левая почка</Unicorn.corePart.parts.left_kidney.customLabel>
+	<Unicorn.corePart.parts.right_kidney.customLabel>правая почка</Unicorn.corePart.parts.right_kidney.customLabel>
+	<Unicorn.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Unicorn.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Unicorn.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Unicorn.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Unicorn.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Unicorn.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Unicorn.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Unicorn.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Unicorn.corePart.parts.left_shoulder.customLabel>левое плечо</Unicorn.corePart.parts.left_shoulder.customLabel>
+	<Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Unicorn.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Unicorn.corePart.parts.right_shoulder.customLabel>правое плечо</Unicorn.corePart.parts.right_shoulder.customLabel>
+	<Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Unicorn.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Unicorn.corePart.parts.left_thigh.customLabel>левое бедро</Unicorn.corePart.parts.left_thigh.customLabel>
+	<Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Unicorn.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Unicorn.corePart.parts.right_thigh.customLabel>правое бедро</Unicorn.corePart.parts.right_thigh.customLabel>
+	<Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Unicorn.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
 
 </LanguageData>

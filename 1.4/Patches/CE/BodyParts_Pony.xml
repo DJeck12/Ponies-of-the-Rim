@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/BodyPartDef[@Name="Pony_LegBase"]/hitPoints</xpath>
+					<value>
+						<hitPoints>40</hitPoints>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/BodyPartDef[@Name="Pony_HoofBase"]/hitPoints</xpath>
+					<value>
+						<hitPoints>18</hitPoints>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BodyPartDef[defName="Pony_Wing" or defName="Pony_Tail" or defName="Pony_Thigh" or @Name="Pony_LegBase"]</xpath>
+					<value>
+						<bleedRate>1.5</bleedRate>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

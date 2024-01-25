@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-    <Horn.label>рог</Horn.label>
-    <Wings.label>крылья</Wings.label>
-    <Tail.label>хвост</Tail.label>
-    <RearLegs.label>задние ноги</RearLegs.label>
-    <Hooves.label>копыта</Hooves.label>
+	<Horn.label>рог</Horn.label>
+	<Wings.label>крылья</Wings.label>
+	<Tail.label>хвост</Tail.label>
+	<RearLegs.label>задние ноги</RearLegs.label>
+	<Hooves.label>копыта</Hooves.label>
 
 </LanguageData>

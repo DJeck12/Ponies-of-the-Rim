@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
+		<defName>Pony_Earthpony</defName>
+		<label>earthpony</label>
+		<description>Pony</description>
+
+<!--Stats-->
+
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>4.75</MoveSpeed>
+			<PsychicSensitivity>1.1</PsychicSensitivity>
+			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<CarryingCapacity>100</CarryingCapacity>
+			<Mass>75</Mass>
+			<LeatherAmount>65</LeatherAmount>
+			<PainShockThreshold>0.8</PainShockThreshold>
+			<PawnBeauty>1</PawnBeauty>
+			<RoyalFavorValue>4</RoyalFavorValue>
+		</statBases>
+		
+<!--Settings-->
+
+		<alienRace>
+			<generalSettings>
+				<notXenophobistTowards>
+					<li>Pony_Unicorn</li>
+					<li>Pony_Pegasus</li>
+				</notXenophobistTowards>
+				<alienPartGenerator>
+					<bodyTypes>
+						<li>Pony</li>
+					</bodyTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<min>RGBA(50, 150, 50, 1)</min>
+										<max>RGBA(255, 255, 255, 1)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(180, 180, 180, 1)</min>
+										<max>RGBA(255, 255, 255, 1)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(35, 35, 35, 1)</min>
+										<max>RGBA(255, 255, 255, 1)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 1)</min>
+										<max>RGBA(255, 255, 255, 1)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 1)</min>
+										<max>RGBA(255, 255, 255, 1)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+					<!--Tail-->
+						<li>
+							<path>Things/Races/Pony/Tails/Pony_Tail</path>
+							<bodyPart>Pony_Tail</bodyPart>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>hair</colorChannel>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Pony>(0, 0.66)</Pony>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>0.5</layerOffset>
+									<bodyTypes>
+										<Pony>(0, -0.36)</Pony>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Pony>(0.38, -0.1)</Pony>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+					<!--Ears-->
+						<li>
+							<path>Things/Races/Pony/Ears/Pony_EarRight</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>skin</colorChannel>
+							<offsets>
+								<south>
+									<layerOffset>-0.268</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.5</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.268</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.5</layerOffset>
+								</west>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<alignWithHead>true</alignWithHead>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>skin</colorChannel>
+							<offsets>
+								<south>
+									<layerOffset>-0.268</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.5</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.5</layerOffset>
+								</east>
+								<west>
+									<layerOffset>-0.268</layerOffset>
+								</west>
+							</offsets>
+						</li>
+					<!--Cutiemark-->
+						<li>
+							<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+							<bodyPart>Torso</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<drawSize>(0.16, 0.16)</drawSize>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>none</colorChannel>
+							<offsets>
+								<east>
+									<layerOffset>-0.29</layerOffset>
+									<bodyTypes>
+										<Pony>(0.22, -0.18)</Pony>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>Legs</li>
+							</hiddenUnderApparelFor>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Pony</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+
+			<graphicPaths>
+				<head>
+					<path>Things/Races/Pony/Heads/</path>
+					<headtypeGraphics>
+						<Male_AverageNormal>Things/Races/Pony/Heads/Male_Pony</Male_AverageNormal>
+						<Female_AverageNormal>Things/Races/Pony/Heads/Female_Pony</Female_AverageNormal>
+					</headtypeGraphics>
+				</head>
+				<body>Things/Races/Pony/Bodies/</body>
+				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+			</graphicPaths>
+		</alienRace>
+
+<!--Race Settings-->
+
+		<race>
+			<nameGenerator>NameGeneratorEarth</nameGenerator>
+			<body>Pony</body>
+			<meatLabel>pony meat</meatLabel>
+		</race>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

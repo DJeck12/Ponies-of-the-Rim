@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="Apparel_PsyfocusRobe"
+				or defName="Apparel_RobeRoyal"
+				or @Name="ApparelArmorCataphractBase"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<shellRenderedBehindHead>true</shellRenderedBehindHead>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

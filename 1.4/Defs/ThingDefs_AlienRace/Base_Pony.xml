@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="BasePony" Abstract="True">
+
+<!--Settings-->
+
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.4</maleGenderProbability>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Gay</defName>
+						<chance>8</chance>
+						<commonalityMale>40</commonalityMale>
+						<commonalityFemale>80</commonalityFemale>
+					</li>
+				</forcedRaceTraitEntries>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<humanRecipeImport>true</humanRecipeImport>
+
+				<alienPartGenerator>
+					<headTypes Inherit="False">
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<headOffsetDirectional>
+						<south>(0, -0.19)</south>
+						<north>(0, -0.05)</north>
+						<east>(0.125, -0.1)</east>
+						<west>(-0.125, -0.1)</west>
+					</headOffsetDirectional>
+				</alienPartGenerator>
+			</generalSettings>
+
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+
+			<raceRestriction>
+				<whiteApparelList>
+					<li>Apparel_ShieldBelt</li>
+
+					<li>Apparel_CowboyHat</li>
+					<li>Apparel_BowlerHat</li>
+					<li>Apparel_TribalHeaddress</li>
+					<li>Apparel_Tuque</li>
+					<li>Apparel_WarMask</li>
+					<li>Apparel_WarVeil</li>
+					<li>Apparel_SimpleHelmet</li>
+					<li>Apparel_AdvancedHelmet</li>
+					<li>Apparel_PowerArmorHelmet</li>
+					<li>Apparel_ArmorHelmetRecon</li>
+					<li>Apparel_PsychicFoilHelmet</li>
+					<li>Apparel_HatHood</li>
+
+					<li>Apparel_SmokepopBelt</li>
+					<li>Apparel_FirefoampopPack</li>
+
+					<li>Apparel_PsychicShockLance</li>
+					<li>Apparel_PsychicInsanityLance</li>
+
+					<li>Apparel_TribalA</li>
+					<li>Apparel_Parka</li>
+					<li>Apparel_Pants</li>
+					<li>Apparel_BasicShirt</li>
+					<li>Apparel_CollarShirt</li>
+					<li>Apparel_Duster</li>
+					<li>Apparel_Jacket</li>
+					<li>Apparel_PlateArmor</li>
+					<li>Apparel_FlakVest</li>
+					<li>Apparel_FlakPants</li>
+					<li>Apparel_FlakJacket</li>
+					<li>Apparel_PowerArmor</li>
+					<li>Apparel_ArmorRecon</li>
+
+					<li>OrbitalTargeterBombardment</li>
+					<li>OrbitalTargeterPowerBeam</li>
+				</whiteApparelList>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<recipeList>
+					<li>CookMealFine_Hay</li>
+					<li>CookMealFineBulk_Hay</li>
+					<li>CookMealLavish_Hay</li>
+					<li>CookMealLavishBulk_Hay</li>
+				</recipeList>
+				<foodList>
+					<li>Hay</li>
+					<li>MealFine_Hay</li>
+					<li>MealLavish_Hay</li>
+				</foodList>
+			</raceRestriction>
+		</alienRace>
+
+<!--Attacks-->
+
+		<tools>
+			<li>
+				<label>front left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>rear legs</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9.6</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>RearLegs</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+<!--Race Settings-->
+
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>80</lifeExpectancy>
+			<leatherDef>PonyFur</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<foodType>VegetarianAnimal</foodType>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<gestationPeriodDays>18</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<meatColor>(245,200,245)</meatColor>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
+			<fleshType>Normal</fleshType>
+			<litterSizeCurve>
+				<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+				</li>
+				<li>
+				<def>HumanlikeChild</def>
+				<minAge>3</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+				<def>HumanlikePreTeenager</def>
+				<minAge>9</minAge>
+				</li>
+				<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>13</minAge>
+				</li>
+				<li>
+				<def>HumanlikeAdult</def>
+				<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>3</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li> <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li> <!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<comps>
+		</comps>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>
