@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ===== Everypony Child Stories ===== -->
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyOtherRaceChild</defName>
+    <title>Child of another race</title>
+    <titleShort>Other</titleShort>
+	<titleShortFemale>Other</titleShortFemale>
+    <baseDesc>[PAWN_nameDef] was born of a different race than [PAWN_possessive] parents possessed.
+At first, this became a reason for distrust between family members, suspicions of adultery and even the cause of several serious scandals.
+Fortunately, the conflict was successfully resolved. It turned out that [PAWN_nameDef] inherited the blood of ancient ancestors.
+
+Mindful of their past mistakes, [PAWN_possessive] parents raised [PAWN_objective] to be a kind and prejudice-free {PAWN_gender ? stallion : mare}.</baseDesc>
+	<slot>Childhood</slot>
+	
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+	
+	<skillGains>
+      <li>
+        <key>Social</key>      
+        <value>2</value>
+      </li>
+    </skillGains>
+	
+	<forcedTraits>
+      <Kind>0</Kind>
+    </forcedTraits>
+  </AlienRace.AlienBackstoryDef>
+  
+  
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyOppressedChild</defName>
+    <title>Oppressed child</title>
+    <titleShort>Oppressed</titleShort>
+	<titleShortFemale>Oppressed</titleShortFemale>
+    <baseDesc>As a child, [PAWN_nameDef] became a victim of racism.
+Other foals constantly bullied [PAWN_objective], which is why [PAWN_pronoun] often had to participate in many fights and quarrels.
+
+As a result of prolonged harassment, [PAWN_nameDef] became suspicious, withdrawn and lost all faith in friendship.
+[PAWN_pronoun] decided to rely only on [PAWN_objective]self and hated everypony.</baseDesc>
+    <slot>Childhood</slot>
+	
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+	
+	<skillGains>
+      <li>
+        <key>Melee</key>      
+        <value>3</value>
+	  </li>
+	  <li>
+        <key>Medicine</key>      
+        <value>2</value>
+	  </li>
+	  <li>	  
+        <key>Social</key>      
+        <value>-4</value>		
+      </li>
+    </skillGains>
+	
+	<forcedTraits>
+      <Abrasive>0</Abrasive>
+    </forcedTraits>
+	
+	<forcedTraitsChance>
+	  <li>
+	    <defName>Nerves</defName>
+		<degree>1</degree>
+		<chance>50</chance>
+	  </li>		
+	</forcedTraitsChance>	
+  </AlienRace.AlienBackstoryDef>
+  
+  
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyUniFri</defName>
+    <title>Friend of unicorns</title>
+	<titleFemale>Friend of unicorns</titleFemale>
+    <titleShort>Friend of unicorns</titleShort>
+	<titleShortFemale>Friend of unicorns</titleShortFemale>
+    <baseDesc>There were only unicorns in [PAWN_nameDef]'s circle of friends. 
+They shared various interesting facts about magic with [PAWN_objective], expanding [PAWN_possessive] knowledge in this field.</baseDesc>
+    <slot>Childhood</slot>
+	
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+	
+	<skillGains>
+      <li>
+        <key>Intellectual</key>      
+        <value>2</value>		
+      </li>
+	  <li>	  
+        <key>Social</key>      
+        <value>1</value>		
+      </li>	  
+    </skillGains>
+  </AlienRace.AlienBackstoryDef>
+  
+  
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyWizApp</defName>
+    <title>Wizard's apprentice</title>
+	<titleFemale>Wizard's apprentice</titleFemale>
+    <titleShort>Apprentice</titleShort>
+	<!-- <titleShortFemale>Apprentice</titleShortFemale> -->
+    <baseDesc>[PAWN_nameDef] lost [PAWN_possessive] parents early. [PAWN_pronoun] was a homeless orphan for a long time.
+Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. The wizard raised [PAWN_objective] all [PAWN_possessive] childhood and taught magic.
+
+[PAWN_nameDef] unwittingly adopted some of the quirks of [PAWN_possessive] old teacher</baseDesc>
+    <slot>Childhood</slot>
+	
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+	
+	<skillGains>
+      <li>
+        <key>Intellectual</key>      
+        <value>3</value>
+	  </li>
+	  <li>
+        <key>Medicine</key>      
+        <value>2</value>
+	  </li>
+	  <li>	  
+        <key>Social</key>      
+        <value>-2</value>		
+      </li>
+	  <li>
+        <key>Plants</key>      
+        <value>2</value>
+	  </li>
+	  <li>	  
+        <key>Construction</key>      
+        <value>-3</value>		
+      </li>	  
+    </skillGains>
+	
+	<forcedTraitsChance>
+	  <li>
+	    <defName>Ascetic</defName>
+		<chance>50</chance>
+	  </li>
+	  <li>
+	    <defName>Nudist</defName>
+		<chance>25</chance>
+	  </li>	  
+	  <li>
+	    <defName>DrugDesire</defName>
+		<degree>1</degree>
+		<chance>25</chance>
+	  </li>
+	</forcedTraitsChance>
+  </AlienRace.AlienBackstoryDef> 
+ 
+ 
+ 
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyStruckBaB</defName>
+    <title>Struck by a basilisk</title>
+	<titleFemale>Struck by a basilisk</titleFemale>
+    <titleShort>Struck</titleShort>
+	<titleShortFemale>Struck</titleShortFemale>
+    <baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but they were able to save [PAWN_objective].
+[PAWN_pronoun] underwent many years of rehabilitation, but some health problems and a pathological fear of animals still make themselves felt.</baseDesc>
+    <slot>Childhood</slot>
+	
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+	
+	<skillGains>
+      <li>
+        <key>Intellectual</key>      
+        <value>4</value>
+	  </li>
+	  <li>
+        <key>Medicine</key>      
+        <value>5</value>
+	  </li>
+	  <li>	  
+        <key>Melee</key>      
+        <value>-3</value>		
+      </li>
+    </skillGains>
+
+	<forcedTraits>
+      <Immunity>-1</Immunity>
+    </forcedTraits>
+
+	<forcedTraitsChance>
+	  <li>
+	    <defName>CreepyBreathing</defName>
+		<chance>20</chance>
+	  </li>
+	</forcedTraitsChance>	
+	
+	<workDisables>Mining, Animals</workDisables>	
+  </AlienRace.AlienBackstoryDef>
+ 
+ 
+ 
+<!--   <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyLightSec</defName>
+    <title>Child of Light</title>
+    <titleShort>Child of Light</titleShort>
+    <baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Light.
+Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
+    <slot>Childhood</slot>
+	
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+
+	<skillGains>
+      <li>
+        <key>Plants</key>      
+        <value>3</value>
+	  </li>
+	  <li>
+        <key>Artistic</key>      
+        <value>3</value>
+	  </li>
+	  <li>	  
+        <key>Social</key>      
+        <value>2</value>		
+      </li>
+	  <li>	  
+        <key>Intellectual</key>      
+        <value>-3</value>		
+      </li>	  
+    </skillGains>
+	
+	
+	
+	<workDisables>Mining</workDisables>
+	
+  </AlienRace.AlienBackstoryDef> -->
+ 
+</Defs>
+ 
+   <!-- 
+
+  
+
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyChildDarkSec</defName>
+    <title>Child of Darkness</title>
+    <titleShort>Child of Darkness</titleShort>
+    <baseDesc>[Pawn_nameDef] was born into a family that worshipped The Goddess of Darkness. [Pawn_pronoun] preferred to lead a nocturnal lifestyle.</baseDesc>
+    <slot>Childhood</slot>
+	<spawnCategories>
+		<li>PotR_EveryponyChild</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyChildBornMagic</defName>
+    <title>Born of Magic</title>
+    <titleShort>Born of Magic</titleShort>
+    <baseDesc>[Pawn_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [Pawn_pronoun] spent his childhood away from society, as [Pawn_possessive] parents were afraid that outsiders would hurt little [Pawn_nameDef] when they found out about [Pawn_possessive] true origins.</baseDesc>
+    <slot>Childhood</slot>
+	<spawnCategories>
+		<li>PotR_EveryponyChild</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyChildStFS</defName>
+    <title>Friendship School student</title>
+    <titleShort>Adherent</titleShort>
+    <baseDesc>[Pawn_nameDef] was a student at one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time.</baseDesc>
+    <slot>Childhood</slot>
+	<spawnCategories>
+		<li>PotR_EveryponyChild</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyChildStMS</defName>
+    <title>Magic School student</title>
+    <titleShort>Adept</titleShort>
+    <baseDesc>Since early childhood, [Pawn_nameDef] has shown an extraordinary interest in a variety of sciences. [Pawn_possessive] parents decided to send [Pawn_objective] to study at a Magic school, where [Pawn_pronoun] learned a lot of new things.</baseDesc>
+    <slot>Childhood</slot>
+	<spawnCategories>
+		<li>PotR_EveryponyChild</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyChildUnderAlicorns</defName>
+    <title>Under the care of alicorn</title>
+    <titleShort>Ward</titleShort>
+    <baseDesc>[Pawn_nameDef] was born under terrible circumstances when famine began in [Pawn_possessive] native country. [Pawn_pronoun] was just a baby when [Pawn_possessive] parents died. However, [Pawn_nameDef] was lucky, [Pawn_pronoun] was taken into the care of alicorns and raised as a wonderful child. [Pawn_pronoun] studied kindness and exact sciences from an early age.</baseDesc>
+    <slot>Childhood</slot>
+	<spawnCategories>
+		<li>PotR_EveryponyChild</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef> -->
