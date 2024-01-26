@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+	<PotR_EveryponyOtherRaceChild.title>Дитя другой расы</PotR_EveryponyOtherRaceChild.title>
+	<PotR_EveryponyOtherRaceChild.titleShort>Другой</PotR_EveryponyOtherRaceChild.titleShort>
+	<PotR_EveryponyOtherRaceChild.titleShortFemale>Другая</PotR_EveryponyOtherRaceChild.titleShortFemale>
+	<PotR_EveryponyOtherRaceChild.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} иной расы, нежели которой обладали [PAWN_possessive] родители.
+Поначалу это стало поводом для возникновения недоверия между членами семьи, подозрений в супружеской измене и даже причиной нескольких нешуточных скандалов.
+К счастью, конфликт благополучно разрешился. Выяснилось, что [PAWN_nameDef] {PAWN_gender ? унаследовал : унаследовала} кровь древних предков.
+
+Памятуя о своих былых ошибках, родители воспитали [PAWN_possessive] {PAWN_gender ? добрым : доброй} и {PAWN_gender ? свободным : свободной} от предубеждений {PAWN_gender ? жеребцом : кобылой}.</PotR_EveryponyOtherRaceChild.baseDesc>
+
+
+	
+	<PotR_EveryponyOppressedChild.title>Угнетённое дитя</PotR_EveryponyOppressedChild.title>
+	<PotR_EveryponyOppressedChild.titleShort>Угнетённый</PotR_EveryponyOppressedChild.titleShort>
+	<PotR_EveryponyOppressedChild.titleShortFemale>Угнетённая</PotR_EveryponyOppressedChild.titleShortFemale>
+    <PotR_EveryponyOppressedChild.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? стал : стала} жертвой расизма.
+Другие жеребята постоянно издевались над {PAWN_gender ? ним : ней}, из-за чего {PAWN_gender ? тому : той} частенько приходилось участвовать во множестве драк и ссор.
+
+В результате длительной травли, [PAWN_nameDef] {PAWN_gender ? стал : стала} {PAWN_gender ? подозрительным : подозрительной}, {PAWN_gender ? замкнутым : замкнутой} и {PAWN_gender ? потерял : потеряла} всякую веру в дружбу.
+[PAWN_pronoun] {PAWN_gender ? решил : решила} надеяться только лишь на себя и {PAWN_gender ? возненавидел : возненавидела} всехпони.</PotR_EveryponyOppressedChild.baseDesc>
+
+
+
+    <PotR_EveryponyUniFri.title>Друг единорогов</PotR_EveryponyUniFri.title>
+	<PotR_EveryponyUniFri.titleFemale>Подруга единорогов</PotR_EveryponyUniFri.titleFemale>
+    <PotR_EveryponyUniFri.titleShort>Друг единорогов</PotR_EveryponyUniFri.titleShort>
+	<PotR_EveryponyUniFri.titleShortFemale>Подруга единорогов</PotR_EveryponyUniFri.titleShortFemale>
+    <PotR_EveryponyUniFri.baseDesc>В кругу друзей [PAWN_nameDef] были одни лишь единороги. Они делились с {PAWN_gender ? ним : ней} различными интересными фактами о магии, расширяя [PAWN_possessive] познания в этой области.</PotR_EveryponyUniFri.baseDesc>
+
+
+
+    <PotR_EveryponyWizApp.title>Ученик волшебника</PotR_EveryponyWizApp.title>
+	<PotR_EveryponyWizApp.titleFemale>Ученица волшебника</PotR_EveryponyWizApp.titleFemale>
+    <PotR_EveryponyWizApp.titleShort>Подмастерье</PotR_EveryponyWizApp.titleShort>
+	<!-- <PotR_EveryponyWizApp.titleShortFemale>Подмастерье</PotR_EveryponyWizApp.titleShortFemale> -->
+    <PotR_EveryponyWizApp.baseDesc>[PAWN_nameDef] рано {PAWN_gender ? потерял : потеряла} своих родителей. [PAWN_pronoun] долгое время {PAWN_gender ? был : была} беспризорной сиротой.
+Затем [PAWN_nameDef] нашел и приютил старый странствующий волшебник-отшельник. Волшебник всё детство воспитывал [PAWN_possessive] и обучал высшей магии.
+
+[PAWN_nameDef] невольно {PAWN_gender ? перенял : переняла} некоторые причуды своего старого учителя</PotR_EveryponyWizApp.baseDesc>
+
+
+
+    <PotR_EveryponyStruckBaB.title>Пораженный василиском</PotR_EveryponyStruckBaB.title>
+	<PotR_EveryponyStruckBaB.titleFemale>Пораженный Василиском</PotR_EveryponyStruckBaB.titleFemale>
+    <PotR_EveryponyStruckBaB.titleShort>Пораженный</PotR_EveryponyStruckBaB.titleShort>
+	<PotR_EveryponyStruckBaB.titleShortFemale>Пораженная</PotR_EveryponyStruckBaB.titleShortFemale>
+    <PotR_EveryponyStruckBaB.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? попал : попала} под окаменяющий взгляд василиска, однако [PAWN_possessive] смогли спасти.
+[PAWN_pronoun] {PAWN_gender ? проходил : проходила} многолетнюю реабилитацию, но некоторые проблемы со здоровьем и патологический страх перед дикими животными до сих пор дают о себе знать.</PotR_EveryponyStruckBaB.baseDesc>
+
+
+
+    <PotR_EveryponyLightSec.title>Дитя Света</PotR_EveryponyLightSec.title>
+    <PotR_EveryponyLightSec.titleShort>Дитя Света</PotR_EveryponyLightSec.titleShort>
+    <PotR_EveryponyLightSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Света.
+Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира.</PotR_EveryponyLightSec.baseDesc>
+
+</LanguageData>
+
+<!--	
+
+
+
+
+  
+
+    <title>Child of Darkness</title>
+    <titleShort>Child of Darkness</titleShort>
+    <baseDesc>[Pawn_nameDef] was born into a family that worshipped The Goddess of Darkness. [Pawn_pronoun] preferred to lead a nocturnal lifestyle.</baseDesc>
+
+  
+
+    <title>Born of Magic</title>
+    <titleShort>Born of Magic</titleShort>
+    <baseDesc>[Pawn_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [Pawn_pronoun] spent his childhood away from society, as [Pawn_possessive] parents were afraid that outsiders would hurt little [Pawn_nameDef] when they found out about [Pawn_possessive] true origins.</baseDesc>
+
+  
+
+    <title>Friendship School student</title>
+    <titleShort>Adherent</titleShort>
+    <baseDesc>[Pawn_nameDef] was a student at one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time.</baseDesc>
+
+  
+
+    <title>Magic School student</title>
+    <titleShort>Adept</titleShort>
+    <baseDesc>Since early childhood, [Pawn_nameDef] has shown an extraordinary interest in a variety of sciences. [Pawn_possessive] parents decided to send [Pawn_objective] to study at a Magic school, where [Pawn_pronoun] learned a lot of new things.</baseDesc>
+
+
+    <title>Under the care of alicorn</title>
+    <titleShort>Ward</titleShort>
+    <baseDesc>[Pawn_nameDef] was born under terrible circumstances when famine began in [Pawn_possessive] native country. [Pawn_pronoun] was just a baby when [Pawn_possessive] parents died. However, [Pawn_nameDef] was lucky, [Pawn_pronoun] was taken into the care of alicorns and raised as a wonderful child. [Pawn_pronoun] studied kindness and exact sciences from an early age.</baseDesc>
+-->
