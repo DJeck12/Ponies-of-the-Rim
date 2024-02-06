@@ -297,7 +297,9 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyStFS</defName>
     <title>Friendship School student</title>
+    <titleFemale>Friendship School student</titleFemale>
     <titleShort>Adherent</titleShort>
+    <titleShortFemale>Adherent</titleShortFemale>
     <baseDesc>[PAWN_nameDef] was a student at one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time.</baseDesc>
     <slot>Childhood</slot>
 
@@ -312,6 +314,7 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyStMS</defName>
     <title>Magic School student</title>
+    <titleFemale>Magic School student</titleFemale>
     <titleShort>Adept</titleShort>
     <baseDesc>Since early childhood, [PAWN_nameDef] has shown an extraordinary interest in a variety of sciences. [PAWN_possessive] parents decided to send [PAWN_objective] to study at a Magic school, where [PAWN_pronoun] learned a lot of new things.</baseDesc>
     <slot>Childhood</slot>
