@@ -263,7 +263,7 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
  
 
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyChildDarkSec</defName>
+    <defName>PotR_EveryponyDarkSec</defName>
     <title>Child of Darkness</title>
     <titleShort>Child of Darkness</titleShort>
     <baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Dark.
