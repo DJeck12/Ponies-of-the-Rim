@@ -57,6 +57,13 @@
     <PotR_EveryponyLightSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Света.
 Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира.</PotR_EveryponyLightSec.baseDesc>
 
+    <PotR_EveryponyDarkSec.title>Child of Darkness</PotR_EveryponyDarkSec.title>
+    <PotR_EveryponyDarkSec.titleShort>Child of Darkness</PotR_EveryponyDarkSec.titleShort>
+    <PotR_EveryponyDarkSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Тьмы.
+Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира. Как и [PAWN_possessive] родственники, [PAWN_nameDef] предпочитает вести ночной образ жизни.</PotR_EveryponyDarkSec.baseDesc>
+
+
+
 </LanguageData>
 
 <!--	
@@ -66,9 +73,9 @@
 
   
 
-    <title>Child of Darkness</title>
+    <<title>Child of Darkness</title>
     <titleShort>Child of Darkness</titleShort>
-    <baseDesc>[Pawn_nameDef] was born into a family that worshipped The Goddess of Darkness. [Pawn_pronoun] preferred to lead a nocturnal lifestyle.</baseDesc>
+    <baseDesc>[Pawn_nameDef] was born into a family that worshipped The Goddess of Darkness. [Pawn_pronoun] preferred to lead a nocturnal lifestyle.</baseDesc> to lead a nocturnal lifestyle.</baseDesc>
 
   
 
