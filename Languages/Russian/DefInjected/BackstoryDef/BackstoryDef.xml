@@ -72,16 +72,6 @@
 
 
 
-</LanguageData>
-
-<!--	
-
-  
-
-
-
-  
-
     <PotR_EveryponyStFS.title>Ученик Школы Дружбы</PotR_EveryponyStFS.title>
     <PotR_EveryponyStFS.titleFemale>Ученица Школы Дружбы</PotR_EveryponyStFS.titleFemale>
     <PotR_EveryponyStFS.titleShort>Приверженец</PotR_EveryponyStFS.titleShort>
@@ -98,7 +88,9 @@
 
 
 
-    <title>Under the care of alicorn</title>
-    <titleShort>Ward</titleShort>
-    <baseDesc>[Pawn_nameDef] was born under terrible circumstances when famine began in [Pawn_possessive] native country. [Pawn_pronoun] was just a baby when [Pawn_possessive] parents died. However, [Pawn_nameDef] was lucky, [Pawn_pronoun] was taken into the care of alicorns and raised as a wonderful child. [Pawn_pronoun] studied kindness and exact sciences from an early age.</baseDesc>
--->
+    <PotR_EveryponyUnderAli.title>Под опекой аликорнов</PotR_EveryponyUnderAli.title>
+    <PotR_EveryponyUnderAli.titleShort>Подопечный</PotR_EveryponyUnderAli.titleShort>
+<PotR_EveryponyUnderAli.titleShortFemale>Подопечная</PotR_EveryponyUnderAli.titleShortFemale>
+    <PotR_EveryponyUnderAli.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} при ужасных обстоятельствах, когда в [PAWN_possessive] родной стране начался голод. [PAWN_pronoun] {PAWN_gender ? был : была} всего лишь младенцем, когда умерли родители. Однако [PAWN_nameDef] повезло, [PAWN_possessive] спасли и взяли под опеку аликорны. [PAWN_pronoun] {PAWN_gender ? вырос : выросла} замечательным ребенком и с раннего возраста {PAWN_gender ? изучал : изучала} уроки доброты, дружбы и точные науки.</PotR_EveryponyUnderAli.baseDesc>
+
+</LanguageData>
