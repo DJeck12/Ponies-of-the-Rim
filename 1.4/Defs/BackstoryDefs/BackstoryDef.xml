@@ -331,6 +331,7 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
     <defName>PotR_EveryponyUnderAli</defName>
     <title>Under the care of alicorn</title>
     <titleShort>Ward</titleShort>
+    <titleShort>Ward</titleShort>
     <baseDesc>[PAWN_nameDef] was born under terrible circumstances when famine began in [PAWN_possessive] native country. [PAWN_pronoun] was just a baby when [PAWN_possessive] parents died. However, [PAWN_nameDef] was lucky, [PAWN_pronoun] was taken into the care of alicorns and raised as a wonderful child. [PAWN_pronoun] studied kindness and exact sciences from an early age.</baseDesc>
     <slot>Childhood</slot>
 
