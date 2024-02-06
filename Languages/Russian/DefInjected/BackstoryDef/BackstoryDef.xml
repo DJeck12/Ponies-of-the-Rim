@@ -2,25 +2,25 @@
 
 <LanguageData>
 
-	<PotR_EveryponyOtherRaceChild.title>Дитя другой расы</PotR_EveryponyOtherRaceChild.title>
-	<PotR_EveryponyOtherRaceChild.titleShort>Другой</PotR_EveryponyOtherRaceChild.titleShort>
-	<PotR_EveryponyOtherRaceChild.titleShortFemale>Другая</PotR_EveryponyOtherRaceChild.titleShortFemale>
-	<PotR_EveryponyOtherRaceChild.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} иной расы, нежели которой обладали [PAWN_possessive] родители.
+	<PotR_EveryponyOtherRace.title>Дитя другой расы</PotR_EveryponyOtherRace.title>
+	<PotR_EveryponyOtherRace.titleShort>Другой</PotR_EveryponyOtherRace.titleShort>
+	<PotR_EveryponyOtherRace.titleShortFemale>Другая</PotR_EveryponyOtherRace.titleShortFemale>
+	<PotR_EveryponyOtherRace.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} иной расы, нежели которой обладали [PAWN_possessive] родители.
 Поначалу это стало поводом для возникновения недоверия между членами семьи, подозрений в супружеской измене и даже причиной нескольких нешуточных скандалов.
 К счастью, конфликт благополучно разрешился. Выяснилось, что [PAWN_nameDef] {PAWN_gender ? унаследовал : унаследовала} кровь древних предков.
 
-Памятуя о своих былых ошибках, родители воспитали [PAWN_possessive] {PAWN_gender ? добрым : доброй} и {PAWN_gender ? свободным : свободной} от предубеждений {PAWN_gender ? жеребцом : кобылой}.</PotR_EveryponyOtherRaceChild.baseDesc>
+Памятуя о своих былых ошибках, родители воспитали [PAWN_possessive] {PAWN_gender ? добрым : доброй} и {PAWN_gender ? свободным : свободной} от предубеждений {PAWN_gender ? жеребцом : кобылой}.</PotR_EveryponyOtherRace.baseDesc>
 
 
 	
-	<PotR_EveryponyOppressedChild.title>Угнетённое дитя</PotR_EveryponyOppressedChild.title>
-	<PotR_EveryponyOppressedChild.titleShort>Угнетённый</PotR_EveryponyOppressedChild.titleShort>
-	<PotR_EveryponyOppressedChild.titleShortFemale>Угнетённая</PotR_EveryponyOppressedChild.titleShortFemale>
-    <PotR_EveryponyOppressedChild.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? стал : стала} жертвой расизма.
+	<PotR_EveryponyOppressed.title>Угнетённое дитя</PotR_EveryponyOppressed.title>
+	<PotR_EveryponyOppressed.titleShort>Угнетённый</PotR_EveryponyOppressed.titleShort>
+	<PotR_EveryponyOppressed.titleShortFemale>Угнетённая</PotR_EveryponyOppressed.titleShortFemale>
+    <PotR_EveryponyOppressed.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? стал : стала} жертвой расизма.
 Другие жеребята постоянно издевались над {PAWN_gender ? ним : ней}, из-за чего {PAWN_gender ? тому : той} частенько приходилось участвовать во множестве драк и ссор.
 
 В результате длительной травли, [PAWN_nameDef] {PAWN_gender ? стал : стала} {PAWN_gender ? подозрительным : подозрительной}, {PAWN_gender ? замкнутым : замкнутой} и {PAWN_gender ? потерял : потеряла} всякую веру в дружбу.
-[PAWN_pronoun] {PAWN_gender ? решил : решила} надеяться только лишь на себя и {PAWN_gender ? возненавидел : возненавидела} всехпони.</PotR_EveryponyOppressedChild.baseDesc>
+[PAWN_pronoun] {PAWN_gender ? решил : решила} надеяться только лишь на себя и {PAWN_gender ? возненавидел : возненавидела} всехпони.</PotR_EveryponyOppressed.baseDesc>
 
 
 
@@ -44,7 +44,7 @@
 
 
     <PotR_EveryponyStruckBaB.title>Пораженный василиском</PotR_EveryponyStruckBaB.title>
-	<PotR_EveryponyStruckBaB.titleFemale>Пораженный Василиском</PotR_EveryponyStruckBaB.titleFemale>
+	<PotR_EveryponyStruckBaB.titleFemale>Пораженная Василиском</PotR_EveryponyStruckBaB.titleFemale>
     <PotR_EveryponyStruckBaB.titleShort>Пораженный</PotR_EveryponyStruckBaB.titleShort>
 	<PotR_EveryponyStruckBaB.titleShortFemale>Пораженная</PotR_EveryponyStruckBaB.titleShortFemale>
     <PotR_EveryponyStruckBaB.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? попал : попала} под окаменяющий взгляд василиска, однако [PAWN_possessive] смогли спасти.
@@ -82,15 +82,20 @@
 
   
 
-    <title>Friendship School student</title>
-    <titleShort>Adherent</titleShort>
-    <baseDesc>[Pawn_nameDef] was a student at one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time.</baseDesc>
+    <PotR_EveryponyStFS.title>Ученик Школы Дружбы</PotR_EveryponyStFS.title>
+    <PotR_EveryponyStFS.titleFemale>Ученица Школы Дружбы</PotR_EveryponyStFS.titleFemale>
+    <PotR_EveryponyStFS.titleShort>Приверженец</PotR_EveryponyStFS.titleShort>
+<PotR_EveryponyStFS.titleShortFemale>Приверженка</PotR_EveryponyStFS.titleShortFemale>
+    <PotR_EveryponyStFS.baseDesc>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? учеником : ученицей} одной из самых популярных и древних школ Старой Эквестрии, что было черезвычайно престижно в то время.</PotR_EveryponyStFS.baseDesc>
 
-  
 
-    <title>Magic School student</title>
-    <titleShort>Adept</titleShort>
-    <baseDesc>Since early childhood, [Pawn_nameDef] has shown an extraordinary interest in a variety of sciences. [Pawn_possessive] parents decided to send [Pawn_objective] to study at a Magic school, where [Pawn_pronoun] learned a lot of new things.</baseDesc>
+
+    <PotR_EveryponyStMS.title>Ученик Школы Магии</PotR_EveryponyStMS.title>
+    <PotR_EveryponyStMS.titleFemale>Ученица Школы Магии</PotR_EveryponyStMS.titleFemale>
+
+    <PotR_EveryponyStFS.titleShort>Адепт</PotR_EveryponyStMS.titleShort>
+    <PotR_EveryponyStMS.baseDesc>С раннего детства [PAWN_nameDef] {PAWN_gender ? проявлял : проявляла} необычайный интерес к различным наукам. Родители решили отправить [PAWN_possessive] учиться в школу магии, где [PAWN_pronoun] {PAWN_gender ? узнал : узнала} много нового.</PotR_EveryponyStMS.baseDesc>
+
 
 
     <title>Under the care of alicorn</title>
