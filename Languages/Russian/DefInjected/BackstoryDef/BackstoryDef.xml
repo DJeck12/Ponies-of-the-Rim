@@ -57,10 +57,14 @@
     <PotR_EveryponyLightSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Света.
 Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира.</PotR_EveryponyLightSec.baseDesc>
 
+
+
     <PotR_EveryponyDarkSec.title>Дитя Тьмы</PotR_EveryponyDarkSec.title>
     <PotR_EveryponyDarkSec.titleShort>Child of Darkness</PotR_EveryponyDarkSec.titleShort>
     <PotR_EveryponyDarkSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Тьмы.
 Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира. Как и [PAWN_possessive] родственники, [PAWN_nameDef] предпочитает вести ночной образ жизни.</PotR_EveryponyDarkSec.baseDesc>
+
+
 
     <PotR_EveryponyBornMagic.title>Магическое рождение</PotR_EveryponyBornMagic.title>
     <PotR_EveryponyBornMagic.titleShort>Born of Magic</PotR_EveryponyBornMagic.titleShort>
