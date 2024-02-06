@@ -57,10 +57,14 @@
     <PotR_EveryponyLightSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Света.
 Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира.</PotR_EveryponyLightSec.baseDesc>
 
-    <PotR_EveryponyDarkSec.title>Child of Darkness</PotR_EveryponyDarkSec.title>
+    <PotR_EveryponyDarkSec.title>Дитя Тьмы</PotR_EveryponyDarkSec.title>
     <PotR_EveryponyDarkSec.titleShort>Child of Darkness</PotR_EveryponyDarkSec.titleShort>
     <PotR_EveryponyDarkSec.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Тьмы.
 Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира. Как и [PAWN_possessive] родственники, [PAWN_nameDef] предпочитает вести ночной образ жизни.</PotR_EveryponyDarkSec.baseDesc>
+
+    <PotR_EveryponyBornMagic.title>Магическое рождение</PotR_EveryponyBornMagic.title>
+    <PotR_EveryponyBornMagic.titleShort>Born of Magic</PotR_EveryponyBornMagic.titleShort>
+    <PotR_EveryponyBornMagic.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в результате очень сложного и дорогостоящего ритуала с использованием чистой магической эссенции, взятой по половине у каждого родителя. [PAWN_pronoun] {PAWN_gender ? провел : провела} свое детство вдали от общества, так как родители [PAWN_possessive] боялись, что посторонние причинят боль {PAWN_gender ? маленькому : маленькой} [PAWN_nameDef], когда узнают об [PAWN_possessive] истинном происхождении.</PotR_EveryponyBornMagic.baseDesc>
 
 
 
@@ -70,9 +74,7 @@
 
   
 
-    <title>Born of Magic</title>
-    <titleShort>Born of Magic</titleShort>
-    <baseDesc>[Pawn_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [Pawn_pronoun] spent his childhood away from society, as [Pawn_possessive] parents were afraid that outsiders would hurt little [Pawn_nameDef] when they found out about [Pawn_possessive] true origins.</baseDesc>
+
 
   
 
