@@ -271,6 +271,19 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
     <slot>Childhood</slot>
 
 	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyBornMagic</defName>
+    <title>Born of Magic</title>
+    <titleShort>Born of Magic</titleShort>
+    <baseDesc>[PAWN_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [PAWN_pronoun] spent his childhood away from society, as [PAWN_possessive] parents were afraid that outsiders would hurt little [PAWN_nameDef] when they found out about [PAWN_possessive] true origins.</baseDesc>
+    <slot>Childhood</slot>
+
+	<spawnCategories>
 		<li>PotR_EveryponyChild</li>
 	</spawnCategories>
 
@@ -279,18 +292,7 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
 
 </Defs>
  
-   <!-- 
-  
-  <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyChildBornMagic</defName>
-    <title>Born of Magic</title>
-    <titleShort>Born of Magic</titleShort>
-    <baseDesc>[Pawn_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [Pawn_pronoun] spent his childhood away from society, as [Pawn_possessive] parents were afraid that outsiders would hurt little [Pawn_nameDef] when they found out about [Pawn_possessive] true origins.</baseDesc>
-    <slot>Childhood</slot>
-	<spawnCategories>
-		<li>PotR_EveryponyChild</li>
-	</spawnCategories>
-  </AlienRace.AlienBackstoryDef>
+   <!--
   
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyChildStFS</defName>
