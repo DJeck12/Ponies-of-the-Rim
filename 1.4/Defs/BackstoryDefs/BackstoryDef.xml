@@ -17,7 +17,8 @@ Mindful of their past mistakes, [PAWN_possessive] parents raised [PAWN_objective
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-	<!--<skillGains>
+	<!--
+<skillGains>
       <li>
         <key>Social</key>      
         <value>2</value>
@@ -50,7 +51,8 @@ As a result of prolonged harassment, [PAWN_nameDef] became suspicious, withdrawn
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-	<!-- <skillGains>
+	<!-- 
+<skillGains>
       <li>
         <key>Melee</key>      
         <value>3</value>
@@ -75,7 +77,8 @@ As a result of prolonged harassment, [PAWN_nameDef] became suspicious, withdrawn
 		<degree>1</degree>
 		<chance>50</chance>
 	  </li>		
-	</forcedTraitsChance>	-->
+	</forcedTraitsChance>	
+-->
 
   </AlienRace.AlienBackstoryDef>
   
@@ -95,7 +98,8 @@ They shared various interesting facts about magic with [PAWN_objective], expandi
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-<!--	<skillGains>
+<!--	
+<skillGains>
       <li>
         <key>Intellectual</key>      
         <value>2</value>		
@@ -104,7 +108,8 @@ They shared various interesting facts about magic with [PAWN_objective], expandi
         <key>Social</key>      
         <value>1</value>		
       </li>	  
-    </skillGains> -->
+    </skillGains>
+ -->
 
   </AlienRace.AlienBackstoryDef>
   
@@ -126,7 +131,8 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-	<!-- <skillGains>
+	<!-- 
+<skillGains>
       <li>
         <key>Intellectual</key>      
         <value>3</value>
@@ -163,7 +169,8 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 		<degree>1</degree>
 		<chance>25</chance>
 	  </li>
-	</forcedTraitsChance> -->
+	</forcedTraitsChance> 
+-->
 
   </AlienRace.AlienBackstoryDef> 
  
@@ -183,7 +190,8 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-	<!-- <skillGains>
+	<!-- 
+<skillGains>
       <li>
         <key>Intellectual</key>      
         <value>4</value>
@@ -209,7 +217,8 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 	  </li>
 	</forcedTraitsChance>	
 	
-	<workDisables>Mining, Animals</workDisables>	-->
+	<workDisables>Mining, Animals</workDisables>
+	-->
 
   </AlienRace.AlienBackstoryDef>
  
@@ -227,7 +236,8 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 
-	<!-- <skillGains>
+	<!-- 
+<skillGains>
       <li>
         <key>Plants</key>      
         <value>3</value>
@@ -246,7 +256,8 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
       </li>	  
     </skillGains>
 	
-	<workDisables>Mining</workDisables> -->
+	<workDisables>Mining</workDisables>
+ -->
 	
   </AlienRace.AlienBackstoryDef>
  
@@ -269,12 +280,6 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
 </Defs>
  
    <!-- 
-
-  
-
-  
-
-  
   
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyChildBornMagic</defName>
