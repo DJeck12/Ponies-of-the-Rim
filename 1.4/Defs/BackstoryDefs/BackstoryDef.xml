@@ -2,7 +2,7 @@
 <Defs>
   <!-- ===== Everypony Child Stories ===== -->
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyOtherRaceChild</defName>
+    <defName>PotR_EveryponyOtherRace</defName>
     <title>Child of another race</title>
     <titleShort>Other</titleShort>
 	<titleShortFemale>Other</titleShortFemale>
@@ -36,7 +36,7 @@ Mindful of their past mistakes, [PAWN_possessive] parents raised [PAWN_objective
   
   
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyOppressedChild</defName>
+    <defName>PotR_EveryponyOppressed</defName>
     <title>Oppressed child</title>
     <titleShort>Oppressed</titleShort>
 	<titleShortFemale>Oppressed</titleShortFemale>
@@ -262,6 +262,7 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
   </AlienRace.AlienBackstoryDef>
  
 
+
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyDarkSec</defName>
     <title>Child of Darkness</title>
@@ -275,6 +276,8 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
 	</spawnCategories>
 
   </AlienRace.AlienBackstoryDef>
+
+
 
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyBornMagic</defName>
@@ -290,39 +293,48 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
   </AlienRace.AlienBackstoryDef>
 
 
-</Defs>
- 
-   <!--
   
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyChildStFS</defName>
+    <defName>PotR_EveryponyStFS</defName>
     <title>Friendship School student</title>
     <titleShort>Adherent</titleShort>
-    <baseDesc>[Pawn_nameDef] was a student at one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was a student at one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time.</baseDesc>
     <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_EveryponyChild</li>
 	</spawnCategories>
+
   </AlienRace.AlienBackstoryDef>
-  
+
+
+
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyChildStMS</defName>
+    <defName>PotR_EveryponyStMS</defName>
     <title>Magic School student</title>
     <titleShort>Adept</titleShort>
-    <baseDesc>Since early childhood, [Pawn_nameDef] has shown an extraordinary interest in a variety of sciences. [Pawn_possessive] parents decided to send [Pawn_objective] to study at a Magic school, where [Pawn_pronoun] learned a lot of new things.</baseDesc>
+    <baseDesc>Since early childhood, [PAWN_nameDef] has shown an extraordinary interest in a variety of sciences. [PAWN_possessive] parents decided to send [PAWN_objective] to study at a Magic school, where [PAWN_pronoun] learned a lot of new things.</baseDesc>
     <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_EveryponyChild</li>
 	</spawnCategories>
+
   </AlienRace.AlienBackstoryDef>
   
+
+
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyChildUnderAlicorns</defName>
+    <defName>PotR_EveryponyUnderAli</defName>
     <title>Under the care of alicorn</title>
     <titleShort>Ward</titleShort>
-    <baseDesc>[Pawn_nameDef] was born under terrible circumstances when famine began in [Pawn_possessive] native country. [Pawn_pronoun] was just a baby when [Pawn_possessive] parents died. However, [Pawn_nameDef] was lucky, [Pawn_pronoun] was taken into the care of alicorns and raised as a wonderful child. [Pawn_pronoun] studied kindness and exact sciences from an early age.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was born under terrible circumstances when famine began in [PAWN_possessive] native country. [PAWN_pronoun] was just a baby when [PAWN_possessive] parents died. However, [PAWN_nameDef] was lucky, [PAWN_pronoun] was taken into the care of alicorns and raised as a wonderful child. [PAWN_pronoun] studied kindness and exact sciences from an early age.</baseDesc>
     <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_EveryponyChild</li>
 	</spawnCategories>
-  </AlienRace.AlienBackstoryDef> -->
+
+  </AlienRace.AlienBackstoryDef>
+
+</Defs>
