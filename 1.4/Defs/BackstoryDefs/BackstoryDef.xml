@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- ===== Everypony Child Stories ===== -->
+  <!-- ===== Everypony Child Stories ===== 
+-->
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyOtherRace</defName>
     <title>Child of another race</title>
