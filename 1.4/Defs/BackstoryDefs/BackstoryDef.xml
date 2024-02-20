@@ -115,7 +115,7 @@ They shared various interesting facts about magic with [PAWN_objective], expandi
     <baseDesc>[PAWN_nameDef] lost [PAWN_possessive] parents early. [PAWN_pronoun] was a homeless orphan for a long time.
 Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. The wizard raised [PAWN_objective] all [PAWN_possessive] childhood and taught magic.
 
-[PAWN_nameDef] unwittingly adopted some of the quirks of [PAWN_possessive] old teacher</baseDesc>
+[PAWN_pronoun] unwittingly adopted some of the quirks of [PAWN_possessive] old teacher</baseDesc>
     <slot>Childhood</slot>
 	<spawnCategories>
 		<li>PotR_Everypony</li>
@@ -264,7 +264,7 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
     <defName>PotR_EveryponyBornMagic</defName>
     <title>Born of Magic</title>
     <titleShort>Born of Magic</titleShort>
-    <baseDesc>[PAWN_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [PAWN_pronoun] spent his childhood away from society, as [PAWN_possessive] parents were afraid that outsiders would hurt little [PAWN_nameDef] when they found out about [PAWN_possessive] true origins.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was born as a result of a very complex and expensive ritual of pure magical essence, taken half from each parent. [PAWN_pronoun] spent his childhood away from society, as [PAWN_possessive] parents were afraid that outsiders would hurt [PAWN_objective] when they found out about [PAWN_possessive] true origins.</baseDesc>
     <slot>Childhood</slot>
 	<spawnCategories>
 		<li>PotR_Everypony</li>
