@@ -39,7 +39,7 @@
     <PotR_EveryponyWizApp.baseDesc>[PAWN_nameDef] рано {PAWN_gender ? потерял : потеряла} своих родителей. [PAWN_pronoun] долгое время {PAWN_gender ? был : была} беспризорной сиротой.
 Затем [PAWN_nameDef] нашел и приютил старый странствующий волшебник-отшельник. Волшебник всё детство воспитывал [PAWN_possessive] и обучал высшей магии.
 
-[PAWN_nameDef] невольно {PAWN_gender ? перенял : переняла} некоторые причуды своего старого учителя</PotR_EveryponyWizApp.baseDesc>
+[PAWN_pronoun] невольно {PAWN_gender ? перенял : переняла} некоторые причуды своего старого учителя</PotR_EveryponyWizApp.baseDesc>
 
 
 
@@ -68,7 +68,7 @@
 
     <PotR_EveryponyBornMagic.title>Магическое рождение</PotR_EveryponyBornMagic.title>
     <PotR_EveryponyBornMagic.titleShort>Born of Magic</PotR_EveryponyBornMagic.titleShort>
-    <PotR_EveryponyBornMagic.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в результате очень сложного и дорогостоящего ритуала с использованием чистой магической эссенции, взятой по половине у каждого родителя. [PAWN_pronoun] {PAWN_gender ? провел : провела} свое детство вдали от общества, так как родители [PAWN_possessive] боялись, что посторонние причинят боль {PAWN_gender ? маленькому : маленькой} [PAWN_nameDef], когда узнают об [PAWN_possessive] истинном происхождении.</PotR_EveryponyBornMagic.baseDesc>
+    <PotR_EveryponyBornMagic.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в результате очень сложного и дорогостоящего ритуала с использованием чистой магической эссенции, взятой по половине у каждого родителя. [PAWN_pronoun] {PAWN_gender ? провел : провела} свое детство вдали от общества, так как родители боялись, что посторонние причинят {PAWN_gender ? ему : ей} боль, когда узнают об [PAWN_possessive] истинном происхождении.</PotR_EveryponyBornMagic.baseDesc>
 
 
 
