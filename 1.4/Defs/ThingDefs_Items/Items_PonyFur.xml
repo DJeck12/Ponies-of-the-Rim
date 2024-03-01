@@ -4,6 +4,7 @@
 		<defName>PonyFur</defName>
 		<label>pony fur</label>
 		<description>Soft fluffy skin taken from one of the pony races. Many consider the use of this material to be unethical due to the mere thought of butchering such a creature. Its pink color is somewhat reminiscent of cupcakes.</description>
+		<possessionCount>20</possessionCount>
 		<graphicData>
 			<color>(245,200,245)</color>
 		</graphicData>
@@ -19,7 +20,7 @@
 			<commonality>0.0025</commonality>
 			<statFactors>
 				<MaxHitPoints>0.8</MaxHitPoints>
-				<Beauty>2.0</Beauty>
+				<Beauty>2</Beauty>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>

@@ -41,18 +41,18 @@
 								<options>
 									<li>
 										<weight>10</weight>
-										<min>RGBA(50, 50, 150, 1)</min>
-										<max>RGBA(255, 255, 255, 1)</max>
+										<min>RGBA(50, 50, 150, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 									<li>
 										<weight>5</weight>
-										<min>RGBA(180, 180, 180, 1)</min>
-										<max>RGBA(255, 255, 255, 1)</max>
+										<min>RGBA(180, 180, 180, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 									<li>
 										<weight>5</weight>
-										<min>RGBA(35, 35, 35, 1)</min>
-										<max>RGBA(255, 255, 255, 1)</max>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
 							</first>
@@ -62,16 +62,16 @@
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(35, 35, 35, 1)</min>
-										<max>RGBA(255, 255, 255, 1)</max>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
 							</first>
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(35, 35, 35, 1)</min>
-										<max>RGBA(255, 255, 255, 1)</max>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
 							</second>
