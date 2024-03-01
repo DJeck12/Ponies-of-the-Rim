@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+<!--   <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef> -->
+
   <!-- ===== Everypony Child Stories ===== -->
+  
+<!--   I still don't like the description of it. I'll leave it at that for now.
+  It is also necessary to understand the mechanics of assigning parents for the first backstory (if possible).
+  Skills need to be improved. I also didn't do any syncing of children's and adult backstories. -->
+  
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyOtherRace</defName>
     <title>Child of another race</title>
@@ -11,12 +30,14 @@ At first, this became a reason for distrust between family members, suspicions o
 Fortunately, the conflict was successfully resolved. It turned out that [PAWN_nameDef] inherited the blood of ancient ancestors.
 
 Mindful of their past mistakes, [PAWN_possessive] parents raised [PAWN_objective] to be a kind and prejudice-free {PAWN_gender ? stallion : mare}.</baseDesc>
-	<slot>Childhood</slot>
+	<slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_Everypony</li>
-	</spawnCategories>
-	<!--
-<skillGains>
+	</spawnCategories>
+
+	
+<!-- 	<skillGains>
       <li>
         <key>Social</key>      
         <value>2</value>
@@ -25,9 +46,9 @@ Mindful of their past mistakes, [PAWN_possessive] parents raised [PAWN_objective
 	
 	<forcedTraits>
       <Kind>0</Kind>
-    </forcedTraits> 
-//Кмк, трейты надо продумать лучше. Пока оставлю. Вряд ли, конечно, но еще на будущее было бы здорово разобраться в механике присвоения расы родителям/ребенку. 
--->
+    </forcedTraits>  -->
+
+
   </AlienRace.AlienBackstoryDef>
   
   
@@ -42,12 +63,14 @@ Other foals constantly bullied [PAWN_objective], which is why [PAWN_pronoun] oft
 
 As a result of prolonged harassment, [PAWN_nameDef] became suspicious, withdrawn and lost all faith in friendship.
 [PAWN_pronoun] decided to rely only on [PAWN_objective]self and hated everypony.</baseDesc>
-    <slot>Childhood</slot>
+    <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_Everypony</li>
-	</spawnCategories>
-	<!-- 
-<skillGains>
+	</spawnCategories>
+
+	
+<!-- 	<skillGains>
       <li>
         <key>Melee</key>      
         <value>3</value>
@@ -72,8 +95,8 @@ As a result of prolonged harassment, [PAWN_nameDef] became suspicious, withdrawn
 		<degree>1</degree>
 		<chance>50</chance>
 	  </li>		
-	</forcedTraitsChance>	
--->
+	</forcedTraitsChance> -->
+	
   </AlienRace.AlienBackstoryDef>
   
   
@@ -86,12 +109,14 @@ As a result of prolonged harassment, [PAWN_nameDef] became suspicious, withdrawn
 	<titleShortFemale>Friend of unicorns</titleShortFemale>
     <baseDesc>There were only unicorns in [PAWN_nameDef]'s circle of friends. 
 They shared various interesting facts about magic with [PAWN_objective], expanding [PAWN_possessive] knowledge in this field.</baseDesc>
-    <slot>Childhood</slot>
+    <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_Everypony</li>
-	</spawnCategories>
-<!--	
-<skillGains>
+	</spawnCategories>
+
+	
+<!-- 	<skillGains>
       <li>
         <key>Intellectual</key>      
         <value>2</value>		
@@ -100,8 +125,8 @@ They shared various interesting facts about magic with [PAWN_objective], expandi
         <key>Social</key>      
         <value>1</value>		
       </li>	  
-    </skillGains>
- -->
+    </skillGains> -->
+	
   </AlienRace.AlienBackstoryDef>
   
   
@@ -116,12 +141,14 @@ They shared various interesting facts about magic with [PAWN_objective], expandi
 Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. The wizard raised [PAWN_objective] all [PAWN_possessive] childhood and taught magic.
 
 [PAWN_pronoun] unwittingly adopted some of the quirks of [PAWN_possessive] old teacher</baseDesc>
-    <slot>Childhood</slot>
+    <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_Everypony</li>
-	</spawnCategories>
-	<!-- 
-<skillGains>
+	</spawnCategories>
+
+	
+<!-- 	<skillGains>
       <li>
         <key>Intellectual</key>      
         <value>3</value>
@@ -158,8 +185,8 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 		<degree>1</degree>
 		<chance>25</chance>
 	  </li>
-	</forcedTraitsChance> 
--->
+	</forcedTraitsChance> -->
+	
   </AlienRace.AlienBackstoryDef> 
  
  
@@ -172,12 +199,14 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 	<titleShortFemale>Struck</titleShortFemale>
     <baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but they were able to save [PAWN_objective].
 [PAWN_pronoun] underwent many years of rehabilitation, but some health problems and a pathological fear of animals still make themselves felt.</baseDesc>
-    <slot>Childhood</slot>
+    <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_Everypony</li>
-	</spawnCategories>
-	<!-- 
-<skillGains>
+	</spawnCategories>
+
+	
+<!-- 	<skillGains>
       <li>
         <key>Intellectual</key>      
         <value>4</value>
@@ -203,8 +232,8 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
 	  </li>
 	</forcedTraitsChance>	
 	
-	<workDisables>Mining, Animals</workDisables>
-	-->
+	<workDisables>Mining, Animals</workDisables> -->
+	
   </AlienRace.AlienBackstoryDef>
  
  
@@ -215,13 +244,14 @@ Then [PAWN_nameDef] was found and sheltered by an old wandering hermit wizard. T
     <titleShort>Child of Light</titleShort>
     <baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Light.
 Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
-    <slot>Childhood</slot>
+    <slot>Childhood</slot>
+
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 
-	<!-- 
-<skillGains>
+	
+<!-- 	<skillGains>
       <li>
         <key>Plants</key>      
         <value>3</value>
@@ -240,8 +270,8 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
       </li>	  
     </skillGains>
 	
-	<workDisables>Mining</workDisables>
- -->
+	<workDisables>Mining</workDisables> -->
+
   </AlienRace.AlienBackstoryDef>
  
 
@@ -313,5 +343,280 @@ Since [PAWN_pronoun] lived among sectarians, [PAWN_pronoun] received mainly reli
 		<li>PotR_Everypony</li>
 	</spawnCategories>
   </AlienRace.AlienBackstoryDef>
+
+<!-- ===== Everypony Adulthood Stories ===== -->
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyRiLe</defName>
+    <title>Party Organizer</title>
+<!-- 	<titleFemale></titleFemale> -->
+    <titleShort>Ringleader</titleShort>
+<!--     <titleShortFemale></titleShortFemale> -->
+    <baseDesc>[PAWN_nameDef] likes to see the smiles of others and have entertainment. [PAWN_pronoun] began to organize meetings and parties for everyone who wanted to have fun in the area.</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+  
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyRG</defName>
+    <title>Royal Guard</title>
+	<titleFemale>Royal Guard</titleFemale>
+    <titleShort>Guardsstallion</titleShort>
+    <titleShortFemale>Guardsmare</titleShortFemale>
+    <baseDesc>[PAWN_nameDef] was recruited into the Royal Guard due to [PAWN_possessive] dedication and responsiveness. [PAWN_pronoun] personally guarded one of the rulers of the kingdom, accompanying her on many peacekeeping and charity missions.</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyBEH</defName>
+    <title>Bearer of the Element of Harmony</title>
+	<titleFemale>Bearer of the Element of Harmony</titleFemale>
+    <titleShort>Bearer of the Element of Harmony</titleShort>
+    <titleShortFemale>Bearer of the Element of Harmony</titleShortFemale>
+    <baseDesc>[PAWN_nameDef] was once the bearer of the Element of Harmony. Now [PAWN_pronoun] was here with nothing.</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyRST</defName>
+    <title>Racist slave trader</title>
+<!-- 	<titleFemale></titleFemale> -->
+    <titleShort>Racist slave trader</titleShort>
+<!--     <titleShortFemale></titleShortFemale> -->
+    <baseDesc>[PAWN_nameDef] loved no one but [PAWN_possessive] own kind. [PAWN_pronoun] began to trade in the slave trade, enslaving those who were not like [PAWN_objective].</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyFotED</defName>
+    <title>Fanatic of the Eternal Day</title>
+	<titleFemale>Fanatic of the Eternal Day</titleFemale>
+    <titleShort>Fanatic</titleShort>
+    <titleShortFemale>Fanatic</titleShortFemale>
+    <baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Day. The purpose of the [PAWN_possessive] cult is to release the strongest spirit of the Goddess of the Sun, which will immerse the world in Eternal Day. [PAWN_objective] hates the members of the cult of Eternal Night.</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_EveryponyFotEN</defName>
+    <title>Fanatic of the Eternal Night</title>
+	<titleFemale>Fanatic of the Eternal Night</titleFemale>
+    <titleShort>Fanatic</titleShort>
+    <titleShortFemale>Fanatic</titleShortFemale>
+    <baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Night. The purpose of the [PAWN_possessive] cult is to release the strongest spirit of the Goddess of the Night, which will immerse the world in Eternal Day. [PAWN_objective] hates the members of the cult of Eternal Day.</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title>Ritualist Magician</title>
+<!-- 	<titleFemale></titleFemale> -->
+    <titleShort>Ritualist Magician</titleShort>
+<!--     <titleShortFemale></titleShortFemale> -->
+    <baseDesc>[PAWN_nameDef] received a higher education in the field of magical rituals. [PAWN_pronoun] was engaged in commercial activities, offering [PAWN_possessive] services to other ponies.</baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+<!--   <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>
+
+  <AlienRace.AlienBackstoryDef>
+    <defName>PotR_Everypony</defName>
+    <title></title>
+	<titleFemale></titleFemale>
+    <titleShort></titleShort>
+    <titleShortFemale></titleShortFemale>
+    <baseDesc></baseDesc>
+    <slot>Adulthood</slot>
+	<spawnCategories>
+		<li>PotR_Everypony</li>
+	</spawnCategories>
+  </AlienRace.AlienBackstoryDef>   -->
 
 </Defs>
