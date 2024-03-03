@@ -139,11 +139,11 @@
 	<PotR_EveryponyFotEN.titleShortFemale>Культистка</PotR_EveryponyFotEN.titleShortFemale>
     <PotR_EveryponyFotEN.baseDesc>[PAWN_nameDef] - {PAWN_gender ? участник : участница} культа Вечной Ночи. Цель [PAWN_possessive] культа - высвободить дух богини Ночи, который погрузит мир в Вечную Ночь. Ненавидит участников культа Вечного Дня.</PotR_EveryponyFotEN.baseDesc>
 	
-    <PotR_Everypony.title>Маг-ритуалист</PotR_Everypony.title>
+    <PotR_EveryponyRiMa.title>Маг-ритуалист</PotR_EveryponyRiMa.title>
 <!--     <PotR_Everypony.titleFemale></PotR_Everypony.titleFemale> -->
-    <PotR_Everypony.titleShort>Маг-ритуалист</PotR_Everypony.titleShort>
+    <PotR_EveryponyRiMa.titleShort>Маг-ритуалист</PotR_EveryponyRiMa.titleShort>
 <!-- 	<PotR_Everypony.titleShortFemale></PotR_Everypony.titleShortFemale> -->
-    <PotR_Everypony.baseDesc>[PAWN_nameDef] {PAWN_gender ? получил : получила} высшее образование в области проведения магических ритуалов. [PAWN_pronoun] {PAWN_gender ? занимался : занималась} коммерческой деятельностью, предлагая свои услуги другим пони.</PotR_Everypony.baseDesc>
+    <PotR_EveryponyRiMa.baseDesc>[PAWN_nameDef] {PAWN_gender ? получил : получила} высшее образование в области проведения магических ритуалов. [PAWN_pronoun] {PAWN_gender ? занимался : занималась} коммерческой деятельностью, предлагая свои услуги другим пони.</PotR_EveryponyRiMa.baseDesc>
 	
 <!--     <PotR_Everypony.title></PotR_Everypony.title>
     <PotR_Everypony.titleFemale></PotR_Everypony.titleFemale>
