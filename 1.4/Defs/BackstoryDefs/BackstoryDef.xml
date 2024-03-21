@@ -176,7 +176,7 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
  
  
   <AlienRace.AlienBackstoryDef>
-    <defName>PotR_EveryponyStruckBas</defName>
+    <defName>PotR_EveryponyStruckBaS</defName>
     <title>Struck by a basilisk</title>
 	<titleFemale>Struck by a basilisk</titleFemale>
     <titleShort>Struck</titleShort>
@@ -354,10 +354,10 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyBEH</defName>
-    <title>Bearer of the Element of Harmony</title>
-	<titleFemale>Bearer of the Element of Harmony</titleFemale>
-    <titleShort>Bearer of the Element</titleShort>
-    <titleShortFemale>Bearer of the Element</titleShortFemale>
+    <title>Bearer of Element of Harmony</title>
+	<titleFemale>Bearer of Element of Harmony</titleFemale>
+    <titleShort>Bearer of Element</titleShort>
+    <titleShortFemale>Bearer of Element</titleShortFemale>
     <baseDesc>Once upon a time, [PAWN_nameDef] was the bearer of the Element of Harmony - a famous fighter against evil and an advocate for all who needed [PAWN_possessive] help. Now [PAWN_pronoun] was here with nothing.</baseDesc>
     <slot>Adulthood</slot>
 	<spawnCategories>
@@ -382,8 +382,8 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyFanEtD</defName>
-    <title>Fanatic of the Eternal Day</title>
-	<titleFemale>Fanatic of the Eternal Day</titleFemale>
+    <title>Fanatic of Eternal Day</title>
+	<titleFemale>Fanatic of Eternal Day</titleFemale>
     <titleShort>Fanatic</titleShort>
     <titleShortFemale>Fanatic</titleShortFemale>
     <baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Day. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Light, which will immerse the world in Eternal Day.</baseDesc>
@@ -397,8 +397,8 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyFanEtN</defName>
-    <title>Fanatic of the Eternal Night</title>
-	<titleFemale>Fanatic of the Eternal Night</titleFemale>
+    <title>Fanatic of Eternal Night</title>
+	<titleFemale>Fanatic of Eternal Night</titleFemale>
     <titleShort>Fanatic</titleShort>
     <titleShortFemale>Fanatic</titleShortFemale>
     <baseDesc>[PAWN_nameDef] is a member of the cult of Eternal Night. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Darkness, which will plunge the world into Eternal Night.</baseDesc>
