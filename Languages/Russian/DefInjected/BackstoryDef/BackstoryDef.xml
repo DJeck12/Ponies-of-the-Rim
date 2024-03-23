@@ -89,7 +89,7 @@
     <PotR_EveryponyUnderAli.title>Под опекой аликорнов</PotR_EveryponyUnderAli.title>
     <PotR_EveryponyUnderAli.titleShort>Подопечный</PotR_EveryponyUnderAli.titleShort>
 	<PotR_EveryponyUnderAli.titleShortFemale>Подопечная</PotR_EveryponyUnderAli.titleShortFemale>
-    <PotR_EveryponyUnderAli.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} при трагичных обстоятельствах, когда в [PAWN_possessive] стране начался голод. [PAWN_objective] посчастливилось попасть под опеку аликорна, прибывшего с благотворительной миссией. [PAWN_nameDef] {PAWN_gender ? рос : росла} {PAWN_gender ? замечательным : замечательной} {PAWN_gender ? жеребенком : кобылкой} и с раннего возраста {PAWN_gender ? начал : начала} изучать уроки доброты, дружбы и точные науки.</PotR_EveryponyUnderAli.baseDesc>
+    <PotR_EveryponyUnderAli.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} при трагичных обстоятельствах, когда в [PAWN_possessive] стране начался голод. [PAWN_objective] посчастливилось попасть под опеку аликорна, прибывшего с благотворительной миссией. [PAWN_nameDef] {PAWN_gender ? рос : росла} {PAWN_gender ? замечательным : замечательной} {PAWN_gender ? жеребенком : кобылкой} и с раннего возраста {PAWN_gender ? начал : начала} изучать уроки дружбы и точные науки.</PotR_EveryponyUnderAli.baseDesc>
 
 <!-- ===== Everypony Adulthood Stories ===== -->
 
@@ -103,7 +103,7 @@
     <PotR_EveryponyRG.titleFemale>Королевская стражница</PotR_EveryponyRG.titleFemale>
     <PotR_EveryponyRG.titleShort>Стражник</PotR_EveryponyRG.titleShort>
 	<PotR_EveryponyRG.titleShortFemale>Стражница</PotR_EveryponyRG.titleShortFemale>
-    <PotR_EveryponyRG.baseDesc>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? принят : принята} на службу в Королевскую Гвардию благодаря своей целеустремленности и отзывчивости. [PAWN_pronoun] лично {PAWN_gender ? охранял : охраняла} одну из правительниц королевства, сопровождая её на многочисленных миротворческих и благотворительных миссиях.</PotR_EveryponyRG.baseDesc>
+    <PotR_EveryponyRG.baseDesc>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? принят : принята} на службу в Королевскую Гвардию благодаря своей целеустремленности и преданности. [PAWN_pronoun] лично {PAWN_gender ? охранял : охраняла} одну из правительниц королевства, сопровождая её на многочисленных миротворческих и благотворительных миссиях.</PotR_EveryponyRG.baseDesc>
 
 
 	
@@ -181,7 +181,7 @@
 	
     <PotR_EveryponyCosPi.title>Космагический пилот</PotR_EveryponyCosPi.title>
     <PotR_EveryponyCosPi.titleShort>Пилот</PotR_EveryponyCosPi.titleShort>
-    <PotR_EveryponyCosPi.baseDesc>Будучи {PAWN_gender ? осужденным : осужденной} за кражу, перед [PAWN_nameDef] встал выбор: либо отправиться за решетку отбывать наказание, либо вступить в специальный космагический корпус. Не имея большого выбора, [PAWN_pronoun] {PAWN_gender ? подписал : подписала} контракт на службу, впоследстивии научившись пилотировать космагические корабли и прочую тяжелую технику</PotR_EveryponyCosPi.baseDesc>
+    <PotR_EveryponyCosPi.baseDesc>Будучи {PAWN_gender ? осужденным : осужденной} за кражу, перед [PAWN_nameDef] встал выбор: либо отправиться за решетку отбывать наказание, либо вступить в специальный космагический корпус. Не имея большого выбора, [PAWN_pronoun] {PAWN_gender ? подписал : подписала} контракт на службу, впоследстивии научившись пилотировать космагические корабли и прочую тяжелую технику.</PotR_EveryponyCosPi.baseDesc>
 
 
 	
