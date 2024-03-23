@@ -12,6 +12,68 @@
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	<skillGains>
+	    <Shooting>1</Shooting>
+	    <Melee>1</Melee>
+        <Construction>1</Construction>
+        <Mining>1</Mining>
+        <Cooking>1</Cooking>
+        <Plants>1</Plants>
+        <Animals>1</Animals>
+        <Crafting>1</Crafting>
+        <Artistic>1</Artistic>
+        <Medicine>1</Medicine>
+        <Social>1</Social>
+        <Intellectual>1</Intellectual>
+    </skillGains>
+    <forcedTraits>
+    	<NightOwl>0</NightOwl>
+        <Undergrounder>0</Undergrounder>
+        <Nudist>0</Nudist>
+        <Masochist>0</Masochist>
+        <Transhumanist>0</Transhumanist>
+        <BodyPurist>0</BodyPurist>
+        <Gourmand>0</Gourmand>
+        <Ascetic>0</Ascetic>
+        <Greedy>0</Greedy>
+        <Jealous>0</Jealous>
+        <Pyromaniac>0</Pyromaniac>
+        <Bloodlust>0</Bloodlust>
+        <Cannibal>0</Cannibal>
+        <Psychopath>0</Psychopath>
+        <Nimble>0</Nimble>
+        <Brawler>0</Brawler>   
+        <Tough>0</Tough>
+        <Wimp>0</Wimp>
+        <Delicate>0</Delicate> (Only for biotech)
+        <TooSmart>0</TooSmart>
+        <FastLearner>0</FastLearner>
+        <SlowLearner>0</SlowLearner>
+        <QuickSleeper>0</QuickSleeper>
+        <GreatMemory>0</GreatMemory>
+        <TorturedArtist>0</TorturedArtist>
+        <Kind>0</Kind>
+        <Abrasive>0</Abrasive>
+        <AnnoyingVoice>0</AnnoyingVoice>
+        <CreepyBreathing>0</CreepyBreathing>
+        <DislikesMen>0</DislikesMen>
+        <DislikesWomen>0</DislikesWomen>
+        <Asexual>0</Asexual>
+        <Gay>0</Gay>
+        <Bisexual>0</Bisexual>
+        <Recluse>0</Recluse> (Only for biotech)
+        <DrugDesire>1</DrugDesire> (-1, 1, 2)
+        <Industriousness>1</Industriousness> (-2, -1, 1, 2)
+        <SpeedOffset>1</SpeedOffset> (-1, 1, 2)
+        <NaturalMood>1</NaturalMood> (-2, -1, 1, 2)
+        <Nerves>1</Nerves> (-2, -1, 1, 2)
+        <Neurotic>1</Neurotic> (1, 2)
+        <ShootingAccuracy>1</ShootingAccuracy>(-1, 1)
+        <Beauty>1</Beauty> (-2, -1, 1, 2)
+        <PsychicSensitivity>1</PsychicSensitivity> (-2, -1, 1, 2)
+        <Immunity>1</Immunity> (-1, 1)
+    </forcedTraits>   
+    <workDisables>ManualDumb, ManualSkilled, Violent, Caring, Social, Commoner, Intellectual, Animals, Artistic, Crafting, Cooking, Firefighting, Cleaning, Hauling, PlantWork, Mining, Hunting, Constructing, Shooting, AllWork</workDisables>
   </AlienRace.AlienBackstoryDef> -->
   
 <!-- 	[PAWN_nameDef]
@@ -36,17 +98,15 @@
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 
-<!-- 	<skillGains>
-      <li>
-        <key>Social</key>      
-        <value>2</value>
-      </li>
+	<skillGains>
+		<Social>3</Social>
+		<Intellectual>2</Intellectual>
     </skillGains>
 	
 	<forcedTraits>
-      <Kind>0</Kind>
-    </forcedTraits>  -->
-
+        <Kind>0</Kind>
+    </forcedTraits>
+    
   </AlienRace.AlienBackstoryDef>
   
   
@@ -62,33 +122,27 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
-
-<!-- 	<skillGains>
-      <li>
-        <key>Melee</key>      
-        <value>3</value>
-	  </li>
-	  <li>
-        <key>Medicine</key>      
-        <value>2</value>
-	  </li>
-	  <li>	  
-        <key>Social</key>      
-        <value>-4</value>		
-      </li>
+	
+	<skillGains>
+		<Melee>4</Melee>
+		<Medicine>3</Medicine>
+        <Social>-4</Social>
     </skillGains>
 	
 	<forcedTraits>
-      <Abrasive>0</Abrasive>
+		<Abrasive>0</Abrasive>
     </forcedTraits>
 	
 	<forcedTraitsChance>
-	  <li>
-	    <defName>Nerves</defName>
-		<degree>1</degree>
-		<chance>50</chance>
-	  </li>		
-	</forcedTraitsChance> -->
+		<li>
+			<options>
+				<li>
+					<defName Degree="1">Nerves</defName>
+                </li>
+            </options>			
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>
 	
   </AlienRace.AlienBackstoryDef>
   
@@ -105,17 +159,11 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
-
-<!-- 	<skillGains>
-      <li>
-        <key>Intellectual</key>      
-        <value>2</value>		
-      </li>
-	  <li>	  
-        <key>Social</key>      
-        <value>1</value>		
-      </li>	  
-    </skillGains> -->
+	
+	<skillGains>
+		<Social>2</Social>
+        <Intellectual>3</Intellectual>
+    </skillGains>
 	
   </AlienRace.AlienBackstoryDef>
   
@@ -132,44 +180,13 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-<!-- 	<skillGains>
-      <li>
-        <key>Intellectual</key>      
-        <value>3</value>
-	  </li>
-	  <li>
-        <key>Medicine</key>      
-        <value>2</value>
-	  </li>
-	  <li>	  
-        <key>Social</key>      
-        <value>-2</value>		
-      </li>
-	  <li>
-        <key>Plants</key>      
-        <value>2</value>
-	  </li>
-	  <li>	  
-        <key>Construction</key>      
-        <value>-3</value>		
-      </li>	  
+	<skillGains>
+		<Plants>2</Plants>
+        <Crafting>2</Crafting>
+        <Artistic>2</Artistic>
+        <Social>-3</Social>
+        <Intellectual>2</Intellectual>
     </skillGains>
-	
-	<forcedTraitsChance>
-	  <li>
-	    <defName>Ascetic</defName>
-		<chance>50</chance>
-	  </li>
-	  <li>
-	    <defName>Nudist</defName>
-		<chance>25</chance>
-	  </li>	  
-	  <li>
-	    <defName>DrugDesire</defName>
-		<degree>1</degree>
-		<chance>25</chance>
-	  </li>
-	</forcedTraitsChance> -->
 	
   </AlienRace.AlienBackstoryDef> 
  
@@ -181,39 +198,40 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<titleFemale>Struck by a basilisk</titleFemale>
     <titleShort>Struck</titleShort>
 	<titleShortFemale>Struck</titleShortFemale>
-    <baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but other pony were able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of animals still make themselves felt.</baseDesc>
+    <baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but other pony were able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of wild animals still make themselves felt.</baseDesc>
     <slot>Childhood</slot>
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-<!-- 	<skillGains>
-      <li>
-        <key>Intellectual</key>      
-        <value>4</value>
-	  </li>
-	  <li>
-        <key>Medicine</key>      
-        <value>5</value>
-	  </li>
-	  <li>	  
-        <key>Melee</key>      
-        <value>-3</value>		
-      </li>
+	<skillGains>
+		<Melee>-2</Melee>
+        <Animals>-3</Animals>
+		<Medicine>5</Medicine>
+		<Social>-2</Social>
+        <Intellectual>4</Intellectual>
     </skillGains>
-
+    
 	<forcedTraits>
-      <Immunity>-1</Immunity>
+        <Immunity>-1</Immunity>
     </forcedTraits>
-
+    
 	<forcedTraitsChance>
-	  <li>
-	    <defName>CreepyBreathing</defName>
-		<chance>20</chance>
-	  </li>
-	</forcedTraitsChance>	
+		<li>
+			<options>
+				<li>
+					<defName>Tough</defName>
+                </li>
+				<li>
+					<defName>CreepyBreathing</defName>
+                </li>
+            </options>
+            <count>1</count>			
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>
 	
-	<workDisables>Mining, Animals</workDisables> -->
+	<workDisables>Hunting, Mining</workDisables>
 	
   </AlienRace.AlienBackstoryDef>
  
@@ -229,27 +247,12 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 		<li>PotR_Everypony</li>
 	</spawnCategories>
 	
-<!-- 	<skillGains>
-      <li>
-        <key>Plants</key>      
-        <value>3</value>
-	  </li>
-	  <li>
-        <key>Artistic</key>      
-        <value>3</value>
-	  </li>
-	  <li>	  
-        <key>Social</key>      
-        <value>2</value>		
-      </li>
-	  <li>	  
-        <key>Intellectual</key>      
-        <value>-3</value>		
-      </li>	  
-    </skillGains>
+	<skillGains>
+		<Artistic>2</Artistic>
+        <Social>3</Social>
+        <Intellectual>-3</Intellectual>
+	</skillGains>
 	
-	<workDisables>Mining</workDisables> -->
-
   </AlienRace.AlienBackstoryDef>
  
 
@@ -263,6 +266,17 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+		<Artistic>2</Artistic>
+        <Social>3</Social>
+        <Intellectual>-3</Intellectual>
+	</skillGains>
+	
+	<forcedTraits>
+        <NightOwl>0</NightOwl>
+    </forcedTraits>
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -276,6 +290,28 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+		<Crafting>3</Crafting>
+        <Social>-3</Social>
+        <Intellectual>4</Intellectual>
+	</skillGains>
+	
+	<forcedTraitsChance>
+		<li>
+			<options>
+				<li>
+					<defName Degree="1">PsychicSensitivity</defName>
+                </li>
+                <li>
+					<defName Degree="2">PsychicSensitivity</defName>
+                </li>
+            </options>
+            <count>1</count>
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -291,6 +327,18 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Social>5</Social>
+        <Intellectual>3</Intellectual>
+	</skillGains>
+	
+	<forcedTraits>
+		<Kind>0</Kind>
+    </forcedTraits>
+    
+	<workDisables>Hunting</workDisables>
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -305,21 +353,47 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Intellectual>5</Intellectual>
+	</skillGains>	
+	
+	<forcedTraitsChance>
+		<li>
+			<options>
+				<li>
+					<defName>FastLearner</defName>
+                </li>
+				<li>
+					<defName>TooSmart</defName>
+                </li>
+            </options>
+            <count>1</count>			
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>	
+	
   </AlienRace.AlienBackstoryDef>
   
 
 
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyUnderAli</defName>
-    <title>Under the care of alicorn</title>
+    <title>Under care of alicorn</title>
     <titleShort>Ward</titleShort>
     <titleShortFemale>Ward</titleShortFemale>
     <baseDesc>[PAWN_nameDef] was born under tragic circumstances when famine began in [PAWN_possessive] country. [PAWN_pronoun] was lucky enough to get under the care of an alicorn who arrived on a charity mission.
-[PAWN_nameDef] grew up to be a wonderful foal and from an early age began to study the lessons of kindness, friendship and exact sciences.</baseDesc>
+[PAWN_nameDef] grew up to be a wonderful foal and from an early age began to study the lessons of friendship and exact sciences.</baseDesc>
     <slot>Childhood</slot>
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Social>4</Social>
+        <Intellectual>4</Intellectual>
+	</skillGains>
+	
   </AlienRace.AlienBackstoryDef>
 
 <!-- ===== Everypony Adulthood Stories ===== -->
@@ -333,6 +407,27 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+		<Artistic>3</Artistic>
+        <Social>5</Social>
+	</skillGains>
+	
+	<forcedTraitsChance>
+		<li>
+			<options>
+				<li>
+					<defName Degree="1">NaturalMood</defName>
+                </li>
+                <li>
+					<defName Degree="2">NaturalMood</defName>
+                </li>
+            </options>
+            <count>1</count>
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -343,11 +438,19 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<titleFemale>Royal Guard</titleFemale>
     <titleShort>Guard</titleShort>
     <titleShortFemale>Guard</titleShortFemale>
-    <baseDesc>[PAWN_nameDef] was recruited into the Royal Guard due to [PAWN_possessive] dedication and responsiveness. [PAWN_pronoun] personally guarded one of the rulers of the kingdom, accompanying her on numerous peacemaking and charity missions.</baseDesc>
+    <baseDesc>[PAWN_nameDef] was recruited into the Royal Guard due to [PAWN_possessive] dedication and loyalty. [PAWN_pronoun] personally guarded one of the rulers of the kingdom, accompanying her on numerous peacemaking and charity missions.</baseDesc>
     <slot>Adulthood</slot>
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+	    <Shooting>4</Shooting>
+	    <Melee>5</Melee>
+	    <Medicine>3</Medicine>
+        <Social>3</Social>
+	</skillGains>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -363,6 +466,16 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Social>6</Social>
+        <Intellectual>2</Intellectual>        
+	</skillGains>	
+	
+	<forcedTraits>
+		<Kind>0</Kind>
+    </forcedTraits>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -376,6 +489,17 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+	    <Shooting>3</Shooting>
+	    <Melee>3<Melee>
+        <Social>2</Social>
+	</skillGains>	
+	
+	<forcedTraits>
+		<Psychopath>0</Psychopath>
+	 </forcedTraits>
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -390,7 +514,14 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
     <slot>Adulthood</slot>
 	<spawnCategories>
 		<li>PotR_Everypony</li>
-	</spawnCategories>
+		
+	<skillGains>
+		<Shooting>2</Shooting>
+		<Mining>-1</Mining>
+		<Artistic>2</Artistic>
+        <Social>2</Social>
+	</skillGains>
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -406,6 +537,18 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+		<Melee>2<Melee>
+		<Plants>-1</Plants>
+		<Artistic>2</Artistic>
+        <Social>2</Social>
+	</skillGains>
+	
+	<forcedTraits>
+        <NightOwl>0</NightOwl>
+    </forcedTraits>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -420,6 +563,13 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Crafting>3</Crafting>
+        <Social>2</Social>
+        <Intellectual>5</Intellectual>
+	</skillGains>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -434,6 +584,14 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Shooting>5</Shooting>
+	    <Melee>3</Melee>
+        <Social>2</Social>
+        <Intellectual>2</Intellectual>
+	</skillGains>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -448,6 +606,18 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Shooting>4</Shooting>
+	    <Melee>3</Melee>
+    	<Crafting>2</Crafting>
+        <Animals>3</Animals>
+	</skillGains>
+	
+	<forcedTraits>
+        <Greedy>0</Greedy>
+    </forcedTraits>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -462,6 +632,12 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Social>-2</Social>
+        <Intellectual>2</Intellectual>
+	</skillGains>		
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -477,6 +653,12 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Artistic>3</Artistic>
+        <Social>4</Social>
+	</skillGains>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -490,6 +672,13 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Artistic>4</Artistic>
+        <Social>3</Social>
+        <Intellectual>6</Intellectual>
+	</skillGains>		
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -503,6 +692,13 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+		<Shooting>6</Shooting>
+        <Crafting>4</Crafting>
+        <Social>-2</Social>
+	</skillGains>	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -518,6 +714,11 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Intellectual>7</Intellectual>
+	</skillGains>		
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -531,6 +732,28 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Shooting>5</Shooting>
+	    <Melee>5</Melee>
+        <Intellectual>4</Intellectual>
+	</skillGains>
+	
+	<forcedTraitsChance>
+		<li>
+			<options>
+				<li>
+					<defName Degree="1">Industriousness</defName>
+                </li>
+                <li>
+					<defName Degree="2">Industriousness</defName>
+                </li>
+            </options>
+            <count>1</count>
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>		
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -544,6 +767,12 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+		<Shooting>2</Shooting>
+        <Crafting>6</Crafting>
+	</skillGains> 	
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -557,6 +786,12 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Social>6</Social>
+        <Intellectual>2</Intellectual>
+	</skillGains>		
+	
   </AlienRace.AlienBackstoryDef>
 
 
@@ -572,7 +807,26 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	<spawnCategories>
 		<li>PotR_Everypony</li>
 	</spawnCategories>
+	
+	<skillGains>
+        <Social>2</Social>
+        <Intellectual>2</Intellectual>
+	</skillGains>
+	
+	<forcedTraitsChance>
+		<li>
+			<options>
+				<li>
+					<defName>Greedy</defName>
+                </li>
+            </options>
+            <chance>50</chance>
+        </li>
+    </forcedTraitsChance>		
+	
   </AlienRace.AlienBackstoryDef>
+
+
 
   <AlienRace.AlienBackstoryDef>
     <defName>PotR_EveryponyAcTravel</defName>
