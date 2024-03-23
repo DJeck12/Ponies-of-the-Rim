@@ -492,7 +492,7 @@ As a result of prolonged harassment, [PAWN_nameDef] grew up to be a suspicious a
 	
 	<skillGains>
 	    <Shooting>3</Shooting>
-	    <Melee>3<Melee>
+	    <Melee>3</Melee>
         <Social>2</Social>
 	</skillGains>	
 	
