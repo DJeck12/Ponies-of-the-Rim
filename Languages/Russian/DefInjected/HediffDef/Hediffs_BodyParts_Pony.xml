@@ -13,6 +13,7 @@
 	<SimpleProstheticWing.label>простой протез крыла</SimpleProstheticWing.label>
 	<SimpleProstheticWing.description>Установленный простой протез крыла.</SimpleProstheticWing.description>
 	<SimpleProstheticWing.labelNoun>простой протез крыла</SimpleProstheticWing.labelNoun>
+<!--
 	<BionicWing.label>бионическое крыло</BionicWing.label>
 	<BionicWing.description>Вживлнное бионическое крыло.</BionicWing.description>
 	<BionicWing.labelNoun>бионическое крыло</BionicWing.labelNoun>
@@ -25,5 +26,5 @@
 	<ArchotechHorn.label>архорог</ArchotechHorn.label>
 	<ArchotechHorn.description>Вживлнный бионический рог.</ArchotechHorn.description>
 	<ArchotechHorn.labelNoun>архорог</ArchotechHorn.labelNoun>
-
+-->
 </LanguageData>

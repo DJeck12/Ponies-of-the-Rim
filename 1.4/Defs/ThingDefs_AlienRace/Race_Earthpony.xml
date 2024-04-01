@@ -90,18 +90,18 @@
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Pony>(0, 0.66)</Pony>
+										<Pony>(0, 0.55)</Pony>
 									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>0.5</layerOffset>
 									<bodyTypes>
-										<Pony>(0, -0.36)</Pony>
+										<Pony>(0, -0.25)</Pony>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
-										<Pony>(0.38, -0.1)</Pony>
+										<Pony>(0.36, 0)</Pony>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -111,6 +111,7 @@
 							<path>Things/Races/Pony/Ears/Pony_EarRight</path>
 							<bodyPart>Ear</bodyPart>
 							<bodyPartLabel>right ear</bodyPartLabel>
+							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<drawnInBed>true</drawnInBed>
@@ -135,6 +136,7 @@
 							<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
 							<bodyPart>Ear</bodyPart>
 							<bodyPartLabel>left ear</bodyPartLabel>
+							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<drawnInBed>true</drawnInBed>
@@ -160,7 +162,7 @@
 							<path>Things/Races/Pony/Cutiemarks/QTMark</path>
 							<bodyPart>Torso</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
-							<drawSize>(0.16, 0.16)</drawSize>
+							<drawSize>(0.15, 0.15)</drawSize>
 							<drawnInBed>false</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>none</colorChannel>
@@ -168,7 +170,7 @@
 								<east>
 									<layerOffset>-0.29</layerOffset>
 									<bodyTypes>
-										<Pony>(0.22, -0.18)</Pony>
+										<Pony>(0.22, -0.1)</Pony>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -213,6 +215,7 @@
 						<Female_AverageNormal>Things/Races/Pony/Heads/Female_Pony</Female_AverageNormal>
 					</headtypeGraphics>
 				</head>
+				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
 				<body>Things/Races/Pony/Bodies/</body>
 				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
 			</graphicPaths>

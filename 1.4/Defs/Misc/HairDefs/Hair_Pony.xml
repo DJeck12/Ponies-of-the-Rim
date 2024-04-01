@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!-- Dash -->
+	<HairDef>
+		<defName>Pony_DashHair</defName>
+		<label>Dash</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Dash</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_DashColorHair</defName>
+		<label>Dash (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Dash_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_DashStripeHair</defName>
+		<label>Dash (Striped)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Dash_Stripe</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Sparkle -->
+	<HairDef>
+		<defName>Pony_SparkleHair</defName>
+		<label>Sparkle</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Sparkle</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_SparkleColorHair</defName>
+		<label>Sparkle (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Sparkle_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_SparkleStripeHair</defName>
+		<label>Sparkle (Striped)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Sparkle_Stripe</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Apple -->
+	<HairDef>
+		<defName>Pony_AppleHair</defName>
+		<label>Apple</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Apple</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_AppleColorHair</defName>
+		<label>Apple (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Apple_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Party -->
+	<HairDef>
+		<defName>Pony_PartyHair</defName>
+		<label>Party</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Party</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_PartyColorHair</defName>
+		<label>Party (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Party_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Rarity -->
+	<HairDef>
+		<defName>Pony_RarityHair</defName>
+		<label>Rarity</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Rarity</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Flutter -->
+	<HairDef>
+		<defName>Pony_FlutterHair</defName>
+		<label>Flutter</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Flutter</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_FlutterColorHair</defName>
+		<label>Flutter (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Flutter_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Bloom -->
+	<HairDef>
+		<defName>Pony_BloomHair</defName>
+		<label>Bloom</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Bloom</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_BloomColorHair</defName>
+		<label>Bloom (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Bloom_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Sweet -->
+	<HairDef>
+		<defName>Pony_SweetHair</defName>
+		<label>Sweet</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Sweet</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_SweetColorHair</defName>
+		<label>Sweet (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Sweet_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Scoot -->
+	<HairDef>
+		<defName>Pony_ScootHair</defName>
+		<label>Scoot</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Scoot</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Pony_ScootColorHair</defName>
+		<label>Scoot (Colorful)</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Scoot_Color</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+<!-- Night -->
+	<HairDef>
+		<defName>Pony_NightHair</defName>
+		<label>Night</label>
+		<styleGender>Any</styleGender>
+		<texPath>Things/Races/Pony/Hair/Night</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+	</HairDef>
+</Defs>

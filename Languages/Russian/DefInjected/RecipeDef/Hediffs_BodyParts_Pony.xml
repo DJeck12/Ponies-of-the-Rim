@@ -13,20 +13,23 @@
 	<InstallSimpleProstheticWing.label>установить простой протез крыла</InstallSimpleProstheticWing.label>
 	<InstallSimpleProstheticWing.description>Установить простой протез крыла.</InstallSimpleProstheticWing.description>
 	<InstallSimpleProstheticWing.jobString>Устанавливает простой протез крыла.</InstallSimpleProstheticWing.jobString>
+<!--
 	<InstallBionicWing.label>вживить бионическое крыло</InstallBionicWing.label>
 	<InstallBionicWing.description>Вживить бионическое крыло.</InstallBionicWing.description>
 	<InstallBionicWing.jobString>Вживляет бионическое крыло</InstallBionicWing.jobString>
 	<InstallArchotechWing.label>вживить архокрыло</InstallArchotechWing.label>
 	<InstallArchotechWing.description>Вживить архокрыло.</InstallArchotechWing.description>
 	<InstallArchotechWing.jobString>Вживляет архокрыло</InstallArchotechWing.jobString>
+-->
 	<InstallNaturalHorn.label>пересадить рог</InstallNaturalHorn.label>
 	<InstallNaturalHorn.description>Пересадить рог.</InstallNaturalHorn.description>
 	<InstallNaturalHorn.jobString>Пересаживает рог</InstallNaturalHorn.jobString>
+<!--
 	<InstallBionicHorn.label>вживить бионический рог</InstallBionicHorn.label>
 	<InstallBionicHorn.description>Вживить бионический рог.</InstallBionicHorn.description>
 	<InstallBionicHorn.jobString>Вживляет бионический рог</InstallBionicHorn.jobString>
 	<InstallArchotechHorn.label>вживить архорог</InstallArchotechHorn.label>
 	<InstallArchotechHorn.description>Вживить архорог.</InstallArchotechHorn.description>
 	<InstallArchotechHorn.jobString>Вживляет архорог.</InstallArchotechHorn.jobString>
-
+-->
 </LanguageData>

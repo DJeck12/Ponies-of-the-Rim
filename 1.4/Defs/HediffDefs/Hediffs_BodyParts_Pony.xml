@@ -3,7 +3,7 @@
 
 <!--Tail-->
 
-   <HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ArtificialTail</defName>
 		<label>artificial tail</label>
 		<labelNoun>an artificial tail</labelNoun>
@@ -45,11 +45,12 @@
 			<li>Pony_Tail</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArtificialTail</addsHediff>
+		<uiIconThing>Cloth</uiIconThing>
 	</RecipeDef>
 
 <!--Hoof-->
 
-   <HediffDef ParentName="AddedBodyPartBase">
+	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>PegHoof</defName>
 		<label>wooden hoof</label>
 		<labelNoun>a wooden hoof</labelNoun>
@@ -73,6 +74,7 @@
 			<li>Pony_RearHoof</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>PegHoof</addsHediff>
+		<uiIconThing>WoodLog</uiIconThing>
 	</RecipeDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
@@ -197,7 +199,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticWing</addsHediff>
 	</RecipeDef>
-
+<!--Bionics are unfinished
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>BionicWing</defName>
 		<label>bionic wing</label>
@@ -314,7 +316,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechWing</addsHediff>
 	</RecipeDef>
-
+-->
 <!--Horn-->
 
 	<ThingDef ParentName="BodyPartNaturalBase">
@@ -353,10 +355,10 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-		   <li>Pony_Horn</li>
+			<li>Pony_Horn</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
-
+<!--Bionics are unfinished
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>BionicHorn</defName>
 		<label>bionic horn</label>
@@ -473,5 +475,5 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechHorn</addsHediff>
 	</RecipeDef>
-
+-->
 </Defs>

@@ -13,6 +13,7 @@
 		<ingredients>
 			<li>
 				<filter>
+				<customSummary>vegetarian ingredients</customSummary>
 				<categories>
 					<li>PlantFoodRaw</li>
 					<li>AnimalProductRaw</li>
@@ -33,6 +34,9 @@
 			<disallowedCategories>
 				<li>MeatRaw</li>
 			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<MealFine_Hay>1</MealFine_Hay>
@@ -51,6 +55,7 @@
 		<ingredients>
 			<li>
 				<filter>
+				<customSummary>vegetarian ingredients</customSummary>
 				<categories>
 					<li>PlantFoodRaw</li>
 					<li>AnimalProductRaw</li>
@@ -59,18 +64,21 @@
 				<count>2</count>
 			</li>
 			<li>
-				 <filter>
+				<filter>
 				<thingDefs>
 					<li>Hay</li>
 				</thingDefs>
 				</filter>
 				<count>2</count>
-			 </li>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-		<disallowedCategories>
-			<li>MeatRaw</li>
-		</disallowedCategories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<MealFine_Hay>4</MealFine_Hay>
@@ -89,6 +97,7 @@
 		<ingredients>
 			<li>
 				<filter>
+				<customSummary>vegetarian ingredients</customSummary>
 				<categories>
 					<li>PlantFoodRaw</li>
 					<li>AnimalProductRaw</li>
@@ -109,6 +118,9 @@
 			<disallowedCategories>
 				<li>MeatRaw</li>
 			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<MealLavish_Hay>1</MealLavish_Hay>
@@ -127,6 +139,7 @@
 		<ingredients>
 			<li>
 				<filter>
+				<customSummary>vegetarian ingredients</customSummary>
 				<categories>
 					<li>PlantFoodRaw</li>
 					<li>AnimalProductRaw</li>
@@ -141,12 +154,15 @@
 				</thingDefs>
 				</filter>
 				<count>4</count>
-			 </li>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-		<disallowedCategories>
-			<li>MeatRaw</li>
-		</disallowedCategories>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<MealLavish_Hay>4</MealLavish_Hay>

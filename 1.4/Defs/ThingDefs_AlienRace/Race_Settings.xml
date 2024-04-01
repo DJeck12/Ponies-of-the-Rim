@@ -62,7 +62,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li> 
+						<li>PlayerColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -75,7 +75,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerTribe</li> 
+						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
@@ -144,7 +144,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li> 
+						<li>PlayerColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -157,7 +157,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerTribe</li> 
+						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
@@ -226,7 +226,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li> 
+						<li>PlayerColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -239,7 +239,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerTribe</li> 
+						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>

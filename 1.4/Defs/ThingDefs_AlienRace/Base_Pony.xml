@@ -25,17 +25,17 @@
 						<li>Female_AverageNormal</li>
 					</headTypes>
 					<headOffsetSpecific>
-  						<north>
-    						<offset>(0, -0.05)</offset>
+						<north>
+							<offset>(0, -0.075)</offset>
 						</north>
 						<south>
-    						<offset>(0, -0.19)</offset>
+							<offset>(0, -0.175)</offset>
 						</south>
 						<east>
-    						<offset>(0.125, -0.1)</offset>
+							<offset>(0.125, -0.02)</offset>
 						</east>
 						<west>
-    						<offset>(-0.125, -0.1)</offset>
+							<offset>(-0.125, -0.02)</offset>
 						</west>
 					</headOffsetSpecific>
 				</alienPartGenerator>
@@ -48,46 +48,6 @@
 			</thoughtSettings>
 
 			<raceRestriction>
-				<whiteApparelList>
-					<li>Apparel_ShieldBelt</li>
-
-					<li>Apparel_CowboyHat</li>
-					<li>Apparel_BowlerHat</li>
-					<li>Apparel_TribalHeaddress</li>
-					<li>Apparel_Tuque</li>
-					<li>Apparel_WarMask</li>
-					<li>Apparel_WarVeil</li>
-					<li>Apparel_SimpleHelmet</li>
-					<li>Apparel_AdvancedHelmet</li>
-					<li>Apparel_PowerArmorHelmet</li>
-					<li>Apparel_ArmorHelmetRecon</li>
-					<li>Apparel_PsychicFoilHelmet</li>
-					<li>Apparel_HatHood</li>
-
-					<li>Apparel_SmokepopBelt</li>
-					<li>Apparel_FirefoampopPack</li>
-
-					<li>Apparel_PsychicShockLance</li>
-					<li>Apparel_PsychicInsanityLance</li>
-
-					<li>Apparel_TribalA</li>
-					<li>Apparel_Parka</li>
-					<li>Apparel_Pants</li>
-					<li>Apparel_BasicShirt</li>
-					<li>Apparel_CollarShirt</li>
-					<li>Apparel_Duster</li>
-					<li>Apparel_Jacket</li>
-					<li>Apparel_PlateArmor</li>
-					<li>Apparel_FlakVest</li>
-					<li>Apparel_FlakPants</li>
-					<li>Apparel_FlakJacket</li>
-					<li>Apparel_PowerArmor</li>
-					<li>Apparel_ArmorRecon</li>
-
-					<li>OrbitalTargeterBombardment</li>
-					<li>OrbitalTargeterPowerBeam</li>
-				</whiteApparelList>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<recipeList>
 					<li>CookMealFine_Hay</li>
 					<li>CookMealFineBulk_Hay</li>
@@ -115,6 +75,34 @@
 					<li>Headbone</li>
 				</blackEndoCategories>
 			</raceRestriction>
+			<graphicPaths>
+				<apparel>
+					<fallbacks>
+						<!-- Override all chest apparel with a shirt -->
+						<li>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+							<bodyPartGroups>
+								<li>Torso</li>
+							</bodyPartGroups>
+						</li>
+						<li>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+							<layers>
+								<li>Belt</li>
+							</layers>
+						</li>
+						<li>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+							<layers>
+								<li>Shell</li>
+							</layers>
+						</li>
+						<li>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Transparent/Transparent</wornGraphicPath>
+						</li>
+					</fallbacks>
+				</apparel>
+			</graphicPaths>
 		</alienRace>
 
 <!--Attacks-->
@@ -324,11 +312,11 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
 		</recipes>
-    	<ingredient>
-      		<mergeCompatibilityTags>
-        		<li>HumanMeat</li>
-      		</mergeCompatibilityTags>
-    	</ingredient>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 
 	</AlienRace.ThingDef_AlienRace>
 

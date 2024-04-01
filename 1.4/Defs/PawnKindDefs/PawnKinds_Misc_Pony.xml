@@ -22,6 +22,7 @@
 			<li>Poor</li>
 		</techHediffsTags>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
 		<invNutrition>1</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 		<initialWillRange>0~0</initialWillRange>

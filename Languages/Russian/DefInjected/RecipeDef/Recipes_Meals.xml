@@ -4,17 +4,21 @@
 	<CookMealFine_Hay.label>Приготовить вкусное блюдо из сена</CookMealFine_Hay.label>
 	<CookMealFine_Hay.description>Приготовить вкусное блюдо из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой.</CookMealFine_Hay.description>
 	<CookMealFine_Hay.jobString>Готовит вкусное блюдо из сена</CookMealFine_Hay.jobString>
+	<CookMealFine_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</CookMealFine_Hay.ingredients.0.filter.customSummary>
 
 	<CookMealFineBulk_Hay.label>Приготовить вкусное блюдо из сена x4</CookMealFineBulk_Hay.label>
 	<CookMealFineBulk_Hay.description>Приготовить 4 вкусных блюда из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой.</CookMealFineBulk_Hay.description>
 	<CookMealFineBulk_Hay.jobString>Готовит 4 вкусных блюда из сена</CookMealFineBulk_Hay.jobString>
+	<CookMealFineBulk_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</CookMealFineBulk_Hay.ingredients.0.filter.customSummary>
 
 	<CookMealLavish_Hay.label>Приготовить шикарное блюдо из сена</CookMealLavish_Hay.label>
 	<CookMealLavish_Hay.description>Приготовить сложное изысканное блюдо из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой. Большая часть ингредиентов уйдёт впустую ради создания неповторимой палитры вкусов.</CookMealLavish_Hay.description>
 	<CookMealLavish_Hay.jobString>Готовит шикарное блюдо из сена</CookMealLavish_Hay.jobString>
+	<CookMealLavish_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</CookMealLavish_Hay.ingredients.0.filter.customSummary>
 
 	<CookMealLavishBulk_Hay.label>Приготовить шикарное блюдо из сена x4</CookMealLavishBulk_Hay.label>
 	<CookMealLavishBulk_Hay.description>Приготовить 4 сложных изысканных блюда из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой. Большая часть ингредиентов уйдёт впустую ради создания неповторимой палитры вкусов.</CookMealLavishBulk_Hay.description>
 	<CookMealLavishBulk_Hay.jobString>Готовит 4 шикарных блюда из сена</CookMealLavishBulk_Hay.jobString>
+	<CookMealLavishBulk_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</CookMealLavishBulk_Hay.ingredients.0.filter.customSummary>
 
 </LanguageData>
