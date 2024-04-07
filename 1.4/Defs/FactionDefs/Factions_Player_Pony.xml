@@ -6,7 +6,7 @@
 		<label>Pony Arrivals</label>
 		<description>A colony of recently-arrived ponies.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Colonist</basicMemberKind>
+		<basicMemberKind>EarthPonyColonist</basicMemberKind>
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>
@@ -23,11 +23,11 @@
 		</backstoryFilters>
 		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
 		<startingResearchTags>
-		<li>ClassicStart</li>
+			<li>ClassicStart</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
-		<li>ClassicStart</li>
-		<li>ClassicStartTechprints</li>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
 		</startingTechprintsResearchTags>
 		<apparelStuffFilter>
 		<thingDefs>

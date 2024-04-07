@@ -18,6 +18,13 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
+				or @Name="ApparelArmorHelmetReconBase"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>TopHead</li>
+				</value>
+			</li>
 			<li Class="PatchOperationInsert">
 				<xpath>/Defs/ThingDef[defName="Apparel_Parka"
 				or defName="Apparel_Duster"
@@ -29,7 +36,7 @@
 				<value>
 					<shellRenderedBehindHead>true</shellRenderedBehindHead>
 				</value>
-			</li>
+			</li>	
 		</operations>
 	</Operation>
 

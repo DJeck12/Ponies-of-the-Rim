@@ -15,10 +15,10 @@
 		<!-- Home threats -->
 		<li Class="StorytellerCompProperties_OnOffCycle">
 			<category>ThreatBig</category>
-			<minDaysPassed>13.0</minDaysPassed>
-			<onDays>8.0</onDays>
-			<offDays>8.0</offDays>
-			<numIncidentsRange>1~1</numIncidentsRange>
+			<minDaysPassed>12.0</minDaysPassed>
+			<onDays>6.0</onDays>
+			<offDays>6.0</offDays>
+			<numIncidentsRange>1~2</numIncidentsRange>
 			<forceRaidEnemyBeforeDaysPassed>20</forceRaidEnemyBeforeDaysPassed>
 			<disallowedTargetTags>
 			<li>Map_RaidBeacon</li>
@@ -39,9 +39,9 @@
 		</li>
 		<li Class="StorytellerCompProperties_OnOffCycle">
 			<category>ThreatSmall</category>
-			<minDaysPassed>13.0</minDaysPassed>
-			<onDays>8.0</onDays>
-			<offDays>8.0</offDays>
+			<minDaysPassed>12.0</minDaysPassed>
+			<onDays>6.0</onDays>
+			<offDays>6.0</offDays>
 			<numIncidentsRange>0.2~1</numIncidentsRange>
 			<acceptPercentFactorPerThreatPointsCurve>
 			<points>
@@ -62,11 +62,11 @@
 		<li Class="StorytellerCompProperties_ShipChunkDrop"/>
 		<li Class="StorytellerCompProperties_Disease">
 			<category>DiseaseHuman</category>
-			<minDaysPassed>12</minDaysPassed>
+			<minDaysPassed>10</minDaysPassed>
 		</li>
 		<li Class="StorytellerCompProperties_Disease">
 			<category>DiseaseAnimal</category>
-			<minDaysPassed>12</minDaysPassed>
+			<minDaysPassed>10</minDaysPassed>
 		</li>
 		<!-- Ally/neutral interaction -->
 		<li Class="StorytellerCompProperties_FactionInteraction">

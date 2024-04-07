@@ -7,13 +7,13 @@
 
 		<alienRace>
 			<generalSettings>
-				<maleGenderProbability>0.4</maleGenderProbability>
+				<maleGenderProbability>0.35</maleGenderProbability>
 				<forcedRaceTraitEntries>
 					<li>
 						<defName>Gay</defName>
 						<chance>8</chance>
-						<commonalityMale>40</commonalityMale>
-						<commonalityFemale>80</commonalityFemale>
+						<commonalityMale>50</commonalityMale>
+						<commonalityFemale>100</commonalityFemale>
 					</li>
 				</forcedRaceTraitEntries>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
@@ -26,18 +26,39 @@
 					</headTypes>
 					<headOffsetSpecific>
 						<north>
-							<offset>(0, -0.075)</offset>
+							<bodyTypes>
+								<Pony>(0, -0.075)</Pony>
+								<PonyBaby>(0, -0.115)</PonyBaby>
+								<PonyChild>(0, -0.095)</PonyChild>
+							</bodyTypes>
 						</north>
 						<south>
-							<offset>(0, -0.175)</offset>
+							<bodyTypes>
+								<Pony>(0, -0.175)</Pony>
+								<PonyBaby>(0, -0.175)</PonyBaby>
+								<PonyChild>(0, -0.175)</PonyChild>
+							</bodyTypes>
 						</south>
 						<east>
-							<offset>(0.125, -0.02)</offset>
+							<bodyTypes>
+								<Pony>(0.125, -0.02)</Pony>
+								<PonyBaby>(0.06, -0.08)</PonyBaby>
+								<PonyChild>(0.09, -0.05)</PonyChild>
+							</bodyTypes>
 						</east>
 						<west>
-							<offset>(-0.125, -0.02)</offset>
+							<bodyTypes>
+								<Pony>(-0.125, -0.02)</Pony>
+								<PonyBaby>(-0.075, -0.08)</PonyBaby>
+								<PonyChild>(-0.1, -0.05)</PonyChild>
+							</bodyTypes>
 						</west>
 					</headOffsetSpecific>
+					<bodyTypes Inherit="False">
+						<li>Pony</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">PonyBaby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">PonyChild</li>						
+					</bodyTypes>
 				</alienPartGenerator>
 			</generalSettings>
 
@@ -59,46 +80,44 @@
 					<li>MealFine_Hay</li>
 					<li>MealLavish_Hay</li>
 				</foodList>
-					<blackGeneTags>
-					<li>Tail</li>
-					<li>Fur</li>
-					<li>BeardStyle</li>
-					<li>HairStyle</li>
-					<li>HairColor</li>
+			<!-- Genes -->
+				<blackGeneTags>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
 				</blackGeneTags>
 				<blackEndoCategories>
-					<li>BodyType</li>
-					<li>Melanin</li>
-					<li>Ears</li>
-					<li>Nose</li>
-					<li>Jaw</li>
-					<li>Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
 				</blackEndoCategories>
 			</raceRestriction>
 			<graphicPaths>
 				<apparel>
+				<pathPrefix>Pony/</pathPrefix>
+				<individualPaths/>
 					<fallbacks>
-						<!-- Override all chest apparel with a shirt -->
+					<!-- Override all chest apparel with a shirt -->
 						<li>
-							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Pony</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Torso</li>
 							</bodyPartGroups>
 						</li>
+					<!-- Override all legs apparel with pants -->
 						<li>
-							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
-							<layers>
-								<li>Belt</li>
-							</layers>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Pony</wornGraphicPath>
+							<bodyPartGroups>
+								<li>Legs</li>
+							</bodyPartGroups>
 						</li>
 						<li>
-							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
-							<layers>
-								<li>Shell</li>
-							</layers>
-						</li>
-						<li>
-							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Transparent/Transparent</wornGraphicPath>
+							<wornGraphicPath>Transparent/Transparent</wornGraphicPath>
 						</li>
 					</fallbacks>
 				</apparel>
@@ -214,25 +233,25 @@
 				</points>
 			</litterSizeCurve>
 			<lifeStageAges>
-				<li>
-				<def>HumanlikeBaby</def>
-				<minAge>0</minAge>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyBaby</def>
+					<minAge>0</minAge>
 				</li>
-				<li>
-				<def>HumanlikeChild</def>
-				<minAge>3</minAge>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyChild</def>
+					<minAge>3</minAge>
 				</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">
-				<def>HumanlikePreTeenager</def>
-				<minAge>9</minAge>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>PonyPreTeenager</def>
+					<minAge>9</minAge>
 				</li>
-				<li>
-				<def>HumanlikeTeenager</def>
-				<minAge>13</minAge>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyTeenager</def>
+					<minAge>13</minAge>
 				</li>
-				<li>
-				<def>HumanlikeAdult</def>
-				<minAge>18</minAge>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyAdult</def>
+					<minAge>18</minAge>
 				</li>
 			</lifeStageAges>
 			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">

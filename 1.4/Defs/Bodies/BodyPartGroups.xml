@@ -2,6 +2,12 @@
 <Defs>
 
 	<BodyPartGroupDef>
+		<defName>TopHead</defName>
+		<label>top head</label>
+		<listOrder>220</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
 		<defName>Horn</defName>
 		<label>horn</label>
 		<listOrder>210</listOrder>
