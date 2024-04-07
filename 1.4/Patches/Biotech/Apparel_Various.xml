@@ -3,16 +3,15 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Ideology</li>
+			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<li Class="PatchOperationInsert">
-					<xpath>/Defs/ThingDef[defName="Apparel_BodyStrap"
-					or defName="Apparel_Robe"]/apparel/bodyPartGroups</xpath>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetMechanitorBase"]/apparel/bodyPartGroups</xpath>
 					<value>
-						<shellRenderedBehindHead>true</shellRenderedBehindHead>
+						<li>TopHead</li>
 					</value>
 				</li>
 			</operations>

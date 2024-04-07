@@ -12,8 +12,8 @@
 			<li TKey="Pony_Unicorn">Each pony race has unique abilities. Unicorns are slightly more psychic-sensitive, and their horn also helps them in combat.</li>
 
 			<li TKey="Pony_Hay">Ponies love hay! You can cook a hay meal to suit their taste needs. In general, these meals are more profitable to produce than others.</li>
-			<li TKey="Pony_Apparel">Due to modern textile manufacturing traditions, all human apparel can be worn by any pony race. The same applies for prosthetics.</li>
-			<li TKey="Pony_Prosthetics">Modern prosthetic technologies make it possible to produce unified prostheses for all races and xenotypes. Ponies can wear all human prosthetics, except those which made for hands. The same rule applies to clothing.</li>
+			<li TKey="Pony_Apparel">All human apparel can be worn by any pony race, but not vice versa. The same applies for prosthetics.</li>
+			<li TKey="Pony_Prosthetics">Ponies can wear all human prosthetics, except those which made for hands. The same rule applies to clothing.</li>
 			<li TKey="Pony_Appearence">The appearance of any pony can be changed on the dressing table. Tails, hairstyles, cutiemarks - there are many customization options.</li>
 		</tips>
 	</TipSetDef>

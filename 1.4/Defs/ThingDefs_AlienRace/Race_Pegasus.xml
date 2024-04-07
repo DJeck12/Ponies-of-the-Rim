@@ -31,9 +31,6 @@
 					<li>Pony_Unicorn</li>
 				</notXenophobistTowards>
 				<alienPartGenerator>
-					<bodyTypes>
-						<li>Pony</li>
-					</bodyTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -80,27 +77,40 @@
 					<bodyAddons>
 					<!--Tail-->
 						<li>
+							<name>Tail</name>
 							<path>Things/Races/Pony/Tails/Pony_Tail</path>
 							<bodyPart>Pony_Tail</bodyPart>
 							<inFrontOfBody>false</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnInBed>false</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>hair</colorChannel>
+							<!--
+							<ageGraphics>
+								<PonyBaby>Things/Races/Pony/Tails/Pony_TailBaby</PonyBaby>
+							</ageGraphics>
+							-->
 							<offsets>
 								<south>
 									<bodyTypes>
-										<Pony>(0, 0.55)</Pony>
+										<Pony>(0, 0.58)</Pony>
+										<PonyBaby>(0, 0.35)</PonyBaby>
+										<PonyChild>(0, 0.435)</PonyChild>
 									</bodyTypes>
 								</south>
 								<north>
 									<layerOffset>0.5</layerOffset>
 									<bodyTypes>
-										<Pony>(0, -0.25)</Pony>
+										<Pony>(0, -0.3)</Pony>
+										<PonyBaby>(0, -0.19)</PonyBaby>
+										<PonyChild>(0, -0.22)</PonyChild>
 									</bodyTypes>
 								</north>
 								<east>
 									<bodyTypes>
 										<Pony>(0.36, 0)</Pony>
+										<PonyBaby>(0.25, 0)</PonyBaby>
+										<PonyChild>(0.29, 0)</PonyChild>
 									</bodyTypes>
 								</east>
 							</offsets>
@@ -113,6 +123,7 @@
 							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnInBed>true</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>skin</colorChannel>
@@ -130,6 +141,9 @@
 									<layerOffset>-0.5</layerOffset>
 								</west>
 							</offsets>
+							<hiddenUnderApparelFor>
+								<li>TopHead</li>
+							</hiddenUnderApparelFor>
 						</li>
 						<li>
 							<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
@@ -138,6 +152,7 @@
 							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnInBed>true</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>skin</colorChannel>
@@ -155,6 +170,9 @@
 									<layerOffset>-0.268</layerOffset>
 								</west>
 							</offsets>
+							<hiddenUnderApparelFor>
+								<li>TopHead</li>
+							</hiddenUnderApparelFor>
 						</li>
 					<!--Wings-->
 						<li>
@@ -163,9 +181,17 @@
 							<bodyPartLabel>right wing</bodyPartLabel>
 							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnInBed>false</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>skin</colorChannel>
+							<!--
+							<ageGraphics>
+								<PonyBaby>Things/Races/Pony/Wings/PegasusRight_Baby</PonyBaby>
+								<PonyChild>Things/Races/Pony/Wings/PegasusRight_Baby</PonyChild>
+								<PonyPreTeenager>Things/Races/Pony/Wings/PegasusRight_Baby</PonyPreTeenager>
+							</ageGraphics>
+							-->
 							<offsets>
 								<south>
 									<layerOffset>-0.28</layerOffset>
@@ -184,6 +210,7 @@
 							<bodyPartLabel>left wing</bodyPartLabel>
 							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnInBed>false</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>skin</colorChannel>
@@ -201,13 +228,20 @@
 						</li>
 					<!--Cutiemark-->
 						<li>
+							<name>Cutiemark</name>
 							<path>Things/Races/Pony/Cutiemarks/QTMark</path>
 							<bodyPart>Torso</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<drawSize>(0.15, 0.15)</drawSize>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<drawnInBed>false</drawnInBed>
 							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>none</colorChannel>
+							<ageGraphics>
+								<PonyBaby>Transparent/Transparent</PonyBaby>
+								<PonyChild>Transparent/Transparent</PonyChild>
+								<PonyPreTeenager>Transparent/Transparent</PonyPreTeenager>
+							</ageGraphics>
 							<offsets>
 								<east>
 									<layerOffset>-0.29</layerOffset>
@@ -255,6 +289,7 @@
 						<Female_AverageNormal>Things/Races/Pony/Heads/Female_Pony</Female_AverageNormal>
 					</headtypeGraphics>
 				</head>
+				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
 				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
 				<body>Things/Races/Pony/Bodies/</body>
 				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
