@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
+		<defName>Pony_Earthpony</defName>
+		<label>earthpony</label>
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Phoenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+
+Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with the earth, representatives of this race do not only have an innate affinity for nature and strong endurance. Among them there are also many talented inventors and successful entrepreneurs. However, earth ponies are often considered "limited" and incapable of skilled work. This stereotype has nothing to do with reality, because they are talented and versatile creatures.]]></description>
+<!--Stats-->
+
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>4.75</MoveSpeed>
+			<PsychicSensitivity>1.1</PsychicSensitivity>
+			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<CarryingCapacity>100</CarryingCapacity>
+			<Mass>75</Mass>
+			<LeatherAmount>65</LeatherAmount>
+			<PainShockThreshold>0.8</PainShockThreshold>
+			<PawnBeauty>1</PawnBeauty>
+			<RoyalFavorValue>4</RoyalFavorValue>
+		</statBases>
+		
+<!--Settings-->
+
+		<alienRace>
+			<generalSettings>
+				<notXenophobistTowards>
+					<li>Pony_Unicorn</li>
+					<li>Pony_Pegasus</li>
+				</notXenophobistTowards>
+				<abilities>
+					<li>NatureMuse</li>
+				</abilities>
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<min>RGBA(50, 150, 50, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(180, 180, 180, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<raceGenes>
+				</raceGenes>
+			</generalSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Pony</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+
+			<graphicPaths>
+				<head>
+					<path>Things/Races/Pony/Heads/</path>
+					<headtypeGraphics>
+						<Male_AverageNormal>Things/Races/Pony/Heads/Male_Pony</Male_AverageNormal>
+						<Female_AverageNormal>Things/Races/Pony/Heads/Female_Pony</Female_AverageNormal>
+					</headtypeGraphics>
+				</head>
+				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
+				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
+				<body>Things/Races/Pony/Bodies/</body>
+				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+			</graphicPaths>
+		</alienRace>
+
+<!--Race Settings-->
+
+		<race>
+			<nameGenerator>NameGeneratorEarth</nameGenerator>
+			<body>Pony</body>
+			<meatLabel>pony meat</meatLabel>
+		</race>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

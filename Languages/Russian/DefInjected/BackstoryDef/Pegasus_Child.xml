@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--
+	<Pony_Pegasus.title>Юный гонщик</Pony_Pegasus.title>
+	<Pony_Pegasus.titleFemale>Юная гонщица</Pony_Pegasus.titleFemale>
+	<Pony_Pegasus.titleShort>Гонщик</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.titleShortFemale>Гонщица</Pony_Pegasus.titleShortFemale>
+	<Pony_Pegasus.baseDesc>[PAWN_nameDef] {PAWN_gender ? был : была} страстно {PAWN_gender ? увлечен : увлечена} скоростью. Желание участвовать в гонках жило в {PAWN_gender ? нем : ней} с тех самых пор, как [PAWN_pronoun] научился летать.</Pony_Pegasus.baseDesc>
+
+	<Pony_Pegasus.title>Летун-задира</Pony_Pegasus.title>
+	<Pony_Pegasus.titleShort>Задира</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.baseDesc>С детства [PAWN_nameDef] {PAWN_gender ? чувствовал : чувствовала} себя изгоем, сверстники считали [PAWN_possessive] {PAWN_gender ? неудачником : неудачницей} и насмехались над {PAWN_gender ? ним : ней}. Желая завоевать признание и уважение, а также создать устрашающую репутацию, [PAWN_pronoun] {PAWN_gender ? начал : начала} издеваться над теми, кто был слабее, вымещая на них свою обиду и злобу.</Pony_Pegasus.baseDesc>
+
+	<Pony_Pegasus.title>Потерявшийся среди облаков</Pony_Pegasus.title>
+	<Pony_Pegasus.titleFemale>Потерявшаяся среди облаков</Pony_Pegasus.titleFemale>
+	<Pony_Pegasus.titleShort>Потерявшийся</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.titleShortFemale>Потерявшаяся</Pony_Pegasus.titleShortFemale>
+	<Pony_Pegasus.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? потерялся : потерялась} в большой группе кучевых облаков. [PAWN_pronoun] {PAWN_gender ? плутал : плутала} среди них долгое время, пока [PAWN_possessive] наконец не нашли и не спасли.</Pony_Pegasus.baseDesc>
+
+	<Pony_Pegasus.title>Слабокрылый</Pony_Pegasus.title>
+	<Pony_Pegasus.titleFemale>Слабокрылая</Pony_Pegasus.titleFemale>
+	<Pony_Pegasus.titleShort>Слабокрылый</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.titleShortFemale>Слабокрылая</Pony_Pegasus.titleShortFemale>
+	<Pony_Pegasus.baseDesc>В то время как другие жеребята-сверстники беззаботно резвились в облаках, [PAWN_nameDef] не {PAWN_gender ? мог : могла} присоедениться к ними. [PAWN_possessive] собственные слаборазвитые крылышки не позволяли подняться в воздух, и это не давало [PAWN_objective] покоя. [PAWN_nameDef] очень {PAWN_gender ? переживал : переживала} и {PAWN_gender ? расстраивался : расстраивалась}.</Pony_Pegasus.baseDesc>
+
+	<Pony_Pegasus.title>Ловец облаков</Pony_Pegasus.title>
+	<Pony_Pegasus.titleShort>Ловец</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.baseDesc>[PAWN_nameDef] {PAWN_gender ? обрел : обрела} истинное счастье, как только {PAWN_gender ? научился : научилась} летать. [PAWN_pronoun] {PAWN_gender ? стал : стала} испытывать необычайную страсть к облакам, собирая их в причудливые фигурки и демонстрируя своим друзьям.</Pony_Pegasus.baseDesc>
+
+	<Pony_Pegasus.title>Любитель радуги</Pony_Pegasus.title>
+	<Pony_Pegasus.titleFemale>Любительница радуги</Pony_Pegasus.titleFemale>
+	<Pony_Pegasus.titleShort>Радужный</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.titleShortFemale>Радужная</Pony_Pegasus.titleShortFemale>
+	<Pony_Pegasus.baseDesc>[PAWN_nameDef] с детства {PAWN_gender ? испытывал : испытывала} искренний трепет перед дождливой погодой. [PAWN_possessive] сердце замирало от восхищения, когда [PAWN_pronoun] {PAWN_gender ? видел : видела} яркую радугу, появлявшуюся после дождя. [PAWN_nameDef] {PAWN_gender ? наслаждался : наслаждалась} ее цветовой палитрой, а различные побрякушки сделанные с ее использованием, вызывали у {PAWN_gender ? него : нее} неподдельный восторг.</Pony_Pegasus.baseDesc>
+
+	<Pony_Pegasus.title>Рожденный Шедоуболтом</Pony_Pegasus.title>
+	<Pony_Pegasus.titleFemale>Рожденная Шедоуболтом</Pony_Pegasus.titleFemale>
+	<Pony_Pegasus.titleShort>Шедоуболт-новичок</Pony_Pegasus.titleShort>
+	<Pony_Pegasus.baseDesc>С ранних лет [PAWN_nameDef] {PAWN_gender ? рос : росла} под влиянием родственников, которые внушали [PAWN_objective], что нет никого величественнее и совереннее Найтмер Мун. Стал полноправным членом Шедоуболтов и живя в полной изоляции от окружающего мира, [PAWN_pronoun] {PAWN_gender ? создал : создала} для себя идеал, которому {PAWN_gender ? стремился : стремилась} преданно служить.</Pony_Pegasus.baseDesc>
+-->
+</Defs>

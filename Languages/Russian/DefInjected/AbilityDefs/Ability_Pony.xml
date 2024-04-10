@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<NatureMuse.label>природная муза</NatureMuse.label>
+	<NatureMuse.description>Прибегнуть к силам природы, наполняющим тело энергией для увеличения скорости работы.</NatureMuse.description>
+	<ShortFlight.label>короткий полёт</ShortFlight.label>
+	<ShortFlight.description>Пролететь на небольшое расстояние, используя крылья.</ShortFlight.description>
+	<ShortFlight.verbProperties.label>полёт</ShortFlight.verbProperties.label>
+	<MagicBurst.label>магический выстрел</MagicBurst.label>
+	<MagicBurst.description>Запустить при помощи рога в указанную точку сгусток магической энергии, наносящий урон и пробивающий броню.</MagicBurst.description>
+
+</LanguageData>

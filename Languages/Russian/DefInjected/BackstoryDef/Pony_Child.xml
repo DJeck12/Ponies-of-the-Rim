@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+	<!--<Pony_Everypony.title></Pony_Everypony.title>
+		<Pony_Everypony.titleFemale></Pony_Everypony.titleFemale>
+		<Pony_Everypony.titleShort></Pony_Everypony.titleShort>
+		<Pony_Everypony.titleShortFemale></Pony_Everypony.titleShortFemale>
+		<Pony_Everypony.baseDesc></Pony_Everypony.baseDesc>-->
+
+	<!--[PAWN_nameDef]
+		[PAWN_possessive] его/её
+		[PAWN_objective] ему/ей
+		[PAWN_pronoun] он/она
+		{PAWN_gender ? он : она} -->
+
+	<Pony_EveryponyOtherRace.title>Дитя другой расы</Pony_EveryponyOtherRace.title>
+	<Pony_EveryponyOtherRace.titleShort>Другой</Pony_EveryponyOtherRace.titleShort>
+	<Pony_EveryponyOtherRace.titleShortFemale>Другая</Pony_EveryponyOtherRace.titleShortFemale>
+	<Pony_EveryponyOtherRace.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} иной расы, нежели которой обладали [PAWN_possessive] родители. Тем не менее, [PAWN_pronoun] {PAWN_gender ? рос : росла} в любящей семье, воспитавшей [PAWN_possessive] {PAWN_gender ? добрым : доброй} и {PAWN_gender ? свободным : свободной} от предубеждений {PAWN_gender ? жеребенком : кобылкой}.</Pony_EveryponyOtherRace.baseDesc>
+
+	<Pony_EveryponyOppressed.title>Угнетенное дитя</Pony_EveryponyOppressed.title>
+	<Pony_EveryponyOppressed.titleShort>Угнетенный</Pony_EveryponyOppressed.titleShort>
+	<Pony_EveryponyOppressed.titleShortFemale>Угнетенная</Pony_EveryponyOppressed.titleShortFemale>
+	<Pony_EveryponyOppressed.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? стал : стала} жертвой расизма. Другие пони постоянно издевались над {PAWN_gender ? ним : ней}, из-за чего {PAWN_gender ? тому : той} частенько приходилось учавствовать во множестве драк и ссор. В результате длительной травли [PAWN_nameDef] {PAWN_gender ? вырос : выросла} {PAWN_gender ? подозрительным : подозрительной} и {PAWN_gender ? замкнутым : замкнутой} {PAWN_gender ? жеребенком : кобылкой}.</Pony_EveryponyOppressed.baseDesc>
+
+	<Pony_EveryponyUniFri.title>Друг единорогов</Pony_EveryponyUniFri.title>
+	<Pony_EveryponyUniFri.titleFemale>Подруга единорогов</Pony_EveryponyUniFri.titleFemale>
+	<Pony_EveryponyUniFri.titleShort>Друг единорогов</Pony_EveryponyUniFri.titleShort>
+	<Pony_EveryponyUniFri.titleShortFemale>Подруга единорогов</Pony_EveryponyUniFri.titleShortFemale>
+	<Pony_EveryponyUniFri.baseDesc>[PAWN_nameDef] {PAWN_gender ? находился : находилась} в окружении одних лишь друзей-единорогов. Они делились с {PAWN_gender ? ним : ней} различными интересными фактами о магии, расширяя [PAWN_possessive] познания в этой области.</Pony_EveryponyUniFri.baseDesc>
+
+	<Pony_EveryponyWizApp.title>Ученик волшебника</Pony_EveryponyWizApp.title>
+	<Pony_EveryponyWizApp.titleFemale>Ученица волшебника</Pony_EveryponyWizApp.titleFemale>
+	<Pony_EveryponyWizApp.titleShort>Подмастерье</Pony_EveryponyWizApp.titleShort>
+	<Pony_EveryponyWizApp.baseDesc>[PAWN_nameDef] рано {PAWN_gender ? потерял : потеряла} своих родителей и долгое время {PAWN_gender ? был : была} беспризорной сиротой. Затем [PAWN_possessive] нашел и приютил старый странствующий волшебник-отшельник. Волшебник все детство воспитывал [PAWN_possessive] и обучал магическому искусству.</Pony_EveryponyWizApp.baseDesc>
+
+	<Pony_EveryponyStruckBaS.title>Пораженный василиском</Pony_EveryponyStruckBaS.title>
+	<Pony_EveryponyStruckBaS.titleFemale>Пораженная Василиском</Pony_EveryponyStruckBaS.titleFemale>
+	<Pony_EveryponyStruckBaS.titleShort>Пораженный</Pony_EveryponyStruckBaS.titleShort>
+	<Pony_EveryponyStruckBaS.titleShortFemale>Пораженная</Pony_EveryponyStruckBaS.titleShortFemale>
+	<Pony_EveryponyStruckBaS.baseDesc>В детстве [PAWN_nameDef] {PAWN_gender ? попал : попала} под окаменяющий взгляд василиска, однако [PAWN_possessive] смогли спасти. [PAWN_pronoun] {PAWN_gender ? проходил : проходила} длительную реабилитацию, но некоторые проблемы со здоровьем и патологический страх перед животными до сих пор дают о себе знать.</Pony_EveryponyStruckBaS.baseDesc>
+
+	<Pony_EveryponyLightChi.title>Дитя Света</Pony_EveryponyLightChi.title>
+	<Pony_EveryponyLightChi.titleShort>Дитя Света</Pony_EveryponyLightChi.titleShort>
+	<Pony_EveryponyLightChi.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Света. Так как [PAWN_nameDef] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира.</Pony_EveryponyLightChi.baseDesc>
+
+	<Pony_EveryponyDarkChi.title>Дитя Тьмы</Pony_EveryponyDarkChi.title>
+	<Pony_EveryponyDarkChi.titleShort>Дитя Тьмы</Pony_EveryponyDarkChi.titleShort>
+	<Pony_EveryponyDarkChi.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в семье, поклоняющейся Богине Тьмы. Так как [PAWN_pronoun] {PAWN_gender ? жил : жила} среди сектантов, то {PAWN_gender ? получил : получила} преимущественно религиозные взгляды об устройстве окружающего мира.</Pony_EveryponyDarkChi.baseDesc>
+
+	<Pony_EveryponyBornMagic.title>Магическое рождение</Pony_EveryponyBornMagic.title>
+	<Pony_EveryponyBornMagic.titleShort>Магическое рождение</Pony_EveryponyBornMagic.titleShort>
+	<Pony_EveryponyBornMagic.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} в результате очень сложного и дорогостоящего ритуала с использованием чистой магической эссенции, взятой по половинке от каждого родителя. [PAWN_pronoun] {PAWN_gender ? провел : провела} свое детство вдали от общества по соображениям безопасности.</Pony_EveryponyBornMagic.baseDesc>
+
+	<Pony_EveryponyFriSchSt.title>Ученик Школы Дружбы</Pony_EveryponyFriSchSt.title>
+	<Pony_EveryponyFriSchSt.titleFemale>Ученица Школы Дружбы</Pony_EveryponyFriSchSt.titleFemale>
+	<Pony_EveryponyFriSchSt.titleShort>Камрад</Pony_EveryponyFriSchSt.titleShort>
+	<Pony_EveryponyFriSchSt.titleShortFemale>Камрадесса</Pony_EveryponyFriSchSt.titleShortFemale>
+	<Pony_EveryponyFriSchSt.baseDesc>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? учеником : ученицей} в одной из самых популярных и древних школ Старой Эквестрии, что было черезвычайно престижно в то время. [PAWN_pronoun] {PAWN_gender ? получил : получила} глубокие представления в области социально-нравственных отношений, само собой предполагающие превосходство дружбомагии.</Pony_EveryponyFriSchSt.baseDesc>
+
+	<Pony_EveryponyMagSchSt.title>Ученик Школы Магии</Pony_EveryponyMagSchSt.title>
+	<Pony_EveryponyMagSchSt.titleFemale>Ученица Школы Магии</Pony_EveryponyMagSchSt.titleFemale>
+	<Pony_EveryponyMagSchSt.titleShort>Неофит</Pony_EveryponyMagSchSt.titleShort>
+	<Pony_EveryponyMagSchSt.baseDesc>С раннего детства [PAWN_nameDef] {PAWN_gender ? проявлял : проявляла} интерес ко множеству магических наук. Родители решили отправить [PAWN_possessive] учиться в Школу Магии, где {PAWN_gender ? тот : та} {PAWN_gender ? узнал : узнала} много нового, получая профильное образование и изучая различные научные дисциплины.</Pony_EveryponyMagSchSt.baseDesc>
+
+	<Pony_EveryponyUnderAli.title>Под опекой аликорнов</Pony_EveryponyUnderAli.title>
+	<Pony_EveryponyUnderAli.titleShort>Подопечный</Pony_EveryponyUnderAli.titleShort>
+	<Pony_EveryponyUnderAli.titleShortFemale>Подопечная</Pony_EveryponyUnderAli.titleShortFemale>
+	<Pony_EveryponyUnderAli.baseDesc>[PAWN_nameDef] {PAWN_gender ? родился : родилась} при трагичных обстоятельствах, когда в [PAWN_possessive] стране начался голод. [PAWN_objective] посчастливилось попасть под опеку аликорна, прибывшего с благотворительной миссией. [PAWN_nameDef] {PAWN_gender ? рос : росла} {PAWN_gender ? замечательным : замечательной} {PAWN_gender ? жеребенком : кобылкой} и с раннего возраста {PAWN_gender ? начал : начала} изучать уроки дружбы и точные науки.</Pony_EveryponyUnderAli.baseDesc>
+
+</Defs>

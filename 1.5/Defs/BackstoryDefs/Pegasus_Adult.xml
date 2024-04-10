@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusShadRec</defName>
+		<title>Shadowbolt Recruiter</title>
+		<titleFemale>Shadowbolt Recruiter</titleFemale>
+		<titleShort>Shadowbolt Recruiter</titleShort>
+		<titleShortFemale>Shadowbolt Recruiter</titleShortFemale>
+		<baseDesc>Together with other Shadowbolts, [PAWN_nameDef] sought out those who questioned the justice and correctness of the existing order. [PAWN_pronoun] tried to win them over to [PAWN_possessive] side.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusShadMar</defName>
+		<title>Shadowbolt Marauder</title>
+		<titleShort>Shadowbolt Marauder</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] entire adult life among the Shadowbolts, unquestioningly following their instructions. During battles, [PAWN_pronoun] was always at the forefront of the attack, demonstrating incredible speed and strength.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusPoultryFar</defName>
+		<title>Poultry farmer</title>
+		<titleShort>Poultry farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed taking care of plants and animals. [PAWN_pronoun] curiously observed the world of flora and fauna, paying special attention to birds and finding something special and unique in them.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusWinRes</defName>
+		<title>Winged Rescuer</title>
+		<titleFemale>Winged Rescuer</titleFemale>
+		<titleShort>Rescuer</titleShort>
+		<titleShortFemale>Rescuer</titleShortFemale>
+		<baseDesc>One day, walking in the woods late at night, [PAWN_nameDef] got into trouble. [PAWN_pronoun] was saved by a brave stranger who happened to be nearby. [PAWN_nameDef] was amazed by such bravery and dedication, so [PAWN_pronoun] decided to devote life to helping other ponies, striving to be like [PAWN_possessive] protector.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusPegFight</defName>
+		<title>Pegasus Fighter</title>
+		<titleFemale>Pegasus Fighter</titleFemale>
+		<titleShort>Fighter</titleShort>
+		<titleShortFemale>Fighter</titleShortFemale>
+		<baseDesc>While serving in the Pegasus regiment of the Royal Guard, [PAWN_nameDef] tried to stand out from the others as much as possible. During constant training, [PAWN_pronoun] masterfully honed [PAWN_possessive] flying skills, mastered aerial combat and learned how to deftly parry blows using wings with maximum effectiveness.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusOfficerPeg</defName>
+		<title>Officer of Pegasus Guard</title>
+		<titleShort>Pegasus Officer</titleShort>
+		<baseDesc>[PAWN_nameDef] devoted [PAWN_possessive] life to serving in the Guard, protecting the peace of citizens and accompanying important people on various diplomatic missions. Years passed, but [PAWN_pronoun] continued to fulfill duty to the kingdom, until finally [PAWN_pronoun] received a well-deserved promotion to the rank of officer.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusFlyRacer</defName>
+		<title>Flying racer</title>
+		<titleFemale>Flying racer</titleFemale>
+		<titleShort>Flying racer</titleShort>
+		<titleShortFemale>Flying racer</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] watched the pegasus competitions with admiration. [PAWN_pronoun] set [PAWN_objective]self the goal of becoming as successful and outstanding as the most famous sports ponies. [PAWN_nameDef] devoted all [PAWN_possessive] time to training, tirelessly honing flying skills.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusPilotTor</defName>
+		<title>Pilot-inventor</title>
+		<titleFemale>Pilot-inventor</titleFemale>
+		<titleShort>Inventor</titleShort>
+		<titleShortFemale>Inventor</titleShortFemale>
+		<baseDesc>One day [PAWN_nameDef] met a pegasus who couldn't fly. [PAWN_possessive] heart was full of compassion, and [PAWN_pronoun] could not live peacefully knowing that there was someone nearby who was deprived of something so important. Then [PAWN_nameDef] decided to become an inventor and set [PAWN_objective]self an important life goal — to make all the unfortunate ponies happy again.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusWeatherContr</defName>
+		<title>Weather Controller</title>
+		<titleShort>Weather pony</titleShort>
+		<baseDesc>[PAWN_nameDef] devoted most of life to weather management and often worked with local meteorologists. [PAWN_pronoun] was sure that this kind of activity was [PAWN_possessive] true vocation.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusMeteo</defName>
+		<title>Meteorologist</title>
+		<titleShort>Meteorologist</titleShort>
+		<baseDesc>[PAWN_nameDef] came from a family that had been fascinated by weather forecasting for many generations. Unsurprisingly, [PAWN_pronoun] shared this passion. [PAWN_pronoun] devoted a huge amount of time to meteorology, which was the reason for failures in [PAWN_possessive] personal life.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusEmpRainFactor</defName>
+		<title>Employee of Rainbow Factory</title>
+		<titleFemale>Employee of Rainbow Factory</titleFemale>
+		<titleShort>Proletarian</titleShort>
+		<baseDesc>[PAWN_nameDef] was fascinated by the rainbow. After getting a job at a special factory, [PAWN_pronoun] began to make various products from it.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusCloudSculpt</defName>
+		<title>Cloud Sculptor</title>
+		<titleShort>Cloud Sculptor</titleShort>
+		<baseDesc>[PAWN_nameDef] was crazy about clouds. As an adult, [PAWN_pronoun] turned into a skilled craftsman, able to give them any shape at will.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusRainCook</defName>
+		<title>Rainbow Cook</title>
+		<titleShort>Rainbow Cook</titleShort>
+		<baseDesc>[PAWN_nameDef] enthusiastically studied books on the national cuisine of pegasus. [PAWN_possessive] knowledge of cooking a variety of exotic dishes was almost perfect and made [PAWN_objective] famous far beyond the borders of native country.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusSlaveShad</defName>
+		<title>Slave of Shadowbolts</title>
+		<titleFemale>Slave of Shadowbolts</titleFemale>
+		<titleShort>Captive</titleShort>
+		<titleShortFemale>Captive</titleShortFemale>
+		<baseDesc>One day, during a carefree walk through the forest, [PAWN_nameDef] was kidnapped by Shadowbolts. From that day on, [PAWN_pronoun] was forced to serve them.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusLeadShad</defName>
+		<title>Leader of Shadowbolts</title>
+		<titleShort>Leader</titleShort>
+		<baseDesc>[PAWN_nameDef] became part of the Shadowbolt team and enthusiastically adopted the experience of [PAWN_possessive] new comrades. Soon, [PAWN_pronoun] showed leadership qualities that allowed [PAWN_objective] to take the place of honor as a leader.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+-->
+</Defs>

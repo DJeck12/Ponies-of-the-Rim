@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef>
+		<defName>NatureMuse</defName>
+		<label>nature muse</label>
+		<description>The caster imbues themself with the forces of nature, that fills the body with energy to increase work speed.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<cooldownTicksRange>420000</cooldownTicksRange>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<iconPath>UI/Abilities/BerserkTrance</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/BerserkTrance</warmupMoteSocialSymbol>
+		<warmupSound>MoralistAbility_Warmup</warmupSound>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<violent>false</violent> 
+			<warmupTime>3.0</warmupTime>
+			<range>0</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NatureMuse</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+				<sound>MoralistAbility_Resolve</sound>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>ShortFlight</defName>
+		<label>short fligth</label>
+		<description>Fly a short distance using wings.</description>
+		<iconPath>UI/Abilities/MechLongJump</iconPath>
+		<cooldownTicksRange>1200</cooldownTicksRange>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>flight</label>
+			<violent>false</violent>
+			<warmupTime>0.5</warmupTime>
+			<minRange>4</minRange>
+			<range>12</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<flyWithCarriedThing>false</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>MagicBurst</defName>
+		<label>magic burst</label>
+		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
+		<iconPath>UI/Abilities/PiercingSpine</iconPath>
+		<cooldownTicksRange>600</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>10</range>
+			<warmupTime>1.0</warmupTime>
+			<soundCast>Shot_ChargeRifle</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MagicBurst</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>MagicBurst</defName>
+		<label>magic burst</label>
+		<graphicData>
+			<texPath>Things/Projectile/PiercingSpine</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Beam</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationInsert">
+					<xpath>/Defs/ThingDef[defName="Apparel_KidPants"]/apparel/bodyPartGroups</xpath>
+					<value>
+						<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</wornGraphicPath>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetMechanitorBase"]/apparel/bodyPartGroups</xpath>
+					<value>
+						<li>TopHead</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="Apparel_Pants"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</wornGraphicPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="Apparel_FlakPants"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakPants/FlakPants</wornGraphicPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
+				or @Name="ApparelArmorHelmetReconBase"]/apparel/bodyPartGroups</xpath>
+				<value>
+					<li>TopHead</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

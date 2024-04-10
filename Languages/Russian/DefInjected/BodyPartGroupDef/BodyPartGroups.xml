@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
+	<TopHead.label>поверх головы</TopHead.label>
 	<Horn.label>рог</Horn.label>
 	<Wings.label>крылья</Wings.label>
 	<Tail.label>хвост</Tail.label>

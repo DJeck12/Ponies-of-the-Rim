@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyFlorist</defName>
+		<title>Florist</title>
+		<titleFemale>Florist</titleFemale>
+		<titleShort>Florist</titleShort>
+		<titleShortFemale>Florist</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponySurveyor</defName>
+		<title>Magic plant farm</title>
+		<titleShort>Surveyor</titleShort>
+		<baseDesc>[PAWN_nameDef] worked on a special farm where grew magical plants for scientists and alchemists. [PAWN_pronoun] has gained extensive specialized knowledge in this field.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyZootranslator</defName>
+		<title>Zootranslator</title>
+		<titleFemale>Zootranslator</titleFemale>
+		<titleShort>Zootranslator</titleShort>
+		<titleShortFemale>Zootranslator</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] was well versed in animal biocommunication. [PAWN_pronoun] easily found a common language with them, calmed down, quickly understood and satisfied their urgent needs.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef> 
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyDruid</defName>
+		<title>Druid</title>
+		<titleShort>Druid</titleShort>
+		<baseDesc>Thanks to outstanding magical talent, [PAWN_nameDef] could perform the most complex rituals aimed at manipulating natural forces. Even unicorns couldn't match [PAWN_possessive] skill.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef> 
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyTamerMagAni</defName>
+		<title>Tamer of magical animals</title>
+		<titleFemale>Tamer of magical animals</titleFemale>
+		<titleShort>Beastcolt</titleShort>
+		<titleShortFemale>Beastmare</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] devoted life to the search and capture of exotic, magical animals. [PAWN_pronoun] has been collecting [PAWN_possessive] collection for many years.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef> 
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyMutilated</defName>
+		<title>Hopeless operation</title>
+		<titleShort>Mutilated</titleShort>
+		<titleShortFemale>Mutilated</titleShortFemale>
+		<baseDesc>Unable to tolerate constant bullying towards [PAWN_possessive] race, [PAWN_nameDef] agreed to an experimental procedure for implanting horns and wings. The operation ended unsuccessfully and turned [PAWN_objective] into an invalid for a long time.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyStonecutter</defName>
+		<title>Stone farm</title>
+		<titleShort>Stonecutter</titleShort>
+		<baseDesc>Tired of the endless bustle of the city, [PAWN_nameDef] found peace on a remote stone farm, which inherited. [PAWN_pronoun] cultivated various crystal cultures for magicians and jewelers.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyWingless</defName>
+		<title>Wingless Pilot</title>
+		<titleFemale>Wingless Pilot</titleFemale>
+		<titleShort>Wingless</titleShort>
+		<titleShortFemale>Wingless</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] admired the flight of pegasus and wanted to connect life with the air. [PAWN_pronoun] fulfilled [PAWN_possessive] dream by learning how to pilot flying machines.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyAscCook</defName>
+		<title>Ascetic cook</title>
+		<titleShort>Cook</titleShort>
+		<titleShortFemale>Cook</titleShortFemale>
+		<baseDesc>Living among the representatives of the poor, [PAWN_nameDef] cooked simple but delicious dishes from herbal ingredients in a small public dining room. [PAWN_pronoun] learned to appreciate what [PAWN_pronoun] had.</baseDesc>
+		<slot>Adulthood</slot> 
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyAlchemist</defName>
+		<title>Alchemist</title>
+		<titleShort>Alchemist</titleShort>
+		<baseDesc>[PAWN_nameDef] was fond of reading and medicinal herbs. [PAWN_pronoun] studied their beneficial properties, developing various preparations and preparing decoctions from them.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+-->
+</Defs>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RecipeDef ParentName="CookMealFineBase">
+		<defName>CookMealFine_Hay</defName>
+		<label>cook hay fine meal</label>
+		<description>Cook a somewhat complex meal from plant ingredients and hay. Suitable for creatures with a predominantly vegetarian diet.</description>
+		<jobString>Cooking hay fine meal.</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>vegetarian ingredients</customSummary>
+					<categories>
+						<li>PlantFoodRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MealFine_Hay>1</MealFine_Hay>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealFineBulkBase">
+		<defName>CookMealFineBulk_Hay</defName>
+		<label>cook hay fine meal x4</label>
+		<description>Cook 4 somewhat complex meals from plant ingredients and hay. Suitable for creatures with a predominantly vegetarian diet.</description>
+		<jobString>Cooking 4 hay fine meals.</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>vegetarian ingredients</customSummary>
+					<categories>
+						<li>PlantFoodRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MealFine_Hay>4</MealFine_Hay>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealLavishBase">
+		<defName>CookMealLavish_Hay</defName>
+		<label>cook hay lavish meal</label>
+		<description>Cook a very complex meal from plant ingredients and hay. Suitable for creatures with a predominantly vegetarian diet. Much of the ingredients are wasted in order to create the best eating experience.</description>
+		<jobString>Cooking hay lavish meal.</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>vegetarian ingredients</customSummary>
+					<categories>
+						<li>PlantFoodRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MealLavish_Hay>1</MealLavish_Hay>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealLavishBulkBase">
+		<defName>CookMealLavishBulk_Hay</defName>
+		<label>cook hay lavish meal x4</label>
+		<description>Cook 4 somewhat complex meals from plant ingredients and hay. Suitable for creatures with a predominantly vegetarian diet. Much of the ingredients are wasted in order to create the best eating experience.</description>
+		<jobString>Cooking 4 hay lavish meals.</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>vegetarian ingredients</customSummary>
+					<categories>
+						<li>PlantFoodRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MealLavish_Hay>4</MealLavish_Hay>
+		</products>
+	</RecipeDef>
+
+</Defs>

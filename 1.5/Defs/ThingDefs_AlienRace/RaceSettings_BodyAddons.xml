@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Bodyaddons_settings</defName>
+
+		<universalBodyAddons>
+		<!--Tail-->
+			<li>
+				<name>Tail</name>
+				<path>Things/Races/Pony/Tails/Pony_Tail</path>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<drawnDesiccated>false</drawnDesiccated>
+				<colorChannel>hair</colorChannel>
+				<conditions>
+					<Race>
+						<li>Pony_Earthpony</li>
+						<li>Pony_Pegasus</li>
+						<li>Pony_Unicorn</li>
+					</Race>
+					<BodyPart>
+						<bodyPart>Pony_Tail</bodyPart>
+					</BodyPart>
+					<Posture>
+						<drawnInBed>false</drawnInBed>
+					</Posture>
+				</conditions>
+				<!--<extendedGraphics>
+					<Age For="Baby">Things/Races/Pony/Tails/Pony_TailBaby</Age>
+				</extendedGraphics>-->
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Pony>(0, 0.58)</Pony>
+							<Baby>(0, 0.35)</Baby>
+							<Child>(0, 0.435)</Child>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>0.5</layerOffset>
+						<bodyTypes>
+							<Pony>(0, -0.3)</Pony>
+							<Baby>(0, -0.19)</Baby>
+							<Child>(0, -0.22)</Child>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Pony>(0.36, 0)</Pony>
+							<Baby>(0.25, 0)</Baby>
+							<Child>(0.29, 0)</Child>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		<!--Ears-->
+			<li>
+				<path>Things/Races/Pony/Ears/Pony_EarRight</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<drawnDesiccated>false</drawnDesiccated>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<Race>
+						<li>Pony_Earthpony</li>
+						<li>Pony_Pegasus</li>
+						<li>Pony_Unicorn</li>
+					</Race>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>TopHead</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.268</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.5</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.268</layerOffset>
+					</east>
+					<west>
+						<layerOffset>-0.5</layerOffset>
+					</west>
+				</offsets>
+			</li>
+			<li>
+				<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<drawnDesiccated>false</drawnDesiccated>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<Race>
+						<li>Pony_Earthpony</li>
+						<li>Pony_Pegasus</li>
+						<li>Pony_Unicorn</li>
+					</Race>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>TopHead</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.268</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.5</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.5</layerOffset>
+					</east>
+					<west>
+						<layerOffset>-0.268</layerOffset>
+					</west>
+				</offsets>
+			</li>
+		<!--Cutiemark-->
+			<li>
+				<name>Cutiemark</name>
+				<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<drawSize>(0.15, 0.15)</drawSize>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<drawnDesiccated>false</drawnDesiccated>
+				<colorChannel>none</colorChannel>
+				<conditions>
+					<Race>
+						<li>Pony_Earthpony</li>
+						<li>Pony_Pegasus</li>
+						<li>Pony_Unicorn</li>
+					</Race>
+					<BodyPart>
+						<bodyPart>Torso</bodyPart>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>Legs</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+					<Posture>
+						<drawnInBed>false</drawnInBed>
+					</Posture>
+					<Age>PonyAdult</Age>
+				</conditions>
+				<offsets>
+					<east>
+						<layerOffset>-0.29</layerOffset>
+						<bodyTypes>
+							<Pony>(0.22, -0.1)</Pony>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		</universalBodyAddons>
+
+	</AlienRace.RaceSettings>
+
+</Defs>

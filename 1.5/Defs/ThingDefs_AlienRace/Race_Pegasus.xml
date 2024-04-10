@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
+		<defName>Pony_Pegasus</defName>
+		<label>pegasus</label>
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Phoenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+
+<color=#46FFFF>Pegasi</color> differ from other ponies in having a pair of wings on their back and a more insulated coat for flying at high altitudes. Being natural racers, pegasi always love to compete with others, which is why they later became considered the most inimical race of ponies. Despite this, most pegasi prefer to live peacefully along with other ponies and use their flying abilities to help others.]]></description>
+
+<!--Stats-->
+
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>4.9</MoveSpeed>
+			<PsychicSensitivity>1.25</PsychicSensitivity>
+			<ComfyTemperatureMin>6</ComfyTemperatureMin>
+			<ComfyTemperatureMax>36</ComfyTemperatureMax>
+			<CarryingCapacity>90</CarryingCapacity>
+			<Mass>75</Mass>
+			<LeatherAmount>65</LeatherAmount>
+			<PainShockThreshold>0.75</PainShockThreshold>
+			<PawnBeauty>1</PawnBeauty>
+			<RoyalFavorValue>4</RoyalFavorValue>
+		</statBases>
+
+<!--Settings-->
+
+		<alienRace>
+			<generalSettings>
+				<notXenophobistTowards>
+					<li>Pony_Earthpony</li>
+					<li>Pony_Unicorn</li>
+				</notXenophobistTowards>
+				<abilities>
+					<li>ShortFlight</li>
+				</abilities>
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<min>RGBA(50, 50, 150, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(180, 180, 180, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+					<!--Wings-->
+						<li>
+							<path>Things/Races/Pony/Wings/PegasusRight</path>
+							<bodyPart>Pony_Wing</bodyPart>
+							<bodyPartLabel>right wing</bodyPartLabel>
+							<userCustomizable>false</userCustomizable>
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>skin</colorChannel>
+							<!--<extendedGraphics>
+								<Age For="Baby"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+								<Age For="Child"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+								<Age For="PreTeenager"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+							</extendedGraphics>-->
+							<offsets>
+								<south>
+									<layerOffset>-0.28</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.32</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.28</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Things/Races/Pony/Wings/PegasusLeft</path>
+							<bodyPart>Pony_Wing</bodyPart>
+							<bodyPartLabel>left wing</bodyPartLabel>
+							<userCustomizable>false</userCustomizable>
+							<inFrontOfBody>true</inFrontOfBody>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<drawnInBed>false</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<colorChannel>skin</colorChannel>
+							<!--<extendedGraphics>
+								<Age For="Baby"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+								<Age For="Child"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+								<Age For="PreTeenager"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+							</extendedGraphics>-->
+							<offsets>
+								<south>
+									<layerOffset>-0.28</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.32</layerOffset>
+								</north>
+								<west>
+									<layerOffset>-0.28</layerOffset>
+								</west>
+							</offsets>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+			</generalSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Pony</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+
+			<graphicPaths>
+				<head>
+					<path>Things/Races/Pony/Heads/</path>
+					<headtypeGraphics>
+						<Male_AverageNormal>Things/Races/Pony/Heads/Male_Pony</Male_AverageNormal>
+						<Female_AverageNormal>Things/Races/Pony/Heads/Female_Pony</Female_AverageNormal>
+					</headtypeGraphics>
+				</head>
+				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
+				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
+				<body>Things/Races/Pony/Bodies/</body>
+				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+			</graphicPaths>
+		</alienRace>
+
+<!--Race Settings-->
+
+		<race>
+			<nameGenerator>NameGeneratorPegasus</nameGenerator>
+			<body>Pegasus</body>
+			<useMeatFrom>Pony_Earthpony</useMeatFrom>
+		</race>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

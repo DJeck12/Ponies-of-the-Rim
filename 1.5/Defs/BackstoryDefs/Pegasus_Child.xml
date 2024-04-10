@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusURac</defName>
+		<title>Young racer</title>
+		<titleFemale>Young racer</titleFemale>
+		<titleShort>Racer</titleShort>
+		<titleShortFemale>Racer</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] was passionate about speed. The desire to race had been in [PAWN_objective] ever since [PAWN_pronoun] learned to fly.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusBully</defName>
+		<title>Bully Flyer</title>
+		<titleShort>Bully</titleShort>
+		<baseDesc>Since childhood, [PAWN_nameDef] felt like an outcast, peers considered [PAWN_objective] a loser and mocked. Wanting to gain recognition and respect, as well as create an intimidating reputation, [PAWN_pronoun] began to mock those who were weaker, taking out [PAWN_possessive] resentment and anger on them.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusLostAmong</defName>
+		<title>Lost among clouds</title>
+		<titleFemale>Lost among clouds</titleFemale>
+		<titleShort>Lost</titleShort>
+		<titleShortFemale>Lost</titleShortFemale>
+		<baseDesc>As a child, [PAWN_nameDef] got lost in a large group of cumulus clouds. [PAWN_pronoun] wandered among them for a long time, until was finally found and rescued.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusWeakWi</defName>
+		<title>Weak-winged</title>
+		<titleFemale>Weak-winged</titleFemale>
+		<titleShort>Weak-winged</titleShort>
+		<titleShortFemale>Weak-winged</titleShortFemale>
+		<baseDesc>While other foals of the same age were carelessly frolicking in the clouds, [PAWN_nameDef] could not join them. [PAWN_possessive] own underdeveloped wings did not allow to rise into the air, and this did not give [PAWN_objective] peace of mind. [PAWN_nameDef] was very worried and upset.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusCloudCatcher</defName>
+		<title>Cloud Catcher</title>
+		<titleShort>Catcher</titleShort>
+		<baseDesc>[PAWN_nameDef] found true happiness as soon as learned to fly. [PAWN_pronoun] began to experience an extraordinary passion for clouds, collecting them into bizarre figures and showing them to [PAWN_possessive] friends.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusRainbowLover</defName>
+		<title>Rainbow lover</title>
+		<titleFemale>Rainbow lover</titleFemale>
+		<titleShort>Rainbow</titleShort>
+		<titleShortFemale>Rainbow</titleShortFemale>
+		<baseDesc>Since childhood, [PAWN_nameDef] has been in sincere awe of rainy weather. [PAWN_possessive] heart sank with admiration when [PAWN_pronoun] saw the bright rainbow appearing after the rain. [PAWN_nameDef] enjoyed it color palette, and the various trinkets made using it caused [PAWN_objective] genuine delight.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusBornShad</defName>
+		<title>Born of Shadowbolt</title>
+		<titleFemale>Born of Shadowbolt</titleFemale>
+		<titleShort>Shadowbolt-beginner</titleShort>
+		<baseDesc>From an early age, [PAWN_nameDef] grew up under the influence of relatives who inspired [PAWN_objective] that there was no one more majestic and sovereign than Nightmoon. [PAWN_pronoun] became a full member of the Shadowbolts and living in complete isolation from the outside world, [PAWN_pronoun] created an ideal for [PAWN_objective]self, which sought to faithfully serve.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+-->
+</Defs>

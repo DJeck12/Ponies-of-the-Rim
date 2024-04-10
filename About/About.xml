@@ -2,9 +2,9 @@
 <ModMetaData>
 	<packageId>Pony.PoniesOfTheRim.Core</packageId>
 	<name>Ponies of the Rim</name>
-	<author>Ponλ</author>
+	<author>Pony</author>
 	<supportedVersions>
-	<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<description><![CDATA[
 Simple mod that adds new pony races from the popular TV-show - <color=#ff3a99>My Little Pony™</color>.
