@@ -100,16 +100,21 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<!--Horn-->
 						<li>
 							<path>Things/Races/Pony/Horns/Unicorn</path>
+							<userCustomizable>false</userCustomizable>
 							<inFrontOfBody>true</inFrontOfBody>
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<drawnInBed>true</drawnInBed>
-							<drawnDesiccated>false</drawnDesiccated>
 							<colorChannel>skin</colorChannel>
 							<conditions>
+								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
 									<bodyPart>Pony_Horn</bodyPart>
 								</BodyPart>
+								<Posture>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+									<drawnInBed>false</drawnInBed>
+								</Posture>
 							</conditions>
 							<!--<extendedGraphics>
 								<Hediff For="MissingBodyPart">Things/Races/Pony/Horns/Unicorn_Broken</Hediff>

@@ -27,38 +27,29 @@
 					</headTypes>
 					<headOffsetDirectional>
 						<north>
+							<layerOffset>0.28</layerOffset>
 							<bodyTypes>
-								<Pony>(0, -0.075)</Pony>
-								<Baby>(0, -0.115)</Baby>
-								<Child>(0, -0.095)</Child>
+								<Thin>(0, -0.075)</Thin>
 							</bodyTypes>
 						</north>
 						<south>
 							<bodyTypes>
-								<Pony>(0, -0.175)</Pony>
-								<Baby>(0, -0.175)</Baby>
-								<Child>(0, -0.175)</Child>
+								<Thin>(0, -0.175)</Thin>
 							</bodyTypes>
 						</south>
 						<east>
 							<bodyTypes>
-								<Pony>(0.125, -0.02)</Pony>
-								<Baby>(0.06, -0.08)</Baby>
-								<Child>(0.09, -0.05)</Child>
+								<Thin>(0.125, -0.02)</Thin>
 							</bodyTypes>
 						</east>
 						<west>
 							<bodyTypes>
-								<Pony>(-0.125, -0.02)</Pony>
-								<Baby>(-0.075, -0.08)</Baby>
-								<Child>(-0.1, -0.05)</Child>
+								<Thin>(-0.125, -0.02)</Thin>
 							</bodyTypes>
 						</west>
 					</headOffsetDirectional>
 					<bodyTypes Inherit="False">
-						<li>Pony</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>						
+						<li>Thin</li>				
 					</bodyTypes>
 				</alienPartGenerator>
 			</generalSettings>
@@ -84,19 +75,19 @@
 				</foodList>
 			<!-- Genes -->
 				<blackGeneTags>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HairStyle</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
+					<li>Tail</li>
+					<li>Fur</li>
+					<li>BeardStyle</li>
+					<li>HairStyle</li>
+					<li>HairColor</li>
 				</blackGeneTags>
 				<blackEndoCategories>
-					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li>BodyType</li>
+					<li>Melanin</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Headbone</li>
 				</blackEndoCategories>
 			</raceRestriction>
 			<graphicPaths>
@@ -106,14 +97,14 @@
 					<fallbacks>
 					<!-- Override all chest apparel with a shirt -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Pony</wornGraphicPath>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Thin</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Torso</li>
 							</bodyPartGroups>
 						</li>
 					<!-- Override all legs apparel with pants -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Pony</wornGraphicPath>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Thin</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Legs</li>
 							</bodyPartGroups>

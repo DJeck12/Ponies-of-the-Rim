@@ -14,9 +14,8 @@
 		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<iconPath>UI/Abilities/BerserkTrance</iconPath>
-		<warmupMoteSocialSymbol>UI/Abilities/BerserkTrance</warmupMoteSocialSymbol>
-		<warmupSound>MoralistAbility_Warmup</warmupSound>
+		<iconPath>UI/Abilities/Ability_Pony</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Ability_Pony</warmupMoteSocialSymbol>
 		<hostile>false</hostile>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -41,7 +40,6 @@
 				<hediffDef>NatureMuse</hediffDef>
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
-				<sound>MoralistAbility_Resolve</sound>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -50,7 +48,7 @@
 		<defName>ShortFlight</defName>
 		<label>short fligth</label>
 		<description>Fly a short distance using wings.</description>
-		<iconPath>UI/Abilities/MechLongJump</iconPath>
+		<iconPath>UI/Abilities/Ability_Pony</iconPath>
 		<cooldownTicksRange>1200</cooldownTicksRange>
 		<hostile>false</hostile>
 		<verbProperties>
@@ -76,7 +74,7 @@
 		<defName>MagicBurst</defName>
 		<label>magic burst</label>
 		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
-		<iconPath>UI/Abilities/PiercingSpine</iconPath>
+		<iconPath>UI/Abilities/Ability_Pony</iconPath>
 		<cooldownTicksRange>600</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
@@ -95,16 +93,58 @@
 		<defName>MagicBurst</defName>
 		<label>magic burst</label>
 		<graphicData>
-			<texPath>Things/Projectile/PiercingSpine</texPath>
+			<texPath>Things/Projectile/Magic_Burst</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>Beam</damageDef>
-			<damageAmountBase>15</damageAmountBase>
+			<damageDef>Magic</damageDef>
+			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationBase>1</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
+	<DamageDef>
+		<defName>Magic</defName>
+		<label>magic</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been blasted with magic.</deathMessage>
+		<hediff>MagicWound</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0.5</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
+	</DamageDef>
+	<HediffDef ParentName="InjuryBase">
+		<defName>MagicWound</defName>
+		<label>magic burn</label>
+		<labelNoun>a magic burn</labelNoun>
+		<description>A magic burn.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>magic burn scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0125</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<bleedRate>0.06</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Burned off (magic)</destroyedLabel>
+			<destroyedOutLabel>Burned out (magic)</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
 
 </Defs>
