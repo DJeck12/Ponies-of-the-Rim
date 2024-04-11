@@ -5,9 +5,9 @@
 		<defName>Pony_Unicorn</defName>
 		<label>unicorn</label>
 		<description><![CDATA[Ponies are magical quadruped creatures from the planet Phoenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
-
+\n
 The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
-
+\n
 <color=#FF46FF>Unicorns</color> are the first race of ponies to think of when talking about magic and spells. They are the living embodiment of pony magic. Unicorns were the first to harness the nature of magic with the help of their magic horn and taught others to use it for good. However, some members of this race are notorious for their pride and attempts at mind control. One day this almost led to catastrophic consequences.]]></description>
 
 <!--Stats-->
@@ -110,11 +110,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<BodyPart>
 									<bodyPart>Pony_Horn</bodyPart>
 								</BodyPart>
-								<Posture>
-									<drawnStanding>true</drawnStanding>
-									<drawnLaying>true</drawnLaying>
-									<drawnInBed>false</drawnInBed>
-								</Posture>
 							</conditions>
 							<!--<extendedGraphics>
 								<Hediff For="MissingBodyPart">Things/Races/Pony/Horns/Unicorn_Broken</Hediff>

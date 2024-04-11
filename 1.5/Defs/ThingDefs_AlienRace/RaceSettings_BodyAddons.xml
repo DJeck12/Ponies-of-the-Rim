@@ -33,18 +33,18 @@
 				<offsets>
 					<south>
 						<bodyTypes>
-							<Thin>(0, 0.58)</Thin>
+							<Pony>(0, 0.58)</Pony>
 						</bodyTypes>
 					</south>
 					<north>
 						<layerOffset>0.5</layerOffset>
 						<bodyTypes>
-							<Thin>(0, -0.3)</Thin>
+							<Pony>(0, -0.3)</Pony>
 						</bodyTypes>
 					</north>
 					<east>
 						<bodyTypes>
-							<Thin>(0.36, 0)</Thin>
+							<Pony>(0.36, 0)</Pony>
 						</bodyTypes>
 					</east>
 				</offsets>
@@ -165,7 +165,7 @@
 					<east>
 						<layerOffset>-0.29</layerOffset>
 						<bodyTypes>
-							<Thin>(0.22, -0.1)</Thin>
+							<Pony>(0.22, -0.1)</Pony>
 						</bodyTypes>
 					</east>
 				</offsets>

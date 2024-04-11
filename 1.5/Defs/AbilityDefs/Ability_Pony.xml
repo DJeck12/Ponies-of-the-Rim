@@ -75,7 +75,7 @@
 		<label>magic burst</label>
 		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
 		<iconPath>UI/Abilities/Ability_Pony</iconPath>
-		<cooldownTicksRange>600</cooldownTicksRange>
+		<cooldownTicksRange>900</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>

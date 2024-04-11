@@ -6,7 +6,7 @@
 		<label>Pony Arrivals</label>
 		<description>A colony of recently-arrived ponies.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>EarthPonyColonist</basicMemberKind>
+		<basicMemberKind>EPonyColonist</basicMemberKind>
 		<pawnSingular>colonist</pawnSingular>
 		<pawnsPlural>colonists</pawnsPlural>
 		<techLevel>Industrial</techLevel>

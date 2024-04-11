@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<PonyOutlanderCivil.label>мирный союз пони</PonyOutlanderCivil.label>
+	<PonyOutlanderCivil.description>Эти пони живут здесь на протяжении десятилетий или веков. Большая часть технологий, которые привели их сюда, давно утеряна. В работе они обычно используют простые механические инструменты, а защищаются продвинутым огнестрельным оружием.\n\nСфера их интересов — торговля, доверие и выживание.\n\nЭта фракция высоко ценит цивилизованное общение.</PonyOutlanderCivil.description>
+	<PonyOutlanderCivil.leaderTitle>верховный советник</PonyOutlanderCivil.leaderTitle>
+	<PonyOutlanderCivil.pawnSingular>чужеземец</PonyOutlanderCivil.pawnSingular>
+	<PonyOutlanderCivil.pawnsPlural>чужеземцы</PonyOutlanderCivil.pawnsPlural>
+	<PonyOutlanderRough.label>воинственный союз пони</PonyOutlanderRough.label>
+	<PonyOutlanderRough.description>Эти пони живут здесь на протяжении десятилетий или веков. Большая часть технологий, которые привели их сюда, давно утеряна. В работе они обычно используют простые механические инструменты, а защищаются продвинутым огнестрельным оружием.\n\nСфера их интересов — торговля, доверие и выживание.\n\nЭта фракция воинственна и склонна к варварству.</PonyOutlanderRough.description>
+	<PonyOutlanderRough.leaderTitle>верховный советник</PonyOutlanderRough.leaderTitle>
+	<PonyOutlanderRough.pawnSingular>чужеземец</PonyOutlanderRough.pawnSingular>
+	<PonyOutlanderRough.pawnsPlural>чужеземцы</PonyOutlanderRough.pawnsPlural>
+
+</LanguageData>

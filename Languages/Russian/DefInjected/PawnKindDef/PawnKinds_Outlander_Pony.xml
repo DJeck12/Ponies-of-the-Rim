@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<!-- Земонопони -->
+
+	<EPonyTown_Guard.label>пони городской стражник</EPonyTown_Guard.label>
+	<EPonyTown_Guard.labelPlural>пони городские стражники</EPonyTown_Guard.labelPlural>
+
+	<EPonyTown_Trader.label>пони городской торговец</EPonyTown_Trader.label>
+	<EPonyTown_Trader.labelPlural>пони городские торговцы</EPonyTown_Trader.labelPlural>
+
+	<EPonyTown_Councilman.label>пони городской советник</EPonyTown_Councilman.label>
+	<EPonyTown_Councilman.labelPlural>пони городские советники</EPonyTown_Councilman.labelPlural>
+
+<!-- Пегасы -->
+
+	<PPonyTown_Guard.label>пони городской стражник</PPonyTown_Guard.label>
+	<PPonyTown_Guard.labelPlural>пони городские стражники</PPonyTown_Guard.labelPlural>
+
+	<PPonyTown_Trader.label>пони городской торговец</PPonyTown_Trader.label>
+	<PPonyTown_Trader.labelPlural>пони городские торговцы</PPonyTown_Trader.labelPlural>
+
+	<PPonyTown_Councilman.label>пони городской советник</PPonyTown_Councilman.label>
+	<PPonyTown_Councilman.labelPlural>пони городские советники</PPonyTown_Councilman.labelPlural>
+
+<!-- Единороги -->
+
+	<UPonyTown_Guard.label>пони городской стражник</UPonyTown_Guard.label>
+	<UPonyTown_Guard.labelPlural>пони городские стражники</UPonyTown_Guard.labelPlural>
+
+	<UPonyTown_Trader.label>пони городской торговец</UPonyTown_Trader.label>
+	<UPonyTown_Trader.labelPlural>пони городские торговцы</UPonyTown_Trader.labelPlural>
+
+	<UPonyTown_Councilman.label>пони городской советник</UPonyTown_Councilman.label>
+	<UPonyTown_Councilman.labelPlural>пони городские советники</UPonyTown_Councilman.labelPlural>
+
+</LanguageData>

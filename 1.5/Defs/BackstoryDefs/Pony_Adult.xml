@@ -67,7 +67,7 @@
 		<titleFemale>Bearer of Element of Harmony</titleFemale>
 		<titleShort>Bearer of Element</titleShort>
 		<titleShortFemale>Bearer of Element</titleShortFemale>
-		<baseDesc>Once upon a time, [PAWN_nameDef] was the bearer of the Element of Harmony — a famous fighter against evil and an advocate for all who needed [PAWN_possessive] help. Now [PAWN_pronoun] was here with nothing.</baseDesc>
+		<baseDesc>Once upon a time, [PAWN_nameDef] was the bearer of the Element of Harmony — a famous fighter against evil and an advocate for all who needed [PAWN_possessive] help. Now [PAWN_pronoun] is here with nothing.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -96,7 +96,7 @@
 		<defName>Pony_EveryponyRST</defName>
 		<title>Racist slave trader</title>
 		<titleShort>Racist slave trader</titleShort>  
-		<baseDesc>[PAWN_nameDef] liked no one but [PAWN_possessive] own kind of ponies. [PAWN_pronoun] began to trade in the slave trade, enslaving those who did not look like [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] liked no one but [PAWN_possessive] own kind of ponies. [PAWN_pronoun] got {PAWN_gender ? himself : herself} into the slave trade, enslaving those who did not look like [PAWN_objective].</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -121,7 +121,7 @@
 		<titleFemale>Fanatic of Eternal Day</titleFemale>
 		<titleShort>Fanatic</titleShort>
 		<titleShortFemale>Fanatic</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Day. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Light, which will immerse the world in Eternal Day.</baseDesc>
+		<baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Day. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Light, which will plunge the world into Eternal Day.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -182,7 +182,7 @@
 		<title>Ritualist Magician</title>
 		<titleShort>Ritualist</titleShort>
 		<titleShortFemale>Ritualist</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] received an excellent education in the field of magical rituals. [PAWN_pronoun] was engaged in commercial activities, offering services to others.</baseDesc>
+		<baseDesc>[PAWN_nameDef] received an excellent education in the field of magical rituals. [PAWN_pronoun] was engaged in commercial activities, offering magical services to others.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -203,7 +203,7 @@
 		<title>Fighter with Windigo</title>
 		<titleShort>Exorcist</titleShort>
 		<titleShortFemale>Exorcist</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] believes that the cause of all troubles and disagreements in the world is the Windigo - ancient frost spirits feeding on the hatred of intelligent beings. [PAWN_pronoun] makes every effort to prove this to others and calls on everypony to unite for a joint struggle.</baseDesc>
+		<baseDesc>[PAWN_nameDef] believes that the cause of all troubles and disagreements in the world is the Windigo - ancient frost spirits that feed on hatred. [PAWN_pronoun] makes every effort to prove this to others and calls on everyone to unite for a joint struggle.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -224,7 +224,7 @@
 		<title>Hunter of magical animals</title>
 		<titleFemale>Hunter of magical animals</titleFemale>
 		<titleShort>Poacher</titleShort>
-		<baseDesc>Despite the strict prohibition of hunting rare magical animals, [PAWN_nameDef] was engaged in poaching and subsequent collection of bloody trophies. Once [PAWN_pronoun] was caught and imprisoned, but [PAWN_possessive] hunting skills never lost.</baseDesc>
+		<baseDesc>Despite the strict prohibition of hunting rare magical animals, [PAWN_nameDef] was engaged in poaching and subsequent collection of bloody trophies. Once [PAWN_pronoun] was caught and imprisoned, but [PAWN_possessive] hunting skills will never be lost.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -335,7 +335,7 @@
 		<titleFemale>Cosmagic Researcher</titleFemale>
 		<titleShort>Researcher</titleShort>
 		<titleShortFemale>Researcher</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] has been wondering all [PAWN_possessive] life what is hiding there, among the distant stars? One day [PAWN_pronoun] had a unique opportunity to join the ranks of the cosmagic squad, to which agreed without hesitation.</baseDesc>
+		<baseDesc>[PAWN_nameDef] has always wondered all [PAWN_possessive] life what is hiding there, among the distant stars? One day [PAWN_pronoun] had a unique opportunity to join the ranks of the cosmagic squad, to which agreed without hesitation.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -400,7 +400,7 @@
 		<defName>Pony_EveryponyCosTrader</defName>
 		<title>Cosmagic trader</title> 
 		<titleShort>Merchant</titleShort>  
-		<baseDesc>Being a talented negotiator and a rather enterprising pony, [PAWN_nameDef] devoted [PAWN_possessive] life to trade. Having accumulated a decent amount of capital and acquired some influential connections, [PAWN_pronoun] decided to try luck among the stars.</baseDesc>
+		<baseDesc>Being a talented negotiator and a rather enterprising pony, [PAWN_nameDef] devoted [PAWN_possessive] life to trade. Having accumulated a decent amount of capital and acquired some influential connections, [PAWN_pronoun] decided to try [PAWN_possessive] luck among the stars.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -419,7 +419,7 @@
 		<titleFemale>Cosmagic smuggler</titleFemale>
 		<titleShort>Smuggler</titleShort>
 		<titleShortFemale>Smuggler</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] was an ordinary employee of the space customs. Considering that [PAWN_pronoun] was being paid negligibly little, [PAWN_pronoun] decided to find additional, not entirely legitimate earnings by joining an artel of smugglers and helping them transport their goods across the border.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was an ordinary employee of the space customs. Considering that [PAWN_pronoun] was being paid negligibly little, [PAWN_nameDef] decided to find additional, not entirely legitimate earnings by joining an artel of smugglers and helping them transport their goods across the border.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>

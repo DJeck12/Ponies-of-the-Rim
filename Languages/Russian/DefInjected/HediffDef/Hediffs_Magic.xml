@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MagicWound.label>магический ожог</MagicWound.label>
+	<MagicWound.description>Магический ожог.</MagicWound.description>
+	<MagicWound.comps.HediffComp_GetsPermanent.permanentLabel>шрам от маг. ожога</MagicWound.comps.HediffComp_GetsPermanent.permanentLabel>
+	<MagicWound.injuryProps.destroyedLabel>сожжено</MagicWound.injuryProps.destroyedLabel>
+	<MagicWound.injuryProps.destroyedOutLabel>сожжено</MagicWound.injuryProps.destroyedOutLabel>
+	<MagicWound.labelNoun>магический ожог</MagicWound.labelNoun>
+	<MagicWound.labelNounPretty>{0} {lookup: {1}; Case; 1}</MagicWound.labelNounPretty>
+
+</LanguageData>

@@ -12,7 +12,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>EarthPonyColonist</li>
+								<li>EPonyColonist</li>
 							</kindDefs>
 							<chance>50</chance>
 						</li>
@@ -26,7 +26,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>EarthPonyTribe</li>
+								<li>EPonyTribe</li>
 							</kindDefs>
 							<chance>50</chance>
 						</li>
@@ -39,7 +39,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>EarthPonySlave</li>
+						<li>EPonySlave</li>
 					</kindDefs>
 					<chance>25</chance>
 				</li>
@@ -47,7 +47,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>EarthPonyRefugee</li>
+						<li>EPonyRefugee</li>
 					</kindDefs>
 					<chance>25</chance>
 				</li>
@@ -57,7 +57,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>EarthPonyVillager</li>
+								<li>EPonyVillager</li>
 							</kindDefs>
 							<chance>25</chance>
 						</li>
@@ -71,7 +71,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>EarthPonyTribe</li>
+								<li>EPonyTribe</li>
 							</kindDefs>
 							<chance>25</chance>
 						</li>
@@ -96,7 +96,7 @@
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>PegasusPonyColonist</li>
+							<li>PPonyColonist</li>
 						</kindDefs>
 						<chance>50</chance>
 					</li>
@@ -110,7 +110,7 @@
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>PegasusPonyTribe</li>
+							<li>PPonyTribe</li>
 						</kindDefs>
 						<chance>50</chance>
 					</li>
@@ -123,7 +123,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PegasusPonySlave</li>
+						<li>PPonySlave</li>
 					</kindDefs>
 					<chance>25</chance>
 				</li>
@@ -131,7 +131,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PegasusPonyRefugee</li>
+						<li>PPonyRefugee</li>
 					</kindDefs>
 					<chance>25</chance>
 				</li>
@@ -141,7 +141,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PegasusPonyVillager</li>
+								<li>PPonyVillager</li>
 							</kindDefs>
 							<chance>25</chance>
 						</li>
@@ -155,7 +155,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PegasusPonyTribe</li>
+								<li>PPonyTribe</li>
 							</kindDefs>
 							<chance>25</chance>
 						</li>
@@ -180,7 +180,7 @@
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>UnicornPonyColonist</li>
+							<li>UPonyColonist</li>
 						</kindDefs>
 						<chance>50</chance>
 					</li>
@@ -194,7 +194,7 @@
 					<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>UnicornPonyTribe</li>
+							<li>UPonyTribe</li>
 						</kindDefs>
 						<chance>50</chance>
 					</li>
@@ -207,7 +207,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>UnicornPonySlave</li>
+						<li>UPonySlave</li>
 					</kindDefs>
 					<chance>25</chance>
 				</li>
@@ -215,7 +215,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>UnicornPonyRefugee</li>
+						<li>UPonyRefugee</li>
 					</kindDefs>
 					<chance>25</chance>
 				</li>
@@ -225,7 +225,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>UnicornPonyVillager</li>
+								<li>UPonyVillager</li>
 							</kindDefs>
 							<chance>25</chance>
 						</li>
@@ -239,7 +239,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>UnicornPonyTribe</li>
+								<li>UPonyTribe</li>
 							</kindDefs>
 							<chance>25</chance>
 						</li>

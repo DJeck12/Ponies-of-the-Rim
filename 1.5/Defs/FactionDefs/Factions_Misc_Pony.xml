@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.70</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers>
+		<li>
+			<!-- Normal fights, standard mix -->
+			<kindDef>Combat</kindDef>
+			<options>
+				<EPonyVillager>5</EPonyVillager>
+				<PPonyVillager>5</PPonyVillager>
+				<UPonyVillager>5</UPonyVillager>
+				<EPonyTown_Guard>10</EPonyTown_Guard>
+				<PPonyTown_Guard>10</PPonyTown_Guard>
+				<UPonyTown_Guard>10</UPonyTown_Guard>
+				<EPonyGrenadier_Destructive>1.5</EPonyGrenadier_Destructive>
+				<PPonyGrenadier_Destructive>1.5</PPonyGrenadier_Destructive>
+				<UPonyGrenadier_Destructive>1.5</UPonyGrenadier_Destructive>
+				<EPonyMercenary_Slasher>7</EPonyMercenary_Slasher>
+				<PPonyMercenary_Slasher>7</PPonyMercenary_Slasher>
+				<UPonyMercenary_Slasher>7</UPonyMercenary_Slasher>
+				<EPonyMercenary_Gunner>10</EPonyMercenary_Gunner>
+				<PPonyMercenary_Gunner>10</PPonyMercenary_Gunner>
+				<UPonyMercenary_Gunner>10</UPonyMercenary_Gunner>
+				<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
+				<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
+				<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
+				<EPonyTown_Councilman>10</EPonyTown_Councilman>
+				<PPonyTown_Councilman>10</PPonyTown_Councilman>
+				<UPonyTown_Councilman>10</UPonyTown_Councilman>
+			</options>
+		</li>
+		<li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+				<EPonyVillager>20</EPonyVillager>
+				<PPonyVillager>20</PPonyVillager>
+				<UPonyVillager>20</UPonyVillager>
+				<EPonyTown_Guard>10</EPonyTown_Guard>
+				<PPonyTown_Guard>10</PPonyTown_Guard>
+				<UPonyTown_Guard>10</UPonyTown_Guard>
+				<EPonyTown_Councilman>10</EPonyTown_Councilman>
+				<PPonyTown_Councilman>10</PPonyTown_Councilman>
+				<UPonyTown_Councilman>10</UPonyTown_Councilman>
+			</options>
+		</li>
+		<li>
+			<kindDef>Trader</kindDef>
+			<traders>
+				<EPonyTown_Trader>1</EPonyTown_Trader>
+				<PPonyTown_Trader>1</PPonyTown_Trader>
+				<UPonyTown_Trader>1</UPonyTown_Trader>
+			</traders>
+			<carriers>
+				<Muffalo>6</Muffalo>
+				<Dromedary>5</Dromedary>
+				<Alpaca>2</Alpaca>
+				<Elephant>1</Elephant>
+			</carriers>
+			<guards>
+				<EPonyVillager>3</EPonyVillager>
+				<PPonyVillager>3</PPonyVillager>
+				<UPonyVillager>3</UPonyVillager>
+				<EPonyTown_Guard>10</EPonyTown_Guard>
+				<PPonyTown_Guard>10</PPonyTown_Guard>
+				<UPonyTown_Guard>10</UPonyTown_Guard>
+				<EPonyGrenadier_Destructive>1.5</EPonyGrenadier_Destructive>
+				<PPonyGrenadier_Destructive>1.5</PPonyGrenadier_Destructive>
+				<UPonyGrenadier_Destructive>1.5</UPonyGrenadier_Destructive>
+				<EPonyMercenary_Slasher>7</EPonyMercenary_Slasher>
+				<PPonyMercenary_Slasher>7</PPonyMercenary_Slasher>
+				<UPonyMercenary_Slasher>7</UPonyMercenary_Slasher>
+				<EPonyMercenary_Gunner>10</EPonyMercenary_Gunner>
+				<PPonyMercenary_Gunner>10</PPonyMercenary_Gunner>
+				<UPonyMercenary_Gunner>10</UPonyMercenary_Gunner>
+				<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
+				<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
+				<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
+			</guards>
+		</li>
+		<li>
+			<kindDef>Settlement</kindDef>
+			<options>
+				<EPonyVillager>10</EPonyVillager>
+				<PPonyVillager>10</PPonyVillager>
+				<UPonyVillager>10</UPonyVillager>
+				<EPonyTown_Guard>10</EPonyTown_Guard>
+				<PPonyTown_Guard>10</PPonyTown_Guard>
+				<UPonyTown_Guard>10</UPonyTown_Guard>
+				<EPonyGrenadier_Destructive>1.5</EPonyGrenadier_Destructive>
+				<PPonyGrenadier_Destructive>1.5</PPonyGrenadier_Destructive>
+				<UPonyGrenadier_Destructive>1.5</UPonyGrenadier_Destructive>
+				<EPonyMercenary_Slasher>7</EPonyMercenary_Slasher>
+				<PPonyMercenary_Slasher>7</PPonyMercenary_Slasher>
+				<UPonyMercenary_Slasher>7</UPonyMercenary_Slasher>
+				<EPonyMercenary_Gunner>10</EPonyMercenary_Gunner>
+				<PPonyMercenary_Gunner>10</PPonyMercenary_Gunner>
+				<UPonyMercenary_Gunner>10</UPonyMercenary_Gunner>
+				<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
+				<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
+				<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
+				<EPonyTown_Councilman>10</EPonyTown_Councilman>
+				<PPonyTown_Councilman>10</PPonyTown_Councilman>
+				<UPonyTown_Councilman>10</UPonyTown_Councilman>
+			</options>
+		</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="PonyOutlanderFactionBase">
+		<defName>PonyOutlanderCivil</defName>
+		<label>civil pony union</label>
+		<description>These ponies have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+		<colorSpectrum>
+			<li>(0.7, 0.30, 0.60)</li>
+			<li>(0.8, 0.45, 0.75)</li>
+		</colorSpectrum>
+		<classicIdeo>true</classicIdeo>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+	</FactionDef>
+
+	<FactionDef ParentName="PonyOutlanderFactionBase">
+		<defName>PonyOutlanderRough</defName>
+		<label>rough pony union</label>
+		<description>These ponies have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
+		<colorSpectrum>
+			<li>(0, 0.6, 0.3)</li>
+			<li>(0, 0.75, 0.45)</li>
+		</colorSpectrum>
+		<naturalEnemy>true</naturalEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<configurationListOrderPriority>26</configurationListOrderPriority>
+		<factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+	</FactionDef>
+
+</Defs>

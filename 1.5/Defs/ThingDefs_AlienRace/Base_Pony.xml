@@ -29,27 +29,27 @@
 						<north>
 							<layerOffset>0.28</layerOffset>
 							<bodyTypes>
-								<Thin>(0, -0.075)</Thin>
+								<Pony>(0, -0.075)</Pony>
 							</bodyTypes>
 						</north>
 						<south>
 							<bodyTypes>
-								<Thin>(0, -0.175)</Thin>
+								<Pony>(0, -0.175)</Pony>
 							</bodyTypes>
 						</south>
 						<east>
 							<bodyTypes>
-								<Thin>(0.125, -0.02)</Thin>
+								<Pony>(0.125, -0.02)</Pony>
 							</bodyTypes>
 						</east>
 						<west>
 							<bodyTypes>
-								<Thin>(-0.125, -0.02)</Thin>
+								<Pony>(-0.125, -0.02)</Pony>
 							</bodyTypes>
 						</west>
 					</headOffsetDirectional>
 					<bodyTypes Inherit="False">
-						<li>Thin</li>				
+						<li>Pony</li>				
 					</bodyTypes>
 				</alienPartGenerator>
 			</generalSettings>
@@ -97,14 +97,14 @@
 					<fallbacks>
 					<!-- Override all chest apparel with a shirt -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Thin</wornGraphicPath>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Pony</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Torso</li>
 							</bodyPartGroups>
 						</li>
 					<!-- Override all legs apparel with pants -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Thin</wornGraphicPath>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Pony</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Legs</li>
 							</bodyPartGroups>

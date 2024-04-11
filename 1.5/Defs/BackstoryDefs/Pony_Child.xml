@@ -98,7 +98,7 @@
 		<title>Child of another race</title>
 		<titleShort>Other</titleShort>
 		<titleShortFemale>Other</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] was born of a different race than [PAWN_possessive] parents possessed. Nevertheless, [PAWN_pronoun] grew up in a loving family that raised [PAWN_objective] to be a kind and prejudice-free foal.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born of a different race than [PAWN_possessive] parents possessed. Nevertheless, [PAWN_pronoun] grew up in a loving family that raised [PAWN_objective] to be a kind and free from prejudice.</baseDesc>
 		<slot>Childhood</slot> 
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -167,7 +167,7 @@
 		<title>Wizard's apprentice</title>
 		<titleFemale>Wizard's apprentice</titleFemale>
 		<titleShort>Apprentice</titleShort>
-		<baseDesc>[PAWN_nameDef] lost [PAWN_possessive] parents early and was a homeless orphan for a long time. Then [PAWN_pronoun] was found and sheltered by an old wandering hermit wizard. The wizard raised [PAWN_objective] all childhood and taught the magic art.</baseDesc>
+		<baseDesc>[PAWN_nameDef] lost [PAWN_possessive] parents early and was a homeless orphan for a long time. Then [PAWN_pronoun] was found and sheltered by an old wandering hermit wizard. The wizard raised [PAWN_objective] throughout [PAWN_possessive] childhood and taught [PAWN_objective] the art of magic.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -186,7 +186,7 @@
 		<titleFemale>Struck by a basilisk</titleFemale>
 		<titleShort>Struck</titleShort>
 		<titleShortFemale>Struck</titleShortFemale>
-		<baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but other pony were able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of wild animals still make themselves felt.</baseDesc>
+		<baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but another pony was able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of wild animals still plague him.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -223,7 +223,7 @@
 		<defName>Pony_EveryponyLightChi</defName>
 		<title>Child of Light</title>
 		<titleShort>Child of Light</titleShort>
-		<baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Light. Since [PAWN_pronoun] lived among sectarians, so received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Light. Since [PAWN_pronoun] lived among sectarians, [PAWN_nameDef] received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -245,7 +245,7 @@
 		<defName>Pony_EveryponyDarkChi</defName>
 		<title>Child of Darkness</title>
 		<titleShort>Child of Darkness</titleShort>
-		<baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Darkness. Since [PAWN_pronoun] lived among sectarians, so received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Darkness. Since [PAWN_pronoun] lived among sectarians, [PAWN_nameDef] received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -266,7 +266,7 @@
 		<defName>Pony_EveryponyBornMagic</defName>
 		<title>Born of Magic</title>
 		<titleShort>Born of Magic</titleShort>
-		<baseDesc>[PAWN_nameDef] was born as a result of a very complex and expensive ritual using pure magical essence, taken half from each parent. [PAWN_pronoun] spent childhood away from society for security reasons.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born as a result of a very complex and expensive ritual using pure magical essence, taken half from each parent. [PAWN_pronoun] spent [PAWN_possessive] childhood away from society for safety reasons.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -298,7 +298,7 @@
 		<titleFemale>Friendship School student</titleFemale>
 		<titleShort>Comrade</titleShort>
 		<titleShortFemale>Comrade</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] was a student of one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time. [PAWN_pronoun] gained deep insights into the field of social and moral relations, which naturally presupposes the superiority of friendship magic.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a student of one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time. [PAWN_pronoun] gained deep insights into the field of social and moral relations, which naturally suggesting the superiority of friendship magic.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -320,7 +320,7 @@
 		<title>Magic School student</title>
 		<titleFemale>Magic School student</titleFemale>
 		<titleShort>Neophyte</titleShort>
-		<baseDesc>From early childhood, [PAWN_nameDef] showed interest in a variety of magical sciences. Parents decided to send [PAWN_objective] to study at the School of Magic, [PAWN_pronoun] learned a lot of new things while receiving specialized education and studying various scientific disciplines.</baseDesc>
+		<baseDesc>From early childhood, [PAWN_nameDef] showed an interest in a variety of magical sciences. Parents decided to send [PAWN_objective] to study at the School of Magic, [PAWN_pronoun] learned a lot of new things while receiving specialized education and studying various scientific disciplines.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -350,7 +350,7 @@
 		<title>Under care of alicorn</title>
 		<titleShort>Ward</titleShort>
 		<titleShortFemale>Ward</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] was born under tragic circumstances when famine began in [PAWN_possessive] country. [PAWN_pronoun] was lucky enough to get under the care of an alicorn who arrived on a charity mission. [PAWN_nameDef] grew up to be a wonderful foal and from an early age began to study the lessons of friendship and exact sciences.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born under tragic circumstances when famine struck in [PAWN_possessive] country. [PAWN_pronoun] was lucky enough to get under the care of an alicorn who arrived on a charity mission. [PAWN_nameDef] grew up to be a diligent foal and from an early age began to study the lessons of friendship and science.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>

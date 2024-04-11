@@ -41,7 +41,7 @@
 	<Pony_EveryponyFiWi.title>Борец с Виндиго</Pony_EveryponyFiWi.title>
 	<Pony_EveryponyFiWi.titleShort>Экзорцист</Pony_EveryponyFiWi.titleShort>
 	<Pony_EveryponyFiWi.titleShortFemale>Экзорцистка</Pony_EveryponyFiWi.titleShortFemale>
-	<Pony_EveryponyFiWi.description>[PAWN_nameDef] верит, что причина всех бед и разногласий в мире - Виндиго - древние морозные духи, питающиеся ненавистью разумных существ. [PAWN_pronoun] прилагает все усилия, чтобы доказать это другим и призывает всехпони сплотиться для совместной борьбы.</Pony_EveryponyFiWi.description>
+	<Pony_EveryponyFiWi.description>[PAWN_nameDef] верит, что причина всех бед и разногласий в мире - Виндиго - древние морозные духи, питающиеся ненавистью разумных существ. [PAWN_pronoun] прилагает все усилия, чтобы доказать это другим и призывает всех сплотиться для совместной борьбы.</Pony_EveryponyFiWi.description>
 
 	<Pony_EveryponyHoMA.title>Охотник на магических животных</Pony_EveryponyHoMA.title>
 	<Pony_EveryponyHoMA.titleFemale>Охотница на магических животных</Pony_EveryponyHoMA.titleFemale>
@@ -89,7 +89,7 @@
 	<Pony_EveryponyCosSmug.titleFemale>Космагический контрабандистка</Pony_EveryponyCosSmug.titleFemale>
 	<Pony_EveryponyCosSmug.titleShort>Контрабандист</Pony_EveryponyCosSmug.titleShort>
 	<Pony_EveryponyCosSmug.titleShortFemale>Контрабандистка</Pony_EveryponyCosSmug.titleShortFemale>
-	<Pony_EveryponyCosSmug.description>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? обычным : обычной} {PAWN_gender ? работником : работницей} космической таможни. Посчитав, что [PAWN_objective] платят ничтожно мало, [PAWN_pronoun] {PAWN_gender ? решил : решила} найти дополнительный, не совсем законный заработок, вступив в артель контрабандистов и помогая им перевозить свой товар через границу.</Pony_EveryponyCosSmug.description>
+	<Pony_EveryponyCosSmug.description>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? обычным : обычной} {PAWN_gender ? работником : работницей} космической таможни. Посчитав, что [PAWN_objective] платят ничтожно мало, [PAWN_pronoun] {PAWN_gender ? решил : решила} найти дополнительный, не совсем законный заработок, вступив в картель контрабандистов и помогая им перевозить свой товар через границу.</Pony_EveryponyCosSmug.description>
 <!--
 	<Pony_EveryponyAcTravel.title>Попаданец</Pony_EveryponyAcTravel.title>
 	<Pony_EveryponyAcTravel.titleFemale>Попаданка</Pony_EveryponyAcTravel.titleFemale>

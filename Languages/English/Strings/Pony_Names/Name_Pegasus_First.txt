@@ -16,4 +16,3 @@ Slow
 Fast
 Foggy
 Flitter
-Diamu
