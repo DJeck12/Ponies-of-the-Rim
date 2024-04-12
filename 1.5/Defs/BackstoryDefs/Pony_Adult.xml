@@ -170,9 +170,16 @@
 			<Social>3</Social>
 			<Intellectual>-1</Intellectual>   
 		</skillGains>
-		<forcedTraits>
-			<NightOwl>0</NightOwl>
-		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>NightOwl</defName>
+					</li>
+				</options>
+				<chance>70</chance>
+			</li>
+		</forcedTraitsChance>    
 	</AlienRace.AlienBackstoryDef>
 
 
