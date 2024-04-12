@@ -177,6 +177,7 @@
 						<defName>NightOwl</defName>
 					</li>
 				</options>
+				<count>1</count>
 				<chance>70</chance>
 			</li>
 		</forcedTraitsChance>    
