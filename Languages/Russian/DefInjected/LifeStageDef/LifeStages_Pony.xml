@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PonyBaby.label>младенец</PonyBaby.label>
+	<PonyBaby.customMoodTipString>Настроение показывает, насколько пони счастлив или раздражён. Младенцы в плохом настроении будут чаще плакать, а в хорошем — проявлять радость.</PonyBaby.customMoodTipString>
+	<PonyChild.label>жеребёнок</PonyChild.label>
+	<PonyPreTeenager.label>жеребёнок</PonyPreTeenager.label>
+	<PonyTeenager.label>подросток</PonyTeenager.label>
+	<PonyTeenager.adjective>подросток</PonyTeenager.adjective>
+	<PonyAdult.label>взрослый</PonyAdult.label>
+
+</Defs>

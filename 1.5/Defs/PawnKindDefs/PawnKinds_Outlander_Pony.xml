@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Earthpony -->
+
+	<PawnKindDef ParentName="GuardBase">
+		<defName>EPonyTown_Guard</defName>
+		<label>pony town guard</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TraderBase">
+		<defName>EPonyTown_Trader</defName>
+		<label>pony town trader</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CouncilmanBase">
+		<defName>EPonyTown_Councilman</defName>
+		<label>pony town councilman</label>
+		<labelPlural>pony town councilmen</labelPlural>
+		<race>Pony_Earthpony</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Pegasus -->
+
+	<PawnKindDef ParentName="GuardBase">
+		<defName>PPonyTown_Guard</defName>
+		<label>pony town guard</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TraderBase">
+		<defName>PPonyTown_Trader</defName>
+		<label>pony town trader</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CouncilmanBase">
+		<defName>PPonyTown_Councilman</defName>
+		<label>pony town councilman</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Unicorn -->
+
+	<PawnKindDef ParentName="GuardBase">
+		<defName>UPonyTown_Guard</defName>
+		<label>pony town guard</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TraderBase">
+		<defName>UPonyTown_Trader</defName>
+		<label>pony town trader</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CouncilmanBase">
+		<defName>UPonyTown_Councilman</defName>
+		<label>pony town councilman</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+</Defs>

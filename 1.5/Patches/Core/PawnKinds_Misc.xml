@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="SpaceRefugee"]</xpath>
+		<attribute>Name</attribute>
+		<value>SpaceRefugee</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]</xpath>
+		<attribute>Name</attribute>
+		<value>Grenadier_Destructive</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Gunner"]</xpath>
+		<attribute>Name</attribute>
+		<value>Mercenary_Gunner</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Slasher"]</xpath>
+		<attribute>Name</attribute>
+		<value>Mercenary_Slasher</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite"]</xpath>
+		<attribute>Name</attribute>
+		<value>Mercenary_Elite</value>
+	</Operation>
+
+</Patch>

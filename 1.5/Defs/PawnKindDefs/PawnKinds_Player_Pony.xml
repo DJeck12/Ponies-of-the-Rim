@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--Colony-->
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>EPonyColonist</defName>
+		<label>earthpony</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Earthpony</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>Offworld</li>
+				<li>Pony_Everypony</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>PPonyColonist</defName>
+		<label>pegasus</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Pegasus</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>Offworld</li>
+				<li>Pony_Everypony</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>UPonyColonist</defName>
+		<label>unicorn</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Unicorn</race>
+		<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>Offworld</li>
+				<li>Pony_Everypony</li>
+			</categories>
+		</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!--Tribe-->
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>EPonyTribe</defName>
+		<label>earthpony</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Earthpony</race>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>PPonyTribe</defName>
+		<label>pegasus</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Pegasus</race>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>UPonyTribe</defName>
+		<label>unicorn</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Unicorn</race>
+	</PawnKindDef>
+
+</Defs>

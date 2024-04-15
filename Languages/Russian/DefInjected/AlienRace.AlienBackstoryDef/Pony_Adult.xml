@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Pony_EveryponyPaGi.title>Организатор вечеринок</Pony_EveryponyPaGi.title>
+	<Pony_EveryponyPaGi.titleShort>Заводила</Pony_EveryponyPaGi.titleShort>
+	<Pony_EveryponyPaGi.description>[PAWN_nameDef] обожает видеть улыбки других и весело проводить время. [PAWN_pronoun] {PAWN_gender ? стал : стала} организовывать встречи и вечеринки для всех желающих повеселиться в округе.</Pony_EveryponyPaGi.description>
+
+	<Pony_EveryponyRG.title>Королевский стражник</Pony_EveryponyRG.title>
+	<Pony_EveryponyRG.titleFemale>Королевская стражница</Pony_EveryponyRG.titleFemale>
+	<Pony_EveryponyRG.titleShort>Стражник</Pony_EveryponyRG.titleShort>
+	<Pony_EveryponyRG.titleShortFemale>Стражница</Pony_EveryponyRG.titleShortFemale>
+	<Pony_EveryponyRG.description>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? принят : принята} на службу в Королевскую Гвардию благодаря своей целеустремленности и преданности. [PAWN_pronoun] лично {PAWN_gender ? охранял : охраняла} одну из правительниц королевства, сопровождая ее на многочисленных миротворческих и благотворительных миссиях.</Pony_EveryponyRG.description>
+
+	<Pony_EveryponyBEH.title>Носитель Элемента Гармонии</Pony_EveryponyBEH.title>
+	<Pony_EveryponyBEH.titleFemale>Носительница Элемента Гармонии</Pony_EveryponyBEH.titleFemale>
+	<Pony_EveryponyBEH.titleShort>Носитель Элемента Гармонии</Pony_EveryponyBEH.titleShort>
+	<Pony_EveryponyBEH.titleShortFemale>Носительница Элемента Гармонии</Pony_EveryponyBEH.titleShortFemale>
+	<Pony_EveryponyBEH.description>Когда-то [PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? носителем : носительницей} Элемента Гармонии — известным борцом со злом и заступником всех, кто нуждался в [PAWN_possessive] помощи. Теперь [PAWN_pronoun] {PAWN_gender ? оказался : оказалась} здесь, ничего не имея.</Pony_EveryponyBEH.description>
+
+	<Pony_EveryponyRST.title>Работорговец-расист</Pony_EveryponyRST.title>
+	<Pony_EveryponyRST.titleShort>Работорговец-расист</Pony_EveryponyRST.titleShort>
+	<Pony_EveryponyRST.description>[PAWN_nameDef] не {PAWN_gender ? любил : любила} никого, кроме себе подобных пони. [PAWN_pronoun] {PAWN_gender ? стал : стала} промышлять работорговлей, порабощая тех, кто не похож на {PAWN_gender ? него : нее}.</Pony_EveryponyRST.description>
+
+	<Pony_EveryponyFanEtD.title>Поклонник Вечного Дня</Pony_EveryponyFanEtD.title>
+	<Pony_EveryponyFanEtD.titleFemale>Поклонница Вечного Дня</Pony_EveryponyFanEtD.titleFemale>
+	<Pony_EveryponyFanEtD.titleShort>Культист</Pony_EveryponyFanEtD.titleShort>
+	<Pony_EveryponyFanEtD.titleShortFemale>Культистка</Pony_EveryponyFanEtD.titleShortFemale>
+	<Pony_EveryponyFanEtD.description>[PAWN_nameDef] — {PAWN_gender ? участник : участница} культа Вечного Дня. Цель [PAWN_possessive] культа — высвободить дух Богини Света, который погрузит мир в Вечный День.</Pony_EveryponyFanEtD.description>
+
+	<Pony_EveryponyFanEtN.title>Поклонник Вечной Ночи</Pony_EveryponyFanEtN.title>
+	<Pony_EveryponyFanEtN.titleFemale>Поклонница Вечной Ночи</Pony_EveryponyFanEtN.titleFemale>
+	<Pony_EveryponyFanEtN.titleShort>Культист</Pony_EveryponyFanEtN.titleShort>
+	<Pony_EveryponyFanEtN.titleShortFemale>Культистка</Pony_EveryponyFanEtN.titleShortFemale>
+	<Pony_EveryponyFanEtN.description>[PAWN_nameDef] — {PAWN_gender ? участник : участница} культа Вечной Ночи. Цель [PAWN_possessive] культа — высвободить дух Богини Тьмы, который погрузит мир в Вечную Ночь.</Pony_EveryponyFanEtN.description>
+
+	<Pony_EveryponyRiMa.title>Маг-ритуалист</Pony_EveryponyRiMa.title>
+	<Pony_EveryponyRiMa.titleShort>Ритуалист</Pony_EveryponyRiMa.titleShort>
+	<Pony_EveryponyRiMa.titleShortFemale>Ритуалистка</Pony_EveryponyRiMa.titleShortFemale>
+	<Pony_EveryponyRiMa.description>[PAWN_nameDef] {PAWN_gender ? получил : получила} отличное образование в области проведения магических ритуалов. [PAWN_pronoun] {PAWN_gender ? занимался : занималась} коммерческой деятельностью, предлагая окружающим свои услуги.</Pony_EveryponyRiMa.description>
+
+	<Pony_EveryponyFiWi.title>Борец с Виндиго</Pony_EveryponyFiWi.title>
+	<Pony_EveryponyFiWi.titleShort>Экзорцист</Pony_EveryponyFiWi.titleShort>
+	<Pony_EveryponyFiWi.titleShortFemale>Экзорцистка</Pony_EveryponyFiWi.titleShortFemale>
+	<Pony_EveryponyFiWi.description>[PAWN_nameDef] верит, что причина всех бед и разногласий в мире - Виндиго - древние морозные духи, питающиеся ненавистью разумных существ. [PAWN_pronoun] прилагает все усилия, чтобы доказать это другим и призывает всех сплотиться для совместной борьбы.</Pony_EveryponyFiWi.description>
+
+	<Pony_EveryponyHoMA.title>Охотник на магических животных</Pony_EveryponyHoMA.title>
+	<Pony_EveryponyHoMA.titleFemale>Охотница на магических животных</Pony_EveryponyHoMA.titleFemale>
+	<Pony_EveryponyHoMA.titleShort>Браконьер</Pony_EveryponyHoMA.titleShort>
+	<Pony_EveryponyHoMA.description>Вопреки сторогому запрету охоты на редких магических животных, [PAWN_nameDef] {PAWN_gender ? промышлял : промышляла} браконьерством и последующим сбором кровавых трофеев. Однажды [PAWN_possessive] поймали и посадили в темницу, но навыки охоты так и не были {PAWN_gender ? им : ей} утрачены.</Pony_EveryponyHoMA.description>
+
+	<Pony_EveryponyAntimage.title>Противник магии</Pony_EveryponyAntimage.title>
+	<Pony_EveryponyAntimage.titleFemale>Противница магии</Pony_EveryponyAntimage.titleFemale>
+	<Pony_EveryponyAntimage.titleShort>Антимаг</Pony_EveryponyAntimage.titleShort>
+	<Pony_EveryponyAntimage.description>Однажды в результате трагических обстоятельств [PAWN_nameDef] и [PAWN_possessive] близкие сильно пострадали от вреда, причиненного странствующим магом-недоучкой. Как следствие, {PAWN_gender ? тот : та} {PAWN_gender ? стал : стала} {PAWN_gender ? агрессивен : агрессивна} ко всем волшебникам, презирая магию во всех ее проявлениях.</Pony_EveryponyAntimage.description>
+
+	<Pony_EveryponyMissionary.title>Проповедник гармонии</Pony_EveryponyMissionary.title>
+	<Pony_EveryponyMissionary.titleFemale>Проповедница гармонии</Pony_EveryponyMissionary.titleFemale>
+	<Pony_EveryponyMissionary.titleShort>Миссионер</Pony_EveryponyMissionary.titleShort>
+	<Pony_EveryponyMissionary.titleShortFemale>Миссионерка</Pony_EveryponyMissionary.titleShortFemale>
+	<Pony_EveryponyMissionary.description>[PAWN_nameDef] — {PAWN_gender ? участник : участница} организации по популяризации Гармонии. [PAWN_pronoun] много {PAWN_gender ? путешествовал : путешествовала} по разным планетам и {PAWN_gender ? общался : общалась} с различными культурными общинами, пытаясь приобщить их к своим идеалам.</Pony_EveryponyMissionary.description>
+
+	<Pony_EveryponyEqlog.title>Эквестриолог</Pony_EveryponyEqlog.title>
+	<Pony_EveryponyEqlog.titleShort>Эквестриолог</Pony_EveryponyEqlog.titleShort>
+	<Pony_EveryponyEqlog.description>[PAWN_nameDef] {PAWN_gender ? был : была} очень {PAWN_gender ? увлечен : увлечена} древней историей Эквестрии. [PAWN_objective] удалось добиться настоящего мастерства в данной области.</Pony_EveryponyEqlog.description>
+
+	<Pony_EveryponyCosPi.title>Космагический пилот</Pony_EveryponyCosPi.title>
+	<Pony_EveryponyCosPi.titleShort>Пилот</Pony_EveryponyCosPi.titleShort>
+	<Pony_EveryponyCosPi.description>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? осужден : осуждена} за кражу, и перед {PAWN_gender ? ним : ней} встал выбор: отправиться за решетку отбывать наказание или вступить в специальный космагический корпус. Не имея большого выбора, [PAWN_pronoun] {PAWN_gender ? подписал : подписала} контракт на службу, впоследстивии научившись пилотировать космагические корабли и прочую тяжелую технику.</Pony_EveryponyCosPi.description>
+
+	<Pony_EveryponyCosRes.title>Космагический исследователь</Pony_EveryponyCosRes.title>
+	<Pony_EveryponyCosRes.titleFemale>Космагический исследовательница</Pony_EveryponyCosRes.titleFemale>
+	<Pony_EveryponyCosRes.titleShort>Исследователь</Pony_EveryponyCosRes.titleShort>
+	<Pony_EveryponyCosRes.titleShortFemale>Исследовательница</Pony_EveryponyCosRes.titleShortFemale>
+	<Pony_EveryponyCosRes.description>[PAWN_nameDef] всю жизнь интересовалась, что же там скрывается, среди далеких звезд? Однажды [PAWN_objective] представилась уникальная возможность вступить в ряды космагического отряда, на что [PAWN_pronoun] без раздумий {PAWN_gender ? согласился : согласилась}.</Pony_EveryponyCosRes.description>
+
+	<Pony_EveryponyCosCap.title>Космагический капитан</Pony_EveryponyCosCap.title>
+	<Pony_EveryponyCosCap.titleShort>Капитан</Pony_EveryponyCosCap.titleShort>
+	<Pony_EveryponyCosCap.description>Еще в молодости [PAWN_nameDef] {PAWN_gender ? вступил : вступила} в космагический десант. Благодаря выдающимся успехам и примерной службе [PAWN_pronoun] быстро {PAWN_gender ? продвинулся : продвинулась} по карьерной лестнице, в конце концов получив должность космагического капитана.</Pony_EveryponyCosCap.description>
+
+	<Pony_EveryponyCosMech.title>Космагический механик</Pony_EveryponyCosMech.title>
+	<Pony_EveryponyCosMech.titleShort>Механик</Pony_EveryponyCosMech.titleShort>
+	<Pony_EveryponyCosMech.description>[PAWN_nameDef] {PAWN_gender ? был : была} обычным гражданским механиком. Но когда на планете началась война, [PAWN_possessive] быстро мобилизовали в космагический отряд. [PAWN_nameDef] {PAWN_gender ? получил : получила} назначение на профильную должность, хотя у {PAWN_gender ? него : нее} не было некоторых специализированных знаний и навыков.</Pony_EveryponyCosMech.description>
+
+	<Pony_EveryponyCosTrader.title>Космагический торговец</Pony_EveryponyCosTrader.title>
+	<Pony_EveryponyCosTrader.titleShort>Торговец</Pony_EveryponyCosTrader.titleShort>
+	<Pony_EveryponyCosTrader.description>Будучи {PAWN_gender ? талантливым : талантливой} {PAWN_gender ? переговорщиком : переговорщицей} и довольно {PAWN_gender ? предприимчивым : предприимчивой} пони, [PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} свою жизнь торговле. Накопив приличный капитал и обзаведясь некоторыми влиятельными связями, [PAWN_pronoun] {PAWN_gender ? решил : решила} попытать удачу среди звезд.</Pony_EveryponyCosTrader.description>
+
+	<Pony_EveryponyCosSmug.title>Космагический контрабандист</Pony_EveryponyCosSmug.title>
+	<Pony_EveryponyCosSmug.titleFemale>Космагический контрабандистка</Pony_EveryponyCosSmug.titleFemale>
+	<Pony_EveryponyCosSmug.titleShort>Контрабандист</Pony_EveryponyCosSmug.titleShort>
+	<Pony_EveryponyCosSmug.titleShortFemale>Контрабандистка</Pony_EveryponyCosSmug.titleShortFemale>
+	<Pony_EveryponyCosSmug.description>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? обычным : обычной} {PAWN_gender ? работником : работницей} космической таможни. Посчитав, что [PAWN_objective] платят ничтожно мало, [PAWN_pronoun] {PAWN_gender ? решил : решила} найти дополнительный, не совсем законный заработок, вступив в картель контрабандистов и помогая им перевозить свой товар через границу.</Pony_EveryponyCosSmug.description>
+<!--
+	<Pony_EveryponyAcTravel.title>Попаданец</Pony_EveryponyAcTravel.title>
+	<Pony_EveryponyAcTravel.titleFemale>Попаданка</Pony_EveryponyAcTravel.titleFemale>
+	<Pony_EveryponyAcTravel.titleShort>Попаданец</Pony_EveryponyAcTravel.titleShort>
+	<Pony_EveryponyAcTravel.titleShortFemale>Попаданка</Pony_EveryponyAcTravel.titleShortFemale>
+	<Pony_EveryponyAcTravel.description> </Pony_EveryponyAcTravel.description>
+-->
+</Defs>

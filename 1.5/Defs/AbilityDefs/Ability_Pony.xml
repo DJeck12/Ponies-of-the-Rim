@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef>
+		<defName>NatureMuse</defName>
+		<label>nature muse</label>
+		<description>The caster imbues themself with the forces of nature, that fills the body with energy to increase work speed.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<cooldownTicksRange>420000</cooldownTicksRange>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<iconPath>UI/Abilities/Ability_Earthpony</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<violent>false</violent> 
+			<warmupTime>3.0</warmupTime>
+			<range>0</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>NatureMuse</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>ShortFlight</defName>
+		<label>short fligth</label>
+		<description>Fly a short distance using wings.</description>
+		<iconPath>UI/Abilities/Ability_Pegasus</iconPath>
+		<cooldownTicksRange>1200</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>flight</label>
+			<violent>false</violent>
+			<warmupTime>0.5</warmupTime>
+			<minRange>4</minRange>
+			<range>12</range>
+			<requireLineOfSight>False</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<flyWithCarriedThing>false</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>MagicBurst</defName>
+		<label>magic burst</label>
+		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
+		<iconPath>UI/Abilities/Ability_Unicorn</iconPath>
+		<cooldownTicksRange>900</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>10</range>
+			<warmupTime>1.0</warmupTime>
+			<soundCast>Shot_ChargeRifle</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MagicBurst</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>MagicBurst</defName>
+		<label>magic burst</label>
+		<graphicData>
+			<texPath>Things/Projectile/Magic_Burst</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Magic</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<DamageDef>
+		<defName>Magic</defName>
+		<label>magic</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been blasted with magic.</deathMessage>
+		<hediff>MagicWound</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>0.5</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
+	</DamageDef>
+	<HediffDef ParentName="InjuryBase">
+		<defName>MagicWound</defName>
+		<label>magic burn</label>
+		<labelNoun>a magic burn</labelNoun>
+		<description>A magic burn.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>magic burn scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0125</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<bleedRate>0.06</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Burned off (magic)</destroyedLabel>
+			<destroyedOutLabel>Burned out (magic)</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+
+</Defs>

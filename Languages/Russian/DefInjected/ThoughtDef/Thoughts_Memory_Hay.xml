@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<AteHayAsIngredient.stages.ate_cooked_meal_with_hay.label>съедено блюдо с сеном</AteHayAsIngredient.stages.ate_cooked_meal_with_hay.label>
+	<AteHayAsIngredient.stages.ate_cooked_meal_with_hay.description>Я {PAWN_gender ? съел : съела} блюдо, приготовленное с использованием сена. Вкус был настолько безвкусным, что я предпочел бы есть свежую траву.</AteHayAsIngredient.stages.ate_cooked_meal_with_hay.description>
+
+</LanguageData>

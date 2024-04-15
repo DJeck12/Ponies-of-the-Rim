@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<!-- Земонопони -->
+
+	<EPonyGrenadier_Destructive.label>пони гренадер</EPonyGrenadier_Destructive.label>
+	<EPonyGrenadier_Destructive.labelPlural>пони гренадеры</EPonyGrenadier_Destructive.labelPlural>
+
+	<EPonyMercenary_Gunner.label>пони наёмник-стрелок</EPonyMercenary_Gunner.label>
+	<EPonyMercenary_Gunner.labelPlural>пони наёмники-стрелки</EPonyMercenary_Gunner.labelPlural>
+
+	<EPonyMercenary_Slasher.label>пони наёмник-вышибала</EPonyMercenary_Slasher.label>
+	<EPonyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</EPonyMercenary_Slasher.labelPlural>
+
+	<EPonyMercenary_Elite.label>элитный пони наёмник</EPonyMercenary_Elite.label>
+	<EPonyMercenary_Elite.labelPlural>элитные пони наёмники</EPonyMercenary_Elite.labelPlural>
+
+<!-- Пегасы -->
+
+	<PPonyGrenadier_Destructive.label>пони гренадер</PPonyGrenadier_Destructive.label>
+	<PPonyGrenadier_Destructive.labelPlural>пони гренадеры</PPonyGrenadier_Destructive.labelPlural>
+
+	<PPonyMercenary_Gunner.label>пони наёмник-стрелок</PPonyMercenary_Gunner.label>
+	<PPonyMercenary_Gunner.labelPlural>пони наёмники-стрелки</PPonyMercenary_Gunner.labelPlural>
+
+	<PPonyMercenary_Slasher.label>пони наёмник-вышибала</PPonyMercenary_Slasher.label>
+	<PPonyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</PPonyMercenary_Slasher.labelPlural>
+
+	<PPonyMercenary_Elite.label>элитный пони наёмник</PPonyMercenary_Elite.label>
+	<PPonyMercenary_Elite.labelPlural>элитные пони наёмники</PPonyMercenary_Elite.labelPlural>
+
+<!-- Единороги -->
+
+	<UPonyGrenadier_Destructive.label>пони гренадер</UPonyGrenadier_Destructive.label>
+	<UPonyGrenadier_Destructive.labelPlural>пони гренадеры</UPonyGrenadier_Destructive.labelPlural>
+
+	<UPonyMercenary_Gunner.label>пони наёмник-стрелок</UPonyMercenary_Gunner.label>
+	<UPonyMercenary_Gunner.labelPlural>пони наёмники-стрелки</UPonyMercenary_Gunner.labelPlural>
+
+	<UPonyMercenary_Slasher.label>пони наёмник-вышибала</UPonyMercenary_Slasher.label>
+	<UPonyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</UPonyMercenary_Slasher.labelPlural>
+
+	<UPonyMercenary_Elite.label>элитный пони наёмник</UPonyMercenary_Elite.label>
+	<UPonyMercenary_Elite.labelPlural>элитные пони наёмники</UPonyMercenary_Elite.labelPlural>
+
+</LanguageData>

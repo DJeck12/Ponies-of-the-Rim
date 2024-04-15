@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Bodyaddons_settings</defName>
+
+		<universalBodyAddons>
+		<!--Tail-->
+			<li>
+				<name>Tail</name>
+				<path>Things/Races/Pony/Tails/Pony_Tail</path>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>hair</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Earthpony</Race>
+						<Race>Pony_Pegasus</Race>
+						<Race>Pony_Unicorn</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Pony_Tail</bodyPart>
+					</BodyPart>
+				</conditions>
+				<!--<extendedGraphics>
+					<Age For="Baby">Things/Races/Pony/Tails/Pony_TailBaby</Age>
+				</extendedGraphics>-->
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Pony>(0, 0.58)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</Child>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>0.5</layerOffset>
+						<bodyTypes>
+							<Pony>(0, -0.3)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</Child>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Pony>(0.36, 0)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</Child>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		<!--Ears-->
+			<li>
+				<path>Things/Races/Pony/Ears/Pony_EarRight</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Earthpony</Race>
+						<Race>Pony_Pegasus</Race>
+						<Race>Pony_Unicorn</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>TopHead</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.268</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.5</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.268</layerOffset>
+					</east>
+					<west>
+						<layerOffset>-0.5</layerOffset>
+					</west>
+				</offsets>
+			</li>
+			<li>
+				<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Earthpony</Race>
+						<Race>Pony_Pegasus</Race>
+						<Race>Pony_Unicorn</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>TopHead</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.268</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.5</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.5</layerOffset>
+					</east>
+					<west>
+						<layerOffset>-0.268</layerOffset>
+					</west>
+				</offsets>
+			</li>
+		<!--Cutiemark-->
+			<li>
+				<name>Cutiemark</name>
+				<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<drawSize>(0.15, 0.15)</drawSize>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>none</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Earthpony</Race>
+						<Race>Pony_Pegasus</Race>
+						<Race>Pony_Unicorn</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Torso</bodyPart>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>Legs</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+					<Or>
+						<Age>PonyAdult</Age>
+						<Age>PonyTeenager</Age>
+					</Or>
+				</conditions>
+				<offsets>
+					<east>
+						<layerOffset>-0.29</layerOffset>
+						<bodyTypes>
+							<Pony>(0.22, -0.1)</Pony>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		</universalBodyAddons>
+
+	</AlienRace.RaceSettings>
+
+</Defs>
