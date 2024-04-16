@@ -113,8 +113,8 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 				<head>
 					<path>Things/Races/Pony/Heads/</path>
 					<headtypeGraphics>
-						<Male_AverageNormal>Things/Races/Pony/Heads/Male_Pony</Male_AverageNormal>
-						<Female_AverageNormal>Things/Races/Pony/Heads/Female_Pony</Female_AverageNormal>
+						<Male_Pony>Things/Races/Pony/Heads/Male_Pony</Male_Pony>
+						<Female_Pony>Things/Races/Pony/Heads/Female_Pony</Female_Pony>
 					</headtypeGraphics>
 				</head>
 				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>

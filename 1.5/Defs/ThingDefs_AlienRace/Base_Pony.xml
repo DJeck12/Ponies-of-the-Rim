@@ -21,8 +21,8 @@
 
 				<alienPartGenerator>
 					<headTypes Inherit="False">
-						<li>Male_AverageNormal</li>
-						<li>Female_AverageNormal</li>
+						<li>Male_Pony</li>
+						<li>Female_Pony</li>
 					</headTypes>
 					<headOffsetDirectional>
 						<north>

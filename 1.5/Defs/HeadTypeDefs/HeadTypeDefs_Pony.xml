@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Male_Pony</defName>
+		<graphicPath>Things/Races/Pony/Heads/Male_Pony</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Female_Pony</defName>
+		<graphicPath>Things/Races/Pony/Heads/Female_Pony</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

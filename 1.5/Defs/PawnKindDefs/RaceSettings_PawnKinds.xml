@@ -14,25 +14,11 @@
 							<kindDefs>
 								<li>EPonyColonist</li>
 							</kindDefs>
-							<chance>50</chance>
+							<chance>100</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
 						<li>Pony_PlayerExpedition</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>EPonyTribe</li>
-							</kindDefs>
-							<chance>50</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -41,7 +27,7 @@
 					<kindDefs>
 						<li>EPonySlave</li>
 					</kindDefs>
-					<chance>25</chance>
+					<chance>100</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -49,7 +35,7 @@
 					<kindDefs>
 						<li>EPonyRefugee</li>
 					</kindDefs>
-					<chance>25</chance>
+					<chance>100</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>
@@ -59,25 +45,11 @@
 							<kindDefs>
 								<li>EPonyVillager</li>
 							</kindDefs>
-							<chance>25</chance>
+							<chance>100</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
 						<li>Pony_PlayerExpedition</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>EPonyTribe</li>
-							</kindDefs>
-							<chance>25</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
@@ -98,25 +70,11 @@
 						<kindDefs>
 							<li>PPonyColonist</li>
 						</kindDefs>
-						<chance>50</chance>
+						<chance>100</chance>
 					</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
 						<li>Pony_PlayerExpedition</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-					<li>
-						<kindDefs>
-							<li>PPonyTribe</li>
-						</kindDefs>
-						<chance>50</chance>
-					</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -125,7 +83,7 @@
 					<kindDefs>
 						<li>PPonySlave</li>
 					</kindDefs>
-					<chance>25</chance>
+					<chance>100</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -133,7 +91,7 @@
 					<kindDefs>
 						<li>PPonyRefugee</li>
 					</kindDefs>
-					<chance>25</chance>
+					<chance>100</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>
@@ -143,25 +101,11 @@
 							<kindDefs>
 								<li>PPonyVillager</li>
 							</kindDefs>
-							<chance>25</chance>
+							<chance>100</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
 						<li>Pony_PlayerExpedition</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>PPonyTribe</li>
-							</kindDefs>
-							<chance>25</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
@@ -182,25 +126,11 @@
 						<kindDefs>
 							<li>UPonyColonist</li>
 						</kindDefs>
-						<chance>50</chance>
+						<chance>100</chance>
 					</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
 						<li>Pony_PlayerExpedition</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-					<li>
-						<kindDefs>
-							<li>UPonyTribe</li>
-						</kindDefs>
-						<chance>50</chance>
-					</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -209,7 +139,7 @@
 					<kindDefs>
 						<li>UPonySlave</li>
 					</kindDefs>
-					<chance>25</chance>
+					<chance>100</chance>
 				</li>
 			</alienslavekinds>
 			<alienrefugeekinds>
@@ -217,7 +147,7 @@
 					<kindDefs>
 						<li>UPonyRefugee</li>
 					</kindDefs>
-					<chance>25</chance>
+					<chance>100</chance>
 				</li>
 			</alienrefugeekinds>
 			<alienwandererkinds>
@@ -227,25 +157,11 @@
 							<kindDefs>
 								<li>UPonyVillager</li>
 							</kindDefs>
-							<chance>25</chance>
+							<chance>100</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PlayerColony</li>
 						<li>Pony_PlayerExpedition</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>UPonyTribe</li>
-							</kindDefs>
-							<chance>25</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>

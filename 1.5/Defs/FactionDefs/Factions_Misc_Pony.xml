@@ -3,7 +3,7 @@
 
 	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -23,7 +23,7 @@
 				<commonality>0.05</commonality>
 			</li>
 		</backstoryFilters>
-		<pawnGroupMakers>
+		<pawnGroupMakers Inherit="False">
 		<li>
 			<!-- Normal fights, standard mix -->
 			<kindDef>Combat</kindDef>
