@@ -5,25 +5,27 @@
 		<defName>Pony_Unicorn</defName>
 		<label>unicorn</label>
 		<description><![CDATA[Ponies are magical quadruped creatures from the planet Phoenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
-\n
+
 The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
-\n
+
 <color=#FF46FF>Unicorns</color> are the first race of ponies to think of when talking about magic and spells. They are the living embodiment of pony magic. Unicorns were the first to harness the nature of magic with the help of their magic horn and taught others to use it for good. However, some members of this race are notorious for their pride and attempts at mind control. One day this almost led to catastrophic consequences.]]></description>
 
 <!--Stats-->
 
 		<statBases>
-			<MarketValue>2000</MarketValue>
-			<MoveSpeed>4.75</MoveSpeed>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>4.7</MoveSpeed>
 			<PsychicSensitivity>1.25</PsychicSensitivity>
-			<ComfyTemperatureMin>12</ComfyTemperatureMin>
-			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<CarryingCapacity>90</CarryingCapacity>
-			<Mass>75</Mass>
+			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.75</PainShockThreshold>
+			<AimingDelayFactor>1.1</AimingDelayFactor>
 			<PawnBeauty>1</PawnBeauty>
 			<RoyalFavorValue>4</RoyalFavorValue>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
 		</statBases>
 
 <!--Attacks-->
@@ -147,13 +149,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			</styleSettings>
 
 			<graphicPaths>
-				<head>
-					<path>Things/Races/Pony/Heads/</path>
-					<headtypeGraphics>
-						<Male_Pony>Things/Races/Pony/Heads/Male_Pony</Male_Pony>
-						<Female_Pony>Things/Races/Pony/Heads/Female_Pony</Female_Pony>
-					</headtypeGraphics>
-				</head>
+				<head>Things/Races/Pony/Heads/</head>
 				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
 				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
 				<body>Things/Races/Pony/Bodies/</body>
@@ -166,7 +162,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 		<race>
 			<nameGenerator>NameGeneratorUnicorn</nameGenerator>
 			<body>Unicorn</body>
-			<useMeatFrom>Pony_Earthpony</useMeatFrom>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>

@@ -62,11 +62,21 @@
 					</bodyTypes>
 				</alienPartGenerator>
 			</generalSettings>
-
+		<!-- Thoughts -->
 			<thoughtSettings>
 				<cannotReceiveThoughts>
-					<li>Naked</li>
 					<li>AteHayAsIngredient</li>
+					<li>Naked</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 
@@ -93,6 +103,7 @@
 					<li>BodyType</li>
 				</blackEndoCategories>
 			</raceRestriction>
+
 			<graphicPaths>
 				<apparel>
 					<pathPrefix>Pony/</pathPrefix>
@@ -265,8 +276,7 @@
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>VegetarianAnimal</foodType>
 			<gestationPeriodDays>18</gestationPeriodDays>
-			<meatMarketValue>0.8</meatMarketValue>
-			<meatColor>(245,200,245)</meatColor>
+			<specificMeatDef>Pony_Meat</specificMeatDef>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
@@ -357,6 +367,7 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
 				<li>Human</li>
+				<li>Pony</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

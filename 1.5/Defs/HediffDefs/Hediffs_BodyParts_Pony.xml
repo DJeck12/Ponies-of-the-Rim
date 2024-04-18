@@ -77,6 +77,7 @@
 		<uiIconThing>WoodLog</uiIconThing>
 	</RecipeDef>
 
+
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>SimpleProstheticHoof</defName>
 		<label>prosthetic hoof</label>
@@ -140,6 +141,22 @@
 
 <!--Wing-->
 
+	<HediffDef>
+		<defName>NaturalWing</defName>
+		<label>wing</label>
+		<labelNoun>a pegasus wing</labelNoun>
+		<description>A natural pegasus wing.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>SimpleProstheticWing</defName>
 		<label>prosthetic wing</label>
@@ -149,8 +166,15 @@
 		<spawnThingOnRemoved>SimpleProstheticWing</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>0.8</partEfficiency>
 		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<MoveSpeed>0.08</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartProstheticMakeableBase">
@@ -199,7 +223,8 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticWing</addsHediff>
 	</RecipeDef>
-<!--Bionics are unfinished
+
+
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>BionicWing</defName>
 		<label>bionic wing</label>
@@ -209,9 +234,16 @@
 		<spawnThingOnRemoved>BionicWing</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.25</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<MoveSpeed>0.25</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartBionicBase">
@@ -268,9 +300,16 @@
 		<spawnThingOnRemoved>ArchotechWing</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.50</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartArchotechBase">
@@ -316,8 +355,24 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechWing</addsHediff>
 	</RecipeDef>
--->
+
 <!--Horn-->
+
+	<HediffDef>
+		<defName>NaturalHorn</defName>
+		<label>horn</label>
+		<labelNoun>a unicorn horn</labelNoun>
+		<description>A natural unicorn horn.</description>
+		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 
 	<ThingDef ParentName="BodyPartNaturalBase">
 		<defName>NaturalHorn</defName>
@@ -334,7 +389,10 @@
 		<defName>InstallNaturalHorn</defName>
 		<label>install horn</label>
 		<description>Install a horn.</description>
-		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>NaturalHorn</ThingDef>
+			<HediffDef>NaturalHorn</HediffDef>
+		</descriptionHyperlinks>
 		<jobString>Installing horn.</jobString>
 		<skillRequirements>
 			<Medicine>8</Medicine>
@@ -358,7 +416,8 @@
 			<li>Pony_Horn</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
-<!--Bionics are unfinished
+
+
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>BionicHorn</defName>
 		<label>bionic horn</label>
@@ -367,10 +426,16 @@
 		<descriptionHyperlinks><ThingDef>BionicHorn</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicHorn</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>1.25</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.4</WorkSpeedGlobal>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartBionicBase">
@@ -418,6 +483,7 @@
 		<addsHediff>BionicHorn</addsHediff>
 	</RecipeDef>
 
+
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>ArchotechHorn</defName>
 		<label>archotech horn</label>
@@ -426,10 +492,16 @@
 		<descriptionHyperlinks><ThingDef>ArchotechHorn</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechHorn</spawnThingOnRemoved>
 		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>1.50</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartArchotechBase">
@@ -451,8 +523,8 @@
 		<label>install archotech horn</label>
 		<description>Install an archotech horn.</description>
 		<descriptionHyperlinks>
-		<ThingDef>ArchotechHorn</ThingDef>
-		<HediffDef>ArchotechHorn</HediffDef>
+			<ThingDef>ArchotechHorn</ThingDef>
+			<HediffDef>ArchotechHorn</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing archotech horn.</jobString>
 		<ingredients>
@@ -475,5 +547,5 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechHorn</addsHediff>
 	</RecipeDef>
--->
+
 </Defs>

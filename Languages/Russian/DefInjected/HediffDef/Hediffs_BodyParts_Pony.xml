@@ -4,27 +4,35 @@
 	<ArtificialTail.label>искусственный хвост</ArtificialTail.label>
 	<ArtificialTail.description>Установленный искусственый хвост.</ArtificialTail.description>
 	<ArtificialTail.labelNoun>искусственный хвост</ArtificialTail.labelNoun>
+
 	<PegHoof.label>деревянное копыто</PegHoof.label>
 	<PegHoof.description>Установленное деревянное копыто.</PegHoof.description>
 	<PegHoof.labelNoun>деревянное копыто</PegHoof.labelNoun>
 	<SimpleProstheticHoof.label>простой протез копыта</SimpleProstheticHoof.label>
 	<SimpleProstheticHoof.description>Установленный простой протез копыта.</SimpleProstheticHoof.description>
 	<SimpleProstheticHoof.labelNoun>простой протез копыта</SimpleProstheticHoof.labelNoun>
+
+	<NaturalWing.label>крыло</NaturalWing.label>
+	<NaturalWing.description>Натуральное крыло пегаса.</NaturalWing.description>
+	<NaturalWing.labelNoun>крыло</NaturalWing.labelNoun>
 	<SimpleProstheticWing.label>простой протез крыла</SimpleProstheticWing.label>
 	<SimpleProstheticWing.description>Установленный простой протез крыла.</SimpleProstheticWing.description>
 	<SimpleProstheticWing.labelNoun>простой протез крыла</SimpleProstheticWing.labelNoun>
-<!--
 	<BionicWing.label>бионическое крыло</BionicWing.label>
-	<BionicWing.description>Вживлнное бионическое крыло.</BionicWing.description>
+	<BionicWing.description>Вживлённое бионическое крыло.</BionicWing.description>
 	<BionicWing.labelNoun>бионическое крыло</BionicWing.labelNoun>
 	<ArchotechWing.label>архокрыло</ArchotechWing.label>
-	<ArchotechWing.description>Вживлнное архокрыло.</ArchotechWing.description>
+	<ArchotechWing.description>Вживлённое архокрыло.</ArchotechWing.description>
 	<ArchotechWing.labelNoun>архокрыло</ArchotechWing.labelNoun>
+
+	<NaturalHorn.label>рог</NaturalHorn.label>
+	<NaturalHorn.description>Натуральный рог единорога.</NaturalHorn.description>
+	<NaturalHorn.labelNoun>рог</NaturalHorn.labelNoun>
 	<BionicHorn.label>бионический рог</BionicHorn.label>
 	<BionicHorn.description>Вживлённый бионический рог.</BionicHorn.description>
 	<BionicHorn.labelNoun>бионический рог</BionicHorn.labelNoun>
 	<ArchotechHorn.label>архорог</ArchotechHorn.label>
-	<ArchotechHorn.description>Вживлнный бионический рог.</ArchotechHorn.description>
+	<ArchotechHorn.description>Вживлённый архорог.</ArchotechHorn.description>
 	<ArchotechHorn.labelNoun>архорог</ArchotechHorn.labelNoun>
--->
+
 </LanguageData>

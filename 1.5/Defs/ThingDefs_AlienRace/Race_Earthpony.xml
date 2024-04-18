@@ -5,25 +5,27 @@
 		<defName>Pony_Earthpony</defName>
 		<label>earthpony</label>
 		<description><![CDATA[Ponies are magical quadruped creatures from the planet Phoenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
-\n
+
 The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
-\n
+
 Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with the earth, representatives of this race do not only have an innate affinity for nature and strong endurance. Among them there are also many talented inventors and successful entrepreneurs. However, earth ponies are often considered "limited" and incapable of skilled work. This stereotype has nothing to do with reality, because they are talented and versatile creatures.]]></description>
 <!--Stats-->
 
 		<statBases>
-			<MarketValue>2000</MarketValue>
-			<MoveSpeed>4.75</MoveSpeed>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>4.7</MoveSpeed>
 			<PsychicSensitivity>1.1</PsychicSensitivity>
-			<ComfyTemperatureMin>12</ComfyTemperatureMin>
-			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<CarryingCapacity>100</CarryingCapacity>
-			<Mass>75</Mass>
+			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.8</PainShockThreshold>
+			<AimingDelayFactor>1.1</AimingDelayFactor>
 			<PawnBeauty>1</PawnBeauty>
 			<RoyalFavorValue>4</RoyalFavorValue>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
 		</statBases>
 		
 <!--Settings-->
@@ -110,13 +112,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 			</styleSettings>
 
 			<graphicPaths>
-				<head>
-					<path>Things/Races/Pony/Heads/</path>
-					<headtypeGraphics>
-						<Male_Pony>Things/Races/Pony/Heads/Male_Pony</Male_Pony>
-						<Female_Pony>Things/Races/Pony/Heads/Female_Pony</Female_Pony>
-					</headtypeGraphics>
-				</head>
+				<head>Things/Races/Pony/Heads/</head>
 				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
 				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
 				<body>Things/Races/Pony/Bodies/</body>
@@ -129,7 +125,6 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 		<race>
 			<nameGenerator>NameGeneratorEarth</nameGenerator>
 			<body>Pony</body>
-			<meatLabel>pony meat</meatLabel>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>
