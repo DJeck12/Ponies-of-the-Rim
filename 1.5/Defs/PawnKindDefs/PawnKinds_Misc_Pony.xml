@@ -7,7 +7,7 @@
 		<defName>EPonySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
@@ -23,7 +23,7 @@
 		<defName>EPonyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
@@ -37,7 +37,7 @@
 		<defName>EPonyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -53,7 +53,7 @@
 		<defName>PPonySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
@@ -69,7 +69,7 @@
 		<defName>PPonyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
@@ -83,7 +83,7 @@
 		<defName>PPonyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -99,7 +99,7 @@
 		<defName>UPonySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
 				<li>Offworld</li>
@@ -115,7 +115,7 @@
 		<defName>UPonyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
@@ -129,7 +129,7 @@
 		<defName>UPonyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>

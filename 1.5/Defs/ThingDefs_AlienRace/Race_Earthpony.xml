@@ -9,6 +9,7 @@
 The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
 
 Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with the earth, representatives of this race do not only have an innate affinity for nature and strong endurance. Among them there are also many talented inventors and successful entrepreneurs. However, earth ponies are often considered "limited" and incapable of skilled work. This stereotype has nothing to do with reality, because they are talented and versatile creatures.]]></description>
+
 <!--Stats-->
 
 		<statBases>
@@ -18,7 +19,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 			<ComfyTemperatureMin>16</ComfyTemperatureMin>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
-			<CarryingCapacity>100</CarryingCapacity>
+			<CarryingCapacity>90</CarryingCapacity>
 			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.8</PainShockThreshold>
@@ -100,23 +101,53 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>false</hasStyle>
+						<hasStyle>true</hasStyle>
+						<bannedTags>
+							<li>Bushy</li>
+							<li>BeardBushy</li>
+							<li>BeardLong</li>
+						</bannedTags>
 					</value>
 				</li>
 				<li>
 					<key>TattooDef</key>
 					<value>
-						<hasStyle>false</hasStyle>
+						<hasStyle>true</hasStyle>
 					</value>
 				</li>
 			</styleSettings>
 
 			<graphicPaths>
-				<head>Things/Races/Pony/Heads/</head>
+				<head>
+					<path>Things/Races/Pony/Heads/</path>
+					<extendedGraphics>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">
+							<path>Things/Races/Pony/Heads/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
+							</extendedGraphics>
+						</Mutant>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+							<path>Things/Races/Pony/Heads/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
+							</extendedGraphics>
+						</Mutant>
+						<Gender For="Male">Things/Races/Pony/Heads/Male_Pony</Gender>
+						<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
+					</extendedGraphics>
+				</head>
 				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
 				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
-				<body>Things/Races/Pony/Bodies/</body>
+				<body>
+					<path>Things/Races/Pony/Bodies/Naked_Pony</path>
+					<extendedGraphics>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">Things/Races/Pony/Heads/Naked_Pony</Mutant>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Races/Pony/Heads/Naked_Pony</Mutant>
+					</extendedGraphics>
+				</body>
 				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+				<swaddle>Transparent/Transparent</swaddle>
 			</graphicPaths>
 		</alienRace>
 

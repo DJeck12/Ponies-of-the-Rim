@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<!--
-	<Pony_Pegasus.title>Рекрутер Шедоуболтов</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Шедоуболт-рекрутер</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>Вместе с другими Шедоуболтами [PAWN_nameDef] {PAWN_gender ? выискивал : выискивала} тех, кто ставил под сомнение справедливость и правильность существовавшего порядка. [PAWN_pronoun] {PAWN_gender ? старался : старалась} привлечь их на свою сторону.</Pony_Pegasus.description>	
 
-	<Pony_Pegasus.title>Мародер Шедоуболтов</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Шедоуболт-мародер</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>Всю свою взрослую жизнь [PAWN_nameDef] {PAWN_gender ? провел : провела} среди Шедоуболтов, беспрекословно выполняя их указания. Во время сражений [PAWN_pronoun] всегда {PAWN_gender ? был : была} на острие атаки, демонстрируя невероятную скорость и силу.</Pony_Pegasus.description>	
+	<Pony_PegasusShadRec.title>рекрутер Шедоуболтов</Pony_PegasusShadRec.title>
+	<Pony_PegasusShadRec.titleShort>рекрутер</Pony_PegasusShadRec.titleShort>
+	<Pony_PegasusShadRec.description>Вместе с другими Шедоуболтами [PAWN_nameDef] {PAWN_gender ? выискивал : выискивала} тех, кто ставил под сомнение справедливость и правильность существовавшего порядка. [PAWN_pronoun] {PAWN_gender ? старался : старалась} привлечь их на свою сторону.</Pony_PegasusShadRec.description>	
 
-	<Pony_Pegasus.title>Птицевод</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Птицевод</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>[PAWN_nameDef] с удовольствием ухаживал за растениями и животными. [PAWN_pronoun] с любопытством {PAWN_gender ? наблюдал : наблюдала} за миром флоры и фауны, уделяя особое внимание птицам и находя в них нечто особенное и уникальное.</Pony_Pegasus.description>	
+	<Pony_PegasusShadMar.title>мародёр Шедоуболтов</Pony_PegasusShadMar.title>
+	<Pony_PegasusShadMar.titleShort>мародёр</Pony_PegasusShadMar.titleShort>
+	<Pony_PegasusShadMar.description>Всю свою взрослую жизнь [PAWN_nameDef] {PAWN_gender ? провел : провела} среди Шедоуболтов, беспрекословно выполняя их указания. Во время сражений [PAWN_pronoun] всегда {PAWN_gender ? был : была} на острие атаки, демонстрируя невероятную скорость и силу.</Pony_PegasusShadMar.description>	
 
-	<Pony_Pegasus.title>Крылатый спасатель</Pony_Pegasus.title>
-	<Pony_Pegasus.titleFemale>Крылатая спасательница</Pony_Pegasus.titleFemale>
-	<Pony_Pegasus.titleShort>Спасатель</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.titleShortFemale>Спасательница</Pony_Pegasus.titleShortFemale>
-	<Pony_Pegasus.description>Однажды, гуляя поздним вечером по лесу, [PAWN_nameDef] попал в беду. [PAWN_possessive] спас отважный незнакомец, который случайно оказался поблизости. [PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? поражен : поражена} такой храбростью и самоотверженностью, поэтому {PAWN_gender ? решил : решила} посвятить свою жизнь помощи другим пони, стремясь быть {PAWN_gender ? похожим : похожей} на своего защитника.</Pony_Pegasus.description>	
+	<Pony_PegasusPoultryFar.title>птицевод</Pony_PegasusPoultryFar.title>
+	<Pony_PegasusPoultryFar.titleShort>птицевод</Pony_PegasusPoultryFar.titleShort>
+	<Pony_PegasusPoultryFar.description>[PAWN_nameDef] с удовольствием ухаживал за растениями и животными. [PAWN_pronoun] с любопытством {PAWN_gender ? наблюдал : наблюдала} за миром флоры и фауны, уделяя особое внимание птицам и находя в них нечто особенное и уникальное.</Pony_PegasusPoultryFar.description>	
 
-	<Pony_Pegasus.title>Пегас-истребитель</Pony_Pegasus.title>
-	<Pony_Pegasus.titleFemale>Пегаска-истребительница</Pony_Pegasus.titleFemale>
-	<Pony_Pegasus.titleShort>Истребитель</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.titleShortFemale>Истребительница</Pony_Pegasus.titleShortFemale>
-	<Pony_Pegasus.description>Служа в пегасьем полку Королевской Гвардии, [PAWN_nameDef] {PAWN_gender ? старался : старалась} максимально выделиться на фоне других. В ходе постоянных тренировок [PAWN_pronoun] мастерски {PAWN_gender ? отточил : отточила} свои навыки полета, {PAWN_gender ? освоил : освоила} ведение воздушного боя и {PAWN_gender ? научился : научилась} ловко парировать удары, используя свои крылья с максимальной эффктивностью.</Pony_Pegasus.description>	
+	<Pony_PegasusWinRes.title>крылатый спасатель</Pony_PegasusWinRes.title>
+	<Pony_PegasusWinRes.titleFemale>крылатая спасательница</Pony_PegasusWinRes.titleFemale>
+	<Pony_PegasusWinRes.titleShort>спасатель</Pony_PegasusWinRes.titleShort>
+	<Pony_PegasusWinRes.titleShortFemale>спасательница</Pony_PegasusWinRes.titleShortFemale>
+	<Pony_PegasusWinRes.description>Однажды, гуляя поздним вечером по лесу, [PAWN_nameDef] попал в беду. [PAWN_possessive] спас отважный незнакомец, который случайно оказался поблизости. [PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? поражен : поражена} такой храбростью и самоотверженностью, поэтому {PAWN_gender ? решил : решила} посвятить свою жизнь помощи другим пони, стремясь быть {PAWN_gender ? похожим : похожей} на своего защитника.</Pony_PegasusWinRes.description>	
 
-	<Pony_Pegasus.title>Офицер Пегасьей Гвардии</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Пегас-офицер</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>[PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} свою жизнь службе в Гвардии, оберегая покой граждан и сопровождая важных персон на различных дипломатических миссиях. Шли годы, но [PAWN_pronoun] {PAWN_gender ? продолжал : продолжала} исполнять свой долг перед королевством, пока наконец не {PAWN_gender ? получил : получила} заслуженное повышение до звания офицера.</Pony_Pegasus.description>	
+	<Pony_PegasusPegFight.title>пегас-истребитель</Pony_PegasusPegFight.title>
+	<Pony_PegasusPegFight.titleFemale>пегаска-истребительница</Pony_PegasusPegFight.titleFemale>
+	<Pony_PegasusPegFight.titleShort>истребитель</Pony_PegasusPegFight.titleShort>
+	<Pony_PegasusPegFight.titleShortFemale>истребительница</Pony_PegasusPegFight.titleShortFemale>
+	<Pony_PegasusPegFight.description>Служа в пегасьем полку Королевской Гвардии, [PAWN_nameDef] {PAWN_gender ? старался : старалась} максимально выделиться на фоне других. В ходе постоянных тренировок [PAWN_pronoun] мастерски {PAWN_gender ? отточил : отточила} свои навыки полета, {PAWN_gender ? освоил : освоила} ведение воздушного боя и {PAWN_gender ? научился : научилась} ловко парировать удары, используя свои крылья с максимальной эффктивностью.</Pony_PegasusPegFight.description>	
 
-	<Pony_Pegasus.title>Летун-гонщик</Pony_Pegasus.title>
-	<Pony_Pegasus.titleFemale>Летунья-гонщица</Pony_Pegasus.titleFemale>
-	<Pony_Pegasus.titleShort>Летун-гонщик</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.titleShortFemale>Летунья-гонщица</Pony_Pegasus.titleShortFemale>
-	<Pony_Pegasus.description>[PAWN_nameDef] с восхищением {PAWN_gender ? наблюдал : наблюдала} за состязаниями пегасов. [PAWN_pronoun] {PAWN_gender ? поставил : поставила} перед собой цель стать {PAWN_gender ? таким : такой} же {PAWN_gender ? успешным : успешной} и {PAWN_gender ? выдающимся : выдающейся}, как самые знаменитые спортивные пони. [PAWN_nameDef] {PAWN_gender ? посвящал : посвящала} все свое время тренировкам, неустанно оттачивая мастерство полета.</Pony_Pegasus.description>
+	<Pony_PegasusOfficerPeg.title>офицер Пегасьей Гвардии</Pony_PegasusOfficerPeg.title>
+	<Pony_PegasusOfficerPeg.titleShort>офицер</Pony_PegasusOfficerPeg.titleShort>
+	<Pony_PegasusOfficerPeg.description>[PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} свою жизнь службе в Гвардии, оберегая покой граждан и сопровождая важных персон на различных дипломатических миссиях. Шли годы, но [PAWN_pronoun] {PAWN_gender ? продолжал : продолжала} исполнять свой долг перед королевством, пока наконец не {PAWN_gender ? получил : получила} заслуженное повышение до звания офицера.</Pony_PegasusOfficerPeg.description>	
 
-	<Pony_Pegasus.title>Изобретатель</Pony_Pegasus.title>
-	<Pony_Pegasus.titleFemale>Изобретательница</Pony_Pegasus.titleFemale>
-	<Pony_Pegasus.titleShort>Летчик-изобретатель</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.titleShortFemale>Летчица-изобретательница</Pony_Pegasus.titleShortFemale>
-	<Pony_Pegasus.description>Однажды [PAWN_nameDef] {PAWN_gender ? встретил : встретила} пегаса, который не мог летать. [PAWN_possessive] сердце было полно сострадания, и [PAWN_pronoun] не {PAWN_gender ? мог : могла} спокойно жить, зная, что рядом есть кто-то, кто обделен чем-то настолько важным. Тогда [PAWN_nameDef] {PAWN_gender ? решил : решила} стать {PAWN_gender ? изобретателем : изобретательницей} и {PAWN_gender ? поставил : поставила} перед собой важную жизненную цель — сделать вновь счастливыми всех несчастных пони.</Pony_Pegasus.description>
+	<Pony_PegasusFlyRacer.title>летун-гонщик</Pony_PegasusFlyRacer.title>
+	<Pony_PegasusFlyRacer.titleFemale>летунья-гонщица</Pony_PegasusFlyRacer.titleFemale>
+	<Pony_PegasusFlyRacer.titleShort>гонщик</Pony_PegasusFlyRacer.titleShort>
+	<Pony_PegasusFlyRacer.titleShortFemale>гонщица</Pony_PegasusFlyRacer.titleShortFemale>
+	<Pony_PegasusFlyRacer.description>[PAWN_nameDef] с восхищением {PAWN_gender ? наблюдал : наблюдала} за состязаниями пегасов. [PAWN_pronoun] {PAWN_gender ? поставил : поставила} перед собой цель стать {PAWN_gender ? таким : такой} же {PAWN_gender ? успешным : успешной} и {PAWN_gender ? выдающимся : выдающейся}, как самые знаменитые спортивные пони. [PAWN_nameDef] {PAWN_gender ? посвящал : посвящала} все свое время тренировкам, неустанно оттачивая мастерство полета.</Pony_PegasusFlyRacer.description>
 
-	<Pony_Pegasus.title>Контролер погоды</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Погодник</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>Большую часть своей жизни [PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} управлению погодой и часто {PAWN_gender ? работал : работала} вместе с местными метеорологами. [PAWN_pronoun] {PAWN_gender ? был : была} {PAWN_gender ? уверен : уверена}, что этот вид деятельности — [PAWN_possessive] истинное призвание.</Pony_Pegasus.description>
+	<Pony_PegasusPilotTor.title>летчик-изобретатель</Pony_PegasusPilotTor.title>
+	<Pony_PegasusPilotTor.titleFemale>летчица-изобретательница</Pony_PegasusPilotTor.titleFemale>
+	<Pony_PegasusPilotTor.titleShort>изобретатель</Pony_PegasusPilotTor.titleShort>
+	<Pony_PegasusPilotTor.titleShortFemale>изобретательница</Pony_PegasusPilotTor.titleShortFemale>
+	<Pony_PegasusPilotTor.description>Однажды [PAWN_nameDef] {PAWN_gender ? встретил : встретила} пегаса, который не мог летать. [PAWN_possessive] сердце было полно сострадания, и [PAWN_pronoun] не {PAWN_gender ? мог : могла} спокойно жить, зная, что рядом есть кто-то, кто обделен чем-то настолько важным. Тогда [PAWN_nameDef] {PAWN_gender ? решил : решила} стать {PAWN_gender ? изобретателем : изобретательницей} и {PAWN_gender ? поставил : поставила} перед собой важную жизненную цель — сделать вновь счастливыми всех несчастных пони.</Pony_PegasusPilotTor.description>
 
-	<Pony_Pegasus.title>Метеоролог</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Метеоролог</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>[PAWN_nameDef] {PAWN_gender ? происходил : происходила} из семьи, в которой на протяжении многих поколений увлекались прогнозированием погодных явлений. Неудивительно, что и [PAWN_pronoun] {PAWN_gender ? разделял : разделяла} это увлечение. [PAWN_nameDef] {PAWN_gender ? уделял : уделяла} огромное количество времени метеорологии, что стало причиной [PAWN_possessive] неудач в личной жизни.</Pony_Pegasus.description>
+	<Pony_PegasusWeatherContr.title>контролер погоды</Pony_PegasusWeatherContr.title>
+	<Pony_PegasusWeatherContr.titleShort>погодник</Pony_PegasusWeatherContr.titleShort>
+	<Pony_PegasusWeatherContr.description>Большую часть своей жизни [PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} управлению погодой и часто {PAWN_gender ? работал : работала} вместе с местными метеорологами. [PAWN_pronoun] {PAWN_gender ? был : была} {PAWN_gender ? уверен : уверена}, что этот вид деятельности — [PAWN_possessive] истинное призвание.</Pony_PegasusWeatherContr.description>
 
-	<Pony_Pegasus.title>Сотрудник Радужной фабрики</Pony_Pegasus.title>
-	<Pony_Pegasus.titleFemale>Сотрудница Радужной фабрики</Pony_Pegasus.titleFemale>
-	<Pony_Pegasus.titleShort>Пролетарий</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>Ноктюрн был очарован радугой. Устроившись работать на специальную фабрику, он начал изготавливать из нее различные изделия.</Pony_Pegasus.description>
+	<Pony_PegasusMeteo.title>метеоролог</Pony_PegasusMeteo.title>
+	<Pony_PegasusMeteo.titleShort>метеоролог</Pony_PegasusMeteo.titleShort>
+	<Pony_PegasusMeteo.description>[PAWN_nameDef] {PAWN_gender ? происходил : происходила} из семьи, в которой на протяжении многих поколений увлекались прогнозированием погодных явлений. Неудивительно, что и [PAWN_pronoun] {PAWN_gender ? разделял : разделяла} это увлечение. [PAWN_nameDef] {PAWN_gender ? уделял : уделяла} огромное количество времени метеорологии, что стало причиной [PAWN_possessive] неудач в личной жизни.</Pony_PegasusMeteo.description>
 
-	<Pony_Pegasus.title>Облачный скульптор</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Облачный скульптор</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>[PAWN_nameDef] {PAWN_gender ? был : была} без ума от облаков. Став {PAWN_gender ? взрослым : взрослой}, [PAWN_pronoun] {PAWN_gender ? превратился : превратилась} в искусного мастера, способного придавать им любую форму по своему желанию.</Pony_Pegasus.description>
+	<Pony_PegasusEmpRainFactor.title>сотрудник Радужной Фабрики</Pony_PegasusEmpRainFactor.title>
+	<Pony_PegasusEmpRainFactor.titleFemale>сотрудница Радужной Фабрики</Pony_PegasusEmpRainFactor.titleFemale>
+	<Pony_PegasusEmpRainFactor.titleShort>пролетарий</Pony_PegasusEmpRainFactor.titleShort>
+	<Pony_PegasusEmpRainFactor.description>[PAWN_nameDef] был очарован радугой. Устроившись работать на специальную фабрику, он начал изготавливать на ней различные изделия.</Pony_PegasusEmpRainFactor.description>
 
-	<Pony_Pegasus.title>Радужный повар</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Радужный повар</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>[PAWN_nameDef] с упоением {PAWN_gender ? изучал : изучала} книги по национальной кулинарии пегасов. [PAWN_possessive] знания в приготовлении разнообразных экзотических блюд были практически совершенны и сделали [PAWN_possessive] {PAWN_gender ? известным : известной} далеко за пределами родной страны.</Pony_Pegasus.description>
+	<Pony_PegasusCloudSculpt.title>облачный скульптор</Pony_PegasusCloudSculpt.title>
+	<Pony_PegasusCloudSculpt.titleShort>скульптор</Pony_PegasusCloudSculpt.titleShort>
+	<Pony_PegasusCloudSculpt.description>[PAWN_nameDef] {PAWN_gender ? был : была} без ума от облаков. Став {PAWN_gender ? взрослым : взрослой}, [PAWN_pronoun] {PAWN_gender ? превратился : превратилась} в искусного мастера, способного придавать им любую форму по своему желанию.</Pony_PegasusCloudSculpt.description>
 
-	<Pony_Pegasus.title>Раб Шедоуболтов</Pony_Pegasus.title>
-	<Pony_Pegasus.titleFemale>Рабыня Шедоуболтов</Pony_Pegasus.titleFemale>
-	<Pony_Pegasus.titleShort>Плененный</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.titleShortFemale>Плененная</Pony_Pegasus.titleShortFemale>
-	<Pony_Pegasus.description>Однажды, во время беззаботной прогулки по лесу, [PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? похищен : похищена} Шедоуболтами. С того дня [PAWN_pronoun] {PAWN_gender ? был : была} {PAWN_gender ? вынужден : вынуждена} служить им.</Pony_Pegasus.description>
+	<Pony_PegasusCook.title>радужный повар</Pony_PegasusCook.title>
+	<Pony_PegasusCook.titleShort>повар</Pony_PegasusCook.titleShort>
+	<Pony_PegasusCook.description>[PAWN_nameDef] с упоением {PAWN_gender ? изучал : изучала} книги по национальной кулинарии пегасов. [PAWN_possessive] знания в приготовлении разнообразных экзотических блюд с использованием жидкой радуги были практически совершенны и сделали [PAWN_possessive] {PAWN_gender ? известным : известной} далеко за пределами родной страны.</Pony_PegasusCook.description>
 
-	<Pony_Pegasus.title>Лидер Шедоуболтов</Pony_Pegasus.title>
-	<Pony_Pegasus.titleShort>Лидер</Pony_Pegasus.titleShort>
-	<Pony_Pegasus.description>[PAWN_nameDef] {PAWN_gender ? стал : стала} частью команды Шэдоуболтов и с большим энтузиазмом {PAWN_gender ? перенимал : перенимала} опыт своих новых товарищей. Вскоре в {PAWN_gender ? нем : ней} проявились лидерские качества, которые позволили [PAWN_objective] занять почетное место лидера.</Pony_Pegasus.description>
--->
+	<Pony_PegasusSlaveShad.title>раб Шедоуболтов</Pony_PegasusSlaveShad.title>
+	<Pony_PegasusSlaveShad.titleFemale>рабыня Шедоуболтов</Pony_PegasusSlaveShad.titleFemale>
+	<Pony_PegasusSlaveShad.titleShort>плененный</Pony_PegasusSlaveShad.titleShort>
+	<Pony_PegasusSlaveShad.titleShortFemale>плененная</Pony_PegasusSlaveShad.titleShortFemale>
+	<Pony_PegasusSlaveShad.description>Однажды, во время беззаботной прогулки по лесу, [PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? похищен : похищена} Шедоуболтами. С того дня [PAWN_pronoun] {PAWN_gender ? был : была} {PAWN_gender ? вынужден : вынуждена} служить им.</Pony_PegasusSlaveShad.description>
+
+	<Pony_PegasusLeadShad.title>лидер Шедоуболтов</Pony_PegasusLeadShad.title>
+	<Pony_PegasusLeadShad.titleShort>лидер</Pony_PegasusLeadShad.titleShort>
+	<Pony_PegasusLeadShad.description>[PAWN_nameDef] {PAWN_gender ? стал : стала} частью команды Шэдоуболтов и с большим энтузиазмом {PAWN_gender ? перенимал : перенимала} опыт своих новых товарищей. Вскоре в {PAWN_gender ? нем : ней} проявились лидерские качества, которые позволили [PAWN_objective] занять почетное место лидера.</Pony_PegasusLeadShad.description>
+
 </Defs>

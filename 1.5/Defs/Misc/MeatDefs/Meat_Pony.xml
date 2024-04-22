@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>Pony_Meat</defName>
+		<defName>Meat_Pony</defName>
 		<label>pony meat</label>
 		<description>Raw buthered flesh of a member of the pony race. Can be used as food, but most individuals will not take this idea well. Considered cannibal food for both ponies and other races.</description>
 		<graphicData>

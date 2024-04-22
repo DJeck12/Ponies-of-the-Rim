@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<Pony_EveryponyPaGi.title>Организатор вечеринок</Pony_EveryponyPaGi.title>
-	<Pony_EveryponyPaGi.titleShort>Заводила</Pony_EveryponyPaGi.titleShort>
-	<Pony_EveryponyPaGi.description>[PAWN_nameDef] обожает видеть улыбки других и весело проводить время. [PAWN_pronoun] {PAWN_gender ? стал : стала} организовывать встречи и вечеринки для всех желающих повеселиться в округе.</Pony_EveryponyPaGi.description>
+	<Pony_EveryponyPaPl.title>Организатор вечеринок</Pony_EveryponyPaPl.title>
+	<Pony_EveryponyPaPl.titleShort>Заводила</Pony_EveryponyPaPl.titleShort>
+	<Pony_EveryponyPaPl.description>[PAWN_nameDef] обожает видеть улыбки других и весело проводить время. [PAWN_pronoun] {PAWN_gender ? стал : стала} организовывать встречи и вечеринки для всех желающих повеселиться в округе.</Pony_EveryponyPaPl.description>
 
 	<Pony_EveryponyRG.title>Королевский стражник</Pony_EveryponyRG.title>
 	<Pony_EveryponyRG.titleFemale>Королевская стражница</Pony_EveryponyRG.titleFemale>
@@ -90,11 +90,10 @@
 	<Pony_EveryponyCosSmug.titleShort>Контрабандист</Pony_EveryponyCosSmug.titleShort>
 	<Pony_EveryponyCosSmug.titleShortFemale>Контрабандистка</Pony_EveryponyCosSmug.titleShortFemale>
 	<Pony_EveryponyCosSmug.description>[PAWN_nameDef] {PAWN_gender ? был : была} {PAWN_gender ? обычным : обычной} {PAWN_gender ? работником : работницей} космической таможни. Посчитав, что [PAWN_objective] платят ничтожно мало, [PAWN_pronoun] {PAWN_gender ? решил : решила} найти дополнительный, не совсем законный заработок, вступив в картель контрабандистов и помогая им перевозить свой товар через границу.</Pony_EveryponyCosSmug.description>
-<!--
+
 	<Pony_EveryponyAcTravel.title>Попаданец</Pony_EveryponyAcTravel.title>
 	<Pony_EveryponyAcTravel.titleFemale>Попаданка</Pony_EveryponyAcTravel.titleFemale>
 	<Pony_EveryponyAcTravel.titleShort>Попаданец</Pony_EveryponyAcTravel.titleShort>
-	<Pony_EveryponyAcTravel.titleShortFemale>Попаданка</Pony_EveryponyAcTravel.titleShortFemale>
-	<Pony_EveryponyAcTravel.description> </Pony_EveryponyAcTravel.description>
--->
+	<Pony_EveryponyAcTravel.description>Когда-то [PAWN_nameDef] {PAWN_gender ? был : была} существом совершенно другого вида. Будучи подвергнутым загадочному эксперименту, [PAWN_pronoun] {PAWN_gender ? очутился : очутилась} в чужом облике на неизвестной планете. [PAWN_pronoun] {PAWN_gender ? сохранил : сохранила} свои прошлые воспоминания, но так и не {PAWN_gender ? смог : смогла} до конца восстановить в памяти какие-либо подробности своего попадания. Не имея иного выбора, [PAWN_objective] пришлось привыкать к новому телу.</Pony_EveryponyAcTravel.description>
+
 </Defs>

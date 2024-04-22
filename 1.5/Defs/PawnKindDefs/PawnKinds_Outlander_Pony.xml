@@ -7,7 +7,7 @@
 		<defName>EPonyTown_Guard</defName>
 		<label>pony town guard</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -21,7 +21,7 @@
 		<defName>EPonyTown_Trader</defName>
 		<label>pony town trader</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -36,7 +36,7 @@
 		<label>pony town councilman</label>
 		<labelPlural>pony town councilmen</labelPlural>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -52,7 +52,7 @@
 		<defName>PPonyTown_Guard</defName>
 		<label>pony town guard</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -66,7 +66,7 @@
 		<defName>PPonyTown_Trader</defName>
 		<label>pony town trader</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -80,7 +80,7 @@
 		<defName>PPonyTown_Councilman</defName>
 		<label>pony town councilman</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -96,7 +96,7 @@
 		<defName>UPonyTown_Guard</defName>
 		<label>pony town guard</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -110,7 +110,7 @@
 		<defName>UPonyTown_Trader</defName>
 		<label>pony town trader</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
@@ -124,7 +124,7 @@
 		<defName>UPonyTown_Councilman</defName>
 		<label>pony town councilman</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>

@@ -14,8 +14,9 @@
 			<parts>
 
 				<!-- Config pages -->
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<li Class="Ponies_of_the_Rim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
 				<def>ConfigPage_ConfigureStartingPawns</def>
+				<customSummary>Start with 4 ponies.</customSummary>
 				<pawnCount>4</pawnCount>
 				<pawnChoiceCount>8</pawnChoiceCount>
 				</li>

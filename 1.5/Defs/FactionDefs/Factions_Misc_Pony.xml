@@ -2,6 +2,7 @@
 <Defs>
 
 	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
+		<categoryTag>PonyOutlander</categoryTag>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<backstoryFilters Inherit="False">
 			<li>

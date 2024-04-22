@@ -170,7 +170,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<WorkSpeedGlobal>0.04</WorkSpeedGlobal>
 					<MoveSpeed>0.08</MoveSpeed>
 				</statOffsets>
 			</li>
@@ -239,7 +239,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<WorkSpeedGlobal>0.75</WorkSpeedGlobal>
 					<MoveSpeed>0.25</MoveSpeed>
 				</statOffsets>
 			</li>
@@ -305,7 +305,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
 					<MoveSpeed>0.5</MoveSpeed>
 				</statOffsets>
 			</li>

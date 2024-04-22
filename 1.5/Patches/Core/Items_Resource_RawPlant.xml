@@ -6,7 +6,7 @@
 		<value>
 			<foodType>VegetableOrFruit</foodType>
 			<preferability>RawBad</preferability>
-			<tasteThought>AteRawFood</tasteThought>
+			<tasteThought></tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
 			<specialThoughtAsIngredient>AteHayAsIngredient</specialThoughtAsIngredient>
@@ -17,6 +17,13 @@
 	<xpath>/Defs/ThingDef[defName="Hay"]</xpath>
 		<value>
 			<socialPropernessMatters>true</socialPropernessMatters>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName="Hay"]/description</xpath>
+		<value>
+			<description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is loved by ponies and is also a good animal feed, but inedible for humans.</description>
 		</value>
 	</Operation>
 	

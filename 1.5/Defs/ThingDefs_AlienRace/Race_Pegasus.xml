@@ -18,7 +18,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			<PsychicSensitivity>1.1</PsychicSensitivity>
 			<ComfyTemperatureMin>12</ComfyTemperatureMin>
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
-			<CarryingCapacity>90</CarryingCapacity>
+			<CarryingCapacity>80</CarryingCapacity>
 			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.75</PainShockThreshold>
@@ -161,23 +161,53 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>false</hasStyle>
+						<hasStyle>true</hasStyle>
+						<bannedTags>
+							<li>Bushy</li>
+							<li>BeardBushy</li>
+							<li>BeardLong</li>
+						</bannedTags>
 					</value>
 				</li>
 				<li>
 					<key>TattooDef</key>
 					<value>
-						<hasStyle>false</hasStyle>
+						<hasStyle>true</hasStyle>
 					</value>
 				</li>
 			</styleSettings>
 
 			<graphicPaths>
-				<head>Things/Races/Pony/Heads/</head>
+				<head>
+					<path>Things/Races/Pony/Heads/</path>
+					<extendedGraphics>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">
+							<path>Things/Races/Pony/Heads/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
+							</extendedGraphics>
+						</Mutant>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
+							<path>Things/Races/Pony/Heads/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
+							</extendedGraphics>
+						</Mutant>
+						<Gender For="Male">Things/Races/Pony/Heads/Male_Pony</Gender>
+						<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
+					</extendedGraphics>
+				</head>
 				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
 				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
-				<body>Things/Races/Pony/Bodies/</body>
+				<body>
+					<path>Things/Races/Pony/Bodies/Naked_Pony</path>
+					<extendedGraphics>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">Things/Races/Pony/Heads/Naked_Pony</Mutant>
+						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Races/Pony/Heads/Naked_Pony</Mutant>
+					</extendedGraphics>
+				</body>
 				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
+				<swaddle>Transparent/Transparent</swaddle>
 			</graphicPaths>
 		</alienRace>
 

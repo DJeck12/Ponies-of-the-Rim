@@ -47,7 +47,7 @@
 
 	<AbilityDef>
 		<defName>ShortFlight</defName>
-		<label>short fligth</label>
+		<label>short flight</label>
 		<description>Fly a short distance using wings.</description>
 		<iconPath>UI/Abilities/Ability_Pegasus</iconPath>
 		<cooldownTicksRange>1200</cooldownTicksRange>

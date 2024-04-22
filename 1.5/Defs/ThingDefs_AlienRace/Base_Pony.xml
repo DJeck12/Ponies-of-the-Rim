@@ -276,7 +276,7 @@
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>VegetarianAnimal</foodType>
 			<gestationPeriodDays>18</gestationPeriodDays>
-			<specificMeatDef>Pony_Meat</specificMeatDef>
+			<specificMeatDef>Meat_Pony</specificMeatDef>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>

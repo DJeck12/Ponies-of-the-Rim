@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<!--
-	<Pony_Earthpony.title>Флорист</Pony_Earthpony.title>
-	<Pony_Earthpony.titleFemale>Флористка</Pony_Earthpony.titleFemale>
-	<Pony_Earthpony.titleShort>Флорист</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.titleShortFemale>Флористка</Pony_Earthpony.titleShortFemale>
-	<Pony_Earthpony.description>[PAWN_nameDef] {PAWN_gender ? исследовал : исследовала} разнообразные виды цветочных растений. [PAWN_pronoun] {PAWN_gender ? устроился : устроилась} работать на космический корабль, преследуя цель поучавствовать в различных экспедициях на другие планеты и расширить свой профессиональный кругозор, познакомившись со множеством экзотических экземпляров.</Pony_Earthpony.description>
 
-	<Pony_Earthpony.title>Ферма магических растений</Pony_Earthpony.title>
-	<Pony_Earthpony.titleShort>Землемаг</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.description>[PAWN_nameDef] {PAWN_gender ? работал : работала} на особой ферме, где {PAWN_gender ? выращивал : выращивала} магические растения для ученых и алхимиков. [PAWN_pronoun] {PAWN_gender ? получил : получила} обширные специализированные знания в данной области.</Pony_Earthpony.description>
+	<Pony_EarthponyFlorist.title>флорист</Pony_EarthponyFlorist.title>
+	<Pony_EarthponyFlorist.titleFemale>флористка</Pony_EarthponyFlorist.titleFemale>
+	<Pony_EarthponyFlorist.titleShort>флорист</Pony_EarthponyFlorist.titleShort>
+	<Pony_EarthponyFlorist.titleShortFemale>флористка</Pony_EarthponyFlorist.titleShortFemale>
+	<Pony_EarthponyFlorist.description>[PAWN_nameDef] {PAWN_gender ? исследовал : исследовала} разнообразные виды цветочных растений. [PAWN_pronoun] {PAWN_gender ? устроился : устроилась} работать на космический корабль, преследуя цель поучавствовать в различных экспедициях на другие планеты и расширить свой профессиональный кругозор, познакомившись со множеством экзотических экземпляров.</Pony_EarthponyFlorist.description>
 
-	<Pony_Earthpony.title>Зоопереводчик</Pony_Earthpony.title>
-	<Pony_Earthpony.titleFemale>Зоопереводчица</Pony_Earthpony.titleFemale>
-	<Pony_Earthpony.titleShort>Зоопереводчик</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.titleShortFemale>Зоопереводчица</Pony_Earthpony.titleShortFemale>
-	<Pony_Earthpony.description>[PAWN_nameDef] хорошо {PAWN_gender ? разбирался : разбиралась} в биокоммуникации животных. [PAWN_pronoun] легко {PAWN_gender ? находил : находила} с ними общий язык, {PAWN_gender ? успокаивал : успокаивала} их, быстро {PAWN_gender ? понимал : понимала} и {PAWN_gender ? удовлетворял : удовлетворяла} насущные потребности.</Pony_Earthpony.description>
+	<Pony_EarthponySurveyor.title>ферма магических растений</Pony_EarthponySurveyor.title>
+	<Pony_EarthponySurveyor.titleShort>землемаг</Pony_EarthponySurveyor.titleShort>
+	<Pony_EarthponySurveyor.description>[PAWN_nameDef] {PAWN_gender ? работал : работала} на особой ферме, где {PAWN_gender ? выращивал : выращивала} магические растения для ученых и алхимиков. [PAWN_pronoun] {PAWN_gender ? получил : получила} обширные специализированные знания в данной области.</Pony_EarthponySurveyor.description>
 
-	<Pony_Earthpony.title>Друид</Pony_Earthpony.title>
-	<Pony_Earthpony.titleShort>Друид</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.description>Благодаря выдающемуся магическому таланту, [PAWN_nameDef] {PAWN_gender ? мог : могла} проводить сложнейшие ритуалы, направленные на манипуляцию природными силами. С [PAWN_possessive] мастерством не могли сравниться даже единороги.</Pony_Earthpony.description>
+	<Pony_EarthponyZootranslator.title>зоопереводчик</Pony_EarthponyZootranslator.title>
+	<Pony_EarthponyZootranslator.titleFemale>зоопереводчица</Pony_EarthponyZootranslator.titleFemale>
+	<Pony_EarthponyZootranslator.titleShort>переводчик</Pony_EarthponyZootranslator.titleShort>
+	<Pony_EarthponyZootranslator.titleShortFemale>переводчица</Pony_EarthponyZootranslator.titleShortFemale>
+	<Pony_EarthponyZootranslator.description>[PAWN_nameDef] хорошо {PAWN_gender ? разбирался : разбиралась} в биокоммуникации животных. [PAWN_pronoun] легко {PAWN_gender ? находил : находила} с ними общий язык, {PAWN_gender ? успокаивал : успокаивала} их, быстро {PAWN_gender ? понимал : понимала} и {PAWN_gender ? удовлетворял : удовлетворяла} насущные потребности.</Pony_EarthponyZootranslator.description>
 
-	<Pony_Earthpony.title>Укротитель магических животных</Pony_Earthpony.title>
-	<Pony_Earthpony.titleFemale>Укротительница магических животных</Pony_Earthpony.titleFemale>
-	<Pony_Earthpony.titleShort>Зверолов</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.titleShortFemale>Звероловка</Pony_Earthpony.titleShortFemale>
-	<Pony_Earthpony.description>[PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} свою жизнь поиску и поимке экзотических, магических животных. [PAWN_pronoun] {PAWN_gender ? собирал : собирала} свою коллекцию на протяжении многих лет.</Pony_Earthpony.description>
+	<Pony_EarthponyDruid.title>друид</Pony_EarthponyDruid.title>
+	<Pony_EarthponyDruid.titleShort>друид</Pony_EarthponyDruid.titleShort>
+	<Pony_EarthponyDruid.description>Благодаря выдающемуся магическому таланту, [PAWN_nameDef] {PAWN_gender ? мог : могла} проводить сложнейшие ритуалы, направленные на манипуляцию природными силами. С [PAWN_possessive] мастерством не могли сравниться даже единороги.</Pony_EarthponyDruid.description>
 
-	<Pony_Earthpony.title>Безнадежная операция</Pony_Earthpony.title>
-	<Pony_Earthpony.titleShort>Изувеченный</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.titleShortFemale>Изувеченная</Pony_Earthpony.titleShortFemale>
-	<Pony_Earthpony.description>Не в силах терпеть постоянные издевательства по отношению к своей расе, [PAWN_nameDef] {PAWN_gender ? согласился : согласилась} на экспериментальную процедуру по вживлению рога и крыльев. Операция завершилась неудачно и на долгое время превратила [PAWN_possessive] в инвалида.</Pony_Earthpony.description>
+	<Pony_EarthponyTamerMagAni.title>уУкротитель магических животных</Pony_EarthponyTamerMagAni.title>
+	<Pony_EarthponyTamerMagAni.titleFemale>укротительница магических животных</Pony_EarthponyTamerMagAni.titleFemale>
+	<Pony_EarthponyTamerMagAni.titleShort>зверолов</Pony_EarthponyTamerMagAni.titleShort>
+	<Pony_EarthponyTamerMagAni.titleShortFemale>звероловка</Pony_EarthponyTamerMagAni.titleShortFemale>
+	<Pony_EarthponyTamerMagAni.description>[PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} свою жизнь поиску и поимке экзотических, магических животных. [PAWN_pronoun] {PAWN_gender ? собирал : собирала} свою коллекцию на протяжении многих лет.</Pony_EarthponyTamerMagAni.description>
 
-	<Pony_Earthpony.title>Каменная ферма</Pony_Earthpony.title>
-	<Pony_Earthpony.titleShort>Камнеделец</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.description>Устав от бесконечной городской суеты, [PAWN_nameDef] {PAWN_gender ? обрел : обрела} покой на далекой каменной ферме, которая досталась [PAWN_objective] по наследству. [PAWN_pronoun] {PAWN_gender ? выращивал : выращивала} различные культуры кристаллов для магов и ювелиров.</Pony_Earthpony.description>
+	<Pony_EarthponyMutilated.title>безнадежная операция</Pony_EarthponyMutilated.title>
+	<Pony_EarthponyMutilated.titleShort>изувеченный</Pony_EarthponyMutilated.titleShort>
+	<Pony_EarthponyMutilated.titleShortFemale>изувеченная</Pony_EarthponyMutilated.titleShortFemale>
+	<Pony_EarthponyMutilated.description>Не в силах терпеть постоянные издевательства по отношению к своей расе, [PAWN_nameDef] {PAWN_gender ? согласился : согласилась} на экспериментальную процедуру по вживлению рога и крыльев. Операция завершилась неудачно и на долгое время превратила [PAWN_possessive] в инвалида.</Pony_EarthponyMutilated.description>
 
-	<Pony_Earthpony.title>Бескрылый летчик</Pony_Earthpony.title>
-	<Pony_Earthpony.titleFemale>Бескрылая летчица</Pony_Earthpony.titleFemale>
-	<Pony_Earthpony.titleShort>Бескрылый</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.titleShortFemale>Бескрылая</Pony_Earthpony.titleShortFemale>
-	<Pony_Earthpony.description>[PAWN_nameDef] {PAWN_gender ? восхищался : восхищалась} полетом пегасов и {PAWN_gender ? хотел : хотела} связать свою жизнь с воздухом. [PAWN_pronoun] {PAWN_gender ? исполнил : исполнила} мечту, научившись пилотировать летающие аппараты.</Pony_Earthpony.description>
+	<Pony_EarthponyStonecutter.title>каменная ферма</Pony_EarthponyStonecutter.title>
+	<Pony_EarthponyStonecutter.titleShort>камнеделец</Pony_EarthponyStonecutter.titleShort>
+	<Pony_EarthponyStonecutter.description>Устав от бесконечной городской суеты, [PAWN_nameDef] {PAWN_gender ? обрел : обрела} покой на далекой каменной ферме, которая досталась [PAWN_objective] по наследству. [PAWN_pronoun] {PAWN_gender ? выращивал : выращивала} различные культуры кристаллов для магов и ювелиров.</Pony_EarthponyStonecutter.description>
 
-	<Pony_Earthpony.title>Аскетичный кулинар</Pony_Earthpony.title>
-	<Pony_Earthpony.titleShort>Кухарь</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.titleShortFemale>Кухарка</Pony_Earthpony.titleShortFemale>
-	<Pony_Earthpony.description>Живя среди представителей небогатого сословия, [PAWN_nameDef] {PAWN_gender ? готовил : готовила} простые, но вкусные блюда из травяных ингридиентов в небольшой общественной столовой. [PAWN_pronoun] {PAWN_gender ? научился : научилась} ценить то, что {PAWN_gender ? имел : имела}. </Pony_Earthpony.description>
+	<Pony_EarthponyWingless.title>бескрылый летчик</Pony_EarthponyWingless.title>
+	<Pony_EarthponyWingless.titleFemale>бескрылая летчица</Pony_EarthponyWingless.titleFemale>
+	<Pony_EarthponyWingless.titleShort>бескрылый</Pony_EarthponyWingless.titleShort>
+	<Pony_EarthponyWingless.titleShortFemale>бескрылая</Pony_EarthponyWingless.titleShortFemale>
+	<Pony_EarthponyWingless.description>[PAWN_nameDef] {PAWN_gender ? восхищался : восхищалась} полетом пегасов и {PAWN_gender ? хотел : хотела} связать свою жизнь с воздухом. [PAWN_pronoun] {PAWN_gender ? исполнил : исполнила} мечту, научившись пилотировать летающие аппараты.</Pony_EarthponyWingless.description>
 
-	<Pony_Earthpony.title>Алхимик</Pony_Earthpony.title>
-	<Pony_Earthpony.titleShort>Алхимик</Pony_Earthpony.titleShort>
-	<Pony_Earthpony.description>[PAWN_nameDef] {PAWN_gender ? увлекался : увлекалась} чтением и целебными травами. [PAWN_pronoun] {PAWN_gender ? изучал : изучала} их полезные свойства, {PAWN_gender ? разрабатывал : разрабатывала} различные сборы и {PAWN_gender ? готовил : готовила} из них отвары.</Pony_Earthpony.description>
--->
+	<Pony_EarthponyAscCook.title>аскетичный кулинар</Pony_EarthponyAscCook.title>
+	<Pony_EarthponyAscCook.titleShort>кухарь</Pony_EarthponyAscCook.titleShort>
+	<Pony_EarthponyAscCook.titleShortFemale>кухарка</Pony_EarthponyAscCook.titleShortFemale>
+	<Pony_EarthponyAscCook.description>Живя среди представителей небогатого сословия, [PAWN_nameDef] {PAWN_gender ? готовил : готовила} простые, но вкусные блюда из травяных ингридиентов в небольшой общественной столовой. [PAWN_pronoun] {PAWN_gender ? научился : научилась} ценить то, что {PAWN_gender ? имел : имела}.</Pony_EarthponyAscCook.description>
+
+	<Pony_EarthponyAlchemist.title>алхимик</Pony_EarthponyAlchemist.title>
+	<Pony_EarthponyAlchemist.titleShort>алхимик</Pony_EarthponyAlchemist.titleShort>
+	<Pony_EarthponyAlchemist.description>[PAWN_nameDef] {PAWN_gender ? увлекался : увлекалась} чтением и целебными травами. [PAWN_pronoun] {PAWN_gender ? изучал : изучала} их полезные свойства, {PAWN_gender ? разрабатывал : разрабатывала} различные сборы и {PAWN_gender ? готовил : готовила} из них отвары.</Pony_EarthponyAlchemist.description>
+
 </Defs>

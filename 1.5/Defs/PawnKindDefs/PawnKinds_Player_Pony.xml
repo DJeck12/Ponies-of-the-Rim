@@ -9,14 +9,14 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Earthpony</race>
-		<backstoryFiltersOverride>
-		<li>
-			<categories>
-				<li>Offworld</li>
-				<li>Pony_Everypony</li>
-			</categories>
-		</li>
-		</backstoryFiltersOverride>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
@@ -25,14 +25,14 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Pegasus</race>
-		<backstoryFiltersOverride>
-		<li>
-			<categories>
-				<li>Offworld</li>
-				<li>Pony_Everypony</li>
-			</categories>
-		</li>
-		</backstoryFiltersOverride>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
@@ -41,14 +41,14 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Unicorn</race>
-		<backstoryFiltersOverride>
-		<li>
-			<categories>
-				<li>Offworld</li>
-				<li>Pony_Everypony</li>
-			</categories>
-		</li>
-		</backstoryFiltersOverride>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 <!--Tribe-->

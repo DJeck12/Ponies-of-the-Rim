@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RecipeDef[defName="CookMealSimple"
+	or defName="CookMealSimpleBulk"]/ingredients/li/filter</xpath>
+		<value>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RecipeDef[defName="CookMealSimple"
+	or defName="CookMealSimpleBulk"]</xpath>
+		<value>
+			<fixedIngredientFilter>
+				<categories>
+					<li>FoodRaw</li>
+				</categories>
+				<thingDefs>
+					<li>Hay</li>
+				</thingDefs>
+				<specialFiltersToDisallow>
+					<li>AllowPlantFood</li>
+				</specialFiltersToDisallow>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+
+</Patch>
