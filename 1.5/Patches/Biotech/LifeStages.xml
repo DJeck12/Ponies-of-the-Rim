@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAttributeAdd" MayRequire="Ludeon.Rimworld.Biotech">
-		<xpath>Defs/LifeStageDef[defName="HumanlikePreTeenager"]</xpath>
-		<attribute>Name</attribute>
-		<value>LifeStageHumanlikePreTeenager</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/LifeStageDef[defName="HumanlikePreTeenager"]</xpath>
+					<attribute>Name</attribute>
+					<value>LifeStageHumanlikePreTeenager</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
-
+	
 </Patch>

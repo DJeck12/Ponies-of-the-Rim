@@ -109,22 +109,6 @@
 					<pathPrefix>Pony/</pathPrefix>
 					<bodyTypeFallback>Pony</bodyTypeFallback>
 					<individualPaths>
-						<li>
-							<key>Apparel_ArmorCataphract</key>
-							<value>Pony/Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</value>
-						</li>
-						<li>
-							<key>Apparel_ArmorLocust</key>
-							<value>Pony/Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</value>
-						</li>
-						<li>
-							<key>Apparel_ArmorMarineGrenadier</key>
-							<value>Pony/Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</value>
-						</li>
-						<li>
-							<key>Apparel_ArmorCataphractPhoenix</key>
-							<value>Pony/Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</value>
-						</li>
 					</individualPaths>
 					<fallbacks>
 					<!-- Override all spacer armor with power armor -->

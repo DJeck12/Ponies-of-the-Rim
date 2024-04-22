@@ -67,8 +67,8 @@
 			<Medicine>-3</Medicine>
 			<Social>-3</Social>
 		</skillGains>
-		<forcedTraitsChance MayRequire="Ludeon.RimWorld.Biotech">
-			<li>
+		<forcedTraitsChance>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<options>
 					<li>
 						<defName>Recluse</defName>

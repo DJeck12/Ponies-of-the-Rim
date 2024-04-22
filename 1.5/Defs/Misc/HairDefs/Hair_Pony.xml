@@ -220,15 +220,4 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-<!-- Messy -->
-	<HairDef>
-		<defName>Pony_MessyHair</defName>
-		<label>Night</label>
-		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Pony_Messy</texPath>
-		<category>Pony</category>
-		<hairTags>
-			<li>Pony</li>
-		</hairTags>
-	</HairDef>
 </Defs>
