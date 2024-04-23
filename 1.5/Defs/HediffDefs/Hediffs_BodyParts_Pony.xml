@@ -146,6 +146,7 @@
 		<label>wing</label>
 		<labelNoun>a pegasus wing</labelNoun>
 		<description>A natural pegasus wing.</description>
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
@@ -364,6 +365,7 @@
 		<labelNoun>a unicorn horn</labelNoun>
 		<description>A natural unicorn horn.</description>
 		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
