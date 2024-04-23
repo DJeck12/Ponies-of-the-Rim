@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- [PAWN_nameDef]
+		[PAWN_possessive] his/her
+		[PAWN_objective] him/her
+		[PAWN_pronoun] he/she
+		{PAWN_gender ? he : she} -->
+
+  <Pony_EveryponyOtherRace.title>不同种族的孩子</Pony_EveryponyOtherRace.title>
+  <Pony_EveryponyOtherRace.titleShort>不同种族的孩子</Pony_EveryponyOtherRace.titleShort>
+  <Pony_EveryponyOtherRace.description>[PAWN_nameDef]的出生种族与[PAWN_possessive]父母不同。然而，[PAWN_pronoun]在一个充满爱的家庭中长大，被教育成为一个善良且没有偏见的人。</Pony_EveryponyOtherRace.description>
+
+  <Pony_EveryponyOppressed.title>被歧视的孩子</Pony_EveryponyOppressed.title>
+  <Pony_EveryponyOppressed.titleShort>被歧视的孩子</Pony_EveryponyOppressed.titleShort>
+  <Pony_EveryponyOppressed.description>作为一个孩子，[PAWN_nameDef]曾是种族歧视的受害者。其他小马经常欺负[PAWN_objective]，这就是为什么[PAWN_pronoun]经常不得不参与许多打斗和争吵。由于长时间的骚扰，[PAWN_nameDef]成长为一个疑神疑鬼、孤僻的小驹。</Pony_EveryponyOppressed.description>
+
+  <Pony_EveryponyUniFri.title>独角兽的朋友</Pony_EveryponyUniFri.title>
+  <Pony_EveryponyUniFri.titleShort>独角兽的朋友</Pony_EveryponyUniFri.titleShort>
+  <Pony_EveryponyUniFri.description>[PAWN_nameDef] 只被独角兽朋友包围着。他们与[PAWN_objective]分享了关于魔法的各种有趣事实，拓宽了[PAWN_possessive]在这个领域的知识。</Pony_EveryponyUniFri.description>
+
+  <Pony_EveryponyWizApp.title>巫师的养子</Pony_EveryponyWizApp.title>
+  <Pony_EveryponyWizApp.titleShort>巫师的养子</Pony_EveryponyWizApp.titleShort>
+  <Pony_EveryponyWizApp.description>[PAWN_nameDef]在很小的时候失去了[PAWN_possessive]父母，成为了一个无家可归的孤儿。后来，[PAWN_pronoun]被一位老朝圣者巫师发现并庇护。这位巫师抚养了[PAWN_objective]，教授了[PAWN_objective]魔法的艺术。</Pony_EveryponyWizApp.description>
+
+  <Pony_EveryponyStruckBaS.title>鸡头蛇尾怪受害者</Pony_EveryponyStruckBaS.title>
+  <Pony_EveryponyStruckBaS.titleShort>鸡头蛇尾怪受害者</Pony_EveryponyStruckBaS.titleShort>
+  <Pony_EveryponyStruckBaS.description>作为一个孩子，[PAWN_nameDef]曾经遭遇过一只有石化凝视的鸡头蛇尾怪，但另一只小马成功地拯救了[PAWN_objective]。[PAWN_pronoun]经历了长期的康复，但仍然受到一些健康问题和对野生动物的病态恐惧的困扰。</Pony_EveryponyStruckBaS.description>
+
+  <Pony_EveryponyLightChi.title>永恒之日教徒</Pony_EveryponyLightChi.title>
+  <Pony_EveryponyLightChi.titleShort>永恒之日教徒</Pony_EveryponyLightChi.titleShort>
+  <Pony_EveryponyLightChi.description>[PAWN_nameDef]出生在一个崇拜破灭之阳的家庭中。由于[PAWN_pronoun]生活在教派中，[PAWN_nameDef]主要接受了关于世界结构的宗教观点。</Pony_EveryponyLightChi.description>
+
+  <Pony_EveryponyDarkChi.title>永夜之月教徒</Pony_EveryponyDarkChi.title>
+  <Pony_EveryponyDarkChi.titleShort>永夜之月教徒</Pony_EveryponyDarkChi.titleShort>
+  <Pony_EveryponyDarkChi.description>[PAWN_nameDef]出生在一个崇拜梦魇之月的家庭中。由于[PAWN_pronoun]生活在教派中，[PAWN_nameDef]主要接受了关于周围世界结构的宗教观点。</Pony_EveryponyDarkChi.description>
+
+  <Pony_EveryponyBornMagic.title>魔法造物</Pony_EveryponyBornMagic.title>
+  <Pony_EveryponyBornMagic.titleShort>魔法造物</Pony_EveryponyBornMagic.titleShort>
+  <Pony_EveryponyBornMagic.description>[PAWN_nameDef]是一个非常复杂且昂贵的仪式的结果，使用纯粹的魔法精华诞生，这些精华从双亲各取一半。为了安全起见，[PAWN_pronoun]的童年时光都远离了社会。</Pony_EveryponyBornMagic.description>
+
+  <Pony_EveryponyFriSchSt.title>友谊学校学生</Pony_EveryponyFriSchSt.title>
+  <Pony_EveryponyFriSchSt.titleShort>友谊学校学生</Pony_EveryponyFriSchSt.titleShort>
+  <Pony_EveryponyFriSchSt.description>[PAWN_nameDef]曾是古代小马利亚最受欢迎且历史悠久的学校的学生，当时这所学校非常有声望。[PAWN_pronoun]对社会和道德关系领域有着深刻的洞察，自然而然地表现出友情魔法的卓越。</Pony_EveryponyFriSchSt.description>
+
+  <Pony_EveryponyMagSchSt.title>魔法学院学生</Pony_EveryponyMagSchSt.title>
+  <Pony_EveryponyMagSchSt.titleShort>魔法学院学生</Pony_EveryponyMagSchSt.titleShort>
+  <Pony_EveryponyMagSchSt.description>自幼，[PAWN_nameDef]就对各种神秘科学产生了兴趣。父母决定送[PAWN_objective]去魔法学院学习，[PAWN_pronoun]在接受专业教育和研究各种科学学科的过程中学到了很多新知识。</Pony_EveryponyMagSchSt.description>
+
+  <Pony_EveryponyUnderAli.title>天角兽养子</Pony_EveryponyUnderAli.title>
+  <Pony_EveryponyUnderAli.titleShort>天角兽养子</Pony_EveryponyUnderAli.titleShort>
+  <Pony_EveryponyUnderAli.description>[PAWN_nameDef]在[PAWN_possessive]国家遭遇饥荒时出生。[PAWN_pronoun]幸运地被一只天角兽照顾，后者是来执行慈善使命的。[PAWN_nameDef]从小就是一个勤奋的小马，从早年开始学习友谊和科学的课程。</Pony_EveryponyUnderAli.description>
+
+
+</LanguageData>

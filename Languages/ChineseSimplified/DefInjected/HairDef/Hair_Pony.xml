@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Dash -->
+
+  <Pony_DashHair.label>Dash</Pony_DashHair.label>
+  <Pony_DashColorHair.label>Dash (Colorful)</Pony_DashColorHair.label>
+  <Pony_DashStripeHair.label>Dash (Striped)</Pony_DashStripeHair.label>
+
+
+  <!-- Sparkle -->
+
+  <Pony_SparkleHair.label>Sparkle</Pony_SparkleHair.label>
+  <Pony_SparkleColorHair.label>Sparkle (Colorful)</Pony_SparkleColorHair.label>
+  <Pony_SparkleStripeHair.label>Sparkle (Striped)</Pony_SparkleStripeHair.label>
+
+
+  <!-- Apple -->
+
+  <Pony_AppleHair.label>Apple</Pony_AppleHair.label>
+  <Pony_AppleColorHair.label>Apple (Colorful)</Pony_AppleColorHair.label>
+
+
+  <!-- Party -->
+
+  <Pony_PartyHair.label>Party</Pony_PartyHair.label>
+  <Pony_PartyColorHair.label>Party (Colorful)</Pony_PartyColorHair.label>
+
+
+  <!-- Rarity -->
+
+  <Pony_RarityHair.label>Rarity</Pony_RarityHair.label>
+
+
+  <!-- Flutter -->
+
+  <Pony_FlutterHair.label>Flutter</Pony_FlutterHair.label>
+  <Pony_FlutterColorHair.label>Flutter (Colorful)</Pony_FlutterColorHair.label>
+
+
+  <!-- Bloom -->
+
+  <Pony_BloomHair.label>Bloom</Pony_BloomHair.label>
+  <Pony_BloomColorHair.label>Bloom (Colorful)</Pony_BloomColorHair.label>
+
+
+  <!-- Sweet -->
+
+  <Pony_SweetHair.label>Sweet</Pony_SweetHair.label>
+  <Pony_SweetColorHair.label>Sweet (Colorful)</Pony_SweetColorHair.label>
+
+
+  <!-- Scoot -->
+
+  <Pony_ScootHair.label>Scoot</Pony_ScootHair.label>
+  <Pony_ScootColorHair.label>Scoot (Colorful)</Pony_ScootColorHair.label>
+
+
+  <!-- Night -->
+
+  <Pony_NightHair.label>Night</Pony_NightHair.label>
+
+
+</LanguageData>

@@ -21,7 +21,7 @@
 	<Pony_PegasusWeakWi.titleFemale>слабокрылая</Pony_PegasusWeakWi.titleFemale>
 	<Pony_PegasusWeakWi.titleShort>слабокрылый</Pony_PegasusWeakWi.titleShort>
 	<Pony_PegasusWeakWi.titleShortFemale>слабокрылая</Pony_PegasusWeakWi.titleShortFemale>
-	<Pony_PegasusWeakWi.description>В то время как другие жеребята-сверстники беззаботно резвились в облаках, [PAWN_nameDef] не {PAWN_gender ? мог : могла} присоедениться к ними. [PAWN_possessive] собственные слаборазвитые крылышки не позволяли подняться в воздух, и это не давало [PAWN_objective] покоя. [PAWN_nameDef] очень {PAWN_gender ? переживал : переживала} и {PAWN_gender ? расстраивался : расстраивалась}.</Pony_Pegasus.description>
+	<Pony_PegasusWeakWi.description>В то время как другие жеребята-сверстники беззаботно резвились в облаках, [PAWN_nameDef] не {PAWN_gender ? мог : могла} присоедениться к ними. [PAWN_possessive] собственные слаборазвитые крылышки не позволяли подняться в воздух, и это не давало [PAWN_objective] покоя. [PAWN_nameDef] очень {PAWN_gender ? переживал : переживала} и {PAWN_gender ? расстраивался : расстраивалась}.</Pony_PegasusWeakWi.description>
 
 	<Pony_PegasusCloudCatcher.title>ловец облаков</Pony_PegasusCloudCatcher.title>
 	<Pony_PegasusCloudCatcher.titleShort>ловец</Pony_PegasusCloudCatcher.titleShort>

@@ -5,7 +5,7 @@
 		<defName>Pony_UnicornYanWiz</defName>
 		<title>young wizard</title>
 		<titleShort>wizard</titleShort>
-		<description>At a very early age, [PAWN_nameDef] showed amazing magic abilities. [PAWN_pronoun] easily absorbed knowledge and mastered basic magic formulas.</description>
+		<baseDesc>At a very early age, [PAWN_nameDef] showed amazing magic abilities. [PAWN_pronoun] easily absorbed knowledge and mastered basic magic formulas.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -21,7 +21,7 @@
 		<defName>Pony_UnicornGlitFan</defName>
 		<title>glitter fan</title>
 		<titleShort>chrysophile</titleShort>
-		<description>[PAWN_nameDef] had a special love for collecting crystals and colorful stones. [PAWN_pronoun] made amazing trinkets out of them.</description>
+		<baseDesc>[PAWN_nameDef] had a special love for collecting crystals and colorful stones. [PAWN_pronoun] made amazing trinkets out of them.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -48,7 +48,7 @@
 		<defName>Pony_UnicornGifMag</defName>
 		<title>gifted magician</title>
 		<titleShort>magician</titleShort>
-		<description>[PAWN_nameDef] was born with an incredible talent for magic. [PAWN_possessive] knowledge and skills in this field amazed even experienced and skillful unicorns.</description>
+		<baseDesc>[PAWN_nameDef] was born with an incredible talent for magic. [PAWN_possessive] knowledge and skills in this field amazed even experienced and skillful unicorns.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -80,7 +80,7 @@
 		<defName>Pony_UnicornHorKnig</defName>
 		<title>horned knight</title>
 		<titleShort>knight</titleShort>
-		<description>Fascinated by the tales of faraway Equestria, [PAWN_nameDef] often imagined [PAWN_possessive]self as a medieval knight. [PAWN_pronoun] made homemade armor and wore it all the time.</description>
+		<baseDesc>Fascinated by the tales of faraway Equestria, [PAWN_nameDef] often imagined [PAWN_possessive]self as a medieval knight. [PAWN_pronoun] made homemade armor and wore it all the time.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -108,7 +108,7 @@
 		<defName>Pony_UnicornIncSorc</defName>
 		<title>incapable of sorcery</title>
 		<titleShort>amagical</titleShort>
-		<description>From an early age, it became apparent that [PAWN_nameDef]'s magical abilities were quite modest. [PAWN_possessive] knowledge of magic was minimal, but [PAWN_possessive] knowledge in other areas was becoming broader and deeper.</description>
+		<baseDesc>From an early age, it became apparent that [PAWN_nameDef]'s magical abilities were quite modest. [PAWN_possessive] knowledge of magic was minimal, but [PAWN_possessive] knowledge in other areas was becoming broader and deeper.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -144,7 +144,7 @@
 		<titleFemale>arrogant princess</titleFemale>
 		<titleShort>prince</titleShort>
 		<titleShortFemale>princess</titleShortFemale>
-		<description>[PAWN_nameDef] was born into a wealthy family and knew neither want nor anxiety. All [PAWN_possessive] wishes were instantly fulfilled. [PAWN_pronoun] was too arrogant to condescend to socialize with others or to do even the simplest of jobs.</description>
+		<baseDesc>[PAWN_nameDef] was born into a wealthy family and knew neither want nor anxiety. All [PAWN_possessive] wishes were instantly fulfilled. [PAWN_pronoun] was too arrogant to condescend to socialize with others or to do even the simplest of jobs.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -165,7 +165,7 @@
 		<defName>Pony_UnicornDamHorn</defName>
 		<title>damaged horn</title>
 		<titleShort>mutilated</titleShort>
-		<description>One day during a game there was an accident, as a result of which [PAWN_nameDef] injured [PAWN_possessive] horn. After that everyone began to avoid [PAWN_possessive]. Communication with others practically came to naught, and when [PAWN_nameDef] grew up, [PAWN_pronoun] hated the whole world.</description>
+		<baseDesc>One day during a game there was an accident, as a result of which [PAWN_nameDef] injured [PAWN_possessive] horn. After that everyone began to avoid [PAWN_possessive]. Communication with others practically came to naught, and when [PAWN_nameDef] grew up, [PAWN_pronoun] hated the whole world.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Head -->
+
+  <Pony_Horn.label>角</Pony_Horn.label>
+
+
+  <!-- Body -->
+
+  <Pony_Wing.label>翅膀</Pony_Wing.label>
+  <Pony_Tail.label>尾巴</Pony_Tail.label>
+
+
+  <!-- Limb -->
+
+  <Pony_Thigh.label>大腿</Pony_Thigh.label>
+
+  <Pony_FrontLeg.label>前腿</Pony_FrontLeg.label>
+  <Pony_FrontLeg.labelShort>腿</Pony_FrontLeg.labelShort>
+
+  <Pony_RearLeg.label>后腿</Pony_RearLeg.label>
+  <Pony_RearLeg.labelShort>腿</Pony_RearLeg.labelShort>
+
+  <Pony_FrontHoof.label>前蹄</Pony_FrontHoof.label>
+  <Pony_FrontHoof.labelShort>蹄</Pony_FrontHoof.labelShort>
+
+  <Pony_RearHoof.label>后蹄</Pony_RearHoof.label>
+  <Pony_RearHoof.labelShort>蹄</Pony_RearHoof.labelShort>
+
+
+  <!-- Bones -->
+
+  <Pony_CannonBone.label>肢管骨</Pony_CannonBone.label>
+
+
+</LanguageData>

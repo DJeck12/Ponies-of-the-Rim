@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pony_Unicorn.label>独角兽</Pony_Unicorn.label>
+  <Pony_Unicorn.description>小马是来自魔法大陆的神奇四足生物。它们的血统非常复杂，分为许多亚种，彼此之间有不同程度的相似之处。和谐与互助是小马生活中的主要原则。然而，严酷的外太空环境压制了这个种族的一部分。为了生存，他们放弃了理想，走上了掠夺、奴役和劫掠的道路。
+
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+
+&lt;color=#FF46FF&gt;独角兽&lt;/color&gt; 是谈到魔法和咒语时首先想到的小马种族。它们是小马魔法的活生生体现。独角兽是第一个借助魔法角来驾驭魔法本质并教导其他人善用它的种族。然而，这个种族的一些成员因为骄傲和试图控制他人而臭名昭著。有一天，这几乎导致了灾难性的后果。</Pony_Unicorn.description>
+  <Pony_Unicorn.tools.0.label>左前蹄</Pony_Unicorn.tools.0.label>
+  <Pony_Unicorn.tools.1.label>右前蹄</Pony_Unicorn.tools.1.label>
+  <Pony_Unicorn.tools.2.label>后腿</Pony_Unicorn.tools.2.label>
+  <Pony_Unicorn.tools.3.label>牙齿</Pony_Unicorn.tools.3.label>
+  <Pony_Unicorn.tools.4.label>头</Pony_Unicorn.tools.4.label>
+  <Pony_Unicorn.tools.5.label>角</Pony_Unicorn.tools.5.label>
+
+
+</LanguageData>

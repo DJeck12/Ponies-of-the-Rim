@@ -5,7 +5,7 @@
 		<defName>Pony_UnicornMag</defName>
 		<title>magician</title>
 		<titleShort>magician</titleShort>
-		<description>Quite unexpectedly, [PAWN_nameDef] came into possession of an ancient family spellbook. After reading it, [PAWN_pronoun] learned the secrets of [PAWN_possessive] family, which [PAWN_pronoun] decided to keep secret so as not to tarnish [PAWN_possessive] name. This idea led [PAWN_possessive] to the decision to become a magician.</description>
+		<baseDesc>Quite unexpectedly, [PAWN_nameDef] came into possession of an ancient family spellbook. After reading it, [PAWN_pronoun] learned the secrets of [PAWN_possessive] family, which [PAWN_pronoun] decided to keep secret so as not to tarnish [PAWN_possessive] name. This idea led [PAWN_possessive] to the decision to become a magician.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -25,7 +25,7 @@
 		<defName>Pony_UnicornGem</defName>
 		<title>gemologist</title>
 		<titleShort>gemologist</titleShort>
-		<description>[PAWN_nameDef] showed an interest in magic and everything related to it. As [PAWN_pronoun] grew up, [PAWN_pronoun] connected [PAWN_possessive] life with the magical properties of objects, studying crystals and various fossils.</description>
+		<baseDesc>[PAWN_nameDef] showed an interest in magic and everything related to it. As [PAWN_pronoun] grew up, [PAWN_pronoun] connected [PAWN_possessive] life with the magical properties of objects, studying crystals and various fossils.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -53,7 +53,7 @@
 		<defName>Pony_UnicornWarl</defName>
 		<title>blackmagic caster</title>
 		<titleShort>warlock</titleShort>
-		<description>[PAWN_nameDef] discovered the ancient book in the attic of [PAWN_possessive] house by chance. As a magician, [PAWN_pronoun] took a special interest in the forbidden spells it contained.</description>
+		<baseDesc>[PAWN_nameDef] discovered the ancient book in the attic of [PAWN_possessive] house by chance. As a magician, [PAWN_pronoun] took a special interest in the forbidden spells it contained.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -78,7 +78,7 @@
 		<defName>Pony_UnicornMagTeach</defName>
 		<title>magic teacher</title>
 		<titleShort>teacher</titleShort>
-		<description>An accomplished spellcaster, [PAWN_nameDef] decided that [PAWN_possessive] calling was to teach magic to others. [PAWN_pronoun] began to teach those who wished to learn the art of magic.</description>
+		<baseDesc>An accomplished spellcaster, [PAWN_nameDef] decided that [PAWN_possessive] calling was to teach magic to others. [PAWN_pronoun] began to teach those who wished to learn the art of magic.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -105,7 +105,7 @@
 		<defName>Pony_UnicornCryDig</defName>
 		<title>crystal digger</title>
 		<titleShort>miner</titleShort>
-		<description>After failing to succeed in [PAWN_possessive] professional life, [PAWN_nameDef] was forced to leave [PAWN_possessive] home because of debts. Not knowing what to do next, [PAWN_pronoun] decided to take a job in a mine and mine crystals.</description>
+		<baseDesc>After failing to succeed in [PAWN_possessive] professional life, [PAWN_nameDef] was forced to leave [PAWN_possessive] home because of debts. Not knowing what to do next, [PAWN_pronoun] decided to take a job in a mine and mine crystals.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -124,7 +124,7 @@
 		<defName>Pony_UnicornJewl</defName>
 		<title>crystal jeweler</title>
 		<titleShort>jeweler</titleShort>
-		<description>[PAWN_nameDef] continued the family tradition - all [PAWN_possessive] relatives were prominent jewelers in the city. [PAWN_pronoun] learned [PAWN_possessive] skills from [PAWN_possessive] father and reached unprecedented heights in jewelry making.</description>
+		<baseDesc>[PAWN_nameDef] continued the family tradition - all [PAWN_possessive] relatives were prominent jewelers in the city. [PAWN_pronoun] learned [PAWN_possessive] skills from [PAWN_possessive] father and reached unprecedented heights in jewelry making.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -141,7 +141,7 @@
 		<defName>Pony_UnicornMagn</defName>
 		<title>crystal magnate</title>
 		<titleShort>magnate</titleShort>
-		<description>After [PAWN_possessive] father's death, [PAWN_nameDef] received a huge inheritance. [PAWN_pronoun] became the largest crystal magnate in the country and knew no worries.</description>
+		<baseDesc>After [PAWN_possessive] father's death, [PAWN_nameDef] received a huge inheritance. [PAWN_pronoun] became the largest crystal magnate in the country and knew no worries.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -161,7 +161,7 @@
 		<defName>Pony_UnicornCourWiz</defName>
 		<title>court wizard</title>
 		<titleShort>wizard</titleShort>
-		<description>[PAWN_nameDef] taught at one of the most prestigious magical schools. For [PAWN_possessive] services to the Kingdom, [PAWN_pronoun] was appointed to the honorable position of court mage.</description>
+		<baseDesc>[PAWN_nameDef] taught at one of the most prestigious magical schools. For [PAWN_possessive] services to the Kingdom, [PAWN_pronoun] was appointed to the honorable position of court mage.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
@@ -195,7 +195,7 @@
 		<defName>Pony_UnicornWork</defName>
 		<title>unicorn worker</title>
 		<titleShort>worker</titleShort>
-		<description>While [PAWN_nameDef]'s knowledge of magic theory left much to be desired, [PAWN_possessive] ability to telekinesis was amazingly advanced. Thanks to [PAWN_possessive] talent, [PAWN_pronoun] got a job at a spaceport, where [PAWN_pronoun] sorted various cargoes.</description>
+		<baseDesc>While [PAWN_nameDef]'s knowledge of magic theory left much to be desired, [PAWN_possessive] ability to telekinesis was amazingly advanced. Thanks to [PAWN_possessive] talent, [PAWN_pronoun] got a job at a spaceport, where [PAWN_pronoun] sorted various cargoes.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>

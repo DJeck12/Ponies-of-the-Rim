@@ -100,7 +100,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Magic</damageDef>
-			<damageAmountBase>14</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>1</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>55</speed>

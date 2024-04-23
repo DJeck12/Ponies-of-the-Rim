@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Earthpony -->
+
+  <EPonySlave.label>小马奴隶</EPonySlave.label>
+  <EPonySlave.labelPlural>小马奴隶</EPonySlave.labelPlural>
+  <EPonySlave.labelMale>小马奴隶</EPonySlave.labelMale>
+  <EPonySlave.labelMalePlural>小马奴隶</EPonySlave.labelMalePlural>
+  <EPonySlave.labelFemale>小马奴隶/EPonySlave.labelFemale>
+  <EPonySlave.labelFemalePlural>小马奴隶</EPonySlave.labelFemalePlural>
+
+  <EPonyRefugee.label>小马难民</EPonyRefugee.label>
+  <EPonyRefugee.labelPlural>小马难民</EPonyRefugee.labelPlural>
+  <EPonyRefugee.labelMale>小马难民</EPonyRefugee.labelMale>
+  <EPonyRefugee.labelMalePlural>小马难民</EPonyRefugee.labelMalePlural>
+  <EPonyRefugee.labelFemale>小马难民</EPonyRefugee.labelFemale>
+  <EPonyRefugee.labelFemalePlural>小马难民</EPonyRefugee.labelFemalePlural>
+
+  <EPonyVillager.label>小马村民</EPonyVillager.label>
+  <EPonyVillager.labelPlural>小马村民</EPonyVillager.labelPlural>
+  <EPonyVillager.labelMale>小马村民</EPonyVillager.labelMale>
+  <EPonyVillager.labelMalePlural>小马村民</EPonyVillager.labelMalePlural>
+  <EPonyVillager.labelFemale>小马村民</EPonyVillager.labelFemale>
+  <EPonyVillager.labelFemalePlural>小马村民</EPonyVillager.labelFemalePlural>
+
+
+  <!-- Pegasus -->
+
+  <PPonySlave.label>小马奴隶</PPonySlave.label>
+  <PPonySlave.labelPlural>小马奴隶</PPonySlave.labelPlural>
+  <PPonySlave.labelMale>小马奴隶</PPonySlave.labelMale>
+  <PPonySlave.labelMalePlural>小马奴隶</PPonySlave.labelMalePlural>
+  <PPonySlave.labelFemale>小马奴隶</PPonySlave.labelFemale>
+  <PPonySlave.labelFemalePlural> 小马奴隶</PPonySlave.labelFemalePlural>
+
+  <PPonyRefugee.label>小马难民</PPonyRefugee.label>
+  <PPonyRefugee.labelPlural> 小马难民</PPonyRefugee.labelPlural>
+  <PPonyRefugee.labelMale>小马难民</PPonyRefugee.labelMale>
+  <PPonyRefugee.labelMalePlural>小马难民</PPonyRefugee.labelMalePlural>
+  <PPonyRefugee.labelFemale> 小马难民</PPonyRefugee.labelFemale>
+  <PPonyRefugee.labelFemalePlural>小马难民</PPonyRefugee.labelFemalePlural>
+
+  <PPonyVillager.label>小马村民</PPonyVillager.label>
+  <PPonyVillager.labelPlural>小马村民</PPonyVillager.labelPlural>
+  <PPonyVillager.labelMale>小马村民</PPonyVillager.labelMale>
+  <PPonyVillager.labelMalePlural>小马村民</PPonyVillager.labelMalePlural>
+  <PPonyVillager.labelFemale>小马村民</PPonyVillager.labelFemale>
+  <PPonyVillager.labelFemalePlural>小马村民</PPonyVillager.labelFemalePlural>
+
+
+  <!-- Unicorn -->
+
+  <UPonySlave.label>小马奴隶</UPonySlave.label>
+  <UPonySlave.labelPlural>小马奴隶</UPonySlave.labelPlural>
+  <UPonySlave.labelMale>小马奴隶</UPonySlave.labelMale>
+  <UPonySlave.labelMalePlural>小马奴隶</UPonySlave.labelMalePlural>
+  <UPonySlave.labelFemale>小马奴隶</UPonySlave.labelFemale>
+  <UPonySlave.labelFemalePlural>小马奴隶</UPonySlave.labelFemalePlural>
+
+  <UPonyRefugee.label>小马难民</UPonyRefugee.label>
+  <UPonyRefugee.labelPlural>小马难民</UPonyRefugee.labelPlural>
+  <UPonyRefugee.labelMale>小马难民</UPonyRefugee.labelMale>
+  <UPonyRefugee.labelMalePlural>小马难民</UPonyRefugee.labelMalePlural>
+  <UPonyRefugee.labelFemale>小马难民</UPonyRefugee.labelFemale>
+  <UPonyRefugee.labelFemalePlural>小马难民</UPonyRefugee.labelFemalePlural>
+
+  <UPonyVillager.label>小马村民</UPonyVillager.label>
+  <UPonyVillager.labelPlural>小马村民</UPonyVillager.labelPlural>
+  <UPonyVillager.labelMale>小马村民</UPonyVillager.labelMale>
+  <UPonyVillager.labelMalePlural>小马村民</UPonyVillager.labelMalePlural>
+  <UPonyVillager.labelFemale>小马村民</UPonyVillager.labelFemale>
+  <UPonyVillager.labelFemalePlural>小马村民</UPonyVillager.labelFemalePlural>
+
+
+</LanguageData>
