@@ -179,7 +179,7 @@
 		<defName>Pony_EveryponyStruckBaS</defName>
 		<title>struck by a basilisk</title>
 		<titleShort>afflicted</titleShort>
-		<baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but another pony was able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of wild animals still plague him.</baseDesc>
+		<baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but another pony was able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of wild animals still plague [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>

@@ -61,7 +61,7 @@
 		<defName>Pony_EarthponyLonFar</defName>
 		<title>lonely farmer</title>
 		<titleShort>lonely</titleShort>
-		<baseDesc>[PAWN_nameDef] lost family and was left all alone. In order to feed [PAWN_objective]self and not starve to death, [PAWN_pronoun] devoted all free time to cultivating the land on the inherited farm.</baseDesc>
+		<baseDesc>[PAWN_nameDef] lost family and was left all alone. In order to feed {PAWN_gender ? himself : herself} and not starve to death, [PAWN_pronoun] devoted all free time to cultivating the land on the inherited farm.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>

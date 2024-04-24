@@ -160,7 +160,7 @@
 		<defName>Pony_PegasusBornShad</defName>
 		<title>born of Shadowbolt</title>
 		<titleShort>gruesome</titleShort>
-		<baseDesc>From an early age, [PAWN_nameDef] grew up under the influence of relatives who inspired [PAWN_objective] that there was no one more majestic and sovereign than Nightmoon. [PAWN_pronoun] became a full member of the Shadowbolts and living in complete isolation from the outside world, [PAWN_pronoun] created an ideal for [PAWN_objective]self, which sought to faithfully serve.</baseDesc>
+		<baseDesc>From an early age, [PAWN_nameDef] grew up under the influence of relatives who inspired [PAWN_objective] that there was no one more majestic and sovereign than Nightmoon. [PAWN_pronoun] became a full member of the Shadowbolts and living in complete isolation from the outside world, [PAWN_pronoun] created an ideal for {PAWN_gender ? himself : herself}, which sought to faithfully serve.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>

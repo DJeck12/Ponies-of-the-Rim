@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Pony_PlayerExpedition.label>Поселение</Pony_PlayerExpedition.label>
-	<Pony_PlayerExpedition.description>Ваше поселение.</Pony_PlayerExpedition.description>
+	<Pony_PlayerExpedition.label>Поселение Пони</Pony_PlayerExpedition.label>
+	<Pony_PlayerExpedition.description>Ваше поселение пони.</Pony_PlayerExpedition.description>
 	<Pony_PlayerExpedition.leaderTitle>лидер</Pony_PlayerExpedition.leaderTitle>
 	<Pony_PlayerExpedition.pawnSingular>поселенец</Pony_PlayerExpedition.pawnSingular>
 	<Pony_PlayerExpedition.pawnsPlural>поселенцы</Pony_PlayerExpedition.pawnsPlural>

@@ -80,7 +80,7 @@
 		<defName>Pony_UnicornHorKnig</defName>
 		<title>horned knight</title>
 		<titleShort>knight</titleShort>
-		<baseDesc>Fascinated by the tales of faraway Equestria, [PAWN_nameDef] often imagined [PAWN_possessive]self as a medieval knight. [PAWN_pronoun] made homemade armor and wore it all the time.</baseDesc>
+		<baseDesc>Fascinated by the tales of faraway Equestria, [PAWN_nameDef] often imagined {PAWN_gender ? himself : herself} as a medieval knight. [PAWN_pronoun] made homemade armor and wore it all the time.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>

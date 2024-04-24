@@ -94,7 +94,7 @@
 		<defName>Pony_EveryponyRST</defName>
 		<title>racist slave trader</title>
 		<titleShort>racist</titleShort>  
-		<baseDesc>[PAWN_nameDef] liked no one but [PAWN_possessive] own kind of ponies. [PAWN_pronoun] got [PAWN_posssiesve]self into the slave trade, enslaving those who did not look like [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] liked no one but [PAWN_possessive] own kind of ponies. [PAWN_pronoun] got {PAWN_gender ? himself : herself} into the slave trade, enslaving those who did not look like [PAWN_objective].</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -436,7 +436,7 @@
 		<defName>Pony_EveryponyAcTravel</defName>
 		<title>accidental traveler</title>
 		<titleShort>stranger</titleShort>
-		<baseDesc>[PAWN_nameDef] was once a creature of a completely different species. After being subjected to a mysterious experiment, [PAWN_pronoun] found [PAWN_posssiesve]self in a pony form on an unknown planet. [PAWN_pronoun] retained [PAWN_possessive] past memories, but was unable to fully reconstruct any details of [PAWN_possessive] arrival. With no other choice, [PAWN_pronoun] had to get used to [PAWN_possessive] new body.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was once a creature of a completely different species. After being subjected to a mysterious experiment, [PAWN_pronoun] found {PAWN_gender ? himself : herself} in a pony form on an unknown planet. [PAWN_pronoun] retained [PAWN_possessive] past memories, but was unable to fully reconstruct any details of [PAWN_possessive] arrival. With no other choice, [PAWN_pronoun] had to get used to [PAWN_possessive] new body.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>

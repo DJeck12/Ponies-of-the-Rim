@@ -3,9 +3,9 @@
 
   <!-- Tail -->
 
-  <InstallArtificialTail.label>安装仿生尾巴</InstallArtificialTail.label>
-  <InstallArtificialTail.description>安装仿生尾巴.</InstallArtificialTail.description>
-  <InstallArtificialTail.jobString>安装仿生尾巴.</InstallArtificialTail.jobString>
+  <InstallArtificialTail.label>安装假尾巴</InstallArtificialTail.label>
+  <InstallArtificialTail.description>安装假尾巴.</InstallArtificialTail.description>
+  <InstallArtificialTail.jobString>安装假尾巴.</InstallArtificialTail.jobString>
 
 
   <!-- Hoof -->

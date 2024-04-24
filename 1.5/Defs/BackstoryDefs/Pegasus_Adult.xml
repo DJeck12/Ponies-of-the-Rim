@@ -136,7 +136,7 @@
 		<defName>Pony_PegasusFlyRacer</defName>
 		<title>flying racer</title>
 		<titleShort>racer</titleShort>
-		<baseDesc>[PAWN_nameDef] watched the pegasus competitions with admiration. [PAWN_pronoun] set [PAWN_objective]self the goal of becoming as successful and outstanding as the most famous sports ponies. [PAWN_nameDef] devoted all [PAWN_possessive] time to training, tirelessly honing flying skills.</baseDesc>
+		<baseDesc>[PAWN_nameDef] watched the pegasus competitions with admiration. [PAWN_pronoun] set {PAWN_gender ? himself : herself} the goal of becoming as successful and outstanding as the most famous sports ponies. [PAWN_nameDef] devoted all [PAWN_possessive] time to training, tirelessly honing flying skills.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
@@ -170,7 +170,7 @@
 		<defName>Pony_PegasusPilotTor</defName>
 		<title>pilot inventor</title>
 		<titleShort>inventor</titleShort>
-		<baseDesc>One day [PAWN_nameDef] met a pegasus who couldn't fly. [PAWN_possessive] heart was full of compassion, and [PAWN_pronoun] could not live peacefully knowing that there was someone nearby who was deprived of something so important. Then [PAWN_nameDef] decided to become an inventor and set [PAWN_objective]self an important life goal — to make all the unfortunate ponies happy again.</baseDesc>
+		<baseDesc>One day [PAWN_nameDef] met a pegasus who couldn't fly. [PAWN_possessive] heart was full of compassion, and [PAWN_pronoun] could not live peacefully knowing that there was someone nearby who was deprived of something so important. Then [PAWN_nameDef] decided to become an inventor and set {PAWN_gender ? himself : herself} an important life goal — to make all the unfortunate ponies happy again.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
