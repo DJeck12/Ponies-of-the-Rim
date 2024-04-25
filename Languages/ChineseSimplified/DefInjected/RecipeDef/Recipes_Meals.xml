@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<CookMealFine_Hay.label>做干草饭</CookMealFine_Hay.label>
+	<CookMealFine_Hay.description>用植物成分和干草做一顿有点复杂的饭菜。适合以素食为主的生物。</CookMealFine_Hay.description>
+	<CookMealFine_Hay.jobString>做干草饭</CookMealFine_Hay.jobString>
+	<CookMealFine_Hay.ingredients.0.filter.customSummary>素食原料</CookMealFine_Hay.ingredients.0.filter.customSummary>
+
+	<CookMealFineBulk_Hay.label>做干草饭 x4</CookMealFineBulk_Hay.label>
+	<CookMealFineBulk_Hay.description>用植物成分和干草做4顿有点复杂的饭菜。适合以素食为主的生物。</CookMealFineBulk_Hay.description>
+	<CookMealFineBulk_Hay.jobString>做4份干草饭.</CookMealFineBulk_Hay.jobString>
+	<CookMealFineBulk_Hay.ingredients.0.filter.customSummary>素食原料</CookMealFineBulk_Hay.ingredients.0.filter.customSummary>
+
+	<CookMealLavish_Hay.label>做丰盛的干草饭</CookMealLavish_Hay.label>
+	<CookMealLavish_Hay.description>用植物成分和干草烹制非常复杂的饭菜。适合以素食为主的生物。为了创造最佳的饮食体验，大部分食材都被浪费了。</CookMealLavish_Hay.description>
+	<CookMealLavish_Hay.jobString>做丰盛的干草饭.</CookMealLavish_Hay.jobString>
+	<CookMealLavish_Hay.ingredients.0.filter.customSummary>素食原料</CookMealLavish_Hay.ingredients.0.filter.customSummary>
+
+	<CookMealLavishBulk_Hay.label>做丰盛的干草饭 x4</CookMealLavishBulk_Hay.label>
+	<CookMealLavishBulk_Hay.description>用植物成分和干草烹制4份非常复杂的饭菜。适合以素食为主的生物。为了创造最佳的饮食体验，大部分食材都被浪费了.</CookMealLavishBulk_Hay.description>
+	<CookMealLavishBulk_Hay.jobString>做4份丰盛的干草饭.</CookMealLavishBulk_Hay.jobString>
+	<CookMealLavishBulk_Hay.ingredients.0.filter.customSummary>素食原料</CookMealLavishBulk_Hay.ingredients.0.filter.customSummary>
+
+</LanguageData>

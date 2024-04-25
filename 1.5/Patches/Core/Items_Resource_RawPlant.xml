@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 	<xpath>/Defs/ThingDef[defName="Hay"]/ingestible</xpath>
 		<value>
-			<ingestible>
-				<foodType>VegetableOrFruit</foodType>
-				<preferability>RawBad</preferability>
-				<tasteThought>AteRawFood</tasteThought>
-				<ingestEffect>EatVegetarian</ingestEffect>
-				<ingestSound>RawVegetable_Eat</ingestSound>
-			</ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<preferability>RawBad</preferability>
+			<tasteThought></tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>RawVegetable_Eat</ingestSound>
+			<specialThoughtAsIngredient>AteHayAsIngredient</specialThoughtAsIngredient>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationInsert">
-	<xpath>/Defs/ThingDef[defName="Hay"]/ingestible</xpath>
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName="Hay"]</xpath>
 		<value>
 			<socialPropernessMatters>true</socialPropernessMatters>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName="Hay"]/description</xpath>
+		<value>
+			<description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is loved by ponies and is also a good animal feed, but inedible for humans.</description>
 		</value>
 	</Operation>
 	

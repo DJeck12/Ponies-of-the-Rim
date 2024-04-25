@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pony_Pegasus.label>飞马</Pony_Pegasus.label>
+  <Pony_Pegasus.description>小马是来自魔法大陆的神奇四足生物。它们的血统非常复杂，分为许多亚种，彼此之间有不同程度的相似之处。和谐与互助是小马生活中的主要原则。然而，严酷的外太空环境压制了这个种族的一部分。为了生存，他们放弃了理想，走上了掠夺、奴役和劫掠的道路。
+
+独特的小马身体使它们与其他人类种族区分开来。然而，这些生物已经学会适应任何服装和假肢以适应自己。它们像其他生物使用手一样熟练地使用前蹄。在它们的背部有着标志性的图案——这些图案显示出它们的兴趣、爱好或职业。大多数小马物种是草食动物，可以毫无惩罚地食用干草。
+
+&lt;color=#46FFFF&gt;飞马&lt;/color&gt; 与其他小马不同，它们背上有一对翅膀，以及更厚实的毛皮，适合在高海拔飞行。作为天生的竞赛者，飞马总是喜欢与其他人竞争，这也是为什么它们后来被认为是最具敌意的小马种族。尽管如此，大多数飞马仍然愿意与其他小马和平共处，并利用它们的飞行能力来帮助他人。</Pony_Pegasus.description>
+  <Pony_Pegasus.tools.0.label>左前蹄</Pony_Pegasus.tools.0.label>
+  <Pony_Pegasus.tools.1.label>右前蹄</Pony_Pegasus.tools.1.label>
+  <Pony_Pegasus.tools.2.label>后腿</Pony_Pegasus.tools.2.label>
+  <Pony_Pegasus.tools.3.label>牙齿</Pony_Pegasus.tools.3.label>
+  <Pony_Pegasus.tools.4.label>头</Pony_Pegasus.tools.4.label>
+
+
+</LanguageData>

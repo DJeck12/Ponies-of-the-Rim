@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Earthpony -->
+
+  <EPonyGrenadier_Destructive.label>小马掷弹兵</EPonyGrenadier_Destructive.label>
+  <EPonyGrenadier_Destructive.labelPlural>小马掷弹兵</EPonyGrenadier_Destructive.labelPlural>
+  <EPonyGrenadier_Destructive.labelMale>男性小马掷弹兵</EPonyGrenadier_Destructive.labelMale>
+  <EPonyGrenadier_Destructive.labelMalePlural>男性小马掷弹兵</EPonyGrenadier_Destructive.labelMalePlural>
+  <EPonyGrenadier_Destructive.labelFemale>女性小马掷弹兵</EPonyGrenadier_Destructive.labelFemale>
+  <EPonyGrenadier_Destructive.labelFemalePlural>女性小马掷弹兵</EPonyGrenadier_Destructive.labelFemalePlural>
+
+  <EPonyMercenary_Gunner.label>小马佣兵枪手</EPonyMercenary_Gunner.label>
+  <EPonyMercenary_Gunner.labelPlural>小马佣兵枪手</EPonyMercenary_Gunner.labelPlural>
+  <EPonyMercenary_Gunner.labelMale>男性小马佣兵枪手</EPonyMercenary_Gunner.labelMale>
+  <EPonyMercenary_Gunner.labelMalePlural>男性小马佣兵枪手</EPonyMercenary_Gunner.labelMalePlural>
+  <EPonyMercenary_Gunner.labelFemale>女性小马佣兵枪手</EPonyMercenary_Gunner.labelFemale>
+  <EPonyMercenary_Gunner.labelFemalePlural>女性小马佣兵枪手</EPonyMercenary_Gunner.labelFemalePlural>
+
+  <EPonyMercenary_Gunner_Acidifier.label>
+  <EPonyMercenary_Gunner.label>小马佣兵枪手</EPonyMercenary_Gunner_Acidifier.label>
+  <EPonyMercenary_Gunner_Acidifier.labelPlural>
+  <EPonyMercenary_Gunner.label>小马佣兵枪手</EPonyMercenary_Gunner_Acidifier.labelPlural>
+  <EPonyMercenary_Gunner_Acidifier.labelMale>男性小马佣兵枪手</EPonyMercenary_Gunner_Acidifier.labelMale>
+  <EPonyMercenary_Gunner_Acidifier.labelMalePlural>男性小马佣兵枪手</EPonyMercenary_Gunner_Acidifier.labelMalePlural>
+  <EPonyMercenary_Gunner_Acidifier.labelFemale>女性小马佣兵枪手</EPonyMercenary_Gunner_Acidifier.labelFemale>
+  <EPonyMercenary_Gunner_Acidifier.labelFemalePlural>女性小马佣兵枪手</EPonyMercenary_Gunner_Acidifier.labelFemalePlural>
+
+  <EPonyMercenary_Slasher.label>小马佣兵斩杀者</EPonyMercenary_Slasher.label>
+  <EPonyMercenary_Slasher.labelPlural>小马佣兵斩杀者</EPonyMercenary_Slasher.labelPlural>
+  <EPonyMercenary_Slasher.labelMale>男性小马佣兵斩杀者</EPonyMercenary_Slasher.labelMale>
+  <EPonyMercenary_Slasher.labelMalePlural>男性小马佣兵斩杀者</EPonyMercenary_Slasher.labelMalePlural>
+  <EPonyMercenary_Slasher.labelFemale>女性小马佣兵斩杀者</EPonyMercenary_Slasher.labelFemale>
+  <EPonyMercenary_Slasher.labelFemalePlural>女性小马佣兵斩杀者</EPonyMercenary_Slasher.labelFemalePlural>
+
+  <EPonyMercenary_Slasher_Acidifier.label>小马佣兵斩杀者</EPonyMercenary_Slasher_Acidifier.label>
+  <EPonyMercenary_Slasher_Acidifier.labelPlural>小马佣兵斩杀者</EPonyMercenary_Slasher_Acidifier.labelPlural>
+  <EPonyMercenary_Slasher_Acidifier.labelMale>男性小马佣兵斩杀者</EPonyMercenary_Slasher_Acidifier.labelMale>
+  <EPonyMercenary_Slasher_Acidifier.labelMalePlural>男性小马佣兵斩杀者</EPonyMercenary_Slasher_Acidifier.labelMalePlural>
+  <EPonyMercenary_Slasher_Acidifier.labelFemale>女性小马佣兵斩杀者</EPonyMercenary_Slasher_Acidifier.labelFemale>
+  <EPonyMercenary_Slasher_Acidifier.labelFemalePlural>女性小马佣兵斩杀者</EPonyMercenary_Slasher_Acidifier.labelFemalePlural>
+
+  <EPonyMercenary_Elite.label>精英小马雇佣兵</EPonyMercenary_Elite.label>
+  <EPonyMercenary_Elite.labelPlural>精英小马雇佣兵</EPonyMercenary_Elite.labelPlural>
+  <EPonyMercenary_Elite.labelMale>男性精英小马雇佣兵</EPonyMercenary_Elite.labelMale>
+  <EPonyMercenary_Elite.labelMalePlural>男性精英小马雇佣兵</EPonyMercenary_Elite.labelMalePlural>
+  <EPonyMercenary_Elite.labelFemale>女性精英小马雇佣兵</EPonyMercenary_Elite.labelFemale>
+  <EPonyMercenary_Elite.labelFemalePlural>女性精英小马雇佣兵</EPonyMercenary_Elite.labelFemalePlural>
+
+  <EPonyMercenary_Elite_Acidifier.label>精英小马雇佣兵</EPonyMercenary_Elite_Acidifier.label>
+  <EPonyMercenary_Elite_Acidifier.labelPlural>精英小马雇佣兵</EPonyMercenary_Elite_Acidifier.labelPlural>
+  <EPonyMercenary_Elite_Acidifier.labelMale>男性精英小马雇佣兵</EPonyMercenary_Elite_Acidifier.labelMale>
+  <EPonyMercenary_Elite_Acidifier.labelMalePlural>男性精英小马雇佣兵</EPonyMercenary_Elite_Acidifier.labelMalePlural>
+  <EPonyMercenary_Elite_Acidifier.labelFemale>女性精英小马雇佣兵</EPonyMercenary_Elite_Acidifier.labelFemale>
+  <EPonyMercenary_Elite_Acidifier.labelFemalePlural>女性精英小马雇佣兵</EPonyMercenary_Elite_Acidifier.labelFemalePlural>
+
+
+  <!-- Pegasus -->
+
+  <PPonyGrenadier_Destructive.label>小马掷弹兵</PPonyGrenadier_Destructive.label>
+  <PPonyGrenadier_Destructive.labelPlural>小马掷弹兵</PPonyGrenadier_Destructive.labelPlural>
+  <PPonyGrenadier_Destructive.labelMale>男性小马掷弹兵</PPonyGrenadier_Destructive.labelMale>
+  <PPonyGrenadier_Destructive.labelMalePlural>男性小马掷弹兵</PPonyGrenadier_Destructive.labelMalePlural>
+  <PPonyGrenadier_Destructive.labelFemale>女性小马掷弹兵</PPonyGrenadier_Destructive.labelFemale>
+  <PPonyGrenadier_Destructive.labelFemalePlural>女性小马掷弹兵</PPonyGrenadier_Destructive.labelFemalePlural>
+
+  <PPonyMercenary_Gunner.label>小马佣兵枪手</PPonyMercenary_Gunner.label>
+  <PPonyMercenary_Gunner.labelPlural>小马佣兵枪手</PPonyMercenary_Gunner.labelPlural>
+  <PPonyMercenary_Gunner.labelMale>男性小马佣兵枪手</PPonyMercenary_Gunner.labelMale>
+  <PPonyMercenary_Gunner.labelMalePlural>男性小马佣兵枪手</PPonyMercenary_Gunner.labelMalePlural>
+  <PPonyMercenary_Gunner.labelFemale>女性小马佣兵枪手</PPonyMercenary_Gunner.labelFemale>
+  <PPonyMercenary_Gunner.labelFemalePlural>女性小马佣兵枪手</PPonyMercenary_Gunner.labelFemalePlural>
+
+  <PPonyMercenary_Gunner_Acidifier.label>小马佣兵枪手</PPonyMercenary_Gunner_Acidifier.label>
+  <PPonyMercenary_Gunner_Acidifier.labelPlural>小马佣兵枪手</PPonyMercenary_Gunner_Acidifier.labelPlural>
+  <PPonyMercenary_Gunner_Acidifier.labelMale>男性小马佣兵枪手</PPonyMercenary_Gunner_Acidifier.labelMale>
+  <PPonyMercenary_Gunner_Acidifier.labelMalePlural>男性小马佣兵枪手</PPonyMercenary_Gunner_Acidifier.labelMalePlural>
+  <PPonyMercenary_Gunner_Acidifier.labelFemale>女性小马佣兵枪手</PPonyMercenary_Gunner_Acidifier.labelFemale>
+  <PPonyMercenary_Gunner_Acidifier.labelFemalePlural>女性小马佣兵枪手</PPonyMercenary_Gunner_Acidifier.labelFemalePlural>
+
+  <PPonyMercenary_Slasher.label>小马佣兵斩杀者</PPonyMercenary_Slasher.label>
+  <PPonyMercenary_Slasher.labelPlural>小马佣兵斩杀者</PPonyMercenary_Slasher.labelPlural>
+  <PPonyMercenary_Slasher.labelMale>男性小马佣兵斩杀者</PPonyMercenary_Slasher.labelMale>
+  <PPonyMercenary_Slasher.labelMalePlural>男性小马佣兵斩杀者</PPonyMercenary_Slasher.labelMalePlural>
+  <PPonyMercenary_Slasher.labelFemale>女性小马佣兵斩杀者</PPonyMercenary_Slasher.labelFemale>
+  <PPonyMercenary_Slasher.labelFemalePlural>女性小马佣兵斩杀者</PPonyMercenary_Slasher.labelFemalePlural>
+
+  <PPonyMercenary_Slasher_Acidifier.label>小马佣兵斩杀者</PPonyMercenary_Slasher_Acidifier.label>
+  <PPonyMercenary_Slasher_Acidifier.labelPlural>小马佣兵斩杀者</PPonyMercenary_Slasher_Acidifier.labelPlural>
+  <PPonyMercenary_Slasher_Acidifier.labelMale>男性小马佣兵斩杀者</PPonyMercenary_Slasher_Acidifier.labelMale>
+  <PPonyMercenary_Slasher_Acidifier.labelMalePlural>男性小马佣兵斩杀者</PPonyMercenary_Slasher_Acidifier.labelMalePlural>
+  <PPonyMercenary_Slasher_Acidifier.labelFemale>女性小马佣兵斩杀者</PPonyMercenary_Slasher_Acidifier.labelFemale>
+  <PPonyMercenary_Slasher_Acidifier.labelFemalePlural>女性小马佣兵斩杀者</PPonyMercenary_Slasher_Acidifier.labelFemalePlural>
+
+  <PPonyMercenary_Elite.label>精英小马雇佣兵</PPonyMercenary_Elite.label>
+  <PPonyMercenary_Elite.labelPlural>精英小马雇佣兵</PPonyMercenary_Elite.labelPlural>
+  <PPonyMercenary_Elite.labelMale>男性精英小马雇佣兵</PPonyMercenary_Elite.labelMale>
+  <PPonyMercenary_Elite.labelMalePlural>男性精英小马雇佣兵</PPonyMercenary_Elite.labelMalePlural>
+  <PPonyMercenary_Elite.labelFemale>女性精英小马雇佣兵</PPonyMercenary_Elite.labelFemale>
+  <PPonyMercenary_Elite.labelFemalePlural>女性精英小马雇佣兵</PPonyMercenary_Elite.labelFemalePlural>
+
+  <PPonyMercenary_Elite_Acidifier.label>精英小马雇佣兵</PPonyMercenary_Elite_Acidifier.label>
+  <PPonyMercenary_Elite_Acidifier.labelPlural>精英小马雇佣兵</PPonyMercenary_Elite_Acidifier.labelPlural>
+  <PPonyMercenary_Elite_Acidifier.labelMale>男性精英小马雇佣兵</PPonyMercenary_Elite_Acidifier.labelMale>
+  <PPonyMercenary_Elite_Acidifier.labelMalePlural>男性精英小马雇佣兵</PPonyMercenary_Elite_Acidifier.labelMalePlural>
+  <PPonyMercenary_Elite_Acidifier.labelFemale>女性精英小马雇佣兵</PPonyMercenary_Elite_Acidifier.labelFemale>
+  <PPonyMercenary_Elite_Acidifier.labelFemalePlural>女性精英小马雇佣兵</PPonyMercenary_Elite_Acidifier.labelFemalePlural>
+
+
+  <!-- Unicorn -->
+
+  <UPonyGrenadier_Destructive.label>小马掷弹兵</UPonyGrenadier_Destructive.label>
+  <UPonyGrenadier_Destructive.labelPlural>小马掷弹兵</UPonyGrenadier_Destructive.labelPlural>
+  <UPonyGrenadier_Destructive.labelMale>男性小马掷弹兵</UPonyGrenadier_Destructive.labelMale>
+  <UPonyGrenadier_Destructive.labelMalePlural>男性小马掷弹兵</UPonyGrenadier_Destructive.labelMalePlural>
+  <UPonyGrenadier_Destructive.labelFemale>女性小马掷弹兵</UPonyGrenadier_Destructive.labelFemale>
+  <UPonyGrenadier_Destructive.labelFemalePlural>女性小马掷弹兵</UPonyGrenadier_Destructive.labelFemalePlural>
+
+  <UPonyMercenary_Gunner.label>小马佣兵枪手</UPonyMercenary_Gunner.label>
+  <UPonyMercenary_Gunner.labelPlural>小马佣兵枪手</UPonyMercenary_Gunner.labelPlural>
+  <UPonyMercenary_Gunner.labelMale>男性小马佣兵枪手</UPonyMercenary_Gunner.labelMale>
+  <UPonyMercenary_Gunner.labelMalePlural>男性小马佣兵枪手</UPonyMercenary_Gunner.labelMalePlural>
+  <UPonyMercenary_Gunner.labelFemale>女性小马佣兵枪手</UPonyMercenary_Gunner.labelFemale>
+  <UPonyMercenary_Gunner.labelFemalePlural>女性小马佣兵枪手</UPonyMercenary_Gunner.labelFemalePlural>
+
+  <UPonyMercenary_Gunner_Acidifier.label>小马佣兵枪手</UPonyMercenary_Gunner_Acidifier.label>
+  <UPonyMercenary_Gunner_Acidifier.labelPlural>小马佣兵斩杀者</UPonyMercenary_Gunner_Acidifier.labelPlural>
+  <UPonyMercenary_Gunner_Acidifier.labelMale>男性小马佣兵枪手</UPonyMercenary_Gunner_Acidifier.labelMale>
+  <UPonyMercenary_Gunner_Acidifier.labelMalePlural>男性小马佣兵枪手</UPonyMercenary_Gunner_Acidifier.labelMalePlural>
+  <UPonyMercenary_Gunner_Acidifier.labelFemale>女性小马佣兵枪手</UPonyMercenary_Gunner_Acidifier.labelFemale>
+  <UPonyMercenary_Gunner_Acidifier.labelFemalePlural>女性小马佣兵枪手</UPonyMercenary_Gunner_Acidifier.labelFemalePlural>
+
+  <UPonyMercenary_Slasher.label>小马佣兵斩杀者</UPonyMercenary_Slasher.label>
+  <UPonyMercenary_Slasher.labelPlural>小马佣兵斩杀者</UPonyMercenary_Slasher.labelPlural>
+  <UPonyMercenary_Slasher.labelMale>男性小马佣兵斩杀者</UPonyMercenary_Slasher.labelMale>
+  <UPonyMercenary_Slasher.labelMalePlural>男性小马佣兵斩杀者</UPonyMercenary_Slasher.labelMalePlural>
+  <UPonyMercenary_Slasher.labelFemale>女性小马佣兵斩杀者</UPonyMercenary_Slasher.labelFemale>
+  <UPonyMercenary_Slasher.labelFemalePlural>女性小马佣兵斩杀者</UPonyMercenary_Slasher.labelFemalePlural>
+
+  <UPonyMercenary_Slasher_Acidifier.label>小马佣兵斩杀者</UPonyMercenary_Slasher_Acidifier.label>
+  <UPonyMercenary_Slasher_Acidifier.labelPlural>小马佣兵斩杀者</UPonyMercenary_Slasher_Acidifier.labelPlural>
+  <UPonyMercenary_Slasher_Acidifier.labelMale>男性小马佣兵斩杀者</UPonyMercenary_Slasher_Acidifier.labelMale>
+  <UPonyMercenary_Slasher_Acidifier.labelMalePlural>男性小马佣兵斩杀者</UPonyMercenary_Slasher_Acidifier.labelMalePlural>
+  <UPonyMercenary_Slasher_Acidifier.labelFemale>女性小马佣兵斩杀者</UPonyMercenary_Slasher_Acidifier.labelFemale>
+  <UPonyMercenary_Slasher_Acidifier.labelFemalePlural>女性小马佣兵斩杀者
+
+  <UPonyMercenary_Elite.label>精英小马雇佣兵</UPonyMercenary_Elite.label>
+  <UPonyMercenary_Elite.labelPlural>精英小马雇佣兵</UPonyMercenary_Elite.labelPlural>
+  <UPonyMercenary_Elite.labelMale>男性精英小马雇佣兵</UPonyMercenary_Elite.labelMale>
+  <UPonyMercenary_Elite.labelMalePlural>男性精英小马雇佣兵</UPonyMercenary_Elite.labelMalePlural>
+  <UPonyMercenary_Elite.labelFemale>女性精英小马雇佣兵</UPonyMercenary_Elite.labelFemale>
+  <UPonyMercenary_Elite.labelFemalePlural>女性精英小马雇佣兵</UPonyMercenary_Elite.labelFemalePlural>
+
+  <UPonyMercenary_Elite_Acidifier.label>精英小马雇佣兵</UPonyMercenary_Elite_Acidifier.label>
+  <UPonyMercenary_Elite_Acidifier.labelPlural>精英小马雇佣兵</UPonyMercenary_Elite_Acidifier.labelPlural>
+  <UPonyMercenary_Elite_Acidifier.labelMale>男性精英小马雇佣兵</UPonyMercenary_Elite_Acidifier.labelMale>
+  <UPonyMercenary_Elite_Acidifier.labelMalePlural>男性精英小马雇佣兵</UPonyMercenary_Elite_Acidifier.labelMalePlural>
+  <UPonyMercenary_Elite_Acidifier.labelFemale>女性精英小马雇佣兵</UPonyMercenary_Elite_Acidifier.labelFemale>
+  <UPonyMercenary_Elite_Acidifier.labelFemalePlural>女性精英小马雇佣兵</UPonyMercenary_Elite_Acidifier.labelFemalePlural>
+
+
+</LanguageData>

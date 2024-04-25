@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pony_UnicornMag.title>魔法师</Pony_UnicornMag.title>
+  <Pony_UnicornMag.titleShort>魔法师</Pony_UnicornMag.titleShort>
+  <Pony_UnicornMag.description>出乎意料之外，[PAWN_nameDef]得到了一本古老的家族咒语书。阅读后，[PAWN_pronoun]了解了家族的秘密，决定保守起来，以免玷污[PAWN_possessive]的名声。这个想法促使[PAWN_possessive]决定成为一名魔法师。</Pony_UnicornMag.description>
+
+  <Pony_UnicornGem.title>水晶研究员</Pony_UnicornGem.title>
+  <Pony_UnicornGem.titleShort>水晶研究员</Pony_UnicornGem.titleShort>
+  <Pony_UnicornGem.description>[PAWN_nameDef]对魔法及其相关的一切都表现出浓厚的兴趣。随着[PAWN_pronoun]的成长，[PAWN_pronoun]将自己的生活与物体的神奇属性联系在一起，研究水晶和各种化石。</Pony_UnicornGem.description>
+
+  <Pony_UnicornWarl.title>黑魔法研究者</Pony_UnicornWarl.title>
+  <Pony_UnicornWarl.titleShort>黑魔法研究者</Pony_UnicornWarl.titleShort>
+  <Pony_UnicornWarl.description>[PAWN_nameDef]偶然在[PAWN_possessive]屋顶阁楼里发现了本古老的书。作为一名魔法师，[PAWN_pronoun]对其中包含的禁忌咒语产生了特别的兴趣。</Pony_UnicornWarl.description>
+
+  <Pony_UnicornMagTeach.title>魔法教师</Pony_UnicornMagTeach.title>
+  <Pony_UnicornMagTeach.titleShort>魔法教师</Pony_UnicornMagTeach.titleShort>
+  <Pony_UnicornMagTeach.description>作为一名出色的施法者，[PAWN_nameDef]决定[PAWN_possessive]的使命是向他人传授魔法。[PAWN_pronoun]开始教导那些希望学习魔法艺术的人。</Pony_UnicornMagTeach.description>
+
+  <Pony_UnicornCryDig.title>负债的矿工</Pony_UnicornCryDig.title>
+  <Pony_UnicornCryDig.titleShort>负债的矿工</Pony_UnicornCryDig.titleShort>
+  <Pony_UnicornCryDig.description>在职业生涯失败后，[PAWN_nameDef]因为债务被迫离开了家。不知所措之际，[PAWN_pronoun]决定在矿山工作，开采水晶。</Pony_UnicornCryDig.description>
+
+  <Pony_UnicornJewl.title>珠宝匠</Pony_UnicornJewl.title>
+  <Pony_UnicornJewl.titleShort>珠宝匠</Pony_UnicornJewl.titleShort>
+  <Pony_UnicornJewl.description>[PAWN_nameDef]延续了家族传统 - 所有[PAWN_possessive]亲戚都是城里著名的珠宝商。[PAWN_pronoun]从[PAWN_possessive]父亲那里学到了技艺，并在珠宝制作方面达到了前所未有的高度。</Pony_UnicornJewl.description>
+
+  <Pony_UnicornMagn.title>水晶大亨</Pony_UnicornMagn.title>
+  <Pony_UnicornMagn.titleShort>水晶大亨</Pony_UnicornMagn.titleShort>
+  <Pony_UnicornMagn.description>[PAWN_nameDef]的父亲去世后，[PAWN_pronoun]获得了巨额遗产。[PAWN_pronoun]成为了全国最大的水晶大亨，毫无忧虑。</Pony_UnicornMagn.description>
+
+  <Pony_UnicornCourWiz.title>宫廷魔法师</Pony_UnicornCourWiz.title>
+  <Pony_UnicornCourWiz.titleShort>宫廷魔法师</Pony_UnicornCourWiz.titleShort>
+  <Pony_UnicornCourWiz.description>[PAWN_nameDef]在一所最负盛名的魔法学校任教。因为对王国的贡献，[PAWN_pronoun]被任命为尊贵的宫廷法师职位。</Pony_UnicornCourWiz.description>
+
+  <Pony_UnicornWork.title>独角兽工人</Pony_UnicornWork.title>
+  <Pony_UnicornWork.titleShort>独角兽工人</Pony_UnicornWork.titleShort>
+  <Pony_UnicornWork.description>虽然[PAWN_nameDef]对魔法理论的了解还有待加强，但[PAWN_possessive]念力能力却非常高级。多亏了[PAWN_possessive]天赋，[PAWN_pronoun]在一个太空港找到了工作，负责分类各种货物。</Pony_UnicornWork.description>
+
+
+</LanguageData>

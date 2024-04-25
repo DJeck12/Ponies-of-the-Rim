@@ -2,9 +2,10 @@
 <Defs>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyPaGi</defName>
-		<title>Party giver</title>
-		<titleShort>Ringleader</titleShort>
+		<defName>Pony_EveryponyPaPl</defName>
+		<title>party planner</title>
+		<titleShort>party colt</titleShort>
+		<titleShortFemale>party mare</titleShortFemale>
 		<baseDesc>[PAWN_nameDef] likes to see the smiles of others and have fun. [PAWN_pronoun] began to organize meetings and parties for everyone who wanted to have fun in the area.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -41,10 +42,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyRG</defName>
-		<title>Royal Guard</title>
-		<titleFemale>Royal Guard</titleFemale>
-		<titleShort>Guardscolt</titleShort>
-		<titleShortFemale>Guardsmare</titleShortFemale>
+		<title>royal guard</title>
+		<titleShort>guardscolt</titleShort>
+		<titleShortFemale>guardsmare</titleShortFemale>
 		<baseDesc>[PAWN_nameDef] was recruited into the Royal Guard due to [PAWN_possessive] dedication and loyalty. [PAWN_pronoun] personally guarded one of the rulers of the kingdom, accompanying her on numerous peacemaking and charity missions.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -63,10 +63,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyBEH</defName>
-		<title>Bearer of Element of Harmony</title>
-		<titleFemale>Bearer of Element of Harmony</titleFemale>
-		<titleShort>Bearer of Element</titleShort>
-		<titleShortFemale>Bearer of Element</titleShortFemale>
+		<title>bearer of element of Harmony</title>
+		<titleShort>bearer of element</titleShort>
 		<baseDesc>Once upon a time, [PAWN_nameDef] was the bearer of the Element of Harmony — a famous fighter against evil and an advocate for all who needed [PAWN_possessive] help. Now [PAWN_pronoun] is here with nothing.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -94,8 +92,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyRST</defName>
-		<title>Racist slave trader</title>
-		<titleShort>Racist slave trader</titleShort>  
+		<title>racist slave trader</title>
+		<titleShort>racist</titleShort>  
 		<baseDesc>[PAWN_nameDef] liked no one but [PAWN_possessive] own kind of ponies. [PAWN_pronoun] got {PAWN_gender ? himself : herself} into the slave trade, enslaving those who did not look like [PAWN_objective].</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -117,10 +115,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyFanEtD</defName>
-		<title>Fanatic of Eternal Day</title>
-		<titleFemale>Fanatic of Eternal Day</titleFemale>
-		<titleShort>Fanatic</titleShort>
-		<titleShortFemale>Fanatic</titleShortFemale>
+		<title>fanatic of Eternal Day</title>
+		<titleShort>fanatic</titleShort>
 		<baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Day. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Light, which will plunge the world into Eternal Day.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -153,11 +149,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyFanEtN</defName>
-		<title>Fanatic of Eternal Night</title>
-		<titleFemale>Fanatic of Eternal Night</titleFemale>
-		<titleShort>Fanatic</titleShort>
-		<titleShortFemale>Fanatic</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] is a member of the cult of Eternal Night. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Darkness, which will plunge the world into Eternal Night.</baseDesc>
+		<title>fanatic of Eternal Night</title>
+		<titleShort>fanatic</titleShort>
+		<baseDesc>[PAWN_nameDef] is a member of the cult of the Eternal Night. The purpose of [PAWN_possessive] cult is to release the spirit of the Goddess of Darkness, which will plunge the world into Eternal Night.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -179,16 +173,15 @@
 				</options>
 				<chance>70</chance>
 			</li>
-		</forcedTraitsChance>    
+		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 
 
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyRiMa</defName>
-		<title>Ritualist Magician</title>
-		<titleShort>Ritualist</titleShort>
-		<titleShortFemale>Ritualist</titleShortFemale>
+		<title>ritualist magician</title>
+		<titleShort>ritualist</titleShort>
 		<baseDesc>[PAWN_nameDef] received an excellent education in the field of magical rituals. [PAWN_pronoun] was engaged in commercial activities, offering magical services to others.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -207,10 +200,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyFiWi</defName>
-		<title>Fighter with Windigo</title>
-		<titleShort>Exorcist</titleShort>
-		<titleShortFemale>Exorcist</titleShortFemale>
-		<baseDesc>[PAWN_nameDef] believes that the cause of all troubles and disagreements in the world is the Windigo - ancient frost spirits that feed on hatred. [PAWN_pronoun] makes every effort to prove this to others and calls on everyone to unite for a joint struggle.</baseDesc>
+		<title>fighter of Windigo</title>
+		<titleShort>exorcist</titleShort>
+		<baseDesc>[PAWN_nameDef] believes that the cause of all troubles and disagreements in the world from the Windigo - ancient frost spirits that feed on hatred. [PAWN_pronoun] makes every effort to prove this to others and calls on everyone to unite for a joint struggle.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -228,10 +220,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyHoMA</defName>
-		<title>Hunter of magical animals</title>
-		<titleFemale>Hunter of magical animals</titleFemale>
-		<titleShort>Poacher</titleShort>
-		<baseDesc>Despite the strict prohibition of hunting rare magical animals, [PAWN_nameDef] was engaged in poaching and subsequent collection of bloody trophies. Once [PAWN_pronoun] was caught and imprisoned, but [PAWN_possessive] hunting skills will never be lost.</baseDesc>
+		<title>hunter of magical animals</title>
+		<titleShort>poacher</titleShort>
+		<baseDesc>Despite the strict prohibition of hunting rare magical animals, [PAWN_nameDef] was engaged in poaching and subsequent collection of bloody trophies. Even though [PAWN_pronoun] was caught and imprisoned, [PAWN_possessive] hunting skills will never be lost.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -251,9 +242,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyAntimage</defName>
-		<title>Opponent of magic</title>
-		<titleFemale>Opponent of magic</titleFemale>
-		<titleShort>Antimage</titleShort>
+		<title>opponent of magic</title>
+		<titleShort>antimage</titleShort>
 		<baseDesc>One day, as a result of tragic circumstances, [PAWN_nameDef] and [PAWN_possessive] loved ones suffered greatly from the harm caused by a wandering half-educated magician. As a result, [PAWN_pronoun] became aggressive towards all wizards, despising magic in all its manifestations.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -283,10 +273,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyMissionary</defName>
-		<title>Preacher of Harmony</title>
-		<titleFemale>Preacher of Harmony</titleFemale>
-		<titleShort>Missionary</titleShort>
-		<titleShortFemale>Missionary</titleShortFemale>
+		<title>preacher of Harmony</title>
+		<titleShort>missionary</titleShort>
 		<baseDesc>[PAWN_nameDef] is a member of the Harmony promotion organization. [PAWN_pronoun] traveled a lot to different planets and communicated with various cultural communities, trying to introduce them to [PAWN_possessive] ideals.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -302,8 +290,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyEqlog</defName>
-		<title>Equestriologist</title>
-		<titleShort>Equestriologist</titleShort> 
+		<title>equestriologist</title>
+		<titleShort>equestriologi</titleShort>
 		<baseDesc>[PAWN_nameDef] was very passionate about the ancient history of Equestria. [PAWN_pronoun] managed to achieve real mastery in this field.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -320,8 +308,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosPi</defName>
-		<title>Cosmagic pilot</title>
-		<titleShort>Pilot</titleShort>
+		<title>cosmagic pilot</title>
+		<titleShort>pilot</titleShort>
 		<baseDesc>[PAWN_nameDef] was convicted of theft, and faced with a choice: go to jail to serve [PAWN_possessive] sentence or join the special cosmagic corps. Having little choice, [PAWN_pronoun] signed a contract for service, subsequently learning how to pilot spaceships and other heavy equipment.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -338,10 +326,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosRes</defName>
-		<title>Cosmagic researcher</title>
-		<titleFemale>Cosmagic Researcher</titleFemale>
-		<titleShort>Researcher</titleShort>
-		<titleShortFemale>Researcher</titleShortFemale>
+		<title>cosmagic researcher</title>
+		<titleShort>researcher</titleShort>
 		<baseDesc>[PAWN_nameDef] has always wondered all [PAWN_possessive] life what is hiding there, among the distant stars? One day [PAWN_pronoun] had a unique opportunity to join the ranks of the cosmagic squad, to which agreed without hesitation.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -356,8 +342,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosCap</defName>
-		<title>Cosmagic captain</title>
-		<titleShort>Captain</titleShort> 
+		<title>cosmagic captain</title>
+		<titleShort>captain</titleShort> 
 		<baseDesc>As a young pony, [PAWN_nameDef] joined the cosmagic marines. Thanks to [PAWN_possessive] outstanding achievements and exemplary service, [PAWN_pronoun] quickly moved up the career ladder, eventually receiving the position of cosmagic captain.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -388,9 +374,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosMech</defName>
-		<title>Cosmagic mechanic</title> 
-		<titleShort>Mechanic</titleShort>  
-		<baseDesc>[PAWN_nameDef] was an ordinary civilian mechanic. But when the war broke out on the planet, [PAWN_pronoun] was quickly mobilized into the space force. [PAWN_nameDef] was appointed to a specialized position, although did not have some specialized knowledge and skills.</baseDesc>
+		<title>cosmagic mechanic</title> 
+		<titleShort>mechanic</titleShort>  
+		<baseDesc>[PAWN_nameDef] was an ordinary civilian mechanic. Though, when the war broke out on [PAWN_possessive] planet, [PAWN_pronoun] was quickly mobilized into the space force. [PAWN_nameDef] was appointed to a specialized position, although [PAWN_pronoun] did not have some specialized knowledge and skills.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
@@ -405,8 +391,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosTrader</defName>
-		<title>Cosmagic trader</title> 
-		<titleShort>Merchant</titleShort>  
+		<title>cosmagic trader</title> 
+		<titleShort>merchant</titleShort>  
 		<baseDesc>Being a talented negotiator and a rather enterprising pony, [PAWN_nameDef] devoted [PAWN_possessive] life to trade. Having accumulated a decent amount of capital and acquired some influential connections, [PAWN_pronoun] decided to try [PAWN_possessive] luck among the stars.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -422,10 +408,8 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosSmug</defName>
-		<title>Cosmagic smuggler</title>
-		<titleFemale>Cosmagic smuggler</titleFemale>
-		<titleShort>Smuggler</titleShort>
-		<titleShortFemale>Smuggler</titleShortFemale>
+		<title>cosmagic smuggler</title>
+		<titleShort>smuggler</titleShort>
 		<baseDesc>[PAWN_nameDef] was an ordinary employee of the space customs. Considering that [PAWN_pronoun] was being paid negligibly little, [PAWN_nameDef] decided to find additional, not entirely legitimate earnings by joining an artel of smugglers and helping them transport their goods across the border.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
@@ -447,18 +431,27 @@
 			</li>
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
-<!--
+
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyAcTravel</defName>
-		<title>Accidental traveler</title>
-		<titleFemale>Accidental traveler</titleFemale>
-		<titleShort>Accidental traveler</titleShort>
-		<titleShortFemale>Accidental traveler</titleShortFemale>
-		<baseDesc> </baseDesc>
+		<title>accidental traveler</title>
+		<titleShort>stranger</titleShort>
+		<baseDesc>[PAWN_nameDef] was once a creature of a completely different species. After being subjected to a mysterious experiment, [PAWN_pronoun] found {PAWN_gender ? himself : herself} in a pony form on an unknown planet. [PAWN_pronoun] retained [PAWN_possessive] past memories, but was unable to fully reconstruct any details of [PAWN_possessive] arrival. With no other choice, [PAWN_pronoun] had to get used to [PAWN_possessive] new body.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
 		</spawnCategories>
+		<skillGains>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Social>3</Social>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>-1</Industriousness>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+		<workDisables>Caring</workDisables>
 	</AlienRace.AlienBackstoryDef>
--->
+
 </Defs>

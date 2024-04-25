@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MagicWound.label>魔法飞弹</MagicWound.label>
+  <MagicWound.description>魔法飞弹攻击</MagicWound.description>
+  <MagicWound.comps.0.labelTendedWell>绷带</MagicWound.comps.0.labelTendedWell>
+  <MagicWound.comps.0.labelTendedWellInner>缝合</MagicWound.comps.0.labelTendedWellInner>
+  <MagicWound.comps.0.labelSolidTendedWell>设置</MagicWound.comps.0.labelSolidTendedWell>
+  <MagicWound.injuryProps.destroyedLabel>Burned off (magic)</MagicWound.injuryProps.destroyedLabel>
+  <MagicWound.injuryProps.destroyedOutLabel>Burned out (magic)</MagicWound.injuryProps.destroyedOutLabel>
+  <MagicWound.labelNoun>a magic burn</MagicWound.labelNoun>
+
+
+</LanguageData>

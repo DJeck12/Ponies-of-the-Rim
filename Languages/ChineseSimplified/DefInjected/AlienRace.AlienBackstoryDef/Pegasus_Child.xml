@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pony_PegasusURac.title>年轻的运动员</Pony_PegasusURac.title>
+  <Pony_PegasusURac.titleShort>年轻的运动员</Pony_PegasusURac.titleShort>
+  <Pony_PegasusURac.description>[PAWN_nameDef]对速度充满热情。自从[PAWN_pronoun]学会飞行以来，[PAWN_objective]就一直渴望比赛.</Pony_PegasusURac.description>
+
+  <Pony_PegasusBully.title>欺凌受害者</Pony_PegasusBully.title>
+  <Pony_PegasusBully.titleShort>欺凌受害者</Pony_PegasusBully.titleShort>
+  <Pony_PegasusBully.description>自从童年以来，[PAWN_nameDef]就感觉自己像个局外人，同龄人都认为[PAWN_objective]是个失败者并嘲笑[PAWN_objective]。为了获得认可和尊重，以及树立威慑力，[PAWN_pronoun] 开始嘲笑那些比[PAWN_pronoun]弱小的人，将[PAWN_possessive]怨恨和愤怒发泄在他们身上。.</Pony_PegasusBully.description>
+
+  <Pony_PegasusLostAmong.title>积云中的迷失者</Pony_PegasusLostAmong.title>
+  <Pony_PegasusLostAmong.titleShort>积云中的迷失者</Pony_PegasusLostAmong.titleShort>
+  <Pony_PegasusLostAmong.description>童年时期，[PAWN_nameDef]在一群积云中迷失了方向。[PAWN_pronoun]在其中漫游了很长时间，直到最终被找到并获救.</Pony_PegasusLostAmong.description>
+
+  <Pony_PegasusWeakWi.title>翅膀发育不良</Pony_PegasusWeakWi.title>
+  <Pony_PegasusWeakWi.titleShort>翅膀发育不良</Pony_PegasusWeakWi.titleShort>
+  <Pony_PegasusWeakWi.description>当同龄的其他小马在云中无忧无虑地嬉戏时，[PAWN_nameDef]无法加入其中。[PAWN_possessive] 未发育完全的翅膀不允许 [PAWN_objective] 升入空中，这让 [PAWN_nameDef] 非常担心和沮丧.</Pony_PegasusWeakWi.description>
+
+  <Pony_PegasusCloudCatcher.title>云朵收藏家</Pony_PegasusCloudCatcher.title>
+  <Pony_PegasusCloudCatcher.titleShort>云朵收藏家</Pony_PegasusCloudCatcher.titleShort>
+  <Pony_PegasusCloudCatcher.description>[PAWN_nameDef]一学会飞行就找到了真正的幸福。[PAWN_pronoun]开始对云朵产生了非凡的热情，将它们收集成奇特的形状，并展示给[PAWN_possessive]朋友们.</Pony_PegasusCloudCatcher.description>
+
+  <Pony_PegasusRainbowLover.title>彩虹爱好者</Pony_PegasusRainbowLover.title>
+  <Pony_PegasusRainbowLover.titleShort>彩虹爱好者</Pony_PegasusRainbowLover.titleShort>
+  <Pony_PegasusRainbowLover.description>从童年以来，[PAWN_nameDef]对雨天一直怀有真诚的敬畏之情。[PAWN_possessive]心在雨后出现的明亮彩虹面前沉醉于赞美之中。[PAWN_nameDef]喜欢它的色彩搭配，用它制作的各种小饰品也让[PAWN_objective]感到由衷的愉悦。.</Pony_PegasusRainbowLover.description>
+
+  <Pony_PegasusBornShad.title>天生的影武者</Pony_PegasusBornShad.title>
+  <Pony_PegasusBornShad.titleShort>天生的影武者</Pony_PegasusBornShad.titleShort>
+  <Pony_PegasusBornShad.description>从小开始，[PAWN_nameDef]在受到亲戚的影响下长大，他们启发[PAWN_objective]，认为没有比梦魇之月更威严和至高无上的存在。[PAWN_pronoun]成为了影武者的正式成员，完全与外界隔离，[PAWN_pronoun]为自己创造了一个理想，致力于忠实地服.</Pony_PegasusBornShad.description>
+
+
+</LanguageData>

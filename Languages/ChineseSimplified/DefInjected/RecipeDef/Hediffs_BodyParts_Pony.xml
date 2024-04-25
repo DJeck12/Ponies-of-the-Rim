@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tail -->
+
+  <InstallArtificialTail.label>安装假尾巴</InstallArtificialTail.label>
+  <InstallArtificialTail.description>安装假尾巴.</InstallArtificialTail.description>
+  <InstallArtificialTail.jobString>安装假尾巴.</InstallArtificialTail.jobString>
+
+
+  <!-- Hoof -->
+
+  <InstallPegHoof.label>安装木蹄</InstallPegHoof.label>
+  <InstallPegHoof.description>安装木蹄.</InstallPegHoof.description>
+  <InstallPegHoof.jobString>安装木蹄.</InstallPegHoof.jobString>
+
+  <InstallSimpleProstheticHoof.label>安装假肢蹄</InstallSimpleProstheticHoof.label>
+  <InstallSimpleProstheticHoof.description>安装假肢蹄.</InstallSimpleProstheticHoof.description>
+  <InstallSimpleProstheticHoof.jobString>安装假肢蹄.</InstallSimpleProstheticHoof.jobString>
+
+
+  <!-- Wing -->
+
+  <InstallSimpleProstheticWing.label>安装假肢翼</InstallSimpleProstheticWing.label>
+  <InstallSimpleProstheticWing.description>安装假肢翼.</InstallSimpleProstheticWing.description>
+  <InstallSimpleProstheticWing.jobString>安装假肢翼.</InstallSimpleProstheticWing.jobString>
+
+  <InstallBionicWing.label>安装仿生翼</InstallBionicWing.label>
+  <InstallBionicWing.description>安装仿生翼.</InstallBionicWing.description>
+  <InstallBionicWing.jobString>安装仿生翼.</InstallBionicWing.jobString>
+
+  <InstallArchotechWing.label>安装远古科技仿生翼</InstallArchotechWing.label>
+  <InstallArchotechWing.description>安装远古科技仿生翼.</InstallArchotechWing.description>
+  <InstallArchotechWing.jobString>安装远古科技仿生翼.</InstallArchotechWing.jobString>
+
+
+  <!-- Horn -->
+
+  <InstallNaturalHorn.label>安装角</InstallNaturalHorn.label>
+  <InstallNaturalHorn.description>安装角.</InstallNaturalHorn.description>
+  <InstallNaturalHorn.jobString>安装角.</InstallNaturalHorn.jobString>
+
+  <InstallBionicHorn.label>安装仿生角</InstallBionicHorn.label>
+  <InstallBionicHorn.description>安装仿生角.</InstallBionicHorn.description>
+  <InstallBionicHorn.jobString>安装仿生角.</InstallBionicHorn.jobString>
+
+  <InstallArchotechHorn.label>安装远古科技仿生角</InstallArchotechHorn.label>
+  <InstallArchotechHorn.description>安装远古科技仿生角.</InstallArchotechHorn.description>
+  <InstallArchotechHorn.jobString>安装远古科技仿生角.</InstallArchotechHorn.jobString>
+
+
+</LanguageData>

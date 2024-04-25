@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Colony -->
+
+  <EPonyColonist.label>陆马</EPonyColonist.label>
+  <EPonyColonist.labelPlural>陆马</EPonyColonist.labelPlural>
+  <EPonyColonist.labelMale>种马</EPonyColonist.labelMale>
+  <EPonyColonist.labelMalePlural>种马</EPonyColonist.labelMalePlural>
+  <EPonyColonist.labelFemale>母马</EPonyColonist.labelFemale>
+  <EPonyColonist.labelFemalePlural>母马</EPonyColonist.labelFemalePlural>
+
+  <PPonyColonist.label>天马</PPonyColonist.label>
+  <PPonyColonist.labelPlural>天马</PPonyColonist.labelPlural>
+  <PPonyColonist.labelMale>种马</PPonyColonist.labelMale>
+  <PPonyColonist.labelMalePlural>种马</PPonyColonist.labelMalePlural>
+  <PPonyColonist.labelFemale>母马</PPonyColonist.labelFemale>
+  <PPonyColonist.labelFemalePlural>母马s</PPonyColonist.labelFemalePlural>
+
+  <UPonyColonist.label>独角兽</UPonyColonist.label>
+  <UPonyColonist.labelPlural>独角兽</UPonyColonist.labelPlural>
+  <UPonyColonist.labelMale>种马</UPonyColonist.labelMale>
+  <UPonyColonist.labelMalePlural>种马</UPonyColonist.labelMalePlural>
+  <UPonyColonist.labelFemale>母马</UPonyColonist.labelFemale>
+  <UPonyColonist.labelFemalePlural>母马</UPonyColonist.labelFemalePlural>
+
+
+  <!-- Tribe -->
+
+  <EPonyTribe.label>陆马</EPonyTribe.label>
+  <EPonyTribe.labelPlural>陆马</EPonyTribe.labelPlural>
+  <EPonyTribe.labelMale>种马</EPonyTribe.labelMale>
+  <EPonyTribe.labelMalePlural>种马</EPonyTribe.labelMalePlural>
+  <EPonyTribe.labelFemale>母马</EPonyTribe.labelFemale>
+  <EPonyTribe.labelFemalePlural>母马</EPonyTribe.labelFemalePlural>
+
+  <PPonyTribe.label>天马</PPonyTribe.label>
+  <PPonyTribe.labelPlural>天马</PPonyTribe.labelPlural>
+  <PPonyTribe.labelMale>种马</PPonyTribe.labelMale>
+  <PPonyTribe.labelMalePlural>种马</PPonyTribe.labelMalePlural>
+  <PPonyTribe.labelFemale>母马</PPonyTribe.labelFemale>
+  <PPonyTribe.labelFemalePlural>母马</PPonyTribe.labelFemalePlural>
+
+  <UPonyTribe.label>独角兽</UPonyTribe.label>
+  <UPonyTribe.labelPlural>独角兽</UPonyTribe.labelPlural>
+  <UPonyTribe.labelMale>种马</UPonyTribe.labelMale>
+  <UPonyTribe.labelMalePlural>种马</UPonyTribe.labelMalePlural>
+  <UPonyTribe.labelFemale>母马</UPonyTribe.labelFemale>
+  <UPonyTribe.labelFemalePlural>母马</UPonyTribe.labelFemalePlural>
+
+
+</LanguageData>

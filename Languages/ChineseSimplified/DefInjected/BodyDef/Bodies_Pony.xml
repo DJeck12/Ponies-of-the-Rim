@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 耳thpony -->
+
+  <Pony.label>陆马</Pony.label>
+  <Pony.corePart.parts.6.customLabel>左 肺</Pony.corePart.parts.6.customLabel>
+  <Pony.corePart.parts.7.customLabel>右 肺</Pony.corePart.parts.7.customLabel>
+  <Pony.corePart.parts.8.customLabel>左 肾</Pony.corePart.parts.8.customLabel>
+  <Pony.corePart.parts.9.customLabel>右 肾</Pony.corePart.parts.9.customLabel>
+  <Pony.corePart.parts.11.parts.0.parts.1.customLabel>左 眼</Pony.corePart.parts.11.parts.0.parts.1.customLabel>
+  <Pony.corePart.parts.11.parts.0.parts.2.customLabel>右 眼</Pony.corePart.parts.11.parts.0.parts.2.customLabel>
+  <Pony.corePart.parts.11.parts.0.parts.3.customLabel>左 耳</Pony.corePart.parts.11.parts.0.parts.3.customLabel>
+  <Pony.corePart.parts.11.parts.0.parts.4.customLabel>右 耳</Pony.corePart.parts.11.parts.0.parts.4.customLabel>
+  <Pony.corePart.parts.12.customLabel>左 肩</Pony.corePart.parts.12.customLabel>
+  <Pony.corePart.parts.12.parts.0.customLabel>前 左 腿</Pony.corePart.parts.12.parts.0.customLabel>
+  <Pony.corePart.parts.12.parts.0.parts.0.customLabel>左 肱骨</Pony.corePart.parts.12.parts.0.parts.0.customLabel>
+  <Pony.corePart.parts.12.parts.0.parts.1.customLabel>左 桡骨</Pony.corePart.parts.12.parts.0.parts.1.customLabel>
+  <Pony.corePart.parts.12.parts.0.parts.2.customLabel>前 左 肢管骨</Pony.corePart.parts.12.parts.0.parts.2.customLabel>
+  <Pony.corePart.parts.12.parts.0.parts.3.customLabel>前 左 蹄</Pony.corePart.parts.12.parts.0.parts.3.customLabel>
+  <Pony.corePart.parts.13.customLabel>右 肩</Pony.corePart.parts.13.customLabel>
+  <Pony.corePart.parts.13.parts.0.customLabel>前 右 腿</Pony.corePart.parts.13.parts.0.customLabel>
+  <Pony.corePart.parts.13.parts.0.parts.0.customLabel>右 肱骨</Pony.corePart.parts.13.parts.0.parts.0.customLabel>
+  <Pony.corePart.parts.13.parts.0.parts.1.customLabel>右 桡骨</Pony.corePart.parts.13.parts.0.parts.1.customLabel>
+  <Pony.corePart.parts.13.parts.0.parts.2.customLabel>前 右 肢管骨</Pony.corePart.parts.13.parts.0.parts.2.customLabel>
+  <Pony.corePart.parts.13.parts.0.parts.3.customLabel>前 右 蹄</Pony.corePart.parts.13.parts.0.parts.3.customLabel>
+  <Pony.corePart.parts.16.customLabel>左 大腿</Pony.corePart.parts.16.customLabel>
+  <Pony.corePart.parts.16.parts.0.customLabel>后 左 腿</Pony.corePart.parts.16.parts.0.customLabel>
+  <Pony.corePart.parts.16.parts.0.parts.0.customLabel>左 股骨</Pony.corePart.parts.16.parts.0.parts.0.customLabel>
+  <Pony.corePart.parts.16.parts.0.parts.1.customLabel>左 胫骨</Pony.corePart.parts.16.parts.0.parts.1.customLabel>
+  <Pony.corePart.parts.16.parts.0.parts.2.customLabel>后 左 肢管骨</Pony.corePart.parts.16.parts.0.parts.2.customLabel>
+  <Pony.corePart.parts.16.parts.0.parts.3.customLabel>后 左 蹄</Pony.corePart.parts.16.parts.0.parts.3.customLabel>
+  <Pony.corePart.parts.17.customLabel>右 大腿</Pony.corePart.parts.17.customLabel>
+  <Pony.corePart.parts.17.parts.0.customLabel>后 右 腿</Pony.corePart.parts.17.parts.0.customLabel>
+  <Pony.corePart.parts.17.parts.0.parts.0.customLabel>右 股骨</Pony.corePart.parts.17.parts.0.parts.0.customLabel>
+  <Pony.corePart.parts.17.parts.0.parts.1.customLabel>右 胫骨</Pony.corePart.parts.17.parts.0.parts.1.customLabel>
+  <Pony.corePart.parts.17.parts.0.parts.2.customLabel>后 右 肢管骨</Pony.corePart.parts.17.parts.0.parts.2.customLabel>
+  <Pony.corePart.parts.17.parts.0.parts.3.customLabel>后 右 蹄</Pony.corePart.parts.17.parts.0.parts.3.customLabel>
+
+
+  <!-- Pegasus -->
+
+  <Pegasus.label>天马</Pegasus.label>
+  <Pegasus.corePart.parts.6.customLabel>左 肺</Pegasus.corePart.parts.6.customLabel>
+  <Pegasus.corePart.parts.7.customLabel>右 肺</Pegasus.corePart.parts.7.customLabel>
+  <Pegasus.corePart.parts.8.customLabel>左 肾</Pegasus.corePart.parts.8.customLabel>
+  <Pegasus.corePart.parts.9.customLabel>右 肾</Pegasus.corePart.parts.9.customLabel>
+  <Pegasus.corePart.parts.11.parts.0.parts.1.customLabel>左 眼</Pegasus.corePart.parts.11.parts.0.parts.1.customLabel>
+  <Pegasus.corePart.parts.11.parts.0.parts.2.customLabel>右 眼</Pegasus.corePart.parts.11.parts.0.parts.2.customLabel>
+  <Pegasus.corePart.parts.11.parts.0.parts.3.customLabel>左 耳</Pegasus.corePart.parts.11.parts.0.parts.3.customLabel>
+  <Pegasus.corePart.parts.11.parts.0.parts.4.customLabel>右 耳</Pegasus.corePart.parts.11.parts.0.parts.4.customLabel>
+  <Pegasus.corePart.parts.12.customLabel>左 肩</Pegasus.corePart.parts.12.customLabel>
+  <Pegasus.corePart.parts.12.parts.0.customLabel>前 左 腿</Pegasus.corePart.parts.12.parts.0.customLabel>
+  <Pegasus.corePart.parts.12.parts.0.parts.0.customLabel>左 肱骨</Pegasus.corePart.parts.12.parts.0.parts.0.customLabel>
+  <Pegasus.corePart.parts.12.parts.0.parts.1.customLabel>左 桡骨</Pegasus.corePart.parts.12.parts.0.parts.1.customLabel>
+  <Pegasus.corePart.parts.12.parts.0.parts.2.customLabel>前 左 肢管骨</Pegasus.corePart.parts.12.parts.0.parts.2.customLabel>
+  <Pegasus.corePart.parts.12.parts.0.parts.3.customLabel>前 左 蹄</Pegasus.corePart.parts.12.parts.0.parts.3.customLabel>
+  <Pegasus.corePart.parts.13.customLabel>右 肩</Pegasus.corePart.parts.13.customLabel>
+  <Pegasus.corePart.parts.13.parts.0.customLabel>前 右 腿</Pegasus.corePart.parts.13.parts.0.customLabel>
+  <Pegasus.corePart.parts.13.parts.0.parts.0.customLabel>右 肱骨</Pegasus.corePart.parts.13.parts.0.parts.0.customLabel>
+  <Pegasus.corePart.parts.13.parts.0.parts.1.customLabel>右 桡骨</Pegasus.corePart.parts.13.parts.0.parts.1.customLabel>
+  <Pegasus.corePart.parts.13.parts.0.parts.2.customLabel>前 右 肢管骨</Pegasus.corePart.parts.13.parts.0.parts.2.customLabel>
+  <Pegasus.corePart.parts.13.parts.0.parts.3.customLabel>前 右 蹄</Pegasus.corePart.parts.13.parts.0.parts.3.customLabel>
+  <Pegasus.corePart.parts.14.customLabel>左 翼</Pegasus.corePart.parts.14.customLabel>
+  <Pegasus.corePart.parts.15.customLabel>右 翼</Pegasus.corePart.parts.15.customLabel>
+  <Pegasus.corePart.parts.18.customLabel>左 大腿</Pegasus.corePart.parts.18.customLabel>
+  <Pegasus.corePart.parts.18.parts.0.customLabel>后 左 腿</Pegasus.corePart.parts.18.parts.0.customLabel>
+  <Pegasus.corePart.parts.18.parts.0.parts.0.customLabel>左 股骨</Pegasus.corePart.parts.18.parts.0.parts.0.customLabel>
+  <Pegasus.corePart.parts.18.parts.0.parts.1.customLabel>左 胫骨</Pegasus.corePart.parts.18.parts.0.parts.1.customLabel>
+  <Pegasus.corePart.parts.18.parts.0.parts.2.customLabel>后 左 肢管骨</Pegasus.corePart.parts.18.parts.0.parts.2.customLabel>
+  <Pegasus.corePart.parts.18.parts.0.parts.3.customLabel>后 左 蹄</Pegasus.corePart.parts.18.parts.0.parts.3.customLabel>
+  <Pegasus.corePart.parts.19.customLabel>右 大腿</Pegasus.corePart.parts.19.customLabel>
+  <Pegasus.corePart.parts.19.parts.0.customLabel>后 右 腿</Pegasus.corePart.parts.19.parts.0.customLabel>
+  <Pegasus.corePart.parts.19.parts.0.parts.0.customLabel>右 股骨</Pegasus.corePart.parts.19.parts.0.parts.0.customLabel>
+  <Pegasus.corePart.parts.19.parts.0.parts.1.customLabel>右 胫骨</Pegasus.corePart.parts.19.parts.0.parts.1.customLabel>
+  <Pegasus.corePart.parts.19.parts.0.parts.2.customLabel>后 右 肢管骨</Pegasus.corePart.parts.19.parts.0.parts.2.customLabel>
+  <Pegasus.corePart.parts.19.parts.0.parts.3.customLabel>后 右 蹄</Pegasus.corePart.parts.19.parts.0.parts.3.customLabel>
+
+
+  <!-- Unicorn -->
+
+  <Unicorn.label>独角兽</Unicorn.label>
+  <Unicorn.corePart.parts.6.customLabel>左 肺</Unicorn.corePart.parts.6.customLabel>
+  <Unicorn.corePart.parts.7.customLabel>右 肺</Unicorn.corePart.parts.7.customLabel>
+  <Unicorn.corePart.parts.8.customLabel>左 肾</Unicorn.corePart.parts.8.customLabel>
+  <Unicorn.corePart.parts.9.customLabel>右 肾</Unicorn.corePart.parts.9.customLabel>
+  <Unicorn.corePart.parts.11.parts.0.parts.2.customLabel>左 眼</Unicorn.corePart.parts.11.parts.0.parts.2.customLabel>
+  <Unicorn.corePart.parts.11.parts.0.parts.3.customLabel>右 眼</Unicorn.corePart.parts.11.parts.0.parts.3.customLabel>
+  <Unicorn.corePart.parts.11.parts.0.parts.4.customLabel>左 耳</Unicorn.corePart.parts.11.parts.0.parts.4.customLabel>
+  <Unicorn.corePart.parts.11.parts.0.parts.5.customLabel>右 耳</Unicorn.corePart.parts.11.parts.0.parts.5.customLabel>
+  <Unicorn.corePart.parts.12.customLabel>左 肩</Unicorn.corePart.parts.12.customLabel>
+  <Unicorn.corePart.parts.12.parts.0.customLabel>前 左 腿</Unicorn.corePart.parts.12.parts.0.customLabel>
+  <Unicorn.corePart.parts.12.parts.0.parts.0.customLabel>左 肱骨</Unicorn.corePart.parts.12.parts.0.parts.0.customLabel>
+  <Unicorn.corePart.parts.12.parts.0.parts.1.customLabel>左 桡骨</Unicorn.corePart.parts.12.parts.0.parts.1.customLabel>
+  <Unicorn.corePart.parts.12.parts.0.parts.2.customLabel>前 左 肢管骨</Unicorn.corePart.parts.12.parts.0.parts.2.customLabel>
+  <Unicorn.corePart.parts.12.parts.0.parts.3.customLabel>前 左 蹄</Unicorn.corePart.parts.12.parts.0.parts.3.customLabel>
+  <Unicorn.corePart.parts.13.customLabel>右 肩</Unicorn.corePart.parts.13.customLabel>
+  <Unicorn.corePart.parts.13.parts.0.customLabel>前 右 腿</Unicorn.corePart.parts.13.parts.0.customLabel>
+  <Unicorn.corePart.parts.13.parts.0.parts.0.customLabel>右 肱骨</Unicorn.corePart.parts.13.parts.0.parts.0.customLabel>
+  <Unicorn.corePart.parts.13.parts.0.parts.1.customLabel>右 桡骨</Unicorn.corePart.parts.13.parts.0.parts.1.customLabel>
+  <Unicorn.corePart.parts.13.parts.0.parts.2.customLabel>前 右 肢管骨</Unicorn.corePart.parts.13.parts.0.parts.2.customLabel>
+  <Unicorn.corePart.parts.13.parts.0.parts.3.customLabel>前 右 蹄</Unicorn.corePart.parts.13.parts.0.parts.3.customLabel>
+  <Unicorn.corePart.parts.16.customLabel>左 大腿</Unicorn.corePart.parts.16.customLabel>
+  <Unicorn.corePart.parts.16.parts.0.customLabel>后 左 腿</Unicorn.corePart.parts.16.parts.0.customLabel>
+  <Unicorn.corePart.parts.16.parts.0.parts.0.customLabel>左 股骨</Unicorn.corePart.parts.16.parts.0.parts.0.customLabel>
+  <Unicorn.corePart.parts.16.parts.0.parts.1.customLabel>左 胫骨</Unicorn.corePart.parts.16.parts.0.parts.1.customLabel>
+  <Unicorn.corePart.parts.16.parts.0.parts.2.customLabel>后 左 肢管骨</Unicorn.corePart.parts.16.parts.0.parts.2.customLabel>
+  <Unicorn.corePart.parts.16.parts.0.parts.3.customLabel>后 左 蹄</Unicorn.corePart.parts.16.parts.0.parts.3.customLabel>
+  <Unicorn.corePart.parts.17.customLabel>右 大腿</Unicorn.corePart.parts.17.customLabel>
+  <Unicorn.corePart.parts.17.parts.0.customLabel>后 右 腿</Unicorn.corePart.parts.17.parts.0.customLabel>
+  <Unicorn.corePart.parts.17.parts.0.parts.0.customLabel>右 股骨</Unicorn.corePart.parts.17.parts.0.parts.0.customLabel>
+  <Unicorn.corePart.parts.17.parts.0.parts.1.customLabel>右 胫骨</Unicorn.corePart.parts.17.parts.0.parts.1.customLabel>
+  <Unicorn.corePart.parts.17.parts.0.parts.2.customLabel>后 右 肢管骨</Unicorn.corePart.parts.17.parts.0.parts.2.customLabel>
+  <Unicorn.corePart.parts.17.parts.0.parts.3.customLabel>后 右 蹄</Unicorn.corePart.parts.17.parts.0.parts.3.customLabel>
+
+
+</LanguageData>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tail -->
+
+  <ArtificialTail.label>假尾巴</ArtificialTail.label>
+  <ArtificialTail.description>一个已安装的假尾巴</ArtificialTail.description>
+  <ArtificialTail.labelNoun>一个假尾巴</ArtificialTail.labelNoun>
+
+
+  <!-- Hoof -->
+
+  <PegHoof.label>木蹄</PegHoof.label>
+  <PegHoof.description>已安装的木蹄</PegHoof.description>
+  <PegHoof.labelNoun>木蹄</PegHoof.labelNoun>
+
+  <SimpleProstheticHoof.label>假肢蹄</SimpleProstheticHoof.label>
+  <SimpleProstheticHoof.description>已安装的假肢蹄</SimpleProstheticHoof.description>
+  <SimpleProstheticHoof.labelNoun>假肢蹄</SimpleProstheticHoof.labelNoun>
+
+
+  <!-- Wing -->
+
+  <NaturalWing.label>翅膀</NaturalWing.label>
+  <NaturalWing.description>天然的飞马翅膀</NaturalWing.description>
+  <NaturalWing.labelNoun>飞马翅膀</NaturalWing.labelNoun>
+
+  <SimpleProstheticWing.label>假肢翅膀</SimpleProstheticWing.label>
+  <SimpleProstheticWing.description>已安装的假肢翅膀</SimpleProstheticWing.description>
+  <SimpleProstheticWing.labelNoun>假肢翅膀</SimpleProstheticWing.labelNoun>
+
+  <BionicWing.label>仿生翅膀</BionicWing.label>
+  <BionicWing.description>已安装的仿生翅膀.</BionicWing.description>
+  <BionicWing.labelNoun>仿生翅膀</BionicWing.labelNoun>
+
+  <ArchotechWing.label>超凡仿生翅膀</ArchotechWing.label>
+  <ArchotechWing.description>已安装的超凡仿生翅膀</ArchotechWing.description>
+  <ArchotechWing.labelNoun>超凡仿生翅膀</ArchotechWing.labelNoun>
+
+
+  <!-- Horn -->
+
+  <NaturalHorn.label>角</NaturalHorn.label>
+  <NaturalHorn.description>天然的角</NaturalHorn.description>
+  <NaturalHorn.labelNoun>独角兽的角</NaturalHorn.labelNoun>
+
+  <BionicHorn.label>仿生角</BionicHorn.label>
+  <BionicHorn.description>已安装的仿生角</BionicHorn.description>
+  <BionicHorn.labelNoun>仿生角</BionicHorn.labelNoun>
+
+  <ArchotechHorn.label>超凡科技角</ArchotechHorn.label>
+  <ArchotechHorn.description>一个被安装的超凡科技角</ArchotechHorn.description>
+  <ArchotechHorn.labelNoun>超凡科技角</ArchotechHorn.labelNoun>
+
+
+</LanguageData>

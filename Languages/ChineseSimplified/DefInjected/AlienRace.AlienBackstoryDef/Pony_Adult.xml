@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pony_EveryponyPaPl.title>派对专家</Pony_EveryponyPaPl.title>
+  <Pony_EveryponyPaPl.titleShort>派对专家</Pony_EveryponyPaPl.titleShort>
+  <Pony_EveryponyPaPl.description>[PAWN_nameDef]喜欢看到别人的笑容并且享受快乐。[PAWN_pronoun]开始组织聚会和派对，让所有想要在这个地区玩乐的人都能参加。</Pony_EveryponyPaPl.description>
+
+  <Pony_EveryponyRG.title>皇家卫队士兵</Pony_EveryponyRG.title>
+  <Pony_EveryponyRG.titleShort>皇家卫队士兵</Pony_EveryponyRG.titleShort>
+  <Pony_EveryponyRG.description>[PAWN_nameDef]因其忠诚和奉献被招募进入皇家卫队。[PAWN_pronoun]亲自守护着王国的统治者之一，陪伴她参与了许多和平使命和慈善活动。</Pony_EveryponyRG.description>
+
+  <Pony_EveryponyBEH.title>曾经的和谐元素拥有者</Pony_EveryponyBEH.title>
+  <Pony_EveryponyBEH.titleShort>曾经的和谐元素拥有者</Pony_EveryponyBEH.titleShort>
+  <Pony_EveryponyBEH.description>从前，[PAWN_nameDef]曾是和谐元素的守护者——一位著名的抗恶斗士，也是所有需要帮助的人的倡导者。现在，[PAWN_pronoun]一无所有。</Pony_EveryponyBEH.description>
+
+  <Pony_EveryponyRST.title>奴隶贩子</Pony_EveryponyRST.title>
+  <Pony_EveryponyRST.titleShort>奴隶贩子</Pony_EveryponyRST.titleShort>
+  <Pony_EveryponyRST.description>[PAWN_nameDef] 只喜欢自己种族的小马。[PAWN_pronoun] 卷入了奴隶贸易，奴役那些不像[PAWN_objective]的人。</Pony_EveryponyRST.description>
+
+  <Pony_EveryponyFanEtD.title>永恒之日的狂热者</Pony_EveryponyFanEtD.title>
+  <Pony_EveryponyFanEtD.titleShort>永恒之日的狂热者</Pony_EveryponyFanEtD.titleShort>
+  <Pony_EveryponyFanEtD.description>[PAWN_nameDef]是永恒之日教派的成员。[PAWN_possessive]教派的目的是释放破灭之阳的灵魂，将世界陷入永恒之日。</Pony_EveryponyFanEtD.description>
+
+  <Pony_EveryponyFanEtN.title>永夜之月的狂热者</Pony_EveryponyFanEtN.title>
+  <Pony_EveryponyFanEtN.titleShort>永夜之月的狂热者</Pony_EveryponyFanEtN.titleShort>
+  <Pony_EveryponyFanEtN.description>[PAWN_nameDef]是永夜教的一员。[PAWN_possessive]教派的目的是释放梦魇之月的灵魂，将世界陷入永夜。</Pony_EveryponyFanEtN.description>
+
+  <Pony_EveryponyRiMa.title>仪式魔术师</Pony_EveryponyRiMa.title>
+  <Pony_EveryponyRiMa.titleShort>仪式魔术师</Pony_EveryponyRiMa.titleShort>
+  <Pony_EveryponyRiMa.description>[PAWN_nameDef]在魔法仪式领域接受了优秀的教育。[PAWN_pronoun]从事商业活动，向他人提供魔法服务。</Pony_EveryponyRiMa.description>
+
+  <Pony_EveryponyFiWi.title>风魔斗士</Pony_EveryponyFiWi.title>
+  <Pony_EveryponyFiWi.titleShort>风魔斗士</Pony_EveryponyFiWi.titleShort>
+  <Pony_EveryponyFiWi.description>[PAWN_nameDef]认为世界上所有的麻烦和分歧都源于风魔——一种古老的冰霜精灵，它们以仇恨为食。[PAWN_pronoun]竭力向他人证明这一点，并呼吁大家团结起来共同斗争。</Pony_EveryponyFiWi.description>
+
+  <Pony_EveryponyHoMA.title>魔法生物猎人</Pony_EveryponyHoMA.title>
+  <Pony_EveryponyHoMA.titleShort>魔法生物猎人</Pony_EveryponyHoMA.titleShort>
+  <Pony_EveryponyHoMA.description>尽管严禁捕猎稀有的魔法动物，[PAWN_nameDef]仍然从事偷猎并收集血腥的战利品。即使[PAWN_pronoun]被抓住并监禁，[PAWN_possessive]狩猎技巧也永远不会丧失。</Pony_EveryponyHoMA.description>
+
+  <Pony_EveryponyAntimage.title>魔法反对者</Pony_EveryponyAntimage.title>
+  <Pony_EveryponyAntimage.titleShort>魔法反对者</Pony_EveryponyAntimage.titleShort>
+  <Pony_EveryponyAntimage.description>有一天，由于悲剧性的环境，[PAWN_nameDef]和[PAWN_possessive]亲人受到了一位半学识的流浪魔法师所造成的伤害。因此，[PAWN_pronoun]对所有巫师变得充满敌意，鄙视魔法的一切表现。</Pony_EveryponyAntimage.description>
+
+  <Pony_EveryponyMissionary.title>和谐促进社成员</Pony_EveryponyMissionary.title>
+  <Pony_EveryponyMissionary.titleShort>和谐促进社成员</Pony_EveryponyMissionary.titleShort>
+  <Pony_EveryponyMissionary.description>[PAWN_nameDef]是和谐促进组织的成员。[PAWN_pronoun]在不同星球之间旅行，与各种文化社群交流，试图向他们介绍[PAWN_possessive]理念。</Pony_EveryponyMissionary.description>
+
+  <Pony_EveryponyEqlog.title>历史学家</Pony_EveryponyEqlog.title>
+  <Pony_EveryponyEqlog.titleShort>历史学家</Pony_EveryponyEqlog.titleShort>
+  <Pony_EveryponyEqlog.description>[PAWN_nameDef]对小马利亚的古代历史非常热衷。[PAWN_pronoun]在这个领域取得了真正的精通。</Pony_EveryponyEqlog.description>
+
+  <Pony_EveryponyCosPi.title>宇宙飞船驾驶员</Pony_EveryponyCosPi.title>
+  <Pony_EveryponyCosPi.titleShort>宇航员</Pony_EveryponyCosPi.titleShort>
+  <Pony_EveryponyCosPi.description>[PAWN_nameDef]因盗窃罪被判刑，面临一个选择：入狱服刑，或加入特殊的魔法航天队。在别无选择的情况下，[PAWN_pronoun]签署了一份服务合同，随后学习如何驾驶宇宙飞船和其他重型设备。</Pony_EveryponyCosPi.description>
+
+  <Pony_EveryponyCosRes.title>宇宙探险家</Pony_EveryponyCosRes.title>
+  <Pony_EveryponyCosRes.titleShort>宇宙探险家</Pony_EveryponyCosRes.titleShort>
+  <Pony_EveryponyCosRes.description>[PAWN_nameDef]一直以来都在想，遥远的星星之间隐藏着什么？有一天，[PAWN_pronoun]有了一个独特的机会加入了魔法宇航队，[PAWN_pronoun]毫不犹豫地答应了。</Pony_EveryponyCosRes.description>
+
+  <Pony_EveryponyCosCap.title>宇宙飞船船长</Pony_EveryponyCosCap.title>
+  <Pony_EveryponyCosCap.titleShort>船长</Pony_EveryponyCosCap.titleShort>
+  <Pony_EveryponyCosCap.description>作为一匹小马，[PAWN_nameDef]加入了宇宙海军陆战队。由于[PAWN_possessive]的杰出成就和模范服务，[PAWN_pronoun]迅速晋升，最终获得了宇宙飞船船长的职位。</Pony_EveryponyCosCap.description>
+
+  <Pony_EveryponyCosMech.title>宇宙飞船机修工</Pony_EveryponyCosMech.title>
+  <Pony_EveryponyCosMech.titleShort>宇宙飞船机修工</Pony_EveryponyCosMech.titleShort>
+  <Pony_EveryponyCosMech.description>[PAWN_nameDef]是一名普通的民用机械师。然而，当[PAWN_possessive]星球爆发战争时，[PAWN_pronoun]迅速被调动到太空部队。[PAWN_nameDef]被任命到一个专业职位，尽管[PAWN_pronoun]并没有一些专业知识和技能。</Pony_EveryponyCosMech.description>
+
+  <Pony_EveryponyCosTrader.title>星际商人</Pony_EveryponyCosTrader.title>
+  <Pony_EveryponyCosTrader.titleShort>星际商人</Pony_EveryponyCosTrader.titleShort>
+  <Pony_EveryponyCosTrader.description>作为一位才华横溢的谈判者和一个相当有进取心的小马，[PAWN_nameDef] 将[PAWN_possessive]一生都献给了贸易。在积累了相当数量的资本并建立了一些有影响力的关系后，[PAWN_pronoun] 决定在星际间试试运气。</Pony_EveryponyCosTrader.description>
+
+  <Pony_EveryponyCosSmug.title>协助走私的海关员工</Pony_EveryponyCosSmug.title>
+  <Pony_EveryponyCosSmug.titleShort>协助走私的海关员工</Pony_EveryponyCosSmug.titleShort>
+  <Pony_EveryponyCosSmug.description>[PAWN_nameDef]是太空海关的普通员工。考虑到[PAWN_pronoun]的薪水微薄，[PAWN_nameDef]决定加入一群艺术品走私团队，帮助他们越过边境运输货物，以获取额外的、不完全合法的收入。</Pony_EveryponyCosSmug.description>
+
+  <Pony_EveryponyAcTravel.title>穿越者</Pony_EveryponyAcTravel.title>
+  <Pony_EveryponyAcTravel.titleShort>穿越者</Pony_EveryponyAcTravel.titleShort>
+  <Pony_EveryponyAcTravel.description>[PAWN_nameDef]曾经是一个完全不同物种的生物。在经历了一次神秘的实验后，[PAWN_pronoun]发现自己变成了一只小马，在一个未知的星球上。[PAWN_pronoun]保留了过去的记忆，但无法完全重构出[PAWN_possessive]到达的任何细节。别无选择，[PAWN_pronoun]不得不适应[PAWN_possessive]新身体。</Pony_EveryponyAcTravel.description>
+
+
+</LanguageData>

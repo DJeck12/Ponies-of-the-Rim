@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName="InstallPegLeg"
-				or defName="InstallSimpleProstheticLeg"
-				or defName="InstallBionicLeg"
-				or defName="InstallArchotechLeg"]/appliedOnFixedBodyParts</xpath>
-				<value>
-					<li>Pony_FrontLeg</li>
-					<li>Pony_RearLeg</li>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/RecipeDef[defName="InstallPegLeg"
+	or defName="InstallSimpleProstheticLeg"
+	or defName="InstallBionicLeg"
+	or defName="InstallArchotechLeg"]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_FrontLeg</li>
+			<li>Pony_RearLeg</li>
+		</value>
 	</Operation>
 
 </Patch>

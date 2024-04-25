@@ -7,13 +7,14 @@
 		<defName>EPonySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Outlander</li>
 					<li>Outsider</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Earthpony</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -23,11 +24,12 @@
 		<defName>EPonyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Earthpony</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -37,11 +39,12 @@
 		<defName>EPonyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Earthpony</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Earthpony</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -53,13 +56,14 @@
 		<defName>PPonySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Outlander</li>
 					<li>Outsider</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Pegasus</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -69,11 +73,12 @@
 		<defName>PPonyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Pegasus</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -83,11 +88,12 @@
 		<defName>PPonyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Pegasus</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Pegasus</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -99,13 +105,14 @@
 		<defName>UPonySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFiltersOverride>
+		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
 				<li>Offworld</li>
 				<li>Outlander</li>
 				<li>Outsider</li>
 				<li>Pony_Everypony</li>
+				<li>Pony_Unicorn</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -115,11 +122,12 @@
 		<defName>UPonyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Unicorn</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -129,11 +137,12 @@
 		<defName>UPonyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Unicorn</race>
-		<backstoryFilters>
+		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
 					<li>Pony_Everypony</li>
+					<li>Pony_Unicorn</li>
 				</categories>
 			</li>
 		</backstoryFilters>

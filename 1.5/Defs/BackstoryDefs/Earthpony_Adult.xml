@@ -5,8 +5,8 @@
 		<defName>Pony_EarthponyFlorist</defName>
 		<title>florist</title>
 		<titleShort>florist</titleShort>
-		<description>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</description>
-		<slot>Adulthood</slot> 
+		<baseDesc>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -23,8 +23,8 @@
 		<defName>Pony_EarthponySurveyor</defName>
 		<title>magic plant farm</title>
 		<titleShort>surveyor</titleShort>
-		<description>[PAWN_nameDef] worked on a special farm where grew magical plants for scientists and alchemists. [PAWN_pronoun] has gained extensive specialized knowledge in this field.</description>
-		<slot>Adulthood</slot> 
+		<baseDesc>[PAWN_nameDef] worked on a special farm where grew magical plants for scientists and alchemists. [PAWN_pronoun] has gained extensive specialized knowledge in this field.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -39,9 +39,9 @@
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EarthponyZootranslator</defName>
 		<title>zootranslator</title>
-		<titleShort>zootranslator</titleShort>
-		<description>[PAWN_nameDef] was well versed in animal biocommunication. [PAWN_pronoun] easily found a common language with them, calmed down, quickly understood and satisfied their urgent needs.</description>
-		<slot>Adulthood</slot> 
+		<titleShort>translator</titleShort>
+		<baseDesc>[PAWN_nameDef] was well versed in animal biocommunication. [PAWN_pronoun] easily found a common language with them, calmed down, quickly understood and satisfied their urgent needs.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -53,14 +53,14 @@
 			<Intellectual>-2</Intellectual>
 		</skillGains>
 		<requiredWorkTags>Animals</requiredWorkTags>
-	</AlienRace.AlienBackstoryDef> 
+	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EarthponyDruid</defName>
 		<title>druid</title>
 		<titleShort>druid</titleShort>
-		<description>Thanks to outstanding magical talent, [PAWN_nameDef] could perform the most complex rituals aimed at manipulating natural forces. Even unicorns couldn't match [PAWN_possessive] skill.</description>
-		<slot>Adulthood</slot> 
+		<baseDesc>Thanks to outstanding magical talent, [PAWN_nameDef] could perform the most complex rituals aimed at manipulating natural forces. Even unicorns couldn't match [PAWN_possessive] skill.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -72,15 +72,14 @@
 			<Mining>-2</Mining>
 		</skillGains>
 		<requiredWorkTags>PlantWork, Animals</requiredWorkTags>
-	</AlienRace.AlienBackstoryDef> 
+	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EarthponyTamerMagAni</defName>
 		<title>tamer of magical animals</title>
-		<titleShort>beastcolt</titleShort>
-		<titleShortFemale>beastmare</titleShortFemale>
-		<description>[PAWN_nameDef] devoted life to the search and capture of exotic, magical animals. [PAWN_pronoun] has been collecting [PAWN_possessive] collection for many years.</description>
-		<slot>Adulthood</slot> 
+		<titleShort>beastmaster</titleShort>
+		<baseDesc>[PAWN_nameDef] devoted life to the search and capture of exotic, magical animals. [PAWN_pronoun] has been collecting [PAWN_possessive] collection for many years.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -105,14 +104,14 @@
 			</li>
 		</forcedTraitsChance>
 		<requiredWorkTags>Hunting</requiredWorkTags>
-	</AlienRace.AlienBackstoryDef> 
+	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EarthponyMutilated</defName>
 		<title>hopeless operation</title>
 		<titleShort>mutilated</titleShort>
-		<description>Unable to tolerate constant bullying towards [PAWN_possessive] race, [PAWN_nameDef] agreed to an experimental procedure for implanting horns and wings. The operation ended unsuccessfully and turned [PAWN_objective] into an invalid for a long time.</description>
-		<slot>Adulthood</slot> 
+		<baseDesc>Unable to tolerate constant bullying towards [PAWN_possessive] race, [PAWN_nameDef] agreed to an experimental procedure for implanting horns and wings. The operation ended unsuccessfully and turned [PAWN_objective] into an invalid for a long time.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -133,7 +132,7 @@
 		<defName>Pony_EarthponyStonecutter</defName>
 		<title>stone farm</title>
 		<titleShort>stonecutter</titleShort>
-		<description>Tired of the endless bustle of the city, [PAWN_nameDef] found peace on a remote stone farm, which inherited. [PAWN_pronoun] cultivated various crystal cultures for magicians and jewelers.</description>
+		<baseDesc>Tired of the endless bustle of the city, [PAWN_nameDef] found peace on a remote stone farm, which inherited. [PAWN_pronoun] cultivated various crystal cultures for magicians and jewelers.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
@@ -146,6 +145,16 @@
 			<Medicine>-3</Medicine>
 			<Social>-2</Social>
 		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Ascetic</defName>
+					</li>
+				</options>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
 		<requiredWorkTags>Mining</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
@@ -153,7 +162,7 @@
 		<defName>Pony_EarthponyWingless</defName>
 		<title>wingless pilot</title>
 		<titleShort>wingless</titleShort>
-		<description>[PAWN_nameDef] admired the flight of pegasus and wanted to connect life with the air. [PAWN_pronoun] fulfilled [PAWN_possessive] dream by learning how to pilot flying machines.</description>
+		<baseDesc>[PAWN_nameDef] admired the flight of pegasus and wanted to connect life with the air. [PAWN_pronoun] fulfilled [PAWN_possessive] dream by learning how to pilot flying machines.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
@@ -171,8 +180,8 @@
 		<defName>Pony_EarthponyAscCook</defName>
 		<title>ascetic cook</title>
 		<titleShort>cook</titleShort>
-		<description>Living among the representatives of the poor, [PAWN_nameDef] cooked simple but delicious dishes from herbal ingredients in a small public dining room. [PAWN_pronoun] learned to appreciate what [PAWN_pronoun] had.</description>
-		<slot>Adulthood</slot> 
+		<baseDesc>Living among the representatives of the poor, [PAWN_nameDef] cooked simple but delicious dishes from herbal ingredients in a small public dining room. [PAWN_pronoun] learned to appreciate what [PAWN_pronoun] had.</baseDesc>
+		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
 		</spawnCategories>
@@ -183,14 +192,17 @@
 			<Melee>-2</Melee>
 			<Intellectual>-2</Intellectual>
 		</skillGains>
-		<requiredWorkTags>Cooking<requiredWorkTags>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+		<requiredWorkTags>Cooking</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EarthponyAlchemist</defName>
 		<title>alchemist</title>
 		<titleShort>alchemist</titleShort>
-		<description>[PAWN_nameDef] was fond of reading and medicinal herbs. [PAWN_pronoun] studied their beneficial properties, developing various preparations and preparing decoctions from them.</description>
+		<baseDesc>[PAWN_nameDef] was fond of reading and medicinal herbs. [PAWN_pronoun] studied their beneficial properties, developing various preparations and preparing decoctions from them.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
@@ -209,7 +221,8 @@
 				</options>
 				<chance>50</chance>
 			</li>
-		</forcedTraitsChance>		
+		</forcedTraitsChance>
+		<requiredWorkTags>Intellectual</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
 </Defs>

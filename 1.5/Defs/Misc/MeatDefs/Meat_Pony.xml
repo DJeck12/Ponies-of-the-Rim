@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Meat_Pony</defName>
+		<label>pony meat</label>
+		<description>Raw buthered flesh of a member of the pony race. Can be used as food, but most individuals will not take this idea well. Considered cannibal food for both ponies and other races.</description>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
+			<color>(245,200,245)</color>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>0.8</MarketValue>
+			<Nutrition>0.05</Nutrition>
+			<Flammability>0.5</Flammability>
+			<Mass>0.03</Mass>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>RawBad</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<tickerType>Rare</tickerType>
+	</ThingDef>
+
+</Defs>

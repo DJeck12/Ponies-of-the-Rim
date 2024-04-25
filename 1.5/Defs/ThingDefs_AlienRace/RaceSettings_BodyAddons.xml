@@ -21,11 +21,6 @@
 					<BodyPart>
 						<bodyPart>Pony_Tail</bodyPart>
 					</BodyPart>
-					<Posture>
-						<drawnStanding>true</drawnStanding>
-						<drawnLaying>true</drawnLaying>
-						<drawnInBed>false</drawnInBed>
-					</Posture>
 				</conditions>
 				<!--<extendedGraphics>
 					<Age For="Baby">Things/Races/Pony/Tails/Pony_TailBaby</Age>
@@ -34,17 +29,23 @@
 					<south>
 						<bodyTypes>
 							<Pony>(0, 0.58)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</Child>
 						</bodyTypes>
 					</south>
 					<north>
 						<layerOffset>0.5</layerOffset>
 						<bodyTypes>
 							<Pony>(0, -0.3)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</Child>
 						</bodyTypes>
 					</north>
 					<east>
 						<bodyTypes>
 							<Pony>(0.36, 0)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</Child>
 						</bodyTypes>
 					</east>
 				</offsets>
@@ -151,11 +152,6 @@
 							<li>Legs</li>
 						</hiddenUnderApparelFor>
 					</Apparel>
-					<Posture>
-						<drawnStanding>true</drawnStanding>
-						<drawnLaying>true</drawnLaying>
-						<drawnInBed>false</drawnInBed>
-					</Posture>
 					<Or>
 						<Age>PonyAdult</Age>
 						<Age>PonyTeenager</Age>

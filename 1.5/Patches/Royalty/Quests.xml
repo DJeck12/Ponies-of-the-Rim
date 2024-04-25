@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+			<!-- Guests -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+					<value>
+						<li>
+							<categoryTag>PonyOutlander</categoryTag>
+							<pawnKinds>
+								<li>EPonyVillager</li>
+								<li>PPonyVillager</li>
+								<li>UPonyVillager</li>
+							</pawnKinds>
+						</li>
+					</value>
+				</li>
+			<!-- Mercenaries -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+					<value>
+						<li>
+							<categoryTag>PonyOutlander</categoryTag>
+							<pawnKinds>
+								<li>EPonyMercenary_Gunner_Acidifier</li>
+								<li>PPonyMercenary_Gunner_Acidifier</li>
+								<li>UPonyMercenary_Gunner_Acidifier</li>
+								<li>EPonyMercenary_Slasher_Acidifier</li>
+								<li>PPonyMercenary_Slasher_Acidifier</li>
+								<li>UPonyMercenary_Slasher_Acidifier</li>
+								<li>EPonyMercenary_Elite_Acidifier</li>
+								<li>PPonyMercenary_Elite_Acidifier</li>
+								<li>UPonyMercenary_Elite_Acidifier</li>
+							</pawnKinds>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

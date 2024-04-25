@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pony_UnicornYanWiz.title>魔法天才</Pony_UnicornYanWiz.title>
+  <Pony_UnicornYanWiz.titleShort>魔法天才</Pony_UnicornYanWiz.titleShort>
+  <Pony_UnicornYanWiz.description>在很小的年龄，[PAWN_nameDef]展现出了惊人的魔法能力。[PAWN_pronoun]轻松吸收知识并掌握了基本的魔法公式。</Pony_UnicornYanWiz.description>
+
+  <Pony_UnicornGlitFan.title>宝石迷</Pony_UnicornGlitFan.title>
+  <Pony_UnicornGlitFan.titleShort>宝石迷</Pony_UnicornGlitFan.titleShort>
+  <Pony_UnicornGlitFan.description>[PAWN_nameDef]对收集水晶和五光十色的石头有着特殊的喜爱。[PAWN_pronoun]用它们制作了令人惊叹的小饰品。</Pony_UnicornGlitFan.description>
+
+  <Pony_UnicornGifMag.title>魔法的幸运儿</Pony_UnicornGifMag.title>
+  <Pony_UnicornGifMag.titleShort>魔法的幸运儿</Pony_UnicornGifMag.titleShort>
+  <Pony_UnicornGifMag.description>[PAWN_nameDef]出生时就拥有令人难以置信的魔法天赋。即使是经验丰富、技艺高超的独角兽也对[PAWN_possessive]在这个领域的知识和技能感到惊讶。</Pony_UnicornGifMag.description>
+
+  <Pony_UnicornHorKnig.title>荣誉骑士</Pony_UnicornHorKnig.title>
+  <Pony_UnicornHorKnig.titleShort>荣誉骑士</Pony_UnicornHorKnig.titleShort>
+  <Pony_UnicornHorKnig.description>被遥远的小马利亚的故事所吸引，[PAWN_nameDef]经常想象自己是一位中世纪的骑士。[PAWN_pronoun]制作了自制的盔甲，并一直穿着。</Pony_UnicornHorKnig.description>
+
+  <Pony_UnicornIncSorc.title>魔法能力不足</Pony_UnicornIncSorc.title>
+  <Pony_UnicornIncSorc.titleShort>魔法能力不足</Pony_UnicornIncSorc.titleShort>
+  <Pony_UnicornIncSorc.description>从小开始，就显而易见地，[PAWN_nameDef]的魔法能力相当有限。[PAWN_possessive]魔法知识很少，但在其他领域的知识越来越广泛且更深入。</Pony_UnicornIncSorc.description>
+
+  <Pony_UnicornArPrin.title>富二代</Pony_UnicornArPrin.title>
+  <Pony_UnicornArPrin.titleShort>富二代</Pony_UnicornArPrin.titleShort>
+  <Pony_UnicornArPrin.description>[PAWN_nameDef] 出生在一个富裕的家庭，从未经历过贫困或焦虑。所有[PAWN_possessive]愿望都立刻得以满足。[PAWN_pronoun]过于傲慢，不屑于与他人交往，甚至不愿意做最简单的工作。</Pony_UnicornArPrin.description>
+
+  <Pony_UnicornDamHorn.title>断角者</Pony_UnicornDamHorn.title>
+  <Pony_UnicornDamHorn.titleShort>断角者</Pony_UnicornDamHorn.titleShort>
+  <Pony_UnicornDamHorn.description>有一天在一场比赛中发生了一起意外事故，导致[PAWN_nameDef]受伤了。此后，每个人都开始避开[PAWN_possessive]。与他人的交流几乎中断了，当[PAWN_nameDef]长大后，[PAWN_pronoun]开始憎恨整个世界。</Pony_UnicornDamHorn.description>
+
+
+</LanguageData>

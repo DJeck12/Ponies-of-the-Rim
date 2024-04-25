@@ -20,15 +20,33 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Gunner_Acidifier"]</xpath>
+		<attribute>Name</attribute>
+		<value>Mercenary_Gunner_Acidifier</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Slasher"]</xpath>
 		<attribute>Name</attribute>
 		<value>Mercenary_Slasher</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Slasher_Acidifier"]</xpath>
+		<attribute>Name</attribute>
+		<value>Mercenary_Slasher_Acidifier</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite"]</xpath>
 		<attribute>Name</attribute>
 		<value>Mercenary_Elite</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Acidifier"]</xpath>
+		<attribute>Name</attribute>
+		<value>Mercenary_Elite_Acidifier</value>
 	</Operation>
 
 </Patch>
