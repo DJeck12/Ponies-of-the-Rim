@@ -88,13 +88,18 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<BodyPart>
 									<bodyPart>Pony_Wing</bodyPart>
 									<bodyPartLabel>right wing</bodyPartLabel>
+									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
 							</conditions>
-							<!--<extendedGraphics>
-								<Age For="Baby"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-								<Age For="Child"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-								<Age For="PreTeenager"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-							</extendedGraphics>-->
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Races/Wounds/Wings/PegasusRight_Broken</Hediff>
+								<Hediff For="SimpleProstheticWing">Things/Races/Wounds/Wings/PegasusRight_Prosthetic</Hediff>
+								<Hediff For="BionicWing">Things/Races/Wounds/Wings/PegasusRight_Bionic</Hediff>
+								<Hediff For="ArchotechWing">Things/Races/Wounds/Wings/PegasusRight_Archotech</Hediff>
+								<Age For="PonyBaby">Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+								<Age For="PonyChild">Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+								<Age MayRequire="Ludeon.RimWorld.Biotech" For="PonyPreTeenager">Things/Races/Pony/Wings/PegasusRight_Baby</Age>
+							</extendedGraphics>
 							<offsets>
 								<south>
 									<layerOffset>-0.28</layerOffset>
@@ -118,13 +123,18 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<BodyPart>
 									<bodyPart>Pony_Wing</bodyPart>
 									<bodyPartLabel>left wing</bodyPartLabel>
+									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
 							</conditions>
-							<!--<extendedGraphics>
-								<Age For="Baby"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-								<Age For="Child"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-								<Age For="PreTeenager"Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-							</extendedGraphics>-->
+							<extendedGraphics>
+								<Hediff For="MissingBodyPart">Things/Races/Wounds/Wings/PegasusLeft_Broken</Hediff>
+								<Hediff For="SimpleProstheticWing">Things/Races/Wounds/Wings/PegasusLeft_Prosthetic</Hediff>
+								<Hediff For="BionicWing">Things/Races/Wounds/Wings/PegasusLeft_Bionic</Hediff>
+								<Hediff For="ArchotechWing">Things/Races/Wounds/Wings/PegasusLeft_Archotech</Hediff>
+								<Age For="PonyBaby">Things/Races/Pony/Wings/PegasusLeft_Baby</Age>
+								<Age For="PonyChild">Things/Races/Pony/Wings/PegasusLeft_Baby</Age>
+								<Age MayRequire="Ludeon.RimWorld.Biotech" For="PonyPreTeenager">Things/Races/Pony/Wings/PegasusLeft_Baby</Age>
+							</extendedGraphics>
 							<offsets>
 								<south>
 									<layerOffset>-0.28</layerOffset>

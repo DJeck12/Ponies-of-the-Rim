@@ -4,7 +4,6 @@
 	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
 		<categoryTag>PonyOutlander</categoryTag>
 		<allowedCultures>
-			<li>Rustican</li>
 			<li>Ponish</li>
 		</allowedCultures>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>

@@ -103,6 +103,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
 									<bodyPart>Pony_Horn</bodyPart>
+									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
 							</conditions>
 							<extendedGraphics>

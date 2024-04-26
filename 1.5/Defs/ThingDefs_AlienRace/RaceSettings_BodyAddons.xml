@@ -22,9 +22,9 @@
 						<bodyPart>Pony_Tail</bodyPart>
 					</BodyPart>
 				</conditions>
-				<!--<extendedGraphics>
-					<Age For="Baby">Things/Races/Pony/Tails/Pony_TailBaby</Age>
-				</extendedGraphics>-->
+				<extendedGraphics>
+					<Age For="PonyBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<bodyTypes>
@@ -75,6 +75,10 @@
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
+				<extendedGraphics>
+					<Hediff For="CochlearImplant">Things/Races/Wounds/Ears/Pony_EarRight_Prosthetic</Hediff>
+					<Hediff For="BionicEar">Things/Races/Wounds/Ears/Pony_EarRight_Bionic</Hediff>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.268</layerOffset>
@@ -114,6 +118,10 @@
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
+				<extendedGraphics>
+					<Hediff For="CochlearImplant">Things/Races/Wounds/Ears/Pony_EarLeft_Prosthetic</Hediff>
+					<Hediff For="BionicEar">Things/Races/Wounds/Ears/Pony_EarLeft_Bionic</Hediff>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.268</layerOffset>

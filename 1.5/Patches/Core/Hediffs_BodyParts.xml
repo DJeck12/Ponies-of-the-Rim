@@ -7,8 +7,7 @@
 	or defName="InstallBionicLeg"
 	or defName="InstallArchotechLeg"]/appliedOnFixedBodyParts</xpath>
 		<value>
-			<li>Pony_FrontLeg</li>
-			<li>Pony_RearLeg</li>
+			<li>Pony_Thigh</li>
 		</value>
 	</Operation>
 
