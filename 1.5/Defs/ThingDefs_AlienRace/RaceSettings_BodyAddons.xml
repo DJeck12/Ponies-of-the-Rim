@@ -23,10 +23,7 @@
 					</BodyPart>
 				</conditions>
 				<extendedGraphics>
-<<<<<<< Updated upstream
-=======
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
->>>>>>> Stashed changes
 					<Age For="PonyBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
 				</extendedGraphics>
 				<offsets>
@@ -80,14 +77,9 @@
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
-<<<<<<< Updated upstream
-					<Hediff For="CochlearImplant">Things/Races/Wounds/Ears/Pony_EarRight_Prosthetic</Hediff>
-					<Hediff For="BionicEar">Things/Races/Wounds/Ears/Pony_EarRight_Bionic</Hediff>
-=======
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarRight_Prosthetic</Hediff>
 					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarRight_Bionic</Hediff>
->>>>>>> Stashed changes
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -129,14 +121,9 @@
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
-<<<<<<< Updated upstream
-					<Hediff For="CochlearImplant">Things/Races/Wounds/Ears/Pony_EarLeft_Prosthetic</Hediff>
-					<Hediff For="BionicEar">Things/Races/Wounds/Ears/Pony_EarLeft_Bionic</Hediff>
-=======
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarLeft_Prosthetic</Hediff>
 					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarLeft_Bionic</Hediff>
->>>>>>> Stashed changes
 				</extendedGraphics>
 				<offsets>
 					<south>

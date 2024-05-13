@@ -17,27 +17,27 @@
 		<styleItemTags>
 			<li>
 				<tag>Pony</tag>
-				<baseWeight>10</baseWeight>
-				<weightFactor>1</weightFactor>
-			</li>
-			<li>
-				<tag>Urban</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
 			<li>
-				<tag>NoBeard</tag>
-				<baseWeight>10</baseWeight>
-				<weightFactor>1</weightFactor>
-			</li>
-			<li>
-				<tag>BeardRural</tag>
+				<tag>Urban</tag>
 				<baseWeight>0.1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
 			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.01</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
 				<tag>BeardUrban</tag>
-				<baseWeight>0.2</baseWeight>
+				<baseWeight>0.02</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
 			<li>

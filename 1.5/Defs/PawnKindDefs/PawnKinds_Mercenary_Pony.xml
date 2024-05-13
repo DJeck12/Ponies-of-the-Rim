@@ -34,11 +34,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
-<<<<<<< Updated upstream
-		<defName>EPonyMercenary_Gunner_Acidifier</defName>
-=======
 		<defName>Pony_EarthponyMercenary_Gunner_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>pony mercenary gunner</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
@@ -68,11 +64,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
-<<<<<<< Updated upstream
-		<defName>EPonyMercenary_Slasher_Acidifier</defName>
-=======
 		<defName>Pony_EarthponyMercenary_Slasher_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>pony mercenary slasher</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
@@ -103,11 +95,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
-<<<<<<< Updated upstream
-		<defName>EPonyMercenary_Elite_Acidifier</defName>
-=======
 		<defName>Pony_EarthponyMercenary_Elite_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>elite pony mercenary</label>
 		<labelPlural>elite pony mercenaries</labelPlural>
 		<race>Pony_Earthpony</race>
@@ -155,11 +143,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
-<<<<<<< Updated upstream
-		<defName>PPonyMercenary_Gunner_Acidifier</defName>
-=======
 		<defName>Pony_PegasusMercenary_Gunner_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>pony mercenary gunner</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
@@ -189,11 +173,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
-<<<<<<< Updated upstream
-		<defName>PPonyMercenary_Slasher_Acidifier</defName>
-=======
 		<defName>Pony_PegasusMercenary_Slasher_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>pony mercenary slasher</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
@@ -224,11 +204,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
-<<<<<<< Updated upstream
-		<defName>PPonyMercenary_Elite_Acidifier</defName>
-=======
 		<defName>Pony_PegasusMercenary_Elite_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>elite pony mercenary</label>
 		<labelPlural>elite pony mercenaries</labelPlural>
 		<race>Pony_Pegasus</race>
@@ -276,11 +252,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
-<<<<<<< Updated upstream
-		<defName>UPonyMercenary_Gunner_Acidifier</defName>
-=======
 		<defName>Pony_UnicornMercenary_Gunner_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>pony mercenary gunner</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
@@ -310,11 +282,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
-<<<<<<< Updated upstream
-		<defName>UPonyMercenary_Slasher_Acidifier</defName>
-=======
 		<defName>Pony_UnicornMercenary_Slasher_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>pony mercenary slasher</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
@@ -345,11 +313,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
-<<<<<<< Updated upstream
-		<defName>UPonyMercenary_Elite_Acidifier</defName>
-=======
 		<defName>Pony_UnicornMercenary_Elite_Acidifier</defName>
->>>>>>> Stashed changes
 		<label>elite pony mercenary</label>
 		<labelPlural>elite pony mercenaries</labelPlural>
 		<race>Pony_Unicorn</race>

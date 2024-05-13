@@ -4,7 +4,7 @@
 	<PreceptDef ParentName="PreceptRoleMultiBase">
 		<defName>Pony_Role_Prophet</defName>
 		<label>prophet</label>
-		<description>A wise soothsayer who specializes in social interactions. He can organize a storytelling feast where he can tell others about their future.</description>
+		<description>A wise prophet who specializes in social interactions. He can organize a storytelling feast where he can tell others about their future.</description>
 		<iconPath>UI/Roles/Prophet</iconPath>
 		<nameMaker>Pony_Prophet</nameMaker>
 		<roleRequirements>

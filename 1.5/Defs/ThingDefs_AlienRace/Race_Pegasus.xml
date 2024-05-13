@@ -16,13 +16,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
 			<PsychicSensitivity>1.1</PsychicSensitivity>
-<<<<<<< Updated upstream
-			<ComfyTemperatureMin>12</ComfyTemperatureMin>
-			<ComfyTemperatureMax>30</ComfyTemperatureMax>
-=======
 			<ComfyTemperatureMin>12</ComfyTemperatureMin> <!-- Will be replaced with a gene with Biotech. Defaults to 16 -->
 			<ComfyTemperatureMax>30</ComfyTemperatureMax> <!-- Will be replaced with a gene with Biotech. Defaults to 26 -->
->>>>>>> Stashed changes
 			<CarryingCapacity>80</CarryingCapacity>
 			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
@@ -104,15 +99,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								</BodyPart>
 							</conditions>
 							<extendedGraphics>
-<<<<<<< Updated upstream
-								<Hediff For="MissingBodyPart">Things/Races/Wounds/Wings/PegasusRight_Broken</Hediff>
-								<Hediff For="SimpleProstheticWing">Things/Races/Wounds/Wings/PegasusRight_Prosthetic</Hediff>
-								<Hediff For="BionicWing">Things/Races/Wounds/Wings/PegasusRight_Bionic</Hediff>
-								<Hediff For="ArchotechWing">Things/Races/Wounds/Wings/PegasusRight_Archotech</Hediff>
-								<Age For="PonyBaby">Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-								<Age For="PonyChild">Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-								<Age MayRequire="Ludeon.RimWorld.Biotech" For="PonyPreTeenager">Things/Races/Pony/Wings/PegasusRight_Baby</Age>
-=======
 								<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 								<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/PegasusRight_Broken</Hediff>
 								<Hediff For="SimpleProstheticWing">Things/Races/Pegasus/Prosthetic/PegasusRight_Prosthetic</Hediff>
@@ -121,7 +107,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<Age For="PonyBaby">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
 								<Age For="PonyChild">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
 								<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
->>>>>>> Stashed changes
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -150,15 +135,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								</BodyPart>
 							</conditions>
 							<extendedGraphics>
-<<<<<<< Updated upstream
-								<Hediff For="MissingBodyPart">Things/Races/Wounds/Wings/PegasusLeft_Broken</Hediff>
-								<Hediff For="SimpleProstheticWing">Things/Races/Wounds/Wings/PegasusLeft_Prosthetic</Hediff>
-								<Hediff For="BionicWing">Things/Races/Wounds/Wings/PegasusLeft_Bionic</Hediff>
-								<Hediff For="ArchotechWing">Things/Races/Wounds/Wings/PegasusLeft_Archotech</Hediff>
-								<Age For="PonyBaby">Things/Races/Pony/Wings/PegasusLeft_Baby</Age>
-								<Age For="PonyChild">Things/Races/Pony/Wings/PegasusLeft_Baby</Age>
-								<Age MayRequire="Ludeon.RimWorld.Biotech" For="PonyPreTeenager">Things/Races/Pony/Wings/PegasusLeft_Baby</Age>
-=======
 								<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 								<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/PegasusLeft_Broken</Hediff>
 								<Hediff For="SimpleProstheticWing">Things/Races/Pegasus/Prosthetic/PegasusLeft_Prosthetic</Hediff>
@@ -167,7 +143,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<Age For="PonyBaby">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
 								<Age For="PonyChild">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
 								<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
->>>>>>> Stashed changes
 							</extendedGraphics>
 							<offsets>
 								<south>
@@ -216,39 +191,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 			<graphicPaths>
 				<head>
-<<<<<<< Updated upstream
-					<path>Things/Races/Pony/Heads/</path>
-					<extendedGraphics>
-					<!-- Mutants -->
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">
-							<path>Things/Races/Pony/Heads/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
-							</extendedGraphics>
-						</Mutant>
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
-							<path>Things/Races/Pony/Heads/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
-							</extendedGraphics>
-						</Mutant>
-					<!-- Normal -->
-						<Gender For="Male">Things/Races/Pony/Heads/Male_Pony</Gender>
-						<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
-					</extendedGraphics>
-				</head>
-				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
-				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
-				<body>
-					<path>Things/Races/Pony/Bodies/Naked_Pony</path>
-					<extendedGraphics>
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">Things/Races/Pony/Heads/Naked_Pony</Mutant>
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Races/Pony/Heads/Naked_Pony</Mutant>
-					</extendedGraphics>
-				</body>
-				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
-				<swaddle>Transparent/Transparent</swaddle>
-=======
 					<path>Things/Races/Pony/Heads/Normal/Male_Pony</path>
 					<extendedGraphics>
 					<!-- Mutant -->
@@ -275,12 +217,10 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
 					<extendedGraphics>
 						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
-						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pony/Bodies/Furskin/Naked_Pony</Gene>
 					</extendedGraphics>
 				</body>
 				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
 				<swaddle>Pony/Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
->>>>>>> Stashed changes
 			</graphicPaths>
 		</alienRace>
 

@@ -12,13 +12,9 @@
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-<<<<<<< Updated upstream
-		<allowedCultures><li>Ponish</li></allowedCultures>
-=======
 		<allowedCultures>
 			<li>Ponish</li>
 		</allowedCultures>
->>>>>>> Stashed changes
 		<backstoryFilters>
 			<li>
 				<categories>

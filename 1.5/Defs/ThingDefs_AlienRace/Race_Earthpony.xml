@@ -19,11 +19,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed> <!-- Will be replaced with a gene with Biotech -->
 			<ComfyTemperatureMin>16</ComfyTemperatureMin>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
-<<<<<<< Updated upstream
-			<CarryingCapacity>90</CarryingCapacity>
-=======
 			<CarryingCapacity>90</CarryingCapacity> <!-- Will be replaced with a gene with Biotech. Defaults to 80 -->
->>>>>>> Stashed changes
 			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.8</PainShockThreshold> <!-- Will be replaced with a gene with Biotech. Defaults to 0.75 -->
@@ -121,39 +117,6 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 
 			<graphicPaths>
 				<head>
-<<<<<<< Updated upstream
-					<path>Things/Races/Pony/Heads/</path>
-					<extendedGraphics>
-					<!-- Mutants -->
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">
-							<path>Things/Races/Pony/Heads/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
-							</extendedGraphics>
-						</Mutant>
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">
-							<path>Things/Races/Pony/Heads/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
-							</extendedGraphics>
-						</Mutant>
-					<!-- Normal -->
-						<Gender For="Male">Things/Races/Pony/Heads/Male_Pony</Gender>
-						<Gender For="Female">Things/Races/Pony/Heads/Female_Pony</Gender>
-					</extendedGraphics>
-				</head>
-				<skeleton>Things/Races/Pony/Bodies/Dessicated_Pony</skeleton>
-				<skull>Things/Races/Pony/Heads/Pony_Skull</skull>
-				<body>
-					<path>Things/Races/Pony/Bodies/Naked_Pony</path>
-					<extendedGraphics>
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Shambler">Things/Races/Pony/Heads/Naked_Pony</Mutant>
-						<Mutant MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Things/Races/Pony/Heads/Naked_Pony</Mutant>
-					</extendedGraphics>
-				</body>
-				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
-				<swaddle>Transparent/Transparent</swaddle>
-=======
 					<path>Things/Races/Pony/Heads/Normal/Male_Pony</path>
 					<extendedGraphics>
 					<!-- Mutant -->
@@ -180,12 +143,10 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
 					<extendedGraphics>
 						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
-						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pony/Bodies/Furskin/Naked_Pony</Gene>
 					</extendedGraphics>
 				</body>
 				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
 				<swaddle>Pony/Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
->>>>>>> Stashed changes
 			</graphicPaths>
 		</alienRace>
 

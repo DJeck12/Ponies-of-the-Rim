@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-<<<<<<< Updated upstream
-	<Pony_PlayerExpedition.label>Поселение Пони</Pony_PlayerExpedition.label>
-=======
 	<Pony_PlayerExpedition.label>Поселение пони</Pony_PlayerExpedition.label>
->>>>>>> Stashed changes
 	<Pony_PlayerExpedition.description>Ваше поселение пони.</Pony_PlayerExpedition.description>
 	<Pony_PlayerExpedition.leaderTitle>лидер</Pony_PlayerExpedition.leaderTitle>
 	<Pony_PlayerExpedition.pawnSingular>поселенец</Pony_PlayerExpedition.pawnSingular>

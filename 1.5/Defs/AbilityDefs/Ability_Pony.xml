@@ -14,7 +14,7 @@
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<iconPath>UI/Abilities/Ability_Earthpony</iconPath>
-		<hotKey>Misc2</hotKey>
+		<hotKey>Misc1</hotKey>
 		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -51,7 +51,7 @@
 		<label>short flight</label>
 		<description>Fly a short distance using wings.</description>
 		<iconPath>UI/Abilities/Ability_Pegasus</iconPath>
-		<hotKey>Misc2</hotKey>
+		<hotKey>Misc1</hotKey>
 		<cooldownTicksRange>1200</cooldownTicksRange>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
@@ -65,7 +65,7 @@
 			<minRange>4</minRange>
 			<range>12</range>
 			<requireLineOfSight>False</requireLineOfSight>
-			<soundCast>Longjump_Jump</soundCast>
+			<soundCast>Flight_TakingOff</soundCast>
 			<soundLanding>Longjump_Land</soundLanding>
 			<flyWithCarriedThing>true</flyWithCarriedThing>
 			<targetParams>
@@ -83,7 +83,7 @@
 		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
 		<iconPath>UI/Abilities/Ability_Unicorn</iconPath>
 		<writeCombatLog>True</writeCombatLog>
-		<hotKey>Misc2</hotKey>
+		<hotKey>Misc1</hotKey>
 		<cooldownTicksRange>900</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>

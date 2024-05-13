@@ -8,14 +8,17 @@
 		<iconPath>UI/Memes/Harmony</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			<li>SupremacistIndividualist</li>
+			<li>Raider</li>
+			<li>Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
+		</exclusionTags>
 		<requireOne>
 			<li>
 				<li>Charity_Essential</li>
 				<li>Charity_Important</li>
 				<li>Charity_Worthwhile</li>
-			</li>
-			<li>
-				<li>Slavery_Abhorrent</li>
 			</li>
 			<li>
 				<li>Execution_Abhorrent</li>
@@ -31,6 +34,9 @@
 				<li>memeCreed->friendship</li>
 				<li>memeCreed->concord</li>
 				<li>memeCreed->kindship</li>
+				<li>memeConcept->harmony</li>
+				<li>memeConcept->helping</li>
+				<li>memeConcept->peace</li>
 				<li>memeLeaderNoun->friend of all</li>
 				<li>memeLeaderNoun->prince</li>
 				<li>memeLeaderNoun->leader</li>
@@ -99,17 +105,11 @@
 		</consumableBuildings>
 		<exclusionTags>
 			<li>RaceRelation</li>
-			<li>SupremacistIndividualist</li>
 		</exclusionTags>
 		<requireOne>
 			<li>
 				<li>HAR_AlienSlavery_Acceptable</li>
 				<li>HAR_AlienSlavery_Honorable</li>
-			</li>
-			<li>
-				<li>Execution_Required</li>
-				<li>Execution_RespectedIfGuilty</li>
-				<li>Execution_DontCare</li>
 			</li>
 			<li>
 				<li>HAR_AlienRaces_Abhorrent</li>
@@ -128,6 +128,12 @@
 				<li>Pony_Unicorn_Horrible</li>
 			</li>
 		</requireOne>
+	<!--	<agreeableTraits>
+			<li>
+				<def>Pony_RelationsForEarth</def>
+				<degree>1</degree>
+			</li>
+		</agreeableTraits> -->
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -212,17 +218,11 @@
 		</consumableBuildings>
 		<exclusionTags>
 			<li>RaceRelation</li>
-			<li>SupremacistIndividualist</li>
 		</exclusionTags>
 		<requireOne>
 			<li>
 				<li>HAR_AlienSlavery_Acceptable</li>
 				<li>HAR_AlienSlavery_Honorable</li>
-			</li>
-			<li>
-				<li>Execution_Required</li>
-				<li>Execution_RespectedIfGuilty</li>
-				<li>Execution_DontCare</li>
 			</li>
 			<li>
 				<li>HAR_AlienRaces_Abhorrent</li>
@@ -325,17 +325,11 @@
 		</consumableBuildings>
 		<exclusionTags>
 			<li>RaceRelation</li>
-			<li>SupremacistIndividualist</li>
 		</exclusionTags>
 		<requireOne>
 			<li>
 				<li>HAR_AlienSlavery_Acceptable</li>
 				<li>HAR_AlienSlavery_Honorable</li>
-			</li>
-			<li>
-				<li>Execution_Required</li>
-				<li>Execution_RespectedIfGuilty</li>
-				<li>Execution_DontCare</li>
 			</li>
 			<li>
 				<li>HAR_AlienRaces_Abhorrent</li>

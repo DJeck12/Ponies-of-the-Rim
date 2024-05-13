@@ -365,10 +365,6 @@
 		<labelNoun>a unicorn horn</labelNoun>
 		<description>A natural unicorn horn.</description>
 		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
-<<<<<<< Updated upstream
-		<spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
-=======
->>>>>>> Stashed changes
 		<isBad>false</isBad>
 		<stages>
 			<li>

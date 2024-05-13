@@ -6,9 +6,9 @@
 		<subSounds>
 			<li>
 				<grains>
-				<li Class="AudioGrain_Clip">
-					<clipPath>RitualSustainers/Ritual_Sustainer_Harmonism_Loop</clipPath>
-				</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RitualSustainers/Ritual_Sustainer_Harmonism_Loop</clipPath>
+					</li>
 				</grains>
 				<volumeRange>25</volumeRange>
 				<distRange>30~100</distRange>

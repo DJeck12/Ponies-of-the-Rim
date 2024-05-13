@@ -5,13 +5,13 @@
 		<defName>Pony_Prophet</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_roleName->prophet</li>
-				<li>r_roleName->soothsayer</li>
-				<li>r_roleName->oracle</li>
-				<li>r_roleName->seer</li>
-				<li>r_roleName->medium</li>
-				<li>r_roleName->astrologer</li>
-				<li>r_roleName->forecaster</li>
+				<li>r_roleName->[memeAdjective] [nameProphet]</li>
+				<li>nameProphet->soothsayer</li>
+				<li>nameProphet->oracle</li>
+				<li>nameProphet->seer</li>
+				<li>nameProphet->medium</li>
+				<li>nameProphet->astrologer</li>
+				<li>nameProphet->forecaster</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

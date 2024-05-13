@@ -55,29 +55,15 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfDamaged>false</careIfDamaged>
 			<bodyPartGroups>
-				<li>Torso</li>
+				<li>Waist</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>Pony_Utility_Neolithic</li>
+				<li>Pony_SaddleBag</li>
 			</tags>
-			<wornGraphicData>
-				<renderUtilityAsPack>true</renderUtilityAsPack>
-				<north>
-					<offset>(0.0,-0.1)</offset>
-				</north>
-				<south>
-					<offset>(0.0,0.20)</offset>
-				</south>
-				<east>
-					<offset>(-0.4,-0.1)</offset>
-				</east>
-				<west>
-					<offset>(0.4,-0.1)</offset>
-				</west>
-			</wornGraphicData>
 		</apparel>
 	</ThingDef>
 
@@ -139,22 +125,8 @@
 			</layers>
 			<tags>
 				<li>Pony_Utility_Industrial</li>
+				<li>Pony_BattleSaddle</li>
 			</tags>
-			<wornGraphicData>
-				<renderUtilityAsPack>true</renderUtilityAsPack>
-				<north>
-					<offset>(-0.1,-0.25)</offset>
-				</north>
-				<south>
-					<offset>(-0.1,-0.25)</offset>
-				</south>
-				<east>
-					<offset>(-0.1,-0.25)</offset>
-				</east>
-				<west>
-					<offset>(-0.1,-0.15)</offset>
-				</west>
-			</wornGraphicData>
 		</apparel>
 	</ThingDef>
 

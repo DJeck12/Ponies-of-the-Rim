@@ -3,12 +3,6 @@
 
 	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
 		<categoryTag>PonyOutlander</categoryTag>
-<<<<<<< Updated upstream
-		<allowedCultures>
-			<li>Ponish</li>
-		</allowedCultures>
-=======
->>>>>>> Stashed changes
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<allowedCultures>
 			<li>Ponish</li>
@@ -41,29 +35,6 @@
 				<!-- Normal fights, standard mix -->
 				<kindDef>Combat</kindDef>
 				<options>
-<<<<<<< Updated upstream
-					<EPonyVillager>5</EPonyVillager>
-					<PPonyVillager>5</PPonyVillager>
-					<UPonyVillager>5</UPonyVillager>
-					<EPonyTown_Guard>10</EPonyTown_Guard>
-					<PPonyTown_Guard>10</PPonyTown_Guard>
-					<UPonyTown_Guard>10</UPonyTown_Guard>
-					<EPonyGrenadier_Destructive>1.5</EPonyGrenadier_Destructive>
-					<PPonyGrenadier_Destructive>1.5</PPonyGrenadier_Destructive>
-					<UPonyGrenadier_Destructive>1.5</UPonyGrenadier_Destructive>
-					<EPonyMercenary_Slasher>7</EPonyMercenary_Slasher>
-					<PPonyMercenary_Slasher>7</PPonyMercenary_Slasher>
-					<UPonyMercenary_Slasher>7</UPonyMercenary_Slasher>
-					<EPonyMercenary_Gunner>10</EPonyMercenary_Gunner>
-					<PPonyMercenary_Gunner>10</PPonyMercenary_Gunner>
-					<UPonyMercenary_Gunner>10</UPonyMercenary_Gunner>
-					<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
-					<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
-					<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
-					<EPonyTown_Councilman>10</EPonyTown_Councilman>
-					<PPonyTown_Councilman>10</PPonyTown_Councilman>
-					<UPonyTown_Councilman>10</UPonyTown_Councilman>
-=======
 					<Pony_EarthponyVillager>5</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>5</Pony_PegasusVillager>
 					<Pony_UnicornVillager>5</Pony_UnicornVillager>
@@ -85,23 +56,11 @@
 					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
 					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
->>>>>>> Stashed changes
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-<<<<<<< Updated upstream
-					<EPonyVillager>20</EPonyVillager>
-					<PPonyVillager>20</PPonyVillager>
-					<UPonyVillager>20</UPonyVillager>
-					<EPonyTown_Guard>10</EPonyTown_Guard>
-					<PPonyTown_Guard>10</PPonyTown_Guard>
-					<UPonyTown_Guard>10</UPonyTown_Guard>
-					<EPonyTown_Councilman>10</EPonyTown_Councilman>
-					<PPonyTown_Councilman>10</PPonyTown_Councilman>
-					<UPonyTown_Councilman>10</UPonyTown_Councilman>
-=======
 					<Pony_EarthponyVillager>20</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>20</Pony_PegasusVillager>
 					<Pony_UnicornVillager>20</Pony_UnicornVillager>
@@ -111,21 +70,14 @@
 					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
 					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
->>>>>>> Stashed changes
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-<<<<<<< Updated upstream
-					<EPonyTown_Trader>1</EPonyTown_Trader>
-					<PPonyTown_Trader>1</PPonyTown_Trader>
-					<UPonyTown_Trader>1</UPonyTown_Trader>
-=======
 					<Pony_EarthponyTown_Trader>1</Pony_EarthponyTown_Trader>
 					<Pony_PegasusTown_Trader>1</Pony_PegasusTown_Trader>
 					<Pony_UnicornTown_Trader>1</Pony_UnicornTown_Trader>
->>>>>>> Stashed changes
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -134,26 +86,6 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-<<<<<<< Updated upstream
-					<EPonyVillager>3</EPonyVillager>
-					<PPonyVillager>3</PPonyVillager>
-					<UPonyVillager>3</UPonyVillager>
-					<EPonyTown_Guard>10</EPonyTown_Guard>
-					<PPonyTown_Guard>10</PPonyTown_Guard>
-					<UPonyTown_Guard>10</UPonyTown_Guard>
-					<EPonyGrenadier_Destructive>1.5</EPonyGrenadier_Destructive>
-					<PPonyGrenadier_Destructive>1.5</PPonyGrenadier_Destructive>
-					<UPonyGrenadier_Destructive>1.5</UPonyGrenadier_Destructive>
-					<EPonyMercenary_Slasher>7</EPonyMercenary_Slasher>
-					<PPonyMercenary_Slasher>7</PPonyMercenary_Slasher>
-					<UPonyMercenary_Slasher>7</UPonyMercenary_Slasher>
-					<EPonyMercenary_Gunner>10</EPonyMercenary_Gunner>
-					<PPonyMercenary_Gunner>10</PPonyMercenary_Gunner>
-					<UPonyMercenary_Gunner>10</UPonyMercenary_Gunner>
-					<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
-					<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
-					<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
-=======
 					<Pony_EarthponyVillager>3</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>3</Pony_PegasusVillager>
 					<Pony_UnicornVillager>3</Pony_UnicornVillager>
@@ -172,35 +104,11 @@
 					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
 					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
 					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
->>>>>>> Stashed changes
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-<<<<<<< Updated upstream
-					<EPonyVillager>10</EPonyVillager>
-					<PPonyVillager>10</PPonyVillager>
-					<UPonyVillager>10</UPonyVillager>
-					<EPonyTown_Guard>10</EPonyTown_Guard>
-					<PPonyTown_Guard>10</PPonyTown_Guard>
-					<UPonyTown_Guard>10</UPonyTown_Guard>
-					<EPonyGrenadier_Destructive>1.5</EPonyGrenadier_Destructive>
-					<PPonyGrenadier_Destructive>1.5</PPonyGrenadier_Destructive>
-					<UPonyGrenadier_Destructive>1.5</UPonyGrenadier_Destructive>
-					<EPonyMercenary_Slasher>7</EPonyMercenary_Slasher>
-					<PPonyMercenary_Slasher>7</PPonyMercenary_Slasher>
-					<UPonyMercenary_Slasher>7</UPonyMercenary_Slasher>
-					<EPonyMercenary_Gunner>10</EPonyMercenary_Gunner>
-					<PPonyMercenary_Gunner>10</PPonyMercenary_Gunner>
-					<UPonyMercenary_Gunner>10</UPonyMercenary_Gunner>
-					<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
-					<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
-					<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
-					<EPonyTown_Councilman>10</EPonyTown_Councilman>
-					<PPonyTown_Councilman>10</PPonyTown_Councilman>
-					<UPonyTown_Councilman>10</UPonyTown_Councilman>
-=======
 					<Pony_EarthponyVillager>10</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>10</Pony_PegasusVillager>
 					<Pony_UnicornVillager>10</Pony_UnicornVillager>
@@ -222,7 +130,6 @@
 					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
 					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
->>>>>>> Stashed changes
 				</options>
 			</li>
 		</pawnGroupMakers>

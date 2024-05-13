@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/MemeDef[defName="Raider"]</xpath>
+					<value>
+						<exclusionTags>
+							<li>Raider</li>
+						</exclusionTags>
+					</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
+						<value>
+							<li>Raider</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/MemeDef[defName="Cannibal"]</xpath>
+					<value>
+						<exclusionTags>
+							<li>Cannibal</li>
+						</exclusionTags>
+					</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
+						<value>
+							<li>Cannibal</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

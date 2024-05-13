@@ -12,6 +12,7 @@
 		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
+		<forceAlwaysRemovable>true</forceAlwaysRemovable>
 		<spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
 	</BodyPartDef>
 
