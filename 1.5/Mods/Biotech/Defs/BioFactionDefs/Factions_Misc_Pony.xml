@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>PonyxUnion</defName>
+		<label>ponyx union</label>
+		<description>A union of friendly anthropomorphic ponies. Being the result of genetic experimentation, ponyxes have adapted to live in a harsh post-apocalyptic world.\n\nThey are happy to make contact, but will not tolerate humiliation and will fight with anyone who violates the principles of harmony.</description>
+		<factionIconPath>World/Factions/PonyxUnion</factionIconPath>
+		<requiredCountAtGameStart>0</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<colorSpectrum>
+			<li>(0.35, 0.30, 0.60)</li>
+			<li>(0.45, 0.40, 0.90)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Harmony</li>
+		</requiredMemes>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.70</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Ponyx>999</Ponyx>
+			</xenotypeChances>
+		</xenotypeSet>
+		<configurationListOrderPriority>10</configurationListOrderPriority>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+		<modExtensions>
+			<li Class="VFECore.FactionDefExtension">			
+				<startingGoodwillByFactionDefs>
+					<Pony_PlayerExpedition>25~50</Pony_PlayerExpedition>
+				</startingGoodwillByFactionDefs>			
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+</Defs>
