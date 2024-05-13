@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\Ponies of the Rim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_opinionforearth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_opinionforearth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|p:\\ponies of the rim\\ponies of the rim\\gene_random.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\gene_random.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_everypony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_everypony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\randomgeneextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\randomgeneextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\scenpart_configpage_configurestartingpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\scenpart_configpage_configurestartingpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_pegasus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_pegasus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_pegasus_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_pegasus_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\ponytypeextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\ponytypeextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_opinionforpegasus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_opinionforpegasus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_opinionforpony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_opinionforpony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_unicorn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_unicorn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_earthpony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_earthpony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_earthpony_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_earthpony_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_everypony_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_everypony_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\Ponies of the Rim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\scenpart_configpage_configurestartingpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\Ponies of the Rim.csproj|solutionrelative:ponies of the rim\\scenpart_configpage_configurestartingpawns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\scalablebeltpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\scalablebeltpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\Ponies of the Rim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\scalablebeltpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\Ponies of the Rim.csproj|solutionrelative:ponies of the rim\\scalablebeltpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\thoughtworker_precept_unicorn_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\thoughtworker_precept_unicorn_social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gene_Random.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\Gene_Random.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Gene_Random.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\Gene_Random.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Gene_Random.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:14:29.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RandomGeneExtension.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\RandomGeneExtension.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\RandomGeneExtension.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\RandomGeneExtension.cs",
+              "RelativeToolTip": "Ponies of the Rim\\RandomGeneExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:12:47.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThoughtWorker_Precept_Everypony.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Everypony.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Everypony.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Everypony.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Everypony.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:45:52.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ThoughtWorker_Precept_Pegasus_Social.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Pegasus_Social.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Pegasus_Social.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Pegasus_Social.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Pegasus_Social.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:23:14.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThoughtWorker_Precept_Pegasus.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Pegasus.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Pegasus.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Pegasus.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Pegasus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:51:55.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:45:05.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThoughtWorker_OpinionForEarth.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_OpinionForEarth.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_OpinionForEarth.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_OpinionForEarth.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_OpinionForEarth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:29:06.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PonyTypeExtension.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\PonyTypeExtension.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\PonyTypeExtension.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\PonyTypeExtension.cs",
+              "RelativeToolTip": "Ponies of the Rim\\PonyTypeExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:24:45.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThoughtWorker_OpinionForPegasus.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_OpinionForPegasus.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_OpinionForPegasus.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_OpinionForPegasus.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_OpinionForPegasus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T08:33:18.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ThoughtWorker_Precept_Unicorn.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Unicorn.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Unicorn.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Unicorn.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Unicorn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:53:12.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ThoughtWorker_Precept_Earthpony.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Earthpony.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Earthpony.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Earthpony.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Earthpony.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:50:01.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThoughtWorker_OpinionForPony.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_OpinionForPony.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_OpinionForPony.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_OpinionForPony.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_OpinionForPony.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T12:07:07.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ScalableBeltPatch.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScalableBeltPatch.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ScalableBeltPatch.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScalableBeltPatch.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ScalableBeltPatch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:45:04.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ThoughtWorker_Precept_Unicorn_Social.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Unicorn_Social.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Unicorn_Social.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Unicorn_Social.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Unicorn_Social.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:25:31.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ThoughtWorker_Precept_Earthpony_Social.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Earthpony_Social.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Earthpony_Social.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Earthpony_Social.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Earthpony_Social.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:21:18.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ThoughtWorker_Precept_Everypony_Social.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Everypony_Social.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ThoughtWorker_Precept_Everypony_Social.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ThoughtWorker_Precept_Everypony_Social.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ThoughtWorker_Precept_Everypony_Social.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T18:13:51.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ScalableBeltPatch.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScalableBeltPatch.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ScalableBeltPatch.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScalableBeltPatch.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ScalableBeltPatch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T14:42:01.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "RelativeToolTip": "Ponies of the Rim\\ScenPart_ConfigPage_ConfigureStartingPawns.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:13:57.055Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

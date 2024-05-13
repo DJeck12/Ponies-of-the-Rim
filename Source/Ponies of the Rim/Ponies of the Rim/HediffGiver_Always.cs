@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Verse;
 
-namespace Ponies_of_the_Rim
+namespace PoniesOfTheRim
 {
     public class HediffGiver_Always : HediffGiver
     {

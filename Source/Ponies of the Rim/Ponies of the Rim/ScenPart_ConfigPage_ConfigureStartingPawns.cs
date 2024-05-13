@@ -1,8 +1,7 @@
 ﻿using RimWorld;
-using System;
 using Verse;
 
-namespace Ponies_of_the_Rim
+namespace PoniesOfTheRim
 {
     public class ScenPart_ConfigPage_ConfigureStartingPawnsCustom : ScenPart_ConfigPage_ConfigureStartingPawns
     {

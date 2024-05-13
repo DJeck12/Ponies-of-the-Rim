@@ -7,7 +7,7 @@ using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace Ponies_of_the_Rim
+namespace PoniesOfTheRim
 {
     [StaticConstructorOnStartup]
     public static class ScalableBeltPatch
@@ -28,7 +28,7 @@ namespace Ponies_of_the_Rim
 
         public static bool BeltScaleAtPatch(ref Vector2 __result, ref WornGraphicData __instance, BodyTypeDef bodyType)
         {
-            if (bodyType == BodyTypeDefOf.Pony)
+            if (bodyType == Pony_DefOf.Pony || bodyType == Pony_DefOf.PonyChild || bodyType == Pony_DefOf.PonyBaby)
             {
                 __result = scale;
                 return false;
@@ -38,7 +38,7 @@ namespace Ponies_of_the_Rim
 
         public static bool BeltOffsetAtPatch(ref Vector2 __result, ref Rot4 facing, BodyTypeDef bodyType)
         {
-            if (bodyType == BodyTypeDefOf.Pony)
+            if (bodyType == Pony_DefOf.Pony || bodyType == Pony_DefOf.PonyChild || bodyType == Pony_DefOf.PonyBaby)
             {
                 switch (facing.AsInt)
                 {
