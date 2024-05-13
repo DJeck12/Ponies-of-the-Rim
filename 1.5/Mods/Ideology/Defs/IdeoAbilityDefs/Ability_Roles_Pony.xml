@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>Pony_Foresight</defName>
+		<cooldownTicks>600000</cooldownTicks>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	</AbilityGroupDef>
+
+	<AbilityDef ParentName="SpeechBase">
+		<defName>Pony_Foresight</defName>
+		<label>foresight</label>
+		<description>Begin the fortune-telling ritual. If the predictions will be positive, everyone will be happy and get a mood boost. If it will be terrible, it will instill fear in all participants.</description>
+		<iconPath>UI/Abilities/Foresight</iconPath>
+		<groupDef>Pony_Foresight</groupDef>
+		<showWhenDrafted>false</showWhenDrafted>
+		<comps>
+			<li Class="CompProperties_AbilityStartRitual">
+				<ritualDef>Pony_FortuneTelling</ritualDef>
+				<allowedForChild>false</allowedForChild>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>Pony_Harmony</li>
+		</requiredMemes>
+	</AbilityDef>
+
+	<AbilityGroupDef>
+		<defName>Pony_Glimpse</defName>
+		<cooldownTicks>180000</cooldownTicks>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	</AbilityGroupDef>
+
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>Pony_Glimpse</defName>
+		<label>glimpse of fate</label>
+		<description>Talk to the prisoner, telling them of a wonderful life if they will live peacefully with us. This can only reduce a prisoner's resistance, but cannot recruit them.</description>
+		<iconPath>UI/Abilities/Glimpse</iconPath>
+		<warmupMote>Mote_WarmupWordOf</warmupMote>
+		<hotKey>Misc12</hotKey>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<warmupSound>Psycast_WordOf_Warmup</warmupSound>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<groupDef>Pony_Glimpse</groupDef>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<showWhenDrafted>false</showWhenDrafted>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<targetParams>
+				<neverTargetHostileFaction>true</neverTargetHostileFaction>
+				<onlyTargetPrisonersOfColony>true</onlyTargetPrisonersOfColony>
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>WordOfApply</fleckDef>
+				<sound>Psycast_WordOf_Effect</sound>
+			</li>
+			<li Class="CompProperties_AbilityOffsetPrisonerResistance">
+				<offset>-12</offset>
+			</li>
+			<li Class="CompProperties_AbilitySocialInteraction">
+				<interactionDef>WordOfTrust</interactionDef>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>Pony_Harmony</li>
+		</requiredMemes>
+	</AbilityDef>
+
+</Defs>

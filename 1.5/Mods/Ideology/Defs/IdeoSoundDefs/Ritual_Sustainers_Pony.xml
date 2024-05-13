@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<SoundDef ParentName="RitualSustainerBase">
+		<defName>Pony_RitualSustainer_Harmonism</defName>
+		<subSounds>
+			<li>
+				<grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>RitualSustainers/Ritual_Sustainer_Harmonism_Loop</clipPath>
+				</li>
+				</grains>
+				<volumeRange>25</volumeRange>
+				<distRange>30~100</distRange>
+				<sustainAttack>5.0</sustainAttack>
+				<sustainSkipFirstAttack>False</sustainSkipFirstAttack>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

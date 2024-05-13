@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Issue -->
+
+	<IssueDef>
+		<defName>Pony_Earthpony</defName>
+		<label>earthponies</label>
+		<iconPath>UI/Issues/Earthpony</iconPath>
+	</IssueDef>
+
+<!-- Precepts -->
+
+<!-- Abhorrent -->
+
+	<PreceptDef>
+		<defName>Pony_Earthpony_Abhorrent</defName>
+		<issue>Pony_Earthpony</issue>
+		<label>abhorrent</label>
+		<description>Earthponies are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>60</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Earthpony_Abhorrent</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Earthpony_Abhorrent_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Earthpony_Abhorrent</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Earthpony</workerClass>
+		<stages>
+			<li>
+				<label>hatred for earthponies</label>
+				<description>Earthponies are absolutely repulsive and I can't let them abuse our trust.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VFECore.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Abhorrent</li>
+					<li>HAR_AlienRaces_Abhorrent</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Earthpony_Abhorrent_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Earthpony_Social</workerClass>
+		<stages>
+			<li>
+				<label>disgusting earthpony!</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VFECore.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Abhorrent_Social</li>
+					<li>HAR_AlienRaces_Abhorrent_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Horrible -->
+
+	<PreceptDef>
+		<defName>Pony_Earthpony_Horrible</defName>
+		<issue>Pony_Earthpony</issue>
+		<label>disliked</label>
+		<description>Earthponies are different from us, even too different. We have to be on our guard and not trust them.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Earthpony_Horrible_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Earthpony_Horrible_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Earthpony_Social</workerClass>
+		<stages>
+			<li>
+				<label>distrust for earthponies</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VFECore.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Horrible_Social</li>
+					<li>HAR_AlienRaces_Horrible_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Standard -->
+
+	<PreceptDef>
+		<defName>Pony_Earthpony_Standard</defName>
+		<issue>Pony_Earthpony</issue>
+		<label>neutral</label>
+		<description>Earthponies are just like everyone and should be seen as no lesser or greater than us.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+	</PreceptDef>
+
+<!-- Respected -->
+
+	<PreceptDef>
+		<defName>Pony_Earthpony_Respected</defName>
+		<issue>Pony_Earthpony</issue>
+		<label>respected</label>
+		<description>Earthponies are very unique and deserve our admiration.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Earthpony_Respected_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Earthpony_Respected_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Earthpony_Social</workerClass>
+		<stages>
+			<li>
+				<label>respect for earthponies</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VFECore.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Respected_Social</li>
+					<li>HAR_AlienRaces_Respected_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Exalted -->
+
+	<PreceptDef>
+		<defName>Pony_Earthpony_Exalted</defName>
+		<issue>Pony_Earthpony</issue>
+		<label>exalted</label>
+		<description>Earthponies are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Earthpony_Exalted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Earthpony_Exalted_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Earthpony_Exalted</defName>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Earthpony</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<stages>
+			<li>
+				<label>love for earthponies</label>
+				<description>It makes me feel very happy knowing we live among earthponies.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VFECore.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Exalted</li>
+					<li>HAR_AlienRaces_Exalted</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Earthpony_Exalted_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Earthpony_Social</workerClass>
+		<stages>
+			<li>
+				<label>amazing earthpony!</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VFECore.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Exalted_Social</li>
+					<li>HAR_AlienRaces_Exalted_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+</Defs>

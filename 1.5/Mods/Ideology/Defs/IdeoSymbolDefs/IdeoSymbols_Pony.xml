@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<IdeoIconDef>
+		<defName>Pony_Celestia</defName>
+		<iconPath>UI/IdeoSymbols/Celestia</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Luna</defName>
+		<iconPath>UI/IdeoSymbols/Luna</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Cadance</defName>
+		<iconPath>UI/IdeoSymbols/Cadance</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+
+	<IdeoIconDef>
+		<defName>Pony_Twilight</defName>
+		<iconPath>UI/IdeoSymbols/Twilight</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+
+	<IdeoIconDef>
+		<defName>Pony_Pinkie</defName>
+		<iconPath>UI/IdeoSymbols/Pinkie</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+
+	<IdeoIconDef>
+		<defName>Pony_Rainbow</defName>
+		<iconPath>UI/IdeoSymbols/Rainbow</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+
+	<IdeoIconDef>
+		<defName>Pony_Fluttershy</defName>
+		<iconPath>UI/IdeoSymbols/Fluttershy</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+
+	<IdeoIconDef>
+		<defName>Pony_Applejack</defName>
+		<iconPath>UI/IdeoSymbols/Applejack</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Rarity</defName>
+		<iconPath>UI/IdeoSymbols/Rarity</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Gem</defName>
+		<iconPath>UI/IdeoSymbols/Gem</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_MagicWand</defName>
+		<iconPath>UI/IdeoSymbols/MagicWand</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_MagicWhirl</defName>
+		<iconPath>UI/IdeoSymbols/MagicWhirl</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Earthpony</defName>
+		<iconPath>UI/IdeoSymbols/Earthpony</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Pegasus</defName>
+		<iconPath>UI/IdeoSymbols/Pegasus</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Pony_Unicorn</defName>
+		<iconPath>UI/IdeoSymbols/Unicorn</iconPath>
+		<cultures>
+			<li>Ponish</li>
+		</cultures>
+	</IdeoIconDef>
+
+</Defs>

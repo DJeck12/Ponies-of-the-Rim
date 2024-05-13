@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RulePackDef>
+		<defName>Pony_Prophet</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_roleName->prophet</li>
+				<li>r_roleName->soothsayer</li>
+				<li>r_roleName->oracle</li>
+				<li>r_roleName->seer</li>
+				<li>r_roleName->medium</li>
+				<li>r_roleName->astrologer</li>
+				<li>r_roleName->forecaster</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
