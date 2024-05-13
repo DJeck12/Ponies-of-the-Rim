@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Earthpony"
+					or defName="Pony_Pegasus"
+					or defName="Pony_Unicorn"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>1800</MarketValue>
+							<MoveSpeed>4.6</MoveSpeed>
+							<PsychicSensitivity>1.1</PsychicSensitivity>
+							<ComfyTemperatureMin>16</ComfyTemperatureMin>
+							<ComfyTemperatureMax>26</ComfyTemperatureMax>
+							<CarryingCapacity>80</CarryingCapacity>
+							<Mass>55</Mass>
+							<LeatherAmount>65</LeatherAmount>
+							<PainShockThreshold>0.75</PainShockThreshold>
+							<RoyalFavorValue>4</RoyalFavorValue>
+						</statBases>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

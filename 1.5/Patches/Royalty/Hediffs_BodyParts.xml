@@ -10,7 +10,11 @@
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName="InstallFieldHand"
+<<<<<<< Updated upstream
 					or defName"="HandTalon"]/appliedOnFixedBodyParts</xpath>
+=======
+					or defName="HandTalon"]/appliedOnFixedBodyParts</xpath>
+>>>>>>> Stashed changes
 					<value>
 						<li>Pony_FrontHoof</li>
 					</value>

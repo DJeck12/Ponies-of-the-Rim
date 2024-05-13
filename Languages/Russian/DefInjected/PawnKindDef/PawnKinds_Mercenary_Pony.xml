@@ -8,12 +8,18 @@
 
 	<EPonyMercenary_Gunner.label>пони наёмник-стрелок</EPonyMercenary_Gunner.label>
 	<EPonyMercenary_Gunner.labelPlural>пони наёмники-стрелки</EPonyMercenary_Gunner.labelPlural>
+	<EPonyMercenary_Gunner_Acidifier.label>пони наёмник-стрелок</EPonyMercenary_Gunner_Acidifier.label>
+	<EPonyMercenary_Gunner_Acidifier.labelPlural>пони наёмники-стрелки</EPonyMercenary_Gunner_Acidifier.labelPlural>
 
 	<EPonyMercenary_Slasher.label>пони наёмник-вышибала</EPonyMercenary_Slasher.label>
 	<EPonyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</EPonyMercenary_Slasher.labelPlural>
+	<EPonyMercenary_Slasher_Acidifier.label>пони наёмник-вышибала</EPonyMercenary_Slasher_Acidifier.label>
+	<EPonyMercenary_Slasher_Acidifier.labelPlural>пони наёмники-вышибалы</EPonyMercenary_Slasher_Acidifier.labelPlural>
 
 	<EPonyMercenary_Elite.label>элитный пони наёмник</EPonyMercenary_Elite.label>
 	<EPonyMercenary_Elite.labelPlural>элитные пони наёмники</EPonyMercenary_Elite.labelPlural>
+	<EPonyMercenary_Elite_Acidifier.label>элитный пони наёмник</EPonyMercenary_Elite_Acidifier.label>
+	<EPonyMercenary_Elite_Acidifier.labelPlural>элитные пони наёмники</EPonyMercenary_Elite_Acidifier.labelPlural>
 
 <!-- Пегасы -->
 
@@ -22,12 +28,18 @@
 
 	<PPonyMercenary_Gunner.label>пони наёмник-стрелок</PPonyMercenary_Gunner.label>
 	<PPonyMercenary_Gunner.labelPlural>пони наёмники-стрелки</PPonyMercenary_Gunner.labelPlural>
+	<PPonyMercenary_Gunner_Acidifier.label>пони наёмник-стрелок</PPonyMercenary_Gunner_Acidifier.label>
+	<PPonyMercenary_Gunner_Acidifier.labelPlural>пони наёмники-стрелки</PPonyMercenary_Gunner_Acidifier.labelPlural>
 
 	<PPonyMercenary_Slasher.label>пони наёмник-вышибала</PPonyMercenary_Slasher.label>
 	<PPonyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</PPonyMercenary_Slasher.labelPlural>
+	<PPonyMercenary_Slasher_Acidifier.label>пони наёмник-вышибала</PPonyMercenary_Slasher_Acidifier.label>
+	<PPonyMercenary_Slasher_Acidifier.labelPlural>пони наёмники-вышибалы</PPonyMercenary_Slasher_Acidifier.labelPlural>
 
 	<PPonyMercenary_Elite.label>элитный пони наёмник</PPonyMercenary_Elite.label>
 	<PPonyMercenary_Elite.labelPlural>элитные пони наёмники</PPonyMercenary_Elite.labelPlural>
+	<PPonyMercenary_Elite_Acidifier.label>элитный пони наёмник</PPonyMercenary_Elite_Acidifier.label>
+	<PPonyMercenary_Elite_Acidifier.labelPlural>элитные пони наёмники</PPonyMercenary_Elite_Acidifier.labelPlural>
 
 <!-- Единороги -->
 
@@ -36,11 +48,17 @@
 
 	<UPonyMercenary_Gunner.label>пони наёмник-стрелок</UPonyMercenary_Gunner.label>
 	<UPonyMercenary_Gunner.labelPlural>пони наёмники-стрелки</UPonyMercenary_Gunner.labelPlural>
+	<UPonyMercenary_Gunner_Acidifier.label>пони наёмник-стрелок</UPonyMercenary_Gunner_Acidifier.label>
+	<UPonyMercenary_Gunner_Acidifier.labelPlural>пони наёмники-стрелки</UPonyMercenary_Gunner_Acidifier.labelPlural>
 
 	<UPonyMercenary_Slasher.label>пони наёмник-вышибала</UPonyMercenary_Slasher.label>
 	<UPonyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</UPonyMercenary_Slasher.labelPlural>
+	<UPonyMercenary_Slasher_Acidifier.label>пони наёмник-вышибала</UPonyMercenary_Slasher_Acidifier.label>
+	<UPonyMercenary_Slasher_Acidifier.labelPlural>пони наёмники-вышибалы</UPonyMercenary_Slasher_Acidifier.labelPlural>
 
 	<UPonyMercenary_Elite.label>элитный пони наёмник</UPonyMercenary_Elite.label>
 	<UPonyMercenary_Elite.labelPlural>элитные пони наёмники</UPonyMercenary_Elite.labelPlural>
+	<UPonyMercenary_Elite_Acidifier.label>элитный пони наёмник</UPonyMercenary_Elite_Acidifier.label>
+	<UPonyMercenary_Elite_Acidifier.labelPlural>элитные пони наёмники</UPonyMercenary_Elite_Acidifier.labelPlural>
 
 </LanguageData>

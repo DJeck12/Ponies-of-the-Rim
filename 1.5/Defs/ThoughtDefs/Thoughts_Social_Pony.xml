@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Pony_OpinionForPony</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForPony</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>pony</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>pony</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_OpinionForEarth</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForEarth</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>earthy</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>earthy</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_OpinionForPegasus</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForPegasus</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>have wings</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>have wings</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_OpinionForUnicorn</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForUnicorn</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>have a horn</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>have a horn</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

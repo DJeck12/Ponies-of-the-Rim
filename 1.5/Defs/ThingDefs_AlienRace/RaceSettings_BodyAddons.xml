@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<AlienRace.RaceSettings>
-		<defName>Bodyaddons_settings</defName>
+	<AlienRace.RaceSettings Name="PonyBodyAddons">
+		<defName>Pony_Bodyaddons_settings</defName>
 
 		<universalBodyAddons>
 		<!--Tail-->
@@ -23,6 +23,10 @@
 					</BodyPart>
 				</conditions>
 				<extendedGraphics>
+<<<<<<< Updated upstream
+=======
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+>>>>>>> Stashed changes
 					<Age For="PonyBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
 				</extendedGraphics>
 				<offsets>
@@ -34,7 +38,7 @@
 						</bodyTypes>
 					</south>
 					<north>
-						<layerOffset>0.5</layerOffset>
+						<layerOffset>-0.265</layerOffset>
 						<bodyTypes>
 							<Pony>(0, -0.3)</Pony>
 							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</Baby>
@@ -52,7 +56,7 @@
 			</li>
 		<!--Ears-->
 			<li>
-				<path>Things/Races/Pony/Ears/Pony_EarRight</path>
+				<path>Things/Races/Pony/Ears/Normal/Pony_EarRight</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -76,8 +80,14 @@
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
+<<<<<<< Updated upstream
 					<Hediff For="CochlearImplant">Things/Races/Wounds/Ears/Pony_EarRight_Prosthetic</Hediff>
 					<Hediff For="BionicEar">Things/Races/Wounds/Ears/Pony_EarRight_Bionic</Hediff>
+=======
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarRight_Prosthetic</Hediff>
+					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarRight_Bionic</Hediff>
+>>>>>>> Stashed changes
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -95,7 +105,7 @@
 				</offsets>
 			</li>
 			<li>
-				<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
+				<path>Things/Races/Pony/Ears/Normal/Pony_EarLeft</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -119,8 +129,14 @@
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
+<<<<<<< Updated upstream
 					<Hediff For="CochlearImplant">Things/Races/Wounds/Ears/Pony_EarLeft_Prosthetic</Hediff>
 					<Hediff For="BionicEar">Things/Races/Wounds/Ears/Pony_EarLeft_Bionic</Hediff>
+=======
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarLeft_Prosthetic</Hediff>
+					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarLeft_Bionic</Hediff>
+>>>>>>> Stashed changes
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -165,11 +181,16 @@
 						<Age>PonyTeenager</Age>
 					</Or>
 				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+				</extendedGraphics>
 				<offsets>
 					<east>
-						<layerOffset>-0.29</layerOffset>
+						<layerOffset>-0.295</layerOffset>
 						<bodyTypes>
 							<Pony>(0.22, -0.1)</Pony>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</Child>
 						</bodyTypes>
 					</east>
 				</offsets>

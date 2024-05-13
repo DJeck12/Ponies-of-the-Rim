@@ -18,6 +18,12 @@
 				</forcedRaceTraitEntries>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
 				<humanRecipeImport>true</humanRecipeImport>
+			<!-- Xeno settings -->
+				<notXenophobistTowards>
+					<li>Pony_Earthpony</li>
+					<li>Pony_Unicorn</li>
+					<li>Pony_Pegasus</li>
+				</notXenophobistTowards>
 
 				<alienPartGenerator>
 					<headTypes Inherit="False">
@@ -60,6 +66,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</bodyTypes>
+					<oldHairAgeRange>70.0~90.0</oldHairAgeRange>
 				</alienPartGenerator>
 			</generalSettings>
 		<!-- Thoughts -->
@@ -81,25 +88,38 @@
 			</thoughtSettings>
 
 			<raceRestriction>
+			<!-- Apparel -->
+				<apparelList>
+					<li>Pony_SaddleBag</li>
+					<li>Pony_BattleSaddle</li>
+				</apparelList>
+			<!-- Traits -->
+				<blackTraitList>
+					<li>Pony_RelationsForPony</li>
+				</blackTraitList>
 			<!-- Food -->
 				<foodList>
 					<li>Hay</li>
 				</foodList>
 			<!-- Genes -->
+				<blackXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ponyx</li>
+				</blackXenotypeList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyMagic</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_NaturePower</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PegasusWings</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_UnicornHorn</li>
+				</blackGeneList>
 				<blackGeneTags>
-					<li>Tail</li>
 					<li>Fur</li>
-					<li>BeardStyle</li>
-					<li>HairStyle</li>
 					<li>HairColor</li>
+					<li>Head</li>
+					<li>HeadType</li>
 				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>
-					<li>Ears</li>
-					<li>Nose</li>
 					<li>Jaw</li>
-					<li>Headbone</li>
-					<li>Head</li>
 					<li>BodyType</li>
 				</blackEndoCategories>
 			</raceRestriction>

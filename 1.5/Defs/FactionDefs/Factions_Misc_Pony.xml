@@ -3,10 +3,19 @@
 
 	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
 		<categoryTag>PonyOutlander</categoryTag>
+<<<<<<< Updated upstream
 		<allowedCultures>
 			<li>Ponish</li>
 		</allowedCultures>
+=======
+>>>>>>> Stashed changes
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -32,6 +41,7 @@
 				<!-- Normal fights, standard mix -->
 				<kindDef>Combat</kindDef>
 				<options>
+<<<<<<< Updated upstream
 					<EPonyVillager>5</EPonyVillager>
 					<PPonyVillager>5</PPonyVillager>
 					<UPonyVillager>5</UPonyVillager>
@@ -53,11 +63,35 @@
 					<EPonyTown_Councilman>10</EPonyTown_Councilman>
 					<PPonyTown_Councilman>10</PPonyTown_Councilman>
 					<UPonyTown_Councilman>10</UPonyTown_Councilman>
+=======
+					<Pony_EarthponyVillager>5</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>5</Pony_PegasusVillager>
+					<Pony_UnicornVillager>5</Pony_UnicornVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
+					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
+					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
+					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
+					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
+					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
+					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
+					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
+					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
+					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
+					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+>>>>>>> Stashed changes
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
+<<<<<<< Updated upstream
 					<EPonyVillager>20</EPonyVillager>
 					<PPonyVillager>20</PPonyVillager>
 					<UPonyVillager>20</UPonyVillager>
@@ -67,14 +101,31 @@
 					<EPonyTown_Councilman>10</EPonyTown_Councilman>
 					<PPonyTown_Councilman>10</PPonyTown_Councilman>
 					<UPonyTown_Councilman>10</UPonyTown_Councilman>
+=======
+					<Pony_EarthponyVillager>20</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>20</Pony_PegasusVillager>
+					<Pony_UnicornVillager>20</Pony_UnicornVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
+					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
+					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+>>>>>>> Stashed changes
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
+<<<<<<< Updated upstream
 					<EPonyTown_Trader>1</EPonyTown_Trader>
 					<PPonyTown_Trader>1</PPonyTown_Trader>
 					<UPonyTown_Trader>1</UPonyTown_Trader>
+=======
+					<Pony_EarthponyTown_Trader>1</Pony_EarthponyTown_Trader>
+					<Pony_PegasusTown_Trader>1</Pony_PegasusTown_Trader>
+					<Pony_UnicornTown_Trader>1</Pony_UnicornTown_Trader>
+>>>>>>> Stashed changes
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -83,6 +134,7 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
+<<<<<<< Updated upstream
 					<EPonyVillager>3</EPonyVillager>
 					<PPonyVillager>3</PPonyVillager>
 					<UPonyVillager>3</UPonyVillager>
@@ -101,11 +153,32 @@
 					<EPonyMercenary_Elite>10</EPonyMercenary_Elite>
 					<PPonyMercenary_Elite>10</PPonyMercenary_Elite>
 					<UPonyMercenary_Elite>10</UPonyMercenary_Elite>
+=======
+					<Pony_EarthponyVillager>3</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>3</Pony_PegasusVillager>
+					<Pony_UnicornVillager>3</Pony_UnicornVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
+					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
+					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
+					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
+					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
+					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
+					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
+					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
+					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+>>>>>>> Stashed changes
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
+<<<<<<< Updated upstream
 					<EPonyVillager>10</EPonyVillager>
 					<PPonyVillager>10</PPonyVillager>
 					<UPonyVillager>10</UPonyVillager>
@@ -127,6 +200,29 @@
 					<EPonyTown_Councilman>10</EPonyTown_Councilman>
 					<PPonyTown_Councilman>10</PPonyTown_Councilman>
 					<UPonyTown_Councilman>10</UPonyTown_Councilman>
+=======
+					<Pony_EarthponyVillager>10</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>10</Pony_PegasusVillager>
+					<Pony_UnicornVillager>10</Pony_UnicornVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
+					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
+					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
+					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
+					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
+					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
+					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
+					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
+					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
+					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
+					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+>>>>>>> Stashed changes
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -137,10 +233,12 @@
 		<label>civil pony union</label>
 		<description>These ponies have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
 		<colorSpectrum>
-			<li>(0.7, 0.30, 0.60)</li>
-			<li>(0.8, 0.45, 0.75)</li>
+			<li>(0.75, 0.33, 0.60)</li>
+			<li>(1, 0.45, 0.78)</li>
 		</colorSpectrum>
-		<classicIdeo>true</classicIdeo>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Harmony</li>
+		</requiredMemes>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
 		<factionIconPath>World/Factions/PonyOutlanderCivil</factionIconPath>
 	</FactionDef>
@@ -150,8 +248,8 @@
 		<label>rough pony union</label>
 		<description>These ponies have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
 		<colorSpectrum>
-			<li>(0, 0.6, 0.3)</li>
-			<li>(0, 0.75, 0.45)</li>
+			<li>(0.42, 0.75, 0.33)</li>
+			<li>(0.56, 1, 0.45)</li>
 		</colorSpectrum>
 		<naturalEnemy>true</naturalEnemy>
 		<requiredMemes>

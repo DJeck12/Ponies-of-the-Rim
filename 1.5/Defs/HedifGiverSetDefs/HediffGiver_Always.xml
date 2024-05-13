@@ -4,7 +4,7 @@
 	<HediffGiverSetDef>
 		<defName>Pony</defName>
 		<hediffGivers>
-			<li Class = "Ponies_of_the_Rim.HediffGiver_Always">
+			<li Class = "PoniesOfTheRim.HediffGiver_Always">
 				<hediff>NaturalWing</hediff>
 				<partsToAffect>
 					<li>Pony_Wing</li>
@@ -13,7 +13,7 @@
 				<sendLetter>false</sendLetter>
 			</li>
 
-			<li Class = "Ponies_of_the_Rim.HediffGiver_Always">
+			<li Class = "PoniesOfTheRim.HediffGiver_Always">
 				<hediff>NaturalHorn</hediff>
 				<partsToAffect>
 					<li>Pony_Horn</li>

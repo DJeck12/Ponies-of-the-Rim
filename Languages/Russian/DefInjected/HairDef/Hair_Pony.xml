@@ -2,24 +2,24 @@
 <LanguageData>
 
 	<Pony_DashHair.label>Рывок</Pony_DashHair.label>
-	<Pony_DashColorHair.label>Рывок (Цветная)</Pony_DashColorHair.label>
-	<Pony_DashStripeHair.label>Рывок (Полосатая)</Pony_DashStripeHair.label>
+<!--	<Pony_DashColorHair.label>Рывок (Цветная)</Pony_DashColorHair.label>
+	<Pony_DashStripeHair.label>Рывок (Полосатая)</Pony_DashStripeHair.label> -->
 	<Pony_SparkleHair.label>Искра</Pony_SparkleHair.label>
-	<Pony_SparkleColorHair.label>Искра (Цветная)</Pony_SparkleColorHair.label>
-	<Pony_SparkleStripeHair.label>Искра (Полосатая)</Pony_SparkleStripeHair.label>
+<!--	<Pony_SparkleColorHair.label>Искра (Цветная)</Pony_SparkleColorHair.label>
+	<Pony_SparkleStripeHair.label>Искра (Полосатая)</Pony_SparkleStripeHair.label> -->
 	<Pony_AppleHair.label>Яблочная</Pony_AppleHair.label>
-	<Pony_AppleColorHair.label>Яблочная (Цветная)</Pony_AppleColorHair.label>
+<!--	<Pony_AppleColorHair.label>Яблочная (Цветная)</Pony_AppleColorHair.label> -->
 	<Pony_PartyHair.label>Вечеринка</Pony_PartyHair.label>
-	<Pony_PartyColorHair.label>Вечеринка (Цветная)</Pony_PartyColorHair.label>
+<!--	<Pony_PartyColorHair.label>Вечеринка (Цветная)</Pony_PartyColorHair.label> -->
 	<Pony_RarityHair.label>Раритетная</Pony_RarityHair.label>
 	<Pony_FlutterHair.label>Вьющаяся</Pony_FlutterHair.label>
-	<Pony_FlutterColorHair.label>Вьющаяся (Цветная)</Pony_FlutterColorHair.label>
+<!--	<Pony_FlutterColorHair.label>Вьющаяся (Цветная)</Pony_FlutterColorHair.label> -->
 	<Pony_BloomHair.label>Цветение</Pony_BloomHair.label>
-	<Pony_BloomColorHair.label>Цветение (Цветная)</Pony_BloomColorHair.label>
+<!--	<Pony_BloomColorHair.label>Цветение (Цветная)</Pony_BloomColorHair.label> -->
 	<Pony_SweetHair.label>Сладость</Pony_SweetHair.label>
-	<Pony_SweetColorHair.label>Сладость (Цветная)</Pony_SweetColorHair.label>
+<!--	<Pony_SweetColorHair.label>Сладость (Цветная)</Pony_SweetColorHair.label> -->
 	<Pony_ScootHair.label>Упрямая</Pony_ScootHair.label>
-	<Pony_ScootColorHair.label>Упрямая (Цветная)</Pony_ScootColorHair.label>
+<!--	<Pony_ScootColorHair.label>Упрямая (Цветная)</Pony_ScootColorHair.label> -->
 	<Pony_NightHair.label>Полуночная</Pony_NightHair.label>
 
 </LanguageData>

@@ -4,7 +4,7 @@
 <!-- Earthpony -->
 
 	<PawnKindDef ParentName="SlaveBase">
-		<defName>EPonySlave</defName>
+		<defName>Pony_EarthponySlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFiltersOverride Inherit="False">
@@ -21,7 +21,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>EPonyRefugee</defName>
+		<defName>Pony_EarthponyRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
@@ -36,7 +36,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="VillagerBase">
-		<defName>EPonyVillager</defName>
+		<defName>Pony_EarthponyVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
@@ -53,7 +53,7 @@
 <!-- Pegasus -->
 
 	<PawnKindDef ParentName="SlaveBase">
-		<defName>PPonySlave</defName>
+		<defName>Pony_PegasusSlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFiltersOverride Inherit="False">
@@ -70,7 +70,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>PPonyRefugee</defName>
+		<defName>Pony_PegasusRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
@@ -85,7 +85,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="VillagerBase">
-		<defName>PPonyVillager</defName>
+		<defName>Pony_PegasusVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
@@ -102,7 +102,7 @@
 <!-- Unicorn -->
 
 	<PawnKindDef ParentName="SlaveBase">
-		<defName>UPonySlave</defName>
+		<defName>Pony_UnicornSlave</defName>
 		<label>pony slave</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFiltersOverride Inherit="False">
@@ -119,7 +119,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>UPonyRefugee</defName>
+		<defName>Pony_UnicornRefugee</defName>
 		<label>pony refugee</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
@@ -134,7 +134,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="VillagerBase">
-		<defName>UPonyVillager</defName>
+		<defName>Pony_UnicornVillager</defName>
 		<label>pony villager</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">

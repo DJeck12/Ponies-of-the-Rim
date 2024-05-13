@@ -14,7 +14,11 @@
 			<parts>
 
 				<!-- Config pages -->
+<<<<<<< Updated upstream
 				<li Class="Ponies_of_the_Rim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
+=======
+				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
+>>>>>>> Stashed changes
 				<def>ConfigPage_ConfigureStartingPawns</def>
 				<customSummary>Start with 4 ponies.</customSummary>
 				<pawnCount>4</pawnCount>

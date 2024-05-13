@@ -15,9 +15,15 @@
 						<li>
 							<categoryTag>PonyOutlander</categoryTag>
 							<pawnKinds>
+<<<<<<< Updated upstream
 								<li>EPonyVillager</li>
 								<li>PPonyVillager</li>
 								<li>UPonyVillager</li>
+=======
+								<li>Pony_EarthponyVillager</li>
+								<li>Pony_PegasusVillager</li>
+								<li>Pony_UnicornVillager</li>
+>>>>>>> Stashed changes
 							</pawnKinds>
 						</li>
 					</value>
@@ -29,6 +35,7 @@
 						<li>
 							<categoryTag>PonyOutlander</categoryTag>
 							<pawnKinds>
+<<<<<<< Updated upstream
 								<li>EPonyMercenary_Gunner_Acidifier</li>
 								<li>PPonyMercenary_Gunner_Acidifier</li>
 								<li>UPonyMercenary_Gunner_Acidifier</li>
@@ -38,6 +45,17 @@
 								<li>EPonyMercenary_Elite_Acidifier</li>
 								<li>PPonyMercenary_Elite_Acidifier</li>
 								<li>UPonyMercenary_Elite_Acidifier</li>
+=======
+								<li>Pony_EarthponyMercenary_Gunner_Acidifier</li>
+								<li>Pony_PegasusMercenary_Gunner_Acidifier</li>
+								<li>Pony_UnicornMercenary_Gunner_Acidifier</li>
+								<li>Pony_EarthponyMercenary_Slasher_Acidifier</li>
+								<li>Pony_PegasusMercenary_Slasher_Acidifier</li>
+								<li>Pony_UnicornMercenary_Slasher_Acidifier</li>
+								<li>Pony_EarthponyMercenary_Elite_Acidifier</li>
+								<li>Pony_PegasusMercenary_Elite_Acidifier</li>
+								<li>Pony_UnicornMercenary_Elite_Acidifier</li>
+>>>>>>> Stashed changes
 							</pawnKinds>
 						</li>
 					</value>

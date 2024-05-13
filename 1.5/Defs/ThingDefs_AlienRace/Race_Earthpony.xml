@@ -14,32 +14,43 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 
 		<statBases>
 			<MarketValue>1800</MarketValue>
-			<MoveSpeed>4.7</MoveSpeed>
+			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
 			<PsychicSensitivity>1.1</PsychicSensitivity>
-			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed> <!-- Will be replaced with a gene with Biotech -->
 			<ComfyTemperatureMin>16</ComfyTemperatureMin>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+<<<<<<< Updated upstream
 			<CarryingCapacity>90</CarryingCapacity>
+=======
+			<CarryingCapacity>90</CarryingCapacity> <!-- Will be replaced with a gene with Biotech. Defaults to 80 -->
+>>>>>>> Stashed changes
 			<Mass>55</Mass>
 			<LeatherAmount>65</LeatherAmount>
-			<PainShockThreshold>0.8</PainShockThreshold>
-			<AimingDelayFactor>1.1</AimingDelayFactor>
-			<PawnBeauty>1</PawnBeauty>
+			<PainShockThreshold>0.8</PainShockThreshold> <!-- Will be replaced with a gene with Biotech. Defaults to 0.75 -->
+			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
+			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
 			<RoyalFavorValue>4</RoyalFavorValue>
-			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 		
 <!--Settings-->
 
 		<alienRace>
 			<generalSettings>
-				<notXenophobistTowards>
-					<li>Pony_Unicorn</li>
-					<li>Pony_Pegasus</li>
-				</notXenophobistTowards>
 				<abilities>
 					<li>NatureMuse</li>
 				</abilities>
+			<!-- Genes -->
+				<raceGenes>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyTail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_StrongBody</li>
+					<!--<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>-->
+				</raceGenes>
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
@@ -77,9 +88,8 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 						</li>
 					</colorChannels>
 				</alienPartGenerator>
-				<raceGenes>
-				</raceGenes>
 			</generalSettings>
+
 			<styleSettings>
 				<li>
 					<key>HairDef</key>
@@ -111,6 +121,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 
 			<graphicPaths>
 				<head>
+<<<<<<< Updated upstream
 					<path>Things/Races/Pony/Heads/</path>
 					<extendedGraphics>
 					<!-- Mutants -->
@@ -142,6 +153,39 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 				</body>
 				<stump>Things/Races/Pony/Heads/Pony_Stump</stump>
 				<swaddle>Transparent/Transparent</swaddle>
+=======
+					<path>Things/Races/Pony/Heads/Normal/Male_Pony</path>
+					<extendedGraphics>
+					<!-- Mutant -->
+						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">
+							<path>Things/Races/Pony/Heads/Ghoul/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Ghoul/Female_Pony</Gender>
+							</extendedGraphics>
+						</Mutant>
+					<!-- Gene -->
+						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">
+							<path>Things/Races/Pony/Heads/Furskin/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Furskin/Female_Pony</Gender>
+							</extendedGraphics>
+						</Gene>
+					<!-- Normal -->
+						<Gender For="Female">Things/Races/Pony/Heads/Normal/Female_Pony</Gender>
+					</extendedGraphics>
+				</head>
+				<skeleton>Things/Races/Pony/Bodies/Skeleton/Dessicated_Pony</skeleton>
+				<skull>Things/Races/Pony/Heads/Skull/Pony_Skull</skull>
+				<body>
+					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
+					<extendedGraphics>
+						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
+						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pony/Bodies/Furskin/Naked_Pony</Gene>
+					</extendedGraphics>
+				</body>
+				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
+				<swaddle>Pony/Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
+>>>>>>> Stashed changes
 			</graphicPaths>
 		</alienRace>
 

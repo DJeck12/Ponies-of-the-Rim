@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_PonyHead.label>голова пони</Pony_PonyHead.label>
+	<Pony_PonyHead.description>Носители этого гена обладают головой расы пони. Не имеет эффекта на пони.</Pony_PonyHead.description>
+
+	<Pony_PonyEars.label>понячьи уши</Pony_PonyEars.label>
+	<Pony_PonyEars.description>Носители этого гена обладают ушами расы пони. Не имеет эффекта на пони.</Pony_PonyEars.description>
+
+	<Pony_PonyTail.label>понячий хвост</Pony_PonyTail.label>
+	<Pony_PonyTail.description>Носители этого гена обладают хвостом расы пони. Не имеет эффекта на пони.</Pony_PonyTail.description>
+
+	<Pony_NaturePower.label>сила природы</Pony_NaturePower.label>
+	<Pony_NaturePower.description>Носители этого гена наделены природной силой земных пони, получая их способность к скорости работы. Не имеет эффекта на пони.</Pony_NaturePower.description>
+
+	<Pony_PegasusWings.label>крылья пегаса</Pony_PegasusWings.label>
+	<Pony_PegasusWings.description>У носителей этого гена на спине растут новые конечности, напоминающими крылья пегаса, получая их способность к полёту. Не имеет эффекта на пони.</Pony_PegasusWings.description>
+
+	<Pony_UnicornHorn.label>рог единорога</Pony_UnicornHorn.label>
+	<Pony_UnicornHorn.description>У носителей этого гена из центра лба растёт рог единорога, наделяющий способностью к магии. Не имеет эффекта на пони.</Pony_UnicornHorn.description>
+
+	<Pony_HorseHooves.label>лошадиные копыта</Pony_HorseHooves.label>
+	<Pony_HorseHooves.description>Носители этого гена обладают руками с кистями, напоминающими лошадиные копыта. Ими неудобно обращаться с предметами, но они позволяют быстрее передвигаться.</Pony_HorseHooves.description>
+	<Pony_HorseHooves.symbolPack.prefixSymbols.0.symbol>лоша</Pony_HorseHooves.symbolPack.prefixSymbols.0.symbol>
+	<Pony_HorseHooves.symbolPack.prefixSymbols.1.symbol>пон</Pony_HorseHooves.symbolPack.prefixSymbols.1.symbol>
+	<Pony_HorseHooves.symbolPack.suffixSymbols.0.symbol>копыт</Pony_HorseHooves.symbolPack.suffixSymbols.0.symbol>
+	<Pony_HorseHooves.symbolPack.suffixSymbols.1.symbol>нэй</Pony_HorseHooves.symbolPack.suffixSymbols.1.symbol>
+	<Pony_HorseHooves.symbolPack.suffixSymbols.2.symbol>пони</Pony_HorseHooves.symbolPack.suffixSymbols.2.symbol>
+	<Pony_HorseHooves.symbolPack.wholeNameSymbols.0.symbol>копытный</Pony_HorseHooves.symbolPack.wholeNameSymbols.0.symbol>
+
+	<Pony_StrongBody.label>крепкое тело</Pony_StrongBody.label>
+	<Pony_StrongBody.description>Носители этого гена имеют крепкое и выносливое тело, дарующее повышенный болевой порог и крепкий иммунитет. Природная особенность земных пони.</Pony_StrongBody.description>
+	<Pony_StrongBody.symbolPack.prefixSymbols.0.symbol>лоша</Pony_StrongBody.symbolPack.prefixSymbols.0.symbol>
+	<Pony_StrongBody.symbolPack.prefixSymbols.1.symbol>пон</Pony_StrongBody.symbolPack.prefixSymbols.1.symbol>
+	<Pony_StrongBody.symbolPack.prefixSymbols.2.symbol>зем</Pony_StrongBody.symbolPack.prefixSymbols.2.symbol>
+	<Pony_StrongBody.symbolPack.suffixSymbols.0.symbol>нэй</Pony_StrongBody.symbolPack.suffixSymbols.0.symbol>
+	<Pony_StrongBody.symbolPack.suffixSymbols.1.symbol>пони</Pony_StrongBody.symbolPack.suffixSymbols.1.symbol>
+
+	<Pony_CoatFluff.label>утолщённый пух</Pony_CoatFluff.label>
+	<Pony_CoatFluff.description>У носителей этого гена на коже растёт плотная шерсть, что повышает устойчивость к перепадам температуры. Природная особенность летающих пони.</Pony_CoatFluff.description>
+	<Pony_CoatFluff.symbolPack.prefixSymbols.0.symbol>лоша</Pony_CoatFluff.symbolPack.prefixSymbols.0.symbol>
+	<Pony_CoatFluff.symbolPack.prefixSymbols.1.symbol>пон</Pony_CoatFluff.symbolPack.prefixSymbols.1.symbol>
+	<Pony_CoatFluff.symbolPack.prefixSymbols.2.symbol>пега</Pony_CoatFluff.symbolPack.prefixSymbols.2.symbol>
+	<Pony_CoatFluff.symbolPack.suffixSymbols.0.symbol>нэй</Pony_CoatFluff.symbolPack.suffixSymbols.0.symbol>
+	<Pony_CoatFluff.symbolPack.suffixSymbols.1.symbol>пони</Pony_CoatFluff.symbolPack.suffixSymbols.1.symbol>
+
+	<Pony_MagicImbued.label>пропитанность магией</Pony_MagicImbued.label>
+	<Pony_MagicImbued.description>Носители этого гена имеют большую связь с магией, наделяя себя магическими и псионическими способностями. Природная особенность рогатых пони.</Pony_MagicImbued.description>
+	<Pony_MagicImbued.symbolPack.prefixSymbols.0.symbol>лоша</Pony_MagicImbued.symbolPack.prefixSymbols.0.symbol>
+	<Pony_MagicImbued.symbolPack.prefixSymbols.1.symbol>пон</Pony_MagicImbued.symbolPack.prefixSymbols.1.symbol>
+	<Pony_MagicImbued.symbolPack.prefixSymbols.2.symbol>юни</Pony_MagicImbued.symbolPack.prefixSymbols.2.symbol>
+	<Pony_MagicImbued.symbolPack.suffixSymbols.0.symbol>нэй</Pony_MagicImbued.symbolPack.suffixSymbols.0.symbol>
+	<Pony_MagicImbued.symbolPack.suffixSymbols.1.symbol>пони</Pony_MagicImbued.symbolPack.suffixSymbols.1.symbol>
+	<Pony_MagicImbued.symbolPack.suffixSymbols.2.symbol>корн</Pony_MagicImbued.symbolPack.suffixSymbols.2.symbol>
+
+	<Pony_Herbivore.label>травоядность</Pony_Herbivore.label>
+	<Pony_Herbivore.description>Носители этого гена строго травоядные. Они не могут есть и переваривать мясо, если оно не приготовлено в составе блюда.</Pony_Herbivore.description>
+
+	<Pony_Carnivore.label>плотоядность</Pony_Carnivore.label>
+	<Pony_Carnivore.description>Носители этого гена строго плотоядные. Они не могут есть и переваривать фрукты или овощи, если они не приготовлены в составе блюда.</Pony_Carnivore.description>
+
+</LanguageData>
