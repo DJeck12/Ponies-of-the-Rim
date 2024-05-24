@@ -1,10 +1,46 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace PoniesOfTheRim
 {
     public class HediffGiver_Always : HediffGiver
     {
+        public bool sendLetter = false;
+        public AbilityDef ability;
+        public List<HediffDef> prostheticHediff;
+
+        public bool WingCheck(Pawn pawn, List<HediffDef> prostheticHediff, List<BodyPartDef> partsToAffect)
+        {
+            if (pawn == null || prostheticHediff == null || partsToAffect == null)
+            {
+                return false;
+            }
+
+            foreach (BodyPartDef affectedPart in partsToAffect)
+            {
+                List<BodyPartRecord> partRecords = pawn.RaceProps.body.AllParts.FindAll(part => part.def == affectedPart);
+
+                if (partRecords == null)
+                {
+                    continue;
+                }
+
+                foreach (BodyPartRecord record in partRecords)
+                {
+                    foreach (HediffDef hedif in prostheticHediff)
+                    {
+                        if (pawn.health.hediffSet.HasHediff(hedif) && pawn.health.hediffSet.PartIsMissing(record))
+                        {
+
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             if (HasHediffCount(pawn, this.hediff, this.countToAffect, false))
@@ -12,8 +48,15 @@ namespace PoniesOfTheRim
                 return;
             }
 
+            if (WingCheck(pawn, this.prostheticHediff, this.partsToAffect))
+            {
+
+                pawn.abilities.RemoveAbility(this.ability);
+            }
+
             if (GetNumPresentParts(pawn, this.partsToAffect) >= this.countToAffect)
             {
+
                 if (base.TryApply(pawn, null))
                 {
                     if (sendLetter)
@@ -46,6 +89,7 @@ namespace PoniesOfTheRim
 
         public int GetNumPresentParts(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
+
             int numPresentParts = 0;
 
             foreach (BodyPartDef affectedPart in partsToAffect)
@@ -56,14 +100,17 @@ namespace PoniesOfTheRim
                 {
                     if (!pawn.health.hediffSet.PartIsMissing(record))
                     {
-                        numPresentParts++;
+                        if (!pawn.health.hediffSet.IsBionicOrImplant(affectedPart))
+                        {
+                            numPresentParts++;
+                            Log.Message($"numPresentParts: {numPresentParts}");
+                        }
                     }
                 }
+
             }
 
             return numPresentParts;
         }
-
-        public bool sendLetter = false;
     }
 }
