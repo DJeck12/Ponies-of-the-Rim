@@ -147,6 +147,12 @@
 		<labelNoun>a pegasus wing</labelNoun>
 		<description>A natural pegasus wing.</description>
 		<isBad>false</isBad>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>ShortFlight</abilityDef>
+      </li>
+    </comps>
 		<stages>
 			<li>
 				<statOffsets>
@@ -165,6 +171,12 @@
 		<description>An installed prosthetic wing.</description>
 		<descriptionHyperlinks><ThingDef>SimpleProstheticWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticWing</spawnThingOnRemoved>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>ShortFlight</abilityDef>
+      </li>
+    </comps>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
@@ -233,6 +245,12 @@
 		<description>An installed bionic wing.</description>
 		<descriptionHyperlinks><ThingDef>BionicWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicWing</spawnThingOnRemoved>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>ShortFlight</abilityDef>
+      </li>
+    </comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
@@ -299,6 +317,12 @@
 		<description>An installed archotech wing.</description>
 		<descriptionHyperlinks><ThingDef>ArchotechWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechWing</spawnThingOnRemoved>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>ShortFlight</abilityDef>
+      </li>
+    </comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
