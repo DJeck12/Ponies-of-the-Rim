@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<HediffGiverSetDef>
-		<defName>Pony</defName>
-		<hediffGivers>
-			<li Class = "PoniesOfTheRim.HediffGiver_Always">
-				<hediff>NaturalWing</hediff>
-				<partsToAffect>
-					<li>Pony_Wing</li>
-				</partsToAffect>
-				<countToAffect>2</countToAffect>
-				<sendLetter>false</sendLetter>
-			</li>
-
-			<li Class = "PoniesOfTheRim.HediffGiver_Always">
-				<hediff>NaturalHorn</hediff>
-				<partsToAffect>
-					<li>Pony_Horn</li>
-				</partsToAffect>
-				<sendLetter>false</sendLetter>
-			</li>
-		</hediffGivers>
-	</HediffGiverSetDef>
+  <HediffGiverSetDef>
+    <defName>Pony</defName>
+    <hediffGivers>
+      <li Class = "PoniesOfTheRim.HediffGiver_Always">
+        <hediff>NaturalWing</hediff>
+        <partsToAffect>
+          <li>Pony_Wing</li>
+        </partsToAffect>
+        <countToAffect>2</countToAffect>
+        <sendLetter>false</sendLetter>
+        <ability>ShortFlight</ability>
+        <prostheticHediff>
+          <li>SimpleProstheticWing</li>
+          <li>BionicWing</li>
+          <li>ArchotechWing</li>
+        </prostheticHediff>
+      </li>
+      <li Class = "PoniesOfTheRim.HediffGiver_Always">
+        <hediff>NaturalHorn</hediff>
+        <partsToAffect>
+          <li>Pony_Horn</li>
+        </partsToAffect>
+        <sendLetter>false</sendLetter>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
 
 </Defs>
