@@ -8,7 +8,6 @@ namespace PoniesOfTheRim
     {
         public bool sendLetter = false;
         public AbilityDef ability;
-        public List<HediffDef> prostheticHediff;
 
         public bool WingCheck(Pawn pawn, List<HediffDef> prostheticHediff, List<BodyPartDef> partsToAffect)
         {
