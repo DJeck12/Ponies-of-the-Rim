@@ -17,29 +17,9 @@ namespace PoniesOfTheRim
                 return false;
             }
 
-            foreach (BodyPartDef affectedPart in partsToAffect)
-            {
-                List<BodyPartRecord> partRecords = pawn.RaceProps.body.AllParts.FindAll(part => part.def == affectedPart);
 
-                if (partRecords == null)
-                {
-                    continue;
-                }
 
-                foreach (BodyPartRecord record in partRecords)
-                {
-                    foreach (HediffDef hedif in prostheticHediff)
-                    {
-                        if (pawn.health.hediffSet.HasHediff(hedif) && pawn.health.hediffSet.PartIsMissing(record))
-                        {
 
-                            return true;
-                        }
-                    }
-                }
-            }
-            return false;
-        }
 
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
@@ -48,23 +28,9 @@ namespace PoniesOfTheRim
                 return;
             }
 
-            if (WingCheck(pawn, this.prostheticHediff, this.partsToAffect))
-            {
 
-                pawn.abilities.RemoveAbility(this.ability);
-            }
 
-            if (GetNumPresentParts(pawn, this.partsToAffect) >= this.countToAffect)
-            {
 
-                if (base.TryApply(pawn, null))
-                {
-                    if (sendLetter)
-                    {
-                        base.SendLetter(pawn, cause);
-                    }
-                }
-            }
         }
 
         public bool HasHediffCount(Pawn pawn, HediffDef def, int requiredCount = 1, bool mustBeVisible = false)
