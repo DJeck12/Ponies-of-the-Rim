@@ -17,10 +17,6 @@ namespace PoniesOfTheRim
                 return false;
             }
 
-
-
-
-
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             if (HasHediffCount(pawn, this.hediff, this.countToAffect, false))
