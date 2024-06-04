@@ -815,7 +815,7 @@
 				</parts>
 				</li>
 				<li>
-				<def>Pony_Wing</def>
+				<def>Left_Pony_Wing</def>
 				<customLabel>left wing</customLabel>
 				<coverage>0.05</coverage>
 				<groups>
@@ -823,7 +823,7 @@
 				</groups>
 				</li>
 				<li>
-				<def>Pony_Wing</def>
+				<def>Right_Pony_Wing</def>
 				<customLabel>right wing</customLabel>
 				<coverage>0.05</coverage>
 				<groups>

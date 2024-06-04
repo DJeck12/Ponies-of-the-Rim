@@ -93,7 +93,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<conditions>
 								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
-									<bodyPart>Pony_Wing</bodyPart>
+									<bodyPart>Right_Pony_Wing</bodyPart>
 									<bodyPartLabel>right wing</bodyPartLabel>
 									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
@@ -129,7 +129,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<conditions>
 								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
-									<bodyPart>Pony_Wing</bodyPart>
+									<bodyPart>Left_Pony_Wing</bodyPart>
 									<bodyPartLabel>left wing</bodyPartLabel>
 									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
