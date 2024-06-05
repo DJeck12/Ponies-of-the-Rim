@@ -147,12 +147,8 @@
 		<labelNoun>a pegasus wing</labelNoun>
 		<description>A natural pegasus wing.</description>
 		<isBad>false</isBad>
-    <hediffClass>HediffWithComps</hediffClass>
-    <comps>
-      <li Class="HediffCompProperties_GiveAbility">
-        <abilityDef>ShortFlight</abilityDef>
-      </li>
-    </comps>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
 		<stages>
 			<li>
 				<statOffsets>
@@ -171,12 +167,7 @@
 		<description>An installed prosthetic wing.</description>
 		<descriptionHyperlinks><ThingDef>SimpleProstheticWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticWing</spawnThingOnRemoved>
-    <hediffClass>HediffWithComps</hediffClass>
-    <comps>
-      <li Class="HediffCompProperties_GiveAbility">
-        <abilityDef>ShortFlight</abilityDef>
-      </li>
-    </comps>
+		<hediffClass>HediffWithComps</hediffClass>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
@@ -232,7 +223,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Wing</li>
+			<li>Left_Pony_Wing</li>
+			<li>Right_Pony_Wing</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticWing</addsHediff>
 	</RecipeDef>
@@ -245,12 +237,7 @@
 		<description>An installed bionic wing.</description>
 		<descriptionHyperlinks><ThingDef>BionicWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicWing</spawnThingOnRemoved>
-    <hediffClass>HediffWithComps</hediffClass>
-    <comps>
-      <li Class="HediffCompProperties_GiveAbility">
-        <abilityDef>ShortFlight</abilityDef>
-      </li>
-    </comps>
+		<hediffClass>HediffWithComps</hediffClass>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
@@ -305,7 +292,8 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Wing</li>
+			<li>Left_Pony_Wing</li>
+			<li>Right_Pony_Wing</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicWing</addsHediff>
 	</RecipeDef>
@@ -317,12 +305,7 @@
 		<description>An installed archotech wing.</description>
 		<descriptionHyperlinks><ThingDef>ArchotechWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechWing</spawnThingOnRemoved>
-    <hediffClass>HediffWithComps</hediffClass>
-    <comps>
-      <li Class="HediffCompProperties_GiveAbility">
-        <abilityDef>ShortFlight</abilityDef>
-      </li>
-    </comps>
+		<hediffClass>HediffWithComps</hediffClass>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
@@ -376,7 +359,8 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Wing</li>
+			<li>Left_Pony_Wing</li>
+			<li>Right_Pony_Wing</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechWing</addsHediff>
 	</RecipeDef>
@@ -390,6 +374,7 @@
 		<description>A natural unicorn horn.</description>
 		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
 		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<stages>
 			<li>
 				<statOffsets>
@@ -451,6 +436,7 @@
 		<description>An installed bionic horn.</description>
 		<descriptionHyperlinks><ThingDef>BionicHorn</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicHorn</spawnThingOnRemoved>
+		<hediffClass>HediffWithComps</hediffClass>
 		<addedPartProps>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
@@ -517,6 +503,7 @@
 		<description>An installed archotech horn.</description>
 		<descriptionHyperlinks><ThingDef>ArchotechHorn</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechHorn</spawnThingOnRemoved>
+		<hediffClass>HediffWithComps</hediffClass>
 		<addedPartProps>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>

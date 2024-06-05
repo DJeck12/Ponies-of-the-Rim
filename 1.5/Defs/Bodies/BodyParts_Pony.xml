@@ -19,14 +19,19 @@
 <!--Body-->
 
 	<BodyPartDef>
-		<defName>Pony_Wing</defName>
+		<defName>Left_Pony_Wing</defName>
 		<label>wing</label>
 		<hitPoints>20</hitPoints>
 		<skinCovered>true</skinCovered>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-		<tags>
-			<li>Mirrored</li>
-		</tags>
+	</BodyPartDef>
+	
+		<BodyPartDef>
+		<defName>Right_Pony_Wing</defName>
+		<label>wing</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 	</BodyPartDef>
 
 	<BodyPartDef>
