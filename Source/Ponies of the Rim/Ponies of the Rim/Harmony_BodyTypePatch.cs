@@ -1,23 +1,24 @@
-﻿using HarmonyLib;
+﻿using AlienRace;
+using HarmonyLib;
 using RimWorld;
-using System;
+using System.Collections.Generic;
 using Verse;
 
 namespace PoniesOfTheRim
 {
     [StaticConstructorOnStartup]
-    public static class BodyTypePatch
+    public static class PonyBodyTypePatch
     {
-        static BodyTypePatch()
+        static PonyBodyTypePatch()
         {
-            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(PawnGenerator), "GetBodyTypeFor"), null, new HarmonyMethod(typeof(BodyTypePatch).GetMethod("GenerateBodyTypePatch")));
+            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(HarmonyPatches), "CheckBodyType"), null, new HarmonyMethod(typeof(PonyBodyTypePatch).GetMethod("BodyTypePatch")));
         }
+
         [HarmonyPostfix]
-        public static void GenerateBodyTypePatch(Pawn pawn, ref BodyTypeDef __result)
+        public static void BodyTypePatch(Pawn pawn, ref BodyTypeDef __result)
         {
             if (pawn.def.defName.Contains("Pony_"))
             {
-
                 if (ModsConfig.BiotechActive && pawn.DevelopmentalStage.Juvenile())
                 {
                     if (pawn.DevelopmentalStage == DevelopmentalStage.Baby)
@@ -28,8 +29,15 @@ namespace PoniesOfTheRim
                 }
             }
         }
+
     }
-}
+
+
+
+
+
+
+}    
 
 
 

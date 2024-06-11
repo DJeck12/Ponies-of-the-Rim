@@ -64,11 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Harmony_FurPatch.cs" />
+    <Compile Include="Harmony_BodyTypePatch.cs" />
     <Compile Include="Gene_Random.cs" />
     <None Include="PonyTypeExtension.cs" />
     <Compile Include="HediffGiver_AbilityHorn.cs" />
-    <Compile Include="Harmony_BodyTypePatch.cs" />
     <Compile Include="Pony_DefOf.cs" />
     <Compile Include="RandomGeneExtension.cs" />
     <Compile Include="ThoughtWorker_Precept_Earthpony.cs" />
