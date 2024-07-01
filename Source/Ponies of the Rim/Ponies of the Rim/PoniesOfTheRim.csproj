@@ -59,6 +59,7 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="VFECore">
       <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
     </Reference>
