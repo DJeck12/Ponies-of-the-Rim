@@ -126,13 +126,6 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 								<Gender For="Female">Things/Races/Pony/Heads/Ghoul/Female_Pony</Gender>
 							</extendedGraphics>
 						</Mutant>
-					<!-- Gene -->
-						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">
-							<path>Things/Races/Pony/Heads/Furskin/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Furskin/Female_Pony</Gender>
-							</extendedGraphics>
-						</Gene>
 					<!-- Normal -->
 						<Gender For="Female">Things/Races/Pony/Heads/Normal/Female_Pony</Gender>
 					</extendedGraphics>

@@ -21,7 +21,7 @@ namespace PoniesOfTheRim
         private static readonly Type patchType = typeof(ScalableBeltPatch);
         static ScalableBeltPatch()
         {
-            Harmony harmonyInstance = new Harmony("com.Pony.rimworld.mod");
+            Harmony harmonyInstance = new Harmony("Rimworld.Pony.PoniesOfTheRim");
             harmonyInstance.Patch(original: AccessTools.Method(typeof(WornGraphicData), "BeltScaleAt"), prefix: new HarmonyMethod(patchType, "BeltScaleAtPatch"));
             harmonyInstance.Patch(original: AccessTools.Method(typeof(WornGraphicData), "BeltOffsetAt"), prefix: new HarmonyMethod(patchType, "BeltOffsetAtPatch"));
         }
