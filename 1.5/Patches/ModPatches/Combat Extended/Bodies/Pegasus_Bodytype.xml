@@ -7,25 +7,25 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/BodyDef[defName="Pony"]/corePart/parts/li[def="Shoulder"]/parts/li[customLabel="front left leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[def="Shoulder"]/parts/li[customLabel="front left leg"]/groups</xpath>
 					<value>
 						<li>FrontLeftLeg</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/BodyDef[defName="Pony"]/corePart/parts/li[def="Shoulder"]/parts/li[customLabel="front right leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[def="Shoulder"]/parts/li[customLabel="front right leg"]/groups</xpath>
 					<value>
 						<li>FrontRightLeg</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/BodyDef[defName="Pony"]/corePart/parts/li[customLabel="left shoulder"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[customLabel="left shoulder"]/groups</xpath>
 					<value>
 						<li>LeftShoulder</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/BodyDef[defName="Pony"]/corePart/parts/li[customLabel="right shoulder"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[customLabel="right shoulder"]/groups</xpath>
 					<value>
 						<li>RightShoulder</li>
 					</value>
