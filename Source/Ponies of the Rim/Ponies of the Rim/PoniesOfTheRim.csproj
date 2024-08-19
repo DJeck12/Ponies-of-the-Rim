@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Harmony_TryPlaceFootprintPatch.cs" />
     <Compile Include="Harmony_StylingStationPatch.cs" />
     <Compile Include="Harmony_BodyTypePatch.cs" />
     <Compile Include="Gene_Random.cs" />

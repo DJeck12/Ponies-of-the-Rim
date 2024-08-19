@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>Hoofprint</defName>
+    <graphicData>
+      <texPath>Things/Projectile/Magic_Burst</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <fadeInTime>0.08</fadeInTime>
+    <solidTime>2.2</solidTime>
+    <fadeOutTime>2.6</fadeOutTime>
+  </FleckDef>
+
+</Defs>
