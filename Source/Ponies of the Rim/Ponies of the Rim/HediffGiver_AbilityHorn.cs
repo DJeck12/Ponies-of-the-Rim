@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace PoniesOfTheRim
 {
-    public class HediffGiver_AbilityHorn : HediffGiver
+        public class HediffGiver_AbilityHorn : HediffGiver
     {
         public AbilityDef ability;
 

@@ -200,13 +200,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<Gender For="Female">Things/Races/Pony/Heads/Ghoul/Female_Pony</Gender>
 							</extendedGraphics>
 						</Mutant>
-					<!-- Gene -->
-						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">
-							<path>Things/Races/Pony/Heads/Furskin/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Furskin/Female_Pony</Gender>
-							</extendedGraphics>
-						</Gene>
 					<!-- Normal -->
 						<Gender For="Female">Things/Races/Pony/Heads/Normal/Female_Pony</Gender>
 					</extendedGraphics>
@@ -217,6 +210,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
 					<extendedGraphics>
 						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
+						<Age For="PonyChild">Things/Races/Pony/Bodies/Normal/Naked_Child</Age>
 					</extendedGraphics>
 				</body>
 				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>

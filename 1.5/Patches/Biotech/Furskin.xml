@@ -12,10 +12,12 @@
 					<xpath>Defs/FurDef[defName="Furskin"]/bodyTypeGraphicPaths</xpath>
 					<value>
 						<Pony>Things/Races/Pony/Bodies/Furskin/Naked_Pony</Pony>
+						<PonyChild>Things/Races/Pony/Bodies/Furskin/Naked_Pony</PonyChild>
+						<PonyBaby>Things/Races/Pony/Bodies/Furskin/Naked_Pony</PonyBaby>
 					</value>
 				</li>
 			</operations>
 		</match>
 	</Operation>
-	
+
 </Patch>
