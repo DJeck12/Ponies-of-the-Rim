@@ -21,7 +21,7 @@
 	<ThoughtDef>
 		<defName>Pony_OpinionForEarth</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForEarth</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForRaces</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -33,12 +33,18 @@
 				<baseOpinionOffset>-20</baseOpinionOffset>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<body>Pony</body>
+				<trait>Pony_RelationsForEarth</trait>
+			</li>
+		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>Pony_OpinionForPegasus</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForPegasus</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForRaces</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -50,12 +56,18 @@
 				<baseOpinionOffset>-20</baseOpinionOffset>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<body>Pegasus</body>
+				<trait>Pony_RelationsForPegasus</trait>
+			</li>
+		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>Pony_OpinionForUnicorn</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForUnicorn</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_OpinionForRaces</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -67,6 +79,12 @@
 				<baseOpinionOffset>-20</baseOpinionOffset>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<body>Unicorn</body>
+				<trait>Pony_RelationsForUnicorn</trait>
+			</li>
+		</modExtensions>
 	</ThoughtDef>
 
 </Defs>

@@ -147,6 +147,13 @@
 		<labelNoun>a pegasus wing</labelNoun>
 		<description>A natural pegasus wing.</description>
 		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>ShortFlight</abilityDef>
+			</li>
+		</comps>
 		<stages>
 			<li>
 				<statOffsets>
@@ -165,6 +172,12 @@
 		<description>An installed prosthetic wing.</description>
 		<descriptionHyperlinks><ThingDef>SimpleProstheticWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>SimpleProstheticWing</spawnThingOnRemoved>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>ShortFlight</abilityDef>
+			</li>
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 		</addedPartProps>
@@ -220,7 +233,8 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Wing</li>
+			<li>Pony_LeftWing</li>
+			<li>Pony_RightWing</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>SimpleProstheticWing</addsHediff>
 	</RecipeDef>
@@ -233,6 +247,12 @@
 		<description>An installed bionic wing.</description>
 		<descriptionHyperlinks><ThingDef>BionicWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>BionicWing</spawnThingOnRemoved>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>ShortFlight</abilityDef>
+			</li>
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
@@ -287,7 +307,8 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Wing</li>
+			<li>Pony_LeftWing</li>
+			<li>Pony_RightWing</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>BionicWing</addsHediff>
 	</RecipeDef>
@@ -299,6 +320,12 @@
 		<description>An installed archotech wing.</description>
 		<descriptionHyperlinks><ThingDef>ArchotechWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>ArchotechWing</spawnThingOnRemoved>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>ShortFlight</abilityDef>
+			</li>
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
@@ -316,7 +343,7 @@
 	<ThingDef ParentName="BodyPartArchotechBase">
 		<defName>ArchotechWing</defName>
 		<label>archotech wing</label>
-		<description>An artificial wing built by an archotech. With a pair of such wings, their owner is able to accelerate in flight faster than the speed of sound and even move in outer space. The wing is almost weightless and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Such a prosthesis does not bestow the wearer with pegasus magic and cannot be used by non-winged creatures. Its internal workings are a mystery to human minds.</description>
+		<description>An artificial wing built by an archotech. With a pair of such wings, their owner is able to accelerate in flight faster than the speed of sound and even move in outer space. The wing is almost weightless and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Such a prosthesis does not bestow the wearer with pegasus magic and cannot be used by non-winged creatures. Its internal workings are a mystery to our limited minds.</description>
 		<descriptionHyperlinks><RecipeDef>InstallArchotechWing</RecipeDef></descriptionHyperlinks>
 		<statBases>
 			<MarketValue>2800</MarketValue>
@@ -352,7 +379,8 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Wing</li>
+			<li>Pony_LeftWing</li>
+			<li>Pony_RightWing</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>ArchotechWing</addsHediff>
 	</RecipeDef>
@@ -366,6 +394,7 @@
 		<description>A natural unicorn horn.</description>
 		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
 		<isBad>false</isBad>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<stages>
 			<li>
 				<statOffsets>
@@ -509,7 +538,7 @@
 	<ThingDef ParentName="BodyPartArchotechBase">
 		<defName>ArchotechHorn</defName>
 		<label>archotech horn</label>
-		<description>An artificial horn built by an archotech. Endows its owner with transcendental magical power, comparable to the magic of draconequuses. The integrated internal subpersona AI automatically analyzes and archives all possible combinations of spells, as well as collects and displays information about all visible sources of magic. Such a prosthesis does not bestow the wearer with unicorn magic and cannot be used by non-horned creatures. Its internal workings are a mystery to human minds.</description>
+		<description>An artificial horn built by an archotech. Endows its owner with transcendental magical power, comparable to the magic of draconequuses. The integrated internal subpersona AI automatically analyzes and archives all possible combinations of spells, as well as collects and displays information about all visible sources of magic. Such a prosthesis does not bestow the wearer with unicorn magic and cannot be used by non-horned creatures. Its internal workings are a mystery to our limited minds.</description>
 		<descriptionHyperlinks><RecipeDef>InstallArchotechHorn</RecipeDef></descriptionHyperlinks>
 		<statBases>
 			<MarketValue>2800</MarketValue>

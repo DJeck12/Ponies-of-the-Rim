@@ -62,6 +62,15 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Earthpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>Pony_Earthpony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
@@ -70,6 +79,15 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Pegasus</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>Pony_Pegasus_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
@@ -78,6 +96,15 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Unicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>Pony_Unicorn_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 </Defs>

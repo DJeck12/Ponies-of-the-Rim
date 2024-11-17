@@ -20,6 +20,9 @@
 		<description>Pegasi are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>60</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_Friendship</li>
+		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Pegasus_Abhorrent</thought>
@@ -33,7 +36,7 @@
 	<ThoughtDef>
 		<defName>Pony_Pegasus_Abhorrent</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pegasus</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races</workerClass>
 		<stages>
 			<li>
 				<label>hatred for pegasi</label>
@@ -48,13 +51,16 @@
 					<li>HAR_AlienRaces_Abhorrent</li>
 				</removeThoughtsWhenAdded>
 			</li>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
+			</li>
 		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>Pony_Pegasus_Abhorrent_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pegasus_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>disgusting pegasus!</label>
@@ -67,6 +73,9 @@
 					<li>Pony_Everypony_Abhorrent_Social</li>
 					<li>HAR_AlienRaces_Abhorrent_Social</li>
 				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -90,7 +99,7 @@
 	<ThoughtDef>
 		<defName>Pony_Pegasus_Horrible_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pegasus_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>distrust for pegasi</label>
@@ -104,19 +113,68 @@
 					<li>HAR_AlienRaces_Horrible_Social</li>
 				</removeThoughtsWhenAdded>
 			</li>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
+			</li>
 		</modExtensions>
 	</ThoughtDef>
 
-<!-- Standard -->
+<!-- Stricted -->
 
 	<PreceptDef>
-		<defName>Pony_Pegasus_Standard</defName>
+		<defName>Pony_Pegasus_Stricted</defName>
 		<issue>Pony_Pegasus</issue>
-		<label>neutral</label>
-		<description>Pegasi are just like everyone and should be seen as no lesser or greater than us.</description>
-		<impact>Low</impact>
+		<label>stricted</label>
+		<description>Pegasi are the only race allowed in our society.</description>
+		<impact>High</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
+		<requiredMemes>
+			<li>Pony_PegasusSupremacist</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Pegasus_Stricted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Pegasus_Stricted_Social</thought>
+			</li>
+		</comps>
 	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Pegasus_Stricted</defName>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_StrictRaces</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<stages>
+			<li>
+				<label>other races among us</label>
+				<description>We live alongside someone who is not a pegasus. We should make them leave in one way or another.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Pegasus_Stricted_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_StrictRaces_Social</workerClass>
+		<stages>
+			<li>
+				<label>not a pegasus</label>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
 
 <!-- Respected -->
 
@@ -127,6 +185,10 @@
 		<description>Pegasi are very unique and deserve our admiration.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_EarthponySupremacist</li>
+			<li>Pony_UnicornSupremacist</li>
+		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Pegasus_Respected_Social</thought>
@@ -137,7 +199,7 @@
 	<ThoughtDef>
 		<defName>Pony_Pegasus_Respected_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pegasus_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>respect for pegasi</label>
@@ -151,6 +213,9 @@
 					<li>HAR_AlienRaces_Respected_Social</li>
 				</removeThoughtsWhenAdded>
 			</li>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
+			</li>
 		</modExtensions>
 	</ThoughtDef>
 
@@ -163,6 +228,10 @@
 		<description>Pegasi are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_EarthponySupremacist</li>
+			<li>Pony_UnicornSupremacist</li>
+		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Pegasus_Exalted</thought>
@@ -175,12 +244,12 @@
 
 	<ThoughtDef>
 		<defName>Pony_Pegasus_Exalted</defName>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pegasus</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
 				<label>love for pegasi</label>
-				<description>It makes me feel very happy knowing we live among pegasi.</description>
+				<description>It makes me feel happier knowing we live among pegasi.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 		</stages>
@@ -191,13 +260,16 @@
 					<li>HAR_AlienRaces_Exalted</li>
 				</removeThoughtsWhenAdded>
 			</li>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
+			</li>
 		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
 		<defName>Pony_Pegasus_Exalted_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pegasus_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>amazing pegasus!</label>
@@ -210,6 +282,9 @@
 					<li>Pony_Everypony_Exalted_Social</li>
 					<li>HAR_AlienRaces_Exalted_Social</li>
 				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.ThoughtExtension">
+				<race>Pony_Pegasus</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>

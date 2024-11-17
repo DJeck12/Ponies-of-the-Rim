@@ -14,5 +14,7 @@
 	<Pony_Pegasus.tools.2.label>удар задними копытами</Pony_Pegasus.tools.2.label>
 	<Pony_Pegasus.tools.3.label>зубы</Pony_Pegasus.tools.3.label>
 	<Pony_Pegasus.tools.4.label>голова</Pony_Pegasus.tools.4.label>
+	<Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.conditions.1.bodyPartLabel>правое крыло</Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.conditions.1.bodyPartLabel>
+	<Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.conditions.1.bodyPartLabel>левое крыло</Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.conditions.1.bodyPartLabel>
 
 </LanguageData>

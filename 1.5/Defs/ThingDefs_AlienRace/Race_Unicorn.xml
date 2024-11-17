@@ -10,7 +10,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 <color=#FF46FF>Unicorns</color> are the first race of ponies to think of when talking about magic and spells. They are the living embodiment of pony magic. Unicorns were the first to harness the nature of magic with the help of their magic horn and taught others to use it for good. However, some members of this race are notorious for their pride and attempts at mind control. One day this almost led to catastrophic consequences.]]></description>
 
-<!--Stats-->
+	<!-- Stats -->
 
 		<statBases>
 			<MarketValue>1800</MarketValue>
@@ -20,7 +20,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<CarryingCapacity>80</CarryingCapacity>
 			<Mass>55</Mass>
-			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.75</PainShockThreshold>
 			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
 			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
@@ -28,7 +27,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			<WorkSpeedGlobal>0.8</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 
-<!--Attacks-->
+	<!-- Attacks -->
 
 		<tools>
 			<li>
@@ -43,7 +42,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			</li>
 		</tools>
 
-<!--Settings-->
+	<!-- Alien Settings -->
 
 		<alienRace>
 			<generalSettings>
@@ -61,6 +60,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_MagicImbued</li>
 					<!--<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>-->
 				</raceGenes>
+			<!-- Colors -->
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
@@ -98,7 +98,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 						</li>
 					</colorChannels>
 					<bodyAddons>
-					<!--Horn-->
+					<!-- Horn -->
 						<li>
 							<path>Things/Races/Unicorn/Normal/Unicorn</path>
 							<userCustomizable>false</userCustomizable>
@@ -124,18 +124,29 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 										<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
 									</extendedGraphics>
 								</Mutant>
-								<RotStage For="Dessicated">
+								<!--<RotStage For="Dessicated">
 									<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
 									<extendedGraphics>
 										<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
 										<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
 										<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
 									</extendedGraphics>
-								</RotStage>
+								</RotStage>-->
 								<Age For="PonyBaby">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
 								<Age For="PonyChild">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
 								<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
 							</extendedGraphics>
+							<offsets>
+								<south>
+									<layerOffset>-0.27</layerOffset>
+								</south>
+								<north>
+									<layerOffset>-0.3</layerOffset>
+								</north>
+								<east>
+									<layerOffset>-0.27</layerOffset>
+								</east>
+							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -146,20 +157,12 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<bannedTags>
-							<li>HairLong</li>
-						</bannedTags>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<bannedTags>
-							<li>Bushy</li>
-							<li>BeardBushy</li>
-							<li>BeardLong</li>
-						</bannedTags>
 					</value>
 				</li>
 				<li>
@@ -169,6 +172,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					</value>
 				</li>
 			</styleSettings>
+
+		<!-- Graphics -->
 
 			<graphicPaths>
 				<head>
@@ -197,6 +202,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 				<body>
 					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
 					<extendedGraphics>
+					<!-- Mutant -->
 						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
 					</extendedGraphics>
 				</body>
@@ -205,7 +211,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			</graphicPaths>
 		</alienRace>
 
-<!--Race Settings-->
+	<!-- Race Settings -->
 
 		<race>
 			<nameGenerator>NameGeneratorUnicorn</nameGenerator>

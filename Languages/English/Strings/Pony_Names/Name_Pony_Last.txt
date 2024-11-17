@@ -101,3 +101,17 @@ Whip
 Ray
 Clip
 Rarity
+Surge
+Dust
+Break
+Seaskape
+Bay
+Zone
+Equinox
+Luck
+Flow
+Essence
+Roll
+Cog
+Bolt
+Grace

@@ -36,6 +36,11 @@
 			<li>Synthread</li>
 		</thingDefs>
 		</apparelStuffFilter>
+		<modExtensions>
+			<li Class="VFECore.FactionDefExtension">
+				<strangerInBlackReplacement>Pony_PonyInBlack</strangerInBlackReplacement>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 	<FactionDef ParentName="PlayerFactionBase">
@@ -64,6 +69,7 @@
 			<li>
 				<categories>
 					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -85,6 +91,11 @@
 		<recipePrerequisiteTags>
 			<li>Tribal</li>
 		</recipePrerequisiteTags>
+		<modExtensions>
+			<li Class="VFECore.FactionDefExtension">
+				<strangerInBlackReplacement>Pony_WildponyInBlack</strangerInBlackReplacement>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 </Defs>

@@ -1,0 +1,19 @@
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\Ponies of the Rim.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\Ponies of the Rim.pdb
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\PoniesOfTheRim.csproj.AssemblyReference.cache
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\PoniesOfTheRim.csproj.CoreCompileInputs.cache
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.dll
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.pdb
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\AlienRace.dll
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\PoniesOf.646225EC.Up2Date
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\HarmonyMod.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.DSPGraphModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.IMGUIModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.TextRenderingModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.UI.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.UIElementsModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.UIModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\VFECore.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\PipeSystem.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\KCSG.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\AlienRace.pdb

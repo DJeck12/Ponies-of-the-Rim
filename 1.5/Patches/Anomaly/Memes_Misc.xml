@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Ideology</li>
+			<li>Anomaly</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -12,12 +12,12 @@
 					<success>Always</success>
 					<xpath>/Defs/MemeDef[defName="Inhuman"]/exclusionTags</xpath>
 					<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/MemeDef[defName="Inhuman"]</xpath>
-					<value>
-						<exclusionTags>
-							<li>Inhuman</li>
-						</exclusionTags>
-					</value>
+						<xpath>/Defs/MemeDef[defName="Inhuman"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>Inhuman</li>
+							</exclusionTags>
+						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
 						<xpath>/Defs/MemeDef[defName="Inhuman"]/exclusionTags</xpath>

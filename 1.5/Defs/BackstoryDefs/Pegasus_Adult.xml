@@ -9,6 +9,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -27,6 +28,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>2</Shooting>
@@ -56,6 +58,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>6</Plants>
@@ -85,6 +90,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -102,6 +110,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>7</Shooting>
@@ -120,6 +129,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>5</Shooting>
@@ -140,6 +150,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>2</Mining>
@@ -174,6 +185,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Crafting>7</Crafting>
@@ -204,6 +216,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>-1</Melee>
@@ -218,10 +232,12 @@
 		<defName>Pony_PegasusMeteo</defName>
 		<title>meteorologist</title>
 		<titleShort>meteorologist</titleShort>
-		<baseDesc>[PAWN_nameDef] came from a family that had been fascinated by weather forecasting for many generations. Unsurprisingly, [PAWN_pronoun] shared this passion. [PAWN_pronoun] devoted a huge amount of time to meteorology, which was the reason for failures in [PAWN_possessive] personal life.</baseDesc>
+		<baseDesc>[PAWN_nameDef] came from a family that had been fascinated by weather forecasting for many generations. Unsurprisingly, [PAWN_pronoun] shared this passion and devoted a huge amount of time to meteorology, which helped [PAWN_possessive] find a job with a wether broadcast.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>2</Mining>
@@ -251,6 +267,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>-3</Plants>
@@ -269,6 +286,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Artistic>8</Artistic>
@@ -295,6 +315,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Cooking>8</Cooking>
@@ -324,6 +346,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>6</Mining>
@@ -360,6 +383,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>

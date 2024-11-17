@@ -3,14 +3,14 @@
 
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>Male_Pony</defName>
-		<graphicPath>Things/Races/Pony/Heads/Male_Pony</graphicPath>
+		<graphicPath>Things/Races/Pony/Heads/Normal/Male_Pony</graphicPath>
 		<beardOffsetXEast>0.075</beardOffsetXEast>
 		<gender>Male</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>Female_Pony</defName>
-		<graphicPath>Things/Races/Pony/Heads/Female_Pony</graphicPath>
+		<graphicPath>Things/Races/Pony/Heads/Normal/Female_Pony</graphicPath>
 		<beardOffsetXEast>0.075</beardOffsetXEast>
 		<gender>Female</gender>
 	</HeadTypeDef>

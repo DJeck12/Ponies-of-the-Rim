@@ -89,7 +89,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-			<range>10</range>
+			<range>16</range>
 			<warmupTime>1.0</warmupTime>
 			<soundCast>Shot_ChargeRifle</soundCast>
 		</verbProperties>

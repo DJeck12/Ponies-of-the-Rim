@@ -18,5 +18,8 @@ Parasol
 Jetstream
 Dove
 Bird
+Flap
+Spear
+Corsair
 Wanderfolt
 Greenfly

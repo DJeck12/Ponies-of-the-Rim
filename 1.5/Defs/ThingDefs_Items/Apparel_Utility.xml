@@ -70,7 +70,7 @@
 	<ThingDef ParentName="ApparelBase">
 		<defName>Pony_BattleSaddle</defName>
 		<label>battle saddle</label>
-		<description>A combat saddle designed to comfortably hold a weapon at the pony's side.</description>
+		<description>A combat saddle designed to comfortably hold a weapon at the pony's side, increasing aiming speed.</description>
 		<tradeability>Sellable</tradeability>
 		<tradeTags>
 			<li>Armor</li>

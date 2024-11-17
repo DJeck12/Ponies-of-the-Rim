@@ -3,7 +3,7 @@
 
 	<InteractionDef>
 		<defName>Pony_Fortune_Interaction</defName>
-		<label>prophet speech</label>
+		<label>oracle speech</label>
 		<workerClass>InteractionWorker</workerClass>
 		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
 		<symbol>Things/Mote/SpeechSymbols/Speech</symbol>

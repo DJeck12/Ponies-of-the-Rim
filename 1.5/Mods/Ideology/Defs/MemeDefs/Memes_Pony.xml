@@ -2,16 +2,18 @@
 <Defs>
 
 	<MemeDef>
-		<defName>Pony_Harmony</defName>
-		<label>harmony</label>
-		<description>Harmony is the way to balance and success. Unjustified violence must be repressed.</description>
-		<iconPath>UI/Memes/Harmony</iconPath>
+		<defName>Pony_Friendship</defName>
+		<label>Love and Tolerance</label>
+		<description>Friendship is the way to balance and success. Unjustified violence must be repressed.</description>
+		<iconPath>UI/Memes/Unity</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<exclusionTags>
-			<li>SupremacistIndividualist</li>
+			<li>Races</li>
+			<li>Supremacist</li>
 			<li>Raider</li>
 			<li>Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Bloodfeeding</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly">Inhuman</li>
 		</exclusionTags>
 		<requireOne>
@@ -24,6 +26,9 @@
 				<li>Execution_Abhorrent</li>
 			</li>
 		</requireOne>
+		<agreeableTraits>
+			<li>Kind</li>
+		</agreeableTraits>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->balanced</li>
@@ -34,7 +39,6 @@
 				<li>memeCreed->friendship</li>
 				<li>memeCreed->concord</li>
 				<li>memeCreed->kindship</li>
-				<li>memeConcept->harmony</li>
 				<li>memeConcept->helping</li>
 				<li>memeConcept->peace</li>
 				<li>memeLeaderNoun->friend of all</li>
@@ -51,37 +55,38 @@
 			<rules>
 				<rulesStrings>
 				<!-- theist myth -->
-					<li>creation(tag=meme_Loyalist)        ->[deity0_name] admonished the good peoples to fight only those who fought without just cause.</li>
-					<li>episode(uses=1,tag=meme_Loyalist)  ->A war with the unbelievers followed. One of the believers, [believer_nameFull], seeking advantage, invited the heathens inside the land of [deity0_name], and [deity0_name] became furious at [believer_possessive] betrayal, and struck [believer_objective] down ten thousand times.</li>
+					<li>creation(tag=meme_Pony_Friendship)        ->[deity0_name] admonished the good peoples to fight only those who fought without just cause.</li>
+					<li>episode(uses=1,tag=meme_Pony_Friendship)  ->A war with the unbelievers followed. One of the believers, [believer_nameFull], seeking advantage, invited the heathens inside the land of [deity0_name], and [deity0_name] became furious at [believer_possessive] betrayal, and struck [believer_objective] down ten thousand times.</li>
 					<!-- theist founder -->
-					<li>intro(tag=meme_Loyalist)           ->A [memeAdjective] community on the [place_summary] [place_name] worshipped [deity0_name] in [deity0_possessive] [altarRoomLabel], and they were steadfast in their faith.</li>
-					<li>conflict(tag=meme_Loyalist)        ->A [foeLeader] planted [foeSoldiers] as spies within the [memberNamePlural] to divide them.</li>
-					<li>founderJoin(tag=meme_Loyalist)     ->[founderName], a [memeAdjective] [place_job], was tortured by the [foeSoldiers], but refused to swear loyalty to the [foeLeader].</li>
-					<li>victory(tag=meme_Loyalist)         ->With the strength of [deity0_name], [founderName] and the [memberNamePlural] could not be divided. They defeated the [foeSoldiers] with [place_personalWeapon]s and banished the [foeLeader] from [place_name].</li>
+					<li>intro(tag=meme_Pony_Friendship)           ->A [memeAdjective] community on the [place_summary] [place_name] worshipped [deity0_name] in [deity0_possessive] [altarRoomLabel], and they were steadfast in their faith.</li>
+					<li>conflict(tag=meme_Pony_Friendship)        ->A [foeLeader] planted [foeSoldiers] as spies within the [memberNamePlural] to divide them.</li>
+					<li>founderJoin(tag=meme_Pony_Friendship)     ->[founderName], a [memeAdjective] [place_job], was tortured by the [foeSoldiers], but refused to swear loyalty to the [foeLeader].</li>
+					<li>victory(tag=meme_Pony_Friendship)         ->With the strength of [deity0_name], [founderName] and the [memberNamePlural] could not be divided. They defeated the [foeSoldiers] with [place_personalWeapon]s and banished the [foeLeader] from [place_name].</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_Loyalist)           ->At the beginning, [founderName]'s movement was battered by governments and religions. [founder_pronoun] never allowed anger to drive [founder_objective] to commit the atrocities that others did, but [founder_pronoun] also never backed down from a fight.</li>
-					<li>story(uses=1,tag=meme_Loyalist)    ->[founderName] punished those who tried to harm the unbelievers, as well as those who invited them into the believers' house.</li>
+					<li>setup(tag=meme_Pony_Friendship)           ->At the beginning, [founderName]'s movement was battered by governments and religions. [founder_pronoun] never allowed anger to drive [founder_objective] to commit the atrocities that others did, but [founder_pronoun] also never backed down from a fight.</li>
+					<li>story(uses=1,tag=meme_Pony_Friendship)    ->[founderName] punished those who tried to harm the unbelievers, as well as those who invited them into the believers' house.</li>
 					<!-- ideological lesson -->
-					<li>lessonIntro(tag=meme_Loyalist)         ->I watched as a [foeLeader] courted favor with [foeLeader_possessive] rivals while leaving [foeLeader_possessive] [foeSoldiers] to die on the battlefield. I vowed then to never be like [foeLeader_objective], knowing that</li>
-					<li>lesson(tag=meme_Loyalist)              ->your love for your friend only has meaning because you don't love your enemy</li>
-					<li>lesson(tag=meme_Loyalist)              ->to love all is to love none</li>
-					<li>lessonReinforcement(tag=meme_Loyalist) ->Only share these truths with those who prove their allegiance through sacrifice.</li>
+					<li>lessonIntro(tag=meme_Pony_Friendship)         ->I watched as a [foeLeader] courted favor with [foeLeader_possessive] rivals while leaving [foeLeader_possessive] [foeSoldiers] to die on the battlefield. I vowed then to never be like [foeLeader_objective], knowing that</li>
+					<li>lesson(tag=meme_Pony_Friendship)              ->your love for your friend only has meaning because you don't love your enemy</li>
+					<li>lesson(tag=meme_Pony_Friendship)              ->to love all is to love none</li>
+					<li>lessonReinforcement(tag=meme_Pony_Friendship) ->Only share these truths with those who prove their allegiance through sacrifice.</li>
 					<!-- archist -->
-					<li>archistBasis(tag=meme_Loyalist)    ->The archotechs' demand is simple: follow their designated path, and no other.</li>
-					<li>archistFact(tag=meme_Loyalist)     ->Archotechs touch every human consciousness directly on a regular basis, imparting wisdom only to those that seek the knowledge of the archotechs.</li>
-					<li>archistProphecy(tag=meme_Loyalist) ->[inTheEnd], the archotechs will judge the loyalty of humanity. Those that did not simper or boast will be lifted to a transcendence.</li>
+					<li>archistBasis(tag=meme_Pony_Friendship)    ->The archotechs' demand is simple: follow their designated path, and no other.</li>
+					<li>archistFact(tag=meme_Pony_Friendship)     ->Archotechs touch every human consciousness directly on a regular basis, imparting wisdom only to those that seek the knowledge of the archotechs.</li>
+					<li>archistProphecy(tag=meme_Pony_Friendship) ->[inTheEnd], the archotechs will judge the loyalty of humanity. Those that did not simper or boast will be lifted to a transcendence.</li>
 					<!-- animist -->
-					<li>animistBasis(tag=meme_Loyalist)    ->There are three tribes of spirits: The tribe of warmongers and murderers, the tribe of surrenderers and whiners, and the one noble tribe of the strong and loyal.</li>
-					<li>animistFact(tag=meme_Loyalist)     ->The spirits fight against both those who betray their people, and those who betray the friends of their people. The betrayers will trip on every rock, choke on every seed, and always taste foul water.</li>
-					<li>animistProphecy(tag=meme_Loyalist) ->[itIsSaid] that one will be born who lives their whole life true to their people. In death their spirit will explode in light, destroying all surrenderers and warmongers.</li>
+					<li>animistBasis(tag=meme_Pony_Friendship)    ->There are three tribes of spirits: The tribe of warmongers and murderers, the tribe of surrenderers and whiners, and the one noble tribe of the strong and loyal.</li>
+					<li>animistFact(tag=meme_Pony_Friendship)     ->The spirits fight against both those who betray their people, and those who betray the friends of their people. The betrayers will trip on every rock, choke on every seed, and always taste foul water.</li>
+					<li>animistProphecy(tag=meme_Pony_Friendship) ->[itIsSaid] that one will be born who lives their whole life true to their people. In death their spirit will explode in light, destroying all surrenderers and warmongers.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
 		<symbolPacks>
 			<li>
-				<theme>harmonism</theme>
-				<adjective>harmonist</adjective>
-				<member>harmonist</member>
+				<ideoName>Friendshipism</ideoName>
+				<theme>friendship</theme>
+				<adjective>friendly</adjective>
+				<member>comrade</member>
 			</li>
 		</symbolPacks>
 	</MemeDef>
@@ -100,11 +105,12 @@
 		<iconPath>UI/Memes/EarthponySupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
 		<exclusionTags>
-			<li>RaceRelation</li>
+			<li>Races</li>
 		</exclusionTags>
 		<requireOne>
 			<li>
@@ -112,28 +118,15 @@
 				<li>HAR_AlienSlavery_Honorable</li>
 			</li>
 			<li>
-				<li>HAR_AlienRaces_Abhorrent</li>
-				<li>HAR_AlienRaces_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Earthpony_Exalted</li>
-				<li>Pony_Earthpony_Respected</li>
-			</li>
-			<li>
-				<li>Pony_Pegasus_Abhorrent</li>
-				<li>Pony_Pegasus_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Unicorn_Abhorrent</li>
-				<li>Pony_Unicorn_Horrible</li>
+				<li>Pony_Earthpony_Stricted</li>
 			</li>
 		</requireOne>
-	<!--	<agreeableTraits>
-			<li>
-				<def>Pony_RelationsForEarth</def>
-				<degree>1</degree>
-			</li>
-		</agreeableTraits> -->
+		<agreeableTraits>
+			<Pony_RelationsForEarth>1</Pony_RelationsForEarth>
+		</agreeableTraits>
+		<disagreeableTraits>
+			<Pony_RelationsForEarth>-1</Pony_RelationsForEarth>
+		</disagreeableTraits>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -163,27 +156,27 @@
 			<rules>
 				<rulesStrings>
 				<!-- theist myth -->
-				<li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
-				<li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+				<li>creation(tag=meme_Pony_EarthponySupremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+				<li>episode(uses=1,tag=meme_Pony_EarthponySupremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
 				<!-- theist founder -->
-				<li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
-				<li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
-				<li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
-				<li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+				<li>intro(tag=meme_Pony_EarthponySupremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+				<li>conflict(tag=meme_Pony_EarthponySupremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+				<li>founderJoin(tag=meme_Pony_EarthponySupremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+				<li>victory(tag=meme_Pony_EarthponySupremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
 				<!-- ideological founder -->
-				<li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
-				<li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+				<li>setup(tag=meme_Pony_EarthponySupremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+				<li>story(uses=1,tag=meme_Pony_EarthponySupremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
 				<!-- ideological lesson -->
-				<li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
-				<li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
-				<li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+				<li>lessonIntro(tag=meme_Pony_EarthponySupremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+				<li>lesson(tag=meme_Pony_EarthponySupremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+				<li>lessonReinforcement(tag=meme_Pony_EarthponySupremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
 				<!-- archist -->
-				<li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
-				<li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
-				<li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+				<li>archistBasis(tag=meme_Pony_EarthponySupremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+				<li>archistFact(tag=meme_Pony_EarthponySupremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+				<li>archistProphecy(tag=meme_Pony_EarthponySupremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
 				<!-- animist -->
-				<li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
-				<li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+				<li>animistFact(tag=meme_Pony_EarthponySupremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+				<li>animistProphecy(tag=meme_Pony_EarthponySupremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -213,11 +206,12 @@
 		<iconPath>UI/Memes/PegasusSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
 		<exclusionTags>
-			<li>RaceRelation</li>
+			<li>Races</li>
 		</exclusionTags>
 		<requireOne>
 			<li>
@@ -225,22 +219,15 @@
 				<li>HAR_AlienSlavery_Honorable</li>
 			</li>
 			<li>
-				<li>HAR_AlienRaces_Abhorrent</li>
-				<li>HAR_AlienRaces_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Earthpony_Abhorrent</li>
-				<li>Pony_Earthpony_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Pegasus_Exalted</li>
-				<li>Pony_Pegasus_Respected</li>
-			</li>
-			<li>
-				<li>Pony_Unicorn_Abhorrent</li>
-				<li>Pony_Unicorn_Horrible</li>
+				<li>Pony_Pegasus_Stricted</li>
 			</li>
 		</requireOne>
+		<agreeableTraits>
+			<Pony_RelationsForPegasus>1</Pony_RelationsForPegasus>
+		</agreeableTraits>
+		<disagreeableTraits>
+			<Pony_RelationsForPegasus>-1</Pony_RelationsForPegasus>
+		</disagreeableTraits>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -270,27 +257,27 @@
 			<rules>
 				<rulesStrings>
 				<!-- theist myth -->
-				<li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
-				<li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+				<li>creation(tag=meme_Pony_PegasusSupremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+				<li>episode(uses=1,tag=meme_Pony_PegasusSupremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
 				<!-- theist founder -->
-				<li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
-				<li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
-				<li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
-				<li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+				<li>intro(tag=meme_Pony_PegasusSupremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+				<li>conflict(tag=meme_Pony_PegasusSupremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+				<li>founderJoin(tag=meme_Pony_PegasusSupremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+				<li>victory(tag=meme_Pony_PegasusSupremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
 				<!-- ideological founder -->
-				<li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
-				<li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+				<li>setup(tag=meme_Pony_PegasusSupremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+				<li>story(uses=1,tag=meme_Pony_PegasusSupremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
 				<!-- ideological lesson -->
-				<li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
-				<li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
-				<li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+				<li>lessonIntro(tag=meme_Pony_PegasusSupremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+				<li>lesson(tag=meme_Pony_PegasusSupremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+				<li>lessonReinforcement(tag=meme_Pony_PegasusSupremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
 				<!-- archist -->
-				<li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
-				<li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
-				<li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+				<li>archistBasis(tag=meme_Pony_PegasusSupremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+				<li>archistFact(tag=meme_Pony_PegasusSupremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+				<li>archistProphecy(tag=meme_Pony_PegasusSupremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
 				<!-- animist -->
-				<li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
-				<li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+				<li>animistFact(tag=meme_Pony_PegasusSupremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+				<li>animistProphecy(tag=meme_Pony_PegasusSupremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -320,11 +307,12 @@
 		<iconPath>UI/Memes/UnicornSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
 		<exclusionTags>
-			<li>RaceRelation</li>
+			<li>Races</li>
 		</exclusionTags>
 		<requireOne>
 			<li>
@@ -332,22 +320,15 @@
 				<li>HAR_AlienSlavery_Honorable</li>
 			</li>
 			<li>
-				<li>HAR_AlienRaces_Abhorrent</li>
-				<li>HAR_AlienRaces_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Earthpony_Abhorrent</li>
-				<li>Pony_Earthpony_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Pegasus_Abhorrent</li>
-				<li>Pony_Pegasus_Horrible</li>
-			</li>
-			<li>
-				<li>Pony_Unicorn_Exalted</li>
-				<li>Pony_Unicorn_Respected</li>
+				<li>Pony_Unicorn_Stricted</li>
 			</li>
 		</requireOne>
+		<agreeableTraits>
+			<Pony_RelationsForUnicorn>1</Pony_RelationsForUnicorn>
+		</agreeableTraits>
+		<disagreeableTraits>
+			<Pony_RelationsForUnicorn>-1</Pony_RelationsForUnicorn>
+		</disagreeableTraits>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -377,27 +358,27 @@
 			<rules>
 				<rulesStrings>
 				<!-- theist myth -->
-				<li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
-				<li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+				<li>creation(tag=meme_Pony_UnicornSupremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+				<li>episode(uses=1,tag=meme_Pony_UnicornSupremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
 				<!-- theist founder -->
-				<li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
-				<li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
-				<li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
-				<li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+				<li>intro(tag=meme_Pony_UnicornSupremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+				<li>conflict(tag=meme_Pony_UnicornSupremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+				<li>founderJoin(tag=meme_Pony_UnicornSupremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+				<li>victory(tag=meme_Pony_UnicornSupremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
 				<!-- ideological founder -->
-				<li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
-				<li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+				<li>setup(tag=meme_Pony_UnicornSupremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+				<li>story(uses=1,tag=meme_Pony_UnicornSupremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
 				<!-- ideological lesson -->
-				<li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
-				<li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
-				<li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+				<li>lessonIntro(tag=meme_Pony_UnicornSupremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+				<li>lesson(tag=meme_Pony_UnicornSupremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+				<li>lessonReinforcement(tag=meme_Pony_UnicornSupremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
 				<!-- archist -->
-				<li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
-				<li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
-				<li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+				<li>archistBasis(tag=meme_Pony_UnicornSupremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+				<li>archistFact(tag=meme_Pony_UnicornSupremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+				<li>archistProphecy(tag=meme_Pony_UnicornSupremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
 				<!-- animist -->
-				<li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
-				<li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+				<li>animistFact(tag=meme_Pony_UnicornSupremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+				<li>animistProphecy(tag=meme_Pony_UnicornSupremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>

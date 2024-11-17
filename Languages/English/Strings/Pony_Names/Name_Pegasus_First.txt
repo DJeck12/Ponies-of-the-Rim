@@ -16,3 +16,4 @@ Slow
 Fast
 Foggy
 Flitter
+Fierce

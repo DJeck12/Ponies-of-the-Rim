@@ -2,8 +2,8 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-	<xpath>/Defs/RecipeDef[defName="CookMealSimple"
-	or defName="CookMealSimpleBulk"]/ingredients/li/filter</xpath>
+		<xpath>/Defs/RecipeDef[defName="CookMealSimple"
+		or defName="CookMealSimpleBulk"]/ingredients/li/filter</xpath>
 		<value>
 			<thingDefs>
 				<li>Hay</li>
@@ -12,8 +12,8 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-	<xpath>/Defs/RecipeDef[defName="CookMealSimple"
-	or defName="CookMealSimpleBulk"]</xpath>
+		<xpath>/Defs/RecipeDef[defName="CookMealSimple"
+		or defName="CookMealSimpleBulk"]</xpath>
 		<value>
 			<fixedIngredientFilter>
 				<categories>

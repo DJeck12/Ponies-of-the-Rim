@@ -3,7 +3,13 @@
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="BasePony" Abstract="True">
 
-<!-- Settings -->
+	<!-- Stats -->
+
+		<statBases>
+			<MaxNutrition>1</MaxNutrition>
+			<LeatherAmount>75</LeatherAmount>
+		</statBases>
+	<!-- Alien Settings -->
 
 		<alienRace>
 			<generalSettings>
@@ -18,7 +24,7 @@
 				</forcedRaceTraitEntries>
 				<maxDamageForSocialfight>6</maxDamageForSocialfight>
 				<humanRecipeImport>true</humanRecipeImport>
-			<!-- Xeno settings -->
+			<!-- Xeno Settings -->
 				<notXenophobistTowards>
 					<li>Pony_Earthpony</li>
 					<li>Pony_Unicorn</li>
@@ -26,7 +32,7 @@
 				</notXenophobistTowards>
 
 				<alienPartGenerator>
-					<headTypes Inherit="False">
+					<headTypes>
 						<li>Male_Pony</li>
 						<li>Female_Pony</li>
 					</headTypes>
@@ -35,33 +41,33 @@
 						<layerOffset>0.28</layerOffset>
 							<bodyTypes>
 								<Pony>(0, -0.075)</Pony>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.015)</Baby>
-								<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.038)</Child>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.015)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.038)</PonyChild>
 							</bodyTypes>
 						</north>
 						<south>
 							<bodyTypes>
 								<Pony>(0, -0.175)</Pony>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.08)</Baby>
-								<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.12)</Child>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.08)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.12)</PonyChild>
 							</bodyTypes>
 						</south>
 						<east>
 							<bodyTypes>
 								<Pony>(0.125, -0.02)</Pony>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.1, 0.02)</Baby>
-								<Child MayRequire="Ludeon.RimWorld.Biotech">(0.125, 0.01)</Child>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.08, 0.02)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.1, 0.01)</PonyChild>
 							</bodyTypes>
 						</east>
 						<west>
 							<bodyTypes>
 								<Pony>(-0.125, -0.02)</Pony>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.1, 0.02)</Baby>
-								<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.125, 0.01)</Child>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(-0.08, 0.02)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(-0.1, 0.01)</PonyChild>
 							</bodyTypes>
 						</west>
 					</headOffsetDirectional>
-					<bodyTypes Inherit="False">
+					<bodyTypes>
 						<li>Pony</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
@@ -115,6 +121,9 @@
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Tail_Furry</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Tail_Smooth</li>
+
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hands_Human</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ElongatedFingers</li>
 					
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyMagic</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_NaturePower</li>
@@ -147,6 +156,13 @@
 								<li>SpacerMilitary</li>
 								<li>PrestigeCombatGear</li>
 								<li>Mechlord</li>
+							</apparelTags>
+						</li>
+					<!-- Override all medieval armor with plate armor -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor_Pony</wornGraphicPath>
+							<apparelTags>
+								<li>MedievalMilitary</li>
 							</apparelTags>
 						</li>
 					<!-- Override all neolithic garment with tribal tunic -->
@@ -190,7 +206,7 @@
 			</graphicPaths>
 		</alienRace>
 
-<!-- Attacks -->
+	<!-- Attacks -->
 
 		<tools>
 			<li>
@@ -272,7 +288,7 @@
 			</li>
 		</tools>
 
-<!-- Race Settings -->
+	<!-- Race Settings -->
 
 		<race>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
@@ -287,6 +303,7 @@
 			<renderTree>Humanlike</renderTree>
 			<baseBodySize>0.9</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.9</baseHungerRate>
 			<foodType>VegetarianAnimal</foodType>
 			<gestationPeriodDays>18</gestationPeriodDays>
 			<specificMeatDef>Meat_Pony</specificMeatDef>

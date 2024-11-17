@@ -9,6 +9,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Animals>4</Animals>
@@ -30,6 +33,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>4</Plants>
@@ -48,6 +54,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Medicine>2</Medicine>
@@ -65,6 +74,8 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>4</Plants>
@@ -83,6 +94,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Artistic>2</Artistic>
@@ -101,6 +113,8 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Intellectual>-3</Intellectual>
@@ -139,12 +153,29 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Social>3</Social>
 			<Mining>-2</Mining>
 			<Crafting>3</Crafting>
 		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Pony_RelationsForPegasus</defName>
+					</li>
+					<li>
+						<defName Degree="1">Pony_RelationsForUnicorn</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
 		<requiredWorkTags>Crafting</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 

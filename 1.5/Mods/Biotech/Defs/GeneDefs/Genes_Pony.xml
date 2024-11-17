@@ -75,7 +75,7 @@
 		<randomChosen>true</randomChosen>
 		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
 		<modExtensions>
-			<li Class="PoniesOfTheRim.RandomGeneExtension">
+			<li Class="PoniesOfTheRim.GeneExtension">
 				<genes>
 					<li>Skin_InkBlack</li>
 					<li>Skin_SlateGray</li>
@@ -103,7 +103,7 @@
 		<randomChosen>true</randomChosen>
 		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
 		<modExtensions>
-			<li Class="PoniesOfTheRim.RandomGeneExtension">
+			<li Class="PoniesOfTheRim.GeneExtension">
 				<genes>
 					<li>Hair_SnowWhite</li>
 					<li>Hair_DarkBlack</li>
@@ -152,7 +152,7 @@
 		<randomChosen>true</randomChosen>
 		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
 		<modExtensions>
-			<li Class="PoniesOfTheRim.RandomGeneExtension">
+			<li Class="PoniesOfTheRim.GeneExtension">
 				<removeAfter>True</removeAfter>
 				<genes>
 					<li>Pony_NaturePower</li>
@@ -229,6 +229,7 @@
 		<randomChosen>true</randomChosen>
 		<exclusionTags>
 			<li>PonyMagic</li>
+			<li>Wings</li>
 		</exclusionTags>
 	</GeneDef>
 

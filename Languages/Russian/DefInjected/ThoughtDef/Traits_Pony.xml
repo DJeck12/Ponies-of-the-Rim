@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_OpinionForPony.stages.pony-0.label>пони</Pony_OpinionForPony.stages.pony-0.label>
+	<Pony_OpinionForPony.stages.pony-1.label>пони</Pony_OpinionForPony.stages.pony-1.label>
+
+	<Pony_OpinionForEarth.stages.earthy-0.label>земной</Pony_OpinionForEarth.stages.earthy-0.label>
+	<Pony_OpinionForEarth.stages.earthy-1.label>земной</Pony_OpinionForEarth.stages.earthy-1.label>
+
+	<Pony_OpinionForPegasus.stages.have_wings-0.label>крылатый</Pony_OpinionForPegasus.stages.have_wings-0.label>
+	<Pony_OpinionForPegasus.stages.have_wings-1.label>крылатый</Pony_OpinionForPegasus.stages.have_wings-1.label>
+
+	<Pony_OpinionForUnicorn.stages.have_a_horn-0.label>рогатый</Pony_OpinionForUnicorn.stages.have_a_horn-0.label>
+	<Pony_OpinionForUnicorn.stages.have_a_horn-1.label>рогатый</Pony_OpinionForUnicorn.stages.have_a_horn-1.label>
+
+</LanguageData>

@@ -21,6 +21,7 @@
 				<li>memeCreed->friendship</li>
 				<li>memeCreed->concord</li>
 				<li>memeCreed->kindship</li>
+				<li>memeConcept->harmony</li>
 				<li>memeLeaderNoun->friend of all</li>
 				<li>memeLeaderNoun->prince</li>
 				<li>memeLeaderNoun->leader</li>
@@ -29,7 +30,6 @@
 				<li>memeLeaderAdjective->inspiring</li>
 				<li>memeMoralist->priest</li>
 				<li>memeMoralist->preacher</li>
-				<li>memeMoralist->wizard</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
@@ -90,7 +90,7 @@
 				<type>Princess of Cosmos</type>
 			</li>
 			<li>
-				<name>Faust</name>
+				<name>Fausticorn</name>
 				<type>Princess of Creation</type>
 			</li>
 			<li>

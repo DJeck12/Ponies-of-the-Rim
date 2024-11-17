@@ -10,7 +10,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with the earth, representatives of this race do not only have an innate affinity for nature and strong endurance. Among them there are also many talented inventors and successful entrepreneurs. However, earth ponies are often considered "limited" and incapable of skilled work. This stereotype has nothing to do with reality, because they are talented and versatile creatures.]]></description>
 
-<!--Stats-->
+	<!-- Stats -->
 
 		<statBases>
 			<MarketValue>1800</MarketValue>
@@ -21,7 +21,6 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<CarryingCapacity>90</CarryingCapacity> <!-- Will be replaced with a gene with Biotech. Defaults to 80 -->
 			<Mass>55</Mass>
-			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.8</PainShockThreshold> <!-- Will be replaced with a gene with Biotech. Defaults to 0.75 -->
 			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
 			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
@@ -29,7 +28,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 			<WorkSpeedGlobal>0.8</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 		
-<!--Settings-->
+	<!-- Alien Settings -->
 
 		<alienRace>
 			<generalSettings>
@@ -47,6 +46,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_StrongBody</li>
 					<!--<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>-->
 				</raceGenes>
+			<!-- Colors -->
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
@@ -91,20 +91,12 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<bannedTags>
-							<li>HairLong</li>
-						</bannedTags>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<bannedTags>
-							<li>Bushy</li>
-							<li>BeardBushy</li>
-							<li>BeardLong</li>
-						</bannedTags>
 					</value>
 				</li>
 				<li>
@@ -114,6 +106,8 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 					</value>
 				</li>
 			</styleSettings>
+
+		<!-- Graphics -->
 
 			<graphicPaths>
 				<head>
@@ -142,6 +136,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 				<body>
 					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
 					<extendedGraphics>
+					<!-- Mutant -->
 						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
 					</extendedGraphics>
 				</body>
@@ -150,7 +145,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 			</graphicPaths>
 		</alienRace>
 
-<!--Race Settings-->
+	<!-- Race Settings -->
 
 		<race>
 			<nameGenerator>NameGeneratorEarth</nameGenerator>

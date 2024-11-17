@@ -6,7 +6,7 @@
 			<li>Royalty</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-		<success>Always</success>
+			<success>Always</success>
 			<operations>
 			<!-- Guests -->
 				<li Class="PatchOperationAdd">
@@ -18,6 +18,7 @@
 								<li>Pony_EarthponyVillager</li>
 								<li>Pony_PegasusVillager</li>
 								<li>Pony_UnicornVillager</li>
+								<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponyVillager</li>
 							</pawnKinds>
 						</li>
 					</value>
@@ -32,12 +33,15 @@
 								<li>Pony_EarthponyMercenary_Gunner_Acidifier</li>
 								<li>Pony_PegasusMercenary_Gunner_Acidifier</li>
 								<li>Pony_UnicornMercenary_Gunner_Acidifier</li>
+								<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponyMercenary_Gunner_Acidifier</li>
 								<li>Pony_EarthponyMercenary_Slasher_Acidifier</li>
 								<li>Pony_PegasusMercenary_Slasher_Acidifier</li>
 								<li>Pony_UnicornMercenary_Slasher_Acidifier</li>
+								<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponyMercenary_Slasher_Acidifier</li>
 								<li>Pony_EarthponyMercenary_Elite_Acidifier</li>
 								<li>Pony_PegasusMercenary_Elite_Acidifier</li>
 								<li>Pony_UnicornMercenary_Elite_Acidifier</li>
+								<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponyMercenary_Elite_Acidifier</li>
 							</pawnKinds>
 						</li>
 					</value>

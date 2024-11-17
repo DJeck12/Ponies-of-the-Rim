@@ -101,6 +101,9 @@
 		<slot>Childhood</slot> 
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Animals>2</Animals>
@@ -120,6 +123,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>2</Melee>
@@ -150,12 +156,18 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-2</Construction>
 			<Social>2</Social>
 			<Intellectual>3</Intellectual>
 		</skillGains>
+		<forcedTraits>
+			<Pony_RelationsForUnicorn>1</Pony_RelationsForUnicorn>
+		</forcedTraits>
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
@@ -166,6 +178,8 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>3</Plants>
@@ -183,6 +197,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>-2</Melee>
@@ -220,6 +237,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>2</Shooting>
@@ -242,6 +262,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>2</Melee>
@@ -263,6 +286,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Crafting>3</Crafting>
@@ -293,6 +317,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>-2</Shooting>
@@ -314,6 +339,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-3</Construction>
@@ -343,6 +369,8 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Cooking>-3</Cooking>
