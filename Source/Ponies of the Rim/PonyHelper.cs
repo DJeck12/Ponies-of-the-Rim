@@ -21,4 +21,17 @@ namespace PoniesOfTheRim
             }
         }
     }
+<<<<<<< HEAD:Source/Ponies of the Rim/PonyHelper.cs
 }
+=======
+}    
+
+
+
+
+
+
+
+
+
+>>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/PonyHelper.cs
