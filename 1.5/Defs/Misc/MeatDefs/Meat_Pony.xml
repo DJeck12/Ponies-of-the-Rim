@@ -7,8 +7,7 @@
 		<description>Raw buthered flesh of a member of the pony race. Can be used as food, but most individuals will not take this idea well. Considered cannibal food for both ponies and other races.</description>
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
-			<color>(245,200,245)</color>
+			<texPath>Things/Item/Meat</texPath>
 		</graphicData>
 		
 		<statBases>

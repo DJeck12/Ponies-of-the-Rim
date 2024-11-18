@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<IdeoPresetDef>
+		<defName>Pony_Harmonic</defName>
+		<label>harmonic values</label>
+		<description>Ponies follow the ideas of friendship and harmony and are always spreading their principles to everyone around them in an effort to make the world a better and kinder place.
+\nUnlocks the Oracle role, able to motivate those around them with their fortunes.</description>
+		<categoryDef>Mild</categoryDef>
+		<memes>
+			<li>Pony_Harmonism</li>
+			<li>Pony_Friendship</li>
+			<li>Proselytizer</li>
+		</memes>
+	</IdeoPresetDef>
+
+</Defs>

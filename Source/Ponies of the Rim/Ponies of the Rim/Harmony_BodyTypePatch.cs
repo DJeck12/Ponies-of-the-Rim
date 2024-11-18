@@ -1,7 +1,6 @@
 ﻿using AlienRace;
 using HarmonyLib;
 using RimWorld;
-using System.Collections.Generic;
 using Verse;
 
 namespace PoniesOfTheRim
@@ -17,33 +16,25 @@ namespace PoniesOfTheRim
         [HarmonyPostfix]
         public static void BodyTypePatch(Pawn pawn, ref BodyTypeDef __result)
         {
-            if (pawn.def.defName.Contains("Pony_"))
+            if (pawn.IsPony())
             {
-                if (ModsConfig.BiotechActive && pawn.DevelopmentalStage.Juvenile())
+
+                if (ModsConfig.BiotechActive)
                 {
-                    if (pawn.DevelopmentalStage == DevelopmentalStage.Baby)
+                    if (pawn.DevelopmentalStage.Baby() || pawn.DevelopmentalStage.Newborn())
                     {
                         __result = Pony_DefOf.PonyBaby;
                     }
-                    __result = Pony_DefOf.PonyChild;
+                    if (pawn.DevelopmentalStage.Child())
+                    {
+                        __result = Pony_DefOf.PonyChild;
+                    }
+                }
+                if (pawn.DevelopmentalStage.Adult())
+                {
+                     __result = Pony_DefOf.Pony;
                 }
             }
         }
-
     }
-
-
-
-
-
-
 }    
-
-
-
-
-
-
-
-
-

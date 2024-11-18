@@ -2,13 +2,32 @@
 <LanguageData>
 
 	<Pony_PonyHead.label>голова пони</Pony_PonyHead.label>
-	<Pony_PonyHead.description>Носители этого гена обладают головой расы пони. Не имеет эффекта на пони.</Pony_PonyHead.description>
+	<Pony_PonyHead.description>Носители этого гена обладают головой расы пони.</Pony_PonyHead.description>
 
 	<Pony_PonyEars.label>понячьи уши</Pony_PonyEars.label>
-	<Pony_PonyEars.description>Носители этого гена обладают ушами расы пони. Не имеет эффекта на пони.</Pony_PonyEars.description>
+	<Pony_PonyEars.description>Носители этого гена обладают ушами расы пони.</Pony_PonyEars.description>
 
 	<Pony_PonyTail.label>понячий хвост</Pony_PonyTail.label>
-	<Pony_PonyTail.description>Носители этого гена обладают хвостом расы пони. Не имеет эффекта на пони.</Pony_PonyTail.description>
+	<Pony_PonyTail.description>Носители этого гена обладают хвостом расы пони.</Pony_PonyTail.description>
+
+	<Pony_Cutiemark.label>кьютимарка</Pony_Cutiemark.label>
+	<Pony_Cutiemark.description>Носители этого гена обладают символом или картинкой на своём боку, обозначающей их профессию, талант или интересы.</Pony_Cutiemark.description>
+
+	<Pony_ColorfulSkin.label>цветная кожа</Pony_ColorfulSkin.label>
+	<Pony_ColorfulSkin.description>Носители этого гена производят пигмент, окрашивающий кожу в уникальный цветной оттенок.</Pony_ColorfulSkin.description>
+
+	<Pony_ColorfulHair.label>цветной цвет волос</Pony_ColorfulHair.label>
+	<Pony_ColorfulHair.description>Носители этого гена производят пигмент, окрашивающий волосы в уникальный цветной оттенок.</Pony_ColorfulHair.description>
+
+	<Pony_VoiceHorse.label>лошадиный голос</Pony_VoiceHorse.label>
+	<Pony_VoiceHorse.description>У носителей этого гена лошадиный голос с характерным ржанием.</Pony_VoiceHorse.description>
+	<Pony_VoiceHorse.symbolPack.prefixSymbols.0.symbol>лоша</Pony_VoiceHorse.symbolPack.prefixSymbols.0.symbol>
+	<Pony_VoiceHorse.symbolPack.prefixSymbols.1.symbol>пон</Pony_VoiceHorse.symbolPack.prefixSymbols.1.symbol>
+	<Pony_VoiceHorse.symbolPack.suffixSymbols.0.symbol>нэй</Pony_VoiceHorse.symbolPack.suffixSymbols.0.symbol>
+	<Pony_VoiceHorse.symbolPack.suffixSymbols.1.symbol>пони</Pony_VoiceHorse.symbolPack.suffixSymbols.1.symbol>
+
+	<Pony_PonyMagic.label>магия пони</Pony_PonyMagic.label>
+	<Pony_PonyMagic.description>Носители этого гена обладают одной из рассовых способностей земнопони, пегасов или единорогов. Не имеет эффекта на пони.</Pony_PonyMagic.description>
 
 	<Pony_NaturePower.label>сила природы</Pony_NaturePower.label>
 	<Pony_NaturePower.description>Носители этого гена наделены природной силой земных пони, получая их способность к скорости работы. Не имеет эффекта на пони.</Pony_NaturePower.description>
@@ -52,11 +71,11 @@
 	<Pony_MagicImbued.symbolPack.suffixSymbols.0.symbol>нэй</Pony_MagicImbued.symbolPack.suffixSymbols.0.symbol>
 	<Pony_MagicImbued.symbolPack.suffixSymbols.1.symbol>пони</Pony_MagicImbued.symbolPack.suffixSymbols.1.symbol>
 	<Pony_MagicImbued.symbolPack.suffixSymbols.2.symbol>корн</Pony_MagicImbued.symbolPack.suffixSymbols.2.symbol>
-
+<!--
 	<Pony_Herbivore.label>травоядность</Pony_Herbivore.label>
 	<Pony_Herbivore.description>Носители этого гена строго травоядные. Они не могут есть и переваривать мясо, если оно не приготовлено в составе блюда.</Pony_Herbivore.description>
 
 	<Pony_Carnivore.label>плотоядность</Pony_Carnivore.label>
 	<Pony_Carnivore.description>Носители этого гена строго плотоядные. Они не могут есть и переваривать фрукты или овощи, если они не приготовлены в составе блюда.</Pony_Carnivore.description>
-
+-->
 </LanguageData>

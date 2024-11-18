@@ -9,196 +9,27 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[@Name="PonyBodyAddons"]/universalBodyAddons</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[1]/conditions/Or</xpath>
 					<value>
-						<universalBodyAddons>
-						<!--Tail-->
-							<li>
-								<name>Tail</name>
-								<path>Things/Races/Pony/Tails/Pony_Tail</path>
-								<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-								<colorChannel>hair</colorChannel>
-								<conditions>
-									<RotStage>Fresh,Rotting</RotStage>
-									<Or>
-										<BodyPart>
-											<bodyPart>Pony_Tail</bodyPart>
-										</BodyPart>
-										<BodyPart>
-											<bodyPart>Waist</bodyPart>
-										</BodyPart>
-									</Or>
-									<Gene>Pony_PonyTail</Gene>
-								</conditions>
-								<extendedGraphics>
-									<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-									<Age For="PonyBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
-								</extendedGraphics>
-								<offsets>
-									<south>
-										<bodyTypes>	
-											<Male>(0, -0.3)</Male>
-											<Female>(0, -0.3)</Female>
-											<Thin>(0, -0.3)</Thin>
-											<Hulk>(0, -0.3)</Hulk>
-											<Fat>(0, -0.3)</Fat>
-											<Pony>(0, 0.58)</Pony>
-											<Baby>(0, 0.3)</Baby>
-											<Child>(0, 0.435)</Child>
-										</bodyTypes>
-									</south>
-									<north>
-										<layerOffset>-0.265</layerOffset>
-										<bodyTypes>
-											<Male>(0, -0.3)</Male>
-											<Female>(0, -0.3)</Female>
-											<Thin>(0, -0.3)</Thin>
-											<Hulk>(0, -0.3)</Hulk>
-											<Fat>(0, -0.3)</Fat>
-											<Pony>(0, -0.3)</Pony>
-											<Baby>(0, -0.16)</Baby>
-											<Child>(0, -0.23)</Child>
-										</bodyTypes>
-									</north>
-									<east>
-										<bodyTypes>
-											<Male>(0.25, -0.2)</Male>
-											<Female>(0.24, -0.2)</Female>
-											<Thin>(0.24, -0.2)</Thin>
-											<Hulk>(0.38, -0.2)</Hulk>
-											<Fat>(0.46, -0.2)</Fat>
-											<Pony>(0.36, 0)</Pony>
-											<Baby>(0.19, 0)</Baby>
-											<Child>(0.28, 0)</Child>
-										</bodyTypes>
-									</east>
-								</offsets>
-							</li>
-						<!--Ears-->
-							<li>
-								<path>Things/Races/Pony/Ears/Normal/Pony_EarRight</path>
-								<userCustomizable>false</userCustomizable>
-								<inFrontOfBody>true</inFrontOfBody>
-								<alignWithHead>true</alignWithHead>
-								<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-								<colorChannel>skin</colorChannel>
-								<conditions>
-									<RotStage>Fresh,Rotting</RotStage>
-									<BodyPart>
-										<bodyPart>Ear</bodyPart>
-										<bodyPartLabel>right ear</bodyPartLabel>
-									</BodyPart>
-									<Apparel>
-										<hiddenUnderApparelFor>
-											<li>TopHead</li>
-										</hiddenUnderApparelFor>
-									</Apparel>
-									<Gene>Pony_PonyEars</Gene>
-								</conditions>
-								<extendedGraphics>
-									<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-									<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarRight_Prosthetic</Hediff>
-									<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarRight_Bionic</Hediff>
-								</extendedGraphics>
-								<offsets>
-									<south>
-										<layerOffset>-0.268</layerOffset>
-									</south>
-									<north>
-										<layerOffset>-0.5</layerOffset>
-									</north>
-									<east>
-										<layerOffset>-0.268</layerOffset>
-									</east>
-									<west>
-										<layerOffset>-0.5</layerOffset>
-									</west>
-								</offsets>
-							</li>
-							<li>
-								<path>Things/Races/Pony/Ears/Normal/Pony_EarLeft</path>
-								<userCustomizable>false</userCustomizable>
-								<inFrontOfBody>true</inFrontOfBody>
-								<alignWithHead>true</alignWithHead>
-								<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-								<colorChannel>skin</colorChannel>
-								<conditions>
-									<BodyPart>
-										<bodyPart>Ear</bodyPart>
-										<bodyPartLabel>left ear</bodyPartLabel>
-									</BodyPart>
-									<Apparel>
-										<hiddenUnderApparelFor>
-											<li>TopHead</li>
-										</hiddenUnderApparelFor>
-									</Apparel>
-									<Gene>Pony_PonyEars</Gene>
-								</conditions>
-								<extendedGraphics>
-									<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-									<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarLeft_Prosthetic</Hediff>
-									<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarLeft_Bionic</Hediff>
-								</extendedGraphics>
-								<offsets>
-									<south>
-										<layerOffset>-0.268</layerOffset>
-									</south>
-									<north>
-										<layerOffset>-0.5</layerOffset>
-									</north>
-									<east>
-										<layerOffset>-0.5</layerOffset>
-									</east>
-									<west>
-										<layerOffset>-0.268</layerOffset>
-									</west>
-								</offsets>
-							</li>
-						<!--Cutiemark-->
-							<li>
-								<name>Cutiemark</name>
-								<path>Things/Races/Pony/Cutiemarks/QTMark</path>
-								<inFrontOfBody>true</inFrontOfBody>
-								<drawSize>(0.135, 0.135)</drawSize>
-								<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-								<colorChannel>none</colorChannel>
-								<conditions>
-									<BodyPart>
-										<bodyPart>Torso</bodyPart>
-									</BodyPart>
-									<Apparel>
-										<hiddenUnderApparelFor>
-											<li>Legs</li>
-										</hiddenUnderApparelFor>
-									</Apparel>
-									<Or>
-										<Age>HumanlikeAdult</Age>
-										<Age>HumanlikeTeenager</Age>
-										<Age>PonyAdult</Age>
-										<Age>PonyTeenager</Age>
-									</Or>
-									<Gene>Pony_Cutiemark</Gene>
-								</conditions>
-								<extendedGraphics>
-									<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-								</extendedGraphics>
-								<offsets>
-									<east>
-										<layerOffset>-0.295</layerOffset>
-										<bodyTypes>	
-											<Male>(0.05, -0.275)</Male>
-											<Female>(0.05, -0.275)</Female>
-											<Thin>(0.09, -0.275)</Thin>
-											<Hulk>(0.05, -0.275)</Hulk>
-											<Fat>(0.05, -0.275)</Fat>
-											<Pony>(0.22, -0.1)</Pony>
-											<Baby>(0.22, -0.1)</Baby>
-											<Child>(0.22, -0.1)</Child>
-										</bodyTypes>
-									</east>
-								</offsets>
-							</li>
-						</universalBodyAddons>
+						<Gene>Pony_PonyTail</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[2]/conditions/Or</xpath>
+					<value>
+						<Gene>Pony_PonyEars</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[3]/conditions/Or</xpath>
+					<value>
+						<Gene>Pony_PonyEars</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[4]/conditions/Or[1]</xpath>
+					<value>
+						<Gene>Pony_Cutiemark</Gene>
 					</value>
 				</li>
 			</operations>

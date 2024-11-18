@@ -16,13 +16,14 @@
 		<iconPath>UI/Abilities/Ability_Earthpony</iconPath>
 		<hotKey>Misc1</hotKey>
 		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
+		<warmupSound>Pony_AbilityWarmup</warmupSound>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-			<warmupTime>3.0</warmupTime>
+			<warmupTime>2.0</warmupTime>
 			<range>0</range>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
@@ -42,6 +43,10 @@
 				<hediffDef>NatureMuse</hediffDef>
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+				<sound>Pony_AbilityEffect</sound>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -89,9 +94,9 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-			<range>10</range>
+			<range>16</range>
 			<warmupTime>1.0</warmupTime>
-			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCast>Magic_UnicornBlast</soundCast>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">

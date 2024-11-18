@@ -9,6 +9,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>-3</Melee>
@@ -27,6 +28,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>6</Plants>
@@ -44,6 +47,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Animals>8</Animals>
@@ -63,6 +68,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>7</Plants>
@@ -82,6 +88,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>
@@ -114,6 +122,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>-4</Melee>
@@ -136,6 +145,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>3</Melee>
@@ -166,6 +177,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>-3</Plants>
@@ -184,6 +196,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>2</Plants>
@@ -206,6 +220,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>5</Plants>

@@ -47,7 +47,7 @@
 
 	<Pony_PegasusMeteo.title>метеоролог</Pony_PegasusMeteo.title>
 	<Pony_PegasusMeteo.titleShort>метеоролог</Pony_PegasusMeteo.titleShort>
-	<Pony_PegasusMeteo.description>[PAWN_nameDef] {PAWN_gender ? происходил : происходила} из семьи, в которой на протяжении многих поколений увлекались прогнозированием погодных явлений. Неудивительно, что и [PAWN_pronoun] {PAWN_gender ? разделял : разделяла} это увлечение. [PAWN_nameDef] {PAWN_gender ? уделял : уделяла} огромное количество времени метеорологии, что стало причиной [PAWN_possessive] неудач в личной жизни.</Pony_PegasusMeteo.description>
+	<Pony_PegasusMeteo.description>[PAWN_nameDef] {PAWN_gender ? происходил : происходила} из семьи, в которой на протяжении многих поколений увлекались прогнозированием погодных явлений. Неудивительно, что и [PAWN_pronoun] {PAWN_gender ? разделял : разделяла} это увлечение и [PAWN_nameDef] {PAWN_gender ? уделял : уделяла} огромное количество времени метеорологии, что помогло [PAWN_objective] найти работу в прогнозах погоды.</Pony_PegasusMeteo.description>
 
 	<Pony_PegasusEmpRainFactor.title>сотрудник Радужной Фабрики</Pony_PegasusEmpRainFactor.title>
 	<Pony_PegasusEmpRainFactor.titleFemale>сотрудница Радужной Фабрики</Pony_PegasusEmpRainFactor.titleFemale>

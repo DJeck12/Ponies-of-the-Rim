@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_SaddleBag.label>седельная сумка</Pony_SaddleBag.label>
+	<Pony_SaddleBag.description>Простая седельная сумка, которую обычно носят пони во время приключений. Значительно увеличивает переносимый вес.</Pony_SaddleBag.description>
+
+	<Pony_BattleSaddle.label>боевое седло</Pony_BattleSaddle.label>
+	<Pony_BattleSaddle.description>Боевое седло, предназначенное для удобной фиксации оружия на боку пони. Увеличивает скорость прицеливания.</Pony_BattleSaddle.description>
+
+</LanguageData>

@@ -38,24 +38,31 @@
 					<Pony_EarthponyVillager>5</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>5</Pony_PegasusVillager>
 					<Pony_UnicornVillager>5</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">5</Pony_BatponyVillager>
 					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
 					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
 					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
 					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
 					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
 					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_BatponyGrenadier_Destructive MayRequire="Pony.PoniesOfTheRim.Batponies">1.5</Pony_BatponyGrenadier_Destructive>
 					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
 					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
 					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_BatponyMercenary_Slasher MayRequire="Pony.PoniesOfTheRim.Batponies">7</Pony_BatponyMercenary_Slasher>
 					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
 					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
 					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_BatponyMercenary_Gunner MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Gunner>
 					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
 					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
 					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_BatponyMercenary_Elite MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Elite>
 					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
 					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+					<Pony_BatponyTown_Councilman MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Councilman>
 				</options>
 			</li>
 			<li>
@@ -64,12 +71,15 @@
 					<Pony_EarthponyVillager>20</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>20</Pony_PegasusVillager>
 					<Pony_UnicornVillager>20</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">20</Pony_BatponyVillager>
 					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
 					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
 					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
 					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
 					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+					<Pony_BatponyTown_Councilman MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Councilman>
 				</options>
 			</li>
 			<li>
@@ -78,6 +88,7 @@
 					<Pony_EarthponyTown_Trader>1</Pony_EarthponyTown_Trader>
 					<Pony_PegasusTown_Trader>1</Pony_PegasusTown_Trader>
 					<Pony_UnicornTown_Trader>1</Pony_UnicornTown_Trader>
+					<Pony_BatponyTown_Trader MayRequire="Pony.PoniesOfTheRim.Batponies">1</Pony_BatponyTown_Trader>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -89,21 +100,27 @@
 					<Pony_EarthponyVillager>3</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>3</Pony_PegasusVillager>
 					<Pony_UnicornVillager>3</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">3</Pony_BatponyVillager>
 					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
 					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
 					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
 					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
 					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
 					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_BatponyGrenadier_Destructive MayRequire="Pony.PoniesOfTheRim.Batponies">1.5</Pony_BatponyGrenadier_Destructive>
 					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
 					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
 					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_BatponyMercenary_Slasher MayRequire="Pony.PoniesOfTheRim.Batponies">7</Pony_BatponyMercenary_Slasher>
 					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
 					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
 					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_BatponyMercenary_Gunner MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Gunner>
 					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
 					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
 					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_BatponyMercenary_Elite MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Elite>
 				</guards>
 			</li>
 			<li>
@@ -112,24 +129,31 @@
 					<Pony_EarthponyVillager>10</Pony_EarthponyVillager>
 					<Pony_PegasusVillager>10</Pony_PegasusVillager>
 					<Pony_UnicornVillager>10</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyVillager>
 					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
 					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
 					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
 					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
 					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
 					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_BatponyGrenadier_Destructive MayRequire="Pony.PoniesOfTheRim.Batponies">1.5</Pony_BatponyGrenadier_Destructive>
 					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
 					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
 					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_BatponyMercenary_Slasher MayRequire="Pony.PoniesOfTheRim.Batponies">7</Pony_BatponyMercenary_Slasher>
 					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
 					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
 					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_BatponyMercenary_Gunner MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Gunner>
 					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
 					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
 					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_BatponyMercenary_Elite MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Elite>
 					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
 					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+					<Pony_BatponyTown_Councilman MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Councilman>
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -144,7 +168,7 @@
 			<li>(1, 0.45, 0.78)</li>
 		</colorSpectrum>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Harmony</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Friendship</li>
 		</requiredMemes>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
 		<factionIconPath>World/Factions/PonyOutlanderCivil</factionIconPath>

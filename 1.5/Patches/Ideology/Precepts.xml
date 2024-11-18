@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PreceptDef[defName="Execution_Abhorrent"
+					or defName="Charity_Essential"
+					or defName="Charity_Important"
+					or defName="Charity_Worthwhile"]/associatedMemes</xpath>
+					<value>
+						<li>Pony_Friendship</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName="Skullspike_Desired"]/conflictingMemes</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName="Skullspike_Desired"]</xpath>
+						<value>
+							<conflictingMemes>
+								<li>Pony_Friendship</li>
+							</conflictingMemes>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName="Skullspike_Desired"]/conflictingMemes</xpath>
+						<value>
+							<li>Pony_Friendship</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName="Raiding_Respected"
+					or defName="Raiding_Required"]/conflictingMemes</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName="Raiding_Respected"
+						or defName="Raiding_Required"]</xpath>
+						<value>
+							<conflictingMemes>
+								<li>Pony_Friendship</li>
+							</conflictingMemes>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName="Raiding_Respected"
+						or defName="Raiding_Required"]/conflictingMemes</xpath>
+						<value>
+							<li>Pony_Friendship</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

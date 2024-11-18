@@ -2,12 +2,12 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>Pony_Prophet</defName>
+		<defName>Pony_Oracle</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_roleName->[memeAdjective] [nameProphet]</li>
 				<li>nameProphet->soothsayer</li>
-				<li>nameProphet->oracle</li>
+				<li>nameProphet->prophet</li>
 				<li>nameProphet->seer</li>
 				<li>nameProphet->medium</li>
 				<li>nameProphet->astrologer</li>

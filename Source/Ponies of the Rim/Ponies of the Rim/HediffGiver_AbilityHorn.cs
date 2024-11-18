@@ -5,10 +5,9 @@ using System.Linq;
 
 namespace PoniesOfTheRim
 {
-        public class HediffGiver_AbilityHorn : HediffGiver
+    public class HediffGiver_AbilityHorn : HediffGiver
     {
         public AbilityDef ability;
-
 
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
@@ -64,14 +63,3 @@ namespace PoniesOfTheRim
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-

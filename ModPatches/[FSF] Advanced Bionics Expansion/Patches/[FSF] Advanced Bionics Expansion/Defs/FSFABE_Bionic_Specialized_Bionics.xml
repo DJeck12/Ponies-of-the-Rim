@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="FSFBionicConstructionArm"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="FSFBionicConstructionArm"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Test</prefix>
+					<inBrackets>Pony</inBrackets>
+					<descriptionExtra>pon</descriptionExtra>
+					<tipStringExtra>pon-pon</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="FSFBionicPowerArm"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="FSFBionicPowerArm"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Test</prefix>
+					<inBrackets>Pony</inBrackets>
+					<descriptionExtra>pon</descriptionExtra>
+					<tipStringExtra>pon-pon</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="FSFBionicBreachArm"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="FSFBionicBreachArm"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Test</prefix>
+					<inBrackets>Pony</inBrackets>
+					<descriptionExtra>pon</descriptionExtra>
+					<tipStringExtra>pon-pon</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="FSFBionicCleanerLeg"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="FSFBionicCleanerLeg"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthetic is modified to resemble the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

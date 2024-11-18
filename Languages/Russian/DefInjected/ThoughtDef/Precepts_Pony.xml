@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Everypony_Abhorrent.stages.hatred_for_ponies.label>ненависть к пони</Pony_Everypony_Abhorrent.stages.hatred_for_ponies.label>
+	<Pony_Everypony_Abhorrent.stages.hatred_for_ponies.description>Пони абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Everypony_Abhorrent.stages.hatred_for_ponies.description>
+	<Pony_Everypony_Abhorrent_Social.stages.disgusting_pony.label>противный пони!</Pony_Everypony_Abhorrent_Social.stages.disgusting_pony.label>
+	<Pony_Everypony_Horrible_Social.stages.distrust_for_ponies.label>недоверие к пони</Pony_Everypony_Horrible_Social.stages.distrust_for_ponies.label>
+	<Pony_Everypony_Respected_Social.stages.respect_for_ponies.label>уважение к пони</Pony_Everypony_Respected_Social.stages.respect_for_ponies.label>
+	<Pony_Everypony_Exalted.stages.love_for_ponies.label>любовь к пони</Pony_Everypony_Exalted.stages.love_for_ponies.label>
+	<Pony_Everypony_Exalted.stages.love_for_ponies.description>Я чувствую себя счастливее, зная, что мы живем среди пони.</Pony_Everypony_Exalted.stages.love_for_ponies.description>
+	<Pony_Everypony_Exalted_Social.stages.amazing_pony.label>чудесный пони!</Pony_Everypony_Exalted_Social.stages.amazing_pony.label>
+
+	<Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.label>ненависть к земнопони</Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.label>
+	<Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.description>Земнопони абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.description>
+	<Pony_Earthpony_Abhorrent_Social.stages.disgusting_earthpony.label>противный земнопони!</Pony_Earthpony_Abhorrent_Social.stages.disgusting_earthpony.label>
+	<Pony_Earthpony_Horrible_Social.stages.distrust_for_earthponies.label>недоверие к земнопони</Pony_Earthpony_Horrible_Social.stages.distrust_for_earthponies.label>
+	<Pony_Earthpony_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Earthpony_Stricted.stages.other_races_among_us.label>
+	<Pony_Earthpony_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся земнопони. Мы должны заставить их уйти тем или иным способом.</Pony_Earthpony_Stricted.stages.other_races_among_us.description>
+	<Pony_Earthpony_Stricted_Social.stages.not_an_earthpony.label>не земнопони</Pony_Earthpony_Stricted_Social.stages.not_an_earthpony.label>
+	<Pony_Earthpony_Respected_Social.stages.respect_for_earthponies.label>уважение к земнопони</Pony_Earthpony_Respected_Social.stages.respect_for_earthponies.label>
+	<Pony_Earthpony_Exalted.stages.love_for_earthponies.label>любовь к земнопони</Pony_Earthpony_Exalted.stages.love_for_earthponies.label>
+	<Pony_Earthpony_Exalted.stages.love_for_earthponies.description>Я чувствую себя очень счастливо, зная, что мы живем среди земнопони.</Pony_Earthpony_Exalted.stages.love_for_earthponies.description>
+	<Pony_Earthpony_Exalted_Social.stages.amazing_earthpony.label>чудесный земнопони!</Pony_Earthpony_Exalted_Social.stages.amazing_earthpony.label>
+
+	<Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.label>ненависть к пегасам</Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.label>
+	<Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.description>Пегасы абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.description>
+	<Pony_Pegasus_Abhorrent_Social.stages.disgusting_pegasus.label>противный пегас!</Pony_Pegasus_Abhorrent_Social.stages.disgusting_pegasus.label>
+	<Pony_Pegasus_Horrible_Social.stages.distrust_for_pegasi.label>недоверие к пегасам</Pony_Pegasus_Horrible_Social.stages.distrust_for_pegasi.label>
+	<Pony_Pegasus_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Pegasus_Stricted.stages.other_races_among_us.label>
+	<Pony_Pegasus_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся пегасами. Мы должны заставить их уйти тем или иным способом.</Pony_Pegasus_Stricted.stages.other_races_among_us.description>
+	<Pony_Pegasus_Stricted_Social.stages.not_a_pegasus.label>не пегас</Pony_Pegasus_Stricted_Social.stages.not_a_pegasus.label>
+	<Pony_Pegasus_Respected_Social.stages.respect_for_pegasi.label>уважение к пегасам</Pony_Pegasus_Respected_Social.stages.respect_for_pegasi.label>
+	<Pony_Pegasus_Exalted.stages.love_for_pegasi.label>любовь к пегасам</Pony_Pegasus_Exalted.stages.love_for_pegasi.label>
+	<Pony_Pegasus_Exalted.stages.love_for_pegasi.description>Я чувствую себя очень счастливо, зная, что мы живем среди пегасов.</Pony_Pegasus_Exalted.stages.love_for_pegasi.description>
+	<Pony_Pegasus_Exalted_Social.stages.amazing_pegasus.label>чудесный пегас!</Pony_Pegasus_Exalted_Social.stages.amazing_pegasus.label>
+
+	<Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.label>ненависть к единорогам</Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.label>
+	<Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.description>Единороги абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.description>
+	<Pony_Unicorn_Abhorrent_Social.stages.disgusting_unicorn.label>противный единорог!</Pony_Unicorn_Abhorrent_Social.stages.disgusting_unicorn.label>
+	<Pony_Unicorn_Horrible_Social.stages.distrust_for_unicorns.label>недоверие к единорогам</Pony_Unicorn_Horrible_Social.stages.distrust_for_unicorns.label>
+	<Pony_Unicorn_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Unicorn_Stricted.stages.other_races_among_us.label>
+	<Pony_Unicorn_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся единорогами. Мы должны заставить их уйти тем или иным способом.</Pony_Unicorn_Stricted.stages.other_races_among_us.description>
+	<Pony_Unicorn_Stricted_Social.stages.not_an_unicorn.label>не единорог</Pony_Unicorn_Stricted_Social.stages.not_an_unicorn.label>
+	<Pony_Unicorn_Respected_Social.stages.respect_for_unicorns.label>уважение к единорогам</Pony_Unicorn_Respected_Social.stages.respect_for_unicorns.label>
+	<Pony_Unicorn_Exalted.stages.love_for_unicorns.label>любовь к единорогам</Pony_Unicorn_Exalted.stages.love_for_unicorns.label>
+	<Pony_Unicorn_Exalted.stages.love_for_unicorns.description>Я чувствую себя счастливее, зная, что мы живем среди единорогов.</Pony_Unicorn_Exalted.stages.love_for_unicorns.description>
+	<Pony_Unicorn_Exalted_Social.stages.amazing_unicorn.label>чудесный единорог!</Pony_Unicorn_Exalted_Social.stages.amazing_unicorn.label>
+
+</LanguageData>

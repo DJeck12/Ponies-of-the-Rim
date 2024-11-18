@@ -10,6 +10,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>-3</Mining>
@@ -49,6 +51,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -69,10 +73,12 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Social>7</Social>
-			<Intellectual>2</Intellectual>        
+			<Intellectual>2</Intellectual>
 		</skillGains>
 		<forcedTraits>
 			<Kind>0</Kind>
@@ -86,18 +92,19 @@
 				</options>
 				<chance>20</chance>
 			</li>
-		</forcedTraitsChance>    
+		</forcedTraitsChance>
 		<requiredWorkTags>Social</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyRST</defName>
 		<title>racist slave trader</title>
-		<titleShort>racist</titleShort>  
+		<titleShort>racist</titleShort>
 		<baseDesc>[PAWN_nameDef] liked no one but [PAWN_possessive] own kind of ponies. [PAWN_pronoun] got {PAWN_gender ? himself : herself} into the slave trade, enslaving those who did not look like [PAWN_objective].</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>
@@ -121,13 +128,16 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>2</Shooting>
 			<Construction>2</Construction>
 			<Artistic>1</Artistic>
 			<Social>3</Social>
-			<Intellectual>-1</Intellectual>   
+			<Intellectual>-1</Intellectual>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -142,10 +152,8 @@
 		<disallowedTraits>
 			<Undergrounder>0</Undergrounder>
 			<NightOwl>0</NightOwl>
-		</disallowedTraits>    
+		</disallowedTraits>
 	</AlienRace.AlienBackstoryDef>
-
-
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyFanEtN</defName>
@@ -155,6 +163,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>3</Melee>
@@ -162,7 +173,7 @@
 			<Cooking>-2</Cooking>
 			<Artistic>1</Artistic>
 			<Social>3</Social>
-			<Intellectual>-1</Intellectual>   
+			<Intellectual>-1</Intellectual>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -176,8 +187,6 @@
 		</forcedTraitsChance>
 	</AlienRace.AlienBackstoryDef>
 
-
-
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyRiMa</defName>
 		<title>ritualist magician</title>
@@ -186,6 +195,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-3</Construction>
@@ -196,8 +207,6 @@
 		<requiredWorkTags>Intellectual</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
-
-
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyFiWi</defName>
 		<title>fighter of Windigo</title>
@@ -206,6 +215,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>
@@ -226,6 +238,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -248,6 +261,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Medieval</li>
+			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>2</Melee>
@@ -279,6 +295,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-3</Construction>
@@ -296,6 +313,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Crafting>-3</Crafting>
@@ -314,6 +332,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>
@@ -332,6 +351,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-3</Construction>
@@ -343,11 +363,12 @@
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosCap</defName>
 		<title>cosmagic captain</title>
-		<titleShort>captain</titleShort> 
+		<titleShort>captain</titleShort>
 		<baseDesc>As a young pony, [PAWN_nameDef] joined the cosmagic marines. Thanks to [PAWN_possessive] outstanding achievements and exemplary service, [PAWN_pronoun] quickly moved up the career ladder, eventually receiving the position of cosmagic captain.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -374,29 +395,31 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosMech</defName>
-		<title>cosmagic mechanic</title> 
-		<titleShort>mechanic</titleShort>  
+		<title>cosmagic mechanic</title>
+		<titleShort>mechanic</titleShort>
 		<baseDesc>[PAWN_nameDef] was an ordinary civilian mechanic. Though, when the war broke out on [PAWN_possessive] planet, [PAWN_pronoun] was quickly mobilized into the space force. [PAWN_nameDef] was appointed to a specialized position, although [PAWN_pronoun] did not have some specialized knowledge and skills.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>2</Shooting>
 			<Construction>-2</Construction>
 			<Crafting>6</Crafting>
-		</skillGains> 
+		</skillGains>
 		<requiredWorkTags>Crafting</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyCosTrader</defName>
-		<title>cosmagic trader</title> 
-		<titleShort>merchant</titleShort>  
+		<title>cosmagic trader</title>
+		<titleShort>merchant</titleShort>
 		<baseDesc>Being a talented negotiator and a rather enterprising pony, [PAWN_nameDef] devoted [PAWN_possessive] life to trade. Having accumulated a decent amount of capital and acquired some influential connections, [PAWN_pronoun] decided to try [PAWN_possessive] luck among the stars.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>-3</Mining>
@@ -414,6 +437,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Plants>2</Plants>
@@ -440,6 +464,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
+			<li>Pony_Everypony_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>-2</Shooting>

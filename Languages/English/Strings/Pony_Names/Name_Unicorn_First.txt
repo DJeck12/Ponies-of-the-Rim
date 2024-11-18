@@ -14,3 +14,5 @@ Firelight
 Izzy
 Sunburst
 Starburst
+Sparkling
+Glamourous

@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<SoundDef> <!--Imported sound from Royalty, used in Nature Muse ability. Don't sue me-->
+		<defName>Pony_AbilityWarmup</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>5</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<sustain>True</sustain>
+		<sustainFadeoutTime>0.1</sustainFadeoutTime>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Abilities/Ability_Warmup</clipPath>
+					</li>
+				</grains>
+				<volumeRange>6</volumeRange>
+				<sustainLoop>False</sustainLoop>
+				<muteWhenPaused>True</muteWhenPaused>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef> <!--Imported sound from Royalty, used in Nature Muse ability. Don't sue me-->
+		<defName>Pony_AbilityEffect</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Abilities/Ability_Effect</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
 	<SoundDef>
 		<defName>Flight_TakingOff</defName>
 		<context>MapOnly</context>
@@ -14,6 +50,21 @@
 					</li>
 				</grains>
 				<volumeRange>60</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Magic_UnicornBlast</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Abilities/UnicornBlast</clipPath>
+					</li>
+				</grains>
 			</li>
 		</subSounds>
 	</SoundDef>

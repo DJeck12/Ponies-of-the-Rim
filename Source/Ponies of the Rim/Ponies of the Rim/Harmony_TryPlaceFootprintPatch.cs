@@ -4,7 +4,6 @@ using Verse;
 using UnityEngine;
 using System;
 
-
 namespace PoniesOfTheRim
 {
     [StaticConstructorOnStartup]
@@ -58,12 +57,3 @@ namespace PoniesOfTheRim
         }
     }
 }
-
-
-
-
-
-
-
-
-

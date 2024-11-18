@@ -3,71 +3,71 @@
 
 <!-- Земонопони -->
 
-	<EPonySlave.label>пони раб</EPonySlave.label>
-	<EPonySlave.labelPlural>пони рабы</EPonySlave.labelPlural>
-	<EPonySlave.labelMale>пони раб</EPonySlave.labelMale>
-	<EPonySlave.labelFemale>пони рабыня</EPonySlave.labelFemale>
-	<EPonySlave.labelMalePlural>пони рабы</EPonySlave.labelMalePlural>
-	<EPonySlave.labelFemalePlural>пони рабыни</EPonySlave.labelFemalePlural>
+	<Pony_EarthponySlave.label>пони раб</Pony_EarthponySlave.label>
+	<Pony_EarthponySlave.labelPlural>пони рабы</Pony_EarthponySlave.labelPlural>
+	<Pony_EarthponySlave.labelMale>пони раб</Pony_EarthponySlave.labelMale>
+	<Pony_EarthponySlave.labelFemale>пони рабыня</Pony_EarthponySlave.labelFemale>
+	<Pony_EarthponySlave.labelMalePlural>пони рабы</Pony_EarthponySlave.labelMalePlural>
+	<Pony_EarthponySlave.labelFemalePlural>пони рабыни</Pony_EarthponySlave.labelFemalePlural>
 
-	<EPonyRefugee.label>пони беженец</EPonyRefugee.label>
-	<EPonyRefugee.labelPlural>пони беженецы</EPonyRefugee.labelPlural>
-	<EPonyRefugee.labelMale>пони беженец</EPonyRefugee.labelMale>
-	<EPonyRefugee.labelFemale>пони беженка</EPonyRefugee.labelFemale>
-	<EPonyRefugee.labelMalePlural>пони беженцы</EPonyRefugee.labelMalePlural>
-	<EPonyRefugee.labelFemalePlural>пони беженки</EPonyRefugee.labelFemalePlural>
+	<Pony_EarthponyRefugee.label>пони беженец</Pony_EarthponyRefugee.label>
+	<Pony_EarthponyRefugee.labelPlural>пони беженецы</Pony_EarthponyRefugee.labelPlural>
+	<Pony_EarthponyRefugee.labelMale>пони беженец</Pony_EarthponyRefugee.labelMale>
+	<Pony_EarthponyRefugee.labelFemale>пони беженка</Pony_EarthponyRefugee.labelFemale>
+	<Pony_EarthponyRefugee.labelMalePlural>пони беженцы</Pony_EarthponyRefugee.labelMalePlural>
+	<Pony_EarthponyRefugee.labelFemalePlural>пони беженки</Pony_EarthponyRefugee.labelFemalePlural>
 
-	<EPonyVillager.label>пони житель</EPonyVillager.label>
-	<EPonyVillager.labelPlural>пони жители</EPonyVillager.labelPlural>
-	<EPonyVillager.labelMale>пони житель</EPonyVillager.labelMale>
-	<EPonyVillager.labelFemale>пони жительница</EPonyVillager.labelFemale>
-	<EPonyVillager.labelMalePlural>пони жители</EPonyVillager.labelMalePlural>
-	<EPonyVillager.labelFemalePlural>пони жительницы</EPonyVillager.labelFemalePlural>
+	<Pony_EarthponyVillager.label>пони житель</Pony_EarthponyVillager.label>
+	<Pony_EarthponyVillager.labelPlural>пони жители</Pony_EarthponyVillager.labelPlural>
+	<Pony_EarthponyVillager.labelMale>пони житель</Pony_EarthponyVillager.labelMale>
+	<Pony_EarthponyVillager.labelFemale>пони жительница</Pony_EarthponyVillager.labelFemale>
+	<Pony_EarthponyVillager.labelMalePlural>пони жители</Pony_EarthponyVillager.labelMalePlural>
+	<Pony_EarthponyVillager.labelFemalePlural>пони жительницы</Pony_EarthponyVillager.labelFemalePlural>
 
 <!-- Пегасы -->
 
-	<PPonySlave.label>пони раб</PPonySlave.label>
-	<PPonySlave.labelPlural>пони рабы</PPonySlave.labelPlural>
-	<PPonySlave.labelMale>пони раб</PPonySlave.labelMale>
-	<PPonySlave.labelFemale>пони рабыня</PPonySlave.labelFemale>
-	<PPonySlave.labelMalePlural>пони рабы</PPonySlave.labelMalePlural>
-	<PPonySlave.labelFemalePlural>пони рабыни</PPonySlave.labelFemalePlural>
+	<Pony_PegasusSlave.label>пони раб</Pony_PegasusSlave.label>
+	<Pony_PegasusSlave.labelPlural>пони рабы</Pony_PegasusSlave.labelPlural>
+	<Pony_PegasusSlave.labelMale>пони раб</Pony_PegasusSlave.labelMale>
+	<Pony_PegasusSlave.labelFemale>пони рабыня</Pony_PegasusSlave.labelFemale>
+	<Pony_PegasusSlave.labelMalePlural>пони рабы</Pony_PegasusSlave.labelMalePlural>
+	<Pony_PegasusSlave.labelFemalePlural>пони рабыни</Pony_PegasusSlave.labelFemalePlural>
 
-	<PPonyRefugee.label>пони беженец</PPonyRefugee.label>
-	<PPonyRefugee.labelPlural>пони беженецы</PPonyRefugee.labelPlural>
-	<PPonyRefugee.labelMale>пони беженец</PPonyRefugee.labelMale>
-	<PPonyRefugee.labelFemale>пони беженка</PPonyRefugee.labelFemale>
-	<PPonyRefugee.labelMalePlural>пони беженецы</PPonyRefugee.labelMalePlural>
-	<PPonyRefugee.labelFemalePlural>пони беженки</PPonyRefugee.labelFemalePlural>
+	<Pony_PegasusRefugee.label>пони беженец</Pony_PegasusRefugee.label>
+	<Pony_PegasusRefugee.labelPlural>пони беженецы</Pony_PegasusRefugee.labelPlural>
+	<Pony_PegasusRefugee.labelMale>пони беженец</Pony_PegasusRefugee.labelMale>
+	<Pony_PegasusRefugee.labelFemale>пони беженка</Pony_PegasusRefugee.labelFemale>
+	<Pony_PegasusRefugee.labelMalePlural>пони беженецы</Pony_PegasusRefugee.labelMalePlural>
+	<Pony_PegasusRefugee.labelFemalePlural>пони беженки</Pony_PegasusRefugee.labelFemalePlural>
 
-	<PPonyVillager.label>пони житель</PPonyVillager.label>
-	<PPonyVillager.labelPlural>пони жители</PPonyVillager.labelPlural>
-	<PPonyVillager.labelMale>пони житель</PPonyVillager.labelMale>
-	<PPonyVillager.labelFemale>пони жительница</PPonyVillager.labelFemale>
-	<PPonyVillager.labelMalePlural>пони жители</PPonyVillager.labelMalePlural>
-	<PPonyVillager.labelFemalePlural>пони жительницы</PPonyVillager.labelFemalePlural>
+	<Pony_PegasusVillager.label>пони житель</Pony_PegasusVillager.label>
+	<Pony_PegasusVillager.labelPlural>пони жители</Pony_PegasusVillager.labelPlural>
+	<Pony_PegasusVillager.labelMale>пони житель</Pony_PegasusVillager.labelMale>
+	<Pony_PegasusVillager.labelFemale>пони жительница</Pony_PegasusVillager.labelFemale>
+	<Pony_PegasusVillager.labelMalePlural>пони жители</Pony_PegasusVillager.labelMalePlural>
+	<Pony_PegasusVillager.labelFemalePlural>пони жительницы</Pony_PegasusVillager.labelFemalePlural>
 
 <!-- Единороги -->
 
-	<UPonySlave.label>пони раб</UPonySlave.label>
-	<UPonySlave.labelPlural>пони рабы</UPonySlave.labelPlural>
-	<UPonySlave.labelMale>пони раб</UPonySlave.labelMale>
-	<UPonySlave.labelFemale>пони рабыня</UPonySlave.labelFemale>
-	<UPonySlave.labelMalePlural>пони рабы</UPonySlave.labelMalePlural>
-	<UPonySlave.labelFemalePlural>пони рабыни</UPonySlave.labelFemalePlural>
+	<Pony_UnicornSlave.label>пони раб</Pony_UnicornSlave.label>
+	<Pony_UnicornSlave.labelPlural>пони рабы</Pony_UnicornSlave.labelPlural>
+	<Pony_UnicornSlave.labelMale>пони раб</Pony_UnicornSlave.labelMale>
+	<Pony_UnicornSlave.labelFemale>пони рабыня</Pony_UnicornSlave.labelFemale>
+	<Pony_UnicornSlave.labelMalePlural>пони рабы</Pony_UnicornSlave.labelMalePlural>
+	<Pony_UnicornSlave.labelFemalePlural>пони рабыни</Pony_UnicornSlave.labelFemalePlural>
 
-	<UPonyRefugee.label>пони беженец</UPonyRefugee.label>
-	<UPonyRefugee.labelPlural>пони беженецы</UPonyRefugee.labelPlural>
-	<UPonyRefugee.labelMale>пони беженец</UPonyRefugee.labelMale>
-	<UPonyRefugee.labelFemale>пони беженка</UPonyRefugee.labelFemale>
-	<UPonyRefugee.labelMalePlural>пони беженецы</UPonyRefugee.labelMalePlural>
-	<UPonyRefugee.labelFemalePlural>пони беженки</UPonyRefugee.labelFemalePlural>
+	<Pony_UnicornRefugee.label>пони беженец</Pony_UnicornRefugee.label>
+	<Pony_UnicornRefugee.labelPlural>пони беженецы</Pony_UnicornRefugee.labelPlural>
+	<Pony_UnicornRefugee.labelMale>пони беженец</Pony_UnicornRefugee.labelMale>
+	<Pony_UnicornRefugee.labelFemale>пони беженка</Pony_UnicornRefugee.labelFemale>
+	<Pony_UnicornRefugee.labelMalePlural>пони беженецы</Pony_UnicornRefugee.labelMalePlural>
+	<Pony_UnicornRefugee.labelFemalePlural>пони беженки</Pony_UnicornRefugee.labelFemalePlural>
 
-	<UPonyVillager.label>пони житель</UPonyVillager.label>
-	<UPonyVillager.labelPlural>пони жители</UPonyVillager.labelPlural>
-	<UPonyVillager.labelMale>пони житель</UPonyVillager.labelMale>
-	<UPonyVillager.labelFemale>пони жительница</UPonyVillager.labelFemale>
-	<UPonyVillager.labelMalePlural>пони жители</UPonyVillager.labelMalePlural>
-	<UPonyVillager.labelFemalePlural>пони жительницы</UPonyVillager.labelFemalePlural>
+	<Pony_UnicornVillager.label>пони житель</Pony_UnicornVillager.label>
+	<Pony_UnicornVillager.labelPlural>пони жители</Pony_UnicornVillager.labelPlural>
+	<Pony_UnicornVillager.labelMale>пони житель</Pony_UnicornVillager.labelMale>
+	<Pony_UnicornVillager.labelFemale>пони жительница</Pony_UnicornVillager.labelFemale>
+	<Pony_UnicornVillager.labelMalePlural>пони жители</Pony_UnicornVillager.labelMalePlural>
+	<Pony_UnicornVillager.labelFemalePlural>пони жительницы</Pony_UnicornVillager.labelFemalePlural>
 
 </LanguageData>

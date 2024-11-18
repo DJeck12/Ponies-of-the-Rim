@@ -12,6 +12,8 @@
 					<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 					<value>
 						<li>Pony_PlayerExpedition</li>
+						<li>Pony_PonyTribe</li>
+						<li>PonyOutlanderCivil</li>
 					</value>
 				</li>
 			</operations>

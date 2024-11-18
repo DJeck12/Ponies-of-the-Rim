@@ -58,60 +58,64 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="VFECore">
       <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneExtension.cs" />
+    <Compile Include="Harmony_DrawCharacterCardPatch.cs" />
+    <Compile Include="DrawCutiemarkIcon.cs" />
     <Compile Include="Harmony_TryPlaceFootprintPatch.cs" />
     <Compile Include="Harmony_StylingStationPatch.cs" />
     <Compile Include="Harmony_BodyTypePatch.cs" />
     <Compile Include="Gene_Random.cs" />
-    <None Include="PonyTypeExtension.cs" />
+    <Compile Include="CutiemarkSelectorWindow.cs" />
     <Compile Include="HediffGiver_AbilityHorn.cs" />
     <Compile Include="PonyHelper.cs" />
+    <Compile Include="HediffComp_PonyProsthetic.cs" />
     <Compile Include="Pony_DefOf.cs" />
-    <Compile Include="RandomGeneExtension.cs" />
-    <Compile Include="ThoughtWorker_Precept_Earthpony.cs" />
-    <Compile Include="ThoughtWorker_Precept_Earthpony_Social.cs" />
-    <Compile Include="ThoughtWorker_Precept_Everypony.cs" />
-    <Compile Include="ThoughtWorker_Precept_Everypony_Social.cs" />
-    <Compile Include="ThoughtWorker_Precept_Pegasus.cs" />
-    <Compile Include="ThoughtWorker_Precept_Pegasus_Social.cs" />
-    <Compile Include="ThoughtWorker_Precept_Unicorn.cs" />
-    <Compile Include="ThoughtWorker_Precept_Unicorn_Social.cs" />
-    <None Include="BodyTypeSwap.cs" />
-    <Compile Include="ThoughtWorker_OpinionForEarth.cs" />
-    <Compile Include="ThoughtWorker_OpinionForPegasus.cs" />
+    <Compile Include="ThoughtExtension.cs" />
+    <Compile Include="ThoughtWorker_LeatherApparel.cs" />
+    <Compile Include="ThoughtWorker_OpinionForRaces.cs" />
+    <Compile Include="ThoughtWorker_Precept_LeatherApparel.cs" />
+    <Compile Include="ThoughtWorker_Precept_Pony.cs" />
+    <Compile Include="ThoughtWorker_Precept_Pony_Social.cs" />
+    <Compile Include="ThoughtWorker_Precept_Races.cs" />
+    <Compile Include="ThoughtWorker_Precept_Races_Social.cs" />
+    <Compile Include="ThoughtWorker_Precept_StrictRaces.cs" />
+    <Compile Include="ThoughtWorker_Precept_StrictRaces_Social.cs" />
     <Compile Include="ThoughtWorker_OpinionForPony.cs" />
-    <Compile Include="ThoughtWorker_OpinionForUnicorn.cs" />
-    <None Include="Gene_Diet.cs" />
     <Compile Include="HediffGiver_AbilityWings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Harmony_ScalableBeltPatch.cs" />

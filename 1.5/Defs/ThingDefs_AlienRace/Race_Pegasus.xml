@@ -10,17 +10,16 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 <color=#46FFFF>Pegasi</color> differ from other ponies in having a pair of wings on their back and a more insulated coat for flying at high altitudes. Being natural racers, pegasi always love to compete with others, which is why they later became considered the most inimical race of ponies. Despite this, most pegasi prefer to live peacefully along with other ponies and use their flying abilities to help others.]]></description>
 
-<!--Stats-->
+	<!-- Stats -->
 
 		<statBases>
 			<MarketValue>1800</MarketValue>
-			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
+			<MoveSpeed>4.6</MoveSpeed>
 			<PsychicSensitivity>1.1</PsychicSensitivity>
 			<ComfyTemperatureMin>12</ComfyTemperatureMin> <!-- Will be replaced with a gene with Biotech. Defaults to 16 -->
 			<ComfyTemperatureMax>30</ComfyTemperatureMax> <!-- Will be replaced with a gene with Biotech. Defaults to 26 -->
 			<CarryingCapacity>80</CarryingCapacity>
 			<Mass>55</Mass>
-			<LeatherAmount>65</LeatherAmount>
 			<PainShockThreshold>0.75</PainShockThreshold>
 			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
 			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
@@ -28,7 +27,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			<WorkSpeedGlobal>0.8</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 
-<!--Settings-->
+	<!-- Alien Settings -->
 
 		<alienRace>
 			<generalSettings>
@@ -46,6 +45,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_CoatFluff</li>
 					<!--<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>-->
 				</raceGenes>
+			<!-- Colors -->
 				<alienPartGenerator>
 					<colorChannels>
 						<li>
@@ -83,7 +83,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 						</li>
 					</colorChannels>
 					<bodyAddons>
-					<!--Wings-->
+					<!-- Wings -->
 						<li>
 							<path>Things/Races/Pegasus/Normal/PegasusRight</path>
 							<userCustomizable>false</userCustomizable>
@@ -93,7 +93,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<conditions>
 								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
-									<bodyPart>Right_Pony_Wing</bodyPart>
+									<bodyPart>Pony_RightWing</bodyPart>
 									<bodyPartLabel>right wing</bodyPartLabel>
 									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
@@ -129,7 +129,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<conditions>
 								<RotStage>Fresh,Rotting</RotStage>
 								<BodyPart>
-									<bodyPart>Left_Pony_Wing</bodyPart>
+									<bodyPart>Pony_LeftWing</bodyPart>
 									<bodyPartLabel>left wing</bodyPartLabel>
 									<drawWithoutPart>true</drawWithoutPart>
 								</BodyPart>
@@ -165,20 +165,12 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<bannedTags>
-							<li>HairLong</li>
-						</bannedTags>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<bannedTags>
-							<li>Bushy</li>
-							<li>BeardBushy</li>
-							<li>BeardLong</li>
-						</bannedTags>
 					</value>
 				</li>
 				<li>
@@ -188,6 +180,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					</value>
 				</li>
 			</styleSettings>
+
+		<!-- Graphics -->
 
 			<graphicPaths>
 				<head>
@@ -200,6 +194,13 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 								<Gender For="Female">Things/Races/Pony/Heads/Ghoul/Female_Pony</Gender>
 							</extendedGraphics>
 						</Mutant>
+					<!-- Gene -->
+						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">
+							<path>Things/Races/Pony/Heads/Furskin/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Furskin/Female_Pony</Gender>
+							</extendedGraphics>
+						</Gene>
 					<!-- Normal -->
 						<Gender For="Female">Things/Races/Pony/Heads/Normal/Female_Pony</Gender>
 					</extendedGraphics>
@@ -209,8 +210,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 				<body>
 					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
 					<extendedGraphics>
+					<!-- Mutant -->
 						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
-						<Age For="PonyChild">Things/Races/Pony/Bodies/Normal/Naked_Child</Age>
 					</extendedGraphics>
 				</body>
 				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
@@ -218,7 +219,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			</graphicPaths>
 		</alienRace>
 
-<!--Race Settings-->
+	<!-- Race Settings -->
 
 		<race>
 			<nameGenerator>NameGeneratorPegasus</nameGenerator>
