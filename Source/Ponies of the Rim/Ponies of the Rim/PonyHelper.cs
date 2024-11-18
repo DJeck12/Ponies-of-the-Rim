@@ -2,7 +2,6 @@
 using Verse;
 using static RimWorld.FleckMaker;
 
-
 namespace PoniesOfTheRim
 {
     internal static class PonyHelper
