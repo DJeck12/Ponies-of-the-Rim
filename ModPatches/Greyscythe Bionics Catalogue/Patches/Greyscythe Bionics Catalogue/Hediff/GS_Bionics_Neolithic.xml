@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/HediffDef[defName="FSFAdvBionicArm"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="GS_Hediff_Clubfist"]/comps</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/HediffDef[defName="FSFAdvBionicArm"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="GS_Hediff_Clubfist"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
 					<prefix>Modified</prefix>
@@ -16,9 +16,9 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/HediffDef[defName="FSFAdvBionicLeg"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="GS_Hediff_Ikwafist"]/comps</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/HediffDef[defName="FSFAdvBionicLeg"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="GS_Hediff_Ikwafist"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
 					<prefix>Modified</prefix>

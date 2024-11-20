@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/HediffDef[defName="FF_MinigunArm"]/comps</xpath>
+		<xpath>Defs/HediffDef[defName="HB_HelldrillArm"]/comps</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/HediffDef[defName="FF_MinigunArm"]/comps</xpath>
+			<xpath>Defs/HediffDef[defName="HB_HelldrillArm"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
 					<prefix>Modified</prefix>

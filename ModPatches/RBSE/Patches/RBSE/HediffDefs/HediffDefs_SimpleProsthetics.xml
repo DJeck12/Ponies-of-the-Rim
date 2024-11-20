@@ -7,10 +7,10 @@
 			<value>
 				<comps>
 					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Test</prefix>
+						<prefix>Modified</prefix>
 						<inBrackets>Pony</inBrackets>
-						<descriptionExtra>pon</descriptionExtra>
-						<tipStringExtra>pon-pon</tipStringExtra>
+						<!-- <descriptionExtra>pon</descriptionExtra> -->
+						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 					</li>
 				</comps>
 			</value>
@@ -24,10 +24,10 @@
 			<value>
 				<comps>
 					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Test</prefix>
+						<prefix>Modified</prefix>
 						<inBrackets>Pony</inBrackets>
-						<descriptionExtra>pon</descriptionExtra>
-						<tipStringExtra>pon-pon</tipStringExtra>
+						<!-- <descriptionExtra>pon</descriptionExtra> -->
+						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 					</li>
 				</comps>
 			</value>
@@ -41,10 +41,10 @@
 			<value>
 				<comps>
 					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Test</prefix>
+						<prefix>Modified</prefix>
 						<inBrackets>Pony</inBrackets>
-						<descriptionExtra>pon</descriptionExtra>
-						<tipStringExtra>pon-pon</tipStringExtra>
+						<!-- <descriptionExtra>pon</descriptionExtra> -->
+						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 					</li>
 				</comps>
 			</value>
@@ -57,10 +57,10 @@
 			<xpath>Defs/HediffDef[defName="SimpleProstheticArm"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-					<prefix>Test</prefix>
+					<prefix>Modified</prefix>
 					<inBrackets>Pony</inBrackets>
-					<descriptionExtra>pon</descriptionExtra>
-					<tipStringExtra>pon-pon</tipStringExtra>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 				</li>
 			</value>
 		</match>
@@ -72,10 +72,10 @@
 			<xpath>Defs/HediffDef[defName="HookHand"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-					<prefix>Test</prefix>
+					<prefix>Modified</prefix>
 					<inBrackets>Pony</inBrackets>
-					<descriptionExtra>pon</descriptionExtra>
-					<tipStringExtra>pon-pon</tipStringExtra>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 				</li>
 			</value>
 		</match>
@@ -87,10 +87,10 @@
 			<xpath>Defs/HediffDef[defName="SimpleProstheticHand"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-					<prefix>Test</prefix>
+					<prefix>Modified</prefix>
 					<inBrackets>Pony</inBrackets>
-					<descriptionExtra>pon</descriptionExtra>
-					<tipStringExtra>pon-pon</tipStringExtra>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 				</li>
 			</value>
 		</match>
@@ -103,10 +103,10 @@
 			<value>
 				<comps>
 					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Test</prefix>
+						<prefix>Modified</prefix>
 						<inBrackets>Pony</inBrackets>
-						<descriptionExtra>pon</descriptionExtra>
-						<tipStringExtra>pon-pon</tipStringExtra>
+						<!-- <descriptionExtra>pon</descriptionExtra> -->
+						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 					</li>
 				</comps>
 			</value>

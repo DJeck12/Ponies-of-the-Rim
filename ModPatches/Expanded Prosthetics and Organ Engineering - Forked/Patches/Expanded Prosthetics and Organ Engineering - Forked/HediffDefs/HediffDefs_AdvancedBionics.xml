@@ -6,10 +6,10 @@
 			<xpath>Defs/HediffDef[defName="AdvancedBionicArm"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-					<prefix>Test</prefix>
+					<prefix>Modified</prefix>
 					<inBrackets>Pony</inBrackets>
-					<descriptionExtra>pon</descriptionExtra>
-					<tipStringExtra>pon-pon</tipStringExtra>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 				</li>
 			</value>
 		</match>
@@ -22,10 +22,10 @@
 			<value>
 				<comps>
 					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Test</prefix>
+						<prefix>Modified</prefix>
 						<inBrackets>Pony</inBrackets>
-						<descriptionExtra>pon</descriptionExtra>
-						<tipStringExtra>pon-pon</tipStringExtra>
+						<!-- <descriptionExtra>pon</descriptionExtra> -->
+						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 					</li>
 				</comps>
 			</value>
@@ -38,10 +38,10 @@
 			<xpath>Defs/HediffDef[defName="AdvancedBionicHand"]/comps</xpath>
 			<value>
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-					<prefix>Test</prefix>
+					<prefix>Modified</prefix>
 					<inBrackets>Pony</inBrackets>
-					<descriptionExtra>pon</descriptionExtra>
-					<tipStringExtra>pon-pon</tipStringExtra>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 				</li>
 			</value>
 		</match>
@@ -54,10 +54,10 @@
 			<value>
 				<comps>
 					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Test</prefix>
+						<prefix>Modified</prefix>
 						<inBrackets>Pony</inBrackets>
-						<descriptionExtra>pon</descriptionExtra>
-						<tipStringExtra>pon-pon</tipStringExtra>
+						<!-- <descriptionExtra>pon</descriptionExtra> -->
+						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 					</li>
 				</comps>
 			</value>
