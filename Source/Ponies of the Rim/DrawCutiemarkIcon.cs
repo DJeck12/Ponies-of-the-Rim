@@ -11,19 +11,19 @@ namespace PoniesOfTheRim
             Widgets.DrawBox(rect);
             if (pawn.IsEarthpony())
             {
-                int variantE = alienComp.addonVariants[3];
+                int variantE = alienComp.addonVariants[4];
                 Texture2D image = ContentFinder<Texture2D>.Get(cutiemarkBodyAddon.GetPath(pawn, ref variantE, variantE) + "_east");
                 GUI.DrawTexture(rect, image);
             }
             if (pawn.IsUnicorn())
             {
-                int variantU = alienComp.addonVariants[4];
+                int variantU = alienComp.addonVariants[5];
                 Texture2D image = ContentFinder<Texture2D>.Get(cutiemarkBodyAddon.GetPath(pawn, ref variantU, variantU) + "_east");
                 GUI.DrawTexture(rect, image);
             }
             if (pawn.IsPegasus())
             {
-                int variantP = alienComp.addonVariants[5];
+                int variantP = alienComp.addonVariants[6];
                 Texture2D image = ContentFinder<Texture2D>.Get(cutiemarkBodyAddon.GetPath(pawn, ref variantP, variantP) + "_east");
                 GUI.DrawTexture(rect, image);
             }

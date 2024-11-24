@@ -67,15 +67,15 @@ namespace PoniesOfTheRim
                 DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon,ref sharedIndex, i);
                 if (pawn.IsEarthpony())
                 {
-                    alienComp.addonVariants[3] = selectedIndexAddons;
+                    alienComp.addonVariants[4] = selectedIndexAddons;
                 }
                 if (pawn.IsUnicorn())
                 {
-                    alienComp.addonVariants[4] = selectedIndexAddons;
+                    alienComp.addonVariants[5] = selectedIndexAddons;
                 }
                 if (pawn.IsPegasus())
                 {
-                    alienComp.addonVariants[5] = selectedIndexAddons;
+                    alienComp.addonVariants[6] = selectedIndexAddons;
                 }
             }
             Widgets.EndScrollView();

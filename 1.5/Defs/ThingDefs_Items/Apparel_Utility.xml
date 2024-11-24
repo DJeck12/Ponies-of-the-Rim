@@ -65,6 +65,7 @@
 				<li>Pony_SaddleBag</li>
 			</tags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelBase">
