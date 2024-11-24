@@ -8,11 +8,6 @@ namespace PoniesOfTheRim
     public class HediffGiver_AbilityWings : HediffGiver
     {
         public AbilityDef ability;
-<<<<<<< HEAD:Source/Ponies of the Rim/HediffGiver_AbilityWings.cs
-=======
-
-
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/HediffGiver_AbilityWings.cs
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             var allParts = pawn.RaceProps.body.AllParts;
@@ -34,11 +29,6 @@ namespace PoniesOfTheRim
 
             }
         }
-
-<<<<<<< HEAD:Source/Ponies of the Rim/HediffGiver_AbilityWings.cs
-=======
-
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/HediffGiver_AbilityWings.cs
         public int GetNumNaturalWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             int numNotBionic = 0;
@@ -60,11 +50,6 @@ namespace PoniesOfTheRim
             }
             return numNotBionic;
         }
-
-<<<<<<< HEAD:Source/Ponies of the Rim/HediffGiver_AbilityWings.cs
-=======
-
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/HediffGiver_AbilityWings.cs
         public int GetNumProstheticWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
 
@@ -89,11 +74,6 @@ namespace PoniesOfTheRim
             }
             return numBionicParts;
         }
-
-<<<<<<< HEAD:Source/Ponies of the Rim/HediffGiver_AbilityWings.cs
-=======
-
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/HediffGiver_AbilityWings.cs
         public bool WingCheck(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             foreach (BodyPartDef affectedPart in partsToAffect)
@@ -116,17 +96,3 @@ namespace PoniesOfTheRim
         }
     }
 }
-<<<<<<< HEAD:Source/Ponies of the Rim/HediffGiver_AbilityWings.cs
-=======
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/HediffGiver_AbilityWings.cs

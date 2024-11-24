@@ -38,129 +38,111 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AlienRace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\839005762\1.5\Assemblies\AlienRace.dll</HintPath>
-    </Reference>
-    <Reference Include="AlienRace, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c0473c1c409d3997, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Steam\steamapps\workshop\content\294100\839005762\1.5\Assemblies\AlienRace.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\workshop\content\294100\839005762\1.5\Assemblies\AlienRace.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="HarmonyMod">
-      <HintPath>..\..\..\..\2009463077\Current\Assemblies\HarmonyMod.dll</HintPath>
-    </Reference>
-    <Reference Include="HarmonyMod">
-      <HintPath>..\..\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\HarmonyMod.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="HarmonyMod, Version=2.3.1.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\HarmonyMod.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.DSPGraphModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="VFECore">
-      <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>P:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="VFECore">
-      <HintPath>..\..\Steam\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+    <Reference Include="VFECore, Version=1.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>P:\Steam\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD:Source/Ponies of the Rim/PoniesOfTheRim.csproj
     <Compile Include="BodyTypePatch.cs" />
-    <Compile Include="Gene_Random.cs" />
-    <Compile Include="HediffGiver_AbilityHorn.cs" />
-    <Compile Include="HediffGiver_AbilityWings.cs" />
-=======
+    <Compile Include="GeneExtension.cs" />
+    <Compile Include="Harmony_DrawCharacterCardPatch.cs" />
+    <Compile Include="DrawCutiemarkIcon.cs" />
     <Compile Include="Harmony_TryPlaceFootprintPatch.cs" />
     <Compile Include="Harmony_StylingStationPatch.cs" />
-    <Compile Include="Harmony_BodyTypePatch.cs" />
     <Compile Include="Gene_Random.cs" />
-    <None Include="PonyTypeExtension.cs" />
+    <Compile Include="CutiemarkSelectorWindow.cs" />
     <Compile Include="HediffGiver_AbilityHorn.cs" />
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/PoniesOfTheRim.csproj
     <Compile Include="PonyHelper.cs" />
+    <Compile Include="HediffComp_PonyProsthetic.cs" />
     <Compile Include="Pony_DefOf.cs" />
-    <Compile Include="StylingStationPatch.cs" />
     <Compile Include="ThoughtExtension.cs" />
-    <Compile Include="GeneExtension.cs" />
     <Compile Include="ThoughtWorker_LeatherApparel.cs" />
+    <Compile Include="ThoughtWorker_OpinionForRaces.cs" />
     <Compile Include="ThoughtWorker_Precept_LeatherApparel.cs" />
-    <Compile Include="ThoughtWorker_Precept_StrictRaces_Social.cs" />
-    <Compile Include="ThoughtWorker_Precept_StrictRaces.cs" />
-    <Compile Include="ThoughtWorker_Precept_Races.cs" />
-    <Compile Include="ThoughtWorker_Precept_Races_Social.cs" />
     <Compile Include="ThoughtWorker_Precept_Pony.cs" />
     <Compile Include="ThoughtWorker_Precept_Pony_Social.cs" />
-    <Compile Include="ThoughtWorker_OpinionForRaces.cs" />
+    <Compile Include="ThoughtWorker_Precept_Races.cs" />
+    <Compile Include="ThoughtWorker_Precept_Races_Social.cs" />
+    <Compile Include="ThoughtWorker_Precept_StrictRaces.cs" />
+    <Compile Include="ThoughtWorker_Precept_StrictRaces_Social.cs" />
     <Compile Include="ThoughtWorker_OpinionForPony.cs" />
-<<<<<<< HEAD:Source/Ponies of the Rim/PoniesOfTheRim.csproj
-=======
-    <Compile Include="ThoughtWorker_OpinionForUnicorn.cs" />
-    <None Include="Gene_Diet.cs" />
     <Compile Include="HediffGiver_AbilityWings.cs" />
->>>>>>> 90cf756f714473384e712a6cc3016d28166dbf3c:Source/Ponies of the Rim/Ponies of the Rim/PoniesOfTheRim.csproj
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Harmony_ScalableBeltPatch.cs" />
     <Compile Include="ScenPart_ConfigPage_ConfigureStartingPawns.cs" />
-    <Compile Include="TryPlaceFootprintPatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\..\..\839005762\1.5\Assemblies\AlienRace.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

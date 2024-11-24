@@ -1,5 +1,4 @@
 ﻿using AlienRace;
-using static AlienRace.StylingStation;
 using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
@@ -139,8 +138,8 @@ namespace PoniesOfTheRim
             Rect rect2;
             if (addon.allowColorOverride)
             {
-                List<Color> list = AvailableColors(addon);
-                List<Color> list2 = AvailableColors(addon, false);
+                List<Color> list = StylingStation.AvailableColors(addon);
+                List<Color> list2 = StylingStation.AvailableColors(addon, false);
                 if (list.Any() || list2.Any())
                 {
                     Rect rect = inRect.BottomPart(0.4f);
@@ -317,12 +316,3 @@ namespace PoniesOfTheRim
         }
     }
 }
-
-
-
-
-
-
-
-
-

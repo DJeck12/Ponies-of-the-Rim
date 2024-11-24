@@ -1,30 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "P:\\Ponies of the Rim\\",
+  "WorkspaceRootPath": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|p:\\ponies of the rim\\ponies of the rim\\bodytypepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\ponies of the rim\\drawcutiemarkicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\drawcutiemarkicon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|c:\\users\\anton\\documents\\github\\ponies-of-the-rim\\source\\ponies of the rim\\cutiemarkselectorwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\cutiemarkselectorwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\ponies of the rim\\bodytypepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\bodytypepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|p:\\ponies of the rim\\ponies of the rim\\scalablebeltpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\scalablebeltpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\PonyHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:Ponies of the Rim\\PonyHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\ponyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\ponyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\ponies of the rim\\hediffgiver_abilityhorn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\hediffgiver_abilityhorn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\pony_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\pony_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\ponies of the rim\\hediffgiver_abilitywings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\hediffgiver_abilitywings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\stylingstationpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\stylingstationpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\ponies of the rim\\harmony_drawcharactercardpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\harmony_drawcharactercardpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|P:\\Ponies of the Rim\\ponies of the rim\\tryplacefootprintpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\tryplacefootprintpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\ScalableBeltPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ponies of the Rim\\ScalableBeltPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Pony_DefOf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:Ponies of the Rim\\Pony_DefOf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\StylingStationPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ponies of the Rim\\StylingStationPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\TryPlaceFootprintPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ponies of the Rim\\TryPlaceFootprintPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,28 +54,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BodyTypePatch.cs",
-              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\BodyTypePatch.cs",
-              "RelativeDocumentMoniker": "Ponies of the Rim\\BodyTypePatch.cs",
-              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\BodyTypePatch.cs",
-              "RelativeToolTip": "Ponies of the Rim\\BodyTypePatch.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAApAAAA",
+              "DocumentIndex": 1,
+              "Title": "CutiemarkSelectorWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\CutiemarkSelectorWindow.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\CutiemarkSelectorWindow.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\CutiemarkSelectorWindow.cs",
+              "RelativeToolTip": "Ponies of the Rim\\CutiemarkSelectorWindow.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwCgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T13:19:44.194Z",
+              "WhenOpened": "2024-11-24T10:50:29.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "HediffGiver_AbilityHorn.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\HediffGiver_AbilityHorn.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\HediffGiver_AbilityHorn.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\HediffGiver_AbilityHorn.cs",
+              "RelativeToolTip": "Ponies of the Rim\\HediffGiver_AbilityHorn.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACsAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T09:59:54.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HediffGiver_AbilityWings.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\HediffGiver_AbilityWings.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\HediffGiver_AbilityWings.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\HediffGiver_AbilityWings.cs",
+              "RelativeToolTip": "Ponies of the Rim\\HediffGiver_AbilityWings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T09:59:17.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Harmony_DrawCharacterCardPatch.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Harmony_DrawCharacterCardPatch.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Harmony_DrawCharacterCardPatch.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Harmony_DrawCharacterCardPatch.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Harmony_DrawCharacterCardPatch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T09:58:03.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DrawCutiemarkIcon.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\DrawCutiemarkIcon.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\DrawCutiemarkIcon.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\DrawCutiemarkIcon.cs",
+              "RelativeToolTip": "Ponies of the Rim\\DrawCutiemarkIcon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T09:57:18.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BodyTypePatch.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\BodyTypePatch.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\BodyTypePatch.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\BodyTypePatch.cs",
+              "RelativeToolTip": "Ponies of the Rim\\BodyTypePatch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T13:19:44.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "StylingStationPatch.cs",
-              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\StylingStationPatch.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\StylingStationPatch.cs",
               "RelativeDocumentMoniker": "Ponies of the Rim\\StylingStationPatch.cs",
-              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\StylingStationPatch.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\StylingStationPatch.cs",
               "RelativeToolTip": "Ponies of the Rim\\StylingStationPatch.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -63,11 +144,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Pony_DefOf.cs",
-              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\Pony_DefOf.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Pony_DefOf.cs",
               "RelativeDocumentMoniker": "Ponies of the Rim\\Pony_DefOf.cs",
-              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\Pony_DefOf.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Pony_DefOf.cs",
               "RelativeToolTip": "Ponies of the Rim\\Pony_DefOf.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -75,23 +156,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PonyHelper.cs",
-              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\PonyHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\PonyHelper.cs",
               "RelativeDocumentMoniker": "Ponies of the Rim\\PonyHelper.cs",
-              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\PonyHelper.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\PonyHelper.cs",
               "RelativeToolTip": "Ponies of the Rim\\PonyHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T09:31:26.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "TryPlaceFootprintPatch.cs",
-              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\TryPlaceFootprintPatch.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\TryPlaceFootprintPatch.cs",
               "RelativeDocumentMoniker": "Ponies of the Rim\\TryPlaceFootprintPatch.cs",
-              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\TryPlaceFootprintPatch.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\TryPlaceFootprintPatch.cs",
               "RelativeToolTip": "Ponies of the Rim\\TryPlaceFootprintPatch.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,16 +180,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ScalableBeltPatch.cs",
-              "DocumentMoniker": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScalableBeltPatch.cs",
+              "DocumentMoniker": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\ScalableBeltPatch.cs",
               "RelativeDocumentMoniker": "Ponies of the Rim\\ScalableBeltPatch.cs",
-              "ToolTip": "P:\\Ponies of the Rim\\Ponies of the Rim\\ScalableBeltPatch.cs",
+              "ToolTip": "C:\\Users\\Anton\\Documents\\GitHub\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\ScalableBeltPatch.cs",
               "RelativeToolTip": "Ponies of the Rim\\ScalableBeltPatch.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T14:25:00.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T14:25:00.984Z"
             }
           ]
         }
