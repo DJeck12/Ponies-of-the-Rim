@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_RelationsForPony.degreeDatas.pony_lover.label>любитель пони</Pony_RelationsForPony.degreeDatas.pony_lover.label>
+	<Pony_RelationsForPony.degreeDatas.pony_lover.description>[PAWN_nameDef] находит пони привлекательными и интересными. Их магическая природа очаровывает [PAWN_objective], и [PAWN_pronoun] не прочь сблизиться с ними.</Pony_RelationsForPony.degreeDatas.pony_lover.description>
+	<Pony_RelationsForPony.degreeDatas.pony_hater.label>противник пони</Pony_RelationsForPony.degreeDatas.pony_hater.label>
+	<Pony_RelationsForPony.degreeDatas.pony_hater.description>[PAWN_nameDef] испытывает неприязнь к пони. {PAWN_pronoun} считает, что их навязчивое дружелюбие подозрительно и не дает оснований доверять им.</Pony_RelationsForPony.degreeDatas.pony_hater.description>
+
+	<Pony_RelationsForEarth.degreeDatas.earthlike_lover.label>любитель земных пони</Pony_RelationsForEarth.degreeDatas.earthlike_lover.label>
+	<Pony_RelationsForEarth.degreeDatas.earthlike_lover.description>[PAWN_nameDef] верит, что земные пони - прародители всех видов пони, и уважает их. [PAWN_pronoun] не прочь завязать с ними отношения, чтобы подружиться.</Pony_RelationsForEarth.degreeDatas.earthlike_lover.description>
+	<Pony_RelationsForEarth.degreeDatas.earthlike_hater.label>противник земных пони</Pony_RelationsForEarth.degreeDatas.earthlike_hater.label>
+	<Pony_RelationsForEarth.degreeDatas.earthlike_hater.description>Магия земнопони - это ересь! [PAWN_nameDef] испытывает сильную неприязнь ко всем пони без рогов и крыльев. [PAWN_pronoun] считает их низшей расой.</Pony_RelationsForEarth.degreeDatas.earthlike_hater.description>
+
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.label>любитель крылатых пони</Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.label>
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.description>[PAWN_nameDef] всегда восхищался красотой полета пегасов. [PAWN_pronoun] находит их грациозными и [PAWN_pronoun] не прочь сблизиться с ними.</Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.description>
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.label>противник крылатых пони</Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.label>
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.description>[PAWN_nameDef] считает историю пегасов ужасающей и никогда не простит им злодеяния их предков. [PAWN_pronoun] находит разные способы борьбы с ними.</Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.description>
+
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.label>любитель рогатых пони</Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.label>
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.description>[PAWN_nameDef] заворожен магическими способностями единорогов. [PAWN_pronoun] стремится сблизиться с ними, чтобы расспросить их о магии.</Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.description>
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.label>противник рогатых пони</Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.label>
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.description>[PAWN_nameDef] считает единорогов опасными и проявляет недоверие к их расе. [PAWN_pronoun] считает, что их магия - не что иное, как бомба замедленного действия.</Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.description>
+
+</LanguageData>

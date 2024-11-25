@@ -11,7 +11,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_DashColorHair</defName>
 		<label>Dash (Colorful)</label>
@@ -33,6 +33,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Sparkle -->
 	<HairDef>
 		<defName>Pony_SparkleHair</defName>
@@ -44,7 +45,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_SparkleColorHair</defName>
 		<label>Sparkle (Colorful)</label>
@@ -66,6 +67,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Apple -->
 	<HairDef>
 		<defName>Pony_AppleHair</defName>
@@ -77,7 +79,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_AppleColorHair</defName>
 		<label>Apple (Colorful)</label>
@@ -88,6 +90,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Party -->
 	<HairDef>
 		<defName>Pony_PartyHair</defName>
@@ -99,7 +102,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_PartyColorHair</defName>
 		<label>Party (Colorful)</label>
@@ -110,6 +113,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Rarity -->
 	<HairDef>
 		<defName>Pony_RarityHair</defName>
@@ -132,7 +136,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_FlutterColorHair</defName>
 		<label>Flutter (Colorful)</label>
@@ -143,6 +147,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Bloom -->
 	<HairDef>
 		<defName>Pony_BloomHair</defName>
@@ -154,7 +159,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_BloomColorHair</defName>
 		<label>Bloom (Colorful)</label>
@@ -165,6 +170,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Sweet -->
 	<HairDef>
 		<defName>Pony_SweetHair</defName>
@@ -176,7 +182,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_SweetColorHair</defName>
 		<label>Sweet (Colorful)</label>
@@ -187,6 +193,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Scoot -->
 	<HairDef>
 		<defName>Pony_ScootHair</defName>
@@ -198,7 +205,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
-
+<!--
 	<HairDef>
 		<defName>Pony_ScootColorHair</defName>
 		<label>Scoot (Colorful)</label>
@@ -209,6 +216,7 @@
 			<li>Pony</li>
 		</hairTags>
 	</HairDef>
+-->
 <!-- Night -->
 	<HairDef>
 		<defName>Pony_NightHair</defName>

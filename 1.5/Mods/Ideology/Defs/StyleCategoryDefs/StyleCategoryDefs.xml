@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<StyleCategoryDef>
+		<defName>Pony_Harmonic</defName>
+		<label>harmonic</label>
+		<iconPath>UI/StyleCategories/Harmonic</iconPath>
+		<soundOngoingRitual>Pony_RitualSustainer_Harmonism</soundOngoingRitual>
+		<ritualVisualEffectDef>Pony_HarmonicVisuals</ritualVisualEffectDef>
+		<thingDefStyles>
+		</thingDefStyles>
+	</StyleCategoryDef>
+
+</Defs>

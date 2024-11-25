@@ -4,7 +4,7 @@
 <!--Colony-->
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>EPonyColonist</defName>
+		<defName>Pony_EarthponyColonist</defName>
 		<label>earthpony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
@@ -21,7 +21,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>PPonyColonist</defName>
+		<defName>Pony_PegasusColonist</defName>
 		<label>pegasus</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
@@ -38,7 +38,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>UPonyColonist</defName>
+		<defName>Pony_UnicornColonist</defName>
 		<label>unicorn</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
@@ -57,27 +57,54 @@
 <!--Tribe-->
 
 	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>EPonyTribe</defName>
+		<defName>Pony_EarthponyTribe</defName>
 		<label>earthpony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Earthpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>Pony_Earthpony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>PPonyTribe</defName>
+		<defName>Pony_PegasusTribe</defName>
 		<label>pegasus</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Pegasus</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>Pony_Pegasus_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>UPonyTribe</defName>
+		<defName>Pony_UnicornTribe</defName>
 		<label>unicorn</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Unicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>Pony_Unicorn_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 	</PawnKindDef>
 
 </Defs>

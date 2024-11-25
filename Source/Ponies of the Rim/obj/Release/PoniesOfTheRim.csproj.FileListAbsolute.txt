@@ -1,0 +1,53 @@
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\Ponies of the Rim.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\Ponies of the Rim.pdb
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\PoniesOfTheRim.csproj.AssemblyReference.cache
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\PoniesOfTheRim.csproj.CoreCompileInputs.cache
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.dll
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.pdb
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\AlienRace.dll
+P:\Ponies of the Rim\Ponies of the Rim\obj\Release\PoniesOf.646225EC.Up2Date
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\HarmonyMod.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.DSPGraphModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.IMGUIModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.TextRenderingModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.UI.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.UIElementsModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\UnityEngine.UIModule.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\VFECore.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\PipeSystem.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\KCSG.dll
+P:\Ponies of the Rim\Ponies of the Rim\bin\Release\AlienRace.pdb
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Ponies of the Rim.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Ponies of the Rim.pdb
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\0Harmony.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\AlienRace.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\HarmonyMod.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\NAudio.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\NVorbis.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.AudioModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\com.rlabrecque.steamworks.net.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Assembly-CSharp-firstpass.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Unity.Burst.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.AssetBundleModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Unity.Mathematics.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.PhysicsModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Unity.TextMeshPro.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\ISharpZipLib.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.InputLegacyModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.PerformanceReportingModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.ImageConversionModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.ScreenCaptureModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.Physics2DModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.AnimationModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.SharedInternalsModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\UnityEngine.TextCoreModule.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\PipeSystem.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\KCSG.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\Unity.Burst.Unsafe.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\AlienRace.pdb
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Release\PoniesOfTheRim.csproj.AssemblyReference.cache
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Release\PoniesOfTheRim.csproj.CoreCompileInputs.cache
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Release\PoniesOf.646225EC.Up2Date
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Release\Ponies of the Rim.dll
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Release\Ponies of the Rim.pdb
+C:\Users\Anton\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Release\VFECore.dll

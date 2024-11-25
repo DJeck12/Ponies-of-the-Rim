@@ -12,129 +12,127 @@
 				<factionDef>Pony_PlayerExpedition</factionDef>
 			</playerFaction>
 			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Equestria is your homeland, the country of ponies and other magical creatures. As part of an important mission, your team has been sent to a forgotten planet somewhere on the edge of the galaxy. Having entered its orbit and prepared to land, you hear a loud explosion and the grinding of metal from the captain's cabin. Having assessed the emergency condition of the ship's compartments and having no way to contact the captain, you decide to use escape pods and urgently leave the ship. This is how your adventure begins.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
 
 				<!-- Config pages -->
-				<li Class="Ponies_of_the_Rim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
-				<def>ConfigPage_ConfigureStartingPawns</def>
-				<customSummary>Start with 4 ponies.</customSummary>
-				<pawnCount>4</pawnCount>
-				<pawnChoiceCount>8</pawnChoiceCount>
+				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<customSummary>Start with 4 ponies.</customSummary>
+					<pawnCount>4</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
-				<def>PlayerPawnsArriveMethod</def>
-				<method>DropPods</method>
-				<visible>false</visible>
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
 				</li>
 				
 				<!-- Player starting things -->
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Silver</thingDef>
-				<count>800</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MealSurvivalPack</thingDef>
-				<count>30</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MealFine_Hay</thingDef>
-				<count>20</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>MealFine_Hay</thingDef>
+					<count>20</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MedicineIndustrial</thingDef>
-				<count>30</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>30</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>ComponentIndustrial</thingDef>
-				<count>30</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Gun_BoltActionRifle</thingDef>
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_BoltActionRifle</thingDef>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Gun_PumpShotgun</thingDef>
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_PumpShotgun</thingDef>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Gun_Revolver</thingDef>
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Revolver</thingDef>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MeleeWeapon_Mace</thingDef>
-				<stuff>Plasteel</stuff>
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Mace</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MeleeWeapon_Knife</thingDef>
-				<stuff>Plasteel</stuff>
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Plasteel</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Apparel_FlakPants</thingDef>
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakPants</thingDef>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Apparel_FlakVest</thingDef>
-				<count>2</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakVest</thingDef>
+					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Apparel_AdvancedHelmet</thingDef>
-				<stuff>Plasteel</stuff>
-				<count>2</count>
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_AdvancedHelmet</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingAnimal">
-				<def>StartingAnimal</def>
-				<animalKind>Horse</animalKind>
-				<count>1</count>
-				<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+					<def>StartingAnimal</def>
+					<animalKind>Horse</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
 				</li>
 
 				<!-- Scatter some things near player start -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
-				<def>ScatterThingsNearPlayerStart</def>
-				<thingDef>Steel</thingDef>
-				<count>450</count>
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
-				<def>ScatterThingsNearPlayerStart</def>
-				<thingDef>WoodLog</thingDef>
-				<count>300</count>
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
 				</li>
 
 				<!-- Scatter some things anywhere -->
 				<li Class="ScenPart_ScatterThingsAnywhere">
-				<def>ScatterThingsAnywhere</def>
-				<thingDef>ShipChunk</thingDef>
-				<allowRoofed>false</allowRoofed>
-				<count>3</count>
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<allowRoofed>false</allowRoofed>
+					<count>3</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
-				<def>ScatterThingsAnywhere</def>
-				<thingDef>Steel</thingDef>
-				<count>720</count>
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsAnywhere">
-				<def>ScatterThingsAnywhere</def>
-				<thingDef>MealSurvivalPack</thingDef>
-				<count>10</count>
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>10</count>
 				</li>
-				
-				<!-- Game start dialog -->
-				<li Class="ScenPart_GameStartDialog">
-				<def>GameStartDialog</def>
-				<text>Equestria is your homeland, the country of ponies and other magical creatures. As part of an important mission, your team has been sent to a forgotten planet somewhere on the edge of the galaxy. Having entered its orbit and prepared to land, you hear a loud explosion and the grinding of metal from the captain's cabin. Having assessed the emergency condition of the ship's compartments and having no way to contact the captain, you decide to use escape pods and urgently leave the ship. This is how your adventure begins.</text>
-				<closeSound>GameStartSting</closeSound>
-				</li>
-
 			</parts>
 		</scenario>
 	</ScenarioDef>

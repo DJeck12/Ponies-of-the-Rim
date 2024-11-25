@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>Ponyx</defName>
+		<label>ponyx</label>
+		<description>Being the result of interracial crossbreeding, Ponyxes have incorporated mostly positive qualities of ponies. Peaceful at heart, humans used them to test new medicines suitable for both pony and human races.
+Their herbivorous diet prevents them from eating meat, motivating them to cultivate plants. Ponyxes also have altered hoof structures, inferior to human hands.</description>
+		<descriptionShort>Being the result of interracial crossbreeding, Ponyxes are peceful at heart and have visial traits from both humans and ponies. Their herbivourus diet motivates them to cultivate plants and their horse hooves are compensated by their natural attractiveness.</descriptionShort>
+		<iconPath>UI/Xenotypes/Ponyx</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>0.9</combatPowerFactor>
+		<nameMaker>NameGeneratorPony</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Standard</li>
+			<li>Body_Thin</li>
+			<li>Pony_PonyHead</li>
+			<li>Pony_PonyEars</li>
+			<li>Pony_PonyTail</li>
+			<li>Pony_Cutiemark</li>
+			<li>Pony_ColorfulSkin</li>
+			<li>Pony_ColorfulHair</li>
+			<li>Pony_VoiceHorse</li>
+			<li>Pony_PonyMagic</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>Beauty_Pretty</li>
+			<li>Pony_HorseHooves</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

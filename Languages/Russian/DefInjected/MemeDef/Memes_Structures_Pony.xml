@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Harmonism.label>гармонизм</Pony_Harmonism.label>
+	<Pony_Harmonism.description>Истинная природа Вселенной заключается в гармонии всех ее аспектов, от природы и магии до повседневных жизненных ситуаций. Мы - неотъемлемая часть этой гармонии, и мы должны быть благосклонны к богиням, которые поддерживают мир в равновесии.</Pony_Harmonism.description>
+
+	<Pony_Harmonism.fixedDeityNameTypes.0.name>Селестия</Pony_Harmonism.fixedDeityNameTypes.0.name>
+	<Pony_Harmonism.fixedDeityNameTypes.0.type>Принцесса Солнца</Pony_Harmonism.fixedDeityNameTypes.0.type>
+	<Pony_Harmonism.fixedDeityNameTypes.1.name>Луна</Pony_Harmonism.fixedDeityNameTypes.1.name>
+	<Pony_Harmonism.fixedDeityNameTypes.1.type>Принцесса Луны</Pony_Harmonism.fixedDeityNameTypes.1.type>
+	<Pony_Harmonism.fixedDeityNameTypes.2.name>Кэйденс</Pony_Harmonism.fixedDeityNameTypes.2.name>
+	<Pony_Harmonism.fixedDeityNameTypes.2.type>Принцесса Любви</Pony_Harmonism.fixedDeityNameTypes.2.type>
+	<Pony_Harmonism.fixedDeityNameTypes.3.name>Твайлайт Спаркл</Pony_Harmonism.fixedDeityNameTypes.3.name>
+	<Pony_Harmonism.fixedDeityNameTypes.3.type>Принцесса Дружбы</Pony_Harmonism.fixedDeityNameTypes.3.type>
+	<Pony_Harmonism.fixedDeityNameTypes.4.name>Амора</Pony_Harmonism.fixedDeityNameTypes.4.name>
+	<Pony_Harmonism.fixedDeityNameTypes.4.type>Принцесса Надежды</Pony_Harmonism.fixedDeityNameTypes.4.type>
+	<Pony_Harmonism.fixedDeityNameTypes.5.name>Сансет Шиммер</Pony_Harmonism.fixedDeityNameTypes.5.name>
+	<Pony_Harmonism.fixedDeityNameTypes.5.type>Принцесса Перемен</Pony_Harmonism.fixedDeityNameTypes.5.type>
+	<Pony_Harmonism.fixedDeityNameTypes.6.name>Старлайт Глиммер</Pony_Harmonism.fixedDeityNameTypes.6.name>
+	<Pony_Harmonism.fixedDeityNameTypes.6.type>Принцесса Магии</Pony_Harmonism.fixedDeityNameTypes.6.type>
+	<Pony_Harmonism.fixedDeityNameTypes.7.name>Фларри Харт</Pony_Harmonism.fixedDeityNameTypes.7.name>
+	<Pony_Harmonism.fixedDeityNameTypes.7.type>Принцесса Силы</Pony_Harmonism.fixedDeityNameTypes.7.type>
+	<Pony_Harmonism.fixedDeityNameTypes.8.name>Иллумина Стар</Pony_Harmonism.fixedDeityNameTypes.8.name>
+	<Pony_Harmonism.fixedDeityNameTypes.8.type>Принцесса Космоса</Pony_Harmonism.fixedDeityNameTypes.8.type>
+	<Pony_Harmonism.fixedDeityNameTypes.9.name>Фаустикорн</Pony_Harmonism.fixedDeityNameTypes.9.name>
+	<Pony_Harmonism.fixedDeityNameTypes.9.type>Принцесса Созидания</Pony_Harmonism.fixedDeityNameTypes.9.type>
+	<Pony_Harmonism.fixedDeityNameTypes.10.name>Аврора Скай</Pony_Harmonism.fixedDeityNameTypes.10.name>
+	<Pony_Harmonism.fixedDeityNameTypes.10.type>Принцесса Знаний</Pony_Harmonism.fixedDeityNameTypes.10.type>
+	<Pony_Harmonism.fixedDeityNameTypes.11.name>Санрайз Спраут</Pony_Harmonism.fixedDeityNameTypes.11.name>
+	<Pony_Harmonism.fixedDeityNameTypes.11.type>Принцесса Природы</Pony_Harmonism.fixedDeityNameTypes.11.type>
+	
+	<Pony_Harmonism.generalRules.rulesStrings>
+		<li>memeAdjective_masc->сбалансированный</li>
+		<li>memeAdjective_masc->магический</li>
+		<li>memeAdjective_masc->мистический</li>
+		<li>memeAdjective_fem->сбалансированная</li>
+		<li>memeAdjective_fem->магическая</li>
+		<li>memeAdjective_fem->мистическая</li>
+		<li>memeAdjective_neutral->сбалансированное</li>
+		<li>memeAdjective_neutral->магическое</li>
+		<li>memeAdjective_neutral->мистическое</li>
+		<li>memeAdjective_plural->сбалансированные</li>
+		<li>memeAdjective_plural->магические</li>
+		<li>memeAdjective_plural->мистические</li>
+		<li>memeCreed_fem->безмятежность</li>
+		<li>memeCreed_neutral->единство</li>
+		<li>memeCreed_fem->дружба</li>
+		<li>memeCreed_neutral->содружество</li>
+		<li>memeCreed_fem->доброта</li>
+		<li>memeConcept->гармонии</li>
+		<li>memeLeaderNoun->друг</li>
+		<li>memeLeaderNoun->принц</li>
+		<li>memeLeaderNoun->лидер</li>
+		<li>memeLeaderAdjective->гармоничный</li>
+		<li>memeLeaderAdjective->дружелюбный</li>
+		<li>memeLeaderAdjective->вдохновляющий</li>
+		<li>memeMoralist->жрец</li>
+		<li>memeMoralist->настоятель</li>
+	</Pony_Harmonism.generalRules.rulesStrings>
+
+	<Pony_Harmonism.symbolPacks.0.adjective>гармоничный</Pony_Harmonism.symbolPacks.0.adjective>
+	<Pony_Harmonism.symbolPacks.0.member>гармонист</Pony_Harmonism.symbolPacks.0.member>
+	<Pony_Harmonism.symbolPacks.0.theme>гармонизма</Pony_Harmonism.symbolPacks.0.theme>
+	<Pony_Harmonism.worshipRoomLabel>храм гармонии</Pony_Harmonism.worshipRoomLabel>
+
+</LanguageData>

@@ -3,48 +3,48 @@
 
 <!-- Колонист -->
 
-	<EPonyColonist.label>земнопони</EPonyColonist.label>
-	<EPonyColonist.labelPlural>земнопони</EPonyColonist.labelPlural>
-	<EPonyColonist.labelMale>жеребец</EPonyColonist.labelMale>
-	<EPonyColonist.labelFemale>кобылка</EPonyColonist.labelFemale>
-	<EPonyColonist.labelMalePlural>жеребцы</EPonyColonist.labelMalePlural>
-	<EPonyColonist.labelFemalePlural>кобылки</EPonyColonist.labelFemalePlural>
+	<Pony_EarthponyColonist.label>земнопони</Pony_EarthponyColonist.label>
+	<Pony_EarthponyColonist.labelPlural>земнопони</Pony_EarthponyColonist.labelPlural>
+	<Pony_EarthponyColonist.labelMale>жеребец</Pony_EarthponyColonist.labelMale>
+	<Pony_EarthponyColonist.labelFemale>кобылка</Pony_EarthponyColonist.labelFemale>
+	<Pony_EarthponyColonist.labelMalePlural>жеребцы</Pony_EarthponyColonist.labelMalePlural>
+	<Pony_EarthponyColonist.labelFemalePlural>кобылки</Pony_EarthponyColonist.labelFemalePlural>
 
-	<PPonyColonist.label>пегас</PPonyColonist.label>
-	<PPonyColonist.labelPlural>пегасы</PPonyColonist.labelPlural>
-	<PPonyColonist.labelMale>жеребец</PPonyColonist.labelMale>
-	<PPonyColonist.labelFemale>кобылка</PPonyColonist.labelFemale>
-	<PPonyColonist.labelMalePlural>жеребецы</PPonyColonist.labelMalePlural>
-	<PPonyColonist.labelFemalePlural>кобылки</PPonyColonist.labelFemalePlural>
+	<Pony_PegasusColonist.label>пегас</Pony_PegasusColonist.label>
+	<Pony_PegasusColonist.labelPlural>пегасы</Pony_PegasusColonist.labelPlural>
+	<Pony_PegasusColonist.labelMale>жеребец</Pony_PegasusColonist.labelMale>
+	<Pony_PegasusColonist.labelFemale>кобылка</Pony_PegasusColonist.labelFemale>
+	<Pony_PegasusColonist.labelMalePlural>жеребецы</Pony_PegasusColonist.labelMalePlural>
+	<Pony_PegasusColonist.labelFemalePlural>кобылки</Pony_PegasusColonist.labelFemalePlural>
 
-	<UPonyColonist.label>единорог</UPonyColonist.label>
-	<UPonyColonist.labelPlural>единороги</UPonyColonist.labelPlural>
-	<UPonyColonist.labelMale>жеребец</UPonyColonist.labelMale>
-	<UPonyColonist.labelFemale>кобылка</UPonyColonist.labelFemale>
-	<UPonyColonist.labelMalePlural>жеребецы</UPonyColonist.labelMalePlural>
-	<UPonyColonist.labelFemalePlural>кобылки</UPonyColonist.labelFemalePlural>
+	<Pony_UnicornColonist.label>единорог</Pony_UnicornColonist.label>
+	<Pony_UnicornColonist.labelPlural>единороги</Pony_UnicornColonist.labelPlural>
+	<Pony_UnicornColonist.labelMale>жеребец</Pony_UnicornColonist.labelMale>
+	<Pony_UnicornColonist.labelFemale>кобылка</Pony_UnicornColonist.labelFemale>
+	<Pony_UnicornColonist.labelMalePlural>жеребецы</Pony_UnicornColonist.labelMalePlural>
+	<Pony_UnicornColonist.labelFemalePlural>кобылки</Pony_UnicornColonist.labelFemalePlural>
 
 <!-- Племенной житель -->
 
-	<EPonyTribe.label>земнопони</EPonyTribe.label>
-	<EPonyTribe.labelPlural>земнопони</EPonyTribe.labelPlural>
-	<EPonyTribe.labelMale>жеребец</EPonyTribe.labelMale>
-	<EPonyTribe.labelFemale>кобылка</EPonyTribe.labelFemale>
-	<EPonyTribe.labelMalePlural>жеребецы</EPonyTribe.labelMalePlural>
-	<EPonyTribe.labelFemalePlural>кобылки</EPonyTribe.labelFemalePlural>
+	<Pony_EarthponyTribe.label>земнопони</Pony_EarthponyTribe.label>
+	<Pony_EarthponyTribe.labelPlural>земнопони</Pony_EarthponyTribe.labelPlural>
+	<Pony_EarthponyTribe.labelMale>жеребец</Pony_EarthponyTribe.labelMale>
+	<Pony_EarthponyTribe.labelFemale>кобылка</Pony_EarthponyTribe.labelFemale>
+	<Pony_EarthponyTribe.labelMalePlural>жеребецы</Pony_EarthponyTribe.labelMalePlural>
+	<Pony_EarthponyTribe.labelFemalePlural>кобылки</Pony_EarthponyTribe.labelFemalePlural>
 
-	<PPonyTribe.label>пегас</PPonyTribe.label>
-	<PPonyTribe.labelPlural>пегас</PPonyTribe.labelPlural>
-	<PPonyTribe.labelMale>жеребец</PPonyTribe.labelMale>
-	<PPonyTribe.labelFemale>кобылка</PPonyTribe.labelFemale>
-	<PPonyTribe.labelMalePlural>жеребецы</PPonyTribe.labelMalePlural>
-	<PPonyTribe.labelFemalePlural>кобылки</PPonyTribe.labelFemalePlural>
+	<Pony_PegasusTribe.label>пегас</Pony_PegasusTribe.label>
+	<Pony_PegasusTribe.labelPlural>пегас</Pony_PegasusTribe.labelPlural>
+	<Pony_PegasusTribe.labelMale>жеребец</Pony_PegasusTribe.labelMale>
+	<Pony_PegasusTribe.labelFemale>кобылка</Pony_PegasusTribe.labelFemale>
+	<Pony_PegasusTribe.labelMalePlural>жеребецы</Pony_PegasusTribe.labelMalePlural>
+	<Pony_PegasusTribe.labelFemalePlural>кобылки</Pony_PegasusTribe.labelFemalePlural>
 
-	<UPonyTribe.label>единорог</UPonyTribe.label>
-	<UPonyTribe.labelPlural>единорог</UPonyTribe.labelPlural>
-	<UPonyTribe.labelMale>жеребец</UPonyTribe.labelMale>
-	<UPonyTribe.labelFemale>кобылка</UPonyTribe.labelFemale>
-	<UPonyTribe.labelMalePlural>жеребецы</UPonyTribe.labelMalePlural>
-	<UPonyTribe.labelFemalePlural>кобылки</UPonyTribe.labelFemalePlural>
+	<Pony_UnicornTribe.label>единорог</Pony_UnicornTribe.label>
+	<Pony_UnicornTribe.labelPlural>единорог</Pony_UnicornTribe.labelPlural>
+	<Pony_UnicornTribe.labelMale>жеребец</Pony_UnicornTribe.labelMale>
+	<Pony_UnicornTribe.labelFemale>кобылка</Pony_UnicornTribe.labelFemale>
+	<Pony_UnicornTribe.labelMalePlural>жеребецы</Pony_UnicornTribe.labelMalePlural>
+	<Pony_UnicornTribe.labelFemalePlural>кобылки</Pony_UnicornTribe.labelFemalePlural>
 	
 </LanguageData>

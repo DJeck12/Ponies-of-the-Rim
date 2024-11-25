@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[1]/conditions/Or[1]</xpath>
+					<value>
+						<Gene>Pony_PonyTail</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[3]/conditions/Or</xpath>
+					<value>
+						<Gene>Pony_PonyEars</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[4]/conditions/Or</xpath>
+					<value>
+						<Gene>Pony_PonyEars</Gene>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_Bodyaddons_Settings"]/universalBodyAddons/li[5]/conditions/Or[1]</xpath>
+					<value>
+						<Gene>Pony_Cutiemark</Gene>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

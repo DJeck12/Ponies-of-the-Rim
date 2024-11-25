@@ -9,6 +9,8 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>2</Construction>
@@ -38,6 +40,8 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>2</Shooting>
@@ -60,6 +64,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Cooking>2</Cooking>
@@ -89,6 +96,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Artistic>4</Artistic>
@@ -108,6 +118,9 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>2</Construction>
@@ -137,11 +150,14 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Cooking>5</Cooking>
 			<Plants>1</Plants>
 			<Animals>1</Animals>
+			<Crafting>3</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -164,6 +180,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>

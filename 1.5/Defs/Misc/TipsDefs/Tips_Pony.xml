@@ -14,7 +14,7 @@
 			<li TKey="Pony_Hay">Ponies love hay! You can cook a hay meal to suit their taste needs. In general, these meals are more profitable to produce than others.</li>
 			<li TKey="Pony_Apparel">All human apparel can be worn by any pony race, but not vice versa. The same applies for prosthetics.</li>
 			<li TKey="Pony_Prosthetics">Ponies can wear all human prosthetics, except those which made for hands. The same rule applies to clothing.</li>
-			<li TKey="Pony_Appearence">The appearance of any pony can be changed on the dressing table. Tails, hairstyles, cutiemarks - there are many customization options.</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology" TKey="Pony_Appearence">The appearance of any pony can be changed on the dressing table. Tails, hairstyles, cutiemarks - there are many customization options.</li>
 		</tips>
 	</TipSetDef>
 

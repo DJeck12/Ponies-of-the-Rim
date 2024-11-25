@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PreceptDef ParentName="PreceptRoleMultiBase">
+		<defName>Pony_Role_Oracle</defName>
+		<label>oracle</label>
+		<description>A wise prophet who specializes in social interactions. Oracle can tell others about their future and help recruting prisoners.</description>
+		<iconPath>UI/Roles/Oracle</iconPath>
+		<nameMaker>Pony_Oracle</nameMaker>
+		<roleRequirements>
+			<li Class="RoleRequirement_MinSkillAny">
+				<skills>
+					<Social>6</Social>
+				</skills>
+			</li>
+		</roleRequirements>
+		<roleRequiredWorkTags>
+			<li>Social</li>
+		</roleRequiredWorkTags>
+		<roleTags>
+			<li>Oracle</li>
+		</roleTags>
+		<requiredMemes>
+			<li>Pony_Friendship</li>
+		</requiredMemes>
+		<roleEffects>
+			<li Class="RoleEffect_PawnStatOffset">
+				<statDef>NegotiationAbility</statDef>
+				<modifier>0.2</modifier>
+			</li>
+		</roleEffects>
+		<grantedAbilities>
+			<!--<li>Pony_Foresight</li>-->
+			<li>Pony_Glimpse</li>
+		</grantedAbilities>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<roleDisabledWorkTags>
+			<li>Violent</li>
+		</roleDisabledWorkTags>
+		<roleApparelRequirements>
+			<li>
+				<allowedFactionCategoryTags>
+					<li>Tribal</li>
+				</allowedFactionCategoryTags>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_TribalHeaddress</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
+	</PreceptDef>
+
+</Defs>

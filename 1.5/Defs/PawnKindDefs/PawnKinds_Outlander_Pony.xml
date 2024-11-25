@@ -4,37 +4,37 @@
 <!-- Earthpony -->
 
 	<PawnKindDef ParentName="GuardBase">
-		<defName>EPonyTown_Guard</defName>
+		<defName>Pony_EarthponyTown_Guard</defName>
 		<label>pony town guard</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Earthpony</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Earthpony_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TraderBase">
-		<defName>EPonyTown_Trader</defName>
+		<defName>Pony_EarthponyTown_Trader</defName>
 		<label>pony town trader</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Earthpony</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Earthpony_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CouncilmanBase">
-		<defName>EPonyTown_Councilman</defName>
+		<defName>Pony_EarthponyTown_Councilman</defName>
 		<label>pony town councilman</label>
 		<labelPlural>pony town councilmen</labelPlural>
 		<race>Pony_Earthpony</race>
@@ -42,8 +42,8 @@
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Earthpony</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Earthpony_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -52,45 +52,45 @@
 <!-- Pegasus -->
 
 	<PawnKindDef ParentName="GuardBase">
-		<defName>PPonyTown_Guard</defName>
+		<defName>Pony_PegasusTown_Guard</defName>
 		<label>pony town guard</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Pegasus</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Pegasus_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TraderBase">
-		<defName>PPonyTown_Trader</defName>
+		<defName>Pony_PegasusTown_Trader</defName>
 		<label>pony town trader</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Pegasus</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Pegasus_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CouncilmanBase">
-		<defName>PPonyTown_Councilman</defName>
+		<defName>Pony_PegasusTown_Councilman</defName>
 		<label>pony town councilman</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Pegasus</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Pegasus_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -99,45 +99,45 @@
 <!-- Unicorn -->
 
 	<PawnKindDef ParentName="GuardBase">
-		<defName>UPonyTown_Guard</defName>
+		<defName>Pony_UnicornTown_Guard</defName>
 		<label>pony town guard</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Unicorn</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Unicorn_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TraderBase">
-		<defName>UPonyTown_Trader</defName>
+		<defName>Pony_UnicornTown_Trader</defName>
 		<label>pony town trader</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Unicorn</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Unicorn_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="CouncilmanBase">
-		<defName>UPonyTown_Councilman</defName>
+		<defName>Pony_UnicornTown_Councilman</defName>
 		<label>pony town councilman</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Unicorn</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Unicorn_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>

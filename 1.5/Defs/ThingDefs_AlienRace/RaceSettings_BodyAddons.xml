@@ -2,10 +2,10 @@
 <Defs>
 
 	<AlienRace.RaceSettings>
-		<defName>Bodyaddons_settings</defName>
+		<defName>Pony_Bodyaddons_Settings</defName>
 
 		<universalBodyAddons>
-		<!--Tail-->
+		<!-- Tail -->
 			<li>
 				<name>Tail</name>
 				<path>Things/Races/Pony/Tails/Pony_Tail</path>
@@ -22,37 +22,92 @@
 						<bodyPart>Pony_Tail</bodyPart>
 					</BodyPart>
 				</conditions>
-				<!--<extendedGraphics>
-					<Age For="Baby">Things/Races/Pony/Tails/Pony_TailBaby</Age>
-				</extendedGraphics>-->
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Tails/Pony_Tail19</Mutant>
+					<Age For="PonyBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<bodyTypes>
 							<Pony>(0, 0.58)</Pony>
-							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</Baby>
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</Child>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</PonyChild>
 						</bodyTypes>
 					</south>
 					<north>
-						<layerOffset>0.5</layerOffset>
+						<layerOffset>-0.265</layerOffset>
 						<bodyTypes>
 							<Pony>(0, -0.3)</Pony>
-							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</Baby>
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</Child>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</PonyChild>
 						</bodyTypes>
 					</north>
 					<east>
 						<bodyTypes>
 							<Pony>(0.36, 0)</Pony>
-							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</Baby>
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</Child>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</PonyChild>
 						</bodyTypes>
 					</east>
 				</offsets>
 			</li>
-		<!--Ears-->
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<name>Tail_Human</name>
+				<path>Things/Races/Pony/Tails/Pony_Tail</path>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>hair</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Race>Human</Race>
+					<Gene>Pony_PonyTail</Gene>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Tails/Pony_Tail19</Mutant>
+					<Age For="HumanlikeBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Male>(-0.05, -0.3)</Male>
+							<Female>(-0.05, -0.3)</Female>
+							<Thin>(-0.05, -0.3)</Thin>
+							<Hulk>(-0.05, -0.3)</Hulk>
+							<Fat>(-0.05, -0.3)</Fat>
+							<Baby>(-0.05, -0.1)</Baby>
+							<Child>(-0.05, -0.1)</Child>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.265</layerOffset>
+						<bodyTypes>
+							<Male>(0, -0.3)</Male>
+							<Female>(0, -0.3)</Female>
+							<Thin>(0, -0.3)</Thin>
+							<Hulk>(0, -0.3)</Hulk>
+							<Fat>(0, -0.3)</Fat>
+							<Baby>(0, -0.1)</Baby>
+							<Child>(0, -0.1)</Child>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Male>(0.25, -0.2)</Male>
+							<Female>(0.24, -0.2)</Female>
+							<Thin>(0.24, -0.2)</Thin>
+							<Hulk>(0.38, -0.2)</Hulk>
+							<Fat>(0.46, -0.2)</Fat>
+							<Baby>(0.12, -0.1)</Baby>
+							<Child>(0.15, -0.1)</Child>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		<!-- Ears -->
 			<li>
-				<path>Things/Races/Pony/Ears/Pony_EarRight</path>
+				<name>Right ear</name>
+				<path>Things/Races/Pony/Ears/Normal/Pony_EarRight</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -75,6 +130,12 @@
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Ears/Ghoul/Pony_EarRight_Ghoul</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarRight_Prosthetic</Hediff>
+					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarRight_Bionic</Hediff>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.268</layerOffset>
@@ -91,7 +152,8 @@
 				</offsets>
 			</li>
 			<li>
-				<path>Things/Races/Pony/Ears/Pony_EarLeft</path>
+				<name>Left ear</name>
+				<path>Things/Races/Pony/Ears/Normal/Pony_EarLeft</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -114,6 +176,12 @@
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Ears/Ghoul/Pony_EarLeft_Ghoul</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarLeft_Prosthetic</Hediff>
+					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarLeft_Bionic</Hediff>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.268</layerOffset>
@@ -129,7 +197,7 @@
 					</west>
 				</offsets>
 			</li>
-		<!--Cutiemark-->
+		<!-- Cutiemark -->
 			<li>
 				<name>Cutiemark</name>
 				<path>Things/Races/Pony/Cutiemarks/QTMark</path>
@@ -144,6 +212,12 @@
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
 					</Or>
+					<Or>
+						<Age>PonyAdult</Age>
+						<Age>PonyTeenager</Age>
+						<Age>HumanlikeAdult</Age>
+						<Age>HumanlikeTeenager</Age>
+					</Or>
 					<BodyPart>
 						<bodyPart>Torso</bodyPart>
 					</BodyPart>
@@ -152,16 +226,22 @@
 							<li>Legs</li>
 						</hiddenUnderApparelFor>
 					</Apparel>
-					<Or>
-						<Age>PonyAdult</Age>
-						<Age>PonyTeenager</Age>
-					</Or>
 				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+				</extendedGraphics>
 				<offsets>
 					<east>
-						<layerOffset>-0.29</layerOffset>
+						<layerOffset>-0.295</layerOffset>
 						<bodyTypes>
+							<Male>(0.05, -0.275)</Male>
+							<Female>(0.05, -0.275)</Female>
+							<Thin>(0.09, -0.275)</Thin>
+							<Hulk>(0.05, -0.275)</Hulk>
+							<Fat>(0.05, -0.275)</Fat>
 							<Pony>(0.22, -0.1)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyChild>
 						</bodyTypes>
 					</east>
 				</offsets>

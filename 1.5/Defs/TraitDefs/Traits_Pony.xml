@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TraitDef>
+		<defName>Pony_RelationsForPony</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>pony lover</label>
+				<description>[PAWN_nameDef] finds ponies attractive and interesting. Their magical nature fascinates [PAWN_objective] and [PAWN_pronoun] wouldn't mind getting close to them.</description>
+				<degree>1</degree>
+				<commonality>1</commonality>
+			</li>
+			<li>
+				<label>pony hater</label>
+				<description>[PAWN_nameDef] has a dislike for ponies. {PAWN_pronoun} thinks their obsessive friendliness is suspicious and gives no reason to trust them.</description>
+				<degree>-1</degree>
+				<commonality>1</commonality>
+			</li>
+		</degreeDatas>
+		<exclusionTags>
+			<li>Pony</li>
+		</exclusionTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Pony_RelationsForEarth</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>earth-like lover</label>
+				<description>[PAWN_nameDef] believes that earth ponies are the ancestors of all pony species and respects them. [PAWN_pronoun] wouldn't mind forming relationships with them to make friends.</description>
+				<degree>1</degree>
+				<commonality>1</commonality>
+			</li>
+			<li>
+				<label>earth-like hater</label>
+				<description>Earthpony magic is heresy! [PAWN_nameDef] has a strong drudge toward all ponies without horns or wings. [PAWN_pronoun] considers them an inferior race.</description>
+				<degree>-1</degree>
+				<commonality>1</commonality>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Pony_RelationsForPony</li>
+		</conflictingTraits>
+		<exclusionTags>
+			<li>Pony</li>
+		</exclusionTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Pony_RelationsForPegasus</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>winged pony lover</label>
+				<description>[PAWN_nameDef] has always admired the beauty of pegasus flight. [PAWN_pronoun] finds them graceful and [PAWN_pronoun] wouldn't mind getting close to them.</description>
+				<degree>1</degree>
+				<commonality>1</commonality>
+			</li>
+			<li>
+				<label>winged pony hater</label>
+				<description>[PAWN_nameDef] finds the pegasi history to be terrifying and will never forgive them for the misdeeds of their ancestors. [PAWN_pronoun] finds different ways to fight them.</description>
+				<degree>-1</degree>
+				<commonality>1</commonality>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Pony_RelationsForPony</li>
+		</conflictingTraits>
+		<exclusionTags>
+			<li>Pony</li>
+		</exclusionTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Pony_RelationsForUnicorn</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>horned pony lover</label>
+				<description>[PAWN_nameDef] is mesmerized by the magical powers of unicorns. [PAWN_pronoun] is eager to get close of them to ask them more about magic.</description>
+				<degree>1</degree>
+				<commonality>1</commonality>
+			</li>
+			<li>
+				<label>horned pony hater</label>
+				<description>[PAWN_nameDef] considers unicorns dangerous and shows distrust of their race. [PAWN_pronoun] thinks their magic is no less than a time bomb.</description>
+				<degree>-1</degree>
+				<commonality>1</commonality>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Pony_RelationsForPony</li>
+		</conflictingTraits>
+		<exclusionTags>
+			<li>Pony</li>
+		</exclusionTags>
+	</TraitDef>
+
+</Defs>

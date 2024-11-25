@@ -11,17 +11,19 @@
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
 		<cooldownTicksRange>420000</cooldownTicksRange>
-		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<iconPath>UI/Abilities/Ability_Earthpony</iconPath>
+		<hotKey>Misc1</hotKey>
 		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
+		<warmupSound>Pony_AbilityWarmup</warmupSound>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<violent>false</violent> 
-			<warmupTime>3.0</warmupTime>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>2.0</warmupTime>
 			<range>0</range>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
@@ -42,34 +44,42 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
 			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+				<sound>Pony_AbilityEffect</sound>
+			</li>
 		</comps>
 	</AbilityDef>
 
-	<AbilityDef>
+	<AbilityDef Name="ShortFlight">
 		<defName>ShortFlight</defName>
 		<label>short flight</label>
 		<description>Fly a short distance using wings.</description>
 		<iconPath>UI/Abilities/Ability_Pegasus</iconPath>
+		<hotKey>Misc1</hotKey>
 		<cooldownTicksRange>1200</cooldownTicksRange>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityJump</verbClass>
 			<label>flight</label>
 			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 			<warmupTime>0.5</warmupTime>
 			<minRange>4</minRange>
 			<range>12</range>
 			<requireLineOfSight>False</requireLineOfSight>
-			<soundCast>Longjump_Jump</soundCast>
+			<soundCast>Flight_TakingOff</soundCast>
 			<soundLanding>Longjump_Land</soundLanding>
-			<flyWithCarriedThing>false</flyWithCarriedThing>
+			<flyWithCarriedThing>true</flyWithCarriedThing>
 			<targetParams>
 				<canTargetLocations>true</canTargetLocations>
 				<canTargetPawns>false</canTargetPawns>
 				<canTargetBuildings>false</canTargetBuildings>
 			</targetParams>
 		</verbProperties>
+		<jobDef>CastJump</jobDef>
 	</AbilityDef>
 
 	<AbilityDef>
@@ -77,13 +87,16 @@
 		<label>magic burst</label>
 		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
 		<iconPath>UI/Abilities/Ability_Unicorn</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc1</hotKey>
 		<cooldownTicksRange>900</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>10</range>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<range>16</range>
 			<warmupTime>1.0</warmupTime>
-			<soundCast>Shot_ChargeRifle</soundCast>
+			<soundCast>Magic_UnicornBlast</soundCast>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">

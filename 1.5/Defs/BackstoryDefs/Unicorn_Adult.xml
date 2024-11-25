@@ -9,6 +9,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>3</Shooting>
@@ -29,6 +31,9 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
+			<li>Pony_Unicorn_Tribal</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>1</Melee>
@@ -57,6 +62,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>7</Shooting>
@@ -82,6 +89,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Social>5</Social>
@@ -109,6 +118,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-2</Construction>
@@ -128,6 +138,8 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
 		</spawnCategories>
 		<skillGains>
 			<Crafting>6</Crafting>
@@ -145,6 +157,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Mining>3</Mining>
@@ -165,6 +178,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -199,6 +213,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Offworld</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>3</Melee>

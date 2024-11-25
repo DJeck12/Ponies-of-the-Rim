@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Everypony_Abhorrent.label>отвратительны</Pony_Everypony_Abhorrent.label>
+	<Pony_Everypony_Abhorrent.description>Пони - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Everypony_Abhorrent.description>
+	<Pony_Everypony_Horrible.label>осуждаются</Pony_Everypony_Horrible.label>
+	<Pony_Everypony_Horrible.description>Пони отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Everypony_Horrible.description>
+	<Pony_Everypony_Standard.label>нейтральны</Pony_Everypony_Standard.label>
+	<Pony_Everypony_Standard.description>Пони - такие же как и все, и должны восприниматься не хуже и не лучше нас.</Pony_Everypony_Standard.description>
+	<Pony_Everypony_Respected.label>уважаются</Pony_Everypony_Respected.label>
+	<Pony_Everypony_Respected.description>Пони очень уникальны и заслуживают нашего восхищения.</Pony_Everypony_Respected.description>
+	<Pony_Everypony_Exalted.label>превозносятся</Pony_Everypony_Exalted.label>
+	<Pony_Everypony_Exalted.description>Пони - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Everypony_Exalted.description>
+
+	<Pony_Earthpony_Abhorrent.label>отвратительны</Pony_Earthpony_Abhorrent.label>
+	<Pony_Earthpony_Abhorrent.description>Земнопони - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Earthpony_Abhorrent.description>
+	<Pony_Earthpony_Horrible.label>осуждаются</Pony_Earthpony_Horrible.label>
+	<Pony_Earthpony_Horrible.description>Земнопони отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Earthpony_Horrible.description>
+	<Pony_Earthpony_Stricted.label>строго</Pony_Earthpony_Stricted.label>
+	<Pony_Earthpony_Stricted.description>Земнопони - единственная раса, приемлемая в нашем обществе.</Pony_Earthpony_Stricted.description>
+	<Pony_Earthpony_Respected.label>уважаются</Pony_Earthpony_Respected.label>
+	<Pony_Earthpony_Respected.description>Земнопони очень уникальны и заслуживают нашего восхищения.</Pony_Earthpony_Respected.description>
+	<Pony_Earthpony_Exalted.label>превозносятся</Pony_Earthpony_Exalted.label>
+	<Pony_Earthpony_Exalted.description>Земнопони - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Earthpony_Exalted.description>
+
+	<Pony_Pegasus_Abhorrent.label>отвратительны</Pony_Pegasus_Abhorrent.label>
+	<Pony_Pegasus_Abhorrent.description>Пегасы - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Pegasus_Abhorrent.description>
+	<Pony_Pegasus_Horrible.label>осуждаются</Pony_Pegasus_Horrible.label>
+	<Pony_Pegasus_Horrible.description>Пегасы отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Pegasus_Horrible.description>
+	<Pony_Pegasus_Stricted.label>строго</Pony_Pegasus_Stricted.label>
+	<Pony_Pegasus_Stricted.description>Пегасы - единственная раса, приемлемая в нашем обществе.</Pony_Pegasus_Stricted.description>
+	<Pony_Pegasus_Respected.label>уважаются</Pony_Pegasus_Respected.label>
+	<Pony_Pegasus_Respected.description>Пегасы очень уникальны и заслуживают нашего восхищения.</Pony_Pegasus_Respected.description>
+	<Pony_Pegasus_Exalted.label>превозносятся</Pony_Pegasus_Exalted.label>
+	<Pony_Pegasus_Exalted.description>Пегасы - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Pegasus_Exalted.description>
+
+	<Pony_Unicorn_Abhorrent.label>отвратительны</Pony_Unicorn_Abhorrent.label>
+	<Pony_Unicorn_Abhorrent.description>Единороги - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Unicorn_Abhorrent.description>
+	<Pony_Unicorn_Horrible.label>осуждаются</Pony_Unicorn_Horrible.label>
+	<Pony_Unicorn_Horrible.description>Единороги отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Unicorn_Horrible.description>
+	<Pony_Unicorn_Stricted.label>строго</Pony_Unicorn_Stricted.label>
+	<Pony_Unicorn_Stricted.description>Единороги - единственная раса, приемлемая в нашем обществе.</Pony_Unicorn_Stricted.description>
+	<Pony_Unicorn_Respected.label>уважаются</Pony_Unicorn_Respected.label>
+	<Pony_Unicorn_Respected.description>Единороги очень уникальны и заслуживают нашего восхищения.</Pony_Unicorn_Respected.description>
+	<Pony_Unicorn_Exalted.label>превозносятся</Pony_Unicorn_Exalted.label>
+	<Pony_Unicorn_Exalted.description>Единороги - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Unicorn_Exalted.description>
+
+</LanguageData>

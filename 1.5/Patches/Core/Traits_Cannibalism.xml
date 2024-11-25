@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/disallowedThoughtsFromIngestion</xpath>
+		<value>
+			<li>
+				<thing>Meat_Pony</thing>
+				<thoughts>
+					<li>AteRawFood</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+				</thoughts>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/extraThoughtsFromIngestion</xpath>
+		<value>
+			<li>
+				<thing>Meat_Pony</thing>
+				<thoughtsDirect>
+					<li>AteHumanlikeMeatDirectCannibal</li>
+				</thoughtsDirect>
+				<thoughtsAsIngredient>
+					<li>AteHumanlikeMeatAsIngredientCannibal</li>
+				</thoughtsAsIngredient>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

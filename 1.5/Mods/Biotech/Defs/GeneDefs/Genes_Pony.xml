@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneCategoryDef>
+		<defName>Pony</defName>
+		<label>pony</label>
+		<displayPriorityInXenotype>480</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneDef Name="GenePonyBase" Abstract="True">
+		<displayCategory>Pony</displayCategory>
+	</GeneDef>
+
+<!-- Cosmetic for humans -->
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyHead</defName>
+		<label>pony head</label>
+		<description>Carriers of this gene have a pony-like head.</description>
+		<iconPath>UI/Genes/PonyHead</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<forcedHeadTypes>
+			<li>Male_Pony</li>
+			<li>Female_Pony</li>
+		</forcedHeadTypes>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyEars</defName>
+		<label>pony ears</label>
+		<description>Carriers of this gene grow pony-like ears.</description>
+		<iconPath>UI/Genes/PonyEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyTail</defName>
+		<label>pony tail</label>
+		<description>Carriers of this gene grow a fluffy pony tail.</description>
+		<iconPath>UI/Genes/PonyTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Cutiemark</defName>
+		<label>cutiemark</label>
+		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests.</description>
+		<iconPath>UI/Genes/Cutiemark</iconPath>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_ColorfulSkin</defName>
+		<label>colorful skin colors</label>
+		<description>Carriers of this gene produce a pigment that gives their skin a various set of colors.</description>
+		<iconPath>UI/Genes/ColorBody</iconPath>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.GeneExtension">
+				<genes>
+					<li>Skin_InkBlack</li>
+					<li>Skin_SlateGray</li>
+					<li>Skin_SheerWhite</li>
+					<li>Skin_Blue</li>
+					<li>Skin_Purple</li>
+					<li>Skin_PaleRed</li>
+					<li>Skin_DeepRed</li>
+					<li>Skin_PaleYellow</li>
+					<li>Skin_DeepYellow</li>
+					<li>Skin_Orange</li>
+					<li>Skin_Green</li>
+				</genes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_ColorfulHair</defName>
+		<label>colorful hair colors</label>
+		<description>Carriers of this gene produce a pigment that color their hair in a various set of colors.</description>
+		<iconPath>UI/Genes/ColorHair</iconPath>
+		<displayOrderInCategory>12</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.GeneExtension">
+				<genes>
+					<li>Hair_SnowWhite</li>
+					<li>Hair_DarkBlack</li>
+					<li>Hair_Gray</li>
+					<li>Hair_Pink</li>
+					<li>Hair_LightPurple</li>
+					<li>Hair_LightBlue</li>
+					<li>Hair_LightTeal</li>
+					<li>Hair_LightGreen</li>
+					<li>Hair_LightOrange</li>
+					<li>Hair_BrightRed</li>
+				</genes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_VoiceHorse</defName>
+		<label>horse voice</label>
+		<description>Carriers of this gene have a horse-like voice with distinctive neighing.</description>
+		<iconPath>UI/Genes/VoiceHorse</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>13</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<soundCall>Pawn_Horse_Call</soundCall>
+		<soundDeath>Pawn_Horse_Death</soundDeath>
+		<soundWounded>Pawn_Horse_Wounded</soundWounded>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyMagic</defName>
+		<label>pony magic</label>
+		<description>Carriers of this gene receive one of the random abilities of earthponies, unicorns, or pegasi. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/PonyMagic</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.GeneExtension">
+				<removeAfter>True</removeAfter>
+				<genes>
+					<li>Pony_NaturePower</li>
+					<li>Pony_PegasusWings</li>
+					<li>Pony_UnicornHorn</li>
+				</genes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_NaturePower</defName>
+		<label>nature power</label>
+		<description>Carriers of this gene are endowed with the natural strength of earth ponies, gaining their ability for increasing work speed. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/NaturePower</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<abilities>
+			<li>NatureMuse</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>NatureMuse</AbilityDef>
+		</descriptionHyperlinks>
+		<exclusionTags>
+			<li>PonyMagic</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PegasusWings</defName>
+		<label>pegasus wings</label>
+		<description>Carriers of this gene grow new limbs on their back, resembling pegasi wings, gaining their ability for flight. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/PegasusWings</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Genes/BodyAttachments/Wings/PegasusWings</texPath>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<overrideMeshSize>(1.8, 1.8)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>75</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0, 0.1)</offset>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, 0, 0.1)</offset>
+						<layer>-5</layer>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.1, 0, 0)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.1, 0, 0)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<abilities>
+			<li>ShortFlight</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>ShortFlight</AbilityDef>
+		</descriptionHyperlinks>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>PonyMagic</li>
+			<li>Wings</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_UnicornHorn</defName>
+		<label>unicorn horn</label>
+		<description>Carriers of this gene grow a unicorn horn from the center of their forehead, giving them the ability to use magic. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/UnicornHorn</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Races/Unicorn/Normal/Unicorn</texPath>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<abilities>
+			<li>MagicBurst</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>MagicBurst</AbilityDef>
+		</descriptionHyperlinks>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>PonyMagic</li>
+		</exclusionTags>
+	</GeneDef>
+
+<!-- Pony genes -->
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_HorseHooves</defName>
+		<label>horse hooves</label>
+		<description>Carriers of this gene have hands that resemble horse hooves. This reduces their ability to manipulate objects but makes them slightly faster.</description>
+		<iconPath>UI/Genes/HorseHooves</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>25</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.8</postFactor>
+			</li>
+		</capMods>
+		<statOffsets>
+			<AimingDelayFactor>0.1</AimingDelayFactor>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statOffsets>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>hoover</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>hoof</symbol></li>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Hands</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_StrongBody</defName>
+		<label>strong body</label>
+		<description>Carriers of this gene have a strong and sturdy body, increasing pain threshold and immunity. A natural attribute of earth-like ponies.</description>
+		<iconPath>UI/Genes/StrongBody</iconPath>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+			<CarryingCapacity>10</CarryingCapacity>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>earth</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_CoatFluff</defName>
+		<label>coat fluff</label>
+		<description>Carriers of this gene grow a fluffy coat on their skin, increasing temperature tolerance. A natural attribute of flying ponies.</description>
+		<iconPath>UI/Genes/CoatFluff</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMax>4</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-4</ComfyTemperatureMin>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>pega</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_MagicImbued</defName>
+		<label>magic imbued</label>
+		<description>Carriers of this gene have a great connection with magic, endowing themselves with magical and psychic abilities. A natural attribute of ponies with a horn.</description>
+		<iconPath>UI/Genes/MagicImbued</iconPath>
+		<displayOrderInCategory>40</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<PsychicSensitivity>0.15</PsychicSensitivity>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>uni</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+				<li><symbol>corn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+<!-- Diet -->
+<!--
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Herbivore</defName>
+		<label>herbivore</label>
+		<description>Carriers of this gene have a strict herbivorous diet. They can't eat and digest meat unless it is cooked in a meal.</description>
+		<iconPath>UI/Genes/Herbivore</iconPath>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+			<li>Food</li>
+			<li>Diet</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Carnivore</defName>
+		<label>carnivore</label>
+		<description>Carriers of this gene have a strict carnivorous diet. They can't eat and digest fruits or vegetables unless they are cooked in a meal.</description>
+		<iconPath>UI/Genes/Carnivore</iconPath>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+			<li>Food</li>
+			<li>Diet</li>
+		</exclusionTags>
+	</GeneDef>
+-->
+</Defs>

@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
+			<value>
+				<li>Pony_FrontLeg</li>
+			</value>
+		</match>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
-	<xpath>/Defs/RecipeDef[defName="InstallPegLeg"
-	or defName="InstallSimpleProstheticLeg"
-	or defName="InstallBionicLeg"
-	or defName="InstallArchotechLeg"]/appliedOnFixedBodyParts</xpath>
+		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Hand')]/appliedOnFixedBodyParts</xpath>
 		<value>
-			<li>Pony_FrontLeg</li>
+			<li>Pony_FrontHoof</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Leg')]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_Thigh</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Foot')]/appliedOnFixedBodyParts</xpath>
+		<value>
 			<li>Pony_RearLeg</li>
 		</value>
 	</Operation>

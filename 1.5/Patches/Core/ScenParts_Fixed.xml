@@ -2,9 +2,9 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-	<xpath>/Defs/ScenPartDef[defName="ConfigPage_ConfigureStartingPawns"]/scenPartClass</xpath>
+		<xpath>/Defs/ScenPartDef[defName="ConfigPage_ConfigureStartingPawns"]/scenPartClass</xpath>
 		<value>
-			<scenPartClass>Ponies_of_the_Rim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom</scenPartClass>
+			<scenPartClass>PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom</scenPartClass>
 		</value>
 	</Operation>
 

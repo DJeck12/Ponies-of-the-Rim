@@ -12,17 +12,38 @@
 		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
+		<forceAlwaysRemovable>true</forceAlwaysRemovable>
 		<spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Pony_HornAtachment</defName>
+		<label>attachement</label>
+		<conceptual>true</conceptual>
 	</BodyPartDef>
 
 <!--Body-->
 
 	<BodyPartDef>
-		<defName>Pony_Wing</defName>
+		<defName>Pony_LeftWing</defName>
 		<label>wing</label>
 		<hitPoints>20</hitPoints>
 		<skinCovered>true</skinCovered>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Pony_RightWing</defName>
+		<label>wing</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Pony_WingsAtachment</defName>
+		<label>attachement</label>
+		<conceptual>true</conceptual>
 		<tags>
 			<li>Mirrored</li>
 		</tags>
@@ -78,12 +99,12 @@
 	</BodyPartDef>
 
 	<BodyPartDef Name="Pony_HoofBase" Abstract="True">
-	<hitPoints>15</hitPoints>
-	<frostbiteVulnerability>5</frostbiteVulnerability>
-	<skinCovered>true</skinCovered>
-	<alive>false</alive>
-	<bleedRate>0</bleedRate>
-	<solid>true</solid>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
 	</BodyPartDef>
 
 	<BodyPartDef ParentName="Pony_HoofBase">
