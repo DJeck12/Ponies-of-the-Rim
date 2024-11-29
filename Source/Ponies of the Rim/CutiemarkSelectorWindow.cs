@@ -47,8 +47,6 @@ namespace PoniesOfTheRim
             Rect viewRect = new Rect(0f, 0f, 150f, addon.variantCount * 154f);
 		    Widgets.BeginScrollView(inRect, ref addonsScrollPos, viewRect);
             int num2 = -1;
-            int variantCounts2 = addon.variantCountMax;
-            int variantCounts3 = addon.variantCount;
             for (int i = 0; i < addon.variantCount; i++)
             {
                 num2++;
