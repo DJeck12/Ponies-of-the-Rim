@@ -1,0 +1,147 @@
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Ponies of the Rim.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Ponies of the Rim.pdb
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\0Harmony.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Assembly-CSharp.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\HarmonyMod.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.CoreModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\VFECore.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.IMGUIModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\NAudio.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\NVorbis.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AudioModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\com.rlabrecque.steamworks.net.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Assembly-CSharp-firstpass.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Unity.Burst.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AssetBundleModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Unity.Mathematics.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.PhysicsModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Unity.TextMeshPro.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\ISharpZipLib.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.InputLegacyModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ImageConversionModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UI.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.DSPGraphModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AndroidJNIModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AccessibilityModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UIModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityConnectModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AIModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.Physics2DModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AnimationModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SharedInternalsModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ClothModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ClusterInputModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ClusterRendererModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.CrashReportingModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TilemapModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TerrainModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VFXModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VideoModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VRModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.GridModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SubsystemsModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.JSONSerializeModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.LocalizationModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UNETModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ParticleSystemModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.DirectorModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.GameCenterModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SpriteMaskModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.StreamingModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TextCoreModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SpriteShapeModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UIElementsModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VehiclesModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.WindModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ARModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.XRModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.InputModule.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\PipeSystem.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\KCSG.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Unity.Burst.Unsafe.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\PoniesOfTheRim.csproj.AssemblyReference.cache
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\PoniesOfTheRim.csproj.CoreCompileInputs.cache
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\PoniesOf.646225EC.Up2Date
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\Ponies of the Rim.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\Ponies of the Rim.pdb
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\AlienRace.dll
+E:\Program Files\RimWorld\Mods\Ponies-of-the-Rim-unstable\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\AlienRace.pdb
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Ponies of the Rim.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\Ponies of the Rim.pdb
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\0Harmony.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\AlienRace.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\HarmonyMod.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\VFECore.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\PipeSystem.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\KCSG.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\AlienRace.pdb
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\PoniesOfTheRim.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\PoniesOfTheRim.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\PoniesOf.646225EC.Up2Date
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\Ponies of the Rim.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\obj\Debug\Ponies of the Rim.pdb
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.CoreModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.DSPGraphModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.IMGUIModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TextRenderingModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UI.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UIElementsModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UIModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AudioModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AssetBundleModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.PhysicsModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.InputLegacyModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.PerformanceReportingModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ImageConversionModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ScreenCaptureModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AndroidJNIModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AccessibilityModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityConnectModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AIModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityAnalyticsModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.Physics2DModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.AnimationModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SharedInternalsModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ClothModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ClusterInputModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ClusterRendererModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.CrashReportingModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TilemapModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TerrainModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VFXModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VideoModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VRModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.GridModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SubsystemsModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.JSONSerializeModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.LocalizationModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UNETModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestAssetBundleModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestAudioModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestTextureModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.UnityWebRequestWWWModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ParticleSystemModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.DirectorModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.GameCenterModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SpriteMaskModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.StreamingModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.TextCoreModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.SpriteShapeModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.VehiclesModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.WindModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.ARModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.XRModule.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\Ponies of the Rim\bin\Debug\UnityEngine.InputModule.dll

@@ -8,7 +8,6 @@ namespace PoniesOfTheRim
     public class HediffGiver_AbilityHorn : HediffGiver
     {
         public AbilityDef ability;
-
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             int numNaturalHorn = GetNumNaturalHorn(pawn, this.partsToAffect);
@@ -28,19 +27,14 @@ namespace PoniesOfTheRim
 
             }
         }
-
-
         public int GetNumNaturalHorn(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             return partsToAffect.Count(p => !pawn.health.hediffSet.IsBionicOrImplant(p) && pawn.RaceProps.body.AllParts.Any(part => part.def == p && !pawn.health.hediffSet.PartIsMissing(part)));
         }
-
-
         public int GetNumProstheticHorn(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             return partsToAffect.Count(p => pawn.health.hediffSet.IsBionicOrImplant(p) && pawn.RaceProps.body.AllParts.Any(part => part.def == p && !pawn.health.hediffSet.PartIsMissing(part)));
         }
-
         public bool HornCheck(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             foreach (BodyPartDef affectedPart in partsToAffect)

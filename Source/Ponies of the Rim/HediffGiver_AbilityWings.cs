@@ -8,8 +8,6 @@ namespace PoniesOfTheRim
     public class HediffGiver_AbilityWings : HediffGiver
     {
         public AbilityDef ability;
-
-
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             var allParts = pawn.RaceProps.body.AllParts;
@@ -31,8 +29,6 @@ namespace PoniesOfTheRim
 
             }
         }
-
-
         public int GetNumNaturalWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             int numNotBionic = 0;
@@ -54,8 +50,6 @@ namespace PoniesOfTheRim
             }
             return numNotBionic;
         }
-
-
         public int GetNumProstheticWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
 
@@ -80,8 +74,6 @@ namespace PoniesOfTheRim
             }
             return numBionicParts;
         }
-
-
         public bool WingCheck(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             foreach (BodyPartDef affectedPart in partsToAffect)

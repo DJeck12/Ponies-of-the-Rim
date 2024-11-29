@@ -192,11 +192,11 @@
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Genes/BodyAttachments/PegasusWings</texPath>
+				<texPath>Things/Genes/BodyAttachments/Wings/PegasusWings</texPath>
 				<useSkinShader>true</useSkinShader>
 				<useRottenColor>true</useRottenColor>
 				<colorType>Skin</colorType>
-				<overrideMeshSize>(1, 1)</overrideMeshSize>
+				<overrideMeshSize>(1.8, 1.8)</overrideMeshSize>
 				<parentTagDef>Body</parentTagDef>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
@@ -205,17 +205,17 @@
 						<layer>75</layer>
 					</defaultData>
 					<dataNorth>
-						<offset>(0, 0, -0.15)</offset>
+						<offset>(0, 0, 0.1)</offset>
 					</dataNorth>
 					<dataSouth>
-						<offset>(-0, 0, -0.15)</offset>
+						<offset>(0, 0, 0.1)</offset>
 						<layer>-5</layer>
 					</dataSouth>
 					<dataEast>
-						<offset>(-0.5, 0, -0.15)</offset>
+						<offset>(-0.1, 0, 0)</offset>
 					</dataEast>
 					<dataWest>
-						<offset>(0.5, 0, -0.15)</offset>
+						<offset>(0.1, 0, 0)</offset>
 					</dataWest>
 				</drawData>
 			</li>
