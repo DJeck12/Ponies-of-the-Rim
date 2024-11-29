@@ -38,7 +38,7 @@ namespace PoniesOfTheRim
             Rect rect2 = new Rect(450f, num2, inRect2.width, inRect2.height);
             Rect rect3 = new Rect(500f, num3, inRect3.width, inRect3.height);
 
-            if (Find.WindowStack.currentlyDrawnWindow is Dialog_InfoCard == false)
+            if (Find.WindowStack.currentlyDrawnWindow is Dialog_InfoCard == false && Find.WindowStack.WindowOfType<Dialog_GrowthMomentChoices>() == null)
             {
                 DrawCutiemarkIcon.Draw(pawn, rect, cutiemarkBodyAddon, alienComp);
                 if (Mouse.IsOver(rect) || DebugViewSettings.drawTooltipEdges)
@@ -52,7 +52,7 @@ namespace PoniesOfTheRim
                 }
             }
 
-            if (Find.CurrentMap != null && Find.WindowStack.currentlyDrawnWindow is Dialog_InfoCard == false)
+            if (Find.CurrentMap != null && Find.WindowStack.currentlyDrawnWindow is Dialog_InfoCard == false && Find.WindowStack.WindowOfType<Dialog_GrowthMomentChoices>() == null)
             {
                 DrawCutiemarkIcon.Draw(pawn, rect2, cutiemarkBodyAddon, alienComp);
                 if (Mouse.IsOver(rect2) || DebugViewSettings.drawTooltipEdges)
@@ -60,7 +60,7 @@ namespace PoniesOfTheRim
                     TooltipHandler.TipRegion(rect, "Cutiemark".Translate());
                 }
             }
-            if (Find.WindowStack.WindowOfType<Dialog_InfoCard>() != null && Find.CurrentMap != null)
+            if (Find.WindowStack.WindowOfType<Dialog_InfoCard>() != null && Find.CurrentMap != null && Find.WindowStack.WindowOfType<Dialog_GrowthMomentChoices>() == null)
             {
                 DrawCutiemarkIcon.Draw(pawn, rect3, cutiemarkBodyAddon, alienComp);
                 if (Mouse.IsOver(rect3) || DebugViewSettings.drawTooltipEdges)

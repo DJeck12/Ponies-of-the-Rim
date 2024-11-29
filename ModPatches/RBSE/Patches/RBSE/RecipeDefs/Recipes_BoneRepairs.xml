@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<RecipeDef ParentName="SurgeryBone">
+					<defName>InstallPony_CannonBone</defName>
+					<label>install pony cannon bone</label>
+					<description>Installs pony cannon bone</description>
+					<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+					<jobString>Installing pony cannon bone</jobString>
+					<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+					<workAmount>3000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Medicine</li>
+								</categories>
+							</filter>
+							<count>2</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ArtificialBone</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Medicine</li>
+						</categories>
+						<thingDefs>
+							<li>ArtificialBone</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<appliedOnFixedBodyParts>
+						<li>Pony_CannonBone</li>
+					</appliedOnFixedBodyParts>
+					<addsHediff>ArtificialCannonBone</addsHediff>
+					<researchPrerequisite>Prosthetics</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

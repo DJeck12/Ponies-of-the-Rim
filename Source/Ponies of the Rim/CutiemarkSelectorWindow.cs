@@ -12,7 +12,7 @@ namespace PoniesOfTheRim
         public AlienPartGenerator.BodyAddon addon;
         private static Vector2 addonsScrollPos;
         private static int selectedIndexAddons = 0;
-        AlienPartGenerator.AlienComp alienComp;
+        readonly AlienPartGenerator.AlienComp alienComp;
         public override Vector2 InitialSize
 	    {
 		get
@@ -47,8 +47,6 @@ namespace PoniesOfTheRim
             Rect viewRect = new Rect(0f, 0f, 150f, addon.variantCount * 154f);
 		    Widgets.BeginScrollView(inRect, ref addonsScrollPos, viewRect);
             int num2 = -1;
-            int variantCounts2 = addon.variantCountMax;
-            int variantCounts3 = addon.variantCount;
             for (int i = 0; i < addon.variantCount; i++)
             {
                 num2++;
@@ -65,18 +63,30 @@ namespace PoniesOfTheRim
 			    }
                 int sharedIndex = i;
                 DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon,ref sharedIndex, i);
-                if (pawn.IsEarthpony())
-                {
-                    alienComp.addonVariants[4] = selectedIndexAddons;
-                }
-                if (pawn.IsUnicorn())
-                {
-                    alienComp.addonVariants[5] = selectedIndexAddons;
-                }
-                if (pawn.IsPegasus())
-                {
-                    alienComp.addonVariants[6] = selectedIndexAddons;
-                }
+			    if (pawn.IsEarthpony())
+			    {
+				    if (ModsConfig.BiotechActive)
+				    {
+					    alienComp.addonVariants[4] = selectedIndexAddons;
+				    }
+				    alienComp.addonVariants[3] = selectedIndexAddons;
+			    }
+			    if (pawn.IsUnicorn())
+			    {
+				    if (ModsConfig.BiotechActive)
+				    {
+					    alienComp.addonVariants[5] = selectedIndexAddons;
+				    }
+				    alienComp.addonVariants[4] = selectedIndexAddons;
+			    }
+				if (pawn.IsPegasus())
+				{
+					if (ModsConfig.BiotechActive)
+					{
+						alienComp.addonVariants[6] = selectedIndexAddons;
+					}
+					alienComp.addonVariants[5] = selectedIndexAddons;
+				}
             }
             Widgets.EndScrollView();
         }
