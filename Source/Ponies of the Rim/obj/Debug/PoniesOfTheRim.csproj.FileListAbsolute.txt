@@ -1,9 +1,5 @@
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\Ponies of the Rim.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\Ponies of the Rim.pdb
-E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\0Harmony.dll
-E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\AlienRace.dll
-E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\Assembly-CSharp.dll
-E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\HarmonyMod.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.CoreModule.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.DSPGraphModule.dll
@@ -12,7 +8,6 @@ E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of th
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.UI.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.UIElementsModule.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.UIModule.dll
-E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\VFECore.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\NAudio.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\NVorbis.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\UnityEngine.AudioModule.dll
@@ -77,3 +72,5 @@ E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of th
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\obj\Debug\PoniesOf.646225EC.Up2Date
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.pdb
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\AlienRace.dll
+E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\bin\Debug\HarmonyMod.dll
