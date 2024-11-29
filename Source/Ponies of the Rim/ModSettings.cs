@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -8,21 +7,26 @@ namespace PoniesOfTheRim
 
     public class PoniesOfTheRimSettingsData : ModSettings
     {
-        public bool storryTeller; //! <-- This is only to test config funcionality do not include it
+        public bool classical;
         public bool ideology;
         public bool abilities;
         public bool prosthetics;
-        //TODO: Add Fractions
+        public bool fractions;
+        public bool anthro;
+        public bool enableRegularHorses;
 
         /// <summary>
         /// This writes our settings to file.
         /// </summary>
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref storryTeller, "storryTeller", true);
-            Scribe_Values.Look(ref ideology, "ideology", true);
-            Scribe_Values.Look(ref abilities, "abilities", true);
-            Scribe_Values.Look(ref prosthetics, "prosthetics", true);
+            Scribe_Values.Look(ref classical, "classical", true, true);
+            Scribe_Values.Look(ref ideology, "ideology", true, true);
+            Scribe_Values.Look(ref abilities, "abilities", true, true);
+            Scribe_Values.Look(ref prosthetics, "prosthetics", true, true);
+            Scribe_Values.Look(ref fractions, "fractions", true, true);
+            Scribe_Values.Look(ref anthro, "anthro", true, true);
+            Scribe_Values.Look(ref enableRegularHorses, "enableRegularHorses", true, true);
             base.ExposeData();
         }
     }
@@ -38,25 +42,86 @@ namespace PoniesOfTheRim
         public override void DoSettingsWindowContents(Rect inRect)
         {
             //Copy paste symbols we use
-            // └ 	┴ 	┬ 	├ 	─ 	┼ 
-            // ►
+            // └ 	┴ 	┬ 	├ 	─ 	┼  ►
 
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            //TODO: Add enable and siable All button
             listingStandard.Label("PoniesOfRimSettings".Translate());
-            listingStandard.Gap(15);
+            //TODO: Make all button line horizontaly
+            if (listingStandard.ButtonText("EnableAll".Translate(), null, 0.2f))  SetAllData(true);
+            if (listingStandard.ButtonText("DisableAll".Translate(), null, 0.2f)) SetAllData(false);
+            if (listingStandard.ButtonText("DefulatAll".Translate(), null, 0.2f)) DefaultAllData();
+            listingStandard.GapLine(10);
             listingStandard.Label("Core".Translate());
-            listingStandard.CheckboxLabeled("├► " + "storryTeller".Translate(), ref settings.storryTeller, "addStorryTeller".Translate(), 0, 1);
-            listingStandard.CheckboxLabeled("├► " + "ideology".Translate(), ref settings.ideology, "addIdeology".Translate(), 0, 1);
-            listingStandard.CheckboxLabeled("├► " + "abilities".Translate(), ref settings.abilities, "addAbilities".Translate(), 0, 1);
-            listingStandard.CheckboxLabeled("└► " + "prosthetics".Translate(), ref settings.prosthetics, "addProsthetics".Translate(), 0, 1);
+            ClassicalSettings(listingStandard);
             listingStandard.End();
+
+            settings.Write();
             base.DoSettingsWindowContents(inRect);
         }
 
+        #region Classical
+        private void ClassicalSettings(Listing_Standard listingStandard)
+        {
+            listingStandard.CheckboxLabeled("└► " + "classical".Translate(), ref settings.classical, "classicalToolTip".Translate(), 0, 1);
+            if (settings.classical)
+            {
+                listingStandard.CheckboxLabeled("   ├► " + "ideology".Translate(), ref settings.ideology, "addIdeologyToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "abilities".Translate(), ref settings.abilities, "addAbilitiesToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "prosthetics".Translate(), ref settings.prosthetics, "addProstheticsToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "fractions".Translate(), ref settings.fractions, "addFractionsToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "anthro".Translate(), ref settings.anthro, "addAnthroToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   └► " + "enableRegularHorses".Translate(), ref settings.enableRegularHorses, "addEnableRegularHorsesToolTip".Translate(), 0, 1);
+            }
+            else
+            {
+                ClassicalSettingsDisabled();
+            }
+        }
+
+        private void ClassicalSettingsDefault()
+        {
+            settings.classical = true;
+            settings.ideology = true;
+            settings.abilities = true;
+            settings.prosthetics = true;
+            settings.fractions = true;
+            settings.anthro = true;
+            settings.enableRegularHorses = true;
+        }
+
+        private void ClassicalSettingsDisabled()
+        {
+            settings.ideology = false;
+            settings.abilities = false;
+            settings.prosthetics = false;
+            settings.fractions = false;
+            settings.anthro = false;
+            settings.enableRegularHorses = false;
+        }
+        #endregion
+
+        #region Main Buttons
+
+        private void DefaultAllData()
+        {
+            ClassicalSettingsDefault();
+        }
+
+        private void SetAllData(bool action)
+        {
+            settings.classical = action;
+            settings.ideology = action;
+            settings.abilities = action;
+            settings.prosthetics = action;
+            settings.fractions = action;
+            settings.anthro = action;
+            settings.enableRegularHorses = action;
+        }
+        #endregion
+
         /// <summary>
-        /// Overwriting this enables confings
+        /// Overwriting this enables configs
         /// </summary>
         public override string SettingsCategory()
         {
