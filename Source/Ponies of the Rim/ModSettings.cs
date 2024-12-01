@@ -7,16 +7,16 @@ namespace PoniesOfTheRim
 
     public class PoniesOfTheRimSettingsData : ModSettings
     {
-        public bool classical;
-        public bool ideology;
-        public bool abilities;
-        public bool prosthetics;
-        public bool fractions;
-        public bool anthro;
-        public bool enableRegularHorses;
+        //Keep Addisional Tabulators here to read hierarchy cleary
+        public bool classical; 
+            public bool ideology;
+            public bool abilities;
+            public bool prosthetics;
+            public bool anthro;
+            public bool enableRegularHorses;
 
         /// <summary>
-        /// This writes our settings to file.
+        /// This makes our settings file and sets them to default values.
         /// </summary>
         public override void ExposeData()
         {
@@ -24,7 +24,6 @@ namespace PoniesOfTheRim
             Scribe_Values.Look(ref ideology, "ideology", true, true);
             Scribe_Values.Look(ref abilities, "abilities", true, true);
             Scribe_Values.Look(ref prosthetics, "prosthetics", true, true);
-            Scribe_Values.Look(ref fractions, "fractions", true, true);
             Scribe_Values.Look(ref anthro, "anthro", true, true);
             Scribe_Values.Look(ref enableRegularHorses, "enableRegularHorses", true, true);
             base.ExposeData();
@@ -66,12 +65,13 @@ namespace PoniesOfTheRim
             listingStandard.CheckboxLabeled("└► " + "classical".Translate(), ref settings.classical, "classicalToolTip".Translate(), 0, 1);
             if (settings.classical)
             {
-                listingStandard.CheckboxLabeled("   ├► " + "ideology".Translate(), ref settings.ideology, "addIdeologyToolTip".Translate(), 0, 1);
+             //! Uncomment ONLY HERE if is working
+
+             //   listingStandard.CheckboxLabeled("   ├► " + "ideology".Translate(), ref settings.ideology, "addIdeologyToolTip".Translate(), 0, 1);
                 listingStandard.CheckboxLabeled("   ├► " + "abilities".Translate(), ref settings.abilities, "addAbilitiesToolTip".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "prosthetics".Translate(), ref settings.prosthetics, "addProstheticsToolTip".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "fractions".Translate(), ref settings.fractions, "addFractionsToolTip".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "anthro".Translate(), ref settings.anthro, "addAnthroToolTip".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   └► " + "enableRegularHorses".Translate(), ref settings.enableRegularHorses, "addEnableRegularHorsesToolTip".Translate(), 0, 1);
+             //   listingStandard.CheckboxLabeled("   ├► " + "prosthetics".Translate(), ref settings.prosthetics, "addProstheticsToolTip".Translate(), 0, 1);
+             //   listingStandard.CheckboxLabeled("   ├► " + "anthro".Translate(), ref settings.anthro, "addAnthroToolTip".Translate(), 0, 1);
+             //   listingStandard.CheckboxLabeled("   └► " + "enableRegularHorses".Translate(), ref settings.enableRegularHorses, "addEnableRegularHorsesToolTip".Translate(), 0, 1);
             }
             else
             {
@@ -85,7 +85,6 @@ namespace PoniesOfTheRim
             settings.ideology = true;
             settings.abilities = true;
             settings.prosthetics = true;
-            settings.fractions = true;
             settings.anthro = true;
             settings.enableRegularHorses = true;
         }
@@ -95,7 +94,6 @@ namespace PoniesOfTheRim
             settings.ideology = false;
             settings.abilities = false;
             settings.prosthetics = false;
-            settings.fractions = false;
             settings.anthro = false;
             settings.enableRegularHorses = false;
         }
@@ -114,7 +112,6 @@ namespace PoniesOfTheRim
             settings.ideology = action;
             settings.abilities = action;
             settings.prosthetics = action;
-            settings.fractions = action;
             settings.anthro = action;
             settings.enableRegularHorses = action;
         }
