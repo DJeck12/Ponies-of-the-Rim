@@ -45,13 +45,13 @@ namespace PoniesOfTheRim
 
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            listingStandard.Label("PoniesOfRimSettings".Translate());
+            listingStandard.Label("SettingsHeader".Translate());
             //TODO: Make all button line horizontaly
-            if (listingStandard.ButtonText("EnableAll".Translate(), null, 0.2f))  SetAllData(true);
-            if (listingStandard.ButtonText("DisableAll".Translate(), null, 0.2f)) SetAllData(false);
-            if (listingStandard.ButtonText("DefulatAll".Translate(), null, 0.2f)) DefaultAllData();
+            if (listingStandard.ButtonText("SettingsEnableAll".Translate(), null, 0.2f))  SetAllData(true);
+            if (listingStandard.ButtonText("SettingsDisableAll".Translate(), null, 0.2f)) SetAllData(false);
+            if (listingStandard.ButtonText("SettingsDefulatAll".Translate(), null, 0.2f)) DefaultAllData();
             listingStandard.GapLine(10);
-            listingStandard.Label("Core".Translate());
+            listingStandard.Label("SettingsCore".Translate());
             ClassicalSettings(listingStandard);
             listingStandard.End();
 
@@ -62,16 +62,16 @@ namespace PoniesOfTheRim
         #region Classical
         private void ClassicalSettings(Listing_Standard listingStandard)
         {
-            listingStandard.CheckboxLabeled("└► " + "classical".Translate(), ref settings.classical, "classicalToolTip".Translate(), 0, 1);
+            listingStandard.CheckboxLabeled("└► " + "SettingsClassical".Translate(), ref settings.classical, "classicalToolTip".Translate(), 0, 1);
             if (settings.classical)
             {
              //! Uncomment ONLY HERE if is working
 
-             //   listingStandard.CheckboxLabeled("   ├► " + "ideology".Translate(), ref settings.ideology, "addIdeologyToolTip".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "abilities".Translate(), ref settings.abilities, "addAbilitiesToolTip".Translate(), 0, 1);
-             //   listingStandard.CheckboxLabeled("   ├► " + "prosthetics".Translate(), ref settings.prosthetics, "addProstheticsToolTip".Translate(), 0, 1);
-             //   listingStandard.CheckboxLabeled("   ├► " + "anthro".Translate(), ref settings.anthro, "addAnthroToolTip".Translate(), 0, 1);
-             //   listingStandard.CheckboxLabeled("   └► " + "enableRegularHorses".Translate(), ref settings.enableRegularHorses, "addEnableRegularHorsesToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "SettingsIdeology".Translate(), ref settings.ideology, "addIdeologyToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "SettingsAbilities".Translate(), ref settings.abilities, "addAbilitiesToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "SettingsProsthetics".Translate(), ref settings.prosthetics, "addProstheticsToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   ├► " + "SettingsAnthro".Translate(), ref settings.anthro, "addAnthroToolTip".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   └► " + "SettingsEnableRegularHorses".Translate(), ref settings.enableRegularHorses, "addEnableRegularHorsesToolTip".Translate(), 0, 1);
             }
             else
             {
@@ -122,7 +122,7 @@ namespace PoniesOfTheRim
         /// </summary>
         public override string SettingsCategory()
         {
-            return "PoniesOfTheRim".Translate();
+            return "SettingsPoniesOfTheRim".Translate();
         }
     }
 }
