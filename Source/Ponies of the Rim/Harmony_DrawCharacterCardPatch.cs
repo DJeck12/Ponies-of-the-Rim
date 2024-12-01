@@ -43,7 +43,7 @@ namespace PoniesOfTheRim
                 DrawCutiemarkIcon.Draw(pawn, rect, cutiemarkBodyAddon, alienComp);
                 if (Mouse.IsOver(rect) || DebugViewSettings.drawTooltipEdges)
                 {
-                    TooltipHandler.TipRegion(rect, "Cutiemark".Translate());
+                    TooltipHandler.TipRegion(rect, "PawnMakingUICutieMarkTip".Translate());
                 }
                 if (Widgets.ButtonInvisible(rect))
                 {
@@ -57,7 +57,7 @@ namespace PoniesOfTheRim
                 DrawCutiemarkIcon.Draw(pawn, rect2, cutiemarkBodyAddon, alienComp);
                 if (Mouse.IsOver(rect2) || DebugViewSettings.drawTooltipEdges)
                 {
-                    TooltipHandler.TipRegion(rect, "Cutiemark".Translate());
+                    TooltipHandler.TipRegion(rect, "PawnMakingUICutieMarkTip".Translate());
                 }
             }
             if (Find.WindowStack.WindowOfType<Dialog_InfoCard>() != null && Find.CurrentMap != null)
@@ -65,7 +65,7 @@ namespace PoniesOfTheRim
                 DrawCutiemarkIcon.Draw(pawn, rect3, cutiemarkBodyAddon, alienComp);
                 if (Mouse.IsOver(rect3) || DebugViewSettings.drawTooltipEdges)
                 {
-                    TooltipHandler.TipRegion(rect, "Cutiemark".Translate());
+                    TooltipHandler.TipRegion(rect, "PawnMakingUICutieMarkTip".Translate());
                 }
             }
         }
