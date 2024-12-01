@@ -25,7 +25,7 @@ namespace PoniesOfTheRim
 	    {
 		    get
 		    {
-			    return "OK".Translate();
+			    return "PawnMakingUICloseButton".Translate();
 		    }
 	    }
         public CutiemarkSelector(Pawn pawn, AlienPartGenerator.BodyAddon addon, AlienPartGenerator.AlienComp alienComp)
