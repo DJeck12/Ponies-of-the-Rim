@@ -67,16 +67,27 @@ namespace PoniesOfTheRim
             base.DoSettingsWindowContents(inRect);
         }
 
+        #region Header
         private void Settingheader(Listing_Standard listingStandard)
         {
             listingStandard.Label("SettingsHeader".Translate());
             //TODO: Make all button line horizontaly
-            //var buttons = listingStandard.BeginSection(20,1,1);
             if (listingStandard.ButtonText("SettingsEnableAll".Translate(), null, 0.2f)) SetAllData(true);
             if (listingStandard.ButtonText("SettingsDisableAll".Translate(), null, 0.2f)) SetAllData(false);
             if (listingStandard.ButtonText("SettingsDefulatAll".Translate(), null, 0.2f)) DefaultAllData();
             listingStandard.GapLine(10);
         }
+
+        private void DefaultAllData()
+        {
+            settings.ClassicalSettingsDefault();
+        }
+
+        private void SetAllData(bool action)
+        {
+            settings.ClassicalSettingsToggle(action);
+        }
+        #endregion
 
         #region Classical
         private void ClassicalSettings(Listing_Standard listingStandard)
@@ -96,19 +107,6 @@ namespace PoniesOfTheRim
             {
                 settings.ClassicalSettingsToggle(false);
             }
-        }
-        #endregion
-
-        #region Buttons
-
-        private void DefaultAllData()
-        {
-            settings.ClassicalSettingsDefault();
-        }
-
-        private void SetAllData(bool action)
-        {
-            settings.ClassicalSettingsToggle(action);
         }
         #endregion
 
