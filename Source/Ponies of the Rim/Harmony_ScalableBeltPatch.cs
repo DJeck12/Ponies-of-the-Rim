@@ -23,7 +23,7 @@ namespace PoniesOfTheRim
             harmonyInstance.Patch(original: AccessTools.Method(typeof(WornGraphicData), "BeltOffsetAt"), prefix: new HarmonyMethod(patchType, "BeltOffsetAtPatch"));
         }
 
-        public static bool BeltScaleAtPatch(ref Vector2 __result, ref WornGraphicData __instance, BodyTypeDef bodyType)
+        public static bool BeltScaleAtPatch(ref Vector2 __result, BodyTypeDef bodyType)
         {
             if (bodyType == Pony_DefOf.Pony || bodyType == Pony_DefOf.PonyChild || bodyType == Pony_DefOf.PonyBaby)
             {

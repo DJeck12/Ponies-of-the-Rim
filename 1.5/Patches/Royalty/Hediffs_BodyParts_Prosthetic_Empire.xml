@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="DrillArm"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="DrillArm"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="FieldHand"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="FieldHand"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="HandTalon"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="HandTalon"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="ElbowBlade"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="ElbowBlade"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="KneeSpike"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="KneeSpike"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/HediffDef[defName="VenomTalon"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/HediffDef[defName="VenomTalon"]/comps</xpath>
+			<value>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<!-- <descriptionExtra>pon</descriptionExtra> -->
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <loadFolders>
 	<v1.5>
+		<!-- Core Files -->
 		<li>/</li>
 		<li>1.5</li>
+		<!-- DLC -->
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>
+		<!-- Mod Patches -->
+		<li IfModActive="sarg.alphagenes">ModPatches/Alpha Genes</li>
+		<li IfModActive="vanillaracesexpanded.highmate">ModPatches/Vanilla Races Expanded - Highmate</li>
+		<li IfModActive="vanillaracesexpanded.phytokin">ModPatches/Vanilla Races Expanded - Phytokin</li>
+		<li IfModActive="vanillaracesexpanded.archon">ModPatches/Vanilla Races Expanded - Archon</li>
+		<li IfModActive="vanillaracesexpanded.lycanthrope">ModPatches/Vanilla Races Expanded - Lycanthrope</li>
+		<li IfModActive="vanillaracesexpanded.saurid">ModPatches/Vanilla Races Expanded - Saurid</li>
+		<li IfModActive="vanillaracesexpanded.insector">ModPatches/Vanilla Races Expanded - Insector</li>
+		<li IfModActive="vanillaracesexpanded.waster">ModPatches/Vanilla Races Expanded - Waster</li>
+		<li IfModActive="vanillaracesexpanded.android">ModPatches/Vanilla Races Expanded - Android</li>
+		<li IfModActive="Airo.RimboundNovakinXenotype">ModPatches/Rimbound - Novakin Xenotype</li>
+		<li IfModActive="vat.epoeforked">ModPatches/Expanded Prosthetics and Organ Engineering - Forked</li>
+		<li IfModActive="Rah.RBSE,Rah.RBSEHC">ModPatches/RBSE</li>
+		<li IfModActive="FrozenSnowFox.VanillaBionicsExpansion">ModPatches/[FSF] Vanilla Bionics Expansion</li>
+		<li IfModActive="FrozenSnowFox.AdvancedBionicsExpansion">ModPatches/[FSF] Advanced Bionics Expansion</li>
+		<li IfModActive="Mlie.CombatBionics">ModPatches/Combat Bionics (Continued)</li>
+		<li IfModActive="CETeam.CombatExtended">ModPatches/Combat Extended</li>
+		<li IfModActive="feaurie.GreyscytheBionics">ModPatches/Greyscythe Bionics Catalogue</li>
+		<li IfModActive="ANNOProfi.HellBionics">ModPatches/Hell Bionics</li>
 	</v1.5>
 </loadFolders>
