@@ -1,7 +1,5 @@
-﻿using AlienRace;
 using UnityEngine;
 using Verse;
-using static AlienRace.AlienPartGenerator;
 
 namespace PoniesOfTheRim
 {
