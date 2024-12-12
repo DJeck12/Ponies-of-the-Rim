@@ -4,10 +4,10 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-
     public class PoniesOfTheRimSettingsData : ModSettings
     {
-        //Keep Addisional Tabulators here to read hierarchy cleary
+        //Keep Addisional Tabulators here to read hierarchy more cleary
+        //Make Some Settings Apply per save
         #region Classical
         public bool classical;
             public bool ideology;
@@ -85,6 +85,7 @@ namespace PoniesOfTheRim
 
         private void SetAllData(bool action)
         {
+            settings.classical = action;
             settings.ClassicalSettingsToggle(action);
         }
         #endregion
@@ -97,11 +98,11 @@ namespace PoniesOfTheRim
             {
                 //! Uncomment ONLY HERE if is working
 
-                listingStandard.CheckboxLabeled("   ├► " + "SettingsIdeology".Translate(), ref settings.ideology, "SettingsToolTipIdeology".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "SettingsAbilities".Translate(), ref settings.abilities, "SettingsToolTipAbilities".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "SettingsProsthetics".Translate(), ref settings.prosthetics, "SettingsToolTipProsthetics".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   ├► " + "SettingsAnthro".Translate(), ref settings.anthro, "SettingsToolTipAnthro".Translate(), 0, 1);
-                listingStandard.CheckboxLabeled("   └► " + "SettingsEnableRegularHorses".Translate(), ref settings.enableRegularHorses, "SettingsToolTipEnableRegularHorses".Translate(), 0, 1);
+               // listingStandard.CheckboxLabeled("   ├► " + "SettingsIdeology".Translate(), ref settings.ideology, "SettingsToolTipIdeology".Translate(), 0, 1);
+                listingStandard.CheckboxLabeled("   └► " + "SettingsAbilities".Translate(), ref settings.abilities, "SettingsToolTipAbilities".Translate(), 0, 1);
+               // listingStandard.CheckboxLabeled("   ├► " + "SettingsProsthetics".Translate(), ref settings.prosthetics, "SettingsToolTipProsthetics".Translate(), 0, 1);
+               // listingStandard.CheckboxLabeled("   ├► " + "SettingsAnthro".Translate(), ref settings.anthro, "SettingsToolTipAnthro".Translate(), 0, 1);
+               // listingStandard.CheckboxLabeled("   └► " + "SettingsEnableRegularHorses".Translate(), ref settings.enableRegularHorses, "SettingsToolTipEnableRegularHorses".Translate(), 0, 1);
             }
             else
             {
@@ -111,7 +112,7 @@ namespace PoniesOfTheRim
         #endregion
 
         /// <summary>
-        /// Overwriting this enables configs
+        /// Overwriting this enables settings, leave blank to disable it
         /// </summary>
         public override string SettingsCategory()
         {
