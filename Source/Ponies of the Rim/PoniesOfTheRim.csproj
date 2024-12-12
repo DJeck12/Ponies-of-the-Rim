@@ -94,6 +94,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PonyHairExtension.cs" />
+    <Compile Include="Harmony_PonyHairExtensionPatch.cs" />
     <Compile Include="HediffCompProperties_PonyProsthetic.cs" />
     <Compile Include="GeneExtension.cs" />
     <Compile Include="Harmony_ChildPonyBodyTypeFixPatch.cs" />

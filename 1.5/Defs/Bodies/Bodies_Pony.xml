@@ -836,16 +836,14 @@
 					<groups>
 						<li>Wings</li>
 					</groups>
-					<parts>
-						<li>
-							<def>Pony_LeftWing</def>
-							<customLabel>left wing</customLabel>
-							<coverage>0.05</coverage>
-							<groups>
-								<li>Wings</li>
-							</groups>
-						</li>
-					</parts>
+				</li>
+				<li>
+					<def>Pony_LeftWing</def>
+					<customLabel>left wing</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Wings</li>
+					</groups>
 				</li>
 				<li>
 					<def>Pony_WingsAtachment</def>
@@ -853,16 +851,14 @@
 					<groups>
 						<li>Wings</li>
 					</groups>
-					<parts>
-						<li>
-							<def>Pony_RightWing</def>
-							<customLabel>right wing</customLabel>
-							<coverage>0.05</coverage>
-							<groups>
-								<li>Wings</li>
-							</groups>
-						</li>
-					</parts>
+				</li>
+				<li>
+					<def>Pony_RightWing</def>
+					<customLabel>right wing</customLabel>
+					<coverage>0.05</coverage>
+					<groups>
+						<li>Wings</li>
+					</groups>
 				</li>
 				<li>
 					<def>Pony_Tail</def>
@@ -1145,17 +1141,15 @@
 									<groups>
 										<li>Horn</li>
 									</groups>
-									<parts>
-										<li>
-											<def>Pony_Horn</def>
-											<coverage>0.125</coverage>
-											<groups>
-												<li>UpperHead</li>
-												<li>FullHead</li>
-												<li>Horn</li>
-											</groups>
-										</li>
-									</parts>
+								</li>
+								<li>
+									<def>Pony_Horn</def>
+									<coverage>0.125</coverage>
+									<groups>
+										<li>UpperHead</li>
+										<li>FullHead</li>
+										<li>Horn</li>
+									</groups>
 								</li>
 								<li>
 									<def>Eye</def>
