@@ -19,6 +19,10 @@
 				</partsToAffect>
 				<ability>MagicBurst</ability>
 			</li>
+			<li Class = "PoniesOfTheRim.HediffGiver_NatureMuse">
+				<hediff>NatureMuse</hediff>
+				<ability>NatureMuse</ability>
+			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
 
