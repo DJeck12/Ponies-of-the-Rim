@@ -11,8 +11,10 @@
 /Source/Ponies of the Rim/Ponies of the Rim/AlienRace
 *.vsidx
 *.dll
+*.vsidx
 Source/.vs/Ponies of the Rim/v17/DocumentLayout.json
 Source/.vs/Ponies of the Rim/v17/DocumentLayout.backup.json
 *.cache
 Source/.vs/Ponies of the Rim/v17/DocumentLayout.json
 Source/.vs/Ponies of the Rim/v17/.suo
+/Source/.vs/Ponies of the Rim/FileContentIndex
