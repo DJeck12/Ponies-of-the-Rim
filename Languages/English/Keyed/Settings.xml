@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+		<!-- Mod Name -->
+	<SettingsPoniesOfTheRim>Ponies Of The Rim</SettingsPoniesOfTheRim>
+		<!-- Header -->
+	<SettingsHeader>Here are settings for Ponies Of Rim Mod</SettingsHeader>
+	<SettingsEnableAll>Enable All</SettingsEnableAll>
+	<SettingsDisableAll>Disable All</SettingsDisableAll>
+	<SettingsDefulatAll>Defulat All</SettingsDefulatAll>
+	<!-- Main -->
+	<SettingsCore>Core</SettingsCore>
+	<!-- Classical -->
+	<SettingsClassical>Classical</SettingsClassical>
+	<SettingsIdeology>Ideology</SettingsIdeology>
+	<SettingsAbilities>Abilities</SettingsAbilities>
+	<SettingsProsthetics>Prosthetics</SettingsProsthetics>
+	<SettingsAnthro>Anthro</SettingsAnthro>
+	<SettingsEnableRegularHorses>Enable Regular Horses</SettingsEnableRegularHorses>
+	<!-- ToolTips -->
+	<SettingsToolTipClassical>Enable All Recomended Settings</SettingsToolTipClassical>
+	<SettingsToolTipIdeology>Add Ponies Ideology To the Game</SettingsToolTipIdeology>
+	<SettingsToolTipAbilities>Add Ponies Abilities To the Game</SettingsToolTipAbilities>
+	<SettingsToolTipProsthetics>Add Addisional Items That Consist of Prostetics To the Game</SettingsToolTipProsthetics>
+	<SettingsToolTipAnthro>Add Anthro Xenotype</SettingsToolTipAnthro>
+	<SettingsToolTipEnableRegularHorses>Add Regular Horses To The Game</SettingsToolTipEnableRegularHorses>
+</LanguageData>

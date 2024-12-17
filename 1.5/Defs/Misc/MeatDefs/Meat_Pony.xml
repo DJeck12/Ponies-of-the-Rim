@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>Meat_Pony</defName>
 		<label>pony meat</label>
-		<description>Raw buthered flesh of a member of the pony race. Can be used as food, but most individuals will not take this idea well. Considered cannibal food for both ponies and other races.</description>
+		<description>Raw butchered flesh of a member of the pony race. Can be used as food, but most individuals will not take this idea well. Considered cannibal food for both ponies and other races.</description>
 		<graphicData>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<texPath>Things/Item/Meat</texPath>

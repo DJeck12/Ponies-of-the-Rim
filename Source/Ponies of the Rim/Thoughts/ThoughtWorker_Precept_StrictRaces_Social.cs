@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace PoniesOfTheRim
+namespace PoniesOfTheRim.Thoughts
 {
     public class ThoughtWorker_Precept_StrictRaces_Social : ThoughtWorker_Precept_Social
     {

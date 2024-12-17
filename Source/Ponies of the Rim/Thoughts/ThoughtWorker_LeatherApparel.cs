@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace PoniesOfTheRim
+namespace PoniesOfTheRim.Thoughts
 {
     public class ThoughtWorker_LeatherApparel : ThoughtWorker
     {
