@@ -113,6 +113,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilitys\HediffGiver_AbilityHorn.cs" />
+    <Compile Include="Abilitys\HediffGiver_AbilityWings.cs" />
+    <Compile Include="Abilitys\HediffGiver_NatureMuse.cs" />
     <Compile Include="BodyTypePatch.cs" />
     <Compile Include="GeneExtension.cs" />
     <Compile Include="Harmony_DrawCharacterCardPatch.cs" />
@@ -121,30 +124,28 @@
     <Compile Include="Harmony_StylingStationPatch.cs" />
     <Compile Include="Gene_Random.cs" />
     <Compile Include="CutiemarkSelectorWindow.cs" />
-    <Compile Include="HediffGiver_AbilityHorn.cs" />
-    <Compile Include="HediffGiver_NatureMuse.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PonyHelper.cs" />
     <Compile Include="HediffComp_PonyProsthetic.cs" />
     <Compile Include="Pony_DefOf.cs" />
-    <Compile Include="ThoughtExtension.cs" />
-    <Compile Include="ThoughtWorker_LeatherApparel.cs" />
-    <Compile Include="ThoughtWorker_OpinionForRaces.cs" />
-    <Compile Include="ThoughtWorker_Precept_LeatherApparel.cs" />
-    <Compile Include="ThoughtWorker_Precept_Pony.cs" />
-    <Compile Include="ThoughtWorker_Precept_Pony_Social.cs" />
-    <Compile Include="ThoughtWorker_Precept_Races.cs" />
-    <Compile Include="ThoughtWorker_Precept_Races_Social.cs" />
-    <Compile Include="ThoughtWorker_Precept_StrictRaces.cs" />
-    <Compile Include="ThoughtWorker_Precept_StrictRaces_Social.cs" />
-    <Compile Include="ThoughtWorker_OpinionForPony.cs" />
-    <Compile Include="HediffGiver_AbilityWings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Harmony_ScalableBeltPatch.cs" />
     <Compile Include="ScenPart_ConfigPage_ConfigureStartingPawns.cs" />
+    <Compile Include="Thoughts\ThoughtExtension.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_LeatherApparel.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_OpinionForPony.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_OpinionForRaces.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_LeatherApparel.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Pony.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Pony_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Races.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Races_Social.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_StrictRaces.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_StrictRaces_Social.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
