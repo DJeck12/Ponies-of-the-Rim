@@ -4,7 +4,7 @@ using System.Linq;
 using Verse;
 using Verse.AI.Group;
 
-namespace PoniesOfTheRim
+namespace PoniesOfTheRim.Thoughts
 {
     public class ThoughtWorker_Precept_StrictRaces : ThoughtWorker_Precept
     {
