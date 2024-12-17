@@ -122,6 +122,7 @@
     <Compile Include="Gene_Random.cs" />
     <Compile Include="CutiemarkSelectorWindow.cs" />
     <Compile Include="HediffGiver_AbilityHorn.cs" />
+    <Compile Include="HediffGiver_NatureMuse.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PonyHelper.cs" />
     <Compile Include="HediffComp_PonyProsthetic.cs" />
