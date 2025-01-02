@@ -49,10 +49,10 @@
 		<configurationListOrderPriority>10</configurationListOrderPriority>
 		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<modExtensions>
-			<li Class="VFECore.FactionDefExtension">			
+			<li Class="VFECore.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<Pony_PlayerExpedition>25~50</Pony_PlayerExpedition>
-				</startingGoodwillByFactionDefs>			
+					<PonyColony>25~50</PonyColony>
+				</startingGoodwillByFactionDefs>
 			</li>
 		</modExtensions>
 	</FactionDef>

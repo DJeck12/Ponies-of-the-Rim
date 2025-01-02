@@ -35,7 +35,7 @@
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<body>Pony</body>
+				<body>Pony_EarthponyBody</body>
 				<trait>Pony_RelationsForEarth</trait>
 			</li>
 		</modExtensions>
@@ -58,7 +58,7 @@
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<body>Pegasus</body>
+				<body>Pony_PegasusBody</body>
 				<trait>Pony_RelationsForPegasus</trait>
 			</li>
 		</modExtensions>
@@ -81,7 +81,7 @@
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<body>Unicorn</body>
+				<body>Pony_UnicornBody</body>
 				<trait>Pony_RelationsForUnicorn</trait>
 			</li>
 		</modExtensions>

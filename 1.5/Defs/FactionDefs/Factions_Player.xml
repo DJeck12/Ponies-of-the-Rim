@@ -2,7 +2,7 @@
 <Defs>
 
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>Pony_PlayerExpedition</defName>
+		<defName>PonyColony</defName>
 		<label>Pony Arrivals</label>
 		<description>A colony of recently-arrived ponies.</description>
 		<isPlayer>true</isPlayer>
@@ -44,7 +44,7 @@
 	</FactionDef>
 
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>Pony_PonyTribe</defName>
+		<defName>PonyTribe</defName>
 		<label>Pony Tribe</label>
 		<description>A small pony tribe.</description>
 		<isPlayer>true</isPlayer>
