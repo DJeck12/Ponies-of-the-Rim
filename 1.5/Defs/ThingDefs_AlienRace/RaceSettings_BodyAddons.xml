@@ -2,9 +2,60 @@
 <Defs>
 
 	<AlienRace.RaceSettings>
-		<defName>Pony_Bodyaddons_Settings</defName>
+		<defName>Pony_BodyAddons_Settings</defName>
 
 		<universalBodyAddons>
+		<!-- Cutiemark -->
+			<li>
+				<name>Cutiemark</name>
+				<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<drawSize>(0.15, 0.15)</drawSize>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>none</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Earthpony</Race>
+						<Race>Pony_Pegasus</Race>
+						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
+					</Or>
+					<Or>
+						<Age>PonyAdult</Age>
+						<Age>PonyTeenager</Age>
+						<Age>HumanlikeAdult</Age>
+						<Age>HumanlikeTeenager</Age>
+					</Or>
+					<BodyPart>
+						<bodyPart>Torso</bodyPart>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>Legs</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+				</extendedGraphics>
+				<offsets>
+					<east>
+						<layerOffset>-0.295</layerOffset>
+						<bodyTypes>
+							<Male>(0.05, -0.275)</Male>
+							<Female>(0.05, -0.275)</Female>
+							<Thin>(0.09, -0.275)</Thin>
+							<Hulk>(0.05, -0.275)</Hulk>
+							<Fat>(0.05, -0.275)</Fat>
+							<Pony>(0.22, -0.1)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyChild>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
 		<!-- Tail -->
 			<li>
 				<name>Tail</name>
@@ -17,6 +68,8 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<BodyPart>
 						<bodyPart>Pony_Tail</bodyPart>
@@ -52,6 +105,7 @@
 					</east>
 				</offsets>
 			</li>
+		<!-- Gene Tail -->
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<name>Tail_Human</name>
 				<path>Things/Races/Pony/Tails/Pony_Tail</path>
@@ -119,6 +173,8 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<BodyPart>
 						<bodyPart>Ear</bodyPart>
@@ -165,6 +221,8 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<BodyPart>
 						<bodyPart>Ear</bodyPart>
@@ -197,53 +255,136 @@
 					</west>
 				</offsets>
 			</li>
-		<!-- Cutiemark -->
+		<!-- Horn -->
 			<li>
-				<name>Cutiemark</name>
-				<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+				<path>Things/Races/Unicorn/Normal/Unicorn</path>
+				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
-				<drawSize>(0.15, 0.15)</drawSize>
+				<alignWithHead>true</alignWithHead>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>none</colorChannel>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<Or>
+						<Race>Pony_Unicorn</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Pony_Horn</bodyPart>
+						<drawWithoutPart>true</drawWithoutPart>
+					</BodyPart>
+				</conditions>
+				<extendedGraphics>
+					<Hediff For="MissingBodyPart">Things/Races/Unicorn/Broken/Unicorn_Broken</Hediff>
+					<Hediff For="BionicHorn">Things/Races/Unicorn/Bionic/Unicorn_Bionic</Hediff>
+					<Hediff For="ArchotechHorn">Things/Races/Unicorn/Archotech/Unicorn_Archotech</Hediff>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
+						<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
+						<extendedGraphics>
+							<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+							<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+						</extendedGraphics>
+					</Mutant>
+					<!--RotStage For="Dessicated">
+						<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
+						<extendedGraphics>
+							<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+							<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+						</extendedGraphics>
+					</RotStage-->
+					<Age For="PonyBaby">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
+					<Age For="PonyChild">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-0.27</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.3</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.27</layerOffset>
+					</east>
+				</offsets>
+			</li>
+		<!-- Wings -->
+			<li>
+				<path>Things/Races/Pegasus/Normal/PegasusRight</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
 				<conditions>
 					<RotStage>Fresh,Rotting</RotStage>
 					<Or>
-						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
-						<Race>Pony_Unicorn</Race>
-					</Or>
-					<Or>
-						<Age>PonyAdult</Age>
-						<Age>PonyTeenager</Age>
-						<Age>HumanlikeAdult</Age>
-						<Age>HumanlikeTeenager</Age>
 					</Or>
 					<BodyPart>
-						<bodyPart>Torso</bodyPart>
+						<bodyPart>Pony_RightWing</bodyPart>
+						<bodyPartLabel>right wing</bodyPartLabel>
+						<drawWithoutPart>true</drawWithoutPart>
 					</BodyPart>
-					<Apparel>
-						<hiddenUnderApparelFor>
-							<li>Legs</li>
-						</hiddenUnderApparelFor>
-					</Apparel>
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/PegasusRight_Broken</Hediff>
+					<Hediff For="SimpleProstheticWing">Things/Races/Pegasus/Prosthetic/PegasusRight_Prosthetic</Hediff>
+					<Hediff For="BionicWing">Things/Races/Pegasus/Bionic/PegasusRight_Bionic</Hediff>
+					<Hediff For="ArchotechWing">Things/Races/Pegasus/Archotech/PegasusRight_Archotech</Hediff>
+					<Age For="PonyBaby">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
+					<Age For="PonyChild">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
 				</extendedGraphics>
 				<offsets>
+					<south>
+						<layerOffset>-0.28</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.335</layerOffset>
+					</north>
 					<east>
-						<layerOffset>-0.295</layerOffset>
-						<bodyTypes>
-							<Male>(0.05, -0.275)</Male>
-							<Female>(0.05, -0.275)</Female>
-							<Thin>(0.09, -0.275)</Thin>
-							<Hulk>(0.05, -0.275)</Hulk>
-							<Fat>(0.05, -0.275)</Fat>
-							<Pony>(0.22, -0.1)</Pony>
-							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyBaby>
-							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyChild>
-						</bodyTypes>
+						<layerOffset>-0.2905</layerOffset>
 					</east>
+				</offsets>
+			</li>
+			<li>
+				<path>Things/Races/Pegasus/Normal/PegasusLeft</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Pegasus</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Pony_LeftWing</bodyPart>
+						<bodyPartLabel>left wing</bodyPartLabel>
+						<drawWithoutPart>true</drawWithoutPart>
+					</BodyPart>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/PegasusLeft_Broken</Hediff>
+					<Hediff For="SimpleProstheticWing">Things/Races/Pegasus/Prosthetic/PegasusLeft_Prosthetic</Hediff>
+					<Hediff For="BionicWing">Things/Races/Pegasus/Bionic/PegasusLeft_Bionic</Hediff>
+					<Hediff For="ArchotechWing">Things/Races/Pegasus/Archotech/PegasusLeft_Archotech</Hediff>
+					<Age For="PonyBaby">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
+					<Age For="PonyChild">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-0.28</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.335</layerOffset>
+					</north>
+					<west>
+						<layerOffset>-0.2905</layerOffset>
+					</west>
 				</offsets>
 			</li>
 		</universalBodyAddons>

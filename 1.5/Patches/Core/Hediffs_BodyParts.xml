@@ -2,7 +2,6 @@
 <Patch>
 
 	<Operation Class="PatchOperationConditional">
-		<success>Always</success>
 		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
@@ -13,7 +12,8 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Hand')]/appliedOnFixedBodyParts</xpath>
+		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Hand')
+		or defname!="InstallWoodenHand"]/appliedOnFixedBodyParts</xpath>
 		<value>
 			<li>Pony_FrontHoof</li>
 		</value>
@@ -27,9 +27,10 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Foot')]/appliedOnFixedBodyParts</xpath>
+		<xpath>/Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Foot')
+		or defname!="WoodenFoot"]/appliedOnFixedBodyParts</xpath>
 		<value>
-			<li>Pony_RearLeg</li>
+			<li>Pony_RearHoof</li>
 		</value>
 	</Operation>
 

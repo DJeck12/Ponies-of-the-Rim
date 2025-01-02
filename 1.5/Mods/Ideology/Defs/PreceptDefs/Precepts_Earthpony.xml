@@ -188,6 +188,8 @@
 		<conflictingMemes>
 			<li>Pony_PegasusSupremacist</li>
 			<li>Pony_UnicornSupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
@@ -231,6 +233,8 @@
 		<conflictingMemes>
 			<li>Pony_PegasusSupremacist</li>
 			<li>Pony_UnicornSupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">

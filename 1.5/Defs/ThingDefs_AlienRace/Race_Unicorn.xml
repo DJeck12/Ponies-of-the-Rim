@@ -97,58 +97,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							</first>
 						</li>
 					</colorChannels>
-					<bodyAddons>
-					<!-- Horn -->
-						<li>
-							<path>Things/Races/Unicorn/Normal/Unicorn</path>
-							<userCustomizable>false</userCustomizable>
-							<inFrontOfBody>true</inFrontOfBody>
-							<alignWithHead>true</alignWithHead>
-							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-							<colorChannel>skin</colorChannel>
-							<conditions>
-								<BodyPart>
-									<bodyPart>Pony_Horn</bodyPart>
-									<drawWithoutPart>true</drawWithoutPart>
-								</BodyPart>
-							</conditions>
-							<extendedGraphics>
-								<Hediff For="MissingBodyPart">Things/Races/Unicorn/Broken/Unicorn_Broken</Hediff>
-								<Hediff For="BionicHorn">Things/Races/Unicorn/Bionic/Unicorn_Bionic</Hediff>
-								<Hediff For="ArchotechHorn">Things/Races/Unicorn/Archotech/Unicorn_Archotech</Hediff>
-								<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
-									<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
-									<extendedGraphics>
-										<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-										<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-										<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-									</extendedGraphics>
-								</Mutant>
-								<!--<RotStage For="Dessicated">
-									<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
-									<extendedGraphics>
-										<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-										<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-										<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-									</extendedGraphics>
-								</RotStage>-->
-								<Age For="PonyBaby">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
-								<Age For="PonyChild">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
-								<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
-							</extendedGraphics>
-							<offsets>
-								<south>
-									<layerOffset>-0.27</layerOffset>
-								</south>
-								<north>
-									<layerOffset>-0.3</layerOffset>
-								</north>
-								<east>
-									<layerOffset>-0.27</layerOffset>
-								</east>
-							</offsets>
-						</li>
-					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
 
@@ -215,7 +163,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 		<race>
 			<nameGenerator>NameGeneratorUnicorn</nameGenerator>
-			<body>Unicorn</body>
+			<body>Pony_UnicornBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>
