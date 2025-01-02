@@ -6,7 +6,6 @@
 			<li>Ideology</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/MemeDef[defName="Supremacist"]/exclusionTags</xpath>
@@ -14,8 +13,8 @@
 						<li>Supremacist</li>
 					</value>
 				</li>
+
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/MemeDef[defName="Raider"]</xpath>
@@ -32,8 +31,8 @@
 						</value>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>/Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/MemeDef[defName="Cannibal"]</xpath>

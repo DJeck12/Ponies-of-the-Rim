@@ -7,6 +7,7 @@
 			<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_LeatherApparel</workerClass>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/workerClass</xpath>
 		<value>

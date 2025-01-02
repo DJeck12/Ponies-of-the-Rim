@@ -2,20 +2,20 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/PawnKindDef[contains(weaponTags,'Gun') or contains(weaponTags,'IndustrialGunAdvanced') or contains(weaponTags,'GunHeavy')]/apparelTags</xpath>
+		<xpath>/Defs/PawnKindDef[contains(weaponTags,'Gun')
+		or contains(weaponTags,'IndustrialGunAdvanced')
+		or contains(weaponTags,'GunHeavy')]/apparelTags</xpath>
 		<value>
 			<li>Pony_BattleSaddle</li>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/PawnKindDef[contains(apparelTags,'BeltDefensePop')]</xpath>
-		<nomatch Class="PatchOperationAdd">
-		<xpath>/Defs/PawnKindDef[contains(apparelTags,'Neolithic') or contains(apparelTags,'IndustrialBasic')]/apparelTags</xpath>
-			<value>
-				<li>Pony_SaddleBag</li>
-			</value>
-		</nomatch>
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/PawnKindDef[contains(apparelTags,'Neolithic')
+	or contains(apparelTags,'IndustrialBasic')]/apparelTags</xpath>
+		<value>
+			<li>Pony_SaddleBag</li>
+		</value>
 	</Operation>
 	
 </Patch>

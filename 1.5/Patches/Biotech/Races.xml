@@ -6,7 +6,6 @@
 			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Earthpony"
@@ -21,7 +20,6 @@
 							<ComfyTemperatureMax>26</ComfyTemperatureMax>
 							<CarryingCapacity>80</CarryingCapacity>
 							<Mass>55</Mass>
-							<LeatherAmount>65</LeatherAmount>
 							<PainShockThreshold>0.75</PainShockThreshold>
 							<RoyalFavorValue>4</RoyalFavorValue>
 						</statBases>
@@ -30,5 +28,5 @@
 			</operations>
 		</match>
 	</Operation>
-	
+
 </Patch>

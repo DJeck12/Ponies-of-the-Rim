@@ -14,6 +14,7 @@
 			</li>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/extraThoughtsFromIngestion</xpath>
 		<value>

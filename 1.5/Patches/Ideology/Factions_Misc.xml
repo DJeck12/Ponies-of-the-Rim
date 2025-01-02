@@ -6,26 +6,16 @@
 			<li>Ideology</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
-				<li Class="PatchOperationConditional">
-					<success>Always</success>
-					<xpath>/Defs/FactionDef[@Name="OutlanderRoughBase"]/disallowedMemes</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/FactionDef[@Name="OutlanderRoughBase"]</xpath>
-						<value>
-							<disallowedMemes>
-								<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Friendship</li>
-							</disallowedMemes>
-						</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/FactionDef[@Name="OutlanderRoughBase"]/disallowedMemes</xpath>
-						<value>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Friendship</li>
-						</value>
-					</match>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/FactionDef[@Name="OutlanderRoughBase"]</xpath>
+					<value>
+						<disallowedMemes>
+							<li>Pony_Friendship</li>
+						</disallowedMemes>
+					</value>
 				</li>
+				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[@Name="TribeRoughBase"
 					or @Name="TribeSavageBase"]/disallowedMemes</xpath>

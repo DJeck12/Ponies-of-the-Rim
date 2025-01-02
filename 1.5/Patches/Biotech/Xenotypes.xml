@@ -6,7 +6,6 @@
 			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/XenotypeDef[defName="Baseliner"]/description</xpath>
@@ -17,5 +16,5 @@
 			</operations>
 		</match>
 	</Operation>
-	
+
 </Patch>
