@@ -6,13 +6,12 @@
 			<li>Royalty</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 					<value>
-						<li>Pony_PlayerExpedition</li>
-						<li>Pony_PonyTribe</li>
+						<li>PonyColony</li>
+						<li>PonyTribe</li>
 						<li>PonyOutlanderCivil</li>
 					</value>
 				</li>

@@ -9,7 +9,7 @@
 			<summary>Four pony adventurers, each one from a different race. Ideal for roleplay.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>Pony_PlayerExpedition</factionDef>
+				<factionDef>PonyColony</factionDef>
 			</playerFaction>
 			<parts>
 				<!-- Game start dialog -->

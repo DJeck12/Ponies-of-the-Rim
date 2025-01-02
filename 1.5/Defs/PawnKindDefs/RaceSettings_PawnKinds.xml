@@ -18,7 +18,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PlayerExpedition</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -31,7 +31,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PonyTribe</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -62,7 +62,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PlayerExpedition</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -75,7 +75,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PonyTribe</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
@@ -100,7 +100,7 @@
 					</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PlayerExpedition</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -113,7 +113,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PonyTribe</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -144,7 +144,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PlayerExpedition</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -157,7 +157,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PonyTribe</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
@@ -182,7 +182,7 @@
 					</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PlayerExpedition</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -195,7 +195,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PonyTribe</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -226,7 +226,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PlayerExpedition</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -239,7 +239,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_PonyTribe</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
 			</alienwandererkinds>
