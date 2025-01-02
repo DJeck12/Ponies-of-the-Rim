@@ -48,7 +48,6 @@ namespace PoniesOfTheRim
                             FleckMaker.PlaceFootprint(vector2, ___pawn.Map, rot);
                         }
                     }
-                    
                 }
             }
             ___lastFootprintPlacePos = drawPos;

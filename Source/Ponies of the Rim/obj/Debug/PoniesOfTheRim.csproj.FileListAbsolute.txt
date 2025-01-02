@@ -63,3 +63,10 @@ E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of th
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\obj\Debug\PoniesOf.646225EC.Up2Date
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.dll
 E:\SteamLibrary\steamapps\workshop\content\294100\3223243284\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.pdb
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Debug\PoniesOfTheRim.csproj.AssemblyReference.cache
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Debug\PoniesOfTheRim.csproj.CoreCompileInputs.cache
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.dll
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.pdb
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Debug\Ponies of the Rim.dll
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\bin\Debug\Ponies of the Rim.pdb
+C:\Users\BAT\Documents\GitHub\Ponies-of-the-Rim\Source\Ponies of the Rim\obj\Debug\PoniesOf.646225EC.Up2Date
