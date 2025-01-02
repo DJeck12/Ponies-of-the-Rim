@@ -16,12 +16,6 @@
 		<spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
 	</BodyPartDef>
 
-	<BodyPartDef>
-		<defName>Pony_HornAtachment</defName>
-		<label>attachement</label>
-		<conceptual>true</conceptual>
-	</BodyPartDef>
-
 <!--Body-->
 
 	<BodyPartDef>
@@ -29,7 +23,6 @@
 		<label>wing</label>
 		<hitPoints>20</hitPoints>
 		<skinCovered>true</skinCovered>
-		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 	</BodyPartDef>
 
 	<BodyPartDef>
@@ -37,16 +30,6 @@
 		<label>wing</label>
 		<hitPoints>20</hitPoints>
 		<skinCovered>true</skinCovered>
-		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-	</BodyPartDef>
-
-	<BodyPartDef>
-		<defName>Pony_WingsAtachment</defName>
-		<label>attachement</label>
-		<conceptual>true</conceptual>
-		<tags>
-			<li>Mirrored</li>
-		</tags>
 	</BodyPartDef>
 
 	<BodyPartDef>
