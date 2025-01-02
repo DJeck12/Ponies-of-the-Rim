@@ -6,18 +6,11 @@
 			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
-				<li Class="PatchOperationInsert">
-					<xpath>/Defs/ThingDef[defName="Apparel_KidPants"]/apparel/bodyPartGroups</xpath>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="Apparel_KidPants"]/apparel</xpath>
 					<value>
 						<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</wornGraphicPath>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetMechanitorBase"]/apparel/bodyPartGroups</xpath>
-					<value>
-						<li>TopHead</li>
 					</value>
 				</li>
 			</operations>
