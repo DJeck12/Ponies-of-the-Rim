@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Verse;
 using System.Linq;
 
-namespace PoniesOfTheRim.Abilitys
+namespace PoniesOfTheRim.Abilities
 {
     public class HediffGiver_AbilityWings : HediffGiver
     {
