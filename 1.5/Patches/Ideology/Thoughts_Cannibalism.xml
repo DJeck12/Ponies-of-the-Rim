@@ -6,7 +6,6 @@
 			<li>Ideology</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparel_Abhorrent"
@@ -16,7 +15,7 @@
 					or defName="HumanLeatherApparel_RequiredStrong"
 					or defName="HumanLeatherApparel_RequiredRavenous"]/workerClass</xpath>
 					<value>
-						<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_LeatherApparel</workerClass>
+						<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_LeatherApparel</workerClass>
 					</value>
 				</li>
 			</operations>

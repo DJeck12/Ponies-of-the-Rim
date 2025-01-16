@@ -4,13 +4,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/workerClass</xpath>
 		<value>
-			<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_LeatherApparel</workerClass>
+			<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_LeatherApparel</workerClass>
 		</value>
 	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/workerClass</xpath>
 		<value>
-			<workerClass>PoniesOfTheRim.ThoughtWorker_LeatherApparel</workerClass>
+			<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_LeatherApparel</workerClass>
 		</value>
 	</Operation>
 

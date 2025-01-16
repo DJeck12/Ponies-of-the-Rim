@@ -6,7 +6,6 @@
 			<li>Ideology</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/PreceptDef[defName="Execution_Abhorrent"
@@ -17,8 +16,8 @@
 						<li>Pony_Friendship</li>
 					</value>
 				</li>
+
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>/Defs/PreceptDef[defName="Skullspike_Desired"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/PreceptDef[defName="Skullspike_Desired"]</xpath>
@@ -35,8 +34,8 @@
 						</value>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
 					<xpath>/Defs/PreceptDef[defName="Raiding_Respected"
 					or defName="Raiding_Required"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">

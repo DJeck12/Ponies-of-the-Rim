@@ -1,6 +1,0 @@
-P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.csproj.AssemblyReference.cache
-P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.csproj.CoreCompileInputs.cache
-P:\Ponies of the Rim\Ponies of the Rim\bin\Release\Ponies of the Rim.dll
-P:\Ponies of the Rim\Ponies of the Rim\bin\Release\Ponies of the Rim.pdb
-P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.dll
-P:\Ponies of the Rim\Ponies of the Rim\obj\Release\Ponies of the Rim.pdb

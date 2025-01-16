@@ -36,7 +36,7 @@
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Abhorrent</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
 		<stages>
 			<li>
 				<label>hatred for unicorns</label>
@@ -51,7 +51,7 @@
 					<li>HAR_AlienRaces_Abhorrent</li>
 				</removeThoughtsWhenAdded>
 			</li>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -60,7 +60,7 @@
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Abhorrent_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>disgusting unicorn!</label>
@@ -74,7 +74,7 @@
 					<li>HAR_AlienRaces_Abhorrent_Social</li>
 				</removeThoughtsWhenAdded>
 			</li>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -99,7 +99,7 @@
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Horrible_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>distrust for unicorns</label>
@@ -113,7 +113,7 @@
 					<li>HAR_AlienRaces_Horrible_Social</li>
 				</removeThoughtsWhenAdded>
 			</li>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -143,7 +143,7 @@
 
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Stricted</defName>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_StrictRaces</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
@@ -153,7 +153,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -162,7 +162,7 @@
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Stricted_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_StrictRaces_Social</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces_Social</workerClass>
 		<stages>
 			<li>
 				<label>not an unicorn</label>
@@ -170,7 +170,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -188,6 +188,8 @@
 		<conflictingMemes>
 			<li>Pony_EarthponySupremacist</li>
 			<li>Pony_PegasusSupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
@@ -199,7 +201,7 @@
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Respected_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>respect for unicorns</label>
@@ -213,7 +215,7 @@
 					<li>HAR_AlienRaces_Respected_Social</li>
 				</removeThoughtsWhenAdded>
 			</li>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -231,6 +233,8 @@
 		<conflictingMemes>
 			<li>Pony_EarthponySupremacist</li>
 			<li>Pony_PegasusSupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
@@ -244,7 +248,7 @@
 
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Exalted</defName>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
@@ -260,7 +264,7 @@
 					<li>HAR_AlienRaces_Exalted</li>
 				</removeThoughtsWhenAdded>
 			</li>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>
@@ -269,7 +273,7 @@
 	<ThoughtDef>
 		<defName>Pony_Unicorn_Exalted_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Races_Social</workerClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
 				<label>amazing unicorn!</label>
@@ -283,7 +287,7 @@
 					<li>HAR_AlienRaces_Exalted_Social</li>
 				</removeThoughtsWhenAdded>
 			</li>
-			<li Class="PoniesOfTheRim.ThoughtExtension">
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
 				<race>Pony_Unicorn</race>
 			</li>
 		</modExtensions>

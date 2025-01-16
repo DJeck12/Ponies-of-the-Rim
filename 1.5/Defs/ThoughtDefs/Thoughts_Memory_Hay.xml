@@ -9,7 +9,7 @@
 		<stages>
 			<li>
 				<label>ate cooked meal with hay</label>
-				<description>I ate a meal cooked with hay. The flavor was so tasteless that I would rather eat fresh grass.</description>
+				<description>I ate a meal cooked with hay. The flavor was so tasteless that I would rather eat grass.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

@@ -12,8 +12,14 @@ namespace PoniesOfTheRim
         public static BodyTypeDef PonyChild;
         public static BodyTypeDef PonyBaby;
 
+        public static BodyDef Pony_EarthponyBody;
+        public static BodyDef Pony_PegasusBody;
+        public static BodyDef Pony_UnicornBody;
+
         public static TraitDef Pony_RelationsForPony;
         public static ThoughtDef Pony_OpinionForPony;
+
+        public static GeneDef Pony_Cutiemark;
 
         //[MayRequireBiotech]
         //public static GeneDef Pony_Herbivore;

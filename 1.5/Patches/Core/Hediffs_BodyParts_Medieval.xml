@@ -1,36 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-	<Operation Class="PatchOperationConditional">
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/HediffDef[defName="WoodenHand"]</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/HediffDef[defName="WoodenHand"]</xpath>
-			<value>
-				<comps>
-					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Modified</prefix>
-						<inBrackets>Pony</inBrackets>
-						<!-- <descriptionExtra>pon</descriptionExtra> -->
-						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
-					</li>
-				</comps>
-			</value>
-		</match>
+		<value>
+			<comps>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<descriptionExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</descriptionExtra>
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</comps>
+		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/HediffDef[defName="WoodenFoot"]</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/HediffDef[defName="WoodenFoot"]</xpath>
-			<value>
-				<comps>
-					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-						<prefix>Modified</prefix>
-						<inBrackets>Pony</inBrackets>
-						<!-- <descriptionExtra>pon</descriptionExtra> -->
-						<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
-					</li>
-				</comps>
-			</value>
-		</match>
+		<value>
+			<comps>
+				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+					<prefix>Modified</prefix>
+					<inBrackets>Pony</inBrackets>
+					<descriptionExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</descriptionExtra>
+					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
+				</li>
+			</comps>
+		</value>
 	</Operation>
+
 </Patch>

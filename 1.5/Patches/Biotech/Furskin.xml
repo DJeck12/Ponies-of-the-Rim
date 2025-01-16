@@ -6,7 +6,6 @@
 			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FurDef[defName="Furskin"]/bodyTypeGraphicPaths</xpath>

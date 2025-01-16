@@ -12,15 +12,15 @@ namespace PoniesOfTheRim
         }
         internal static bool IsEarthpony(this Pawn pawn)
         {
-            return pawn.kindDef.race.defName.Contains("Pony_Earthpony");
+            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_EarthponyBody;
         }
         internal static bool IsUnicorn(this Pawn pawn)
         {
-            return pawn.kindDef.race.defName.Contains("Pony_Unicorn");
+            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_UnicornBody;
         }
         internal static bool IsPegasus(this Pawn pawn)
         {
-            return pawn.kindDef.race.defName.Contains("Pony_Pegasus");
+            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_PegasusBody;
         }
 
         public static void PlaceHoofprint(Vector3 loc, Map map, float rot)

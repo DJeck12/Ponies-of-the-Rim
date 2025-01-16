@@ -6,8 +6,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/HediffDef[defName="WoundInfection"]/description</xpath>
 		<value>
-			<description>Bacterial infection in a wound. Without treatment, the bacteria will multiply, killing local tissue, and eventually causing blood poisoning and death.
-\nThrough aeons of endless warfare, infections have often taken more lives than the wounds themselves.</description>
+			<description>Bacterial infection in a wound. Without treatment, the bacteria will multiply, killing local tissue, and eventually causing blood poisoning and death.\n\nThrough aeons of endless warfare, infections have often taken more lives than the wounds themselves.</description>
 		</value>
 	</Operation>
 

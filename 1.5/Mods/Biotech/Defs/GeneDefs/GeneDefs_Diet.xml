@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Herbivore</defName>
+		<label>herbivore</label>
+		<description>Carriers of this gene have a strict herbivorous diet. They can't eat and digest meat unless it is cooked in a meal.</description>
+		<iconPath>UI/Genes/Herbivore</iconPath>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+			<li>Food</li>
+			<li>Diet</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Carnivore</defName>
+		<label>carnivore</label>
+		<description>Carriers of this gene have a strict carnivorous diet. They can't eat and digest fruits or vegetables unless they are cooked in a meal.</description>
+		<iconPath>UI/Genes/Carnivore</iconPath>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+			<li>Food</li>
+			<li>Diet</li>
+		</exclusionTags>
+	</GeneDef>
+-->
+</Defs>

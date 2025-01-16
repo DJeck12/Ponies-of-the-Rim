@@ -20,7 +20,6 @@ namespace PoniesOfTheRim
 			    return new Vector2(230f, 500f);
 		    }
 	    }
-        	
         public override string CloseButtonText
 	    {
 		    get
@@ -63,30 +62,10 @@ namespace PoniesOfTheRim
 			    }
                 int sharedIndex = i;
                 DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon,ref sharedIndex, i);
-			    if (pawn.IsEarthpony())
-			    {
-				    if (ModsConfig.BiotechActive)
-				    {
-					    alienComp.addonVariants[4] = selectedIndexAddons;
-				    }
-				    alienComp.addonVariants[3] = selectedIndexAddons;
+			    if (pawn.IsPony())
+                {
+				    alienComp.addonVariants[0] = selectedIndexAddons;
 			    }
-			    if (pawn.IsUnicorn())
-			    {
-				    if (ModsConfig.BiotechActive)
-				    {
-					    alienComp.addonVariants[5] = selectedIndexAddons;
-				    }
-				    alienComp.addonVariants[4] = selectedIndexAddons;
-			    }
-				if (pawn.IsPegasus())
-				{
-					if (ModsConfig.BiotechActive)
-					{
-						alienComp.addonVariants[6] = selectedIndexAddons;
-					}
-					alienComp.addonVariants[5] = selectedIndexAddons;
-				}
             }
             Widgets.EndScrollView();
         }

@@ -149,7 +149,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 
 		<race>
 			<nameGenerator>NameGeneratorEarth</nameGenerator>
-			<body>Pony</body>
+			<body>Pony_EarthponyBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>
