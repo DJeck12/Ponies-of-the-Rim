@@ -1,5 +1,7 @@
 ﻿using AlienRace;
 using HarmonyLib;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace PoniesOfTheRim
@@ -20,26 +22,12 @@ namespace PoniesOfTheRim
 				PonyHairExtension ponyModExtension = pawn.story.hairDef.GetModExtension<PonyHairExtension>();
 				if (pawn.story.hairDef.HasModExtension<PonyHairExtension>())
 				{
-					if (ponyModExtension.shortTail == true)
+					List<int> sharedTailType = new List<int>();
+					foreach (PonyTailType type in ponyModExtension.ponyTailType)
 					{
-						sharedIndex = Rand.Element(ponyModExtension.shortTailPool);
+						sharedTailType.AddRange(type.tailIndex);
 					}
-					if (ponyModExtension.waveyTail == true)
-					{
-						sharedIndex = Rand.Element(ponyModExtension.waveyTailPool);
-					}
-					if (ponyModExtension.curlyTail == true)
-					{
-						sharedIndex = Rand.Element(ponyModExtension.curlyTailPool);
-					}
-					if (ponyModExtension.royalTail == true)
-					{
-						sharedIndex = Rand.Element(ponyModExtension.royalTailPool);
-					}
-					if (ponyModExtension.customPool != null)
-					{
-						sharedIndex = Rand.Element(ponyModExtension.customPool.ToArray());
-					}
+					sharedIndex = Rand.Element(sharedTailType.Distinct().ToArray());
 				}
 			}
 		}
