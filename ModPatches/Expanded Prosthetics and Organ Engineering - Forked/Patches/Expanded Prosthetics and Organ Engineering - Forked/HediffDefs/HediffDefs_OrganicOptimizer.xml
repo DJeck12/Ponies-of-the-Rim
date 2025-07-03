@@ -5,8 +5,8 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/RecipeDef[defName="EPOE_OrganicOptimizing"]/appliedOnFixedBodyParts</xpath>
 			<value>
-				<li>Left_Pony_Wing</li>
-				<li>Right_Pony_Wing</li>
+				<li>Pony_LeftWing</li>
+				<li>Pony_RightWing</li>
 				<li>Pony_Horn</li>
 			</value>
 		</match>
