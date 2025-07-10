@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <AteHayAsIngredient.stages.0.label>吃了干草熟食</AteHayAsIngredient.stages.0.label>
-  <AteHayAsIngredient.stages.0.description>我吃了一顿用干草烹饪的饭菜。味道非常淡，我宁愿吃新鲜的草。</AteHayAsIngredient.stages.0.description>
-
+	<AteHayAsIngredient.stages.ate_cooked_meal_with_hay.label>吃了干草熟食</AteHayAsIngredient.stages.ate_cooked_meal_with_hay.label>
+	<AteHayAsIngredient.stages.ate_cooked_meal_with_hay.description>我吃了一顿用干草烹饪的饭菜。味道非常淡，我宁愿吃新鲜的草。</AteHayAsIngredient.stages.ate_cooked_meal_with_hay.description>
 
 </LanguageData>

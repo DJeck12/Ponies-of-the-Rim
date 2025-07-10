@@ -1,17 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <Pony_Pegasus.label>飞马</Pony_Pegasus.label>
-  <Pony_Pegasus.description>小马是来自魔法大陆的神奇四足生物。它们的血统非常复杂，分为许多亚种，彼此之间有不同程度的相似之处。和谐与互助是小马生活中的主要原则。然而，严酷的外太空环境压制了这个种族的一部分。为了生存，他们放弃了理想，走上了掠夺、奴役和劫掠的道路。
+	<Pony_Pegasus.label>天马</Pony_Pegasus.label>
+	<Pony_Pegasus.description>小马是来自Foenum星球的魔法四足生物。它们分为许多亚种，血统非常复杂，亚种之间有不同程度的相似之处。和谐与互助曾是小马们的主要原则。但严酷的太空环境迫使这个种族为了生存，放弃了理想，走上了掠夺、奴役和劫掠的道路。
 
-独特的小马身体使它们与其他人类种族区分开来。然而，这些生物已经学会适应任何服装和假肢以适应自己。它们像其他生物使用手一样熟练地使用前蹄。在它们的背部有着标志性的图案——这些图案显示出它们的兴趣、爱好或职业。大多数小马物种是草食动物，可以毫无惩罚地食用干草。
+在类人种族中，它们有独特的小马身体。不过，它们也会用服装和假肢改造自己。它们的前蹄代替了其他生物的手。而在腰部两侧的是它们的可爱标志——这是一种通常与小马性格，癖好与天赋有着直接或间接关联的符号。大部分小马种族都是食草种族，它们食用干草不会受到心情惩罚。
 
-&lt;color=#46FFFF&gt;飞马&lt;/color&gt; 与其他小马不同，它们背上有一对翅膀，以及更厚实的毛皮，适合在高海拔飞行。作为天生的竞赛者，飞马总是喜欢与其他人竞争，这也是为什么它们后来被认为是最具敌意的小马种族。尽管如此，大多数飞马仍然愿意与其他小马和平共处，并利用它们的飞行能力来帮助他人。</Pony_Pegasus.description>
-  <Pony_Pegasus.tools.0.label>左前蹄</Pony_Pegasus.tools.0.label>
-  <Pony_Pegasus.tools.1.label>右前蹄</Pony_Pegasus.tools.1.label>
-  <Pony_Pegasus.tools.2.label>后腿</Pony_Pegasus.tools.2.label>
-  <Pony_Pegasus.tools.3.label>牙齿</Pony_Pegasus.tools.3.label>
-  <Pony_Pegasus.tools.4.label>头</Pony_Pegasus.tools.4.label>
+与其他小马不同，<color=#46FFFF>天马</color>背上有一对翅膀，还有为了在高海拔飞行更厚实的皮毛。天马是天生的竞赛者，总是喜欢和其他小马竞争，使它们被认为是最具敌意的小马种族。尽管如此，大多数天马仍然愿意与其他小马和平共处，并利用它们的飞行能力帮助其他小马。</Pony_Pegasus.description>
+	<Pony_Pegasus.tools.0.label>左前蹄</Pony_Pegasus.tools.0.label>
+	<Pony_Pegasus.tools.front_left_hoof.labelNoLocation>蹄子</Pony_Pegasus.tools.front_left_hoof.labelNoLocation>
+	<Pony_Pegasus.tools.1.label>右前蹄</Pony_Pegasus.tools.1.label>
+	<Pony_Pegasus.tools.front_right_hoof.labelNoLocation>蹄子</Pony_Pegasus.tools.front_right_hoof.labelNoLocation>
+	<Pony_Pegasus.tools.2.label>后蹄</Pony_Pegasus.tools.2.label>
+	<Pony_Pegasus.tools.3.label>牙</Pony_Pegasus.tools.3.label>
+	<Pony_Pegasus.tools.4.label>头</Pony_Pegasus.tools.4.label>
+	<Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.conditions.1.bodyPartLabel>右翼</Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.0.conditions.1.bodyPartLabel>
+	<Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.conditions.1.bodyPartLabel>左翼</Pony_Pegasus.alienRace.generalSettings.alienPartGenerator.bodyAddons.1.conditions.1.bodyPartLabel>
 
 
 </LanguageData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_RelationsForPony.degreeDatas.pony_lover.label>迷恋小马</Pony_RelationsForPony.degreeDatas.pony_lover.label>
+	<Pony_RelationsForPony.degreeDatas.pony_lover.description>[PAWN_nameDef]觉得小马很有魅力，也很有趣。它们的魔法般的天性让[PAWN_objective]着迷，[PAWN_pronoun]不介意离它们再近一点。</Pony_RelationsForPony.degreeDatas.pony_lover.description>
+	<Pony_RelationsForPony.degreeDatas.pony_hater.label>厌恶小马</Pony_RelationsForPony.degreeDatas.pony_hater.label>
+	<Pony_RelationsForPony.degreeDatas.pony_hater.description>[PAWN_nameDef]讨厌小马。{PAWN_pronoun}认为它们友好过度，令人生疑，没有理由相信它们。</Pony_RelationsForPony.degreeDatas.pony_hater.description>
+
+	<Pony_RelationsForEarth.degreeDatas.earthlike_lover.label>迷恋陆马</Pony_RelationsForEarth.degreeDatas.earthlike_lover.label>
+	<Pony_RelationsForEarth.degreeDatas.earthlike_lover.description>[PAWN_nameDef]相信陆马是所有小马种族的祖先，十分尊重它们。[PAWN_pronoun]很想与它们建立联系，成为朋友。</Pony_RelationsForEarth.degreeDatas.earthlike_lover.description>
+	<Pony_RelationsForEarth.degreeDatas.earthlike_hater.label>厌恶陆马</Pony_RelationsForEarth.degreeDatas.earthlike_hater.label>
+	<Pony_RelationsForEarth.degreeDatas.earthlike_hater.description>陆马魔法是异端邪说！[PAWN_nameDef]对所有没有角和翅膀的小马都抱有强烈的敌意。[PAWN_pronoun]认为它们是劣等种族。</Pony_RelationsForEarth.degreeDatas.earthlike_hater.description>
+
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.label>迷恋天马</Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.label>
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.description>[PAWN_nameDef]一直钦佩天马飞行的美妙。[PAWN_pronoun]觉得它们优雅动人，想离它们再近一点。</Pony_RelationsForPegasus.degreeDatas.winged_pony_lover.description>
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.label>厌恶天马</Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.label>
+	<Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.description>[PAWN_nameDef]认为天马的历史令人恐惧，[PAWN_pronoun]永远不会原谅它们祖先的恶行。[PAWN_pronoun]一直在寻找对抗它们的办法。</Pony_RelationsForPegasus.degreeDatas.winged_pony_hater.description>
+
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.label>迷恋独角兽</Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.label>
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.description>[PAWN_nameDef]被独角兽的魔力迷住了。[PAWN_pronoun]渴望接近它们，向它们询问更多关于魔法的知识。</Pony_RelationsForUnicorn.degreeDatas.horned_pony_lover.description>
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.label>厌恶独角兽</Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.label>
+	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.description>[PAWN_nameDef]认为独角兽很危险，不信任这个种族。[PAWN_pronoun]认为它们的魔法就是定时炸弹。</Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.description>
+
+</LanguageData>

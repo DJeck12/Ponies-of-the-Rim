@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <NatureMuse.label>自然之力</NatureMuse.label>
-  <NatureMuse.description>一种自然的力量，使身体充满能量，以提高工作速度。</NatureMuse.description>
-
+	<NatureMuse.label>自然之力</NatureMuse.label>
+	<NatureMuse.description>自然的力量身体充满能量，提高工作速度。</NatureMuse.description>
 
 </LanguageData>

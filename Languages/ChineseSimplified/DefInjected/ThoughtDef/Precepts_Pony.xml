@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Everypony_Abhorrent.stages.hatred_for_ponies.label>讨厌的小马</Pony_Everypony_Abhorrent.stages.hatred_for_ponies.label>
+	<Pony_Everypony_Abhorrent.stages.hatred_for_ponies.description>小马绝对令人厌恶，不能让它们骗了我们。</Pony_Everypony_Abhorrent.stages.hatred_for_ponies.description>
+	<Pony_Everypony_Abhorrent_Social.stages.disgusting_pony.label>恶心的小马！</Pony_Everypony_Abhorrent_Social.stages.disgusting_pony.label>
+	<Pony_Everypony_Horrible_Social.stages.distrust_for_ponies.label>不可信的小马</Pony_Everypony_Horrible_Social.stages.distrust_for_ponies.label>
+	<Pony_Everypony_Respected_Social.stages.respect_for_ponies.label>敬重小马</Pony_Everypony_Respected_Social.stages.respect_for_ponies.label>
+	<Pony_Everypony_Exalted.stages.love_for_ponies.label>喜爱小马</Pony_Everypony_Exalted.stages.love_for_ponies.label>
+	<Pony_Everypony_Exalted.stages.love_for_ponies.description>和小马们一起生活让我更开心了。</Pony_Everypony_Exalted.stages.love_for_ponies.description>
+	<Pony_Everypony_Exalted_Social.stages.amazing_pony.label>完美的小马！</Pony_Everypony_Exalted_Social.stages.amazing_pony.label>
+
+	<Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.label>讨厌的陆马</Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.label>
+	<Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.description>陆马绝对令人厌恶，不能让它们骗了我们。</Pony_Earthpony_Abhorrent.stages.hatred_for_earthponies.description>
+	<Pony_Earthpony_Abhorrent_Social.stages.disgusting_earthpony.label>恶心的陆马！</Pony_Earthpony_Abhorrent_Social.stages.disgusting_earthpony.label>
+	<Pony_Earthpony_Horrible_Social.stages.distrust_for_earthponies.label>不可信的陆马</Pony_Earthpony_Horrible_Social.stages.distrust_for_earthponies.label>
+	<Pony_Earthpony_Stricted.stages.other_races_among_us.label>有非陆马</Pony_Earthpony_Stricted.stages.other_races_among_us.label>
+	<Pony_Earthpony_Stricted.stages.other_races_among_us.description>我们和不是陆马的其他种族一起生活，我们应该把它们赶走或者做掉。</Pony_Earthpony_Stricted.stages.other_races_among_us.description>
+	<Pony_Earthpony_Stricted_Social.stages.not_an_earthpony.label>不是陆马</Pony_Earthpony_Stricted_Social.stages.not_an_earthpony.label>
+	<Pony_Earthpony_Respected_Social.stages.respect_for_earthponies.label>敬重陆马</Pony_Earthpony_Respected_Social.stages.respect_for_earthponies.label>
+	<Pony_Earthpony_Exalted.stages.love_for_earthponies.label>喜爱陆马</Pony_Earthpony_Exalted.stages.love_for_earthponies.label>
+	<Pony_Earthpony_Exalted.stages.love_for_earthponies.description>和陆马们一起生活让我更开心了。</Pony_Earthpony_Exalted.stages.love_for_earthponies.description>
+	<Pony_Earthpony_Exalted_Social.stages.amazing_earthpony.label>完美的陆马！</Pony_Earthpony_Exalted_Social.stages.amazing_earthpony.label>
+
+	<Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.label>讨厌的天马</Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.label>
+	<Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.description>天马绝对令人厌恶，不能让它们骗了我们。</Pony_Pegasus_Abhorrent.stages.hatred_for_pegasi.description>
+	<Pony_Pegasus_Abhorrent_Social.stages.disgusting_pegasus.label>恶心的天马！</Pony_Pegasus_Abhorrent_Social.stages.disgusting_pegasus.label>
+	<Pony_Pegasus_Horrible_Social.stages.distrust_for_pegasi.label>不可信的天马</Pony_Pegasus_Horrible_Social.stages.distrust_for_pegasi.label>
+	<Pony_Pegasus_Stricted.stages.other_races_among_us.label>有非天马</Pony_Pegasus_Stricted.stages.other_races_among_us.label>
+	<Pony_Pegasus_Stricted.stages.other_races_among_us.description>我们和不是天马的其他种族一起生活，我们应该把它们赶走或者做掉。</Pony_Pegasus_Stricted.stages.other_races_among_us.description>
+	<Pony_Pegasus_Stricted_Social.stages.not_a_pegasus.label>不是天马</Pony_Pegasus_Stricted_Social.stages.not_a_pegasus.label>
+	<Pony_Pegasus_Respected_Social.stages.respect_for_pegasi.label>敬重天马</Pony_Pegasus_Respected_Social.stages.respect_for_pegasi.label>
+	<Pony_Pegasus_Exalted.stages.love_for_pegasi.label>喜爱天马</Pony_Pegasus_Exalted.stages.love_for_pegasi.label>
+	<Pony_Pegasus_Exalted.stages.love_for_pegasi.description>和天马们一起生活让我更开心了。</Pony_Pegasus_Exalted.stages.love_for_pegasi.description>
+	<Pony_Pegasus_Exalted_Social.stages.amazing_pegasus.label>完美的天马！</Pony_Pegasus_Exalted_Social.stages.amazing_pegasus.label>
+
+	<Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.label>讨厌的独角兽</Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.label>
+	<Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.description>独角兽绝对令人厌恶，不能让它们骗了我们。</Pony_Unicorn_Abhorrent.stages.hatred_for_unicorns.description>
+	<Pony_Unicorn_Abhorrent_Social.stages.disgusting_unicorn.label>恶心的独角兽！</Pony_Unicorn_Abhorrent_Social.stages.disgusting_unicorn.label>
+	<Pony_Unicorn_Horrible_Social.stages.distrust_for_unicorns.label>不可信的独角兽</Pony_Unicorn_Horrible_Social.stages.distrust_for_unicorns.label>
+	<Pony_Unicorn_Stricted.stages.other_races_among_us.label>有非独角兽</Pony_Unicorn_Stricted.stages.other_races_among_us.label>
+	<Pony_Unicorn_Stricted.stages.other_races_among_us.description>我们和不是独角兽的其他种族一起生活，我们应该把它们赶走或者做掉。</Pony_Unicorn_Stricted.stages.other_races_among_us.description>
+	<Pony_Unicorn_Stricted_Social.stages.not_an_unicorn.label>不是独角兽</Pony_Unicorn_Stricted_Social.stages.not_an_unicorn.label>
+	<Pony_Unicorn_Respected_Social.stages.respect_for_unicorns.label>敬重独角兽</Pony_Unicorn_Respected_Social.stages.respect_for_unicorns.label>
+	<Pony_Unicorn_Exalted.stages.love_for_unicorns.label>喜爱独角兽</Pony_Unicorn_Exalted.stages.love_for_unicorns.label>
+	<Pony_Unicorn_Exalted.stages.love_for_unicorns.description>和独角兽们一起生活让我更开心了。</Pony_Unicorn_Exalted.stages.love_for_unicorns.description>
+	<Pony_Unicorn_Exalted_Social.stages.amazing_unicorn.label>完美的独角兽！</Pony_Unicorn_Exalted_Social.stages.amazing_unicorn.label>
+
+</LanguageData>

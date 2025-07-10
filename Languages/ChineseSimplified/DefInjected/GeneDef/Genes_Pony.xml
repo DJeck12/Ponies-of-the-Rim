@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_PonyHead.label>小马头</Pony_PonyHead.label>
+	<Pony_PonyHead.description>这种基因的携带者有着像小马的头。</Pony_PonyHead.description>
+
+	<Pony_PonyEars.label>小马耳朵</Pony_PonyEars.label>
+	<Pony_PonyEars.description>这种基因的携带者有着像小马的耳朵。</Pony_PonyEars.description>
+
+	<Pony_PonyTail.label>小马尾巴</Pony_PonyTail.label>
+	<Pony_PonyTail.description>这种基因的携带者长出了毛茸茸的小马尾巴。</Pony_PonyTail.description>
+
+	<Pony_Cutiemark.label>可爱标志</Pony_Cutiemark.label>
+	<Pony_Cutiemark.description>这种基因的携带者会获得自己的可爱标志。</Pony_Cutiemark.description>
+
+	<Pony_ColorfulSkin.label>彩色皮肤</Pony_ColorfulSkin.label>
+	<Pony_ColorfulSkin.description>这种基因的携带者会拥有小马一样多彩的皮肤。</Pony_ColorfulSkin.description>
+
+	<Pony_ColorfulHair.label>彩色头发</Pony_ColorfulHair.label>
+	<Pony_ColorfulHair.description>这种基因的携带者会拥有小马一样多彩的皮肤。</Pony_ColorfulHair.description>
+
+	<Pony_VoiceHorse.label>小马叫声</Pony_VoiceHorse.label>
+	<Pony_VoiceHorse.description>这种基因的携带者发出的声音和小马一样。</Pony_VoiceHorse.description>
+	<Pony_VoiceHorse.symbolPack.prefixSymbols.0.symbol>嘶鸣</Pony_VoiceHorse.symbolPack.prefixSymbols.0.symbol>
+	<Pony_VoiceHorse.symbolPack.prefixSymbols.1.symbol>咴咴</Pony_VoiceHorse.symbolPack.prefixSymbols.1.symbol>
+	<Pony_VoiceHorse.symbolPack.suffixSymbols.0.symbol>小马</Pony_VoiceHorse.symbolPack.suffixSymbols.0.symbol>
+	<Pony_VoiceHorse.symbolPack.suffixSymbols.1.symbol>马</Pony_VoiceHorse.symbolPack.suffixSymbols.1.symbol>
+
+	<Pony_PonyMagic.label>小马魔法</Pony_PonyMagic.label>
+	<Pony_PonyMagic.description>这种基因的携带者会随机获得陆马，天马或独角兽之一的魔法。对小马无效。</Pony_PonyMagic.description>
+
+	<Pony_NaturePower.label>自然之力</Pony_NaturePower.label>
+	<Pony_NaturePower.description>这种基因的携带者拥有陆马的自然力量，可以增加工作速度。对小马无效。</Pony_NaturePower.description>
+
+	<Pony_PegasusWings.label>天马翅膀</Pony_PegasusWings.label>
+	<Pony_PegasusWings.description>这种基因的携带者会在背上长出类似天马的翅膀，获得短距飞行能力。对小马无效。</Pony_PegasusWings.description>
+
+	<Pony_UnicornHorn.label>独角</Pony_UnicornHorn.label>
+	<Pony_UnicornHorn.description>这种基因的携带者前额中央会长出独角，赋予他们使用魔法的能力。对小马无效。</Pony_UnicornHorn.description>
+
+	<Pony_HorseHooves.label>小马蹄子</Pony_HorseHooves.label>
+	<Pony_HorseHooves.description>这种基因的携带者的四肢会变成马蹄。这降低了他们的操作能力，但略微提升了速度。</Pony_HorseHooves.description>
+	<Pony_HorseHooves.symbolPack.prefixSymbols.0.symbol>嘶鸣</Pony_HorseHooves.symbolPack.prefixSymbols.0.symbol>
+	<Pony_HorseHooves.symbolPack.prefixSymbols.1.symbol>咴咴</Pony_HorseHooves.symbolPack.prefixSymbols.1.symbol>
+	<Pony_HorseHooves.symbolPack.suffixSymbols.0.symbol>小马</Pony_HorseHooves.symbolPack.suffixSymbols.0.symbol>
+	<Pony_HorseHooves.symbolPack.suffixSymbols.1.symbol>马</Pony_HorseHooves.symbolPack.suffixSymbols.1.symbol>
+	<Pony_HorseHooves.symbolPack.suffixSymbols.2.symbol>蹄</Pony_HorseHooves.symbolPack.suffixSymbols.2.symbol>
+	<Pony_HorseHooves.symbolPack.wholeNameSymbols.0.symbol>带蹄的</Pony_HorseHooves.symbolPack.wholeNameSymbols.0.symbol>
+
+	<Pony_StrongBody.label>强健体格</Pony_StrongBody.label>
+	<Pony_StrongBody.description>这种基因的携带者体格强健，疼痛休克阈值和免疫力均有提升。这是陆马的特点。</Pony_StrongBody.description>
+	<Pony_StrongBody.symbolPack.prefixSymbols.0.symbol>嘶鸣</Pony_StrongBody.symbolPack.prefixSymbols.0.symbol>
+	<Pony_StrongBody.symbolPack.prefixSymbols.1.symbol>咴咴</Pony_StrongBody.symbolPack.prefixSymbols.1.symbol>
+	<Pony_StrongBody.symbolPack.prefixSymbols.2.symbol>陆马</Pony_StrongBody.symbolPack.prefixSymbols.2.symbol>
+	<Pony_StrongBody.symbolPack.suffixSymbols.0.symbol>小马</Pony_StrongBody.symbolPack.suffixSymbols.0.symbol>
+	<Pony_StrongBody.symbolPack.suffixSymbols.1.symbol>马</Pony_StrongBody.symbolPack.suffixSymbols.1.symbol>
+
+	<Pony_CoatFluff.label>蓬松皮毛</Pony_CoatFluff.label>
+	<Pony_CoatFluff.description>这种基因的携带者会长出一层蓬松的皮毛，对温度的耐受略微增强。这是天马的特点。</Pony_CoatFluff.description>
+	<Pony_CoatFluff.symbolPack.prefixSymbols.0.symbol>嘶鸣</Pony_CoatFluff.symbolPack.prefixSymbols.0.symbol>
+	<Pony_CoatFluff.symbolPack.prefixSymbols.1.symbol>咴咴</Pony_CoatFluff.symbolPack.prefixSymbols.1.symbol>
+	<Pony_CoatFluff.symbolPack.prefixSymbols.2.symbol>天马</Pony_CoatFluff.symbolPack.prefixSymbols.2.symbol>
+	<Pony_CoatFluff.symbolPack.suffixSymbols.0.symbol>小马</Pony_CoatFluff.symbolPack.suffixSymbols.0.symbol>
+	<Pony_CoatFluff.symbolPack.suffixSymbols.1.symbol>马</Pony_CoatFluff.symbolPack.suffixSymbols.1.symbol>
+
+	<Pony_MagicImbued.label>魔力充盈</Pony_MagicImbued.label>
+	<Pony_MagicImbued.description>这种基因的携带者可以感到与魔法的联系，拥有魔法能力。这是独角兽的特点。</Pony_MagicImbued.description>
+	<Pony_MagicImbued.symbolPack.prefixSymbols.0.symbol>嘶鸣</Pony_MagicImbued.symbolPack.prefixSymbols.0.symbol>
+	<Pony_MagicImbued.symbolPack.prefixSymbols.1.symbol>咴咴</Pony_MagicImbued.symbolPack.prefixSymbols.1.symbol>
+	<Pony_MagicImbued.symbolPack.prefixSymbols.2.symbol>独角兽</Pony_MagicImbued.symbolPack.prefixSymbols.2.symbol>
+	<Pony_MagicImbued.symbolPack.suffixSymbols.0.symbol>小马</Pony_MagicImbued.symbolPack.suffixSymbols.0.symbol>
+	<Pony_MagicImbued.symbolPack.suffixSymbols.1.symbol>马</Pony_MagicImbued.symbolPack.suffixSymbols.1.symbol>
+	<Pony_MagicImbued.symbolPack.suffixSymbols.2.symbol>角</Pony_MagicImbued.symbolPack.suffixSymbols.2.symbol>
+</LanguageData>

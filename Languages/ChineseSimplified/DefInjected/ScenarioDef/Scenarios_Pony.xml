@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <Pony_Expedition.label>小马利亚探险</Pony_Expedition.label>
-  <Pony_Expedition.description>小马利亚是你的家园，是小马和其他神奇生物的国度。作为一项重要任务的一部分，你的团队被派往银河系边缘的一个被遗忘的星球。在进入它的轨道并准备降落时，你听到了一声巨大的爆炸和船舱内金属的摩擦声。在评估了飞船舱室的紧急情况后，又无法与船长联系，你决定使用逃生舱，紧急离开飞船。这就是你的冒险开始的方式。</Pony_Expedition.description>
-  <Pony_Expedition.scenario.name>小马利亚探险</Pony_Expedition.scenario.name>
-  <Pony_Expedition.scenario.summary>四匹小马冒险家，每匹都来自不同的种族。角色扮演的理想选择.</Pony_Expedition.scenario.summary>
-  <Pony_Expedition.scenario.description>小马利亚是你的家园，是小马和其他神奇生物的国度。作为一项重要任务的一部分，你的团队被派往银河系边缘的一个被遗忘的星球。在进入它的轨道并准备降落时，你听到了一声巨大的爆炸和船舱内金属的摩擦声。在评估了飞船舱室的紧急情况后，又无法与船长联系，你决定使用逃生舱，紧急离开飞船。这就是你的冒险开始的方式.</Pony_Expedition.scenario.description>
-  <Pony_Expedition.scenario.parts.21.text>小马利亚是你的家园，是小马和其他神奇生物的国度。作为一项重要任务的一部分，你的团队被派往银河系边缘的一个被遗忘的星球。在进入它的轨道并准备降落时，你听到了一声巨大的爆炸和船舱内金属的摩擦声。在评估了飞船舱室的紧急情况后，又无法与船长联系，你决定使用逃生舱，紧急离开飞船。这就是你的冒险开始的方式.</Pony_Expedition.scenario.parts.21.text>
-
+	<Pony_Expedition.label>来自小马国的探险队</Pony_Expedition.label>
+	<Pony_Expedition.description>小马国——你的故乡，小马和其他魔法生物的国度。你的团队被分配了一项重要任务，前往银河系边缘一颗被遗忘的星球。当你进入轨道并准备降落时，你听到指令舱传来一声巨响，伴随金属摩擦声。由于无法联系领航员，紧急评估舱室情况后，你决定使用逃生舱紧急撤离。你的冒险就此开始。</Pony_Expedition.description>
+	<Pony_Expedition.scenario.description>小马国——你的故乡，小马和其他魔法生物的国度。你的团队被分配了一项重要任务，前往银河系边缘一颗被遗忘的星球。当你进入轨道并准备降落时，你听到指令舱传来一声巨响，伴随金属摩擦声。由于无法联系领航员，紧急评估舱室情况后，你决定使用逃生舱紧急撤离。你的冒险就此开始。</Pony_Expedition.scenario.description>
+	<Pony_Expedition.scenario.name>来自小马国的探险队</Pony_Expedition.scenario.name>
+	<Pony_Expedition.scenario.summary>四只小马探险者</Pony_Expedition.scenario.summary>
+	<Pony_Expedition.scenario.parts.ConfigPage_ConfigureStartingPawns.customSummary>四只小马探险者</Pony_Expedition.scenario.parts.ConfigPage_ConfigureStartingPawns.customSummary>
+	<Pony_Expedition.scenario.parts.GameStartDialog.text>小马国——你的故乡，小马和其他魔法生物的国度。你的团队被分配了一项重要任务，前往银河系边缘一颗被遗忘的星球。当你进入轨道并准备降落时，你听到指令舱传来一声巨响，伴随金属摩擦声。由于无法联系领航员，紧急评估舱室情况后，你决定使用逃生舱紧急撤离。你的冒险就此开始。</Pony_Expedition.scenario.parts.GameStartDialog.text>
 
 </LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MagicWound.label>魔法灼伤</MagicWound.label>
+	<MagicWound.description>魔法灼伤。</MagicWound.description>
+	<MagicWound.comps.HediffComp_GetsPermanent.permanentLabel>永久性灼伤</MagicWound.comps.HediffComp_GetsPermanent.permanentLabel>
+	<MagicWound.injuryProps.destroyedLabel>被烧毁</MagicWound.injuryProps.destroyedLabel>
+	<MagicWound.injuryProps.destroyedOutLabel>被烧掉</MagicWound.injuryProps.destroyedOutLabel>
+	<MagicWound.labelNoun>魔法灼伤</MagicWound.labelNoun>
+	<MagicWound.labelNounPretty>{1}中的{0}</MagicWound.labelNounPretty>
+
+</LanguageData>

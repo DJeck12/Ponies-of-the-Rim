@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_OpinionForPony.stages.pony-0.label>这是小马</Pony_OpinionForPony.stages.pony-0.label>
+	<Pony_OpinionForPony.stages.pony-1.label>这是小马</Pony_OpinionForPony.stages.pony-1.label>
+
+	<Pony_OpinionForEarth.stages.earthy-0.label>泥土味</Pony_OpinionForEarth.stages.earthy-0.label>
+	<Pony_OpinionForEarth.stages.earthy-1.label>泥土味</Pony_OpinionForEarth.stages.earthy-1.label>
+
+	<Pony_OpinionForPegasus.stages.have_wings-0.label>长了翅膀</Pony_OpinionForPegasus.stages.have_wings-0.label>
+	<Pony_OpinionForPegasus.stages.have_wings-1.label>长了翅膀</Pony_OpinionForPegasus.stages.have_wings-1.label>
+
+	<Pony_OpinionForUnicorn.stages.have_a_horn-0.label>长了角</Pony_OpinionForUnicorn.stages.have_a_horn-0.label>
+	<Pony_OpinionForUnicorn.stages.have_a_horn-1.label>长了角</Pony_OpinionForUnicorn.stages.have_a_horn-1.label>
+
+</LanguageData>
