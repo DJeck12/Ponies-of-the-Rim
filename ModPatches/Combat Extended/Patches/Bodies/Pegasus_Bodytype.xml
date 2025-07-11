@@ -37,13 +37,13 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[def="Left_Pony_Wing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[def="Pony_LeftWing"]/groups</xpath>
 					<value>
 						<li>CoveredByNaturalArmor</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[def="Right_Pony_Wing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="Pegasus"]/corePart/parts/li[def="Pony_RightWing"]/groups</xpath>
 					<value>
 						<li>CoveredByNaturalArmor</li>
 					</value>
