@@ -36,7 +36,7 @@
 	<ThoughtDef>
 		<defName>Pony_Everypony_Abhorrent</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pony</workerClass>
 		<stages>
 			<li>
 				<label>hatred for ponies</label>
@@ -45,7 +45,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="VFECore.ThoughtExtensions">
+			<li Class="VEF.Pawns.ThoughtExtensions">
 				<removeThoughtsWhenAdded>
 					<li>HAR_AlienRaces_Abhorrent</li>
 				</removeThoughtsWhenAdded>
@@ -56,7 +56,7 @@
 	<ThoughtDef>
 		<defName>Pony_Everypony_Abhorrent_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pony_Social</workerClass>
 		<stages>
 			<li>
 				<label>disgusting pony!</label>
@@ -64,7 +64,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="VFECore.ThoughtExtensions">
+			<li Class="VEF.Pawns.ThoughtExtensions">
 				<removeThoughtsWhenAdded>
 					<li>HAR_AlienRaces_Abhorrent_Social</li>
 				</removeThoughtsWhenAdded>
@@ -91,7 +91,7 @@
 	<ThoughtDef>
 		<defName>Pony_Everypony_Horrible_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pony_Social</workerClass>
 		<stages>
 			<li>
 				<label>distrust for ponies</label>
@@ -99,7 +99,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="VFECore.ThoughtExtensions">
+			<li Class="VEF.Pawns.ThoughtExtensions">
 				<removeThoughtsWhenAdded>
 					<li>HAR_AlienRaces_Horrible_Social</li>
 				</removeThoughtsWhenAdded>
@@ -138,7 +138,7 @@
 	<ThoughtDef>
 		<defName>Pony_Everypony_Respected_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pony_Social</workerClass>
 		<stages>
 			<li>
 				<label>respect for ponies</label>
@@ -146,7 +146,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="VFECore.ThoughtExtensions">
+			<li Class="VEF.Pawns.ThoughtExtensions">
 				<removeThoughtsWhenAdded>
 					<li>HAR_AlienRaces_Respected_Social</li>
 				</removeThoughtsWhenAdded>
@@ -175,7 +175,7 @@
 
 	<ThoughtDef>
 		<defName>Pony_Everypony_Exalted</defName>
-		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pony</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
@@ -185,7 +185,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="VFECore.ThoughtExtensions">
+			<li Class="VEF.Pawns.ThoughtExtensions">
 				<removeThoughtsWhenAdded>
 					<li>HAR_AlienRaces_Exalted</li>
 				</removeThoughtsWhenAdded>
@@ -196,7 +196,7 @@
 	<ThoughtDef>
 		<defName>Pony_Everypony_Exalted_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<workerClass>PoniesOfTheRim.ThoughtWorker_Precept_Pony_Social</workerClass>
 		<stages>
 			<li>
 				<label>amazing pony!</label>
@@ -204,7 +204,7 @@
 			</li>
 		</stages>
 		<modExtensions>
-			<li Class="VFECore.ThoughtExtensions">
+			<li Class="VEF.Pawns.ThoughtExtensions">
 				<removeThoughtsWhenAdded>
 					<li>HAR_AlienRaces_Exalted_Social</li>
 				</removeThoughtsWhenAdded>

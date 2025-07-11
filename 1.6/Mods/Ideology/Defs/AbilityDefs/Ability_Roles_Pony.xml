@@ -59,7 +59,7 @@
 				<onlyTargetPrisonersOfColony>true</onlyTargetPrisonersOfColony>
 				<neverTargetIncapacitated>true</neverTargetIncapacitated>
 				<canTargetBuildings>false</canTargetBuildings>
-				<canTargetMutants>false</canTargetMutants>
+				<canTargetSubhumans>false</canTargetSubhumans>
 			</targetParams>
 		</verbProperties>
 		<comps>

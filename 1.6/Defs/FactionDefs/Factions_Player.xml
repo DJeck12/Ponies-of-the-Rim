@@ -37,7 +37,7 @@
 		</thingDefs>
 		</apparelStuffFilter>
 		<modExtensions>
-			<li Class="VFECore.FactionDefExtension">
+			<li Class="VEF.Factions.FactionDefExtension">
 				<strangerInBlackReplacement>Pony_PonyInBlack</strangerInBlackReplacement>
 			</li>
 		</modExtensions>
@@ -92,7 +92,7 @@
 			<li>Tribal</li>
 		</recipePrerequisiteTags>
 		<modExtensions>
-			<li Class="VFECore.FactionDefExtension">
+			<li Class="VEF.Factions.FactionDefExtension">
 				<strangerInBlackReplacement>Pony_WildponyInBlack</strangerInBlackReplacement>
 			</li>
 		</modExtensions>

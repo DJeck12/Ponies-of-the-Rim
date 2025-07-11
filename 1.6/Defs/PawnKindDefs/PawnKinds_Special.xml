@@ -54,9 +54,9 @@
 			<li>Apparel_FlakVest</li>
 			<li>Apparel_CowboyHat</li>
 		</apparelRequired>
-		<apparelColor>(58,58,58)</apparelColor>
+		<apparelColor>(0.2, 0.2, 0.2)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(58,58,58)</favoriteColor>
+		<favoriteColor MayRequire="Ludeon.RimWorld.Ideology">Black</favoriteColor>
 		<initialWillRange>0~0</initialWillRange>
 		<initialResistanceRange>0~2</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
@@ -115,9 +115,9 @@
 			<li>Apparel_TribalA</li>
 			<li>Apparel_TribalHeaddress</li>
 		</apparelRequired>
-		<apparelColor>(58,58,58)</apparelColor>
+		<apparelColor>(0.2, 0.2, 0.2)</apparelColor>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<favoriteColor>(58,58,58)</favoriteColor>
+		<favoriteColor MayRequire="Ludeon.RimWorld.Ideology">Black</favoriteColor>
 		<initialWillRange>0~0</initialWillRange>
 		<initialResistanceRange>0~2</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>
