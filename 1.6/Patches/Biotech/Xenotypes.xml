@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/XenotypeDef[defName="Baseliner"]/description</xpath>
+					<value>
+						<description>A naturally-evolved race with no major significant genetic modifications.</description>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

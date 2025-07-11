@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="BasePony" Abstract="True">
+
+	<!-- Stats -->
+
+		<statBases>
+			<MaxNutrition>1</MaxNutrition>
+			<LeatherAmount>75</LeatherAmount>
+		</statBases>
+	<!-- Alien Settings -->
+
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.35</maleGenderProbability>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Gay</defName>
+						<chance>8</chance>
+						<commonalityMale>50</commonalityMale>
+						<commonalityFemale>100</commonalityFemale>
+					</li>
+				</forcedRaceTraitEntries>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<humanRecipeImport>true</humanRecipeImport>
+			<!-- Xeno Settings -->
+				<notXenophobistTowards>
+					<li>Pony_Earthpony</li>
+					<li>Pony_Unicorn</li>
+					<li>Pony_Pegasus</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</li>
+				</notXenophobistTowards>
+
+				<alienPartGenerator>
+					<headTypes>
+						<li>Male_Pony</li>
+						<li>Female_Pony</li>
+					</headTypes>
+					<headOffsetDirectional>
+						<north>
+						<layerOffset>0.28</layerOffset>
+							<bodyTypes>
+								<Pony>(0, -0.075)</Pony>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.015)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.038)</PonyChild>
+							</bodyTypes>
+						</north>
+						<south>
+							<bodyTypes>
+								<Pony>(0, -0.175)</Pony>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.08)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.12)</PonyChild>
+							</bodyTypes>
+						</south>
+						<east>
+							<bodyTypes>
+								<Pony>(0.125, -0.02)</Pony>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.08, 0.02)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.1, 0.01)</PonyChild>
+							</bodyTypes>
+						</east>
+						<west>
+							<bodyTypes>
+								<Pony>(-0.125, -0.02)</Pony>
+								<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(-0.08, 0.02)</PonyBaby>
+								<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(-0.1, 0.01)</PonyChild>
+							</bodyTypes>
+						</west>
+					</headOffsetDirectional>
+					<bodyTypes>
+						<li>Pony</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<oldHairAgeRange>70.0~90.0</oldHairAgeRange>
+				</alienPartGenerator>
+			</generalSettings>
+		<!-- Thoughts -->
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>AteHayAsIngredient</li>
+					<li>Naked</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Abhorrent_Social</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Horrible_Social</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Respected_Social</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Exalted</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Exalted_Social</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+
+			<raceRestriction>
+			<!-- Apparel -->
+				<apparelList>
+					<li>Pony_SaddleBag</li>
+					<li>Pony_BattleSaddle</li>
+				</apparelList>
+			<!-- Traits -->
+				<blackTraitList>
+					<li>Pony_RelationsForPony</li>
+				</blackTraitList>
+			<!-- Food -->
+				<foodList>
+					<li>Hay</li>
+				</foodList>
+			<!-- Genes -->
+				<blackXenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ponyx</li>
+				</blackXenotypeList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Tail_Furry</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Tail_Smooth</li>
+
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hands_Human</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">ElongatedFingers</li>
+					
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyMagic</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_NaturePower</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PegasusWings</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_UnicornHorn</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>HairColor</li>
+					<li>Head</li>
+					<li>HeadType</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>Jaw</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+
+			<graphicPaths>
+				<apparel>
+					<pathPrefix>Pony/</pathPrefix>
+					<bodyTypeFallback>Pony</bodyTypeFallback>
+					<individualPaths>
+					</individualPaths>
+					<fallbacks>
+					<!-- Override all spacer armor with power armor -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</wornGraphicPath>
+							<apparelTags>
+								<li>SpacerMilitary</li>
+								<li>PrestigeCombatGear</li>
+								<li>Mechlord</li>
+							</apparelTags>
+						</li>
+					<!-- Override all medieval armor with plate armor -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor_Pony</wornGraphicPath>
+							<apparelTags>
+								<li>MedievalMilitary</li>
+							</apparelTags>
+						</li>
+					<!-- Override all neolithic garment with tribal tunic -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/TribalA/TribalA_Pony</wornGraphicPath>
+							<apparelTags>
+								<li>Neolithic</li>
+							</apparelTags>
+							<layers>
+								<li>OnSkin</li>
+							</layers>
+						</li>
+					<!-- Override all head-cover apparel with burka to avoid missing head -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Burka/Burka_Pony</wornGraphicPath>
+							<bodyPartGroups>
+								<li>UpperHead</li>
+								<li>FullHead</li>
+							</bodyPartGroups>
+						</li>
+					<!-- Override all chest apparel with shirt -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Pony</wornGraphicPath>
+							<bodyPartGroups>
+								<li>Torso</li>
+							</bodyPartGroups>
+						</li>
+					<!-- Override all legs apparel with pants -->
+						<li>
+							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Pony</wornGraphicPath>
+							<bodyPartGroups>
+								<li>Legs</li>
+							</bodyPartGroups>
+						</li>
+					<!-- Override everething else with a blank texture -->
+						<li>
+							<wornGraphicPath>Transparent/Transparent</wornGraphicPath>
+						</li>
+					</fallbacks>
+				</apparel>
+			</graphicPaths>
+		</alienRace>
+
+	<!-- Attacks -->
+
+		<tools>
+			<li>
+				<label>front left hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>rear legs</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9.6</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>RearLegs</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+	<!-- Race Settings -->
+
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>80</lifeExpectancy>
+			<bloodDef>Filth_Blood</bloodDef>
+			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
+			<leatherDef>PonyFur</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<renderTree>Humanlike</renderTree>
+			<baseBodySize>0.9</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.9</baseHungerRate>
+			<foodType>VegetarianAnimal</foodType>
+			<gestationPeriodDays>18</gestationPeriodDays>
+			<specificMeatDef>Meat_Pony</specificMeatDef>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<soundCallIntervalRange>2000~5000</soundCallIntervalRange>
+			<canBecomeShambler>true</canBecomeShambler>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>1</anomalyKnowledge>
+			<hasUnnaturalCorpse>true</hasUnnaturalCorpse>
+			<litterSizeCurve>
+				<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyChild</def>
+					<minAge>3</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>PonyPreTeenager</def>
+					<minAge>9</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>PonyAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>3</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+				<DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">13</DarkStudy>
+			</lifeStageWorkSettings>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li> <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li> <!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+				<li>Pony</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">BlissLobotomy</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">GhoulInfusion</li>
+		</recipes>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+				<getsColdContainmentBonus>true</getsColdContainmentBonus>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresImprisonment>true</requiresImprisonment>
+			</li>
+		</comps>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

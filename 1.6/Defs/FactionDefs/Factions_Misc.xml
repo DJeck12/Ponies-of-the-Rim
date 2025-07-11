@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<FactionDef ParentName="OutlanderFactionBase" Name="PonyOutlanderFactionBase" Abstract="True">
+		<categoryTag>PonyOutlander</categoryTag>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.70</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_EarthponyVillager>5</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>5</Pony_PegasusVillager>
+					<Pony_UnicornVillager>5</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">5</Pony_BatponyVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
+					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
+					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
+					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_BatponyGrenadier_Destructive MayRequire="Pony.PoniesOfTheRim.Batponies">1.5</Pony_BatponyGrenadier_Destructive>
+					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
+					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
+					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_BatponyMercenary_Slasher MayRequire="Pony.PoniesOfTheRim.Batponies">7</Pony_BatponyMercenary_Slasher>
+					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
+					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
+					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_BatponyMercenary_Gunner MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Gunner>
+					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
+					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
+					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_BatponyMercenary_Elite MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Elite>
+					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
+					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
+					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+					<Pony_BatponyTown_Councilman MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_EarthponyVillager>20</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>20</Pony_PegasusVillager>
+					<Pony_UnicornVillager>20</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">20</Pony_BatponyVillager>
+					<Pony_EarthponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_EarthponyVillager_Child>
+					<Pony_PegasusVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_PegasusVillager_Child>
+					<Pony_UnicornVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_UnicornVillager_Child>
+					<Pony_BatponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech, Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyVillager_Child>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
+					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
+					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
+					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+					<Pony_BatponyTown_Councilman MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_EarthponyTown_Trader>1</Pony_EarthponyTown_Trader>
+					<Pony_PegasusTown_Trader>1</Pony_PegasusTown_Trader>
+					<Pony_UnicornTown_Trader>1</Pony_UnicornTown_Trader>
+					<Pony_BatponyTown_Trader MayRequire="Pony.PoniesOfTheRim.Batponies">1</Pony_BatponyTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_EarthponyVillager>3</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>3</Pony_PegasusVillager>
+					<Pony_UnicornVillager>3</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">3</Pony_BatponyVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
+					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
+					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
+					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_BatponyGrenadier_Destructive MayRequire="Pony.PoniesOfTheRim.Batponies">1.5</Pony_BatponyGrenadier_Destructive>
+					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
+					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
+					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_BatponyMercenary_Slasher MayRequire="Pony.PoniesOfTheRim.Batponies">7</Pony_BatponyMercenary_Slasher>
+					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
+					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
+					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_BatponyMercenary_Gunner MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Gunner>
+					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
+					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
+					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_BatponyMercenary_Elite MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_EarthponyVillager>10</Pony_EarthponyVillager>
+					<Pony_PegasusVillager>10</Pony_PegasusVillager>
+					<Pony_UnicornVillager>10</Pony_UnicornVillager>
+					<Pony_BatponyVillager MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyVillager>
+					<Pony_EarthponyTown_Guard>10</Pony_EarthponyTown_Guard>
+					<Pony_PegasusTown_Guard>10</Pony_PegasusTown_Guard>
+					<Pony_UnicornTown_Guard>10</Pony_UnicornTown_Guard>
+					<Pony_BatponyTown_Guard MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Guard>
+					<Pony_EarthponyGrenadier_Destructive>1.5</Pony_EarthponyGrenadier_Destructive>
+					<Pony_PegasusGrenadier_Destructive>1.5</Pony_PegasusGrenadier_Destructive>
+					<Pony_UnicornGrenadier_Destructive>1.5</Pony_UnicornGrenadier_Destructive>
+					<Pony_BatponyGrenadier_Destructive MayRequire="Pony.PoniesOfTheRim.Batponies">1.5</Pony_BatponyGrenadier_Destructive>
+					<Pony_EarthponyMercenary_Slasher>7</Pony_EarthponyMercenary_Slasher>
+					<Pony_PegasusMercenary_Slasher>7</Pony_PegasusMercenary_Slasher>
+					<Pony_UnicornMercenary_Slasher>7</Pony_UnicornMercenary_Slasher>
+					<Pony_BatponyMercenary_Slasher MayRequire="Pony.PoniesOfTheRim.Batponies">7</Pony_BatponyMercenary_Slasher>
+					<Pony_EarthponyMercenary_Gunner>10</Pony_EarthponyMercenary_Gunner>
+					<Pony_PegasusMercenary_Gunner>10</Pony_PegasusMercenary_Gunner>
+					<Pony_UnicornMercenary_Gunner>10</Pony_UnicornMercenary_Gunner>
+					<Pony_BatponyMercenary_Gunner MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Gunner>
+					<Pony_EarthponyMercenary_Elite>10</Pony_EarthponyMercenary_Elite>
+					<Pony_PegasusMercenary_Elite>10</Pony_PegasusMercenary_Elite>
+					<Pony_UnicornMercenary_Elite>10</Pony_UnicornMercenary_Elite>
+					<Pony_BatponyMercenary_Elite MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyMercenary_Elite>
+					<Pony_EarthponyTown_Councilman>10</Pony_EarthponyTown_Councilman>
+					<Pony_PegasusTown_Councilman>10</Pony_PegasusTown_Councilman>
+					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
+					<Pony_BatponyTown_Councilman MayRequire="Pony.PoniesOfTheRim.Batponies">10</Pony_BatponyTown_Councilman>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="PonyOutlanderFactionBase">
+		<defName>PonyOutlanderCivil</defName>
+		<label>civil pony union</label>
+		<description>These ponies have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group holds civil behavior in high regard.</description>
+		<colorSpectrum>
+			<li>(0.75, 0.33, 0.60)</li>
+			<li>(1, 0.45, 0.78)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Friendship</li>
+		</requiredMemes>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<factionIconPath>World/Factions/PonyOutlanderCivil</factionIconPath>
+	</FactionDef>
+
+	<FactionDef ParentName="PonyOutlanderFactionBase">
+		<defName>PonyOutlanderRough</defName>
+		<label>rough pony union</label>
+		<description>These ponies have lived here for decades or centuries, and have lost most of the technology that brought them to this world. They usually work with simple machinery and defend themselves with advanced gunpowder weapons.\n\nThey are concerned with the practical matters of trade, trust, and survival.\n\nThis particular group has a streak of barbarity in them.</description>
+		<colorSpectrum>
+			<li>(0.42, 0.75, 0.33)</li>
+			<li>(0.56, 1, 0.45)</li>
+		</colorSpectrum>
+		<naturalEnemy>true</naturalEnemy>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<configurationListOrderPriority>26</configurationListOrderPriority>
+		<factionIconPath>World/Factions/PonyOutlanderRough</factionIconPath>
+	</FactionDef>
+
+</Defs>

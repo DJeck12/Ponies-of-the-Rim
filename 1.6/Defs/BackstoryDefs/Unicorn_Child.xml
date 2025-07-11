@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornYanWiz</defName>
+		<title>young wizard</title>
+		<titleShort>wizard</titleShort>
+		<baseDesc>At a very early age, [PAWN_nameDef] showed amazing magic abilities. [PAWN_pronoun] easily absorbed knowledge and mastered basic magic formulas.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Artistic>1</Artistic>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornGlitFan</defName>
+		<title>glitter fan</title>
+		<titleShort>chrysophile</titleShort>
+		<baseDesc>[PAWN_nameDef] had a special love for collecting crystals and colorful stones. [PAWN_pronoun] made amazing trinkets out of them.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
+			<li>Pony_Unicorn_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>2</Construction>
+			<Mining>4</Mining>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>FastLearner</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornGifMag</defName>
+		<title>gifted magician</title>
+		<titleShort>magician</titleShort>
+		<baseDesc>[PAWN_nameDef] was born with an incredible talent for magic. [PAWN_possessive] knowledge and skills in this field amazed even experienced and skillful unicorns.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
+			<li>Pony_Unicorn_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">PsychicSensitivity</defName>
+					</li>
+					<li>
+						<defName Degree="2">PsychicSensitivity</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraits>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+		</disallowedTraits>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornHorKnig</defName>
+		<title>horned knight</title>
+		<titleShort>knight</titleShort>
+		<baseDesc>Fascinated by the tales of faraway Equestria, [PAWN_nameDef] often imagined {PAWN_gender ? himself : herself} as a medieval knight. [PAWN_pronoun] made homemade armor and wore it all the time.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>3</Melee>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Brawler</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Crafting</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornIncSorc</defName>
+		<title>incapable of sorcery</title>
+		<titleShort>amagical</titleShort>
+		<baseDesc>From an early age, it became apparent that [PAWN_nameDef]'s magical abilities were quite modest. [PAWN_possessive] knowledge of magic was minimal, but [PAWN_possessive] knowledge in other areas was becoming broader and deeper.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
+			<li>Pony_Unicorn_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>-1</Shooting>
+			<Melee>-1</Melee>
+			<Plants>2</Plants>
+			<Crafting>2</Crafting>
+			<Medicine>3</Medicine>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Transhumanist</defName>
+					</li>
+					<li>
+						<defName>BodyPurist</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>Hauling</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornArPrin</defName>
+		<title>arrogant prince</title>
+		<titleFemale>arrogant princess</titleFemale>
+		<titleShort>prince</titleShort>
+		<titleShortFemale>princess</titleShortFemale>
+		<baseDesc>[PAWN_nameDef] was born into a wealthy family and knew neither want nor anxiety. All [PAWN_possessive] wishes were instantly fulfilled. [PAWN_pronoun] was too arrogant to condescend to socialize with others or to do even the simplest of jobs.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Artistic>3</Artistic>
+			<Social>-3</Social>
+			<Intellectual>1</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+		<workDisables>ManualDumb</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_UnicornDamHorn</defName>
+		<title>damaged horn</title>
+		<titleShort>mutilated</titleShort>
+		<baseDesc>One day during a game there was an accident, as a result of which [PAWN_nameDef] injured [PAWN_possessive] horn. After that everyone began to avoid [PAWN_possessive]. Communication with others practically came to naught, and when [PAWN_nameDef] grew up, [PAWN_pronoun] hated the whole world.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unicorn</li>
+			<li>Pony_Unicorn_Oulander</li>
+			<li>Pony_Unicorn_Medieval</li>
+			<li>Pony_Unicorn_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<workDisables>Hauling,Caring,Firefighting</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

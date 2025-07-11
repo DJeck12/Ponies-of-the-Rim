@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyAniFri</defName>
+		<title>animal friend</title>
+		<titleShort>groomer</titleShort>
+		<baseDesc>From early childhood, [PAWN_nameDef] was surrounded by wild animals that needed help and care. [PAWN_pronoun] sincerely cared about the unfortunate little animals, so next to [PAWN_objective] they often became affectionate and tame.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>4</Animals>
+			<Social>-2</Social>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<requiredWorkTags>Animals</requiredWorkTags>
+		<workDisables>Hunting</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyEcoDef</defName>
+		<title>gifted by nature</title>
+		<titleShort>eco-defender</titleShort>
+		<baseDesc>[PAWN_nameDef] was born with great magical potential, as the forest spirit gave [PAWN_objective] blessing. [PAWN_pronoun] used innate abilities for the benefit of nature, protecting various representatives of flora and fauna, as well as maintaining the delicate balance of natural things.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+			<Construction>-4</Construction>
+			<Crafting>-3</Crafting>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyTamCom</defName>
+		<title>tamed companion</title>
+		<titleShort>tamer</titleShort>
+		<baseDesc>[PAWN_nameDef] made friends with the big beast. [PAWN_pronoun] took care of the animal and fed it for a long time. In gratitude, the beast once saved [PAWN_possessive] from destruction.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>2</Medicine>
+			<Animals>3</Animals>
+			<Melee>-2</Melee>
+		</skillGains>
+		<requiredWorkTags>Animals</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyLonFar</defName>
+		<title>lonely farmer</title>
+		<titleShort>lonely</titleShort>
+		<baseDesc>[PAWN_nameDef] lost family and was left all alone. In order to feed {PAWN_gender ? himself : herself} and not starve to death, [PAWN_pronoun] devoted all free time to cultivating the land on the inherited farm.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>4</Plants>
+			<Construction>2</Construction>
+			<Cooking>-2</Cooking>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>PlantWork</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyForFam</defName>
+		<title>forest family</title>
+		<titleShort>savage</titleShort>
+		<baseDesc>[PAWN_nameDef] lived in a family of forest savages, far from the rest of civilization. [PAWN_pronoun] did not have the opportunity to adapt to modern society.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>2</Artistic>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Medicine>-3</Medicine>
+		</skillGains>
+		<workDisables>Intellectual, Social</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponySacred</defName>
+		<title>sacred Idol</title>
+		<titleShort>idol</titleShort>
+		<baseDesc>When [PAWN_nameDef] was born, relatives immediately considered [PAWN_objective] a messenger of the gods. In [PAWN_possessive] native village, [PAWN_pronoun] was an object of worship and reverence.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>-3</Intellectual>
+			<Social>4</Social>
+			<Construction>-3</Construction>
+			<Crafting>-3</Crafting>
+			<Artistic>3</Artistic>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Jealous</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Beauty</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyCopycat</defName>
+		<title>copycat</title>
+		<titleShort>copycat</titleShort>
+		<baseDesc>[PAWN_nameDef] lived surrounded by representatives of different races. [PAWN_pronoun] tried to please and to imitate them by building and putting homemade wings with horns.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>3</Social>
+			<Mining>-2</Mining>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Pony_RelationsForPegasus</defName>
+					</li>
+					<li>
+						<defName Degree="1">Pony_RelationsForUnicorn</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Crafting</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

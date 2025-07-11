@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
+		<defName>Pony_Earthpony</defName>
+		<label>earthpony</label>
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+
+Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with the earth, representatives of this race do not only have an innate affinity for nature and strong endurance. Among them there are also many talented inventors and successful entrepreneurs. However, earth ponies are often considered "limited" and incapable of skilled work. This stereotype has nothing to do with reality, because they are talented and versatile creatures.]]></description>
+
+	<!-- Stats -->
+
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
+			<PsychicSensitivity>1.1</PsychicSensitivity>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed> <!-- Will be replaced with a gene with Biotech -->
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<CarryingCapacity>90</CarryingCapacity> <!-- Will be replaced with a gene with Biotech. Defaults to 80 -->
+			<Mass>55</Mass>
+			<PainShockThreshold>0.8</PainShockThreshold> <!-- Will be replaced with a gene with Biotech. Defaults to 0.75 -->
+			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
+			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
+			<RoyalFavorValue>4</RoyalFavorValue>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
+		</statBases>
+		
+	<!-- Alien Settings -->
+
+		<alienRace>
+			<generalSettings>
+				<abilities>
+					<li>NatureMuse</li>
+				</abilities>
+			<!-- Genes -->
+				<raceGenes>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyTail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_StrongBody</li>
+					<!--<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>-->
+				</raceGenes>
+			<!-- Colors -->
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name> <!-- Don't translate! Will break opacity -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<min>RGBA(50, 150, 50, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(180, 180, 180, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name> <!-- Don't translate! Will break opacity -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+
+		<!-- Graphics -->
+
+			<graphicPaths>
+				<head>
+					<path>Things/Races/Pony/Heads/Normal/Male_Pony</path>
+					<extendedGraphics>
+					<!-- Mutant -->
+						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">
+							<path>Things/Races/Pony/Heads/Ghoul/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Ghoul/Female_Pony</Gender>
+							</extendedGraphics>
+						</Mutant>
+					<!-- Gene -->
+						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">
+							<path>Things/Races/Pony/Heads/Furskin/Male_Pony</path>
+							<extendedGraphics>
+								<Gender For="Female">Things/Races/Pony/Heads/Furskin/Female_Pony</Gender>
+							</extendedGraphics>
+						</Gene>
+					<!-- Normal -->
+						<Gender For="Female">Things/Races/Pony/Heads/Normal/Female_Pony</Gender>
+					</extendedGraphics>
+				</head>
+				<skeleton>Things/Races/Pony/Bodies/Skeleton/Dessicated_Pony</skeleton>
+				<skull>Things/Races/Pony/Heads/Skull/Pony_Skull</skull>
+				<body>
+					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
+					<extendedGraphics>
+					<!-- Mutant -->
+						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
+					</extendedGraphics>
+				</body>
+				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
+				<swaddle>Pony/Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
+			</graphicPaths>
+		</alienRace>
+
+	<!-- Race Settings -->
+
+		<race>
+			<nameGenerator>NameGeneratorEarth</nameGenerator>
+			<body>Pony_EarthponyBody</body>
+		</race>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

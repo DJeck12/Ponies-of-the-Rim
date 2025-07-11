@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RitualVisualEffectDef ParentName="RitualSmokeAbstract">
+		<defName>Pony_HarmonicVisuals</defName>
+		<tintColor>(255, 115, 200)</tintColor>
+		<comps>
+			<li>
+				<compClass>CompRitualEffect_ConstantCenter</compClass>
+				<moteDef>Pony_Twilight</moteDef>
+			</li>
+			<li Class="CompProperties_RitualEffectConstantCircle">
+				<radius>6.0</radius>
+				<numCopies>5</numCopies>
+				<moteDef>Pony_Gem</moteDef>
+			</li>
+			<li Class="CompProperties_RitualEffectIntervalSpawnArea">
+				<fleckDef>Pony_Star</fleckDef>
+				<area>(24, 24)</area>
+				<spawnIntervalTicks>48</spawnIntervalTicks>
+				<spawnCount>1</spawnCount>
+				<rotation>0</rotation>
+				<scale>1~2</scale>
+				<scalePositionWithRoom>true</scalePositionWithRoom>
+				<onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+			</li>
+		</comps>
+	</RitualVisualEffectDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Pony_Gem</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualOutline</shaderType>
+			<color>(255, 115, 200)</color>
+			<texPath>Motes/Gem</texPath>
+			<shaderParameters>
+				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
+				<_ScrollSpeed>0.25</_ScrollSpeed>
+			</shaderParameters>
+			<drawSize>(1.6, 3.2)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>Pony_Twilight</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<mote>
+			<solidTime>99999</solidTime>
+			<fadeInTime>0.4</fadeInTime>
+			<fadeOutTime>1</fadeOutTime>
+			<needsMaintenance>True</needsMaintenance>
+			<fadeOutUnmaintained>True</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MotePulse</graphicClass>
+			<shaderType>RitualGlowSingleRay</shaderType>
+			<color>(255, 115, 200)</color>
+			<texPath>Motes/Twilight</texPath>
+			<shaderParameters>
+				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
+				<_ScrollSpeed>0.13</_ScrollSpeed>
+				<_Intensity>24</_Intensity>
+			</shaderParameters>
+			<drawSize>15</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<FleckDef ParentName="FleckBase">
+		<defName>Pony_Star</defName>
+		<fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+		<graphicData>
+			<graphicClass>Graphic_Fleck</graphicClass>
+			<shaderType>MoteGlow</shaderType>
+			<color>(255, 115, 200)</color>
+			<texPath>Motes/Star</texPath>
+			<drawSize>(0.5, 0.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.5</solidTime>
+		<fadeInTime>0.8</fadeInTime>
+		<fadeOutTime>0.8</fadeOutTime>
+	</FleckDef>
+
+</Defs>

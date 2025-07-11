@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[contains(weaponTags,'Gun')
+		or contains(weaponTags,'IndustrialGunAdvanced')
+		or contains(weaponTags,'GunHeavy')]/apparelTags</xpath>
+		<value>
+			<li>Pony_BattleSaddle</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/PawnKindDef[contains(apparelTags,'Neolithic')
+	or contains(apparelTags,'IndustrialBasic')]/apparelTags</xpath>
+		<value>
+			<li>Pony_SaddleBag</li>
+		</value>
+	</Operation>
+	
+</Patch>

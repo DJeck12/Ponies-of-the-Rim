@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/LifeStageDef[defName="HumanlikeBaby"]</xpath>
+		<attribute>Name</attribute>
+		<value>LifeStageHumanlikeBaby</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/LifeStageDef[defName="HumanlikeTeenager"]</xpath>
+		<attribute>Name</attribute>
+		<value>LifeStageHumanlikeTeenager</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/LifeStageDef[defName="HumanlikeAdult"]</xpath>
+		<attribute>Name</attribute>
+		<value>LifeStageHumanlikeAdult</value>
+	</Operation>
+
+</Patch>

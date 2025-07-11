@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusShadRec</defName>
+		<title>Shadowbolt recruiter</title>
+		<titleShort>recruiter</titleShort>
+		<baseDesc>Together with other Shadowbolts, [PAWN_nameDef] sought out those who questioned the justice and correctness of the existing order. [PAWN_pronoun] tried to win them over to [PAWN_possessive] side.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Crafting>-3</Crafting>
+			<Social>6</Social>
+		</skillGains>
+		<requiredWorkTags>Social</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusShadMar</defName>
+		<title>Shadowbolt marauder</title>
+		<titleShort>marauder</titleShort>
+		<baseDesc>[PAWN_nameDef] spent [PAWN_possessive] entire adult life among the Shadowbolts, unquestioningly following their instructions. During battles, [PAWN_pronoun] was always at the forefront of the attack, demonstrating incredible speed and strength.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>7</Melee>
+			<Artistic>-2</Artistic>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Tough</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>Animals</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusPoultryFar</defName>
+		<title>poultry farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] enjoyed taking care of plants and animals. [PAWN_pronoun] curiously observed the world of flora and fauna, paying special attention to birds and finding something special and unique in them.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>6</Plants>
+			<Animals>6</Animals>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Kind</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>70</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>Hunting</workDisables>
+		<requiredWorkTags>Animals</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusWinRes</defName>
+		<title>winged rescuer</title>
+		<titleShort>rescuer</titleShort>
+		<baseDesc>One day, walking in the woods late at night, [PAWN_nameDef] got into trouble. [PAWN_pronoun] was saved by a brave stranger who happened to be nearby. [PAWN_nameDef] was amazed by such bravery and dedication, so [PAWN_pronoun] decided to devote life to helping other ponies, striving to be like [PAWN_possessive] protector.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Medicine>6</Medicine>
+			<Social>4</Social>
+		</skillGains>
+		<requiredWorkTags>Caring</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusPegFight</defName>
+		<title>pegasus fighter</title>
+		<titleShort>fighter</titleShort>
+		<baseDesc>While serving in the Pegasus regiment of the Royal Guard, [PAWN_nameDef] tried to stand out from the others as much as possible. During constant training, [PAWN_pronoun] masterfully honed [PAWN_possessive] flying skills, mastered aerial combat and learned how to deftly parry blows using wings with maximum effectiveness.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>3</Melee>
+			<Mining>-2</Mining>
+			<Crafting>2</Crafting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusOfficerPeg</defName>
+		<title>officer of Pegasus Guard</title>
+		<titleShort>officer</titleShort>
+		<baseDesc>[PAWN_nameDef] devoted [PAWN_possessive] life to serving in the Guard, protecting the peace of citizens and accompanying important people on various diplomatic missions. Years passed, but [PAWN_pronoun] continued to fulfill duty to the kingdom, until finally [PAWN_pronoun] received a well-deserved promotion to the rank of officer.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>PlantWork</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusFlyRacer</defName>
+		<title>flying racer</title>
+		<titleShort>racer</titleShort>
+		<baseDesc>[PAWN_nameDef] watched the pegasus competitions with admiration. [PAWN_pronoun] set {PAWN_gender ? himself : herself} the goal of becoming as successful and outstanding as the most famous sports ponies. [PAWN_nameDef] devoted all [PAWN_possessive] time to training, tirelessly honing flying skills.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+		</spawnCategories>
+		<skillGains>
+			<Mining>2</Mining>
+			<Crafting>2</Crafting>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">SpeedOffset</defName>
+					</li>
+					<li>
+						<defName Degree="2">SpeedOffset</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusPilotTor</defName>
+		<title>pilot inventor</title>
+		<titleShort>inventor</titleShort>
+		<baseDesc>One day [PAWN_nameDef] met a pegasus who couldn't fly. [PAWN_possessive] heart was full of compassion, and [PAWN_pronoun] could not live peacefully knowing that there was someone nearby who was deprived of something so important. Then [PAWN_nameDef] decided to become an inventor and set {PAWN_gender ? himself : herself} an important life goal — to make all the unfortunate ponies happy again.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>7</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Neurotic</defName>
+					</li>
+					<li>
+						<defName Degree="2">Neurotic</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Crafting</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusWeatherContr</defName>
+		<title>weather controller</title>
+		<titleShort>weather pony</titleShort>
+		<baseDesc>[PAWN_nameDef] devoted most of life to weather management and often worked with local meteorologists. [PAWN_pronoun] was sure that this kind of activity was [PAWN_possessive] true vocation.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-1</Melee>
+			<Construction>3</Construction>
+			<Mining>3</Mining>
+			<Social>2</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusMeteo</defName>
+		<title>meteorologist</title>
+		<titleShort>meteorologist</titleShort>
+		<baseDesc>[PAWN_nameDef] came from a family that had been fascinated by weather forecasting for many generations. Unsurprisingly, [PAWN_pronoun] shared this passion and devoted a huge amount of time to meteorology, which helped [PAWN_possessive] find a job with a wether broadcast.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Mining>2</Mining>
+			<Social>2</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>TooSmart</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>Constructing</workDisables>
+		<requiredWorkTags>Intellectual</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusEmpRainFactor</defName>
+		<title>employee of Rainbow Factory</title>
+		<titleShort>proletarian</titleShort>
+		<baseDesc>[PAWN_nameDef] was fascinated by the rainbow. After getting a job at a special factory, [PAWN_pronoun] began to make various products from it.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>-3</Plants>
+			<Animals>-3</Animals>
+			<Crafting>2</Crafting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>Artistic</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusCloudSculpt</defName>
+		<title>cloud sculptor</title>
+		<titleShort>sculptor</titleShort>
+		<baseDesc>[PAWN_nameDef] was crazy about clouds. As an adult, [PAWN_pronoun] turned into a skilled craftsman, able to give them any shape at will.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>8</Artistic>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>TorturedArtist</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Artistic</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusCook</defName>
+		<title>rainbow cook</title>
+		<titleShort>cook</titleShort>
+		<baseDesc>[PAWN_nameDef] enthusiastically studied books on the national cuisine of pegasus. [PAWN_possessive] knowledge of cooking a variety of exotic dishes from liquid rainbow was almost perfect and made [PAWN_objective] famous far beyond the borders of native country.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>8</Cooking>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Greedy</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<forcedTraits>
+			<Gourmand>0</Gourmand>
+		</forcedTraits>
+		<requiredWorkTags>Cooking</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusSlaveShad</defName>
+		<title>slave of Shadowbolts</title>
+		<titleShort>captive</titleShort>
+		<baseDesc>One day, during a carefree walk through the forest, [PAWN_nameDef] was kidnapped by Shadowbolts. From that day on, [PAWN_pronoun] was forced to serve them until [PAWN_pronoun] was rescued.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Mining>6</Mining>
+			<Plants>4</Plants>
+			<Artistic>-1</Artistic>
+			<Social>-1</Social>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>-1</Nerves>
+		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Wimp</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<disallowedTraits>
+			<Tough>0</Tough>
+		</disallowedTraits>
+		<workDisables>Violent</workDisables>
+		<requiredWorkTags>ManualDumb</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusLeadShad</defName>
+		<title>leader of Shadowbolts</title>
+		<titleShort>leader</titleShort>
+		<baseDesc>[PAWN_nameDef] became part of the Shadowbolt team and enthusiastically adopted the experience of [PAWN_possessive] new comrades. Soon, [PAWN_pronoun] showed leadership qualities that allowed [PAWN_objective] to take the place of honor as a leader.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>2</Melee>
+			<Crafting>-1</Crafting>
+			<Artistic>3</Artistic>
+			<Social>6</Social>
+		</skillGains>
+		<workDisables>Mining, PlantWork</workDisables>
+		<requiredWorkTags>Social</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

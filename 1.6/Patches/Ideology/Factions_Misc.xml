@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[@Name="OutlanderRoughBase"]</xpath>
+					<value>
+						<disallowedMemes>
+							<li>Pony_Friendship</li>
+						</disallowedMemes>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[@Name="TribeRoughBase"
+					or @Name="TribeSavageBase"]/disallowedMemes</xpath>
+					<value>
+						<li>Pony_Friendship</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
