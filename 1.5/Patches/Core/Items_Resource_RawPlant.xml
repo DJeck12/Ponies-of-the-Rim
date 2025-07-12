@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="Hay"]/ingestible</xpath>
+		<xpath>Defs/ThingDef[defName="Hay"]/ingestible</xpath>
 		<value>
 			<foodType>VegetableOrFruit</foodType>
 			<preferability>RawBad</preferability>
@@ -14,7 +14,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="Hay"]</xpath>
+		<xpath>Defs/ThingDef[defName="Hay"]</xpath>
 		<value>
 			<socialPropernessMatters>true</socialPropernessMatters>
 		</value>
