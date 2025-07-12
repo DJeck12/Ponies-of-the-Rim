@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Combat Extended</li>
-		</mods>
-		<match Class="PatchOperationSequence">
+	<Operation Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Earthpony"]/comps</xpath>
@@ -40,6 +36,5 @@
 					</value>
 				</li>
 			</operations>
-		</match>
 	</Operation>
 </Patch>
