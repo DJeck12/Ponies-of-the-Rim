@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffGiverSetDef>
+		<defName>Pony</defName>
+		<hediffGivers>
+			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityWings">
+				<hediff>NaturalWing</hediff>
+				<partsToAffect>
+					<li>Pony_LeftWing</li>
+					<li>Pony_RightWing</li>
+				</partsToAffect>
+				<ability>ShortFlight</ability>
+			</li>
+			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityHorn">
+				<hediff>NaturalHorn</hediff>
+				<partsToAffect>
+					<li>Pony_Horn</li>
+				</partsToAffect>
+				<ability>MagicBurst</ability>
+			</li>
+			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_NatureMuse">
+				<hediff>NatureMuse</hediff>
+				<ability>NatureMuse</ability>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+</Defs>

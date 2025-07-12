@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyMagic</defName>
+		<label>pony magic</label>
+		<description>Carriers of this gene receive one of the random abilities of earthponies, unicorns, or pegasi. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/PonyMagic</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.GeneExtension">
+				<removeAfter>True</removeAfter>
+				<genes>
+					<li>Pony_NaturePower</li>
+					<li>Pony_PegasusWings</li>
+					<li>Pony_UnicornHorn</li>
+				</genes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_NaturePower</defName>
+		<label>nature power</label>
+		<description>Carriers of this gene are endowed with the natural strength of earth ponies, gaining their ability for increasing work speed. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/NaturePower</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<abilities>
+			<li>NatureMuse</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>NatureMuse</AbilityDef>
+		</descriptionHyperlinks>
+		<exclusionTags>
+			<li>PonyMagic</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PegasusWings</defName>
+		<label>pegasus wings</label>
+		<description>Carriers of this gene grow new limbs on their back, resembling pegasi wings, gaining their ability for flight. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/PegasusWings</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Genes/BodyAttachments/Wings/PegasusWings</texPath>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<overrideMeshSize>(1.8, 1.8)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>75</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0, 0.1)</offset>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, 0, 0.1)</offset>
+						<layer>-5</layer>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.1, 0, 0)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.1, 0, 0)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<abilities>
+			<li>ShortFlight</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>ShortFlight</AbilityDef>
+		</descriptionHyperlinks>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>PonyMagic</li>
+			<li>Wings</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_UnicornHorn</defName>
+		<label>unicorn horn</label>
+		<description>Carriers of this gene grow a unicorn horn from the center of their forehead, giving them the ability to use magic. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/UnicornHorn</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Races/Unicorn/Normal/Unicorn</texPath>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<abilities>
+			<li>MagicBurst</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>MagicBurst</AbilityDef>
+		</descriptionHyperlinks>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>PonyMagic</li>
+		</exclusionTags>
+	</GeneDef>
+
+</Defs>

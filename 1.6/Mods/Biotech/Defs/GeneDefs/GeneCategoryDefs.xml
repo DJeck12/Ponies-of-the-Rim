@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneCategoryDef>
+		<defName>Pony</defName>
+		<label>pony</label>
+		<displayPriorityInXenotype>480</displayPriorityInXenotype>
+	</GeneCategoryDef>
+
+	<GeneDef Name="GenePonyBase" Abstract="True">
+		<displayCategory>Pony</displayCategory>
+	</GeneDef>
+
+</Defs>

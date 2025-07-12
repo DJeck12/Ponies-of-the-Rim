@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Colonist"]</xpath>
+		<attribute>Name</attribute>
+		<value>ColonistPlayerBase</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribesperson"]</xpath>
+		<attribute>Name</attribute>
+		<value>TribePlayerBase</value>
+	</Operation>
+
+</Patch>

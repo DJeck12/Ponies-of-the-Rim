@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusURac</defName>
+		<title>young racer</title>
+		<titleShort>racer</titleShort>
+		<baseDesc>[PAWN_nameDef] was passionate about speed. The desire to race had been in [PAWN_objective] ever since [PAWN_pronoun] learned to fly.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>2</Construction>
+			<Crafting>4</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">SpeedOffset</defName>
+					</li>
+					<li>
+						<defName Degree="2">SpeedOffset</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusBully</defName>
+		<title>bully flyer</title>
+		<titleShort>bully</titleShort>
+		<baseDesc>Since childhood, [PAWN_nameDef] felt like an outcast, peers considered [PAWN_objective] a loser and mocked. Wanting to gain recognition and respect, as well as create an intimidating reputation, [PAWN_pronoun] began to mock those who were weaker, taking out [PAWN_possessive] resentment and anger on them.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Animals>-1</Animals>
+			<Social>-5</Social>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+		<workDisables>Caring</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusLostAmong</defName>
+		<title>lost among clouds</title>
+		<titleShort>lost</titleShort>
+		<baseDesc>As a child, [PAWN_nameDef] got lost in a large group of cumulus clouds. [PAWN_pronoun] wandered among them for a long time, until was finally found and rescued.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Crafting>1</Crafting>
+			<Medicine>-3</Medicine>
+			<Social>-3</Social>
+		</skillGains>
+		<forcedTraitsChance>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<options>
+					<li>
+						<defName>Recluse</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<workDisables>ManualDumb</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusWeakWi</defName>
+		<title>weak-winged</title>
+		<titleShort>weakling</titleShort>
+		<baseDesc>While other foals of the same age were carelessly frolicking in the clouds, [PAWN_nameDef] could not join them. [PAWN_possessive] own underdeveloped wings did not allow to rise into the air, and this did not give [PAWN_objective] peace of mind. [PAWN_nameDef] was very worried and upset.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>4</Artistic>
+			<Social>-3</Social>
+		</skillGains>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+		<workDisables>Violent, Hauling, Firefighting</workDisables>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusCloudCatcher</defName>
+		<title>cloud catcher</title>
+		<titleShort>catcher</titleShort>
+		<baseDesc>[PAWN_nameDef] found true happiness as soon as learned to fly. [PAWN_pronoun] began to experience an extraordinary passion for clouds, collecting them into bizarre figures and showing them to [PAWN_possessive] friends.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+			<li>Pony_Pegasus_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+			<Crafting>3</Crafting>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>TorturedArtist</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Artistic</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusRainbowLover</defName>
+		<title>rainbow lover</title>
+		<titleShort>rainbow</titleShort>
+		<baseDesc>Since childhood, [PAWN_nameDef] has been in sincere awe of rainy weather. [PAWN_possessive] heart sank with admiration when [PAWN_pronoun] saw the bright rainbow appearing after the rain. [PAWN_nameDef] enjoyed it color palette, and the various trinkets made using it caused [PAWN_objective] genuine delight.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Oulander</li>
+			<li>Pony_Pegasus_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>5</Cooking>
+			<Plants>1</Plants>
+			<Animals>1</Animals>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Greedy</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>25</chance>
+			</li>
+		</forcedTraitsChance>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PegasusBornShad</defName>
+		<title>born of Shadowbolt</title>
+		<titleShort>gruesome</titleShort>
+		<baseDesc>From an early age, [PAWN_nameDef] grew up under the influence of relatives who inspired [PAWN_objective] that there was no one more majestic and sovereign than Nightmoon. [PAWN_pronoun] became a full member of the Shadowbolts and living in complete isolation from the outside world, [PAWN_pronoun] created an ideal for {PAWN_gender ? himself : herself}, which sought to faithfully serve.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Pegasus</li>
+			<li>Pony_Pegasus_Offworld</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Mining>-2</Mining>
+			<Artistic>2</Artistic>
+			<Social>-2</Social>
+		</skillGains>
+		<workDisables>Crafting, ManualDumb</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

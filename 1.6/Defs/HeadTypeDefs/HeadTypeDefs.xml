@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Male_Pony</defName>
+		<graphicPath>Things/Races/Pony/Heads/Normal/Male_Pony</graphicPath>
+		<beardOffsetXEast>0.075</beardOffsetXEast>
+		<gender>Male</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>Female_Pony</defName>
+		<graphicPath>Things/Races/Pony/Heads/Normal/Female_Pony</graphicPath>
+		<beardOffsetXEast>0.075</beardOffsetXEast>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+</Defs>

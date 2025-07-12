@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/LifeStageDef[defName="HumanlikePreTeenager"]</xpath>
+					<attribute>Name</attribute>
+					<value>LifeStageHumanlikePreTeenager</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

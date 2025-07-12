@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealSurvivalPack"]</xpath>
+		<value>
+			<comps>
+				<li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+			</comps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealSimple"]</xpath>
+		<value>
+			<comps>
+			  <li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+			</comps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealFine"]/comps</xpath>
+		<value>
+			<li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealFine_Meat"]/comps</xpath>
+		<value>
+			<li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealLavish"]/comps</xpath>
+		<value>
+			<li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MealLavish_Meat"]/comps</xpath>
+		<value>
+			<li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Kibble"]/comps</xpath>
+		<value>
+			<li Class="PoniesOfTheRim.CompProperties_PonyFoodCheck" />
+		</value>
+	</Operation>
+	
+
+</Patch>

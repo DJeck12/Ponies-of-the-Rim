@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<LifeStageDef ParentName="LifeStageHumanlikePreTeenager">
+		<defName>PonyPreTeenager</defName>
+		<label>preteen</label>
+		<bodySizeFactor>0.6</bodySizeFactor>
+		<bodyWidth>1.2</bodyWidth>
+		<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
+		<headSizeFactor>0.8</headSizeFactor>
+	</LifeStageDef>
+
+</Defs>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyHead</defName>
+		<label>pony head</label>
+		<description>Carriers of this gene have a pony-like head.</description>
+		<iconPath>UI/Genes/PonyHead</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<forcedHeadTypes>
+			<li>Male_Pony</li>
+			<li>Female_Pony</li>
+		</forcedHeadTypes>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyEars</defName>
+		<label>pony ears</label>
+		<description>Carriers of this gene grow pony-like ears.</description>
+		<iconPath>UI/Genes/PonyEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_PonyTail</defName>
+		<label>pony tail</label>
+		<description>Carriers of this gene grow a fluffy pony tail.</description>
+		<iconPath>UI/Genes/PonyTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Cutiemark</defName>
+		<label>cutiemark</label>
+		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests.</description>
+		<iconPath>UI/Genes/Cutiemark</iconPath>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_ColorfulSkin</defName>
+		<label>colorful skin colors</label>
+		<description>Carriers of this gene produce a pigment that gives their skin a various set of colors.</description>
+		<iconPath>UI/Genes/ColorBody</iconPath>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.GeneExtension">
+				<genes>
+					<li>Skin_InkBlack</li>
+					<li>Skin_SlateGray</li>
+					<li>Skin_SheerWhite</li>
+					<li>Skin_Blue</li>
+					<li>Skin_Purple</li>
+					<li>Skin_PaleRed</li>
+					<li>Skin_DeepRed</li>
+					<li>Skin_PaleYellow</li>
+					<li>Skin_DeepYellow</li>
+					<li>Skin_Orange</li>
+					<li>Skin_Green</li>
+				</genes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_ColorfulHair</defName>
+		<label>colorful hair colors</label>
+		<description>Carriers of this gene produce a pigment that color their hair in a various set of colors.</description>
+		<iconPath>UI/Genes/ColorHair</iconPath>
+		<displayOrderInCategory>12</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.GeneExtension">
+				<genes>
+					<li>Hair_SnowWhite</li>
+					<li>Hair_DarkBlack</li>
+					<li>Hair_Gray</li>
+					<li>Hair_Pink</li>
+					<li>Hair_LightPurple</li>
+					<li>Hair_LightBlue</li>
+					<li>Hair_LightTeal</li>
+					<li>Hair_LightGreen</li>
+					<li>Hair_LightOrange</li>
+					<li>Hair_BrightRed</li>
+				</genes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_VoiceHorse</defName>
+		<label>horse voice</label>
+		<description>Carriers of this gene have a horse-like voice with distinctive neighing.</description>
+		<iconPath>UI/Genes/VoiceHorse</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>13</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<soundCall>Pawn_Horse_Call</soundCall>
+		<soundDeath>Pawn_Horse_Death</soundDeath>
+		<soundWounded>Pawn_Horse_Wounded</soundWounded>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

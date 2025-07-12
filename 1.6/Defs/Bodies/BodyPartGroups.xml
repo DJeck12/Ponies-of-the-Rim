@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<BodyPartGroupDef>
+		<defName>TopHead</defName>
+		<label>top head</label>
+		<listOrder>220</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>Horn</defName>
+		<label>horn</label>
+		<listOrder>210</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>Wings</defName>
+		<label>wings</label>
+		<listOrder>65</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>Tail</defName>
+		<label>tail</label>
+		<listOrder>45</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>Hooves</defName>
+		<label>hooves</label>
+		<listOrder>5</listOrder>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>RearLegs</defName>
+		<label>rear legs</label>
+	</BodyPartGroupDef>
+
+</Defs>

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Issue -->
+
+	<IssueDef>
+		<defName>Pony_Everypony</defName>
+		<label>ponies</label>
+		<iconPath>UI/Issues/Everypony</iconPath>
+	</IssueDef>
+
+<!-- Precepts -->
+
+<!-- Abhorrent -->
+
+	<PreceptDef>
+		<defName>Pony_Everypony_Abhorrent</defName>
+		<issue>Pony_Everypony</issue>
+		<label>abhorrent</label>
+		<description>Ponies are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>60</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_Friendship</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Everypony_Abhorrent</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Everypony_Abhorrent_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Everypony_Abhorrent</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony</workerClass>
+		<stages>
+			<li>
+				<label>hatred for ponies</label>
+				<description>Ponies are absolutely repulsive and I can't let them abuse our trust.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>HAR_AlienRaces_Abhorrent</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Everypony_Abhorrent_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<stages>
+			<li>
+				<label>disgusting pony!</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>HAR_AlienRaces_Abhorrent_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Horrible -->
+
+	<PreceptDef>
+		<defName>Pony_Everypony_Horrible</defName>
+		<issue>Pony_Everypony</issue>
+		<label>disliked</label>
+		<description>Ponies are different from us, even too different. We have to be on our guard and not trust them.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Everypony_Horrible_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Everypony_Horrible_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<stages>
+			<li>
+				<label>distrust for ponies</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>HAR_AlienRaces_Horrible_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Standard -->
+
+	<PreceptDef>
+		<defName>Pony_Everypony_Standard</defName>
+		<issue>Pony_Everypony</issue>
+		<label>neutral</label>
+		<description>Ponies are just like everyone and should be seen as no lesser or greater than us.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+
+<!-- Respected -->
+
+	<PreceptDef>
+		<defName>Pony_Everypony_Respected</defName>
+		<issue>Pony_Everypony</issue>
+		<label>respected</label>
+		<description>Ponies are very unique and deserve our admiration.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Everypony_Respected_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Everypony_Respected_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<stages>
+			<li>
+				<label>respect for ponies</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>HAR_AlienRaces_Respected_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Exalted -->
+
+	<PreceptDef>
+		<defName>Pony_Everypony_Exalted</defName>
+		<issue>Pony_Everypony</issue>
+		<label>exalted</label>
+		<description>Ponies are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Everypony_Exalted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Everypony_Exalted_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Everypony_Exalted</defName>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<stages>
+			<li>
+				<label>love for ponies</label>
+				<description>It makes me feel happier knowing we live among ponies.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>HAR_AlienRaces_Exalted</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Everypony_Exalted_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Pony_Social</workerClass>
+		<stages>
+			<li>
+				<label>amazing pony!</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>HAR_AlienRaces_Exalted_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+</Defs>

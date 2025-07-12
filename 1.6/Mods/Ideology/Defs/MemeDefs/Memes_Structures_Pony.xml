@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<MemeDef>
+		<defName>Pony_Harmonism</defName>
+		<label>harmonism</label>
+		<description>The true nature of the universe lies in the harmony of all its aspects, from nature and magic to everyday life situations. We are an integral part of this harmony and we should be favored by the goddesses who keep the world in balanced equilibrium.</description>
+		<category>Structure</category>
+		<iconPath>UI/Structures/Harmonism</iconPath>
+		<impact>0</impact>
+		<worshipRoomLabel>temple of harmony</worshipRoomLabel>
+		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+		<deityCount>1~3</deityCount>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->balanced</li>
+				<li>memeAdjective->magical</li>
+				<li>memeAdjective->mystical</li>
+				<li>memeCreed->tranquility</li>
+				<li>memeCreed->unity</li>
+				<li>memeCreed->friendship</li>
+				<li>memeCreed->concord</li>
+				<li>memeCreed->kindship</li>
+				<li>memeConcept->harmony</li>
+				<li>memeLeaderNoun->friend of all</li>
+				<li>memeLeaderNoun->prince</li>
+				<li>memeLeaderNoun->leader</li>
+				<li>memeLeaderAdjective->harmonic</li>
+				<li>memeLeaderAdjective->friendly</li>
+				<li>memeLeaderAdjective->inspiring</li>
+				<li>memeMoralist->priest</li>
+				<li>memeMoralist->preacher</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<patterns>
+				<li>
+					<def>TheistFounder</def>
+				</li>
+			</patterns>
+			<constants>
+				<li>
+					<key>structure_harmonism</key>
+					<value>true</value>
+				</li>
+			</constants>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>harmonism</theme>
+				<adjective>harmonist</adjective>
+				<member>harmonist</member>
+			</li>
+		</symbolPacks>
+		<fixedDeityNameTypes>
+			<li>
+				<name>Celestia</name>
+				<type>Princess of Sun</type>
+			</li>
+			<li>
+				<name>Luna</name>
+				<type>Princess of Moon</type>
+			</li>
+			<li>
+				<name>Cadance</name>
+				<type>Princess of Love</type>
+			</li>
+			<li>
+				<name>Twilight Sparkle</name>
+				<type>Princess of Friendship</type>
+			</li>
+			<li>
+				<name>Amore</name>
+				<type>Princess of Hope</type>
+			</li>
+			<li>
+				<name>Sunset Shimmer</name>
+				<type>Princess of Changes</type>
+			</li>
+			<li>
+				<name>Starlight Glimmer</name>
+				<type>Princess of Magic</type>
+			</li>
+			<li>
+				<name>Flurry Heart</name>
+				<type>Princess of Power</type>
+			</li>
+			<li>
+				<name>Ilumina Star</name>
+				<type>Princess of Cosmos</type>
+			</li>
+			<li>
+				<name>Fausticorn</name>
+				<type>Princess of Creation</type>
+			</li>
+			<li>
+				<name>Aurora Sky</name>
+				<type>Princess of Knowledge</type>
+			</li>
+			<li>
+				<name>Sunrise Sprout</name>
+				<type>Princess of Nature</type>
+			</li>
+		</fixedDeityNameTypes>
+		<thingStyleCategories>
+			<li>
+				<category>Pony_Harmonic</category>
+				<priority>4</priority>
+			</li>
+		</thingStyleCategories>
+	</MemeDef>
+
+</Defs>

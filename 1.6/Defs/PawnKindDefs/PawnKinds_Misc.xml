@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Earthpony -->
+
+	<PawnKindDef ParentName="SlaveBase">
+		<defName>Pony_EarthponySlave</defName>
+		<label>pony slave</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Outlander</li>
+					<li>Outsider</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Earthpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceRefugee">
+		<defName>Pony_EarthponyRefugee</defName>
+		<label>pony refugee</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony_Offworld</li>
+					<li>Pony_Earthpony_Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VillagerBase" Name="EarthponyVillager">
+		<defName>Pony_EarthponyVillager</defName>
+		<label>pony villager</label>
+		<race>Pony_Earthpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Earthpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Pegasus -->
+
+	<PawnKindDef ParentName="SlaveBase">
+		<defName>Pony_PegasusSlave</defName>
+		<label>pony slave</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Outlander</li>
+					<li>Outsider</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Pegasus</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceRefugee">
+		<defName>Pony_PegasusRefugee</defName>
+		<label>pony refugee</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony_Offworld</li>
+					<li>Pony_Pegasus_Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VillagerBase" Name="PegasusVillager">
+		<defName>Pony_PegasusVillager</defName>
+		<label>pony villager</label>
+		<race>Pony_Pegasus</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Pegasus_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Unicorn -->
+
+	<PawnKindDef ParentName="SlaveBase">
+		<defName>Pony_UnicornSlave</defName>
+		<label>pony slave</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+				<li>Offworld</li>
+				<li>Outlander</li>
+				<li>Outsider</li>
+				<li>Pony_Everypony</li>
+				<li>Pony_Unicorn</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceRefugee">
+		<defName>Pony_UnicornRefugee</defName>
+		<label>pony refugee</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony_Offworld</li>
+					<li>Pony_Unicorn_Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VillagerBase" Name="UnicornVillager">
+		<defName>Pony_UnicornVillager</defName>
+		<label>pony villager</label>
+		<race>Pony_Unicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Unicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+</Defs>

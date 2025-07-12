@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<LifeStageDef ParentName="LifeStageHumanlikeBaby">
+		<defName>PonyBaby</defName>
+		<label>baby</label>
+		<bodySizeFactor>0.2</bodySizeFactor>
+		<bodyWidth>0.75</bodyWidth>
+		<bodyDrawOffset>(0, 0, -0.1)</bodyDrawOffset>
+		<headSizeFactor>0.5</headSizeFactor>
+	</LifeStageDef>
+
+	<LifeStageDef ParentName="LifeStageHumanlikeChild">
+		<defName>PonyChild</defName>
+		<label>child</label>
+		<bodySizeFactor>0.4</bodySizeFactor>
+		<bodyWidth>1.05</bodyWidth>
+		<bodyDrawOffset>(0, 0, -0.05)</bodyDrawOffset>
+		<headSizeFactor>0.7</headSizeFactor>
+	</LifeStageDef>
+
+	<LifeStageDef ParentName="LifeStageHumanlikeTeenager">
+		<defName>PonyTeenager</defName>
+		<label>teenager</label>
+		<bodySizeFactor>0.85</bodySizeFactor>
+		<bodyWidth>1.35</bodyWidth>
+		<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
+		<headSizeFactor>0.9</headSizeFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef ParentName="LifeStageHumanlikeAdult">
+		<defName>PonyAdult</defName>
+		<label>adult</label>
+	</LifeStageDef>
+
+</Defs>

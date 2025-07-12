@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!-- Hediffs -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="WoundInfection"]/description</xpath>
+		<value>
+			<description>Bacterial infection in a wound. Without treatment, the bacteria will multiply, killing local tissue, and eventually causing blood poisoning and death.\n\nThrough aeons of endless warfare, infections have often taken more lives than the wounds themselves.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Animal_Flu"]/description</xpath>
+		<value>
+			<description>An infectious disease caused by the influenza virus. This strain is adapted for only infecting animal species.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="Animal_Plague"]/description</xpath>
+		<value>
+			<description>An infectious disease caused by bacteria. This strain is adapted for only infecting animal species.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ArchotechEye"]/description</xpath>
+		<value>
+			<description>An installed archotech eye. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Its internal workings are a mystery to our limited minds.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ArchotechArm"]/description</xpath>
+		<value>
+			<description>An installed archotech arm. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to our limited minds.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ArchotechLeg"]/description</xpath>
+		<value>
+			<description>An installed archotech leg. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to our limited minds.</description>
+		</value>
+	</Operation>
+
+
+<!-- Things -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechEye"]/description</xpath>
+		<value>
+			<description>An artificial eye built by an archotech. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Its internal workings are a mystery to our limited minds.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechArm"]/description</xpath>
+		<value>
+			<description>An artificial arm built by an archotech. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to our limited minds.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechLeg"]/description</xpath>
+		<value>
+			<description>An artificial leg built by an archotech. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to our limited minds.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Heart"]/description</xpath>
+		<value>
+			<description>A biological heart. Pumps blood around the body.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Lung"]/description</xpath>
+		<value>
+			<description>A biological lung. A pair of these form the core of respiratory system.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Kidney"]/description</xpath>
+		<value>
+			<description>A biological kidney. Filters and removes waste products from the blood.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Liver"]/description</xpath>
+		<value>
+			<description>A biological liver. Plays an important role in metabolism.</description>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Hay"]/description</xpath>
+		<value>
+			<description>Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is loved by ponies and is also a good animal feed, but inedible for humans.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AIPersonaCore"]/description</xpath>
+		<value>
+			<description>A hyper-advanced computer core that houses a peak-mind-equivalent machine persona. In its isolated state, the core is dormant. Installed in a proper support structure, however, it can become a mind of great power.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Skull"]/description</xpath>
+		<value>
+			<description>A humanlike skull.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gold"]/description</xpath>
+		<value>
+			<description>The most seductive metal of them all. While it is too soft to be of much practical use, it is strikingly beautiful and never tarnishes. Millions have died in attempting to feed the endless thirst for gold.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_BreachAxe"]/description</xpath>
+		<value>
+			<description>A combined blade and tool-head attached to a sturdy haft. While slightly less effective than other weapons against living enemies, it excels at tearing down walls, doors, and other structures thanks to its integrated tool-head.</description>
+		</value>
+	</Operation>
+
+<!-- Thoughts -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="AteKibble"]/stages/li/description</xpath>
+		<value>
+			<description>I had to eat animal kibble. It's like I've been treated like an animal.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirect"]/stages/li/description</xpath>
+		<value>
+			<description>I ate the meat of another sapient creature, raw, like an animal. This is a nightmare.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatDirectCannibal"]/stages/li/description</xpath>
+		<value>
+			<description>I ate the meat of another sapient creature, raw, like an animal. It was so... succulent.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredient"]/stages/li/description</xpath>
+		<value>
+			<description>I ate a meal made from the meat of another sapient creature. This is horrible.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="AteHumanlikeMeatAsIngredientCannibal"]/stages/li/description</xpath>
+		<value>
+			<description>I ate a meal made from the meat of another sapient creature. So pleasurable. If only I had some fava beans and a nice chianti.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="AteRawHumanlikeMeat"]/stages/li/label</xpath>
+		<value>
+			<label>ate raw sapient creature meat</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/stages/li[1]/label</xpath>
+		<value>
+			<label>{0} from someone's leather</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/stages/li[2]/label</xpath>
+		<value>
+			<label>{0} from someone's leather (+1)</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/stages/li[3]/label</xpath>
+		<value>
+			<label>{0} from someone's leather (+2)</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelSad"]/stages/li[4]/label</xpath>
+		<value>
+			<label>{0} from someone's leather etc</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/stages/li[1]/label</xpath>
+		<value>
+			<label>{0} from someone's leather</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/stages/li[2]/label</xpath>
+		<value>
+			<label>{0} from someone's leather (+1)</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/stages/li[3]/label</xpath>
+		<value>
+			<label>{0} from someone's leather (+2)</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="HumanLeatherApparelHappy"]/stages/li[4]/label</xpath>
+		<value>
+			<label>{0} from someone's leather etc</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="ProsthophileHappy"]/stages/li[3]/description</xpath>
+		<value>
+			<description>Three artificial enhancements, and my weak flesh is receding. But I still want more machine power.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="ProsthophileHappy"]/stages/li[4]/description</xpath>
+		<value>
+			<description>Four artificial enhancements and I am becoming more powerfull. But there's still some flesh that needs replacing.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="ProsthophobeUnhappy"]/stages/li[5]/description</xpath>
+		<value>
+			<description>Five artificial enhancements... Is there anything left of me? Or am I just a robot that thinks it's real?</description>
+		</value>
+	</Operation>
+
+<!-- Traits -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/description</xpath>
+		<value>
+			<description>{PAWN_nameDef} was taught that eating meat of [PAWN_possessive] kind is wrong and horrible. But one time, long ago, {PAWN_pronoun} tried it... and {PAWN_pronoun} liked it.</description>
+		</value>
+	</Operation>
+
+</Patch>

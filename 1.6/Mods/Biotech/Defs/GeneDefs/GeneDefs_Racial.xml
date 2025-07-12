@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_HorseHooves</defName>
+		<label>horse hooves</label>
+		<description>Carriers of this gene have hands that resemble horse hooves. This reduces their ability to manipulate objects but makes them slightly faster.</description>
+		<iconPath>UI/Genes/HorseHooves</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>25</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+<!-- 		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.8</postFactor>
+			</li>
+		</capMods> -->
+		<statOffsets>
+			<AimingDelayFactor>0.1</AimingDelayFactor>
+			<MoveSpeed>0.1</MoveSpeed>
+		</statOffsets>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>hoover</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>hoof</symbol></li>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Hands</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_StrongBody</defName>
+		<label>strong body</label>
+		<description>Carriers of this gene have a strong and sturdy body, increasing pain threshold and immunity. A natural attribute of earth-like ponies.</description>
+		<iconPath>UI/Genes/StrongBody</iconPath>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+			<CarryingCapacity>10</CarryingCapacity>
+			<PainShockThreshold>0.05</PainShockThreshold>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>earth</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_CoatFluff</defName>
+		<label>coat fluff</label>
+		<description>Carriers of this gene grow a fluffy coat on their skin, increasing temperature tolerance. A natural attribute of flying ponies.</description>
+		<iconPath>UI/Genes/CoatFluff</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ComfyTemperatureMax>4</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-4</ComfyTemperatureMin>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>pega</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_MagicImbued</defName>
+		<label>magic imbued</label>
+		<description>Carriers of this gene have a great connection with magic, endowing themselves with magical and psychic abilities. A natural attribute of ponies with a horn.</description>
+		<iconPath>UI/Genes/MagicImbued</iconPath>
+		<displayOrderInCategory>40</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<PsychicSensitivity>0.15</PsychicSensitivity>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>uni</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+				<li><symbol>corn</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

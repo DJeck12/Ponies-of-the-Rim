@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
+			<value>
+				<li>Pony_FrontLeg</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Hand') and not(defName="InstallWoodenHand")]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_FrontHoof</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Leg')]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_Thigh</li>
+		</value>
+	</Operation>
+
+		<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Foot')]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>Pony_RearHoof</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="InstallWoodenFoot"]/appliedOnFixedBodyParts/li[2]</xpath>
+				</li>
+			</operations>
+		</Operation>
+
+</Patch>
