@@ -2,6 +2,186 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="ArchotechEye" or defName="BionicEye"]/renderNodeProperties/li[workerClass="PawnRenderNodeWorker_HediffEye"]</xpath>
+		<value>
+			<subworkerClasses></subworkerClasses>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="ArchotechEye" or defName="BionicEye"]/renderNodeProperties/li[workerClass="PawnRenderNodeWorker_HediffEye"]/subworkerClasses</xpath>
+        <value>
+            <li>PoniesOfTheRim.PonyRenderSubWorkerEye</li>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties</xpath>
+		<value>
+		  <li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
+			<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.15</drawSize>
+			<drawData>
+			  <defaultData>
+				<layer>56</layer>
+				<offset>(0, 0, -0.25)</offset>
+			  </defaultData>
+			  <dataWest>
+				<flip>true</flip>
+			  </dataWest>
+			</drawData>
+			<subworkerClasses>
+				<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+			</subworkerClasses>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties</xpath>
+		<value>
+		  <li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
+			<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.15</drawSize>
+			<drawData>
+			  <defaultData>
+				<layer>56</layer>
+				<offset>(0, 0, -0.25)</offset>
+			  </defaultData>
+			  <dataWest>
+				<flip>true</flip>
+			  </dataWest>
+			</drawData>
+			<subworkerClasses>
+				<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+			</subworkerClasses>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+		<value>
+			<subworkerClasses></subworkerClasses>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/subworkerClasses</xpath>
+        <value>
+            <li>PoniesOfTheRim.PonyRenderSubWorkerEye</li>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
+		<value>
+		  <li Class="PawnRenderNodeProperties_Eye">
+			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<anchorTag>RightEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Right</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+			  </defaultData>
+			</drawData>
+			<subworkerClasses>
+				<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+			</subworkerClasses>
+		  </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
+		<value>
+		  <li Class="PawnRenderNodeProperties_Eye">
+			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<anchorTag>LeftEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Left</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+				<flip>true</flip>
+			  </defaultData>
+			  <dataWest>
+				<flip>false</flip>
+			  </dataWest>
+			</drawData>
+			<subworkerClasses>
+				<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+			</subworkerClasses>
+		  </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
+		<value>
+		  <li Class="PawnRenderNodeProperties_Eye">
+			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<anchorTag>RightEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Right</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+			  </defaultData>
+			</drawData>
+			<subworkerClasses>
+				<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+			</subworkerClasses>
+		  </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
+		<value>
+		  <li Class="PawnRenderNodeProperties_Eye">
+			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<anchorTag>LeftEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Left</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+				<flip>true</flip>
+			  </defaultData>
+			  <dataWest>
+				<flip>false</flip>
+			  </dataWest>
+			</drawData>
+			<subworkerClasses>
+				<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+			</subworkerClasses>
+		  </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/HediffDef[defName="BionicArm"]/comps</xpath>
 		<value>
 			<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
