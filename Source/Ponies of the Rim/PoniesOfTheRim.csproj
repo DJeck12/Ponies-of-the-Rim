@@ -123,6 +123,7 @@
     <Compile Include="HediffComp_PonyProsthetic.cs" />
     <Compile Include="PonyTailTypeDef.cs" />
     <Compile Include="Pony_DefOf.cs" />
+    <Compile Include="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom.cs" />
     <Compile Include="Thoughts\ThoughtExtension.cs" />
     <Compile Include="Thoughts\ThoughtWorker_LeatherApparel.cs" />
     <Compile Include="Thoughts\ThoughtWorker_OpinionForPony.cs" />
