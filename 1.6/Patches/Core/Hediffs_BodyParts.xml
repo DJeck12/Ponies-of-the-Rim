@@ -25,19 +25,11 @@
 		</value>
 	</Operation>
 
-		<Operation Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Foot')]/appliedOnFixedBodyParts</xpath>
-					<value>
-						<li>Pony_RearHoof</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/RecipeDef[defName="InstallWoodenFoot"]/appliedOnFixedBodyParts/li[2]</xpath>
-				</li>
-			</operations>
-		</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Foot')]/appliedOnFixedBodyParts</xpath>
+		<value>
+			<li>Pony_RearHoof</li>
+		</value>
+	</Operation>
 
 </Patch>
