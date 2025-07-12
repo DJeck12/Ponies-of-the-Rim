@@ -8,7 +8,8 @@ namespace PoniesOfTheRim
     {
         internal static bool IsPony(this Pawn pawn)
         {
-            return pawn.kindDef.race.defName.Contains("Pony_");
+            //return pawn.kindDef.race.defName.Contains("Pony_");
+            return pawn.def.defName.Contains("Pony_");
         }
         internal static bool IsEarthpony(this Pawn pawn)
         {

@@ -8,16 +8,16 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/MemeDef[defName="Supremacist"]/exclusionTags</xpath>
+					<xpath>Defs/MemeDef[defName="Supremacist"]/exclusionTags</xpath>
 					<value>
 						<li>Supremacist</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
+					<xpath>Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/MemeDef[defName="Raider"]</xpath>
+						<xpath>Defs/MemeDef[defName="Raider"]</xpath>
 						<value>
 							<exclusionTags>
 								<li>Raider</li>
@@ -25,7 +25,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
+						<xpath>Defs/MemeDef[defName="Raider"]/exclusionTags</xpath>
 						<value>
 							<li>Raider</li>
 						</value>
@@ -33,9 +33,9 @@
 				</li>
 				
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
+					<xpath>Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/MemeDef[defName="Cannibal"]</xpath>
+						<xpath>Defs/MemeDef[defName="Cannibal"]</xpath>
 						<value>
 							<exclusionTags>
 								<li>Cannibal</li>
@@ -43,7 +43,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
+						<xpath>Defs/MemeDef[defName="Cannibal"]/exclusionTags</xpath>
 						<value>
 							<li>Cannibal</li>
 						</value>

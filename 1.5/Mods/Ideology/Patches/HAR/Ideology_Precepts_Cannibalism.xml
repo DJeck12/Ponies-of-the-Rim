@@ -6,11 +6,11 @@
 			<li>Humanoid Alien Races</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<!-- <success>Always</success> -->
 			<operations>
 			<!-- Abhorrent -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteAlienMeat_Abhorrent"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteAlienMeat_Abhorrent"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -22,7 +22,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteAlienMeat_Know_Abhorrent"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteAlienMeat_Know_Abhorrent"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -34,7 +34,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_ButcheredAlien_Abhorrent"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_ButcheredAlien_Abhorrent"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -46,7 +46,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Abhorrent"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Abhorrent"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -58,7 +58,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Abhorrent_Opinion"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Abhorrent_Opinion"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -71,7 +71,7 @@
 				</li>
 			<!-- Disapproved -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteAlienMeat_Disapproved"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteAlienMeat_Disapproved"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -83,7 +83,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteAlienMeat_Know_Disapproved"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteAlienMeat_Know_Disapproved"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -95,7 +95,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_ButcheredAlien_Disapproved"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_ButcheredAlien_Disapproved"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -107,7 +107,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Disapproved"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Disapproved"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -119,7 +119,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Disapproved_Opinion"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_ButcheredAlien_Know_Disapproved_Opinion"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -132,7 +132,7 @@
 				</li>
 			<!-- Preferred -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteAlienMeat_Preferred"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteAlienMeat_Preferred"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -144,7 +144,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_NoRecentAlienMeat_Preferred"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_NoRecentAlienMeat_Preferred"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -157,7 +157,7 @@
 				</li>
 			<!-- Required -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteNonAlienFood_Horrible"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteNonAlienFood_Horrible"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -169,7 +169,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteNonAlienFood_Know_Horrible"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteNonAlienFood_Know_Horrible"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -181,7 +181,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_AteAlienMeat_RequiredStrong"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_AteAlienMeat_RequiredStrong"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">
@@ -193,7 +193,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThoughtDef[defName="HAR_NoRecentAlienMeat_RequiredStrong"]</xpath>
+					<xpath>Defs/ThoughtDef[defName="HAR_NoRecentAlienMeat_RequiredStrong"]</xpath>
 					<value>
 						<modExtensions>
 							<li Class="VFECore.ThoughtExtensions">

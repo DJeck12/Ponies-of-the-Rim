@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="InstallKneeSpike"]/appliedOnFixedBodyParts/li[text()="Pony_Thigh"]</xpath>
+					<xpath>Defs/RecipeDef[defName="InstallKneeSpike"]/appliedOnFixedBodyParts/li[text()="Pony_Thigh"]</xpath>
 					<value>
 						<li>Pony_RearLeg</li>
 					</value>

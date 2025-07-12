@@ -9,7 +9,7 @@
 			<operations>
 			<!-- Guests -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+					<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
 					<value>
 						<li>
 							<categoryTag>PonyOutlander</categoryTag>
@@ -24,7 +24,7 @@
 				</li>
 			<!-- Mercenaries -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+					<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
 					<value>
 						<li>
 							<categoryTag>PonyOutlander</categoryTag>

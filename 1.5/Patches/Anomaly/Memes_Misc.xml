@@ -8,8 +8,8 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
-					<xpath>/Defs/MemeDef[defName="Inhuman"]/exclusionTags</xpath>
+					<!-- <success>Always</success> -->
+					<xpath>Defs/MemeDef[defName="Inhuman"]/exclusionTags</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/MemeDef[defName="Inhuman"]</xpath>
 						<value>
@@ -19,7 +19,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/MemeDef[defName="Inhuman"]/exclusionTags</xpath>
+						<xpath>Defs/MemeDef[defName="Inhuman"]/exclusionTags</xpath>
 						<value>
 							<li>Inhuman</li>
 						</value>

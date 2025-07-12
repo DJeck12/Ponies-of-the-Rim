@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationInsert">
-		<xpath>/Defs/ThingDef[defName="Apparel_Pants"
+		<xpath>Defs/ThingDef[defName="Apparel_Pants"
 		or defName="Apparel_FlakPants"]/apparel/bodyPartGroups</xpath>
 		<value>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</wornGraphicPath>
@@ -10,7 +10,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
+		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
 		or @Name="ApparelArmorHelmetReconBase"]/apparel/bodyPartGroups</xpath>
 		<value>
 			<li>TopHead</li>

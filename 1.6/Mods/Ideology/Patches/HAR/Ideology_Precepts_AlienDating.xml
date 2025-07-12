@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
+					<!-- <success>Always</success> -->
 					<xpath>Defs/PreceptDef[defName="HAR_AlienDating_Preferred"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/PreceptDef[defName="HAR_AlienDating_Preferred"]</xpath>
@@ -34,7 +34,7 @@
 					</match>
 				</li>
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
+					<!-- <success>Always</success> -->
 					<xpath>Defs/PreceptDef[defName="HAR_AlienDating_Honorable"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
 					<xpath>Defs/PreceptDef[defName="HAR_AlienDating_Honorable"]</xpath>

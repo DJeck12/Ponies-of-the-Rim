@@ -6,13 +6,13 @@
 			<li>Humanoid Alien Races</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<!-- <success>Always</success> -->
 			<operations>
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
-					<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Abhorrent"]/conflictingMemes</xpath>
+					<!-- <success>Always</success> -->
+					<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Abhorrent"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Abhorrent"]</xpath>
+					<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Abhorrent"]</xpath>
 					<value>
 						<conflictingMemes>
 							<li>Pony_Friendship</li>
@@ -20,17 +20,17 @@
 					</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Abhorrent"]/conflictingMemes</xpath>
+						<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Abhorrent"]/conflictingMemes</xpath>
 						<value>
 							<li>Pony_Friendship</li>
 						</value>
 					</match>
 				</li>
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
-					<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Respected"]/conflictingMemes</xpath>
+					<!-- <success>Always</success> -->
+					<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Respected"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Respected"]</xpath>
+					<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Respected"]</xpath>
 					<value>
 						<conflictingMemes>
 							<li>Pony_EarthponySupremacist</li>
@@ -40,7 +40,7 @@
 					</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Respected"]/conflictingMemes</xpath>
+						<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Respected"]/conflictingMemes</xpath>
 						<value>
 							<li>Pony_EarthponySupremacist</li>
 							<li>Pony_PegasusSupremacist</li>
@@ -49,10 +49,10 @@
 					</match>
 				</li>
 				<li Class="PatchOperationConditional">
-					<success>Always</success>
-					<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Exalted"]/conflictingMemes</xpath>
+					<!-- <success>Always</success> -->
+					<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Exalted"]/conflictingMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Exalted"]</xpath>
+					<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Exalted"]</xpath>
 					<value>
 						<conflictingMemes>
 							<li>Pony_EarthponySupremacist</li>
@@ -62,7 +62,7 @@
 					</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/PreceptDef[defName="HAR_AlienRaces_Exalted"]/conflictingMemes</xpath>
+						<xpath>Defs/PreceptDef[defName="HAR_AlienRaces_Exalted"]/conflictingMemes</xpath>
 						<value>
 							<li>Pony_EarthponySupremacist</li>
 							<li>Pony_PegasusSupremacist</li>

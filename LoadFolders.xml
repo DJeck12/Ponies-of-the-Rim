@@ -26,6 +26,11 @@
 		<li IfModActive="CETeam.CombatExtended">ModPatches/Combat Extended</li>
 		<li IfModActive="feaurie.GreyscytheBionics">ModPatches/Greyscythe Bionics Catalogue</li>
 		<li IfModActive="ANNOProfi.HellBionics">ModPatches/Hell Bionics</li>
+		<li IfModActive="Rooboid.Minotaur">ModPatches/Roo's Minotaur Xenotype</li>
+		<li IfModActive="Rooboid.Satyr">ModPatches/Roo's Satyr Xenotype</li>
+		<li IfModActive="Rooboid.Faun">ModPatches/Roo's Faun Xenotype</li>
+		<li IfModActive="Neronix17.Outland.Genetics">ModPatches/Outland - Genetics</li>
+		<li IfModActive="wvc.sergkart.races.biotech">ModPatches/WVC - Xenotypes and Genes</li>
 	</v1.5>
 	<v1.6>
 		<!-- Core Files -->
@@ -53,5 +58,10 @@
 		<li IfModActive="CETeam.CombatExtended">ModPatches/Combat Extended</li>
 		<li IfModActive="feaurie.GreyscytheBionics">ModPatches/Greyscythe Bionics Catalogue</li>
 		<li IfModActive="ANNOProfi.HellBionics">ModPatches/Hell Bionics</li>
+		<li IfModActive="Rooboid.Minotaur">ModPatches/Roo's Minotaur Xenotype</li>
+		<li IfModActive="Rooboid.Satyr">ModPatches/Roo's Satyr Xenotype</li>
+		<li IfModActive="Rooboid.Faun">ModPatches/Roo's Faun Xenotype</li>
+		<li IfModActive="Neronix17.Outland.Genetics">ModPatches/Outland - Genetics</li>
+		<li IfModActive="wvc.sergkart.races.biotech">ModPatches/WVC - Xenotypes and Genes</li>
 	</v1.6>
 </loadFolders>

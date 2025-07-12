@@ -4,6 +4,15 @@
 	<BodyTypeDef>
 		<defName>Pony</defName>
 		<headOffset>(0.09, 0.34)</headOffset>
+		<modExtensions>
+			<li MayRequire="Neronix17.UI.PawnAdjuster" Class="PawnAdjust.DefModExt_HideInAdjuster">
+				<showForRaces>
+					<li>Pony_Earthpony</li>
+					<li>Pony_Pegasus</li>
+					<li>Pony_Unicorn</li>
+				</showForRaces>
+			</li>
+		</modExtensions>
 		<woundAnchors>
 			<li>
 				<rotation>South</rotation>
@@ -176,6 +185,15 @@
 		<defName>PonyBaby</defName>
 		<woundScale>0.5</woundScale>
 		<headOffset>(0.09, 0.34)</headOffset>
+		<modExtensions>
+			<li MayRequire="Neronix17.UI.PawnAdjuster" Class="PawnAdjust.DefModExt_HideInAdjuster">
+				<showForRaces>
+					<li>Pony_Earthpony</li>
+					<li>Pony_Pegasus</li>
+					<li>Pony_Unicorn</li>
+				</showForRaces>
+			</li>
+		</modExtensions>
 		<woundAnchors>
 			<li>
 				<rotation>South</rotation>
@@ -348,6 +366,15 @@
 		<defName>PonyChild</defName>
 		<woundScale>0.7</woundScale>
 		<headOffset>(0.09, 0.34)</headOffset>
+		<modExtensions>
+			<li MayRequire="Neronix17.UI.PawnAdjuster" Class="PawnAdjust.DefModExt_HideInAdjuster">
+				<showForRaces>
+					<li>Pony_Earthpony</li>
+					<li>Pony_Pegasus</li>
+					<li>Pony_Unicorn</li>
+				</showForRaces>
+			</li>
+		</modExtensions>
 		<woundAnchors>
 			<li>
 				<rotation>South</rotation>
