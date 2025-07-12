@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_SaddleBag.label>鞍包</Pony_SaddleBag.label>
+	<Pony_SaddleBag.description>一个简单的鞍包，小马通常在冒险时携带。大大增加了使用者的负重。</Pony_SaddleBag.description>
+
+	<Pony_BattleSaddle.label>战斗鞍</Pony_BattleSaddle.label>
+	<Pony_BattleSaddle.description>一种能舒适地将武器固定在小马侧面的设计，从而提高瞄准速度。</Pony_BattleSaddle.description>
+
+</LanguageData>

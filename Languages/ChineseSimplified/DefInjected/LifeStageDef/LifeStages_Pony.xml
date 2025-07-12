@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
 
-  <PonyBaby.label>婴儿</PonyBaby.label>
-  <PonyChild.label>孩童</PonyChild.label>
-  <PonyPreTeenager.label>青春期前</PonyPreTeenager.label>
-  <PonyTeenager.label>青少年</PonyTeenager.label>
-  <PonyAdult.label>成人</PonyAdult.label>
+	<PonyBaby.label>婴儿</PonyBaby.label>
+	<PonyBaby.customMoodTipString>心情代表一只幼驹的快乐或压力有多大。心情低落的婴儿更有可能哭，而心情高涨的婴儿更有可能咯咯笑。</PonyBaby.customMoodTipString>
+	<PonyChild.label>幼驹</PonyChild.label>
+	<PonyPreTeenager.label>少年</PonyPreTeenager.label>
+	<PonyTeenager.label>少年</PonyTeenager.label>
+	<PonyTeenager.adjective>少年</PonyTeenager.adjective>
+	<PonyAdult.label>成年小马</PonyAdult.label>
 
-
-</LanguageData>
+</Defs>

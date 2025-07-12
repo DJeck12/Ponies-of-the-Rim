@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <Meat_Pony.label>小马肉</Meat_Pony.label>
-  <Meat_Pony.description>小马种族成员的原始肉。可以用作食物，但大多数人不会很好地接受这个想法。被认为是小马和其他种族的食人食物。</Meat_Pony.description>
-
+	<Meat_Pony.label>小马肉</Meat_Pony.label>
+	<Meat_Pony.description>新鲜屠宰的生肉。可进一步烹饪为菜肴或生吃，但大部分生物会反感这个想法。对小马和人类来说，吃这些肉都是很残忍的想法。</Meat_Pony.description>
 
 </LanguageData>

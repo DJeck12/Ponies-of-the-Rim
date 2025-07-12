@@ -1,45 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Pony_EarthponyFlorist.title>种花人</Pony_EarthponyFlorist.title>
-  <Pony_EarthponyFlorist.titleShort>种花人</Pony_EarthponyFlorist.titleShort>
-  <Pony_EarthponyFlorist.description>[PAWN_nameDef] 探索各种花卉植物物种。之后在一艘宇宙飞船上找到了一份工作，目的是参加到其他星球的各种探险活动，并通过结识许多外来标本来扩大自己的专业视野。</Pony_EarthponyFlorist.description>
+  <Pony_EarthponyFlorist.title>种花马</Pony_EarthponyFlorist.title>
+  <Pony_EarthponyFlorist.titleShort>园丁</Pony_EarthponyFlorist.titleShort>
+  <Pony_EarthponyFlorist.description>[PAWN_nameDef]喜欢探索各种花卉。[PAWN_pronoun]找了一份在宇宙飞船上的工作，参加其他星球的各种探险活动，通过外来标本扩大自己的专业视野。</Pony_EarthponyFlorist.description>
 
-  <Pony_EarthponySurveyor.title>特殊农场工作人员</Pony_EarthponySurveyor.title>
+  <Pony_EarthponySurveyor.title>特殊农场工作马</Pony_EarthponySurveyor.title>
   <Pony_EarthponySurveyor.titleShort>特殊农场员工</Pony_EarthponySurveyor.titleShort>
-  <Pony_EarthponySurveyor.description>[PAWN_nameDef]在一个特殊的农场工作，那里为科学家和炼金术士种植神奇的植物。[PAWN_pronoun]在这个领域获得了广泛的专业知识。</Pony_EarthponySurveyor.description>
+  <Pony_EarthponySurveyor.description>[PAWN_nameDef]在一个特殊的农场工作，那里为科学家和炼金术士们种植魔法植物。[PAWN_pronoun]在这个领域有广泛又专业的知识。</Pony_EarthponySurveyor.description>
 
   <Pony_EarthponyZootranslator.title>动物交流者</Pony_EarthponyZootranslator.title>
   <Pony_EarthponyZootranslator.titleShort>交流者</Pony_EarthponyZootranslator.titleShort>
-  <Pony_EarthponyZootranslator.description>[PAWN_nameDef]精通动物生物通讯。[PAWN_pronoun]能够轻松地与它们找到共同语言，安抚下来，迅速理解并满足它们的紧急需求。</Pony_EarthponyZootranslator.description>
+  <Pony_EarthponyZootranslator.description>[PAWN_nameDef]精通动物语言。[PAWN_pronoun]能够轻松安抚动物们，迅速理解并满足它们的紧急需求。</Pony_EarthponyZootranslator.description>
 
   <Pony_EarthponyDruid.title>祭司</Pony_EarthponyDruid.title>
   <Pony_EarthponyDruid.titleShort>祭司</Pony_EarthponyDruid.titleShort>
-  <Pony_EarthponyDruid.description>由于出色的魔法天赋，[PAWN_nameDef] 能够执行最复杂的仪式，旨在操控自然力量。即使是独角兽也无法与[PAWN_possessive]技巧相媲美。</Pony_EarthponyDruid.description>
+  <Pony_EarthponyDruid.description>由于[PAWN_pronoun]出色的魔法天赋，[PAWN_nameDef]能够执行最复杂的仪式，旨在操控自然力量。即使是独角兽也无法与[PAWN_possessive]的技巧相媲美。</Pony_EarthponyDruid.description>
 
-  <Pony_EarthponyTamerMagAni.title>魔法动物的驯养师</Pony_EarthponyTamerMagAni.title>
+  <Pony_EarthponyTamerMagAni.title>魔法动物驯兽师</Pony_EarthponyTamerMagAni.title>
   <Pony_EarthponyTamerMagAni.titleShort>兽王</Pony_EarthponyTamerMagAni.titleShort>
-  <Pony_EarthponyTamerMagAni.description>[PAWN_nameDef]毕生致力于寻找和捕捉异国情调的神奇动物。[PAWN_pronoun] 多年来一直在收集 [PAWN_possessive] 收藏品。</Pony_EarthponyTamerMagAni.description>
+  <Pony_EarthponyTamerMagAni.description>[PAWN_nameDef]毕生致力于寻找和捕捉魔法动物。[PAWN_pronoun]多年来一直在收集自己的收藏品。</Pony_EarthponyTamerMagAni.description>
 
   <Pony_EarthponyMutilated.title>实验手术接受者</Pony_EarthponyMutilated.title>
   <Pony_EarthponyMutilated.titleShort>小白鼠</Pony_EarthponyMutilated.titleShort>
-  <Pony_EarthponyMutilated.description>由于无法忍受对[PAWN_possessive]种族的持续欺凌，[PAWN_nameDef]同意了植入角和翅膀的实验程序。操作以失败告终，使[PAWN_objective]长时间无效。</Pony_EarthponyMutilated.description>
+  <Pony_EarthponyMutilated.description>由于无法忍受对[PAWN_possessive]种族的持续欺凌，[PAWN_nameDef]同意了植入角和翅膀的实验。实验以失败告终，使[PAWN_objective]残疾了很久。</Pony_EarthponyMutilated.description>
 
   <Pony_EarthponyStonecutter.title>石头农场拥有者</Pony_EarthponyStonecutter.title>
   <Pony_EarthponyStonecutter.titleShort>切石者</Pony_EarthponyStonecutter.titleShort>
-  <Pony_EarthponyStonecutter.description>厌倦了城市无休止的喧嚣，[PAWN_nameDef]在一个偏远的石头农场找到了平静，并继承了这个农场。[PAWN_pronoun]为魔术师和珠宝商培养了各种水晶文化。</Pony_EarthponyStonecutter.description>
+  <Pony_EarthponyStonecutter.description>厌倦了城市无休止的喧嚣，[PAWN_nameDef]在一个偏远的石头农场找到了平静，并继承了这个农场。[PAWN_pronoun]为魔术师和珠宝商种植了各种水晶。</Pony_EarthponyStonecutter.description>
 
   <Pony_EarthponyWingless.title>没有翅膀的飞行员</Pony_EarthponyWingless.title>
-  <Pony_EarthponyWingless.titleShort>没有翅膀的飞马</Pony_EarthponyWingless.titleShort>
-  <Pony_EarthponyWingless.description>[PAWN_nameDef]欣赏飞马的飞行，并希望将生命与空气联系起来。[PAWN_pronoun]通过学习如何驾驶飞行器实现了 [PAWN_possessive] 梦想。</Pony_EarthponyWingless.description>
+  <Pony_EarthponyWingless.titleShort>无翼天马</Pony_EarthponyWingless.titleShort>
+  <Pony_EarthponyWingless.description>[PAWN_nameDef]喜欢飞行，希望将生命与空气联系起来。[PAWN_pronoun]通过学习如何驾驶飞行器实现了[PAWN_possessive]梦想。</Pony_EarthponyWingless.description>
 
-  <Pony_EarthponyAscCook.title>穷人厨师</Pony_EarthponyAscCook.title>
+  <Pony_EarthponyAscCook.title>贫民厨师</Pony_EarthponyAscCook.title>
   <Pony_EarthponyAscCook.titleShort>厨师</Pony_EarthponyAscCook.titleShort>
-  <Pony_EarthponyAscCook.description>[PAWN_nameDef]生活在穷人的代表中，在一间小小的公共餐厅里用草药食材烹制简单而美味的菜肴。[PAWN_pronoun]学会了欣赏[PAWN_pronoun]所拥有的。</Pony_EarthponyAscCook.description>
+  <Pony_EarthponyAscCook.description>[PAWN_nameDef]生活典型的贫民窟，在一间小小的公共餐厅里用草药食材烹制简单而美味的菜肴。[PAWN_pronoun]学会了欣赏[PAWN_pronoun]所拥有的。</Pony_EarthponyAscCook.description>
 
   <Pony_EarthponyAlchemist.title>药剂师</Pony_EarthponyAlchemist.title>
   <Pony_EarthponyAlchemist.titleShort>药剂师</Pony_EarthponyAlchemist.titleShort>
-  <Pony_EarthponyAlchemist.description>[PAWN_nameDef]喜欢阅读和草药。[PAWN_pronoun]研究了它们的有益特性，开发了各种制剂并从中制备了汤剂。</Pony_EarthponyAlchemist.description>
-
+  <Pony_EarthponyAlchemist.description>[PAWN_nameDef]喜欢书和草药。[PAWN_pronoun]喜欢研究它们的有益特性，开发各种制剂。</Pony_EarthponyAlchemist.description>
 
 </LanguageData>

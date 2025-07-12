@@ -1,76 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- Earthpony -->
+<!-- 陆马 -->
 
-  <EPonyTown_Guard.label>小马镇守卫</EPonyTown_Guard.label>
-  <EPonyTown_Guard.labelPlural>小马镇守卫</EPonyTown_Guard.labelPlural>
-  <EPonyTown_Guard.labelMale>小马镇守卫</EPonyTown_Guard.labelMale>
-  <EPonyTown_Guard.labelMalePlural>小马镇守卫</EPonyTown_Guard.labelMalePlural>
-  <EPonyTown_Guard.labelFemale>小马镇守卫</EPonyTown_Guard.labelFemale>
-  <EPonyTown_Guard.labelFemalePlural>小马镇守卫</EPonyTown_Guard.labelFemalePlural>
+	<Pony_EarthponyTown_Guard.label>陆马城镇守卫</Pony_EarthponyTown_Guard.label>
+	<Pony_EarthponyTown_Guard.labelPlural>陆马城镇守卫</Pony_EarthponyTown_Guard.labelPlural>
 
-  <EPonyTown_Trader.label>小马镇商人</EPonyTown_Trader.label>
-  <EPonyTown_Trader.labelPlural>小马镇商人</EPonyTown_Trader.labelPlural>
-  <EPonyTown_Trader.labelMale>小马镇商人</EPonyTown_Trader.labelMale>
-  <EPonyTown_Trader.labelMalePlural>小马镇商人</EPonyTown_Trader.labelMalePlural>
-  <EPonyTown_Trader.labelFemale>小马镇商人</EPonyTown_Trader.labelFemale>
-  <EPonyTown_Trader.labelFemalePlural>小马镇商人</EPonyTown_Trader.labelFemalePlural>
+	<Pony_EarthponyTown_Trader.label>陆马商马</Pony_EarthponyTown_Trader.label>
+	<Pony_EarthponyTown_Trader.labelPlural>陆马商马</Pony_EarthponyTown_Trader.labelPlural>
 
-  <EPonyTown_Councilman.label>小马镇议员</EPonyTown_Councilman.label>
-  <EPonyTown_Councilman.labelPlural>小马镇议员
-  <EPonyTown_Councilman.labelMale>小马镇议员</EPonyTown_Councilman.labelMale>
-  <EPonyTown_Councilman.labelMalePlural>小马镇议员</EPonyTown_Councilman.labelMalePlural>
-  <EPonyTown_Councilman.labelFemale>小马镇议员</EPonyTown_Councilman.labelFemale>
-  <EPonyTown_Councilman.labelFemalePlural>小马镇议员</EPonyTown_Councilman.labelFemalePlural>
+	<Pony_EarthponyTown_Councilman.label>陆马城镇议员</Pony_EarthponyTown_Councilman.label>
+	<Pony_EarthponyTown_Councilman.labelPlural>陆马城镇议员</Pony_EarthponyTown_Councilman.labelPlural>
 
+<!-- 天马 -->
 
-  <!-- Pegasus -->
+	<Pony_PegasusTown_Guard.label>天马城镇守卫</Pony_PegasusTown_Guard.label>
+	<Pony_PegasusTown_Guard.labelPlural>天马城镇守卫</Pony_PegasusTown_Guard.labelPlural>
 
-  <PPonyTown_Guard.label>小马镇守卫</PPonyTown_Guard.label>
-  <PPonyTown_Guard.labelPlural>小马镇守卫</PPonyTown_Guard.labelPlural>
-  <PPonyTown_Guard.labelMale>小马镇守卫</PPonyTown_Guard.labelMale>
-  <PPonyTown_Guard.labelMalePlural>小马镇守卫</PPonyTown_Guard.labelMalePlural>
-  <PPonyTown_Guard.labelFemale>小马镇守卫</PPonyTown_Guard.labelFemale>
-  <PPonyTown_Guard.labelFemalePlural>小马镇守卫</PPonyTown_Guard.labelFemalePlural>
+	<Pony_PegasusTown_Trader.label>天马商马</Pony_PegasusTown_Trader.label>
+	<Pony_PegasusTown_Trader.labelPlural>天马商马</Pony_PegasusTown_Trader.labelPlural>
 
-  <PPonyTown_Trader.label>小马镇商人</PPonyTown_Trader.label>
-  <PPonyTown_Trader.labelPlural>小马镇商人</PPonyTown_Trader.labelPlural>
-  <PPonyTown_Trader.labelMale>小马镇商人</PPonyTown_Trader.labelMale>
-  <PPonyTown_Trader.labelMalePlural> 小马镇商人</PPonyTown_Trader.labelMalePlural>
-  <PPonyTown_Trader.labelFemale>小马镇商人</PPonyTown_Trader.labelFemale>
-  <PPonyTown_Trader.labelFemalePlural>小马镇商人</PPonyTown_Trader.labelFemalePlural>
+	<Pony_PegasusTown_Councilman.label>天马城镇议员</Pony_PegasusTown_Councilman.label>
+	<Pony_PegasusTown_Councilman.labelPlural>天马城镇议员</Pony_PegasusTown_Councilman.labelPlural>
 
-  <PPonyTown_Councilman.label>小马镇议员</PPonyTown_Councilman.label>
-  <PPonyTown_Councilman.labelPlural>小马镇议员</PPonyTown_Councilman.labelPlural>
-  <PPonyTown_Councilman.labelMale>小马镇议员</PPonyTown_Councilman.labelMale>
-  <PPonyTown_Councilman.labelMalePlural>小马镇议员</PPonyTown_Councilman.labelMalePlural>
-  <PPonyTown_Councilman.labelFemale> 小马镇议员</PPonyTown_Councilman.labelFemale>
-  <PPonyTown_Councilman.labelFemalePlural>小马镇议员</PPonyTown_Councilman.labelFemalePlural>
+<!-- 独角兽 -->
 
+	<Pony_UnicornTown_Guard.label>独角兽城镇守卫</Pony_UnicornTown_Guard.label>
+	<Pony_UnicornTown_Guard.labelPlural>独角兽城镇守卫</Pony_UnicornTown_Guard.labelPlural>
 
-  <!-- Unicorn -->
+	<Pony_UnicornTown_Trader.label>独角兽商马</Pony_UnicornTown_Trader.label>
+	<Pony_UnicornTown_Trader.labelPlural>独角兽商马</Pony_UnicornTown_Trader.labelPlural>
 
-  <UPonyTown_Guard.label>小马镇守卫</UPonyTown_Guard.label>
-  <UPonyTown_Guard.labelPlural>小马镇守卫</UPonyTown_Guard.labelPlural>
-  <UPonyTown_Guard.labelMale>小马镇守卫</UPonyTown_Guard.labelMale>
-  <UPonyTown_Guard.labelMalePlural>小马镇守卫</UPonyTown_Guard.labelMalePlural>
-  <UPonyTown_Guard.labelFemale>小马镇守卫</UPonyTown_Guard.labelFemale>
-  <UPonyTown_Guard.labelFemalePlural>小马镇守卫</UPonyTown_Guard.labelFemalePlural>
-
-  <UPonyTown_Trader.label>小马镇商人</UPonyTown_Trader.label>
-  <UPonyTown_Trader.labelPlural>小马镇商人</UPonyTown_Trader.labelPlural>
-  <UPonyTown_Trader.labelMale>小马镇商人</UPonyTown_Trader.labelMale>
-  <UPonyTown_Trader.labelMalePlural>小马镇商人</UPonyTown_Trader.labelMalePlural>
-  <UPonyTown_Trader.labelFemale>小马镇商人</UPonyTown_Trader.labelFemale>
-  <UPonyTown_Trader.labelFemalePlural>小马镇商人</UPonyTown_Trader.labelFemalePlural>
-
-  <UPonyTown_Councilman.label> 小马镇议员</UPonyTown_Councilman.label>
-  <UPonyTown_Councilman.labelPlural>小马镇议员</UPonyTown_Councilman.labelPlural>
-  <UPonyTown_Councilman.labelMale>小马镇议员</UPonyTown_Councilman.labelMale>
-  <UPonyTown_Councilman.labelMalePlural>小马镇议员</UPonyTown_Councilman.labelMalePlural>
-  <UPonyTown_Councilman.labelFemale>小马镇议员</UPonyTown_Councilman.labelFemale>
-  <UPonyTown_Councilman.labelFemalePlural>小马镇议员</UPonyTown_Councilman.labelFemalePlural>
-
+	<Pony_UnicornTown_Councilman.label>独角兽城镇议员</Pony_UnicornTown_Councilman.label>
+	<Pony_UnicornTown_Councilman.labelPlural>独角兽城镇议员</Pony_UnicornTown_Councilman.labelPlural>
 
 </LanguageData>

@@ -1,52 +1,50 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- Colony -->
+<!-- 殖民者 -->
 
-  <EPonyColonist.label>陆马</EPonyColonist.label>
-  <EPonyColonist.labelPlural>陆马</EPonyColonist.labelPlural>
-  <EPonyColonist.labelMale>种马</EPonyColonist.labelMale>
-  <EPonyColonist.labelMalePlural>种马</EPonyColonist.labelMalePlural>
-  <EPonyColonist.labelFemale>母马</EPonyColonist.labelFemale>
-  <EPonyColonist.labelFemalePlural>母马</EPonyColonist.labelFemalePlural>
+	<Pony_EarthponyColonist.label>陆马</Pony_EarthponyColonist.label>
+	<Pony_EarthponyColonist.labelPlural>陆马</Pony_EarthponyColonist.labelPlural>
+	<Pony_EarthponyColonist.labelMale>雄陆马</Pony_EarthponyColonist.labelMale>
+	<Pony_EarthponyColonist.labelFemale>雌陆马</Pony_EarthponyColonist.labelFemale>
+	<Pony_EarthponyColonist.labelMalePlural>雄陆马</Pony_EarthponyColonist.labelMalePlural>
+	<Pony_EarthponyColonist.labelFemalePlural>雌陆马</Pony_EarthponyColonist.labelFemalePlural>
 
-  <PPonyColonist.label>天马</PPonyColonist.label>
-  <PPonyColonist.labelPlural>天马</PPonyColonist.labelPlural>
-  <PPonyColonist.labelMale>种马</PPonyColonist.labelMale>
-  <PPonyColonist.labelMalePlural>种马</PPonyColonist.labelMalePlural>
-  <PPonyColonist.labelFemale>母马</PPonyColonist.labelFemale>
-  <PPonyColonist.labelFemalePlural>母马s</PPonyColonist.labelFemalePlural>
+	<Pony_PegasusColonist.label>天马</Pony_PegasusColonist.label>
+	<Pony_PegasusColonist.labelPlural>天马</Pony_PegasusColonist.labelPlural>
+	<Pony_PegasusColonist.labelMale>雄天马</Pony_PegasusColonist.labelMale>
+	<Pony_PegasusColonist.labelFemale>雌天马</Pony_PegasusColonist.labelFemale>
+	<Pony_PegasusColonist.labelMalePlural>雄天马</Pony_PegasusColonist.labelMalePlural>
+	<Pony_PegasusColonist.labelFemalePlural>雌天马</Pony_PegasusColonist.labelFemalePlural>
 
-  <UPonyColonist.label>独角兽</UPonyColonist.label>
-  <UPonyColonist.labelPlural>独角兽</UPonyColonist.labelPlural>
-  <UPonyColonist.labelMale>种马</UPonyColonist.labelMale>
-  <UPonyColonist.labelMalePlural>种马</UPonyColonist.labelMalePlural>
-  <UPonyColonist.labelFemale>母马</UPonyColonist.labelFemale>
-  <UPonyColonist.labelFemalePlural>母马</UPonyColonist.labelFemalePlural>
+	<Pony_UnicornColonist.label>独角兽</Pony_UnicornColonist.label>
+	<Pony_UnicornColonist.labelPlural>独角兽</Pony_UnicornColonist.labelPlural>
+	<Pony_UnicornColonist.labelMale>雄独角兽</Pony_UnicornColonist.labelMale>
+	<Pony_UnicornColonist.labelFemale>雌独角兽</Pony_UnicornColonist.labelFemale>
+	<Pony_UnicornColonist.labelMalePlural>雄独角兽</Pony_UnicornColonist.labelMalePlural>
+	<Pony_UnicornColonist.labelFemalePlural>雌独角兽</Pony_UnicornColonist.labelFemalePlural>
 
+<!-- 部族居民 -->
 
-  <!-- Tribe -->
+	<Pony_EarthponyTribe.label>陆马</Pony_EarthponyTribe.label>
+	<Pony_EarthponyTribe.labelPlural>陆马</Pony_EarthponyTribe.labelPlural>
+	<Pony_EarthponyTribe.labelMale>雄陆马</Pony_EarthponyTribe.labelMale>
+	<Pony_EarthponyTribe.labelFemale>雌陆马</Pony_EarthponyTribe.labelFemale>
+	<Pony_EarthponyTribe.labelMalePlural>雄陆马</Pony_EarthponyTribe.labelMalePlural>
+	<Pony_EarthponyTribe.labelFemalePlural>雌陆马</Pony_EarthponyTribe.labelFemalePlural>
 
-  <EPonyTribe.label>陆马</EPonyTribe.label>
-  <EPonyTribe.labelPlural>陆马</EPonyTribe.labelPlural>
-  <EPonyTribe.labelMale>种马</EPonyTribe.labelMale>
-  <EPonyTribe.labelMalePlural>种马</EPonyTribe.labelMalePlural>
-  <EPonyTribe.labelFemale>母马</EPonyTribe.labelFemale>
-  <EPonyTribe.labelFemalePlural>母马</EPonyTribe.labelFemalePlural>
+	<Pony_PegasusTribe.label>天马</Pony_PegasusTribe.label>
+	<Pony_PegasusTribe.labelPlural>天马</Pony_PegasusTribe.labelPlural>
+	<Pony_PegasusTribe.labelMale>雄天马</Pony_PegasusTribe.labelMale>
+	<Pony_PegasusTribe.labelFemale>雌天马</Pony_PegasusTribe.labelFemale>
+	<Pony_PegasusTribe.labelMalePlural>雄天马</Pony_PegasusTribe.labelMalePlural>
+	<Pony_PegasusTribe.labelFemalePlural>雌天马</Pony_PegasusTribe.labelFemalePlural>
 
-  <PPonyTribe.label>天马</PPonyTribe.label>
-  <PPonyTribe.labelPlural>天马</PPonyTribe.labelPlural>
-  <PPonyTribe.labelMale>种马</PPonyTribe.labelMale>
-  <PPonyTribe.labelMalePlural>种马</PPonyTribe.labelMalePlural>
-  <PPonyTribe.labelFemale>母马</PPonyTribe.labelFemale>
-  <PPonyTribe.labelFemalePlural>母马</PPonyTribe.labelFemalePlural>
-
-  <UPonyTribe.label>独角兽</UPonyTribe.label>
-  <UPonyTribe.labelPlural>独角兽</UPonyTribe.labelPlural>
-  <UPonyTribe.labelMale>种马</UPonyTribe.labelMale>
-  <UPonyTribe.labelMalePlural>种马</UPonyTribe.labelMalePlural>
-  <UPonyTribe.labelFemale>母马</UPonyTribe.labelFemale>
-  <UPonyTribe.labelFemalePlural>母马</UPonyTribe.labelFemalePlural>
-
+	<Pony_UnicornTribe.label>独角兽</Pony_UnicornTribe.label>
+	<Pony_UnicornTribe.labelPlural>独角兽</Pony_UnicornTribe.labelPlural>
+	<Pony_UnicornTribe.labelMale>雄独角兽</Pony_UnicornTribe.labelMale>
+	<Pony_UnicornTribe.labelFemale>雌独角兽</Pony_UnicornTribe.labelFemale>
+	<Pony_UnicornTribe.labelMalePlural>雄独角兽</Pony_UnicornTribe.labelMalePlural>
+	<Pony_UnicornTribe.labelFemalePlural>雌独角兽</Pony_UnicornTribe.labelFemalePlural>
 
 </LanguageData>

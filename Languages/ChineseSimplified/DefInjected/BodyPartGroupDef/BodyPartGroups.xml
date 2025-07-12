@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<TopHead.label>头顶</TopHead.label>
+	<Horn.label>角</Horn.label>
+	<Wings.label>翅膀</Wings.label>
+	<Tail.label>尾巴</Tail.label>
+	<RearLegs.label>后腿</RearLegs.label>
+	<Hooves.label>蹄子</Hooves.label>
+
+</LanguageData>

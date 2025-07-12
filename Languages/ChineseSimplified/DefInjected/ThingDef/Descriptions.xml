@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<!-- modified from RimWorld-ChineseSimplified/Core/DefInjected/ThingDef/Hediffs_BodyParts_Archotech.xml -->
+	<ArchotechEye.description>一只超凡智能制造的仿生眼。可以识别无线电波、红外线、可见光、X射线、伽马射线等各种各样的电磁波，其敏锐的视觉识别度甚至可以在20米外辨别字迹。它可以发射各种波长的辐射以进行辅助判断，同时内置的次级人格AI可以进行辅助成像。它的内部构造对于所有生物来说都是个谜。</ArchotechEye.description>
+	<ArchotechArm.description>一条超凡智能制造的仿生臂。强大到可以轻松摧毁硬木，但又精细到能在一粒米的空间写下十四行诗。它看上去和生物原本的肢体几乎无异，但却比玻璃钢更坚固。即使它受到伤害，也会随着时间的推移自我修复。它的内部结构对于所有人来说都是个谜。</ArchotechArm.description>
+	<ArchotechLeg.description>一条超凡智能制造的仿生腿。看上去和生物原本的肢体几乎无异，但却比玻璃钢更坚固，跑的比汽车还快。即使它受到伤害，也会随着时间的推移自我修复。它的内部结构对于所有生物来说都是个谜。</ArchotechLeg.description>
+
+<!-- modified from RimWorld-ChineseSimplified/Core/DefInjected/ThingDef/Hediffs_BodyParts_Natural.xml -->
+	<Heart.description>一个生物质的心脏，负责将血液和氧气供给到身体的各个位置。</Heart.description>
+	<Kidney.description>一个生物质的肾，负责过滤并清除血液中的废物。</Kidney.description>
+	<Liver.description>一个生物质的肝，在新陈代谢扮演重要的角色。</Liver.description>
+	<Lung.description>一个生物质的肺，是呼吸系统的重要组成部分。</Lung.description>
+
+	<Hay.description>营养丰富的草和幼芽，收获并压缩储存起来。小马们很喜欢干草，但对于人类来说难以下咽。</Hay.description>
+	<Skull.description>一颗头骨。</Skull.description>
+	<Gold.description>世界上最有诱惑力的金属。无数生物因为对黄金的渴望而命丧黄泉。这种黄色的软质金属本身用途不大，但非常漂亮并且极度稀少。</Gold.description>
+
+</LanguageData>

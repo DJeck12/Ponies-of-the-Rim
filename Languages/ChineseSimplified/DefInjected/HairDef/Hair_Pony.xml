@@ -1,64 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- Dash -->
-
-  <Pony_DashHair.label>Dash</Pony_DashHair.label>
-  <Pony_DashColorHair.label>Dash (Colorful)</Pony_DashColorHair.label>
-  <Pony_DashStripeHair.label>Dash (Striped)</Pony_DashStripeHair.label>
-
-
-  <!-- Sparkle -->
-
-  <Pony_SparkleHair.label>Sparkle</Pony_SparkleHair.label>
-  <Pony_SparkleColorHair.label>Sparkle (Colorful)</Pony_SparkleColorHair.label>
-  <Pony_SparkleStripeHair.label>Sparkle (Striped)</Pony_SparkleStripeHair.label>
-
-
-  <!-- Apple -->
-
-  <Pony_AppleHair.label>Apple</Pony_AppleHair.label>
-  <Pony_AppleColorHair.label>Apple (Colorful)</Pony_AppleColorHair.label>
-
-
-  <!-- Party -->
-
-  <Pony_PartyHair.label>Party</Pony_PartyHair.label>
-  <Pony_PartyColorHair.label>Party (Colorful)</Pony_PartyColorHair.label>
-
-
-  <!-- Rarity -->
-
-  <Pony_RarityHair.label>Rarity</Pony_RarityHair.label>
-
-
-  <!-- Flutter -->
-
-  <Pony_FlutterHair.label>Flutter</Pony_FlutterHair.label>
-  <Pony_FlutterColorHair.label>Flutter (Colorful)</Pony_FlutterColorHair.label>
-
-
-  <!-- Bloom -->
-
-  <Pony_BloomHair.label>Bloom</Pony_BloomHair.label>
-  <Pony_BloomColorHair.label>Bloom (Colorful)</Pony_BloomColorHair.label>
-
-
-  <!-- Sweet -->
-
-  <Pony_SweetHair.label>Sweet</Pony_SweetHair.label>
-  <Pony_SweetColorHair.label>Sweet (Colorful)</Pony_SweetColorHair.label>
-
-
-  <!-- Scoot -->
-
-  <Pony_ScootHair.label>Scoot</Pony_ScootHair.label>
-  <Pony_ScootColorHair.label>Scoot (Colorful)</Pony_ScootColorHair.label>
-
-
-  <!-- Night -->
-
-  <Pony_NightHair.label>Night</Pony_NightHair.label>
-
+	<Pony_DashHair.label>云宝</Pony_DashHair.label>
+<!--	<Pony_DashColorHair.label>Рывок (Цветная)</Pony_DashColorHair.label>
+	<Pony_DashStripeHair.label>Рывок (Полосатая)</Pony_DashStripeHair.label> -->
+	<Pony_SparkleHair.label>紫悦</Pony_SparkleHair.label>
+<!--	<Pony_SparkleColorHair.label>Искра (Цветная)</Pony_SparkleColorHair.label>
+	<Pony_SparkleStripeHair.label>Искра (Полосатая)</Pony_SparkleStripeHair.label> -->
+	<Pony_AppleHair.label>苹果嘉儿</Pony_AppleHair.label>
+<!--	<Pony_AppleColorHair.label>Яблочная (Цветная)</Pony_AppleColorHair.label> -->
+	<Pony_PartyHair.label>萍琪派</Pony_PartyHair.label>
+<!--	<Pony_PartyColorHair.label>Вечеринка (Цветная)</Pony_PartyColorHair.label> -->
+	<Pony_RarityHair.label>瑞瑞</Pony_RarityHair.label>
+	<Pony_FlutterHair.label>小蝶</Pony_FlutterHair.label>
+<!--	<Pony_FlutterColorHair.label>Вьющаяся (Цветная)</Pony_FlutterColorHair.label> -->
+	<Pony_BloomHair.label>小萍花</Pony_BloomHair.label>
+<!--	<Pony_BloomColorHair.label>Цветение (Цветная)</Pony_BloomColorHair.label> -->
+	<Pony_SweetHair.label>甜贝尔</Pony_SweetHair.label>
+<!--	<Pony_SweetColorHair.label>Сладость (Цветная)</Pony_SweetColorHair.label> -->
+	<Pony_ScootHair.label>飞板璐</Pony_ScootHair.label>
+<!--	<Pony_ScootColorHair.label>Упрямая (Цветная)</Pony_ScootColorHair.label> -->
+	<Pony_NightHair.label>露娜</Pony_NightHair.label>
 
 </LanguageData>

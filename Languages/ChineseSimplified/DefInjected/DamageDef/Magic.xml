@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Magic.label>魔法</Magic.label>
+	<Magic.deathMessage>{PAWN_nameDef}被魔法炸死了。</Magic.deathMessage>
+
+</LanguageData>
