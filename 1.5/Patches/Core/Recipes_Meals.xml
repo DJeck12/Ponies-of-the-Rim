@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="CookMealSimple"
+		<xpath>Defs/RecipeDef[defName="CookMealSimple"
 		or defName="CookMealSimpleBulk"]/ingredients/li/filter</xpath>
 		<value>
 			<thingDefs>
@@ -12,7 +12,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="CookMealSimple"
+		<xpath>Defs/RecipeDef[defName="CookMealSimple"
 		or defName="CookMealSimpleBulk"]</xpath>
 		<value>
 			<fixedIngredientFilter>

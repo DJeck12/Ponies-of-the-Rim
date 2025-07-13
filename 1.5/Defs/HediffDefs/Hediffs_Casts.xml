@@ -3,7 +3,7 @@
 	<HediffDef>
 		<defName>NatureMuse</defName>
 		<label>nature muse</label>
-		<description>BBBBBBBBBBBBBBBBB A force of nature that fills the body with energy to increase work speed.</description>
+		<description>A force of nature that fills the body with energy to increase work speed.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<comps>

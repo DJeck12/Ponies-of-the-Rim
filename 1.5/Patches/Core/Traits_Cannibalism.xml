@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/disallowedThoughtsFromIngestion</xpath>
+		<xpath>Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/disallowedThoughtsFromIngestion</xpath>
 		<value>
 			<li>
 				<thing>Meat_Pony</thing>
@@ -16,7 +16,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/extraThoughtsFromIngestion</xpath>
+		<xpath>Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/extraThoughtsFromIngestion</xpath>
 		<value>
 			<li>
 				<thing>Meat_Pony</thing>

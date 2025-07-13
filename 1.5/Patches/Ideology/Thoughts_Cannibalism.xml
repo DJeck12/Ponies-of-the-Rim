@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThoughtDef[defName="HumanLeatherApparel_Abhorrent"
+					<xpath>Defs/ThoughtDef[defName="HumanLeatherApparel_Abhorrent"
 					or defName="HumanLeatherApparel_Horrible"
 					or defName="HumanLeatherApparel_Disapproved"
 					or defName="HumanLeatherApparel_Preferred"

@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/FactionDef[@Name="OutlanderRoughBase"]</xpath>
+					<xpath>Defs/FactionDef[@Name="OutlanderRoughBase"]</xpath>
 					<value>
 						<disallowedMemes>
 							<li>Pony_Friendship</li>
@@ -17,7 +17,7 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/FactionDef[@Name="TribeRoughBase"
+					<xpath>Defs/FactionDef[@Name="TribeRoughBase"
 					or @Name="TribeSavageBase"]/disallowedMemes</xpath>
 					<value>
 						<li>Pony_Friendship</li>

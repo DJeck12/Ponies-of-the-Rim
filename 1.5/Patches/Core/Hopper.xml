@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="Hopper"]/building/fixedStorageSettings/filter</xpath>
+		<xpath>Defs/ThingDef[defName="Hopper"]/building/fixedStorageSettings/filter</xpath>
 		<value>
 			<thingDefs>
 				<li>Hay</li>

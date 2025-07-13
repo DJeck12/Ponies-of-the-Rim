@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="Apparel_KidPants"]/apparel</xpath>
+					<xpath>Defs/ThingDef[defName="Apparel_KidPants"]/apparel</xpath>
 					<value>
 						<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</wornGraphicPath>
 					</value>

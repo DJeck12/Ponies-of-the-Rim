@@ -32,9 +32,9 @@ namespace PoniesOfTheRim
                 }
                 if (pawn.DevelopmentalStage.Adult())
                 {
-                     __result = Pony_DefOf.Pony;
+                    __result = Pony_DefOf.Pony;
                 }
             }
         }
     }
-}    
+}

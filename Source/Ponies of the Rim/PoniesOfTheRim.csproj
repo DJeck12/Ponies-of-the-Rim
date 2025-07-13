@@ -10,6 +10,7 @@
     <RootNamespace>PoniesOfTheRim</RootNamespace>
     <AssemblyName>Ponies of the Rim</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -42,10 +43,11 @@
     </Reference>
     <Reference Include="AlienRace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\839005762\1.5\Assemblies\AlienRace.dll</HintPath>
+      <HintPath>..\..\..\839005762\1.6\Assemblies\AlienRace.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    <Reference Include="Assembly-CSharp, Version=1.5.9102.32373, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="HarmonyMod, Version=2.3.1.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -89,14 +91,20 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
-    <Reference Include="VFECore">
-      <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+    <Reference Include="VEF">
+      <HintPath>..\..\..\2023507013\1.6\Assemblies\VEF.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
+    <Compile Include="CompProperties_PonyFoodCheck.cs" />
+    <Compile Include="CompPonyFoodCheck.cs" />
+    <Compile Include="TailSelectorWindow.cs" />
+    <Compile Include="Verb_ShortFlight.cs" />
+    <Compile Include="JobGiver_UseShortFlight.cs" />
+    <Compile Include="Harmony_CanHitTargetFromPatch.cs" />
     <Compile Include="PonyRenderSubWorkerEye.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PonyHairExtension.cs" />

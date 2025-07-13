@@ -6,7 +6,7 @@
 			<li>Royalty</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<!-- <success>Always</success> -->
 			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>

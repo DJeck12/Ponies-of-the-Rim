@@ -10,12 +10,12 @@
 		<displayOrderInCategory>25</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>2</biostatMet>
-		<capMods>
+<!-- 		<capMods>
 			<li>
 				<capacity>Manipulation</capacity>
 				<postFactor>0.8</postFactor>
 			</li>
-		</capMods>
+		</capMods> -->
 		<statOffsets>
 			<AimingDelayFactor>0.1</AimingDelayFactor>
 			<MoveSpeed>0.1</MoveSpeed>
