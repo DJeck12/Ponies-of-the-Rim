@@ -86,6 +86,7 @@
 		<frostbiteVulnerability>5</frostbiteVulnerability>
 		<skinCovered>true</skinCovered>
 		<alive>false</alive>
+		<canBeVacuumBurnt>false</canBeVacuumBurnt>
 		<bleedRate>0</bleedRate>
 		<solid>true</solid>
 	</BodyPartDef>
