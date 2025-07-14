@@ -7,7 +7,7 @@ namespace PoniesOfTheRim
 	{
         public override void PostIngested(Pawn ingester)
         {
-            if (ingester.IsUnicorn() && ContainsMeat(parent))
+            if (ingester.IsPony() && ContainsMeat(parent))
             {
                 ThoughtDef PonyAteMeatThought = DefDatabase<ThoughtDef>.GetNamed("Pony_AteMeat");
                 if (PonyAteMeatThought != null)
