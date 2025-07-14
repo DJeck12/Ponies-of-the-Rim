@@ -2,11 +2,11 @@
 <LanguageData>
 
 	<Pony_Pegasus.label>天马</Pony_Pegasus.label>
-	<Pony_Pegasus.description>小马是来自Foenum星球的魔法四足生物。它们分为许多亚种，血统非常复杂，亚种之间有不同程度的相似之处。和谐与互助曾是小马们的主要原则。但严酷的太空环境迫使这个种族为了生存，放弃了理想，走上了掠夺、奴役和劫掠的道路。
+	<Pony_Pegasus.description><![CDATA[小马是来自Foenum星球的魔法四足生物。它们分为许多亚种，血统非常复杂，亚种之间有不同程度的相似之处。和谐与互助曾是小马们的主要原则。但严酷的太空环境迫使这个种族为了生存，放弃了理想，走上了掠夺、奴役和劫掠的道路。
 
 在类人种族中，它们有独特的小马身体。不过，它们也会用服装和假肢改造自己。它们的前蹄代替了其他生物的手。而在腰部两侧的是它们的可爱标志——这是一种通常与小马性格，癖好与天赋有着直接或间接关联的符号。大部分小马种族都是食草种族，它们食用干草不会受到心情惩罚。
 
-与其他小马不同，<color=#46FFFF>天马</color>背上有一对翅膀，还有为了在高海拔飞行更厚实的皮毛。天马是天生的竞赛者，总是喜欢和其他小马竞争，使它们被认为是最具敌意的小马种族。尽管如此，大多数天马仍然愿意与其他小马和平共处，并利用它们的飞行能力帮助其他小马。</Pony_Pegasus.description>
+与其他小马不同，<color=#46FFFF>天马</color>背上有一对翅膀，还有为了在高海拔飞行更厚实的皮毛。天马是天生的竞赛者，总是喜欢和其他小马竞争，使它们被认为是最具敌意的小马种族。尽管如此，大多数天马仍然愿意与其他小马和平共处，并利用它们的飞行能力帮助其他小马。]]></Pony_Pegasus.description>
 	<Pony_Pegasus.tools.0.label>左前蹄</Pony_Pegasus.tools.0.label>
 	<Pony_Pegasus.tools.front_left_hoof.labelNoLocation>蹄子</Pony_Pegasus.tools.front_left_hoof.labelNoLocation>
 	<Pony_Pegasus.tools.1.label>右前蹄</Pony_Pegasus.tools.1.label>

@@ -2,7 +2,8 @@
 <LanguageData>
 
 	<Pony_Horn.label>角</Pony_Horn.label>
-	<Pony_Wing.label>翅膀</Pony_Wing.label>
+	<Pony_LeftWing.label>翅膀</Pony_LeftWing.label>
+	<Pony_RightWing.label>翅膀</Pony_RightWing.label>
 	<Pony_Tail.label>尾巴</Pony_Tail.label>
 	<Pony_Thigh.label>股</Pony_Thigh.label>
 	<Pony_FrontLeg.label>前腿</Pony_FrontLeg.label>
