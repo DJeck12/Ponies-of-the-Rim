@@ -8,12 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef/apparel[contains(bodyPartGroups,'Torso')]/bodyPartGroups</xpath>
-					<value>
-						<li>Wings</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]/apparel/bodyPartGroups</xpath>
 					<value>
 						<li>TopHead</li>
