@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Pony_PlayerExpedition.label>新移民</Pony_PlayerExpedition.label>
-	<Pony_PlayerExpedition.description>最近来到边缘世界的一群小马。</Pony_PlayerExpedition.description>
-	<Pony_PlayerExpedition.leaderTitle>领袖</Pony_PlayerExpedition.leaderTitle>
-	<Pony_PlayerExpedition.pawnSingular>殖民者</Pony_PlayerExpedition.pawnSingular>
-	<Pony_PlayerExpedition.pawnsPlural>殖民者</Pony_PlayerExpedition.pawnsPlural>
+	<PonyColony.label>新移民</PonyColony.label>
+	<PonyColony.description>最近来到边缘世界的一群小马。</PonyColony.description>
+	<PonyColony.leaderTitle>领袖</PonyColony.leaderTitle>
+	<PonyColony.pawnSingular>殖民者</PonyColony.pawnSingular>
+	<PonyColony.pawnsPlural>殖民者</PonyColony.pawnsPlural>
 
-	<Pony_PonyTribe.label>新部落</Pony_PonyTribe.label>
-	<Pony_PonyTribe.description>一个小部落。</Pony_PonyTribe.description>
-	<Pony_PonyTribe.leaderTitle>酋长</Pony_PonyTribe.leaderTitle>
-	<Pony_PonyTribe.pawnSingular>部众</Pony_PonyTribe.pawnSingular>
-	<Pony_PonyTribe.pawnsPlural>部众</Pony_PonyTribe.pawnsPlural>
+	<PonyTribe.label>新部落</PonyTribe.label>
+	<PonyTribe.description>一个小部落。</PonyTribe.description>
+	<PonyTribe.leaderTitle>酋长</PonyTribe.leaderTitle>
+	<PonyTribe.pawnSingular>部众</PonyTribe.pawnSingular>
+	<PonyTribe.pawnsPlural>部众</PonyTribe.pawnsPlural>
 
 </LanguageData>
