@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThinkTreeDef>
+		<defName>Pony_ShortFlight</defName>
+		<insertTag>Humanlike_PostDuty</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="PoniesOfTheRim.JobGiver_UseShortFlight" />
+	</ThinkTreeDef>
+
+</Defs>

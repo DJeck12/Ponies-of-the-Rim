@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FurDef[defName="RBM_UnguligradeLegs"]/bodyTypeGraphicPaths</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FurDef[defName="RBM_UnguligradeLegs"]/bodyTypeGraphicPaths</xpath>
+			<value>
+				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
+				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
+				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+			</value>
+		</match>
+	</Operation>
+</Patch>

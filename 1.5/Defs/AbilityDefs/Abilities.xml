@@ -62,7 +62,7 @@
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
-			<verbClass>Verb_CastAbilityJump</verbClass>
+			<verbClass>PoniesOfTheRim.Verb_ShortFlight</verbClass>
 			<label>flight</label>
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
