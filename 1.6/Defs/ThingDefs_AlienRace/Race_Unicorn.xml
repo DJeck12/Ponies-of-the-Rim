@@ -24,7 +24,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
 			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
 			<RoyalFavorValue>4</RoyalFavorValue>
-			<WorkSpeedGlobal>0.8</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
+			<!-- <WorkSpeedGlobal>0.8</WorkSpeedGlobal> --> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 
 	<!-- Attacks -->

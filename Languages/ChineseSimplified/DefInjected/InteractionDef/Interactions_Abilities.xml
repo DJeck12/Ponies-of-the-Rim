@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<GlimpseOfFate.label>一瞥命运</GlimpseOfFate.label>
+	<GlimpseOfFate.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameDef]预知了[RECIPIENT_nameDef]的命运，并建议[PAWN_objective]加入我们。</GlimpseOfFate.logRulesInitiator.rulesStrings.0>
+
+</LanguageData>

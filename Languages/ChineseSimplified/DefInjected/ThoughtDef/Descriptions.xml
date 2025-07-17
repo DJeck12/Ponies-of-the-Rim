@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<AteKibble.stages.ate_kibble.description>我不得不吃下了给动物准备的粗饲料。感觉像我不再会思考，和那些动物一样。</AteKibble.stages.ate_kibble.description>
+
+	<AteHumanlikeMeatAsIngredient.stages.cooked_cannibalism.label>吃了烹饪过的智慧生物的肉</AteHumanlikeMeatAsIngredient.stages.cooked_cannibalism.label>
+	<AteHumanlikeMeatAsIngredient.stages.cooked_cannibalism.description>我吃了一份用智慧生物的肉做的食物。这简直太可怕了。</AteHumanlikeMeatAsIngredient.stages.cooked_cannibalism.description>
+	<AteHumanlikeMeatAsIngredientCannibal.stages.cooked_cannibalism.label>吃了烹饪过的智慧生物的肉</AteHumanlikeMeatAsIngredientCannibal.stages.cooked_cannibalism.label>
+	<AteHumanlikeMeatAsIngredientCannibal.stages.cooked_cannibalism.description>我吃了一份用智慧生物的肉做的食物，味道好极了。要是配上蚕豆和基安蒂红酒就更好了。</AteHumanlikeMeatAsIngredientCannibal.stages.cooked_cannibalism.description>
+	<AteHumanlikeMeatDirect.stages.raw_cannibalism.label>吃了生的智慧生物的肉</AteHumanlikeMeatDirect.stages.raw_cannibalism.label>
+	<AteHumanlikeMeatDirect.stages.raw_cannibalism.description>我像野兽一样生吃了智慧生物的肉。这简直就是噩梦。</AteHumanlikeMeatDirect.stages.raw_cannibalism.description>
+	<AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.label>吃了生的智慧生物的肉</AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.label>
+	<AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.description>我像野兽一样生吃了智慧生物的肉。那肉实在是鲜美多汁，太棒了。</AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.description>
+
+	<AteRawHumanlikeMeat.stages.ate_raw_humanlike_meat.labelSocial>生吃过智慧生物的肉</AteRawHumanlikeMeat.stages.ate_raw_humanlike_meat.labelSocial>
+
+	<HumanLeatherApparelSad.stages.human_leather.label>智慧生物的皮{0}</HumanLeatherApparelSad.stages.human_leather.label>
+	<HumanLeatherApparelSad.stages.human_leather.description>穿着某个智慧生物身体的一部分真是渗人。谁能做到？</HumanLeatherApparelSad.stages.human_leather.description>
+	<HumanLeatherApparelSad.stages.human_leather_1.label>智慧生物的皮{0}（2件）</HumanLeatherApparelSad.stages.human_leather_1.label>
+	<HumanLeatherApparelSad.stages.human_leather_1.description>我穿的像是疯子一样。</HumanLeatherApparelSad.stages.human_leather_1.description>
+	<HumanLeatherApparelSad.stages.human_leather_2.label>智慧生物的皮{0}（3件）</HumanLeatherApparelSad.stages.human_leather_2.label>
+	<HumanLeatherApparelSad.stages.human_leather_2.description>我想我的衣物上可能有一张脸。哦，不，我的衣物就是一张*脸*。</HumanLeatherApparelSad.stages.human_leather_2.description>
+	<HumanLeatherApparelSad.stages.human_leather_etc.label>智慧生物的皮{0}（多件）</HumanLeatherApparelSad.stages.human_leather_etc.label>
+	<HumanLeatherApparelSad.stages.human_leather_etc.description>我看起来就像恐怖片里的怪胎，而且我感觉我就在恐怖片里。</HumanLeatherApparelSad.stages.human_leather_etc.description>
+
+	<HumanLeatherApparelHappy.stages.human_leather.label>智慧生物的皮{0}</HumanLeatherApparelHappy.stages.human_leather.label>
+	<HumanLeatherApparelHappy.stages.human_leather.description>把其他智慧生物做成衣物穿在身上真是享受。</HumanLeatherApparelHappy.stages.human_leather.description>
+	<HumanLeatherApparelHappy.stages.human_leather_1.label>智慧生物的皮{0}（2件）</HumanLeatherApparelHappy.stages.human_leather_1.label>
+	<HumanLeatherApparelHappy.stages.human_leather_1.description>这可以吓到他们。所有人都会知道我的厉害。</HumanLeatherApparelHappy.stages.human_leather_1.description>
+	<HumanLeatherApparelHappy.stages.human_leather_2.label>智慧生物的皮{0}（3件）</HumanLeatherApparelHappy.stages.human_leather_2.label>
+	<HumanLeatherApparelHappy.stages.human_leather_2.description>我衣物上的脸并没有在笑，但他们令我愉悦。</HumanLeatherApparelHappy.stages.human_leather_2.description>
+	<HumanLeatherApparelHappy.stages.human_leather_etc.label>智慧生物的皮{0}（多件）</HumanLeatherApparelHappy.stages.human_leather_etc.label>
+	<HumanLeatherApparelHappy.stages.human_leather_etc.description>皮肤！肉体！这是我的勋章！</HumanLeatherApparelHappy.stages.human_leather_etc.description>
+
+	<ProsthophileHappy.stages.body_modder_enchanted.description>四处身体改造，我正在超越肉体！不过仍存在进一步改造的余地。</ProsthophileHappy.stages.body_modder_enchanted.description>
+	<ProsthophileHappy.stages.body_modder_overjoyed.description>五处身体改造！像我这样的超级生物怎么会难过？</ProsthophileHappy.stages.body_modder_overjoyed.description>
+	<ProsthophileNoProsthetic.stages.body_modder_frustrated.description>肉体是如此脆弱，我希望改造自己的身体。</ProsthophileNoProsthetic.stages.body_modder_frustrated.description>
+ 
+	<ProsthophobeUnhappy.stages.body_purist_nightmare.description>五处身体改造...我还剩下什么？或者我只是个贴着生物标签的机器人？</ProsthophobeUnhappy.stages.body_purist_nightmare.description>
+  
+</LanguageData>

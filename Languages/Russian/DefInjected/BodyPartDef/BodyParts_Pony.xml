@@ -2,7 +2,8 @@
 <LanguageData>
 
 	<Pony_Horn.label>рог</Pony_Horn.label>
-	<Pony_Wing.label>крыло</Pony_Wing.label>
+	<Pony_LeftWing.label>крыло</Pony_LeftWing.label>
+	<Pony_RightWing.label>крыло</Pony_RightWing.label>
 	<Pony_Tail.label>хвост</Pony_Tail.label>
 	<Pony_Thigh.label>бедро</Pony_Thigh.label>
 	<Pony_FrontLeg.label>передняя нога</Pony_FrontLeg.label>

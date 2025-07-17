@@ -17,4 +17,11 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef/apparel[contains(bodyPartGroups,'Torso')]/bodyPartGroups</xpath>
+		<value>
+			<li>Wings</li>
+		</value>
+	</Operation>
+
 </Patch>

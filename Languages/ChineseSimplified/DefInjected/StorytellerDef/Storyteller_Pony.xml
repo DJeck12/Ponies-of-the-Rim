@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <Courage.label>Courage Tale</Courage.label>
-  <Courage.description>Courage Tale总是将命运握在自己手中，这在她的故事中得以体现。在面对重大挑战之际，她会发布比其他讲故事的人更多的任务和趣味点。你可以尝试接受所有可用的任务，或者丰富自己的经验，选择最简单的任务。对于商队来说是个不错的选择。</Courage.description>
-
+	<Courage.label>Courage Tale</Courage.label>
+	<Courage.description>Courage Tale总是将命运握在自己手中，这体现在她的故事中。在重大挑战之间，她会比其他讲故事的人发布更多任务。你可以尝试接受所有任务，或者只选择最简单的任务。对于商队来说是个不错的选择。</Courage.description>
 
 </LanguageData>

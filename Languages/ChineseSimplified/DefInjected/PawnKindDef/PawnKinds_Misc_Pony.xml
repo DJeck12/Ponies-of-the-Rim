@@ -1,76 +1,73 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- Earthpony -->
+<!-- 陆马 -->
 
-  <EPonySlave.label>小马奴隶</EPonySlave.label>
-  <EPonySlave.labelPlural>小马奴隶</EPonySlave.labelPlural>
-  <EPonySlave.labelMale>小马奴隶</EPonySlave.labelMale>
-  <EPonySlave.labelMalePlural>小马奴隶</EPonySlave.labelMalePlural>
-  <EPonySlave.labelFemale>小马奴隶/EPonySlave.labelFemale>
-  <EPonySlave.labelFemalePlural>小马奴隶</EPonySlave.labelFemalePlural>
+	<Pony_EarthponySlave.label>陆马奴隶</Pony_EarthponySlave.label>
+	<Pony_EarthponySlave.labelPlural>陆马奴隶</Pony_EarthponySlave.labelPlural>
+	<Pony_EarthponySlave.labelMale>雄陆马奴隶</Pony_EarthponySlave.labelMale>
+	<Pony_EarthponySlave.labelFemale>雌陆马奴隶</Pony_EarthponySlave.labelFemale>
+	<Pony_EarthponySlave.labelMalePlural>雄陆马奴隶</Pony_EarthponySlave.labelMalePlural>
+	<Pony_EarthponySlave.labelFemalePlural>雌陆马奴隶</Pony_EarthponySlave.labelFemalePlural>
 
-  <EPonyRefugee.label>小马难民</EPonyRefugee.label>
-  <EPonyRefugee.labelPlural>小马难民</EPonyRefugee.labelPlural>
-  <EPonyRefugee.labelMale>小马难民</EPonyRefugee.labelMale>
-  <EPonyRefugee.labelMalePlural>小马难民</EPonyRefugee.labelMalePlural>
-  <EPonyRefugee.labelFemale>小马难民</EPonyRefugee.labelFemale>
-  <EPonyRefugee.labelFemalePlural>小马难民</EPonyRefugee.labelFemalePlural>
+	<Pony_EarthponyRefugee.label>陆马难民</Pony_EarthponyRefugee.label>
+	<Pony_EarthponyRefugee.labelPlural>陆马难民</Pony_EarthponyRefugee.labelPlural>
+	<Pony_EarthponyRefugee.labelMale>雄陆马难民</Pony_EarthponyRefugee.labelMale>
+	<Pony_EarthponyRefugee.labelFemale>雌陆马难民</Pony_EarthponyRefugee.labelFemale>
+	<Pony_EarthponyRefugee.labelMalePlural>雄陆马难民</Pony_EarthponyRefugee.labelMalePlural>
+	<Pony_EarthponyRefugee.labelFemalePlural>雌陆马难民</Pony_EarthponyRefugee.labelFemalePlural>
 
-  <EPonyVillager.label>小马村民</EPonyVillager.label>
-  <EPonyVillager.labelPlural>小马村民</EPonyVillager.labelPlural>
-  <EPonyVillager.labelMale>小马村民</EPonyVillager.labelMale>
-  <EPonyVillager.labelMalePlural>小马村民</EPonyVillager.labelMalePlural>
-  <EPonyVillager.labelFemale>小马村民</EPonyVillager.labelFemale>
-  <EPonyVillager.labelFemalePlural>小马村民</EPonyVillager.labelFemalePlural>
+	<Pony_EarthponyVillager.label>陆马城镇居民</Pony_EarthponyVillager.label>
+	<Pony_EarthponyVillager.labelPlural>陆马城镇居民</Pony_EarthponyVillager.labelPlural>
+	<Pony_EarthponyVillager.labelMale>雄陆马城镇居民</Pony_EarthponyVillager.labelMale>
+	<Pony_EarthponyVillager.labelFemale>雌陆马城镇居民</Pony_EarthponyVillager.labelFemale>
+	<Pony_EarthponyVillager.labelMalePlural>雄陆马城镇居民</Pony_EarthponyVillager.labelMalePlural>
+	<Pony_EarthponyVillager.labelFemalePlural>雌陆马城镇居民</Pony_EarthponyVillager.labelFemalePlural>
 
+<!-- 天马 -->
 
-  <!-- Pegasus -->
+	<Pony_PegasusSlave.label>天马奴隶</Pony_PegasusSlave.label>
+	<Pony_PegasusSlave.labelPlural>天马奴隶</Pony_PegasusSlave.labelPlural>
+	<Pony_PegasusSlave.labelMale>雄天马奴隶</Pony_PegasusSlave.labelMale>
+	<Pony_PegasusSlave.labelFemale>雌天马奴隶</Pony_PegasusSlave.labelFemale>
+	<Pony_PegasusSlave.labelMalePlural>雄天马奴隶</Pony_PegasusSlave.labelMalePlural>
+	<Pony_PegasusSlave.labelFemalePlural>雌天马奴隶</Pony_PegasusSlave.labelFemalePlural>
 
-  <PPonySlave.label>小马奴隶</PPonySlave.label>
-  <PPonySlave.labelPlural>小马奴隶</PPonySlave.labelPlural>
-  <PPonySlave.labelMale>小马奴隶</PPonySlave.labelMale>
-  <PPonySlave.labelMalePlural>小马奴隶</PPonySlave.labelMalePlural>
-  <PPonySlave.labelFemale>小马奴隶</PPonySlave.labelFemale>
-  <PPonySlave.labelFemalePlural> 小马奴隶</PPonySlave.labelFemalePlural>
+	<Pony_PegasusRefugee.label>天马难民</Pony_PegasusRefugee.label>
+	<Pony_PegasusRefugee.labelPlural>天马难民</Pony_PegasusRefugee.labelPlural>
+	<Pony_PegasusRefugee.labelMale>雄天马难民</Pony_PegasusRefugee.labelMale>
+	<Pony_PegasusRefugee.labelFemale>雌天马难民</Pony_PegasusRefugee.labelFemale>
+	<Pony_PegasusRefugee.labelMalePlural>雄天马难民</Pony_PegasusRefugee.labelMalePlural>
+	<Pony_PegasusRefugee.labelFemalePlural>雌天马难民</Pony_PegasusRefugee.labelFemalePlural>
 
-  <PPonyRefugee.label>小马难民</PPonyRefugee.label>
-  <PPonyRefugee.labelPlural> 小马难民</PPonyRefugee.labelPlural>
-  <PPonyRefugee.labelMale>小马难民</PPonyRefugee.labelMale>
-  <PPonyRefugee.labelMalePlural>小马难民</PPonyRefugee.labelMalePlural>
-  <PPonyRefugee.labelFemale> 小马难民</PPonyRefugee.labelFemale>
-  <PPonyRefugee.labelFemalePlural>小马难民</PPonyRefugee.labelFemalePlural>
+	<Pony_PegasusVillager.label>天马城镇居民</Pony_PegasusVillager.label>
+	<Pony_PegasusVillager.labelPlural>天马城镇居民</Pony_PegasusVillager.labelPlural>
+	<Pony_PegasusVillager.labelMale>雄天马城镇居民</Pony_PegasusVillager.labelMale>
+	<Pony_PegasusVillager.labelFemale>雌天马城镇居民</Pony_PegasusVillager.labelFemale>
+	<Pony_PegasusVillager.labelMalePlural>雄天马城镇居民</Pony_PegasusVillager.labelMalePlural>
+	<Pony_PegasusVillager.labelFemalePlural>雌天马城镇居民</Pony_PegasusVillager.labelFemalePlural>
 
-  <PPonyVillager.label>小马村民</PPonyVillager.label>
-  <PPonyVillager.labelPlural>小马村民</PPonyVillager.labelPlural>
-  <PPonyVillager.labelMale>小马村民</PPonyVillager.labelMale>
-  <PPonyVillager.labelMalePlural>小马村民</PPonyVillager.labelMalePlural>
-  <PPonyVillager.labelFemale>小马村民</PPonyVillager.labelFemale>
-  <PPonyVillager.labelFemalePlural>小马村民</PPonyVillager.labelFemalePlural>
+<!-- 独角兽 -->
 
+	<Pony_UnicornSlave.label>独角兽奴隶</Pony_UnicornSlave.label>
+	<Pony_UnicornSlave.labelPlural>独角兽奴隶</Pony_UnicornSlave.labelPlural>
+	<Pony_UnicornSlave.labelMale>雄独角兽奴隶</Pony_UnicornSlave.labelMale>
+	<Pony_UnicornSlave.labelFemale>雌独角兽奴隶</Pony_UnicornSlave.labelFemale>
+	<Pony_UnicornSlave.labelMalePlural>雄独角兽奴隶</Pony_UnicornSlave.labelMalePlural>
+	<Pony_UnicornSlave.labelFemalePlural>雌独角兽奴隶</Pony_UnicornSlave.labelFemalePlural>
 
-  <!-- Unicorn -->
+	<Pony_UnicornRefugee.label>独角兽难民</Pony_UnicornRefugee.label>
+	<Pony_UnicornRefugee.labelPlural>独角兽难民</Pony_UnicornRefugee.labelPlural>
+	<Pony_UnicornRefugee.labelMale>雄独角兽难民</Pony_UnicornRefugee.labelMale>
+	<Pony_UnicornRefugee.labelFemale>雌独角兽难民</Pony_UnicornRefugee.labelFemale>
+	<Pony_UnicornRefugee.labelMalePlural>雄独角兽难民</Pony_UnicornRefugee.labelMalePlural>
+	<Pony_UnicornRefugee.labelFemalePlural>雌独角兽难民</Pony_UnicornRefugee.labelFemalePlural>
 
-  <UPonySlave.label>小马奴隶</UPonySlave.label>
-  <UPonySlave.labelPlural>小马奴隶</UPonySlave.labelPlural>
-  <UPonySlave.labelMale>小马奴隶</UPonySlave.labelMale>
-  <UPonySlave.labelMalePlural>小马奴隶</UPonySlave.labelMalePlural>
-  <UPonySlave.labelFemale>小马奴隶</UPonySlave.labelFemale>
-  <UPonySlave.labelFemalePlural>小马奴隶</UPonySlave.labelFemalePlural>
-
-  <UPonyRefugee.label>小马难民</UPonyRefugee.label>
-  <UPonyRefugee.labelPlural>小马难民</UPonyRefugee.labelPlural>
-  <UPonyRefugee.labelMale>小马难民</UPonyRefugee.labelMale>
-  <UPonyRefugee.labelMalePlural>小马难民</UPonyRefugee.labelMalePlural>
-  <UPonyRefugee.labelFemale>小马难民</UPonyRefugee.labelFemale>
-  <UPonyRefugee.labelFemalePlural>小马难民</UPonyRefugee.labelFemalePlural>
-
-  <UPonyVillager.label>小马村民</UPonyVillager.label>
-  <UPonyVillager.labelPlural>小马村民</UPonyVillager.labelPlural>
-  <UPonyVillager.labelMale>小马村民</UPonyVillager.labelMale>
-  <UPonyVillager.labelMalePlural>小马村民</UPonyVillager.labelMalePlural>
-  <UPonyVillager.labelFemale>小马村民</UPonyVillager.labelFemale>
-  <UPonyVillager.labelFemalePlural>小马村民</UPonyVillager.labelFemalePlural>
-
+	<Pony_UnicornVillager.label>独角兽城镇居民</Pony_UnicornVillager.label>
+	<Pony_UnicornVillager.labelPlural>独角兽城镇居民</Pony_UnicornVillager.labelPlural>
+	<Pony_UnicornVillager.labelMale>雄独角兽城镇居民</Pony_UnicornVillager.labelMale>
+	<Pony_UnicornVillager.labelFemale>雌独角兽城镇居民</Pony_UnicornVillager.labelFemale>
+	<Pony_UnicornVillager.labelMalePlural>雄独角兽城镇居民</Pony_UnicornVillager.labelMalePlural>
+	<Pony_UnicornVillager.labelFemalePlural>雌独角兽城镇居民</Pony_UnicornVillager.labelFemalePlural>
 
 </LanguageData>

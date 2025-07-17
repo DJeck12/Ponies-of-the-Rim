@@ -3,7 +3,7 @@
 	<packageId>Pony.PoniesOfTheRim.Core</packageId>
 	<name>Ponies of the Rim</name>
 	<author>Pony</author>
-	<modVersion>1.1.0</modVersion>
+	<modVersion>1.1.1</modVersion>
 	<supportedVersions>
 		<li>1.5</li>
 		<li>1.6</li>
@@ -20,7 +20,7 @@ Mod overview:
 > Ponies can wear human clothes with a custom look for their bodies.
 > High compatability with other mods.
 
-<color=#00B8FF>Ponies of the Rim: Core</color> <color=#FFD800>v1.1.1</color> for RimWorld v1.6.4409
+<color=#00B8FF>Ponies of the Rim: Core</color> <color=#FFD800>v1.1.1</color> for RimWorld v1.6.4518
 ]]>
 	</description>
 	<modDependencies>
@@ -44,6 +44,7 @@ Mod overview:
 		</li>-->
 	</modDependencies>
 	<loadAfter>
+		<li>vanillaracesexpanded.waster</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>

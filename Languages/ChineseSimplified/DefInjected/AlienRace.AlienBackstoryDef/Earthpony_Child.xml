@@ -3,31 +3,31 @@
 
   <Pony_EarthponyAniFri.title>动物之友</Pony_EarthponyAniFri.title>
   <Pony_EarthponyAniFri.titleShort>动物之友</Pony_EarthponyAniFri.titleShort>
-  <Pony_EarthponyAniFri.description>从孩提时代起，[PAWN_nameDef]就被需要帮助和照顾的野生动物所包围。[PAWN_pronoun]真诚地关心这些不幸的小动物，所以在[PAWN_objective]身边，它们经常变得亲切和驯服。</Pony_EarthponyAniFri.description>
+  <Pony_EarthponyAniFri.description>从孩提时代起，[PAWN_nameDef]就被需要帮助和照顾的野生动物所包围。[PAWN_pronoun]真诚地关心这些不幸的小动物，所以在[PAWN_objective]身边，它们非常亲切温顺。</Pony_EarthponyAniFri.description>
 
   <Pony_EarthponyEcoDef.title>大自然的幸运儿</Pony_EarthponyEcoDef.title>
   <Pony_EarthponyEcoDef.titleShort>生态卫士</Pony_EarthponyEcoDef.titleShort>
-  <Pony_EarthponyEcoDef.description>[PAWN_nameDef]生来就具有巨大的魔法潜力，因为森林精灵给了[PAWN_objective]祝福。[PAWN_pronoun]利用与生俱来的能力来造福自然，保护各种动植物的代表，以及维持自然事物的微妙平衡。</Pony_EarthponyEcoDef.description>
+  <Pony_EarthponyEcoDef.description>由于森林精灵的祝福，[PAWN_nameDef]生来就具有巨大的魔法潜力。[PAWN_pronoun]利用与生俱来的能力造福自然，保护各种动植物，维持自然的微妙平衡。</Pony_EarthponyEcoDef.description>
 
   <Pony_EarthponyTamCom.title>野兽的同伴</Pony_EarthponyTamCom.title>
-  <Pony_EarthponyTamCom.titleShort>驯兽人</Pony_EarthponyTamCom.titleShort>
-  <Pony_EarthponyTamCom.description>[PAWN_nameDef]与一只野兽交了朋友，照顾它并喂养它很长时间。为了表达感激之情，这只野兽曾经将他从毁灭中拯救出来。</Pony_EarthponyTamCom.description>
+  <Pony_EarthponyTamCom.titleShort>驯兽马</Pony_EarthponyTamCom.titleShort>
+  <Pony_EarthponyTamCom.description>一只野兽曾经将[PAWN_nameDef]从毁灭中拯救出来。于是为了表达感激之情，[PAWN_pronoun]与它交了朋友，一直照顾、喂养它。</Pony_EarthponyTamCom.description>
 
   <Pony_EarthponyLonFar.title>孤独的农场主</Pony_EarthponyLonFar.title>
   <Pony_EarthponyLonFar.titleShort>孤儿</Pony_EarthponyLonFar.titleShort>
-  <Pony_EarthponyLonFar.description>[PAWN_nameDef]失去了家人，孤身一人。为了养活[PAWN_objective]自己，不饿死，[PAWN_pronoun]把所有的空闲时间都花在了耕种继承的农场上的土地上。</Pony_EarthponyLonFar.description>
+  <Pony_EarthponyLonFar.description>[PAWN_nameDef]失去了所有家马。为了养活自己，[PAWN_pronoun]把所有的时间都花在了耕种继承的农场上。</Pony_EarthponyLonFar.description>
 
-  <Pony_EarthponyForFam.title>远离文明之人</Pony_EarthponyForFam.title>
-  <Pony_EarthponyForFam.titleShort>离群之人</Pony_EarthponyForFam.titleShort>
-  <Pony_EarthponyForFam.description>[PAWN_nameDef] 生活在一个森林野蛮人的家庭，远离其他文明。[PAWN_pronoun]没有机会适应现代社会。</Pony_EarthponyForFam.description>
+  <Pony_EarthponyForFam.title>远离文明之马</Pony_EarthponyForFam.title>
+  <Pony_EarthponyForFam.titleShort>离群之马</Pony_EarthponyForFam.titleShort>
+  <Pony_EarthponyForFam.description>[PAWN_nameDef]在森林中长大，远离文明。[PAWN_pronoun]没有适应现代社会。</Pony_EarthponyForFam.description>
 
   <Pony_EarthponySacred.title>神圣之子</Pony_EarthponySacred.title>
   <Pony_EarthponySacred.titleShort>神圣之子</Pony_EarthponySacred.titleShort>
-  <Pony_EarthponySacred.description>当[PAWN_nameDef]出生时，亲戚们立即认为[PAWN_objective]是众神的使者。在[PAWN_possessive]的故乡，[PAWN_pronoun]是崇拜和崇敬的对象。</Pony_EarthponySacred.description>
+  <Pony_EarthponySacred.description>当[PAWN_nameDef]出生时，亲戚们立即认为[PAWN_objective]是众神的使者。在[PAWN_possessive]的故乡，[PAWN_pronoun]一直被尊敬和崇拜。</Pony_EarthponySacred.description>
 
   <Pony_EarthponyCopycat.title>模仿者</Pony_EarthponyCopycat.title>
   <Pony_EarthponyCopycat.titleShort>模仿者</Pony_EarthponyCopycat.titleShort>
-  <Pony_EarthponyCopycat.description>[PAWN_nameDef]生活在不同种族的代表的包围下。[PAWN_pronoun]试图通过建造和放置带角的自制翅膀来取悦和模仿他们。</Pony_EarthponyCopycat.description>
+  <Pony_EarthponyCopycat.description>[PAWN_nameDef]在种族多样的小镇长大。[PAWN_pronoun]喜欢用自制的翅膀和角取悦其他小马。</Pony_EarthponyCopycat.description>
 
 
 </LanguageData>

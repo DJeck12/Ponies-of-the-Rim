@@ -7,7 +7,7 @@
 
   <Pony_PegasusShadMar.title>影武者士兵</Pony_PegasusShadMar.title>
   <Pony_PegasusShadMar.titleShort>影武者士兵</Pony_PegasusShadMar.titleShort>
-  <Pony_PegasusShadMar.description>[PAWN_nameDef]一生都在影舞者中度过，无条件地服从他们的命令。在战斗中，[PAWN_pronoun] 总是冲锋在前，展现出惊人的速度和力量。</Pony_PegasusShadMar.description>
+  <Pony_PegasusShadMar.description>[PAWN_nameDef]一生都在影武者中度过，无条件地服从他们的命令。在战斗中，[PAWN_pronoun]总是冲锋在前，展现出惊人的速度和力量。</Pony_PegasusShadMar.description>
 
   <Pony_PegasusPoultryFar.title>观鸟者</Pony_PegasusPoultryFar.title>
   <Pony_PegasusPoultryFar.titleShort>观鸟者</Pony_PegasusPoultryFar.titleShort>
@@ -17,21 +17,21 @@
   <Pony_PegasusWinRes.titleShort>无私的救助者</Pony_PegasusWinRes.titleShort>
   <Pony_PegasusWinRes.description>一天晚上，[PAWN_nameDef]在森林里散步时遇到了麻烦。幸运的是，一位勇敢的陌生人正好在附近，救了[PAWN_pronoun]。[PAWN_nameDef]被这种勇敢和奉献精神所感动，于是决定将自己的一生都奉献于帮助其他小马，努力成为像那位保护者一样的人。</Pony_PegasusWinRes.description>
 
-  <Pony_PegasusPegFight.title>飞马格斗家</Pony_PegasusPegFight.title>
-  <Pony_PegasusPegFight.titleShort>飞马格斗家</Pony_PegasusPegFight.titleShort>
-  <Pony_PegasusPegFight.description>在皇家卫队的飞马团服役时，[PAWN_nameDef]试图尽可能地从其他人中脱颖而出。在不断的训练中，[PAWN_pronoun]巧妙地磨练了[PAWN_possessive]飞行技能，掌握了空战，并学会了如何以最大的效率巧妙地使用翅膀招架打击。.</Pony_PegasusPegFight.description>
+  <Pony_PegasusPegFight.title>天马格斗家</Pony_PegasusPegFight.title>
+  <Pony_PegasusPegFight.titleShort>天马格斗家</Pony_PegasusPegFight.titleShort>
+  <Pony_PegasusPegFight.description>在皇家卫队的天马团服役时，[PAWN_nameDef]试图尽可能地从其他人中脱颖而出。在不断的训练中，[PAWN_pronoun]巧妙地磨练了[PAWN_possessive]飞行技能，掌握了空战，并学会了如何以最大的效率巧妙地使用翅膀招架打击。.</Pony_PegasusPegFight.description>
 
-  <Pony_PegasusOfficerPeg.title>飞马卫队军官</Pony_PegasusOfficerPeg.title>
-  <Pony_PegasusOfficerPeg.titleShort>飞马卫队军官</Pony_PegasusOfficerPeg.titleShort>
+  <Pony_PegasusOfficerPeg.title>天马卫队军官</Pony_PegasusOfficerPeg.title>
+  <Pony_PegasusOfficerPeg.titleShort>天马卫队军官</Pony_PegasusOfficerPeg.titleShort>
   <Pony_PegasusOfficerPeg.description>[PAWN_nameDef]将[PAWN_possessive]一生都献给了卫队，保护市民的和平，陪同重要人物进行各种外交任务。岁月流逝，但[PAWN_pronoun]一直履行着对王国的职责，直到最终[PAWN_pronoun]获得了应得的晋升，成为了一名军官。</Pony_PegasusOfficerPeg.description>
 
-  <Pony_PegasusFlyRacer.title>飞马运动员</Pony_PegasusFlyRacer.title>
-  <Pony_PegasusFlyRacer.titleShort>飞马运动员</Pony_PegasusFlyRacer.titleShort>
-  <Pony_PegasusFlyRacer.description>一天[PAWN_nameDef]以钦佩之情观看了飞马比赛。[PAWN_pronoun]设定了成为像最著名的运动小马一样成功和出色的目标。[PAWN_nameDef]全身心地投入到训练中，不知疲倦地磨练飞行技巧。.</Pony_PegasusFlyRacer.description>
+  <Pony_PegasusFlyRacer.title>天马运动员</Pony_PegasusFlyRacer.title>
+  <Pony_PegasusFlyRacer.titleShort>天马运动员</Pony_PegasusFlyRacer.titleShort>
+  <Pony_PegasusFlyRacer.description>一天[PAWN_nameDef]以钦佩之情观看了天马比赛。[PAWN_pronoun]设定了成为像最著名的运动小马一样成功和出色的目标。[PAWN_nameDef]全身心地投入到训练中，不知疲倦地磨练飞行技巧。.</Pony_PegasusFlyRacer.description>
 
-  <Pony_PegasusPilotTor.title>飞马发明家</Pony_PegasusPilotTor.title>
-  <Pony_PegasusPilotTor.titleShort>飞马发明家</Pony_PegasusPilotTor.titleShort>
-  <Pony_PegasusPilotTor.description>有一天，[PAWN_nameDef]遇到了一只无法飞翔的飞马。[PAWN_possessive]心充满了同情，[PAWN_pronoun]无法安心地知道附近有人失去了如此重要的东西。于是，[PAWN_nameDef]决定成为一名发明家，为自己设定了一个重要的人生目标——让所有不幸的小马再次快乐起来</Pony_PegasusPilotTor.description>
+  <Pony_PegasusPilotTor.title>天马发明家</Pony_PegasusPilotTor.title>
+  <Pony_PegasusPilotTor.titleShort>天马发明家</Pony_PegasusPilotTor.titleShort>
+  <Pony_PegasusPilotTor.description>有一天，[PAWN_nameDef]遇到了一只无法飞翔的天马。[PAWN_possessive]心充满了同情，[PAWN_pronoun]无法安心地知道附近有人失去了如此重要的东西。于是，[PAWN_nameDef]决定成为一名发明家，为自己设定了一个重要的人生目标——让所有不幸的小马再次快乐起来</Pony_PegasusPilotTor.description>
 
   <Pony_PegasusWeatherContr.title>天气管理员</Pony_PegasusWeatherContr.title>
   <Pony_PegasusWeatherContr.titleShort>天气管理员</Pony_PegasusWeatherContr.titleShort>
@@ -49,9 +49,9 @@
   <Pony_PegasusCloudSculpt.titleShort>云朵塑形者</Pony_PegasusCloudSculpt.titleShort>
   <Pony_PegasusCloudSculpt.description>[PAWN_nameDef]对云朵着迷。作为成年人，[PAWN_pronoun]成为了一位熟练的工匠，能够随心所欲地赋予云朵任何形状。</Pony_PegasusCloudSculpt.description>
 
-  <Pony_PegasusCook.title>飞马彩虹厨师</Pony_PegasusCook.title>
-  <Pony_PegasusCook.titleShort>飞马彩虹厨师</Pony_PegasusCook.titleShort>
-  <Pony_PegasusCook.description>[PAWN_nameDef]热情地研究了有关飞马国家美食的书籍。[PAWN_possessive]烹饪液体彩虹的各种异国料理的知识几乎完美，使[PAWN_objective]在祖国以外的地方都出名了.</Pony_PegasusCook.description>
+  <Pony_PegasusCook.title>天马彩虹厨师</Pony_PegasusCook.title>
+  <Pony_PegasusCook.titleShort>天马彩虹厨师</Pony_PegasusCook.titleShort>
+  <Pony_PegasusCook.description>[PAWN_nameDef]热情地研究了有关天马国家美食的书籍。[PAWN_possessive]烹饪液体彩虹的各种异国料理的知识几乎完美，使[PAWN_objective]在祖国以外的地方都出名了.</Pony_PegasusCook.description>
 
   <Pony_PegasusSlaveShad.title>影武者奴隶</Pony_PegasusSlaveShad.title>
   <Pony_PegasusSlaveShad.titleShort>影武者奴隶</Pony_PegasusSlaveShad.titleShort>

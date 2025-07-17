@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Everypony_Abhorrent.label>厌恶</Pony_Everypony_Abhorrent.label>
+	<Pony_Everypony_Abhorrent.description>小马是劣等种族，不值得我们注意。我们甚至都不应该有和它们交朋友的想法。</Pony_Everypony_Abhorrent.description>
+	<Pony_Everypony_Horrible.label>反感</Pony_Everypony_Horrible.label>
+	<Pony_Everypony_Horrible.description>小马和我们的差异实在是太大了。我们保护自己，不能相信它们。</Pony_Everypony_Horrible.description>
+	<Pony_Everypony_Standard.label>中立</Pony_Everypony_Standard.label>
+	<Pony_Everypony_Standard.description>小马和我们没什么不同。</Pony_Everypony_Standard.description>
+	<Pony_Everypony_Respected.label>重视</Pony_Everypony_Respected.label>
+	<Pony_Everypony_Respected.description>小马十分独特，值得我们尊敬。</Pony_Everypony_Respected.description>
+	<Pony_Everypony_Exalted.label>高尚</Pony_Everypony_Exalted.label>
+	<Pony_Everypony_Exalted.description>小马是最可爱的物种，我们有责任善待和尊敬它们。</Pony_Everypony_Exalted.description>
+
+	<Pony_Earthpony_Abhorrent.label>厌恶</Pony_Earthpony_Abhorrent.label>
+	<Pony_Earthpony_Abhorrent.description>陆马是劣等种族，不值得我们注意。我们甚至都不应该有和它们交朋友的想法。</Pony_Earthpony_Abhorrent.description>
+	<Pony_Earthpony_Horrible.label>反感</Pony_Earthpony_Horrible.label>
+	<Pony_Earthpony_Horrible.description>陆马和我们的差异实在是太大了。我们保护自己，不能相信它们。</Pony_Earthpony_Horrible.description>
+	<Pony_Earthpony_Stricted.label>仅限</Pony_Earthpony_Stricted.label>
+	<Pony_Earthpony_Stricted.description>只有陆马才能加入我们。</Pony_Earthpony_Stricted.description>
+	<Pony_Earthpony_Respected.label>重视</Pony_Earthpony_Respected.label>
+	<Pony_Earthpony_Respected.description>陆马十分独特，值得我们尊敬。</Pony_Earthpony_Respected.description>
+	<Pony_Earthpony_Exalted.label>高尚</Pony_Earthpony_Exalted.label>
+	<Pony_Earthpony_Exalted.description>陆马是最可爱的物种，我们有责任善待和尊敬它们。</Pony_Earthpony_Exalted.description>
+
+	<Pony_Pegasus_Abhorrent.label>厌恶</Pony_Pegasus_Abhorrent.label>
+	<Pony_Pegasus_Abhorrent.description>天马是劣等种族，不值得我们注意。我们甚至都不应该有和它们交朋友的想法。</Pony_Pegasus_Abhorrent.description>
+	<Pony_Pegasus_Horrible.label>反感</Pony_Pegasus_Horrible.label>
+	<Pony_Pegasus_Horrible.description>天马和我们的差异实在是太大了。我们保护自己，不能相信它们。</Pony_Pegasus_Horrible.description>
+	<Pony_Pegasus_Stricted.label>仅限</Pony_Pegasus_Stricted.label>
+	<Pony_Pegasus_Stricted.description>只有天马才能加入我们。</Pony_Pegasus_Stricted.description>
+	<Pony_Pegasus_Respected.label>重视</Pony_Pegasus_Respected.label>
+	<Pony_Pegasus_Respected.description>天马十分独特，值得我们尊敬。</Pony_Pegasus_Respected.description>
+	<Pony_Pegasus_Exalted.label>高尚</Pony_Pegasus_Exalted.label>
+	<Pony_Pegasus_Exalted.description>天马是最可爱的物种，我们有责任善待和尊敬它们。</Pony_Pegasus_Exalted.description>
+
+	<Pony_Unicorn_Abhorrent.label>厌恶</Pony_Unicorn_Abhorrent.label>
+	<Pony_Unicorn_Abhorrent.description>独角兽是劣等种族，不值得我们注意。我们甚至都不应该有和它们交朋友的想法。</Pony_Unicorn_Abhorrent.description>
+	<Pony_Unicorn_Horrible.label>反感</Pony_Unicorn_Horrible.label>
+	<Pony_Unicorn_Horrible.description>独角兽和我们的差异实在是太大了。我们保护自己，不能相信它们。</Pony_Unicorn_Horrible.description>
+	<Pony_Unicorn_Stricted.label>仅限</Pony_Unicorn_Stricted.label>
+	<Pony_Unicorn_Stricted.description>只有独角兽才能加入我们。</Pony_Unicorn_Stricted.description>
+	<Pony_Unicorn_Respected.label>重视</Pony_Unicorn_Respected.label>
+	<Pony_Unicorn_Respected.description>独角兽十分独特，值得我们尊敬。</Pony_Unicorn_Respected.description>
+	<Pony_Unicorn_Exalted.label>高尚</Pony_Unicorn_Exalted.label>
+	<Pony_Unicorn_Exalted.description>独角兽是最可爱的物种，我们有责任善待和尊敬它们。</Pony_Unicorn_Exalted.description>
+
+</LanguageData>
