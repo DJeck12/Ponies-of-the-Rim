@@ -20,7 +20,7 @@
 		<value>
 		  <li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 			<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<texPath>Transparent/Transparent</texPath>
 			<parentTagDef>Head</parentTagDef>
 			<drawSize>0.15</drawSize>
 			<drawData>
@@ -44,7 +44,7 @@
 		<value>
 		  <li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 			<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
+			<texPath>Transparent/Transparent</texPath>
 			<parentTagDef>Head</parentTagDef>
 			<drawSize>0.15</drawSize>
 			<drawData>
@@ -81,8 +81,8 @@
 		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 		<value>
 		  <li Class="PawnRenderNodeProperties_Eye">
-			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
-			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<texPath>Transparent/Transparent</texPath>
+			<texPathFemale>Transparent/Transparent</texPathFemale>
 			<anchorTag>RightEye</anchorTag>
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<parentTagDef>Head</parentTagDef>
@@ -105,8 +105,8 @@
 		<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 		<value>
 		  <li Class="PawnRenderNodeProperties_Eye">
-			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
-			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<texPath>Transparent/Transparent</texPath>
+			<texPathFemale>Transparent/Transparent</texPathFemale>
 			<anchorTag>LeftEye</anchorTag>
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<parentTagDef>Head</parentTagDef>
@@ -133,8 +133,8 @@
 		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 		<value>
 		  <li Class="PawnRenderNodeProperties_Eye">
-			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
-			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<texPath>Transparent/Transparent</texPath>
+			<texPathFemale>Transparent/Transparent</texPathFemale>
 			<anchorTag>RightEye</anchorTag>
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<parentTagDef>Head</parentTagDef>
@@ -157,8 +157,8 @@
 		<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 		<value>
 		  <li Class="PawnRenderNodeProperties_Eye">
-			<texPath>Things/Races/Pony/Cutiemarks/QTMark61_east</texPath>
-			<texPathFemale>Things/Races/Pony/Cutiemarks/QTMark62_east</texPathFemale>
+			<texPath>Transparent/Transparent</texPath>
+			<texPathFemale>Transparent/Transparent</texPathFemale>
 			<anchorTag>LeftEye</anchorTag>
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<parentTagDef>Head</parentTagDef>
