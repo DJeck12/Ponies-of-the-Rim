@@ -19,9 +19,12 @@ namespace PoniesOfTheRim
         public static TraitDef Pony_RelationsForPony;
         public static ThoughtDef Pony_OpinionForPony;
 
+        public static ThoughtDef Pony_AteMeat;
+
+        [MayRequireBiotech]
         public static GeneDef Pony_Cutiemark;
 
-        public static ThoughtDef Pony_AteMeat;
+        
 
         //[MayRequireBiotech]
         //public static GeneDef Pony_Herbivore;
