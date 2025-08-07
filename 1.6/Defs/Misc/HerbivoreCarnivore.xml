@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Herbivore</defName>
+		<label>травоядный</label>
+		<labelShortAdj>травоядный</labelShortAdj>
+		<description>Позволяет есть мясо и блюда с мясом, но даёт штраф -5 к настроению.</description>
+		<iconPath>UI/Genes/HorseHooves</iconPath>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Carnivore</defName>
+		<label>плотоядный</label>
+		<labelShortAdj>плотоядный</labelShortAdj>
+		<description>Позволяет есть растительные продукты и блюда с ними, но даёт штраф -5 к настроению.</description>
+		<iconPath>UI/Genes/StrongBody</iconPath>
+		<selectionWeight>1</selectionWeight>
+	</GeneDef>
+	
+	<ThoughtDef>
+		<defName>Pony_AteMeatAsHerbivore</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<stages>
+			<li>
+				<label>Съел мясную пищу как травоядный</label>
+				<description>Вкусно, но грустно.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>Pony_AtePlantAsCarnivore</defName>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<stages>
+			<li>
+				<label>Съел растительную пищу как плотоядный</label>
+				<description>Вкусно, но грустно.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
+</Defs>

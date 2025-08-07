@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]/stuffCategories</xpath>
+	</Operation>
+
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Combat Extended</li>
@@ -27,7 +34,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/FactionDef[defName="Pony_PlayerExpedition"]/apparelStuffFilter/thingDefs</xpath>
+					<xpath>Defs/FactionDef[defName="PonyColony"]/apparelStuffFilter/thingDefs</xpath>
 					<value>
 						<li>Steel</li>
 					</value>
