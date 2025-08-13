@@ -153,7 +153,7 @@
 					<fallbacks>
 					<!-- Override all spacer armor with power armor -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</wornGraphicPath>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Pony</wornGraphicPath>
 							<apparelTags>
 								<li>SpacerMilitary</li>
 								<li>PrestigeCombatGear</li>
@@ -162,14 +162,14 @@
 						</li>
 					<!-- Override all medieval armor with plate armor -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor_Pony</wornGraphicPath>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PlateArmor/PlateArmor_Pony</wornGraphicPath>
 							<apparelTags>
 								<li>MedievalMilitary</li>
 							</apparelTags>
 						</li>
 					<!-- Override all neolithic garment with tribal tunic -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/TribalA/TribalA_Pony</wornGraphicPath>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/TribalA/TribalA_Pony</wornGraphicPath>
 							<apparelTags>
 								<li>Neolithic</li>
 							</apparelTags>
@@ -179,7 +179,7 @@
 						</li>
 					<!-- Override all head-cover apparel with burka to avoid missing head -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Burka/Burka_Pony</wornGraphicPath>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Burka/Burka_Pony</wornGraphicPath>
 							<bodyPartGroups>
 								<li>UpperHead</li>
 								<li>FullHead</li>
@@ -187,14 +187,14 @@
 						</li>
 					<!-- Override all chest apparel with shirt -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Pony</wornGraphicPath>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic_Pony</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Torso</li>
 							</bodyPartGroups>
 						</li>
 					<!-- Override all legs apparel with pants -->
 						<li>
-							<wornGraphicPath>Pony/Things/Pawn/Humanlike/Apparel/Pants/Pants_Pony</wornGraphicPath>
+							<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Pants/Pants_Pony</wornGraphicPath>
 							<bodyPartGroups>
 								<li>Legs</li>
 							</bodyPartGroups>

@@ -70,6 +70,14 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 									</li>
 								</options>
 							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
 						</li>
 						<li>
 							<name>hair</name> <!-- Don't translate! Will break opacity -->
@@ -81,6 +89,14 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 									</li>
 								</options>
 							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
 						</li>
 					</colorChannels>
 				</alienPartGenerator>
@@ -141,7 +157,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 					</extendedGraphics>
 				</body>
 				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
-				<swaddle>Pony/Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
+				<swaddle>Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
 			</graphicPaths>
 		</alienRace>
 

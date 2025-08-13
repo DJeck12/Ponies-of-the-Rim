@@ -69,6 +69,14 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 									</li>
 								</options>
 							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
 						</li>
 						<li>
 							<name>hair</name> <!-- Don't translate! Will break opacity -->
@@ -80,6 +88,14 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 									</li>
 								</options>
 							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
 						</li>
 					</colorChannels>
 				</alienPartGenerator>
@@ -140,7 +156,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					</extendedGraphics>
 				</body>
 				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
-				<swaddle>Pony/Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
+				<swaddle>Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
 			</graphicPaths>
 		</alienRace>
 
