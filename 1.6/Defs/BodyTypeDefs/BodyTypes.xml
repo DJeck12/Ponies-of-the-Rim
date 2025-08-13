@@ -61,7 +61,8 @@
 				<rotation>South</rotation>
 				<tag>RightEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(-0.095, 0, 0.17)</offset>
+				<offset>(-0.11, 0, 0.17)</offset>
+				<!--<offset>(-0.11, 0, -0.07)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
@@ -70,7 +71,8 @@
 				<rotation>South</rotation>
 				<tag>LeftEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(0.095, 0, 0.17)</offset>
+				<offset>(0.11, 0, 0.17)</offset>
+				<!--<offset>(0.11, 0, -0.07)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(0,0,0,1)</debugColor>
@@ -126,7 +128,8 @@
 				<rotation>East</rotation>
 				<tag>RightEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(0.15, 0, 0.185)</offset>
+				<offset>(0.14, 0, 0.185)</offset>
+				<!--<offset>(0.14, 0, -0.06)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
@@ -135,7 +138,8 @@
 				<rotation>West</rotation>
 				<tag>LeftEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(-0.15, 0, 0.185)</offset>
+				<offset>(-0.14, 0, 0.185)</offset>
+				<!--<offset>(-0.14, 0, -0.06)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(0,0,0,1)</debugColor>
@@ -242,7 +246,8 @@
 				<rotation>South</rotation>
 				<tag>RightEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(-0.095, 0, 0.168)</offset>
+				<offset>(-0.05, 0, 0.205)</offset>
+				<!--<offset>(-0.05, 0, -0.035)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
@@ -251,7 +256,8 @@
 				<rotation>South</rotation>
 				<tag>LeftEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(0.095, 0, 0.168)</offset>
+				<offset>(0.05, 0, 0.205)</offset>
+				<!--<offset>(0.05, 0, -0.035)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(0,0,0,1)</debugColor>
@@ -307,7 +313,8 @@
 				<rotation>East</rotation>
 				<tag>RightEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(0.185, 0, 0.18)</offset>
+				<offset>(0.07, 0, 0.217)</offset>
+				<!--<offset>(0.07, 0, -0.028)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
@@ -316,7 +323,8 @@
 				<rotation>West</rotation>
 				<tag>LeftEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(-0.185, 0, 0.18)</offset>
+				<offset>(-0.07, 0, 0.217)</offset>
+				<!--<offset>(-0.07, 0, -0.028)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(0,0,0,1)</debugColor>
@@ -423,7 +431,8 @@
 				<rotation>South</rotation>
 				<tag>RightEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(-0.095, 0, 0.168)</offset>
+				<offset>(-0.085, 0, 0.18)</offset>
+				<!--<offset>(-0.08, 0, -0.06)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
@@ -432,7 +441,8 @@
 				<rotation>South</rotation>
 				<tag>LeftEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(0.095, 0, 0.168)</offset>
+				<offset>(0.085, 0, 0.18)</offset>
+				<!--<offset>(0.08, 0, -0.06)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(0,0,0,1)</debugColor>
@@ -488,7 +498,8 @@
 				<rotation>East</rotation>
 				<tag>RightEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(0.185, 0, 0.18)</offset>
+				<offset>(0.115, 0, 0.195)</offset>
+				<!--<offset>(0.115, 0, -0.045)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(1,1,1,1)</debugColor>
@@ -497,7 +508,8 @@
 				<rotation>West</rotation>
 				<tag>LeftEye</tag>
 				<canMirror>false</canMirror>
-				<offset>(-0.185, 0, 0.18)</offset>
+				<offset>(-0.115, 0, 0.195)</offset>
+				<!--<offset>(-0.115, 0, -0.045)</offset>-->
 				<range>0</range>
 				<layer>Head</layer>
 				<debugColor>(0,0,0,1)</debugColor>

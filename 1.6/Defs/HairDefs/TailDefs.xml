@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <PoniesOfTheRim.PonyTailType>
+        <defName>Sharp</defName>
+		<tailIndex>
+			<li>0</li>
+			<li>12</li>
+			<li>18</li>
+		</tailIndex>
+    </PoniesOfTheRim.PonyTailType>
+
+</Defs>

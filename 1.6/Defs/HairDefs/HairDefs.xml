@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 <!-- Dash -->
-	<HairDef>
-		<defName>Pony_DashHair</defName>
-		<label>Dash</label>
-		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Dash</texPath>
-		<category>Pony</category>
-		<hairTags>
-			<li>Pony</li>
-		</hairTags>
-	</HairDef>
+    <HairDef>
+        <defName>Pony_DashHair</defName>
+        <label>Dash</label>
+        <styleGender>Any</styleGender>
+        <texPath>Things/Races/Pony/Hair/Dash</texPath>
+        <category>Pony</category>
+        <hairTags>
+            <li>Pony</li>
+        </hairTags>
+        <modExtensions>
+            <li Class="PoniesOfTheRim.PonyHairExtension">
+                <ponyTailType>
+                    <li>Sharp</li>
+                </ponyTailType>
+            </li>
+        </modExtensions>
+    </HairDef>
 <!--
 	<HairDef>
 		<defName>Pony_DashColorHair</defName>
