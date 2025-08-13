@@ -29,8 +29,6 @@
 					<li>Pony_Earthpony</li>
 					<li>Pony_Unicorn</li>
 					<li>Pony_Pegasus</li>
-					<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</li>
-					<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</li>
 				</notXenophobistTowards>
 
 				<alienPartGenerator>

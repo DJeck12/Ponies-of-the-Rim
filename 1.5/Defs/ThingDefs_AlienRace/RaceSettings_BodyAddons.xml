@@ -19,8 +19,6 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<Or>
 						<Age>PonyAdult</Age>
@@ -68,8 +66,6 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<BodyPart>
 						<bodyPart>Pony_Tail</bodyPart>
@@ -173,8 +169,6 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<BodyPart>
 						<bodyPart>Ear</bodyPart>
@@ -221,8 +215,6 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Batpony</Race>
-						<Race MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_Thestral</Race>
 					</Or>
 					<BodyPart>
 						<bodyPart>Ear</bodyPart>

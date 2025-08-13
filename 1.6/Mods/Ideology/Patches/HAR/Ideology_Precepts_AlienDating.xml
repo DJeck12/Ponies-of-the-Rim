@@ -17,8 +17,6 @@
 							<li>Pony_EarthponySupremacist</li>
 							<li>Pony_PegasusSupremacist</li>
 							<li>Pony_UnicornSupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 						</conflictingMemes>
 					</value>
 					</nomatch>
@@ -28,8 +26,6 @@
 							<li>Pony_EarthponySupremacist</li>
 							<li>Pony_PegasusSupremacist</li>
 							<li>Pony_UnicornSupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 						</value>
 					</match>
 				</li>
@@ -43,8 +39,6 @@
 							<li>Pony_EarthponySupremacist</li>
 							<li>Pony_PegasusSupremacist</li>
 							<li>Pony_UnicornSupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 						</conflictingMemes>
 					</value>
 					</nomatch>
@@ -54,8 +48,6 @@
 							<li>Pony_EarthponySupremacist</li>
 							<li>Pony_PegasusSupremacist</li>
 							<li>Pony_UnicornSupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_BatponySupremacist</li>
-							<li MayRequire="Pony.PoniesOfTheRim.Batponies">Pony_ThestralSupremacist</li>
 						</value>
 					</match>
 				</li>
