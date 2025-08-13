@@ -4,7 +4,7 @@
 	<ResearchTabDef>
 		<defName>Pony</defName>
 		<label>Ponies of the Rim</label>
-		<generalTitle>Magic research projects</generalTitle>
+		<generalTitle>Pony research projects</generalTitle>
 		<generalDescription>Explore new pony technologies for a better understanding of their magical world. You can only have one active project at a time.</generalDescription>
 	</ResearchTabDef>
 

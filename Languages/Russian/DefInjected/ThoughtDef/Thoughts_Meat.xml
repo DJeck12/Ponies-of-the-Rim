@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_AteMeat.stages.Ate_meat.label>{PAWN_gender ? Съел : Съела} мясо</Pony_AteMeat.stages.Ate_meat.label>
+	<Pony_AteMeat.stages.Ate_meat.description>Мне пришлось есть еду с мясом, тьфу! Что это было? Бекон?!</Pony_AteMeat.stages.Ate_meat.description>
+
+</LanguageData>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/subworkerClasses</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]</xpath>
+						<value>
+							<subworkerClasses>
+								<li>PoniesOfTheRim.PonyRenderSubWorkerEye</li>
+							</subworkerClasses>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/subworkerClasses</xpath>
+						<value>
+							<li>PoniesOfTheRim.PonyRenderSubWorkerEye</li>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
+					<value>
+						<li Class="PawnRenderNodeProperties_Eye">
+							<texPath>Things/Races/Pony/Eyes/RedEye_Male</texPath>
+							<texPathFemale>Things/Races/Pony/Eyes/RedEye_Female</texPathFemale>
+							<anchorTag>RightEye</anchorTag>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<parentTagDef>Head</parentTagDef>
+							<drawSize>0.14</drawSize>
+							<side>Right</side>
+							<drawData>
+							<defaultData>
+								<layer>54</layer>
+								<offset>(0, 0, -0.24)</offset>
+							</defaultData>
+							</drawData>
+							<subworkerClasses>
+								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+							</subworkerClasses>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
+					<value>
+						<li Class="PawnRenderNodeProperties_Eye">
+							<texPath>Things/Races/Pony/Eyes/RedEye_Male</texPath>
+							<texPathFemale>Things/Races/Pony/Eyes/RedEye_Female</texPathFemale>
+							<anchorTag>LeftEye</anchorTag>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<parentTagDef>Head</parentTagDef>
+							<drawSize>0.14</drawSize>
+							<side>Left</side>
+							<drawData>
+							<defaultData>
+								<layer>54</layer>
+								<offset>(0, 0, -0.24)</offset>
+								<flip>true</flip>
+							</defaultData>
+							<dataWest>
+								<flip>false</flip>
+							</dataWest>
+							</drawData>
+							<subworkerClasses>
+								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+							</subworkerClasses>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
+					<value>
+						<li Class="PawnRenderNodeProperties_Eye">
+							<texPath>Things/Races/Pony/Eyes/GreyEye_Male</texPath>
+							<texPathFemale>Things/Races/Pony/Eyes/GreyEye_Female</texPathFemale>
+							<anchorTag>RightEye</anchorTag>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<parentTagDef>Head</parentTagDef>
+							<drawSize>0.14</drawSize>
+							<side>Right</side>
+							<drawData>
+							<defaultData>
+								<layer>54</layer>
+								<offset>(0, 0, -0.24)</offset>
+							</defaultData>
+							</drawData>
+							<subworkerClasses>
+								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+							</subworkerClasses>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
+					<value>
+						<li Class="PawnRenderNodeProperties_Eye">
+							<texPath>Things/Races/Pony/Eyes/GreyEye_Male</texPath>
+							<texPathFemale>Things/Races/Pony/Eyes/GreyEye_Female</texPathFemale>
+							<anchorTag>LeftEye</anchorTag>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<parentTagDef>Head</parentTagDef>
+							<drawSize>0.14</drawSize>
+							<side>Left</side>
+							<drawData>
+							<defaultData>
+								<layer>54</layer>
+								<offset>(0, 0, -0.24)</offset>
+								<flip>true</flip>
+							</defaultData>
+							<dataWest>
+								<flip>false</flip>
+							</dataWest>
+							</drawData>
+							<subworkerClasses>
+								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
+							</subworkerClasses>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

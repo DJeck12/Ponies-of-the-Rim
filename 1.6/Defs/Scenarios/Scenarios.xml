@@ -11,18 +11,18 @@
 				<def>PlayerFaction</def>
 				<factionDef>PonyColony</factionDef>
 			</playerFaction>
-				<surfaceLayer>
-			<def>SurfaceLayerFixed</def>
-			<tag>Surface</tag>
-			<layer>Surface</layer>
-			<settingsDef>Surface</settingsDef>
-			<hide>true</hide>
-			<connections>
-			  <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
-				<zoomMode>ZoomOut</zoomMode>
-			  </Orbit>
-			</connections>
-		  </surfaceLayer>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<tag>Surface</tag>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+						<zoomMode>ZoomOut</zoomMode>
+					</Orbit>
+				</connections>
+			</surfaceLayer>
 			<parts>
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">

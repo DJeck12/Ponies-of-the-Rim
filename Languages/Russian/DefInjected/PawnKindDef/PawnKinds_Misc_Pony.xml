@@ -24,6 +24,13 @@
 	<Pony_EarthponyVillager.labelMalePlural>пони жители</Pony_EarthponyVillager.labelMalePlural>
 	<Pony_EarthponyVillager.labelFemalePlural>пони жительницы</Pony_EarthponyVillager.labelFemalePlural>
 
+	<Pony_EarthponyVillager_Child.label>пони житель</Pony_EarthponyVillager_Child.label>
+	<Pony_EarthponyVillager_Child.labelPlural>пони жители</Pony_EarthponyVillager_Child.labelPlural>
+	<Pony_EarthponyVillager_Child.labelMale>пони житель</Pony_EarthponyVillager_Child.labelMale>
+	<Pony_EarthponyVillager_Child.labelFemale>пони жительница</Pony_EarthponyVillager_Child.labelFemale>
+	<Pony_EarthponyVillager_Child.labelMalePlural>пони жители</Pony_EarthponyVillager_Child.labelMalePlural>
+	<Pony_EarthponyVillager_Child.labelFemalePlural>пони жительницы</Pony_EarthponyVillager_Child.labelFemalePlural>
+
 <!-- Пегасы -->
 
 	<Pony_PegasusSlave.label>пони раб</Pony_PegasusSlave.label>
@@ -47,6 +54,13 @@
 	<Pony_PegasusVillager.labelMalePlural>пони жители</Pony_PegasusVillager.labelMalePlural>
 	<Pony_PegasusVillager.labelFemalePlural>пони жительницы</Pony_PegasusVillager.labelFemalePlural>
 
+	<Pony_PegasusVillager_Child.label>пони житель</Pony_PegasusVillager_Child.label>
+	<Pony_PegasusVillager_Child.labelPlural>пони жители</Pony_PegasusVillager_Child.labelPlural>
+	<Pony_PegasusVillager_Child.labelMale>пони житель</Pony_PegasusVillager_Child.labelMale>
+	<Pony_PegasusVillager_Child.labelFemale>пони жительница</Pony_PegasusVillager_Child.labelFemale>
+	<Pony_PegasusVillager_Child.labelMalePlural>пони жители</Pony_PegasusVillager_Child.labelMalePlural>
+	<Pony_PegasusVillager_Child.labelFemalePlural>пони жительницы</Pony_PegasusVillager_Child.labelFemalePlural>
+
 <!-- Единороги -->
 
 	<Pony_UnicornSlave.label>пони раб</Pony_UnicornSlave.label>
@@ -69,5 +83,12 @@
 	<Pony_UnicornVillager.labelFemale>пони жительница</Pony_UnicornVillager.labelFemale>
 	<Pony_UnicornVillager.labelMalePlural>пони жители</Pony_UnicornVillager.labelMalePlural>
 	<Pony_UnicornVillager.labelFemalePlural>пони жительницы</Pony_UnicornVillager.labelFemalePlural>
+
+	<Pony_UnicornVillager_Child.label>пони житель</Pony_UnicornVillager_Child.label>
+	<Pony_UnicornVillager_Child.labelPlural>пони жители</Pony_UnicornVillager_Child.labelPlural>
+	<Pony_UnicornVillager_Child.labelMale>пони житель</Pony_UnicornVillager_Child.labelMale>
+	<Pony_UnicornVillager_Child.labelFemale>пони жительница</Pony_UnicornVillager_Child.labelFemale>
+	<Pony_UnicornVillager_Child.labelMalePlural>пони жители</Pony_UnicornVillager_Child.labelMalePlural>
+	<Pony_UnicornVillager_Child.labelFemalePlural>пони жительницы</Pony_UnicornVillager_Child.labelFemalePlural>
 
 </LanguageData>

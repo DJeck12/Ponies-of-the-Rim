@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>AteHayAsIngredient</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate cooked meal with hay</label>
+				<description>I ate a meal cooked with hay. The flavor was so tasteless that I would rather eat grass.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_AteMeat</defName>
+		<showBubble>true</showBubble>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Ate meat</label>
+				<description>I had to eat a food with meat, ugh! What was that called? Bacon?!</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+  		<nullifyingTraits>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+	</ThoughtDef>
+
+</Defs>
