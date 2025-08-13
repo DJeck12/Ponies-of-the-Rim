@@ -189,7 +189,7 @@
 				</extendedGraphics>
 				<offsets>
 					<south>
-						<layerOffset>-0.268</layerOffset>
+						<layerOffset>-0.268</layerOffset> <!-- -0.268 — стандарт -->
 					</south>
 					<north>
 						<layerOffset>-0.5</layerOffset>
@@ -235,7 +235,7 @@
 				</extendedGraphics>
 				<offsets>
 					<south>
-						<layerOffset>-0.268</layerOffset>
+						<layerOffset>-0.278</layerOffset>
 					</south>
 					<north>
 						<layerOffset>-0.5</layerOffset>

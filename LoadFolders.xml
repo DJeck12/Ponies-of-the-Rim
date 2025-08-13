@@ -8,29 +8,29 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>
 		<!-- Mod Patches -->
-		<li IfModActive="sarg.alphagenes">ModPatches/Alpha Genes</li>
-		<li IfModActive="vanillaracesexpanded.highmate">ModPatches/Vanilla Races Expanded - Highmate</li>
-		<li IfModActive="vanillaracesexpanded.phytokin">ModPatches/Vanilla Races Expanded - Phytokin</li>
-		<li IfModActive="vanillaracesexpanded.archon">ModPatches/Vanilla Races Expanded - Archon</li>
-		<li IfModActive="vanillaracesexpanded.lycanthrope">ModPatches/Vanilla Races Expanded - Lycanthrope</li>
-		<li IfModActive="vanillaracesexpanded.saurid">ModPatches/Vanilla Races Expanded - Saurid</li>
-		<li IfModActive="vanillaracesexpanded.insector">ModPatches/Vanilla Races Expanded - Insector</li>
-		<li IfModActive="vanillaracesexpanded.waster">ModPatches/Vanilla Races Expanded - Waster</li>
-		<li IfModActive="vanillaracesexpanded.android">ModPatches/Vanilla Races Expanded - Android</li>
-		<li IfModActive="Airo.RimboundNovakinXenotype">ModPatches/Rimbound - Novakin Xenotype</li>
-		<li IfModActive="vat.epoeforked">ModPatches/Expanded Prosthetics and Organ Engineering - Forked</li>
-		<li IfModActive="Rah.RBSE,Rah.RBSEHC">ModPatches/RBSE</li>
-		<li IfModActive="FrozenSnowFox.VanillaBionicsExpansion">ModPatches/[FSF] Vanilla Bionics Expansion</li>
-		<li IfModActive="FrozenSnowFox.AdvancedBionicsExpansion">ModPatches/[FSF] Advanced Bionics Expansion</li>
-		<li IfModActive="Mlie.CombatBionics">ModPatches/Combat Bionics (Continued)</li>
-		<li IfModActive="CETeam.CombatExtended">ModPatches/Combat Extended</li>
-		<li IfModActive="feaurie.GreyscytheBionics">ModPatches/Greyscythe Bionics Catalogue</li>
-		<li IfModActive="ANNOProfi.HellBionics">ModPatches/Hell Bionics</li>
-		<li IfModActive="Rooboid.Minotaur">ModPatches/Roo's Minotaur Xenotype</li>
-		<li IfModActive="Rooboid.Satyr">ModPatches/Roo's Satyr Xenotype</li>
-		<li IfModActive="Rooboid.Faun">ModPatches/Roo's Faun Xenotype</li>
-		<li IfModActive="Neronix17.Outland.Genetics">ModPatches/Outland - Genetics</li>
-		<li IfModActive="wvc.sergkart.races.biotech">ModPatches/WVC - Xenotypes and Genes</li>
+		<li IfModActive="sarg.alphagenes">1.5/ModPatches/Alpha Genes</li>
+		<li IfModActive="vanillaracesexpanded.highmate">1.5/ModPatches/Vanilla Races Expanded - Highmate</li>
+		<li IfModActive="vanillaracesexpanded.phytokin">1.5/ModPatches/Vanilla Races Expanded - Phytokin</li>
+		<li IfModActive="vanillaracesexpanded.archon">1.5/ModPatches/Vanilla Races Expanded - Archon</li>
+		<li IfModActive="vanillaracesexpanded.lycanthrope">1.5/ModPatches/Vanilla Races Expanded - Lycanthrope</li>
+		<li IfModActive="vanillaracesexpanded.saurid">1.5/ModPatches/Vanilla Races Expanded - Saurid</li>
+		<li IfModActive="vanillaracesexpanded.insector">1.5/ModPatches/Vanilla Races Expanded - Insector</li>
+		<li IfModActive="vanillaracesexpanded.waster">1.5/ModPatches/Vanilla Races Expanded - Waster</li>
+		<li IfModActive="vanillaracesexpanded.android">1.5/ModPatches/Vanilla Races Expanded - Android</li>
+		<li IfModActive="Airo.RimboundNovakinXenotype">1.5/ModPatches/Rimbound - Novakin Xenotype</li>
+		<li IfModActive="vat.epoeforked">1.5/ModPatches/Expanded Prosthetics and Organ Engineering - Forked</li>
+		<li IfModActive="Rah.RBSE,Rah.RBSEHC">1.5/ModPatches/RBSE</li>
+		<li IfModActive="FrozenSnowFox.VanillaBionicsExpansion">1.5/ModPatches/[FSF] Vanilla Bionics Expansion</li>
+		<li IfModActive="FrozenSnowFox.AdvancedBionicsExpansion">1.5/ModPatches/[FSF] Advanced Bionics Expansion</li>
+		<li IfModActive="Mlie.CombatBionics">1.5/ModPatches/Combat Bionics (Continued)</li>
+		<li IfModActive="CETeam.CombatExtended">1.5/ModPatches/Combat Extended</li>
+		<li IfModActive="feaurie.GreyscytheBionics">1.5/ModPatches/Greyscythe Bionics Catalogue</li>
+		<li IfModActive="ANNOProfi.HellBionics">1.5/ModPatches/Hell Bionics</li>
+		<li IfModActive="Rooboid.Minotaur">1.5/ModPatches/Roo's Minotaur Xenotype</li>
+		<li IfModActive="Rooboid.Satyr">1.5/ModPatches/Roo's Satyr Xenotype</li>
+		<li IfModActive="Rooboid.Faun">1.5/ModPatches/Roo's Faun Xenotype</li>
+		<li IfModActive="Neronix17.Outland.Genetics">1.5/ModPatches/Outland - Genetics</li>
+		<li IfModActive="wvc.sergkart.races.biotech">1.5/ModPatches/WVC - Xenotypes and Genes</li>
 	</v1.5>
 	<v1.6>
 		<!-- Core Files -->

@@ -99,8 +99,9 @@
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
-    <Compile Include="CompProperties_PonyFoodCheck.cs" />
-    <Compile Include="CompPonyFoodCheck.cs" />
+    <Compile Include="Harmony_PonyFoodGenesPatch.cs" />
+    <Compile Include="Harmony_PonyFoodGeneRemovalPatch.cs" />
+    <Compile Include="Harmony_OffsetForPonyEarsPatch.cs" />
     <Compile Include="TailSelectorWindow.cs" />
     <Compile Include="Verb_ShortFlight.cs" />
     <Compile Include="JobGiver_UseShortFlight.cs" />
