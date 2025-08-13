@@ -10,18 +10,27 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
-		or @Name="ApparelArmorHelmetReconBase"]/apparel/bodyPartGroups</xpath>
-		<value>
-			<li>TopHead</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef/apparel[contains(bodyPartGroups,'Torso')]/bodyPartGroups</xpath>
 		<value>
 			<li>Wings</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="ApparelArmorPowerBase"
+		or @Name="ApparelArmorReconBase"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>CoverWings</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
+		or @Name="ApparelArmorHelmetReconBase"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>CoverEars</li>
+		</value>
+	</Operation>
+
 
 </Patch>

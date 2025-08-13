@@ -2,9 +2,15 @@
 <Defs>
 
 	<BodyPartGroupDef>
-		<defName>TopHead</defName>
-		<label>top head</label>
-		<listOrder>220</listOrder>
+		<defName>CoverEars</defName>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>CoverHorn</defName>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>CoverWings</defName>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>

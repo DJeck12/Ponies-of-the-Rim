@@ -10,7 +10,13 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]/apparel/bodyPartGroups</xpath>
 					<value>
-						<li>TopHead</li>
+						<li>CoverEars</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_VacsuitHelmet"]/apparel/bodyPartGroups</xpath>
+					<value>
+						<li>CoverHorn</li>
 					</value>
 				</li>
 			</operations>
