@@ -113,9 +113,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Magic</damageDef>
-			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationBase>1</armorPenetrationBase>
-			<stoppingPower>1</stoppingPower>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
 			<speed>55</speed>
 		</projectile>
 	</ThingDef>
@@ -133,7 +133,7 @@
 		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<defaultDamage>10</defaultDamage>
-		<defaultArmorPenetration>0.5</defaultArmorPenetration>
+		<defaultArmorPenetration>0.3</defaultArmorPenetration>
 		<buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
 		<buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
 	</DamageDef>

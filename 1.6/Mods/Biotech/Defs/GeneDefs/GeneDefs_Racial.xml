@@ -9,7 +9,7 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>25</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>2</biostatMet>
+		<biostatMet>1</biostatMet>
 <!-- 		<capMods>
 			<li>
 				<capacity>Manipulation</capacity>
