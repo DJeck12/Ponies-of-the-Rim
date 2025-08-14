@@ -44,7 +44,7 @@ Although the name "<color=#4FFF4F>earthpony</color>" indicates a connection with
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_StrongBody</li>
-					<!--<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>-->
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>

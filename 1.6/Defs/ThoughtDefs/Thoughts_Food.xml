@@ -16,21 +16,38 @@
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>Pony_AteMeat</defName>
+		<defName>Pony_AteMeatAsHerbivore</defName>
 		<showBubble>true</showBubble>
-		<thoughtClass>Thought_Memory</thoughtClass>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
-				<label>Ate meat</label>
-				<description>I had to eat a food with meat, ugh! What was that called? Bacon?!</description>
+				<label>Ate meat as herbivore</label>
+				<description>I had to eat food with meat, ugh! What was it called? Bacon?!</description>
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 		</stages>
   		<nullifyingTraits>
 			<li>Cannibal</li>
 		</nullifyingTraits>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_AtePlantAsCarnivore</defName>
+		<showBubble>true</showBubble>
+		<thoughtClass>Thought_FoodEaten</thoughtClass>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Ate plant as carnivore</label>
+				<description>I had to eat food with plants, ugh! What was it called? Hay?!</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
 	</ThoughtDef>
 
 </Defs>

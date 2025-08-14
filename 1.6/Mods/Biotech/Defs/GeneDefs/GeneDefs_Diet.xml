@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<!--
+
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Herbivore</defName>
 		<label>herbivore</label>
@@ -28,5 +28,5 @@
 			<li>Diet</li>
 		</exclusionTags>
 	</GeneDef>
--->
+
 </Defs>
