@@ -11,11 +11,11 @@ namespace PoniesOfTheRim.Abilities
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             //TODO: Move this so is not called on every Interval
-            //if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
-            //{
-            //    pawn.abilities.RemoveAbility(this.ability);
-            //    return;
-            //}
+            if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
+            {
+                pawn.abilities.RemoveAbility(this.ability);
+                return;
+            }
 
             int numNaturalHorn = GetNumNaturalHorn(pawn, this.partsToAffect);
             int numProstheticHorn = GetNumProstheticHorn(pawn, this.partsToAffect);
