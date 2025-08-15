@@ -1,7 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using Verse;
-using System.Linq;
 
 namespace PoniesOfTheRim
 {
@@ -46,38 +45,12 @@ namespace PoniesOfTheRim
 
         private static bool HasMeatOrCorpse(Thing thing)
         {
-            FoodTypeFlags meatCorpseFlags = FoodTypeFlags.Meat | FoodTypeFlags.Corpse;
-
-            if ((thing.def.ingestible.foodType & meatCorpseFlags) != 0)
-            {
-                return true;
-            }
-
-            var comp = thing.TryGetComp<CompIngredients>();
-            if (comp != null)
-            {
-                return comp.ingredients.Any(ing => (ing.ingestible.foodType & meatCorpseFlags) != 0);
-            }
-
-            return false;
+            return !FoodUtility.AcceptableVegetarian(thing);
         }
 
         private static bool HasPlant(Thing thing)
         {
-            FoodTypeFlags plantFlags = FoodTypeFlags.VegetableOrFruit | FoodTypeFlags.Seed | FoodTypeFlags.Plant | FoodTypeFlags.Tree | FoodTypeFlags.Fungus;
-
-            if ((thing.def.ingestible.foodType & plantFlags) != 0)
-            {
-                return true;
-            }
-
-            var comp = thing.TryGetComp<CompIngredients>();
-            if (comp != null)
-            {
-                return comp.ingredients.Any(ing => (ing.ingestible.foodType & plantFlags) != 0);
-            }
-
-            return false;
+            return !FoodUtility.AcceptableCarnivore(thing);
         }
     }
 }

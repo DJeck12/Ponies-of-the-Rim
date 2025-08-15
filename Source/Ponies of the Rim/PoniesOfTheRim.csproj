@@ -99,6 +99,11 @@
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
+    <Compile Include="Harmony_PatchesForPonySettings.cs" />
+    <Compile Include="PatchOperation\PatchOperationToggleableAdd.cs" />
+    <Compile Include="PatchOperation\PatchOperationToggleableReplace.cs" />
+    <Compile Include="PatchOperation\PatchOperationToggleableSequence.cs" />
+    <Compile Include="PatchOperation\PatchOperationToggleableRemove.cs" />
     <Compile Include="Harmony_PonyFoodGenesPatch.cs" />
     <Compile Include="Harmony_PonyFoodGeneRemovalPatch.cs" />
     <Compile Include="Harmony_OffsetForPonyEarsPatch.cs" />
@@ -140,5 +145,6 @@
     <Compile Include="Harmony_ScalableBeltPatch.cs" />
     <Compile Include="ScenPart_ConfigPage_ConfigureStartingPawns.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
