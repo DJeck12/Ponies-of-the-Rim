@@ -8,7 +8,7 @@
 		<iconPath>UI/Genes/Herbivore</iconPath>
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>2</biostatMet>
 		<exclusionTags>
 			<li>Food</li>
 			<li>Diet</li>
@@ -22,7 +22,7 @@
 		<iconPath>UI/Genes/Carnivore</iconPath>
 		<displayOrderInCategory>60</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>2</biostatMet>
 		<exclusionTags>
 			<li>Food</li>
 			<li>Diet</li>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/GeneDef[defName="Hands_Pig"]/label</xpath>
+					<value>
+						<label>pig hooves</label>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

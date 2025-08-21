@@ -55,7 +55,7 @@
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_ColorfulSkin</defName>
-		<label>colorful skin colors</label>
+		<label>multicolored skin</label>
 		<description>Carriers of this gene produce a pigment that gives their skin a various set of colors.</description>
 		<iconPath>UI/Genes/ColorBody</iconPath>
 		<displayOrderInCategory>10</displayOrderInCategory>
@@ -83,7 +83,7 @@
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_ColorfulHair</defName>
-		<label>colorful hair colors</label>
+		<label>multicolored hair</label>
 		<description>Carriers of this gene produce a pigment that color their hair in a various set of colors.</description>
 		<iconPath>UI/Genes/ColorHair</iconPath>
 		<displayOrderInCategory>12</displayOrderInCategory>

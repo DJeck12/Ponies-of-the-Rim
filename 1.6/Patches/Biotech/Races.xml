@@ -21,9 +21,15 @@
 							<CarryingCapacity>80</CarryingCapacity>
 							<Mass>55</Mass>
 							<PainShockThreshold>0.75</PainShockThreshold>
-							<RoyalFavorValue>4</RoyalFavorValue>
+							<RoyalFavorValue>3</RoyalFavorValue>
+							<WorkSpeedGlobal>1</WorkSpeedGlobal>
 						</statBases>
 					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Earthpony"
+					or defName="Pony_Pegasus"
+					or defName="Pony_Unicorn"]/alienRace/generalSettings/abilities</xpath>
 				</li>
 			</operations>
 		</match>

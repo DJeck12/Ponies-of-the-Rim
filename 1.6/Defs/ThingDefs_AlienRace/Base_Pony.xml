@@ -126,9 +126,6 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech">ElongatedFingers</li>
 					
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyMagic</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_NaturePower</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PegasusWings</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_UnicornHorn</li>
 				</blackGeneList>
 				<blackGeneTags>
 					<li>HairColor</li>

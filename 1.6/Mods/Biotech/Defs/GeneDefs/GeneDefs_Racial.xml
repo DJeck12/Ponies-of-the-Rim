@@ -9,13 +9,13 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>25</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
-<!-- 		<capMods>
+		<biostatMet>2</biostatMet>
+		<capMods>
 			<li>
 				<capacity>Manipulation</capacity>
-				<postFactor>0.8</postFactor>
+				<postFactor>0.95</postFactor>
 			</li>
-		</capMods> -->
+		</capMods>
 		<statOffsets>
 			<AimingDelayFactor>0.1</AimingDelayFactor>
 			<MoveSpeed>0.1</MoveSpeed>

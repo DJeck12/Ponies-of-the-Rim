@@ -68,9 +68,11 @@
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Pony_Tail</bodyPart>
-					</BodyPart>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_Tail</bodyPart>
+						</BodyPart>
+					</Or>
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
@@ -80,54 +82,16 @@
 				<offsets>
 					<south>
 						<bodyTypes>
-							<Pony>(0, 0.58)</Pony>
-							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
-							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</PonyChild>
-						</bodyTypes>
-					</south>
-					<north>
-						<layerOffset>-0.265</layerOffset>
-						<bodyTypes>
-							<Pony>(0, -0.3)</Pony>
-							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</PonyBaby>
-							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</PonyChild>
-						</bodyTypes>
-					</north>
-					<east>
-						<bodyTypes>
-							<Pony>(0.36, 0)</Pony>
-							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
-							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</PonyChild>
-						</bodyTypes>
-					</east>
-				</offsets>
-			</li>
-		<!-- Gene Tail -->
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-				<name>Tail human</name>
-				<path>Things/Races/Pony/Tails/Pony_Tail</path>
-				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>hair</colorChannel>
-				<conditions>
-					<RotStage>Fresh,Rotting</RotStage>
-					<Race>Human</Race>
-					<Gene>Pony_PonyTail</Gene>
-				</conditions>
-				<extendedGraphics>
-					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Tails/Pony_Tail19</Mutant>
-					<Age For="HumanlikeBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
-				</extendedGraphics>
-				<offsets>
-					<south>
-						<bodyTypes>
 							<Male>(-0.05, -0.3)</Male>
 							<Female>(-0.05, -0.3)</Female>
 							<Thin>(-0.05, -0.3)</Thin>
 							<Hulk>(-0.05, -0.3)</Hulk>
 							<Fat>(-0.05, -0.3)</Fat>
-							<Baby>(-0.05, -0.1)</Baby>
-							<Child>(-0.05, -0.1)</Child>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.05, -0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05, -0.1)</Child>
+							<Pony>(0, 0.58)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</PonyChild>
 						</bodyTypes>
 					</south>
 					<north>
@@ -138,8 +102,11 @@
 							<Thin>(0, -0.3)</Thin>
 							<Hulk>(0, -0.3)</Hulk>
 							<Fat>(0, -0.3)</Fat>
-							<Baby>(0, -0.1)</Baby>
-							<Child>(0, -0.1)</Child>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.1)</Child>
+							<Pony>(0, -0.3)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</PonyChild>
 						</bodyTypes>
 					</north>
 					<east>
@@ -149,8 +116,11 @@
 							<Thin>(0.24, -0.2)</Thin>
 							<Hulk>(0.38, -0.2)</Hulk>
 							<Fat>(0.46, -0.2)</Fat>
-							<Baby>(0.12, -0.1)</Baby>
-							<Child>(0.15, -0.1)</Child>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.12, -0.1)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.15, -0.1)</Child>
+							<Pony>(0.36, 0)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</PonyChild>
 						</bodyTypes>
 					</east>
 				</offsets>
@@ -189,7 +159,7 @@
 				</extendedGraphics>
 				<offsets>
 					<south>
-						<layerOffset>-0.268</layerOffset> <!-- -0.268 — стандарт -->
+						<layerOffset>-0.268</layerOffset>
 					</south>
 					<north>
 						<layerOffset>-0.5</layerOffset>
@@ -261,10 +231,12 @@
 					<Or>
 						<Race>Pony_Unicorn</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Pony_Horn</bodyPart>
-						<drawWithoutPart>true</drawWithoutPart>
-					</BodyPart>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_Horn</bodyPart>
+							<drawWithoutPart>true</drawWithoutPart>
+						</BodyPart>
+					</Or>
 					<Apparel>
 						<hiddenUnderApparelFor>
 							<li>CoverHorn</li>
@@ -320,11 +292,13 @@
 					<Or>
 						<Race>Pony_Pegasus</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Pony_RightWing</bodyPart>
-						<bodyPartLabel>right wing</bodyPartLabel>
-						<drawWithoutPart>true</drawWithoutPart>
-					</BodyPart>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_RightWing</bodyPart>
+							<bodyPartLabel>right wing</bodyPartLabel>
+							<drawWithoutPart>true</drawWithoutPart>
+						</BodyPart>
+					</Or>
 					<Apparel>
 						<hiddenUnderApparelFor>
 							<li>CoverWings</li>
@@ -332,6 +306,7 @@
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
+					<Race For="Human">Things/Genes/BodyAttachments/Wings/PegasusWings</Race>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/Wing_Right_Broken</Hediff>
 					<Hediff For="ArchotechWing">Things/Races/Pegasus/Archotech/Wing_Right_Archotech</Hediff>
@@ -365,11 +340,13 @@
 					<Or>
 						<Race>Pony_Pegasus</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Pony_LeftWing</bodyPart>
-						<bodyPartLabel>left wing</bodyPartLabel>
-						<drawWithoutPart>true</drawWithoutPart>
-					</BodyPart>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_LeftWing</bodyPart>
+							<bodyPartLabel>left wing</bodyPartLabel>
+							<drawWithoutPart>true</drawWithoutPart>
+						</BodyPart>
+					</Or>
 					<Apparel>
 						<hiddenUnderApparelFor>
 							<li>CoverWings</li>
@@ -377,6 +354,7 @@
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
+					<Race For="Human">Things/Genes/BodyAttachments/Wings/PegasusWings</Race>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/Wing_Left_Broken</Hediff>
 					<Hediff For="ArchotechWing">Things/Races/Pegasus/Archotech/Wing_Left_Archotech</Hediff>
