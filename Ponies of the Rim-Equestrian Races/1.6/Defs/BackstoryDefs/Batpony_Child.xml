@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyCopycat</defName>
+		<title>copycat</title>
+		<titleShort>copycat</titleShort>
+		<baseDesc>[PAWN_nameDef] lived surrounded by representatives of different races. [PAWN_pronoun] tried to please and to imitate them by building and putting homemade wings with horns.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+			<li>Pony_Earthpony_Tribal</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>3</Social>
+			<Mining>-2</Mining>
+			<Crafting>3</Crafting>
+		</skillGains>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">Pony_RelationsForPegasus</defName>
+					</li>
+					<li>
+						<defName Degree="1">Pony_RelationsForUnicorn</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>100</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Crafting</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

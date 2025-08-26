@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_EarthponyTamerMagAni</defName>
+		<title>tamer of magical animals</title>
+		<titleShort>beastmaster</titleShort>
+		<baseDesc>[PAWN_nameDef] devoted life to the search and capture of exotic, magical animals. [PAWN_pronoun] has been collecting [PAWN_possessive] collection for many years.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Earthpony</li>
+			<li>Pony_Earthpony_Oulander</li>
+			<li>Pony_Earthpony_Medieval</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Animals>4</Animals>
+			<Construction>3</Construction>
+			<Mining>-2</Mining>
+			<Plants>-3</Plants>
+		</skillGains>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName Degree="1">ShootingAccuracy</defName>
+					</li>
+				</options>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<requiredWorkTags>Hunting</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

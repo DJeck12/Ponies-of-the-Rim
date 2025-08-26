@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Wings -->
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_BatWings</defName>
+		<label>bat wings</label>
+		<description>Carriers of this gene grow new limbs on their back, resembling bat wings, gaining their ability for flight. Have no effect on ponies.</description>
+		<iconPath>UI/Genes/BatWings</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Genes/BodyAttachments/Wings/BatWings</texPath>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<overrideMeshSize>(1.8, 1.8)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>75</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0, 0.1)</offset>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, 0, 0.1)</offset>
+						<layer>-5</layer>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.1, 0, 0)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.1, 0, 0)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<abilities>
+			<li>ShortFlight_Bat</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>ShortFlight_Bat</AbilityDef>
+		</descriptionHyperlinks>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>PonyMagic</li>
+			<li>Wings</li>
+		</exclusionTags>
+	</GeneDef>
+
+</Defs>

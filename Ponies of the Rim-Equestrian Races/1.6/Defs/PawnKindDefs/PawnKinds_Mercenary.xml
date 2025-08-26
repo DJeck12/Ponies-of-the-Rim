@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Alicorn -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_AlicornGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_AlicornMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_AlicornMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_AlicornMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_AlicornMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_AlicornMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_AlicornMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Alicorn_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Batpony -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_BatponyGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_BatponyMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_BatponyMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_BatponyMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_BatponyMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_BatponyMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_BatponyMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Batpony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Changedling -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_ChangedlingGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_ChangedlingMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_ChangedlingMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_ChangedlingMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_ChangedlingMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_ChangedlingMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_ChangedlingMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Changedling_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Crystal -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_CrystalGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_CrystalMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_CrystalMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_CrystalMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_CrystalMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_CrystalMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_CrystalMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Crystal_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Gryphon -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_GryphonGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_GryphonMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_GryphonMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_GryphonMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_GryphonMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_GryphonMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_GryphonMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Gryphon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Hyppogriff -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_HyppogriffGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_HyppogriffMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_HyppogriffMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_HyppogriffMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_HyppogriffMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_HyppogriffMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_HyppogriffMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Hyppogriff_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Seapony -->
+
+	<PawnKindDef ParentName="Grenadier_Destructive">
+		<defName>Pony_SeaponyGrenadier_Destructive</defName>
+		<label>pony grenadier</label>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner">
+		<defName>Pony_SeaponyMercenary_Gunner</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
+		<defName>Pony_SeaponyMercenary_Gunner_Acidifier</defName>
+		<label>pony mercenary gunner</label>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher">
+		<defName>Pony_SeaponyMercenary_Slasher</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
+		<defName>Pony_SeaponyMercenary_Slasher_Acidifier</defName>
+		<label>pony mercenary slasher</label>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite">
+		<defName>Pony_SeaponyMercenary_Elite</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
+		<defName>Pony_SeaponyMercenary_Elite_Acidifier</defName>
+		<label>elite pony mercenary</label>
+		<labelPlural>elite pony mercenaries</labelPlural>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Seapony_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+</Defs>

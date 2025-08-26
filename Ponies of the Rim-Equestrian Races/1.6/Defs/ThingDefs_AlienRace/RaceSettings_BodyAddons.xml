@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Pony_BodyAddons_Races</defName>
+
+		<universalBodyAddons>
+		<!-- Crystal pattern
+			<li>
+				<name>Crystal</name>
+				<path>Things/Races/Crystal/Crystal</path>
+				<colorChannel>none</colorChannel>
+				<shaderType>MetaOverlay</shaderType>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Crystalpony</Race>
+					</Or>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-1</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-1</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-1</layerOffset>
+					</east>
+				</offsets>
+			</li> -->
+		</universalBodyAddons>
+
+	</AlienRace.RaceSettings>
+
+</Defs>

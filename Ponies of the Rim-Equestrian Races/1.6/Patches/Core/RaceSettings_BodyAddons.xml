@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Cutiemark"]/conditions/Or[1]/Race[text()="Pony_Earthpony"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Cutiemark"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Batpony</Race>
+				<Race>Pony_Thestral</Race>
+				<Race>Pony_Crystalpony</Race>
+				<Race>Pony_Zebra</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/conditions/Or[1]/Race[text()="Pony_Earthpony"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Batpony</Race>
+				<Race>Pony_Thestral</Race>
+				<Race>Pony_Changeling</Race>
+				<Race>Pony_Changedling</Race>
+				<Race>Pony_Crystalpony</Race>
+				<Race>Pony_Deer</Race>
+				<Race>Pony_Gryphon</Race>
+				<Race>Pony_Hyppogriff</Race>
+				<Race>Pony_Kirin</Race>
+				<Race>Pony_Zebra</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/conditions/Or[1]/Race[text()="Pony_Earthpony"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Batpony</Race>
+				<Race>Pony_Thestral</Race>
+				<Race>Pony_Changeling</Race>
+				<Race>Pony_Changedling</Race>
+				<Race>Pony_Crystalpony</Race>
+				<Race>Pony_Deer</Race>
+				<Race>Pony_Gryphon</Race>
+				<Race>Pony_Hyppogriff</Race>
+				<Race>Pony_Kirin</Race>
+				<Race>Pony_Seapony</Race>
+				<Race>Pony_Zebra</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Hediff[1]</xpath>
+		<order>Append</order>
+		<value>
+			<Race For="Pony_Batpony">
+				<path>Things/Races/Batpony/Ears/Normal/Ear_Right</path>
+				<extendedGraphics>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Thestral">
+				<path>Things/Races/Batpony/Ears/Normal/Ear_Right</path>
+				<extendedGraphics>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
+				</extendedGraphics>
+			</Race>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/conditions/Or[1]/Race[text()="Pony_Earthpony"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Batpony</Race>
+				<Race>Pony_Thestral</Race>
+				<Race>Pony_Changeling</Race>
+				<Race>Pony_Changedling</Race>
+				<Race>Pony_Crystalpony</Race>
+				<Race>Pony_Deer</Race>
+				<Race>Pony_Gryphon</Race>
+				<Race>Pony_Hyppogriff</Race>
+				<Race>Pony_Kirin</Race>
+				<Race>Pony_Seapony</Race>
+				<Race>Pony_Zebra</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Hediff[1]</xpath>
+		<order>Append</order>
+		<value>
+			<Race For="Pony_Batpony">
+				<path>Things/Races/Batpony/Ears/Normal/Ear_Left</path>
+				<extendedGraphics>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Thestral">
+				<path>Things/Races/Batpony/Ears/Normal/Ear_Left</path>
+				<extendedGraphics>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
+					<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
+				</extendedGraphics>
+			</Race>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Horn"]/conditions/Or[1]/Race[text()="Pony_Unicorn"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Horn"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Changeling</Race>
+				<Race>Pony_Changedling</Race>
+				<Race>Pony_Kirin</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right wing"]/conditions/Or[1]/Race[text()="Pony_Pegasus"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right wing"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Batpony</Race>
+				<Race>Pony_Thestral</Race>
+				<Race>Pony_Changeling</Race>
+				<Race>Pony_Changedling</Race>
+				<Race>Pony_Gryphon</Race>
+				<Race>Pony_Hyppogriff</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right wing"]/extendedGraphics/Hediff[3]</xpath>
+		<order>Append</order>
+		<value>
+			<Race For="Pony_Batpony">
+				<path>Things/Races/Batpony/Baby/Wing_Right</path>
+				<extendedGraphics>
+					<Hediff For="SimpleProstheticWing">Things/Races/Batpony/Prosthetic/Wing_Right_Prosthetic</Hediff>
+					<Age For="PonyBaby">Things/Races/Batpony/Baby/Wing_Right_Baby</Age>
+					<Age For="PonyChild">Things/Races/Batpony/Baby/Wing_Right_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Batpony/Baby/Wing_Right_Baby</Age>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Thestral">
+				<path>Things/Races/Batpony/Baby/Wing_Right</path>
+				<extendedGraphics>
+					<Hediff For="SimpleProstheticWing">Things/Races/Batpony/Prosthetic/Wing_Right_Prosthetic</Hediff>
+					<Age For="PonyBaby">Things/Races/Batpony/Baby/Wing_Right_Baby</Age>
+					<Age For="PonyChild">Things/Races/Batpony/Baby/Wing_Right_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Batpony/Baby/Wing_Right_Baby</Age>
+				</extendedGraphics>
+			</Race>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left wing"]/conditions/Or[1]/Race[text()="Pony_Pegasus"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left wing"]/conditions/Or[1]</xpath>
+			<value>
+				<Race>Pony_Alicorn</Race>
+				<Race>Pony_Batpony</Race>
+				<Race>Pony_Thestral</Race>
+				<Race>Pony_Changeling</Race>
+				<Race>Pony_Changedling</Race>
+				<Race>Pony_Gryphon</Race>
+				<Race>Pony_Hyppogriff</Race>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left wing"]/extendedGraphics/Hediff[3]</xpath>
+		<order>Append</order>
+		<value>
+			<Race For="Pony_Batpony">
+				<path>Things/Races/Batpony/Baby/Wing_Left</path>
+				<extendedGraphics>
+					<Hediff For="SimpleProstheticWing">Things/Races/Batpony/Prosthetic/Wing_Left_Prosthetic</Hediff>
+					<Age For="PonyBaby">Things/Races/Batpony/Baby/Wing_Left_Baby</Age>
+					<Age For="PonyChild">Things/Races/Batpony/Baby/Wing_Left_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Batpony/Baby/Wing_Left_Baby</Age>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Thestral">
+				<path>Things/Races/Batpony/Baby/Wing_Left</path>
+				<extendedGraphics>
+					<Hediff For="SimpleProstheticWing">Things/Races/Batpony/Prosthetic/Wing_Left_Prosthetic</Hediff>
+					<Age For="PonyBaby">Things/Races/Batpony/Baby/Wing_Left_Baby</Age>
+					<Age For="PonyChild">Things/Races/Batpony/Baby/Wing_Left_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Batpony/Baby/Wing_Left_Baby</Age>
+				</extendedGraphics>
+			</Race>
+		</value>
+	</Operation>
+
+</Patch>

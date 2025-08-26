@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--Head-->
+	<BodyPartDef>
+		<defName>Pony_Beak</defName>
+		<label>beak</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>1.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<beautyRelated>true</beautyRelated>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Pony_HeadWithEarHoles</defName>
+		<label>head</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<bleedRate>2</bleedRate>
+		<executionPartPriority>500</executionPartPriority>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Pony_Antler</defName>
+		<label>antler</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>Mirrored</li>
+		</tags>
+	</BodyPartDef>
+
+<!--Limb-->
+
+	<BodyPartDef Name="TalonBase" Abstract="True">
+		<hitPoints>8</hitPoints>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>10</frostbiteVulnerability>
+		<pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+		<canBeVacuumBurnt>false</canBeVacuumBurnt>
+	</BodyPartDef>
+	<BodyPartDef ParentName="TalonBase">
+		<defName>Pony_FrontClaw</defName>
+		<label>front claw</label>
+		<labelShort>claw</labelShort>
+		<tags>
+			<li>MovingLimbDigit</li>
+			<li>ManipulationLimbDigit</li>
+			<li>Mirrored</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef ParentName="TalonBase">
+		<defName>Pony_RearClaw</defName>
+		<label>rear claw</label>
+		<labelShort>claw</labelShort>
+		<tags>
+			<li>MovingLimbDigit</li>
+			<li>Mirrored</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef Name="PawBase" Abstract="True">
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<canBeVacuumBurnt>false</canBeVacuumBurnt>
+	</BodyPartDef>
+	<BodyPartDef ParentName="TalonBase">
+		<defName>Pony_FrontPaw</defName>
+		<label>front paw</label>
+		<labelShort>paw</labelShort>
+		<tags>
+			<li>MovingLimbSegment</li>
+			<li>ManipulationLimbSegment</li>
+			<li>Mirrored</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef ParentName="TalonBase">
+		<defName>Pony_RearPaw</defName>
+		<label>rear paw</label>
+		<labelShort>paw</labelShort>
+		<tags>
+			<li>MovingLimbSegment</li>
+			<li>Mirrored</li>
+		</tags>
+	</BodyPartDef>
+
+<!--Body-->
+
+	<BodyPartDef>
+		<defName>Pony_FishTail</defName>
+		<label>fish tail</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>10</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	</BodyPartDef>
+
+</Defs>
