@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Nocturnal</defName>
+		<label>nocturnal</label>
+		<description>Carriers of this gene prefer to be up at night. They are happier if awake at nights and unhappy if awake during the day.</description>
+		<iconPath>UI/Genes/Nocturnal</iconPath>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>NightOwl</def>
+			</li>
+		</forcedTraits>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>bat</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+</Defs>

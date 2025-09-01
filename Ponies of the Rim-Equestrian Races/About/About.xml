@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+	<packageId>Pony.PoniesOfTheRim.Races</packageId>
+	<name>Ponies of the Rim: Equestrian Races</name>
+	<author>Pony</author>
+	<modVersion>1.0</modVersion>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description><![CDATA[
+Fan-made mod that adds new pony races from the popular TV-show - <color=#ff3a99>My Little Pony™</color>.
+
+Mod overview:
+> 12 new races: 
+
+<color=#00B8FF>Ponies of the Rim: Core</color> <color=#FFD800>v1.1.1</color> for RimWorld v1.6.4523
+]]>
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Pony.PoniesOfTheRim.Core</packageId>
+			<displayName>Ponies of the Rim</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+			<downloadUrl>https://github.com/DJeck12/Ponies-of-the-Rim</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Pony.PoniesOfTheRim.Core</li>
+	</loadAfter>
+	<url>https://github.com/DJeck12/Ponies-of-the-Rim</url>
+
+</ModMetaData>

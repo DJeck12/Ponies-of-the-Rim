@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AbilityDef>
+		<defName>Pony_Crystallization</defName>
+		<label>crystallization</label>
+		<description>The caster absorbs the power of crystals into himself, strengthening his body, making it more durable, but reducing his mobility in process.</description>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<cooldownTicksRange>420000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<iconPath>UI/Abilities/Ability_Crystal</iconPath>
+		<hotKey>Misc1</hotKey>
+		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
+		<warmupSound>Pony_AbilityWarmup</warmupSound>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>2.0</warmupTime>
+			<range>0</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>0</Ability_EffectRadius>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Pony_Crystallization</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+				<sound>Pony_AbilityEffect</sound>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

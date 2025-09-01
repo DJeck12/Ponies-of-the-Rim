@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/generalSettings/notXenophobistTowards</xpath>
+		<value>
+			<li>Pony_Alicorn</li>
+			<li>Pony_Batpony</li>
+			<li>Pony_Thestral</li>
+			<li>Pony_Changeling</li>
+			<li>Pony_Changedling</li>
+			<li>Pony_Crystalpony</li>
+			<li>Pony_Deer</li>
+			<li>Pony_Gryphon</li>
+			<li>Pony_Hyppogriff</li>
+			<li>Pony_Kirin</li>
+			<li>Pony_Seapony</li>
+			<li>Pony_Zebra</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/raceRestriction/blackGeneList</xpath>
+		<value>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Pony_BatWings</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[4]/conditions/Or</xpath>
+					<value>
+						<Or>
+							<Gene>Pony_PonyEars</Gene>
+							<Gene>Pony_FluffyPonyEars</Gene>
+						</Or>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[5]/conditions/Or</xpath>
+					<value>
+						<Or>
+							<Gene>Pony_PonyEars</Gene>
+							<Gene>Pony_FluffyPonyEars</Gene>
+						</Or>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

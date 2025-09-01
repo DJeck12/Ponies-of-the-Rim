@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!-- Guests -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+					<value>
+						<li>
+							<categoryTag>PonyOutlander</categoryTag>
+							<pawnKinds>
+								<li>Pony_BatponyVillager</li>
+							</pawnKinds>
+						</li>
+					</value>
+				</li>
+			<!-- Mercenaries -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+					<value>
+						<li>
+							<categoryTag>PonyOutlander</categoryTag>
+							<pawnKinds>
+								<li>Pony_BatponyMercenary_Gunner_Acidifier</li>
+								<li>Pony_BatponyMercenary_Slasher_Acidifier</li>
+								<li>Pony_BatponyMercenary_Elite_Acidifier</li>
+							</pawnKinds>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

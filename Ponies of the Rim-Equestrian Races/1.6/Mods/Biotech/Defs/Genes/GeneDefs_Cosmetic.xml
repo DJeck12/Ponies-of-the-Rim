@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_CrystallineSkin</defName>
+		<label>crystalline skin</label>
+		<description></description>
+		<iconPath>UI/Genes/CrystallineSkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>0</biostatCpx>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_AttachmentHead</workerClass>
+				<texPath>Things/Races/Crystal/Crystal</texPath>
+				<shaderTypeDef>MetaOverlay</shaderTypeDef>
+				<drawSize>(1.25, 1.25)</drawSize>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_FluffyPonyEars</defName>
+		<label>fluffy pony ears</label>
+		<description>Carriers of this gene grow pony-like ears with an extra fluff.</description>
+		<iconPath>UI/Genes/FluffyPonyEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+</Defs>

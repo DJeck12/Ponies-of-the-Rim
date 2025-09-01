@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>Pony_PonyAdventure</defName>
+		<label>Pony adventure</label>
+		<description>Play by your own rules: This scenario includes all PotR races, including: Alicorn, Earthpony, Pegasus, Unicorn, Batpony, Thestral, Changeling, Changedling, Crystalpony, Deer, Gryphon, Hyppogriff, Kirin, Seapony, Zebra.
+
+Note: This scenario is made for testing purposes. You can customize the scenario to create your own unique playthrough.</description>
+		<scenario>
+			<summary>Start with any race, designed for manual customization.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Pony_ColonyWithRaces</factionDef>
+			</playerFaction>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<tag>Surface</tag>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+						<zoomMode>ZoomOut</zoomMode>
+					</Orbit>
+				</connections>
+			</surfaceLayer>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Equestria is your homeland, the country of ponies and other magical creatures. As part of an important mission, your team has been sent to a forgotten planet somewhere on the edge of the galaxy. Having entered its orbit and prepared to land, you hear a loud explosion and the grinding of metal from the captain's cabin. Having assessed the emergency condition of the ship's compartments and having no way to contact the captain, you decide to use escape pods and urgently leave the ship. This is how your adventure begins.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Config pages -->
+				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<customSummary>Start with 8 equines.</customSummary>
+					<pawnCount>8</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef>
+		<defName>Pony_PlayerChangelingHive</defName>
+		<label>Changeling hive</label>
+		<description>Half-insect, half-horse, changelings have existed alongside ponies since the earliest times of history, but have never been able to communicate. Being intelligent but driven by instinct, changelings reject the idea of ​​technological development and prefer to build primitive hives like their ancestors.
+
+Your hive has been plundered by poachers and you have all been chained and taken away from your home planet to be sold. Luckily for you, your species is not on the extermination list and the poachers have been traced by space fighters for justice. The ship you are all in crashes and you manage to escape from your prison cells. Having taken up the fight with panicking pirates, you were able to win and take one of the escape pods. Having landed on the planet, you realize that not everyone was able to survive the landing on the surface. The story of your hive begins.</description>
+		<scenario>
+			<summary>An ultimate bug-horse experience.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>Pony_PlayerChangelingHive</factionDef>
+			</playerFaction>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<tag>Surface</tag>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+						<zoomMode>ZoomOut</zoomMode>
+					</Orbit>
+				</connections>
+			</surfaceLayer>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Your hive has been plundered by poachers and you have all been chained and taken away from your home planet to be sold. Luckily for you, your species is not on the extermination list and the poachers have been traced by space fighters for justice. The ship you are all in crashes and you manage to escape from your prison cells. Having taken up the fight with panicking pirates, you were able to win and take one of the escape pods. Having landed on the planet, you realize that not everyone was able to survive the landing on the surface. The story of your hive begins.
+
+There seem to be feral changeling hives on this planet. It might be worth trying to contact them.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Config pages -->
+				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<customSummary>Start a hive of 5 changelings.</customSummary>
+					<pawnCount>5</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<ScenarioDef>
+		<defName>Pony_LonelyAlicorn</defName>
+		<label>Lonely alicorn</label>
+		<description>Long ago, in the golden age of Equestria, the ancient alicorns ruled over entire countries and world. They were demigods, possessed extraordinary abilities and believed that it would always be so. Unfortunately, many years of relations between alicorns and ponies led to the extinction of the ancient alicorn race, leaving behind hybrids of the superior race with ordinary ponies.
+		
+The legacy of the great power remained in the face of the weakened ancestors of the alicorns and you are part of this legacy. You arrive on this planet with the goal of continuing the history of the alicorns by ruling your own settlement. But first, you will need followers or friends.</description>
+		<scenario>
+			<summary>A single yet powerfull alicorn.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PonyColony</factionDef>
+			</playerFaction>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<tag>Surface</tag>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+						<zoomMode>ZoomOut</zoomMode>
+					</Orbit>
+				</connections>
+			</surfaceLayer>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The legacy of the great power remained in the face of the weakened ancestors of the alicorns and you are part of this legacy. You arrive on this planet with the goal of continuing the history of the alicorns by ruling your own settlement. But first, you will need followers or friends.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Config pages -->
+				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<customSummary>Start with 1 alicorn.</customSummary>
+					<pawnChoiceCount>2</pawnChoiceCount>
+					<leftBehindPawnKind>Pony_LonelyAlicorn</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>Pony_LonelyAlicorn</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

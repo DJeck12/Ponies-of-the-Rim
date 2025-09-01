@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<BodyPartGroupDef>
+		<defName>CoverAntlers</defName>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>Antlers</defName>
+		<label>antlers</label>
+		<listOrder>215</listOrder>
+	</BodyPartGroupDef>
+
+</Defs>

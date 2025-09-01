@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="BatponyVillager">
+		<defName>Pony_BatponyVillager_Child</defName>
+		<isFighter>false</isFighter>
+		<weaponTags/>
+		<weaponMoney>0</weaponMoney>
+		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+	</PawnKindDef>
+
+</Defs>

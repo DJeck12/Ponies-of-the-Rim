@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Issue -->
+
+	<IssueDef>
+		<defName>Pony_Batpony</defName>
+		<label>batponies</label>
+		<iconPath>UI/Issues/Batpony</iconPath>
+	</IssueDef>
+
+<!-- Precepts -->
+
+<!-- Abhorrent -->
+
+	<PreceptDef>
+		<defName>Pony_Batpony_Abhorrent</defName>
+		<issue>Pony_Batpony</issue>
+		<label>abhorrent</label>
+		<description>Batponies are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>60</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_Friendship</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Abhorrent</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Abhorrent_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Abhorrent</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
+		<stages>
+			<li>
+				<label>hatred for batponies</label>
+				<description>Batponies are absolutely repulsive and I can't let them abuse our trust.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Abhorrent</li>
+					<li>HAR_AlienRaces_Abhorrent</li>
+				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Abhorrent_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
+		<stages>
+			<li>
+				<label>disgusting batpony!</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Abhorrent_Social</li>
+					<li>HAR_AlienRaces_Abhorrent_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Horrible -->
+
+	<PreceptDef>
+		<defName>Pony_Batpony_Horrible</defName>
+		<issue>Pony_Batpony</issue>
+		<label>disliked</label>
+		<description>Batponies are different from us, even too different. We have to be on our guard and not trust them.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Horrible_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Horrible_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
+		<stages>
+			<li>
+				<label>distrust for batponies</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Horrible_Social</li>
+					<li>HAR_AlienRaces_Horrible_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Stricted -->
+
+	<PreceptDef>
+		<defName>Pony_Batpony_Stricted</defName>
+		<issue>Pony_Batpony</issue>
+		<label>stricted</label>
+		<description>Batponies are the only race allowed in our society.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<requiredMemes>
+			<li>Pony_BatponySupremacist</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Stricted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Stricted_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Stricted</defName>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<stages>
+			<li>
+				<label>other races among us</label>
+				<description>We live alongside someone who is not a batpony. We should make them leave in one way or another.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Stricted_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces_Social</workerClass>
+		<stages>
+			<li>
+				<label>not a batpony</label>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Respected -->
+
+	<PreceptDef>
+		<defName>Pony_Batpony_Respected</defName>
+		<issue>Pony_Batpony</issue>
+		<label>respected</label>
+		<description>Batponies are very unique and deserve our admiration.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_EarthponySupremacist</li>
+			<li>Pony_PegasusSupremacist</li>
+			<li>Pony_UnicornSupremacist</li>
+			<li>Pony_ThestralSupremacist</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Respected_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Respected_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
+		<stages>
+			<li>
+				<label>respect for batponies</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Respected_Social</li>
+					<li>HAR_AlienRaces_Respected_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+<!-- Exalted -->
+
+	<PreceptDef>
+		<defName>Pony_Batpony_Exalted</defName>
+		<issue>Pony_Batpony</issue>
+		<label>exalted</label>
+		<description>Batponies are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_EarthponySupremacist</li>
+			<li>Pony_PegasusSupremacist</li>
+			<li>Pony_UnicornSupremacist</li>
+			<li>Pony_ThestralSupremacist</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Exalted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>Pony_Batpony_Exalted_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Exalted</defName>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<stages>
+			<li>
+				<label>love for batponies</label>
+				<description>It makes me feel happier knowing we live among batponies.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Exalted</li>
+					<li>HAR_AlienRaces_Exalted</li>
+				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>Pony_Batpony_Exalted_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
+		<stages>
+			<li>
+				<label>amazing batpony!</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VEF.Pawns.ThoughtExtensions">
+				<removeThoughtsWhenAdded>
+					<li>Pony_Everypony_Exalted_Social</li>
+					<li>HAR_AlienRaces_Exalted_Social</li>
+				</removeThoughtsWhenAdded>
+			</li>
+			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
+				<race>Pony_Batpony</race>
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+
+</Defs>

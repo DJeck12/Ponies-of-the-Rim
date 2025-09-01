@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Scenario -->
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>Pony_LonelyAlicorn</defName>
+		<label>alicorn</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<defaultFactionDef>PonyColony</defaultFactionDef>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>0~0</apparelMoney>
+		<techHediffsChance>0</techHediffsChance>
+		<techHediffsMoney>0~0</techHediffsMoney>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+<!-- Colony -->
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_AlicornColonist</defName>
+		<label>alicorn</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_BatponyColonist</defName>
+		<label>batpony</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_ThestralColonist</defName>
+		<label>thestral</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Thestral</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_ChangedlingColonist</defName>
+		<label>changedling</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_ChangelingColonist</defName>
+		<label>changeling</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_CrystalColonist</defName>
+		<label>crystal</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_DeerColonist</defName>
+		<label>deer</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Deer</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_GryphonColonist</defName>
+		<label>gryphon</label>
+		<labelMale>cockerel</labelMale>
+		<labelFemale>chick</labelFemale>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_HyppogriffColonist</defName>
+		<label>hyppogriff</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_KirinColonist</defName>
+		<label>kirin</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Kirin</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_SeaponyColonist</defName>
+		<label>seapony</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_ZebraColonist</defName>
+		<label>zebra</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Tribe -->
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_AlicornTribe</defName>
+		<label>alicorn</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Alicorn</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_BatponyTribe</defName>
+		<label>batpony</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Batpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_ThestralTribe</defName>
+		<label>thestral</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Thestral</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_ChangelingTribe</defName>
+		<label>changeling</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_ChangedlingTribe</defName>
+		<label>changedling</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_CrystalTribe</defName>
+		<label>crystal</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Crystalpony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_DeerTribe</defName>
+		<label>deer</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Deer</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_GryphonTribe</defName>
+		<label>gryphon</label>
+		<labelMale>cockerel</labelMale>
+		<labelFemale>chick</labelFemale>
+		<race>Pony_Gryphon</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_HyppogriffTribe</defName>
+		<label>hyppogriff</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Hyppogriff</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_KirinTribe</defName>
+		<label>kirin</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Kirin</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_SeaponyTribe</defName>
+		<label>seapony</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Seapony</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribePlayerBase">
+		<defName>Pony_ZebraTribe</defName>
+		<label>zebra</label>
+		<labelMale>stallion</labelMale>
+		<labelFemale>mare</labelFemale>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pony_Everypony</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+</Defs>

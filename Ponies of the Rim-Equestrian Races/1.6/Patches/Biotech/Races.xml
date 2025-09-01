@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Batpony"
+					or defName="Pony_Thestral"
+					or defName="Pony_Crystalpony"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>1800</MarketValue>
+							<MoveSpeed>4.6</MoveSpeed>
+							<PsychicSensitivity>1.1</PsychicSensitivity>
+							<ComfyTemperatureMin>16</ComfyTemperatureMin>
+							<ComfyTemperatureMax>26</ComfyTemperatureMax>
+							<CarryingCapacity>80</CarryingCapacity>
+							<Mass>55</Mass>
+							<PainShockThreshold>0.75</PainShockThreshold>
+							<RoyalFavorValue>4</RoyalFavorValue>
+						</statBases>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

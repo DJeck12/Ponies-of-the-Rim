@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<HediffDef>
+		<defName>Pony_Crystallization</defName>
+		<label>crystallization</label>
+		<description>The power of crystals permeates the body, making it stronger but slower.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<IncomingDamageFactor>0.85</IncomingDamageFactor>
+					<MoveSpeed>-0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

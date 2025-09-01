@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Batpony -->
+
+	<RulePackDef>
+		<defName>NameGeneratorBatpony</defName>
+		<include>
+			<li>NameGeneratorPony</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Bat_First] [Bat_Last]</li>
+				<li>r_name->[Bat_First] [Bat_Word]</li>
+				<li>r_name->[Bat_Word] [Bat_Last]</li>
+
+				<li>r_name->[First] [Bat_Last]</li>
+				<li>r_name->[First] [Bat_Word]</li>
+				<li>r_name->[Word] [Bat_Last]</li>
+
+				<li>r_name->[Bat_First] [Last]</li>
+				<li>r_name->[Bat_First] [Word]</li>
+				<li>r_name->[Bat_Word] [Last]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Bat_First->Pony_Names/Name_Bat_First</li>
+				<li>Bat_Last->Pony_Names/Name_Bat_Last</li>
+				<li>Bat_Word->Pony_Names/Name_Bat_Word</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+<!-- Changeling -->
+
+	<RulePackDef>
+		<defName>NameGeneratorChangeling</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Changeling_Name]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Changeling_Name->Pony_Names/Name_Changeling</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+<!-- Zebra -->
+
+	<RulePackDef>
+		<defName>NameGeneratorZebraMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Zebra_Name_Male]</li>
+				<li>r_name->[Zebra_Name_Unisex]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Zebra_Name_Male->Pony_Names/Name_Zebra_Male</li>
+				<li>Zebra_Name_Unisex->Pony_Names/Name_Zebra_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NameGeneratorZebraFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Zebra_Name_Female]</li>
+				<li>r_name->[Zebra_Name_Unisex]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Zebra_Name_Female->Pony_Names/Name_Zebra_Female</li>
+				<li>Zebra_Name_Unisex->Pony_Names/Name_Zebra_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+<!-- Gryphon -->
+
+	<RulePackDef>
+		<defName>NameGeneratorGryphonMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Gryphon_Name_Male]</li>
+				<li>r_name->[Gryphon_Name_Unisex]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Gryphon_Name_Male->Pony_Names/Name_Gryphon_Male</li>
+				<li>Gryphon_Name_Unisex->Pony_Names/Name_Gryphon_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NameGeneratorGryphonFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Gryphon_Name_Female]</li>
+				<li>r_name->[Gryphon_Name_Unisex]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Gryphon_Name_Female->Pony_Names/Name_Gryphon_Female</li>
+				<li>Gryphon_Name_Unisex->Pony_Names/Name_Gryphon_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+<!-- Deer -->
+
+	<RulePackDef>
+		<defName>NameGeneratorDeerMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Deer_Name_Male]</li>
+				<li>r_name->[Deer_Name_Unisex]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Deer_Name_Male->Pony_Names/Name_Deer_Male</li>
+				<li>Deer_Name_Unisex->Pony_Names/Name_Deer_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NameGeneratorDeerFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Deer_Name_Female]</li>
+				<li>r_name->[Deer_Name_Unisex]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Deer_Name_Female->Pony_Names/Name_Deer_Female</li>
+				<li>Deer_Name_Unisex->Pony_Names/Name_Deer_Unisex</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

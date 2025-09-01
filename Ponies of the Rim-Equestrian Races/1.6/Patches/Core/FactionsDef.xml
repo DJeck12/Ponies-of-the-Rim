@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+		<value>
+			<Pony_BatponyVillager>5</Pony_BatponyVillager>
+			<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+			<Pony_BatponyGrenadier_Destructive>1.5</Pony_BatponyGrenadier_Destructive>
+			<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
+			<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
+			<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+			<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[2]/options</xpath>
+		<value>
+			<Pony_BatponyVillager>20</Pony_BatponyVillager>
+			<Pony_BatponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_BatponyVillager_Child>
+			<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+			<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[3]/traders</xpath>
+		<value>
+			<Pony_BatponyTown_Trader>1</Pony_BatponyTown_Trader>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[3]/guards</xpath>
+		<value>
+			<Pony_BatponyVillager>3</Pony_BatponyVillager>
+			<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+			<Pony_BatponyGrenadier_Destructive>1.5</Pony_BatponyGrenadier_Destructive>
+			<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
+			<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
+			<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+		<value>
+			<Pony_BatponyVillager>10</Pony_BatponyVillager>
+			<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+			<Pony_BatponyGrenadier_Destructive>1.5</Pony_BatponyGrenadier_Destructive>
+			<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
+			<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
+			<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+			<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+		</value>
+	</Operation>
+
+</Patch>
