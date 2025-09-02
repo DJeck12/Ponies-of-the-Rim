@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"
+		or defName="Stonecutting"
+		or defName="ComplexClothing"]/tags</xpath>
+        <value>
+            <li>Pony_MedievalStart</li>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"
+		or defName="Smithing"]/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Brewing"
+			or defName="Smithing"]</xpath>
+			<value>
+				<tags>
+					<li>Pony_MedievalStart</li>
+				</tags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Brewing"
+			or defName="Smithing"]/tags</xpath>
+			<value>
+				<li>Pony_MedievalStart</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

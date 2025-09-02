@@ -7,6 +7,7 @@
 		<value>SpaceRefugee</value>
 	</Operation>
 
+<!-- Mercenaries -->
 	<Operation Class="PatchOperationAttributeAdd">
 		<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]</xpath>
 		<attribute>Name</attribute>
@@ -47,6 +48,43 @@
 		<xpath>Defs/PawnKindDef[defName="Mercenary_Elite_Acidifier"]</xpath>
 		<attribute>Name</attribute>
 		<value>Mercenary_Elite_Acidifier</value>
+	</Operation>
+
+<!-- Tribal -->
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_Trader"]</xpath>
+		<attribute>Name</attribute>
+		<value>Tribal_Trader</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]</xpath>
+		<attribute>Name</attribute>
+		<value>Tribal_Berserker</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]</xpath>
+		<attribute>Name</attribute>
+		<value>Tribal_HeavyArcher</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]</xpath>
+		<attribute>Name</attribute>
+		<value>Tribal_ChiefMelee</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+		<attribute>Name</attribute>
+		<value>Tribal_ChiefRanged</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_Breacher"]</xpath>
+		<attribute>Name</attribute>
+		<value>Tribal_Breacher</value>
 	</Operation>
 
 </Patch>
