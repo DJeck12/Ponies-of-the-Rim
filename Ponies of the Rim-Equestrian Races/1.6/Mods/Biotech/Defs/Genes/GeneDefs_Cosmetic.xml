@@ -8,17 +8,149 @@
 		<iconPath>UI/Genes/CrystallineSkin</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<biostatCpx>0</biostatCpx>
-		<renderNodeProperties>
-			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_AttachmentHead</workerClass>
-				<texPath>Things/Races/Crystal/Crystal</texPath>
-				<shaderTypeDef>MetaOverlay</shaderTypeDef>
-				<drawSize>(1.25, 1.25)</drawSize>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-			</li>
-		</renderNodeProperties>
 	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_GriffonBeak</defName>
+		<label>bodymark</label>
+		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests. Unlike cutiemarks, bodymarks have more abstract patterns and are similar to religious tattoos.</description>
+		<iconPath>UI/Genes/GriffonBeak</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<forcedHeadTypes>
+			<li>Male_Pony</li>
+			<li>Female_Pony</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Head</li>
+		</exclusionTags>
+	</GeneDef>
+
+<!-- Body -->
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Bodymark</defName>
+		<label>bodymark</label>
+		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests. Unlike cutiemarks, bodymarks have more abstract patterns and are similar to religious tattoos.</description>
+		<iconPath>UI/Genes/Bodymark</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Scales</defName>
+		<label>body scales</label>
+		<description>Carriers of this gene grow an insect-like chitin tail.</description>
+		<iconPath>UI/Genes/Scales</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>14</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>BodyCover</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Carapace</defName>
+		<label>back carapace</label>
+		<description>Carriers of this gene grow an insect-like chitin tail.</description>
+		<iconPath>UI/Genes/ScaleBack</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>14</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>BodyCover</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Chitin</defName>
+		<label>back chitin</label>
+		<description>Carriers of this gene grow an insect-like chitin tail.</description>
+		<iconPath>UI/Genes/ChitinBack</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>14</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>BodyCover</li>
+		</exclusionTags>
+	</GeneDef>
+
+<!-- Tails -->
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_BugTail</defName>
+		<label>bug tail</label>
+		<description>Carriers of this gene grow an insect-like chitin tail.</description>
+		<iconPath>UI/Genes/BugTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_DeerTail</defName>
+		<label>deer tail</label>
+		<description>Carriers of this gene grow an fluffy deer tail.</description>
+		<iconPath>UI/Genes/DeerTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_GriffonTail</defName>
+		<label>griffon tail</label>
+		<description>Carriers of this gene grow a whip-like griffon tail.</description>
+		<iconPath>UI/Genes/GriffonTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_KirinTail</defName>
+		<label>kirin tail</label>
+		<description>Carriers of this gene grow a brush-like kirin tail.</description>
+		<iconPath>UI/Genes/KirinTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_ZebraTail</defName>
+		<label>zebra tail</label>
+		<description>Carriers of this gene grow a fluffy zebra tail.</description>
+		<iconPath>UI/Genes/ZebraTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+<!-- Ears -->
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_FluffyPonyEars</defName>
@@ -26,8 +158,60 @@
 		<description>Carriers of this gene grow pony-like ears with an extra fluff.</description>
 		<iconPath>UI/Genes/FluffyPonyEars</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
-		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_ChitinEars</defName>
+		<label>chitin ears</label>
+		<description>Carriers of this gene grow bug-like changeling ears covered by chitin.</description>
+		<iconPath>UI/Genes/ChitinEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_AntennaeEars</defName>
+		<label>antennae ears</label>
+		<description>Carriers of this gene grow bug-like changedling ears, resembling an antennae.</description>
+		<iconPath>UI/Genes/AntennaeEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_HippogriffEars</defName>
+		<label>hippogriff ears</label>
+		<description>Carriers of this gene grow hippogriff ears, resembling bird's comb.</description>
+		<iconPath>UI/Genes/HippogriffEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_KirinEars</defName>
+		<label>kirin ears</label>
+		<description>Carriers of this gene grow long pony-like ears.</description>
+		<iconPath>UI/Genes/KirinEars</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>

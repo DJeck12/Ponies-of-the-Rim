@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Batpony -->
+
+	<RulePackDef>
+		<defName>Pony_NameFactionBatpony</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name] Kingdom</li>
+
+                <li>Name->Noctis</li>
+                <li>Name->Nightshades</li>
+                <li>Name->Nox</li>
+                <li>Name->Tantibus</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_NameFactionDeer</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name] Dominion</li>
+
+                <li>Name->Thicket</li>
+                <li>Name->Olenia</li>
+                <li>Name->Haywoods</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_NameFactionGriffon</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name] Kingdom</li>
+
+                <li>Name->Griffonstone</li>
+                <li>Name->Griffus</li>
+                <li>Name->Greifswald</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_NameFactionHippogriff</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Kingdom of [Name]</li>
+
+                <li>Name->Hippogrifia</li>
+                <li>Name->Maritima</li>
+                <li>Name->Nova Azura</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_NameFactionKirin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Realm of [Name]</li>
+
+                <li>Name->Kiria</li>
+                <li>Name->Kirenline</li>
+                <li>Name->Shakira</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_NameFactionSeapony</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name]</li>
+
+                <li>Name->Seaquestria</li>
+                <li>Name->Aquador</li>
+                <li>Name->Coastica</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_NameFactionZebra</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name]</li>
+
+                <li>Name->Farasi</li>
+                <li>Name->Zebrica</li>
+                <li>Name->Azir</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

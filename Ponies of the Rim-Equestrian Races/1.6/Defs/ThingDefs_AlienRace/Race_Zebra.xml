@@ -40,10 +40,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ZebraTail</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ZebraHair</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Bodymark</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_NaturePower</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>
 				</raceGenes>
 			<!-- Colors -->

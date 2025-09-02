@@ -116,6 +116,9 @@
 		<skinCovered>true</skinCovered>
 		<beautyRelated>true</beautyRelated>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
 	</BodyPartDef>
 
 </Defs>

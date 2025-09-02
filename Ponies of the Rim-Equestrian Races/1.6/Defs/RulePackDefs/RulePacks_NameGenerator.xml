@@ -73,31 +73,31 @@
 		</rulePack>
 	</RulePackDef>
 
-<!-- Gryphon -->
+<!-- Griffon -->
 
 	<RulePackDef>
-		<defName>NameGeneratorGryphonMale</defName>
+		<defName>NameGeneratorGriffonMale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Gryphon_Name_Male]</li>
-				<li>r_name->[Gryphon_Name_Unisex]</li>
+				<li>r_name->[Griffon_Name_Male]</li>
+				<li>r_name->[Griffon_Name_Unisex]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>Gryphon_Name_Male->Pony_Names/Name_Gryphon_Male</li>
-				<li>Gryphon_Name_Unisex->Pony_Names/Name_Gryphon_Unisex</li>
+				<li>Griffon_Name_Male->Pony_Names/Name_Griffon_Male</li>
+				<li>Griffon_Name_Unisex->Pony_Names/Name_Griffon_Unisex</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
-		<defName>NameGeneratorGryphonFemale</defName>
+		<defName>NameGeneratorGriffonFemale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Gryphon_Name_Female]</li>
-				<li>r_name->[Gryphon_Name_Unisex]</li>
+				<li>r_name->[Griffon_Name_Female]</li>
+				<li>r_name->[Griffon_Name_Unisex]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>Gryphon_Name_Female->Pony_Names/Name_Gryphon_Female</li>
-				<li>Gryphon_Name_Unisex->Pony_Names/Name_Gryphon_Unisex</li>
+				<li>Griffon_Name_Female->Pony_Names/Name_Griffon_Female</li>
+				<li>Griffon_Name_Unisex->Pony_Names/Name_Griffon_Unisex</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>

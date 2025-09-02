@@ -8,9 +8,17 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Batpony"
-					or defName="Pony_Thestral"
-					or defName="Pony_Crystalpony"]/statBases</xpath>
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Alicorn"
+					or defName="Pony_Batpony"
+					or defName="Pony_Changeling"
+					or defName="Pony_Changedling"
+					or defName="Pony_Crystalpony"
+					or defName="Pony_Deer"
+					or defName="Pony_Griffon"
+					or defName="Pony_Hippogriff"
+					or defName="Pony_Kirin"
+					or defName="Pony_Seapony"
+					or defName="Pony_Zebra"]/statBases</xpath>
 					<value>
 						<statBases>
 							<MarketValue>1800</MarketValue>

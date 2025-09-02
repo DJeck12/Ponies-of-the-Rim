@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-<!-- Gryphon -->
+<!-- Griffon -->
 
 	<BodyDef>
-		<defName>Pony_GryphonBody</defName>
-		<label>gryphon</label>
+		<defName>Pony_GriffonBody</defName>
+		<label>griffon</label>
 		<corePart>
 			<def>Torso</def>
 			<height>Middle</height>
@@ -593,11 +593,11 @@
 		</corePart>
 	</BodyDef>
 
-<!-- Hyppogriff -->
+<!-- Hippogriff -->
 
 	<BodyDef>
-		<defName>Pony_HyppogriffBody</defName>
-		<label>hyppogriff</label>
+		<defName>Pony_HippogriffBody</defName>
+		<label>Hippogriff</label>
 		<corePart>
 			<def>Torso</def>
 			<height>Middle</height>
@@ -2014,7 +2014,7 @@
 				</li>
 				<li>
 					<def>Pony_FishTail</def>
-					<coverage>0.005</coverage>
+					<coverage>0.24</coverage>
 					<groups>
 						<li>Torso</li>
 						<li>Tail</li>
@@ -2022,124 +2022,22 @@
 				</li>
 				<li>
 					<def>Pony_Thigh</def>
-					<customLabel>left thigh</customLabel>
-					<coverage>0.12</coverage>
+					<customLabel>left fkipper</customLabel>
+					<coverage>0.08</coverage>
 					<groups>
 						<li>Legs</li>
 					</groups>
 					<woundAnchorTag>LeftLeg</woundAnchorTag>
 					<flipGraphic>true</flipGraphic>
-					<parts>
-						<li>
-							<def>Pony_RearLeg</def>
-							<customLabel>rear left leg</customLabel>
-							<coverage>0.32</coverage>
-							<height>Bottom</height>
-							<flipGraphic>true</flipGraphic>
-							<groups>
-								<li>Legs</li>
-								<li>RearLegs</li>
-							</groups>
-							<parts>
-								<li>
-									<def>Femur</def>
-									<customLabel>left femur</customLabel>
-									<coverage>0.1</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Legs</li>
-									</groups>
-								</li>
-								<li>
-									<def>Tibia</def>
-									<customLabel>left tibia</customLabel>
-									<coverage>0.1</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Legs</li>
-									</groups>
-								</li>
-								<li>
-									<def>Pony_CannonBone</def>
-									<customLabel>rear left cannon bone</customLabel>
-									<coverage>0.075</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Legs</li>
-									</groups>
-								</li>
-								<li>
-									<def>Pony_RearHoof</def>
-									<customLabel>rear left hoof</customLabel>
-									<coverage>0.14</coverage>
-									<flipGraphic>true</flipGraphic>
-									<groups>
-										<li>Feet</li>
-										<li>Hooves</li>
-									</groups>
-								</li>
-							</parts>
-						</li>
-					</parts>
 				</li>
 				<li>
 					<def>Pony_Thigh</def>
-					<customLabel>right thigh</customLabel>
-					<coverage>0.12</coverage>
+					<customLabel>right flipper</customLabel>
+					<coverage>0.08</coverage>
 					<groups>
 						<li>Legs</li>
 					</groups>
 					<woundAnchorTag>RightLeg</woundAnchorTag>
-					<parts>
-						<li>
-							<def>Pony_RearLeg</def>
-							<customLabel>rear right leg</customLabel>
-							<coverage>0.32</coverage>
-							<height>Bottom</height>
-							<groups>
-								<li>Legs</li>
-								<li>RearLegs</li>
-							</groups>
-							<parts>
-								<li>
-									<def>Femur</def>
-									<customLabel>right femur</customLabel>
-									<coverage>0.1</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Legs</li>
-									</groups>
-								</li>
-								<li>
-									<def>Tibia</def>
-									<customLabel>right tibia</customLabel>
-									<coverage>0.1</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Legs</li>
-									</groups>
-								</li>
-								<li>
-									<def>Pony_CannonBone</def>
-									<customLabel>rear right cannon bone</customLabel>
-									<coverage>0.075</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Legs</li>
-									</groups>
-								</li>
-								<li>
-									<def>Pony_RearHoof</def>
-									<customLabel>rear right hoof</customLabel>
-									<coverage>0.14</coverage>
-									<groups>
-										<li>Feet</li>
-										<li>Hooves</li>
-									</groups>
-								</li>
-							</parts>
-						</li>
-					</parts>
 				</li>
 			</parts>
 		</corePart>

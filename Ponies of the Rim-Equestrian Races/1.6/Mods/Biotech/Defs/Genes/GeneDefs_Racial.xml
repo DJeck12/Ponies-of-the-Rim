@@ -27,4 +27,82 @@
 		</symbolPack>
 	</GeneDef>
 
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_BirdHands</defName>
+		<label>bird talons</label>
+		<description>Carriers of this gene have hands that resemble bird feet. Their sharp claws allow them to deal sharp damage instead of blunt when unarmed in compensation of manipulation capability.</description>
+		<iconPath>UI/Genes/BirdHands</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>25</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.95</postFactor>
+			</li>
+		</capMods>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>avian</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>bird</symbol></li>
+				<li><symbol>grif</symbol></li>
+				<li><symbol>sharp</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>claw</symbol></li>
+				<li><symbol>hook</symbol></li>
+				<li><symbol>predator</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<exclusionTags>
+			<li>Hands</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>Pony_BirdHands</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_FishTail</defName>
+		<label>fish tail</label>
+		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests. Unlike cutiemarks, bodymarks have more abstract patterns and are similar to religious tattoos.</description>
+		<iconPath>UI/Genes/FishTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<waterCellCost>1</waterCellCost>
+		<statOffsets>
+			<MoveSpeed>-2.0</MoveSpeed>
+		</statOffsets>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>fishy</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>horse</symbol></li>
+				<li><symbol>pon</symbol></li>
+				<li><symbol>hydro</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>fin</symbol></li>
+				<li><symbol>neigh</symbol></li>
+				<li><symbol>pony</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
 </Defs>

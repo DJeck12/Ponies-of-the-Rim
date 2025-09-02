@@ -3,12 +3,76 @@
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Seapony</defName>
-		<label>seapony</label>
+		<label>sea pony</label>
 		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
 
 The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
 
 <color=#FF46FF>Seapony</color>]]></description>
+
+	<!-- Attacks -->
+
+		<tools Inherit="False">
+			<li>
+				<label>front left hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
 
 	<!-- Stats -->
 
@@ -40,7 +104,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_FishTail</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHair</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Scales</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
 				</raceGenes>

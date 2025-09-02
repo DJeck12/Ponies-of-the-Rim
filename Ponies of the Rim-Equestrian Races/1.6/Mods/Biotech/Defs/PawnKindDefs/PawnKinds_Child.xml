@@ -1,12 +1,64 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<PawnKindDef ParentName="BatponyVillager">
+	<PawnKindDef ParentName="Villager_Child">
 		<defName>Pony_BatponyVillager_Child</defName>
-		<isFighter>false</isFighter>
-		<weaponTags/>
-		<weaponMoney>0</weaponMoney>
-		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+		<race>Pony_Batpony</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalChildBase">
+		<defName>Pony_ChangelingTribal_Child</defName>
+		<race>Pony_Changeling</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalChildBase">
+		<defName>Pony_ChangedlingTribal_Child</defName>
+		<race>Pony_Changedling</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Villager_Child">
+		<defName>Pony_CrystalVillager_Child</defName>
+		<race>Pony_Crystalpony</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalChildBase">
+		<defName>Pony_DeerTribal_Child</defName>
+		<race>Pony_Deer</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Villager_Child">
+		<defName>Pony_GriffonVillager_Child</defName>
+		<race>Pony_Griffon</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Villager_Child">
+		<defName>Pony_HippogriffVillager_Child</defName>
+		<race>Pony_Hippogriff</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalChildBase">
+		<defName>Pony_KirinTribal_Child</defName>
+		<race>Pony_Kirin</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Villager_Child">
+		<defName>Pony_SeaponyVillager_Child</defName>
+		<race>Pony_Seapony</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalChildBase">
+		<defName>Pony_ZebraTribal_Child</defName>
+		<race>Pony_Zebra</race>
+		<defaultFactionDef/>
 	</PawnKindDef>
 
 </Defs>

@@ -2,6 +2,15 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]</xpath>
+		<value>
+			<fixedLeaderKinds>
+				<li>Pony_AlicornTown_Councilman</li>
+			</fixedLeaderKinds>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 		<value>
 			<Pony_BatponyVillager>5</Pony_BatponyVillager>
@@ -11,6 +20,8 @@
 			<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
 			<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
 			<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+			<Pony_AlicornMercenary_Elite>0.1</Pony_AlicornMercenary_Elite>
+			<Pony_AlicornTown_Councilman>0.1</Pony_AlicornTown_Councilman>
 		</value>
 	</Operation>
 
@@ -21,6 +32,7 @@
 			<Pony_BatponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_BatponyVillager_Child>
 			<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
 			<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+			<Pony_AlicornTown_Councilman>0.1</Pony_AlicornTown_Councilman>
 		</value>
 	</Operation>
 
@@ -28,6 +40,7 @@
 		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[3]/traders</xpath>
 		<value>
 			<Pony_BatponyTown_Trader>1</Pony_BatponyTown_Trader>
+			<Pony_AlicornTown_Trader>0.1</Pony_AlicornTown_Trader>
 		</value>
 	</Operation>
 
@@ -40,6 +53,7 @@
 			<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
 			<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
 			<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+			<Pony_AlicornMercenary_Elite>0.1</Pony_AlicornMercenary_Elite>
 		</value>
 	</Operation>
 
@@ -53,6 +67,8 @@
 			<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
 			<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
 			<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+			<Pony_AlicornMercenary_Elite>0.1</Pony_AlicornMercenary_Elite>
+			<Pony_AlicornTown_Councilman>0.1</Pony_AlicornTown_Councilman>
 		</value>
 	</Operation>
 

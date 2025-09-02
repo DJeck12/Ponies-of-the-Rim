@@ -4,9 +4,9 @@
 <!-- Issue -->
 
 	<IssueDef>
-		<defName>Pony_Thestral</defName>
-		<label>thestrals</label>
-		<iconPath>UI/Issues/Thestral</iconPath>
+		<defName>Pony_Hippogriff</defName>
+		<label>hippogriffs</label>
+		<iconPath>UI/Issues/Hippogriff</iconPath>
 	</IssueDef>
 
 <!-- Precepts -->
@@ -14,10 +14,10 @@
 <!-- Abhorrent -->
 
 	<PreceptDef>
-		<defName>Pony_Thestral_Abhorrent</defName>
-		<issue>Pony_Thestral</issue>
+		<defName>Pony_Hippogriff_Abhorrent</defName>
+		<issue>Pony_Hippogriff</issue>
 		<label>abhorrent</label>
-		<description>Thestrals are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
+		<description>Hippogriffs are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>60</displayOrderInIssue>
 		<conflictingMemes>
@@ -25,22 +25,22 @@
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Abhorrent</thought>
+				<thought>Pony_Hippogriff_Abhorrent</thought>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Abhorrent_Social</thought>
+				<thought>Pony_Hippogriff_Abhorrent_Social</thought>
 			</li>
 		</comps>
 	</PreceptDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Abhorrent</defName>
+		<defName>Pony_Hippogriff_Abhorrent</defName>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
 		<stages>
 			<li>
-				<label>hatred for thestrals</label>
-				<description>Thestrals are absolutely repulsive and I can't let them abuse our trust.</description>
+				<label>hatred for hippogriffs</label>
+				<description>Hippogriffs are absolutely repulsive and I can't let them abuse our trust.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
@@ -52,18 +52,18 @@
 				</removeThoughtsWhenAdded>
 			</li>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Abhorrent_Social</defName>
+		<defName>Pony_Hippogriff_Abhorrent_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>disgusting thestral!</label>
+				<label>disgusting hippogriff!</label>
 				<baseOpinionOffset>-20</baseOpinionOffset>
 			</li>
 		</stages>
@@ -75,7 +75,7 @@
 				</removeThoughtsWhenAdded>
 			</li>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -83,26 +83,26 @@
 <!-- Horrible -->
 
 	<PreceptDef>
-		<defName>Pony_Thestral_Horrible</defName>
-		<issue>Pony_Thestral</issue>
+		<defName>Pony_Hippogriff_Horrible</defName>
+		<issue>Pony_Hippogriff</issue>
 		<label>disliked</label>
-		<description>Thestrals are different from us, even too different. We have to be on our guard and not trust them.</description>
+		<description>Hippogriffs are different from us, even too different. We have to be on our guard and not trust them.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Horrible_Social</thought>
+				<thought>Pony_Hippogriff_Horrible_Social</thought>
 			</li>
 		</comps>
 	</PreceptDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Horrible_Social</defName>
+		<defName>Pony_Hippogriff_Horrible_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>distrust for thestrals</label>
+				<label>distrust for hippogriffs</label>
 				<baseOpinionOffset>-10</baseOpinionOffset>
 			</li>
 		</stages>
@@ -114,7 +114,7 @@
 				</removeThoughtsWhenAdded>
 			</li>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -122,56 +122,56 @@
 <!-- Stricted -->
 
 	<PreceptDef>
-		<defName>Pony_Thestral_Stricted</defName>
-		<issue>Pony_Thestral</issue>
+		<defName>Pony_Hippogriff_Stricted</defName>
+		<issue>Pony_Hippogriff</issue>
 		<label>stricted</label>
-		<description>Thestrals are the only race allowed in our society.</description>
+		<description>Hippogriffs are the only race allowed in our society.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<requiredMemes>
-			<li>Pony_ThestralSupremacist</li>
+			<li>Pony_HippogriffSupremacist</li>
 		</requiredMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Stricted</thought>
+				<thought>Pony_Hippogriff_Stricted</thought>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Stricted_Social</thought>
+				<thought>Pony_Hippogriff_Stricted_Social</thought>
 			</li>
 		</comps>
 	</PreceptDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Stricted</defName>
+		<defName>Pony_Hippogriff_Stricted</defName>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
 				<label>other races among us</label>
-				<description>We live alongside someone who is not a thestral. We should make them leave in one way or another.</description>
+				<description>We live alongside someone who is not a hippogriff. We should make them leave in one way or another.</description>
 				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Stricted_Social</defName>
+		<defName>Pony_Hippogriff_Stricted_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces_Social</workerClass>
 		<stages>
 			<li>
-				<label>not a thestral</label>
+				<label>not a hippogriff</label>
 				<baseOpinionOffset>-50</baseOpinionOffset>
 			</li>
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -179,32 +179,41 @@
 <!-- Respected -->
 
 	<PreceptDef>
-		<defName>Pony_Thestral_Respected</defName>
-		<issue>Pony_Thestral</issue>
+		<defName>Pony_Hippogriff_Respected</defName>
+		<issue>Pony_Hippogriff</issue>
 		<label>respected</label>
-		<description>Thestrals are very unique and deserve our admiration.</description>
+		<description>Hippogriffs are very unique and deserve our admiration.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
 		<conflictingMemes>
 			<li>Pony_EarthponySupremacist</li>
 			<li>Pony_PegasusSupremacist</li>
 			<li>Pony_UnicornSupremacist</li>
+			<li>Pony_AlicornSupremacist</li>
 			<li>Pony_BatponySupremacist</li>
+			<li>Pony_ChangelingSupremacist</li>
+			<li>Pony_ChangedlingSupremacist</li>
+			<li>Pony_CrystalponySupremacist</li>
+			<li>Pony_DeerSupremacist</li>
+			<li>Pony_GriffonSupremacist</li>
+			<li>Pony_KirinSupremacist</li>
+			<li>Pony_SeaponySupremacist</li>
+			<li>Pony_ZebraSupremacist</li>
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Respected_Social</thought>
+				<thought>Pony_Hippogriff_Respected_Social</thought>
 			</li>
 		</comps>
 	</PreceptDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Respected_Social</defName>
+		<defName>Pony_Hippogriff_Respected_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>respect for thestrals</label>
+				<label>respect for hippogriffs</label>
 				<baseOpinionOffset>10</baseOpinionOffset>
 			</li>
 		</stages>
@@ -216,7 +225,7 @@
 				</removeThoughtsWhenAdded>
 			</li>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
@@ -224,36 +233,45 @@
 <!-- Exalted -->
 
 	<PreceptDef>
-		<defName>Pony_Thestral_Exalted</defName>
-		<issue>Pony_Thestral</issue>
+		<defName>Pony_Hippogriff_Exalted</defName>
+		<issue>Pony_Hippogriff</issue>
 		<label>exalted</label>
-		<description>Thestrals are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
+		<description>Hippogriffs are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<conflictingMemes>
 			<li>Pony_EarthponySupremacist</li>
 			<li>Pony_PegasusSupremacist</li>
 			<li>Pony_UnicornSupremacist</li>
+			<li>Pony_AlicornSupremacist</li>
 			<li>Pony_BatponySupremacist</li>
+			<li>Pony_ChangelingSupremacist</li>
+			<li>Pony_ChangedlingSupremacist</li>
+			<li>Pony_CrystalponySupremacist</li>
+			<li>Pony_DeerSupremacist</li>
+			<li>Pony_GriffonSupremacist</li>
+			<li>Pony_KirinSupremacist</li>
+			<li>Pony_SeaponySupremacist</li>
+			<li>Pony_ZebraSupremacist</li>
 		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Exalted</thought>
+				<thought>Pony_Hippogriff_Exalted</thought>
 			</li>
 			<li Class="PreceptComp_SituationalThought">
-				<thought>Pony_Thestral_Exalted_Social</thought>
+				<thought>Pony_Hippogriff_Exalted_Social</thought>
 			</li>
 		</comps>
 	</PreceptDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Exalted</defName>
+		<defName>Pony_Hippogriff_Exalted</defName>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
-				<label>love for thestrals</label>
-				<description>It makes me feel happier knowing we live among thestrals.</description>
+				<label>love for hippogriffs</label>
+				<description>It makes me feel happier knowing we live among hippogriffs.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 		</stages>
@@ -265,18 +283,18 @@
 				</removeThoughtsWhenAdded>
 			</li>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
 
 	<ThoughtDef>
-		<defName>Pony_Thestral_Exalted_Social</defName>
+		<defName>Pony_Hippogriff_Exalted_Social</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>amazing thestral!</label>
+				<label>amazing hippogriff!</label>
 				<baseOpinionOffset>20</baseOpinionOffset>
 			</li>
 		</stages>
@@ -288,7 +306,7 @@
 				</removeThoughtsWhenAdded>
 			</li>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<race>Pony_Thestral</race>
+				<race>Pony_Hippogriff</race>
 			</li>
 		</modExtensions>
 	</ThoughtDef>
