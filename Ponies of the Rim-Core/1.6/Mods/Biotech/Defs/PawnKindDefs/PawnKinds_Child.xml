@@ -1,28 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<PawnKindDef ParentName="EarthponyVillager">
+	<PawnKindDef ParentName="Villager_Child">
 		<defName>Pony_EarthponyVillager_Child</defName>
-		<isFighter>false</isFighter>
-		<weaponTags/>
-		<weaponMoney>0</weaponMoney>
-		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+		<race>Pony_Earthpony</race>
+		<defaultFactionDef/>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="PegasusVillager">
+	<PawnKindDef ParentName="Villager_Child">
 		<defName>Pony_PegasusVillager_Child</defName>
-		<isFighter>false</isFighter>
-		<weaponTags/>
-		<weaponMoney>0</weaponMoney>
-		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+		<race>Pony_Pegasus</race>
+		<defaultFactionDef/>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="UnicornVillager">
+	<PawnKindDef ParentName="Villager_Child">
 		<defName>Pony_UnicornVillager_Child</defName>
-		<isFighter>false</isFighter>
-		<weaponTags/>
-		<weaponMoney>0</weaponMoney>
-		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+		<race>Pony_Unicorn</race>
+		<defaultFactionDef/>
 	</PawnKindDef>
 
 </Defs>

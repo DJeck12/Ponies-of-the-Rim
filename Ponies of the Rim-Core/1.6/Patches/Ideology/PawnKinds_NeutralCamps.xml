@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Miner"]</xpath>
+					<attribute>Name</attribute>
+					<value>Miner</value>
+				</li>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Hunter"]</xpath>
+					<attribute>Name</attribute>
+					<value>Hunter</value>
+				</li>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Logger"]</xpath>
+					<attribute>Name</attribute>
+					<value>Logger</value>
+				</li>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Farmer"]</xpath>
+					<attribute>Name</attribute>
+					<value>Farmer</value>
+				</li>
+
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Miner"]</xpath>
+					<attribute>Name</attribute>
+					<value>Tribal_Miner</value>
+				</li>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Logger"]</xpath>
+					<attribute>Name</attribute>
+					<value>Tribal_Logger</value>
+				</li>
+				<li Class="PatchOperationAttributeAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Farmer"]</xpath>
+					<attribute>Name</attribute>
+					<value>Tribal_Farmer</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
