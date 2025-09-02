@@ -3,62 +3,62 @@
 
 <!-- Земонопони -->
 
-	<Pony_EarthponyGrenadier_Destructive.label>пони гренадер</Pony_EarthponyGrenadier_Destructive.label>
-	<Pony_EarthponyGrenadier_Destructive.labelPlural>пони гренадеры</Pony_EarthponyGrenadier_Destructive.labelPlural>
+	<Pony_EarthponyGrenadier_Destructive.label>гренадер</Pony_EarthponyGrenadier_Destructive.label>
+	<Pony_EarthponyGrenadier_Destructive.labelPlural>гренадеры</Pony_EarthponyGrenadier_Destructive.labelPlural>
 
-	<Pony_EarthponyMercenary_Gunner.label>пони наёмник-стрелок</Pony_EarthponyMercenary_Gunner.label>
-	<Pony_EarthponyMercenary_Gunner.labelPlural>пони наёмники-стрелки</Pony_EarthponyMercenary_Gunner.labelPlural>
-	<Pony_EarthponyMercenary_Gunner_Acidifier.label>пони наёмник-стрелок</Pony_EarthponyMercenary_Gunner_Acidifier.label>
-	<Pony_EarthponyMercenary_Gunner_Acidifier.labelPlural>пони наёмники-стрелки</Pony_EarthponyMercenary_Gunner_Acidifier.labelPlural>
+	<Pony_EarthponyMercenary_Gunner.label>наёмник-стрелок</Pony_EarthponyMercenary_Gunner.label>
+	<Pony_EarthponyMercenary_Gunner.labelPlural>наёмники-стрелки</Pony_EarthponyMercenary_Gunner.labelPlural>
+	<Pony_EarthponyMercenary_Gunner_Acidifier.label>наёмник-стрелок</Pony_EarthponyMercenary_Gunner_Acidifier.label>
+	<Pony_EarthponyMercenary_Gunner_Acidifier.labelPlural>наёмники-стрелки</Pony_EarthponyMercenary_Gunner_Acidifier.labelPlural>
 
-	<Pony_EarthponyMercenary_Slasher.label>пони наёмник-вышибала</Pony_EarthponyMercenary_Slasher.label>
-	<Pony_EarthponyMercenary_Slasher.labelPlural>пони наёмники-вышибалы</Pony_EarthponyMercenary_Slasher.labelPlural>
-	<Pony_EarthponyMercenary_Slasher_Acidifier.label>пони наёмник-вышибала</Pony_EarthponyMercenary_Slasher_Acidifier.label>
-	<Pony_EarthponyMercenary_Slasher_Acidifier.labelPlural>пони наёмники-вышибалы</Pony_EarthponyMercenary_Slasher_Acidifier.labelPlural>
+	<Pony_EarthponyMercenary_Slasher.label>наёмник-вышибала</Pony_EarthponyMercenary_Slasher.label>
+	<Pony_EarthponyMercenary_Slasher.labelPlural>наёмники-вышибалы</Pony_EarthponyMercenary_Slasher.labelPlural>
+	<Pony_EarthponyMercenary_Slasher_Acidifier.label>наёмник-вышибала</Pony_EarthponyMercenary_Slasher_Acidifier.label>
+	<Pony_EarthponyMercenary_Slasher_Acidifier.labelPlural>наёмники-вышибалы</Pony_EarthponyMercenary_Slasher_Acidifier.labelPlural>
 
-	<Pony_EarthponyMercenary_Elite.label>элитный пони наёмник</Pony_EarthponyMercenary_Elite.label>
-	<Pony_EarthponyMercenary_Elite.labelPlural>элитные пони наёмники</Pony_EarthponyMercenary_Elite.labelPlural>
-	<Pony_EarthponyMercenary_Elite_Acidifier.label>элитный пони наёмник</Pony_EarthponyMercenary_Elite_Acidifier.label>
-	<Pony_EarthponyMercenary_Elite_Acidifier.labelPlural>элитные пони наёмники</Pony_EarthponyMercenary_Elite_Acidifier.labelPlural>
+	<Pony_EarthponyMercenary_Elite.label>элитный наёмник</Pony_EarthponyMercenary_Elite.label>
+	<Pony_EarthponyMercenary_Elite.labelPlural>элитные наёмники</Pony_EarthponyMercenary_Elite.labelPlural>
+	<Pony_EarthponyMercenary_Elite_Acidifier.label>элитный наёмник</Pony_EarthponyMercenary_Elite_Acidifier.label>
+	<Pony_EarthponyMercenary_Elite_Acidifier.labelPlural>элитные наёмники</Pony_EarthponyMercenary_Elite_Acidifier.labelPlural>
 
 <!-- Пегасы -->
 
-	<Pony_PegasusGrenadier_Destructive.label>пони гренадер</Pony_PegasusGrenadier_Destructive.label>
-	<Pony_PegasusGrenadier_Destructive.labelPlural>пони гренадеры</Pony_PegasusGrenadier_Destructive.labelPlural>
+	<Pony_PegasusGrenadier_Destructive.label>гренадер</Pony_PegasusGrenadier_Destructive.label>
+	<Pony_PegasusGrenadier_Destructive.labelPlural>гренадеры</Pony_PegasusGrenadier_Destructive.labelPlural>
 
-	<Pony_PegasusMercenary_Gunner.label>пони наёмник-стрелок</Pony_PegasusMercenary_Gunner.label>
-	<Pony_PegasusMercenary_Gunner.labelPlural>пони наёмники-стрелки</Pony_PegasusMercenary_Gunner.labelPlural>
-	<Pony_PegasusMercenary_Gunner_Acidifier.label>пони наёмник-стрелок</Pony_PegasusMercenary_Gunner_Acidifier.label>
-	<Pony_PegasusMercenary_Gunner_Acidifier.labelPlural>пони наёмники-стрелки</Pony_PegasusMercenary_Gunner_Acidifier.labelPlural>
+	<Pony_PegasusMercenary_Gunner.label>наёмник-стрелок</Pony_PegasusMercenary_Gunner.label>
+	<Pony_PegasusMercenary_Gunner.labelPlural>наёмники-стрелки</Pony_PegasusMercenary_Gunner.labelPlural>
+	<Pony_PegasusMercenary_Gunner_Acidifier.label>наёмник-стрелок</Pony_PegasusMercenary_Gunner_Acidifier.label>
+	<Pony_PegasusMercenary_Gunner_Acidifier.labelPlural>наёмники-стрелки</Pony_PegasusMercenary_Gunner_Acidifier.labelPlural>
 
-	<Pony_PegasusMercenary_Slasher.label>пони наёмник-вышибала</Pony_PegasusMercenary_Slasher.label>
-	<Pony_PegasusMercenary_Slasher.labelPlural>пони наёмники-вышибалы</Pony_PegasusMercenary_Slasher.labelPlural>
-	<Pony_PegasusMercenary_Slasher_Acidifier.label>пони наёмник-вышибала</Pony_PegasusMercenary_Slasher_Acidifier.label>
-	<Pony_PegasusMercenary_Slasher_Acidifier.labelPlural>пони наёмники-вышибалы</Pony_PegasusMercenary_Slasher_Acidifier.labelPlural>
+	<Pony_PegasusMercenary_Slasher.label>наёмник-вышибала</Pony_PegasusMercenary_Slasher.label>
+	<Pony_PegasusMercenary_Slasher.labelPlural>наёмники-вышибалы</Pony_PegasusMercenary_Slasher.labelPlural>
+	<Pony_PegasusMercenary_Slasher_Acidifier.label>наёмник-вышибала</Pony_PegasusMercenary_Slasher_Acidifier.label>
+	<Pony_PegasusMercenary_Slasher_Acidifier.labelPlural>наёмники-вышибалы</Pony_PegasusMercenary_Slasher_Acidifier.labelPlural>
 
-	<Pony_PegasusMercenary_Elite.label>элитный пони наёмник</Pony_PegasusMercenary_Elite.label>
-	<Pony_PegasusMercenary_Elite.labelPlural>элитные пони наёмники</Pony_PegasusMercenary_Elite.labelPlural>
-	<Pony_PegasusMercenary_Elite_Acidifier.label>элитный пони наёмник</Pony_PegasusMercenary_Elite_Acidifier.label>
-	<Pony_PegasusMercenary_Elite_Acidifier.labelPlural>элитные пони наёмники</Pony_PegasusMercenary_Elite_Acidifier.labelPlural>
+	<Pony_PegasusMercenary_Elite.label>элитный наёмник</Pony_PegasusMercenary_Elite.label>
+	<Pony_PegasusMercenary_Elite.labelPlural>элитные наёмники</Pony_PegasusMercenary_Elite.labelPlural>
+	<Pony_PegasusMercenary_Elite_Acidifier.label>элитный наёмник</Pony_PegasusMercenary_Elite_Acidifier.label>
+	<Pony_PegasusMercenary_Elite_Acidifier.labelPlural>элитные наёмники</Pony_PegasusMercenary_Elite_Acidifier.labelPlural>
 
 <!-- Единороги -->
 
-	<Pony_UnicornGrenadier_Destructive.label>пони гренадер</Pony_UnicornGrenadier_Destructive.label>
-	<Pony_UnicornGrenadier_Destructive.labelPlural>пони гренадеры</Pony_UnicornGrenadier_Destructive.labelPlural>
+	<Pony_UnicornGrenadier_Destructive.label>гренадер</Pony_UnicornGrenadier_Destructive.label>
+	<Pony_UnicornGrenadier_Destructive.labelPlural>гренадеры</Pony_UnicornGrenadier_Destructive.labelPlural>
 
-	<Pony_UnicornMercenary_Gunner.label>пони наёмник-стрелок</Pony_UnicornMercenary_Gunner.label>
-	<Pony_UnicornMercenary_Gunner.labelPlural>пони наёмники-стрелки</Pony_UnicornMercenary_Gunner.labelPlural>
-	<Pony_UnicornMercenary_Gunner_Acidifier.label>пони наёмник-стрелок</Pony_UnicornMercenary_Gunner_Acidifier.label>
-	<Pony_UnicornMercenary_Gunner_Acidifier.labelPlural>пони наёмники-стрелки</Pony_UnicornMercenary_Gunner_Acidifier.labelPlural>
+	<Pony_UnicornMercenary_Gunner.label>наёмник-стрелок</Pony_UnicornMercenary_Gunner.label>
+	<Pony_UnicornMercenary_Gunner.labelPlural>наёмники-стрелки</Pony_UnicornMercenary_Gunner.labelPlural>
+	<Pony_UnicornMercenary_Gunner_Acidifier.label>наёмник-стрелок</Pony_UnicornMercenary_Gunner_Acidifier.label>
+	<Pony_UnicornMercenary_Gunner_Acidifier.labelPlural>наёмники-стрелки</Pony_UnicornMercenary_Gunner_Acidifier.labelPlural>
 
-	<Pony_UnicornMercenary_Slasher.label>пони наёмник-вышибала</Pony_UnicornMercenary_Slasher.label>
-	<Pony_UnicornMercenary_Slasher.labelPlural>пони наёмники-вышибалы</Pony_UnicornMercenary_Slasher.labelPlural>
-	<Pony_UnicornMercenary_Slasher_Acidifier.label>пони наёмник-вышибала</Pony_UnicornMercenary_Slasher_Acidifier.label>
-	<Pony_UnicornMercenary_Slasher_Acidifier.labelPlural>пони наёмники-вышибалы</Pony_UnicornMercenary_Slasher_Acidifier.labelPlural>
+	<Pony_UnicornMercenary_Slasher.label>наёмник-вышибала</Pony_UnicornMercenary_Slasher.label>
+	<Pony_UnicornMercenary_Slasher.labelPlural>наёмники-вышибалы</Pony_UnicornMercenary_Slasher.labelPlural>
+	<Pony_UnicornMercenary_Slasher_Acidifier.label>наёмник-вышибала</Pony_UnicornMercenary_Slasher_Acidifier.label>
+	<Pony_UnicornMercenary_Slasher_Acidifier.labelPlural>наёмники-вышибалы</Pony_UnicornMercenary_Slasher_Acidifier.labelPlural>
 
-	<Pony_UnicornMercenary_Elite.label>элитный пони наёмник</Pony_UnicornMercenary_Elite.label>
-	<Pony_UnicornMercenary_Elite.labelPlural>элитные пони наёмники</Pony_UnicornMercenary_Elite.labelPlural>
-	<Pony_UnicornMercenary_Elite_Acidifier.label>элитный пони наёмник</Pony_UnicornMercenary_Elite_Acidifier.label>
-	<Pony_UnicornMercenary_Elite_Acidifier.labelPlural>элитные пони наёмники</Pony_UnicornMercenary_Elite_Acidifier.labelPlural>
+	<Pony_UnicornMercenary_Elite.label>элитный наёмник</Pony_UnicornMercenary_Elite.label>
+	<Pony_UnicornMercenary_Elite.labelPlural>элитные наёмники</Pony_UnicornMercenary_Elite.labelPlural>
+	<Pony_UnicornMercenary_Elite_Acidifier.label>элитный наёмник</Pony_UnicornMercenary_Elite_Acidifier.label>
+	<Pony_UnicornMercenary_Elite_Acidifier.labelPlural>элитные наёмники</Pony_UnicornMercenary_Elite_Acidifier.labelPlural>
 
 </LanguageData>

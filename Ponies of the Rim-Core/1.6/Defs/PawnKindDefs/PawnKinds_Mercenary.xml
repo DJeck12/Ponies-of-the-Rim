@@ -5,7 +5,7 @@
 
 	<PawnKindDef ParentName="Grenadier_Destructive">
 		<defName>Pony_EarthponyGrenadier_Destructive</defName>
-		<label>pony grenadier</label>
+		<label>grenadier</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -20,7 +20,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Gunner">
 		<defName>Pony_EarthponyMercenary_Gunner</defName>
-		<label>pony mercenary gunner</label>
+		<label>mercenary gunner</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -35,7 +35,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
 		<defName>Pony_EarthponyMercenary_Gunner_Acidifier</defName>
-		<label>pony mercenary gunner</label>
+		<label>mercenary gunner</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -50,7 +50,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Slasher">
 		<defName>Pony_EarthponyMercenary_Slasher</defName>
-		<label>pony mercenary slasher</label>
+		<label>mercenary slasher</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -65,7 +65,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
 		<defName>Pony_EarthponyMercenary_Slasher_Acidifier</defName>
-		<label>pony mercenary slasher</label>
+		<label>mercenary slasher</label>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -80,8 +80,8 @@
 
 	<PawnKindDef ParentName="Mercenary_Elite">
 		<defName>Pony_EarthponyMercenary_Elite</defName>
-		<label>elite pony mercenary</label>
-		<labelPlural>elite pony mercenaries</labelPlural>
+		<label>elite mercenary</label>
+		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -96,8 +96,8 @@
 
 	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
 		<defName>Pony_EarthponyMercenary_Elite_Acidifier</defName>
-		<label>elite pony mercenary</label>
-		<labelPlural>elite pony mercenaries</labelPlural>
+		<label>elite mercenary</label>
+		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Earthpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -114,7 +114,7 @@
 
 	<PawnKindDef ParentName="Grenadier_Destructive">
 		<defName>Pony_PegasusGrenadier_Destructive</defName>
-		<label>pony grenadier</label>
+		<label>grenadier</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -129,7 +129,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Gunner">
 		<defName>Pony_PegasusMercenary_Gunner</defName>
-		<label>pony mercenary gunner</label>
+		<label>mercenary gunner</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -144,7 +144,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
 		<defName>Pony_PegasusMercenary_Gunner_Acidifier</defName>
-		<label>pony mercenary gunner</label>
+		<label>mercenary gunner</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -159,7 +159,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Slasher">
 		<defName>Pony_PegasusMercenary_Slasher</defName>
-		<label>pony mercenary slasher</label>
+		<label>mercenary slasher</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -174,7 +174,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
 		<defName>Pony_PegasusMercenary_Slasher_Acidifier</defName>
-		<label>pony mercenary slasher</label>
+		<label>mercenary slasher</label>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -189,8 +189,8 @@
 
 	<PawnKindDef ParentName="Mercenary_Elite">
 		<defName>Pony_PegasusMercenary_Elite</defName>
-		<label>elite pony mercenary</label>
-		<labelPlural>elite pony mercenaries</labelPlural>
+		<label>elite mercenary</label>
+		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -205,8 +205,8 @@
 
 	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
 		<defName>Pony_PegasusMercenary_Elite_Acidifier</defName>
-		<label>elite pony mercenary</label>
-		<labelPlural>elite pony mercenaries</labelPlural>
+		<label>elite mercenary</label>
+		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Pegasus</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -223,7 +223,7 @@
 
 	<PawnKindDef ParentName="Grenadier_Destructive">
 		<defName>Pony_UnicornGrenadier_Destructive</defName>
-		<label>pony grenadier</label>
+		<label>grenadier</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -238,7 +238,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Gunner">
 		<defName>Pony_UnicornMercenary_Gunner</defName>
-		<label>pony mercenary gunner</label>
+		<label>mercenary gunner</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -253,7 +253,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Gunner_Acidifier">
 		<defName>Pony_UnicornMercenary_Gunner_Acidifier</defName>
-		<label>pony mercenary gunner</label>
+		<label>mercenary gunner</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -268,7 +268,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Slasher">
 		<defName>Pony_UnicornMercenary_Slasher</defName>
-		<label>pony mercenary slasher</label>
+		<label>mercenary slasher</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -283,7 +283,7 @@
 
 	<PawnKindDef ParentName="Mercenary_Slasher_Acidifier">
 		<defName>Pony_UnicornMercenary_Slasher_Acidifier</defName>
-		<label>pony mercenary slasher</label>
+		<label>mercenary slasher</label>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -298,8 +298,8 @@
 
 	<PawnKindDef ParentName="Mercenary_Elite">
 		<defName>Pony_UnicornMercenary_Elite</defName>
-		<label>elite pony mercenary</label>
-		<labelPlural>elite pony mercenaries</labelPlural>
+		<label>elite mercenary</label>
+		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -314,8 +314,8 @@
 
 	<PawnKindDef ParentName="Mercenary_Elite_Acidifier">
 		<defName>Pony_UnicornMercenary_Elite_Acidifier</defName>
-		<label>elite pony mercenary</label>
-		<labelPlural>elite pony mercenaries</labelPlural>
+		<label>elite mercenary</label>
+		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Unicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>

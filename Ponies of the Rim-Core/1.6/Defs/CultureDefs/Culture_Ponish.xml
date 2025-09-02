@@ -4,7 +4,7 @@
 	<CultureDef>
 		<defName>Ponish</defName>
 		<label>ponish</label>
-		<description>A broad collection of cultures originating from Foenum, the home planet of ponykind.</description>
+		<description>A broad collection of cultures originating from Equus, the home planet of ponykind.</description>
 		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
 		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
 		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>

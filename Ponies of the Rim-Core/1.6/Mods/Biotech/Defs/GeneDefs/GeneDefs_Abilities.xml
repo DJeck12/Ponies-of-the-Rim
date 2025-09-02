@@ -4,7 +4,6 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_PonyMagic</defName>
 		<label>pony magic</label>
-		<description>Carriers of this gene receive one of the random abilities of earthponies, unicorns, or pegasi. Have no effect on ponies.</description>
 		<iconPath>UI/Genes/PonyMagic</iconPath>
 		<biostatCpx>1</biostatCpx>
 		<randomChosen>true</randomChosen>

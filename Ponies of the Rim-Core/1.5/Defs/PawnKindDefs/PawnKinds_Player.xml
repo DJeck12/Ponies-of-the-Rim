@@ -5,7 +5,7 @@
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_EarthponyColonist</defName>
-		<label>earthpony</label>
+		<label>earth pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Earthpony</race>
@@ -58,7 +58,7 @@
 
 	<PawnKindDef ParentName="TribePlayerBase">
 		<defName>Pony_EarthponyTribe</defName>
-		<label>earthpony</label>
+		<label>earth pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Earthpony</race>

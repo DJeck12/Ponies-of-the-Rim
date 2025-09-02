@@ -5,7 +5,7 @@
 
 	<BodyDef>
 		<defName>Pony_EarthponyBody</defName>
-		<label>earthpony</label>
+		<label>earth pony</label>
 		<corePart>
 			<def>Torso</def>
 			<height>Middle</height>
