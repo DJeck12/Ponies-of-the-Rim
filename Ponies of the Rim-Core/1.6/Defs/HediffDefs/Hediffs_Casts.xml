@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<HediffDef>
-		<defName>NatureMuse</defName>
+		<defName>Pony_NatureMuse</defName>
 		<label>nature muse</label>
 		<description>A force of nature that fills the body with energy to increase work speed.</description>
 		<hediffClass>HediffWithComps</hediffClass>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<NatureMuse.label>自然之力</NatureMuse.label>
-	<NatureMuse.description>自然的力量身体充满能量，提高工作速度。</NatureMuse.description>
+	<Pony_NatureMuse.label>自然之力</Pony_NatureMuse.label>
+	<Pony_NatureMuse.description>自然的力量身体充满能量，提高工作速度。</Pony_NatureMuse.description>
 
 </LanguageData>

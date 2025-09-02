@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<FactionDef ParentName="PlayerFactionBase">
+	<FactionDef ParentName="PlayerFactionBase" Name="PonyFactionBase">
 		<defName>PonyColony</defName>
 		<label>Pony Arrivals</label>
 		<description>A colony of recently-arrived ponies.</description>

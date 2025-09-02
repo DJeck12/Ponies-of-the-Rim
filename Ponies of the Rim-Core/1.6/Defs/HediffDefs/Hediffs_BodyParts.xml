@@ -151,7 +151,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>ShortFlight</abilityDef>
+				<abilityDef>Pony_ShortFlight</abilityDef>
 			</li>
 		</comps>
 		<stages>
@@ -175,7 +175,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>ShortFlight</abilityDef>
+				<abilityDef>Pony_ShortFlight</abilityDef>
 			</li>
 		</comps>
 		<addedPartProps>
@@ -250,7 +250,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>ShortFlight</abilityDef>
+				<abilityDef>Pony_ShortFlight</abilityDef>
 			</li>
 		</comps>
 		<addedPartProps>
@@ -323,7 +323,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>ShortFlight</abilityDef>
+				<abilityDef>Pony_ShortFlight</abilityDef>
 			</li>
 		</comps>
 		<addedPartProps>
