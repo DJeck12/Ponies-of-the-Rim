@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Batpony -->
+
+	<PawnKindDef ParentName="Miner">
+		<defName>Pony_BatponyMiner</defName>
+		<label>miner</label>
+		<race>Pony_Batpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Hunter">
+		<defName>Pony_BatponyHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Batpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Logger">
+		<defName>Pony_BatponyLogger</defName>
+		<label>logger</label>
+		<race>Pony_Batpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Farmer">
+		<defName>Pony_BatponyFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Batpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Batpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Changeling -->
+
+	<PawnKindDef ParentName="Tribal_Miner">
+		<defName>Pony_ChangelingMiner</defName>
+		<label>miner</label>
+		<race>Pony_Changeling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changeling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_ChangelingHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Changeling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changeling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Logger">
+		<defName>Pony_ChangelingLogger</defName>
+		<label>logger</label>
+		<race>Pony_Changeling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changeling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Farmer">
+		<defName>Pony_ChangelingFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Changeling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changeling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Changedling -->
+
+	<PawnKindDef ParentName="Tribal_Miner">
+		<defName>Pony_ChangedlingMiner</defName>
+		<label>miner</label>
+		<race>Pony_Changedling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changedling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_ChangedlingHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Changedling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changedling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Logger">
+		<defName>Pony_ChangedlingLogger</defName>
+		<label>logger</label>
+		<race>Pony_Changedling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changedling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Farmer">
+		<defName>Pony_ChangedlingFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Changedling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Changedling</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Crystal -->
+
+	<PawnKindDef ParentName="Miner">
+		<defName>Pony_CrystalMiner</defName>
+		<label>miner</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Crystalpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Hunter">
+		<defName>Pony_CrystalHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Crystalpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Logger">
+		<defName>Pony_CrystalLogger</defName>
+		<label>logger</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Crystalpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Farmer">
+		<defName>Pony_CrystalFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Crystalpony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Crystalpony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Deer -->
+
+	<PawnKindDef ParentName="Tribal_Miner">
+		<defName>Pony_DeerMiner</defName>
+		<label>miner</label>
+		<race>Pony_Deer</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Deer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_DeerHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Deer</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Deer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Logger">
+		<defName>Pony_DeerLogger</defName>
+		<label>logger</label>
+		<race>Pony_Deer</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Deer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Farmer">
+		<defName>Pony_DeerFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Deer</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Deer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Griffon -->
+
+	<PawnKindDef ParentName="Miner">
+		<defName>Pony_GriffonMiner</defName>
+		<label>miner</label>
+		<race>Pony_Griffon</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Griffon</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Hunter">
+		<defName>Pony_GriffonHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Griffon</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Griffon</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Logger">
+		<defName>Pony_GriffonLogger</defName>
+		<label>logger</label>
+		<race>Pony_Griffon</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Griffon</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Farmer">
+		<defName>Pony_GriffonFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Griffon</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Griffon</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Hippogriff -->
+
+	<PawnKindDef ParentName="Miner">
+		<defName>Pony_HippogriffMiner</defName>
+		<label>miner</label>
+		<race>Pony_Hippogriff</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Hippogriff</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Hunter">
+		<defName>Pony_HippogriffHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Hippogriff</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Hippogriff</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Logger">
+		<defName>Pony_HippogriffLogger</defName>
+		<label>logger</label>
+		<race>Pony_Hippogriff</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Hippogriff</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Farmer">
+		<defName>Pony_HippogriffFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Hippogriff</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Hippogriff</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Kirin -->
+
+	<PawnKindDef ParentName="Tribal_Miner">
+		<defName>Pony_KirinMiner</defName>
+		<label>miner</label>
+		<race>Pony_Kirin</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Kirin</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_KirinHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Kirin</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Kirin</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Logger">
+		<defName>Pony_KirinLogger</defName>
+		<label>logger</label>
+		<race>Pony_Kirin</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Kirin</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Farmer">
+		<defName>Pony_KirinFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Kirin</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Kirin</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Seapony -->
+
+	<PawnKindDef ParentName="Miner">
+		<defName>Pony_SeaponyMiner</defName>
+		<label>miner</label>
+		<race>Pony_Seapony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Seapony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Hunter">
+		<defName>Pony_SeaponyHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Seapony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Seapony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Logger">
+		<defName>Pony_SeaponyLogger</defName>
+		<label>logger</label>
+		<race>Pony_Seapony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Seapony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Farmer">
+		<defName>Pony_SeaponyFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Seapony</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Seapony</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+<!-- Zebra -->
+
+	<PawnKindDef ParentName="Miner">
+		<defName>Pony_ZebraMiner</defName>
+		<label>miner</label>
+		<race>Pony_Zebra</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Miner</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Zebra</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Hunter">
+		<defName>Pony_ZebraHunter</defName>
+		<label>hunter</label>
+		<race>Pony_Zebra</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Hunter</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Zebra</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Logger">
+		<defName>Pony_ZebraLogger</defName>
+		<label>logger</label>
+		<race>Pony_Zebra</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Logger</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Zebra</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Farmer">
+		<defName>Pony_ZebraFarmer</defName>
+		<label>farmer</label>
+		<race>Pony_Zebra</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Farmer</li>
+					<li>Pony_Everypony</li>
+					<li>Pony_Zebra</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+</Defs>

@@ -135,6 +135,42 @@
 					<Pony_UnicornTown_Councilman>10</Pony_UnicornTown_Councilman>
 				</options>
 			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_EarthponyMiner>1</Pony_EarthponyMiner>
+					<Pony_PegasusMiner>1</Pony_PegasusMiner>
+					<Pony_UnicornMiner>1</Pony_UnicornMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_EarthponyHunter>1</Pony_EarthponyHunter>
+					<Pony_PegasusHunter>1</Pony_PegasusHunter>
+					<Pony_UnicornHunter>1</Pony_UnicornHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_EarthponyLogger>1</Pony_EarthponyLogger>
+					<Pony_PegasusLogger>1</Pony_PegasusLogger>
+					<Pony_UnicornLogger>1</Pony_UnicornLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_EarthponyFarmer>1</Pony_EarthponyFarmer>
+					<Pony_PegasusFarmer>1</Pony_PegasusFarmer>
+					<Pony_UnicornFarmer>1</Pony_UnicornFarmer>
+				</options>
+			</li>
 		</pawnGroupMakers>
 	</FactionDef>
 
@@ -165,7 +201,7 @@
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
-		<configurationListOrderPriority>26</configurationListOrderPriority>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
 		<factionIconPath>World/Factions/PonyOutlanderRough</factionIconPath>
 	</FactionDef>
 

@@ -2,7 +2,7 @@
 <Defs>
 
 <!-- Wings -->
-
+<!--
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_BatWings</defName>
 		<label>bat wings</label>
@@ -43,10 +43,10 @@
 			</li>
 		</renderNodeProperties>
 		<abilities>
-			<li>ShortFlight_Bat</li>
+			<li>Pony_ShortFlight</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>ShortFlight_Bat</AbilityDef>
+			<AbilityDef>Pony_ShortFlight</AbilityDef>
 		</descriptionHyperlinks>
 		<randomChosen>true</randomChosen>
 		<exclusionTags>
@@ -54,5 +54,5 @@
 			<li>Wings</li>
 		</exclusionTags>
 	</GeneDef>
-
+-->
 </Defs>

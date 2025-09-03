@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Earthpony_settings"
+		or defName="Pegasus_settings"
+		or defName="Unicorn_settings"]/pawnKindSettings/startingColonists/li[1]/factionDefs</xpath>
+		<value>
+			<li>Pony_ColonyWithRaces</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Earthpony_settings"
+		or defName="Pegasus_settings"
+		or defName="Unicorn_settings"]/pawnKindSettings/alienwandererkinds/li[1]/factionDefs</xpath>
+		<value>
+			<li>Pony_ColonyWithRaces</li>
+		</value>
+	</Operation>
+
+</Patch>

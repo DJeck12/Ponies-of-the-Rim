@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BackstoryDef[defName="MedievalFarmOaf58"
+		or defName="MedievalMinstrel95"
+		or defName="Taster16"
+		or defName="Blacksmith72"
+        or defName="MessageCarrier77"
+        or defName="MedievalDoctor40"
+        or defName="Herbalist54"
+        or defName="MedievalSailor97"
+
+        or defName="MedievalSlave49"
+        or defName="MedievalLordling19"
+        or defName="ConventChild16"
+
+        or defName="Housemate8"
+        or defName="Teacher20"
+        or defName="Bartender62"
+        or defName="Evangelist39"
+        or defName="AsceticPriest84"
+        or defName="EscapedConvict90"
+        or defName="HouseServant63"
+        or defName="Bodyguard58"
+        or defName="Gardener99"
+        or defName="Torturer37"
+        or defName="Defector78"
+        or defName="Rancher43"
+        or defName="LowWageWorker7"
+        or defName="Jailbird40"
+        or defName="Actor72"
+        or defName="Veterinarian99"
+        or defName="Counselor26"
+        or defName="Drifter67"
+        or defName="ConArtist80"
+        or defName="CaveExplorer45"
+        or defName="QuarryWorker29"
+        or defName="ContractMiner86"
+        or defName="Logger95"
+        or defName="Ranger96"
+        or defName="Forester96"
+        or defName="Hunter89"
+        or defName="Slaughterer58"
+        or defName="AnimalFarmer21"
+        or defName="CropFarmer17"
+
+        or defName="SicklyChild55"
+        or defName="FrightenedChild43"
+        or defName="ComaChild93"
+        or defName="Mute34"
+        or defName="WarRefugee51"
+        or defName="MusicalKid86"
+        or defName="ChildSpy47"
+        or defName="ShopKid36"
+        or defName="CultChild3"
+        or defName="StoryWriter67"]/spawnCategories</xpath>
+        <value>
+            <li>Medieval</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BackstoryDef[defName="MedievalLord57"]/spawnCategories</xpath>
+        <value>
+            <li>MedievalRoyal</li>
+        </value>
+    </Operation>
+
+</Patch>

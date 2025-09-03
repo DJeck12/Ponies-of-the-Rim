@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Deer -->
+
+	<PawnKindDef ParentName="Pony_Peasant">
+		<defName>Pony_DeerMedieval_Peasant</defName>
+		<label>peasant</label>
+		<race>Pony_Deer</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_LowMedievalBase">
+		<defName>Pony_DeerMedieval_Militia</defName>
+		<label>militia</label>
+		<race>Pony_Deer</race>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_LowMedievalBase">
+		<defName>Pony_DeerMedieval_Archer</defName>
+		<label>archer</label>
+		<race>Pony_Deer</race>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MidMedievalBase">
+		<defName>Pony_DeerMedieval_Warrior</defName>
+		<label>warrior</label>
+		<race>Pony_Deer</race>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MidMedievalBase">
+		<defName>Pony_DeerMedieval_Hunter</defName>
+		<label>hunter</label>
+		<race>Pony_Deer</race>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MidMedievalBase">
+		<defName>Pony_DeerMedieval_Merchant</defName>
+		<label>merchant</label>
+		<race>Pony_Deer</race>
+		<trader>true</trader>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_HighMedievalBase">
+		<defName>Pony_DeerMedieval_Knight</defName>
+		<label>knight</label>
+		<race>Pony_Deer</race>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_HighMedievalBase">
+		<defName>Pony_DeerMedieval_Sharpshooter</defName>
+		<label>sharpshooter</label>
+		<race>Pony_Deer</race>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_HighMedievalBase">
+		<defName>Pony_DeerMedieval_Breacher</defName>
+		<label>breacher</label>
+		<race>Pony_Deer</race>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_Lord">
+		<defName>Pony_DeerMedieval_Lord</defName>
+		<label>lord</label>
+		<race>Pony_Deer</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Kirin -->
+
+	<PawnKindDef ParentName="Pony_Peasant">
+		<defName>Pony_KirinMedieval_Peasant</defName>
+		<label>peasant</label>
+		<race>Pony_Kirin</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_LowMedievalBase">
+		<defName>Pony_KirinMedieval_Militia</defName>
+		<label>militia</label>
+		<race>Pony_Kirin</race>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_LowMedievalBase">
+		<defName>Pony_KirinMedieval_Archer</defName>
+		<label>archer</label>
+		<race>Pony_Kirin</race>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MidMedievalBase">
+		<defName>Pony_KirinMedieval_Warrior</defName>
+		<label>warrior</label>
+		<race>Pony_Kirin</race>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MidMedievalBase">
+		<defName>Pony_KirinMedieval_Hunter</defName>
+		<label>hunter</label>
+		<race>Pony_Kirin</race>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MidMedievalBase">
+		<defName>Pony_KirinMedieval_Merchant</defName>
+		<label>merchant</label>
+		<race>Pony_Kirin</race>
+		<trader>true</trader>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_HighMedievalBase">
+		<defName>Pony_KirinMedieval_Knight</defName>
+		<label>knight</label>
+		<race>Pony_Kirin</race>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_HighMedievalBase">
+		<defName>Pony_KirinMedieval_Sharpshooter</defName>
+		<label>sharpshooter</label>
+		<race>Pony_Kirin</race>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_HighMedievalBase">
+		<defName>Pony_KirinMedieval_Breacher</defName>
+		<label>breacher</label>
+		<race>Pony_Kirin</race>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+		</weaponTags>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_Lord">
+		<defName>Pony_KirinMedieval_Lord</defName>
+		<label>lord</label>
+		<race>Pony_Kirin</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+</Defs>

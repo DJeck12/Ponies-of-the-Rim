@@ -2,7 +2,7 @@
 <Defs>
 
 	<AbilityDef Name="NatureMuse">
-		<defName>NatureMuse</defName>
+		<defName>Pony_NatureMuse</defName>
 		<label>nature muse</label>
 		<description>The caster imbues themself with the forces of nature, that fills the body with energy to increase work speed.</description>
 		<jobDef>CastAbilityOnThing</jobDef>
@@ -40,7 +40,7 @@
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>NatureMuse</hediffDef>
+				<hediffDef>Pony_NatureMuse</hediffDef>
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
 			</li>
@@ -52,7 +52,7 @@
 	</AbilityDef>
 
 	<AbilityDef Name="ShortFlight">
-		<defName>ShortFlight</defName>
+		<defName>Pony_ShortFlight</defName>
 		<label>short flight</label>
 		<description>Fly a short distance using wings.</description>
 		<iconPath>UI/Abilities/Ability_Pegasus</iconPath>
@@ -83,7 +83,7 @@
 	</AbilityDef>
 
 	<AbilityDef>
-		<defName>MagicBurst</defName>
+		<defName>Pony_MagicBurst</defName>
 		<label>magic burst</label>
 		<description>Use the horn to launch a burst of magical energy at the target, dealing damage and piercing armor.</description>
 		<iconPath>UI/Abilities/Ability_Unicorn</iconPath>

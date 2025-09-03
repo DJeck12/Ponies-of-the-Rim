@@ -4,7 +4,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_PonyMagic</defName>
 		<label>pony magic</label>
-		<description>Carriers of this gene receive one of the random abilities of earthponies, unicorns, or pegasi. Have no effect on ponies.</description>
+		<description>Carriers of this gene receive one of the random abilities of earth ponies, unicorns, or pegasi. Have no effect on ponies.</description>
 		<iconPath>UI/Genes/PonyMagic</iconPath>
 		<biostatCpx>1</biostatCpx>
 		<randomChosen>true</randomChosen>
@@ -29,10 +29,10 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<abilities>
-			<li>NatureMuse</li>
+			<li>Pony_NatureMuse</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>NatureMuse</AbilityDef>
+			<AbilityDef>Pony_NatureMuse</AbilityDef>
 		</descriptionHyperlinks>
 	</GeneDef>
 
@@ -45,10 +45,10 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<abilities>
-			<li>ShortFlight</li>
+			<li>Pony_ShortFlight</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>ShortFlight</AbilityDef>
+			<AbilityDef>Pony_ShortFlight</AbilityDef>
 		</descriptionHyperlinks>
 		<randomChosen>true</randomChosen>
 		<exclusionTags>
@@ -65,10 +65,10 @@
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<abilities>
-			<li>MagicBurst</li>
+			<li>Pony_MagicBurst</li>
 		</abilities>
 		<descriptionHyperlinks>
-			<AbilityDef>MagicBurst</AbilityDef>
+			<AbilityDef>Pony_MagicBurst</AbilityDef>
 		</descriptionHyperlinks>
 		<randomChosen>true</randomChosen>
 		<exclusionTags>

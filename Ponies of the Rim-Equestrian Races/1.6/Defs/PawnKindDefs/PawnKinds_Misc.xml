@@ -5,7 +5,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_AlicornSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Alicorn</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -22,7 +22,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_AlicornRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Alicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -37,7 +37,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="AlicornVillager">
 		<defName>Pony_AlicornVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Alicorn</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -54,7 +54,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_BatponySlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Batpony</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -71,7 +71,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_BatponyRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Batpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -86,57 +86,8 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="BatponyVillager">
 		<defName>Pony_BatponyVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Batpony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Outlander</li>
-					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Batpony_Outlander</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-<!-- Thestral -->
-
-	<PawnKindDef ParentName="SlaveBase">
-		<defName>Pony_ThestralSlave</defName>
-		<label>pony slave</label>
-		<race>Pony_Thestral</race>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Outlander</li>
-					<li>Outsider</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Batpony</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>Pony_ThestralRefugee</defName>
-		<label>pony refugee</label>
-		<race>Pony_Thestral</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony_Offworld</li>
-					<li>Pony_Batpony_Offworld</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="VillagerBase" Name="ThestralVillager">
-		<defName>Pony_ThestralVillager</defName>
-		<label>pony villager</label>
-		<race>Pony_Thestral</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -152,7 +103,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_ChangelingSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Changeling</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -169,7 +120,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_ChangelingRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Changeling</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -184,7 +135,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="ChangelingVillager">
 		<defName>Pony_ChangelingVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Changeling</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -201,7 +152,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_ChangedlingSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Changedling</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -218,7 +169,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_ChangedlingRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Changedling</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -233,7 +184,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="ChangedlingVillager">
 		<defName>Pony_ChangedlingVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Changedling</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -250,7 +201,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_CrystalSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Crystalpony</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -267,7 +218,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_CrystalRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Crystalpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -282,7 +233,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="CrystalVillager">
 		<defName>Pony_CrystalVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Crystalpony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -299,7 +250,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_DeerSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Deer</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -316,7 +267,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_DeerRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Deer</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -331,7 +282,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="DeerVillager">
 		<defName>Pony_DeerVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Deer</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -344,12 +295,12 @@
 		</backstoryFilters>
 	</PawnKindDef>
 
-<!-- Gryphon -->
+<!-- Griffon -->
 
 	<PawnKindDef ParentName="SlaveBase">
-		<defName>Pony_GryphonSlave</defName>
-		<label>pony slave</label>
-		<race>Pony_Gryphon</race>
+		<defName>Pony_GriffonSlave</defName>
+		<label>slave</label>
+		<race>Pony_Griffon</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
@@ -357,48 +308,48 @@
 				<li>Outlander</li>
 				<li>Outsider</li>
 				<li>Pony_Everypony</li>
-				<li>Pony_Gryphon</li>
+				<li>Pony_Griffon</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>Pony_GryphonRefugee</defName>
-		<label>pony refugee</label>
-		<race>Pony_Gryphon</race>
+		<defName>Pony_GriffonRefugee</defName>
+		<label>refugee</label>
+		<race>Pony_Griffon</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Pony_Everypony_Offworld</li>
-					<li>Pony_Gryphon_Offworld</li>
+					<li>Pony_Griffon_Offworld</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="VillagerBase" Name="GryphonVillager">
-		<defName>Pony_GryphonVillager</defName>
-		<label>pony villager</label>
-		<race>Pony_Gryphon</race>
+	<PawnKindDef ParentName="VillagerBase" Name="GriffonVillager">
+		<defName>Pony_GriffonVillager</defName>
+		<label>villager</label>
+		<race>Pony_Griffon</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
 					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Gryphon_Outlander</li>
+					<li>Pony_Griffon_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
-<!-- Hyppogriff -->
+<!-- Hippogriff -->
 
 	<PawnKindDef ParentName="SlaveBase">
-		<defName>Pony_HyppogriffSlave</defName>
-		<label>pony slave</label>
-		<race>Pony_Hyppogriff</race>
+		<defName>Pony_HippogriffSlave</defName>
+		<label>slave</label>
+		<race>Pony_Hippogriff</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
@@ -406,37 +357,37 @@
 				<li>Outlander</li>
 				<li>Outsider</li>
 				<li>Pony_Everypony</li>
-				<li>Pony_Hyppogriff</li>
+				<li>Pony_Hippogriff</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>Pony_HyppogriffRefugee</defName>
-		<label>pony refugee</label>
-		<race>Pony_Hyppogriff</race>
+		<defName>Pony_HippogriffRefugee</defName>
+		<label>refugee</label>
+		<race>Pony_Hippogriff</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Offworld</li>
 					<li>Pony_Everypony_Offworld</li>
-					<li>Pony_Hyppogriff_Offworld</li>
+					<li>Pony_Hippogriff_Offworld</li>
 				</categories>
 			</li>
 		</backstoryFilters>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="VillagerBase" Name="HyppogriffVillager">
-		<defName>Pony_HyppogriffVillager</defName>
-		<label>pony villager</label>
-		<race>Pony_Hyppogriff</race>
+	<PawnKindDef ParentName="VillagerBase" Name="HippogriffVillager">
+		<defName>Pony_HippogriffVillager</defName>
+		<label>villager</label>
+		<race>Pony_Hippogriff</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
 					<li>Outlander</li>
 					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Hyppogriff_Outlander</li>
+					<li>Pony_Hippogriff_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -446,7 +397,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_KirinSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Kirin</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -463,7 +414,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_KirinRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Kirin</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -478,7 +429,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="KirinVillager">
 		<defName>Pony_KirinVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Kirin</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -495,7 +446,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_SeaponySlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Seapony</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -512,7 +463,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_SeaponyRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Seapony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -527,7 +478,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="SeaponyVillager">
 		<defName>Pony_SeaponyVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Seapony</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -544,7 +495,7 @@
 
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>Pony_ZebraSlave</defName>
-		<label>pony slave</label>
+		<label>slave</label>
 		<race>Pony_Zebra</race>
 		<backstoryFiltersOverride Inherit="False">
 			<li>
@@ -561,7 +512,7 @@
 
 	<PawnKindDef ParentName="SpaceRefugee">
 		<defName>Pony_ZebraRefugee</defName>
-		<label>pony refugee</label>
+		<label>refugee</label>
 		<race>Pony_Zebra</race>
 		<backstoryFilters Inherit="False">
 			<li>
@@ -576,7 +527,7 @@
 
 	<PawnKindDef ParentName="VillagerBase" Name="ZebraVillager">
 		<defName>Pony_ZebraVillager</defName>
-		<label>pony villager</label>
+		<label>villager</label>
 		<race>Pony_Zebra</race>
 		<backstoryFilters Inherit="False">
 			<li>

@@ -13,6 +13,9 @@
 			<li>Male_Pony</li>
 			<li>Female_Pony</li>
 		</forcedHeadTypes>
+		<exclusionTags>
+			<li>Head</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">

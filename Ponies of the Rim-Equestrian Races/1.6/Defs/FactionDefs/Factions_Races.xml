@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Batpony -->
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Pony_BatponyKingdom</defName>
+		<label>batpony kingdom</label>
+		<description>Equestria, being formed by three pony tribes, was inhabited not only by its three main races. From the earliest stages of their history, ponies knew that there were a huge number of equine creatures similar to them in the world. One of these creatures were batponies.
+
+Batponies, outwardly resembling a mix of a pony and a bat, were not descendants of pegasi and were a little-known fourth tribe inhabiting Equestria. Their habitat - mountain caves, were not a popular place for settlements for other ponies, which is why batponies rarely interacted with other races from neighboring lands. Having its own culture, religion and monarchs, Batpony Kingdom was still completely subordinate to the ruling caste of Equestria's alicorns.
+
+Being in relative isolation from the other races, batponies did not want to be suddenly caught off guard by potential unknown enemies. This paranoid thinking has given rise to militaristic schools and new military technologies in their Kingdom, created for special attacks and sabotage. They look with great caution at other factions, especially those unknown to them.</description>
+		<factionNameMaker>Pony_NameFactionBatpony</factionNameMaker>
+		<categoryTag>PonyOutlander</categoryTag>
+		<factionIconPath>World/Factions/BatponyKingdom</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+		</requiredMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.70</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Oulander</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_BatponyVillager>5</Pony_BatponyVillager>
+					<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+					<Pony_BatponyGrenadier_Destructive>1.5</Pony_BatponyGrenadier_Destructive>
+					<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
+					<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
+					<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+					<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_BatponyVillager>20</Pony_BatponyVillager>
+					<Pony_BatponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_BatponyVillager_Child>
+					<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+					<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_BatponyTown_Trader>1</Pony_BatponyTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_BatponyVillager>3</Pony_BatponyVillager>
+					<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+					<Pony_BatponyGrenadier_Destructive>1.5</Pony_BatponyGrenadier_Destructive>
+					<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
+					<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
+					<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_BatponyVillager>10</Pony_BatponyVillager>
+					<Pony_BatponyTown_Guard>10</Pony_BatponyTown_Guard>
+					<Pony_BatponyGrenadier_Destructive>1.5</Pony_BatponyGrenadier_Destructive>
+					<Pony_BatponyMercenary_Slasher>7</Pony_BatponyMercenary_Slasher>
+					<Pony_BatponyMercenary_Gunner>10</Pony_BatponyMercenary_Gunner>
+					<Pony_BatponyMercenary_Elite>10</Pony_BatponyMercenary_Elite>
+					<Pony_BatponyTown_Councilman>10</Pony_BatponyTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_BatponyMiner>1</Pony_BatponyMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_BatponyHunter>1</Pony_BatponyHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_BatponyLogger>1</Pony_BatponyLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_BatponyFarmer>1</Pony_BatponyFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<PonyColony>-50</PonyColony>
+					<PonyTribe>-50</PonyTribe>
+					<Pony_ColonyWithRaces>-50</Pony_ColonyWithRaces>
+					<PlayerColony>-50</PlayerColony>
+					<PlayerTribe>-50</PlayerTribe>
+					<ResearchExpedition>-50</ResearchExpedition>
+					<GravshipCrew>-50</GravshipCrew>
+				</startingGoodwillByFactionDefs>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+<!-- Changeling -->
+
+	<FactionDef ParentName="TribeBase">
+		<defName>Pony_ChangelingHive</defName>
+		<label>rough changeling hive</label>
+		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insect, half-horse, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build huge ant-like hives in hidden locations near other pony settlements.
+
+Some call the wild changelings barbaric due to their frequent raids and pillaging of other ponies to sate their hunger, but their goal is not to kill or enslave other races, putting them in a state of cold war with other factions. Countless attempts to contact the changelings led the ponies to the conclusion that the bugs are not evil, but rather victims of their circumstances, as there have been cases of changelings escaping from their home hives to reform and start a new life.
+
+This changeling hive has been on this planet for a very long time, they are hostile to all other races and they will only contact other hives.</description>
+		<categoryTag>PonyTribal</categoryTag>
+		<factionIconPath>World/Factions/ChangelingHive</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_ChangelingSupremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<permanentEnemyToEveryoneExcept>
+			<li>Pony_PlayerChangelingHive</li>
+		</permanentEnemyToEveryoneExcept>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>0.75</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Pony_ChangelingTribal_Penitent>5</Pony_ChangelingTribal_Penitent>
+					<Pony_ChangelingTribal_Warrior>5</Pony_ChangelingTribal_Warrior>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_Berserker>5</Pony_ChangelingTribal_Berserker>
+					<Pony_ChangelingTribal_ChiefRanged>3</Pony_ChangelingTribal_ChiefRanged>
+					<Pony_ChangelingTribal_ChiefMelee>1.5</Pony_ChangelingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_ChiefRanged>5</Pony_ChangelingTribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Pony_ChangelingTribal_Penitent>10</Pony_ChangelingTribal_Penitent>
+					<Pony_ChangelingTribal_Warrior>10</Pony_ChangelingTribal_Warrior>
+					<Pony_ChangelingTribal_Berserker>10</Pony_ChangelingTribal_Berserker>
+					<Pony_ChangelingTribal_ChiefMelee>5</Pony_ChangelingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Pony_ChangelingTribal_Breacher>5</Pony_ChangelingTribal_Breacher>
+					<Pony_ChangelingTribal_Penitent>5</Pony_ChangelingTribal_Penitent>
+					<Pony_ChangelingTribal_Warrior>5</Pony_ChangelingTribal_Warrior>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_Berserker>5</Pony_ChangelingTribal_Berserker>
+					<Pony_ChangelingTribal_ChiefRanged>3</Pony_ChangelingTribal_ChiefRanged>
+					<Pony_ChangelingTribal_ChiefMelee>1.5</Pony_ChangelingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_ChangelingTribal_Warrior>20</Pony_ChangelingTribal_Warrior>
+					<Pony_ChangelingTribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_ChangelingTribal_Child>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_Berserker>5</Pony_ChangelingTribal_Berserker>
+					<Pony_ChangelingTribal_ChiefRanged>3</Pony_ChangelingTribal_ChiefRanged>
+					<Pony_ChangelingTribal_ChiefMelee>1.5</Pony_ChangelingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_ChangelingTribal_Trader>1</Pony_ChangelingTribal_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Pony_ChangelingTribal_Warrior>7</Pony_ChangelingTribal_Warrior>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_Berserker>7</Pony_ChangelingTribal_Berserker>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_ChangelingTribal_Warrior>7</Pony_ChangelingTribal_Warrior>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_Berserker>7</Pony_ChangelingTribal_Berserker>
+					<Pony_ChangelingTribal_ChiefRanged>10</Pony_ChangelingTribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
+					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>
+					<Pony_ChangelingTribal_HeavyArcher>10</Pony_ChangelingTribal_HeavyArcher>
+					<Pony_ChangelingTribal_ChiefRanged>10</Pony_ChangelingTribal_ChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangelingMiner>1</Pony_ChangelingMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangelingHunter>1</Pony_ChangelingHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangelingLogger>1</Pony_ChangelingLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangelingFarmer>1</Pony_ChangelingFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+<!-- Changedling -->
+
+	<FactionDef ParentName="TribeBase">
+		<defName>Pony_ChangedlingHive</defName>
+		<label>civil changedling hive</label>
+		<description>Changedlings are the youngest equine race, appearing on Equestria after defeating the very first changeling hive under the leadership of Queen Chryszalis. By nature, changedlings are a reformed version of their dark-chitinous relatives, first showing themselves as part of the rebellious workers of their previous hive.
+
+The first leader of the changedlings was Thorax, as the very first representative of his race. After the reformation, changedlings did not have their own culture and quickly fell under the influence of Equestria, which imposed on them ideological ideas of goodness and mutual prosperity.
+
+Centuries later, changedlings continue to reform to this day, forming opposition hives on each planet they inhabit. They very easily fall under the influence of others and are always favorable to outsiders.</description>
+		<categoryTag>PonyTribe</categoryTag>
+		<factionIconPath>World/Factions/ChangedlingHive</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>0.75</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Pony_ChangedlingTribal_Penitent>5</Pony_ChangedlingTribal_Penitent>
+					<Pony_ChangedlingTribal_Warrior>5</Pony_ChangedlingTribal_Warrior>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_Berserker>5</Pony_ChangedlingTribal_Berserker>
+					<Pony_ChangedlingTribal_ChiefRanged>3</Pony_ChangedlingTribal_ChiefRanged>
+					<Pony_ChangedlingTribal_ChiefMelee>1.5</Pony_ChangedlingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_ChiefRanged>5</Pony_ChangedlingTribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Pony_ChangedlingTribal_Penitent>10</Pony_ChangedlingTribal_Penitent>
+					<Pony_ChangedlingTribal_Warrior>10</Pony_ChangedlingTribal_Warrior>
+					<Pony_ChangedlingTribal_Berserker>10</Pony_ChangedlingTribal_Berserker>
+					<Pony_ChangedlingTribal_ChiefMelee>5</Pony_ChangedlingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Pony_ChangedlingTribal_Breacher>5</Pony_ChangedlingTribal_Breacher>
+					<Pony_ChangedlingTribal_Penitent>5</Pony_ChangedlingTribal_Penitent>
+					<Pony_ChangedlingTribal_Warrior>5</Pony_ChangedlingTribal_Warrior>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_Berserker>5</Pony_ChangedlingTribal_Berserker>
+					<Pony_ChangedlingTribal_ChiefRanged>3</Pony_ChangedlingTribal_ChiefRanged>
+					<Pony_ChangedlingTribal_ChiefMelee>1.5</Pony_ChangedlingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_ChangedlingTribal_Warrior>20</Pony_ChangedlingTribal_Warrior>
+					<Pony_ChangedlingTribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_ChangedlingTribal_Child>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_Berserker>5</Pony_ChangedlingTribal_Berserker>
+					<Pony_ChangedlingTribal_ChiefRanged>3</Pony_ChangedlingTribal_ChiefRanged>
+					<Pony_ChangedlingTribal_ChiefMelee>1.5</Pony_ChangedlingTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_ChangedlingTribal_Trader>1</Pony_ChangedlingTribal_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Pony_ChangedlingTribal_Warrior>7</Pony_ChangedlingTribal_Warrior>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_Berserker>7</Pony_ChangedlingTribal_Berserker>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_ChangedlingTribal_Warrior>7</Pony_ChangedlingTribal_Warrior>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_Berserker>7</Pony_ChangedlingTribal_Berserker>
+					<Pony_ChangedlingTribal_ChiefRanged>10</Pony_ChangedlingTribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Pony_ChangedlingTribal_Archer>10</Pony_ChangedlingTribal_Archer>
+					<Pony_ChangedlingTribal_Hunter>10</Pony_ChangedlingTribal_Hunter>
+					<Pony_ChangedlingTribal_HeavyArcher>10</Pony_ChangedlingTribal_HeavyArcher>
+					<Pony_ChangedlingTribal_ChiefRanged>10</Pony_ChangedlingTribal_ChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangedlingMiner>1</Pony_ChangedlingMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangedlingHunter>1</Pony_ChangedlingHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangedlingLogger>1</Pony_ChangedlingLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ChangedlingFarmer>1</Pony_ChangedlingFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<PonyColony>75</PonyColony>
+					<PonyTribe>75</PonyTribe>
+					<Pony_ColonyWithRaces>75</Pony_ColonyWithRaces>
+					<PlayerColony>75</PlayerColony>
+					<PlayerTribe>75</PlayerTribe>
+					<ResearchExpedition>75</ResearchExpedition>
+					<GravshipCrew>75</GravshipCrew>
+				</startingGoodwillByFactionDefs>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+<!-- Crystal -->
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Pony_CrystalEmpire</defName>
+		<label>crystal empire</label>
+		<description>Long ago, under the leadership of King Sombra, ponies discovered magical lands where everything from plants and animals to rocks and water consisted of crystals. In search of the source of such anomaly, they discovered a mysterious artifact capable of crystallizing everything around it. Having fallen under the pernicious influence of the artifact's power, the King became a tyrant, enslaving his subjects to extract crystals from his lands.
+
+The villain's reign did not last long, as Equestria was able to overthrow him from the throne and free the enslaved ponies. The Crystal Empire became a new independent state, and the ponies inhabiting it began to use the artifact in their daily lives. After a thousand years of the crystal artifact's influence on the ponies inhabiting the Empire, their crystallity became part of their body, as a result of which the crystal ponies became a new form of the pony race.
+
+The Crystal Empire is expanding its influence wherever other ponies live and although this colony has no contact with their home planet, they remain neutral towards all other factions.</description>
+		<!--<fixedName>crystal empire<fixedName>-->
+		<categoryTag>PonyOutlander</categoryTag>
+		<factionIconPath>World/Factions/CrystalEmpire</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+		</requiredMemes>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.70</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Outlander</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_CrystalVillager>5</Pony_CrystalVillager>
+					<Pony_CrystalTown_Guard>10</Pony_CrystalTown_Guard>
+					<Pony_CrystalGrenadier_Destructive>1.5</Pony_CrystalGrenadier_Destructive>
+					<Pony_CrystalMercenary_Slasher>7</Pony_CrystalMercenary_Slasher>
+					<Pony_CrystalMercenary_Gunner>10</Pony_CrystalMercenary_Gunner>
+					<Pony_CrystalMercenary_Elite>10</Pony_CrystalMercenary_Elite>
+					<Pony_CrystalTown_Councilman>10</Pony_CrystalTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_CrystalVillager>20</Pony_CrystalVillager>
+					<Pony_CrystalVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_CrystalVillager_Child>
+					<Pony_CrystalTown_Guard>10</Pony_CrystalTown_Guard>
+					<Pony_CrystalTown_Councilman>10</Pony_CrystalTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_CrystalTown_Trader>1</Pony_CrystalTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_CrystalVillager>3</Pony_CrystalVillager>
+					<Pony_CrystalTown_Guard>10</Pony_CrystalTown_Guard>
+					<Pony_CrystalGrenadier_Destructive>1.5</Pony_CrystalGrenadier_Destructive>
+					<Pony_CrystalMercenary_Slasher>7</Pony_CrystalMercenary_Slasher>
+					<Pony_CrystalMercenary_Gunner>10</Pony_CrystalMercenary_Gunner>
+					<Pony_CrystalMercenary_Elite>10</Pony_CrystalMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_CrystalVillager>10</Pony_CrystalVillager>
+					<Pony_CrystalTown_Guard>10</Pony_CrystalTown_Guard>
+					<Pony_CrystalGrenadier_Destructive>1.5</Pony_CrystalGrenadier_Destructive>
+					<Pony_CrystalMercenary_Slasher>7</Pony_CrystalMercenary_Slasher>
+					<Pony_CrystalMercenary_Gunner>10</Pony_CrystalMercenary_Gunner>
+					<Pony_CrystalMercenary_Elite>10</Pony_CrystalMercenary_Elite>
+					<Pony_CrystalTown_Councilman>10</Pony_CrystalTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_CrystalMiner>1</Pony_CrystalMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_CrystalHunter>1</Pony_CrystalHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_CrystalLogger>1</Pony_CrystalLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_CrystalFarmer>1</Pony_CrystalFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+<!-- Deer -->
+
+	<FactionDef ParentName="PonyMedievalBase">
+		<defName>Pony_DeerDominion</defName>
+		<label>deer dominion</label>
+		<description>Deer, being a northern horse race, have mastered the magic of the elements of nature, can control weather conditions and communicate with spirits. Their principle of views is centered on the idolization of trees, and their society can be described as medieval.
+
+Not being in close proximity to Equestria, the deer developed separately from the other factions and organized the Dominion, which stood up for the protection of nature. The Kirin became the main competitors of the deer due to different ideological views on the value of nature: some protect its resources, others - its descendants.
+
+At the moment, the deer are in an active war with the Kirin and will not tolerate anyone who will desecrate the trees sacred to their culture.</description>
+		<factionNameMaker>Pony_NameFactionDeer</factionNameMaker>
+		<categoryTag>PonyMedieval</categoryTag>
+		<factionIconPath>World/Factions/DeerDominion</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		</requiredMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+				</categories>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Pony_DeerMedieval_Militia>15</Pony_DeerMedieval_Militia>
+					<Pony_DeerMedieval_Warrior>30</Pony_DeerMedieval_Warrior>
+					<Pony_DeerMedieval_Knight>15</Pony_DeerMedieval_Knight>
+					<Pony_DeerMedieval_Archer>10</Pony_DeerMedieval_Archer>
+					<Pony_DeerMedieval_Hunter>20</Pony_DeerMedieval_Hunter>
+					<Pony_DeerMedieval_Sharpshooter>10</Pony_DeerMedieval_Sharpshooter>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Pony_DeerMedieval_Archer>20</Pony_DeerMedieval_Archer>
+					<Pony_DeerMedieval_Hunter>20</Pony_DeerMedieval_Hunter>
+					<Pony_DeerMedieval_Sharpshooter>10</Pony_DeerMedieval_Sharpshooter>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Pony_DeerMedieval_Militia>20</Pony_DeerMedieval_Militia>
+					<Pony_DeerMedieval_Warrior>20</Pony_DeerMedieval_Warrior>
+					<Pony_DeerMedieval_Knight>10</Pony_DeerMedieval_Knight>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Pony_DeerMedieval_Militia>15</Pony_DeerMedieval_Militia>
+					<Pony_DeerMedieval_Warrior>30</Pony_DeerMedieval_Warrior>
+					<Pony_DeerMedieval_Knight>15</Pony_DeerMedieval_Knight>
+					<Pony_DeerMedieval_Archer>10</Pony_DeerMedieval_Archer>
+					<Pony_DeerMedieval_Hunter>20</Pony_DeerMedieval_Hunter>
+					<Pony_DeerMedieval_Sharpshooter>10</Pony_DeerMedieval_Sharpshooter>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_DeerMedieval_Peasant>30</Pony_DeerMedieval_Peasant>
+					<Pony_DeerTribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_DeerTribal_Child>
+					<Pony_DeerMedieval_Militia>10</Pony_DeerMedieval_Militia>
+					<Pony_DeerMedieval_Warrior>5</Pony_DeerMedieval_Warrior>
+					<Pony_DeerMedieval_Archer>10</Pony_DeerMedieval_Archer>
+					<Pony_DeerMedieval_Hunter>5</Pony_DeerMedieval_Hunter>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_DeerMedieval_Merchant>1</Pony_DeerMedieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Pony_DeerMedieval_Militia>7</Pony_DeerMedieval_Militia>
+					<Pony_DeerMedieval_Warrior>7</Pony_DeerMedieval_Warrior>
+					<Pony_DeerMedieval_Knight>7</Pony_DeerMedieval_Knight>
+					<Pony_DeerMedieval_Archer>10</Pony_DeerMedieval_Archer>
+					<Pony_DeerMedieval_Hunter>10</Pony_DeerMedieval_Hunter>
+					<Pony_DeerMedieval_Sharpshooter>10</Pony_DeerMedieval_Sharpshooter>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_DeerMedieval_Warrior>20</Pony_DeerMedieval_Warrior>
+					<Pony_DeerMedieval_Knight>30</Pony_DeerMedieval_Knight>
+					<Pony_DeerMedieval_Hunter>15</Pony_DeerMedieval_Hunter>
+					<Pony_DeerMedieval_Sharpshooter>30</Pony_DeerMedieval_Sharpshooter>
+					<Pony_DeerMedieval_Lord>5</Pony_DeerMedieval_Lord>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_DeerMiner>1</Pony_DeerMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_DeerHunter>1</Pony_DeerHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_DeerLogger>1</Pony_DeerLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_DeerFarmer>1</Pony_DeerFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<Pony_KirinRealm>-75</Pony_KirinRealm>
+				</startingGoodwillByFactionDefs>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+<!-- Griffon -->
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Pony_GriffonKingdom</defName>
+		<label>griffon kingdom</label>
+		<description>Magic is an ethereal element of interaction with the physical world and all the races of Equus know how to use it through various conductors, be it horns or magic staffs. Griffons have been deprived of the skills to control magic for almost their entire history, relying on their strength and agility. Due to their adaptability, griffons have become excellent mercenaries and are good at taking advantage of their enemies' weaknesses.
+
+The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.
+
+Hint: You can hire griffin mercenaries using the communication console for a certain price for defense or temporary work in your settlement.</description>
+		<factionNameMaker>Pony_NameFactionGriffon</factionNameMaker>
+		<categoryTag>PonyOutlander</categoryTag>
+		<factionIconPath>World/Factions/GriffonKingdom</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+		</requiredMemes>
+		<naturalEnemy>true</naturalEnemy>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_GriffonVillager>5</Pony_GriffonVillager>
+					<Pony_GriffonTown_Guard>10</Pony_GriffonTown_Guard>
+					<Pony_GriffonGrenadier_Destructive>1.5</Pony_GriffonGrenadier_Destructive>
+					<Pony_GriffonMercenary_Slasher>7</Pony_GriffonMercenary_Slasher>
+					<Pony_GriffonMercenary_Gunner>10</Pony_GriffonMercenary_Gunner>
+					<Pony_GriffonMercenary_Elite>10</Pony_GriffonMercenary_Elite>
+					<Pony_GriffonTown_Councilman>10</Pony_GriffonTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_GriffonVillager>20</Pony_GriffonVillager>
+					<Pony_GriffonVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_GriffonVillager_Child>
+					<Pony_GriffonTown_Guard>10</Pony_GriffonTown_Guard>
+					<Pony_GriffonTown_Councilman>10</Pony_GriffonTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_GriffonTown_Trader>1</Pony_GriffonTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_GriffonVillager>3</Pony_GriffonVillager>
+					<Pony_GriffonTown_Guard>10</Pony_GriffonTown_Guard>
+					<Pony_GriffonGrenadier_Destructive>1.5</Pony_GriffonGrenadier_Destructive>
+					<Pony_GriffonMercenary_Slasher>7</Pony_GriffonMercenary_Slasher>
+					<Pony_GriffonMercenary_Gunner>10</Pony_GriffonMercenary_Gunner>
+					<Pony_GriffonMercenary_Elite>10</Pony_GriffonMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_GriffonVillager>10</Pony_GriffonVillager>
+					<Pony_GriffonTown_Guard>10</Pony_GriffonTown_Guard>
+					<Pony_GriffonGrenadier_Destructive>1.5</Pony_GriffonGrenadier_Destructive>
+					<Pony_GriffonMercenary_Slasher>7</Pony_GriffonMercenary_Slasher>
+					<Pony_GriffonMercenary_Gunner>10</Pony_GriffonMercenary_Gunner>
+					<Pony_GriffonMercenary_Elite>10</Pony_GriffonMercenary_Elite>
+					<Pony_GriffonTown_Councilman>10</Pony_GriffonTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_GriffonMiner>1</Pony_GriffonMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_GriffonHunter>1</Pony_GriffonHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_GriffonLogger>1</Pony_GriffonLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_GriffonFarmer>1</Pony_GriffonFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+<!--
+	<VEF.Planet.HireableFactionDef>
+			<defName>Pony_GriffonMercenaries</defName>
+			<label>griffon mercenaries</label>
+			<description>The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.</description>
+			<texPath>World/WorldObjects/Expanding/PirateOutpost</texPath>
+			<color>(1, 1, 1)</color>
+			<pawnKinds>
+				<li>Pony_Griffon_Slasher</li>
+				<li>Pony_Griffon_Marksman</li>
+				<li>Pony_Griffon_Sniper</li>
+			</pawnKinds>
+			<commTag>mercenaries</commTag>
+			<referencedFaction>Pony_GriffonKingdom</referencedFaction>
+	</VEF.Planet.HireableFactionDef>
+-->
+<!-- Hippogriff -->
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Pony_HippogriffKingdom</defName>
+		<label>hippogriff kingdom</label>
+		<description>Half-griffons, half-ponies, hippogriffs once lived in peace and isolation from all other factions on a lonely hill island, until the Storm King came and destroyed their home, forcing them to disappear from existance. At least that's what the King himself thought, because hippogriffs possessed a saving artifact that allowed them to turn any of their hosts into a sea pony. For a long time, the Hippogriffs hid in ignorance at the bottom of the ocean, until Equestria helped save their home and drive out their enemy.
+
+Since then, hippogriffs continue to lead a dual lifestyle, where most of their population still lives underwater in the form of sea ponies. Soon, under the wing of the Hippogriffs, a new state of sea ponies was formed, dividing the culture of the two cooperating factions. 
+
+Hippogriffs still live in isolation from all other settlements, maintaining an alliance with the union of sea ponies. They are not averse to making contact with outsiders, but will refuse to share the artifact that once saved them from extinction.</description>
+		<factionNameMaker>Pony_NameFactionHippogriff</factionNameMaker>
+		<categoryTag>PonyOutlander</categoryTag>
+		<factionIconPath>World/Factions/HippogriffKingdom</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+		</requiredMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_HippogriffVillager>5</Pony_HippogriffVillager>
+					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
+					<Pony_HippogriffGrenadier_Destructive>1.5</Pony_HippogriffGrenadier_Destructive>
+					<Pony_HippogriffMercenary_Slasher>7</Pony_HippogriffMercenary_Slasher>
+					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
+					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
+					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_HippogriffVillager>20</Pony_HippogriffVillager>
+					<Pony_HippogriffVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_HippogriffVillager_Child>
+					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
+					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_HippogriffTown_Trader>1</Pony_HippogriffTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_HippogriffVillager>3</Pony_HippogriffVillager>
+					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
+					<Pony_HippogriffGrenadier_Destructive>1.5</Pony_HippogriffGrenadier_Destructive>
+					<Pony_HippogriffMercenary_Slasher>7</Pony_HippogriffMercenary_Slasher>
+					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
+					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_HippogriffVillager>10</Pony_HippogriffVillager>
+					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
+					<Pony_HippogriffGrenadier_Destructive>1.5</Pony_HippogriffGrenadier_Destructive>
+					<Pony_HippogriffMercenary_Slasher>7</Pony_HippogriffMercenary_Slasher>
+					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
+					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
+					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_HippogriffMiner>1</Pony_HippogriffMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_HippogriffHunter>1</Pony_HippogriffHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_HippogriffLogger>1</Pony_HippogriffLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_HippogriffFarmer>1</Pony_HippogriffFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+<!-- Kirin -->
+
+	<FactionDef ParentName="PonyMedievalBase">
+		<defName>Pony_KirinRealm</defName>
+		<label>kirin realm</label>
+		<description>temp</description>
+		<factionNameMaker>Pony_NameFactionKirin</factionNameMaker>
+		<categoryTag>PonyMedieval</categoryTag>
+		<factionIconPath>World/Factions/KirinRealm</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</requiredMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Medieval</li>
+				</categories>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Medieval</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Pony_KirinMedieval_Militia>15</Pony_KirinMedieval_Militia>
+					<Pony_KirinMedieval_Warrior>30</Pony_KirinMedieval_Warrior>
+					<Pony_KirinMedieval_Knight>15</Pony_KirinMedieval_Knight>
+					<Pony_KirinMedieval_Archer>10</Pony_KirinMedieval_Archer>
+					<Pony_KirinMedieval_Hunter>20</Pony_KirinMedieval_Hunter>
+					<Pony_KirinMedieval_Sharpshooter>10</Pony_KirinMedieval_Sharpshooter>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Pony_KirinMedieval_Archer>20</Pony_KirinMedieval_Archer>
+					<Pony_KirinMedieval_Hunter>20</Pony_KirinMedieval_Hunter>
+					<Pony_KirinMedieval_Sharpshooter>10</Pony_KirinMedieval_Sharpshooter>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Pony_KirinMedieval_Militia>20</Pony_KirinMedieval_Militia>
+					<Pony_KirinMedieval_Warrior>20</Pony_KirinMedieval_Warrior>
+					<Pony_KirinMedieval_Knight>10</Pony_KirinMedieval_Knight>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Pony_KirinMedieval_Militia>15</Pony_KirinMedieval_Militia>
+					<Pony_KirinMedieval_Warrior>30</Pony_KirinMedieval_Warrior>
+					<Pony_KirinMedieval_Knight>15</Pony_KirinMedieval_Knight>
+					<Pony_KirinMedieval_Archer>10</Pony_KirinMedieval_Archer>
+					<Pony_KirinMedieval_Hunter>20</Pony_KirinMedieval_Hunter>
+					<Pony_KirinMedieval_Sharpshooter>10</Pony_KirinMedieval_Sharpshooter>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_KirinMedieval_Peasant>30</Pony_KirinMedieval_Peasant>
+					<Pony_KirinTribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_KirinTribal_Child>
+					<Pony_KirinMedieval_Militia>10</Pony_KirinMedieval_Militia>
+					<Pony_KirinMedieval_Warrior>5</Pony_KirinMedieval_Warrior>
+					<Pony_KirinMedieval_Archer>10</Pony_KirinMedieval_Archer>
+					<Pony_KirinMedieval_Hunter>5</Pony_KirinMedieval_Hunter>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_KirinMedieval_Merchant>1</Pony_KirinMedieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Pony_KirinMedieval_Militia>7</Pony_KirinMedieval_Militia>
+					<Pony_KirinMedieval_Warrior>7</Pony_KirinMedieval_Warrior>
+					<Pony_KirinMedieval_Knight>7</Pony_KirinMedieval_Knight>
+					<Pony_KirinMedieval_Archer>10</Pony_KirinMedieval_Archer>
+					<Pony_KirinMedieval_Hunter>10</Pony_KirinMedieval_Hunter>
+					<Pony_KirinMedieval_Sharpshooter>10</Pony_KirinMedieval_Sharpshooter>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_KirinMedieval_Warrior>20</Pony_KirinMedieval_Warrior>
+					<Pony_KirinMedieval_Knight>30</Pony_KirinMedieval_Knight>
+					<Pony_KirinMedieval_Hunter>15</Pony_KirinMedieval_Hunter>
+					<Pony_KirinMedieval_Sharpshooter>30</Pony_KirinMedieval_Sharpshooter>
+					<Pony_KirinMedieval_Lord>5</Pony_KirinMedieval_Lord>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_KirinMiner>1</Pony_KirinMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_KirinHunter>1</Pony_KirinHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_KirinLogger>1</Pony_KirinLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_KirinFarmer>1</Pony_KirinFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<Pony_DeerDominion>-75</Pony_DeerDominion>
+				</startingGoodwillByFactionDefs>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+<!-- Seapony -->
+
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Pony_SeaponyUnion</defName>
+		<label>sea pony union</label>
+		<description>Stories about the existence of sea ponies were told from mouth to mouth, and their appearance was depicted by many ancient artists, but for a long time no one recognized them as separate ponies and they were the same legend as the tales of mermaids. However, sea ponies really existed on Equus, but for a long time they led a nomadic lifestyle and to this day there are no books describing their history.
+
+A key role in the importance of sea ponies was played by hippogriffs, who were once expelled from their native lands and forced to take the form of sea ponies. The transformated hippogriffs were the first to build settlements under water and over the centuries, sea ponies joined these settlements, founding together the Sea pony Union.
+
+The waters of Rim are not suitable for sea ponies to live underwater on this planet, but their settlements are still present on the shores and rivers adjacent to the Hippogriff Kingdom. Being weak on land, sea ponies are wary of new acquaintances, relying on their allies, but are neutral towards all strangers.</description>
+		<factionNameMaker>Pony_NameFactionSeapony</factionNameMaker>
+		<categoryTag>PonyOutlander</categoryTag>
+		<factionIconPath>World/Factions/SeaponyUnion</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
+		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</requiredMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.70</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_SeaponyVillager>5</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_SeaponyVillager>20</Pony_SeaponyVillager>
+					<Pony_SeaponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_SeaponyVillager_Child>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_SeaponyTown_Trader>1</Pony_SeaponyTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_SeaponyVillager>3</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_SeaponyVillager>10</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_SeaponyMiner>1</Pony_SeaponyMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_SeaponyHunter>1</Pony_SeaponyHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_SeaponyLogger>1</Pony_SeaponyLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_SeaponyFarmer>1</Pony_SeaponyFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<startingGoodwillByFactionDefs>
+					<Pony_HippogriffKingdom>75</Pony_HippogriffKingdom>
+				</startingGoodwillByFactionDefs>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+<!-- Zebra -->
+
+	<FactionDef ParentName="TribeBase">
+		<defName>Pony_ZebraTribe</defName>
+		<label>zebra tribe</label>
+		<description>temp</description>
+		<factionNameMaker>Pony_NameFactionZebra</factionNameMaker>
+		<categoryTag>PonyTribal</categoryTag>
+		<factionIconPath>World/Factions/ZebraTribe</factionIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>0.75</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+				<commonality>0.25</commonality>
+			</li>
+		</backstoryFilters>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Normal fights, ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Pony_ZebraTribal_Penitent>5</Pony_ZebraTribal_Penitent>
+					<Pony_ZebraTribal_Warrior>5</Pony_ZebraTribal_Warrior>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_Berserker>5</Pony_ZebraTribal_Berserker>
+					<Pony_ZebraTribal_ChiefRanged>3</Pony_ZebraTribal_ChiefRanged>
+					<Pony_ZebraTribal_ChiefMelee>1.5</Pony_ZebraTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_ChiefRanged>5</Pony_ZebraTribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<Pony_ZebraTribal_Penitent>10</Pony_ZebraTribal_Penitent>
+					<Pony_ZebraTribal_Warrior>10</Pony_ZebraTribal_Warrior>
+					<Pony_ZebraTribal_Berserker>10</Pony_ZebraTribal_Berserker>
+					<Pony_ZebraTribal_ChiefMelee>5</Pony_ZebraTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Pony_ZebraTribal_Breacher>5</Pony_ZebraTribal_Breacher>
+					<Pony_ZebraTribal_Penitent>5</Pony_ZebraTribal_Penitent>
+					<Pony_ZebraTribal_Warrior>5</Pony_ZebraTribal_Warrior>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_Berserker>5</Pony_ZebraTribal_Berserker>
+					<Pony_ZebraTribal_ChiefRanged>3</Pony_ZebraTribal_ChiefRanged>
+					<Pony_ZebraTribal_ChiefMelee>1.5</Pony_ZebraTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Pony_ZebraTribal_Warrior>20</Pony_ZebraTribal_Warrior>
+					<Pony_ZebraTribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_ZebraTribal_Child>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_Berserker>5</Pony_ZebraTribal_Berserker>
+					<Pony_ZebraTribal_ChiefRanged>3</Pony_ZebraTribal_ChiefRanged>
+					<Pony_ZebraTribal_ChiefMelee>1.5</Pony_ZebraTribal_ChiefMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_ZebraTribal_Trader>1</Pony_ZebraTribal_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<Pony_ZebraTribal_Warrior>7</Pony_ZebraTribal_Warrior>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_Berserker>7</Pony_ZebraTribal_Berserker>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Pony_ZebraTribal_Warrior>7</Pony_ZebraTribal_Warrior>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_Berserker>7</Pony_ZebraTribal_Berserker>
+					<Pony_ZebraTribal_ChiefRanged>10</Pony_ZebraTribal_ChiefRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement_RangedOnly</kindDef>
+				<options>
+					<Pony_ZebraTribal_Archer>10</Pony_ZebraTribal_Archer>
+					<Pony_ZebraTribal_Hunter>10</Pony_ZebraTribal_Hunter>
+					<Pony_ZebraTribal_HeavyArcher>10</Pony_ZebraTribal_HeavyArcher>
+					<Pony_ZebraTribal_ChiefRanged>10</Pony_ZebraTribal_ChiefRanged>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ZebraMiner>1</Pony_ZebraMiner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ZebraHunter>1</Pony_ZebraHunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ZebraLogger>1</Pony_ZebraLogger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Pony_ZebraFarmer>1</Pony_ZebraFarmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

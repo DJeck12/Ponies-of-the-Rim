@@ -125,88 +125,6 @@
 
 	</AlienRace.RaceSettings>
 
-<!-- Thestral -->
-
-	<AlienRace.RaceSettings>
-		<defName>Thestral_settings</defName>
-	
-		<pawnKindSettings>
-			<startingColonists>
-				<li>
-					<pawnKindEntries>
-					<li>
-						<kindDefs>
-							<li>Pony_ThestralColonist</li>
-						</kindDefs>
-						<chance>100</chance>
-					</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>Pony_ThestralTribe</li>
-							</kindDefs>
-							<chance>100</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PonyTribe</li>
-					</factionDefs>
-				</li>
-			</startingColonists>
-			<alienslavekinds>
-				<li>
-					<kindDefs>
-						<li>Pony_ThestralSlave</li>
-					</kindDefs>
-					<chance>100</chance>
-				</li>
-			</alienslavekinds>
-			<alienrefugeekinds>
-				<li>
-					<kindDefs>
-						<li>Pony_ThestralRefugee</li>
-					</kindDefs>
-					<chance>100</chance>
-				</li>
-			</alienrefugeekinds>
-			<alienwandererkinds>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>Pony_ThestralVillager</li>
-							</kindDefs>
-							<chance>25</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>Pony_ThestralTribe</li>
-							</kindDefs>
-							<chance>25</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>PonyTribe</li>
-					</factionDefs>
-				</li>
-			</alienwandererkinds>
-		</pawnKindSettings>
-
-	</AlienRace.RaceSettings>
-
 <!-- Changeling -->
 
 	<AlienRace.RaceSettings>
@@ -541,10 +459,10 @@
 
 	</AlienRace.RaceSettings>
 
-<!-- Gryphon -->
+<!-- Griffon -->
 
 	<AlienRace.RaceSettings>
-		<defName>Gryphon_settings</defName>
+		<defName>Griffon_settings</defName>
 
 		<pawnKindSettings>
 			<startingColonists>
@@ -552,7 +470,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_GryphonColonist</li>
+								<li>Pony_GriffonColonist</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -565,7 +483,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_GryphonTribe</li>
+								<li>Pony_GriffonTribe</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -578,7 +496,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>Pony_GryphonSlave</li>
+						<li>Pony_GriffonSlave</li>
 					</kindDefs>
 					<chance>100</chance>
 				</li>
@@ -586,7 +504,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>Pony_GryphonRefugee</li>
+						<li>Pony_GriffonRefugee</li>
 					</kindDefs>
 					<chance>100</chance>
 				</li>
@@ -596,7 +514,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_GryphonVillager</li>
+								<li>Pony_GriffonVillager</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -610,7 +528,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_GryphonTribe</li>
+								<li>Pony_GriffonTribe</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -624,10 +542,10 @@
 
 	</AlienRace.RaceSettings>
 
-<!-- Hyppogriff -->
+<!-- Hippogriff -->
 
 	<AlienRace.RaceSettings>
-		<defName>Hyppogriff_settings</defName>
+		<defName>Hippogriff_settings</defName>
 
 		<pawnKindSettings>
 			<startingColonists>
@@ -635,7 +553,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_HyppogriffColonist</li>
+								<li>Pony_HippogriffColonist</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -648,7 +566,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_HyppogriffTribe</li>
+								<li>Pony_HippogriffTribe</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -661,7 +579,7 @@
 			<alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>Pony_HyppogriffSlave</li>
+						<li>Pony_HippogriffSlave</li>
 					</kindDefs>
 					<chance>100</chance>
 				</li>
@@ -669,7 +587,7 @@
 			<alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>Pony_HyppogriffRefugee</li>
+						<li>Pony_HippogriffRefugee</li>
 					</kindDefs>
 					<chance>100</chance>
 				</li>
@@ -679,7 +597,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_HyppogriffVillager</li>
+								<li>Pony_HippogriffVillager</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>
@@ -693,7 +611,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_HyppogriffTribe</li>
+								<li>Pony_HippogriffTribe</li>
 							</kindDefs>
 							<chance>100</chance>
 						</li>

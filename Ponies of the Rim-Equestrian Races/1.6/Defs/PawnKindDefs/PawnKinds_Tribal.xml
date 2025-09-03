@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Changeling -->
+
+	<PawnKindDef ParentName="TribalPenitentBase">
+		<defName>Pony_ChangelingTribal_Penitent</defName>
+		<label>penitent</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalArcherBase">
+		<defName>Pony_ChangelingTribal_Archer</defName>
+		<label>archer</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalWarriorBase">
+		<defName>Pony_ChangelingTribal_Warrior</defName>
+		<label>warrior</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_ChangelingTribal_Hunter</defName>
+		<label>hunter</label>
+		<race>Pony_Changeling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>TribalHunter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Trader">
+		<defName>Pony_ChangelingTribal_Trader</defName>
+		<label>trader</label>
+		<race>Pony_Changeling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>TribalHunter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Berserker">
+		<defName>Pony_ChangelingTribal_Berserker</defName>
+		<label>berserker</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_HeavyArcher">
+		<defName>Pony_ChangelingTribal_HeavyArcher</defName>
+		<label>heavy archer</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefMelee">
+		<defName>Pony_ChangelingTribal_ChiefMelee</defName>
+		<label>berserker chief</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefRanged">
+		<defName>Pony_ChangelingTribal_ChiefRanged</defName>
+		<label>archer chief</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefRanged">
+		<defName>Pony_ChangelingTribal_Breacher</defName>
+		<label>breacher</label>
+		<race>Pony_Changeling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Changedling -->
+
+	<PawnKindDef ParentName="TribalPenitentBase">
+		<defName>Pony_ChangedlingTribal_Penitent</defName>
+		<label>penitent</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalArcherBase">
+		<defName>Pony_ChangedlingTribal_Archer</defName>
+		<label>archer</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalWarriorBase">
+		<defName>Pony_ChangedlingTribal_Warrior</defName>
+		<label>warrior</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_ChangedlingTribal_Hunter</defName>
+		<label>hunter</label>
+		<race>Pony_Changedling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>TribalHunter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Trader">
+		<defName>Pony_ChangedlingTribal_Trader</defName>
+		<label>trader</label>
+		<race>Pony_Changedling</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>TribalHunter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Berserker">
+		<defName>Pony_ChangedlingTribal_Berserker</defName>
+		<label>berserker</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_HeavyArcher">
+		<defName>Pony_ChangedlingTribal_HeavyArcher</defName>
+		<label>heavy archer</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefMelee">
+		<defName>Pony_ChangedlingTribal_ChiefMelee</defName>
+		<label>berserker chief</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefRanged">
+		<defName>Pony_ChangedlingTribal_ChiefRanged</defName>
+		<label>archer chief</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefRanged">
+		<defName>Pony_ChangedlingTribal_Breacher</defName>
+		<label>breacher</label>
+		<race>Pony_Changedling</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+<!-- Zebra -->
+
+	<PawnKindDef ParentName="TribalPenitentBase">
+		<defName>Pony_ZebraTribal_Penitent</defName>
+		<label>penitent</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalArcherBase">
+		<defName>Pony_ZebraTribal_Archer</defName>
+		<label>archer</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalWarriorBase">
+		<defName>Pony_ZebraTribal_Warrior</defName>
+		<label>warrior</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Hunter">
+		<defName>Pony_ZebraTribal_Hunter</defName>
+		<label>hunter</label>
+		<race>Pony_Zebra</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>TribalHunter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Trader">
+		<defName>Pony_ZebraTribal_Trader</defName>
+		<label>trader</label>
+		<race>Pony_Zebra</race>
+		<backstoryFiltersOverride Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+					<li>TribalHunter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_Berserker">
+		<defName>Pony_ZebraTribal_Berserker</defName>
+		<label>berserker</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_HeavyArcher">
+		<defName>Pony_ZebraTribal_HeavyArcher</defName>
+		<label>heavy archer</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefMelee">
+		<defName>Pony_ZebraTribal_ChiefMelee</defName>
+		<label>berserker chief</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefRanged">
+		<defName>Pony_ZebraTribal_ChiefRanged</defName>
+		<label>archer chief</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Tribal_ChiefRanged">
+		<defName>Pony_ZebraTribal_Breacher</defName>
+		<label>breacher</label>
+		<race>Pony_Zebra</race>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+</Defs>

@@ -100,8 +100,8 @@
 
 	<MemeDef>
 		<defName>Pony_EarthponySupremacist</defName>
-		<label>earthpony supremacist</label>
-		<description>Earthponies are a superior race and should dominate all other sentient creatures.</description>
+		<label>earth pony supremacist</label>
+		<description>Earth ponies are a superior race and should dominate all other sentient creatures.</description>
 		<iconPath>UI/Memes/EarthponySupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>

@@ -10,18 +10,18 @@
 					<li>Pony_LeftWing</li>
 					<li>Pony_RightWing</li>
 				</partsToAffect>
-				<ability>ShortFlight</ability>
+				<ability>Pony_ShortFlight</ability>
 			</li>
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityHorn">
 				<hediff>NaturalHorn</hediff>
 				<partsToAffect>
 					<li>Pony_Horn</li>
 				</partsToAffect>
-				<ability>MagicBurst</ability>
+				<ability>Pony_MagicBurst</ability>
 			</li>
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_NatureMuse">
-				<hediff>NatureMuse</hediff>
-				<ability>NatureMuse</ability>
+				<hediff>Pony_NatureMuse</hediff>
+				<ability>Pony_NatureMuse</ability>
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>

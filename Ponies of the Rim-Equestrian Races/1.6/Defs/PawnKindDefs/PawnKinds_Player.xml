@@ -56,23 +56,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>Pony_ThestralColonist</defName>
-		<label>thestral</label>
-		<labelMale>stallion</labelMale>
-		<labelFemale>mare</labelFemale>
-		<race>Pony_Thestral</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Batpony</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_ChangedlingColonist</defName>
 		<label>changedling</label>
 		<labelMale>stallion</labelMale>
@@ -137,11 +120,11 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>Pony_GryphonColonist</defName>
-		<label>gryphon</label>
+		<defName>Pony_GriffonColonist</defName>
+		<label>griffon</label>
 		<labelMale>cockerel</labelMale>
 		<labelFemale>chick</labelFemale>
-		<race>Pony_Gryphon</race>
+		<race>Pony_Griffon</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -153,11 +136,11 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>Pony_HyppogriffColonist</defName>
-		<label>hyppogriff</label>
+		<defName>Pony_HippogriffColonist</defName>
+		<label>Hippogriff</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
-		<race>Pony_Hyppogriff</race>
+		<race>Pony_Hippogriff</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -252,23 +235,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>Pony_ThestralTribe</defName>
-		<label>thestral</label>
-		<labelMale>stallion</labelMale>
-		<labelFemale>mare</labelFemale>
-		<race>Pony_Thestral</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Batpony</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="TribePlayerBase">
 		<defName>Pony_ChangelingTribe</defName>
 		<label>changeling</label>
 		<labelMale>stallion</labelMale>
@@ -333,11 +299,11 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>Pony_GryphonTribe</defName>
-		<label>gryphon</label>
+		<defName>Pony_GriffonTribe</defName>
+		<label>griffon</label>
 		<labelMale>cockerel</labelMale>
 		<labelFemale>chick</labelFemale>
-		<race>Pony_Gryphon</race>
+		<race>Pony_Griffon</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -349,11 +315,11 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>Pony_HyppogriffTribe</defName>
-		<label>hyppogriff</label>
+		<defName>Pony_HippogriffTribe</defName>
+		<label>Hippogriff</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
-		<race>Pony_Hyppogriff</race>
+		<race>Pony_Hippogriff</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>

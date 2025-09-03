@@ -7,7 +7,6 @@
 			<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
 				<prefix>Modified</prefix>
 				<inBrackets>Pony</inBrackets>
-				<descriptionExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</descriptionExtra>
 				<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 			</li>
 		</value>
@@ -20,7 +19,6 @@
 				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
 					<prefix>Modified</prefix>
 					<inBrackets>Pony</inBrackets>
-					<descriptionExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</descriptionExtra>
 					<tipStringExtra>This humanoid prosthesis is modified to match the anatomy of a pony.</tipStringExtra>
 				</li>
 			</comps>

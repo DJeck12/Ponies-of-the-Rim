@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenPartDef>
+		<defName>Pony_ConfigurePawnsKindDefs</defName>
+		<label>starting people</label>
+		<category>Fixed</category>
+		<scenPartClass>ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs</scenPartClass>
+		<pageClass>Page_ConfigureStartingPawns</pageClass>
+		<summaryPriority>500</summaryPriority>
+	</ScenPartDef>
+
+</Defs>

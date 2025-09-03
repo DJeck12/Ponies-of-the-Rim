@@ -4,7 +4,7 @@
 	<ScenarioDef>
 		<defName>Pony_PonyAdventure</defName>
 		<label>Pony adventure</label>
-		<description>Play by your own rules: This scenario includes all PotR races, including: Alicorn, Earthpony, Pegasus, Unicorn, Batpony, Thestral, Changeling, Changedling, Crystalpony, Deer, Gryphon, Hyppogriff, Kirin, Seapony, Zebra.
+		<description>Play by your own rules: This scenario includes all PotR races, including: Alicorn, Earthpony, Pegasus, Unicorn, Batpony, Changeling, Changedling, Crystalpony, Deer, Griffon, Hippogriff, Kirin, Seapony, Zebra.
 
 Note: This scenario is made for testing purposes. You can customize the scenario to create your own unique playthrough.</description>
 		<scenario>
@@ -36,7 +36,7 @@ Note: This scenario is made for testing purposes. You can customize the scenario
 				<!-- Config pages -->
 				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<customSummary>Start with 8 equines.</customSummary>
+					<customSummary>Start with 8 ponies.</customSummary>
 					<pawnCount>8</pawnCount>
 					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
@@ -96,9 +96,61 @@ There seem to be feral changeling hives on this planet. It might be worth trying
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
-					<method>DropPods</method>
-					<visible>false</visible>
+					<method>Standing</method>
 				</li>
+				<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<context>PlayerStarter</context>
+				</li>
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Club</thingDef>
+					<stuff>WoodLog</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Ikwa</thingDef>
+					<stuff>Steel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Jade</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Bow_Short</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pila</thingDef>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>500</count>
+				</li>
+
 			</parts>
 		</scenario>
 	</ScenarioDef>
@@ -137,7 +189,7 @@ The legacy of the great power remained in the face of the weakened ancestors of 
 
 				<!-- Config pages -->
 				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom">
-					<def>ConfigPage_ConfigureStartingPawns</def>
+					<def>Pony_ConfigurePawnsKindDefs</def>
 					<customSummary>Start with 1 alicorn.</customSummary>
 					<pawnChoiceCount>2</pawnChoiceCount>
 					<leftBehindPawnKind>Pony_LonelyAlicorn</leftBehindPawnKind>
@@ -153,8 +205,66 @@ The legacy of the great power remained in the face of the weakened ancestors of 
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
-					<method>DropPods</method>
 					<visible>false</visible>
+					<method>DropPods</method>
+				</li>
+				<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<context>PlayerStarter</context>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>GunTurrets</project>
+				</li>
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>2000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gold</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineUltratech</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_ChargeRifle</thingDef>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
 				</li>
 			</parts>
 		</scenario>

@@ -3,35 +3,35 @@
 
 <!-- Земонопони -->
 
-	<Pony_EarthponyTown_Guard.label>пони городской стражник</Pony_EarthponyTown_Guard.label>
-	<Pony_EarthponyTown_Guard.labelPlural>пони городские стражники</Pony_EarthponyTown_Guard.labelPlural>
+	<Pony_EarthponyTown_Guard.label>городской стражник</Pony_EarthponyTown_Guard.label>
+	<Pony_EarthponyTown_Guard.labelPlural>городские стражники</Pony_EarthponyTown_Guard.labelPlural>
 
-	<Pony_EarthponyTown_Trader.label>пони городской торговец</Pony_EarthponyTown_Trader.label>
-	<Pony_EarthponyTown_Trader.labelPlural>пони городские торговцы</Pony_EarthponyTown_Trader.labelPlural>
+	<Pony_EarthponyTown_Trader.label>городской торговец</Pony_EarthponyTown_Trader.label>
+	<Pony_EarthponyTown_Trader.labelPlural>городские торговцы</Pony_EarthponyTown_Trader.labelPlural>
 
-	<Pony_EarthponyTown_Councilman.label>пони городской советник</Pony_EarthponyTown_Councilman.label>
-	<Pony_EarthponyTown_Councilman.labelPlural>пони городские советники</Pony_EarthponyTown_Councilman.labelPlural>
+	<Pony_EarthponyTown_Councilman.label>городской советник</Pony_EarthponyTown_Councilman.label>
+	<Pony_EarthponyTown_Councilman.labelPlural>городские советники</Pony_EarthponyTown_Councilman.labelPlural>
 
 <!-- Пегасы -->
 
-	<Pony_PegasusTown_Guard.label>пони городской стражник</Pony_PegasusTown_Guard.label>
-	<Pony_PegasusTown_Guard.labelPlural>пони городские стражники</Pony_PegasusTown_Guard.labelPlural>
+	<Pony_PegasusTown_Guard.label>городской стражник</Pony_PegasusTown_Guard.label>
+	<Pony_PegasusTown_Guard.labelPlural>городские стражники</Pony_PegasusTown_Guard.labelPlural>
 
-	<Pony_PegasusTown_Trader.label>пони городской торговец</Pony_PegasusTown_Trader.label>
-	<Pony_PegasusTown_Trader.labelPlural>пони городские торговцы</Pony_PegasusTown_Trader.labelPlural>
+	<Pony_PegasusTown_Trader.label>городской торговец</Pony_PegasusTown_Trader.label>
+	<Pony_PegasusTown_Trader.labelPlural>городские торговцы</Pony_PegasusTown_Trader.labelPlural>
 
-	<Pony_PegasusTown_Councilman.label>пони городской советник</Pony_PegasusTown_Councilman.label>
-	<Pony_PegasusTown_Councilman.labelPlural>пони городские советники</Pony_PegasusTown_Councilman.labelPlural>
+	<Pony_PegasusTown_Councilman.label>городской советник</Pony_PegasusTown_Councilman.label>
+	<Pony_PegasusTown_Councilman.labelPlural>городские советники</Pony_PegasusTown_Councilman.labelPlural>
 
 <!-- Единороги -->
 
-	<Pony_UnicornTown_Guard.label>пони городской стражник</Pony_UnicornTown_Guard.label>
-	<Pony_UnicornTown_Guard.labelPlural>пони городские стражники</Pony_UnicornTown_Guard.labelPlural>
+	<Pony_UnicornTown_Guard.label>городской стражник</Pony_UnicornTown_Guard.label>
+	<Pony_UnicornTown_Guard.labelPlural>городские стражники</Pony_UnicornTown_Guard.labelPlural>
 
-	<Pony_UnicornTown_Trader.label>пони городской торговец</Pony_UnicornTown_Trader.label>
-	<Pony_UnicornTown_Trader.labelPlural>пони городские торговцы</Pony_UnicornTown_Trader.labelPlural>
+	<Pony_UnicornTown_Trader.label>городской торговец</Pony_UnicornTown_Trader.label>
+	<Pony_UnicornTown_Trader.labelPlural>городские торговцы</Pony_UnicornTown_Trader.labelPlural>
 
-	<Pony_UnicornTown_Councilman.label>пони городской советник</Pony_UnicornTown_Councilman.label>
-	<Pony_UnicornTown_Councilman.labelPlural>пони городские советники</Pony_UnicornTown_Councilman.labelPlural>
+	<Pony_UnicornTown_Councilman.label>городской советник</Pony_UnicornTown_Councilman.label>
+	<Pony_UnicornTown_Councilman.labelPlural>городские советники</Pony_UnicornTown_Councilman.labelPlural>
 
 </LanguageData>

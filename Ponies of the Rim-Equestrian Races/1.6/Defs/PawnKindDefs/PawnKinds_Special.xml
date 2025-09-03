@@ -73,4 +73,133 @@
 		</modExtensions>
 	</PawnKindDef>
 
+	<PawnKindDef Name="Pony_MercenaryBase" Abstract="True">
+		<race>Griffon</race>
+		<defaultFactionDef>Pony_GriffonKingdom</defaultFactionDef>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<biocodeWeaponChance>1.0</biocodeWeaponChance>
+		<apparelMoney>1000~1500</apparelMoney>
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefensePop</li>
+   		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>18~28</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Pony_MercenaryBase">
+		<defName>Pony_Griffon_Slasher</defName>
+		<label>mercenary slasher</label>
+		<race>Pony_Griffon</race>
+		<combatPower>65</combatPower>
+		<weaponMoney>200~500</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Griffon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Pony_MercenaryBase">
+		<defName>Pony_Griffon_Marksman</defName>
+		<label>mercenary marksman</label>
+		<race>Pony_Griffon</race>
+		<combatPower>85</combatPower>
+		<weaponMoney>400~750</weaponMoney>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Griffon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+	<PawnKindDef ParentName="Pony_MercenaryBase">
+		<defName>Pony_Griffon_Sniper</defName>
+		<label>mercenary sniper</label>
+		<race>Pony_Griffon</race>
+		<combatPower>110</combatPower>
+		<weaponMoney>600~800</weaponMoney>
+		<weaponTags>
+			<li>LongShots</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Griffon_Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
 </Defs>
