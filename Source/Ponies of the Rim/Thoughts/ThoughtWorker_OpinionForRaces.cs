@@ -7,18 +7,27 @@ namespace PoniesOfTheRim.Thoughts
     {
         protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
         {
-            if (!(otherPawn.def.race.body == def.GetModExtension<ThoughtExtension>().body || !RelationsUtility.PawnsKnowEachOther(p, otherPawn)))
+            var extension = def.GetModExtension<ThoughtExtension>();
+            if (extension == null || extension.bodies.NullOrEmpty())
             {
                 return false;
             }
-            if (!p.story.traits.HasTrait(def.GetModExtension<ThoughtExtension>().trait))
+
+            if (!extension.bodies.Contains(otherPawn.def.race.body) || !RelationsUtility.PawnsKnowEachOther(p, otherPawn))
             {
                 return false;
             }
-            if (p.story.traits.DegreeOfTrait(def.GetModExtension<ThoughtExtension>().trait) != -1)
+
+            if (!p.story.traits.HasTrait(extension.trait))
+            {
+                return false;
+            }
+
+            if (p.story.traits.DegreeOfTrait(extension.trait) != -1)
             {
                 return ThoughtState.ActiveAtStage(0);
             }
+
             return ThoughtState.ActiveAtStage(1);
         }
     }

@@ -100,7 +100,7 @@ namespace PoniesOfTheRim
                         string settingId = settingNode?.InnerText;
                         if (string.IsNullOrEmpty(settingId))
                         {
-                            Log.Warning($"No valid <settingId> found in patch XML: {file}");
+                            //Log.Warning($"No valid <settingId> found in patch XML: {file}");
                             continue;
                         }
 
