@@ -99,6 +99,9 @@
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
+    <Compile Include="Harmony_CommsConsolePatch.cs" />
+    <Compile Include="CommsConsoleExtension.cs" />
+    <Compile Include="FactionIncidentCooldown.cs" />
     <Compile Include="PonyRandomBodyAddonCondition.cs" />
     <Compile Include="Harmony_PatchesForPonySettings.cs" />
     <Compile Include="PatchOperation\PatchOperationToggleableAdd.cs" />
