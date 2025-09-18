@@ -5,9 +5,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="VRE_ChestFur"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>

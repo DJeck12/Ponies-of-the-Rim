@@ -62,5 +62,6 @@
 		<li IfModActive="Rooboid.Faun">1.6/ModPatches/Roo's Faun Xenotype</li>
 		<li IfModActive="Neronix17.Outland.Genetics">1.6/ModPatches/Outland - Genetics</li>
 		<li IfModActive="wvc.sergkart.races.biotech">1.6/ModPatches/WVC - Xenotypes and Genes</li>
+		<li IfModActive="Butterfish.HairModdingPlus">1.6/ModPatches/Hair Modding Plus</li>
 	</v1.6>
 </loadFolders>

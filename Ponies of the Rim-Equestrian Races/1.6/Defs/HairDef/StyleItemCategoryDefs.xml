@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>Alicorn</defName>
+		<label>alicorn style</label>
+	</StyleItemCategoryDef>
+
+	<StyleItemCategoryDef>
+		<defName>Kirin</defName>
+		<label>kirin style</label>
+	</StyleItemCategoryDef>
+
+	<StyleItemCategoryDef>
+		<defName>Zebra</defName>
+		<label>zebra style</label>
+	</StyleItemCategoryDef>
+</Defs>

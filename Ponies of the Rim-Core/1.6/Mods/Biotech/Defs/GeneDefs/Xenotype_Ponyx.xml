@@ -23,9 +23,9 @@ Their herbivorous diet prevents them from eating meat, motivating them to cultiv
 			<li>Pony_ColorfulHair</li>
 			<li>Pony_VoiceHorse</li>
 			<li>Pony_PonyMagic</li>
-			<li>AptitudeStrong_Plants</li>
 			<li>Beauty_Pretty</li>
 			<li>Pony_HorseHooves</li>
+			<li>Pony_Herbivore</li>
 		</genes>
 	</XenotypeDef>
 

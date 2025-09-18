@@ -13,6 +13,7 @@
 						<Or>
 							<Gene>Pony_PonyEars</Gene>
 							<Gene>Pony_FluffyPonyEars</Gene>
+							<Gene>Pony_KirinEars</Gene>
 						</Or>
 					</value>
 				</li>
@@ -23,6 +24,7 @@
 						<Or>
 							<Gene>Pony_PonyEars</Gene>
 							<Gene>Pony_FluffyPonyEars</Gene>
+							<Gene>Pony_KirinEars</Gene>
 						</Or>
 					</value>
 				</li>

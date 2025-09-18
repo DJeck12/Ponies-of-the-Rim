@@ -29,8 +29,8 @@
 					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 					<value>
 						<li Class="PawnRenderNodeProperties_Eye">
-							<texPath>Things/Races/Pony/Eyes/RedEye_Male</texPath>
-							<texPathFemale>Things/Races/Pony/Eyes/RedEye_Female</texPathFemale>
+							<texPath>Races/Eyes/Eye_Red_Male</texPath>
+							<texPathFemale>Races/Eyes/Eye_Red_Female</texPathFemale>
 							<anchorTag>RightEye</anchorTag>
 							<rotDrawMode>Fresh, Rotting</rotDrawMode>
 							<parentTagDef>Head</parentTagDef>
@@ -53,8 +53,8 @@
 					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 					<value>
 						<li Class="PawnRenderNodeProperties_Eye">
-							<texPath>Things/Races/Pony/Eyes/RedEye_Male</texPath>
-							<texPathFemale>Things/Races/Pony/Eyes/RedEye_Female</texPathFemale>
+							<texPath>Races/Eyes/Eye_Red_Male</texPath>
+							<texPathFemale>Races/Eyes/Eye_Red_Female</texPathFemale>
 							<anchorTag>LeftEye</anchorTag>
 							<rotDrawMode>Fresh, Rotting</rotDrawMode>
 							<parentTagDef>Head</parentTagDef>
@@ -81,8 +81,8 @@
 					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 					<value>
 						<li Class="PawnRenderNodeProperties_Eye">
-							<texPath>Things/Races/Pony/Eyes/GreyEye_Male</texPath>
-							<texPathFemale>Things/Races/Pony/Eyes/GreyEye_Female</texPathFemale>
+							<texPath>Races/Eyes/Eye_Gray_Male</texPath>
+							<texPathFemale>Races/Eyes/Eye_Gray_Female</texPathFemale>
 							<anchorTag>RightEye</anchorTag>
 							<rotDrawMode>Fresh, Rotting</rotDrawMode>
 							<parentTagDef>Head</parentTagDef>
@@ -105,8 +105,8 @@
 					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 					<value>
 						<li Class="PawnRenderNodeProperties_Eye">
-							<texPath>Things/Races/Pony/Eyes/GreyEye_Male</texPath>
-							<texPathFemale>Things/Races/Pony/Eyes/GreyEye_Female</texPathFemale>
+							<texPath>Races/Eyes/Eye_Gray_Male</texPath>
+							<texPathFemale>Races/Eyes/Eye_Gray_Female</texPathFemale>
 							<anchorTag>LeftEye</anchorTag>
 							<rotDrawMode>Fresh, Rotting</rotDrawMode>
 							<parentTagDef>Head</parentTagDef>

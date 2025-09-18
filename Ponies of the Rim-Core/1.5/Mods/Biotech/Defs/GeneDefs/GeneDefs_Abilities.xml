@@ -103,7 +103,7 @@
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Races/Unicorn/Normal/Unicorn</texPath>
+				<texPath>Races/Horns/Unicorn/Normal/Horn_Unicorn_Normal</texPath>
 				<useSkinShader>true</useSkinShader>
 				<useRottenColor>true</useRottenColor>
 				<colorType>Skin</colorType>

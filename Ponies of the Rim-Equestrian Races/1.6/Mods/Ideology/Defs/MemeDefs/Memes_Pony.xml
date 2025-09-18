@@ -8,6 +8,7 @@
 		<iconPath>UI/Memes/AlicornSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -112,6 +113,7 @@
 		<iconPath>UI/Memes/BatponySupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -127,6 +129,11 @@
 				<li>Pony_Batpony_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_BatponyKingdom</li>
+			<li>PonyOutlanderCivil</li>
+			<li>PonyOutlanderRough</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForPegasus>1</Pony_RelationsForPegasus>
 		</agreeableTraits>
@@ -212,6 +219,7 @@
 		<iconPath>UI/Memes/ChangelingSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -227,6 +235,9 @@
 				<li>Pony_Changeling_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_ChangelingHive</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForPegasus>1</Pony_RelationsForPegasus>
 			<Pony_RelationsForUnicorn>1</Pony_RelationsForUnicorn>
@@ -314,6 +325,7 @@
 		<iconPath>UI/Memes/ChangedlingSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -329,6 +341,9 @@
 				<li>Pony_Changedling_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_ChangedlingHive</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForPegasus>1</Pony_RelationsForPegasus>
 			<Pony_RelationsForUnicorn>1</Pony_RelationsForUnicorn>
@@ -416,6 +431,7 @@
 		<iconPath>UI/Memes/CrystalponySupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -431,6 +447,9 @@
 				<li>Pony_Crystalpony_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_CrystalEmpire</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForEarth>1</Pony_RelationsForEarth>
 		</agreeableTraits>
@@ -516,6 +535,7 @@
 		<iconPath>UI/Memes/DeerSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -531,6 +551,9 @@
 				<li>Pony_Deer_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_DeerDominion</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForEarth>1</Pony_RelationsForEarth>
 		</agreeableTraits>
@@ -616,6 +639,7 @@
 		<iconPath>UI/Memes/GriffonSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -631,6 +655,9 @@
 				<li>Pony_Griffon_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_GriffonKingdom</li>
+		</factionWhitelist>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -710,6 +737,7 @@
 		<iconPath>UI/Memes/HippogriffSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -725,6 +753,9 @@
 				<li>Pony_Hippogriff_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_SeaKingdom</li>
+		</factionWhitelist>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -804,6 +835,7 @@
 		<iconPath>UI/Memes/KirinSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -819,6 +851,9 @@
 				<li>Pony_Kirin_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_KirinRealm</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForUnicorn>1</Pony_RelationsForUnicorn>
 		</agreeableTraits>
@@ -904,6 +939,7 @@
 		<iconPath>UI/Memes/SeaponySupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -919,6 +955,9 @@
 				<li>Pony_Seapony_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_SeaKingdom</li>
+		</factionWhitelist>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->supreme</li>
@@ -998,6 +1037,7 @@
 		<iconPath>UI/Memes/ZebraSupremacist</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
+		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
@@ -1013,6 +1053,9 @@
 				<li>Pony_Zebra_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>Pony_ZebraTribe</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForEarth>1</Pony_RelationsForEarth>
 		</agreeableTraits>

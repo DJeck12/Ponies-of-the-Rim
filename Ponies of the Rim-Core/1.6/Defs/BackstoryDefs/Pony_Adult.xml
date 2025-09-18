@@ -68,7 +68,7 @@
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_EveryponyBEH</defName>
 		<title>bearer of element of Harmony</title>
-		<titleShort>bearer of element</titleShort>
+		<titleShort>element bearer</titleShort>
 		<baseDesc>Once upon a time, [PAWN_nameDef] was the bearer of the Element of Harmony — a famous fighter against evil and an advocate for all who needed [PAWN_possessive] help. Now [PAWN_pronoun] is here with nothing.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>

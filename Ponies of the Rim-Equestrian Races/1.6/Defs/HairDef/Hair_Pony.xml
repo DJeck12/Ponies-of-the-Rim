@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Celestial -->
+	<HairDef>
+		<defName>Pony_CelestialHair</defName>
+		<label>(Pony) Celestial</label>
+		<styleGender>Any</styleGender>
+		<texPath>Races/Hairstyles/Alicorn/Celestial</texPath>
+		<category>Alicorn</category>
+        <styleTags>
+            <li>Alicorn</li>
+        </styleTags>
+        <modExtensions>
+            <li Class="PoniesOfTheRim.PonyHairExtension">
+                <ponyTailType>
+                    <li>Alicorn</li>
+                </ponyTailType>
+            </li>
+        </modExtensions>
+	</HairDef>
+
+
+</Defs>

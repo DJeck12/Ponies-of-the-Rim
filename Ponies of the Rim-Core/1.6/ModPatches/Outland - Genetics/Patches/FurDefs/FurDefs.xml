@@ -5,9 +5,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_BumFluff"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
@@ -17,9 +17,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_ChitinousSkin"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
@@ -29,9 +29,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_ChitinousSkinTinted"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
@@ -41,9 +41,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_DestinyMarks"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
@@ -53,9 +53,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_InsectBody"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
@@ -65,9 +65,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_RidgedSkin"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
@@ -77,9 +77,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FurDef[defName="Outland_ScaleSkin"]/bodyTypeGraphicPaths</xpath>
 			<value>
-				<Pony>Things/Races/Pony/Bodies/Normal/Naked_Pony</Pony>
-				<PonyChild>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyChild>
-				<PonyBaby>Things/Races/Pony/Bodies/Normal/Naked_Child</PonyBaby>
+				<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+				<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+				<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
 			</value>
 		</match>
 	</Operation>
