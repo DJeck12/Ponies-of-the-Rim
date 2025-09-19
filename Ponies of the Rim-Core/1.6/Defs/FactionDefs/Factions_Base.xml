@@ -5,6 +5,7 @@
 		<pawnSingular>subject</pawnSingular>
    		<pawnsPlural>subjects</pawnsPlural>
 		<categoryTag>PonyMedieval</categoryTag>
+		<listOrderPriority>25</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>

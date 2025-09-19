@@ -21,7 +21,7 @@
 		<defName>Pony_NameFactionDeer</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Name] Dominion</li>
+				<li>r_name->Kingdom of [Name]</li>
 
                 <li>Name->Thicket</li>
                 <li>Name->Olenia</li>
@@ -34,7 +34,7 @@
 		<defName>Pony_NameFactionGriffon</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Name] Kingdom</li>
+				<li>r_name->Kingdom of [Name]</li>
 
                 <li>Name->Griffonstone</li>
                 <li>Name->Griffus</li>
@@ -52,6 +52,7 @@
                 <li>Name->Hippogrifia</li>
                 <li>Name->Maritima</li>
                 <li>Name->Nova Azura</li>
+				<li>Name->Coastica</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -65,19 +66,6 @@
                 <li>Name->Kiria</li>
                 <li>Name->Kirenline</li>
                 <li>Name->Shakira</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-
-	<RulePackDef>
-		<defName>Pony_NameFactionSeapony</defName>
-		<rulePack>
-			<rulesStrings>
-				<li>r_name->[Name]</li>
-
-                <li>Name->Seaquestria</li>
-                <li>Name->Aquador</li>
-                <li>Name->Coastica</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

@@ -121,6 +121,10 @@
 				<li>Pony_Earthpony_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>PonyOutlanderCivil</li>
+			<li>PonyOutlanderRough</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForEarth>1</Pony_RelationsForEarth>
 		</agreeableTraits>
@@ -222,6 +226,10 @@
 				<li>Pony_Pegasus_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>PonyOutlanderCivil</li>
+			<li>PonyOutlanderRough</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForPegasus>1</Pony_RelationsForPegasus>
 		</agreeableTraits>
@@ -323,6 +331,10 @@
 				<li>Pony_Unicorn_Stricted</li>
 			</li>
 		</requireOne>
+		<factionWhitelist>
+			<li>PonyOutlanderCivil</li>
+			<li>PonyOutlanderRough</li>
+		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForUnicorn>1</Pony_RelationsForUnicorn>
 		</agreeableTraits>

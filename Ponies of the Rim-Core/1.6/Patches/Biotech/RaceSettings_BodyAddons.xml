@@ -51,7 +51,7 @@
 						<Race>Human</Race>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Horn"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_UnicornHorn</Gene>
@@ -64,7 +64,7 @@
 						<Race>Human</Race>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right wing"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_PegasusWings</Gene>
@@ -77,7 +77,7 @@
 						<Race>Human</Race>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left wing"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_PegasusWings</Gene>

@@ -8,7 +8,7 @@
 		<!-- Cutiemark -->
 			<li>
 				<name>Cutiemark</name>
-				<path>Things/Races/Pony/Cutiemarks/QTMark</path>
+				<path>Races/Cutiemarks/QTMark</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<drawSize>(0.15, 0.15)</drawSize>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -57,7 +57,7 @@
 		<!-- Tail -->
 			<li>
 				<name>Tail</name>
-				<path>Things/Races/Pony/Tails/Pony_Tail</path>
+				<path>Races/Tails/Pony/Pony_Tail</path>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 				<colorChannel>hair</colorChannel>
 				<conditions>
@@ -73,8 +73,8 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Tails/Pony_Tail19</Mutant>
-					<Age For="PonyBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Tails/Pony/Pony_Tail19</Mutant>
+					<Age For="PonyBaby">Races/Tails/Pony/Pony_Tail12</Age>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -104,7 +104,7 @@
 		<!-- Gene Tail -->
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<name>Tail_Human</name>
-				<path>Things/Races/Pony/Tails/Pony_Tail</path>
+				<path>Races/Tails/Pony/Pony_Tail</path>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 				<colorChannel>hair</colorChannel>
 				<conditions>
@@ -114,8 +114,8 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Tails/Pony_Tail19</Mutant>
-					<Age For="HumanlikeBaby">Things/Races/Pony/Tails/Pony_Tail12</Age>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Tails/Pony/Pony_Tail19</Mutant>
+					<Age For="HumanlikeBaby">Races/Tails/Pony/Pony_Tail12</Age>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -157,7 +157,7 @@
 		<!-- Ears -->
 			<li>
 				<name>Right ear</name>
-				<path>Things/Races/Pony/Ears/Normal/Pony_EarRight</path>
+				<path>Races/Ears/Pony/Normal/Ear_Pony_Normal_Right</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -182,9 +182,9 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Ears/Ghoul/Pony_EarRight_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarRight_Prosthetic</Hediff>
-					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarRight_Bionic</Hediff>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Ears/Pony/Ghoul/Ear_Pony_Ghoul_Right</Mutant>
+					<Hediff For="BionicEar">Races/Ears/Bionic/Ear_Bionic_Right</Hediff>
+					<Hediff For="CochlearImplant">Races/Ears/Pony/Cochlear/Ear_Pony_Cochlear_Right</Hediff>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -203,7 +203,7 @@
 			</li>
 			<li>
 				<name>Left ear</name>
-				<path>Things/Races/Pony/Ears/Normal/Pony_EarLeft</path>
+				<path>Races/Ears/Pony/Normal/Ear_Pony_Normal_Left</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -228,9 +228,9 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Ears/Ghoul/Pony_EarLeft_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Pony/Ears/Cochlear/Pony_EarLeft_Prosthetic</Hediff>
-					<Hediff For="BionicEar">Things/Races/Pony/Ears/Bionic/Pony_EarLeft_Bionic</Hediff>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Ears/Pony/Ghoul/Ear_Pony_Ghoul_Left</Mutant>
+					<Hediff For="BionicEar">Races/Ears/Bionic/Ear_Bionic_Left</Hediff>
+					<Hediff For="CochlearImplant">Races/Ears/Pony/Cochlear/Ear_Pony_Cochlear_Left</Hediff>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -249,7 +249,7 @@
 			</li>
 		<!-- Horn -->
 			<li>
-				<path>Things/Races/Unicorn/Normal/Unicorn</path>
+				<path>Races/Horns/Unicorn/Normal/Horn_Unicorn_Normal</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -265,28 +265,28 @@
 					</BodyPart>
 				</conditions>
 				<extendedGraphics>
-					<Hediff For="MissingBodyPart">Things/Races/Unicorn/Broken/Unicorn_Broken</Hediff>
-					<Hediff For="BionicHorn">Things/Races/Unicorn/Bionic/Unicorn_Bionic</Hediff>
-					<Hediff For="ArchotechHorn">Things/Races/Unicorn/Archotech/Unicorn_Archotech</Hediff>
+					<Hediff For="MissingBodyPart">Races/Horns/Broken/Horn_Broken</Hediff>
+					<Hediff For="BionicHorn">Races/Horns/Bionic/Horn_Bionic</Hediff>
+					<Hediff For="ArchotechHorn">Races/Horns/Archotech/Horn_Archotech</Hediff>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
-						<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
+						<path>Races/Horns/Unicorn/Skeleton/Horn_Unicorn_Skeleton</path>
 						<extendedGraphics>
-							<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-							<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+							<Age For="PonyBaby">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
+							<Age For="PonyChild">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
+							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 						</extendedGraphics>
 					</Mutant>
 					<!--RotStage For="Dessicated">
-						<path>Things/Races/Unicorn/Skeleton/Unicorn_Skeleton</path>
+						<path>Races/Horns/Unicorn/Skeleton/Horn_Unicorn_Skeleton</path>
 						<extendedGraphics>
-							<Age For="PonyBaby">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-							<Age For="PonyChild">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
-							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/SkeletonBaby/Unicorn_SkeletonBaby</Age>
+							<Age For="PonyBaby">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
+							<Age For="PonyChild">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
+							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 						</extendedGraphics>
 					</RotStage-->
-					<Age For="PonyBaby">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
-					<Age For="PonyChild">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Unicorn/Baby/Unicorn_Baby</Age>
+					<Age For="PonyBaby">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Age>
+					<Age For="PonyChild">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Age>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -302,7 +302,7 @@
 			</li>
 		<!-- Wings -->
 			<li>
-				<path>Things/Races/Pegasus/Normal/PegasusRight</path>
+				<path>Races/Wings/Pegasus/Normal/Wing_Pegasus_Normal_Right</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -320,13 +320,13 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/PegasusRight_Broken</Hediff>
-					<Hediff For="SimpleProstheticWing">Things/Races/Pegasus/Prosthetic/PegasusRight_Prosthetic</Hediff>
-					<Hediff For="BionicWing">Things/Races/Pegasus/Bionic/PegasusRight_Bionic</Hediff>
-					<Hediff For="ArchotechWing">Things/Races/Pegasus/Archotech/PegasusRight_Archotech</Hediff>
-					<Age For="PonyBaby">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
-					<Age For="PonyChild">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pegasus/Baby/PegasusRight_Baby</Age>
+					<Hediff For="MissingBodyPart">Races/Wings/Broken/Wing_Broken_Right</Hediff>
+					<Hediff For="ArchotechWing">Races/Wings/Archotech/Wing_Archotech_Right</Hediff>
+					<Hediff For="BionicWing">Races/Wings/Bionic/Wing_Bionic_Right</Hediff>
+					<Hediff For="SimpleProstheticWing">Races/Wings/Pegasus/Prosthetic/Wing_Pegasus_Prosthetic_Right</Hediff>
+					<Age For="PonyBaby">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Right</Age>
+					<Age For="PonyChild">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Right</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Right</Age>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -341,7 +341,7 @@
 				</offsets>
 			</li>
 			<li>
-				<path>Things/Races/Pegasus/Normal/PegasusLeft</path>
+				<path>Races/Wings/Pegasus/Normal/Wing_Pegasus_Normal_Left</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -359,13 +359,13 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Hediff For="MissingBodyPart">Things/Races/Pegasus/Broken/PegasusLeft_Broken</Hediff>
-					<Hediff For="SimpleProstheticWing">Things/Races/Pegasus/Prosthetic/PegasusLeft_Prosthetic</Hediff>
-					<Hediff For="BionicWing">Things/Races/Pegasus/Bionic/PegasusLeft_Bionic</Hediff>
-					<Hediff For="ArchotechWing">Things/Races/Pegasus/Archotech/PegasusLeft_Archotech</Hediff>
-					<Age For="PonyBaby">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
-					<Age For="PonyChild">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Pegasus/Baby/PegasusLeft_Baby</Age>
+					<Hediff For="MissingBodyPart">Races/Wings/Broken/Wing_Broken_Left</Hediff>
+					<Hediff For="ArchotechWing">Races/Wings/Archotech/Wing_Archotech_Left</Hediff>
+					<Hediff For="BionicWing">Races/Wings/Bionic/Wing_Bionic_Left</Hediff>
+					<Hediff For="SimpleProstheticWing">Races/Wings/Pegasus/Prosthetic/Wing_Pegasus_Prosthetic_Left</Hediff>
+					<Age For="PonyBaby">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
+					<Age For="PonyChild">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
+					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
 				</extendedGraphics>
 				<offsets>
 					<south>

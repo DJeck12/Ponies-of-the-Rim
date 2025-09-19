@@ -33,6 +33,12 @@
 						</statBases>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Deer"]/alienRace/styleSettings/li[key="HairDef"]/value/hasStyle</xpath>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

@@ -5,32 +5,186 @@
 		<defName>Pony_BodyAddons_Races</defName>
 
 		<universalBodyAddons>
-		<!-- Crystal pattern
+		<!-- Zebra mark -->
 			<li>
-				<name>Crystal</name>
-				<path>Things/Races/Crystal/Crystal</path>
-				<colorChannel>none</colorChannel>
-				<shaderType>MetaOverlay</shaderType>
+				<name>Cutiemark</name>
+				<path>Races/Cutiemarks/QTMark_Zebra</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<drawSize>(0.15, 0.15)</drawSize>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>white</colorChannel>
 				<conditions>
 					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Zebra</Race>
+					</Or>
+					<Or>
+						<Age>PonyAdult</Age>
+						<Age>PonyTeenager</Age>
+						<Age>HumanlikeAdult</Age>
+						<Age>HumanlikeTeenager</Age>
+					</Or>
+					<BodyPart>
+						<bodyPart>Torso</bodyPart>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>Legs</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+				</extendedGraphics>
+				<offsets>
+					<east>
+						<layerOffset>-0.295</layerOffset>
+						<bodyTypes>
+							<Pony>(0.22, -0.1)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.22, -0.1)</PonyChild>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		<!-- Long tail -->
+			<li>
+				<name>Long tail</name>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Deer</Race>
+						<Race>Pony_Zebra</Race>
+					</Or>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_Tail</bodyPart>
+						</BodyPart>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Race For="Pony_Deer">Races/Tails/Deer/Tail_Deer</Race>
+					<Race For="Pony_Zebra">Races/Tails/Zebra/LongTail_Zebra</Race>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Pony>(0, 0.58)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</PonyChild>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.265</layerOffset>
+						<bodyTypes>
+							<Pony>(0, -0.3)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</PonyChild>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Pony>(0.36, 0)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</PonyChild>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		<!-- Head pattern -->
+			<li>
+				<name>Head pattern</name>
+				<userCustomizable>true</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>optional</colorChannel>
+				<conditions>
 					<Or>
 						<Race>Pony_Crystalpony</Race>
 					</Or>
 				</conditions>
+			</li>
+		<!-- Kirin horn -->
+			<li>
+				<name>Kirin horn</name>
+				<path>Races/Horns/Kirin/Normal/Horn_Kirin_Normal</path>
+				<userCustomizable>true</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>optional</colorChannel>
+				<conditions>
+					<Or>
+						<Race>Pony_Kirin</Race>
+					</Or>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_Horn</bodyPart>
+							<drawWithoutPart>true</drawWithoutPart>
+						</BodyPart>
+					</Or>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>CoverHorn</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<extendedGraphics>
+					<Hediff For="MissingBodyPart">Races/Horns/Broken/Horn_Broken</Hediff>
+					<Hediff For="BionicHorn">Races/Horns/Bionic/Horn_Bionic</Hediff>
+					<Hediff For="ArchotechHorn">Races/Horns/Archotech/Horn_Archotech</Hediff>
+				</extendedGraphics>
 				<offsets>
 					<south>
-						<layerOffset>-1</layerOffset>
+						<layerOffset>-0.27</layerOffset>
 					</south>
 					<north>
-						<layerOffset>-1</layerOffset>
+						<layerOffset>-0.3</layerOffset>
 					</north>
 					<east>
-						<layerOffset>-1</layerOffset>
+						<layerOffset>-0.27</layerOffset>
 					</east>
 				</offsets>
-			</li> -->
+			</li>
+		<!-- Antlers -->
+			<li>
+				<name>Antlers</name>
+				<path>Races/Horns/Antlers/Antlers_Male</path>
+				<userCustomizable>true</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>optional</colorChannel>
+				<conditions>
+					<Or>
+						<Race>Pony_Deer</Race>
+					</Or>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.26</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.51</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.27</layerOffset>
+					</east>
+				</offsets>
+				<extendedGraphics>
+					<Race For="Pony_Deer">
+						<path>Races/Horns/Antlers/Antlers_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Horns/Antlers/Antlers_Female</Gender>
+						</extendedGraphics>
+					</Race>
+				</extendedGraphics>
+			</li>
 		</universalBodyAddons>
-
 	</AlienRace.RaceSettings>
 
 </Defs>

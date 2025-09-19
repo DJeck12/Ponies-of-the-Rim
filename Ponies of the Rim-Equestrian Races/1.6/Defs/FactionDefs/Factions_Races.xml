@@ -15,7 +15,7 @@ Being in relative isolation from the other races, batponies did not want to be s
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/BatponyKingdom</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.5, 0.5, 0.5)</li>
 		</colorSpectrum>
 		<allowedCultures>
 			<li>Ponish</li>
@@ -24,7 +24,7 @@ Being in relative isolation from the other races, batponies did not want to be s
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
 		</structureMemeWeights>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
 		</requiredMemes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
@@ -135,14 +135,18 @@ Being in relative isolation from the other races, batponies did not want to be s
 		<modExtensions>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<PonyColony>-50</PonyColony>
-					<PonyTribe>-50</PonyTribe>
-					<Pony_ColonyWithRaces>-50</Pony_ColonyWithRaces>
-					<PlayerColony>-50</PlayerColony>
-					<PlayerTribe>-50</PlayerTribe>
-					<ResearchExpedition>-50</ResearchExpedition>
-					<GravshipCrew>-50</GravshipCrew>
+					<PonyColony>-25</PonyColony>
+					<PonyTribe>-25</PonyTribe>
+					<Pony_ColonyWithRaces>-25</Pony_ColonyWithRaces>
+					<PlayerColony>-25</PlayerColony>
+					<PlayerTribe>-25</PlayerTribe>
+					<ResearchExpedition>-25</ResearchExpedition>
+					<GravshipCrew>-25</GravshipCrew>
 				</startingGoodwillByFactionDefs>
+				<requiredHillLevels>
+					<li>LargeHills</li>
+					<li>Mountainous</li>
+				</requiredHillLevels>
 			</li>
 		</modExtensions>
 	</FactionDef>
@@ -159,14 +163,16 @@ Some call the wild changelings barbaric due to their frequent raids and pillagin
 This changeling hive has been on this planet for a very long time, they are hostile to all other races and they will only contact other hives.</description>
 		<categoryTag>PonyTribal</categoryTag>
 		<factionIconPath>World/Factions/ChangelingHive</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/ChangelingHive</settlementTexturePath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.2, 0.2, 0.2)</li>
 		</colorSpectrum>
 		<allowedCultures>
 			<li>Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_ChangelingSupremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
@@ -329,6 +335,11 @@ This changeling hive has been on this planet for a very long time, they are host
 				</options>
 			</li>
 		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<neverConnectToRoads>true</neverConnectToRoads>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 <!-- Changedling -->
@@ -343,11 +354,13 @@ The first leader of the changedlings was Thorax, as the very first representativ
 Centuries later, changedlings continue to reform to this day, forming opposition hives on each planet they inhabit. They very easily fall under the influence of others and are always favorable to outsiders.</description>
 		<categoryTag>PonyTribe</categoryTag>
 		<factionIconPath>World/Factions/ChangedlingHive</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/ChangelingHive</settlementTexturePath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.6, 0.84, 0.4)</li>
 		</colorSpectrum>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
@@ -510,13 +523,13 @@ Centuries later, changedlings continue to reform to this day, forming opposition
 		<modExtensions>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<PonyColony>75</PonyColony>
-					<PonyTribe>75</PonyTribe>
-					<Pony_ColonyWithRaces>75</Pony_ColonyWithRaces>
-					<PlayerColony>75</PlayerColony>
-					<PlayerTribe>75</PlayerTribe>
-					<ResearchExpedition>75</ResearchExpedition>
-					<GravshipCrew>75</GravshipCrew>
+					<PonyColony>80</PonyColony>
+					<PonyTribe>80</PonyTribe>
+					<Pony_ColonyWithRaces>80</Pony_ColonyWithRaces>
+					<PlayerColony>80</PlayerColony>
+					<PlayerTribe>80</PlayerTribe>
+					<ResearchExpedition>80</ResearchExpedition>
+					<GravshipCrew>80</GravshipCrew>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</modExtensions>
@@ -532,11 +545,11 @@ Centuries later, changedlings continue to reform to this day, forming opposition
 The villain's reign did not last long, as Equestria was able to overthrow him from the throne and free the enslaved ponies. The Crystal Empire became a new independent state, and the ponies inhabiting it began to use the artifact in their daily lives. After a thousand years of the crystal artifact's influence on the ponies inhabiting the Empire, their crystallity became part of their body, as a result of which the crystal ponies became a new form of the pony race.
 
 The Crystal Empire is expanding its influence wherever other ponies live and although this colony has no contact with their home planet, they remain neutral towards all other factions.</description>
-		<!--<fixedName>crystal empire<fixedName>-->
+		<fixedName>crystal Empire</fixedName>
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/CrystalEmpire</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.5, 0.88, 0.9)</li>
 		</colorSpectrum>
 		<allowedCultures>
 			<li>Ponish</li>
@@ -669,13 +682,19 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 		<categoryTag>PonyMedieval</categoryTag>
 		<factionIconPath>World/Factions/DeerDominion</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0, 0.5, 0.2)</li>
 		</colorSpectrum>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		</disallowedMemes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<fixedLeaderKinds>
+			<li>Pony_DeerMedieval_Lord</li>
+		</fixedLeaderKinds>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -829,7 +848,7 @@ Hint: You can hire griffin mercenaries using the communication console for a cer
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/GriffonKingdom</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.9, 0.54, 0.18)</li>
 		</colorSpectrum>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
@@ -936,7 +955,7 @@ Hint: You can hire griffin mercenaries using the communication console for a cer
 			</li>
 		</pawnGroupMakers>
 	</FactionDef>
-<!--
+
 	<VEF.Planet.HireableFactionDef>
 			<defName>Pony_GriffonMercenaries</defName>
 			<label>griffon mercenaries</label>
@@ -951,12 +970,12 @@ Hint: You can hire griffin mercenaries using the communication console for a cer
 			<commTag>mercenaries</commTag>
 			<referencedFaction>Pony_GriffonKingdom</referencedFaction>
 	</VEF.Planet.HireableFactionDef>
--->
-<!-- Hippogriff -->
+
+<!-- Hippogriff / Seapony -->
 
 	<FactionDef ParentName="OutlanderFactionBase">
-		<defName>Pony_HippogriffKingdom</defName>
-		<label>hippogriff kingdom</label>
+		<defName>Pony_SeaKingdom</defName>
+		<label>sea kingdom</label>
 		<description>Half-griffons, half-ponies, hippogriffs once lived in peace and isolation from all other factions on a lonely hill island, until the Storm King came and destroyed their home, forcing them to disappear from existance. At least that's what the King himself thought, because hippogriffs possessed a saving artifact that allowed them to turn any of their hosts into a sea pony. For a long time, the Hippogriffs hid in ignorance at the bottom of the ocean, until Equestria helped save their home and drive out their enemy.
 
 Since then, hippogriffs continue to lead a dual lifestyle, where most of their population still lives underwater in the form of sea ponies. Soon, under the wing of the Hippogriffs, a new state of sea ponies was formed, dividing the culture of the two cooperating factions. 
@@ -964,12 +983,12 @@ Since then, hippogriffs continue to lead a dual lifestyle, where most of their p
 Hippogriffs still live in isolation from all other settlements, maintaining an alliance with the union of sea ponies. They are not averse to making contact with outsiders, but will refuse to share the artifact that once saved them from extinction.</description>
 		<factionNameMaker>Pony_NameFactionHippogriff</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
-		<factionIconPath>World/Factions/HippogriffKingdom</factionIconPath>
+		<factionIconPath>World/Factions/SeaKingdom</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.2, 0.46, 0.75)</li>
 		</colorSpectrum>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 		</requiredMemes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
@@ -999,6 +1018,39 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
 					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
 					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+					<Pony_SeaponyVillager>5</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<!-- Hippogriff fighters -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_HippogriffVillager>5</Pony_HippogriffVillager>
+					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
+					<Pony_HippogriffGrenadier_Destructive>1.5</Pony_HippogriffGrenadier_Destructive>
+					<Pony_HippogriffMercenary_Slasher>7</Pony_HippogriffMercenary_Slasher>
+					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
+					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
+					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<!-- Seapony fighters -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_SeaponyVillager>5</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
 				</options>
 			</li>
 			<li>
@@ -1008,8 +1060,13 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 					<Pony_HippogriffVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_HippogriffVillager_Child>
 					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
 					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+					<Pony_SeaponyVillager>20</Pony_SeaponyVillager>
+					<Pony_SeaponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_SeaponyVillager_Child>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
 				</options>
 			</li>
+			<!-- Hippogriff trader -->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
@@ -1030,6 +1087,27 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
 				</guards>
 			</li>
+			<!-- Seapony trader -->
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_SeaponyTown_Trader>1</Pony_SeaponyTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_SeaponyVillager>3</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+				</guards>
+			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
@@ -1047,6 +1125,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffMiner>1</Pony_HippogriffMiner>
+					<Pony_SeaponyMiner>1</Pony_SeaponyMiner>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -1054,6 +1133,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffHunter>1</Pony_HippogriffHunter>
+					<Pony_SeaponyHunter>1</Pony_SeaponyHunter>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -1061,6 +1141,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffLogger>1</Pony_HippogriffLogger>
+					<Pony_SeaponyLogger>1</Pony_SeaponyLogger>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -1068,9 +1149,15 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffFarmer>1</Pony_HippogriffFarmer>
+					<Pony_SeaponyFarmer>1</Pony_SeaponyFarmer>
 				</options>
 			</li>
 		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VEF.Factions.FactionDefExtension">
+				<spawnOnCoastalTilesOnly>true</spawnOnCoastalTilesOnly>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 <!-- Kirin -->
@@ -1083,7 +1170,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 		<categoryTag>PonyMedieval</categoryTag>
 		<factionIconPath>World/Factions/KirinRealm</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.9, 0.25, 0.25)</li>
 		</colorSpectrum>
 		<allowedCultures>
 			<li>Ponish</li>
@@ -1092,10 +1179,16 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
 		</structureMemeWeights>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</disallowedMemes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
+		<fixedLeaderKinds>
+			<li>Pony_KirinMedieval_Lord</li>
+		</fixedLeaderKinds>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -1235,146 +1328,6 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 		</modExtensions>
 	</FactionDef>
 
-<!-- Seapony -->
-
-	<FactionDef ParentName="OutlanderFactionBase">
-		<defName>Pony_SeaponyUnion</defName>
-		<label>sea pony union</label>
-		<description>Stories about the existence of sea ponies were told from mouth to mouth, and their appearance was depicted by many ancient artists, but for a long time no one recognized them as separate ponies and they were the same legend as the tales of mermaids. However, sea ponies really existed on Equus, but for a long time they led a nomadic lifestyle and to this day there are no books describing their history.
-
-A key role in the importance of sea ponies was played by hippogriffs, who were once expelled from their native lands and forced to take the form of sea ponies. The transformated hippogriffs were the first to build settlements under water and over the centuries, sea ponies joined these settlements, founding together the Sea pony Union.
-
-The waters of Rim are not suitable for sea ponies to live underwater on this planet, but their settlements are still present on the shores and rivers adjacent to the Hippogriff Kingdom. Being weak on land, sea ponies are wary of new acquaintances, relying on their allies, but are neutral towards all strangers.</description>
-		<factionNameMaker>Pony_NameFactionSeapony</factionNameMaker>
-		<categoryTag>PonyOutlander</categoryTag>
-		<factionIconPath>World/Factions/SeaponyUnion</factionIconPath>
-		<colorSpectrum>
-			<li>(1, 1, 1)</li>
-		</colorSpectrum>
-		<allowedCultures>
-			<li>Ponish</li>
-		</allowedCultures>
-		<structureMemeWeights>
-			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
-		</structureMemeWeights>
-		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-		</requiredMemes>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>25</configurationListOrderPriority>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Outlander</li>
-				</categories>
-				<commonality>0.70</commonality>
-			</li>
-			<li>
-				<categories>
-					<li>Pony_Everypony</li>
-				</categories>
-				<commonality>0.25</commonality>
-			</li>
-			<li>
-				<categories>
-					<li>Offworld</li>
-				</categories>
-				<commonality>0.05</commonality>
-			</li>
-		</backstoryFilters>
-		<pawnGroupMakers Inherit="False">
-			<li>
-				<!-- Normal fights, standard mix -->
-				<kindDef>Combat</kindDef>
-				<options>
-					<Pony_SeaponyVillager>5</Pony_SeaponyVillager>
-					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
-					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
-					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
-					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
-					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
-					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
-				</options>
-			</li>
-			<li>
-				<kindDef>Peaceful</kindDef>
-				<options>
-					<Pony_SeaponyVillager>20</Pony_SeaponyVillager>
-					<Pony_SeaponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_SeaponyVillager_Child>
-					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
-					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
-				</options>
-			</li>
-			<li>
-				<kindDef>Trader</kindDef>
-				<traders>
-					<Pony_SeaponyTown_Trader>1</Pony_SeaponyTown_Trader>
-				</traders>
-				<carriers>
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2</Alpaca>
-					<Elephant>1</Elephant>
-				</carriers>
-				<guards>
-					<Pony_SeaponyVillager>3</Pony_SeaponyVillager>
-					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
-					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
-					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
-					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
-					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
-				</guards>
-			</li>
-			<li>
-				<kindDef>Settlement</kindDef>
-				<options>
-					<Pony_SeaponyVillager>10</Pony_SeaponyVillager>
-					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
-					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
-					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
-					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
-					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
-					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Miners</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<Pony_SeaponyMiner>1</Pony_SeaponyMiner>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Hunters</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<Pony_SeaponyHunter>1</Pony_SeaponyHunter>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Loggers</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<Pony_SeaponyLogger>1</Pony_SeaponyLogger>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Farmers</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<Pony_SeaponyFarmer>1</Pony_SeaponyFarmer>
-				</options>
-			</li>
-		</pawnGroupMakers>
-		<modExtensions>
-			<li Class="VEF.Factions.FactionDefExtension">
-				<startingGoodwillByFactionDefs>
-					<Pony_HippogriffKingdom>75</Pony_HippogriffKingdom>
-				</startingGoodwillByFactionDefs>
-			</li>
-		</modExtensions>
-	</FactionDef>
-
 <!-- Zebra -->
 
 	<FactionDef ParentName="TribeBase">
@@ -1385,7 +1338,7 @@ The waters of Rim are not suitable for sea ponies to live underwater on this pla
 		<categoryTag>PonyTribal</categoryTag>
 		<factionIconPath>World/Factions/ZebraTribe</factionIconPath>
 		<colorSpectrum>
-			<li>(1, 1, 1)</li>
+			<li>(0.75, 0.75, 0.75)</li>
 		</colorSpectrum>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>

@@ -3,9 +3,9 @@
 <!-- Dash -->
     <HairDef>
         <defName>Pony_DashHair</defName>
-        <label>Dash</label>
+        <label>(Pony) Dash</label>
         <styleGender>Any</styleGender>
-        <texPath>Things/Races/Pony/Hair/Dash</texPath>
+        <texPath>Races/Hairstyles/Dash</texPath>
         <category>Pony</category>
         <hairTags>
             <li>Pony</li>
@@ -23,7 +23,7 @@
 		<defName>Pony_DashColorHair</defName>
 		<label>Dash (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Dash_Color</texPath>
+		<texPath>Races/Hairstyles/Dash_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -34,7 +34,7 @@
 		<defName>Pony_DashStripeHair</defName>
 		<label>Dash (Striped)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Dash_Stripe</texPath>
+		<texPath>Races/Hairstyles/Dash_Stripe</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -44,9 +44,9 @@
 <!-- Sparkle -->
 	<HairDef>
 		<defName>Pony_SparkleHair</defName>
-		<label>Sparkle</label>
+		<label>(Pony) Sparkle</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Sparkle</texPath>
+		<texPath>Races/Hairstyles/Sparkle</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -57,7 +57,7 @@
 		<defName>Pony_SparkleColorHair</defName>
 		<label>Sparkle (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Sparkle_Color</texPath>
+		<texPath>Races/Hairstyles/Sparkle_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -68,7 +68,7 @@
 		<defName>Pony_SparkleStripeHair</defName>
 		<label>Sparkle (Striped)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Sparkle_Stripe</texPath>
+		<texPath>Races/Hairstyles/Sparkle_Stripe</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -78,9 +78,9 @@
 <!-- Apple -->
 	<HairDef>
 		<defName>Pony_AppleHair</defName>
-		<label>Apple</label>
+		<label>(Pony) Apple</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Apple</texPath>
+		<texPath>Races/Hairstyles/Apple</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -91,7 +91,7 @@
 		<defName>Pony_AppleColorHair</defName>
 		<label>Apple (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Apple_Color</texPath>
+		<texPath>Races/Hairstyles/Apple_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -101,9 +101,9 @@
 <!-- Party -->
 	<HairDef>
 		<defName>Pony_PartyHair</defName>
-		<label>Party</label>
+		<label>(Pony) Party</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Party</texPath>
+		<texPath>Races/Hairstyles/Party</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -114,7 +114,7 @@
 		<defName>Pony_PartyColorHair</defName>
 		<label>Party (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Party_Color</texPath>
+		<texPath>Races/Hairstyles/Party_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -124,9 +124,9 @@
 <!-- Rarity -->
 	<HairDef>
 		<defName>Pony_RarityHair</defName>
-		<label>Rarity</label>
+		<label>(Pony) Rarity</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Rarity</texPath>
+		<texPath>Races/Hairstyles/Rarity</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -135,9 +135,9 @@
 <!-- Flutter -->
 	<HairDef>
 		<defName>Pony_FlutterHair</defName>
-		<label>Flutter</label>
+		<label>(Pony) Flutter</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Flutter</texPath>
+		<texPath>Races/Hairstyles/Flutter</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -148,7 +148,7 @@
 		<defName>Pony_FlutterColorHair</defName>
 		<label>Flutter (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Flutter_Color</texPath>
+		<texPath>Races/Hairstyles/Flutter_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -158,9 +158,9 @@
 <!-- Bloom -->
 	<HairDef>
 		<defName>Pony_BloomHair</defName>
-		<label>Bloom</label>
+		<label>(Pony) Bloom</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Bloom</texPath>
+		<texPath>Races/Hairstyles/Bloom</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -171,7 +171,7 @@
 		<defName>Pony_BloomColorHair</defName>
 		<label>Bloom (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Bloom_Color</texPath>
+		<texPath>Races/Hairstyles/Bloom_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -181,9 +181,9 @@
 <!-- Sweet -->
 	<HairDef>
 		<defName>Pony_SweetHair</defName>
-		<label>Sweet</label>
+		<label>(Pony) Sweet</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Sweet</texPath>
+		<texPath>Races/Hairstyles/Sweet</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -194,7 +194,7 @@
 		<defName>Pony_SweetColorHair</defName>
 		<label>Sweet (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Sweet_Color</texPath>
+		<texPath>Races/Hairstyles/Sweet_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -204,9 +204,9 @@
 <!-- Scoot -->
 	<HairDef>
 		<defName>Pony_ScootHair</defName>
-		<label>Scoot</label>
+		<label>(Pony) Scoot</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Scoot</texPath>
+		<texPath>Races/Hairstyles/Scoot</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -217,7 +217,7 @@
 		<defName>Pony_ScootColorHair</defName>
 		<label>Scoot (Colorful)</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Scoot_Color</texPath>
+		<texPath>Races/Hairstyles/Scoot_Color</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>
@@ -227,9 +227,9 @@
 <!-- Night -->
 	<HairDef>
 		<defName>Pony_NightHair</defName>
-		<label>Night</label>
+		<label>(Pony) Night</label>
 		<styleGender>Any</styleGender>
-		<texPath>Things/Races/Pony/Hair/Night</texPath>
+		<texPath>Races/Hairstyles/Night</texPath>
 		<category>Pony</category>
 		<hairTags>
 			<li>Pony</li>

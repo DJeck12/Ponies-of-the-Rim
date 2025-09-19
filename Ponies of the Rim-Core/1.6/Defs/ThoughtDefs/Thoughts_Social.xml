@@ -35,7 +35,10 @@
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<body>Pony_EarthponyBody</body>
+				<bodies>
+					<li>Pony_EarthponyBody</li>
+					<li>Pony_AlicornBody</li>
+				</bodies>
 				<trait>Pony_RelationsForEarth</trait>
 			</li>
 		</modExtensions>
@@ -58,7 +61,10 @@
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<body>Pony_PegasusBody</body>
+				<bodies>
+					<li>Pony_PegasusBody</li>
+					<li>Pony_AlicornBody</li>
+				</bodies>
 				<trait>Pony_RelationsForPegasus</trait>
 			</li>
 		</modExtensions>
@@ -81,7 +87,10 @@
 		</stages>
 		<modExtensions>
 			<li Class="PoniesOfTheRim.Thoughts.ThoughtExtension">
-				<body>Pony_UnicornBody</body>
+				<bodies>
+					<li>Pony_UnicornBody</li>
+					<li>Pony_AlicornBody</li>
+				</bodies>
 				<trait>Pony_RelationsForUnicorn</trait>
 			</li>
 		</modExtensions>

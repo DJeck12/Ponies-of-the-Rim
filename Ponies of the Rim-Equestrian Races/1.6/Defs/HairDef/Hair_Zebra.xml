@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Celestial -->
+	<HairDef>
+		<defName>Pony_MohawkHair</defName>
+		<label>(Zebra) Mohawk</label>
+		<styleGender>Any</styleGender>
+		<texPath>Races/Hairstyles/Zebra/Mohawk</texPath>
+		<category>Zebra</category>
+        <styleTags>
+            <li>Zebra</li>
+        </styleTags>
+	</HairDef>
+
+
+</Defs>

@@ -17,7 +17,7 @@
 						<capacities>
 							<li>Cut</li>
 						</capacities>
-						<power>16</power>
+						<power>14</power>
 						<cooldownTime>2</cooldownTime>
 					</li>
 				</tools>

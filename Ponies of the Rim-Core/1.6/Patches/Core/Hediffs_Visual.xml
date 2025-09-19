@@ -26,7 +26,7 @@
 				<value>
 					<li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 						<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-						<texPath>Things/Races/Pony/Eyes/BionicEye</texPath>
+						<texPath>Races/Eyes/Eye_Bionic</texPath>
 						<parentTagDef>Head</parentTagDef>
 						<drawSize>0.14</drawSize>
 						<drawData>
@@ -50,8 +50,8 @@
 				<value>
 					<li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 						<workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-						<texPath>Things/Races/Pony/Eyes/ArchotechEye_Male</texPath>
-						<texPathFemale>Things/Races/Pony/Eyes/ArchotechEye_Female</texPathFemale>
+						<texPath>Races/Eyes/Eye_Archotech_Male</texPath>
+						<texPathFemale>Races/Eyes/Eye_Archotech_Female</texPathFemale>
 						<parentTagDef>Head</parentTagDef>
 						<drawSize>0.14</drawSize>
 						<drawData>

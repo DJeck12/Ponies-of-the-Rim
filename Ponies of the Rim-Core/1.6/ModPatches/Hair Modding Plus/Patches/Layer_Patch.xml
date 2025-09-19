@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children//li[debugLabel="Hair"]/children/li[debugLabel="Back hair"]/baseLayer</xpath>
+		<value>
+			<baseLayer>50</baseLayer>
+		</value>
+	</Operation>
+
+</Patch>

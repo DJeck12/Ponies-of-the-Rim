@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_IronWilled</defName>
+		<label>iron-willed</label>
+		<description>temp</description>
+		<iconPath>UI/Genes/IronWilled</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Nerves</def>
+				<degree>2</degree>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Steadfast</defName>
+		<label>steadfast</label>
+		<description>temp</description>
+		<iconPath>UI/Genes/steadfast</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Nerves</def>
+				<degree>1</degree>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Nervous</defName>
+		<label>nervous</label>
+		<description>temp</description>
+		<iconPath>UI/Genes/nervous</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Nerves</def>
+				<degree>-1</degree>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Volatile</defName>
+		<label>volatile</label>
+		<description>temp</description>
+		<iconPath>UI/Genes/volatile</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<forcedTraits>
+			<li>
+				<def>Nerves</def>
+				<degree>-2</degree>
+			</li>
+		</forcedTraits>
+	</GeneDef>
+
+</Defs>

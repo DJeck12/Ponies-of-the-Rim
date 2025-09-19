@@ -41,8 +41,10 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ZebraTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Bodymark</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">MaxTemp_SmallIncrease</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>
@@ -52,13 +54,32 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>5</weight>
-										<min>RGBA(180, 180, 180, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<weight>10</weight>
+										<only>RGBA(250, 250, 250, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(230, 230, 230, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(210, 210, 210, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(170, 170, 170, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(150, 150, 150, 255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(125, 125, 125, 255)</only>
 									</li>
 									<li>
 										<weight>5</weight>
-										<min>RGBA(35, 35, 35, 255)</min>
+										<min>RGBA(150, 150, 150, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -66,7 +87,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(127, 127, 127, 255)</min>
+										<min>RGBA(125, 125, 125, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -77,7 +98,31 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(180, 180, 180, 255)</min>
+										<weight>10</weight>
+										<only>RGBA(225, 225, 225, 255)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(150, 150, 150, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>optional</name> <!-- Don't translate! Will break opacity -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -100,6 +145,9 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Zebra</li>
+						</styleTagsOverride>
 					</value>
 				</li>
 				<li>
@@ -119,45 +167,19 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 		<!-- Graphics -->
 
 			<graphicPaths>
-				<body>
-					<path>Things/Races/Pony/Bodies/Normal/Naked_Pony</path>
-					<extendedGraphics>
-					<!-- Mutant -->
-						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Pony/Bodies/Ghoul/Naked_Pony</Mutant>
-					</extendedGraphics>
-				</body>
-				<bodyMasks>
-					<path>Things/Races/Pony/Bodies/CoatMarkings/Pony_Body</path>
-				</bodyMasks>
+				<body>Transparent/Transparent</body>
 				<skeleton>
-					<path>Things/Races/Pony/Bodies/Skeleton/Dessicated_Pony</path>
+					<path>Races/Bodies/Skeleton/Body_Skeleton</path>
 				</skeleton>
 				<head>
-					<path>Things/Races/Pony/Heads/Normal/Male_Pony</path>
+					<path>Transparent/Transparent</path>
 					<extendedGraphics>
-					<!-- Mutant -->
-						<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">
-							<path>Things/Races/Pony/Heads/Ghoul/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Ghoul/Female_Pony</Gender>
-							</extendedGraphics>
-						</Mutant>
-					<!-- Gene -->
-						<Gene For="Furskin" MayRequire="Ludeon.RimWorld.Biotech">
-							<path>Things/Races/Pony/Heads/Furskin/Male_Pony</path>
-							<extendedGraphics>
-								<Gender For="Female">Things/Races/Pony/Heads/Furskin/Female_Pony</Gender>
-							</extendedGraphics>
-						</Gene>
 					<!-- Normal -->
-						<Gender For="Female">Things/Races/Pony/Heads/Normal/Female_Pony</Gender>
+						<Gender For="Female">Transparent/Transparent</Gender>
 					</extendedGraphics>
 				</head>
-				<headMasks>
-					<path>Things/Races/Pony/Heads/CoatMarkings/Pony_Head</path>
-				</headMasks>
-				<skull>Things/Races/Pony/Heads/Skull/Pony_Skull</skull>
-				<stump>Things/Races/Pony/Heads/Stump/Pony_Stump</stump>
+				<skull>Races/Heads/Skull/Head_Skull</skull>
+				<stump>Races/Heads/Stump/Stump</stump>
 				<swaddle>Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
 			</graphicPaths>
 		</alienRace>

@@ -6,9 +6,9 @@
 		<label>nocturnal</label>
 		<description>Carriers of this gene prefer to be up at night. They are happier if awake at nights and unhappy if awake during the day.</description>
 		<iconPath>UI/Genes/Nocturnal</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
 		<forcedTraits>
 			<li>
 				<def>NightOwl</def>
@@ -28,6 +28,26 @@
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_CrystallineSkin</defName>
+		<label>crystalline skin</label>
+		<description></description>
+		<iconPath>UI/Genes/CrystallineSkin</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Oviparous</defName>
+		<label>oviparous</label>
+		<description></description>
+		<iconPath>UI/Genes/Oviparous</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_BirdHands</defName>
 		<label>bird talons</label>
 		<description>Carriers of this gene have hands that resemble bird feet. Their sharp claws allow them to deal sharp damage instead of blunt when unarmed in compensation of manipulation capability.</description>
@@ -35,7 +55,7 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>25</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatMet>1</biostatMet>
 		<capMods>
 			<li>
 				<capacity>Manipulation</capacity>
@@ -78,12 +98,11 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_FishTail</defName>
 		<label>fish tail</label>
-		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests. Unlike cutiemarks, bodymarks have more abstract patterns and are similar to religious tattoos.</description>
+		<description>temp</description>
 		<iconPath>UI/Genes/FishTail</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>8</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
-		<biostatMet>2</biostatMet>
 		<waterCellCost>1</waterCellCost>
 		<statOffsets>
 			<MoveSpeed>-2.0</MoveSpeed>
@@ -103,6 +122,20 @@
 				<li><symbol>pony</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Scales</defName>
+		<label>body scales</label>
+		<description>temp</description>
+		<iconPath>UI/Genes/Scales</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>14</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>BodyCover</li>
+		</exclusionTags>
 	</GeneDef>
 
 </Defs>
