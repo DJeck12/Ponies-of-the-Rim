@@ -10,7 +10,7 @@ namespace PoniesOfTheRim
     {
         static PonyBodyTypePatch()
         {
-            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(HarmonyPatches), "CheckBodyType"), null, new HarmonyMethod(typeof(PonyBodyTypePatch).GetMethod("BodyTypePatch")));
+            new Harmony("PoniesOfTheRim").Patch(AccessTools.Method(typeof(AlienRace.HarmonyPatches), "CheckBodyType"), null, new HarmonyMethod(typeof(PonyBodyTypePatch).GetMethod("BodyTypePatch")));
         }
 
         [HarmonyPostfix]
