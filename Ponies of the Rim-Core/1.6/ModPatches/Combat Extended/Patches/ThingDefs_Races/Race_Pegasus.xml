@@ -30,8 +30,10 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/statBases</xpath>
 					<value>
+						<!-- For some reason, this doesn't work. -->
 						<MeleeCritChance>1.55</MeleeCritChance>
 						<MeleeParryChance>1.25</MeleeParryChance>
+						<MeleeDodgeChance>1</MeleeDodgeChance>
 						<Suppressability>0.6</Suppressability>
 						<SmokeSensitivity>0.2</SmokeSensitivity>
 						<NightVisionEfficiency>0.4</NightVisionEfficiency>
