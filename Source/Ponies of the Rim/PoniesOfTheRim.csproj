@@ -96,6 +96,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\GizmoIconShortFlightSwap.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
@@ -113,7 +114,7 @@
     <Compile Include="Harmony_PonyFoodGeneRemovalPatch.cs" />
     <Compile Include="Harmony_OffsetForPonyEarsPatch%28TEST%29.cs" />
     <Compile Include="TailSelectorWindow.cs" />
-    <Compile Include="Verb_ShortFlight.cs" />
+    <Compile Include="Abilities\Verb_ShortFlight.cs" />
     <Compile Include="JobGiver_UseShortFlight.cs" />
     <Compile Include="Harmony_CanHitTargetFromPatch.cs" />
     <Compile Include="PonyRenderSubWorkerEye.cs" />

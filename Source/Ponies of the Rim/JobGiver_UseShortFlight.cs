@@ -2,6 +2,7 @@
 using System.Linq;
 using Verse.AI;
 using Verse;
+using PoniesOfTheRim.Abilities;
 
 namespace PoniesOfTheRim
 {

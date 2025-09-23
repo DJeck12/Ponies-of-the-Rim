@@ -160,7 +160,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 		<race>
 			<nameGenerator>NameGeneratorEarth</nameGenerator>
-			<body>Pony_EarthponyBody</body>
+			<body>Pony_CrystalponyBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>

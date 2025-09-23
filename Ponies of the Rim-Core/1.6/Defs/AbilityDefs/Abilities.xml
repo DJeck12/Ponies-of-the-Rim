@@ -61,8 +61,9 @@
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<aiCanUse>true</aiCanUse>
+		<gizmoClass>PoniesOfTheRim.Abilities.GizmoIconShortFlightSwap</gizmoClass>
 		<verbProperties>
-			<verbClass>PoniesOfTheRim.Verb_ShortFlight</verbClass>
+			<verbClass>PoniesOfTheRim.Abilities.Verb_ShortFlight</verbClass>
 			<label>flight</label>
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>

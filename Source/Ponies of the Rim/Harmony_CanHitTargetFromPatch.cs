@@ -2,6 +2,7 @@
 using RimWorld;
 using Verse;
 using System;
+using PoniesOfTheRim.Abilities;
 
 namespace PoniesOfTheRim
 {

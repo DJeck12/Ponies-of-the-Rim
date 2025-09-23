@@ -10,9 +10,10 @@ namespace PoniesOfTheRim
     {
         public Pawn pawn;
         public AlienPartGenerator.BodyAddon addon;
-        private static Vector2 tailsScrollPos;
-        private static int selectedIndexTails = 1;
+        private Vector2 tailsScrollPos;
+        private int selectedIndexTails;
         readonly AlienPartGenerator.AlienComp alienComp;
+        readonly int variantIndex;
 
         public override Vector2 InitialSize
         {
@@ -30,11 +31,13 @@ namespace PoniesOfTheRim
             }
         }
 
-        public TailSelector(Pawn pawn, AlienPartGenerator.BodyAddon addon, AlienPartGenerator.AlienComp alienComp)
+        public TailSelector(Pawn pawn, AlienPartGenerator.BodyAddon addon, AlienPartGenerator.AlienComp alienComp, int variantIndex)
         {
             this.pawn = pawn;
             this.addon = addon;
             this.alienComp = alienComp;
+            this.variantIndex = variantIndex;
+            this.selectedIndexTails = alienComp.addonVariants[variantIndex];
         }
 
         public override void DoWindowContents(Rect inRect)
@@ -62,11 +65,8 @@ namespace PoniesOfTheRim
                 {
                     selectedIndexTails = i;
                     SoundDefOf.Click.PlayOneShotOnCamera();
-                    if (pawn.IsPony())
-                    {
-                        alienComp.addonVariants[1] = selectedIndexTails;
-                        pawn.Drawer.renderer.SetAllGraphicsDirty();
-                    }
+                    alienComp.addonVariants[variantIndex] = selectedIndexTails;
+                    pawn.Drawer.renderer.SetAllGraphicsDirty();
                 }
                 int sharedIndex = i;
                 DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon, ref sharedIndex, i);

@@ -16,10 +16,10 @@ namespace PoniesOfTheRim
         {
             new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(CharacterCardUtility), "DrawCharacterCard"), null, new HarmonyMethod(typeof(DrawCharacterCardPatch).GetMethod("CutiemarkIcon")));
         }
+
         [HarmonyPostfix]
         public static void CutiemarkIcon(Pawn pawn)
         {
-            //!pawn.DevelopmentalStage.Adult() 
             if (pawn == null || !PonyHelper.IsPony(pawn) ||
                 pawn.IsMutant || pawn.health.hediffSet.HasHediff(HediffDefOf.ShamblerCorpse) || 
                 pawn.Corpse.GetRotStage() == RotStage.Dessicated)
@@ -37,8 +37,37 @@ namespace PoniesOfTheRim
             Rect inRect3 = new Rect(150f, 150f, 80f, 80f);
             ThingDef_AlienRace pawnrace = (ThingDef_AlienRace)pawn.def;
             List<AlienPartGenerator.BodyAddon> list = pawnrace.alienRace.generalSettings.alienPartGenerator.bodyAddons.Concat<AlienPartGenerator.BodyAddon>(Utilities.UniversalBodyAddons).ToList();
-            AlienPartGenerator.BodyAddon cutiemarkBodyAddon = list.Find(ba => ba.Name.Contains("Cutiemark"));
-            AlienPartGenerator.BodyAddon tailBodyAddon = list.Find(ba => ba.Name.Contains("Tail"));
+
+            // Find specific addons based on race
+            AlienPartGenerator.BodyAddon cutiemarkBodyAddon = null;
+            AlienPartGenerator.BodyAddon tailBodyAddon = null;
+            int cutieIndex = -1;
+            int tailIndex = -1;
+
+            if (pawn.IsEarthpony() || pawn.IsPegasus() || pawn.IsUnicorn() || pawn.IsCrystalpony() || pawn.IsBatpony() || pawn.IsAlicorn())
+            {
+                cutiemarkBodyAddon = list.Find(ba => ba.Name.Contains("Cutiemark"));
+                
+            }
+            if (pawn.IsPony() && !pawn.IsZebra())
+            {
+                tailBodyAddon = list.Find(ba => ba.Name.Contains("Tail"));
+            }
+            else if (pawn.IsZebra())
+            {
+                cutiemarkBodyAddon = list.Find(ba => ba.Name.Contains("Zebra Cutiemark"));
+                tailBodyAddon = list.Find(ba => ba.Name.Contains("Long tail"));
+            }
+
+            if (cutiemarkBodyAddon != null)
+            {
+                cutieIndex = list.IndexOf(cutiemarkBodyAddon);
+            }
+            if (tailBodyAddon != null)
+            {
+                tailIndex = list.IndexOf(tailBodyAddon);
+            }
+
             AlienPartGenerator.AlienComp alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
             Rect cutiemarkRect = new Rect(num + 230f + offsetX, num - 365f, inRect.width, inRect.height);
             Rect tailRect = new Rect(num + 230f + offsetX - 85f + inRect.width, num - 365f + 80f, 90f, 20f); // Tail button
@@ -49,24 +78,28 @@ namespace PoniesOfTheRim
             {
                 //if (pawn.DevelopmentalStage.Adult() && cutiemarkBodyAddon != null)
                 //{
-                    DrawCutiemarkIcon.Draw(pawn, cutiemarkRect, cutiemarkBodyAddon, alienComp);
+                    if (cutiemarkBodyAddon != null && cutieIndex >= 0)
+                    {
+                        DrawCutiemarkIcon.Draw(pawn, cutiemarkRect, cutiemarkBodyAddon, alienComp, cutieIndex);
+                    }
                     if (Mouse.IsOver(cutiemarkRect) || DebugViewSettings.drawTooltipEdges)
                     {
                         TooltipHandler.TipRegion(cutiemarkRect, "PawnMakingUICutieMarkTip".Translate());
                     }
-                    if (Widgets.ButtonInvisible(cutiemarkRect))
+                    if (Widgets.ButtonInvisible(cutiemarkRect) && cutieIndex >= 0)
                     {
                         SoundDefOf.Click.PlayOneShotOnCamera();
-                        Find.WindowStack.Add(new CutiemarkSelector(pawn, cutiemarkBodyAddon, alienComp));
+                        Find.WindowStack.Add(new CutiemarkSelector(pawn, cutiemarkBodyAddon, alienComp, cutieIndex));
                     }
                 //}
 
-                if (tailBodyAddon != null)
+                if (tailBodyAddon != null && tailIndex >= 0)
                 {
                     if (Widgets.ButtonText(tailRect, "Select Tail".Translate()))
                     {
                         SoundDefOf.Click.PlayOneShotOnCamera();
-                        Find.WindowStack.Add(new TailSelector(pawn, tailBodyAddon, alienComp));
+                        Find.WindowStack.Add(new TailSelector(pawn, tailBodyAddon, alienComp, tailIndex));
+                        Log.Message($"Аддон: { tailBodyAddon.Name} Индекс: { tailIndex}");
                     }
                     if (Mouse.IsOver(tailRect) || DebugViewSettings.drawTooltipEdges)
                     {
@@ -77,7 +110,10 @@ namespace PoniesOfTheRim
 
             if (Find.CurrentMap != null && Find.WindowStack.currentlyDrawnWindow is not Dialog_InfoCard && Find.WindowStack.WindowOfType<Dialog_GrowthMomentChoices>() == null)
             {
-                DrawCutiemarkIcon.Draw(pawn, rect2, cutiemarkBodyAddon, alienComp);
+                if (cutiemarkBodyAddon != null && cutieIndex >= 0)
+                {
+                    DrawCutiemarkIcon.Draw(pawn, rect2, cutiemarkBodyAddon, alienComp, cutieIndex);
+                }
                 if (Mouse.IsOver(rect2) || DebugViewSettings.drawTooltipEdges)
                 {
                     TooltipHandler.TipRegion(rect2, "PawnMakingUICutieMarkTip".Translate());
@@ -86,7 +122,10 @@ namespace PoniesOfTheRim
 
             if (Find.WindowStack.WindowOfType<Dialog_InfoCard>() != null && Find.CurrentMap != null && Find.WindowStack.WindowOfType<Dialog_GrowthMomentChoices>() == null)
             {
-                DrawCutiemarkIcon.Draw(pawn, rect3, cutiemarkBodyAddon, alienComp);
+                if (cutiemarkBodyAddon != null && cutieIndex >= 0)
+                {
+                    DrawCutiemarkIcon.Draw(pawn, rect3, cutiemarkBodyAddon, alienComp, cutieIndex);
+                }
                 if (Mouse.IsOver(rect3) || DebugViewSettings.drawTooltipEdges)
                 {
                     TooltipHandler.TipRegion(rect3, "PawnMakingUICutieMarkTip".Translate());

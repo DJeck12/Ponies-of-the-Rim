@@ -10,28 +10,34 @@ namespace PoniesOfTheRim
     {
         public Pawn pawn;
         public AlienPartGenerator.BodyAddon addon;
-        private static Vector2 addonsScrollPos;
-        private static int selectedIndexAddons = 0;
+        private Vector2 addonsScrollPos;
+        private int selectedIndexAddons;
         readonly AlienPartGenerator.AlienComp alienComp;
+        readonly int variantIndex;
+
         public override Vector2 InitialSize
-	    {
-		get
-		    {
-			    return new Vector2(230f, 500f);
-		    }
-	    }
+        {
+            get
+            {
+                return new Vector2(230f, 500f);
+            }
+        }
+
         public override string CloseButtonText
-	    {
-		    get
-		    {
-			    return "PawnMakingUICloseButton".Translate();
-		    }
-	    }
-        public CutiemarkSelector(Pawn pawn, AlienPartGenerator.BodyAddon addon, AlienPartGenerator.AlienComp alienComp)
+        {
+            get
+            {
+                return "PawnMakingUICloseButton".Translate();
+            }
+        }
+
+        public CutiemarkSelector(Pawn pawn, AlienPartGenerator.BodyAddon addon, AlienPartGenerator.AlienComp alienComp, int variantIndex)
         {
             this.pawn = pawn;
             this.addon = addon;
             this.alienComp = alienComp;
+            this.variantIndex = variantIndex;
+            this.selectedIndexAddons = alienComp.addonVariants[variantIndex];
         }
 
         public override void DoWindowContents(Rect inRect)
@@ -44,28 +50,25 @@ namespace PoniesOfTheRim
             draggable = true;
 
             Rect viewRect = new Rect(0f, 0f, 150f, addon.variantCount * 154f);
-		    Widgets.BeginScrollView(inRect, ref addonsScrollPos, viewRect);
+            Widgets.BeginScrollView(inRect, ref addonsScrollPos, viewRect);
             int num2 = -1;
             for (int i = 0; i < addon.variantCount; i++)
             {
                 num2++;
                 Rect rect = new Rect(10f, (float)num2 * 154f + 4f, 150f, 150f).ContractedBy(2f);
                 if (i == selectedIndexAddons)
-			    {
-				    Widgets.DrawOptionSelected(rect);
-			    }
+                {
+                    Widgets.DrawOptionSelected(rect);
+                }
                 Widgets.DrawHighlightIfMouseover(rect);
                 if (Widgets.ButtonInvisible(rect))
-			    {
-				    selectedIndexAddons = i;
-				    SoundDefOf.Click.PlayOneShotOnCamera();
-			    }
-                int sharedIndex = i;
-                DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon,ref sharedIndex, i);
-			    if (pawn.IsPony())
                 {
-				    alienComp.addonVariants[0] = selectedIndexAddons;
-			    }
+                    selectedIndexAddons = i;
+                    SoundDefOf.Click.PlayOneShotOnCamera();
+                    alienComp.addonVariants[variantIndex] = selectedIndexAddons;
+                }
+                int sharedIndex = i;
+                DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon, ref sharedIndex, i);
             }
             Widgets.EndScrollView();
         }
