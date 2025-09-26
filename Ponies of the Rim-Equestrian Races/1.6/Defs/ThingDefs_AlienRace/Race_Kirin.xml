@@ -186,7 +186,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 		<race>
 			<nameGenerator>NameGeneratorPony</nameGenerator>
-			<body>Pony_UnicornBody</body>
+			<body>Pony_KirinBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>

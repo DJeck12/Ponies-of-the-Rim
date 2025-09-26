@@ -164,7 +164,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 		<race>
 			<nameGenerator>NameGeneratorChangeling</nameGenerator>
-			<body>Pony_AlicornBody</body>
+			<body>Pony_ChangedlingBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>

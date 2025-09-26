@@ -189,7 +189,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 		<race>
 			<nameGenerator>NameGeneratorZebraMale</nameGenerator>
 			<nameGeneratorFemale>NameGeneratorZebraFemale</nameGeneratorFemale>
-			<body>Pony_EarthponyBody</body>
+			<body>Pony_ZebraBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>

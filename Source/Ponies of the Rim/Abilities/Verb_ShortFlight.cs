@@ -4,7 +4,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace PoniesOfTheRim
+namespace PoniesOfTheRim.Abilities
 {
     public class Verb_ShortFlight : Verb_CastAbility
     {

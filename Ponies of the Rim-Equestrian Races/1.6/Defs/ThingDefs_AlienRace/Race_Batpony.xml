@@ -186,7 +186,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 
 		<race>
 			<nameGenerator>NameGeneratorBatpony</nameGenerator>
-			<body>Pony_PegasusBody</body>
+			<body>Pony_BatponyBody</body>
 		</race>
 
 	</AlienRace.ThingDef_AlienRace>
