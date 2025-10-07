@@ -23,8 +23,8 @@
 			<verbClass>Verb_CastAbility</verbClass>
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<range>-1</range>
 			<warmupTime>2.0</warmupTime>
-			<range>0</range>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
