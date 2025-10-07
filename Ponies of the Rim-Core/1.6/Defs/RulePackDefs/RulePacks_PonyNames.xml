@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--Pony-->
+
+	<RulePackDef>
+		<defName>Pony_Applejack</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name]</li>
+
+				<li>Name->Applejack</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_Rarity</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name]</li>
+
+				<li>Name->Rarity</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

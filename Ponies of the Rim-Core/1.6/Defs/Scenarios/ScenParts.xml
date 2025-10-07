@@ -5,7 +5,7 @@
 		<defName>Pony_ConfigurePawnsKindDefs</defName>
 		<label>starting people</label>
 		<category>Fixed</category>
-		<scenPartClass>ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs</scenPartClass>
+		<scenPartClass>PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom</scenPartClass>
 		<pageClass>Page_ConfigureStartingPawns</pageClass>
 		<summaryPriority>500</summaryPriority>
 	</ScenPartDef>

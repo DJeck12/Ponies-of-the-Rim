@@ -149,4 +149,62 @@
 		</scenario>
 	</ScenarioDef>
 
+	<ScenarioDef>
+		<defName>Pony_ManeSix</defName>
+		<label>&lt;color=#F096C8&gt;The Mane Six&lt;/color&gt;</label>
+		<description>temp</description>
+		<scenario>
+			<summary>temp</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PonyColony</factionDef>
+			</playerFaction>
+			<surfaceLayer>
+				<def>SurfaceLayerFixed</def>
+				<tag>Surface</tag>
+				<layer>Surface</layer>
+				<settingsDef>Surface</settingsDef>
+				<hide>true</hide>
+				<connections>
+					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+						<zoomMode>ZoomOut</zoomMode>
+					</Orbit>
+				</connections>
+			</surfaceLayer>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>temp</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<!-- Config pages -->
+				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom">
+					<def>Pony_ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>2</pawnChoiceCount>
+					<kindCounts>
+						<li>
+							<kindDef>Pony_Applejack</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li><!--
+						<li>
+							<kindDef>Pony_Rarity</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>-->
+					</kindCounts>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
 </Defs>
