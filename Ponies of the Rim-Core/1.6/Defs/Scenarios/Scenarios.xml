@@ -3,7 +3,7 @@
 
 	<ScenarioDef>
 		<defName>Pony_Expedition</defName>
-		<label>Equestrian expedition</label>
+		<label>&lt;color=#F096C8&gt;Equestrian Expedition&lt;/color&gt;</label>
 		<description>Equestria is your homeland, the country of ponies and other magical creatures. As part of an important mission, your team has been sent to a forgotten planet somewhere on the edge of the galaxy. Having entered its orbit and prepared to land, you hear a loud explosion and the grinding of metal from the captain's cabin. Having assessed the emergency condition of the ship's compartments and having no way to contact the captain, you decide to use escape pods and urgently leave the ship. This is how your adventure begins.</description>
 		<scenario>
 			<summary>Four pony adventurers, each one from a different race. Ideal for roleplay.</summary>

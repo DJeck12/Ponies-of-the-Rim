@@ -10,13 +10,15 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/comps</xpath>
 					<value>
 						<li Class="CombatExtended.CompProperties_Inventory"/>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/comps</xpath>
+					<value>
 						<li>
 							<compClass>CombatExtended.CompPawnGizmo</compClass>
 						</li>
 						<li Class="CombatExtended.CompProperties_Suppressable"/>
-						<li>
-							<compClass>CombatExtended.CompAmmoGiver</compClass>
-						</li>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">

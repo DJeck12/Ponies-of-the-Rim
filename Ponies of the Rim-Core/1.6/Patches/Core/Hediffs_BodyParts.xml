@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/RecipeDef[contains(appliedOnFixedBodyParts,'Arm')]/appliedOnFixedBodyParts</xpath>
-			<value>
-				<li>Pony_FrontLeg</li>
-			</value>
-		</match>
+		<value>
+			<li>Pony_FrontLeg</li>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
