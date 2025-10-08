@@ -484,9 +484,7 @@
 		</corePart>
 	</BodyDef>
 
-
 <!-- Pegasus -->
-
 
 	<BodyDef>
 		<defName>Pony_PegasusBody</defName>
@@ -985,9 +983,7 @@
 		</corePart>
 	</BodyDef>
 
-
 <!-- Unicorn -->
-
 
 	<BodyDef>
 		<defName>Pony_UnicornBody</defName>
@@ -1479,9 +1475,7 @@
 		</corePart>
 	</BodyDef>
 
-
 <!-- Alicorn -->
-
 
 	<BodyDef>
 		<defName>Pony_AlicornBody</defName>

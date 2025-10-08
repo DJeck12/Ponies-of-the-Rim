@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Applejack_Child</defName>
+		<title>farm child</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-3</Melee>
+			<Plants>5</Plants>
+			<Artistic>3</Artistic>
+			<Construction>-4</Construction>
+		</skillGains>
+		<requiredWorkTags>PlantWork</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Applejack_Adult</defName>
+		<title>apple farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-3</Melee>
+			<Plants>5</Plants>
+			<Artistic>3</Artistic>
+			<Construction>-4</Construction>
+		</skillGains>
+		<requiredWorkTags>PlantWork</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

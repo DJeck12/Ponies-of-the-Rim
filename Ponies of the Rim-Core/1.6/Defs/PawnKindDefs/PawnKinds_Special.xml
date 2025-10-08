@@ -129,4 +129,40 @@
 		</skills>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_Applejack</defName>
+		<label>applejack</label>
+		<race>Pony_Earthpony</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<fixedChildBackstories>
+			<li>Pony_Applejack_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_Applejack_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Legendary</itemQuality>
+		<apparelTags>
+			<li>None</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_CowboyHat</li>
+		</apparelRequired>
+		<apparelColor>RGB(202,154,86)</apparelColor>
+		<forcedHair>Pony_AppleHair</forcedHair>
+		<forcedHairColor>RGB(250,245,171)</forcedHairColor>
+		<skinColorOverride>RGB(250,186,98)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_Applejack</nameMakerFemale>
+		<skills>
+			<li>
+				<skill>Plants</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
 </Defs>

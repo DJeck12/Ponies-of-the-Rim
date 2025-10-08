@@ -10,4 +10,11 @@
 		</tailIndex>
     </PoniesOfTheRim.PonyTailType>
 
+    <PoniesOfTheRim.PonyTailType>
+        <defName>Apple</defName>
+		<tailIndex>
+			<li>2</li>
+		</tailIndex>
+    </PoniesOfTheRim.PonyTailType>
+
 </Defs>

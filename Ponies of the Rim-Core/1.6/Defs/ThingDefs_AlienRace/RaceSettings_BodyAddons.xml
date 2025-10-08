@@ -37,7 +37,7 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<!-- <Backstory For="Pony_EveryponyPaPl">Races/Cutiemarks/QTMark15</Backstory> -->
+					<Backstory For="Pony_Applejack_Adult">Races/Cutiemarks/QTMark67</Backstory>
 				</extendedGraphics>
 				<offsets>
 					<east>
@@ -93,6 +93,7 @@
 						</extendedGraphics>
 					</Gene>
 				<!-- Normal -->
+					<Backstory For="Pony_Applejack_Adult">Races/Heads/Markless/Head_Female</Backstory>
 					<Gender For="Female">Races/Heads/Normal/Head_Female</Gender>
 				</extendedGraphics>
 				<offsets>
@@ -130,6 +131,7 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Bodies/Ghoul/Body_Ghoul</Mutant>
+					<Backstory For="Pony_Applejack_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
 				</extendedGraphics>
 				<offsets>
 					<north>
@@ -140,6 +142,59 @@
 					</south>
 					<east>
 						<layerOffset>-0.3</layerOffset>
+					</east>
+				</offsets>
+			</li>
+		<!-- Long tail -->
+			<li MayRequire="Pony.PoniesOfTheRim.Races">
+				<name>Long tail</name>
+				<userCustomizable>false</userCustomizable>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Deer</Race>
+						<Race>Pony_Griffon</Race>
+						<Race>Pony_Kirin</Race>
+						<Race>Pony_Zebra</Race>
+					</Or>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_Tail</bodyPart>
+						</BodyPart>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Race For="Pony_Deer">Races/Tails/Deer/Tail_Deer</Race>
+					<Race For="Pony_Griffon">Races/Tails/Griffon/Tail_Griffon</Race>
+					<Race For="Pony_Kirin">Races/Tails/Kirin/LongTail_Kirin</Race>
+					<Race For="Pony_Zebra">Races/Tails/Zebra/LongTail_Zebra</Race>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Pony>(0, 0.58)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</PonyChild>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.265</layerOffset>
+						<bodyTypes>
+							<Pony>(0, -0.3)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</PonyChild>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Pony>(0.36, 0)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</PonyChild>
+						</bodyTypes>
 					</east>
 				</offsets>
 			</li>
@@ -165,6 +220,7 @@
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Tails/Pony/Pony_Tail19</Mutant>
+					<Backstory For="Pony_Applejack_Adult">Races/Tails/Pony/Pony_Tail2</Backstory>
 					<Age For="PonyBaby">Races/Tails/Pony/Pony_Tail12</Age>
 				</extendedGraphics>
 				<offsets>
@@ -298,6 +354,7 @@
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 				<colorChannel>skin</colorChannel>
 				<conditions>
 					<RotStage>Fresh,Rotting</RotStage>
@@ -391,7 +448,7 @@
 						<layerOffset>-0.27</layerOffset>
 					</south>
 					<north>
-						<layerOffset>-0.3</layerOffset>
+						<layerOffset>-0.27</layerOffset>
 					</north>
 					<east>
 						<layerOffset>-0.27</layerOffset>
@@ -453,6 +510,7 @@
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 				<colorChannel>skin</colorChannel>
 				<conditions>
 					<RotStage>Fresh,Rotting</RotStage>
