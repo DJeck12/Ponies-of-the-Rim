@@ -112,7 +112,7 @@
     <Compile Include="PatchOperation\PatchOperationToggleableRemove.cs" />
     <Compile Include="Harmony_PonyFoodGenesPatch.cs" />
     <Compile Include="Harmony_PonyFoodGeneRemovalPatch.cs" />
-    <Compile Include="Harmony_OffsetForPonyEarsPatch%28TEST%29.cs" />
+    <Compile Include="Harmony_OffsetForPonyEarsPatch.cs" />
     <Compile Include="TailSelectorWindow.cs" />
     <Compile Include="Abilities\Verb_ShortFlight.cs" />
     <Compile Include="JobGiver_UseShortFlight.cs" />
