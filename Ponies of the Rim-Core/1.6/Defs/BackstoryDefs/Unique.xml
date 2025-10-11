@@ -1,40 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+<!-- Applejack -->
+
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_Applejack_Child</defName>
-		<title>farm child</title>
+		<title>Farm filly</title>
 		<titleShort>farmer</titleShort>
-		<baseDesc>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</baseDesc>
+		<baseDesc>Growing up on the Apple Family Farm, AJ learned the value of hard labor from a young age. She, along with her older brother, lived a proud life as simple farmers. She learned all the tools of the trade: Applebuckin', Applepickin', Applefritterin', and the selling of Apples and Apple accessories.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unique</li>
 		</spawnCategories>
 		<skillGains>
-			<Melee>-3</Melee>
-			<Plants>5</Plants>
-			<Artistic>3</Artistic>
-			<Construction>-4</Construction>
+			<Melee>2</Melee>
+			<Construction>6</Construction>
+			<Cooking>3</Cooking>
+			<Plants>8</Plants>
+			<Animals>4</Animals>
 		</skillGains>
+		<passions>
+			<Construction>1</Construction>
+			<Plants>2</Plants>
+			<Animals>1</Animals>
+		</passions>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+		<workDisables>Intellectual</workDisables>
 		<requiredWorkTags>PlantWork</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_Applejack_Adult</defName>
-		<title>apple farmer</title>
+		<title>Apple farmer</title>
 		<titleShort>farmer</titleShort>
-		<baseDesc>[PAWN_nameDef] explored a variety of flower plant species. [PAWN_pronoun] got a job on a spaceship, aiming to participate in various expeditions to other planets and expand [PAWN_possessive] professional horizons by getting acquainted with many exotic specimens.</baseDesc>
+		<baseDesc>Along with her friends, Applejack came into her own as a legendary defender of Equestria, but she never forgot her roots. She’s a country mare, though-and-though, and no fancy-pants magic necklace will ever change her mind. She’s the rock of the group: always there to support her friends, and always there to give Honest advice.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unique</li>
 		</spawnCategories>
 		<skillGains>
-			<Melee>-3</Melee>
-			<Plants>5</Plants>
-			<Artistic>3</Artistic>
-			<Construction>-4</Construction>
+			<Melee>7</Melee>
+			<Construction>4</Construction>
+			<Mining>4</Mining>
+			<Cooking>4</Cooking>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
 		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
 		<requiredWorkTags>PlantWork</requiredWorkTags>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<linkedBackstory>Pony_Applejack_Child</linkedBackstory>
+	</AlienRace.AlienBackstoryDef>
+
+<!-- Rarity -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Rarity_Child</defName>
+		<title>Unremarkable foalhood</title>
+		<titleShort>generic</titleShort>
+		<baseDesc>Rarity’s foalhood was as bog standard as one could get. She grew up in a lower middle-class household with a lower middle-class family. Her parents cared for her, and allowed her the freedom to explore her own interests. She had standard intelligence, education, and upbringing. However, she always wanted more out of life. </baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Medicine>2</Medicine>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Rarity_Adult</defName>
+		<title>Fashion designer</title>
+		<titleShort>fashionista</titleShort>
+		<baseDesc>Rarity is an ambitious, multi-talented mare most known for being exceedingly Generous, although her clothing line adorns a star-studded cast of the most prolific nobles and entertainers around. Her skills as a fashion designer are second only to her willingness to give back to the community that let her thrive. </baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Plants>2</Plants>
+			<Crafting>10</Crafting>
+			<Artistic>4</Artistic>
+			<Social>8</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<passions>
+			<Crafting>2</Crafting>
+			<Artistic>1</Artistic>
+			<Social>1</Social>
+		</passions>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+			<Jealous>0</Jealous>
+			<Pony_Elegance>0</Pony_Elegance>
+		</forcedTraits>
+		<requiredWorkTags>Crafting</requiredWorkTags>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<linkedBackstory>Pony_Rarity_Child</linkedBackstory>
+	</AlienRace.AlienBackstoryDef>
+
+<!-- Fluttershy -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Fluttershy_Child</defName>
+		<title>Nervous flyer</title>
+		<titleShort>anxious</titleShort>
+		<baseDesc>Fluttershy was never the strongest flyer, and she was often bullied by the other pegasi because of it. Her seclusion led to her finding her calling at an early age: she loved animals, and could communicate with them on a different level than others. She often preferred the company of her ‘little friends’ to other ponies.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>10</Animals>
+			<Social>-4</Social>
+		</skillGains>
+		<passions>
+			<Animals>2</Animals>
+		</passions>
+		<!--<forcedTraits>
+			<Pony_CreatureTalk>1</Pony_CreatureTalk>
+		</forcedTraits>-->
+		<requiredWorkTags>Animals</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Fluttershy_Adult</defName>
+		<title>Animal caretaker</title>
+		<titleShort>zookeeper</titleShort>
+		<baseDesc>Fluttershy’s passion for animals blossomed into a full blown career. She’s responsible and familiar with creatures from all over many different worlds. With overflowing Kindess, she’s able to care for, train, and identify an almost uncountable number of species. She’s familiar with preparing meat for consumption by her little friends and has extensive knowledge of veterinary care.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Cooking>4</Cooking>
+			<Animals>10</Animals>
+			<Medicine>8</Medicine>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<passions>
+			<Medicine>1</Medicine>
+		</passions>
+		<forcedTraits>
+			<Kind>0</Kind>
+			<Pony_AnimalWhisperer>0</Pony_AnimalWhisperer>
+		</forcedTraits>
+		<requiredWorkTags>Animals, Caring</requiredWorkTags>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<linkedBackstory>Pony_Fluttershy_Child</linkedBackstory>
+	</AlienRace.AlienBackstoryDef>
+
+<!-- Pinkie Pie -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PinkiePie_Child</defName>
+		<title>Rock farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>Take rock, hit it with a pickaxe, repeat. Thus was the foalhood of Pinkie Pie. She was born on her parents’ rock farm, along with her sisters, and spent her youth hitting rocks with a pickaxe. She gained great strength and skill working in such an environment, but she was never satisfied with "just" hitting rocks.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Mining>8</Mining>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_PinkiePie_Adult</defName>
+		<title>Party planner</title>
+		<titleShort>party host</titleShort>
+		<baseDesc>Party party party! Pinkie Pie came into her own as the world’s most expertie-terrific planner of parties! She can remember birthday dates flawlessly, knows the face of everypony she’s ever met, and has an almost preternatural sense for what to give everypony else as a gift. She’s a constant source of joy and Laughter. Just being around her makes everypony else happier.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>8</Cooking>
+			<Social>20</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<passions>
+			<Social>2</Social>
+		</passions>
+		<forcedTraits>
+			<Nerves>-1</Nerves>
+			<NaturalMood>2</NaturalMood>
+			<Joyous>0</Joyous>
+		</forcedTraits>
+		<requiredWorkTags>Social</requiredWorkTags>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<linkedBackstory>Pony_PinkiePie_Child</linkedBackstory>
+	</AlienRace.AlienBackstoryDef>
+
+<!-- Rainbow Dash -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_RainbowDash_Child</defName>
+		<title>Talented flyer</title>
+		<titleShort>talented</titleShort>
+		<baseDesc>As a filly, Rainbow Dash was always challenging other Pegasi to races. She dreamed of joining the Wonderbolts, a team of elite flyers, and constantly trained to achieve that goal. </baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Pony_Superfast>0</Pony_Superfast>
+		</forcedTraits>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_RainbowDash_Adult</defName>
+		<title>Wonderbolt Ace</title>
+		<titleShort>wonderbolt</titleShort>
+		<baseDesc>Rainbow Dash achieved her lifelong dream of joining the elite flyers, and she remained Loyal to her friends throughout. Whenever any of them need her, she’s always there to lend a helping hoof. Her time in the Bolts let her hone her already excellent skills in combat, allowing her to learn from some of the most experienced Equestrian Pegasi. She puts those skills to use defending her friends now.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>6</Melee>
+		</skillGains>
+		<passions>
+			<Shooting>2</Shooting>
+			<Melee>1</Melee>
+		</passions>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<linkedBackstory>Pony_RainbowDash_Child</linkedBackstory>
+	</AlienRace.AlienBackstoryDef>
+
+<!-- Twilight Sparkle -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_TwilightSparkle_Child</defName>
+		<title>Magical prodigy</title>
+		<titleShort>prodigy</titleShort>
+		<baseDesc>Extraordinarily gifted from a young age, Twilight was taken under the wing of Princess Celestia herself. She learned magic, theory, law, medicine, science, all possible practical applications thereof, and she excelled.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>8</Medicine>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<passions>
+			<Medicine>1</Medicine>
+			<Intellectual>2</Intellectual>
+		</passions>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+		</forcedTraits>
+		<requiredWorkTags>Intellectual</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_TwilightSparkle_Adult</defName>
+		<title>Princess of Friendship</title>
+		<titleShort>princess</titleShort>
+		<baseDesc>Twilight Sparkle was the magic that held the Elements Of Harmony together. Growing out of her bookish shell, she, and her friends, became living embodiments of the pillars of Equestria. Friendship Is Magic, and Twilight Sparkle could harness that power. Some of that Magic still lingers, even here.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+			<Construction>2</Construction>
+			<Mining>2</Mining>
+			<Cooking>2</Cooking>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+			<Crafting>2</Crafting>
+			<Artistic>2</Artistic>
+			<Medicine>2</Medicine>
+			<Social>8</Social>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<passions>
+			<Social>1</Social>
+		</passions>
+		<forcedTraits>
+			<PerfectMemory>0</PerfectMemory>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>Intellectual</requiredWorkTags>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<linkedBackstory>Pony_TwilightSparkle_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
 </Defs>

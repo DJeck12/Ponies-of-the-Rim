@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_Applejack</defName>
+		<label>Applejack</label>
+		<race>Pony_Earthpony</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_Applejack_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_Applejack_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<apparelRequired>
+			<li>Apparel_CowboyHat</li>
+		</apparelRequired>
+		<forcedTraits>
+			<Pony_Ironhooves>0</Pony_Ironhooves>
+		</forcedTraits>
+		<apparelColor>RGB(202,154,86)</apparelColor>
+		<forcedHair>Pony_AppleHair</forcedHair>
+		<forcedHairColor>RGB(250,245,171)</forcedHairColor>
+		<skinColorOverride>RGB(250,186,98)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_Applejack</nameMakerFemale>
+		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_Rarity</defName>
+		<label>Rarity</label>
+		<race>Pony_Unicorn</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_Rarity_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_Rarity_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<forcedHair>Pony_RarityHair</forcedHair>
+		<forcedHairColor>RGB(94,80,160)</forcedHairColor>
+		<skinColorOverride>RGB(234,238,240)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_Rarity</nameMakerFemale>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_Fluttershy</defName>
+		<label>Fluttershy</label>
+		<race>Pony_Pegasus</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_Fluttershy_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_Fluttershy_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<forcedHair>Pony_FlutterHair</forcedHair>
+		<forcedHairColor>RGB(243,181,207)</forcedHairColor>
+		<skinColorOverride>RGB(250,245,171)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_Fluttershy</nameMakerFemale>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_PinkiePie</defName>
+		<label>Pinkie Pie</label>
+		<race>Pony_Earthpony</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_PinkiePie_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_PinkiePie_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<forcedHair>Pony_PartyHair</forcedHair>
+		<forcedHairColor>RGB(235,69,139)</forcedHairColor>
+		<skinColorOverride>RGB(245,183,208)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_PinkiePie</nameMakerFemale>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_RainbowDash</defName>
+		<label>Rainbow Dash</label>
+		<race>Pony_Pegasus</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_RainbowDash_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_RainbowDash_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<forcedHair>Pony_DashHair</forcedHair>
+		<forcedHairColor>RGB(236,65,65)</forcedHairColor>
+		<skinColorOverride>RGB(155,219,245)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_RainbowDash</nameMakerFemale>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_TwilightSparkle</defName>
+		<label>Twilight Sparkle</label>
+		<race>Pony_Unicorn</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_TwilightSparkle_Child</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_TwilightSparkle_Adult</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<forcedHair>Pony_SparkleHair</forcedHair>
+		<forcedHairColor>RGB(36,56,112)</forcedHairColor>
+		<skinColorOverride>RGB(204,156,223)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_TwilightSparkle</nameMakerFemale>
+	</PawnKindDef>
+
+</Defs>

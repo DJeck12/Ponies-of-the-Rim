@@ -37,7 +37,13 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Cutiemarks/QTMark67</Backstory>
+					<Backstory For="Pony_Rarity_Adult">Races/Cutiemarks/QTMark67</Backstory>
+					<Backstory For="Pony_Fluttershy_Adult">Races/Cutiemarks/QTMark67</Backstory>
+					<Backstory For="Pony_PinkiePie_Adult">Races/Cutiemarks/QTMark67</Backstory>
+					<Backstory For="Pony_RainbowDash_Adult">Races/Cutiemarks/QTMark67</Backstory>
+					<Backstory For="Pony_TwilightSparkle_Adult">Races/Cutiemarks/QTMark67</Backstory>
 				</extendedGraphics>
 				<offsets>
 					<east>
@@ -92,8 +98,14 @@
 							<Gender For="Female">Races/Heads/Furskin/Furskin_Female</Gender>
 						</extendedGraphics>
 					</Gene>
-				<!-- Normal -->
+				<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Heads/Markless/Head_Female</Backstory>
+					<Backstory For="Pony_Rarity_Adult">Races/Heads/Markless/Head_Female</Backstory>
+					<Backstory For="Pony_Fluttershy_Adult">Races/Heads/Markless/Head_Female</Backstory>
+					<Backstory For="Pony_PinkiePie_Adult">Races/Heads/Markless/Head_Female</Backstory>
+					<Backstory For="Pony_RainbowDash_Adult">Races/Heads/Markless/Head_Female</Backstory>
+					<Backstory For="Pony_TwilightSparkle_Adult">Races/Heads/Markless/Head_Female</Backstory>
+				<!-- Normal -->
 					<Gender For="Female">Races/Heads/Normal/Head_Female</Gender>
 				</extendedGraphics>
 				<offsets>
@@ -131,7 +143,13 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Bodies/Ghoul/Body_Ghoul</Mutant>
+				<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
+					<Backstory For="Pony_Rarity_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
+					<Backstory For="Pony_Fluttershy_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
+					<Backstory For="Pony_PinkiePie_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
+					<Backstory For="Pony_RainbowDash_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
+					<Backstory For="Pony_TwilightSparkle_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
 				</extendedGraphics>
 				<offsets>
 					<north>
@@ -220,7 +238,14 @@
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Tails/Pony/Pony_Tail19</Mutant>
+				<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Tails/Pony/Pony_Tail2</Backstory>
+					<Backstory For="Pony_Rarity_Adult">Races/Tails/Pony/Pony_Tail4</Backstory>
+					<Backstory For="Pony_Fluttershy_Adult">Races/Tails/Pony/Pony_Tail5</Backstory>
+					<Backstory For="Pony_PinkiePie_Adult">Races/Tails/Pony/Pony_Tail3</Backstory>
+					<Backstory For="Pony_RainbowDash_Adult">Races/Tails/Pony/Pony_Tail0</Backstory>
+					<Backstory For="Pony_TwilightSparkle_Adult">Races/Tails/Pony/Pony_Tail1</Backstory>
+				<!-- Child -->
 					<Age For="PonyBaby">Races/Tails/Pony/Pony_Tail12</Age>
 				</extendedGraphics>
 				<offsets>

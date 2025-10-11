@@ -25,4 +25,51 @@
 		</rulePack>
 	</RulePackDef>
 
+	<RulePackDef>
+		<defName>Pony_Fluttershy</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Name]</li>
+
+				<li>Name->Fluttershy</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_PinkiePie</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[First] [Last]</li>
+
+				<li>First->Pinkie</li>
+				<li>Last->Pie</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_RainbowDash</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[First] [Last]</li>
+
+				<li>First->Rainbow</li>
+				<li>Last->Dash</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Pony_TwilightSparkle</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[First] [Last]</li>
+
+				<li>First->Twilight</li>
+				<li>Last->Sparkle</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
 </Defs>

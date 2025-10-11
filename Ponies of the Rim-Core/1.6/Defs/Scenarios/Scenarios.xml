@@ -182,18 +182,38 @@
 				<!-- Config pages -->
 				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom">
 					<def>Pony_ConfigurePawnsKindDefs</def>
-					<pawnChoiceCount>2</pawnChoiceCount>
+					<pawnChoiceCount>6</pawnChoiceCount>
 					<kindCounts>
 						<li>
 							<kindDef>Pony_Applejack</kindDef>
 							<count>1</count>
 							<requiredAtStart>true</requiredAtStart>
-						</li><!--
+						</li>
 						<li>
 							<kindDef>Pony_Rarity</kindDef>
 							<count>1</count>
 							<requiredAtStart>true</requiredAtStart>
-						</li>-->
+						</li>
+						<li>
+							<kindDef>Pony_Fluttershy</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>Pony_PinkiePie</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>Pony_RainbowDash</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+						<li>
+							<kindDef>Pony_TwilightSparkle</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
 					</kindCounts>
 				</li>
 
@@ -202,6 +222,106 @@
 					<def>PlayerPawnsArriveMethod</def>
 					<method>DropPods</method>
 					<visible>false</visible>
+				</li>
+				
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealFine_Hay</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_BoltActionRifle</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_PumpShotgun</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_Revolver</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Mace</thingDef>
+					<stuff>Plasteel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Plasteel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakPants</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_FlakVest</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Apparel_AdvancedHelmet</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Horse</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>
+
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<allowRoofed>false</allowRoofed>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>10</count>
 				</li>
 			</parts>
 		</scenario>
