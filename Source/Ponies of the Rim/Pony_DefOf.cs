@@ -23,7 +23,7 @@ namespace PoniesOfTheRim
         public static ThoughtDef Pony_AteMeatAsHerbivore;
         public static ThoughtDef Pony_AtePlantAsCarnivore;
 
-        public static ScenPartDef ScenPart_FixedStartingPawn;
+        //public static ScenPartDef ScenPart_FixedStartingPawn;
 
         [MayRequireBiotech]
         public static GeneDef Pony_Cutiemark;

@@ -100,6 +100,7 @@
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
+    <Compile Include="Harmony_PonyBabyHairPatch.cs" />
     <Compile Include="Discord_link.cs" />
     <Compile Include="Harmony_CommsConsolePatch.cs" />
     <Compile Include="CommsConsoleExtension.cs" />
