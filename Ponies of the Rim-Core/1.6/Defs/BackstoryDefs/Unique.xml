@@ -228,7 +228,7 @@
 		<forcedTraits>
 			<Nerves>-1</Nerves>
 			<NaturalMood>2</NaturalMood>
-			<Joyous>0</Joyous>
+			<Pony_Joyous>0</Pony_Joyous>
 		</forcedTraits>
 		<requiredWorkTags>Social</requiredWorkTags>
 		<relationSettings>
@@ -355,7 +355,7 @@
 			<Social>1</Social>
 		</passions>
 		<forcedTraits>
-			<PerfectMemory>0</PerfectMemory>
+			<Pony_PerfectMemory>0</Pony_PerfectMemory>
 			<PsychicSensitivity>2</PsychicSensitivity>
 		</forcedTraits>
 		<requiredWorkTags>Intellectual</requiredWorkTags>
