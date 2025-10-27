@@ -23,6 +23,9 @@ namespace PoniesOfTheRim
         public static ThoughtDef Pony_AteMeatAsHerbivore;
         public static ThoughtDef Pony_AtePlantAsCarnivore;
 
+        public static TraitDef Pony_PerfectMemory;
+        public static TraitDef Pony_Joyous;
+
         //public static ScenPartDef ScenPart_FixedStartingPawn;
 
         [MayRequireBiotech]

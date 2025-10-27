@@ -1,25 +1,33 @@
-﻿using HarmonyLib;
-using PoniesOfTheRim;
+﻿using System.Collections.Generic;
+using HarmonyLib;
 using RimWorld;
-using System.Collections.Generic;
-using System.Linq;
 using Verse;
+using System.Linq;
 
-[HarmonyPatch(typeof(PawnRenderNode_Hair), "GraphicFor")]
-public static class PonyBabyHairPatch
+namespace PoniesOfTheRim
 {
-    public static void PonyBabyHairPostfix(Pawn pawn, ref Graphic __result)
+    [StaticConstructorOnStartup]
+    public static class PonyBabyHairPatch
     {
-        if ((pawn.DevelopmentalStage == DevelopmentalStage.Baby || pawn.DevelopmentalStage == DevelopmentalStage.Newborn)
-            && pawn.IsPony())
+        static PonyBabyHairPatch()
         {
-            List<HairDef> ponyHairs = DefDatabase<HairDef>.AllDefsListForReading.Where(h => h.defName != null && h.defName.StartsWith("Pony_")).ToList();
-            if (ponyHairs.Count > 0)
-            {
-                HairDef chosen = ponyHairs.RandomElement();
-                __result = chosen.GraphicFor(pawn, pawn.story.HairColor);
-            }
+            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(PawnRenderNode_Hair), "GraphicFor"), null, new HarmonyMethod(typeof(PonyBabyHairPatch).GetMethod("PonyBabyHairPostfix")));
         }
 
+        [HarmonyPostfix]
+        public static void PonyBabyHairPostfix(Pawn pawn, ref Graphic __result)
+        {
+            if ((pawn.DevelopmentalStage == DevelopmentalStage.Baby || pawn.DevelopmentalStage == DevelopmentalStage.Newborn)
+                && pawn.IsPony())
+            {
+                List<HairDef> ponyHairs = DefDatabase<HairDef>.AllDefsListForReading.Where(h => h.defName != null && h.defName.StartsWith("Pony_")).ToList();
+                if (ponyHairs.Count > 0)
+                {
+                    HairDef chosen = ponyHairs.RandomElement();
+                    __result = chosen.GraphicFor(pawn, pawn.story.HairColor);
+                }
+            }
+
+        }
     }
 }

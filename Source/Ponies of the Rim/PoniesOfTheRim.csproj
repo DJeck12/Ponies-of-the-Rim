@@ -38,8 +38,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="AlienRace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -51,7 +52,7 @@
     </Reference>
     <Reference Include="HarmonyMod, Version=2.3.1.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\2009463077\Current\Assemblies\HarmonyMod.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\HarmonyMod.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -100,6 +101,10 @@
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
+    <Compile Include="Harmony_PerfectMemoryPonyPatch.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_JoyousPonyPresence.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_JoyousPony.cs" />
+    <Compile Include="Harmony_RarityQualityRaise.cs" />
     <Compile Include="Harmony_PonyBabyHairPatch.cs" />
     <Compile Include="Discord_link.cs" />
     <Compile Include="Harmony_CommsConsolePatch.cs" />
@@ -152,6 +157,8 @@
     <Compile Include="Harmony_ScalableBeltPatch.cs" />
     <Compile Include="ScenPart_ConfigPage_ConfigureStartingPawns.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
