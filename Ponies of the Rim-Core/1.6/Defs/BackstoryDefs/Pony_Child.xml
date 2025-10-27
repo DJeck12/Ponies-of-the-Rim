@@ -73,6 +73,20 @@
 			<PsychicSensitivity>1</PsychicSensitivity> (-2, -1, 1, 2)
 			<Immunity>1</Immunity> (-1, 1)
 		</forcedTraits>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Tough</defName>
+					</li>
+					<li>
+						<defName>Nimble</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
 		<disallowedTraits>
 			<Psychopath>0</Psychopath>
 			<Nerves>-1</Nerves>
@@ -85,6 +99,11 @@
 		</possessions>
 		<workDisables>ManualDumb, ManualSkilled, Violent, Caring, Social, Commoner, Intellectual, Animals, Artistic, Crafting, Cooking, Firefighting, Cleaning, Hauling, PlantWork, Mining, Hunting, Constructing, Shooting, AllWork</workDisables>
 		<requiredWorkTags></requiredWorkTags>
+		<passions></passions>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<linkedBackstory>Pony_Everypony</linkedBackstory>
+		<forcedHediffs>SleepingSickness</forcedHediffs>
 	</AlienRace.AlienBackstoryDef>-->
 
 	<!--[PAWN_nameDef]

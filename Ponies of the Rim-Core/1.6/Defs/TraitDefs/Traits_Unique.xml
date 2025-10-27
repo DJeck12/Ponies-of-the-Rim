@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TraitDef>
+		<defName>Pony_Ironhooves</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>ironhooves</label>
+				<description>temp</description>
+				<statFactors>
+					<MeleeDamageFactor>1.5</MeleeDamageFactor>
+				</statFactors>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Pony_AnimalWhisperer</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>animal whisperer</label>
+				<description>temp</description>
+				<statOffsets>
+					<AnimalGatherYield>0.25</AnimalGatherYield>
+				</statOffsets>
+				<statFactors>
+					<TameAnimalChance>1.5</TameAnimalChance>
+					<TrainAnimalChance>1.5</TrainAnimalChance>
+				</statFactors>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Pony_Superfast</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>superfast</label>
+				<description>temp</description>
+				<statOffsets>
+					<MoveSpeed>0.8</MoveSpeed>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<exclusionTags>
+			<li>MoveSpeed</li>
+		</exclusionTags>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Pony_Elegance</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>elegance</label>
+				<description>temp</description>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>PerfectMemory</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>perfect memory</label>
+				<description>{PAWN_nameDef} has outstanding memory, both in terms of retaining information but also muscle memory. {PAWN_possessive} skills will never decay.</description>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>Joyous</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>joyous</label>
+				<description>{PAWN_nameDef} has the ability to make everyone feel better and inspire them to be the best version of themselves.</description>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+</Defs>
