@@ -27,7 +27,14 @@ namespace PoniesOfTheRim
                     float desiredLayerOffset;
                     if (addon.Name == "Left ear")
                     {
-                        desiredLayerOffset = wearingHeadgear ? -0.268f : -0.278f;
+                        if (wearingHeadgear || pawn.IsKirin())
+                        {
+                            desiredLayerOffset = -0.268f;
+                        }
+                        else
+                        {
+                            desiredLayerOffset = -0.278f;
+                        }
                     }
                     else
                     {

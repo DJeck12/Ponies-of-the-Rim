@@ -21,7 +21,7 @@ namespace PoniesOfTheRim
         public static void CutiemarkIcon(Pawn pawn)
         {
             if (pawn == null || !PonyHelper.IsPony(pawn) ||
-                pawn.IsMutant || pawn.health.hediffSet.HasHediff(HediffDefOf.ShamblerCorpse) || 
+                pawn.IsMutant || pawn.health.hediffSet.HasHediff(HediffDefOf.ShamblerCorpse) ||
                 pawn.Corpse.GetRotStage() == RotStage.Dessicated)
             {
                 return;
@@ -80,6 +80,8 @@ namespace PoniesOfTheRim
                 //{
                     if (cutiemarkBodyAddon != null && cutieIndex >= 0)
                     {
+                        if (pawn.DevelopmentalStage == DevelopmentalStage.Newborn || pawn.DevelopmentalStage == DevelopmentalStage.Baby)
+                        return;
                         DrawCutiemarkIcon.Draw(pawn, cutiemarkRect, cutiemarkBodyAddon, alienComp, cutieIndex);
                     }
                     if (Mouse.IsOver(cutiemarkRect) || DebugViewSettings.drawTooltipEdges)
@@ -99,7 +101,7 @@ namespace PoniesOfTheRim
                     {
                         SoundDefOf.Click.PlayOneShotOnCamera();
                         Find.WindowStack.Add(new TailSelector(pawn, tailBodyAddon, alienComp, tailIndex));
-                        Log.Message($"Аддон: { tailBodyAddon.Name} Индекс: { tailIndex}");
+                        //Log.Message($"Аддон: { tailBodyAddon.Name} Индекс: { tailIndex}");
                     }
                     if (Mouse.IsOver(tailRect) || DebugViewSettings.drawTooltipEdges)
                     {

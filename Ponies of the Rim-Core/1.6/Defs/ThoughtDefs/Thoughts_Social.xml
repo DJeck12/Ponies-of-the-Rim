@@ -95,5 +95,32 @@
 			</li>
 		</modExtensions>
 	</ThoughtDef>
+	
+  <ThoughtDef>
+    <defName>JoyousPonyPresence</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_JoyousPonyPresence</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Joyous presence</label>
+        <description>Wherever I go, I can feel the joyous one in the back of my mind. It makes me feel good. Very good.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Joyous</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_JoyousPony</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>joyous</label>
+        <baseOpinionOffset>20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 </Defs>
