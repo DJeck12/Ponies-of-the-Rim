@@ -16,7 +16,7 @@
 				<maleGenderProbability>0.35</maleGenderProbability>
 				<forcedRaceTraitEntries>
 					<li>
-						<defName>Gay</defName>
+						<defName>Bisexual</defName>
 						<chance>8</chance>
 						<commonalityMale>50</commonalityMale>
 						<commonalityFemale>100</commonalityFemale>
