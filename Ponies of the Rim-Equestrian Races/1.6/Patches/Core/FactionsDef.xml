@@ -11,6 +11,18 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Pony_BatponyKingdom"]/modExtensions/li[@Class="PoniesOfTheRim.CommsConsoleExtension"]</xpath>
+		<value>
+			<texts>
+				<li>
+					<questionText>Ask about their origin</questionText>
+					<answerText>temp</answerText>
+				</li>
+			</texts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 		<value>
 			<Pony_BatponyVillager>5</Pony_BatponyVillager>
