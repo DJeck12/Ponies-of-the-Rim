@@ -38,12 +38,61 @@
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<!-- Unique Characters -->
-					<Backstory For="Pony_Applejack_Adult">Races/Cutiemarks/QTMark67</Backstory>
-					<Backstory For="Pony_Rarity_Adult">Races/Cutiemarks/QTMark67</Backstory>
-					<Backstory For="Pony_Fluttershy_Adult">Races/Cutiemarks/QTMark67</Backstory>
-					<Backstory For="Pony_PinkiePie_Adult">Races/Cutiemarks/QTMark67</Backstory>
-					<Backstory For="Pony_RainbowDash_Adult">Races/Cutiemarks/QTMark67</Backstory>
-					<Backstory For="Pony_TwilightSparkle_Adult">Races/Cutiemarks/QTMark67</Backstory>
+					<Backstory For="Pony_Applejack_Adult">Races/Cutiemarks/QTMark68</Backstory>
+					<Backstory For="Pony_Rarity_Adult">Races/Cutiemarks/QTMark154</Backstory>
+					<Backstory For="Pony_Fluttershy_Adult">Races/Cutiemarks/QTMark159</Backstory>
+					<Backstory For="Pony_PinkiePie_Adult">Races/Cutiemarks/QTMark155</Backstory>
+					<Backstory For="Pony_RainbowDash_Adult">Races/Cutiemarks/QTMark156</Backstory>
+					<Backstory For="Pony_TwilightSparkle_Adult">Races/Cutiemarks/QTMark153</Backstory>
+
+					<!-- Adulthood Backstories -->
+					<Backstory For="Pony_EveryponyNightFanatic">Races/Cutiemarks/QTMark9</Backstory>
+					<Backstory For="Pony_EveryponyDayFanatic">Races/Cutiemarks/QTMark10</Backstory>
+					<Backstory For="Pony_EarthponyAnimalHandler">Races/Cutiemarks/QTMark35</Backstory>
+					<Backstory For="Pony_EarthponyZootranslator">Races/Cutiemarks/QTMark37</Backstory>
+					<Backstory For="Pony_PegasusShadowLeader">Races/Cutiemarks/QTMark52</Backstory>
+					<Backstory For="Pony_PegasusOfficerGuard">Races/Cutiemarks/QTMark61</Backstory>
+					<Backstory For="Pony_UnicornWarlock">Races/Cutiemarks/QTMark64</Backstory>
+					<Backstory For="Pony_UnicornCrystalMiner">Races/Cutiemarks/QTMark83</Backstory>
+					<Backstory For="Pony_EarthponyStoneFarmer">Races/Cutiemarks/QTMark93</Backstory>
+					<Backstory For="Pony_UnicornJeweler">Races/Cutiemarks/QTMark99</Backstory>
+					<Backstory For="Pony_EveryponyRoyalGuard">Races/Cutiemarks/QTMark104</Backstory>
+					<Backstory For="Pony_PegasusCook">Races/Cutiemarks/QTMark137</Backstory>
+					<Backstory For="Pony_EarthponyDruid">Races/Cutiemarks/QTMark151</Backstory>
+					<Backstory For="Pony_UnicornMagician">Races/Cutiemarks/QTMark152</Backstory>
+					<Backstory For="Pony_UnicornGemologist">Races/Cutiemarks/QTMark154</Backstory>
+					<Backstory For="Pony_EveryponyPartyPlanner">Races/Cutiemarks/QTMark155</Backstory>
+					<Backstory For="Pony_PegasusFlyingRacer">Races/Cutiemarks/QTMark156</Backstory>
+					<Backstory For="Pony_EarthponyAsceticCook">Races/Cutiemarks/QTMark173</Backstory>
+					<Backstory For="Pony_UnicornCourtWizard">Races/Cutiemarks/QTMark180</Backstory>
+					<Backstory For="Pony_EarthponyAlchemist">Races/Cutiemarks/QTMark187</Backstory>
+					<Backstory For="Pony_PegasusInventor">Races/Cutiemarks/QTMark234</Backstory>
+					<Backstory For="Pony_EveryponyPoacher">Races/Cutiemarks/QTMark238</Backstory>
+					<Backstory For="Pony_PegasusRescuer">Races/Cutiemarks/QTMark253</Backstory>
+					<Backstory For="Pony_PegasusPoultryFarmer">Races/Cutiemarks/QTMark256</Backstory>
+					<Backstory For="Pony_UnicornMagicTeacher">Races/Cutiemarks/QTMark258</Backstory>
+					<Backstory For="Pony_EarthponyFlorist">Races/Cutiemarks/QTMark275</Backstory>
+					<Backstory For="Pony_PegasusCloudSculptor">Races/Cutiemarks/QTMark276</Backstory>
+
+					<!-- Childhood Backstories -->
+					<Backstory For="Pony_EveryponyDarkChild">Races/Cutiemarks/QTMark9</Backstory>
+					<Backstory For="Pony_EveryponyLightChild">Races/Cutiemarks/QTMark10</Backstory>
+					<Backstory For="Pony_EveryponyMagicStudent">Races/Cutiemarks/QTMark19</Backstory>
+					<Backstory For="Pony_UnicornYoungWizard">Races/Cutiemarks/QTMark19</Backstory>
+					<Backstory For="Pony_EveryponyUnicornFriend">Races/Cutiemarks/QTMark46</Backstory>
+					<Backstory For="Pony_UnicornPrince">Races/Cutiemarks/QTMark100</Backstory>
+					<Backstory For="Pony_UnicornGlitterFan">Races/Cutiemarks/QTMark106</Backstory>
+					<Backstory For="Pony_PegasusRainbowLover">Races/Cutiemarks/QTMark137</Backstory>
+					<Backstory For="Pony_EarthponyPreservationist">Races/Cutiemarks/QTMark151</Backstory>
+					<Backstory For="Pony_UnicornGiftedMagician">Races/Cutiemarks/QTMark153</Backstory>
+					<Backstory For="Pony_EveryponyFriendshipStudent">Races/Cutiemarks/QTMark158</Backstory>
+					<Backstory For="Pony_EarthponyAnimalBonded">Races/Cutiemarks/QTMark159</Backstory>
+					<Backstory For="Pony_EveryponyApprentice">Races/Cutiemarks/QTMark180</Backstory>
+					<Backstory For="Pony_UnicornHornedKnight">Races/Cutiemarks/QTMark191</Backstory>
+					<Backstory For="Pony_PegasusYoungRacer">Races/Cutiemarks/QTMark230</Backstory>
+					<Backstory For="Pony_EarthponySacred">Races/Cutiemarks/QTMark249</Backstory>
+					<Backstory For="Pony_EarthponyForestFamily">Races/Cutiemarks/QTMark269</Backstory>
+					<Backstory For="Pony_PegasusCloudCatcher">Races/Cutiemarks/QTMark276</Backstory>
 				</extendedGraphics>
 				<offsets>
 					<east>
