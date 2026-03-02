@@ -40,7 +40,7 @@
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_BatponyColonist</defName>
-		<label>batpony</label>
+		<label>bat pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Batpony</race>
@@ -89,7 +89,7 @@
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_CrystalColonist</defName>
-		<label>crystal</label>
+		<label>crystal pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Crystalpony</race>
@@ -219,7 +219,7 @@
 
 	<PawnKindDef ParentName="TribePlayerBase">
 		<defName>Pony_BatponyTribe</defName>
-		<label>batpony</label>
+		<label>bat pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Batpony</race>
@@ -268,7 +268,7 @@
 
 	<PawnKindDef ParentName="TribePlayerBase">
 		<defName>Pony_CrystalTribe</defName>
-		<label>crystal</label>
+		<label>crystal pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Crystalpony</race>

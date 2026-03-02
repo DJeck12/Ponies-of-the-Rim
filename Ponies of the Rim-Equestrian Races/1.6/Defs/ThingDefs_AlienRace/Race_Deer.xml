@@ -4,11 +4,11 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Deer</defName>
 		<label>deer</label>
-		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+		<description><![CDATA[<color=#825030>Deer</color> are a race of magical quadrupeds from the planet Foenum. Their antlers serve as natural conduits for magic, similar to a unicorn’s horn, but are attuned specifically to nature. This affinity allows them to work alongside their environment to produce various magical phenomena. As a result, deer are natural gardeners and cultivators, able to nurture and shape plant life with ease. Many of the great forests today are said to have originated from their care.
 
-The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their cloven hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Like ponies, they are herbivores, and react with discomfort and distaste when presented with meat.
 
-<color=#FF46FF>Deer</color>]]></description>
+Most deer dwell in secluded forests, far from other civilizations, preferring solitude over the risk of outsiders disturbing their homes. While typically peaceful, they regard themselves as guardians of the natural world, and will defend it fiercely if threatened.]]></description>
 
 	<!-- Stats -->
 

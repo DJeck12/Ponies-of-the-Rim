@@ -108,9 +108,9 @@
 
 	<MemeDef>
 		<defName>Pony_BatponySupremacist</defName>
-		<label>batpony supremacist</label>
-		<description>Batponies are a superior race and should dominate all other sentient creatures.</description>
 		<iconPath>UI/Memes/BatponySupremacist</iconPath>
+		<label>bat pony supremacist</label>
+		<description>Bat ponies are a superior race and should dominate all other sentient creatures.</description>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>

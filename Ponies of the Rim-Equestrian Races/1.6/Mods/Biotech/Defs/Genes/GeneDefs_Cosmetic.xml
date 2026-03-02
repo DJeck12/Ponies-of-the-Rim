@@ -6,7 +6,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_GriffonBeak</defName>
 		<label>beak</label>
-		<description>temp</description>
+		<description>Carriers of this gene have a bird-like beak on their mouth, which does not interfere with eating or communication.</description>
 		<iconPath>UI/Genes/GriffonBeak</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>8</displayOrderInCategory>
@@ -22,9 +22,9 @@
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_DeerAntlers</defName>
-		<label>oviparous</label>
-		<description></description>
-		<iconPath>UI/Genes/Oviparous</iconPath>
+		<label>antlers</label>
+		<description>Carriers of this gene grow a pair of branched antlers on their head.</description>
+		<iconPath>UI/Genes/Antlers</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>-1</biostatMet>
@@ -45,7 +45,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Carapace</defName>
 		<label>back carapace</label>
-		<description>temp</description>
+		<description>Carriers of this gene grow dragon scales on their back.</description>
 		<iconPath>UI/Genes/ScaleBack</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>14</displayOrderInCategory>
@@ -58,7 +58,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Chitin</defName>
 		<label>back chitin</label>
-		<description>Carriers of this gene grow an insect-like chitin tail.</description>
+		<description>Carriers of this gene have an exoskeleton made of chitin instead of skin.</description>
 		<iconPath>UI/Genes/ChitinBack</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>14</displayOrderInCategory>

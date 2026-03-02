@@ -5,12 +5,12 @@
 
 	<FactionDef ParentName="OutlanderFactionBase">
 		<defName>Pony_BatponyKingdom</defName>
-		<label>batpony kingdom</label>
-		<description>Equestria, being formed by three pony tribes, was inhabited not only by its three main races. From the earliest stages of their history, ponies knew that there were a huge number of equine creatures similar to them in the world. One of these creatures were batponies.
+		<label>bat pony kingdom</label>
+		<description>Equestria, being formed by three pony tribes, was inhabited not only by its three main races. From the earliest stages of their history, ponies knew that there were a huge number of equine creatures similar to them in the world. One of these creatures were bat ponies.
 
-Batponies, outwardly resembling a mix of a pony and a bat, were not descendants of pegasi and were a little-known fourth tribe inhabiting Equestria. Their habitat - mountain caves, were not a popular place for settlements for other ponies, which is why batponies rarely interacted with other races from neighboring lands. Having its own culture, religion and monarchs, Batpony Kingdom was still completely subordinate to the ruling caste of Equestria's alicorns.
+Bat ponies, outwardly resembling a mix of a pony and a bat, were not descendants of pegasi and were a little-known fourth tribe inhabiting Equestria. Their habitat - mountain caves, were not a popular place for settlements for other ponies, which is why bat ponies rarely interacted with other races from neighboring lands. Having its own culture, religion and monarchs, Batpony Kingdom was still completely subordinate to the ruling caste of Equestria's alicorns.
 
-Being in relative isolation from the other races, batponies did not want to be suddenly caught off guard by potential unknown enemies. This paranoid thinking has given rise to militaristic schools and new military technologies in their Kingdom, created for special attacks and sabotage. They look with great caution at other factions, especially those unknown to them.</description>
+Being in relative isolation from the other races, bat ponies did not want to be suddenly caught off guard by potential unknown enemies. This paranoid thinking has given rise to militaristic schools and new military technologies in their Kingdom, created for special attacks and sabotage. They look with great caution at other strangers.</description>
 		<factionNameMaker>Pony_NameFactionBatpony</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/BatponyKingdom</factionIconPath>
@@ -37,7 +37,7 @@ Being in relative isolation from the other races, batponies did not want to be s
 			</li>
 			<li>
 				<categories>
-					<li>Pony_Everypony_Oulander</li>
+					<li>Pony_Everypony_Outlander</li>
 				</categories>
 				<commonality>0.25</commonality>
 			</li>
@@ -156,7 +156,7 @@ Being in relative isolation from the other races, batponies did not want to be s
 	<FactionDef ParentName="TribeBase">
 		<defName>Pony_ChangelingHive</defName>
 		<label>rough changeling hive</label>
-		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insect, half-horse, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build huge ant-like hives in hidden locations near other pony settlements.
+		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insects, half-horses, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build huge ant-like hives in hidden locations near other pony settlements.
 
 Some call the wild changelings barbaric due to their frequent raids and pillaging of other ponies to sate their hunger, but their goal is not to kill or enslave other races, putting them in a state of cold war with other factions. Countless attempts to contact the changelings led the ponies to the conclusion that the bugs are not evil, but rather victims of their circumstances, as there have been cases of changelings escaping from their home hives to reform and start a new life.
 
@@ -671,9 +671,9 @@ The Crystal Empire is expanding its influence wherever other ponies live and alt
 <!-- Deer -->
 
 	<FactionDef ParentName="PonyMedievalBase">
-		<defName>Pony_DeerDominion</defName>
-		<label>deer dominion</label>
-		<description>Deer, being a northern horse race, have mastered the magic of the elements of nature, can control weather conditions and communicate with spirits. Their principle of views is centered on the idolization of trees, and their society can be described as medieval.
+		<defName>Pony_DeerKingdom</defName>
+		<label>deer kingdom</label>
+		<description>Deer, being a northern equine race, have mastered the magic of the elements of nature, can control weather conditions and communicate with spirits. Their principle of views is centered on the idolization of trees, and their society can be described as medieval.
 
 Not being in close proximity to Equestria, the deer developed separately from the other factions and organized the Dominion, which stood up for the protection of nature. The Kirin became the main competitors of the deer due to different ideological views on the value of nature: some protect its resources, others - its descendants.
 
@@ -843,7 +843,7 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 
 The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.
 
-Hint: You can hire griffin mercenaries using the communication console for a certain price for defense or temporary work in your settlement.</description>
+Hint: You can hire griffin mercenaries using the comms console for a certain price for defense or temporary work in your settlement.</description>
 		<factionNameMaker>Pony_NameFactionGriffon</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/GriffonKingdom</factionIconPath>
@@ -958,7 +958,7 @@ Hint: You can hire griffin mercenaries using the communication console for a cer
 
 	<VEF.Planet.HireableFactionDef>
 			<defName>Pony_GriffonMercenaries</defName>
-			<label>griffon mercenaries</label>
+			<label>mercenaries</label>
 			<description>The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.</description>
 			<texPath>World/WorldObjects/Expanding/PirateOutpost</texPath>
 			<color>(1, 1, 1)</color>
@@ -967,7 +967,7 @@ Hint: You can hire griffin mercenaries using the communication console for a cer
 				<li>Pony_Griffon_Marksman</li>
 				<li>Pony_Griffon_Sniper</li>
 			</pawnKinds>
-			<commTag>mercenaries</commTag>
+			<commTag>griffon mercenaries</commTag>
 			<referencedFaction>Pony_GriffonKingdom</referencedFaction>
 	</VEF.Planet.HireableFactionDef>
 
@@ -1165,7 +1165,11 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 	<FactionDef ParentName="PonyMedievalBase">
 		<defName>Pony_KirinRealm</defName>
 		<label>kirin realm</label>
-		<description>temp</description>
+		<description>Nestled along the River of Silence, the Kirin tribes dwell in wary isolation. Their volatile tempers and their ability to transform into fiery Nirics often led them to burn their villages and forests, dooming crops and driving them to engage ranching and stonecraft.
+
+Once, In Equestria's zenith, the wise ruler Rain Shine submerged her kin in silence waters, stripping emotions to leash their inner fire. This continued until the envoys of Equestria provided the Kirins with fire safety equipment and taught them to calm their emotions. Since then, the Kirins have used the water of silence to make calming potions.
+
+Today's Kirin tribes have advanced to medieval technology, building stone fortresses and crafting runic artifacts. Eternal enemies of the Deer kingdoms, the Kirin fight for fertile lands where they raise livestock and breed mounts for raids and trade caravans. Isolation breeds suspicion, but the kirin's restrained fury is a Imminent danger.</description>
 		<factionNameMaker>Pony_NameFactionKirin</factionNameMaker>
 		<categoryTag>PonyMedieval</categoryTag>
 		<factionIconPath>World/Factions/KirinRealm</factionIconPath>
@@ -1333,7 +1337,11 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 	<FactionDef ParentName="TribeBase">
 		<defName>Pony_ZebraTribe</defName>
 		<label>zebra tribe</label>
-		<description>temp</description>
+		<description>Zebras hail from the sun-baked savannahs of Foenum, where tribal shamans mastered alchemy through potions, brews, and ancient rituals. Zebras can often be found wandering the wastelands as traveling merchants, who often sell exotic goods from all over the world.
+
+Throughout history, zebras have not cooperated directly with their neighbors and are still considered savages by other factions. Some clans turned to dark magic, and powerful warlocks sowed chaos, damaging the reputation of their own species.
+
+Their alchemical arsenal and ritual skills provide them with protection from mechanoids and high-tech raiders. Distant from pony societies, zebras view outsiders with superstitious caution, guided by instinct and intuition faith.</description>
 		<factionNameMaker>Pony_NameFactionZebra</factionNameMaker>
 		<categoryTag>PonyTribal</categoryTag>
 		<factionIconPath>World/Factions/ZebraTribe</factionIconPath>

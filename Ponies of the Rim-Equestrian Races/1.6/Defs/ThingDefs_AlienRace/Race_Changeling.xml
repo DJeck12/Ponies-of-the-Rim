@@ -4,11 +4,11 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Changeling</defName>
 		<label>changeling</label>
-		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+		<description><![CDATA[<color=#277330>Changeling</color> are a race of insect-like quadrupeds. They are capable of shapeshifting into virtually anything, but most often use this ability to inspire trust in order to kidnap unsuspecting victims. This behavior has earned them a reputation as dangerous and deceitful parasites.
 
-The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. In addition to their shapeshifting, their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Unlike other races, changelings are emotivores, feeding off of emotions rather than regular food; the most desirable among them being love.
 
-<color=#FF46FF>Changeling</color>]]></description>
+Changelings inhabit vast subterranean networks, living and working alongside others of their kind for the betterment of their hive. Despite being linked via a hive-mind, each changeling maintains a distinct sense of self with independent thought, though most rarely exercise it.]]></description>
 
 	<!-- Stats -->
 

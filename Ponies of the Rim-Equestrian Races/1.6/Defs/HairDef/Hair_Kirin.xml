@@ -4,7 +4,7 @@
 <!-- Curled -->
 	<HairDef>
 		<defName>Pony_CurledHair</defName>
-		<label>(Kirin) Cirled</label>
+		<label>(Kirin) Curled</label>
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Kirin/Curled</texPath>
 		<category>Pony</category>

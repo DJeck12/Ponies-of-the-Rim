@@ -6,7 +6,7 @@
 		<label>&lt;color=#F096C8&gt;Equestrian Expedition&lt;/color&gt;</label>
 		<description>Equestria is your homeland, the country of ponies and other magical creatures. As part of an important mission, your team has been sent to a forgotten planet somewhere on the edge of the galaxy. Having entered its orbit and prepared to land, you hear a loud explosion and the grinding of metal from the captain's cabin. Having assessed the emergency condition of the ship's compartments and having no way to contact the captain, you decide to use escape pods and urgently leave the ship. This is how your adventure begins.</description>
 		<scenario>
-			<summary>Four pony adventurers, each one from a different race. Ideal for roleplay.</summary>
+			<summary>Four pony adventurers, each one from a different race. Explore the world of Post-Equestria.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>PonyColony</factionDef>
@@ -152,9 +152,11 @@
 	<ScenarioDef>
 		<defName>Pony_ManeSix</defName>
 		<label>&lt;color=#F096C8&gt;The Mane Six&lt;/color&gt;</label>
-		<description>temp</description>
+		<description>One day, you and your friends are summoned to the Cutie Map. You assumed it would be a standard friendship problem; show up, figure things out, pat everypony on the back, and everypony’s happy, right? Only, something went wrong. When the map called you, it didn’t just show you where to go, it brought you here itself. A portal opened up above the dais, and you, and all your friends, were dragged into it. You assumed you’d wake up somewhere in Equestria; you were wrong. This new world is full of strange technology you’ve never seen, your magic doesn’t work like it used to, weather and clouds move and shift on their own, and it seems like everything that lives here wants to kill you, even the fluffy bunnies! One thing is for certain; this Rimworld definitely needs a lesson in friendship.
+
+Will you show the creatures of the Rimworld a better way? Or will you fall to the vices that claimed so many others on this distant, archaic rock? Will you simply abandon your mission, and try to find your way home, if you’re even still in the same universe as your home? Oh, and it seems like there's something's wrong with Spike.</description>
 		<scenario>
-			<summary>temp</summary>
+			<summary>Six best friends who are ready to stand up for each other. Ideal for roleplay.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>PonyColony</factionDef>
@@ -175,13 +177,16 @@
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>temp</text>
+					<text>One day, you and your friends are summoned to the Cutie Map. You assumed it would be a standard friendship problem; show up, figure things out, pat everypony on the back, and everypony’s happy, right? Only, something went wrong. When the map called you, it didn’t just show you where to go, it brought you here itself. A portal opened up above the dais, and you, and all your friends, were dragged into it. You assumed you’d wake up somewhere in Equestria; you were wrong. This new world is full of strange technology you’ve never seen, your magic doesn’t work like it used to, weather and clouds move and shift on their own, and it seems like everything that lives here wants to kill you, even the fluffy bunnies! One thing is for certain; this Rimworld definitely needs a lesson in friendship.
+
+Will you show the creatures of the Rimworld a better way? Or will you fall to the vices that claimed so many others on this distant, archaic rock? Will you simply abandon your mission, and try to find your way home, if you’re even still in the same universe as your home? Oh, and it seems like there's something's wrong with Spike.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 
 				<!-- Config pages -->
 				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom">
 					<def>Pony_ConfigurePawnsKindDefs</def>
+					<customSummary>Start as The Mane Six, Twilight and her friends.</customSummary>
 					<pawnChoiceCount>6</pawnChoiceCount>
 					<kindCounts>
 						<li>

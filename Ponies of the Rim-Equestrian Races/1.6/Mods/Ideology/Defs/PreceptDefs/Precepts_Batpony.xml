@@ -5,7 +5,7 @@
 
 	<IssueDef>
 		<defName>Pony_Batpony</defName>
-		<label>batponies</label>
+		<label>bat ponies</label>
 		<iconPath>UI/Issues/Batpony</iconPath>
 	</IssueDef>
 
@@ -17,7 +17,7 @@
 		<defName>Pony_Batpony_Abhorrent</defName>
 		<issue>Pony_Batpony</issue>
 		<label>abhorrent</label>
-		<description>Batponies are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
+		<description>Bat ponies are an inferior race, not worthy of our attention. We shouldn't even think about being friends with them.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>60</displayOrderInIssue>
 		<conflictingMemes>
@@ -39,8 +39,8 @@
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races</workerClass>
 		<stages>
 			<li>
-				<label>hatred for batponies</label>
-				<description>Batponies are absolutely repulsive and I can't let them abuse our trust.</description>
+				<label>hatred for bat ponies</label>
+				<description>Bat ponies are absolutely repulsive and I can't let them abuse our trust.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
@@ -63,7 +63,7 @@
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>disgusting batpony!</label>
+				<label>disgusting bat pony!</label>
 				<baseOpinionOffset>-20</baseOpinionOffset>
 			</li>
 		</stages>
@@ -86,7 +86,7 @@
 		<defName>Pony_Batpony_Horrible</defName>
 		<issue>Pony_Batpony</issue>
 		<label>disliked</label>
-		<description>Batponies are different from us, even too different. We have to be on our guard and not trust them.</description>
+		<description>Bat ponies are different from us, even too different. We have to be on our guard and not trust them.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<comps>
@@ -102,7 +102,7 @@
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>distrust for batponies</label>
+				<label>distrust for bat ponies</label>
 				<baseOpinionOffset>-10</baseOpinionOffset>
 			</li>
 		</stages>
@@ -125,7 +125,7 @@
 		<defName>Pony_Batpony_Stricted</defName>
 		<issue>Pony_Batpony</issue>
 		<label>stricted</label>
-		<description>Batponies are the only race allowed in our society.</description>
+		<description>Bat ponies are the only race allowed in our society.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<requiredMemes>
@@ -148,7 +148,7 @@
 		<stages>
 			<li>
 				<label>other races among us</label>
-				<description>We live alongside someone who is not a batpony. We should make them leave in one way or another.</description>
+				<description>We live alongside someone who is not a bat pony. We should make them leave in one way or another.</description>
 				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 		</stages>
@@ -165,7 +165,7 @@
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_StrictRaces_Social</workerClass>
 		<stages>
 			<li>
-				<label>not a batpony</label>
+				<label>not a bat pony</label>
 				<baseOpinionOffset>-50</baseOpinionOffset>
 			</li>
 		</stages>
@@ -182,7 +182,7 @@
 		<defName>Pony_Batpony_Respected</defName>
 		<issue>Pony_Batpony</issue>
 		<label>respected</label>
-		<description>Batponies are very unique and deserve our admiration.</description>
+		<description>Bat ponies are very unique and deserve our admiration.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
 		<comps>
@@ -198,7 +198,7 @@
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>respect for batponies</label>
+				<label>respect for bat ponies</label>
 				<baseOpinionOffset>10</baseOpinionOffset>
 			</li>
 		</stages>
@@ -221,7 +221,7 @@
 		<defName>Pony_Batpony_Exalted</defName>
 		<issue>Pony_Batpony</issue>
 		<label>exalted</label>
-		<description>Batponies are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
+		<description>Bat ponies are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<comps>
@@ -240,8 +240,8 @@
 		<thoughtClass>Thought_Situational</thoughtClass>
 		<stages>
 			<li>
-				<label>love for batponies</label>
-				<description>It makes me feel happier knowing we live among batponies.</description>
+				<label>love for bat ponies</label>
+				<description>It makes me feel happier knowing we live among bat ponies.</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 		</stages>
@@ -264,7 +264,7 @@
 		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Precept_Races_Social</workerClass>
 		<stages>
 			<li>
-				<label>amazing batpony!</label>
+				<label>amazing bat pony!</label>
 				<baseOpinionOffset>20</baseOpinionOffset>
 			</li>
 		</stages>
