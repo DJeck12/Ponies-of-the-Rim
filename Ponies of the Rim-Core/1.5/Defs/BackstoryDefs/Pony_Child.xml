@@ -94,14 +94,14 @@
 		{PAWN_gender ? he : she}-->
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyOtherRace</defName>
+		<defName>Pony_EveryponyDIfferentRace</defName>
 		<title>child of another race</title>
 		<titleShort>other</titleShort>
 		<baseDesc>[PAWN_nameDef] was born of a different race than [PAWN_possessive] parents possessed. Nevertheless, [PAWN_pronoun] grew up in a loving family that raised [PAWN_objective] to be a kind and free from prejudice.</baseDesc>
 		<slot>Childhood</slot> 
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
@@ -123,7 +123,7 @@
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
@@ -149,14 +149,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyUniFri</defName>
+		<defName>Pony_EveryponyUnicornFriend</defName>
 		<title>friend of unicorns</title>
 		<titleShort>friend</titleShort>
 		<baseDesc>[PAWN_nameDef] was surrounded only by unicorn friends. They shared with [PAWN_objective] various interesting facts about magic, expanding [PAWN_possessive] knowledge in this field.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
@@ -171,14 +171,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyWizApp</defName>
+		<defName>Pony_EveryponyApprentice</defName>
 		<title>wizard's apprentice</title>
 		<titleShort>apprentice</titleShort>
 		<baseDesc>[PAWN_nameDef] lost [PAWN_possessive] parents early and was a homeless orphan for a long time. Then [PAWN_pronoun] was found and sheltered by an old wandering hermit wizard. The wizard raised [PAWN_objective] throughout [PAWN_possessive] childhood and taught [PAWN_objective] the art of magic.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
@@ -190,14 +190,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyStruckBaS</defName>
+		<defName>Pony_EveryponyAfflicted</defName>
 		<title>struck by a basilisk</title>
 		<titleShort>afflicted</titleShort>
 		<baseDesc>As a child, [PAWN_nameDef] fell under the petrifying gaze of a basilisk, but another pony was able to save [PAWN_objective]. [PAWN_pronoun] underwent long-term rehabilitation, but some health problems and pathological fear of wild animals still plague [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
@@ -230,14 +230,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyLightChi</defName>
+		<defName>Pony_EveryponyLightChild</defName>
 		<title>child of Light</title>
 		<titleShort>child of Light</titleShort>
 		<baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Light. Since [PAWN_pronoun] lived among sectarians, [PAWN_nameDef] received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
@@ -255,14 +255,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyDarkChi</defName>
+		<defName>Pony_EveryponyDarkChild</defName>
 		<title>child of Darkness</title>
 		<titleShort>child of Darkness</titleShort>
 		<baseDesc>[PAWN_nameDef] was born into a family worshipping the Goddess of Darkness. Since [PAWN_pronoun] lived among sectarians, [PAWN_nameDef] received mainly religious views about the structure of the world around [PAWN_objective].</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 			<li>Pony_Everypony_Tribal</li>
 		</spawnCategories>
@@ -310,7 +310,7 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyFriSchSt</defName>
+		<defName>Pony_EveryponyFriendshipStudent</defName>
 		<title>Friendship school student</title>
 		<titleShort>comrade</titleShort>
 		<baseDesc>[PAWN_nameDef] was a student of one of the most popular and ancient schools of Old Equestria, which was extremely prestigious at that time. [PAWN_pronoun] gained deep insights into the field of social and moral relations, which naturally suggesting the superiority of friendship magic.</baseDesc>
@@ -332,14 +332,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyMagSchSt</defName>
+		<defName>Pony_EveryponyMagicStudent</defName>
 		<title>Magic school student</title>
 		<titleShort>neophyte</titleShort>
 		<baseDesc>Since early childhood, [PAWN_nameDef] showed an interest in a variety of magical sciences. Parents decided to send [PAWN_objective] to study at the School of Magic, [PAWN_pronoun] learned a lot of new things while receiving specialized education and studying various scientific disciplines.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 		</spawnCategories>
 		<skillGains>
 			<Construction>-3</Construction>
@@ -362,14 +362,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EveryponyUnderAli</defName>
+		<defName>Pony_EveryponyAlicornCare</defName>
 		<title>under care of an alicorn</title>
 		<titleShort>ward</titleShort>
 		<baseDesc>[PAWN_nameDef] was born under tragic circumstances when famine struck in [PAWN_possessive] country. [PAWN_pronoun] was lucky enough to be under the care of an alicorn who arrived on a charity mission. [PAWN_nameDef] grew up to be a diligent foal and from an early age [PAWN_pronoun] began to study the lessons of friendship and science.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Everypony</li>
-			<li>Pony_Everypony_Oulander</li>
+			<li>Pony_Everypony_Outlander</li>
 			<li>Pony_Everypony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
