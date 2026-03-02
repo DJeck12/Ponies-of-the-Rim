@@ -14,29 +14,27 @@
 							<kindDefs>
 								<li>Pony_AlicornColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
-			</startingColonists>
-			<alienwandererkinds>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>Pony_AlicornVillager</li>
+								<li>Pony_AlicornTribe</li>
 							</kindDefs>
-							<chance>1</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
-			</alienwandererkinds>
+			</startingColonists>
 		</pawnKindSettings>
 
 	</AlienRace.RaceSettings>
@@ -59,7 +57,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -104,7 +101,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -138,11 +134,11 @@
 							<kindDefs>
 								<li>Pony_ChangelingColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -151,12 +147,11 @@
 							<kindDefs>
 								<li>Pony_ChangelingTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyTribe</li>
-						<li>Pony_PlayerChangelingHive</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -188,7 +183,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -223,11 +217,11 @@
 							<kindDefs>
 								<li>Pony_ChangedlingColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -236,7 +230,7 @@
 							<kindDefs>
 								<li>Pony_ChangedlingTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -272,7 +266,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -306,11 +299,11 @@
 						<kindDefs>
 							<li>Pony_CrystalColonist</li>
 						</kindDefs>
-						<chance>100</chance>
-					</li>
+							<chance>0</chance>
+						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -319,7 +312,7 @@
 							<kindDefs>
 								<li>Pony_CrystalTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -355,7 +348,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -389,11 +381,11 @@
 							<kindDefs>
 								<li>Pony_DeerColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -402,7 +394,7 @@
 							<kindDefs>
 								<li>Pony_DeerTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -438,7 +430,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -472,11 +463,11 @@
 							<kindDefs>
 								<li>Pony_GriffonColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -485,7 +476,7 @@
 							<kindDefs>
 								<li>Pony_GriffonTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -521,7 +512,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -555,11 +545,11 @@
 							<kindDefs>
 								<li>Pony_HippogriffColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -568,7 +558,7 @@
 							<kindDefs>
 								<li>Pony_HippogriffTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -604,7 +594,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -638,11 +627,11 @@
 							<kindDefs>
 								<li>Pony_KirinColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -651,7 +640,7 @@
 							<kindDefs>
 								<li>Pony_KirinTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -687,7 +676,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -721,11 +709,11 @@
 							<kindDefs>
 								<li>Pony_ZebraColonist</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>Pony_ColonyWithRaces</li>
+						<li>PonyColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -734,7 +722,7 @@
 							<kindDefs>
 								<li>Pony_ZebraTribe</li>
 							</kindDefs>
-							<chance>100</chance>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -770,7 +758,6 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
-						<li>Pony_ColonyWithRaces</li>
 					</factionDefs>
 				</li>
 				<li>

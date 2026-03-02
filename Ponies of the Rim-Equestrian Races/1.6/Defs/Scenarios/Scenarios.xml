@@ -2,56 +2,6 @@
 <Defs>
 
 	<ScenarioDef>
-		<defName>Pony_PonyAdventure</defName>
-		<label>Pony adventure</label>
-		<description>Play by your own rules: This scenario includes all PotR races, including: Alicorn, Earthpony, Pegasus, Unicorn, Batpony, Changeling, Changedling, Crystalpony, Deer, Griffon, Hippogriff, Kirin, Seapony, Zebra.
-
-Note: This scenario is made for testing purposes. You can customize the scenario to create your own unique playthrough.</description>
-		<scenario>
-			<summary>Start with any race, designed for manual customization.</summary>
-			<playerFaction>
-				<def>PlayerFaction</def>
-				<factionDef>Pony_ColonyWithRaces</factionDef>
-			</playerFaction>
-			<surfaceLayer>
-				<def>SurfaceLayerFixed</def>
-				<tag>Surface</tag>
-				<layer>Surface</layer>
-				<settingsDef>Surface</settingsDef>
-				<hide>true</hide>
-				<connections>
-					<Orbit MayRequire="Ludeon.RimWorld.Odyssey">
-						<zoomMode>ZoomOut</zoomMode>
-					</Orbit>
-				</connections>
-			</surfaceLayer>
-			<parts>
-				<!-- Game start dialog -->
-				<li Class="ScenPart_GameStartDialog">
-					<def>GameStartDialog</def>
-					<text>Equestria is your homeland, the country of ponies and other magical creatures. As part of an important mission, your team has been sent to a forgotten planet somewhere on the edge of the galaxy. Having entered its orbit and prepared to land, you hear a loud explosion and the grinding of metal from the captain's cabin. Having assessed the emergency condition of the ship's compartments and having no way to contact the captain, you decide to use escape pods and urgently leave the ship. This is how your adventure begins.</text>
-					<closeSound>GameStartSting</closeSound>
-				</li>
-
-				<!-- Config pages -->
-				<li Class="PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawnsCustom">
-					<def>ConfigPage_ConfigureStartingPawns</def>
-					<customSummary>Start with 8 ponies.</customSummary>
-					<pawnCount>8</pawnCount>
-					<pawnChoiceCount>8</pawnChoiceCount>
-				</li>
-
-				<!-- Player starting stuff spawn method-->
-				<li Class="ScenPart_PlayerPawnsArriveMethod">
-					<def>PlayerPawnsArriveMethod</def>
-					<method>DropPods</method>
-					<visible>false</visible>
-				</li>
-			</parts>
-		</scenario>
-	</ScenarioDef>
-
-	<ScenarioDef>
 		<defName>Pony_PlayerChangelingHive</defName>
 		<label>Changeling hive</label>
 		<description>Half-insect, half-horse, changelings have existed alongside ponies since the earliest times of history, but have never been able to communicate. Being intelligent but driven by instinct, changelings reject the idea of ​​technological development and prefer to build primitive hives like their ancestors.
