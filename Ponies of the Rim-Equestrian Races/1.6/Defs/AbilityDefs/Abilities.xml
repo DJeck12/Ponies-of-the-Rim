@@ -5,6 +5,9 @@
 		<defName>Pony_Crystallization</defName>
 		<label>crystallization</label>
 		<description>The caster absorbs the power of crystals into himself, strengthening his body, making it more durable, but reducing his mobility in process.</description>
+		<iconPath>UI/Abilities/Ability_Crystal</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
+		<warmupSound>Pony_AbilityWarmup</warmupSound>
 		<targetRequired>False</targetRequired>
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
@@ -12,18 +15,15 @@
 		<cooldownTicksRange>420000</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<iconPath>UI/Abilities/Ability_Crystal</iconPath>
 		<hotKey>Misc1</hotKey>
-		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
-		<warmupSound>Pony_AbilityWarmup</warmupSound>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<range>-1</range>
 			<warmupTime>2.0</warmupTime>
-			<range>0</range>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
@@ -49,5 +49,60 @@
 			</li>
 		</comps>
 	</AbilityDef>
-
+<!--
+	<AbilityDef>
+		<defName>Pony_AdaptationLink</defName>
+		<label>adaptation link</label>
+		<description>temp</description>
+		<iconPath>UI/Abilities/Ability_Kirin</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Ability_Kirin</warmupMoteSocialSymbol>
+		<warmupSound>Pony_AbilityWarmup</warmupSound>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<cooldownTicksRange>900000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<showWhenDrafted>false</showWhenDrafted>
+		<hotKey>Misc1</hotKey>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>2.0</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<mouseTargetingText>Choose an animal to improve link</mouseTargetingText>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetEntities>False</canTargetEntities>
+				<canTargetSubhumans>False</canTargetSubhumans>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetSelf>false</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityMustBeCapableOf">
+				<workTags>
+					<li>Animals</li>
+				</workTags>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Pony_AdaptationLink</hediffDef>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+				<sound>Pony_AbilityEffect</sound>
+			</li>
+		</comps>
+	</AbilityDef>
+-->
 </Defs>
