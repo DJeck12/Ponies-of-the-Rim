@@ -5,7 +5,7 @@
 		<defName>Pony_AlicornSupremacist</defName>
 		<label>alicorn supremacist</label>
 		<description>Alicorns are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/AlicornSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Alicorn</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
@@ -108,9 +108,9 @@
 
 	<MemeDef>
 		<defName>Pony_BatponySupremacist</defName>
-		<iconPath>UI/Memes/BatponySupremacist</iconPath>
 		<label>bat pony supremacist</label>
 		<description>Bat ponies are a superior race and should dominate all other sentient creatures.</description>
+		<iconPath>UI/Memes/Supremacy_Batpony</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -216,7 +216,7 @@
 		<defName>Pony_ChangelingSupremacist</defName>
 		<label>changeling supremacist</label>
 		<description>Changelings are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/ChangelingSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Changeling</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -322,7 +322,7 @@
 		<defName>Pony_ChangedlingSupremacist</defName>
 		<label>changedling supremacist</label>
 		<description>Changedlings are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/ChangedlingSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Skittlebug</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -428,7 +428,7 @@
 		<defName>Pony_CrystalponySupremacist</defName>
 		<label>crystal pony supremacist</label>
 		<description>Crystal ponies are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/CrystalponySupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Crystal</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -532,7 +532,7 @@
 		<defName>Pony_DeerSupremacist</defName>
 		<label>deer supremacist</label>
 		<description>Deers are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/DeerSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Deer</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -552,7 +552,7 @@
 			</li>
 		</requireOne>
 		<factionWhitelist>
-			<li>Pony_DeerDominion</li>
+			<li>Pony_DeerKingdom</li>
 		</factionWhitelist>
 		<agreeableTraits>
 			<Pony_RelationsForEarth>1</Pony_RelationsForEarth>
@@ -636,7 +636,7 @@
 		<defName>Pony_GriffonSupremacist</defName>
 		<label>griffon supremacist</label>
 		<description>Griffons are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/GriffonSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Griffon</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -734,7 +734,7 @@
 		<defName>Pony_HippogriffSupremacist</defName>
 		<label>hippogriff supremacist</label>
 		<description>Hippogriffs are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/HippogriffSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Hippogriff</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -754,7 +754,7 @@
 			</li>
 		</requireOne>
 		<factionWhitelist>
-			<li>Pony_SeaKingdom</li>
+			<li>Pony_HippogriffKingdom</li>
 		</factionWhitelist>
 		<generalRules>
 			<rulesStrings>
@@ -832,7 +832,7 @@
 		<defName>Pony_KirinSupremacist</defName>
 		<label>kirin supremacist</label>
 		<description>Kirins are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/KirinSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Kirin</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
@@ -936,7 +936,7 @@
 		<defName>Pony_ZebraSupremacist</defName>
 		<label>zebra supremacist</label>
 		<description>Zebras are a superior race and should dominate all other sentient creatures.</description>
-		<iconPath>UI/Memes/ZebraSupremacist</iconPath>
+		<iconPath>UI/Memes/Supremacy_Zebra</iconPath>
 		<groupDef>RaceRelation</groupDef>
 		<impact>1</impact>
 		<randomizationSelectionWeightFactor>0.5</randomizationSelectionWeightFactor>
