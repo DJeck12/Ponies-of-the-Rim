@@ -62,7 +62,7 @@
 	</TraitDef>
 
 	<TraitDef>
-		<defName>PerfectMemory</defName>
+		<defName>Pony_PerfectMemory</defName>
 		<commonality>0</commonality>
 		<degreeDatas>
 			<li>
@@ -73,7 +73,7 @@
 	</TraitDef>
 
 	<TraitDef>
-		<defName>Joyous</defName>
+		<defName>Pony_Joyous</defName>
 		<commonality>0</commonality>
 		<degreeDatas>
 			<li>
