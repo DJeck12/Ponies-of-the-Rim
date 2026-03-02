@@ -70,12 +70,6 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>5</weight>
-										<min>RGBA(180, 180, 180, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
-									</li>
-									<li>
-										<weight>5</weight>
 										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
@@ -84,8 +78,8 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(127, 127, 127, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(180, 180, 180, 255)</max>
 									</li>
 								</options>
 							</second>
@@ -95,7 +89,7 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(180, 180, 180, 255)</min>
+										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -114,14 +108,8 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>10</weight>
-										<min>RGBA(35, 35, 35, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
-									</li>
-									<li>
-										<weight>1</weight>
-										<min>RGBA(35, 35, 35, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<min>RGBA(180, 35, 35, 255)</min>
+										<max>RGBA(255, 100, 100, 255)</max>
 									</li>
 								</options>
 							</first>

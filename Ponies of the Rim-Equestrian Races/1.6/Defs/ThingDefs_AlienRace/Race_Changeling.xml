@@ -59,35 +59,38 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>
+					<oldHairAgeCurve>
+						<points>
+							<li>(0, 0)</li>
+						</points>
+					</oldHairAgeCurve>
 					<colorChannels>
 						<li>
 							<name>skin</name> <!-- Don't translate! Will break opacity -->
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>10</weight>
-										<min>RGBA(50, 150, 50, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
-									</li>
-									<li>
-										<weight>5</weight>
-										<min>RGBA(180, 180, 180, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
-									</li>
-									<li>
-										<weight>5</weight>
-										<min>RGBA(35, 35, 35, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<only>RGBA(55, 55, 55, 255)</only>
 									</li>
 								</options>
 							</first>
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(127, 127, 127, 255)</min>
+										<min>RGBA(150, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 150, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 150, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -98,8 +101,7 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(180, 180, 180, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<only>RGBA(100, 100, 100, 255)</only>
 									</li>
 								</options>
 							</first>
@@ -140,12 +142,15 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Changeling</li>
+						</styleTagsOverride>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>

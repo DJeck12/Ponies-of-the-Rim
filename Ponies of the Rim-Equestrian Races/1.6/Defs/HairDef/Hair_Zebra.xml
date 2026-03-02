@@ -3,7 +3,7 @@
 
 <!-- Celestial -->
 	<HairDef>
-		<defName>Pony_MohawkHair</defName>
+		<defName>Pony_Mohawk</defName>
 		<label>(Zebra) Mohawk</label>
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Zebra/Mohawk</texPath>
@@ -13,5 +13,15 @@
         </styleTags>
 	</HairDef>
 
+	<HairDef>
+		<defName>Pony_Upendo</defName>
+		<label>(Zebra) Upendo</label>
+		<styleGender>Any</styleGender>
+		<texPath>Races/Hairstyles/Zebra/Upendo</texPath>
+		<category>Zebra</category>
+        <styleTags>
+            <li>Zebra</li>
+        </styleTags>
+	</HairDef>
 
 </Defs>

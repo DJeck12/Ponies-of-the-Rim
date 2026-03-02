@@ -7,6 +7,16 @@
 	</StyleItemCategoryDef>
 
 	<StyleItemCategoryDef>
+		<defName>Changeling</defName>
+		<label>changeling style</label>
+	</StyleItemCategoryDef>
+
+	<StyleItemCategoryDef>
+		<defName>Changedling</defName>
+		<label>changedling style</label>
+	</StyleItemCategoryDef>
+
+	<StyleItemCategoryDef>
 		<defName>Kirin</defName>
 		<label>kirin style</label>
 	</StyleItemCategoryDef>

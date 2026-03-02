@@ -59,22 +59,50 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>
+					<oldHairAgeCurve>
+						<points>
+							<li>(0, 0)</li>
+						</points>
+					</oldHairAgeCurve>
 					<colorChannels>
 						<li>
 							<name>skin</name> <!-- Don't translate! Will break opacity -->
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(50, 50, 50, 255)</min>
+										<min>RGBA(150, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 150, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 35, 150, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
 							</first>
-							<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
-								<colorChannel>ideo</colorChannel>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 150, 150, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(150, 255, 150, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(150, 150, 255, 255)</max>
+									</li>
+								</options>
 							</second>
 						</li>
 						<li>
@@ -82,7 +110,7 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(100, 100, 100, 255)</min>
+										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -124,12 +152,15 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Changedling</li>
+						</styleTagsOverride>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>

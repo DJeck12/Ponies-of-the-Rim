@@ -14,13 +14,6 @@
 			</value>
 		</match>
 	</Operation>
-	<Operation Class="PatchOperationInsert">
-		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Cutiemark"]/extendedGraphics/Mutant[1]</xpath>
-		<order>Append</order>
-		<value>
-			<Race For="Pony_Zebra">Races/Cutiemarks/QTMark_Zebra</Race>
-		</value>
-	</Operation>
 
 <!-- Head -->
 
@@ -53,15 +46,33 @@
 				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Races/Heads/Changedling/Head_Male</path>
+				<path>Races/Heads/Changeling/Head_Male</path>
 				<extendedGraphics>
-					<Gender For="Female">Races/Heads/Changedling/Head_Female</Gender>
+					<Gender For="Female">Races/Heads/Changeling/Head_Female</Gender>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Crystalpony">
+				<path>Races/Heads/Crystal/Head_Male</path>
+				<extendedGraphics>
+					<Gender For="Female">Races/Heads/Crystal/Head_Female</Gender>
 				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Deer">
 				<path>Races/Heads/Deer/Head_Male</path>
 				<extendedGraphics>
 					<Gender For="Female">Races/Heads/Deer/Head_Female</Gender>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Hippogriff">
+				<path>Races/Heads/Hippogriff/Head_Male</path>
+				<extendedGraphics>
+					<Gender For="Female">Races/Heads/Hippogriff/Head_Female</Gender>
+				</extendedGraphics>
+			</Race>
+			<Race For="Pony_Kirin">
+				<path>Races/Heads/Maskless/Head_Male</path>
+				<extendedGraphics>
+					<Gender For="Female">Races/Heads/Maskless/Head_Female</Gender>
 				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Zebra">
@@ -97,7 +108,12 @@
 		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Body"]/extendedGraphics/Mutant</xpath>
 		<order>Append</order>
 		<value>
+			<Race For="Pony_Changeling">Races/Bodies/Changeling/Body_Changeling</Race>
+			<Race For="Pony_Changedling">Races/Bodies/Maskless/Body_Normal</Race>
+			<Race For="Pony_Crystalpony">Races/Bodies/Crystal/Body_Crystal</Race>
 			<Race For="Pony_Deer">Races/Bodies/Deer/Body_Deer</Race>
+			<Race For="Pony_Hippogriff">Races/Bodies/Maskless/Body_Normal</Race>
+			<Race For="Pony_Kirin">Races/Bodies/Kirin/Body_Kirin</Race>
 			<Race For="Pony_Zebra">Races/Bodies/Zebra/Body_Zebra</Race>
 		</value>
 	</Operation>
@@ -132,7 +148,7 @@
 				<path>Races/Tails/Changeling/Tail_Changeling</path>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Races/Tails/Changedling/Tail_Changedling</path>
+				<path>Races/Tails/Skittlebug/Tail_Changedling</path>
 			</Race>
 			<Race For="Pony_Griffon">
 				<path>Races/Tails/Griffon/Tail_Griffon</path>
@@ -158,6 +174,7 @@
 				<Race>Pony_Changeling</Race>
 				<Race>Pony_Changedling</Race>
 				<Race>Pony_Crystalpony</Race>
+				<Race>Pony_Deer</Race>
 				<Race>Pony_Griffon</Race>
 				<Race>Pony_Hippogriff</Race>
 				<Race>Pony_Kirin</Race>
@@ -178,12 +195,6 @@
 		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]</xpath>
 		<value>
 			<extendedGraphics>
-				<Race For="Pony_Deer">
-					<path>Races/Nose/Deer/Nose_Male</path>
-					<extendedGraphics>
-						<Gender For="Female">Races/Nose/Deer/Nose_Female</Gender>
-					</extendedGraphics>
-				</Race>
 				<Race For="Pony_Griffon">
 					<path>Races/Nose/Griffon/Beak_Male</path>
 					<extendedGraphics>
@@ -194,6 +205,12 @@
 					<path>Races/Nose/Griffon/Beak_Male</path>
 					<extendedGraphics>
 						<Gender For="Female">Races/Nose/Griffon/Beak_Female</Gender>
+					</extendedGraphics>
+				</Race>
+				<Race For="Pony_Deer">
+					<path>Races/Nose/Deer/Nose_Male</path>
+					<extendedGraphics>
+						<Gender For="Female">Races/Nose/Deer/Nose_Female</Gender>
 					</extendedGraphics>
 				</Race>
 			</extendedGraphics>
@@ -224,46 +241,31 @@
 		<order>Append</order>
 		<value>
 			<Race For="Pony_Batpony">
-				<path>Races/Ears/Batpony/Normal/Ear_Bat_Normal_Right</path>
+				<path>Races/Ears/Batpony/Normal/Ear_Right</path>
+				<!--
 				<extendedGraphics>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
 					<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
 				</extendedGraphics>
+				-->
 			</Race>
 			<Race For="Pony_Changeling">
-				<path>Races/Ears/Changeling/Normal/Ear_Changeling_Normal_Right</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Changeling/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Changeling/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Changeling/Normal/Ear_Right</path>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Races/Ears/Changeling/Normal/Ear_Changeling_Normal_Right</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Changedling/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Changedling/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Skittlebug/Normal/Ear_Right</path>
+			</Race>
+			<Race For="Pony_Crystalpony">
+				<path>Races/Ears/Crystal/Normal/Ear_Right</path>
 			</Race>
 			<Race For="Pony_Deer">
-				<path>Races/Ears/Deer/Normal/Ear_Deer_Normal_Right</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Deer/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Deer/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Deer/Normal/Ear_Right</path>
 			</Race>
 			<Race For="Pony_Hippogriff">
-				<path>Races/Ears/Hippogriff/Normal/Ear_Hippogriff_Normal_Right</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Hippogriff/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Hippogriff/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Hippogriff/Normal/Ear_Right</path>
 			</Race>
 			<Race For="Pony_Kirin">
-				<path>Races/Ears/Kirin/Normal/Ear_Kirin_Normal_Right</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Kirin/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Kirin/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Kirin/Normal/Ear_Right</path>
 			</Race>
 		</value>
 	</Operation>
@@ -292,46 +294,31 @@
 		<order>Append</order>
 		<value>
 			<Race For="Pony_Batpony">
-				<path>Races/Ears/Batpony/Normal/Ear_Bat_Normal_Left</path>
+				<path>Races/Ears/Batpony/Normal/Ear_Left</path>
+				<!--
 				<extendedGraphics>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
 					<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
 				</extendedGraphics>
+				-->
 			</Race>
 			<Race For="Pony_Changeling">
-				<path>Races/Ears/Changeling/Normal/Ear_Changeling_Normal_Left</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Changeling/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Changeling/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Changeling/Normal/Ear_Left</path>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Races/Ears/Changeling/Normal/Ear_Changeling_Normal_Left</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Changedling/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Changedling/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Skittlebug/Normal/Ear_Left</path>
+			</Race>
+			<Race For="Pony_Crystalpony">
+				<path>Races/Ears/Crystal/Normal/Ear_Left</path>
 			</Race>
 			<Race For="Pony_Deer">
-				<path>Races/Ears/Deer/Normal/Ear_Deer_Normal_Left</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Deer/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Deer/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Deer/Normal/Ear_Left</path>
 			</Race>
 			<Race For="Pony_Hippogriff">
-				<path>Races/Ears/Hippogriff/Normal/Ear_Hippogriff_Normal_Left</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Hippogriff/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Hippogriff/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Hippogriff/Normal/Ear_Left</path>
 			</Race>
 			<Race For="Pony_Kirin">
-				<path>Races/Ears/Kirin/Normal/Ear_Kirin_Normal_Left</path>
-				<extendedGraphics>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Kirin/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
-					<Hediff For="CochlearImplant">Things/Races/Kirin/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
-				</extendedGraphics>
+				<path>Races/Ears/Kirin/Normal/Ear_Left</path>
 			</Race>
 		</value>
 	</Operation>
@@ -346,7 +333,6 @@
 				<Race>Pony_Alicorn</Race>
 				<Race>Pony_Changeling</Race>
 				<Race>Pony_Changedling</Race>
-				<Race>Pony_Kirin</Race>
 			</value>
 		</match>
 	</Operation>
@@ -355,52 +341,10 @@
 		<order>Append</order>
 		<value>
 			<Race For="Pony_Changeling">
-				<path>Things/Races/Changeling/Normal/Horn</path>
-				<extendedGraphics>
-					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
-						<path>Things/Races/Changeling/Skeleton/Horn_Skeleton</path>
-						<extendedGraphics>
-							<Age For="PonyBaby">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyChild">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-						</extendedGraphics>
-					</Mutant>
-					<RotStage For="Dessicated">
-						<path>Things/Races/Changeling/Skeleton/Horn_Skeleton</path>
-						<extendedGraphics>
-							<Age For="PonyBaby">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyChild">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-						</extendedGraphics>
-					</RotStage>
-					<Age For="PonyBaby">Things/Races/Changeling/Baby/Horn_Baby</Age>
-					<Age For="PonyChild">Things/Races/Changeling/Baby/Horn_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Changeling/Baby/Horn_Baby</Age>
-				</extendedGraphics>
+				<path>Races/Horns/Changeling/Horn_Changeling</path>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Things/Races/Changeling/Normal/Horn</path>
-				<extendedGraphics>
-					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
-						<path>Things/Races/Changeling/Skeleton/Horn_Skeleton</path>
-						<extendedGraphics>
-							<Age For="PonyBaby">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyChild">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-						</extendedGraphics>
-					</Mutant>
-					<RotStage For="Dessicated">
-						<path>Things/Races/Changeling/Skeleton/Horn_Skeleton</path>
-						<extendedGraphics>
-							<Age For="PonyBaby">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyChild">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Changeling/SkeletonBaby/Horn_SkeletonBaby</Age>
-						</extendedGraphics>
-					</RotStage>
-					<Age For="PonyBaby">Things/Races/Changeling/Baby/Horn_Baby</Age>
-					<Age For="PonyChild">Things/Races/Changeling/Baby/Horn_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Things/Races/Changeling/Baby/Horn_Baby</Age>
-				</extendedGraphics>
+				<path>Races/Horns/Changeling/Horn_Changeling</path>
 			</Race>
 		</value>
 	</Operation>
@@ -427,48 +371,18 @@
 		<value>
 			<Race For="Pony_Batpony">
 				<path>Races/Wings/Batpony/Normal/Wing_Batpony_Right</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Batpony/Prosthetic/Wing_Batpony_Prosthetic_Right</Hediff>
-					<Age For="PonyBaby">Races/Wings/Batpony/Baby/Wing_Batpony_Baby_Right</Age>
-					<Age For="PonyChild">Races/Wings/Batpony/Baby/Wing_Batpony_Baby_Right</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Batpony/Baby/Wing_Batpony_Baby_Right</Age>
-				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Changeling">
-				<path>Races/Wings/Changeling/Normal/Wing_Right</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Changeling/Prosthetic/Wing_Right_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Changeling/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Changeling/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Changeling/Baby/Wing_Right_Baby</Age>
-				</extendedGraphics>
+				<path>Races/Wings/Changeling/Normal/Wing_Changeling_Right</path>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Races/Wings/Changeling/Normal/Wing_Right</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Changeling/Prosthetic/Wing_Right_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Changeling/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Changeling/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Changeling/Baby/Wing_Right_Baby</Age>
-				</extendedGraphics>
+				<path>Races/Wings/Changeling/Normal/Wing_Changeling_Right</path>
 			</Race>
 			<Race For="Pony_Griffon">
 				<path>Races/Wings/Griffon/Normal/Wing_Right</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Griffon/Prosthetic/Wing_Right_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Griffon/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Griffon/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Griffon/Baby/Wing_Right_Baby</Age>
-				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Hippogriff">
 				<path>Races/Wings/Griffon/Normal/Wing_Right</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Griffon/Prosthetic/Wing_Right_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Griffon/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Griffon/Baby/Wing_Right_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Griffon/Baby/Wing_Right_Baby</Age>
-				</extendedGraphics>
 			</Race>
 		</value>
 	</Operation>
@@ -495,48 +409,18 @@
 		<value>
 			<Race For="Pony_Batpony">
 				<path>Races/Wings/Batpony/Normal/Wing_Batpony_Left</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Batpony/Prosthetic/Wing_Batpony_Prosthetic_Left</Hediff>
-					<Age For="PonyBaby">Races/Wings/Batpony/Baby/Wing_Batpony_Baby_Left</Age>
-					<Age For="PonyChild">Races/Wings/Batpony/Baby/Wing_Batpony_Baby_Left</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Batpony/Baby/Wing_Batpony_Baby_Left</Age>
-				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Changeling">
-				<path>Races/Wings/Changeling/Normal/Wing_Left</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Changeling/Prosthetic/Wing_Left_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Changeling/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Changeling/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Changeling/Baby/Wing_Left_Baby</Age>
-				</extendedGraphics>
+				<path>Races/Wings/Changeling/Normal/Wing_Changeling_Left</path>
 			</Race>
 			<Race For="Pony_Changedling">
-				<path>Races/Wings/Changeling/Normal/Wing_Left</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Changeling/Prosthetic/Wing_Left_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Changeling/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Changeling/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Changeling/Baby/Wing_Left_Baby</Age>
-				</extendedGraphics>
+				<path>Races/Wings/Changeling/Normal/Wing_Changeling_Left</path>
 			</Race>
 			<Race For="Pony_Griffon">
 				<path>Races/Wings/Griffon/Normal/Wing_Left</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Griffon/Prosthetic/Wing_Left_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Griffon/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Griffon/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Griffon/Baby/Wing_Left_Baby</Age>
-				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Hippogriff">
 				<path>Races/Wings/Griffon/Normal/Wing_Left</path>
-				<extendedGraphics>
-					<Hediff For="SimpleProstheticWing">Races/Wings/Griffon/Prosthetic/Wing_Left_Prosthetic</Hediff>
-					<Age For="PonyBaby">Races/Wings/Griffon/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyChild">Races/Wings/Griffon/Baby/Wing_Left_Baby</Age>
-					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Griffon/Baby/Wing_Left_Baby</Age>
-				</extendedGraphics>
 			</Race>
 		</value>
 	</Operation>
