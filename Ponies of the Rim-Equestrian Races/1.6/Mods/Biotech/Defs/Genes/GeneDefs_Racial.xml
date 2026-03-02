@@ -105,47 +105,4 @@
 		</modExtensions>
 	</GeneDef>
 
-	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_FishTail</defName>
-		<label>fish tail</label>
-		<description>temp</description>
-		<iconPath>UI/Genes/FishTail</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>8</displayOrderInCategory>
-		<biostatCpx>0</biostatCpx>
-		<waterCellCost>1</waterCellCost>
-		<statOffsets>
-			<MoveSpeed>-2.0</MoveSpeed>
-		</statOffsets>
-		<symbolPack>
-			<wholeNameSymbols>
-				<li><symbol>fishy</symbol></li>
-			</wholeNameSymbols>
-			<prefixSymbols>
-				<li><symbol>horse</symbol></li>
-				<li><symbol>pon</symbol></li>
-				<li><symbol>hydro</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>fin</symbol></li>
-				<li><symbol>neigh</symbol></li>
-				<li><symbol>pony</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
-
-	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_Scales</defName>
-		<label>body scales</label>
-		<description>temp</description>
-		<iconPath>UI/Genes/Scales</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>14</displayOrderInCategory>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<exclusionTags>
-			<li>BodyCover</li>
-		</exclusionTags>
-	</GeneDef>
-
 </Defs>

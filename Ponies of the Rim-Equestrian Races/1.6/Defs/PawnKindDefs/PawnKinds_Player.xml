@@ -168,22 +168,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>Pony_SeaponyColonist</defName>
-		<label>seapony</label>
-		<labelMale>stallion</labelMale>
-		<labelFemale>mare</labelFemale>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_ZebraColonist</defName>
 		<label>zebra</label>
 		<labelMale>stallion</labelMale>
@@ -336,22 +320,6 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Kirin</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>Pony_SeaponyTribe</defName>
-		<label>seapony</label>
-		<labelMale>stallion</labelMale>
-		<labelFemale>mare</labelFemale>
-		<race>Pony_Seapony</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>

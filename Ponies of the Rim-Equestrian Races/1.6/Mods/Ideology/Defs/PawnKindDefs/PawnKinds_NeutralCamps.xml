@@ -497,68 +497,6 @@
 		</backstoryFiltersOverride>
 	</PawnKindDef>
 
-<!-- Seapony -->
-
-	<PawnKindDef ParentName="Miner">
-		<defName>Pony_SeaponyMiner</defName>
-		<label>miner</label>
-		<race>Pony_Seapony</race>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categories>
-					<li>Miner</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Seapony</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="Hunter">
-		<defName>Pony_SeaponyHunter</defName>
-		<label>hunter</label>
-		<race>Pony_Seapony</race>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categories>
-					<li>Hunter</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Seapony</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="Logger">
-		<defName>Pony_SeaponyLogger</defName>
-		<label>logger</label>
-		<race>Pony_Seapony</race>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categories>
-					<li>Logger</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Seapony</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="Farmer">
-		<defName>Pony_SeaponyFarmer</defName>
-		<label>farmer</label>
-		<race>Pony_Seapony</race>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categories>
-					<li>Farmer</li>
-					<li>Pony_Everypony</li>
-					<li>Pony_Seapony</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
 <!-- Zebra -->
 
 	<PawnKindDef ParentName="Miner">

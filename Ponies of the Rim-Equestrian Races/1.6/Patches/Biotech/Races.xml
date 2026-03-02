@@ -17,7 +17,6 @@
 					or defName="Pony_Griffon"
 					or defName="Pony_Hippogriff"
 					or defName="Pony_Kirin"
-					or defName="Pony_Seapony"
 					or defName="Pony_Zebra"]/statBases</xpath>
 					<value>
 						<statBases>

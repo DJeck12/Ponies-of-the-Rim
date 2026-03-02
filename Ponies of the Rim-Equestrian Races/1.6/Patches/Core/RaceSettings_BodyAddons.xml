@@ -38,7 +38,6 @@
 				<Race>Pony_Griffon</Race>
 				<Race>Pony_Hippogriff</Race>
 				<Race>Pony_Kirin</Race>
-				<Race>Pony_Seapony</Race>
 				<Race>Pony_Zebra</Race>
 			</value>
 		</match>
@@ -90,7 +89,6 @@
 				<Race>Pony_Griffon</Race>
 				<Race>Pony_Hippogriff</Race>
 				<Race>Pony_Kirin</Race>
-				<Race>Pony_Seapony</Race>
 				<Race>Pony_Zebra</Race>
 			</value>
 		</match>
@@ -217,7 +215,6 @@
 				<Race>Pony_Deer</Race>
 				<Race>Pony_Hippogriff</Race>
 				<Race>Pony_Kirin</Race>
-				<Race>Pony_Seapony</Race>
 				<Race>Pony_Zebra</Race>
 			</value>
 		</match>
@@ -286,7 +283,6 @@
 				<Race>Pony_Deer</Race>
 				<Race>Pony_Hippogriff</Race>
 				<Race>Pony_Kirin</Race>
-				<Race>Pony_Seapony</Race>
 				<Race>Pony_Zebra</Race>
 			</value>
 		</match>
