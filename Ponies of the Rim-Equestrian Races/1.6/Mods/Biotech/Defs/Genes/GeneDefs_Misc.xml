@@ -6,25 +6,26 @@
 		<label>iron-willed</label>
 		<description>Carriers of this gene are steady and keeps going through thick and thin, when others broke down long before.</description>
 		<iconPath>UI/Genes/IronWilled</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>50</displayOrderInCategory>
+		<displayOrderInCategory>9</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-2</biostatMet>
+		<biostatMet>-3</biostatMet>
 		<forcedTraits>
 			<li>
 				<def>Nerves</def>
 				<degree>2</degree>
 			</li>
 		</forcedTraits>
+		<exclusionTags>
+			<li>Nerves</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Steadfast</defName>
 		<label>steadfast</label>
 		<description>Carriers of this gene are mentally tough and won't break down under stresses that would crack most people.</description>
-		<iconPath>UI/Genes/steadfast</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>50</displayOrderInCategory>
+		<iconPath>UI/Genes/Steadfast</iconPath>
+		<displayOrderInCategory>8</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<forcedTraits>
@@ -33,15 +34,17 @@
 				<degree>1</degree>
 			</li>
 		</forcedTraits>
+		<exclusionTags>
+			<li>Nerves</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Nervous</defName>
 		<label>nervous</label>
 		<description>Carriers of this gene tends to crack under pressure.</description>
-		<iconPath>UI/Genes/nervous</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>50</displayOrderInCategory>
+		<iconPath>UI/Genes/Nervous</iconPath>
+		<displayOrderInCategory>7</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 		<forcedTraits>
@@ -50,23 +53,77 @@
 				<degree>-1</degree>
 			</li>
 		</forcedTraits>
+		<exclusionTags>
+			<li>Nerves</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Volatile</defName>
 		<label>volatile</label>
 		<description>Carriers of this gene are on a hair-trigger all the time. They're the first to break in any tough situation.</description>
-		<iconPath>UI/Genes/volatile</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>50</displayOrderInCategory>
+		<iconPath>UI/Genes/Volatile</iconPath>
+		<displayOrderInCategory>6</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>2</biostatMet>
+		<biostatMet>3</biostatMet>
 		<forcedTraits>
 			<li>
 				<def>Nerves</def>
 				<degree>-2</degree>
 			</li>
 		</forcedTraits>
+		<exclusionTags>
+			<li>Nerves</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Farsighted</defName>
+		<label>farsighted</label>
+		<description>Carriers of this gene have difficulty seeing at a close distance. Their shooting accuracy decreases at short and point-blank ranges.</description>
+		<iconPath>UI/Genes/Farsighted</iconPath>
+		<displayOrderInCategory>15</displayOrderInCategory>
+		<statFactors>
+			<ShootingAccuracyFactor_Short>0.5</ShootingAccuracyFactor_Short>
+			<ShootingAccuracyFactor_Touch>0.25</ShootingAccuracyFactor_Touch>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<exclusionTags>
+			<li>ShootingAccuracy</li>
+		</exclusionTags>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>blind</symbol></li>
+				<li><symbol>blur</symbol></li>
+				<li><symbol>squint</symbol></li>
+				<li><symbol>peek</symbol></li>
+				<li><symbol>cross</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>sighter</symbol></li>
+				<li><symbol>peeker</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_Hawkeyed</defName>
+		<label>hawkeyed</label>
+		<description>Carriers of this gene have a sharp, predatory eyesight. Their shooting accuracy improves as the distance to the target increases.</description>
+		<iconPath>UI/Genes/Hawkeyed</iconPath>
+		<displayOrderInCategory>15</displayOrderInCategory>
+		<statFactors>
+			<ShootingAccuracyFactor_Long>1.3</ShootingAccuracyFactor_Long>
+			<ShootingAccuracyFactor_Medium>1.15</ShootingAccuracyFactor_Medium>
+			<ShootingAccuracyFactor_Short>1</ShootingAccuracyFactor_Short>
+			<ShootingAccuracyFactor_Touch>0.85</ShootingAccuracyFactor_Touch>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>ShootingAccuracy</li>
+		</exclusionTags>
 	</GeneDef>
 
 </Defs>

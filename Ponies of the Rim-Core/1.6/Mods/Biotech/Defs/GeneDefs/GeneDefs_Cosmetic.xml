@@ -7,7 +7,7 @@
 		<description>Carriers of this gene have a pony-like head.</description>
 		<iconPath>UI/Genes/PonyHead</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>0</displayOrderInCategory>
+		<displayOrderInCategory>40</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<forcedHeadTypes>
 			<li>Male_Pony</li>
@@ -24,7 +24,7 @@
 		<description>Carriers of this gene grow pony-like ears.</description>
 		<iconPath>UI/Genes/PonyEars</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>4</displayOrderInCategory>
+		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>true</randomChosen>
 		<exclusionTags>
@@ -38,7 +38,7 @@
 		<description>Carriers of this gene grow a fluffy pony tail.</description>
 		<iconPath>UI/Genes/PonyTail</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>6</displayOrderInCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>true</randomChosen>
 		<exclusionTags>
@@ -51,9 +51,12 @@
 		<label>cutiemark</label>
 		<description>Carriers of this gene have a natural small picture-like symbol on their waist depicting their personality, talents or interests.</description>
 		<iconPath>UI/Genes/Cutiemark</iconPath>
-		<displayOrderInCategory>8</displayOrderInCategory>
+		<displayOrderInCategory>60</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Cutiemark</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
@@ -61,7 +64,7 @@
 		<label>multicolored skin</label>
 		<description>Carriers of this gene produce a pigment that gives their skin a various set of colors.</description>
 		<iconPath>UI/Genes/ColorBody</iconPath>
-		<displayOrderInCategory>10</displayOrderInCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>true</randomChosen>
 		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
@@ -82,6 +85,9 @@
 				</genes>
 			</li>
 		</modExtensions>
+		<exclusionTags>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
@@ -89,7 +95,7 @@
 		<label>multicolored hair</label>
 		<description>Carriers of this gene produce a pigment that color their hair in a various set of colors.</description>
 		<iconPath>UI/Genes/ColorHair</iconPath>
-		<displayOrderInCategory>12</displayOrderInCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>true</randomChosen>
 		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
@@ -109,6 +115,9 @@
 				</genes>
 			</li>
 		</modExtensions>
+		<exclusionTags>
+			<li>HairColor</li>
+		</exclusionTags>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
@@ -117,7 +126,7 @@
 		<description>Carriers of this gene have a horse-like voice with distinctive neighing.</description>
 		<iconPath>UI/Genes/VoiceHorse</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>13</displayOrderInCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<soundCall>Pawn_Horse_Call</soundCall>
 		<soundDeath>Pawn_Horse_Death</soundDeath>
