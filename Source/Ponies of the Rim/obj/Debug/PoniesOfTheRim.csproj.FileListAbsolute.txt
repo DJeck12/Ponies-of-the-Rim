@@ -148,3 +148,6 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the R
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the Rim\obj\Debug\PoniesOf.646225EC.Up2Date
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.dll
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the Rim\obj\Debug\Ponies of the Rim.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the Rim\bin\Debug\KCSG.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the Rim\bin\Debug\PipeSystem.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\3223243284\Source\Ponies of the Rim\bin\Debug\0PrepatcherAPI.dll

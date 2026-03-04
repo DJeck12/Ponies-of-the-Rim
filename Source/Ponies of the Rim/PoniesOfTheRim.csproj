@@ -105,6 +105,8 @@
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
     <Compile Include="Commsquestcontext.cs" />
+    <Compile Include="CompProperties_EggHatcher.cs" />
+    <Compile Include="Comp_EggHatcher.cs" />
     <Compile Include="Flying\PegasusFlightCore.cs" />
     <Compile Include="Flying\PegasusFlightPatches.cs" />
     <Compile Include="Flying\PegasusFlightStats.cs" />
