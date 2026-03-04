@@ -38,7 +38,7 @@ A large part of their culture overlaps with that of sea ponies, their allies, wh
 			<!-- Genes -->
 				<raceGenes>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_GriffonBeak</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HippogriffEars</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_FeatherEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_BirdHands</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Oviparous</li>

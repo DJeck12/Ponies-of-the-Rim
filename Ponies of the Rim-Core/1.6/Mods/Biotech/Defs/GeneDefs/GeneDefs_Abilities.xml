@@ -6,6 +6,7 @@
 		<label>pony magic</label>
 		<description>Carriers of this gene receive one of the random abilities of earth ponies, unicorns, or pegasi. Have no effect on ponies.</description>
 		<iconPath>UI/Genes/PonyMagic</iconPath>
+		<displayOrderInCategory>20</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<randomChosen>true</randomChosen>
 		<geneClass>PoniesOfTheRim.Gene_Random</geneClass>
@@ -26,6 +27,7 @@
 		<label>nature power</label>
 		<description>Carriers of this gene are endowed with the natural strength of earth ponies, gaining their ability for increasing work speed.</description>
 		<iconPath>UI/Genes/NaturePower</iconPath>
+		<displayOrderInCategory>20</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<abilities>
@@ -42,6 +44,7 @@
 		<description>Carriers of this gene grow new limbs on their back, resembling pegasi wings, gaining their ability for flight.</description>
 		<iconPath>UI/Genes/PegasusWings</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>20</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<abilities>
@@ -62,6 +65,7 @@
 		<description>Carriers of this gene grow a unicorn horn from the center of their forehead, giving them the ability to use magic.</description>
 		<iconPath>UI/Genes/UnicornHorn</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>20</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<abilities>

@@ -6,8 +6,7 @@
 		<label>nocturnal</label>
 		<description>Carriers of this gene prefer to be up at night. They are happier if awake at nights and unhappy if awake during the day.</description>
 		<iconPath>UI/Genes/Nocturnal</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>50</displayOrderInCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<forcedTraits>
 			<li>
@@ -30,10 +29,10 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_CrystallineSkin</defName>
 		<label>crystalline skin</label>
-		<description>The skin of carriers of this gene takes on a crystallized form, shimmering in the light and making it resistant to blunt damage of any kind.</description>
+		<description>The organism of carriers of this gene merges with the organic crystal structure. Their skin takes on a crystallized form, shimmering in the light and making it resistant to blunt damage of any kind.</description>
 		<iconPath>UI/Genes/CrystallineSkin</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<biostatCpx>0</biostatCpx>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<statOffsets>
 			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
@@ -45,8 +44,8 @@
 		<label>oviparous</label>
 		<description>Carriers of this gene lay eggs instead of giving live birth. Eggs need time and correct conditions to hatch.</description>
 		<iconPath>UI/Genes/Oviparous</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<biostatCpx>0</biostatCpx>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<exclusionTags>
 			<li>Egglaying</li>
@@ -63,7 +62,7 @@
 		<description>Carriers of this gene have hands that resemble bird feet. Their sharp claws allow them to deal sharp damage instead of blunt when unarmed in compensation of manipulation capability.</description>
 		<iconPath>UI/Genes/BirdHands</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>25</displayOrderInCategory>
+		<displayOrderInCategory>31</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 		<capMods>

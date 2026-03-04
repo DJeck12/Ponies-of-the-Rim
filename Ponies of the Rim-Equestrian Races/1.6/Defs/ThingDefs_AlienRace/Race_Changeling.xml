@@ -54,11 +54,10 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 				<raceGenes>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ChitinEars</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_BugTail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ChitinTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Chitin</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pain_Reduced</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 				</raceGenes>

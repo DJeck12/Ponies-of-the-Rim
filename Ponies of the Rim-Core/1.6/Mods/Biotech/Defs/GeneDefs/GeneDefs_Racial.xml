@@ -7,7 +7,7 @@
 		<description>Carriers of this gene have hands that resemble horse hooves. This reduces their ability to manipulate objects but makes them slightly faster.</description>
 		<iconPath>UI/Genes/HorseHooves</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>25</displayOrderInCategory>
+		<displayOrderInCategory>31</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 		<capMods>
@@ -45,7 +45,7 @@
 		<label>strong body</label>
 		<description>Carriers of this gene have a strong and sturdy body, increasing pain threshold and immunity. A natural attribute of earth-like ponies.</description>
 		<iconPath>UI/Genes/StrongBody</iconPath>
-		<displayOrderInCategory>35</displayOrderInCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<statOffsets>
@@ -97,7 +97,7 @@
 		<label>magic imbued</label>
 		<description>Carriers of this gene have a great connection with magic, endowing themselves with magical and psychic abilities. A natural attribute of ponies with a horn.</description>
 		<iconPath>UI/Genes/MagicImbued</iconPath>
-		<displayOrderInCategory>40</displayOrderInCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<statOffsets>

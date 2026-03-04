@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef>
+		<defName>Pony_AvianEgg</defName>
+		<label>avian egg (fert.)</label>
+		<description>temp</description>
+		<thingClass>ThingWithComps</thingClass>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/EggFertilized_Avian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(245, 245, 245)</color>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<tickerType>Normal</tickerType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>1</stackLimit>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
+		<thingCategories>
+			<li>EggsFertilized</li>
+		</thingCategories>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<Mass>0.2</Mass>
+			<Beauty>2</Beauty>
+			<MaxHitPoints>20</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Flammability>0.7</Flammability>
+			<Nutrition>0.25</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>50</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+		</comps>
+	</ThingDef>
+
+</Defs>
