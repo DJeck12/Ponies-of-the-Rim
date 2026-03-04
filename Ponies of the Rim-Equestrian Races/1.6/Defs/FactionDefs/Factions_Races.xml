@@ -841,7 +841,7 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 
 The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.
 
-Hint: You can hire griffin mercenaries using the comms console for a certain price for defense or temporary work in your settlement.</description>
+Hint: You can hire griffon mercenaries using the comms console for a certain price for defense or temporary work in your settlement.</description>
 		<factionNameMaker>Pony_NameFactionGriffon</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/GriffonKingdom</factionIconPath>
