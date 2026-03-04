@@ -185,10 +185,6 @@
 		<description>Unicorns are very unique and deserve our admiration.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
-		<conflictingMemes>
-			<li>Pony_EarthponySupremacist</li>
-			<li>Pony_PegasusSupremacist</li>
-		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Unicorn_Respected_Social</thought>
@@ -228,10 +224,6 @@
 		<description>Unicorns are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
-		<conflictingMemes>
-			<li>Pony_EarthponySupremacist</li>
-			<li>Pony_PegasusSupremacist</li>
-		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Unicorn_Exalted</thought>

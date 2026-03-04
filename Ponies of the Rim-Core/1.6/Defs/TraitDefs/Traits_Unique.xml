@@ -7,7 +7,7 @@
 		<degreeDatas>
 			<li>
 				<label>ironhooves</label>
-				<description>temp</description>
+				<description>{PAWN_nameDef} is the strongest {PAWN_gender ? stallion : mare} of them all! [PAWN_pronoun] can take down a bull with [PAWN_possessive] bare hooves.</description>
 				<statFactors>
 					<MeleeDamageFactor>1.5</MeleeDamageFactor>
 				</statFactors>
@@ -21,7 +21,7 @@
 		<degreeDatas>
 			<li>
 				<label>animal whisperer</label>
-				<description>temp</description>
+				<description>Thanks to [PAWN_possessive] love and passion for animals and [PAWN_possessive] kindness, the animals around {PAWN_nameDef} naturally become more obedient. When working with all animals, whether it be shearing or milking, the animals will yield more goods.</description>
 				<statOffsets>
 					<AnimalGatherYield>0.25</AnimalGatherYield>
 				</statOffsets>
@@ -39,7 +39,7 @@
 		<degreeDatas>
 			<li>
 				<label>superfast</label>
-				<description>temp</description>
+				<description>Ever since childhood {PAWN_nameDef} trained hard and never lost a single flying race, earning the title of the fastest pegasus.</description>
 				<statOffsets>
 					<MoveSpeed>0.8</MoveSpeed>
 				</statOffsets>
@@ -56,7 +56,7 @@
 		<degreeDatas>
 			<li>
 				<label>elegance</label>
-				<description>temp</description>
+				<description>{PAWN_nameDef} always approaches everything [PAWN_pronoun] does with care, which is reflected in {PAWN_possessive} craftsmanship and artistry. Any item or piece of furniture [PAWN_pronoun] makes will be of a +1 higher quality.</description>
 			</li>
 		</degreeDatas>
 	</TraitDef>

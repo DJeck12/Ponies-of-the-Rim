@@ -34,6 +34,32 @@
 						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_EarthponyColonist</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_EarthponyTribe</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerTribe</li>
+					</factionDefs>
+				</li>
 			</startingColonists>
 			<alienslavekinds>
 				<li>
@@ -116,6 +142,32 @@
 						<li>PonyTribe</li>
 					</factionDefs>
 				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_PegasusColonist</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_PegasusTribe</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerTribe</li>
+					</factionDefs>
+				</li>
 			</startingColonists>
 			<alienslavekinds>
 				<li>
@@ -196,6 +248,32 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyTribe</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_UnicornColonist</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_UnicornTribe</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>

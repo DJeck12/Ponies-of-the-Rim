@@ -442,55 +442,6 @@
 		</backstoryFilters>
 	</PawnKindDef>
 
-<!-- Seapony -->
-
-	<PawnKindDef ParentName="SlaveBase">
-		<defName>Pony_SeaponySlave</defName>
-		<label>slave</label>
-		<race>Pony_Seapony</race>
-		<backstoryFiltersOverride Inherit="False">
-			<li>
-				<categories>
-				<li>Offworld</li>
-				<li>Outlander</li>
-				<li>Outsider</li>
-				<li>Pony_Everypony</li>
-				<li>Pony_Seapony</li>
-				</categories>
-			</li>
-		</backstoryFiltersOverride>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="SpaceRefugee">
-		<defName>Pony_SeaponyRefugee</defName>
-		<label>refugee</label>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony_Offworld</li>
-					<li>Pony_Seapony_Offworld</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="VillagerBase" Name="SeaponyVillager">
-		<defName>Pony_SeaponyVillager</defName>
-		<label>villager</label>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Outlander</li>
-					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Seapony_Outlander</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
 <!-- Zebra -->
 
 	<PawnKindDef ParentName="SlaveBase">

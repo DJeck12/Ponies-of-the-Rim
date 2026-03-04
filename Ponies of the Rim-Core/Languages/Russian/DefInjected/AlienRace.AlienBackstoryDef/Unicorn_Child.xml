@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Pony_UnicornYanWiz.title>юный волшебник</Pony_UnicornYanWiz.title>
-	<Pony_UnicornYanWiz.titleFemale>юная волшебница</Pony_UnicornYanWiz.titleFemale>
-	<Pony_UnicornYanWiz.titleShort>волшебник</Pony_UnicornYanWiz.titleShort>
-	<Pony_UnicornYanWiz.titleShortFemale>волшебница</Pony_UnicornYanWiz.titleShortFemale>
-	<Pony_UnicornYanWiz.description>В самом раннем возрасте [PAWN_nameDef] {PAWN_gender ? проявлял : проявляла} удивительные способности. [PAWN_pronoun] без труда {PAWN_gender ? усваивал : усваивала} знания и {PAWN_gender ? владел : владела} базовыми магическими формулами.</Pony_UnicornYanWiz.description>
+	<Pony_UnicornYoungWizard.title>юный волшебник</Pony_UnicornYoungWizard.title>
+	<Pony_UnicornYoungWizard.titleFemale>юная волшебница</Pony_UnicornYoungWizard.titleFemale>
+	<Pony_UnicornYoungWizard.titleShort>волшебник</Pony_UnicornYoungWizard.titleShort>
+	<Pony_UnicornYoungWizard.titleShortFemale>волшебница</Pony_UnicornYoungWizard.titleShortFemale>
+	<Pony_UnicornYoungWizard.description>В самом раннем возрасте [PAWN_nameDef] {PAWN_gender ? проявлял : проявляла} удивительные способности. [PAWN_pronoun] без труда {PAWN_gender ? усваивал : усваивала} знания и {PAWN_gender ? владел : владела} базовыми магическими формулами.</Pony_UnicornYoungWizard.description>
 
-	<Pony_UnicornGlitFan.title>фанат блестяшек</Pony_UnicornGlitFan.title>
-	<Pony_UnicornGlitFan.titleFemale>фанатка блестяшек</Pony_UnicornGlitFan.titleFemale>
-	<Pony_UnicornGlitFan.titleShort>крисофил</Pony_UnicornGlitFan.titleShort>
-	<Pony_UnicornGlitFan.titleShortFemale>крисофилка</Pony_UnicornGlitFan.titleShortFemale>
-	<Pony_UnicornGlitFan.description>[PAWN_nameDef] {PAWN_gender ? питал : питала} особую любовь к собиранию кристаллов и разноцветных камней. [PAWN_pronoun] {PAWN_gender ? создавал : создавала} из них удивительные поделки.</Pony_UnicornGlitFan.description>
+	<Pony_UnicornGlitterFan.title>фанат блестяшек</Pony_UnicornGlitterFan.title>
+	<Pony_UnicornGlitterFan.titleFemale>фанатка блестяшек</Pony_UnicornGlitterFan.titleFemale>
+	<Pony_UnicornGlitterFan.titleShort>крисофил</Pony_UnicornGlitterFan.titleShort>
+	<Pony_UnicornGlitterFan.titleShortFemale>крисофилка</Pony_UnicornGlitterFan.titleShortFemale>
+	<Pony_UnicornGlitterFan.description>[PAWN_nameDef] {PAWN_gender ? питал : питала} особую любовь к собиранию кристаллов и разноцветных камней. [PAWN_pronoun] {PAWN_gender ? создавал : создавала} из них удивительные поделки.</Pony_UnicornGlitterFan.description>
 
-	<Pony_UnicornGifMag.title>одаренный маг</Pony_UnicornGifMag.title>
-	<Pony_UnicornGifMag.titleShort>маг</Pony_UnicornGifMag.titleShort>
-	<Pony_UnicornGifMag.description>[PAWN_nameDef] {PAWN_gender ? был рождён : была рождена} с невероятным талантом к магии. [PAWN_possessive] знания и умения в этой области поражали даже опытных и искусных магов.</Pony_UnicornGifMag.description>
+	<Pony_UnicornGiftedMagician.title>одаренный маг</Pony_UnicornGiftedMagician.title>
+	<Pony_UnicornGiftedMagician.titleShort>маг</Pony_UnicornGiftedMagician.titleShort>
+	<Pony_UnicornGiftedMagician.description>[PAWN_nameDef] {PAWN_gender ? был рождён : была рождена} с невероятным талантом к магии. [PAWN_possessive] знания и умения в этой области поражали даже опытных и искусных магов.</Pony_UnicornGiftedMagician.description>
 
-	<Pony_UnicornHorKnig.title>рогатый рыцарь</Pony_UnicornHorKnig.title>
-	<Pony_UnicornHorKnig.titleFemale>рогатая леди-рыцарь</Pony_UnicornHorKnig.titleFemale>
-	<Pony_UnicornHorKnig.titleShort>рыцарь</Pony_UnicornHorKnig.titleShort>
-	<Pony_UnicornHorKnig.titleShortFemale>леди-рыцарь</Pony_UnicornHorKnig.titleShortFemale>
-	<Pony_UnicornHorKnig.description>Увлёкшись сказаниями о далёкой Эквестрии, [PAWN_nameDef] часто {PAWN_gender ? воображал : воображала} себя средневековым рыцарем. [PAWN_pronoun] {PAWN_gender ? изготовил : изготовила} самодельные доспехи и постоянно носил их.</Pony_UnicornHorKnig.description>
+	<Pony_UnicornHornedKnight.title>рогатый рыцарь</Pony_UnicornHornedKnight.title>
+	<Pony_UnicornHornedKnight.titleFemale>рогатая леди-рыцарь</Pony_UnicornHornedKnight.titleFemale>
+	<Pony_UnicornHornedKnight.titleShort>рыцарь</Pony_UnicornHornedKnight.titleShort>
+	<Pony_UnicornHornedKnight.titleShortFemale>леди-рыцарь</Pony_UnicornHornedKnight.titleShortFemale>
+	<Pony_UnicornHornedKnight.description>Увлёкшись сказаниями о далёкой Эквестрии, [PAWN_nameDef] часто {PAWN_gender ? воображал : воображала} себя средневековым рыцарем. [PAWN_pronoun] {PAWN_gender ? изготовил : изготовила} самодельные доспехи и постоянно носил их.</Pony_UnicornHornedKnight.description>
 
-	<Pony_UnicornIncSorc.title>неспособный колдовать</Pony_UnicornIncSorc.title>
-	<Pony_UnicornIncSorc.titleFemale>неспособная колдовать</Pony_UnicornIncSorc.titleFemale>
-	<Pony_UnicornIncSorc.titleShort>амагичный</Pony_UnicornIncSorc.titleShort>
-	<Pony_UnicornIncSorc.titleShortFemale>амагичная</Pony_UnicornIncSorc.titleShortFemale>
-	<Pony_UnicornIncSorc.description>С ранних лет стало очевидно, что магические способности [PAWN_nameDef]а весьма скромны. [PAWN_possessive] познания в магии были минимальны, однако [PAWN_possessive] знания в других областях становились всё обширнее и глубже.</Pony_UnicornIncSorc.description>
+	<Pony_UnicornIncAmagical.title>неспособный колдовать</Pony_UnicornIncAmagical.title>
+	<Pony_UnicornIncAmagical.titleFemale>неспособная колдовать</Pony_UnicornIncAmagical.titleFemale>
+	<Pony_UnicornIncAmagical.titleShort>амагичный</Pony_UnicornIncAmagical.titleShort>
+	<Pony_UnicornIncAmagical.titleShortFemale>амагичная</Pony_UnicornIncAmagical.titleShortFemale>
+	<Pony_UnicornIncAmagical.description>С ранних лет стало очевидно, что магические способности [PAWN_nameDef]а весьма скромны. [PAWN_possessive] познания в магии были минимальны, однако [PAWN_possessive] знания в других областях становились всё обширнее и глубже.</Pony_UnicornIncAmagical.description>
 
-	<Pony_UnicornArPrin.title>высокомерный принц</Pony_UnicornArPrin.title>
-	<Pony_UnicornArPrin.titleFemale>высокомерная принцесса</Pony_UnicornArPrin.titleFemale>
-	<Pony_UnicornArPrin.titleShort>принц</Pony_UnicornArPrin.titleShort>
-	<Pony_UnicornArPrin.titleShort>принцесса</Pony_UnicornArPrin.titleShort>
-	<Pony_UnicornArPrin.description>[PAWN_nameDef] {PAWN_gender ? появился : появилась} на свет в состоятельной семье и не знал ни нужды, ни тревог. Все [PAWN_possessive] желания мгновенно исполнялись. [PAWN_pronoun] был слишком высокомерен, чтобы снисходить до общения с окружающими или выполнять даже самую простую работу.</Pony_UnicornArPrin.description>
+	<Pony_UnicornPrince.title>высокомерный принц</Pony_UnicornPrince.title>
+	<Pony_UnicornPrince.titleFemale>высокомерная принцесса</Pony_UnicornPrince.titleFemale>
+	<Pony_UnicornPrince.titleShort>принц</Pony_UnicornPrince.titleShort>
+	<Pony_UnicornPrince.titleShort>принцесса</Pony_UnicornPrince.titleShort>
+	<Pony_UnicornPrince.description>[PAWN_nameDef] {PAWN_gender ? появился : появилась} на свет в состоятельной семье и не знал ни нужды, ни тревог. Все [PAWN_possessive] желания мгновенно исполнялись. [PAWN_pronoun] был слишком высокомерен, чтобы снисходить до общения с окружающими или выполнять даже самую простую работу.</Pony_UnicornPrince.description>
 
-	<Pony_UnicornDamHorn.title>повреждённый рог</Pony_UnicornDamHorn.title>
-	<Pony_UnicornDamHorn.titleShort>изувеченный</Pony_UnicornDamHorn.titleShort>
-	<Pony_UnicornDamHorn.titleShortFemale>изувеченная</Pony_UnicornDamHorn.titleShortFemale>
-	<Pony_UnicornDamHorn.description>Однажды во время игры произошёл несчастный случай, в результате которого [PAWN_nameDef] {PAWN_gender ? повредил : повредила} рог. После этого все стали избегать [PAWN_possessive]. Общение с окружающими практически сошло на нет, и, повзрослев, [PAWN_nameDef] {PAWN_gender ? возненавидел : возненавидела} весь мир.</Pony_UnicornDamHorn.description>
+	<Pony_UnicornDamagedHorn.title>повреждённый рог</Pony_UnicornDamagedHorn.title>
+	<Pony_UnicornDamagedHorn.titleShort>изувеченный</Pony_UnicornDamagedHorn.titleShort>
+	<Pony_UnicornDamagedHorn.titleShortFemale>изувеченная</Pony_UnicornDamagedHorn.titleShortFemale>
+	<Pony_UnicornDamagedHorn.description>Однажды во время игры произошёл несчастный случай, в результате которого [PAWN_nameDef] {PAWN_gender ? повредил : повредила} рог. После этого все стали избегать [PAWN_possessive]. Общение с окружающими практически сошло на нет, и, повзрослев, [PAWN_nameDef] {PAWN_gender ? возненавидел : возненавидела} весь мир.</Pony_UnicornDamagedHorn.description>
 
 </LanguageData>

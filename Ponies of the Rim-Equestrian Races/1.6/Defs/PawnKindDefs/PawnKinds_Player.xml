@@ -40,7 +40,7 @@
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_BatponyColonist</defName>
-		<label>batpony</label>
+		<label>bat pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Batpony</race>
@@ -89,7 +89,7 @@
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_CrystalColonist</defName>
-		<label>crystal</label>
+		<label>crystal pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Crystalpony</race>
@@ -168,22 +168,6 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
-		<defName>Pony_SeaponyColonist</defName>
-		<label>seapony</label>
-		<labelMale>stallion</labelMale>
-		<labelFemale>mare</labelFemale>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_ZebraColonist</defName>
 		<label>zebra</label>
 		<labelMale>stallion</labelMale>
@@ -219,7 +203,7 @@
 
 	<PawnKindDef ParentName="TribePlayerBase">
 		<defName>Pony_BatponyTribe</defName>
-		<label>batpony</label>
+		<label>bat pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Batpony</race>
@@ -268,7 +252,7 @@
 
 	<PawnKindDef ParentName="TribePlayerBase">
 		<defName>Pony_CrystalTribe</defName>
-		<label>crystal</label>
+		<label>crystal pony</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Crystalpony</race>
@@ -336,22 +320,6 @@
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
 		<race>Pony_Kirin</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Offworld</li>
-					<li>Pony_Everypony</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="TribePlayerBase">
-		<defName>Pony_SeaponyTribe</defName>
-		<label>seapony</label>
-		<labelMale>stallion</labelMale>
-		<labelFemale>mare</labelFemale>
-		<race>Pony_Seapony</race>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>

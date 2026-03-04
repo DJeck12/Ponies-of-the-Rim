@@ -11,6 +11,46 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Pony_BatponyKingdom"]/modExtensions/li[@Class="PoniesOfTheRim.CommsConsoleExtension"]</xpath>
+		<value>
+			<texts>
+				<li>
+					<questionText>Ask about their origin</questionText>
+					<answerText>temp</answerText>
+				</li>
+			</texts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[not(@Abstract="True")]/modExtensions[not(@Class="VEF.Factions.FactionDefExtension")]</xpath>
+		<value>
+			<li Class="VEF.Factions.FactionDefExtension" />
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[not(@Abstract="True")]/modExtensions/li[@Class="VEF.Factions.FactionDefExtension" and not(startingGoodwillByFactionDefs)]</xpath>
+		<value>
+			<startingGoodwillByFactionDefs />
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[not(@Abstract="True")]/modExtensions/li[@Class="VEF.Factions.FactionDefExtension"]/startingGoodwillByFactionDefs</xpath>
+		<value>
+			<Pony_PlayerChangelingHive>-80</Pony_PlayerChangelingHive>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FactionDef[defName="Pony_ChangelingHive"]/modExtensions/li[@Class="VEF.Factions.FactionDefExtension"]/startingGoodwillByFactionDefs/Pony_PlayerChangelingHive</xpath>
+		<value>
+			<Pony_PlayerChangelingHive>0</Pony_PlayerChangelingHive>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/FactionDef[@Name="PonyOutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 		<value>
 			<Pony_BatponyVillager>5</Pony_BatponyVillager>

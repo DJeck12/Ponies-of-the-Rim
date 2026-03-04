@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModMetaData>
-	<packageId>Pony.PoniesOfTheRim.Core.dev</packageId>
+	<packageId>Pony.PoniesOfTheRim.Core</packageId>
 	<name>Ponies of the Rim</name>
 	<author>Pony</author>
 	<modVersion>1.2</modVersion>

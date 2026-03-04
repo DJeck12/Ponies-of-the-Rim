@@ -4,11 +4,11 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Kirin</defName>
 		<label>kirin</label>
-		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+		<description><![CDATA[<color=#FF3838>Kirin</color> are a race of magical quadrupeds with equine and draconic traits. They have a single magic-channeling horn similar to unicorns, but with considerably less precision, limiting most to only the simplest expressions of magic. Despite this, their innate affinity for fire has made them renowned conflagrators and pyromancers, with few able to contend with a kirin’s natural talent. However, due to their draconic roots, their tempers are short and volatile. When pushed to the limit, a kirin will transform into a ‘nirik’—a dark, blazing state in which their emotions spiral out of control and their dragonfire is unleashed.
 
-The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their cloven hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Unlike ponies, they are omnivorous and will not object to eating meat.
 
-<color=#FF46FF>Kirin</color>]]></description>
+Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbors, and many choose isolation or vows of silence over the risk of burning down yet another village; be it their own, or another’s. As a result, their settlements are often tucked away in secluded valleys or dense forests… at least until the trees burn down.]]></description>
 
 	<!-- Stats -->
 
@@ -70,12 +70,6 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>5</weight>
-										<min>RGBA(180, 180, 180, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
-									</li>
-									<li>
-										<weight>5</weight>
 										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
@@ -84,8 +78,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(127, 127, 127, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(180, 180, 180, 255)</max>
 									</li>
 								</options>
 							</second>
@@ -95,7 +89,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(180, 180, 180, 255)</min>
+										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -114,14 +108,8 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>10</weight>
-										<min>RGBA(35, 35, 35, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
-									</li>
-									<li>
-										<weight>1</weight>
-										<min>RGBA(35, 35, 35, 255)</min>
-										<max>RGBA(255, 255, 255, 255)</max>
+										<min>RGBA(180, 35, 35, 255)</min>
+										<max>RGBA(255, 100, 100, 255)</max>
 									</li>
 								</options>
 							</first>

@@ -4,11 +4,11 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Griffon</defName>
 		<label>griffon</label>
-		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+		<description><![CDATA[<color=#F8FF33>Griffons</color> are a race of winged quadrupeds with avian and lion characteristics. Although they lack magical abilities of their own, griffons make up for it with their ingenuity on and off the battlefield. In their culture, self-reliance and craftsmanship are prized above all else, producing many skilled artisans, merchants, and mercenaries known for their predatory wit and skill.
 
-The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their clawed digits grant them dexterity similar to that of any creature with hands, and in close combat make for effective weapons. Many griffons choose to rely solely on them when hunting in order to satiate their carnivorous diet and pride.
 
-<color=#FF46FF>Griffon</color>]]></description>
+Griffons can be found all over the world, but they typically favor more temperate regions with open skies and vast mountain ranges. Their settlements line cliffsides or high plateaus within these areas, built to take advantage of the terrain’s natural defences and strong air currents.]]></description>
 
 	<!-- Stats -->
 
@@ -70,7 +70,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(180, 180, 180, 255)</min>
+										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>

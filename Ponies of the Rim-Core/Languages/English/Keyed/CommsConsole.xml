@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<PonyComms_NotEnoughGoodwill>requires at least {0} reputation.</PonyComms_NotEnoughGoodwill>
+	<PonyComms_MinGoodwillRequired>low reputation: must be above {0}.</PonyComms_MinGoodwillRequired>
+	<PonyComms_CooldownRemaining>wait {0} days.</PonyComms_CooldownRemaining>
+	<PonyComms_RequestDone>request accepted</PonyComms_RequestDone>
+	<PonyComms_CannotSpeak>won't do social</PonyComms_CannotSpeak>
+	<PonyComms_GoodwillCostLabel>cost: {0} goodwill</PonyComms_GoodwillCostLabel>
+</LanguageData>

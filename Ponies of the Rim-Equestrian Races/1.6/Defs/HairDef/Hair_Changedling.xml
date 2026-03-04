@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Ocellus -->
+	<HairDef>
+		<defName>Pony_OcellusHair</defName>
+		<label>(Changeling) Ocellus</label>
+		<styleGender>Any</styleGender>
+		<texPath>Races/Hairstyles/Skittlebug/Ocellus</texPath>
+		<category>Changeling</category>
+        <styleTags>
+            <li>Changedling</li>
+        </styleTags>
+	</HairDef>
+
+
+</Defs>

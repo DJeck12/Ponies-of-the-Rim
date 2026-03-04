@@ -4,11 +4,11 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Changedling</defName>
 		<label>changedling</label>
-		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+		<description><![CDATA[<color=#22BD5B>Changedling</color> are changelings who have undergone metamorphosis. They are much more colorful than their siblings, but beyond their more varied appearance, the largest difference is in their behavior. Where regular changelings disguise themselves and feed from the second-hand love of others, changedlings remain undisguised and sustain themselves with the mutual affection of their community. As a result, they are viewed much more favorably by others.
 
-The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. In addition to their shapeshifting, their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands.
 
-<color=#FF46FF>Changedling</color>]]></description>
+Unlike their wild relatives, changedling have learned to experience a wider range of strong emotions, and though their way of life has changed, they still retain a hive-mind through which thoughts and emotions are shared freely.]]></description>
 
 	<!-- Stats -->
 
@@ -59,22 +59,50 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>
+					<oldHairAgeCurve>
+						<points>
+							<li>(0, 0)</li>
+						</points>
+					</oldHairAgeCurve>
 					<colorChannels>
 						<li>
 							<name>skin</name> <!-- Don't translate! Will break opacity -->
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(50, 50, 50, 255)</min>
+										<min>RGBA(150, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 150, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 35, 150, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
 							</first>
-							<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
-								<colorChannel>ideo</colorChannel>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 150, 150, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(150, 255, 150, 255)</max>
+									</li>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(150, 150, 255, 255)</max>
+									</li>
+								</options>
 							</second>
 						</li>
 						<li>
@@ -82,7 +110,7 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(100, 100, 100, 255)</min>
+										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -124,12 +152,15 @@ The uniqueness of the pony's body sets them apart from other humanoid races. How
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Changedling</li>
+						</styleTagsOverride>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>

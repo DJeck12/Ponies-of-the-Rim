@@ -119,7 +119,6 @@
 				<categories>
 					<li>Outlander</li>
 					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Crystal_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -214,53 +213,6 @@
 					<li>Outlander</li>
 					<li>Pony_Everypony_Outlander</li>
 					<li>Pony_Hippogriff_Outlander</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-<!-- Seapony -->
-
-	<PawnKindDef ParentName="GuardBase">
-		<defName>Pony_SeaponyTown_Guard</defName>
-		<label>town guard</label>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Outlander</li>
-					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Seapony_Outlander</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="TraderBase">
-		<defName>Pony_SeaponyTown_Trader</defName>
-		<label>town trader</label>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Outlander</li>
-					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Seapony_Outlander</li>
-				</categories>
-			</li>
-		</backstoryFilters>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="CouncilmanBase">
-		<defName>Pony_SeaponyTown_Councilman</defName>
-		<label>town councilman</label>
-		<race>Pony_Seapony</race>
-		<backstoryFilters Inherit="False">
-			<li>
-				<categories>
-					<li>Outlander</li>
-					<li>Pony_Everypony_Outlander</li>
-					<li>Pony_Seapony_Outlander</li>
 				</categories>
 			</li>
 		</backstoryFilters>

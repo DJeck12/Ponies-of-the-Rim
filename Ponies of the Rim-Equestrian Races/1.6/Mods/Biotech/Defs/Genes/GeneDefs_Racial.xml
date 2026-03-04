@@ -30,21 +30,31 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_CrystallineSkin</defName>
 		<label>crystalline skin</label>
-		<description></description>
+		<description>The skin of carriers of this gene takes on a crystallized form, shimmering in the light and making it resistant to blunt damage of any kind.</description>
 		<iconPath>UI/Genes/CrystallineSkin</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<statOffsets>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+		</statOffsets>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Oviparous</defName>
 		<label>oviparous</label>
-		<description></description>
+		<description>Carriers of this gene lay eggs instead of giving live birth. Eggs need time and correct conditions to hatch.</description>
 		<iconPath>UI/Genes/Oviparous</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>Egglaying</li>
+		</exclusionTags>
+		<customEffectDescriptions>
+			<li>Lays eggs instead of pregnancy and live birth.</li>
+			<li>Laying eggs makes the pawn temporarily infertile.</li>
+		</customEffectDescriptions>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
@@ -93,49 +103,6 @@
 				</hediffsToBodyParts>
 			</li>
 		</modExtensions>
-	</GeneDef>
-
-	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_FishTail</defName>
-		<label>fish tail</label>
-		<description>temp</description>
-		<iconPath>UI/Genes/FishTail</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>8</displayOrderInCategory>
-		<biostatCpx>0</biostatCpx>
-		<waterCellCost>1</waterCellCost>
-		<statOffsets>
-			<MoveSpeed>-2.0</MoveSpeed>
-		</statOffsets>
-		<symbolPack>
-			<wholeNameSymbols>
-				<li><symbol>fishy</symbol></li>
-			</wholeNameSymbols>
-			<prefixSymbols>
-				<li><symbol>horse</symbol></li>
-				<li><symbol>pon</symbol></li>
-				<li><symbol>hydro</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>fin</symbol></li>
-				<li><symbol>neigh</symbol></li>
-				<li><symbol>pony</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
-
-	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_Scales</defName>
-		<label>body scales</label>
-		<description>temp</description>
-		<iconPath>UI/Genes/Scales</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<displayOrderInCategory>14</displayOrderInCategory>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<exclusionTags>
-			<li>BodyCover</li>
-		</exclusionTags>
 	</GeneDef>
 
 </Defs>

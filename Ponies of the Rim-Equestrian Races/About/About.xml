@@ -18,7 +18,7 @@ Mod overview:
 	</description>
 	<modDependencies>
 		<li>
-			<packageId>Pony.PoniesOfTheRim.Core.dev</packageId>
+			<packageId>Pony.PoniesOfTheRim.Core</packageId>
 			<displayName>Ponies of the Rim</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
 			<downloadUrl>https://github.com/DJeck12/Ponies-of-the-Rim</downloadUrl>

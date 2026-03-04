@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[not(@Abstract="True") and not(modExtensions)]</xpath>
+		<value>
+			<modExtensions />
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[not(@Abstract="True")]/modExtensions</xpath>
+		<value>
+			<li Class="PoniesOfTheRim.CommsConsoleExtension">
+				<quests>
+					<li>
+						<questButtonText>Ask for a quest</questButtonText>
+						<questResponseText>{LEADER_nameFull} listens to {NEGOTIATOR_labelShort}'s proposal and, after thinking for a couple of seconds, {LEADER_pronoun} responds:\n\n"Since you ask, we could use some help. There is a task you could take on."</questResponseText>
+						<questScriptDefs>
+							<li>TradeRequest</li>
+							<li>OpportunitySite_BanditCamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Hospitality_Animals</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Hospitality_Joiners</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Hospitality_Prisoners</li>
+						</questScriptDefs>
+						<cooldownDays>15</cooldownDays>
+						<minGoodwill>0</minGoodwill>
+						<goodwillCost>5</goodwillCost>
+					</li>
+				</quests>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

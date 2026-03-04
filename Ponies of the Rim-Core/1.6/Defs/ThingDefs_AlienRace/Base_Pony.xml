@@ -13,10 +13,10 @@
 
 		<alienRace>
 			<generalSettings>
-			<maleGenderProbability>0.35</maleGenderProbability>
+				<maleGenderProbability>0.35</maleGenderProbability>
 				<forcedRaceTraitEntries>
 					<li>
-						<defName>Gay</defName>
+						<defName>Bisexual</defName>
 						<chance>8</chance>
 						<commonalityMale>50</commonalityMale>
 						<commonalityFemale>100</commonalityFemale>
@@ -30,6 +30,7 @@
 					<li>Pony_Unicorn</li>
 					<li>Pony_Pegasus</li>
 				</notXenophobistTowards>
+
 				<alienPartGenerator>
 					<headTypes>
 						<li>Male_Pony</li>
@@ -79,6 +80,7 @@
 				<cannotReceiveThoughts>
 					<li>AteHayAsIngredient</li>
 					<li>Naked</li>
+
 					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Abhorrent</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Abhorrent_Social</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">Pony_Everypony_Horrible_Social</li>
@@ -97,6 +99,7 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+
 			<raceRestriction>
 			<!-- Apparel -->
 				<apparelList>
@@ -135,6 +138,7 @@
 					<li>BodyType</li>
 				</blackEndoCategories>
 			</raceRestriction>
+
 			<graphicPaths>
 				<apparel>
 					<pathPrefix>Pony/</pathPrefix>
@@ -284,7 +288,6 @@
 	<!-- Race Settings -->
 
 		<race>
-		  
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
