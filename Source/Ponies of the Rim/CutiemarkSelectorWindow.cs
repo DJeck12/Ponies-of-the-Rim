@@ -66,6 +66,7 @@ namespace PoniesOfTheRim
                     selectedIndexAddons = i;
                     SoundDefOf.Click.PlayOneShotOnCamera();
                     alienComp.addonVariants[variantIndex] = selectedIndexAddons;
+                    pawn.Drawer.renderer.SetAllGraphicsDirty();
                 }
                 int sharedIndex = i;
                 DrawCutiemarkIcon.DrawInSelector(pawn, rect, addon, ref sharedIndex, i);

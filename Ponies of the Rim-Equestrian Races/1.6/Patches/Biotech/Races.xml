@@ -17,6 +17,7 @@
 					or defName="Pony_Griffon"
 					or defName="Pony_Hippogriff"
 					or defName="Pony_Kirin"
+					or defName="Pony_Seapony"
 					or defName="Pony_Zebra"]/statBases</xpath>
 					<value>
 						<statBases>
@@ -37,17 +38,6 @@
 					<value>
 						<hasStyle>true</hasStyle>
 					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Changeling"
-					or defName="Pony_Changedling"]/alienRace/styleSettings/li[key="BeardDef"]/value/hasStyle</xpath>
-					<value>
-						<hasStyle>true</hasStyle>
-					</value>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Changeling"
-					or defName="Pony_Changedling"]/alienRace/generalSettings/alienPartGenerator/oldHairAgeCurve</xpath>
 				</li>
 			</operations>
 		</match>

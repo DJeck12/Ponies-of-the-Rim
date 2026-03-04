@@ -49,6 +49,12 @@
 		<defaultFactionDef/>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="Villager_Child">
+		<defName>Pony_SeaponyVillager_Child</defName>
+		<race>Pony_Seapony</race>
+		<defaultFactionDef/>
+	</PawnKindDef>
+
 	<PawnKindDef ParentName="TribalChildBase">
 		<defName>Pony_ZebraTribal_Child</defName>
 		<race>Pony_Zebra</race>

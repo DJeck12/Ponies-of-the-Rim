@@ -4,7 +4,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_IronWilled</defName>
 		<label>iron-willed</label>
-		<description>Carriers of this gene are steady and keeps going through thick and thin, when others broke down long before.</description>
+		<description>temp</description>
 		<iconPath>UI/Genes/IronWilled</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>
@@ -21,7 +21,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Steadfast</defName>
 		<label>steadfast</label>
-		<description>Carriers of this gene are mentally tough and won't break down under stresses that would crack most people.</description>
+		<description>temp</description>
 		<iconPath>UI/Genes/steadfast</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>
@@ -38,7 +38,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Nervous</defName>
 		<label>nervous</label>
-		<description>Carriers of this gene tends to crack under pressure.</description>
+		<description>temp</description>
 		<iconPath>UI/Genes/nervous</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>
@@ -55,7 +55,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Volatile</defName>
 		<label>volatile</label>
-		<description>Carriers of this gene are on a hair-trigger all the time. They're the first to break in any tough situation.</description>
+		<description>temp</description>
 		<iconPath>UI/Genes/volatile</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>

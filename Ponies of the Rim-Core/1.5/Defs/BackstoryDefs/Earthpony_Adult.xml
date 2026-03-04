@@ -21,14 +21,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EarthponyAgronomist</defName>
+		<defName>Pony_EarthponySurveyor</defName>
 		<title>magic plant farm</title>
 		<titleShort>surveyor</titleShort>
 		<baseDesc>[PAWN_nameDef] worked on a special farm where grew magical plants for scientists and alchemists. [PAWN_pronoun] has gained extensive specialized knowledge in this field.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
-			<li>Pony_Earthpony_Outlander</li>
+			<li>Pony_Earthpony_Oulander</li>
 			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
@@ -47,7 +47,7 @@
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
-			<li>Pony_Earthpony_Outlander</li>
+			<li>Pony_Earthpony_Oulander</li>
 			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
@@ -81,14 +81,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EarthponyAnimalHandler</defName>
+		<defName>Pony_EarthponyTamerMagAni</defName>
 		<title>tamer of magical animals</title>
 		<titleShort>beastmaster</titleShort>
 		<baseDesc>[PAWN_nameDef] devoted life to the search and capture of exotic, magical animals. [PAWN_pronoun] has been collecting [PAWN_possessive] collection for many years.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
-			<li>Pony_Earthpony_Outlander</li>
+			<li>Pony_Earthpony_Oulander</li>
 			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
@@ -115,7 +115,7 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EarthponyDisfigured</defName>
+		<defName>Pony_EarthponyMutilated</defName>
 		<title>hopeless operation</title>
 		<titleShort>mutilated</titleShort>
 		<baseDesc>Unable to tolerate constant bullying towards [PAWN_possessive] race, [PAWN_nameDef] agreed to an experimental procedure for implanting horns and wings. The operation ended unsuccessfully and turned [PAWN_objective] into an invalid for a long time.</baseDesc>
@@ -138,14 +138,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EarthponyStoneFarmer</defName>
+		<defName>Pony_EarthponyStonecutter</defName>
 		<title>stone farm</title>
 		<titleShort>stonecutter</titleShort>
 		<baseDesc>Tired of the endless bustle of the city, [PAWN_nameDef] found peace on a remote stone farm, which inherited. [PAWN_pronoun] cultivated various crystal cultures for magicians and jewelers.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
-			<li>Pony_Earthpony_Outlander</li>
+			<li>Pony_Earthpony_Oulander</li>
 			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
@@ -189,14 +189,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_EarthponyAsceticCook</defName>
+		<defName>Pony_EarthponyAscCook</defName>
 		<title>ascetic cook</title>
 		<titleShort>cook</titleShort>
 		<baseDesc>Living among the representatives of the poor, [PAWN_nameDef] cooked simple but delicious dishes from herbal ingredients in a small public dining room. [PAWN_pronoun] learned to appreciate what [PAWN_pronoun] had.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Earthpony</li>
-			<li>Pony_Earthpony_Outlander</li>
+			<li>Pony_Earthpony_Oulander</li>
 			<li>Pony_Earthpony_Medieval</li>
 		</spawnCategories>
 		<skillGains>
