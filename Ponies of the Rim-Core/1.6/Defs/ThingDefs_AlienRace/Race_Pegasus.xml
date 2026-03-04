@@ -4,6 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Pegasus</defName>
 		<label>pegasus</label>
+
 		<description><![CDATA[Ponies are a race of magical quadrupeds from the planet Foenum. Their ancestry is incredibly complex, divided into numerous subspecies, each with their own unique traits. As a whole, ponykind practices harmony and cooperation; however, the harsh reality of the rim has led many to abandon those ideals in the pursuit of survival.
 
 Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Each individual also bears a cutiemark on their flank—a unique symbol signifying their profession, talent, or personality. While most ponies are herbivores and exhibit a strong aversion to meat, some subspecies have a more carnivorous diet.
@@ -11,7 +12,11 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 <color=#46FFFF>Pegasi</color> differ from other ponies in having a pair of wings on their back and a more insulated coat for flying at high altitudes. Being natural racers, pegasi always love to compete with others, which is why they later became considered the most inimical race of ponies. Despite this, most pegasi prefer to live peacefully along with other ponies and use their flying abilities to help others.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PonyAlienComp" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>

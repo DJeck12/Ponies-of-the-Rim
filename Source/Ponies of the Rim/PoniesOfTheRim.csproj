@@ -26,6 +26,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +37,7 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <DebugSymbols>true</DebugSymbols>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
@@ -64,6 +66,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
@@ -101,10 +104,24 @@
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
     <Compile Include="Abilities\HediffGiver_NatureMuse.cs" />
-    <Compile Include="Harmony_PerfectMemoryPonyPatch.cs" />
+    <Compile Include="Commsquestcontext.cs" />
+    <Compile Include="CompProperties_EggHatcher.cs" />
+    <Compile Include="Comp_EggHatcher.cs" />
+    <Compile Include="Flying\PegasusFlightCore.cs" />
+    <Compile Include="Flying\PegasusFlightPatches.cs" />
+    <Compile Include="Flying\PegasusFlightStats.cs" />
+    <Compile Include="Flying\PegasusWingsRendering.cs" />
+    <Compile Include="Harmony_CrystalPonyCrystalizeGraphicsBootstrap.cs" />
+    <Compile Include="UniquePonies\StylingStationRefresh .cs" />
+    <Compile Include="UniquePonies\UniquePoniesBootstrap.cs" />
+    <Compile Include="UniquePonies\UniquePoniesConfig .cs" />
+    <Compile Include="UniquePonies\UniqueStartingPoniesUI.cs" />
+    <Compile Include="UniquePonies\UniqueBodyAddonAssigner.cs" />
+    <Compile Include="UniquePonies\Harmony_PerfectMemoryPonyPatch.cs" />
+    <Compile Include="RooPonyPatch.cs" />
     <Compile Include="Thoughts\ThoughtWorker_JoyousPonyPresence.cs" />
     <Compile Include="Thoughts\ThoughtWorker_JoyousPony.cs" />
-    <Compile Include="Harmony_RarityQualityRaise.cs" />
+    <Compile Include="UniquePonies\Harmony_RarityQualityRaise.cs" />
     <Compile Include="Harmony_PonyBabyHairPatch.cs" />
     <Compile Include="Discord_link.cs" />
     <Compile Include="Harmony_CommsConsolePatch.cs" />
@@ -156,9 +173,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Harmony_ScalableBeltPatch.cs" />
     <Compile Include="ScenPart_ConfigPage_ConfigureStartingPawns.cs" />
+    <Compile Include="UniquePonies\UniqueWorldSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,8 +22,8 @@ namespace PoniesOfTheRim
         public string incidentResponseText;
         public string incidentDef;
         public float cooldownDays = 0f;
-        public int minGoodwill = 0;
-        public bool isGoodwillCost = false;
+                                public int minGoodwill = int.MinValue;
+                public int goodwillCost = 0;
         public float delayDaysMin = 0f;
         public float delayDaysMax = 0f;
     }
@@ -32,11 +32,35 @@ namespace PoniesOfTheRim
     {
         public string questButtonText;
         public string questResponseText;
-        public string questScriptDef;
+
+                public string questScriptDef;
+
+                public List<string> questScriptDefs;
+
         public float cooldownDays = 0f;
-        public int minGoodwill = 0;
-        public bool isGoodwillCost = false;
+                        public int minGoodwill = int.MinValue;
+                public int goodwillCost = 0;
         public float delayDaysMin = 0f;
         public float delayDaysMax = 0f;
+        public List<string> AllQuestDefs
+        {
+            get
+            {
+                var result = new List<string>();
+                if (!string.IsNullOrEmpty(questScriptDef))
+                    result.Add(questScriptDef);
+                if (questScriptDefs != null)
+                {
+                    foreach (var def in questScriptDefs)
+                    {
+                        if (!string.IsNullOrEmpty(def) && !result.Contains(def))
+                            result.Add(def);
+                    }
+                }
+                return result;
+            }
+        }
+
+        public bool HasAnyQuest => !string.IsNullOrEmpty(questScriptDef) || (questScriptDefs != null && questScriptDefs.Count > 0);
     }
 }
