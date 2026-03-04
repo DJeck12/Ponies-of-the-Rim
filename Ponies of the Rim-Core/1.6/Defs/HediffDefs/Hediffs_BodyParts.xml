@@ -149,7 +149,6 @@
 		<isBad>false</isBad>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<hediffClass>HediffWithComps</hediffClass>
-		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="HediffCompProperties_GiveAbility">
 				<abilityDef>Pony_ShortFlight</abilityDef>
@@ -163,6 +162,10 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<addedPartProps>
+			<!-- <solid>true</solid> -->
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
 	</HediffDef>
 
 
@@ -181,6 +184,7 @@
 		</comps>
 		<addedPartProps>
 			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
 		</addedPartProps>
 		<stages>
 			<li>
@@ -257,6 +261,7 @@
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
 		</addedPartProps>
 		<stages>
 			<li>
@@ -330,6 +335,7 @@
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>2</partEfficiency>
 		</addedPartProps>
 		<stages>
 			<li>
@@ -396,7 +402,6 @@
 		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
 		<isBad>false</isBad>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
-		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<stages>
 			<li>
 				<statOffsets>

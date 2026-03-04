@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<FactionDef ParentName="PonyFactionBase">
+		<defName>Pony_ColonyWithRaces</defName>
+		<label>Pony Arrivals (Races)</label>
+	</FactionDef>
+
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>Pony_PlayerChangelingHive</defName>
 		<label>Changeling Hive</label>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
+		<defName>Pony_Seapony</defName>
+		<label>sea pony</label>
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
+
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
+
+<color=#FF46FF>Seapony</color>]]></description>
+
+	<!-- Attacks -->
+
+		<tools Inherit="False">
+			<li>
+				<label>front left hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>front right hoof</label>
+				<labelNoLocation>hoof</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+	<!-- Stats -->
+
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
+			<PsychicSensitivity>1.1</PsychicSensitivity>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed> <!-- Will be replaced with a gene with Biotech -->
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<CarryingCapacity>90</CarryingCapacity> <!-- Will be replaced with a gene with Biotech. Defaults to 80 -->
+			<Mass>55</Mass>
+			<PainShockThreshold>0.8</PainShockThreshold> <!-- Will be replaced with a gene with Biotech. Defaults to 0.75 -->
+			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
+			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
+			<RoyalFavorValue>4</RoyalFavorValue>
+			<WorkSpeedGlobal>0.95</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
+		</statBases>
+
+	<!-- Alien Settings -->
+
+		<alienRace>
+			<generalSettings>
+				<abilities>
+					<li>Pony_NatureMuse</li>
+				</abilities>
+			<!-- Genes -->
+				<raceGenes>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_FishTail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Scales</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beauty_Pretty</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Herbivore</li>
+				</raceGenes>
+			<!-- Colors -->
+				<alienPartGenerator>
+					<colorChannels>
+						<li>
+							<name>skin</name> <!-- Don't translate! Will break opacity -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(180, 180, 180, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>5</weight>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(127, 127, 127, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name> <!-- Don't translate! Will break opacity -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(180, 180, 180, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>optional</name> <!-- Don't translate! Will break opacity -->
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<min>RGBA(35, 35, 35, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+
+		<!-- Graphics -->
+
+			<graphicPaths>
+				<body>Transparent/Transparent</body>
+				<skeleton>
+					<path>Races/Bodies/Skeleton/Body_Skeleton</path>
+				</skeleton>
+				<head>
+					<path>Transparent/Transparent</path>
+					<extendedGraphics>
+					<!-- Normal -->
+						<Gender For="Female">Transparent/Transparent</Gender>
+					</extendedGraphics>
+				</head>
+				<skull>Races/Heads/Skull/Head_Skull</skull>
+				<stump>Races/Heads/Stump/Stump</stump>
+				<swaddle>Things/Pawn/Humanlike/Apparel/SwaddledBaby/SwaddledBaby</swaddle>
+			</graphicPaths>
+		</alienRace>
+
+	<!-- Race Settings -->
+
+		<race>
+			<nameGenerator>NameGeneratorPony</nameGenerator>
+			<body>Pony_SeaponyBody</body>
+		</race>
+
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

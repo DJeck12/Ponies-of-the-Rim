@@ -3,12 +3,12 @@
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Batpony</defName>
-		<label>bat pony</label>
-		<description><![CDATA[Ponies are a race of magical quadrupeds from the planet Foenum. Their ancestry is incredibly complex, divided into numerous subspecies, each with their own unique traits. As a whole, ponykind practices harmony and cooperation; however, the harsh reality of the rim has led many to abandon those ideals in the pursuit of survival.
+		<label>batpony</label>
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
 
-Though not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Each individual also bears a cutiemark on their flank—a unique symbol signifying their profession, talent, or personality. While most ponies are herbivores and exhibit a strong aversion to meat, some subspecies have a more carnivorous diet.
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
 
-<color=#AAAAAA>Bat ponies</color> are a nocturnal race blending the traits of both bats and ponies. They have a strong affinity for fruit, dwell primarily in mountains and caves, and utilize invisibility magic to elude thestrals, their oldest enemy. Being a subspecies of ponykind, bat ponies can be found all over the world as part of different nations.]]></description>
+<color=#AAAAAA>Batponies</color> are a nocturnal race that combines the traits of ponies and bats. Historically, batponies have a strong affinity for fruit, primarily live in mountains and caves, and have invented invisibility technology to hide from thestrals, their constant enemies. Being one of the closest races to ponies, batponies can also be found all over the world as part of different nations.]]></description>
 
 	<!-- Stats -->
 

@@ -2,14 +2,14 @@
 <Defs>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornYoungWizard</defName>
+		<defName>Pony_UnicornYanWiz</defName>
 		<title>young wizard</title>
 		<titleShort>wizard</titleShort>
 		<baseDesc>At a very early age, [PAWN_nameDef] showed amazing magic abilities. [PAWN_pronoun] easily absorbed knowledge and mastered basic magic formulas.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
-			<li>Pony_Unicorn_Outlander</li>
+			<li>Pony_Unicorn_Oulander</li>
 			<li>Pony_Unicorn_Medieval</li>
 		</spawnCategories>
 		<skillGains>
@@ -20,14 +20,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornGlitterFan</defName>
+		<defName>Pony_UnicornGlitFan</defName>
 		<title>glitter fan</title>
 		<titleShort>chrysophile</titleShort>
 		<baseDesc>[PAWN_nameDef] had a special love for collecting crystals and colorful stones. [PAWN_pronoun] made amazing trinkets out of them.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
-			<li>Pony_Unicorn_Outlander</li>
+			<li>Pony_Unicorn_Oulander</li>
 			<li>Pony_Unicorn_Medieval</li>
 			<li>Pony_Unicorn_Tribal</li>
 		</spawnCategories>
@@ -50,14 +50,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornGiftedMagician</defName>
+		<defName>Pony_UnicornGifMag</defName>
 		<title>gifted magician</title>
 		<titleShort>magician</titleShort>
 		<baseDesc>[PAWN_nameDef] was born with an incredible talent for magic. [PAWN_possessive] knowledge and skills in this field amazed even experienced and skillful unicorns.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
-			<li>Pony_Unicorn_Outlander</li>
+			<li>Pony_Unicorn_Oulander</li>
 			<li>Pony_Unicorn_Medieval</li>
 			<li>Pony_Unicorn_Tribal</li>
 		</spawnCategories>
@@ -85,7 +85,7 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornHornedKnight</defName>
+		<defName>Pony_UnicornHorKnig</defName>
 		<title>horned knight</title>
 		<titleShort>knight</titleShort>
 		<baseDesc>Fascinated by the tales of faraway Equestria, [PAWN_nameDef] often imagined {PAWN_gender ? himself : herself} as a medieval knight. [PAWN_pronoun] made homemade armor and wore it all the time.</baseDesc>
@@ -114,14 +114,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornIncAmagical</defName>
+		<defName>Pony_UnicornIncSorc</defName>
 		<title>incapable of sorcery</title>
 		<titleShort>amagical</titleShort>
 		<baseDesc>From an early age, it became apparent that [PAWN_nameDef]'s magical abilities were quite modest. [PAWN_possessive] knowledge of magic was minimal, but [PAWN_possessive] knowledge in other areas was becoming broader and deeper.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
-			<li>Pony_Unicorn_Outlander</li>
+			<li>Pony_Unicorn_Oulander</li>
 			<li>Pony_Unicorn_Medieval</li>
 			<li>Pony_Unicorn_Tribal</li>
 		</spawnCategories>
@@ -151,7 +151,7 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornPrince</defName>
+		<defName>Pony_UnicornArPrin</defName>
 		<title>arrogant prince</title>
 		<titleFemale>arrogant princess</titleFemale>
 		<titleShort>prince</titleShort>
@@ -175,14 +175,14 @@
 	</AlienRace.AlienBackstoryDef>
 
 	<AlienRace.AlienBackstoryDef>
-		<defName>Pony_UnicornDamagedHorn</defName>
+		<defName>Pony_UnicornDamHorn</defName>
 		<title>damaged horn</title>
 		<titleShort>mutilated</titleShort>
 		<baseDesc>One day during a game there was an accident, as a result of which [PAWN_nameDef] injured [PAWN_possessive] horn. After that everyone began to avoid [PAWN_possessive]. Communication with others practically came to naught, and when [PAWN_nameDef] grew up, [PAWN_pronoun] hated the whole world.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unicorn</li>
-			<li>Pony_Unicorn_Outlander</li>
+			<li>Pony_Unicorn_Oulander</li>
 			<li>Pony_Unicorn_Medieval</li>
 			<li>Pony_Unicorn_Tribal</li>
 		</spawnCategories>

@@ -4,11 +4,11 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Hippogriff</defName>
 		<label>Hippogriff</label>
-		<description><![CDATA[<color=#3363FF>Hippogriffs</color> are a race of winged quadrupeds with avian and equine characteristics. Although they lack magical abilities of their own, hippogriffs make up for it with the use of amulets and magical artifacts. For the long part of their history, hippogriffs have been forced to live in aquatic form in order to preserve their ancestry, exploring the riches of ocean and consequently making their culture being tied to marine harvesting, fishing and underwater treasure hunting.
+		<description><![CDATA[Ponies are magical quadruped creatures from the planet Foenum. Their ancestry is incredibly complex, and they are divided into many subspecies, which can be similar to each other to varying degrees. Harmony and mutual assistance were the main principles in the life of ponies. However, the harsh outer space suppressed some of this race. For the sake of survival, they abandoned their ideals and took the path of piracy, slavery and marauding.
 
-Although members of this race do not walk on two legs, they have adapted most types of clothing and prosthetics to suit themselves. Their clawed fingers give them dexterity comparable to that of any creature with hands, and in close combat they serve as effective weapons. Unlike griffons, they are omnivorous and will not object to eating plant-based food.
+The uniqueness of the pony's body sets them apart from other humanoid races. However, these creatures have learned to adapt any clothing and prostheses to suit themselves. They use their front hooves as skillfully as other creatures use their hands. On their back sides there are cutiemarks - unique pictures that indicate their interests, hobbies or professions. Most pony species are herbivores and can consume hay without penalty to their mood.
 
-A large part of their culture overlaps with that of sea ponies, their allies, which is why hippogriffs are more often found living on the shores of seas and lakes. They take the issue of water pollution very seriously and will react aggressively to any disrespect for the ocean.]]></description>
+<color=#FF46FF>Hippogriff</color>]]></description>
 
 	<!-- Stats -->
 
@@ -81,7 +81,7 @@ A large part of their culture overlaps with that of sea ponies, their allies, wh
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<min>RGBA(35, 35, 35, 255)</min>
+										<min>RGBA(180, 180, 180, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>

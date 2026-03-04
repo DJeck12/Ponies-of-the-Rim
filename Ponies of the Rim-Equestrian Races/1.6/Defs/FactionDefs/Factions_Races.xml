@@ -5,12 +5,12 @@
 
 	<FactionDef ParentName="OutlanderFactionBase">
 		<defName>Pony_BatponyKingdom</defName>
-		<label>bat pony kingdom</label>
-		<description>Equestria, being formed by three pony tribes, was inhabited not only by its three main races. From the earliest stages of their history, ponies knew that there were a huge number of equine creatures similar to them in the world. One of these creatures were bat ponies.
+		<label>batpony kingdom</label>
+		<description>Equestria, being formed by three pony tribes, was inhabited not only by its three main races. From the earliest stages of their history, ponies knew that there were a huge number of equine creatures similar to them in the world. One of these creatures were batponies.
 
-Bat ponies, outwardly resembling a mix of a pony and a bat, were not descendants of pegasi and were a little-known fourth tribe inhabiting Equestria. Their habitat - mountain caves, were not a popular place for settlements for other ponies, which is why bat ponies rarely interacted with other races from neighboring lands. Having its own culture, religion and monarchs, Batpony Kingdom was still completely subordinate to the ruling caste of Equestria's alicorns.
+Batponies, outwardly resembling a mix of a pony and a bat, were not descendants of pegasi and were a little-known fourth tribe inhabiting Equestria. Their habitat - mountain caves, were not a popular place for settlements for other ponies, which is why batponies rarely interacted with other races from neighboring lands. Having its own culture, religion and monarchs, Batpony Kingdom was still completely subordinate to the ruling caste of Equestria's alicorns.
 
-Being in relative isolation from the other races, bat ponies did not want to be suddenly caught off guard by potential unknown enemies. This paranoid thinking has given rise to militaristic schools and new military technologies in their Kingdom, created for special attacks and sabotage. They look with great caution at other strangers.</description>
+Being in relative isolation from the other races, batponies did not want to be suddenly caught off guard by potential unknown enemies. This paranoid thinking has given rise to militaristic schools and new military technologies in their Kingdom, created for special attacks and sabotage. They look with great caution at other factions, especially those unknown to them.</description>
 		<factionNameMaker>Pony_NameFactionBatpony</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/BatponyKingdom</factionIconPath>
@@ -37,7 +37,7 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 			</li>
 			<li>
 				<categories>
-					<li>Pony_Everypony_Outlander</li>
+					<li>Pony_Everypony_Oulander</li>
 				</categories>
 				<commonality>0.25</commonality>
 			</li>
@@ -135,12 +135,13 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 		<modExtensions>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<PonyColony>-5</PonyColony>
-					<PonyTribe>-5</PonyTribe>
-					<PlayerColony>-5</PlayerColony>
-					<PlayerTribe>-5</PlayerTribe>
-					<ResearchExpedition>-5</ResearchExpedition>
-					<GravshipCrew>-5</GravshipCrew>
+					<PonyColony>-25</PonyColony>
+					<PonyTribe>-25</PonyTribe>
+					<Pony_ColonyWithRaces>-25</Pony_ColonyWithRaces>
+					<PlayerColony>-25</PlayerColony>
+					<PlayerTribe>-25</PlayerTribe>
+					<ResearchExpedition>-25</ResearchExpedition>
+					<GravshipCrew>-25</GravshipCrew>
 				</startingGoodwillByFactionDefs>
 				<requiredHillLevels>
 					<li>LargeHills</li>
@@ -148,6 +149,55 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 				</requiredHillLevels>
 			</li>
 		</modExtensions>
+		
+		
+				<modExtensions>
+			<li Class="PoniesOfTheRim.CommsConsoleExtension">
+			  <texts>
+				<li>
+				  <questionText>Спросить {LEADER_label}.</questionText> <!-- Текст кнопки -->
+				  <answerText>Что {NEGOTIATOR_label} сказал о {FACTION_name}?</answerText> <!-- Текст ответа -->
+				</li>
+				<!-- Если нужно, возможно добавить ещё строчки запросов через: <li>...</li> -->
+			  </texts>
+			  <incidents>
+				<li>
+				  <incidentButtonText>Попросить торговца</incidentButtonText> <!-- Текст кнопки -->
+				  <incidentResponseText>Фракция выслала торговца! Ожидайте.</incidentResponseText> <!-- Текст ответа -->
+				  <incidentDef>TraderCaravanArrival</incidentDef> <!-- Указываем инцидент -->
+				  <cooldownDays>5</cooldownDays> <!-- Время через которое можно повторить нажатие -->
+				  <minGoodwill>0</minGoodwill> <!-- Минимально необходимая репутация у фракции -->
+				  <goodwillCost>5</goodwillCost> <!-- Стоимость нажатия -->
+				  <delayDaysMin>2</delayDaysMin> <!-- Минимальная задержка инцидента -->
+				  <delayDaysMax>5</delayDaysMax> <!-- Максимальная задержка инцидента -->
+				  <!-- Если delayDaysMin и delayDaysMax = 0, то событие мнгновенно -->
+				</li>
+				<!-- Если нужно, возможно добавить ещё строчки инцидентов через: <li>...</li> -->
+			  </incidents>
+			  <quests>
+				<li>
+				  <questButtonText>Попросить квест</questButtonText> <!-- Текст кнопки -->
+				  <questResponseText>Квест активирован! Ожидайте.</questResponseText> <!-- Текст ответа -->
+					<questScriptDefs><!-- Указываем квесты или  <questScriptDef>-->
+						<li>TradeRequest</li>
+						<li>OpportunitySite_BanditCamp</li>
+						<li>Hospitality_Animals</li>
+						<li>Hospitality_Joiners</li>
+						<li>Hospitality_Prisoners</li>
+					</questScriptDefs> 
+				  <cooldownDays>0</cooldownDays> 
+				  <minGoodwill>30</minGoodwill>
+				  <goodwillCost>5</goodwillCost>
+				  <delayDaysMin>0</delayDaysMin>
+				  <delayDaysMax>0</delayDaysMax>
+				</li>
+				<!-- Если нужно, возможно добавить ещё строчки запросов через: <li>...</li> -->
+				</quests>
+			</li>
+		</modExtensions>
+		
+		
+		
 	</FactionDef>
 
 <!-- Changeling -->
@@ -155,7 +205,7 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 	<FactionDef ParentName="TribeBase">
 		<defName>Pony_ChangelingHive</defName>
 		<label>rough changeling hive</label>
-		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insects, half-horses, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build huge ant-like hives in hidden locations near other pony settlements.
+		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insect, half-horse, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build huge ant-like hives in hidden locations near other pony settlements.
 
 Some call the wild changelings barbaric due to their frequent raids and pillaging of other ponies to sate their hunger, but their goal is not to kill or enslave other races, putting them in a state of cold war with other factions. Countless attempts to contact the changelings led the ponies to the conclusion that the bugs are not evil, but rather victims of their circumstances, as there have been cases of changelings escaping from their home hives to reform and start a new life.
 
@@ -524,6 +574,7 @@ Centuries later, changedlings continue to reform to this day, forming opposition
 				<startingGoodwillByFactionDefs>
 					<PonyColony>80</PonyColony>
 					<PonyTribe>80</PonyTribe>
+					<Pony_ColonyWithRaces>80</Pony_ColonyWithRaces>
 					<PlayerColony>80</PlayerColony>
 					<PlayerTribe>80</PlayerTribe>
 					<ResearchExpedition>80</ResearchExpedition>
@@ -669,24 +720,24 @@ The Crystal Empire is expanding its influence wherever other ponies live and alt
 <!-- Deer -->
 
 	<FactionDef ParentName="PonyMedievalBase">
-		<defName>Pony_DeerKingdom</defName>
-		<label>deer kingdom</label>
-		<description>Deer, being a northern equine race, have mastered the magic of the elements of nature, can control weather conditions and communicate with spirits. Their principle of views is centered on the idolization of trees, and their society can be described as medieval.
+		<defName>Pony_DeerDominion</defName>
+		<label>deer dominion</label>
+		<description>Deer, being a northern horse race, have mastered the magic of the elements of nature, can control weather conditions and communicate with spirits. Their principle of views is centered on the idolization of trees, and their society can be described as medieval.
 
 Not being in close proximity to Equestria, the deer developed separately from the other factions and organized the Dominion, which stood up for the protection of nature. The Kirin became the main competitors of the deer due to different ideological views on the value of nature: some protect its resources, others - its descendants.
 
 At the moment, the deer are in an active war with the Kirin and will not tolerate anyone who will desecrate the trees sacred to their culture.</description>
 		<factionNameMaker>Pony_NameFactionDeer</factionNameMaker>
 		<categoryTag>PonyMedieval</categoryTag>
-		<factionIconPath>World/Factions/DeerKingdom</factionIconPath>
+		<factionIconPath>World/Factions/DeerDominion</factionIconPath>
 		<colorSpectrum>
 			<li>(0, 0.5, 0.2)</li>
 		</colorSpectrum>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 		</disallowedMemes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
@@ -826,7 +877,7 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 		<modExtensions>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<Pony_KirinRealm>-80</Pony_KirinRealm>
+					<Pony_KirinRealm>-75</Pony_KirinRealm>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</modExtensions>
@@ -841,7 +892,7 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 
 The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.
 
-Hint: You can hire griffin mercenaries using the comms console for a certain price for defense or temporary work in your settlement.</description>
+Hint: You can hire griffin mercenaries using the communication console for a certain price for defense or temporary work in your settlement.</description>
 		<factionNameMaker>Pony_NameFactionGriffon</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
 		<factionIconPath>World/Factions/GriffonKingdom</factionIconPath>
@@ -956,24 +1007,24 @@ Hint: You can hire griffin mercenaries using the comms console for a certain pri
 
 	<VEF.Planet.HireableFactionDef>
 			<defName>Pony_GriffonMercenaries</defName>
-			<label>mercenaries</label>
+			<label>griffon mercenaries</label>
 			<description>The Griffon Kingdom was once allied with Equestria, but the reliability of this alliance is currently unknown. After the betrayal of the ponies shortly after Twilight Sparkle left the throne, the griffons stopped trusting their neighbors and took the path of marauding. The griffons who are here do not like strangers, but will not refuse help and gifts.</description>
-			<texPath>World/Factions/GriffonKingdom</texPath>
-			<color>(0.9, 0.54, 0.18)</color>
+			<texPath>World/WorldObjects/Expanding/PirateOutpost</texPath>
+			<color>(1, 1, 1)</color>
 			<pawnKinds>
 				<li>Pony_Griffon_Slasher</li>
 				<li>Pony_Griffon_Marksman</li>
 				<li>Pony_Griffon_Sniper</li>
 			</pawnKinds>
-			<commTag>griffon mercenaries</commTag>
+			<commTag>mercenaries</commTag>
 			<referencedFaction>Pony_GriffonKingdom</referencedFaction>
 	</VEF.Planet.HireableFactionDef>
 
-<!-- Hippogriff -->
+<!-- Hippogriff / Seapony -->
 
 	<FactionDef ParentName="OutlanderFactionBase">
-		<defName>Pony_HippogriffKingdom</defName>
-		<label>hippogriff kingdom</label>
+		<defName>Pony_SeaKingdom</defName>
+		<label>sea kingdom</label>
 		<description>Half-griffons, half-ponies, hippogriffs once lived in peace and isolation from all other factions on a lonely hill island, until the Storm King came and destroyed their home, forcing them to disappear from existance. At least that's what the King himself thought, because hippogriffs possessed a saving artifact that allowed them to turn any of their hosts into a sea pony. For a long time, the Hippogriffs hid in ignorance at the bottom of the ocean, until Equestria helped save their home and drive out their enemy.
 
 Since then, hippogriffs continue to lead a dual lifestyle, where most of their population still lives underwater in the form of sea ponies. Soon, under the wing of the Hippogriffs, a new state of sea ponies was formed, dividing the culture of the two cooperating factions. 
@@ -981,7 +1032,7 @@ Since then, hippogriffs continue to lead a dual lifestyle, where most of their p
 Hippogriffs still live in isolation from all other settlements, maintaining an alliance with the union of sea ponies. They are not averse to making contact with outsiders, but will refuse to share the artifact that once saved them from extinction.</description>
 		<factionNameMaker>Pony_NameFactionHippogriff</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
-		<factionIconPath>World/Factions/HippogriffKingdom</factionIconPath>
+		<factionIconPath>World/Factions/SeaKingdom</factionIconPath>
 		<colorSpectrum>
 			<li>(0.2, 0.46, 0.75)</li>
 		</colorSpectrum>
@@ -1016,6 +1067,39 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
 					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
 					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+					<Pony_SeaponyVillager>5</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<!-- Hippogriff fighters -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_HippogriffVillager>5</Pony_HippogriffVillager>
+					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
+					<Pony_HippogriffGrenadier_Destructive>1.5</Pony_HippogriffGrenadier_Destructive>
+					<Pony_HippogriffMercenary_Slasher>7</Pony_HippogriffMercenary_Slasher>
+					<Pony_HippogriffMercenary_Gunner>10</Pony_HippogriffMercenary_Gunner>
+					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
+					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+				</options>
+			</li>
+			<li>
+				<!-- Seapony fighters -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<Pony_SeaponyVillager>5</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
 				</options>
 			</li>
 			<li>
@@ -1025,9 +1109,13 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 					<Pony_HippogriffVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_HippogriffVillager_Child>
 					<Pony_HippogriffTown_Guard>10</Pony_HippogriffTown_Guard>
 					<Pony_HippogriffTown_Councilman>10</Pony_HippogriffTown_Councilman>
+					<Pony_SeaponyVillager>20</Pony_SeaponyVillager>
+					<Pony_SeaponyVillager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_SeaponyVillager_Child>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyTown_Councilman>10</Pony_SeaponyTown_Councilman>
 				</options>
 			</li>
-			<!-- Trader -->
+			<!-- Hippogriff trader -->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
@@ -1048,6 +1136,27 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 					<Pony_HippogriffMercenary_Elite>10</Pony_HippogriffMercenary_Elite>
 				</guards>
 			</li>
+			<!-- Seapony trader -->
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Pony_SeaponyTown_Trader>1</Pony_SeaponyTown_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Pony_SeaponyVillager>3</Pony_SeaponyVillager>
+					<Pony_SeaponyTown_Guard>10</Pony_SeaponyTown_Guard>
+					<Pony_SeaponyGrenadier_Destructive>1.5</Pony_SeaponyGrenadier_Destructive>
+					<Pony_SeaponyMercenary_Slasher>7</Pony_SeaponyMercenary_Slasher>
+					<Pony_SeaponyMercenary_Gunner>10</Pony_SeaponyMercenary_Gunner>
+					<Pony_SeaponyMercenary_Elite>10</Pony_SeaponyMercenary_Elite>
+				</guards>
+			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
@@ -1065,6 +1174,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffMiner>1</Pony_HippogriffMiner>
+					<Pony_SeaponyMiner>1</Pony_SeaponyMiner>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -1072,6 +1182,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffHunter>1</Pony_HippogriffHunter>
+					<Pony_SeaponyHunter>1</Pony_SeaponyHunter>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -1079,6 +1190,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffLogger>1</Pony_HippogriffLogger>
+					<Pony_SeaponyLogger>1</Pony_SeaponyLogger>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -1086,6 +1198,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 				<commonality>1</commonality>
 				<options>
 					<Pony_HippogriffFarmer>1</Pony_HippogriffFarmer>
+					<Pony_SeaponyFarmer>1</Pony_SeaponyFarmer>
 				</options>
 			</li>
 		</pawnGroupMakers>
@@ -1101,11 +1214,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 	<FactionDef ParentName="PonyMedievalBase">
 		<defName>Pony_KirinRealm</defName>
 		<label>kirin realm</label>
-		<description>Nestled along the River of Silence, the Kirin tribes dwell in wary isolation. Their volatile tempers and their ability to transform into fiery Nirics often led them to burn their villages and forests, dooming crops and driving them to engage ranching and stonecraft.
-
-Once, In Equestria's zenith, the wise ruler Rain Shine submerged her kin in silence waters, stripping emotions to leash their inner fire. This continued until the envoys of Equestria provided the Kirins with fire safety equipment and taught them to calm their emotions. Since then, the Kirins have used the water of silence to make calming potions.
-
-Today's Kirin tribes have advanced to medieval technology, building stone fortresses and crafting runic artifacts. Eternal enemies of the Deer kingdoms, the Kirin fight for fertile lands where they raise livestock and breed mounts for raids and trade caravans. Isolation breeds suspicion, but the kirin's restrained fury is a Imminent danger.</description>
+		<description>temp</description>
 		<factionNameMaker>Pony_NameFactionKirin</factionNameMaker>
 		<categoryTag>PonyMedieval</categoryTag>
 		<factionIconPath>World/Factions/KirinRealm</factionIconPath>
@@ -1119,10 +1228,10 @@ Today's Kirin tribes have advanced to medieval technology, building stone fortre
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
 		</structureMemeWeights>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 		</requiredMemes>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</disallowedMemes>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>25</configurationListOrderPriority>
@@ -1262,7 +1371,7 @@ Today's Kirin tribes have advanced to medieval technology, building stone fortre
 		<modExtensions>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<Pony_DeerKingdom>-80</Pony_DeerKingdom>
+					<Pony_DeerDominion>-75</Pony_DeerDominion>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</modExtensions>
@@ -1273,11 +1382,7 @@ Today's Kirin tribes have advanced to medieval technology, building stone fortre
 	<FactionDef ParentName="TribeBase">
 		<defName>Pony_ZebraTribe</defName>
 		<label>zebra tribe</label>
-		<description>Zebras hail from the sun-baked savannahs of Foenum, where tribal shamans mastered alchemy through potions, brews, and ancient rituals. Zebras can often be found wandering the wastelands as traveling merchants, who often sell exotic goods from all over the world.
-
-Throughout history, zebras have not cooperated directly with their neighbors and are still considered savages by other factions. Some clans turned to dark magic, and powerful warlocks sowed chaos, damaging the reputation of their own species.
-
-Their alchemical arsenal and ritual skills provide them with protection from mechanoids and high-tech raiders. Distant from pony societies, zebras view outsiders with superstitious caution, guided by instinct and intuition faith.</description>
+		<description>temp</description>
 		<factionNameMaker>Pony_NameFactionZebra</factionNameMaker>
 		<categoryTag>PonyTribal</categoryTag>
 		<factionIconPath>World/Factions/ZebraTribe</factionIconPath>
@@ -1445,6 +1550,10 @@ Their alchemical arsenal and ritual skills provide them with protection from mec
 				</options>
 			</li>
 		</pawnGroupMakers>
+
+		
+		
+		
 	</FactionDef>
 
 </Defs>

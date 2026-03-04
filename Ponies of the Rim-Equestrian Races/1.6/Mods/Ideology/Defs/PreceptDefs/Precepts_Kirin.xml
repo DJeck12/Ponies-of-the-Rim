@@ -185,6 +185,21 @@
 		<description>Kirins are very unique and deserve our admiration.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_EarthponySupremacist</li>
+			<li>Pony_PegasusSupremacist</li>
+			<li>Pony_UnicornSupremacist</li>
+			<li>Pony_AlicornSupremacist</li>
+			<li>Pony_BatponySupremacist</li>
+			<li>Pony_ChangelingSupremacist</li>
+			<li>Pony_ChangedlingSupremacist</li>
+			<li>Pony_CrystalponySupremacist</li>
+			<li>Pony_DeerSupremacist</li>
+			<li>Pony_GriffonSupremacist</li>
+			<li>Pony_HippogriffSupremacist</li>
+			<li>Pony_SeaponySupremacist</li>
+			<li>Pony_ZebraSupremacist</li>
+		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Kirin_Respected_Social</thought>
@@ -224,6 +239,21 @@
 		<description>Kirins are delightful creatures, it is our responsibility to treat them with the respect they deserve.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
+		<conflictingMemes>
+			<li>Pony_EarthponySupremacist</li>
+			<li>Pony_PegasusSupremacist</li>
+			<li>Pony_UnicornSupremacist</li>
+			<li>Pony_AlicornSupremacist</li>
+			<li>Pony_BatponySupremacist</li>
+			<li>Pony_ChangelingSupremacist</li>
+			<li>Pony_ChangedlingSupremacist</li>
+			<li>Pony_CrystalponySupremacist</li>
+			<li>Pony_DeerSupremacist</li>
+			<li>Pony_GriffonSupremacist</li>
+			<li>Pony_HippogriffSupremacist</li>
+			<li>Pony_SeaponySupremacist</li>
+			<li>Pony_ZebraSupremacist</li>
+		</conflictingMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>Pony_Kirin_Exalted</thought>

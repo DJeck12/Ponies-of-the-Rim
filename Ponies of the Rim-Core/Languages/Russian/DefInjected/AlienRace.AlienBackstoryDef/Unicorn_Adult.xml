@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Pony_UnicornMagician.title>фокусник</Pony_UnicornMagician.title>
-	<Pony_UnicornMagician.titleFemale>фокусница</Pony_UnicornMagician.titleFemale>
-	<Pony_UnicornMagician.titleShort>фокусник</Pony_UnicornMagician.titleShort>
-	<Pony_UnicornMagician.titleShortFemale>фокусница</Pony_UnicornMagician.titleShortFemale>
-	<Pony_UnicornMagician.description>Совершенно неожиданно [PAWN_nameDef] {PAWN_gender ? стал : стала} обладателем старинной семейной книги заклинаний. Прочитав её, [PAWN_pronoun] {PAWN_gender ? узнал : узнала} тайны своего рода, которые {PAWN_gender ? решил : решила} сохранить в секрете, чтобы не запятнать своё имя. Эта идея привела [PAWN_possessive] к решению стать фокусником.</Pony_UnicornMagician.description>
+	<Pony_UnicornMag.title>фокусник</Pony_UnicornMag.title>
+	<Pony_UnicornMag.titleFemale>фокусница</Pony_UnicornMag.titleFemale>
+	<Pony_UnicornMag.titleShort>фокусник</Pony_UnicornMag.titleShort>
+	<Pony_UnicornMag.titleShortFemale>фокусница</Pony_UnicornMag.titleShortFemale>
+	<Pony_UnicornMag.description>Совершенно неожиданно [PAWN_nameDef] {PAWN_gender ? стал : стала} обладателем старинной семейной книги заклинаний. Прочитав её, [PAWN_pronoun] {PAWN_gender ? узнал : узнала} тайны своего рода, которые {PAWN_gender ? решил : решила} сохранить в секрете, чтобы не запятнать своё имя. Эта идея привела [PAWN_possessive] к решению стать фокусником.</Pony_UnicornMag.description>
 
-	<Pony_UnicornGemologist.title>геммолог</Pony_UnicornGemologist.title>
-	<Pony_UnicornGemologist.titleShort>геммолог</Pony_UnicornGemologist.titleShort>
-	<Pony_UnicornGemologist.description>[PAWN_nameDef] {PAWN_gender ? проявлял : проявляла} интерес к магии и всему, что с ней связано. Когда [PAWN_pronoun] {PAWN_gender ? вырос : выросла}, то {PAWN_gender ? связал : связала} свою жизнь с магическими свойствами предметов, изучая кристаллы и различные окаменелости.</Pony_UnicornGemologist.description>
+	<Pony_UnicornGem.title>геммолог</Pony_UnicornGem.title>
+	<Pony_UnicornGem.titleShort>геммолог</Pony_UnicornGem.titleShort>
+	<Pony_UnicornGem.description>[PAWN_nameDef] {PAWN_gender ? проявлял : проявляла} интерес к магии и всему, что с ней связано. Когда [PAWN_pronoun] {PAWN_gender ? вырос : выросла}, то {PAWN_gender ? связал : связала} свою жизнь с магическими свойствами предметов, изучая кристаллы и различные окаменелости.</Pony_UnicornGem.description>
 
-	<Pony_UnicornWarlock.title>заклинатель чёрной магии</Pony_UnicornWarlock.title>
-	<Pony_UnicornWarlock.titleFemale>заклинательница чёрной магии</Pony_UnicornWarlock.titleFemale>
-	<Pony_UnicornWarlock.titleShort>заклинатель</Pony_UnicornWarlock.titleShort>
-	<Pony_UnicornWarlock.titleShortFemale>заклинательница</Pony_UnicornWarlock.titleShortFemale>
-	<Pony_UnicornWarlock.description>Совершенно случайно [PAWN_nameDef] {PAWN_gender ? обнаружил : обнаружила} старинную книгу на чердаке своего дома. Будучи магом, [PAWN_pronoun] {PAWN_gender ? проявил : проявила} особый интерес к запретным заклинаниям, которые в ней содержались.</Pony_UnicornWarlock.description>
+	<Pony_UnicornWarl.title>заклинатель чёрной магии</Pony_UnicornWarl.title>
+	<Pony_UnicornWarl.titleFemale>заклинательница чёрной магии</Pony_UnicornWarl.titleFemale>
+	<Pony_UnicornWarl.titleShort>заклинатель</Pony_UnicornWarl.titleShort>
+	<Pony_UnicornWarl.titleShortFemale>заклинательница</Pony_UnicornWarl.titleShortFemale>
+	<Pony_UnicornWarl.description>Совершенно случайно [PAWN_nameDef] {PAWN_gender ? обнаружил : обнаружила} старинную книгу на чердаке своего дома. Будучи магом, [PAWN_pronoun] {PAWN_gender ? проявил : проявила} особый интерес к запретным заклинаниям, которые в ней содержались.</Pony_UnicornWarl.description>
 
-	<Pony_UnicornMagicTeacher.title>преподаватель магии</Pony_UnicornMagicTeacher.title>
-	<Pony_UnicornMagicTeacher.titleFemale>преподавательница магии</Pony_UnicornMagicTeacher.titleFemale>
-	<Pony_UnicornMagicTeacher.titleShort>учитель</Pony_UnicornMagicTeacher.titleShort>
-	<Pony_UnicornMagicTeacher.titleShortFemale>учительница</Pony_UnicornMagicTeacher.titleShortFemale>
-	<Pony_UnicornMagicTeacher.description>Будучи выдающимся заклинателем, [PAWN_nameDef] {PAWN_gender ? решил : решила}, что [PAWN_possessive] призвание — учить других магии. [PAWN_pronoun] {PAWN_gender ? связал : связала} свою жизнь с этим делом и {PAWN_gender ? стал : стала} обучать тех, кто желал постичь искусство волшебства.</Pony_UnicornMagicTeacher.description>
+	<Pony_UnicornMagTeach.title>преподаватель магии</Pony_UnicornMagTeach.title>
+	<Pony_UnicornMagTeach.titleFemale>преподавательница магии</Pony_UnicornMagTeach.titleFemale>
+	<Pony_UnicornMagTeach.titleShort>учитель</Pony_UnicornMagTeach.titleShort>
+	<Pony_UnicornMagTeach.titleShortFemale>учительница</Pony_UnicornMagTeach.titleShortFemale>
+	<Pony_UnicornMagTeach.description>Будучи выдающимся заклинателем, [PAWN_nameDef] {PAWN_gender ? решил : решила}, что [PAWN_possessive] призвание — учить других магии. [PAWN_pronoun] {PAWN_gender ? связал : связала} свою жизнь с этим делом и {PAWN_gender ? стал : стала} обучать тех, кто желал постичь искусство волшебства.</Pony_UnicornMagTeach.description>
 
-	<Pony_UnicornCrystalMiner.title>копатель кристалов</Pony_UnicornCrystalMiner.title>
-	<Pony_UnicornCrystalMiner.titleShort>щахтёр</Pony_UnicornCrystalMiner.titleShort>
-	<Pony_UnicornCrystalMiner.description>Не сумев достичь успеха в профессиональной деятельности, [PAWN_nameDef] {PAWN_gender ? был : была} вынужден покинуть свой дом из-за долгов. Не зная, как быть дальше, [PAWN_pronoun] {PAWN_gender ? решил : решила} устроиться на работу в шахту и заняться добычей кристаллов.</Pony_UnicornCrystalMiner.description>
+	<Pony_UnicornCryDig.title>копатель кристалов</Pony_UnicornCryDig.title>
+	<Pony_UnicornCryDig.titleShort>щахтёр</Pony_UnicornCryDig.titleShort>
+	<Pony_UnicornCryDig.description>Не сумев достичь успеха в профессиональной деятельности, [PAWN_nameDef] {PAWN_gender ? был : была} вынужден покинуть свой дом из-за долгов. Не зная, как быть дальше, [PAWN_pronoun] {PAWN_gender ? решил : решила} устроиться на работу в шахту и заняться добычей кристаллов.</Pony_UnicornCryDig.description>
 
-	<Pony_UnicornJeweler.title>крисиальный ювелир</Pony_UnicornJeweler.title>
-	<Pony_UnicornJeweler.titleShort>ювелир</Pony_UnicornJeweler.titleShort>
-	<Pony_UnicornJeweler.description>[PAWN_nameDef] {PAWN_gender ? продолжил : продолжила} семейную традицию — все [PAWN_possessive] родственники были выдающимися ювелирами в городе. [PAWN_pronoun] {PAWN_gender ? научился : научилась} мастерству у отца и достиг небывалых высот в ювелирном деле.</Pony_UnicornJeweler.description>
+	<Pony_UnicornJewl.title>крисиальный ювелир</Pony_UnicornJewl.title>
+	<Pony_UnicornJewl.titleShort>ювелир</Pony_UnicornJewl.titleShort>
+	<Pony_UnicornJewl.description>[PAWN_nameDef] {PAWN_gender ? продолжил : продолжила} семейную традицию — все [PAWN_possessive] родственники были выдающимися ювелирами в городе. [PAWN_pronoun] {PAWN_gender ? научился : научилась} мастерству у отца и достиг небывалых высот в ювелирном деле.</Pony_UnicornJewl.description>
 
-	<Pony_UnicornCrystalMagnate.title>кристальный магнат</Pony_UnicornCrystalMagnate.title>
-	<Pony_UnicornCrystalMagnate.titleShort>магнат</Pony_UnicornCrystalMagnate.titleShort>
-	<Pony_UnicornCrystalMagnate.description>После смерти отца [PAWN_nameDef] {PAWN_gender ? получил : получила} огромное наследство. [PAWN_pronoun] {PAWN_gender ? стал : стала} самым крупным кристальным магнатом в стране и не {PAWN_gender ? знал : знала} забот.</Pony_UnicornCrystalMagnate.description>
+	<Pony_UnicornMagn.title>кристальный магнат</Pony_UnicornMagn.title>
+	<Pony_UnicornMagn.titleShort>магнат</Pony_UnicornMagn.titleShort>
+	<Pony_UnicornMagn.description>После смерти отца [PAWN_nameDef] {PAWN_gender ? получил : получила} огромное наследство. [PAWN_pronoun] {PAWN_gender ? стал : стала} самым крупным кристальным магнатом в стране и не {PAWN_gender ? знал : знала} забот.</Pony_UnicornMagn.description>
 
-	<Pony_UnicornCourtWizard.title>придворный волшебник</Pony_UnicornCourtWizard.title>
-	<Pony_UnicornCourtWizard.titleFemale>придворная волшебница</Pony_UnicornCourtWizard.titleFemale>
-	<Pony_UnicornCourtWizard.titleShort>магистр</Pony_UnicornCourtWizard.titleShort>
-	<Pony_UnicornCourtWizard.description>[PAWN_nameDef] {PAWN_gender ? преподавал : преподавала} в одной из самых престижных магических школ. За свои заслуги перед Королевством, [PAWN_pronoun] {PAWN_gender ? был назначен : была назначена} на почетную должность придворного мага.</Pony_UnicornCourtWizard.description>
+	<Pony_UnicornCourWiz.title>придворный волшебник</Pony_UnicornCourWiz.title>
+	<Pony_UnicornCourWiz.titleFemale>придворная волшебница</Pony_UnicornCourWiz.titleFemale>
+	<Pony_UnicornCourWiz.titleShort>магистр</Pony_UnicornCourWiz.titleShort>
+	<Pony_UnicornCourWiz.description>[PAWN_nameDef] {PAWN_gender ? преподавал : преподавала} в одной из самых престижных магических школ. За свои заслуги перед Королевством, [PAWN_pronoun] {PAWN_gender ? был назначен : была назначена} на почетную должность придворного мага.</Pony_UnicornCourWiz.description>
 
-	<Pony_UnicornWorker.title>единорог-рабочий</Pony_UnicornWorker.title>
-	<Pony_UnicornWorker.titleShort>рабочий</Pony_UnicornWorker.titleShort>
-	<Pony_UnicornWorker.description>В то время как познания [PAWN_nameDef]а в теории магии оставляли желать лучшего, [PAWN_possessive] способность к телекинезу была поразительно развита. Благодаря своему таланту [PAWN_pronoun] {PAWN_gender ? получил : получила} работу в космопорту, где {PAWN_gender ? занялся : занялась} сортировкой различных грузов.</Pony_UnicornWorker.description>
+	<Pony_UnicornWork.title>единорог-рабочий</Pony_UnicornWork.title>
+	<Pony_UnicornWork.titleShort>рабочий</Pony_UnicornWork.titleShort>
+	<Pony_UnicornWork.description>В то время как познания [PAWN_nameDef]а в теории магии оставляли желать лучшего, [PAWN_possessive] способность к телекинезу была поразительно развита. Благодаря своему таланту [PAWN_pronoun] {PAWN_gender ? получил : получила} работу в космопорту, где {PAWN_gender ? занялся : занялась} сортировкой различных грузов.</Pony_UnicornWork.description>
 
 </LanguageData>

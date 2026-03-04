@@ -61,7 +61,6 @@
 		<skinColorOverride>RGB(234,238,240)</skinColorOverride>
 		<fixedGender>Female</fixedGender>
 		<nameMakerFemale>Pony_Rarity</nameMakerFemale>
-		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
@@ -89,9 +88,8 @@
 		<skinColorOverride>RGB(250,245,171)</skinColorOverride>
 		<fixedGender>Female</fixedGender>
 		<nameMakerFemale>Pony_Fluttershy</nameMakerFemale>
-		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
 	</PawnKindDef>
-
+	
 	<PawnKindDef ParentName="ColonistPlayerBase">
 		<defName>Pony_PinkiePie</defName>
 		<label>Pinkie Pie</label>
@@ -117,7 +115,6 @@
 		<skinColorOverride>RGB(245,183,208)</skinColorOverride>
 		<fixedGender>Female</fixedGender>
 		<nameMakerFemale>Pony_PinkiePie</nameMakerFemale>
-		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
@@ -145,7 +142,6 @@
 		<skinColorOverride>RGB(155,219,245)</skinColorOverride>
 		<fixedGender>Female</fixedGender>
 		<nameMakerFemale>Pony_RainbowDash</nameMakerFemale>
-		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="ColonistPlayerBase">
@@ -173,7 +169,6 @@
 		<skinColorOverride>RGB(204,156,223)</skinColorOverride>
 		<fixedGender>Female</fixedGender>
 		<nameMakerFemale>Pony_TwilightSparkle</nameMakerFemale>
-		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
 	</PawnKindDef>
 
 </Defs>

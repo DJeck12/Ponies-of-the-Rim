@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThoughtDef[defName="Pony_OpinionForEarth"]/modExtensions/li/bodies</xpath>
 		<value>
-			<li>Pony_ChangelingBody</li>
+			<li>Pony_SeaponyBody</li>
 			<li>Pony_DeerBody</li>
 		</value>
 	</Operation>
@@ -12,7 +12,6 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThoughtDef[defName="Pony_OpinionForPegasus"]/modExtensions/li/bodies</xpath>
 		<value>
-			<li>Pony_ChangelingBody</li>
 			<li>Pony_GriffonBody</li>
 			<li>Pony_HippogriffBody</li>
 		</value>

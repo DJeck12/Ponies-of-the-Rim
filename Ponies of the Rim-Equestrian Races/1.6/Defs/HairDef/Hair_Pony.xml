@@ -11,6 +11,13 @@
         <styleTags>
             <li>Alicorn</li>
         </styleTags>
+        <modExtensions>
+            <li Class="PoniesOfTheRim.PonyHairExtension">
+                <ponyTailType>
+                    <li>Alicorn</li>
+                </ponyTailType>
+            </li>
+        </modExtensions>
 	</HairDef>
 
 

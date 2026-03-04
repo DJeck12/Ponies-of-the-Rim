@@ -10,4 +10,11 @@
 		</tailIndex>
     </PoniesOfTheRim.PonyTailType>
 
+    <PoniesOfTheRim.PonyTailType>
+        <defName>Alicorn</defName>
+		<tailIndex>
+			<li>0</li>
+		</tailIndex>
+    </PoniesOfTheRim.PonyTailType>
+
 </Defs>

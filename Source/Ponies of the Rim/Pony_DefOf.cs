@@ -25,9 +25,9 @@ namespace PoniesOfTheRim
 
         public static TraitDef Pony_PerfectMemory;
         public static TraitDef Pony_Joyous;
+        public static TraitDef Pony_Elegance;
 
-        //public static ScenPartDef ScenPart_FixedStartingPawn;
-
+        
         [MayRequireBiotech]
         public static GeneDef Pony_Cutiemark;
         [MayRequireBiotech]

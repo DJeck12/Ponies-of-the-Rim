@@ -5,7 +5,6 @@
 		<defName>Pony_BodyAddons_Races</defName>
 
 		<universalBodyAddons>
-
 		<!-- Zebra mark -->
 			<li>
 				<name>Cutiemark</name>
@@ -13,7 +12,7 @@
 				<inFrontOfBody>true</inFrontOfBody>
 				<drawSize>(0.15, 0.15)</drawSize>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>skin</colorChannel>
+				<colorChannel>white</colorChannel>
 				<conditions>
 					<RotStage>Fresh,Rotting</RotStage>
 					<Or>
@@ -48,139 +47,71 @@
 					</east>
 				</offsets>
 			</li>
-		<!-- Head addon -->
+		<!-- Long tail -->
 			<li>
-				<name>Head addon</name>
+				<name>Long tail</name>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Deer</Race>
+						<Race>Pony_Zebra</Race>
+					</Or>
+					<Or>
+						<BodyPart>
+							<bodyPart>Pony_Tail</bodyPart>
+						</BodyPart>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
+					<Race For="Pony_Deer">Races/Tails/Deer/Tail_Deer</Race>
+					<Race For="Pony_Zebra">Races/Tails/Zebra/LongTail_Zebra</Race>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<bodyTypes>
+							<Pony>(0, 0.58)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, 0.435)</PonyChild>
+						</bodyTypes>
+					</south>
+					<north>
+						<layerOffset>-0.265</layerOffset>
+						<bodyTypes>
+							<Pony>(0, -0.3)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.16)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0, -0.23)</PonyChild>
+						</bodyTypes>
+					</north>
+					<east>
+						<bodyTypes>
+							<Pony>(0.36, 0)</Pony>
+							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
+							<PonyChild MayRequire="Ludeon.RimWorld.Biotech">(0.28, 0)</PonyChild>
+						</bodyTypes>
+					</east>
+				</offsets>
+			</li>
+		<!-- Head pattern -->
+			<li>
+				<name>Head pattern</name>
+				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>skin</colorChannel>
-				<conditions>
-					<RotStage>Fresh,Rotting</RotStage>
-					<Or>
-						<Race>Pony_Kirin</Race>
-					</Or>
-					<BodyPart>
-						<bodyPart>Torso</bodyPart>
-					</BodyPart>
-				</conditions>
-				<extendedGraphics>
-					<Race For="Pony_Kirin">Races/Addons/Kirin/Head_Scales</Race>
-				</extendedGraphics>
-				<offsets>
-					<south>
-						<layerOffset>-0.28</layerOffset>
-					</south>
-					<north>
-						<layerOffset>-0.28</layerOffset>
-					</north>
-					<east>
-						<layerOffset>-0.28</layerOffset>
-					</east>
-				</offsets>
-			</li>
-		<!-- Soul gem-->
-			<li>
-				<name>Soul gem</name>
-				<inFrontOfBody>true</inFrontOfBody>
-				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>skin</colorChannel>
-				<conditions>
-					<RotStage>Fresh,Rotting</RotStage>
-					<Or>
-						<Race>Pony_Changeling</Race>
-						<Race>Pony_Changedling</Race>
-					</Or>
-					<BodyPart>
-						<bodyPart>Torso</bodyPart>
-					</BodyPart>
-				</conditions>
-				<extendedGraphics>
-					<Race For="Pony_Changeling">Races/Addons/Changeling/SoulGem</Race>
-					<Race For="Pony_Changedling">Races/Addons/Changeling/SoulGem</Race>
-				</extendedGraphics>
-				<offsets>
-					<south>
-						<layerOffset>-0.29</layerOffset>
-					</south>
-					<north>
-						<layerOffset>-0.335</layerOffset>
-					</north>
-					<east>
-						<layerOffset>-0.2905</layerOffset>
-					</east>
-				</offsets>
-			</li>
-		<!-- Body addon (skin)-->
-			<li>
-				<name>Body addon (skin)</name>
-				<inFrontOfBody>true</inFrontOfBody>
-				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>skin</colorChannel>
-				<conditions>
-					<RotStage>Fresh,Rotting</RotStage>
-					<Or>
-						<Race>Pony_Changeling</Race>
-						<Race>Pony_Changedling</Race>
-						<Race>Pony_Kirin</Race>
-					</Or>
-					<BodyPart>
-						<bodyPart>Torso</bodyPart>
-					</BodyPart>
-				</conditions>
-				<extendedGraphics>
-					<Race For="Pony_Changeling">Races/Addons/Changeling/Chitin</Race>
-					<Race For="Pony_Changedling">Races/Addons/Changeling/Chitin</Race>
-					<Race For="Pony_Kirin">Races/Addons/Kirin/Body_Scales</Race>
-				</extendedGraphics>
-				<offsets>
-					<south>
-						<layerOffset>-0.295</layerOffset>
-					</south>
-					<north>
-						<layerOffset>-0.305</layerOffset>
-					</north>
-					<east>
-						<layerOffset>-0.295</layerOffset>
-					</east>
-				</offsets>
-			</li>
-		<!-- Body addon (optional) -->
-			<li>
-				<name>Body addon (optional)</name>
-				<inFrontOfBody>true</inFrontOfBody>
-				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 				<colorChannel>optional</colorChannel>
 				<conditions>
-					<RotStage>Fresh,Rotting</RotStage>
 					<Or>
-						<Race>Pony_Griffon</Race>
-						<Race>Pony_Hippogriff</Race>
+						<Race>Pony_Crystalpony</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Torso</bodyPart>
-					</BodyPart>
 				</conditions>
-				<extendedGraphics>
-					<Race For="Pony_Griffon">Races/Claws/Claws</Race>
-					<Race For="Pony_Hippogriff">Races/Claws/Claws</Race>
-				</extendedGraphics>
-				<offsets>
-					<south>
-						<layerOffset>-0.295</layerOffset>
-					</south>
-					<north>
-						<layerOffset>-0.305</layerOffset>
-					</north>
-					<east>
-						<layerOffset>-0.295</layerOffset>
-					</east>
-				</offsets>
 			</li>
 		<!-- Kirin horn -->
 			<li>
-				<name>Horn</name>
-				<path>Races/Horns/Kirin/Horn_Kirin</path>
+				<name>Kirin horn</name>
+				<path>Races/Horns/Kirin/Normal/Horn_Kirin_Normal</path>
 				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
@@ -212,7 +143,7 @@
 						<layerOffset>-0.27</layerOffset>
 					</south>
 					<north>
-						<layerOffset>-0.27</layerOffset>
+						<layerOffset>-0.3</layerOffset>
 					</north>
 					<east>
 						<layerOffset>-0.27</layerOffset>
@@ -232,9 +163,6 @@
 					<Or>
 						<Race>Pony_Deer</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Head</bodyPart>
-					</BodyPart>
 				</conditions>
 				<offsets>
 					<south>
@@ -248,7 +176,12 @@
 					</east>
 				</offsets>
 				<extendedGraphics>
-					<Gender For="Female">Races/Horns/Antlers/Antlers_Female</Gender>
+					<Race For="Pony_Deer">
+						<path>Races/Horns/Antlers/Antlers_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Horns/Antlers/Antlers_Female</Gender>
+						</extendedGraphics>
+					</Race>
 				</extendedGraphics>
 			</li>
 		</universalBodyAddons>

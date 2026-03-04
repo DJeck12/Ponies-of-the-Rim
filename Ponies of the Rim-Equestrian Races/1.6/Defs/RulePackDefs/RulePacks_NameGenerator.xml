@@ -23,9 +23,9 @@
 				<li>r_name->[Bat_Word] [Last]</li>
 			</rulesStrings>
 			<rulesFiles>
-				<li>Bat_First->Pony_Names/Name_Batpony_First</li>
-				<li>Bat_Last->Pony_Names/Name_Batpony_Last</li>
-				<li>Bat_Word->Pony_Names/Name_Batpony_Word</li>
+				<li>Bat_First->Pony_Names/Name_Bat_First</li>
+				<li>Bat_Last->Pony_Names/Name_Bat_Last</li>
+				<li>Bat_Word->Pony_Names/Name_Bat_Word</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
