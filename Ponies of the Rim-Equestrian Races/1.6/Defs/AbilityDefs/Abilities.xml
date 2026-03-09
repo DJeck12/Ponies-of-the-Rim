@@ -4,7 +4,7 @@
 	<AbilityDef>
 		<defName>Pony_Crystallization</defName>
 		<label>crystallization</label>
-		<description>The caster absorbs the power of crystals into himself, strengthening his body, making it more durable, but reducing his mobility in process.</description>
+		<description>The caster absorbs the power of crystals into himself, strengthening their body, making it more durable, but reducing their mobility in process.</description>
 		<iconPath>UI/Abilities/Ability_Crystal</iconPath>
 		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
 		<warmupSound>Pony_AbilityWarmup</warmupSound>
@@ -12,7 +12,7 @@
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<showPsycastEffects>False</showPsycastEffects>
-		<cooldownTicksRange>420000</cooldownTicksRange>
+		<cooldownTicksRange>60000</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<hotKey>Misc1</hotKey>
@@ -33,7 +33,7 @@
 			</targetParams>
 		</verbProperties>
 		<statBases>
-			<Ability_Duration>1000</Ability_Duration>
+			<Ability_Duration>100</Ability_Duration>
 			<Ability_EffectRadius>0</Ability_EffectRadius>
 		</statBases>
 		<comps>
