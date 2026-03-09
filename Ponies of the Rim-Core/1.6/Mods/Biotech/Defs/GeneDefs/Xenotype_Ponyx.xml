@@ -15,7 +15,8 @@ Their herbivorous diet prevents them from eating meat, motivating them to cultiv
 		<genes>
 			<li>Body_Standard</li>
 			<li>Body_Thin</li>
-			<li>Pony_PonyHead</li>
+			<li>Pony_EquineHead</li>
+			<li>Pony_EquineNose</li>
 			<li>Pony_PonyEars</li>
 			<li>Pony_PonyTail</li>
 			<li>Pony_Cutiemark</li>

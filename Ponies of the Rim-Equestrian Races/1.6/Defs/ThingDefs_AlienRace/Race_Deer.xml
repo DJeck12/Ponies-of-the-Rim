@@ -37,7 +37,8 @@ Most deer dwell in secluded forests, far from other civilizations, preferring so
 				</abilities>
 			<!-- Genes -->
 				<raceGenes>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_DeerNose</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_DeerTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_BaldOnly</li>

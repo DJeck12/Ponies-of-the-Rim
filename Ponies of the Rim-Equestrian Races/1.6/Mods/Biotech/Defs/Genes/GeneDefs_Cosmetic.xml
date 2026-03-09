@@ -16,6 +16,20 @@
 		</forcedHeadTypes>
 		<exclusionTags>
 			<li>Head</li>
+			<li>HeadType</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_DeerNose</defName>
+		<label>deer nose</label>
+		<description>Carriers of this gene have a deer-like nose.</description>
+		<iconPath>UI/Genes/DeerNose</iconPath>
+		<displayOrderInCategory>41</displayOrderInCategory>
+		<prerequisite>Pony_EquineHead</prerequisite>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>Nose</li>
 		</exclusionTags>
 	</GeneDef>
 
@@ -24,7 +38,7 @@
 		<label>antlers</label>
 		<description>Carriers of this gene grow a pair of branched antlers on their head.</description>
 		<iconPath>UI/Genes/Antlers</iconPath>
-		<displayOrderInCategory>40</displayOrderInCategory>
+		<displayOrderInCategory>43</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<biostatCpx>0</biostatCpx>
 	</GeneDef>
@@ -45,9 +59,9 @@
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Carapace</defName>
-		<label>Carapace</label>
+		<label>carapace</label>
 		<description>Carriers of this gene grow dragon scales on their back.</description>
-		<iconPath>UI/Genes/ScaleBack</iconPath>
+		<iconPath>UI/Genes/Carapace</iconPath>
 		<displayOrderInCategory>65</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<exclusionTags>
@@ -57,14 +71,35 @@
 
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Chitin</defName>
-		<label>Chitin</label>
+		<label>chitin</label>
 		<description>Carriers of this gene have an exoskeleton made of chitin instead of skin.</description>
-		<iconPath>UI/Genes/ChitinBack</iconPath>
+		<iconPath>UI/Genes/Chitin</iconPath>
 		<displayOrderInCategory>65</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<exclusionTags>
 			<li>BodyCover</li>
 		</exclusionTags>
+	</GeneDef>
+	<!--
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_DeerPattern</defName>
+		<label>deer pattern</label>
+		<description>Carriers of this gene have spotted fur pattern over their body, characteristic of deer.</description>
+		<iconPath>UI/Genes/DeerPattern</iconPath>
+		<displayOrderInCategory>65</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>BodyCover</li>
+		</exclusionTags>
+	</GeneDef>
+	-->
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_SoulGem</defName>
+		<label>soul gem</label>
+		<description>Carriers of this gene have a teardrop-shaped gemstone on their chest. This organ is used by changelings to store the remembered forms of other creatures for shapeshifting.</description>
+		<iconPath>UI/Genes/SoulGem</iconPath>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<biostatCpx>0</biostatCpx>
 	</GeneDef>
 
 <!-- Tails -->

@@ -2,9 +2,9 @@
 <Defs>
 
 	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_PonyHead</defName>
-		<label>pony head</label>
-		<description>Carriers of this gene have a pony-like head.</description>
+		<defName>Pony_EquineHead</defName>
+		<label>equine head</label>
+		<description>Carriers of this gene have a equine head.</description>
 		<iconPath>UI/Genes/PonyHead</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>40</displayOrderInCategory>
@@ -15,6 +15,20 @@
 		</forcedHeadTypes>
 		<exclusionTags>
 			<li>Head</li>
+			<li>HeadType</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_EquineNose</defName>
+		<label>equine nose</label>
+		<description>Carriers of this gene have a equine nose.</description>
+		<iconPath>UI/Genes/PonyNose</iconPath>
+		<displayOrderInCategory>41</displayOrderInCategory>
+		<prerequisite>Pony_EquineHead</prerequisite>
+		<biostatCpx>0</biostatCpx>
+		<exclusionTags>
+			<li>Nose</li>
 		</exclusionTags>
 	</GeneDef>
 

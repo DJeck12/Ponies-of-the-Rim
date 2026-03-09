@@ -4,7 +4,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Herbivore</defName>
 		<label>herbivore</label>
-		<description>Carriers of this gene have a strict herbivorous diet. They can't eat and digest meat unless it is cooked in a meal.</description>
+		<description>Carriers of this gene have a strict herbivorous diet. They can still consume meat products, but this will negatively affect their digestion and mood.</description>
 		<iconPath>UI/Genes/Herbivore</iconPath>
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
@@ -18,7 +18,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Carnivore</defName>
 		<label>carnivore</label>
-		<description>Carriers of this gene have a strict carnivorous diet. They can't eat and digest fruits or vegetables unless they are cooked in a meal.</description>
+		<description>Carriers of this gene have a strict carnivorous diet. They can still consume plant products, but this will negatively affect their digestion and mood.</description>
 		<iconPath>UI/Genes/Carnivore</iconPath>
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
@@ -35,8 +35,7 @@
 		<description>Carrier of this gene have a standard omnivorous diet, common to most intelligent races.</description>
 		<iconPath>UI/Genes/Omnivore</iconPath>
 		<displayOrderInCategory>0</displayOrderInCategory>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<biostatCpx>1</biostatCpx>
 		<exclusionTags>
 			<li>Food</li>
 			<li>Diet</li>

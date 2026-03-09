@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Pony_PonyHead.label>голова пони</Pony_PonyHead.label>
-	<Pony_PonyHead.description>Носители этого гена обладают головой расы пони.</Pony_PonyHead.description>
+	<Pony_EquineHead.label>голова пони</Pony_EquineHead.label>
+	<Pony_EquineHead.description>Носители этого гена обладают головой расы пони.</Pony_EquineHead.description>
 
 	<Pony_PonyEars.label>понячьи уши</Pony_PonyEars.label>
 	<Pony_PonyEars.description>Носители этого гена обладают ушами расы пони.</Pony_PonyEars.description>

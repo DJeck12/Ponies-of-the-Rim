@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Pony_PonyHead.label>小马头</Pony_PonyHead.label>
-	<Pony_PonyHead.description>这种基因的携带者有着像小马的头。</Pony_PonyHead.description>
+	<Pony_EquineHead.label>小马头</Pony_EquineHead.label>
+	<Pony_EquineHead.description>这种基因的携带者有着像小马的头。</Pony_EquineHead.description>
 
 	<Pony_PonyEars.label>小马耳朵</Pony_PonyEars.label>
 	<Pony_PonyEars.description>这种基因的携带者有着像小马的耳朵。</Pony_PonyEars.description>

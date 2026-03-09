@@ -2,7 +2,7 @@
 <Defs>
 
 	<HediffDef>
-		<defName>Pony_BirdHands</defName>
+		<defName>Pony_BirdTalons</defName>
 		<label>bird talons</label>
 		<description>Carriers of this gene have hands that resemble bird feet. Their sharp claws allow them to deal sharp damage instead of blunt when unarmed in compensation of manipulation capability.</description>
 		<hediffClass>HediffWithComps</hediffClass>

@@ -57,10 +57,10 @@
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_BirdHands</defName>
+		<defName>Pony_BirdTalons</defName>
 		<label>bird talons</label>
 		<description>Carriers of this gene have hands that resemble bird feet. Their sharp claws allow them to deal sharp damage instead of blunt when unarmed in compensation of manipulation capability.</description>
-		<iconPath>UI/Genes/BirdHands</iconPath>
+		<iconPath>UI/Genes/BirdTalons</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>31</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
@@ -93,7 +93,7 @@
 			<li Class="VEF.Genes.GeneExtension">
 				<hediffsToBodyParts>
 					<li>
-						<hediff>Pony_BirdHands</hediff>
+						<hediff>Pony_BirdTalons</hediff>
 						<bodyparts>
 							<li>Hand</li>
 							<li>Hand</li>

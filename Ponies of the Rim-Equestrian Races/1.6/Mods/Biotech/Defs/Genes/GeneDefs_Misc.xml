@@ -88,7 +88,7 @@
 			<ShootingAccuracyFactor_Touch>0.25</ShootingAccuracyFactor_Touch>
 		</statFactors>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>2</biostatMet>
 		<exclusionTags>
 			<li>ShootingAccuracy</li>
 		</exclusionTags>

@@ -52,7 +52,8 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 				</abilities>
 			<!-- Genes -->
 				<raceGenes>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineNose</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ChitinEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_ChitinTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Chitin</li>
@@ -60,6 +61,7 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pain_Reduced</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_SoulGem</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>

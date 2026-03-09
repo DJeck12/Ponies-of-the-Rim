@@ -52,7 +52,8 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 				</abilities>
 			<!-- Genes -->
 				<raceGenes>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineNose</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_KirinEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_KirinTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Carapace</li>

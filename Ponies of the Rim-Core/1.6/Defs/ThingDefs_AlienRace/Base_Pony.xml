@@ -115,6 +115,7 @@
 					<li>Hay</li>
 				</foodList>
 			<!-- Genes -->
+				<geneList />
 				<blackXenotypeList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Ponyx</li>
 				</blackXenotypeList>
@@ -129,8 +130,6 @@
 				</blackGeneList>
 				<blackGeneTags>
 					<li>HairColor</li>
-					<li>Head</li>
-					<li>HeadType</li>
 				</blackGeneTags>
 				<blackEndoCategories>
 					<li>Melanin</li>

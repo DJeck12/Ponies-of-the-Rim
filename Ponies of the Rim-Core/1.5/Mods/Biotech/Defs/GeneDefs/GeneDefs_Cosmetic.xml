@@ -2,7 +2,7 @@
 <Defs>
 
 	<GeneDef ParentName="GenePonyBase">
-		<defName>Pony_PonyHead</defName>
+		<defName>Pony_EquineHead</defName>
 		<label>pony head</label>
 		<description>Carriers of this gene have a pony-like head.</description>
 		<iconPath>UI/Genes/PonyHead</iconPath>

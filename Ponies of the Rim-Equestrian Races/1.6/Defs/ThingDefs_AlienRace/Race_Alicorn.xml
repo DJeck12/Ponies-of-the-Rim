@@ -54,7 +54,8 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 				</abilities>
 			<!-- Genes -->
 				<raceGenes>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineHead</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineNose</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyEars</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_PonyTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Cutiemark</li>
