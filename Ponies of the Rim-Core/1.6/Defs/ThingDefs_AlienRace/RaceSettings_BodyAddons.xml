@@ -236,12 +236,13 @@
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Race For="Pony_Deer">Races/Tails/Deer/Tail_Deer</Race>
-					<Race For="Pony_Griffon">Races/Tails/Griffon/Tail_Griffon</Race>
+					<Race For="Pony_Griffon">Races/Tails/Griffon/LongTail_Griffon</Race>
 					<Race For="Pony_Kirin">Races/Tails/Kirin/LongTail_Kirin</Race>
 					<Race For="Pony_Zebra">Races/Tails/Zebra/LongTail_Zebra</Race>
 				</extendedGraphics>
 				<offsets>
 					<south>
+						<layerOffset>-0.255</layerOffset>
 						<bodyTypes>
 							<Pony>(0, 0.58)</Pony>
 							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0, 0.3)</PonyBaby>
@@ -257,6 +258,7 @@
 						</bodyTypes>
 					</north>
 					<east>
+						<layerOffset>-0.255</layerOffset>
 						<bodyTypes>
 							<Pony>(0.36, 0)</Pony>
 							<PonyBaby MayRequire="Ludeon.RimWorld.Biotech">(0.19, 0)</PonyBaby>
@@ -313,7 +315,7 @@
 						</bodyTypes>
 					</south>
 					<north>
-						<layerOffset>-0.265</layerOffset>
+						<layerOffset>-0.275</layerOffset>
 						<bodyTypes>
 							<Male>(0, -0.3)</Male>
 							<Female>(0, -0.3)</Female>
@@ -367,10 +369,10 @@
 				</conditions>
 				<offsets>
 					<south>
-						<layerOffset>-0.28</layerOffset>
+						<layerOffset>-0.275</layerOffset>
 					</south>
 					<east>
-						<layerOffset>-0.28</layerOffset>
+						<layerOffset>-0.275</layerOffset>
 					</east>
 				</offsets>
 			</li>

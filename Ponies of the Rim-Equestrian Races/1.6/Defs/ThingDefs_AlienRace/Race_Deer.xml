@@ -56,9 +56,14 @@ Most deer dwell in secluded forests, far from other civilizations, preferring so
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>20</weight>
+										<weight>10</weight>
 										<min>RGBA(175, 120, 95, 255)</min>
 										<max>RGBA(195, 140, 115, 255)</max>
+									</li>
+									<li>
+										<weight>1</weight>
+										<min>RGBA(150, 150, 150, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 									<li>
 										<weight>1</weight>
@@ -70,7 +75,7 @@ Most deer dwell in secluded forests, far from other civilizations, preferring so
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>20</weight>
+										<weight>10</weight>
 										<min>RGBA(245, 230, 200, 255)</min>
 										<max>RGBA(255, 250, 220, 255)</max>
 									</li>
@@ -114,8 +119,14 @@ Most deer dwell in secluded forests, far from other civilizations, preferring so
 							<second Class="ColorGenerator_Options">
 								<options>
 									<li>
+										<weight>10</weight>
 										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(80, 50, 50, 255)</max>
+									</li>
+									<li>
+										<weight>1</weight>
+										<min>RGBA(50, 50, 50, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
 							</second>

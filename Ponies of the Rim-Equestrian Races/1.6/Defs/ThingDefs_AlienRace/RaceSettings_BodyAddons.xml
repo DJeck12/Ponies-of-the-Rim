@@ -8,7 +8,7 @@
 
 		<!-- Zebra mark -->
 			<li>
-				<name>Cutiemark</name>
+				<name>Zebra mark</name>
 				<path>Races/Cutiemarks/QTMark_Zebra</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<drawSize>(0.15, 0.15)</drawSize>
@@ -48,24 +48,29 @@
 					</east>
 				</offsets>
 			</li>
-		<!-- Head addon -->
+		<!-- Griffon head -->
 			<li>
-				<name>Head addon</name>
+				<name>Head front</name>
+				<path>Races/Heads/Griffon/HeadFront_Male</path>
+				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
 				<alignWithHead>true</alignWithHead>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-				<colorChannel>skin</colorChannel>
+				<colorChannel>hair</colorChannel>
 				<conditions>
 					<RotStage>Fresh,Rotting</RotStage>
 					<Or>
-						<Race>Pony_Kirin</Race>
+						<Race>Pony_Griffon</Race>
 					</Or>
-					<BodyPart>
-						<bodyPart>Torso</bodyPart>
-					</BodyPart>
+					<Or>
+						<BodyPart>
+							<bodyPart>Head</bodyPart>
+						</BodyPart>
+					</Or>
 				</conditions>
 				<extendedGraphics>
-					<Race For="Pony_Kirin">Races/Addons/Kirin/Head_Scales</Race>
+				<!-- Normal -->
+					<Gender For="Female">Races/Heads/Griffon/HeadFront_Female</Gender>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -79,9 +84,153 @@
 					</east>
 				</offsets>
 			</li>
+			<li>
+				<name>Head back</name>
+				<path>Races/Heads/Griffon/HeadBack_Male</path>
+				<userCustomizable>true</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>hair</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Griffon</Race>
+					</Or>
+					<Or>
+						<BodyPart>
+							<bodyPart>Head</bodyPart>
+						</BodyPart>
+					</Or>
+				</conditions>
+				<extendedGraphics>
+				<!-- Normal -->
+					<Gender For="Female">Races/Heads/Griffon/HeadBack_Female</Gender>
+				</extendedGraphics>
+				<offsets>
+					<south>
+						<layerOffset>-0.295</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.295</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.295</layerOffset>
+					</east>
+				</offsets>
+			</li>
+		<!-- Griffon ears -->
+			<li>
+				<name>Right ear</name>
+				<path>Races/Ears/Griffon/Normal/Ear_Right</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>hair</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Griffon</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>CoverEars</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.268</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.5</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.268</layerOffset>
+					</east>
+					<west>
+						<layerOffset>-0.5</layerOffset>
+					</west>
+				</offsets>
+			</li>
+			<li>
+				<name>Left ear</name>
+				<path>Races/Ears/Griffon/Normal/Ear_Left</path>
+				<userCustomizable>false</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+				<colorChannel>hair</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Griffon</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+					</BodyPart>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>CoverEars</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.278</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.5</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.5</layerOffset>
+					</east>
+					<west>
+						<layerOffset>-0.268</layerOffset>
+					</west>
+				</offsets>
+			</li>
+		<!-- Head addon -->
+			<li>
+				<name>Head addon</name>
+				<path>Races/Addons/Kirin/Head_Scales</path>
+				<userCustomizable>true</userCustomizable>
+				<inFrontOfBody>true</inFrontOfBody>
+				<alignWithHead>true</alignWithHead>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<colorChannel>skin</colorChannel>
+				<conditions>
+					<RotStage>Fresh,Rotting</RotStage>
+					<Or>
+						<Race>Pony_Kirin</Race>
+					</Or>
+					<BodyPart>
+						<bodyPart>Head</bodyPart>
+					</BodyPart>
+				</conditions>
+				<offsets>
+					<south>
+						<layerOffset>-0.279</layerOffset>
+					</south>
+					<north>
+						<layerOffset>-0.279</layerOffset>
+					</north>
+					<east>
+						<layerOffset>-0.279</layerOffset>
+					</east>
+				</offsets>
+			</li>
 		<!-- Soul gem-->
 			<li>
 				<name>Soul gem</name>
+				<path>Races/Addons/Changeling/SoulGem</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 				<colorChannel>skin</colorChannel>
@@ -95,10 +244,6 @@
 						<bodyPart>Torso</bodyPart>
 					</BodyPart>
 				</conditions>
-				<extendedGraphics>
-					<Race For="Pony_Changeling">Races/Addons/Changeling/SoulGem</Race>
-					<Race For="Pony_Changedling">Races/Addons/Changeling/SoulGem</Race>
-				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.29</layerOffset>
@@ -145,9 +290,10 @@
 					</east>
 				</offsets>
 			</li>
-		<!-- Body addon (optional) -->
+		<!-- Hands -->
 			<li>
-				<name>Body addon (optional)</name>
+				<name>Hands</name>
+				<path>Races/Claws/Claws</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 				<colorChannel>optional</colorChannel>
@@ -161,10 +307,6 @@
 						<bodyPart>Torso</bodyPart>
 					</BodyPart>
 				</conditions>
-				<extendedGraphics>
-					<Race For="Pony_Griffon">Races/Claws/Claws</Race>
-					<Race For="Pony_Hippogriff">Races/Claws/Claws</Race>
-				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.295</layerOffset>

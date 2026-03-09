@@ -80,7 +80,7 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 									</li>
 									<li>
 										<weight>5</weight>
-										<min>RGBA(150, 150, 150, 255)</min>
+										<min>RGBA(180, 180, 180, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -104,7 +104,7 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 									</li>
 									<li>
 										<weight>5</weight>
-										<min>RGBA(150, 150, 150, 255)</min>
+										<min>RGBA(180, 180, 180, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>

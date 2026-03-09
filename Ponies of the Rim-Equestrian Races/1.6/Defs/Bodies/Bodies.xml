@@ -2620,7 +2620,7 @@
 					</groups>
 					<parts>
 						<li>
-							<def>Pony_HeadWithEarHoles</def>
+							<def>Head</def>
 							<coverage>0.8</coverage>
 							<groups>
 								<li>UpperHead</li>
@@ -2677,6 +2677,25 @@
 										<li>South</li>
 										<li>East</li>
 									</visibleHediffRots>
+								</li>
+								<li>
+									<def>Ear</def>
+									<customLabel>left ear</customLabel>
+									<coverage>0.1</coverage>
+									<flipGraphic>true</flipGraphic>
+									<groups>
+										<li>UpperHead</li>
+										<li>FullHead</li>
+									</groups>
+								</li>
+								<li>
+									<def>Ear</def>
+									<customLabel>right ear</customLabel>
+									<coverage>0.1</coverage>
+									<groups>
+										<li>UpperHead</li>
+										<li>FullHead</li>
+									</groups>
 								</li>
 								<li>
 									<def>Pony_Beak</def>

@@ -53,8 +53,13 @@ Griffons can be found all over the world, but they typically favor more temperat
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
-										<weight>5</weight>
-										<min>RGBA(180, 180, 180, 255)</min>
+										<weight>10</weight>
+										<min>RGBA(115, 65, 35, 255)</min>
+										<max>RGBA(155, 105, 55, 255)</max>
+									</li>
+									<li>
+										<weight>1</weight>
+										<min>RGBA(35, 35, 200, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
 								</options>
@@ -73,6 +78,12 @@ Griffons can be found all over the world, but they typically favor more temperat
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
+										<weight>10</weight>
+										<min>RGBA(200, 200, 200, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+									<li>
+										<weight>1</weight>
 										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
@@ -92,6 +103,12 @@ Griffons can be found all over the world, but they typically favor more temperat
 							<first Class="ColorGenerator_Options">
 								<options>
 									<li>
+										<weight>10</weight>
+										<min>RGBA(235, 205, 35, 255)</min>
+										<max>RGBA(255, 245, 75, 255)</max>
+									</li>
+									<li>
+										<weight>1</weight>
 										<min>RGBA(35, 35, 35, 255)</min>
 										<max>RGBA(255, 255, 255, 255)</max>
 									</li>
@@ -114,13 +131,13 @@ Griffons can be found all over the world, but they typically favor more temperat
 				<li>
 					<key>HairDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>

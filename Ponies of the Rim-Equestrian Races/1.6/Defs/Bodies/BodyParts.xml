@@ -20,20 +20,6 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Pony_HeadWithEarHoles</defName>
-		<label>head</label>
-		<hitPoints>25</hitPoints>
-		<skinCovered>true</skinCovered>
-		<canScarify>true</canScarify>
-		<canSuggestAmputation>false</canSuggestAmputation>
-		<bleedRate>2</bleedRate>
-		<executionPartPriority>500</executionPartPriority>
-		<tags>
-			<li>HearingSource</li>
-		</tags>
-	</BodyPartDef>
-
-	<BodyPartDef>
 		<defName>Pony_Antler</defName>
 		<label>antler</label>
 		<hitPoints>15</hitPoints>
