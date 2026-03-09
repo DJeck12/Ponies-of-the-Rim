@@ -28,7 +28,6 @@
 				<Race>Pony_Changedling</Race>
 				<Race>Pony_Crystalpony</Race>
 				<Race>Pony_Deer</Race>
-				<Race>Pony_Griffon</Race>
 				<Race>Pony_Hippogriff</Race>
 				<Race>Pony_Kirin</Race>
 				<Race>Pony_Zebra</Race>
@@ -51,10 +50,10 @@
 					<Gender For="Female">Races/Heads/Changeling/Head_Female</Gender>
 				</extendedGraphics>
 			</Race>
-			<Race For="Pony_Crystalpony">
-				<path>Races/Heads/Crystal/Head_Male</path>
+			<Race For="Pony_Hippogriff">
+				<path>Races/Heads/Hippogriff/Head_Male</path>
 				<extendedGraphics>
-					<Gender For="Female">Races/Heads/Crystal/Head_Female</Gender>
+					<Gender For="Female">Races/Heads/Hippogriff/Head_Female</Gender>
 				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Deer">
@@ -63,16 +62,10 @@
 					<Gender For="Female">Races/Heads/Deer/Head_Female</Gender>
 				</extendedGraphics>
 			</Race>
-			<Race For="Pony_Hippogriff">
-				<path>Races/Heads/Hippogriff/Head_Male</path>
-				<extendedGraphics>
-					<Gender For="Female">Races/Heads/Hippogriff/Head_Female</Gender>
-				</extendedGraphics>
-			</Race>
 			<Race For="Pony_Kirin">
-				<path>Races/Heads/Maskless/Head_Male</path>
+				<path>Races/Heads/Markless/Head_Male</path>
 				<extendedGraphics>
-					<Gender For="Female">Races/Heads/Maskless/Head_Female</Gender>
+					<Gender For="Female">Races/Heads/Markless/Head_Female</Gender>
 				</extendedGraphics>
 			</Race>
 			<Race For="Pony_Zebra">
@@ -109,12 +102,12 @@
 		<order>Append</order>
 		<value>
 			<Race For="Pony_Changeling">Races/Bodies/Changeling/Body_Changeling</Race>
-			<Race For="Pony_Changedling">Races/Bodies/Maskless/Body_Normal</Race>
-			<Race For="Pony_Crystalpony">Races/Bodies/Crystal/Body_Crystal</Race>
-			<Race For="Pony_Deer">Races/Bodies/Deer/Body_Deer</Race>
-			<Race For="Pony_Hippogriff">Races/Bodies/Maskless/Body_Normal</Race>
+			<Race For="Pony_Changedling">Races/Bodies/Markless/Body_Normal</Race>
+			<Race For="Pony_Griffon">Races/Bodies/Markless/Body_Normal</Race>
+			<Race For="Pony_Hippogriff">Races/Bodies/Markless/Body_Normal</Race>
 			<Race For="Pony_Kirin">Races/Bodies/Kirin/Body_Kirin</Race>
 			<Race For="Pony_Zebra">Races/Bodies/Zebra/Body_Zebra</Race>
+			<Race For="Pony_Deer">Races/Bodies/Deer/Body_Deer</Race>
 		</value>
 	</Operation>
 
@@ -236,6 +229,14 @@
 			</value>
 		</match>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/conditions</xpath>
+		<value>
+			<Not>
+				<Race>Pony_Griffon</Race>
+			</Not>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationInsert">
 		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Hediff[1]</xpath>
 		<order>Append</order>
@@ -255,17 +256,14 @@
 			<Race For="Pony_Changedling">
 				<path>Races/Ears/Skittlebug/Normal/Ear_Right</path>
 			</Race>
-			<Race For="Pony_Crystalpony">
-				<path>Races/Ears/Crystal/Normal/Ear_Right</path>
-			</Race>
-			<Race For="Pony_Deer">
-				<path>Races/Ears/Deer/Normal/Ear_Right</path>
-			</Race>
 			<Race For="Pony_Hippogriff">
-				<path>Races/Ears/Hippogriff/Normal/Ear_Right</path>
+				<path>Races/Ears/Griffon/Normal/Ear_Right</path>
 			</Race>
 			<Race For="Pony_Kirin">
 				<path>Races/Ears/Kirin/Normal/Ear_Right</path>
+			</Race>
+			<Race For="Pony_Deer">
+				<path>Races/Ears/Deer/Normal/Ear_Right</path>
 			</Race>
 		</value>
 	</Operation>
@@ -289,6 +287,14 @@
 			</value>
 		</match>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/conditions</xpath>
+		<value>
+			<Not>
+				<Race>Pony_Griffon</Race>
+			</Not>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationInsert">
 		<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Hediff[1]</xpath>
 		<order>Append</order>
@@ -308,17 +314,14 @@
 			<Race For="Pony_Changedling">
 				<path>Races/Ears/Skittlebug/Normal/Ear_Left</path>
 			</Race>
-			<Race For="Pony_Crystalpony">
-				<path>Races/Ears/Crystal/Normal/Ear_Left</path>
-			</Race>
-			<Race For="Pony_Deer">
-				<path>Races/Ears/Deer/Normal/Ear_Left</path>
-			</Race>
 			<Race For="Pony_Hippogriff">
-				<path>Races/Ears/Hippogriff/Normal/Ear_Left</path>
+				<path>Races/Ears/Griffon/Normal/Ear_Left</path>
 			</Race>
 			<Race For="Pony_Kirin">
 				<path>Races/Ears/Kirin/Normal/Ear_Left</path>
+			</Race>
+			<Race For="Pony_Deer">
+				<path>Races/Ears/Deer/Normal/Ear_Left</path>
 			</Race>
 		</value>
 	</Operation>
@@ -379,10 +382,10 @@
 				<path>Races/Wings/Changeling/Normal/Wing_Changeling_Right</path>
 			</Race>
 			<Race For="Pony_Griffon">
-				<path>Races/Wings/Griffon/Normal/Wing_Right</path>
+				<path>Races/Wings/Griffon/Normal/Wing_Griffon_Right</path>
 			</Race>
 			<Race For="Pony_Hippogriff">
-				<path>Races/Wings/Griffon/Normal/Wing_Right</path>
+				<path>Races/Wings/Griffon/Normal/Wing_Griffon_Right</path>
 			</Race>
 		</value>
 	</Operation>
@@ -417,10 +420,10 @@
 				<path>Races/Wings/Changeling/Normal/Wing_Changeling_Left</path>
 			</Race>
 			<Race For="Pony_Griffon">
-				<path>Races/Wings/Griffon/Normal/Wing_Left</path>
+				<path>Races/Wings/Griffon/Normal/Wing_Griffon_Left</path>
 			</Race>
 			<Race For="Pony_Hippogriff">
-				<path>Races/Wings/Griffon/Normal/Wing_Left</path>
+				<path>Races/Wings/Griffon/Normal/Wing_Griffon_Left</path>
 			</Race>
 		</value>
 	</Operation>

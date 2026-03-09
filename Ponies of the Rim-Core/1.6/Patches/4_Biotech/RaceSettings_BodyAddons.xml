@@ -10,7 +10,9 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Cutiemark"]/conditions/Or[1]</xpath>
 					<value>
-						<Gene>Pony_Cutiemark</Gene>
+						<Or>
+							<Gene>Pony_Cutiemark</Gene>
+						</Or>
 					</value>
 				</li>
 
@@ -23,7 +25,18 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/conditions/Or[1]</xpath>
 					<value>
-						<Gene>Pony_PonyTail</Gene>
+						<Or>
+							<Gene>Pony_PonyTail</Gene>
+						</Or>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]/conditions/Or[1]</xpath>
+					<value>
+						<Or>
+							<Gene>Pony_EquineNose</Gene>
+						</Or>
 					</value>
 				</li>
 
