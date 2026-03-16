@@ -9,23 +9,9 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class CommsConsolePatch
     {
-        private static readonly Harmony harmony = new Harmony("Rimworld.Pony.PoniesOfTheRim");
         private static readonly System.Reflection.FieldInfo diaOptionTextField = AccessTools.Field(typeof(DiaOption), "text");
-
-        static CommsConsolePatch()
-        {
-            harmony.Patch(
-                AccessTools.Method(typeof(FactionDialogMaker), "FactionDialogFor"),
-                postfix: new HarmonyMethod(typeof(CommsConsolePatch), nameof(CommsConsolePostfix))
-            );
-
-            QuestFactionPatches.Apply(harmony);
-        }
-
-        [HarmonyPostfix]
         public static void CommsConsolePostfix(ref DiaNode __result, Pawn negotiator, Faction faction)
         {
             DiaNode localResult = __result;

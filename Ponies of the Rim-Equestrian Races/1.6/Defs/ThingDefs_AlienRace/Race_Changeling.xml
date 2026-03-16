@@ -11,7 +11,12 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 Changelings inhabit vast subterranean networks, living and working alongside others of their kind for the betterment of their hive. Despite being linked via a hive-mind, each changeling maintains a distinct sense of self with independent thought, though most rarely exercise it.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
@@ -62,6 +67,7 @@ Changelings inhabit vast subterranean networks, living and working alongside oth
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_SoulGem</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HiveLink</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>

@@ -6,15 +6,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class OffsetForPonyEarsPatch
     {
-        static OffsetForPonyEarsPatch()
-        {
-            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(AlienPawnRenderNodeWorker_BodyAddon), "OffsetFor"), null, new HarmonyMethod(typeof(OffsetForPonyEarsPatch).GetMethod("OffsetForPonyEars")));
-        }
-
-        [HarmonyPostfix]
         public static void OffsetForPonyEars(ref Vector3 __result, PawnRenderNode node, PawnDrawParms parms)
             {
             if (node.Props is AlienPawnRenderNodeProperties_BodyAddon props)

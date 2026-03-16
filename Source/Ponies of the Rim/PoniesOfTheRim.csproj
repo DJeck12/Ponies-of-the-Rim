@@ -100,6 +100,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\AbilityRaceIconExtension.cs" />
     <Compile Include="Abilities\GizmoIconShortFlightSwap.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />
@@ -107,12 +108,20 @@
     <Compile Include="Commsquestcontext.cs" />
     <Compile Include="CompProperties_EggHatcher.cs" />
     <Compile Include="Comp_EggHatcher.cs" />
+    <Compile Include="Flying\PegasusFlightAI.cs" />
     <Compile Include="Flying\PegasusFlightCore.cs" />
     <Compile Include="Flying\PegasusFlightPatches.cs" />
     <Compile Include="Flying\PegasusFlightStats.cs" />
+    <Compile Include="Flying\Pegasuskiteutil.cs" />
     <Compile Include="Flying\PegasusWingsRendering.cs" />
     <Compile Include="Harmony_CrystalPonyCrystalizeGraphicsBootstrap.cs" />
+    <Compile Include="Harmony_HiveLink.cs" />
+    <Compile Include="HiveLink.cs" />
+    <Compile Include="Harmony_OviparousHediffPregnantTick.cs" />
+    <Compile Include="OviparousPregnancyUtility.cs" />
+    <Compile Include="Harmony_Bootstrap.cs" />
     <Compile Include="UniquePonies\StylingStationRefresh .cs" />
+    <Compile Include="UniquePonies\UniqueEquipmentAssigner.cs" />
     <Compile Include="UniquePonies\UniquePoniesBootstrap.cs" />
     <Compile Include="UniquePonies\UniquePoniesConfig .cs" />
     <Compile Include="UniquePonies\UniqueStartingPoniesUI.cs" />

@@ -1,34 +1,25 @@
 ﻿using RimWorld;
-using Verse;
 using UnityEngine;
+using Verse;
 
 namespace PoniesOfTheRim.Abilities
 {
     public class GizmoIconShortFlightSwap : Command_Ability
     {
-        public GizmoIconShortFlightSwap(Ability ability, Pawn pawn) : base(ability, pawn)
+        public GizmoIconShortFlightSwap(Ability ability, Pawn pawn)
+            : base(ability, pawn)
         {
-            icon = ability.def.uiIcon;
-            string raceIconPath = GetIconPathForRace(pawn);
-            if (!raceIconPath.NullOrEmpty())
-            {
-                icon = ContentFinder<Texture2D>.Get(raceIconPath, reportFailure: false) ?? icon;
-            }
-        }
+            AbilityRaceIconExtension ext = ability.def.GetModExtension<AbilityRaceIconExtension>();
+            if (ext == null)
+                return;
 
-        private string GetIconPathForRace(Pawn pawn)
-        {
-            if (pawn.IsBatpony())
-            {
-                return "UI/Abilities/Glimpse";
-            }
+            string iconPath = ext.GetIconPathForRace(pawn.def);
+            if (iconPath.NullOrEmpty())
+                return;
 
-            return null;
-        }
-
-        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
-        {
-            return base.GizmoOnGUI(topLeft, maxWidth, parms);
+            Texture2D loaded = ContentFinder<Texture2D>.Get(iconPath, reportFailure: false);
+            if (loaded != null)
+                icon = loaded;
         }
     }
 }

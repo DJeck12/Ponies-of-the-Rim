@@ -1,5 +1,4 @@
-﻿
-using AlienRace;
+﻿using AlienRace;
 using HarmonyLib;
 using RimWorld;
 using System;
@@ -11,17 +10,16 @@ using Verse.Sound;
 
 namespace PoniesOfTheRim.Flying
 {
-            
     [StaticConstructorOnStartup]
     public static class PegasusFlightBootstrap
     {
-        public static readonly Harmony HarmonyInstance = new("PoniesOfTheRim.Flying");
+        private static readonly Harmony Harmony = new("PoniesOfTheRim.Flying");
 
         static PegasusFlightBootstrap()
         {
-            var h = HarmonyInstance;
+            var h = Harmony;
 
-                        h.Patch(
+            h.Patch(
                 AccessTools.PropertyGetter(typeof(Pawn), nameof(Pawn.Flying)),
                 postfix: Postfix(typeof(Patch_Pawn_Flying)));
 
@@ -33,7 +31,7 @@ namespace PoniesOfTheRim.Flying
                 AccessTools.Method(typeof(Pawn_FlightTracker), "ForceLand"),
                 prefix: Prefix(typeof(Patch_FlightTracker_ForceLand)));
 
-                        h.Patch(
+            h.Patch(
                 AccessTools.Method(typeof(Pawn_PathFollower), "CostToMoveIntoCell",
                     new[] { typeof(Pawn), typeof(IntVec3) }),
                 postfix: Postfix(typeof(Patch_CostToMoveIntoCell)));
@@ -54,7 +52,7 @@ namespace PoniesOfTheRim.Flying
                 AccessTools.Method(typeof(Pawn_PathFollower), "NextCellDoorToWaitForOrManuallyOpen"),
                 prefix: Prefix(typeof(Patch_NextCellDoor)));
 
-                        h.Patch(
+            h.Patch(
                 AccessTools.Method(typeof(Pawn_PathFollower), "TryEnterNextPathCell"),
                 prefix: Prefix(typeof(Patch_TryEnterNextPathCell_BlockFog)));
 
@@ -68,7 +66,7 @@ namespace PoniesOfTheRim.Flying
                 AccessTools.Method(typeof(Pawn), nameof(Pawn.GetPathContext)),
                 postfix: Postfix(typeof(Patch_GetPathContext)));
 
-                        h.Patch(
+            h.Patch(
                 AccessTools.Method(typeof(PawnRenderNode), "AppendRequests"),
                 prefix: Prefix(typeof(Patch_RenderNode_ForceWingsRefresh)));
 
@@ -77,20 +75,27 @@ namespace PoniesOfTheRim.Flying
                     new[] { typeof(Pawn) }),
                 postfix: Postfix(typeof(Patch_BodyAddon_CanDrawAddon)));
 
-                        h.Patch(
+            h.Patch(
                 AccessTools.Method(typeof(Pawn), nameof(Pawn.ExposeData)),
-                prefix: Prefix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
+                prefix:  Prefix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
                 postfix: Postfix(typeof(Patch_Pawn_ExposeData_SavePositionFix)));
 
             h.Patch(
                 AccessTools.Method(typeof(Pawn), nameof(Pawn.SpawnSetup)),
                 postfix: Postfix(typeof(Patch_SpawnSetup_EnsureNaturalWings)));
-                    }
+
+            h.Patch(
+                AccessTools.Method(typeof(Game), nameof(Game.DeinitAndRemoveMap)),
+                postfix: Postfix(typeof(Patch_Game_DeinitAndRemoveMap)));
+
+            Log.Message("[PoniesOfTheRim] Pegasus flight patches registered: 16");
+        }
+
         private static HarmonyMethod Prefix(Type type)  => new(AccessTools.Method(type, "Prefix"));
         private static HarmonyMethod Postfix(Type type) => new(AccessTools.Method(type, "Postfix"));
     }
 
-            
+
     public static class PegasusFlightUtil
     {
         public const string LeftWingPartDef  = "Pony_LeftWing";
@@ -104,7 +109,7 @@ namespace PoniesOfTheRim.Flying
             "ArchotechWing"
         };
 
-                public static bool HasUsableWings(Pawn pawn)
+        public static bool HasUsableWings(Pawn pawn)
         {
             if (pawn?.health?.hediffSet == null || pawn.RaceProps?.body?.AllParts == null)
                 return false;
@@ -129,11 +134,11 @@ namespace PoniesOfTheRim.Flying
                 && !pawn.health.hediffSet.PartIsMissing(rightWing);
         }
 
-                public static bool IsPegasusConstantFlight(Pawn p)
+        public static bool IsPegasusConstantFlight(Pawn p)
         {
             if (p == null || !p.Spawned || p.Dead || p.Downed)
                 return false;
-            if (!p.IsPegasus())
+            if (!p.HasWings())
                 return false;
 
             var comp = p.TryGetComp<CompPegasusFlightToggle>();
@@ -153,7 +158,7 @@ namespace PoniesOfTheRim.Flying
             return true;
         }
 
-                public static bool CanFlyToCell(Pawn pawn, IntVec3 c, Map map)
+        public static bool CanFlyToCell(Pawn pawn, IntVec3 c, Map map)
         {
             if (!IsPegasusConstantFlight(pawn))
                 return false;
@@ -166,7 +171,7 @@ namespace PoniesOfTheRim.Flying
             return true;
         }
 
-                public static bool IsImpassableMountain(IntVec3 c, Map map)
+        public static bool IsImpassableMountain(IntVec3 c, Map map)
         {
             var edifice = c.GetEdifice(map);
             if (edifice != null && edifice.def?.building != null && edifice.def.building.isNaturalRock)
@@ -177,7 +182,7 @@ namespace PoniesOfTheRim.Flying
             return false;
         }
 
-                                public static void SafeLand(Pawn pawn)
+        public static void SafeLand(Pawn pawn)
         {
             if (pawn == null || !pawn.Spawned || pawn.Map == null)
                 return;
@@ -189,7 +194,7 @@ namespace PoniesOfTheRim.Flying
             IntVec3 bestCell = IntVec3.Invalid;
             int bestScore = -1;
 
-                        for (int radius = 1; radius <= 15; radius++)
+            for (int radius = 1; radius <= 15; radius++)
             {
                 foreach (IntVec3 cell in GenRadial.RadialCellsAround(pawn.Position, radius, radius == 1))
                 {
@@ -207,7 +212,7 @@ namespace PoniesOfTheRim.Flying
                     }
                 }
 
-                                if (bestCell.IsValid)
+                if (bestCell.IsValid)
                     break;
             }
 
@@ -218,7 +223,7 @@ namespace PoniesOfTheRim.Flying
             }
             else
             {
-                                IntVec3 fallback;
+                IntVec3 fallback;
                 if (CellFinder.TryFindRandomCellNear(pawn.Position, map, 30,
                     c => c.Walkable(map) && !c.Fogged(map), out fallback))
                 {
@@ -230,7 +235,6 @@ namespace PoniesOfTheRim.Flying
     }
 
 
-            
     public class CompPropertiesPegasusFlightToggle : CompProperties
     {
         public CompPropertiesPegasusFlightToggle()
@@ -268,11 +272,12 @@ namespace PoniesOfTheRim.Flying
 
             if (Pawn.IsHashIntervalTick(30))
             {
-                                if (Pawn.Dead || Pawn.Downed)
+                if (Pawn.Dead || Pawn.Downed)
                 {
                     flightEnabled = false;
                     PegasusFlightUtil.SafeLand(Pawn);
-                    if (!Pawn.Dead)
+
+                    if (!Pawn.Dead && Pawn.IsColonistPlayerControlled)
                     {
                         Messages.Message(
                             $"{Pawn.LabelShort} crashed - incapacitated!",
@@ -285,9 +290,13 @@ namespace PoniesOfTheRim.Flying
                 {
                     flightEnabled = false;
                     PegasusFlightUtil.SafeLand(Pawn);
-                    Messages.Message(
-                        $"{Pawn.LabelShort} crashed - wing torn off!",
-                        Pawn, MessageTypeDefOf.NegativeEvent, historical: false);
+
+                    if (Pawn.IsColonistPlayerControlled)
+                    {
+                        Messages.Message(
+                            $"{Pawn.LabelShort} crashed - wing torn off!",
+                            Pawn, MessageTypeDefOf.NegativeEvent, historical: false);
+                    }
                     return;
                 }
 
@@ -295,16 +304,26 @@ namespace PoniesOfTheRim.Flying
                 {
                     flightEnabled = false;
                     PegasusFlightUtil.SafeLand(Pawn);
-                    Messages.Message(
-                        $"{Pawn.LabelShort} landed - cannot fly under roof!",
-                        Pawn, MessageTypeDefOf.SilentInput, historical: false);
+
+                    if (Pawn.IsColonistPlayerControlled)
+                    {
+                        Messages.Message(
+                            $"{Pawn.LabelShort} landed - cannot fly under roof!",
+                            Pawn, MessageTypeDefOf.SilentInput, historical: false);
+                    }
                 }
             }
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (Pawn == null || !Pawn.IsPegasus() || !Pawn.Spawned || Pawn.Dead)
+            if (Pawn == null || !Pawn.HasWings() || !Pawn.Spawned || Pawn.Dead)
+                yield break;
+
+            if (Pawn.Faction != Faction.OfPlayer)
+                yield break;
+
+            if (Pawn.drafter?.Drafted != true)
                 yield break;
 
             if (!PegasusFlightUtil.HasUsableWings(Pawn))
@@ -315,8 +334,8 @@ namespace PoniesOfTheRim.Flying
             var gizmo = new Command_Action
             {
                 defaultLabel = flightEnabled ? "Disable flight" : "Enable flight",
-                defaultDesc = $"Toggle pegasus constant flying.\n\nStamina: {timerComp?.CurrentStaminaPercent.ToStringPercent() ?? "N/A"}",
-                icon = ContentFinder<Texture2D>.Get("UI/Abilities/PegasusFlightToggle", false),
+                defaultDesc  = $"Toggle pegasus constant flying.\n\nStamina: {timerComp?.CurrentStaminaPercent.ToStringPercent() ?? "N/A"}",
+                icon         = ContentFinder<Texture2D>.Get("UI/Abilities/PegasusFlightToggle", false),
                 action = delegate
                 {
                     if (!flightEnabled && Pawn.Position.Roofed(Pawn.Map))
@@ -349,6 +368,9 @@ namespace PoniesOfTheRim.Flying
             }
 
             yield return gizmo;
+
+            if (timerComp != null)
+                yield return new Gizmo_FlightStamina(Pawn, timerComp);
         }
 
         private void UpdateAnimation()
@@ -367,7 +389,6 @@ namespace PoniesOfTheRim.Flying
     }
 
 
-            
     public class CompPropertiesPegasusFlightTimer : CompProperties
     {
         public CompPropertiesPegasusFlightTimer()
@@ -378,16 +399,38 @@ namespace PoniesOfTheRim.Flying
 
     public class CompPegasusFlightTimer : ThingComp
     {
-        private const int BaseFlightDurationTicks = 600;
+        private const int   BaseFlightDurationTicks = 600;
+        private const float BaseRestFallPerInterval = 0.00575f;
 
-        private float currentFlightStamina = 1f;
-        private bool isFlying = false;
+        private float currentFlightStamina  = 1f;
+        private bool  isFlying              = false;
+        private bool  _wasFlying            = false;
+
+        private int   _flightCooldownEndTick = -1;
+        private const int FlightCooldownTicks = 300;
+
+        private HediffDef _fatigueDef;
+        private HediffDef FatigueDef =>
+            _fatigueDef ??= DefDatabase<HediffDef>.GetNamedSilentFail("Pony_FlightFatigue");
+
+        private float _cachedDrainMult      = 1f;
+        private int   _drainMultCacheTick   = -999;
 
         public CompPropertiesPegasusFlightTimer Props => (CompPropertiesPegasusFlightTimer)props;
 
         public float CurrentStaminaPercent => currentFlightStamina;
-        public bool CanFly => currentFlightStamina > 0.05f;
-        public bool IsFlying => isFlying;
+        public bool  IsFlying              => isFlying;
+
+        public bool CanFly
+        {
+            get
+            {
+                if (currentFlightStamina <= 0.05f) return false;
+                if (_flightCooldownEndTick > 0 &&
+                    Find.TickManager.TicksGame < _flightCooldownEndTick) return false;
+                return true;
+            }
+        }
 
         public int MaxFlightDurationTicks
         {
@@ -395,31 +438,73 @@ namespace PoniesOfTheRim.Flying
             {
                 Pawn pawn = parent as Pawn;
                 if (pawn == null) return BaseFlightDurationTicks;
-
                 PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
                 if (cap == null) return BaseFlightDurationTicks;
-
                 float eff = Mathf.Clamp(pawn.health.capacities.GetLevel(cap), 0f, 2f);
                 return Mathf.RoundToInt(BaseFlightDurationTicks * eff);
             }
         }
 
-        private float StaminaDrainPerSecond
+        private float GetWingDrainMultiplier()
+        {
+            int now = Find.TickManager.TicksGame;
+            if (now - _drainMultCacheTick < 300) return _cachedDrainMult;
+            _drainMultCacheTick = now;
+
+            Pawn pawn = parent as Pawn;
+            if (pawn?.health?.hediffSet == null) return _cachedDrainMult = 1f;
+
+            int bionic = 0, archotech = 0;
+            foreach (Hediff h in pawn.health.hediffSet.hediffs)
+            {
+                string pName = h.Part?.def?.defName;
+                if (pName != PegasusFlightUtil.LeftWingPartDef &&
+                    pName != PegasusFlightUtil.RightWingPartDef) continue;
+                switch (h.def?.defName)
+                {
+                    case "BionicWing":    bionic++;    break;
+                    case "ArchotechWing": archotech++; break;
+                }
+            }
+
+            _cachedDrainMult =
+                archotech >= 2                ? 1f / 10f :
+                archotech == 1 && bionic >= 1 ? 1f / 7f  :
+                archotech == 1                ? 1f / 5f  :
+                bionic >= 2                   ? 1f / 4f  :
+                bionic == 1                   ? 1f / 2f  :
+                                                1f;
+            return _cachedDrainMult;
+        }
+
+        private float BaseStaminaDrainPerSecond
         {
             get
             {
-                int maxDuration = MaxFlightDurationTicks;
-                return (maxDuration <= 0) ? 0f : 60f / maxDuration;
+                int d = MaxFlightDurationTicks;
+                return d <= 0 ? 0f : 60f / d;
             }
         }
 
-        private float StaminaRecoveryPerSecond => StaminaDrainPerSecond * 0.5f;
+        private float StaminaDrainPerSecond => BaseStaminaDrainPerSecond * GetWingDrainMultiplier();
+
+        private float StaminaRecoveryPerSecond
+        {
+            get
+            {
+                float r = BaseStaminaDrainPerSecond * 0.25f;
+                Pawn pawn = parent as Pawn;
+                if (pawn != null && !pawn.Awake()) r *= 2f;
+                return r;
+            }
+        }
 
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref currentFlightStamina, "flightStamina", 1f);
-            Scribe_Values.Look(ref isFlying, "isFlying", false);
+            Scribe_Values.Look(ref currentFlightStamina,   "flightStamina",         1f);
+            Scribe_Values.Look(ref isFlying,               "isFlying",              false);
+            Scribe_Values.Look(ref _flightCooldownEndTick, "flightCooldownEndTick", -1);
         }
 
         public override void CompTick()
@@ -432,6 +517,10 @@ namespace PoniesOfTheRim.Flying
             var flightComp = pawn.TryGetComp<CompPegasusFlightToggle>();
             isFlying = flightComp?.FlightEnabled ?? false;
 
+            if (_wasFlying && !isFlying)
+                _flightCooldownEndTick = Find.TickManager.TicksGame + FlightCooldownTicks;
+            _wasFlying = isFlying;
+
             if (isFlying)
             {
                 currentFlightStamina -= StaminaDrainPerSecond / 60f;
@@ -439,14 +528,14 @@ namespace PoniesOfTheRim.Flying
                 if (currentFlightStamina <= 0f)
                 {
                     currentFlightStamina = 0f;
-
                     if (flightComp != null)
                     {
                         flightComp.FlightEnabled = false;
                         PegasusFlightUtil.SafeLand(pawn);
-                        Messages.Message(
-                            $"{pawn.LabelShort} exhausted - flight ended!",
-                            pawn, MessageTypeDefOf.NegativeEvent, historical: false);
+                        if (pawn.IsColonistPlayerControlled)
+                            Messages.Message(
+                                $"{pawn.LabelShort} exhausted - flight ended!",
+                                pawn, MessageTypeDefOf.NegativeEvent, historical: false);
                     }
                 }
             }
@@ -455,24 +544,196 @@ namespace PoniesOfTheRim.Flying
                 if (currentFlightStamina < 1f)
                 {
                     currentFlightStamina += StaminaRecoveryPerSecond / 60f;
-                    currentFlightStamina = Mathf.Min(currentFlightStamina, 1f);
+                    currentFlightStamina  = Mathf.Min(currentFlightStamina, 1f);
                 }
             }
+
+            if (pawn.IsHashIntervalTick(60))
+                UpdateFatigueHediff(pawn);
+
+            if (pawn.IsHashIntervalTick(150))
+                ApplyExtraRestFall(pawn);
+        }
+
+        private void UpdateFatigueHediff(Pawn pawn)
+        {
+            if (FatigueDef == null || pawn?.health == null) return;
+
+            float spent = 1f - currentFlightStamina;
+
+            if (spent < 0.25f)
+            {
+                Hediff h = pawn.health.hediffSet.GetFirstHediffOfDef(FatigueDef);
+                if (h != null) pawn.health.RemoveHediff(h);
+                return;
+            }
+
+            Hediff fatigue = pawn.health.hediffSet.GetFirstHediffOfDef(FatigueDef);
+            if (fatigue == null)
+            {
+                fatigue = HediffMaker.MakeHediff(FatigueDef, pawn);
+                pawn.health.AddHediff(fatigue);
+            }
+            fatigue.Severity = spent;     
+        }
+
+        private void ApplyExtraRestFall(Pawn pawn)
+        {
+            if (pawn.needs?.rest == null) return;
+            float spent = 1f - currentFlightStamina;
+            float bonus =
+                spent >= 0.75f ? 0.50f :
+                spent >= 0.50f ? 0.35f :
+                spent >= 0.25f ? 0.20f : 0f;
+            if (bonus <= 0f) return;
+            pawn.needs.rest.CurLevel =
+                Mathf.Max(0f, pawn.needs.rest.CurLevel - BaseRestFallPerInterval * bonus);
         }
 
         public override string CompInspectStringExtra()
         {
-            if (parent is not Pawn pawn || !pawn.IsPegasus())
+            if (parent is not Pawn pawn || !pawn.HasWings())
+                return null;
+            if (pawn.Faction != Faction.OfPlayer)
                 return null;
 
             int maxDuration = MaxFlightDurationTicks;
             if (maxDuration <= 0)
                 return "Can't fly now.";
 
-            float maxSeconds = maxDuration / 60f;
+            float maxSeconds     = maxDuration / 60f;
             float currentSeconds = maxSeconds * currentFlightStamina;
 
-            return $"Flight stamina: {currentFlightStamina.ToStringPercent()} ({currentSeconds:F1}s / {maxSeconds:F1}s)";
+            string mult = GetWingDrainMultiplier() < 1f
+                ? $" (drain ×{GetWingDrainMultiplier():F2})"
+                : "";
+            return $"Flight stamina: {currentFlightStamina.ToStringPercent()} ({currentSeconds:F1}s / {maxSeconds:F1}s){mult}";
+        }
+    }
+
+    public class Gizmo_FlightStamina : Gizmo
+    {
+        private readonly Pawn                   _pawn;
+        private readonly CompPegasusFlightTimer _timer;
+
+        private const float GizmoWidth  = 200f;
+        private const float GizmoHeight = 75f;
+
+        public Gizmo_FlightStamina(Pawn pawn, CompPegasusFlightTimer timer)
+        {
+            _pawn  = pawn;
+            _timer = timer;
+            Order  = -98f;      
+        }
+
+        public override float GetWidth(float maxWidth) => Mathf.Min(GizmoWidth, maxWidth);
+
+        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
+        {
+            float width = Mathf.Min(GizmoWidth, maxWidth);
+            Rect  outer = new Rect(topLeft.x, topLeft.y, width, GizmoHeight);
+
+            Widgets.DrawWindowBackground(outer);
+
+            const float pad = 6f;
+            Rect inner = outer.ContractedBy(pad);
+
+            float pct = _timer.CurrentStaminaPercent;
+
+            Rect titleR = new Rect(inner.x, inner.y, inner.width, 16f);
+            Text.Font   = GameFont.Tiny;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            GUI.color   = Color.white;
+            Widgets.Label(titleR, "Flight Stamina");
+
+            Rect barBG = new Rect(inner.x, titleR.yMax + 3f, inner.width, 18f);
+
+            var prevColor = GUI.color;
+            GUI.color = new Color(0.1f, 0.1f, 0.1f);
+            GUI.DrawTexture(barBG, BaseContent.WhiteTex);
+
+            float fillW = (barBG.width - 2f) * pct;
+            if (fillW > 0f)
+            {
+                GUI.color = GetBarColor(pct);
+                GUI.DrawTexture(
+                    new Rect(barBG.x + 1f, barBG.y + 1f, fillW, barBG.height - 2f),
+                    BaseContent.WhiteTex);
+            }
+            GUI.color = prevColor;
+
+            DrawMarker(barBG, 0.25f);
+            DrawMarker(barBG, 0.50f);
+            DrawMarker(barBG, 0.75f);
+
+            Text.Font   = GameFont.Tiny;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            GUI.color   = Color.white;
+            Widgets.Label(barBG, pct.ToStringPercent("F0"));
+
+            Rect descR = new Rect(inner.x, barBG.yMax + 3f,
+                                  inner.width, inner.yMax - barBG.yMax - 3f);
+            Text.Font   = GameFont.Tiny;
+            Text.Anchor = TextAnchor.UpperCenter;
+            GUI.color   = GetTierColor(pct);
+            Widgets.Label(descR, GetTierLabel(pct));
+
+            GUI.color   = Color.white;
+            Text.Anchor = TextAnchor.UpperLeft;
+            Text.Font   = GameFont.Small;
+
+            if (Mouse.IsOver(outer))
+                TooltipHandler.TipRegion(outer, BuildTooltip());
+
+            return new GizmoResult(GizmoState.Clear);
+        }
+
+        private static void DrawMarker(Rect bar, float threshold)
+        {
+            float x      = bar.x + bar.width * threshold;
+            Rect  marker = new Rect(x - 0.5f, bar.y, 1f, bar.height);
+            var   prev   = GUI.color;
+            GUI.color = new Color(0f, 0f, 0f, 0.85f);
+            GUI.DrawTexture(marker, BaseContent.WhiteTex);
+            GUI.color = prev;
+        }
+
+        private static Color GetBarColor(float pct)
+        {
+            if (pct >= 0.75f) return new Color(0.22f, 0.78f, 0.22f);  
+            if (pct >= 0.50f) return new Color(0.90f, 0.82f, 0.10f);  
+            if (pct >= 0.25f) return new Color(0.90f, 0.50f, 0.10f);  
+            return new Color(0.80f, 0.12f, 0.12f);                     
+        }
+
+        private static Color GetTierColor(float pct)
+        {
+            if (pct >= 0.75f) return Color.green;
+            if (pct >= 0.50f) return Color.yellow;
+            if (pct >= 0.25f) return new Color(1f, 0.5f, 0f);
+            return Color.red;
+        }
+
+        private static string GetTierLabel(float pct)
+        {
+            if (pct >= 0.75f) return "Safe flight";
+            if (pct >= 0.50f) return "+20% sleep need";
+            if (pct >= 0.25f) return "+35% sleep, -5% consciousness";
+            if (pct > 0f)     return "+50% sleep, -15% consciousness";
+            return "EXHAUSTED — flight disabled";
+        }
+
+        private static string BuildTooltip()
+        {
+            return
+                "Flight Stamina\n" +
+                "Shows remaining flight endurance.\n\n" +
+                "Stamina zones:\n" +
+                "  \u2265 75%  (0–25% spent)    Safe flight, no penalties\n" +
+                "  50–75%   +20% sleep need rate\n" +
+                "  25–50%   +35% sleep need,  −5% consciousness\n" +
+                "  < 25%  +50% sleep need, −15% consciousness\n" +
+                "  0%     Flight disabled until rested\n\n";
         }
     }
 }

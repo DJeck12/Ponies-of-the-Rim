@@ -9,17 +9,8 @@ using Verse.Sound;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class StylingStationPatch
     {
-        private static readonly Type patchType = typeof(StylingStationPatch);
-        static StylingStationPatch()
-        {
-            Harmony harmonyInstance = new Harmony("Rimworld.Pony.PoniesOfTheRim");
-            harmonyInstance.Patch(original: AccessTools.Method(typeof(StylingStation), "DoAddonList"), prefix: new HarmonyMethod(patchType, "DoAddonList_PonyPatch"));
-            harmonyInstance.Patch(original: AccessTools.Method(typeof(StylingStation), "DoAddonInfo"), prefix: new HarmonyMethod(patchType, "DoAddonInfo_PonyPatch"));
-        }
-
         public static bool DoAddonList_PonyPatch(ref Rect inRect, ref List<AlienPartGenerator.BodyAddon> addons, ref int ___selectedIndexAddons, ref Vector2 ___addonsScrollPos, ref Pawn ___pawn, ref AlienPartGenerator.AlienComp ___alienComp)
         {
             int num = addons.Count((AlienPartGenerator.BodyAddon ba) => ba.userCustomizable);

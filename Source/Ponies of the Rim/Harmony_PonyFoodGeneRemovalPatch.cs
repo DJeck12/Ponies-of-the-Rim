@@ -3,15 +3,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class PonyFoodGeneRemovalPatch
     {
-        static PonyFoodGeneRemovalPatch()
-        {
-            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(PawnGenerator), nameof(PawnGenerator.GeneratePawn), [typeof(PawnGenerationRequest)]), null, new HarmonyMethod(typeof(PonyFoodGeneRemovalPatch).GetMethod("PonyFoodGeneRemovalForGeneratePawn")));
-        }
-
-        [HarmonyPostfix]
         public static void PonyFoodGeneRemovalForGeneratePawn(Pawn __result)
         {
             if (!ModsConfig.BiotechActive || __result == null || __result.genes == null)

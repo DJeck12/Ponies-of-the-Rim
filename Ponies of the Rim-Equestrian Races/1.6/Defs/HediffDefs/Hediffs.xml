@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<HediffDef>
+    <defName>Pony_BatVision</defName>
+    <label>bat vision</label>
+    <description>This creature's eyes are adapted for darkness.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+</HediffDef>
+</Defs>

@@ -9,14 +9,15 @@ namespace PoniesOfTheRim.Abilities
     public class Verb_ShortFlight : Verb_CastAbility
     {
         private float cachedEffectiveRange = -1f;
+
         public override bool Available()
         {
             if (caster.Position.Roofed(caster.Map))
-            {
                 return false;
-            }
+
             return base.Available();
         }
+
         protected override bool TryCastShot()
         {
             if (base.TryCastShot())
@@ -32,14 +33,9 @@ namespace PoniesOfTheRim.Abilities
             {
                 if (cachedEffectiveRange < 0f)
                 {
-                    if (base.EquipmentSource != null)
-                    {
-                        cachedEffectiveRange = base.EquipmentSource.GetStatValue(StatDefOf.JumpRange);
-                    }
-                    else
-                    {
-                        cachedEffectiveRange = verbProps.range;
-                    }
+                    cachedEffectiveRange = base.EquipmentSource != null
+                        ? base.EquipmentSource.GetStatValue(StatDefOf.JumpRange)
+                        : verbProps.range;
                 }
                 return cachedEffectiveRange;
             }
@@ -48,35 +44,30 @@ namespace PoniesOfTheRim.Abilities
         public override bool CanHitTargetFrom(IntVec3 root, LocalTargetInfo targ)
         {
             float distanceSquared = (root - targ.Cell).LengthHorizontalSquared;
-            return distanceSquared <= (EffectiveRange * EffectiveRange) && targ.Cell.Walkable(caster.Map);
+            return distanceSquared <= (EffectiveRange * EffectiveRange)
+                && targ.Cell.Walkable(caster.Map);
         }
+
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
             if (caster == null)
-            {
                 return false;
-            }
+
             if (!JumpUtility.ValidJumpTarget(caster, caster.Map, target.Cell))
-            {
                 return false;
-            }
+
             if (target.Cell.Roofed(caster.Map))
-            {
                 return false;
-            }
+
             if (OutOfRange(caster.Position, target.Cell, CellRect.SingleCell(target.Cell)))
-            {
                 return false;
-            }
+
             if (!ReloadableUtility.CanUseConsideringQueuedJobs(CasterPawn, base.EquipmentSource))
-            {
                 return false;
-            }
-            Building building = target.Cell.GetEdifice(caster.Map);
-            if (building != null)
-            {
+
+            if (!target.Cell.Walkable(caster.Map))
                 return false;
-            }
+
             return true;
         }
 
@@ -95,7 +86,7 @@ namespace PoniesOfTheRim.Abilities
 
         public override void DrawHighlight(LocalTargetInfo target)
         {
-            if (caster == null || caster.Spawned)
+            if (caster != null && caster.Spawned)
             {
                 if (target.IsValid && JumpUtility.ValidJumpTarget(caster, caster.Map, target.Cell))
                 {
@@ -105,16 +96,13 @@ namespace PoniesOfTheRim.Abilities
                     (IntVec3 c) => c.Walkable(caster.Map) && JumpUtility.ValidJumpTarget(caster, caster.Map, c));
             }
         }
+
         public override void OnGUI(LocalTargetInfo target)
         {
-            if (ValidateTarget(target, false))
-            {
+            if (ValidateTarget(target, showMessages: false))
                 base.OnGUI(target);
-            }
             else
-            {
                 GenUI.DrawMouseAttachment(TexCommand.CannotShoot);
-            }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿
-using AlienRace;
+﻿using AlienRace;
 using HarmonyLib;
 using RimWorld;
 using System;
@@ -23,11 +22,13 @@ namespace PoniesOfTheRim.Flying
                 if (!PegasusFlightUtil.IsPegasusConstantFlight(__instance)) return;
                 __result = true;
             }
-            catch { }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_Pawn_Flying.Postfix: {e}");
+            }
         }
     }
 
-            
     public static class Patch_FlightTracker_FlightTick
     {
         private static readonly FieldInfo fiPawn =
@@ -62,12 +63,15 @@ namespace PoniesOfTheRim.Flying
 
                 return true;
             }
-            catch { return true; }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_FlightTracker_FlightTick.Prefix: {e}");
+                return true;
+            }
         }
     }
 
 
-            
     public static class Patch_FlightTracker_ForceLand
     {
         private static readonly FieldInfo fiPawn =
@@ -82,11 +86,14 @@ namespace PoniesOfTheRim.Flying
                 if (pawn == null || pawn.Dead || pawn.Downed) return true;
                 return false;
             }
-            catch { return true; }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_FlightTracker_ForceLand.Prefix: {e}");
+                return true;
+            }
         }
     }
 
-            
     public static class Patch_CostToMoveIntoCell
     {
         public static void Postfix(Pawn pawn, IntVec3 c, ref float __result)
@@ -96,16 +103,15 @@ namespace PoniesOfTheRim.Flying
 
             if (!PegasusFlightUtil.CanFlyToCell(pawn, c, map)) return;
 
-            if (__result < 440f) return;
-
-            var b = c.GetEdifice(map);
-            if (b == null) return;
-            if (b.def?.building != null && b.def.building.isNaturalRock)
+            var edifice = c.GetEdifice(map);
+            if (edifice?.def?.building != null && edifice.def.building.isNaturalRock)
                 return;
 
-                        float baseTicks = (c.x != pawn.Position.x && c.z != pawn.Position.z)
+            float baseTicks = (c.x != pawn.Position.x && c.z != pawn.Position.z)
                 ? pawn.TicksPerMoveDiagonal
                 : pawn.TicksPerMoveCardinal;
+
+            if (__result <= baseTicks) return;
 
             float desired = baseTicks;
 
@@ -114,10 +120,10 @@ namespace PoniesOfTheRim.Flying
             {
                 switch (job.locomotionUrgency)
                 {
-                    case LocomotionUrgency.Amble:   desired = Mathf.Max(desired * 3f, 60f);        break;
-                    case LocomotionUrgency.Walk:    desired = Mathf.Max(desired * 2f, 50f);        break;
-                    case LocomotionUrgency.Jog:     break;
-                    case LocomotionUrgency.Sprint:  desired = Mathf.RoundToInt(desired * 0.75f);   break;
+                    case LocomotionUrgency.Amble:  desired = Mathf.Max(desired * 3f, 60f);       break;
+                    case LocomotionUrgency.Walk:   desired = Mathf.Max(desired * 2f, 50f);       break;
+                    case LocomotionUrgency.Jog:    break;
+                    case LocomotionUrgency.Sprint: desired = Mathf.RoundToInt(desired * 0.75f);  break;
                 }
             }
 
@@ -125,7 +131,6 @@ namespace PoniesOfTheRim.Flying
             __result = Mathf.Min(__result, desired);
         }
     }
-
     public static class Patch_PathFinder_CreateRequest
     {
         private static readonly MethodInfo CreateRequestOverload;
@@ -161,12 +166,12 @@ namespace PoniesOfTheRim.Flying
 
             if (TuningType != null)
             {
-                FI_costBlockedWallBase             = TuningType.GetField("costBlockedWallBase");
-                FI_costBlockedWallExtraPerHitPoint  = TuningType.GetField("costBlockedWallExtraPerHitPoint");
-                FI_costBlockedDoor                  = TuningType.GetField("costBlockedDoor");
-                FI_costBlockedDoorPerHitPoint        = TuningType.GetField("costBlockedDoorPerHitPoint");
-                FI_costOffLordWalkGrid              = TuningType.GetField("costOffLordWalkGrid");
-                FI_costDanger                       = TuningType.GetField("costDanger");
+                FI_costBlockedWallBase            = TuningType.GetField("costBlockedWallBase");
+                FI_costBlockedWallExtraPerHitPoint = TuningType.GetField("costBlockedWallExtraPerHitPoint");
+                FI_costBlockedDoor                 = TuningType.GetField("costBlockedDoor");
+                FI_costBlockedDoorPerHitPoint      = TuningType.GetField("costBlockedDoorPerHitPoint");
+                FI_costOffLordWalkGrid             = TuningType.GetField("costOffLordWalkGrid");
+                FI_costDanger                      = TuningType.GetField("costDanger");
             }
         }
 
@@ -197,33 +202,41 @@ namespace PoniesOfTheRim.Flying
 
             var roofAndMountainBlocker = new PegasusFlightPathGridCustomizer(pawn.Map);
 
-            PathRequest.IPathGridCustomizer finalCustomizer = customizer != null
-                ? new CombinedPathGridCustomizer(customizer, roofAndMountainBlocker)
-                : roofAndMountainBlocker;
+            CombinedPathGridCustomizer combined = null;
+            try
+            {
+                PathRequest.IPathGridCustomizer finalCustomizer = customizer != null
+                    ? (combined = new CombinedPathGridCustomizer(customizer, roofAndMountainBlocker))
+                    : (PathRequest.IPathGridCustomizer)roofAndMountainBlocker;
 
-            var tp = TraverseParms.For(
-                pawn, Danger.Deadly, TraverseMode.PassAllDestroyableThings,
-                canBashDoors: true, alwaysUseAvoidGrid: false,
-                canBashFences: true, avoidPersistentDanger: false);
+                var tp = TraverseParms.For(
+                    pawn, Danger.Deadly, TraverseMode.PassAllDestroyableThings,
+                    canBashDoors: true, alwaysUseAvoidGrid: false,
+                    canBashFences: true, avoidPersistentDanger: false);
 
-            object tuning = Activator.CreateInstance(TuningType);
+                object tuning = Activator.CreateInstance(TuningType);
 
-            FI_costBlockedWallBase?.SetValue(tuning, 0);
-            FI_costBlockedWallExtraPerHitPoint?.SetValue(tuning, 0f);
-                        FI_costBlockedDoor?.SetValue(tuning, 0);
-            FI_costBlockedDoorPerHitPoint?.SetValue(tuning, 0f);
-            FI_costOffLordWalkGrid?.SetValue(tuning, 0);
-            FI_costDanger?.SetValue(tuning, 0);
+                FI_costBlockedWallBase?.SetValue(tuning, 0);
+                FI_costBlockedWallExtraPerHitPoint?.SetValue(tuning, 0f);
+                FI_costBlockedDoor?.SetValue(tuning, 0);
+                FI_costBlockedDoorPerHitPoint?.SetValue(tuning, 0f);
+                FI_costOffLordWalkGrid?.SetValue(tuning, 0);
+                FI_costDanger?.SetValue(tuning, 0);
 
-            object tuningNullable = Activator.CreateInstance(TuningNullableType, tuning);
+                object tuningNullable = Activator.CreateInstance(TuningNullableType, tuning);
 
-            __result = CreateRequestOverload.Invoke(__instance,
-                new object[] { start, target, dest, tp, tuningNullable, peMode, pawn, finalCustomizer });
-            return false;
+                __result = CreateRequestOverload.Invoke(__instance,
+                    new object[] { start, target, dest, tp, tuningNullable, peMode, pawn, finalCustomizer });
+                return false;
+            }
+            finally
+            {
+                combined?.Dispose();
+            }
         }
     }
 
-            
+
     public static class Patch_GenGrid_WalkableBy
     {
         public static bool Prefix(IntVec3 c, Map map, Pawn pawn, ref bool __result)
@@ -272,7 +285,7 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-            
+
     public static class Patch_TryEnterNextPathCell_BlockFog
     {
         private static readonly FieldInfo fiPawn =
@@ -282,6 +295,8 @@ namespace PoniesOfTheRim.Flying
 
         public static bool Prefix(Pawn_PathFollower __instance)
         {
+            if (fiPawn == null || fiNextCell == null) return true;
+
             var pawn = fiPawn.GetValue(__instance) as Pawn;
             if (!PegasusFlightUtil.IsPegasusConstantFlight(pawn)) return true;
 
@@ -303,7 +318,7 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-            
+
     public static class Patch_TraverseParms_AvoidFog
     {
         public static void Postfix(Pawn pawn, ref TraverseParms __result)
@@ -313,18 +328,17 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-            
+
     public static class Patch_GetPathContext
     {
         public static void Postfix(Pawn __instance, Pathing pathing, ref PathingContext __result)
         {
-            var comp = __instance.TryGetComp<CompPegasusFlightToggle>();
-            if (comp != null && comp.FlightEnabled)
+            if (PegasusFlightUtil.IsPegasusConstantFlight(__instance))
                 __result = pathing.Normal;
         }
     }
 
-            
+
     public static class Patch_RenderNode_ForceWingsRefresh
     {
         public static void Prefix(PawnRenderNode __instance)
@@ -334,7 +348,7 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-            
+
     public static class Patch_BodyAddon_CanDrawAddon
     {
         private static readonly string[] OurWingPathFragments =
@@ -365,7 +379,7 @@ namespace PoniesOfTheRim.Flying
             }
 
             if (!isOurWing) return;
-            if (!pawn.IsPegasus()) return;
+            if (!pawn.HasWings()) return;
 
             var comp = pawn.TryGetComp<CompPegasusFlightToggle>();
             if (comp != null && comp.FlightEnabled)
@@ -373,13 +387,13 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-                    
+
     public static class Patch_Pawn_ExposeData_SavePositionFix
     {
         private static readonly FieldInfo fiPositionInt =
             AccessTools.Field(typeof(Thing), "positionInt");
 
-                        private static readonly Dictionary<Pawn, IntVec3> savedOriginalPositions = new();
+        private static readonly Dictionary<Pawn, IntVec3> savedOriginalPositions = new();
 
         public static void Prefix(Pawn __instance)
         {
@@ -400,17 +414,18 @@ namespace PoniesOfTheRim.Flying
 
                 IntVec3 pos = __instance.Position;
                 if (pos.Walkable(__instance.Map))
-                    return; 
-                                IntVec3 safeCell = FindSafeCellForSave(pos, __instance.Map);
+                    return;
+
+                IntVec3 safeCell = FindSafeCellForSave(pos, __instance.Map);
                 if (!safeCell.IsValid)
                     return;
 
-                                savedOriginalPositions[__instance] = pos;
+                savedOriginalPositions[__instance] = pos;
                 fiPositionInt.SetValue(__instance, safeCell);
             }
             catch (Exception e)
             {
-                Log.Error($"[PTOR] ExposeData save position fix Prefix failed: {e}");
+                Log.Error($"[PoniesOfTheRim] ExposeData save position fix Prefix failed: {e}");
             }
         }
 
@@ -418,13 +433,11 @@ namespace PoniesOfTheRim.Flying
         {
             try
             {
-                                if (savedOriginalPositions.TryGetValue(__instance, out IntVec3 original))
+                if (savedOriginalPositions.TryGetValue(__instance, out IntVec3 original))
                 {
                     savedOriginalPositions.Remove(__instance);
                     if (fiPositionInt != null)
-                    {
                         fiPositionInt.SetValue(__instance, original);
-                    }
                 }
             }
             catch (Exception e)
@@ -477,7 +490,7 @@ namespace PoniesOfTheRim.Flying
             try
             {
                 if (__instance?.health?.hediffSet == null) return;
-                if (!__instance.IsPegasus()) return;
+                if (!__instance.HasWings()) return;
                 EnsureWingsBoundToParts(__instance);
             }
             catch (Exception e)
@@ -521,15 +534,48 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-            
     public class PegasusFlightPathGridCustomizer : PathRequest.IPathGridCustomizer
     {
-        private NativeArray<ushort> offsetGrid;
+        private static readonly Dictionary<int, CachedGrid> gridCache = new();
+
+        private readonly int mapId;
 
         public PegasusFlightPathGridCustomizer(Map map)
         {
+            mapId = map.uniqueID;
+            EnsureGrid(map);
+        }
+
+        public NativeArray<ushort> GetOffsetGrid()
+        {
+            if (gridCache.TryGetValue(mapId, out var cached) && cached.grid.IsCreated)
+                return cached.grid;
+
+            return default;
+        }
+
+        private static void EnsureGrid(Map map)
+        {
+            int id = map.uniqueID;
+            int tick = Find.TickManager.TicksGame;
+
+            if (gridCache.TryGetValue(id, out var cached))
+            {
+                if (cached.grid.IsCreated && tick - cached.builtAtTick < 120)
+                    return;
+            }
+
+            RebuildGrid(map, id, tick);
+        }
+
+        private static void RebuildGrid(Map map, int mapId, int tick)
+        {
             int numCells = map.cellIndices.NumGridCells;
-            offsetGrid = new NativeArray<ushort>(numCells, Allocator.TempJob);
+
+            if (gridCache.TryGetValue(mapId, out var old) && old.grid.IsCreated)
+                old.grid.Dispose();
+
+            var grid = new NativeArray<ushort>(numCells, Allocator.Persistent);
 
             for (int i = 0; i < numCells; i++)
             {
@@ -556,14 +602,42 @@ namespace PoniesOfTheRim.Flying
                         blocked = true;
                 }
 
-                offsetGrid[i] = blocked ? (ushort)10000 : (ushort)0;
+                grid[i] = blocked ? (ushort)10000 : (ushort)0;
+            }
+
+            gridCache[mapId] = new CachedGrid(grid, tick);
+        }
+
+        public static void DisposeForMap(int mapId)
+        {
+            if (gridCache.TryGetValue(mapId, out var cached))
+            {
+                if (cached.grid.IsCreated)
+                    cached.grid.Dispose();
+                gridCache.Remove(mapId);
             }
         }
 
-        public NativeArray<ushort> GetOffsetGrid() => offsetGrid;
+        public static void InvalidateCache(int mapId)
+        {
+            if (gridCache.TryGetValue(mapId, out var cached))
+                gridCache[mapId] = new CachedGrid(cached.grid, -9999);
+        }
+
+        private readonly struct CachedGrid
+        {
+            public readonly NativeArray<ushort> grid;
+            public readonly int builtAtTick;
+
+            public CachedGrid(NativeArray<ushort> grid, int builtAtTick)
+            {
+                this.grid = grid;
+                this.builtAtTick = builtAtTick;
+            }
+        }
     }
 
-    public class CombinedPathGridCustomizer : PathRequest.IPathGridCustomizer
+    public class CombinedPathGridCustomizer : PathRequest.IPathGridCustomizer, IDisposable
     {
         private NativeArray<ushort> combinedGrid;
 
@@ -584,5 +658,21 @@ namespace PoniesOfTheRim.Flying
         }
 
         public NativeArray<ushort> GetOffsetGrid() => combinedGrid;
+
+        public void Dispose()
+        {
+            if (combinedGrid.IsCreated)
+                combinedGrid.Dispose();
+        }
+    }
+
+
+    public static class Patch_Game_DeinitAndRemoveMap
+    {
+        public static void Postfix(Map map)
+        {
+            if (map != null)
+                PegasusFlightPathGridCustomizer.DisposeForMap(map.uniqueID);
+        }
     }
 }

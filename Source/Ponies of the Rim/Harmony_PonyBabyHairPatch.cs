@@ -6,15 +6,8 @@ using System.Linq;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class PonyBabyHairPatch
     {
-        static PonyBabyHairPatch()
-        {
-            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(PawnRenderNode_Hair), "GraphicFor"), null, new HarmonyMethod(typeof(PonyBabyHairPatch).GetMethod("PonyBabyHairPostfix")));
-        }
-
-        [HarmonyPostfix]
         public static void PonyBabyHairPostfix(Pawn pawn, ref Graphic __result)
         {
             if ((pawn.DevelopmentalStage == DevelopmentalStage.Baby || pawn.DevelopmentalStage == DevelopmentalStage.Newborn)

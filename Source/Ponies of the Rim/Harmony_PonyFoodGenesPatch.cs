@@ -4,15 +4,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class PonyFoodGenesPatch
     {
-        static PonyFoodGenesPatch()
-        {
-            new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(Thing), "Ingested", [typeof(Pawn), typeof(float)]), null, new HarmonyMethod(typeof(PonyFoodGenesPatch).GetMethod("IngestedPonyFoodGenesPatch")));
-        }
-
-        [HarmonyPostfix]
         public static void IngestedPonyFoodGenesPatch(Thing __instance, Pawn ingester)
         {
             if (!ModsConfig.BiotechActive) return;

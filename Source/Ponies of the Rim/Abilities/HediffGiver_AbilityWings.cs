@@ -1,104 +1,90 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using Verse;
 using System.Linq;
+using Verse;
 
 namespace PoniesOfTheRim.Abilities
 {
     public class HediffGiver_AbilityWings : HediffGiver
     {
         public AbilityDef ability;
+
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-                        if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
+            if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
             {
-                pawn.abilities.RemoveAbility(this.ability);
+                pawn.abilities.RemoveAbility(ability);
                 return;
             }
 
-            var allParts = pawn.RaceProps.body.AllParts;
+            int numNaturalWing    = GetNumNaturalWing(pawn, partsToAffect);
+            int numProstheticWing = GetNumProstheticWing(pawn, partsToAffect);
 
-            int numNaturalWing = partsToAffect.Count(p => !pawn.health.hediffSet.IsBionicOrImplant(p) && allParts.Where(part => part.def == p).Any(part => !pawn.health.hediffSet.PartIsMissing(part)));
-            int numProstheticWing = partsToAffect.Count(p => pawn.health.hediffSet.IsBionicOrImplant(p) && allParts.Where(part => part.def == p).Any(part => !pawn.health.hediffSet.PartIsMissing(part)));
+            bool hasEnoughWings = numNaturalWing == 2
+                || (numNaturalWing == 1 && numProstheticWing == 1)
+                || numProstheticWing == 2;
 
-            if (numNaturalWing == 2 || (numNaturalWing == 1 && numProstheticWing == 1) || numProstheticWing == 2)
-            {
-                pawn.abilities.GainAbility(this.ability);
-            }
-            else if ((numNaturalWing == 1 && numProstheticWing == 0) || (numNaturalWing == 0 && numProstheticWing == 1) || numNaturalWing == 0 && numProstheticWing == 0)
-            {
-                pawn.abilities.RemoveAbility(this.ability);
-            }
+            if (hasEnoughWings)
+                pawn.abilities.GainAbility(ability);
+            else
+                pawn.abilities.RemoveAbility(ability);
 
-            if (WingCheck(pawn, this.partsToAffect))
-            {
-
-            }
+            WingCheck(pawn, partsToAffect);
         }
+
         public int GetNumNaturalWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
-            int numNotBionic = 0;
-
-            foreach (BodyPartDef affectedPart in partsToAffect)
+            int count = 0;
+            foreach (BodyPartDef partDef in partsToAffect)
             {
-                List<BodyPartRecord> partRecords = pawn.RaceProps.body.AllParts.FindAll(part => part.def == affectedPart);
+                if (pawn.health.hediffSet.IsBionicOrImplant(partDef))
+                    continue;
 
-                if (!pawn.health.hediffSet.IsBionicOrImplant(affectedPart))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts.Where(p => p.def == partDef))
                 {
-                    foreach (BodyPartRecord record in partRecords)
-                    {
-                        if (!pawn.health.hediffSet.PartIsMissing(record))
-                        {
-                            numNotBionic++;
-                        }
-                    }
+                    if (!pawn.health.hediffSet.PartIsMissing(record))
+                        count++;
                 }
             }
-            return numNotBionic;
+            return count;
         }
+
         public int GetNumProstheticWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
-
-            int numBionicParts = 0;
-
-            foreach (BodyPartDef affectedPart in partsToAffect)
+            int count = 0;
+            foreach (BodyPartDef partDef in partsToAffect)
             {
-                List<BodyPartRecord> partRecords = pawn.RaceProps.body.AllParts.FindAll(part => part.def == affectedPart);
+                if (!pawn.health.hediffSet.IsBionicOrImplant(partDef))
+                    continue;
 
-                if (pawn.health.hediffSet.IsBionicOrImplant(affectedPart))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts.Where(p => p.def == partDef))
                 {
-                    foreach (BodyPartRecord record in partRecords)
-                    {
-                        if (!pawn.health.hediffSet.PartIsMissing(record))
-                        {
-                            numBionicParts++;
-
-                        }
-                    }
+                    if (!pawn.health.hediffSet.PartIsMissing(record))
+                        count++;
                 }
-
             }
-            return numBionicParts;
+            return count;
         }
+
         public bool WingCheck(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
-            foreach (BodyPartDef affectedPart in partsToAffect)
+            bool anyAdded = false;
+            foreach (BodyPartDef partDef in partsToAffect)
             {
-                List<BodyPartRecord> partRecords = pawn.RaceProps.body.AllParts.FindAll(part => part.def == affectedPart);
+                if (pawn.health.hediffSet.IsBionicOrImplant(partDef))
+                    continue;
 
-                if (!pawn.health.hediffSet.IsBionicOrImplant(affectedPart))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts.Where(p => p.def == partDef))
                 {
-                    foreach (BodyPartRecord record in partRecords)
+                    if (!pawn.health.hediffSet.PartIsMissing(record)
+                        && !pawn.health.hediffSet.HasHediff(hediff, record))
                     {
-                        if (!pawn.health.hediffSet.PartIsMissing(record) && !pawn.health.hediffSet.HasHediff(this.hediff, record))
-                        {
-                            pawn.health.AddHediff(this.hediff, record);
-                            return true;
-                        }
+                        pawn.health.AddHediff(hediff, record);
+                        anyAdded = true;
                     }
                 }
             }
-            return false;
+            return anyAdded;
         }
     }
 }

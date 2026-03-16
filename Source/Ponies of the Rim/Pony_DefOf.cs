@@ -27,7 +27,7 @@ namespace PoniesOfTheRim
         public static TraitDef Pony_Joyous;
         public static TraitDef Pony_Elegance;
 
-        
+
         [MayRequireBiotech]
         public static GeneDef Pony_Cutiemark;
         [MayRequireBiotech]

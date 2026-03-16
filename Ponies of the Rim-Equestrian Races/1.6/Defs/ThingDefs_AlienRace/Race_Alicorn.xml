@@ -11,7 +11,12 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 <color=#A069FF>Alicorns</color> are ponies who have undergone ascension, granting them the physical and magical traits of a unicorn, pegasus, and earth pony, along with an immortal lifespan. They are often the subject of both myth and worship, their presence alone a herald of change within the world. Ancient alicorns are seen less as individuals and more as living forces of nature—revered as divine rulers by some, and harbingers of destruction by others.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->

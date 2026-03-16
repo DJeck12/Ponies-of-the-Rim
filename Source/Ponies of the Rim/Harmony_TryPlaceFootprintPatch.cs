@@ -6,16 +6,8 @@ using System;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class HoofprintPatch
     {
-        private static readonly Type patchType = typeof(HoofprintPatch);
-        static HoofprintPatch()
-        {
-            Harmony harmonyInstance = new Harmony("Rimworld.Pony.PoniesOfTheRim");
-            harmonyInstance.Patch(original: AccessTools.Method(typeof(PawnFootprintMaker), "TryPlaceFootprint"), prefix: new HarmonyMethod(patchType, "TryPlaceHoofprint"));
-        }
-
         public static bool TryPlaceHoofprint(ref Pawn ___pawn, ref Vector3 ___lastFootprintPlacePos, ref bool ___lastFootprintRight, ref Vector3 ___FootprintOffset)
         {
             Vector3 drawPos = ___pawn.Drawer.DrawPos;

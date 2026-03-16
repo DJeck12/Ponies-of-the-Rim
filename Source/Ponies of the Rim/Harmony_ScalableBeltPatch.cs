@@ -6,7 +6,6 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class ScalableBeltPatch
     {
         static readonly Vector2 north = new Vector2(0, -0.15f);
@@ -14,14 +13,6 @@ namespace PoniesOfTheRim
         static readonly Vector2 south = new Vector2(0, -0.15f);
         static readonly Vector2 west = new Vector2(0.31f, -0.1f);
         static readonly Vector2 scale = new Vector2(0.4f, 0.4f);
-
-        private static readonly Type patchType = typeof(ScalableBeltPatch);
-        static ScalableBeltPatch()
-        {
-            Harmony harmonyInstance = new Harmony("Rimworld.Pony.PoniesOfTheRim");
-            harmonyInstance.Patch(original: AccessTools.Method(typeof(WornGraphicData), "BeltScaleAt"), prefix: new HarmonyMethod(patchType, "BeltScaleAtPatch"));
-            harmonyInstance.Patch(original: AccessTools.Method(typeof(WornGraphicData), "BeltOffsetAt"), prefix: new HarmonyMethod(patchType, "BeltOffsetAtPatch"));
-        }
 
         public static bool BeltScaleAtPatch(ref Vector2 __result, BodyTypeDef bodyType)
         {

@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RimWorld;
@@ -8,15 +7,14 @@ using Verse;
 
 namespace PoniesOfTheRim.Flying
 {
-            
     public class PawnCapacityWorker_Pegasus_Flight : PawnCapacityWorker
     {
         public override float CalculateCapacityLevel(HediffSet diffSet, List<PawnCapacityUtility.CapacityImpactor> impactors = null)
         {
             Pawn pawn = diffSet?.pawn;
-            if (pawn == null || !pawn.IsPegasus()) return 0f;
+            if (pawn == null || !pawn.HasWings()) return 0f;
 
-            float left  = WingFactor(diffSet, pawn, PegasusFlightUtil.LeftWingPartDef, impactors);
+            float left  = WingFactor(diffSet, pawn, PegasusFlightUtil.LeftWingPartDef,  impactors);
             float right = WingFactor(diffSet, pawn, PegasusFlightUtil.RightWingPartDef, impactors);
 
             if (left <= 0f || right <= 0f)
@@ -65,10 +63,10 @@ namespace PoniesOfTheRim.Flying
             {
                 switch (wing.def.defName)
                 {
-                    case "NaturalWing":           baseVal = 0.50f;  break;
-                    case "SimpleProstheticWing":   baseVal = 0.35f;  break;
-                    case "BionicWing":             baseVal = 0.625f; break;
-                    case "ArchotechWing":          baseVal = 0.75f;  break;
+                    case "NaturalWing":          baseVal = 0.50f;  break;
+                    case "SimpleProstheticWing":  baseVal = 0.35f;  break;
+                    case "BionicWing":            baseVal = 0.625f; break;
+                    case "ArchotechWing":         baseVal = 0.75f;  break;
                 }
             }
 
@@ -88,7 +86,6 @@ namespace PoniesOfTheRim.Flying
     }
 
 
-            
     public class StatWorker_FlightDurationSeconds : StatWorker
     {
         private const float BaseSeconds = 10f;
@@ -97,13 +94,13 @@ namespace PoniesOfTheRim.Flying
         {
             if (!req.HasThing) return false;
             Pawn p = req.Thing as Pawn;
-            return p != null && p.IsPegasus();
+            return p != null && p.HasWings();
         }
 
         public override float GetValueUnfinalized(StatRequest req, bool applyPostProcess = true)
         {
             Pawn p = req.Thing as Pawn;
-            if (p == null || !p.IsPegasus()) return 0f;
+            if (p == null || !p.HasWings()) return 0f;
 
             PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
             if (cap == null) return 0f;
@@ -115,7 +112,7 @@ namespace PoniesOfTheRim.Flying
         public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
         {
             Pawn p = req.Thing as Pawn;
-            if (p == null || !p.IsPegasus()) return base.GetExplanationUnfinalized(req, numberSense);
+            if (p == null || !p.HasWings()) return base.GetExplanationUnfinalized(req, numberSense);
 
             PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
             float eff = (cap == null) ? 0f : p.health.capacities.GetLevel(cap);
@@ -127,20 +124,23 @@ namespace PoniesOfTheRim.Flying
             sb.AppendLine($"Итог: {seconds}с");
             sb.AppendLine();
             sb.AppendLine("Из чего складывается эффективность:");
-            sb.AppendLine(new StatWorker_FlightEfficiency().GetExplanationUnfinalized(req, numberSense));
+
+            StatDef effStat = DefDatabase<StatDef>.GetNamedSilentFail("Pegasus_FlightEfficiency");
+            if (effStat?.Worker != null)
+                sb.AppendLine(effStat.Worker.GetExplanationUnfinalized(req, numberSense));
+
             return sb.ToString();
         }
     }
 
 
-            
     public class StatWorker_FlightEfficiency : StatWorker
     {
         public override bool ShouldShowFor(StatRequest req)
         {
             if (!req.HasThing) return false;
             Pawn pawn = req.Thing as Pawn;
-            return pawn != null && pawn.IsPegasus();
+            return pawn != null && pawn.HasWings();
         }
 
         public override float GetValueUnfinalized(StatRequest req, bool applyPostProcess = true)
@@ -148,7 +148,7 @@ namespace PoniesOfTheRim.Flying
             if (!req.HasThing) return 0f;
 
             Pawn pawn = req.Thing as Pawn;
-            if (pawn == null || !pawn.IsPegasus()) return 0f;
+            if (pawn == null || !pawn.HasWings()) return 0f;
 
             var flightCapacityDef = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
             if (flightCapacityDef == null) return 0f;
@@ -161,36 +161,31 @@ namespace PoniesOfTheRim.Flying
             if (!req.HasThing) return base.GetExplanationUnfinalized(req, numberSense);
 
             Pawn pawn = req.Thing as Pawn;
-            if (pawn == null || !pawn.IsPegasus())
+            if (pawn == null || !pawn.HasWings())
                 return base.GetExplanationUnfinalized(req, numberSense);
+
+            HediffSet hediffSet = pawn.health.hediffSet;
+            var allParts = pawn.RaceProps?.body?.AllParts;
+
+            BodyPartRecord leftPart  = allParts?.FirstOrDefault(p => p.def?.defName == PegasusFlightUtil.LeftWingPartDef);
+            BodyPartRecord rightPart = allParts?.FirstOrDefault(p => p.def?.defName == PegasusFlightUtil.RightWingPartDef);
+
+            (float leftBase, string leftType)   = GetWingBase(hediffSet, leftPart);
+            (float rightBase, string rightType) = GetWingBase(hediffSet, rightPart);
+
+            float leftHealth  = GetPartHealthFrac(hediffSet, leftPart,  pawn);
+            float rightHealth = GetPartHealthFrac(hediffSet, rightPart, pawn);
+
+            float leftFinal  = leftBase  * leftHealth;
+            float rightFinal = rightBase * rightHealth;
+            float totalWings = leftFinal + rightFinal;
 
             var sb = new StringBuilder();
             sb.AppendLine("Flight efficiency is calculated from multiple factors:");
             sb.AppendLine();
             sb.AppendLine("Wings:");
-
-            float leftWingBase = 0f, rightWingBase = 0f;
-            string leftWingType = "Missing", rightWingType = "Missing";
-            float leftWingHealth = 1f, rightWingHealth = 1f;
-
-            foreach (var hediff in pawn.health.hediffSet.hediffs)
-            {
-                if (hediff.Part == null) continue;
-                string partDef = hediff.Part.def?.defName;
-
-                if (partDef == PegasusFlightUtil.LeftWingPartDef)
-                    ClassifyWing(hediff, pawn, ref leftWingBase, ref leftWingType, ref leftWingHealth);
-                else if (partDef == PegasusFlightUtil.RightWingPartDef)
-                    ClassifyWing(hediff, pawn, ref rightWingBase, ref rightWingType, ref rightWingHealth);
-            }
-
-            float leftFinal = leftWingBase * leftWingHealth;
-            sb.AppendLine($"  Left wing ({leftWingType}): {(leftWingBase * 2f).ToStringPercent()} × {leftWingHealth.ToStringPercent()} health = {(leftFinal * 2f).ToStringPercent()}");
-
-            float rightFinal = rightWingBase * rightWingHealth;
-            sb.AppendLine($"  Right wing ({rightWingType}): {(rightWingBase * 2f).ToStringPercent()} × {rightWingHealth.ToStringPercent()} health = {(rightFinal * 2f).ToStringPercent()}");
-
-            float totalWings = leftFinal + rightFinal;
+            sb.AppendLine($"  Left wing ({leftType}): {(leftBase * 2f).ToStringPercent()} × {leftHealth.ToStringPercent()} health = {(leftFinal * 2f).ToStringPercent()}");
+            sb.AppendLine($"  Right wing ({rightType}): {(rightBase * 2f).ToStringPercent()} × {rightHealth.ToStringPercent()} health = {(rightFinal * 2f).ToStringPercent()}");
             sb.AppendLine($"  Total wing capacity: {totalWings.ToStringPercent()}");
             sb.AppendLine();
 
@@ -204,28 +199,32 @@ namespace PoniesOfTheRim.Flying
             return sb.ToString();
         }
 
-        private static void ClassifyWing(Hediff hediff, Pawn pawn,
-            ref float wingBase, ref string wingType, ref float wingHealth)
+        private static (float baseVal, string typeName) GetWingBase(HediffSet diffSet, BodyPartRecord part)
         {
-            string defName = hediff.def?.defName;
+            if (part == null || diffSet.PartIsMissing(part))
+                return (0f, "Missing");
 
-            if (defName != null && PegasusFlightUtil.WingHediffDefs.Contains(defName))
+            foreach (var h in diffSet.hediffs)
             {
-                switch (defName)
+                if (h.Part != part || h.def == null) continue;
+                switch (h.def.defName)
                 {
-                    case "NaturalWing":           wingBase = 0.50f;  wingType = "Natural";    break;
-                    case "SimpleProstheticWing":   wingBase = 0.35f;  wingType = "Prosthetic"; break;
-                    case "BionicWing":             wingBase = 0.625f; wingType = "Bionic";     break;
-                    case "ArchotechWing":          wingBase = 0.75f;  wingType = "Archotech";  break;
+                    case "NaturalWing":          return (0.50f,  "Natural");
+                    case "SimpleProstheticWing":  return (0.35f,  "Prosthetic");
+                    case "BionicWing":            return (0.625f, "Bionic");
+                    case "ArchotechWing":         return (0.75f,  "Archotech");
                 }
             }
 
-            if (hediff is Hediff_Injury injury && hediff.Part != null)
-            {
-                float maxHealth = hediff.Part.def.GetMaxHealth(pawn);
-                if (maxHealth > 0f)
-                    wingHealth = Mathf.Max(0f, 1f - (injury.Severity / maxHealth));
-            }
+            return (0.50f, "Natural");
+        }
+
+        private static float GetPartHealthFrac(HediffSet diffSet, BodyPartRecord part, Pawn pawn)
+        {
+            if (part == null) return 0f;
+            float max = part.def.GetMaxHealth(pawn);
+            if (max <= 0f) return 1f;
+            return Mathf.Clamp01(diffSet.GetPartHealth(part) / max);
         }
     }
 }
