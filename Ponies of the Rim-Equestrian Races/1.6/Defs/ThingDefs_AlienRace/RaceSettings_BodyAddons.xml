@@ -8,7 +8,7 @@
 
 		<!-- Zebra mark -->
 			<li>
-				<name>Zebra mark</name>
+				<name>Zebra Cutiemark</name>
 				<path>Races/Cutiemarks/QTMark_Zebra</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<drawSize>(0.15, 0.15)</drawSize>

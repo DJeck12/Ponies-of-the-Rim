@@ -14,37 +14,57 @@ namespace PoniesOfTheRim.UniquePonies
         private static FieldInfo CurPawnIndexField =>
             _curPawnIndexField ??= AccessTools.Field(typeof(Page_ConfigureStartingPawns), "curPawnIndex");
 
-        public static void DoWindowContents_Postfix(Page_ConfigureStartingPawns __instance, Rect rect)
+        private static readonly bool _isRandomPlusActive =
+            ModLister.GetActiveModWithIdentifier("mastertea.RandomPlus") != null;
+        private static readonly bool _isPersonalitiesActive =
+            ModLister.GetActiveModWithIdentifier("hahkethomemah.simplepersonalities") != null;
+
+        public const  float ElemWidth   = 93f;
+        public const  float ElemSpacing = 0f;
+        private static float BtnHeight => Page.StandardSize.y - 744f;    
+
+        public static Rect LastUniquePawnsRect;
+        public static Rect LastCutiemarkRect;
+        public static Rect LastTailRect;
+
+        public static void DoWindowContents_Prefix(Page_ConfigureStartingPawns __instance, Rect rect)
         {
             if (CurPawnIndexField == null) return;
 
             int index = (int)CurPawnIndexField.GetValue(__instance);
             var pawns = Find.GameInitData?.startingAndOptionalPawns;
-            if (pawns == null) return;
-
-            bool isPony = index >= 0 && index < pawns.Count
+            bool isPony = pawns != null
+                          && index >= 0 && index < pawns.Count
                           && pawns[index] != null
                           && pawns[index].IsPony();
 
-                        var btn = new Rect(
-                rect.x + 657f,
-                rect.yMax - Page.StandardSize.y + 134f,
-                93f,
-                Page.StandardSize.y - 744f
-            );
+            RebuildLayout(rect, isPony);
+        }
 
-            if (!isPony)
-                btn.y += 47f;
+        private static void RebuildLayout(Rect pageRect, bool isPony)
+        {
+            float modX = 0f;
+            if (_isRandomPlusActive && !_isPersonalitiesActive) modX = -50f;
+            else if (_isPersonalitiesActive)                    modX =  100f;
 
-                        bool isRandomPlusActive = ModLister.GetActiveModWithIdentifier("mastertea.RandomPlus") != null;
-            bool isPersonalitiesActive = ModLister.GetActiveModWithIdentifier("hahkethomemah.simplepersonalities") != null;
+            float h  = BtnHeight;                   
+            float iw = ElemWidth - 13f;                    
+            float x  = pageRect.x + 657f + modX;
+            float y  = pageRect.yMax - Page.StandardSize.y + 85;
+            float cutieX = x + (ElemWidth - iw) / 2f;
 
-            if (isRandomPlusActive && !isPersonalitiesActive)
-                btn.x -= 50f;
-            if (isPersonalitiesActive)
-                btn.x += 100f;
+            if (!isPony) y += 47f;
 
-            if (!Widgets.ButtonText(btn, "Unique pawns"))
+            LastUniquePawnsRect = new Rect(x, y,                                              ElemWidth, h);
+            LastCutiemarkRect = new Rect(cutieX, y + h + ElemSpacing, iw, iw);
+            LastTailRect        = new Rect(x, y + h + iw          + ElemSpacing * 2f,        ElemWidth, h);
+        }
+
+        public static void DoWindowContents_Postfix(Page_ConfigureStartingPawns __instance, Rect rect)
+        {
+            if (CurPawnIndexField == null) return;
+
+            if (!Widgets.ButtonText(LastUniquePawnsRect, "Unique pawns"))
                 return;
 
             var options = new List<FloatMenuOption>();
@@ -53,9 +73,9 @@ namespace PoniesOfTheRim.UniquePonies
                 var kind = DefDatabase<PawnKindDef>.GetNamed(config.KindDefName, errorOnFail: false);
                 if (kind == null) continue;
 
-                var label = !kind.label.NullOrEmpty()
-                    ? kind.label.CapitalizeFirst()
-                    : kind.defName;
+                string label = kind.label.NullOrEmpty()
+                    ? kind.defName
+                    : kind.label.CapitalizeFirst();
 
                 var capturedKind = kind;
                 options.Add(new FloatMenuOption(label, () => ReplaceSelectedWith(__instance, capturedKind)));
@@ -83,10 +103,10 @@ namespace PoniesOfTheRim.UniquePonies
 
             if (ModsConfig.BiotechActive)
             {
-                req.ForcedCustomXenotype = null;
-                req.AllowedXenotypes = null;
-                req.ForceBaselinerChance = 0f;
-                req.ForcedXenotype = kind.xenotypeSet != null ? null : XenotypeDefOf.Baseliner;
+                req.ForcedCustomXenotype  = null;
+                req.AllowedXenotypes      = null;
+                req.ForceBaselinerChance  = 0f;
+                req.ForcedXenotype        = kind.xenotypeSet != null ? null : XenotypeDefOf.Baseliner;
             }
 
             req.Context = PawnGenerationContext.PlayerStarter;
@@ -99,24 +119,17 @@ namespace PoniesOfTheRim.UniquePonies
 
             list[index] = newPawn;
 
-                        if (oldPawn != null && !oldPawn.Destroyed)
+            if (oldPawn != null && !oldPawn.Destroyed)
             {
-                try
-                {
-                    oldPawn.Discard(silentlyRemoveReferences: true);
-                }
+                try   { oldPawn.Discard(silentlyRemoveReferences: true); }
                 catch (Exception ex)
-                {
-                    Log.Warning($"[PoniesOfTheRim] Failed to discard old pawn: {ex.Message}");
-                }
+                { Log.Warning($"[PoniesOfTheRim] Failed to discard old pawn: {ex.Message}"); }
             }
 
             PortraitsCache.Clear();
             Messages.Message(
                 $"Replaced pawn at slot {index + 1} with {kind.LabelCap}.",
-                MessageTypeDefOf.NeutralEvent,
-                false
-            );
+                MessageTypeDefOf.NeutralEvent, false);
         }
     }
 }

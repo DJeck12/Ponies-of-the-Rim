@@ -9,17 +9,13 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
+using PoniesOfTheRim.UniquePonies;
 
 namespace PoniesOfTheRim
 {
     [StaticConstructorOnStartup]
     public static class DrawCharacterCardPatch
     {
-        private static readonly bool IsRandomPlusActive =
-            ModLister.GetActiveModWithIdentifier("mastertea.RandomPlus") != null;
-        private static readonly bool IsPersonalitiesActive =
-            ModLister.GetActiveModWithIdentifier("hahkethomemah.simplepersonalities") != null;
-
         private static readonly FieldInfo TmpStackElementsField =
             AccessTools.Field(typeof(CharacterCardUtility), "tmpStackElements");
         private static readonly FieldInfo TmpMaxStackHeightField =
@@ -34,6 +30,14 @@ namespace PoniesOfTheRim
         {
             public AlienPartGenerator.BodyAddon addon;
             public int variantIndex;
+        }
+
+        static DrawCharacterCardPatch()
+        {
+            LongEventHandler.ExecuteWhenFinished(() =>
+            {
+                Current.Game?.Maps?.ForEach(_ => { });        
+            });
         }
 
         public static void CutiemarkIcon(Pawn pawn)
@@ -51,15 +55,10 @@ namespace PoniesOfTheRim
             if (Find.CurrentMap != null)
                 return;
 
-            float offsetX = (IsRandomPlusActive && !IsPersonalitiesActive) ? -50f : 0f;
-            bool isStartingPawnsPage = Find.WindowStack?.currentlyDrawnWindow is Page_ConfigureStartingPawns;
-            float cutieYOff = (IsPersonalitiesActive && isStartingPawnsPage) ? 24f : 0f;
-            float tailXOff  = (IsPersonalitiesActive && isStartingPawnsPage) ? 206f : 0f;
-            float tailYOff  = (IsPersonalitiesActive && isStartingPawnsPage) ? -100f : 0f;
+            Rect cutiemarkRect = UniqueStartingPawnUI.LastCutiemarkRect;
+            Rect tailRect      = UniqueStartingPawnUI.LastTailRect;
 
-            float num = CharacterCardUtility.PawnCardSize(pawn).x - 85f + 40f;
-
-            Rect inRect = new Rect(0f, 150f, 80f, 80f);
+            if (cutiemarkRect.width <= 0f) return;
 
             ThingDef_AlienRace pawnrace = (ThingDef_AlienRace)pawn.def;
             List<AlienPartGenerator.BodyAddon> list = pawnrace.alienRace.generalSettings
@@ -67,46 +66,30 @@ namespace PoniesOfTheRim
                 .Concat(Utilities.UniversalBodyAddons).ToList();
 
             AlienPartGenerator.BodyAddon cutiemarkBodyAddon = null;
-            AlienPartGenerator.BodyAddon tailBodyAddon = null;
+            AlienPartGenerator.BodyAddon tailBodyAddon      = null;
             int cutieIndex = -1;
-            int tailIndex = -1;
+            int tailIndex  = -1;
 
-            if (pawn.IsZebra())
+            if (PonyHelper.HasCutiemark(pawn))
             {
-                cutiemarkBodyAddon = list.Find(ba => ba.Name == "Zebra Cutiemark");
-                tailBodyAddon = list.Find(ba => ba.Name == "Long tail");
-            }
-            else if (pawn.IsEarthpony() || pawn.IsPegasus() || pawn.IsUnicorn() ||
-                     pawn.IsCrystalpony() || pawn.IsBatpony() || pawn.IsAlicorn())
-            {
-                cutiemarkBodyAddon = list.Find(ba => ba.Name == "Cutiemark");
-                tailBodyAddon = list.Find(ba => ba.Name == "Tail");
+                if (pawn.IsZebra())
+                {
+                    cutiemarkBodyAddon = list.Find(ba => ba.Name == "Zebra Cutiemark");
+                    tailBodyAddon      = list.Find(ba => ba.Name == "Long tail");
+                }
+                else
+                {
+                    cutiemarkBodyAddon = list.Find(ba => ba.Name == "Cutiemark");
+                    tailBodyAddon      = list.Find(ba => ba.Name == "Tail");
+                }
             }
 
-            if (cutiemarkBodyAddon != null)
-                cutieIndex = list.IndexOf(cutiemarkBodyAddon);
-            if (tailBodyAddon != null)
-                tailIndex = list.IndexOf(tailBodyAddon);
+            if (cutiemarkBodyAddon != null) cutieIndex = list.IndexOf(cutiemarkBodyAddon);
+            if (tailBodyAddon      != null) tailIndex  = list.IndexOf(tailBodyAddon);
 
             AlienPartGenerator.AlienComp alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
             if (alienComp == null)
                 return;
-
-            float cutieScale = (IsPersonalitiesActive && isStartingPawnsPage) ? 0.9f : 1f;
-            float cutieW = inRect.width * cutieScale;
-            float cutieH = inRect.height * cutieScale;
-            float cutieShiftX = (inRect.width - cutieW) * 0.5f;
-            float cutieShiftY = (inRect.height - cutieH) * 0.5f;
-
-            Rect cutiemarkRect = new Rect(
-                num + 230f + offsetX + cutieShiftX,
-                num - 365f + cutieYOff + cutieShiftY,
-                cutieW, cutieH);
-
-            Rect tailRect = new Rect(
-                num + 230f + offsetX - 85f + inRect.width + tailXOff,
-                num - 365f + 80f + tailYOff,
-                90f, 20f);
 
             if (Find.WindowStack.currentlyDrawnWindow is not Dialog_InfoCard &&
                 Find.WindowStack.WindowOfType<Dialog_GrowthMomentChoices>() == null)
@@ -116,12 +99,11 @@ namespace PoniesOfTheRim
                     if (pawn.DevelopmentalStage == DevelopmentalStage.Newborn ||
                         pawn.DevelopmentalStage == DevelopmentalStage.Baby)
                         return;
+
                     DrawCutiemarkIcon.Draw(pawn, cutiemarkRect, cutiemarkBodyAddon, alienComp, cutieIndex);
                 }
                 if (Mouse.IsOver(cutiemarkRect) || DebugViewSettings.drawTooltipEdges)
-                {
                     TooltipHandler.TipRegion(cutiemarkRect, "SelectCutiemark".Translate());
-                }
                 if (Widgets.ButtonInvisible(cutiemarkRect) && cutieIndex >= 0)
                 {
                     SoundDefOf.Click.PlayOneShotOnCamera();
@@ -136,16 +118,22 @@ namespace PoniesOfTheRim
                         Find.WindowStack.Add(new TailSelector(pawn, tailBodyAddon, alienComp, tailIndex));
                     }
                     if (Mouse.IsOver(tailRect) || DebugViewSettings.drawTooltipEdges)
-                    {
                         TooltipHandler.TipRegion(tailRect, "Select a tail for this pony.".Translate());
-                    }
                 }
             }
         }
 
         public static IEnumerable<CodeInstruction> DoTopStackTranspiler(IEnumerable<CodeInstruction> instructions)
         {
-            var codes = instructions.ToList();
+            if (TmpMaxStackHeightField == null)
+            {
+                Log.Warning("[PoniesOfTheRim] DoTopStack transpiler: TmpMaxStackHeightField not found via reflection. " +
+                            "In-game cutiemark will not appear in the info row.");
+                foreach (var c in instructions) yield return c;
+                yield break;
+            }
+
+            var codes    = instructions.ToList();
             bool injected = false;
 
             for (int i = 0; i < codes.Count; i++)
@@ -155,8 +143,8 @@ namespace PoniesOfTheRim
                     codes[i].operand is FieldInfo fi &&
                     fi == TmpMaxStackHeightField)
                 {
-                    yield return new CodeInstruction(OpCodes.Ldarg_0);  
-                    yield return new CodeInstruction(OpCodes.Ldarg_2);  
+                    yield return new CodeInstruction(OpCodes.Ldarg_0);
+                    yield return new CodeInstruction(OpCodes.Ldarg_2);
                     yield return new CodeInstruction(OpCodes.Call,
                         AccessTools.Method(typeof(DrawCharacterCardPatch), nameof(TryInjectCutiemarkInGame)));
                     injected = true;
@@ -173,33 +161,35 @@ namespace PoniesOfTheRim
 
         public static void TryInjectCutiemarkInGame(Pawn pawn, bool creationMode)
         {
-            if (creationMode)
-                return;
-
-            if (pawn == null || !PonyHelper.IsPony(pawn))
-                return;
+            if (creationMode) return;
+            if (pawn == null || !PonyHelper.IsPony(pawn)) return;
             if (pawn.DevelopmentalStage == DevelopmentalStage.Newborn ||
-                pawn.DevelopmentalStage == DevelopmentalStage.Baby)
-                return;
-            if (pawn.IsMutant)
-                return;
-            if (pawn.health?.hediffSet?.HasHediff(HediffDefOf.ShamblerCorpse) == true)
-                return;
-            if (pawn.Corpse != null && pawn.Corpse.GetRotStage() == RotStage.Dessicated)
-                return;
+                pawn.DevelopmentalStage == DevelopmentalStage.Baby) return;
+            if (pawn.IsMutant) return;
+            if (pawn.health?.hediffSet?.HasHediff(HediffDefOf.ShamblerCorpse) == true) return;
+            if (pawn.Corpse != null && pawn.Corpse.GetRotStage() == RotStage.Dessicated) return;
+
+            if (!PonyHelper.HasCutiemark(pawn)) return;
 
             var alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
-            if (alienComp == null)
-                return;
+            if (alienComp == null) return;
 
             var cutie = ResolveCutiemarkAddon(pawn);
-            if (cutie.addon == null || cutie.variantIndex < 0 ||
-                cutie.variantIndex >= alienComp.addonVariants.Count)
-                return;
+            if (cutie.addon == null) return;
 
-            var tmpStack = (List<GenUI.AnonymousStackElement>)TmpStackElementsField.GetValue(null);
+            if (cutie.variantIndex < 0 || cutie.variantIndex >= alienComp.addonVariants.Count) return;
+
+            if (TmpStackElementsField == null)
+            {
+                Log.Warning("[PoniesOfTheRim] TryInjectCutiemarkInGame: tmpStackElements field not found.");
+                return;
+            }
+
+            var tmpStack = TmpStackElementsField.GetValue(null) as List<GenUI.AnonymousStackElement>;
+            if (tmpStack == null) return;
+
             var cutieAddon = cutie.addon;
-            int cutieIdx = cutie.variantIndex;
+            int cutieIdx   = cutie.variantIndex;
 
             tmpStack.Add(new GenUI.AnonymousStackElement
             {
@@ -221,6 +211,12 @@ namespace PoniesOfTheRim
             }
         }
 
+        public static void InvalidateCache()
+        {
+            CutiemarkCacheInGame.Clear();
+            _lastCacheClearTick = -1;
+        }
+
         private static AddonCacheEntry ResolveCutiemarkAddon(Pawn pawn)
         {
             ClearCacheIfStale();
@@ -239,19 +235,19 @@ namespace PoniesOfTheRim
             if (!(pawn.def is ThingDef_AlienRace alienRace))
                 return default;
 
-            var raceAddons = alienRace.alienRace.generalSettings.alienPartGenerator.bodyAddons;
-            var universalAddons = Utilities.UniversalBodyAddons;
+            var raceAddons      = alienRace.alienRace.generalSettings.alienPartGenerator.bodyAddons;
+            var universalAddons = Utilities.UniversalBodyAddons;        
 
             int index = 0;
             foreach (var addon in raceAddons)
             {
-                if (addon.Name == exactName)
+                if (addon?.Name == exactName)
                     return new AddonCacheEntry { addon = addon, variantIndex = index };
                 index++;
             }
             foreach (var addon in universalAddons)
             {
-                if (addon.Name == exactName)
+                if (addon?.Name == exactName)
                     return new AddonCacheEntry { addon = addon, variantIndex = index };
                 index++;
             }
@@ -259,11 +255,13 @@ namespace PoniesOfTheRim
         }
 
         private static Texture2D _hoverCutieTex;
-        private static bool _showHoverPreview;
-        private static Rect _hoverScreenRect;
+        private static bool      _showHoverPreview;
+        private static Rect      _hoverScreenRect;
 
-        private static void DrawCutiemarkStackElement(Rect r, Pawn pawn,
-            AlienPartGenerator.BodyAddon addon, AlienPartGenerator.AlienComp alienComp,
+        private static void DrawCutiemarkStackElement(
+            Rect r, Pawn pawn,
+            AlienPartGenerator.BodyAddon addon,
+            AlienPartGenerator.AlienComp alienComp,
             int cutieIndex)
         {
             Color saved = GUI.color;
@@ -280,10 +278,11 @@ namespace PoniesOfTheRim
                 int value = alienComp.addonVariants[cutieIndex];
                 string path = addon.GetPath(pawn, ref value, value, null);
                 if (!path.NullOrEmpty())
-                    cutieTex = ContentFinder<Texture2D>.Get(path + "_east", false);
+                    cutieTex = ContentFinder<Texture2D>.Get(path + "_east", false);  
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Log.Warning($"[PoniesOfTheRim] DrawCutiemarkStackElement: {ex.Message}");
             }
 
             if (cutieTex != null)
@@ -292,14 +291,12 @@ namespace PoniesOfTheRim
             if (Mouse.IsOver(r) && cutieTex != null)
             {
                 Vector2 screenPos = GUIUtility.GUIToScreenPoint(new Vector2(r.center.x, r.yMax));
-
                 const float previewSize = 128f;
                 _hoverScreenRect = new Rect(
                     screenPos.x - previewSize / 2f,
                     screenPos.y + 4f,
-                    previewSize,
-                    previewSize);
-                _hoverCutieTex = cutieTex;
+                    previewSize, previewSize);
+                _hoverCutieTex    = cutieTex;
                 _showHoverPreview = true;
 
                 TooltipHandler.TipRegion(r, "Cutiemark".Translate());
@@ -317,10 +314,10 @@ namespace PoniesOfTheRim
             _showHoverPreview = false;
 
             Find.WindowStack.ImmediateWindow(
-                0x504F5243,                
-                _hoverScreenRect,          
-                WindowLayer.Super,         
-                delegate                   
+                0x504F5243,
+                _hoverScreenRect,
+                WindowLayer.Super,
+                delegate
                 {
                     const float padding = 6f;
                     Rect inner = new Rect(0f, 0f,
@@ -328,9 +325,7 @@ namespace PoniesOfTheRim
                         .ContractedBy(padding);
                     GUI.DrawTexture(inner, _hoverCutieTex);
                 },
-                true,                      
-                false,                     
-                0f);                       
+                true, false, 0f);
         }
     }
 }

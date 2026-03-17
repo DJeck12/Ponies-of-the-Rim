@@ -1,9 +1,10 @@
-﻿using System;
-using System.Reflection;
+﻿using AlienRace;
 using HarmonyLib;
+using PoniesOfTheRim.UniquePonies;
 using RimWorld;
+using System;
+using System.Reflection;
 using Verse;
-using AlienRace;
 
 namespace PoniesOfTheRim
 {
@@ -43,6 +44,12 @@ namespace PoniesOfTheRim
                 AccessTools.Method(typeof(PawnFootprintMaker), "TryPlaceFootprint"),
                 prefix: new HarmonyMethod(typeof(HoofprintPatch), nameof(HoofprintPatch.TryPlaceHoofprint)),
                 label: "PawnFootprintMaker.TryPlaceFootprint"
+            );
+
+            TryPatch(
+                AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"),
+                prefix:  new HarmonyMethod(typeof(UniqueStartingPawnUI), nameof(UniqueStartingPawnUI.DoWindowContents_Prefix)),
+                postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI), nameof(UniqueStartingPawnUI.DoWindowContents_Postfix))
             );
 
             TryPatch(
