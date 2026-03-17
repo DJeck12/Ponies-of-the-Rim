@@ -41,6 +41,20 @@
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">
+		<defName>Pony_HiveMind</defName>
+		<label>hive mind</label>
+		<description>Carriers of this gene possess a unique form of collective intelligence that connects them to others within the same colony. Members of the hive mind learn new skills much more quickly by sharing their experiences with one another.</description>
+		<iconPath>UI/Genes/HiveMind</iconPath>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Increasing skill learning speed per hive-linked colonists by 5%.</li>
+			<li>Drops to 3% after 12 colonists.</li>
+		</customEffectDescriptions>
+	</GeneDef>
+
+	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_Oviparous</defName>
 		<label>oviparous</label>
 		<description>Carriers of this gene lay eggs instead of giving live birth. Eggs need time and correct conditions to hatch.</description>

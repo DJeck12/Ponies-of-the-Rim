@@ -62,11 +62,10 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_SkittlebugTail</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_Chitin</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HorseHooves</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pain_Reduced</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_SoulGem</li>
-					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HiveLink</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HiveMind</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>

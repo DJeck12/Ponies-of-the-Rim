@@ -22,6 +22,12 @@
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_NatureMuse">
 				<hediff>Pony_NatureMuse</hediff>
 				<ability>Pony_NatureMuse</ability>
+				    <allowedRaces>
+						<li>Pony_Earthpony</li>
+						<li>Pony_Deer</li>
+						<li>Pony_Zebra</li>
+						<li>Pony_Alicorn</li>
+					</allowedRaces>
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
