@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<StatDef>
-	  <defName>PegasusFlightDurationSeconds</defName>
-	  <label>полёт (с)</label>
-	  <description>Сколько секунд пегас может непрерывно лететь при полной выносливости.</description>
-	  <category>PawnMisc</category>
-	  <defaultBaseValue>0</defaultBaseValue>
-	  <toStringStyle>FloatOne</toStringStyle>
-	  <minValue>0</minValue>
-	  <maxValue>30</maxValue>
-	  <workerClass>PoniesOfTheRim.Flying.StatWorker_FlightDurationSeconds</workerClass>
-	  <showOnHumanlikes>true</showOnHumanlikes>
+		<defName>PegasusFlightDurationSeconds</defName>
+		<label>flight (sec.)</label>
+		<description>How many seconds a pegasus can fly continuously at full stamina.</description>
+		<category>PawnMisc</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatOne</toStringStyle>
+		<minValue>0</minValue>
+		<maxValue>30</maxValue>
+		<workerClass>PoniesOfTheRim.Flying.StatWorker_FlightDurationSeconds</workerClass>
+		<showOnHumanlikes>true</showOnHumanlikes>
 	</StatDef>
 
-  <PawnCapacityDef>
-    <defName>Pegasus_Flight</defName>
-    <label>полёт</label>
-    <description>Эффективность постоянного полёта пегаса. Зависит от состояния крыльев, дыхания и кровообращения.</description>
-    <workerClass>PoniesOfTheRim.Flying.PawnCapacityWorker_Pegasus_Flight</workerClass>
-    <minValue>0</minValue>
-    <minForCapable>0.05</minForCapable>
-    <showOnHumanlikes>true</showOnHumanlikes>
-    <showOnAnimals>false</showOnAnimals>
-    <showOnMechanoids>false</showOnMechanoids>
-    <showOnDrones>false</showOnDrones>
-    <showOnAnomalyEntities>false</showOnAnomalyEntities>
-  </PawnCapacityDef>
+	<PawnCapacityDef>
+		<defName>Pegasus_Flight</defName>
+		<label>flight</label>
+		<description>The efficiency of a pegasus' sustained flight depends on the condition of their wings, their breathing, and their blood circulation.</description>
+		<workerClass>PoniesOfTheRim.Flying.PawnCapacityWorker_Pegasus_Flight</workerClass>
+		<minValue>0</minValue>
+		<minForCapable>0.05</minForCapable>
+		<showOnHumanlikes>true</showOnHumanlikes>
+		<showOnAnimals>false</showOnAnimals>
+		<showOnMechanoids>false</showOnMechanoids>
+		<showOnDrones>false</showOnDrones>
+		<showOnAnomalyEntities>false</showOnAnomalyEntities>
+	</PawnCapacityDef>
 
 </Defs>
