@@ -6,15 +6,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-	[StaticConstructorOnStartup]
 	public static class PonyHairExtensionPatch
 	{
-		static PonyHairExtensionPatch()
-		{
-			new Harmony("Rimworld.Pony.PoniesOfTheRim").Patch(AccessTools.Method(typeof(AlienPartGenerator.BodyAddon), "GetGraphic"), null, new HarmonyMethod(typeof(PonyHairExtensionPatch).GetMethod("PonyTailPatch")));
-		}
-
-		[HarmonyPostfix]
 		public static void PonyTailPatch(Pawn pawn,AlienPartGenerator.BodyAddon __instance, ref int sharedIndex)
 		{
 			if (pawn.IsPony() && __instance.Name == "Tail")

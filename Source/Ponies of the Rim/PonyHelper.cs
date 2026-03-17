@@ -76,6 +76,38 @@ namespace PoniesOfTheRim
             return pawn.kindDef.race.race.body == Pony_DefOf.Pony_SeaponyBody;
         }
 
+        internal static bool IsHippogriff(this Pawn pawn)
+        {
+            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_HippogriffBody;
+        }
+
+        internal static bool HasWings(this Pawn pawn)
+        {
+            return pawn.IsPegasus()
+                || pawn.IsBatpony()
+                || pawn.IsAlicorn()
+                || pawn.IsChangedling()
+                || pawn.IsChangeling()
+                || pawn.IsGriffon()
+                || pawn.IsHippogriff();
+        }
+
+        public static bool HasCutiemark(Pawn pawn)
+        {
+            return pawn.IsEarthpony() || pawn.IsUnicorn() || pawn.IsPegasus() 
+                || pawn.IsZebra() || pawn.IsCrystalpony() || pawn.IsBatpony() 
+                || pawn.IsAlicorn();
+        }
+
+        public static bool HasOviparousGene(Pawn pawn)
+        {
+            if (!ModsConfig.BiotechActive) return false;
+            if (pawn?.genes == null) return false;
+
+            return pawn.genes.HasActiveGene(
+                DefDatabase<GeneDef>.GetNamed("Pony_Oviparous", errorOnFail: false)
+        );
+}
 
         public static void PlaceHoofprint(Vector3 loc, Map map, float rot)
         {

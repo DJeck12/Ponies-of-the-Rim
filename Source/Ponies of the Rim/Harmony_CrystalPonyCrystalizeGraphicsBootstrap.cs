@@ -11,43 +11,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class Crystalpony_CrystalizeGraphics_Bootstrap
     {
-        static Crystalpony_CrystalizeGraphics_Bootstrap()
-        {
-            var harmony = new Harmony("Rimworld.Pony.PoniesOfTheRim");
-
-            harmony.Patch(
-                AccessTools.Method(typeof(AlienPartGenerator.AlienComp),
-                    nameof(AlienPartGenerator.AlienComp.CompRenderNodes)),
-                postfix: new HarmonyMethod(typeof(Patch_AlienComp_CompRenderNodes),
-                    nameof(Patch_AlienComp_CompRenderNodes.Postfix)));
-
-            harmony.Patch(
-                AccessTools.Method(typeof(AlienPartGenerator.AlienComp),
-                    "RegenerateAddonsForced", new Type[] { }),
-                postfix: new HarmonyMethod(typeof(Patch_AlienComp_RegenerateAddonsForced),
-                    nameof(Patch_AlienComp_RegenerateAddonsForced.Postfix)));
-
-            harmony.Patch(
-                AccessTools.Method(typeof(PawnRenderNode_Hair),
-                    nameof(PawnRenderNode_Hair.GraphicFor)),
-                postfix: new HarmonyMethod(typeof(Patch_PawnRenderNodeHair_GraphicForPawn),
-                    nameof(Patch_PawnRenderNodeHair_GraphicForPawn.Postfix)));
-
-            harmony.Patch(
-                AccessTools.Method(typeof(Page_ConfigureStartingPawns), "PreOpen"),
-                postfix: new HarmonyMethod(typeof(Patch_ConfigureStartingPawns_PreOpen),
-                    nameof(Patch_ConfigureStartingPawns_PreOpen.Postfix)));
-
-            harmony.Patch(
-                AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"),
-                postfix: new HarmonyMethod(typeof(Patch_ConfigureStartingPawns_DoWindowContents),
-                    nameof(Patch_ConfigureStartingPawns_DoWindowContents.Postfix)));
-        }
-
-        
         public static class Patch_AlienComp_CompRenderNodes
         {
             public static void Postfix(AlienPartGenerator.AlienComp __instance)
@@ -118,7 +83,6 @@ namespace PoniesOfTheRim
             }
         }
 
-        
         [StaticConstructorOnStartup]
         internal static class CrystalponyGraphicBaker
         {

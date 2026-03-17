@@ -81,6 +81,20 @@
 			</targetParams>
 		</verbProperties>
 		<jobDef>CastJump</jobDef>
+		<modExtensions>
+		  <li Class="PoniesOfTheRim.Abilities.AbilityRaceIconExtension">
+			<raceIcons>
+			  <li>
+				<raceDef>Pony_Batpony</raceDef>
+				<iconPath>UI/Abilities/Glimpse</iconPath>
+			  </li>
+			  <li>
+				<raceDef>Pony_Pegasus</raceDef>
+				<iconPath>UI/Abilities/ShortFlight</iconPath>
+			  </li>
+			</raceIcons>
+		  </li>
+		</modExtensions>
 	</AbilityDef>
 
 	<AbilityDef>

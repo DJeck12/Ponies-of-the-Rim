@@ -1,5 +1,4 @@
-﻿using HarmonyLib;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -7,19 +6,17 @@ using Verse.Sound;
 namespace PoniesOfTheRim
 {
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(MainMenuDrawer), nameof(MainMenuDrawer.DoExpansionIcons))]
     public static class MainMenuDiscordIconPatch
     {
         private static Texture2D discordIcon;
         private const string DiscordUrl = "https://discord.com/invite/Bwnh2SVV7S";
-        private const string IconPath = "Transparent/Discord";
+        private const string IconPath = "Meta/Discord";
 
         static MainMenuDiscordIconPatch()
         {
             discordIcon = ContentFinder<Texture2D>.Get(IconPath, false);
         }
 
-        [HarmonyPostfix]
         public static void Postfix()
         {
             if (discordIcon == null)

@@ -1,95 +1,31 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System.Linq;
+﻿using RimWorld;
 using Verse;
-
 
 namespace PoniesOfTheRim
 {
-[StaticConstructorOnStartup]
-    public static class MinotaurCompatibilityPatch
+    public static class PonyRooCompatPatch
     {
-        private static readonly string[] targetModPackageIds = new string[]
-        {
-            "tug.Minotaur",
-            "tug.Minotaur.Expanded",
-            "V.Rooboid.Faun",
-            "tug.Satyr",
-            "tug.SatyrFaun.Expanded"
-        };
+        private static readonly GeneDef UnguligradeGene =
+            DefDatabase<GeneDef>.GetNamed("RBM_UnguligradeLegs", errorOnFail: false);
 
-        static MinotaurCompatibilityPatch()
-        {
-            // Проверяем, загружен ли хотя бы один из целевых модов
-            if (!IsAnyTargetModActive())
-            {
-                Log.Message("[Pony Compat] No target mods detected, skipping Minotaur compatibility patch");
-                return;
-            }
-
-            var harmony = new Harmony("poniesoftherim.minotaur.compat");
-            
-            // Патчим PawnRenderNode_Fur.GraphicFor с повышенным приоритетом
-            var original = AccessTools.Method(typeof(PawnRenderNode_Fur), "GraphicFor");
-            if (original != null)
-            {
-                var prefix = new HarmonyMethod(typeof(MinotaurCompatibilityPatch), nameof(DisableFurForPonyMinotaur));
-                prefix.priority = Priority.HigherThanNormal;
-                
-                harmony.Patch(original, prefix: prefix);
-                
-                string activeMods = string.Join(", ", GetActiveTargetMods());
-                Log.Message($"[Pony Compat] Successfully patched for compatibility with: {activeMods}");
-            }
-        }
-
-        // Проверяет, активен ли хотя бы один из целевых модов
-        private static bool IsAnyTargetModActive()
-        {
-            return targetModPackageIds.Any(packageId => 
-                ModsConfig.IsActive(packageId));
-        }
-
-        // Возвращает список активных целевых модов
-        private static string[] GetActiveTargetMods()
-        {
-            return targetModPackageIds
-                .Where(packageId => ModsConfig.IsActive(packageId))
-                .ToArray();
-        }
-
-        // Отключаем FurDef для пони с геном RBM_UnguligradeLegs
         public static bool DisableFurForPonyMinotaur(Pawn pawn, ref Graphic __result)
         {
             if (pawn?.story == null || !pawn.IsPony())
                 return true;
 
-            // Проверяем наличие гена RBM_UnguligradeLegs
-            GeneDef unguligradeGene = DefDatabase<GeneDef>.GetNamed("RBM_UnguligradeLegs", false);
-            if (unguligradeGene == null)
+            if (UnguligradeGene == null || pawn.genes?.HasActiveGene(UnguligradeGene) != true)
                 return true;
 
-            if (pawn.genes?.HasActiveGene(unguligradeGene) != true)
-                return true;
+            FurDef originalFur = pawn.story.furDef;
+            pawn.story.furDef  = null;
+            __result           = null;
 
-            // У пони есть ген RBM_UnguligradeLegs - ОТКЛЮЧАЕМ FurDef
-            // Временно обнуляем furDef, чтобы моды Roo ничего не делали
-            FurDef originalFurDef = pawn.story.furDef;
-            pawn.story.furDef = null;
-            
-            // Возвращаем null чтобы использовалась стандартная графика тела
-            __result = null;
-            
-            // Восстанавливаем furDef после возврата
-            LongEventHandler.ExecuteWhenFinished(delegate
+            LongEventHandler.ExecuteWhenFinished(() =>
             {
                 if (pawn?.story != null)
-                {
-                    pawn.story.furDef = originalFurDef;
-                }
+                    pawn.story.furDef = originalFur;
             });
-            
-            // Блокируем все остальные патчи (включая моды Roo)
+
             return false;
         }
     }

@@ -11,7 +11,12 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 Unlike their wild relatives, changedling have learned to experience a wider range of strong emotions, and though their way of life has changed, they still retain a hive-mind through which thoughts and emotions are shared freely.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
@@ -62,6 +67,7 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_Grayless</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_NoBeardOnly</li>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_SoulGem</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_HiveLink</li>
 				</raceGenes>
 			<!-- Colors -->
 				<alienPartGenerator>

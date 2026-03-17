@@ -4,17 +4,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class PatchesForPonySettings
     {
-        private static readonly Harmony harmony = new("Rimworld.Pony.PoniesOfTheRim");
-
-        static PatchesForPonySettings()
-        {
-            harmony.PatchAll();
-        }
-
-        [HarmonyPatch(typeof(LoadedModManager), "ApplyPatches")]
         public static class LoadedModManager_ApplyPatches_Patch
         {
             public static void Prefix()

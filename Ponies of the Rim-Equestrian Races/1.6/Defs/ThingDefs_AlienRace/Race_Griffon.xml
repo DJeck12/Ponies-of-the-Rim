@@ -11,7 +11,12 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 Griffons can be found all over the world, but they typically favor more temperate regions with open skies and vast mountain ranges. Their settlements line cliffsides or high plateaus within these areas, built to take advantage of the terrain’s natural defences and strong air currents.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->

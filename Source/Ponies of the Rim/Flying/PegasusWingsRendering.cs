@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Xml;
 using AlienRace;
@@ -10,32 +9,29 @@ using Verse;
 
 namespace PoniesOfTheRim.Flying
 {
-public class GraphicPegasusWingsColored : Graphic_Multi
-{
-    public override Material MatAt(Rot4 rot, Thing thing = null)
+    public class GraphicPegasusWingsColored : Graphic_Multi
     {
-        var baseMat = base.MatAt(rot, thing);
-        if (thing is not Pawn pawn)
-            return baseMat;
+        public override Material MatAt(Rot4 rot, Thing thing = null)
+        {
+            var baseMat = base.MatAt(rot, thing);
+            if (thing is not Pawn pawn)
+                return baseMat;
 
-        var alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
-        if (alienComp == null)
-            return baseMat;
+            var alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
+            if (alienComp == null)
+                return baseMat;
 
-        var skinChannel = alienComp.GetChannel("skin");
-        Color skinColor = skinChannel.first;
+            var skinChannel = alienComp.GetChannel("skin");
+            Color skinColor = skinChannel.first;
 
-        if (skinColor == Color.clear || skinColor.a <= 0f)
-            skinColor = pawn.story?.SkinColor ?? Color.white;
+            if (skinColor == Color.clear || skinColor.a <= 0f)
+                skinColor = pawn.story?.SkinColor ?? Color.white;
 
-        Graphic coloredGraphic = this.GetColoredVersion(this.Shader, skinColor, this.ColorTwo);
-        return coloredGraphic.MatAt(rot);
+            Graphic coloredGraphic = this.GetColoredVersion(this.Shader, skinColor, this.ColorTwo);
+            return coloredGraphic.MatAt(rot);
+        }
     }
-}
 
-
-
-            
     public class PonyRenderNodePropertiesPegasusWings : PawnRenderNodeProperties
     {
         public string framePathPrefix;
@@ -50,7 +46,6 @@ public class GraphicPegasusWingsColored : Graphic_Multi
         }
     }
 
-            
     public class PonyRenderNodePegasusWings : PawnRenderNode
     {
         private readonly PonyRenderNodePropertiesPegasusWings wingsProps;
@@ -85,13 +80,12 @@ public class GraphicPegasusWingsColored : Graphic_Multi
         protected override bool EnsureInitializationWithoutRecache => true;
     }
 
-            
     public class PonyRenderSubWorkerPegasusWings : PawnRenderSubWorker
     {
         public override bool CanDrawNowSub(PawnRenderNode node, PawnDrawParms parms)
         {
             Pawn pawn = parms.pawn;
-            if (!pawn.IsPegasus())
+            if (!pawn.HasWings())
                 return false;
 
             var comp = pawn.TryGetComp<CompPegasusFlightToggle>();
@@ -106,30 +100,25 @@ public class GraphicPegasusWingsColored : Graphic_Multi
     }
 
 
-            
-    public class CompProperties_PonyAlienComp : CompProperties
+    public class CompProperties_PegasusWingsRenderer : CompProperties
     {
-        public CompProperties_PonyAlienComp()
+        public CompProperties_PegasusWingsRenderer()
         {
-            compClass = typeof(PonyAlienComp);
+            compClass = typeof(CompPegasusWingsRenderer);
         }
     }
 
-    public class PonyAlienComp : AlienPartGenerator.AlienComp
+    public class CompPegasusWingsRenderer : ThingComp
     {
         public override List<PawnRenderNode> CompRenderNodes()
         {
-            List<PawnRenderNode> list = base.CompRenderNodes();
             Pawn pawn = parent as Pawn;
-
-            if (pawn == null || !pawn.IsPegasus())
-                return list;
+            if (pawn == null || !pawn.HasWings())
+                return null;
 
             var tree = pawn.Drawer?.renderer?.renderTree;
             if (tree == null)
-                return list;
-
-            list ??= new List<PawnRenderNode>();
+                return null;
 
             var props = new PonyRenderNodePropertiesPegasusWings
             {
@@ -146,12 +135,14 @@ public class GraphicPegasusWingsColored : Graphic_Multi
                 }
             };
 
-            list.Add(new PonyRenderNodePegasusWings(pawn, props, tree));
-            return list;
+            return new List<PawnRenderNode>
+            {
+                new PonyRenderNodePegasusWings(pawn, props, tree)
+            };
         }
     }
 
-            
+
     public class ConditionPegasusFlightEnabled : Condition
     {
         public new const string XmlNameParseKey = "PegasusFlightEnabled";

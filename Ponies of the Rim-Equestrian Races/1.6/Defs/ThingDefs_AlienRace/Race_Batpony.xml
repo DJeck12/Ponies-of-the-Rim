@@ -11,7 +11,12 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 <color=#AAAAAA>Bat ponies</color> are a nocturnal race blending the traits of both bats and ponies. They have a strong affinity for fruit, dwell primarily in mountains and caves, and utilize invisibility magic to elude thestrals, their oldest enemy. Being a subspecies of ponykind, bat ponies can be found all over the world as part of different nations.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>

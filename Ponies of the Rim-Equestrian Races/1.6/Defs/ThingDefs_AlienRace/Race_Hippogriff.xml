@@ -11,7 +11,12 @@ Although members of this race do not walk on two legs, they have adapted most ty
 A large part of their culture overlaps with that of sea ponies, their allies, which is why hippogriffs are more often found living on the shores of seas and lakes. They take the issue of water pollution very seriously and will react aggressively to any disrespect for the ocean.]]></description>
 
 	<!-- Stats -->
-
+		<comps>
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->

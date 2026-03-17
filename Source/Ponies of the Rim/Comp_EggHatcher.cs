@@ -43,9 +43,12 @@ namespace PoniesOfTheRim
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (tempComp == null)
+
+            tempComp = parent.TryGetComp<CompTemperatureRuinable>();
+
+            if (xenotype == null)
             {
-                tempComp = parent.TryGetComp<CompTemperatureRuinable>();
+                xenotype = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
             }
         }
 
@@ -53,16 +56,12 @@ namespace PoniesOfTheRim
         {
             base.CompTickInterval(delta);
 
-            if (xenotype == null)
-            {
-                xenotype = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
-            }
-
             if (!TemperatureDamaged)
             {
                 float num = (float)delta / (Props.daysToHatch * 60000f);
                 gestateProgress += num;
-                if (gestateProgress > 1f)
+
+                if (gestateProgress >= 1f && !hatched)
                 {
                     Hatch();
                 }
@@ -144,61 +143,67 @@ namespace PoniesOfTheRim
 
             hatchee.ageTracker.AgeBiologicalTicks = 0L;
             hatchee.ageTracker.BirthAbsTicks = Find.TickManager.TicksAbs;
-            hatchee.SetFaction(Faction.OfPlayer);
 
             if (!PawnUtility.TrySpawnHatchedOrBornPawn(hatchee, parent))
             {
                 return;
             }
 
+            Pawn spawnedHatchee = hatchee;
+            hatchee = null;
+
             if (mother != null)
             {
-                if (hatchee.playerSettings != null && mother.playerSettings != null)
+                if (spawnedHatchee.playerSettings != null && mother.playerSettings != null)
                 {
-                    hatchee.playerSettings.AreaRestrictionInPawnCurrentMap =
+                    spawnedHatchee.playerSettings.AreaRestrictionInPawnCurrentMap =
                         mother.playerSettings.AreaRestrictionInPawnCurrentMap;
                 }
 
                 if (mother.Spawned)
                 {
-                    mother.GetLord()?.AddPawn(hatchee);
+                    mother.GetLord()?.AddPawn(spawnedHatchee);
                 }
             }
 
-            if (hatchee.RaceProps.IsFlesh)
+            if (spawnedHatchee.RaceProps.IsFlesh)
             {
                 if (mother != null)
                 {
-                    hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
+                    spawnedHatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
                 }
                 if (father != null)
                 {
-                    hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
+                    spawnedHatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
                 }
             }
 
-            SendLetter();
+            SendLetter(spawnedHatchee);
             hatched = true;
         }
 
-        public void SendLetter()
+        public void SendLetter(Pawn spawnedHatchee)
         {
-            string label;
-            string desc;
+            Pawn labelPawn = mother ?? spawnedHatchee;
 
-            if (mother != null)
+            if (!ModsConfig.BiotechActive)
             {
-                label = "Pony_EggHatchedLabel".Translate(mother.NameShortColored);
-                desc = "Pony_EggHatchedDesc".Translate(mother.NameShortColored);
-            }
-            else
-            {
-                label = "Pony_EggHatchedLabel".Translate(hatchee.NameShortColored);
-                desc = "Pony_EggHatchedDesc".Translate(hatchee.NameShortColored);
+                Find.LetterStack.ReceiveLetter(
+                    "Pony_EggHatchedLabel".Translate(labelPawn?.NameShortColored ?? "?"),
+                    "Pony_EggHatchedDesc".Translate(labelPawn?.NameShortColored ?? "?"),
+                    LetterDefOf.PositiveEvent,
+                    spawnedHatchee
+                );
+                return;
             }
 
             ChoiceLetter_BabyBirth choiceLetter =
-                (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter(label, desc, LetterDefOf.BabyBirth, (TargetInfo)hatchee);
+                (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter(
+                    "Pony_EggHatchedLabel".Translate(labelPawn.NameShortColored),
+                    "Pony_EggHatchedDesc".Translate(labelPawn.NameShortColored),
+                    LetterDefOf.BabyBirth,
+                    (TargetInfo)spawnedHatchee
+                );
             choiceLetter.Start();
             Find.LetterStack.ReceiveLetter(choiceLetter);
         }
@@ -238,19 +243,13 @@ namespace PoniesOfTheRim
 
         public void RegenerateChild()
         {
-            if (hatchee != null)
-            {
-                hatchee.Discard();
-                hatchee = null;
-            }
-            GenerateChild();
+            hatchee = null;
         }
 
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Values.Look(ref gestateProgress, "gestateProgress", 0f);
-            Scribe_Deep.Look(ref hatchee, "hatchee");
             Scribe_References.Look(ref mother, "mother");
             Scribe_References.Look(ref father, "father");
             Scribe_Deep.Look(ref geneSet, "geneSet");

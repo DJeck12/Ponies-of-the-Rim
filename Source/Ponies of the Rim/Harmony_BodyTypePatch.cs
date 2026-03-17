@@ -5,15 +5,8 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     public static class PonyBodyTypePatch
     {
-        static PonyBodyTypePatch()
-        {
-            new Harmony("PoniesOfTheRim").Patch(AccessTools.Method(typeof(AlienRace.HarmonyPatches), "CheckBodyType"), null, new HarmonyMethod(typeof(PonyBodyTypePatch).GetMethod("BodyTypePatch")));
-        }
-
-        [HarmonyPostfix]
         public static void BodyTypePatch(Pawn pawn, ref BodyTypeDef __result)
         {
             if (pawn.IsPony())

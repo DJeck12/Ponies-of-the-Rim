@@ -50,6 +50,9 @@
 			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<comps>
+			<li Class="PoniesOfTheRim.CompProperties_EggHatcher">
+				<daysToHatch>18</daysToHatch>
+			</li>
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>0</minSafeTemperature>
 				<maxSafeTemperature>50</maxSafeTemperature>
