@@ -16,16 +16,17 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 			<MarketValue>1800</MarketValue>
 			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
 			<PsychicSensitivity>1.1</PsychicSensitivity>
-			<ImmunityGainSpeed>1.1</ImmunityGainSpeed> <!-- Will be replaced with a gene with Biotech -->
-			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMin>21</ComfyTemperatureMin>
 			<ComfyTemperatureMax>26</ComfyTemperatureMax>
-			<CarryingCapacity>90</CarryingCapacity> <!-- Will be replaced with a gene with Biotech. Defaults to 80 -->
+			<CarryingCapacity>80</CarryingCapacity>
 			<Mass>55</Mass>
-			<PainShockThreshold>0.8</PainShockThreshold> <!-- Will be replaced with a gene with Biotech. Defaults to 0.75 -->
+			<PainShockThreshold>0.75</PainShockThreshold>
 			<AimingDelayFactor>1.1</AimingDelayFactor> <!-- Will be replaced with a gene with Biotech -->
 			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
 			<RoyalFavorValue>3</RoyalFavorValue>
 			<WorkSpeedGlobal>0.95</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
+			<Flammability>0.1</Flammability> <!-- Will be replaced with a gene with Biotech -->
+			<ArmorRating_Heat>0.75</ArmorRating_Heat> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 
 	<!-- Attacks -->

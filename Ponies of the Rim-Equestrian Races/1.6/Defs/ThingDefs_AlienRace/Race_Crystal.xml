@@ -14,10 +14,10 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 
 		<statBases>
 			<MarketValue>1800</MarketValue>
-			<MoveSpeed>4.6</MoveSpeed>
+			<MoveSpeed>4.7</MoveSpeed> <!-- Will be replaced with a gene with Biotech. Defaults to 4.6 -->
 			<PsychicSensitivity>1.1</PsychicSensitivity>
-			<ComfyTemperatureMin>12</ComfyTemperatureMin> <!-- Will be replaced with a gene with Biotech. Defaults to 16 -->
-			<ComfyTemperatureMax>30</ComfyTemperatureMax> <!-- Will be replaced with a gene with Biotech. Defaults to 26 -->
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
 			<CarryingCapacity>80</CarryingCapacity>
 			<Mass>55</Mass>
 			<PainShockThreshold>0.75</PainShockThreshold>
@@ -25,6 +25,8 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 			<PawnBeauty>1</PawnBeauty> <!-- Will be replaced with a gene with Biotech -->
 			<RoyalFavorValue>3</RoyalFavorValue>
 			<WorkSpeedGlobal>0.95</WorkSpeedGlobal> <!-- Will be replaced with a gene with Biotech -->
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp> <!-- Will be replaced with a gene with Biotech -->
 		</statBases>
 
 	<!-- Alien Settings -->
