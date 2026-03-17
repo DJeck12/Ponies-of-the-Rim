@@ -5,6 +5,9 @@
 		<defName>Pony_NatureMuse</defName>
 		<label>nature muse</label>
 		<description>The caster imbues themself with the forces of nature, that fills the body with energy to increase work speed.</description>
+		<iconPath>UI/Abilities/Ability_Earthpony</iconPath>
+		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
+		<warmupSound>Pony_AbilityWarmup</warmupSound>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
@@ -13,10 +16,7 @@
 		<cooldownTicksRange>420000</cooldownTicksRange>
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-		<iconPath>UI/Abilities/Ability_Earthpony</iconPath>
 		<hotKey>Misc1</hotKey>
-		<warmupMoteSocialSymbol>UI/Abilities/Ability_Earthpony</warmupMoteSocialSymbol>
-		<warmupSound>Pony_AbilityWarmup</warmupSound>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
@@ -24,7 +24,7 @@
 			<violent>false</violent>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 			<range>-1</range>
-			<warmupTime>2.0</warmupTime>
+			<warmupTime>3.0</warmupTime>
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
@@ -35,12 +35,13 @@
 		</verbProperties>
 		<statBases>
 			<Ability_Duration>1000</Ability_Duration>
-			<Ability_EffectRadius>0</Ability_EffectRadius>
+			<Ability_EffectRadius>9.9</Ability_EffectRadius>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>Pony_NatureMuse</hediffDef>
+				<onlyBrain>True</onlyBrain>
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
 			</li>
@@ -69,7 +70,7 @@
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 			<warmupTime>0.5</warmupTime>
 			<minRange>4</minRange>
-			<range>12</range>
+			<range>14.9</range>
 			<requireLineOfSight>False</requireLineOfSight>
 			<soundCast>Flight_TakingOff</soundCast>
 			<soundLanding>Longjump_Land</soundLanding>
@@ -109,8 +110,8 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-			<range>16</range>
-			<warmupTime>1.0</warmupTime>
+			<range>19.9</range>
+			<warmupTime>2.0</warmupTime>
 			<soundCast>Magic_UnicornBlast</soundCast>
 		</verbProperties>
 		<comps>
