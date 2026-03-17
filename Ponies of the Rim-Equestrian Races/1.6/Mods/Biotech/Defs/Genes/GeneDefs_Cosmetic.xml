@@ -10,6 +10,8 @@
 		<iconPath>UI/Genes/GriffonBeak</iconPath>
 		<displayOrderInCategory>40</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<forcedHeadTypes>
 			<li>Male_Pony</li>
 			<li>Female_Pony</li>
@@ -28,6 +30,8 @@
 		<displayOrderInCategory>41</displayOrderInCategory>
 		<prerequisite>Pony_EquineHead</prerequisite>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Nose</li>
 		</exclusionTags>
@@ -41,6 +45,8 @@
 		<displayOrderInCategory>43</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 	</GeneDef>
 
 <!-- Body -->
@@ -52,6 +58,8 @@
 		<iconPath>UI/Genes/Bodymark</iconPath>
 		<displayOrderInCategory>60</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Cutiemark</li>
 		</exclusionTags>
@@ -64,6 +72,8 @@
 		<iconPath>UI/Genes/Carapace</iconPath>
 		<displayOrderInCategory>65</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>BodyCover</li>
 		</exclusionTags>
@@ -76,6 +86,8 @@
 		<iconPath>UI/Genes/Chitin</iconPath>
 		<displayOrderInCategory>65</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>BodyCover</li>
 		</exclusionTags>
@@ -88,6 +100,8 @@
 		<iconPath>UI/Genes/DeerPattern</iconPath>
 		<displayOrderInCategory>65</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>BodyCover</li>
 		</exclusionTags>
@@ -100,6 +114,8 @@
 		<iconPath>UI/Genes/SoulGem</iconPath>
 		<displayOrderInCategory>70</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 	</GeneDef>
 
 <!-- Tails -->
@@ -113,6 +129,7 @@
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Tail</li>
 		</exclusionTags>
@@ -127,6 +144,7 @@
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Tail</li>
 		</exclusionTags>
@@ -141,6 +159,7 @@
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Tail</li>
 		</exclusionTags>
@@ -155,6 +174,7 @@
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Tail</li>
 		</exclusionTags>
@@ -169,6 +189,7 @@
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Tail</li>
 		</exclusionTags>
@@ -183,6 +204,7 @@
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Tail</li>
 		</exclusionTags>
@@ -198,6 +220,8 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>
@@ -211,6 +235,8 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>
@@ -224,6 +250,8 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>
@@ -237,6 +265,8 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>
@@ -250,6 +280,8 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>false</randomChosen>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
 		<exclusionTags>
 			<li>Ears</li>
 		</exclusionTags>
