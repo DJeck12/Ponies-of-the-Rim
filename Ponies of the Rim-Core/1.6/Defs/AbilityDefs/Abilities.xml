@@ -86,12 +86,28 @@
 		  <li Class="PoniesOfTheRim.Abilities.AbilityRaceIconExtension">
 			<raceIcons>
 			  <li>
-				<raceDef>Pony_Batpony</raceDef>
-				<iconPath>UI/Abilities/Glimpse</iconPath>
-			  </li>
-			  <li>
 				<raceDef>Pony_Pegasus</raceDef>
 				<iconPath>UI/Abilities/ShortFlight</iconPath>
+			  </li>
+			  <li MayRequire="Pony.PoniesOfTheRim.Races">
+				<raceDef>Pony_Batpony</raceDef>
+				<iconPath>UI/Abilities/Ability_Batpony</iconPath>
+			  </li>
+			  <li MayRequire="Pony.PoniesOfTheRim.Races">
+				<raceDef>Pony_Changeling</raceDef>
+				<iconPath>UI/Abilities/Ability_Changeling</iconPath>
+			  </li>
+			  <li MayRequire="Pony.PoniesOfTheRim.Races">
+				<raceDef>Pony_Changedling</raceDef>
+				<iconPath>UI/Abilities/Ability_Changedling</iconPath>
+			  </li>
+			  <li MayRequire="Pony.PoniesOfTheRim.Races">
+				<raceDef>Pony_Griffon</raceDef>
+				<iconPath>UI/Abilities/Ability_Griffon</iconPath>
+			  </li>
+			  <li MayRequire="Pony.PoniesOfTheRim.Races">
+				<raceDef>Pony_Hippogriff</raceDef>
+				<iconPath>UI/Abilities/Ability_Griffon</iconPath>
 			  </li>
 			</raceIcons>
 		  </li>

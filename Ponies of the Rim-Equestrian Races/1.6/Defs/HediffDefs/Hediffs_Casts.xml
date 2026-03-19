@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<HediffDef>
-		<defName>Pony_Crystallization</defName>
-		<label>crystallization</label>
+		<defName>Pony_Crystallize</defName>
+		<label>crystallize</label>
 		<description>The power of crystals strengthens the body, making it more resilient but reducing its mobility</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>

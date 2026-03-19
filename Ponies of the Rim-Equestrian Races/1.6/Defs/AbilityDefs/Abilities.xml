@@ -34,7 +34,7 @@
 		<comps>
 			<li Class="CompProperties_AbilityGiveHediff">
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
-				<hediffDef>Pony_Crystallization</hediffDef>
+				<hediffDef>Pony_Crystallize</hediffDef>
 				<replaceExisting>true</replaceExisting>
 			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">

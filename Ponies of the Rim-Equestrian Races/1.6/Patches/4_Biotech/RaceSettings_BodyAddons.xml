@@ -273,7 +273,7 @@
 
 			<!-- Zebra mark -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Zebra mark"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Zebra Cutiemark"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_Bodymark</Gene>

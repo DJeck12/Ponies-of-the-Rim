@@ -3,7 +3,7 @@
 
 	<ThingDef>
 		<defName>Pony_AvianEgg</defName>
-		<label>avian egg (fert.)</label>
+		<label>avian egg</label>
 		<description>temp</description>
 		<thingClass>ThingWithComps</thingClass>
 		<possessionCount>1</possessionCount>
@@ -30,7 +30,7 @@
 		<pathCost>14</pathCost>
 		<allowedArchonexusCount>-1</allowedArchonexusCount>
 		<thingCategories>
-			<li>EggsFertilized</li>
+			<li>Foods</li>
 		</thingCategories>
 		<ingestible>
 			<foodType>AnimalProduct</foodType>
@@ -38,6 +38,7 @@
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
 			<preferability>DesperateOnly</preferability>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 		<statBases>
 			<MarketValue>100</MarketValue>
@@ -51,7 +52,7 @@
 		</statBases>
 		<comps>
 			<li Class="PoniesOfTheRim.CompProperties_EggHatcher">
-				<daysToHatch>18</daysToHatch>
+				<daysToHatch>0.1</daysToHatch>
 			</li>
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>0</minSafeTemperature>
