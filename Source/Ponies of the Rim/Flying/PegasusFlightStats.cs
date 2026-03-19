@@ -102,7 +102,7 @@ namespace PoniesOfTheRim.Flying
             Pawn p = req.Thing as Pawn;
             if (p == null || !p.HasWings()) return 0f;
 
-            PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
+            PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamed("Pegasus_Flight", errorOnFail: false);
             if (cap == null) return 0f;
 
             float eff = p.health.capacities.GetLevel(cap);
@@ -114,7 +114,7 @@ namespace PoniesOfTheRim.Flying
             Pawn p = req.Thing as Pawn;
             if (p == null || !p.HasWings()) return base.GetExplanationUnfinalized(req, numberSense);
 
-            PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
+            PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamed("Pegasus_Flight", errorOnFail: false);
             float eff = (cap == null) ? 0f : p.health.capacities.GetLevel(cap);
             int seconds = Mathf.RoundToInt(Mathf.Max(0f, BaseSeconds * eff));
 
@@ -125,7 +125,7 @@ namespace PoniesOfTheRim.Flying
             sb.AppendLine();
             sb.AppendLine("Из чего складывается эффективность:");
 
-            StatDef effStat = DefDatabase<StatDef>.GetNamedSilentFail("Pegasus_FlightEfficiency");
+            StatDef effStat = DefDatabase<StatDef>.GetNamed("Pegasus_FlightEfficiency", errorOnFail: false);
             if (effStat?.Worker != null)
                 sb.AppendLine(effStat.Worker.GetExplanationUnfinalized(req, numberSense));
 
@@ -150,7 +150,7 @@ namespace PoniesOfTheRim.Flying
             Pawn pawn = req.Thing as Pawn;
             if (pawn == null || !pawn.HasWings()) return 0f;
 
-            var flightCapacityDef = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
+            var flightCapacityDef = DefDatabase<PawnCapacityDef>.GetNamed("Pegasus_Flight", errorOnFail: false);
             if (flightCapacityDef == null) return 0f;
 
             return pawn.health.capacities.GetLevel(flightCapacityDef);

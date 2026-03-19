@@ -3,6 +3,8 @@ using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -88,7 +90,17 @@ namespace PoniesOfTheRim.Flying
                 AccessTools.Method(typeof(Game), nameof(Game.DeinitAndRemoveMap)),
                 postfix: Postfix(typeof(Patch_Game_DeinitAndRemoveMap)));
 
-            Log.Message("[PoniesOfTheRim] Pegasus flight patches registered: 16");
+            h.Patch(
+                AccessTools.Method(typeof(PawnCapacityUtility),
+                    nameof(PawnCapacityUtility.BodyCanEverDoCapacity)),
+                postfix: Postfix(typeof(Patch_PawnCapacityUtility_BodyCanEverDoCapacity)));
+
+            h.Patch(
+                AccessTools.Method(typeof(ITab_Pawn_Health), "FillTab"),
+                prefix:  Prefix(typeof(Patch_ITab_Pawn_Health_FillTab)),
+                postfix: Postfix(typeof(Patch_ITab_Pawn_Health_FillTab)));
+
+            Log.Message("[PoniesOfTheRim] Pegasus flight system initialized.");
         }
 
         private static HarmonyMethod Prefix(Type type)  => new(AccessTools.Method(type, "Prefix"));
@@ -111,7 +123,10 @@ namespace PoniesOfTheRim.Flying
 
         public static bool HasUsableWings(Pawn pawn)
         {
-            if (pawn?.health?.hediffSet == null || pawn.RaceProps?.body?.AllParts == null)
+            if (!pawn.HasWings())
+                return false;
+
+            if (pawn.health?.hediffSet == null || pawn.RaceProps?.body?.AllParts == null)
                 return false;
 
             BodyPartRecord leftWing  = null;
@@ -126,6 +141,9 @@ namespace PoniesOfTheRim.Flying
 
                 if (leftWing != null && rightWing != null) break;
             }
+
+            if (leftWing == null && rightWing == null)
+                return true;
 
             if (leftWing == null || rightWing == null)
                 return false;
@@ -411,7 +429,7 @@ namespace PoniesOfTheRim.Flying
 
         private HediffDef _fatigueDef;
         private HediffDef FatigueDef =>
-            _fatigueDef ??= DefDatabase<HediffDef>.GetNamedSilentFail("Pony_FlightFatigue");
+            _fatigueDef ??= DefDatabase<HediffDef>.GetNamed("Pony_FlightFatigue", errorOnFail: false);
 
         private float _cachedDrainMult      = 1f;
         private int   _drainMultCacheTick   = -999;
@@ -438,7 +456,7 @@ namespace PoniesOfTheRim.Flying
             {
                 Pawn pawn = parent as Pawn;
                 if (pawn == null) return BaseFlightDurationTicks;
-                PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamedSilentFail("Pegasus_Flight");
+                PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamed("Pegasus_Flight", errorOnFail: false);
                 if (cap == null) return BaseFlightDurationTicks;
                 float eff = Mathf.Clamp(pawn.health.capacities.GetLevel(cap), 0f, 2f);
                 return Mathf.RoundToInt(BaseFlightDurationTicks * eff);
@@ -574,7 +592,7 @@ namespace PoniesOfTheRim.Flying
                 fatigue = HediffMaker.MakeHediff(FatigueDef, pawn);
                 pawn.health.AddHediff(fatigue);
             }
-            fatigue.Severity = spent;     
+            fatigue.Severity = spent;
         }
 
         private void ApplyExtraRestFall(Pawn pawn)
@@ -623,7 +641,7 @@ namespace PoniesOfTheRim.Flying
         {
             _pawn  = pawn;
             _timer = timer;
-            Order  = -98f;      
+            Order  = -98f;
         }
 
         public override float GetWidth(float maxWidth) => Mathf.Min(GizmoWidth, maxWidth);
@@ -700,10 +718,10 @@ namespace PoniesOfTheRim.Flying
 
         private static Color GetBarColor(float pct)
         {
-            if (pct >= 0.75f) return new Color(0.22f, 0.78f, 0.22f);  
-            if (pct >= 0.50f) return new Color(0.90f, 0.82f, 0.10f);  
-            if (pct >= 0.25f) return new Color(0.90f, 0.50f, 0.10f);  
-            return new Color(0.80f, 0.12f, 0.12f);                     
+            if (pct >= 0.75f) return new Color(0.22f, 0.78f, 0.22f);
+            if (pct >= 0.50f) return new Color(0.90f, 0.82f, 0.10f);
+            if (pct >= 0.25f) return new Color(0.90f, 0.50f, 0.10f);
+            return new Color(0.80f, 0.12f, 0.12f);
         }
 
         private static Color GetTierColor(float pct)
