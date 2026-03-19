@@ -1,87 +1,85 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 using RimWorld;
 
 namespace PoniesOfTheRim
 {
-    internal static class PonyHelper
+    public static class PonyHelper
     {
-        internal static bool IsPony(this Pawn pawn)
+        private static readonly HashSet<string> KnownPonyDefNames = new HashSet<string>
         {
-            return pawn.def.defName.Contains("Pony_");
+            "Pony_Earthpony",
+            "Pony_Unicorn",
+            "Pony_Pegasus",
+            "Pony_Zebra",
+            "Pony_Crystalpony",
+            "Pony_Batpony",
+            "Pony_Alicorn",
+            "Pony_Kirin",
+            "Pony_Changedling",
+            "Pony_Changeling",
+            "Pony_Deer",
+            "Pony_Griffon",
+            //"Pony_Seapony",
+            "Pony_Hippogriff",
+        };
+
+        public static bool IsPony(this Pawn pawn)
+        {
+            return pawn?.def is AlienRace.ThingDef_AlienRace
+                && KnownPonyDefNames.Contains(pawn.def.defName);
         }
 
-        internal static bool IsEarthpony(this Pawn pawn)
+        private static bool HasBody(this Pawn pawn, BodyDef body)
         {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_EarthponyBody;
+            if (body == null) return false;
+            return pawn?.kindDef?.race?.race?.body == body;
         }
 
-        internal static bool IsUnicorn(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_UnicornBody;
-        }
+        public static bool IsEarthpony(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_EarthponyBody);
 
-        internal static bool IsPegasus(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_PegasusBody;
-        }
+        public static bool IsUnicorn(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_UnicornBody);
 
-        internal static bool IsZebra(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_ZebraBody;
-        }
+        public static bool IsPegasus(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_PegasusBody);
 
-        internal static bool IsCrystalpony(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_CrystalponyBody;
-        }
+        public static bool IsZebra(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_ZebraBody);
 
-        internal static bool IsBatpony(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_BatponyBody;
-        }
+        public static bool IsCrystalpony(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_CrystalponyBody);
 
-        internal static bool IsAlicorn(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_AlicornBody;
-        }
+        public static bool IsBatpony(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_BatponyBody);
 
-        internal static bool IsKirin(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_KirinBody;
-        }
+        public static bool IsAlicorn(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_AlicornBody);
 
-        internal static bool IsChangedling(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_ChangedlingBody;
-        }
+        public static bool IsKirin(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_KirinBody);
 
-        internal static bool IsChangeling(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_ChangelingBody;
-        }
+        public static bool IsChangedling(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_ChangedlingBody);
 
-        internal static bool IsDeer(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_DeerBody;
-        }
+        public static bool IsChangeling(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_ChangelingBody);
 
-        internal static bool IsGriffon(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_GriffonBody;
-        }
+        public static bool IsDeer(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_DeerBody);
 
-        internal static bool IsSeapony(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_SeaponyBody;
-        }
+        public static bool IsGriffon(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_GriffonBody);
 
-        internal static bool IsHippogriff(this Pawn pawn)
-        {
-            return pawn.kindDef.race.race.body == Pony_DefOf.Pony_HippogriffBody;
-        }
+        //public static bool IsSeapony(this Pawn pawn)
+        //    => pawn.HasBody(Pony_DefOf.Pony_SeaponyBody);
 
-        internal static bool HasWings(this Pawn pawn)
+        public static bool IsHippogriff(this Pawn pawn)
+            => pawn.HasBody(Pony_DefOf.Pony_HippogriffBody);
+
+        public static bool HasWings(this Pawn pawn)
         {
             return pawn.IsPegasus()
                 || pawn.IsBatpony()
@@ -92,31 +90,40 @@ namespace PoniesOfTheRim
                 || pawn.IsHippogriff();
         }
 
-        public static bool HasCutiemark(Pawn pawn)
+        public static bool HasCutiemark(this Pawn pawn)
         {
-            return pawn.IsEarthpony() || pawn.IsUnicorn() || pawn.IsPegasus() 
-                || pawn.IsZebra() || pawn.IsCrystalpony() || pawn.IsBatpony() 
+            return pawn.IsEarthpony()
+                || pawn.IsUnicorn()
+                || pawn.IsPegasus()
+                || pawn.IsZebra()
+                || pawn.IsCrystalpony()
+                || pawn.IsBatpony()
                 || pawn.IsAlicorn();
         }
 
-        public static bool HasOviparousGene(Pawn pawn)
+        public static bool HasOviparousGene(this Pawn pawn)
         {
             if (!ModsConfig.BiotechActive) return false;
             if (pawn?.genes == null) return false;
 
             return pawn.genes.HasActiveGene(
-                DefDatabase<GeneDef>.GetNamed("Pony_Oviparous", errorOnFail: false)
-        );
-}
+                DefDatabase<GeneDef>.GetNamed("Pony_Oviparous", errorOnFail: false));
+        }
 
         public static void PlaceHoofprint(Vector3 loc, Map map, float rot)
         {
-            if (loc.ShouldSpawnMotesAt(map))
-            {
-                FleckCreationData dataStatic = FleckMaker.GetDataStatic(loc, map, Pony_DefOf.Hoofprint, 0.5f);
-                dataStatic.rotation = rot;
-                map.flecks.CreateFleck(dataStatic);
-            }
+            PlaceFootprintFleck(loc, map, rot, Pony_DefOf.Hoofprint);
+        }
+
+        // Безопасно при fleckDef == null — ничего не происходит.
+        public static void PlaceFootprintFleck(Vector3 loc, Map map, float rot, FleckDef fleckDef)
+        {
+            if (fleckDef == null) return;
+            if (!loc.ShouldSpawnMotesAt(map)) return;
+
+            FleckCreationData data = FleckMaker.GetDataStatic(loc, map, fleckDef, 0.5f);
+            data.rotation = rot;
+            map.flecks.CreateFleck(data);
         }
     }
 }

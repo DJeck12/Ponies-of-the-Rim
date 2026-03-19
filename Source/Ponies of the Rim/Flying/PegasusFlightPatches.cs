@@ -38,6 +38,8 @@ namespace PoniesOfTheRim.Flying
         private static readonly FieldInfo fiCooldown =
             AccessTools.Field(typeof(Pawn_FlightTracker), "flightCooldownTicks");
 
+        private static object _flyingEnumValue;
+
         public static bool Prefix(Pawn_FlightTracker __instance)
         {
             try
@@ -50,12 +52,12 @@ namespace PoniesOfTheRim.Flying
 
                 if (fiFlightState != null)
                 {
+                    if (_flyingEnumValue == null)
+                        _flyingEnumValue = Enum.Parse(fiFlightState.FieldType, "Flying");
+
                     object cur = fiFlightState.GetValue(__instance);
-                    if (cur == null || cur.ToString() != "Flying")
-                    {
-                        var enumType = fiFlightState.FieldType;
-                        fiFlightState.SetValue(__instance, Enum.Parse(enumType, "Flying"));
-                    }
+                    if (!Equals(cur, _flyingEnumValue))
+                        fiFlightState.SetValue(__instance, _flyingEnumValue);
                 }
 
                 if (fiCooldown != null)
@@ -131,6 +133,7 @@ namespace PoniesOfTheRim.Flying
             __result = Mathf.Min(__result, desired);
         }
     }
+
     public static class Patch_PathFinder_CreateRequest
     {
         private static readonly MethodInfo CreateRequestOverload;
@@ -228,6 +231,11 @@ namespace PoniesOfTheRim.Flying
                 __result = CreateRequestOverload.Invoke(__instance,
                     new object[] { start, target, dest, tp, tuningNullable, peMode, pawn, finalCustomizer });
                 return false;
+            }
+            catch (Exception e)
+            {
+                Log.Error($"[PoniesOfTheRim] Patch_PathFinder_CreateRequest.Prefix: {e}");
+                return true;
             }
             finally
             {
@@ -501,7 +509,7 @@ namespace PoniesOfTheRim.Flying
 
         private static void EnsureWingsBoundToParts(Pawn pawn)
         {
-            HediffDef naturalWingDef = DefDatabase<HediffDef>.GetNamedSilentFail("NaturalWing");
+            HediffDef naturalWingDef = DefDatabase<HediffDef>.GetNamed("NaturalWing", errorOnFail: false);
             if (naturalWingDef == null) return;
 
             var unbound = pawn.health.hediffSet.hediffs
@@ -673,6 +681,96 @@ namespace PoniesOfTheRim.Flying
         {
             if (map != null)
                 PegasusFlightPathGridCustomizer.DisposeForMap(map.uniqueID);
+        }
+    }
+
+
+    public static class Patch_PawnCapacityUtility_BodyCanEverDoCapacity
+    {
+        private const string FlightCapDefName = "Pegasus_Flight";
+
+        public static void Postfix(BodyDef bodyDef, PawnCapacityDef capacity, ref bool __result)
+        {
+            try
+            {
+                if (!__result || capacity?.defName != FlightCapDefName)
+                    return;
+
+                if (bodyDef?.AllParts == null)
+                {
+                    __result = false;
+                    return;
+                }
+
+                bool hasWingPart = false;
+                foreach (BodyPartRecord part in bodyDef.AllParts)
+                {
+                    var defName = part.def?.defName;
+                    if (defName == PegasusFlightUtil.LeftWingPartDef ||
+                        defName == PegasusFlightUtil.RightWingPartDef)
+                    {
+                        hasWingPart = true;
+                        break;
+                    }
+                }
+
+                if (!hasWingPart)
+                    __result = false;
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_PawnCapacityUtility_BodyCanEverDoCapacity.Postfix: {e}");
+            }
+        }
+    }
+
+
+    public static class Patch_ITab_Pawn_Health_FillTab
+    {
+        private static readonly FieldInfo FiSize =
+            AccessTools.Field(typeof(ITab), "size");
+
+        private static readonly PropertyInfo PropSelPawn =
+            AccessTools.Property(typeof(ITab), "SelPawn");
+
+        private const float ExtraHeight = 26f;
+
+        private static Vector2 _originalSize;
+        private static bool    _sizeChanged;
+
+        public static void Prefix(ITab __instance)
+        {
+            _sizeChanged = false;
+            try
+            {
+                if (FiSize == null) return;
+
+                Pawn pawn = PropSelPawn?.GetValue(__instance) as Pawn;
+                if (pawn == null || !pawn.HasWings()) return;
+
+                _originalSize = (Vector2)FiSize.GetValue(__instance);
+                FiSize.SetValue(__instance,
+                    new Vector2(_originalSize.x, _originalSize.y + ExtraHeight));
+                _sizeChanged = true;
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_ITab_Pawn_Health_FillTab.Prefix: {e}");
+            }
+        }
+
+        public static void Postfix(ITab __instance)
+        {
+            if (!_sizeChanged || FiSize == null) return;
+            _sizeChanged = false;
+            try
+            {
+                FiSize.SetValue(__instance, _originalSize);
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_ITab_Pawn_Health_FillTab.Postfix: {e}");
+            }
         }
     }
 }

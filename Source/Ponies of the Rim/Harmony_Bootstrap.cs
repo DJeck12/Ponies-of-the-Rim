@@ -1,9 +1,10 @@
-﻿using System;
-using System.Reflection;
+﻿using AlienRace;
 using HarmonyLib;
+using PoniesOfTheRim.UniquePonies;
 using RimWorld;
+using System;
+using System.Reflection;
 using Verse;
-using AlienRace;
 
 namespace PoniesOfTheRim
 {
@@ -43,6 +44,12 @@ namespace PoniesOfTheRim
                 AccessTools.Method(typeof(PawnFootprintMaker), "TryPlaceFootprint"),
                 prefix: new HarmonyMethod(typeof(HoofprintPatch), nameof(HoofprintPatch.TryPlaceHoofprint)),
                 label: "PawnFootprintMaker.TryPlaceFootprint"
+            );
+
+            TryPatch(
+                AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"),
+                prefix:  new HarmonyMethod(typeof(UniqueStartingPawnUI), nameof(UniqueStartingPawnUI.DoWindowContents_Prefix)),
+                postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI), nameof(UniqueStartingPawnUI.DoWindowContents_Postfix))
             );
 
             TryPatch(
@@ -92,6 +99,7 @@ namespace PoniesOfTheRim
                 label: "FactionDialogMaker.FactionDialogFor"
             );
             QuestFactionPatches.Apply(Harmony);
+            Patch_QuestNode_GeneratePawn_RaceAware.Register(Harmony);
 
             TryPatch(
                 AccessTools.Method(typeof(CharacterCardUtility), "DrawCharacterCard"),
@@ -149,12 +157,12 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(
                     typeof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_PawnRenderNodeHair_GraphicForPawn),
                     nameof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_PawnRenderNodeHair_GraphicForPawn.Postfix)),
-                label: "PawnRenderNode_Hair.GraphicFor"
+                label: "PawnRenderNode_Hair.GraphicFor (crystal)"
             );
             TryPatch(
                 AccessTools.Method(typeof(PawnRenderNode_Hair), nameof(PawnRenderNode_Hair.GraphicFor)),
                 postfix: new HarmonyMethod(typeof(PonyBabyHairPatch), nameof(PonyBabyHairPatch.PonyBabyHairPostfix)),
-                label: "PawnRenderNode_Hair.GraphicFor"
+                label: "PawnRenderNode_Hair.GraphicFor (baby hair)"
             );
             TryPatch(
                 AccessTools.Method(typeof(Page_ConfigureStartingPawns), "PreOpen"),
@@ -168,7 +176,7 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(
                     typeof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_ConfigureStartingPawns_DoWindowContents),
                     nameof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_ConfigureStartingPawns_DoWindowContents.Postfix)),
-                label: "Page_ConfigureStartingPawns.DoWindowContents"
+                label: "Page_ConfigureStartingPawns.DoWindowContents (crystal)"
             );
         }
 
@@ -183,13 +191,21 @@ namespace PoniesOfTheRim
             TryPatch(
                 AccessTools.Method(typeof(Hediff), "Tick"),
                 prefix: new HarmonyMethod(typeof(Patch_Hediff_Pregnant_Tick), nameof(Patch_Hediff_Pregnant_Tick.Prefix)),
-                label: "Hediff.Tick"
+                label: "Hediff.Tick (egg birth)"
             );
 
             TryPatch(
                 AccessTools.Method(typeof(PregnancyUtility), "ApplyBirthOutcome"),
                 prefix: new HarmonyMethod(typeof(Patch_PregnancyUtility_ApplyBirthOutcome), nameof(Patch_PregnancyUtility_ApplyBirthOutcome.Prefix)),
-                label: "PregnancyUtility.ApplyBirthOutcome"
+                label: "PregnancyUtility.ApplyBirthOutcome (egg birth)"
+            );
+
+            TryPatch(
+                AccessTools.Method(typeof(LifeStageWorker_HumanlikeChild), "Notify_LifeStageStarted"),
+                postfix: new HarmonyMethod(
+                    typeof(Patch_LifeStageWorker_HumanlikeChild_Notify),
+                    nameof(Patch_LifeStageWorker_HumanlikeChild_Notify.Postfix)),
+                label: "LifeStageWorker_HumanlikeChild.Notify_LifeStageStarted"
             );
 
             TryPatch(
@@ -204,11 +220,6 @@ namespace PoniesOfTheRim
                 label: "PawnGenerator.GeneratePawn"
             );
 
-            TryPatch(
-                AccessTools.Method(typeof(Pawn_StoryTracker), "ExposeData"),
-                postfix: new HarmonyMethod(typeof(ChildPonyBodyTypeFixPatch), nameof(ChildPonyBodyTypeFixPatch.ChildBodyTypeFixPatch)),
-                label: "Pawn_StoryTracker.ExposeData"
-            );
         }
 
         private static void RegisterCompatibilityPatches()

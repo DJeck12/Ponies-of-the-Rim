@@ -34,7 +34,7 @@ namespace PoniesOfTheRim.Flying
         private bool _flyingForWater;
 
         private int _kiteJobCooldownTick = -1;
-        private const int KITE_JOB_COOLDOWN = 180;   
+        private const int KITE_JOB_COOLDOWN = 180;
 
         private Pawn Pawn => parent as Pawn;
 
@@ -336,11 +336,11 @@ namespace PoniesOfTheRim.Flying
                     from.z + Mathf.RoundToInt(dz * i / (float)steps));
 
                 if (!cell.InBounds(pawn.Map)) continue;
-                if (cell.Walkable(pawn.Map))  continue;     
+                if (cell.Walkable(pawn.Map))  continue;
 
                 var edifice = cell.GetEdifice(pawn.Map);
-                if (edifice?.def?.building == null) continue;             
-                if (edifice.def.building.isNaturalRock)  continue;       
+                if (edifice?.def?.building == null) continue;
+                if (edifice.def.building.isNaturalRock) continue;
 
                 return true;
             }
@@ -350,14 +350,16 @@ namespace PoniesOfTheRim.Flying
         private static float GetRangedWeaponRange(Pawn pawn)
         {
             ThingWithComps primary = pawn.equipment?.Primary;
-            if (primary == null)
+            if (primary?.def?.Verbs == null)
                 return 0f;
 
-            Verb primaryVerb = primary.GetComp<CompEquippable>()?.PrimaryVerb;
-            if (primaryVerb?.verbProps == null || primaryVerb.verbProps.IsMeleeAttack)
-                return 0f;
+            foreach (VerbProperties vp in primary.def.Verbs)
+            {
+                if (!vp.IsMeleeAttack && vp.range > 1f)
+                    return vp.range;
+            }
 
-            return primaryVerb.verbProps.range;
+            return 0f;
         }
     }
 }

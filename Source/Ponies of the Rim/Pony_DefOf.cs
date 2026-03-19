@@ -7,6 +7,8 @@ namespace PoniesOfTheRim
     public static class Pony_DefOf
     {
         public static FleckDef Hoofprint;
+        public static FleckDef Pony_Talonprint;
+        public static FleckDef Pony_Pawprint; 
 
         public static BodyTypeDef Pony;
         public static BodyTypeDef PonyChild;
@@ -55,8 +57,8 @@ namespace PoniesOfTheRim
         public static BodyDef Pony_GriffonBody;
         [MayRequire("Pony.PoniesOfTheRim.Races")]
         public static BodyDef Pony_HippogriffBody;
-        [MayRequire("Pony.PoniesOfTheRim.Races")]
-        public static BodyDef Pony_SeaponyBody;
+        //[MayRequire("Pony.PoniesOfTheRim.Races")]
+        //public static BodyDef Pony_SeaponyBody;
 
     }
 }

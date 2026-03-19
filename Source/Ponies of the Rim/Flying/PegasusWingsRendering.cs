@@ -120,15 +120,23 @@ namespace PoniesOfTheRim.Flying
             if (tree == null)
                 return null;
 
+            var wingTagDef = DefDatabase<PawnRenderNodeTagDef>.GetNamed("PegasusWings", errorOnFail: false);
+            if (wingTagDef == null)
+            {
+                Log.Warning("[PoniesOfTheRim] PawnRenderNodeTagDef 'PegasusWings' не найден — " +
+                            "анимация крыльев отключена. Убедитесь, что def объявлен в XML.");
+                return null;
+            }
+
             var props = new PonyRenderNodePropertiesPegasusWings
             {
-                tagDef = DefDatabase<PawnRenderNodeTagDef>.GetNamed("PegasusWings"),
-                parentTagDef = PawnRenderNodeTagDefOf.Body,
-                pawnType = PawnRenderNodeProperties.RenderNodePawnType.HumanlikeOnly,
-                useGraphic = true,
+                tagDef         = wingTagDef,
+                parentTagDef   = PawnRenderNodeTagDefOf.Body,
+                pawnType       = PawnRenderNodeProperties.RenderNodePawnType.HumanlikeOnly,
+                useGraphic     = true,
                 framePathPrefix = "Races/Bodies/Wings/PegasusWings",
-                frameCount = 8,
-                ticksPerFrame = 3,
+                frameCount     = 8,
+                ticksPerFrame  = 3,
                 subworkerClasses = new List<Type>
                 {
                     typeof(PonyRenderSubWorkerPegasusWings)

@@ -10,7 +10,7 @@ namespace PoniesOfTheRim.Abilities
         public AbilityDef ability;
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-                        if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
+            if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
             {
                 pawn.abilities.RemoveAbility(this.ability);
                 return;
