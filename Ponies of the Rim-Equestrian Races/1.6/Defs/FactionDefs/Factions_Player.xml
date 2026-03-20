@@ -49,5 +49,10 @@
 			</li>
 		</modExtensions>
 	</FactionDef>
+
+	<FactionDef ParentName="PonyFactionBase">
+		<defName>Pony_LonelyAlicorn</defName>
+		<basicMemberKind>Pony_LonelyAlicorn</basicMemberKind>
+	</FactionDef>
 	
 </Defs>

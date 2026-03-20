@@ -115,7 +115,7 @@ The legacy of the great power remained in the face of the weakened ancestors of 
 			<summary>A single yet powerfull alicorn.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>PonyColony</factionDef>
+				<factionDef>Pony_LonelyAlicorn</factionDef>
 			</playerFaction>
 			<surfaceLayer>
 				<def>SurfaceLayerFixed</def>

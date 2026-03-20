@@ -8,6 +8,7 @@
 		<label>alicorn</label>
 		<labelMale>stallion</labelMale>
 		<labelFemale>mare</labelFemale>
+		<race>Pony_Alicorn</race>
 		<defaultFactionDef>PonyColony</defaultFactionDef>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
