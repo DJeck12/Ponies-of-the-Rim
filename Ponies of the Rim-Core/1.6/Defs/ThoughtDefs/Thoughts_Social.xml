@@ -38,6 +38,11 @@
 				<bodies>
 					<li>Pony_EarthponyBody</li>
 					<li>Pony_AlicornBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangedlingBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_CrystalponyBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_DeerBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ZebraBody</li>
 				</bodies>
 				<trait>Pony_RelationsForEarth</trait>
 			</li>
@@ -64,6 +69,11 @@
 				<bodies>
 					<li>Pony_PegasusBody</li>
 					<li>Pony_AlicornBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_BatponyBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangedlingBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_GriffonBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_HippogriffBody</li>
 				</bodies>
 				<trait>Pony_RelationsForPegasus</trait>
 			</li>
@@ -90,6 +100,9 @@
 				<bodies>
 					<li>Pony_UnicornBody</li>
 					<li>Pony_AlicornBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangedlingBody</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinBody</li>
 				</bodies>
 				<trait>Pony_RelationsForUnicorn</trait>
 			</li>

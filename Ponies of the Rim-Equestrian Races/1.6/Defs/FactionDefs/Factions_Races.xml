@@ -135,12 +135,12 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 		<modExtensions>
 			<li Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
-					<PonyColony>-5</PonyColony>
-					<PonyTribe>-5</PonyTribe>
-					<PlayerColony>-5</PlayerColony>
-					<PlayerTribe>-5</PlayerTribe>
-					<ResearchExpedition>-5</ResearchExpedition>
-					<GravshipCrew>-5</GravshipCrew>
+					<PonyColony>-10</PonyColony>
+					<PonyTribe>-10</PonyTribe>
+					<PlayerColony>-10</PlayerColony>
+					<PlayerTribe>-10</PlayerTribe>
+					<ResearchExpedition MayRequire="Ludeon.RimWorld.Anomaly">-10</ResearchExpedition>
+					<GravshipCrew MayRequire="Ludeon.RimWorld.Odyssey">-10</GravshipCrew>
 				</startingGoodwillByFactionDefs>
 				<requiredHillLevels>
 					<li>LargeHills</li>
@@ -357,6 +357,9 @@ Centuries later, changedlings continue to reform to this day, forming opposition
 		<colorSpectrum>
 			<li>(0.6, 0.84, 0.4)</li>
 		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
@@ -526,8 +529,8 @@ Centuries later, changedlings continue to reform to this day, forming opposition
 					<PonyTribe>80</PonyTribe>
 					<PlayerColony>80</PlayerColony>
 					<PlayerTribe>80</PlayerTribe>
-					<ResearchExpedition>80</ResearchExpedition>
-					<GravshipCrew>80</GravshipCrew>
+					<ResearchExpedition MayRequire="Ludeon.RimWorld.Anomaly">80</ResearchExpedition>
+					<GravshipCrew MayRequire="Ludeon.RimWorld.Odyssey">80</GravshipCrew>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</modExtensions>
@@ -682,6 +685,9 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 		<colorSpectrum>
 			<li>(0, 0.5, 0.2)</li>
 		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 		</requiredMemes>
@@ -848,6 +854,9 @@ Hint: You can hire griffon mercenaries using the comms console for a certain pri
 		<colorSpectrum>
 			<li>(0.9, 0.54, 0.18)</li>
 		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 		</requiredMemes>
@@ -985,6 +994,9 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 		<colorSpectrum>
 			<li>(0.2, 0.46, 0.75)</li>
 		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 		</requiredMemes>
@@ -1284,6 +1296,9 @@ Their alchemical arsenal and ritual skills provide them with protection from mec
 		<colorSpectrum>
 			<li>(0.75, 0.75, 0.75)</li>
 		</colorSpectrum>
+		<allowedCultures>
+			<li>Ponish</li>
+		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 		</requiredMemes>

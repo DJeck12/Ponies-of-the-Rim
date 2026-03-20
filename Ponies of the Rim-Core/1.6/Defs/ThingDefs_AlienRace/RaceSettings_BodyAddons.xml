@@ -19,6 +19,9 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
 					</Or>
 					<Or>
 						<Age>PonyAdult</Age>
@@ -37,62 +40,6 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<!-- Unique Characters -->
-					<!-- <Backstory For="Pony_Applejack_Adult">Races/Cutiemarks/QTMark68</Backstory> -->
-					<!-- <Backstory For="Pony_Rarity_Adult">Races/Cutiemarks/QTMark154</Backstory> -->
-					<!-- <Backstory For="Pony_Fluttershy_Adult">Races/Cutiemarks/QTMark159</Backstory> -->
-					<!-- <Backstory For="Pony_PinkiePie_Adult">Races/Cutiemarks/QTMark155</Backstory> -->
-					<!-- <Backstory For="Pony_RainbowDash_Adult">Races/Cutiemarks/QTMark156</Backstory> -->
-					<!-- <Backstory For="Pony_TwilightSparkle_Adult">Races/Cutiemarks/QTMark153</Backstory> -->
-
-					<!-- Adulthood Backstories -->
-					<!-- <Backstory For="Pony_EveryponyNightFanatic">Races/Cutiemarks/QTMark9</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyDayFanatic">Races/Cutiemarks/QTMark10</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyAnimalHandler">Races/Cutiemarks/QTMark35</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyZootranslator">Races/Cutiemarks/QTMark37</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusShadowLeader">Races/Cutiemarks/QTMark52</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusOfficerGuard">Races/Cutiemarks/QTMark61</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornWarlock">Races/Cutiemarks/QTMark64</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornCrystalMiner">Races/Cutiemarks/QTMark83</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyStoneFarmer">Races/Cutiemarks/QTMark93</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornJeweler">Races/Cutiemarks/QTMark99</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyRoyalGuard">Races/Cutiemarks/QTMark104</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusCook">Races/Cutiemarks/QTMark137</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyDruid">Races/Cutiemarks/QTMark151</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornMagician">Races/Cutiemarks/QTMark152</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornGemologist">Races/Cutiemarks/QTMark154</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyPartyPlanner">Races/Cutiemarks/QTMark155</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusFlyingRacer">Races/Cutiemarks/QTMark156</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyAsceticCook">Races/Cutiemarks/QTMark173</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornCourtWizard">Races/Cutiemarks/QTMark180</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyAlchemist">Races/Cutiemarks/QTMark187</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusInventor">Races/Cutiemarks/QTMark234</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyPoacher">Races/Cutiemarks/QTMark238</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusRescuer">Races/Cutiemarks/QTMark253</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusPoultryFarmer">Races/Cutiemarks/QTMark256</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornMagicTeacher">Races/Cutiemarks/QTMark258</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyFlorist">Races/Cutiemarks/QTMark275</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusCloudSculptor">Races/Cutiemarks/QTMark276</Backstory> -->
-
-					<!-- Childhood Backstories -->
-					<!-- <Backstory For="Pony_EveryponyDarkChild">Races/Cutiemarks/QTMark9</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyLightChild">Races/Cutiemarks/QTMark10</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyMagicStudent">Races/Cutiemarks/QTMark19</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornYoungWizard">Races/Cutiemarks/QTMark19</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyUnicornFriend">Races/Cutiemarks/QTMark46</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornPrince">Races/Cutiemarks/QTMark100</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornGlitterFan">Races/Cutiemarks/QTMark106</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusRainbowLover">Races/Cutiemarks/QTMark137</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyPreservationist">Races/Cutiemarks/QTMark151</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornGiftedMagician">Races/Cutiemarks/QTMark153</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyFriendshipStudent">Races/Cutiemarks/QTMark158</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyAnimalBonded">Races/Cutiemarks/QTMark159</Backstory> -->
-					<!-- <Backstory For="Pony_EveryponyApprentice">Races/Cutiemarks/QTMark180</Backstory> -->
-					<!-- <Backstory For="Pony_UnicornHornedKnight">Races/Cutiemarks/QTMark191</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusYoungRacer">Races/Cutiemarks/QTMark230</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponySacred">Races/Cutiemarks/QTMark249</Backstory> -->
-					<!-- <Backstory For="Pony_EarthponyForestFamily">Races/Cutiemarks/QTMark269</Backstory> -->
-					<!-- <Backstory For="Pony_PegasusCloudCatcher">Races/Cutiemarks/QTMark276</Backstory> -->
 				</extendedGraphics>
 				<offsets>
 					<east>
@@ -125,6 +72,15 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Deer</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Kirin</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</Race>
 					</Or>
 					<Or>
 						<BodyPart>
@@ -147,6 +103,43 @@
 							<Gender For="Female">Races/Heads/Furskin/Furskin_Female</Gender>
 						</extendedGraphics>
 					</Gene>
+				<!-- Races -->
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Heads/Changeling/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Changeling/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Heads/Changeling/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Changeling/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Heads/Hippogriff/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Hippogriff/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Deer" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Heads/Deer/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Deer/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Kirin" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Heads/Markless/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Markless/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Zebra" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Heads/Zebra/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Zebra/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
 				<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Heads/Markless/Head_Female</Backstory>
 					<Backstory For="Pony_Rarity_Adult">Races/Heads/Markless/Head_Female</Backstory>
@@ -183,6 +176,16 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Deer</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Griffon</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Kirin</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</Race>
 					</Or>
 					<Or>
 						<BodyPart>
@@ -192,6 +195,14 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Bodies/Ghoul/Body_Ghoul</Mutant>
+				<!-- Races -->
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Changeling/Body_Changeling</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Markless/Body_Normal</Race>
+					<Race For="Pony_Griffon" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Markless/Body_Normal</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Markless/Body_Normal</Race>
+					<Race For="Pony_Kirin" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Kirin/Body_Kirin</Race>
+					<Race For="Pony_Zebra" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Zebra/Body_Zebra</Race>
+					<Race For="Pony_Deer" MayRequire="Pony.PoniesOfTheRim.Races">Races/Bodies/Deer/Body_Deer</Race>
 				<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
 					<Backstory For="Pony_Rarity_Adult">Races/Bodies/Markless/Body_Pony</Backstory>
@@ -279,6 +290,15 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Griffon</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Kirin</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</Race>
 					</Or>
 					<Or>
 						<BodyPart>
@@ -289,6 +309,25 @@
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Tails/Pony/Pony_Tail19</Mutant>
+				<!--Races -->
+					<Race For="Pony_Alicorn" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Tails/Alicorn/Tail_Alicorn</path>
+					</Race>
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Tails/Changeling/Tail_Changeling</path>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Tails/Skittlebug/Tail_Changedling</path>
+					</Race>
+					<Race For="Pony_Griffon" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Tails/Griffon/Tail_Griffon</path>
+					</Race>
+					<Race For="Pony_Kirin" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Tails/Kirin/Tail_Kirin</path>
+					</Race>
+					<Race For="Pony_Zebra" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Tails/Zebra/Tail_Zebra</path>
+					</Race>
 				<!-- Unique Characters -->
 					<Backstory For="Pony_Applejack_Adult">Races/Tails/Pony/Pony_Tail2</Backstory>
 					<Backstory For="Pony_Rarity_Adult">Races/Tails/Pony/Pony_Tail4</Backstory>
@@ -359,14 +398,48 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Deer</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Griffon</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Kirin</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</Race>
 					</Or>
 					<Or>
 						<BodyPart>
 							<bodyPart>Nose</bodyPart>
 							<drawWithoutPart>true</drawWithoutPart>
 						</BodyPart>
+						<BodyPart MayRequire="Pony.PoniesOfTheRim.Races">
+							<bodyPart>Pony_Beak</bodyPart>
+							<drawWithoutPart>true</drawWithoutPart>
+						</BodyPart>
 					</Or>
 				</conditions>
+				<extendedGraphics>
+					<Race For="Pony_Griffon" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Nose/Griffon/Beak_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Nose/Griffon/Beak_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Nose/Griffon/Beak_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Nose/Griffon/Beak_Female</Gender>
+						</extendedGraphics>
+					</Race>
+					<Race For="Pony_Deer" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Nose/Deer/Nose_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Nose/Deer/Nose_Female</Gender>
+						</extendedGraphics>
+					</Race>
+				</extendedGraphics>
 				<offsets>
 					<south>
 						<layerOffset>-0.275</layerOffset>
@@ -391,7 +464,19 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Deer</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Kirin</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</Race>
 					</Or>
+					<Not MayRequire="Pony.PoniesOfTheRim.Races">
+						<Race>Pony_Griffon</Race>
+					</Not>
 					<BodyPart>
 						<bodyPart>Ear</bodyPart>
 						<bodyPartLabel>right ear</bodyPartLabel>
@@ -404,8 +489,33 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Ears/Pony/Ghoul/Ear_Pony_Ghoul_Right</Mutant>
 					<Hediff For="BionicEar">Races/Ears/Bionic/Ear_Bionic_Right</Hediff>
+				<!-- Races -->
+					<Race For="Pony_Batpony" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Batpony/Normal/Ear_Right</path>
+						<!--
+						<extendedGraphics>
+							<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Right_Ghoul</Mutant>
+							<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Right_Prosthetic</Hediff>
+						</extendedGraphics>
+						-->
+					</Race>
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Changeling/Normal/Ear_Right</path>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Skittlebug/Normal/Ear_Right</path>
+					</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Griffon/Normal/Ear_Right</path>
+					</Race>
+					<Race For="Pony_Kirin" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Kirin/Normal/Ear_Right</path>
+					</Race>
+					<Race For="Pony_Deer" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Deer/Normal/Ear_Right</path>
+					</Race>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Ears/Pony/Ghoul/Ear_Pony_Ghoul_Right</Mutant>
 					<Hediff For="CochlearImplant">Races/Ears/Pony/Cochlear/Ear_Pony_Cochlear_Right</Hediff>
 				</extendedGraphics>
 				<offsets>
@@ -438,7 +548,19 @@
 						<Race>Pony_Earthpony</Race>
 						<Race>Pony_Pegasus</Race>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Crystalpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Deer</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Kirin</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</Race>
 					</Or>
+					<Not MayRequire="Pony.PoniesOfTheRim.Races">
+						<Race>Pony_Griffon</Race>
+					</Not>
 					<BodyPart>
 						<bodyPart>Ear</bodyPart>
 						<bodyPartLabel>left ear</bodyPartLabel>
@@ -451,8 +573,33 @@
 				</conditions>
 				<extendedGraphics>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
-					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Ears/Pony/Ghoul/Ear_Pony_Ghoul_Left</Mutant>
 					<Hediff For="BionicEar">Races/Ears/Bionic/Ear_Bionic_Left</Hediff>
+				<!-- Races -->
+					<Race For="Pony_Batpony" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Batpony/Normal/Ear_Left</path>
+						<!--
+						<extendedGraphics>
+							<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Things/Races/Batpony/Ears/Ghoul/Ear_Left_Ghoul</Mutant>
+							<Hediff For="CochlearImplant">Things/Races/Batpony/Ears/Cochlear/Ear_Left_Prosthetic</Hediff>
+						</extendedGraphics>
+						-->
+					</Race>
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Changeling/Normal/Ear_Left</path>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Skittlebug/Normal/Ear_Left</path>
+					</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Griffon/Normal/Ear_Left</path>
+					</Race>
+					<Race For="Pony_Kirin" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Kirin/Normal/Ear_Left</path>
+					</Race>
+					<Race For="Pony_Deer" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Ears/Deer/Normal/Ear_Left</path>
+					</Race>
+					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Ears/Pony/Ghoul/Ear_Pony_Ghoul_Left</Mutant>
 					<Hediff For="CochlearImplant">Races/Ears/Pony/Cochlear/Ear_Pony_Cochlear_Left</Hediff>
 				</extendedGraphics>
 				<offsets>
@@ -482,6 +629,9 @@
 				<conditions>
 					<Or>
 						<Race>Pony_Unicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
 					</Or>
 					<Or>
 						<BodyPart>
@@ -499,6 +649,13 @@
 					<Hediff For="MissingBodyPart">Races/Horns/Broken/Horn_Broken</Hediff>
 					<Hediff For="BionicHorn">Races/Horns/Bionic/Horn_Bionic</Hediff>
 					<Hediff For="ArchotechHorn">Races/Horns/Archotech/Horn_Archotech</Hediff>
+				<!-- Races -->
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Horns/Changeling/Horn_Changeling</path>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Horns/Changeling/Horn_Changeling</path>
+					</Race>
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
 						<path>Races/Horns/Unicorn/Skeleton/Horn_Unicorn_Skeleton</path>
 						<extendedGraphics>
@@ -543,6 +700,12 @@
 					<RotStage>Fresh,Rotting</RotStage>
 					<Or>
 						<Race>Pony_Pegasus</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Griffon</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
 					</Or>
 					<Or>
 						<BodyPart>
@@ -563,6 +726,22 @@
 					<Hediff For="MissingBodyPart">Races/Wings/Broken/Wing_Broken_Right</Hediff>
 					<Hediff For="ArchotechWing">Races/Wings/Archotech/Wing_Archotech_Right</Hediff>
 					<Hediff For="BionicWing">Races/Wings/Bionic/Wing_Bionic_Right</Hediff>
+				<!-- Races -->
+					<Race For="Pony_Batpony" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Batpony/Normal/Wing_Batpony_Right</path>
+					</Race>
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Changeling/Normal/Wing_Changeling_Right</path>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Changeling/Normal/Wing_Changeling_Right</path>
+					</Race>
+					<Race For="Pony_Griffon" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Griffon/Normal/Wing_Griffon_Right</path>
+					</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Griffon/Normal/Wing_Griffon_Right</path>
+					</Race>
 					<Hediff For="SimpleProstheticWing">Races/Wings/Pegasus/Prosthetic/Wing_Pegasus_Prosthetic_Right</Hediff>
 					<Age For="PonyBaby">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Right</Age>
 					<Age For="PonyChild">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Right</Age>
@@ -592,6 +771,12 @@
 					<RotStage>Fresh,Rotting</RotStage>
 					<Or>
 						<Race>Pony_Pegasus</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Batpony</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changeling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Changedling</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Griffon</Race>
+						<Race MayRequire="Pony.PoniesOfTheRim.Races">Pony_Hippogriff</Race>
 					</Or>
 					<Or>
 						<BodyPart>
@@ -612,6 +797,22 @@
 					<Hediff For="MissingBodyPart">Races/Wings/Broken/Wing_Broken_Left</Hediff>
 					<Hediff For="ArchotechWing">Races/Wings/Archotech/Wing_Archotech_Left</Hediff>
 					<Hediff For="BionicWing">Races/Wings/Bionic/Wing_Bionic_Left</Hediff>
+				<!-- Races -->
+					<Race For="Pony_Batpony" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Batpony/Normal/Wing_Batpony_Left</path>
+					</Race>
+					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Changeling/Normal/Wing_Changeling_Left</path>
+					</Race>
+					<Race For="Pony_Changedling" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Changeling/Normal/Wing_Changeling_Left</path>
+					</Race>
+					<Race For="Pony_Griffon" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Griffon/Normal/Wing_Griffon_Left</path>
+					</Race>
+					<Race For="Pony_Hippogriff" MayRequire="Pony.PoniesOfTheRim.Races">
+						<path>Races/Wings/Griffon/Normal/Wing_Griffon_Left</path>
+					</Race>
 					<Hediff For="SimpleProstheticWing">Races/Wings/Pegasus/Prosthetic/Wing_Pegasus_Prosthetic_Left</Hediff>
 					<Age For="PonyBaby">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
 					<Age For="PonyChild">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>

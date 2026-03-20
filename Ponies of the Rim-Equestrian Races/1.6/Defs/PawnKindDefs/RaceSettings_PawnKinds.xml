@@ -19,6 +19,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -66,6 +69,34 @@
 								<li>Pony_BatponyTribe</li>
 							</kindDefs>
 							<chance>100</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PonyTribe</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_BatponyColonist</li>
+							</kindDefs>
+							<chance>0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Pony_BatponyTribe</li>
+							</kindDefs>
+							<chance>0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -139,6 +170,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -152,6 +186,7 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyTribe</li>
+						<li>Pony_PlayerChangelingHive</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -222,6 +257,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -304,6 +342,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -386,6 +427,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -468,6 +512,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -550,6 +597,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -632,6 +682,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -714,6 +767,9 @@
 					</pawnKindEntries>
 					<factionDefs>
 						<li>PonyColony</li>
+						<li>PlayerColony</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">GravshipCrew</li>
 					</factionDefs>
 				</li>
 				<li>

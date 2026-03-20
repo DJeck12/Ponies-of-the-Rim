@@ -10,7 +10,17 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Earthpony"
 					or defName="Pony_Pegasus"
-					or defName="Pony_Unicorn"]/statBases</xpath>
+					or defName="Pony_Unicorn"
+					or defName="Pony_Alicorn"
+					or defName="Pony_Batpony"
+					or defName="Pony_Changeling"
+					or defName="Pony_Changedling"
+					or defName="Pony_Crystalpony"
+					or defName="Pony_Deer"
+					or defName="Pony_Griffon"
+					or defName="Pony_Hippogriff"
+					or defName="Pony_Kirin"
+					or defName="Pony_Zebra"]/statBases</xpath>
 					<value>
 						<statBases>
 							<MarketValue>1800</MarketValue>
@@ -25,11 +35,6 @@
 							<WorkSpeedGlobal>1</WorkSpeedGlobal>
 						</statBases>
 					</value>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Earthpony"
-					or defName="Pony_Pegasus"
-					or defName="Pony_Unicorn"]/alienRace/generalSettings/abilities</xpath>
 				</li>
 			</operations>
 		</match>
