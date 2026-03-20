@@ -149,6 +149,9 @@ Most deer dwell in secluded forests, far from other civilizations, preferring so
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>NoBeard</li>
+						</styleTags>
 					</value>
 				</li>
 				<li>

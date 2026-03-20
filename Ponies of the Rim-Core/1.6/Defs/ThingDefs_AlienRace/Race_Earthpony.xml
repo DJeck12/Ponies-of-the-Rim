@@ -133,6 +133,9 @@ Although the name "<color=#4FFF4F>earth pony</color>" indicates a connection wit
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>NoBeard</li>
+						</styleTags>
 					</value>
 				</li>
 				<li>

@@ -142,6 +142,9 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>NoBeard</li>
+						</styleTags>
 					</value>
 				</li>
 				<li>

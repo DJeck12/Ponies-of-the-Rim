@@ -130,7 +130,7 @@ A large part of their culture overlaps with that of sea ponies, their allies, wh
 				<li>
 					<key>BeardDef</key>
 					<value>
-						<hasStyle>true</hasStyle>
+						<hasStyle>false</hasStyle>
 					</value>
 				</li>
 				<li>

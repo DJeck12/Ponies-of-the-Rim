@@ -129,6 +129,9 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>NoBeard</li>
+						</styleTags>
 					</value>
 				</li>
 				<li>
