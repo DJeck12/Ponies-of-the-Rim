@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Parka"
+		or defName="Apparel_Pants"
+		or defName="Apparel_BasicShirt"
+		or defName="Apparel_CollarShirt"
+		or defName="Apparel_Duster"
+		or defName="Apparel_Jacket"
+		or defName="Apparel_PlateArmor"
+		or defName="Apparel_Cape"
+		or defName="Apparel_Robe"
+		
+		or defName="Apparel_CowboyHat"
+		or defName="Apparel_BowlerHat"
+		or defName="Apparel_Tuque"
+		or defName="Apparel_SimpleHelmet"
+		or defName="Apparel_HatHood"]/apparel</xpath>
+		<value>
+			<tags>
+				<li>Medieval</li>
+			</tags>
+		</value>
+	</Operation>
+
+</Patch>

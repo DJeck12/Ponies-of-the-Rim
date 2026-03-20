@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_Headwrap"
+					or defName="Apparel_Broadwrap"
+					or defName="Apparel_Slicecap"
+					or defName="Apparel_Tailcap"
+					or defName="Apparel_Shadecone"
+					or defName="Apparel_Flophat"]/apparel</xpath>
+					<value>
+						<tags>
+							<li>Medieval</li>
+						</tags>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
