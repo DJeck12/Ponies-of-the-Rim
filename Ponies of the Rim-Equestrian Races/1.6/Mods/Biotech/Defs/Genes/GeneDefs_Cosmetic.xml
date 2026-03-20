@@ -185,7 +185,6 @@
 		<label>kirin tail</label>
 		<description>Carriers of this gene grow a brush-like kirin tail.</description>
 		<iconPath>UI/Genes/KirinTail</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
@@ -217,7 +216,6 @@
 		<label>fluffy pony ears</label>
 		<description>Carriers of this gene grow pony-like ears with an extra fluff.</description>
 		<iconPath>UI/Genes/FluffyPonyEars</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
@@ -232,7 +230,6 @@
 		<label>chitin ears</label>
 		<description>Carriers of this gene grow bug-like changeling ears covered by chitin.</description>
 		<iconPath>UI/Genes/ChitinEars</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
@@ -247,7 +244,6 @@
 		<label>antennae ears</label>
 		<description>Carriers of this gene grow bug-like changedling ears, resembling an antennae.</description>
 		<iconPath>UI/Genes/AntennaeEars</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
@@ -262,7 +258,6 @@
 		<label>feather ears</label>
 		<description>Carriers of this gene grow feather ears, resembling bird's crest.</description>
 		<iconPath>UI/Genes/FeatherEars</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>
@@ -277,7 +272,6 @@
 		<label>kirin ears</label>
 		<description>Carriers of this gene grow long pony-like ears with unique color patters.</description>
 		<iconPath>UI/Genes/KirinEars</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>false</randomChosen>

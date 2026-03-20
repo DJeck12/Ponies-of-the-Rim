@@ -11,7 +11,7 @@
 					<xpath>Defs/GeneDef[defName="Headbone_MiniHorns"]</xpath>
 					<value>
 						<exclusionTags>
-							<li>MultiHorns</li>
+							<li>Horns</li>
 						</exclusionTags>
 					</value>
 				</li>
@@ -19,7 +19,7 @@
 					<xpath>Defs/GeneDef[defName="Headbone_CenterHorn"]</xpath>
 					<value>
 						<exclusionTags>
-							<li>SingleHorn</li>
+							<li>Horn</li>
 						</exclusionTags>
 					</value>
 				</li>

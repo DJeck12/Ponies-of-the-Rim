@@ -6,7 +6,6 @@
 		<label>equine head</label>
 		<description>Carriers of this gene have a equine head.</description>
 		<iconPath>UI/Genes/PonyHead</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>40</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<forcedHeadTypes>
@@ -37,7 +36,6 @@
 		<label>pony ears</label>
 		<description>Carriers of this gene grow pony-like ears.</description>
 		<iconPath>UI/Genes/PonyEars</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>45</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<randomChosen>true</randomChosen>
