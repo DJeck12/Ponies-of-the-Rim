@@ -29,17 +29,33 @@ namespace PoniesOfTheRim
             try
             {
                 StatDefOf.GlobalLearningFactor.parts ??= new System.Collections.Generic.List<StatPart>();
-                StatDefOf.GlobalLearningFactor.parts.Add(new StatPart_HiveLink());
-                Log.Message("[PoniesOfTheRim] Bootstrap: ✓ StatPart_HiveLink.");
+                StatDefOf.GlobalLearningFactor.parts.Add(new StatPart_HiveMind());
+                Log.Message("[PoniesOfTheRim] Bootstrap: ✓ StatPart_HiveMind.");
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Bootstrap: ошибка StatPart_HiveLink:\n{ex}");
+                Log.Error($"[PoniesOfTheRim] Bootstrap: ошибка StatPart_HiveMind:\n{ex}");
             }
         }
 
         private static void RegisterCorePatches()
         {
+            PonyMarkVariantSelector.Initialize();
+            TryPatch(
+                AccessTools.Method(typeof(AlienPartGenerator.AlienComp),
+                                   nameof(AlienPartGenerator.AlienComp.CompRenderNodes)),
+                postfix: new HarmonyMethod(typeof(PonyMarkVariantSelector),
+                                           nameof(PonyMarkVariantSelector.CompRenderNodes_Postfix)),
+                label: "AlienComp.CompRenderNodes (mark variants)"
+            );
+
+            TryPatch(
+                AccessTools.Method(typeof(AlienPartGenerator.AlienComp),
+                                   "RegenerateAddonsForced", new Type[0]),
+                postfix: new HarmonyMethod(typeof(PonyMarkVariantSelector),
+                                           nameof(PonyMarkVariantSelector.RegenerateAddonsForced_Postfix)),
+                label: "AlienComp.RegenerateAddonsForced (mark variants)"
+            );
             TryPatch(
                 AccessTools.Method(typeof(PawnFootprintMaker), "TryPlaceFootprint"),
                 prefix: new HarmonyMethod(typeof(HoofprintPatch), nameof(HoofprintPatch.TryPlaceHoofprint)),

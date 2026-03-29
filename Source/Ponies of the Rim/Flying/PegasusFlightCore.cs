@@ -3,8 +3,6 @@ using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -20,6 +18,10 @@ namespace PoniesOfTheRim.Flying
         static PegasusFlightBootstrap()
         {
             var h = Harmony;
+
+            h.Patch(
+                AccessTools.PropertyGetter(typeof(Pawn_DrawTracker), "DrawPos"),
+                postfix: Postfix(typeof(Patch_PawnDrawTracker_DrawPos_BodyBob)));
 
             h.Patch(
                 AccessTools.PropertyGetter(typeof(Pawn), nameof(Pawn.Flying)),
@@ -263,6 +265,30 @@ namespace PoniesOfTheRim.Flying
 
     public class CompPegasusFlightToggle : ThingComp
     {
+        private const string DefaultFlightIcon = "UI/Abilities/Ability_Pegasus";
+
+        private static readonly Dictionary<string, string> RaceFlightIcons = new()
+        {
+            { "Pony_Pegasus",    "UI/Abilities/Ability_Pegasus"    },
+            { "Pony_Alicorn",    "UI/Abilities/Ability_Pegasus"    },
+            { "Pony_Batpony",    "UI/Abilities/Ability_Batpony"    },
+            { "Pony_Griffon",    "UI/Abilities/Ability_Griffon"    },
+            { "Pony_Hippogriff", "UI/Abilities/Ability_Griffon" },
+            { "Pony_Changedling", "UI/Abilities/Ability_Changedling" },
+            { "Pony_Changeling",  "UI/Abilities/Ability_Changeling"  },
+        };
+
+        private static Texture2D GetFlightIcon(Pawn pawn)
+        {
+            if (pawn?.def?.defName != null &&
+                RaceFlightIcons.TryGetValue(pawn.def.defName, out string path))
+            {
+                Texture2D tex = ContentFinder<Texture2D>.Get(path, reportFailure: false);
+                if (tex != null) return tex;
+            }
+            return ContentFinder<Texture2D>.Get(DefaultFlightIcon, reportFailure: false);
+        }
+
         private bool flightEnabled;
 
         public CompPropertiesPegasusFlightToggle Props => (CompPropertiesPegasusFlightToggle)props;
@@ -353,7 +379,7 @@ namespace PoniesOfTheRim.Flying
             {
                 defaultLabel = flightEnabled ? "Disable flight" : "Enable flight",
                 defaultDesc  = $"Toggle pegasus constant flying.\n\nStamina: {timerComp?.CurrentStaminaPercent.ToStringPercent() ?? "N/A"}",
-                icon         = ContentFinder<Texture2D>.Get("UI/Abilities/PegasusFlightToggle", false),
+                icon         = GetFlightIcon(Pawn),
                 action = delegate
                 {
                     if (!flightEnabled && Pawn.Position.Roofed(Pawn.Map))

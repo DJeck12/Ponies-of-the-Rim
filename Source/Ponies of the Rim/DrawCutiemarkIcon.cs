@@ -24,7 +24,7 @@ namespace PoniesOfTheRim
             if (string.IsNullOrEmpty(path)) return;                             
 
             Texture2D image = ContentFinder<Texture2D>.Get(path + "_east", false);      
-            if (image == null) return;                                          
+            if (image == null) return;
 
             GUI.DrawTexture(rect, image);
         }

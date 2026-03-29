@@ -135,8 +135,8 @@ namespace PoniesOfTheRim.Flying
                 pawnType       = PawnRenderNodeProperties.RenderNodePawnType.HumanlikeOnly,
                 useGraphic     = true,
                 framePathPrefix = "Races/Bodies/Wings/PegasusWings",
-                frameCount     = 8,
-                ticksPerFrame  = 3,
+                frameCount     = PegasusWingAnimation.FrameCount,
+                ticksPerFrame  = PegasusWingAnimation.TicksPerFrame,
                 subworkerClasses = new List<Type>
                 {
                     typeof(PonyRenderSubWorkerPegasusWings)

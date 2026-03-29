@@ -177,6 +177,20 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 			<nameGenerator>NameGeneratorPegasus</nameGenerator>
 			<body>Pony_PegasusBody</body>
 		</race>
+		
+		<modExtensions>
+			<li Class="PoniesOfTheRim.MarkGenerationExtension">
+				<bodyMarkChance>0.1</bodyMarkChance>
+				<bodyMarkVariants>9</bodyMarkVariants>
+				<headMarkChance>0.1</headMarkChance>
+				<headMarkVariantsMale>8</headMarkVariantsMale>
+				<headMarkVariantsFemale>8</headMarkVariantsFemale>
+				<noMarkBackstories>
+					<li>Pony_Fluttershy_Adult</li>
+					<li>Pony_RainbowDash_Adult</li>
+				</noMarkBackstories>
+			</li>
+		</modExtensions>
 
 	</AlienRace.ThingDef_AlienRace>
 

@@ -186,6 +186,20 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 			<nameGenerator>NameGeneratorUnicorn</nameGenerator>
 			<body>Pony_UnicornBody</body>
 		</race>
+		
+		<modExtensions>
+			<li Class="PoniesOfTheRim.MarkGenerationExtension">
+				<bodyMarkChance>0.1</bodyMarkChance>
+				<bodyMarkVariants>9</bodyMarkVariants>
+				<headMarkChance>0.1</headMarkChance>
+				<headMarkVariantsMale>8</headMarkVariantsMale>
+				<headMarkVariantsFemale>8</headMarkVariantsFemale>
+				<noMarkBackstories>
+					<li>Pony_Rarity_Adult</li>
+					<li>Pony_TwilightSparkle_Adult</li>
+				</noMarkBackstories>
+			</li>
+		</modExtensions>
 
 	</AlienRace.ThingDef_AlienRace>
 
