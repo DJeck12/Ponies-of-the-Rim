@@ -114,12 +114,14 @@
     <Compile Include="Flying\PegasusFlightPatches.cs" />
     <Compile Include="Flying\PegasusFlightStats.cs" />
     <Compile Include="Flying\Pegasuskiteutil.cs" />
+    <Compile Include="Flying\PegasusWingAnimation.cs" />
     <Compile Include="Flying\PegasusWingsRendering.cs" />
     <Compile Include="FootprintCycleTracker.cs" />
     <Compile Include="Harmony_CrystalPonyCrystalizeGraphicsBootstrap.cs" />
-    <Compile Include="Harmony_HiveLink.cs" />
-    <Compile Include="HiveLink.cs" />
+    <Compile Include="Harmony_HiveMind.cs" />
+    <Compile Include="Gene_HiveMind.cs" />
     <Compile Include="Harmony_OviparousHediffPregnantTick.cs" />
+    <Compile Include="PonyMarkGenerationExtension.cs" />
     <Compile Include="OviparousPregnancyUtility.cs" />
     <Compile Include="Harmony_Bootstrap.cs" />
     <Compile Include="Harmony_LifestageworkerHumanlikeChildNotify.cs" />
@@ -140,7 +142,7 @@
     <Compile Include="Harmony_CommsConsolePatch.cs" />
     <Compile Include="CommsConsoleExtension.cs" />
     <Compile Include="FactionIncidentCooldown.cs" />
-    <Compile Include="PonyRandomBodyAddonCondition.cs" />
+    <Compile Include="PonyMarkVariantSelector.cs" />
     <Compile Include="Harmony_PatchesForPonySettings.cs" />
     <Compile Include="PatchOperation\PatchOperationToggleableAdd.cs" />
     <Compile Include="PatchOperation\PatchOperationToggleableReplace.cs" />

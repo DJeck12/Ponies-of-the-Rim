@@ -773,4 +773,78 @@ namespace PoniesOfTheRim.Flying
             }
         }
     }
+
+
+    public static class Patch_PawnRenderNode_OffsetFor_BodyBob
+    {
+        private const float BobAmplitude = 0.012f;
+ 
+        public static void Postfix(
+            PawnRenderNode node,
+            PawnDrawParms  parms,
+            ref Vector3    __result)
+        {
+            try
+            {
+                if (node?.Props?.tagDef != PawnRenderNodeTagDefOf.Body)
+                    return;
+ 
+                Pawn pawn = parms.pawn;
+                if (pawn == null || !pawn.HasWings())
+                    return;
+ 
+                var toggle = pawn.TryGetComp<CompPegasusFlightToggle>();
+                if (toggle?.FlightEnabled != true)
+                    return;
+ 
+                if (parms.Portrait)
+                    return;
+                if (pawn.GetPosture() != PawnPosture.Standing)
+                    return;
+ 
+                __result.z += PegasusWingAnimation.BodyBobZ(BobAmplitude);
+            }
+            catch (Exception e)
+            {
+                Log.Warning(
+                    $"[PoniesOfTheRim] Patch_PawnRenderNode_OffsetFor_BodyBob.Postfix: {e}");
+            }
+        }
+    }
+
+
+    public static class Patch_PawnDrawTracker_DrawPos_BodyBob
+    {
+        private static readonly FieldInfo FiPawn =
+            AccessTools.Field(typeof(Pawn_DrawTracker), "pawn");
+
+        private const float BobAmplitude = 0.012f;
+
+        public static void Postfix(Pawn_DrawTracker __instance, ref Vector3 __result)
+        {
+            try
+            {
+                Pawn pawn = FiPawn?.GetValue(__instance) as Pawn;
+                if (pawn == null || !pawn.HasWings())
+                    return;
+
+                var toggle = pawn.TryGetComp<CompPegasusFlightToggle>();
+                if (toggle?.FlightEnabled != true)
+                    return;
+
+                if (!pawn.Spawned || pawn.Map == null)
+                    return;
+                if (pawn.GetPosture() != PawnPosture.Standing)
+                    return;
+
+                __result.z += PegasusWingAnimation.BodyBobZ(BobAmplitude);
+            }
+            catch (Exception e)
+            {
+                Log.Warning(
+                    $"[PoniesOfTheRim] Patch_PawnDrawTracker_DrawPos_BodyBob.Postfix: {e}");
+            }
+        }
+    }
+
 }

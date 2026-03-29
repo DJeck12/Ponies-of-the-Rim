@@ -172,6 +172,20 @@ Although the name "<color=#4FFF4F>earth pony</color>" indicates a connection wit
 			<nameGenerator>NameGeneratorEarth</nameGenerator>
 			<body>Pony_EarthponyBody</body>
 		</race>
+		
+		<modExtensions>
+			<li Class="PoniesOfTheRim.MarkGenerationExtension">
+				<bodyMarkChance>0.1</bodyMarkChance>
+				<bodyMarkVariants>9</bodyMarkVariants>
+				<headMarkChance>0.1</headMarkChance>
+				<headMarkVariantsMale>8</headMarkVariantsMale>
+				<headMarkVariantsFemale>8</headMarkVariantsFemale>
+				<noMarkBackstories>
+					<li>Pony_Applejack_Adult</li>
+					<li>Pony_PinkiePie_Adult</li>
+				</noMarkBackstories>
+			</li>
+		</modExtensions>
 
 	</AlienRace.ThingDef_AlienRace>
 

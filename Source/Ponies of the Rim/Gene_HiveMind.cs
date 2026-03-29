@@ -1,14 +1,10 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace PoniesOfTheRim
 {
-public class Gene_HiveLink : Gene
+public class Gene_HiveMind : Gene
 {
     private const float BONUS_SMALL_HIVE = 0.05f; // +5% при <11 носителях
     private const float BONUS_LARGE_HIVE = 0.03f;  // +3% при >=11 носителях
@@ -78,7 +74,7 @@ public class Gene_HiveLink : Gene
     }
 }
 
-    public class MapComponent_HiveLink : MapComponent
+    public class MapComponent_HiveMind : MapComponent
     {
         private const int CHECK_INTERVAL = 250;
         private int lastCheckTick = -1;
@@ -86,7 +82,7 @@ public class Gene_HiveLink : Gene
         private Dictionary<Faction, HashSet<Pawn>> hiveMembersCache
             = new Dictionary<Faction, HashSet<Pawn>>();
 
-        public MapComponent_HiveLink(Map map) : base(map) { }
+        public MapComponent_HiveMind(Map map) : base(map) { }
 
         public override void MapComponentTick()
         {

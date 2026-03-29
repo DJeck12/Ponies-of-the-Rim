@@ -48,6 +48,10 @@
 		<displayOrderInCategory>30</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<geneClass>PoniesOfTheRim.Gene_HiveMind</geneClass>
+		<exclusionTags>
+			<li>Pony_ChangelingBonus</li>
+		</exclusionTags>
 		<customEffectDescriptions>
 			<li>Increasing skill learning speed per hive-linked colonists by 5%.</li>
 			<li>Drops to 3% after 12 colonists.</li>

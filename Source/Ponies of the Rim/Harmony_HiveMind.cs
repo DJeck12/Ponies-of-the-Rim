@@ -9,11 +9,11 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-public class StatPart_HiveLink : StatPart
+public class StatPart_HiveMind : StatPart
 {
     private const float BONUS_SMALL_HIVE = 0.05f;
     private const float BONUS_LARGE_HIVE = 0.03f;
-    private const int LARGE_HIVE_THRESHOLD = 11;
+    private const int LARGE_HIVE_THRESHOLD = 12;
 
     public override void TransformValue(StatRequest req, ref float val)
     {
@@ -33,7 +33,7 @@ public class StatPart_HiveLink : StatPart
             if (bonus > 0f)
             {
                 int count = GetMemberCount(pawn);
-                return "Pony_HiveLink_StatDesc"
+                return "Pony_HiveMind_StatDesc"
                     .Translate(count) + ": +"
                     + bonus.ToStringPercent();
             }
@@ -58,8 +58,8 @@ public class StatPart_HiveLink : StatPart
     {
         if (ModsConfig.BiotechActive)
         {
-            Gene_HiveLink gene = pawn.genes?.GenesListForReading
-                .OfType<Gene_HiveLink>()
+            Gene_HiveMind gene = pawn.genes?.GenesListForReading
+                .OfType<Gene_HiveMind>()
                 .FirstOrDefault(g => g.Active);
 
             if (gene != null)
@@ -71,7 +71,7 @@ public class StatPart_HiveLink : StatPart
                 && (pawn.IsChangeling() || pawn.IsChangedling()))
             {
                 var comp = pawn.Map
-                    .GetComponent<MapComponent_HiveLink>();
+                    .GetComponent<MapComponent_HiveMind>();
                 if (comp != null)
                     return comp.GetHiveMemberCount(pawn);
             }
