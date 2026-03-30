@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Pony_Hatching</defName>
+		<label>egg hatching</label>
+		<description>Develop improved methods for safe and faster incubation of eggs for both animals and griffons.</description>
+		<tab>Pony</tab>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>1.40</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->egg hatching</li>
+
+				<li>subject_story->worked as a poultry farmer raising chicks</li>
+				<li>subject_story->built nesting systems for raising griffons</li>
+				<li>subject_story->was responsible for caring for and protecting the eggs from extreme temperatures</li>
+
+				<li>subject_gerund->building nests</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+</Defs>

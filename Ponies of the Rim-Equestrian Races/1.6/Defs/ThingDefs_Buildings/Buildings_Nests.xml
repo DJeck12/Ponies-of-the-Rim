@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Pony_Nest</defName>
+		<label>nest</label>
+		<description>A neatly woven bird's nest made of wooden twigs. Birds and griffons use nests like this to safely raise their young. It protects eggs from deteriorating and maintains a safe temperature above freezing, even outdoors.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<fillPercent>0.2</fillPercent>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<designationCategory>Misc</designationCategory>
+		<uiOrder>2060</uiOrder>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Building/Misc/EggBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(1,1,1)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(1,1,1,1)</rect>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Mass>3</Mass>
+		</statBases>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<building>
+			<paintable>true</paintable>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>EggsFertilized</li>
+					</categories>
+					<thingDefs>
+						<li>Pony_AvianEgg</li>
+					</thingDefs>
+					<specialFiltersToDisallow>
+						<li>AllowRotten</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>EggsFertilized</li>
+					</categories>
+					<thingDefs>
+						<li>Pony_AvianEgg</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<researchPrerequisites>
+			<li>Pony_Hatching</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>0.5</heatPerSecond>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

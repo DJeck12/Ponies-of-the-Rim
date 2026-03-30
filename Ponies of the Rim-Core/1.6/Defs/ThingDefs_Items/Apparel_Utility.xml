@@ -5,7 +5,7 @@
 		<defName>Pony_SaddleBag</defName>
 		<label>saddle bag</label>
 		<description>A simple saddle bag, usually worn by ponies during adventures. Greatly increases the carry weight of the wearer.</description>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<recipeUsers>
@@ -13,6 +13,7 @@
 				<li>HandTailoringBench</li>
 				<li>ElectricTailoringBench</li>
 			</recipeUsers>
+			<researchPrerequisite>Pony_Clothing</researchPrerequisite>
 			<useIngredientsForColor>false</useIngredientsForColor>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -79,7 +80,10 @@
 		<techLevel>Industrial</techLevel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisites>
+				<li>Pony_Clothing</li>
+				<li>Machining</li>
+			</researchPrerequisites>
 			<useIngredientsForColor>false</useIngredientsForColor>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

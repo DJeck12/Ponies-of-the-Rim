@@ -106,6 +106,9 @@
 		<techHediffsTags>
 			<li>Simple</li>
 		</techHediffsTags>
+		<recipeMaker>
+			<researchPrerequisite>Pony_Prosthetics</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
@@ -212,6 +215,9 @@
 		<techHediffsTags>
 			<li>Simple</li>
 		</techHediffsTags>
+		<recipeMaker>
+			<researchPrerequisite>Pony_Prosthetics</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
@@ -287,6 +293,12 @@
 		<statBases>
 			<Mass>5</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Pony_Prosthetics</li>
+				<li>Bionics</li>
+			</researchPrerequisites>
+		</recipeMaker>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
@@ -491,6 +503,12 @@
 		<statBases>
 			<Mass>1</Mass>
 		</statBases>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Pony_Prosthetics</li>
+				<li>Bionics</li>
+			</researchPrerequisites>
+		</recipeMaker>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">

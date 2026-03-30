@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Pony_Clothing</defName>
+		<label>equine clothing</label>
+		<description>Tailor garments designed for quadruped creatures, such as saddle bags.</description>
+		<tab>Pony</tab>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>4.20</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->tailoring</li>
+
+				<li>subject_story->tailored hard-wearing clothes for urbworld cityfolk</li>
+				<li>subject_story->would relax by sewing and telling stories to the village children</li>
+				<li>subject_story->learned to craft clothing to be worn at [ANYPAWN_possessive] troupe's grand performances</li>
+
+				<li>subject_gerund->tailoring clothes</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Pony_Prosthetics</defName>
+		<label>equine prosthetics</label>
+		<description>Build prosthetic body parts designed for quadruped creatures to replace lost wings or horns. Requires a skilled doctor to attach.</description>
+		<tab>Pony</tab>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Prosthetics</li>
+		</prerequisites>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>2.80</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->prosthesis</li>
+
+				<li>subject_story->had a limb replaced with a prosthetic, to show how easy it was</li>
+				<li>subject_story->opened a prosthetics clinic</li>
+				<li>subject_story->began crafting bespoke fake limbs for the many war veterans in the area</li>
+
+				<li>subject_gerund->crafting prosthetics</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+</Defs>
