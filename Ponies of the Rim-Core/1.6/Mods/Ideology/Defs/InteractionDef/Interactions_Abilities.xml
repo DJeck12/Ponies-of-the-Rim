@@ -6,7 +6,7 @@
 		<label>glimpse of fate</label>
 		<workerClass>InteractionWorker</workerClass>
 		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
-		<symbol>Motes/Glimpse</symbol>
+		<symbol>UI/Abilities/Glimpse</symbol>
 		<logRulesInitiator>
 			<rulesStrings>
 				<li>r_logentry->[INITIATOR_nameDef] foretold the future of [RECIPIENT_nameDef] and suggested [PAWN_objective] to join our community.</li>
