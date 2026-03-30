@@ -42,7 +42,7 @@
 			<graphicClass>Graphic_MotePulse</graphicClass>
 			<shaderType>RitualOutline</shaderType>
 			<color>(255, 115, 200)</color>
-			<texPath>Motes/Gem</texPath>
+			<texPath>Things/Mote/Gem</texPath>
 			<shaderParameters>
 				<_GradientTex>/Things/Mote/RitualEffects/DustyGradient</_GradientTex>
 				<_ScrollSpeed>0.25</_ScrollSpeed>
@@ -66,7 +66,7 @@
 			<graphicClass>Graphic_MotePulse</graphicClass>
 			<shaderType>RitualGlowSingleRay</shaderType>
 			<color>(255, 115, 200)</color>
-			<texPath>Motes/Twilight</texPath>
+			<texPath>Things/Mote/Twilight</texPath>
 			<shaderParameters>
 				<_ExtraTex>/Things/Mote/RitualEffects/GlowRays</_ExtraTex>
 				<_ScrollSpeed>0.13</_ScrollSpeed>
@@ -83,7 +83,7 @@
 			<graphicClass>Graphic_Fleck</graphicClass>
 			<shaderType>MoteGlow</shaderType>
 			<color>(255, 115, 200)</color>
-			<texPath>Motes/Star</texPath>
+			<texPath>Things/Mote/Star</texPath>
 			<drawSize>(0.5, 0.5)</drawSize>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>

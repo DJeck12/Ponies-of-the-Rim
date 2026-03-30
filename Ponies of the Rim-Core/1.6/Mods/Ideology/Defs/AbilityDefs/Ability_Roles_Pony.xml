@@ -39,7 +39,7 @@
 		<hotKey>Misc12</hotKey>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<warmupSound>MoralistAbility_Warmup</warmupSound>
-		<warmupMoteSocialSymbol>Motes/Glimpse</warmupMoteSocialSymbol>
+		<warmupMoteSocialSymbol>UI/Abilities/Glimpse</warmupMoteSocialSymbol>
 		<stunTargetWhileCasting>true</stunTargetWhileCasting>
 		<groupDef>Pony_Glimpse</groupDef>
 		<showPsycastEffects>False</showPsycastEffects>
