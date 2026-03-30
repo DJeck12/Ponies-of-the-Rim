@@ -32,7 +32,7 @@
 						<drawData>
 							<defaultData>
 								<layer>56</layer>
-								<offset>(0, 0, -0.24)</offset>
+								<offset>(0, 0, -0.25)</offset>
 							</defaultData>
 							<dataWest>
 								<flip>true</flip>
@@ -57,7 +57,7 @@
 						<drawData>
 							<defaultData>
 								<layer>56</layer>
-								<offset>(0, 0, -0.24)</offset>
+								<offset>(0, 0, -0.25)</offset>
 							</defaultData>
 							<dataWest>
 								<flip>true</flip>

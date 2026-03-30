@@ -37,10 +37,10 @@
 							<drawSize>0.14</drawSize>
 							<side>Right</side>
 							<drawData>
-							<defaultData>
-								<layer>54</layer>
-								<offset>(0, 0, -0.24)</offset>
-							</defaultData>
+								<defaultData>
+									<layer>54</layer>
+									<offset>(0, 0, -0.25)</offset>
+								</defaultData>
 							</drawData>
 							<subworkerClasses>
 								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
@@ -61,14 +61,14 @@
 							<drawSize>0.14</drawSize>
 							<side>Left</side>
 							<drawData>
-							<defaultData>
-								<layer>54</layer>
-								<offset>(0, 0, -0.24)</offset>
-								<flip>true</flip>
-							</defaultData>
-							<dataWest>
-								<flip>false</flip>
-							</dataWest>
+								<defaultData>
+									<layer>54</layer>
+									<offset>(0, 0, -0.25)</offset>
+									<flip>true</flip>
+								</defaultData>
+								<dataWest>
+									<flip>false</flip>
+								</dataWest>
 							</drawData>
 							<subworkerClasses>
 								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
@@ -89,10 +89,10 @@
 							<drawSize>0.14</drawSize>
 							<side>Right</side>
 							<drawData>
-							<defaultData>
-								<layer>54</layer>
-								<offset>(0, 0, -0.24)</offset>
-							</defaultData>
+								<defaultData>
+									<layer>54</layer>
+									<offset>(0, 0, -0.25)</offset>
+								</defaultData>
 							</drawData>
 							<subworkerClasses>
 								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
@@ -113,14 +113,14 @@
 							<drawSize>0.14</drawSize>
 							<side>Left</side>
 							<drawData>
-							<defaultData>
-								<layer>54</layer>
-								<offset>(0, 0, -0.24)</offset>
-								<flip>true</flip>
-							</defaultData>
-							<dataWest>
-								<flip>false</flip>
-							</dataWest>
+								<defaultData>
+									<layer>54</layer>
+									<offset>(0, 0, -0.25)</offset>
+									<flip>true</flip>
+								</defaultData>
+								<dataWest>
+									<flip>false</flip>
+								</dataWest>
 							</drawData>
 							<subworkerClasses>
 								<li>PoniesOfTheRim.NoPawnRenderSubWorkerEye</li>
