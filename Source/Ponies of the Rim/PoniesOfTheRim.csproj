@@ -100,7 +100,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\AbilitiesBootstrap.cs" />
     <Compile Include="Abilities\AbilityRaceIconExtension.cs" />
+    <Compile Include="Abilities\AbilityToggleEnforcer.cs" />
+    <Compile Include="Abilities\AbilityToggleExtension.cs" />
     <Compile Include="Abilities\GizmoIconShortFlightSwap.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityHorn.cs" />
     <Compile Include="Abilities\HediffGiver_AbilityWings.cs" />

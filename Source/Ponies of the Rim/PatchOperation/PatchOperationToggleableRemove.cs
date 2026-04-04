@@ -10,6 +10,8 @@ namespace PoniesOfTheRim.PatchOperation
         public string xpath;
         public string settingId;
         public bool defaultState;
+        public string label;
+        public string description;
 
         protected bool CanRun()
         {
