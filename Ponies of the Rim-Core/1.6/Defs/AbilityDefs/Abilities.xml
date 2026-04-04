@@ -19,6 +19,12 @@
 		<hotKey>Misc1</hotKey>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Abilities.AbilityToggleExtension">
+				<settingLabel>Nature Muse</settingLabel>
+				<defaultEnabled>true</defaultEnabled>
+			</li>
+		</modExtensions>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<violent>false</violent>
@@ -111,6 +117,10 @@
 			  </li>
 			</raceIcons>
 		  </li>
+			<li Class="PoniesOfTheRim.Abilities.AbilityToggleExtension">
+				<settingLabel>Short Flight</settingLabel>
+				<defaultEnabled>true</defaultEnabled>
+			</li>
 		</modExtensions>
 	</AbilityDef>
 
@@ -123,6 +133,12 @@
 		<hotKey>Misc1</hotKey>
 		<cooldownTicksRange>900</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Abilities.AbilityToggleExtension">
+				<settingLabel>Magic Burst</settingLabel>
+				<defaultEnabled>true</defaultEnabled>
+			</li>
+		</modExtensions>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>

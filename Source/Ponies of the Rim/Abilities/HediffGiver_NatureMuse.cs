@@ -17,7 +17,7 @@ namespace PoniesOfTheRim.Abilities
 
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            if (!Settings.abilities)
+            if (!Settings.IsAbilityEnabled(ability.defName))
             {
                 pawn.abilities.RemoveAbility(ability);
                 return;

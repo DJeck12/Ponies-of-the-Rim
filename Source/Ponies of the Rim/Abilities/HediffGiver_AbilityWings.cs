@@ -9,9 +9,15 @@ namespace PoniesOfTheRim.Abilities
     {
         public AbilityDef ability;
 
+        private static PoniesOfTheRimSettingsData _cachedSettings;
+        private static PoniesOfTheRimSettingsData Settings =>
+            _cachedSettings ??= LoadedModManager
+                .GetMod<PoniesOfTheRimSettings>()
+                .GetSettings<PoniesOfTheRimSettingsData>();
+
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            if (!LoadedModManager.GetMod<PoniesOfTheRimSettings>().GetSettings<PoniesOfTheRimSettingsData>().abilities)
+            if (!Settings.IsAbilityEnabled(ability.defName))
             {
                 pawn.abilities.RemoveAbility(ability);
                 return;
@@ -20,7 +26,7 @@ namespace PoniesOfTheRim.Abilities
             int numNaturalWing    = GetNumNaturalWing(pawn, partsToAffect);
             int numProstheticWing = GetNumProstheticWing(pawn, partsToAffect);
 
-            bool hasEnoughWings = numNaturalWing == 2
+            bool hasEnoughWings = numNaturalWing    == 2
                 || (numNaturalWing == 1 && numProstheticWing == 1)
                 || numProstheticWing == 2;
 
@@ -40,7 +46,8 @@ namespace PoniesOfTheRim.Abilities
                 if (pawn.health.hediffSet.IsBionicOrImplant(partDef))
                     continue;
 
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts.Where(p => p.def == partDef))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
+                    .Where(p => p.def == partDef))
                 {
                     if (!pawn.health.hediffSet.PartIsMissing(record))
                         count++;
@@ -57,7 +64,8 @@ namespace PoniesOfTheRim.Abilities
                 if (!pawn.health.hediffSet.IsBionicOrImplant(partDef))
                     continue;
 
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts.Where(p => p.def == partDef))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
+                    .Where(p => p.def == partDef))
                 {
                     if (!pawn.health.hediffSet.PartIsMissing(record))
                         count++;
@@ -74,10 +82,11 @@ namespace PoniesOfTheRim.Abilities
                 if (pawn.health.hediffSet.IsBionicOrImplant(partDef))
                     continue;
 
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts.Where(p => p.def == partDef))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
+                    .Where(p => p.def == partDef))
                 {
-                    if (!pawn.health.hediffSet.PartIsMissing(record)
-                        && !pawn.health.hediffSet.HasHediff(hediff, record))
+                    if (!pawn.health.hediffSet.PartIsMissing(record) &&
+                        !pawn.health.hediffSet.HasHediff(hediff, record))
                     {
                         pawn.health.AddHediff(hediff, record);
                         anyAdded = true;

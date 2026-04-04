@@ -10,6 +10,8 @@ namespace PoniesOfTheRim.PatchOperation
         public List<Verse.PatchOperation> operations;
         public Verse.PatchOperation lastFailedOperation;
         public bool defaultState;
+        public string label;
+        public string description;
 
         protected bool CanRun()
         {
