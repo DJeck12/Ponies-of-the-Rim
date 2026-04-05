@@ -6,9 +6,9 @@ namespace PoniesOfTheRim.UniquePonies
     {
         public string KindDefName;
 
-        public bool UseSingleName;       
+        public bool UseSingleName;
         public string FirstName;
-        public string NickName;                
+        public string NickName;
         public string LastName;
 
         public int? CutiemarkVariant;
@@ -17,97 +17,103 @@ namespace PoniesOfTheRim.UniquePonies
         public int? BodyVariant;
 
         public string AdultBackstoryDefName;
+
+        public string FallbackKindDefName;
     }
 
-     public static class UniquePawnConfig
+    public static class UniquePawnConfig
     {
         public static readonly List<UniqueCharacterConfig> Characters = new()
         {
             new UniqueCharacterConfig
             {
-                KindDefName = "Pony_Applejack",
-                UseSingleName = true,
-                NickName = "Applejack",
+                KindDefName           = "Pony_Applejack",
+                UseSingleName         = true,
+                NickName              = "Applejack",
                 AdultBackstoryDefName = "Pony_Applejack_Adult",
-                CutiemarkVariant = 68,
-                TailVariant = 2,
-                HeadVariant = 0,
-                BodyVariant = 0,
+                CutiemarkVariant      = 68,
+                TailVariant           = 2,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_EarthponyColonist",       
             },
             new UniqueCharacterConfig
             {
-                KindDefName = "Pony_Rarity",
-                UseSingleName = true,
-                NickName = "Rarity",
+                KindDefName           = "Pony_Rarity",
+                UseSingleName         = true,
+                NickName              = "Rarity",
                 AdultBackstoryDefName = "Pony_Rarity_Adult",
-                CutiemarkVariant = 154,
-                TailVariant = null,
-                HeadVariant = null,
-                BodyVariant = null,
+                CutiemarkVariant      = 154,
+                TailVariant           = 4,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_UnicornColonist",       
             },
             new UniqueCharacterConfig
             {
-                KindDefName = "Pony_Fluttershy",
-                UseSingleName = true,
-                NickName = "Fluttershy",
+                KindDefName           = "Pony_Fluttershy",
+                UseSingleName         = true,
+                NickName              = "Fluttershy",
                 AdultBackstoryDefName = "Pony_Fluttershy_Adult",
-                CutiemarkVariant = 159,
-                TailVariant = null,
-                HeadVariant = null,
-                BodyVariant = null,
+                CutiemarkVariant      = 159,
+                TailVariant           = 5,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_PegasusColonist",       
             },
             new UniqueCharacterConfig
             {
-                KindDefName = "Pony_PinkiePie",
-                UseSingleName = false,
-                FirstName = "Pinkie",
-                NickName = "Pinkie Pie",
-                LastName = "Pie",
+                KindDefName           = "Pony_PinkiePie",
+                UseSingleName         = false,
+                FirstName             = "Pinkie",
+                NickName              = "Pinkie Pie",
+                LastName              = "Pie",
                 AdultBackstoryDefName = "Pony_PinkiePie_Adult",
-                CutiemarkVariant = 155,
-                TailVariant = null,
-                HeadVariant = null,
-                BodyVariant = null,
+                CutiemarkVariant      = 155,
+                TailVariant           = 3,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_EarthponyColonist",       
             },
             new UniqueCharacterConfig
             {
-                KindDefName = "Pony_RainbowDash",
-                UseSingleName = false,
-                FirstName = "Rainbow",
-                NickName = "Rainbow Dash",
-                LastName = "Dash",
+                KindDefName           = "Pony_RainbowDash",
+                UseSingleName         = false,
+                FirstName             = "Rainbow",
+                NickName              = "Rainbow Dash",
+                LastName              = "Dash",
                 AdultBackstoryDefName = "Pony_RainbowDash_Adult",
-                CutiemarkVariant = 156,
-                TailVariant = null,
-                HeadVariant = null,
-                BodyVariant = null,
+                CutiemarkVariant      = 156,
+                TailVariant           = 0,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_PegasusColonist",       
             },
             new UniqueCharacterConfig
             {
-                KindDefName = "Pony_TwilightSparkle",
-                UseSingleName = false,
-                FirstName = "Twilight",
-                NickName = "Twilight",
-                LastName = "Sparkle",
+                KindDefName           = "Pony_TwilightSparkle",
+                UseSingleName         = false,
+                FirstName             = "Twilight",
+                NickName              = "Twilight",
+                LastName              = "Sparkle",
                 AdultBackstoryDefName = "Pony_TwilightSparkle_Adult",
-                CutiemarkVariant = 153,
-                TailVariant = null,
-                HeadVariant = null,
-                BodyVariant = null,
+                CutiemarkVariant      = 153,
+                TailVariant           = 1,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_UnicornColonist",       
             },
-                                                                                                                                                                                };
+        };
 
         private static Dictionary<string, UniqueCharacterConfig> _byKindDef;
         public static Dictionary<string, UniqueCharacterConfig> ByKindDef
         {
             get
             {
-                if (_byKindDef == null)
-                {
-                    _byKindDef = new Dictionary<string, UniqueCharacterConfig>();
-                    foreach (var c in Characters)
-                        _byKindDef[c.KindDefName] = c;
-                }
+                if (_byKindDef != null) return _byKindDef;
+                _byKindDef = new Dictionary<string, UniqueCharacterConfig>();
+                foreach (var c in Characters)
+                    _byKindDef[c.KindDefName] = c;
                 return _byKindDef;
             }
         }
@@ -117,22 +123,17 @@ namespace PoniesOfTheRim.UniquePonies
         {
             get
             {
-                if (_byBackstory == null)
-                {
-                    _byBackstory = new Dictionary<string, UniqueCharacterConfig>();
-                    foreach (var c in Characters)
-                    {
-                        if (!string.IsNullOrEmpty(c.AdultBackstoryDefName))
-                            _byBackstory[c.AdultBackstoryDefName] = c;
-                    }
-                }
+                if (_byBackstory != null) return _byBackstory;
+                _byBackstory = new Dictionary<string, UniqueCharacterConfig>();
+                foreach (var c in Characters)
+                    if (!string.IsNullOrEmpty(c.AdultBackstoryDefName))
+                        _byBackstory[c.AdultBackstoryDefName] = c;
                 return _byBackstory;
             }
         }
 
         public static readonly Dictionary<string, int> BackstoryCutiemark = new()
         {
-            // Adulthood
             { "Pony_EveryponyNightFanatic",      9 },
             { "Pony_EveryponyDayFanatic",       10 },
             { "Pony_EarthponyAnimalHandler",    35 },
@@ -161,7 +162,6 @@ namespace PoniesOfTheRim.UniquePonies
             { "Pony_EarthponyFlorist",         275 },
             { "Pony_PegasusCloudSculptor",     276 },
 
-            // Childhood
             { "Pony_EveryponyDarkChild",         9 },
             { "Pony_EveryponyLightChild",       10 },
             { "Pony_EveryponyMagicStudent",     19 },

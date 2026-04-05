@@ -50,6 +50,12 @@ namespace PoniesOfTheRim
             );
 
             TryPatch(
+                AccessTools.PropertyGetter(typeof(NameTriple), nameof(NameTriple.IsValid)),
+                postfix: new HarmonyMethod(typeof(Patch_DialogNamePawn_SingleName),
+                                           nameof(Patch_DialogNamePawn_SingleName.IsValid_Postfix))
+            );
+
+            TryPatch(
                 AccessTools.Method(typeof(AlienPartGenerator.AlienComp),
                                    "RegenerateAddonsForced", new Type[0]),
                 postfix: new HarmonyMethod(typeof(PonyMarkVariantSelector),

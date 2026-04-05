@@ -75,12 +75,13 @@ namespace PoniesOfTheRim.UniquePonies
             var factionRaces = BuildFactionRaceMap();
 
             var uniques = UniquePawnConfig.Characters
-                .Select(c => DefDatabase<PawnKindDef>.GetNamedSilentFail(c.KindDefName))
+                .Select(c => DefDatabase<PawnKindDef>.GetNamed(c.KindDefName, errorOnFail: false))
                 .Where(k => k != null)
                 .ToList();
 
-            var playerPawns = PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists?.ToList()
-                              ?? new List<Pawn>();
+            var playerPawns =
+                PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists?.ToList()
+                ?? new List<Pawn>();
 
             foreach (var kind in uniques)
             {
@@ -99,9 +100,8 @@ namespace PoniesOfTheRim.UniquePonies
 
                 var candidateFactions = Find.FactionManager.AllFactionsListForReading
                     .Where(f =>
-                        f != Faction.OfPlayer &&
-                        !f.Hidden &&
                         !f.IsPlayer &&
+                        !f.Hidden &&
                         !f.defeated &&
                         factionRaces.TryGetValue(f.def, out var races) &&
                         races.Contains(targetRace))
@@ -117,20 +117,20 @@ namespace PoniesOfTheRim.UniquePonies
                     targetFaction,
                     PawnGenerationContext.NonPlayer,
                     tile: -1,
-                    forceGenerateNewPawn: true,
-                    allowDead: false,
-                    allowDowned: false,
-                    canGeneratePawnRelations: false,
-                    mustBeCapableOfViolence: false,
+                    forceGenerateNewPawn:        true,
+                    allowDead:                   false,
+                    allowDowned:                 false,
+                    canGeneratePawnRelations:    false,
+                    mustBeCapableOfViolence:     false,
                     colonistRelationChanceFactor: 0f,
                     forceAddFreeWarmLayerIfNeeded: false,
-                    allowGay: true,
-                    allowPregnant: true,
-                    allowFood: true,
-                    allowAddictions: false,
-                    inhabitant: false,
-                    certainlyBeenInCryptosleep: false,
-                    forceNoBackstory: false
+                    allowGay:                    true,
+                    allowPregnant:               true,
+                    allowFood:                   true,
+                    allowAddictions:             false,
+                    inhabitant:                  false,
+                    certainlyBeenInCryptosleep:  false,
+                    forceNoBackstory:            false
                 );
 
                 var pawn = PawnGenerator.GeneratePawn(req);
