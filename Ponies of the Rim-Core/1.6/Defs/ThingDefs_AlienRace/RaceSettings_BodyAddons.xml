@@ -329,12 +329,12 @@
 						<path>Races/Tails/Zebra/Tail_Zebra</path>
 					</Race>
 				<!-- Unique Characters -->
-					<Backstory For="Pony_Applejack_Adult">Races/Tails/Pony/Pony_Tail2</Backstory>
+<!-- 					<Backstory For="Pony_Applejack_Adult">Races/Tails/Pony/Pony_Tail2</Backstory>
 					<Backstory For="Pony_Rarity_Adult">Races/Tails/Pony/Pony_Tail4</Backstory>
 					<Backstory For="Pony_Fluttershy_Adult">Races/Tails/Pony/Pony_Tail5</Backstory>
 					<Backstory For="Pony_PinkiePie_Adult">Races/Tails/Pony/Pony_Tail3</Backstory>
 					<Backstory For="Pony_RainbowDash_Adult">Races/Tails/Pony/Pony_Tail0</Backstory>
-					<Backstory For="Pony_TwilightSparkle_Adult">Races/Tails/Pony/Pony_Tail1</Backstory>
+					<Backstory For="Pony_TwilightSparkle_Adult">Races/Tails/Pony/Pony_Tail1</Backstory> -->
 				<!-- Child -->
 					<Age For="PonyBaby">Races/Tails/Pony/Pony_Tail12</Age>
 				</extendedGraphics>

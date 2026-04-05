@@ -11,7 +11,7 @@ namespace PoniesOfTheRim.UniquePonies
     [StaticConstructorOnStartup]
     public static class UniquePawnsBootstrap
     {
-        public const string HarmonyId = "Rimworld.Pony.PoniesOfTheRim.UniquePawns";
+        public const string HarmonyId = "Rimworld.PoniesOfTheRim.UniquePawns";
 
         static UniquePawnsBootstrap()
         {
@@ -19,29 +19,49 @@ namespace PoniesOfTheRim.UniquePonies
 
             try
             {
+                var generatePawnMethod = AccessTools.Method(
+                    typeof(PawnGenerator),
+                    nameof(PawnGenerator.GeneratePawn),
+                    new[] { typeof(PawnGenerationRequest) });
+
                 harmony.Patch(
-                    original: AccessTools.Method(typeof(Page_ConfigureStartingPawns),
-                        nameof(Page_ConfigureStartingPawns.DoWindowContents)),
-                    postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI),
-                        nameof(UniqueStartingPawnUI.DoWindowContents_Postfix))
+                    original: generatePawnMethod,
+                    prefix: new HarmonyMethod(typeof(UniqueBirthFix),
+                        nameof(UniqueBirthFix.GeneratePawn_Prefix))
+                        { priority = Priority.High }
                 );
 
                 harmony.Patch(
-                    original: AccessTools.Method(typeof(PawnGenerator),
-                        nameof(PawnGenerator.GeneratePawn),
-                        new[] { typeof(PawnGenerationRequest) }),
+                    original: generatePawnMethod,
                     postfix: new HarmonyMethod(typeof(UniqueBodyAddonAssigner),
                         nameof(UniqueBodyAddonAssigner.GeneratePawn_Postfix))
                         { priority = Priority.High }
                 );
 
                 harmony.Patch(
-                    original: AccessTools.Method(typeof(PawnGenerator),
-                        nameof(PawnGenerator.GeneratePawn),
-                        new[] { typeof(PawnGenerationRequest) }),
+                    original: generatePawnMethod,
                     postfix: new HarmonyMethod(typeof(UniqueEquipmentAssigner),
                         nameof(UniqueEquipmentAssigner.GeneratePawn_Postfix))
                         { priority = Priority.Normal }
+                );
+
+                harmony.Patch(
+                    original: generatePawnMethod,
+                    postfix: new HarmonyMethod(typeof(UniqueNameAssigner),
+                        nameof(UniqueNameAssigner.GeneratePawn_Postfix))
+                        { priority = Priority.VeryLow }
+                );
+
+                var doWindowContents = AccessTools.Method(
+                    typeof(Page_ConfigureStartingPawns),
+                    nameof(Page_ConfigureStartingPawns.DoWindowContents));
+
+                harmony.Patch(
+                    original: doWindowContents,
+                    prefix: new HarmonyMethod(typeof(UniqueStartingPawnUI),
+                        nameof(UniqueStartingPawnUI.DoWindowContents_Prefix)),
+                    postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI),
+                        nameof(UniqueStartingPawnUI.DoWindowContents_Postfix))
                 );
 
                 harmony.Patch(
@@ -49,8 +69,6 @@ namespace PoniesOfTheRim.UniquePonies
                     postfix: new HarmonyMethod(typeof(UniqueWorldSpawner),
                         nameof(UniqueWorldSpawner.FinalizeInit_Postfix))
                 );
-
-                PatchStylingStationIfAvailable(harmony);
 
                 harmony.Patch(
                     original: AccessTools.Method(typeof(SkillRecord), "Interval"),
@@ -63,6 +81,8 @@ namespace PoniesOfTheRim.UniquePonies
                     postfix: new HarmonyMethod(typeof(EleganceQualityPatch),
                         nameof(EleganceQualityPatch.PostProcessProduct_Postfix))
                 );
+
+                PatchStylingStationIfAvailable(harmony);
 
                 LongEventHandler.ExecuteWhenFinished(ForceInitUniversalAddons);
 
@@ -88,9 +108,10 @@ namespace PoniesOfTheRim.UniquePonies
                 field.SetValue(null, null);
 
                 var addons = Utilities.UniversalBodyAddons;
+                int total  = addons?.Sum(a => a.GetVariantCount()) ?? 0;
 
-                int total = addons?.Sum(a => a.GetVariantCount()) ?? 0;
-                Log.Message($"[PoniesOfTheRim] Universal addons initialized: {addons?.Count ?? 0} addons, {total} total variants.");
+                Log.Message($"[PoniesOfTheRim] Universal addons initialized: " +
+                            $"{addons?.Count ?? 0} addons, {total} total variants.");
             }
             catch (Exception ex)
             {
@@ -105,7 +126,13 @@ namespace PoniesOfTheRim.UniquePonies
                 var stylingType = AccessTools.TypeByName("AlienRace.StylingStation");
                 if (stylingType == null) return;
 
-                var doAddonInfo = AccessTools.Method(stylingType, "DoAddonInfo");
+                var doAddonInfo = AccessTools.Method(
+                    stylingType,
+                    "DoAddonInfo",
+                    new[] { typeof(UnityEngine.Rect),
+                            typeof(AlienPartGenerator.BodyAddon),
+                            typeof(System.Collections.Generic.List<AlienPartGenerator.BodyAddon>) });
+
                 if (doAddonInfo == null) return;
 
                 harmony.Patch(

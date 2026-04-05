@@ -8,18 +8,31 @@ namespace PoniesOfTheRim.UniquePonies
 {
     public static class UniqueBodyAddonAssigner
     {
+        private static bool IsNewborn(Pawn pawn)
+        {
+            if (ModsConfig.BiotechActive)
+            {
+                var stage = pawn.DevelopmentalStage;
+                if (stage.Baby() || stage.Newborn())
+                    return true;
+            }
+            if (pawn.ageTracker?.AgeBiologicalYearsFloat < 1f)
+                return true;
+            return false;
+        }
+
         private static List<AlienPartGenerator.BodyAddon> GetAllAddons(ThingDef_AlienRace alienDef)
         {
             try
             {
                 var raceAddons = alienDef.alienRace.generalSettings.alienPartGenerator.bodyAddons;
-                var universal = Utilities.UniversalBodyAddons;
+                var universal  = Utilities.UniversalBodyAddons;
                 if (universal == null) return null;
                 return raceAddons.Concat(universal).ToList();
             }
             catch (Exception)
             {
-                return null;     
+                return null;
             }
         }
 
@@ -27,6 +40,7 @@ namespace PoniesOfTheRim.UniquePonies
         {
             var pawn = __result;
             if (pawn == null) return;
+            if (IsNewborn(pawn)) return;
 
             if (pawn.def is not ThingDef_AlienRace alienDef)
                 return;
@@ -56,8 +70,6 @@ namespace PoniesOfTheRim.UniquePonies
 
                         if (config.CutiemarkVariant.HasValue)
                             SetVariantByName(addons, comp, "Cutiemark", config.CutiemarkVariant.Value);
-                        if (config.TailVariant.HasValue)
-                            SetVariantByName(addons, comp, "Tail", config.TailVariant.Value);
                         if (config.HeadVariant.HasValue)
                             SetVariantByName(addons, comp, "Head", config.HeadVariant.Value);
                         if (config.BodyVariant.HasValue)
@@ -68,7 +80,6 @@ namespace PoniesOfTheRim.UniquePonies
             }
 
             int cutieVariant = -1;
-
             if (!string.IsNullOrEmpty(adultName)
                 && UniquePawnConfig.BackstoryCutiemark.TryGetValue(adultName, out int av))
             {
@@ -91,7 +102,6 @@ namespace PoniesOfTheRim.UniquePonies
                 {
                     var addons = GetAllAddons(alienDef);
                     if (addons == null) return;
-
                     comp.addonVariants ??= new List<int>();
                     SetVariantByName(addons, comp, "Cutiemark", cutieVariant);
                 }
