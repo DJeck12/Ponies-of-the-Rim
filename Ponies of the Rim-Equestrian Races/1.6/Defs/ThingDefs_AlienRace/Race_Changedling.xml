@@ -12,10 +12,10 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 
 	<!-- Stats -->
 		<comps>
-		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
-		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
-		  <li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
-		  <li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
+			<li Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer" />
+			<li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle" />
+			<li Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer" />
+			<li Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI" />
 		</comps>
 		<statBases>
 			<MarketValue>1800</MarketValue>
