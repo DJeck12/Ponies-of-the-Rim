@@ -29,6 +29,34 @@
 					<li>Pony_Alicorn</li>
 				</allowedRaces>
 			</li>
+			<li Class="HediffGiver_Birthday">
+				<hediff>Pony_Underdeveloped</hediff>
+				<partsToAffect>
+					<li>Pony_Horn</li>
+				</partsToAffect>
+				<ageFractionChanceCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(0.0125, 0.0015)</li>
+					<li>(0,0375, 0)</li>
+				</points>
+				</ageFractionChanceCurve>
+			</li>
+			<li Class="HediffGiver_Birthday">
+				<hediff>Pony_Underdeveloped</hediff>
+				<partsToAffect>
+					<li>Pony_LeftWing</li>
+					<li>Pony_RightWing</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+				<ageFractionChanceCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(0.0125, 0.0015)</li>
+					<li>(0,0375, 0)</li>
+				</points>
+				</ageFractionChanceCurve>
+			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
 
