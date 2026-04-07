@@ -9,7 +9,7 @@
 		<hitPoints>20</hitPoints>
 		<skinCovered>false</skinCovered>
 		<solid>true</solid>
-		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+		<permanentInjuryChanceFactor>35</permanentInjuryChanceFactor>
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
 		<forceAlwaysRemovable>true</forceAlwaysRemovable>
