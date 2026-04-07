@@ -182,6 +182,16 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 			<body>Pony_KirinBody</body>
 		</race>
 
+		<modExtensions>
+			<li Class="PoniesOfTheRim.MarkGenerationExtension">
+				<bodyMarkChance>0.2</bodyMarkChance>
+				<bodyMarkVariants>9</bodyMarkVariants>
+				<headMarkChance>0.2</headMarkChance>
+				<headMarkVariantsMale>8</headMarkVariantsMale>
+				<headMarkVariantsFemale>8</headMarkVariantsFemale>
+			</li>
+		</modExtensions>
+
 	</AlienRace.ThingDef_AlienRace>
 
 </Defs>

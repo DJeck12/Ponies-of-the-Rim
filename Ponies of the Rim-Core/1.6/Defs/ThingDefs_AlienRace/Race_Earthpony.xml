@@ -175,9 +175,9 @@ Although the name "<color=#4FFF4F>earth pony</color>" indicates a connection wit
 		
 		<modExtensions>
 			<li Class="PoniesOfTheRim.MarkGenerationExtension">
-				<bodyMarkChance>0.1</bodyMarkChance>
+				<bodyMarkChance>0.2</bodyMarkChance>
 				<bodyMarkVariants>9</bodyMarkVariants>
-				<headMarkChance>0.1</headMarkChance>
+				<headMarkChance>0.2</headMarkChance>
 				<headMarkVariantsMale>8</headMarkVariantsMale>
 				<headMarkVariantsFemale>8</headMarkVariantsFemale>
 				<noMarkBackstories>
