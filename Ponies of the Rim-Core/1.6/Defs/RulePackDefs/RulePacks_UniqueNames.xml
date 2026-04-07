@@ -7,9 +7,9 @@
 		<defName>Pony_Applejack</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Unique_Name]</li>
+				<li>r_name->[Only]</li>
 
-				<li>Unique_Name->Applejack</li>
+				<li>Only->Applejack</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -18,9 +18,9 @@
 		<defName>Pony_Rarity</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Unique_Name]</li>
+				<li>r_name->[Only]</li>
 
-				<li>Unique_Name->Rarity</li>
+				<li>Only->Rarity</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
@@ -29,9 +29,9 @@
 		<defName>Pony_Fluttershy</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[Unique_Name]</li>
+				<li>r_name->[Only]</li>
 
-				<li>Unique_Name->Fluttershy</li>
+				<li>Only->Fluttershy</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
