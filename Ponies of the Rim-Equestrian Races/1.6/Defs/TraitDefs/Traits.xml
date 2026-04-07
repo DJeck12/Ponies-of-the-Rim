@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TraitDef>
+		<defName>Pony_Sylvanist</defName>
+		<commonality>1</commonality>
+		<degreeDatas>
+			<li>
+				<label>sylvanist</label>
+				<description>{PAWN_nameDef} is drawn to areas teeming with vegetation and bloom. {PAWN_pronoun} will suffer a mood penalty when in dry, non-forested biomes.</description>
+			</li>
+		</degreeDatas>
+		<exclusionTags>
+			<li>Biomes</li>
+		</exclusionTags>
+	</TraitDef>
+
+</Defs>

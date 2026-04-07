@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Pony_Sylvanist</defName>
+		<stages>
+			<li>
+				<label>in a forest</label>
+				<description>I love being in places where I can admire green, living nature.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>outside a forest</label>
+				<description>I'm so far from a forest... I can't stand this dry wasteland.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>
