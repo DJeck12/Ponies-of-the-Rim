@@ -130,6 +130,7 @@
     <Compile Include="Harmony_Bootstrap.cs" />
     <Compile Include="Harmony_LifestageworkerHumanlikeChildNotify.cs" />
     <Compile Include="Harmony_QuestNodeGeneratePawnRace.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_PonySylvanist.cs" />
     <Compile Include="UniquePonies\StylingStationRefresh .cs" />
     <Compile Include="UniquePonies\UniqueBirthFix.cs" />
     <Compile Include="UniquePonies\UniqueEquipmentAssigner.cs" />

@@ -2,7 +2,8 @@
 <Defs>
 
 	<ThoughtDef>
-		<defName>Pony_Sylvanist</defName>
+		<defName>Pony_Sylvanist_Mood</defName>
+		<workerClass>PoniesOfTheRim.Thoughts.ThoughtWorker_Pony_Sylvanist</workerClass>
 		<stages>
 			<li>
 				<label>in a forest</label>
@@ -15,6 +16,17 @@
 				<baseMoodEffect>-6</baseMoodEffect>
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Thoughts.SylvanistExtension">
+				<forestBiomes>
+					<li>BorealForest</li>
+					<li>TemperateForest</li>
+					<li>TropicalRainforest</li>
+					<li>TemperateSwamp</li>
+					<li>TropicalSwamp</li>
+				</forestBiomes>
+			</li>
+		</modExtensions>
 	</ThoughtDef>
 
 </Defs>
