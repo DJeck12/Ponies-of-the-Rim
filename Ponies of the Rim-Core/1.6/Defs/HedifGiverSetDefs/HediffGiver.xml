@@ -37,8 +37,8 @@
 				<ageFractionChanceCurve>
 				<points>
 					<li>(0, 0)</li>
-					<li>(0.0125, 0.0015)</li>
-					<li>(0,0375, 0)</li>
+					<li>(0.0125, 0.012)</li>
+					<li>(0.0375, 0)</li>
 				</points>
 				</ageFractionChanceCurve>
 			</li>
@@ -52,8 +52,8 @@
 				<ageFractionChanceCurve>
 				<points>
 					<li>(0, 0)</li>
-					<li>(0.0125, 0.0015)</li>
-					<li>(0,0375, 0)</li>
+					<li>(0.0125, 0.012)</li>
+					<li>(0.0375, 0)</li>
 				</points>
 				</ageFractionChanceCurve>
 			</li>

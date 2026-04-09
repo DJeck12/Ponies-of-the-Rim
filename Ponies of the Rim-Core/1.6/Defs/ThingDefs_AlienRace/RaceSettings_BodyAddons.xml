@@ -659,6 +659,7 @@
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">
 						<path>Races/Horns/Unicorn/Skeleton/Horn_Unicorn_Skeleton</path>
 						<extendedGraphics>
+							<Hediff For="Pony_Underdeveloped">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Hediff>
 							<Age For="PonyBaby">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 							<Age For="PonyChild">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
@@ -667,11 +668,13 @@
 					<RotStage For="Dessicated">
 						<path>Races/Horns/Unicorn/Skeleton/Horn_Unicorn_Skeleton</path>
 						<extendedGraphics>
+							<Hediff For="Pony_Underdeveloped">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Hediff>
 							<Age For="PonyBaby">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 							<Age For="PonyChild">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 							<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Horns/Unicorn/SkeletonBaby/Horn_Unicorn_BabySkull</Age>
 						</extendedGraphics>
 					</RotStage>
+					<Hediff For="Pony_Underdeveloped">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Hediff>
 					<Age For="PonyBaby">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Age>
 					<Age For="PonyChild">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Age>
 					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Horns/Unicorn/Baby/Horn_Unicorn_Baby</Age>
@@ -815,6 +818,7 @@
 						<path>Races/Wings/Griffon/Normal/Wing_Griffon_Left</path>
 					</Race>
 					<Hediff For="Pony_SimpleProstheticWing">Races/Wings/Pegasus/Prosthetic/Wing_Pegasus_Prosthetic_Left</Hediff>
+					<Hediff For="Pony_Underdeveloped">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Hediff>
 					<Age For="PonyBaby">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
 					<Age For="PonyChild">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
 					<Age For="PonyPreTeenager" MayRequire="Ludeon.RimWorld.Biotech">Races/Wings/Pegasus/Baby/Wing_Pegasus_Baby_Left</Age>
