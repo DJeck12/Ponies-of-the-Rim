@@ -8,6 +8,8 @@
 				<li>Pony_LeftWing</li>
 				<li>Pony_RightWing</li>
 				<li>Pony_Horn</li>
+				<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingHorn</li>
+				<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinHorn</li>
 			</value>
 		</match>
 	</Operation>

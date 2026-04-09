@@ -2,6 +2,33 @@
 <Defs>
 
 <!--Head-->
+
+	<BodyPartDef>
+		<defName>Pony_ChangelingHorn</defName>
+		<label>horn</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<permanentInjuryChanceFactor>35</permanentInjuryChanceFactor>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<forceAlwaysRemovable>true</forceAlwaysRemovable>
+		<spawnThingOnRemoved>Pony_ChangelingHorn</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Pony_KirinHorn</defName>
+		<label>horn</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<permanentInjuryChanceFactor>35</permanentInjuryChanceFactor>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<forceAlwaysRemovable>true</forceAlwaysRemovable>
+		<spawnThingOnRemoved>Pony_KirinHorn</spawnThingOnRemoved>
+	</BodyPartDef>
+
 	<BodyPartDef>
 		<defName>Pony_Beak</defName>
 		<label>beak</label>

@@ -635,7 +635,11 @@
 					</Or>
 					<Or>
 						<BodyPart>
-							<bodyPart>Pony_Horn</bodyPart>
+							<bodyPart>Pony_UnicornHorn</bodyPart>
+							<drawWithoutPart>true</drawWithoutPart>
+						</BodyPart>
+						<BodyPart MayRequire="Pony.PoniesOfTheRim.Races">
+							<bodyPart>Pony_ChangelingHorn</bodyPart>
 							<drawWithoutPart>true</drawWithoutPart>
 						</BodyPart>
 					</Or>

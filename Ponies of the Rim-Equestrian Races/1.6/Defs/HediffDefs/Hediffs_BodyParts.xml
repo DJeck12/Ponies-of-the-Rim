@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+6
+<!--Horn-->
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Pony_ChangelingHorn</defName>
+		<label>changeling horn</label>
+		<description>A natural changeling horn. Gives the ability to cast magic.</description>
+		<descriptionHyperlinks><RecipeDef>Pony_InstallChangelingHorn</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>Pony_InstallChangelingHorn</defName>
+		<label>install changeling horn</label>
+		<description>Install a changeling horn.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Pony_ChangelingHorn</ThingDef>
+			<HediffDef>Pony_NaturalHorn</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing horn.</jobString>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pony_ChangelingHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>Pony_ChangelingHorn</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_ChangelingHorn</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>Pony_KirinHorn</defName>
+		<label>kirin horn</label>
+		<description>A natural kirin horn. Gives the ability to cast magic.</description>
+		<descriptionHyperlinks><RecipeDef>Pony_InstallKirinHorn</RecipeDef></descriptionHyperlinks>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+		<defName>Pony_InstallKirinHorn</defName>
+		<label>install kirin horn</label>
+		<description>Install a kirin horn.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Pony_KirinHorn</ThingDef>
+			<HediffDef>Pony_NaturalHorn</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing horn.</jobString>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pony_KirinHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>Pony_KirinHorn</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pony_KirinHorn</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+</Defs>

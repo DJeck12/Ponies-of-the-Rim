@@ -410,9 +410,13 @@
 	<HediffDef>
 		<defName>Pony_NaturalHorn</defName>
 		<label>horn</label>
-		<labelNoun>a unicorn horn</labelNoun>
-		<description>A natural unicorn horn.</description>
-		<descriptionHyperlinks><ThingDef>NaturalHorn</ThingDef></descriptionHyperlinks>
+		<labelNoun>a horn</labelNoun>
+		<description>A natural horn.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Pony_UnicornHorn</ThingDef>
+			<ThingDef MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingHorn</ThingDef>
+			<ThingDef MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinHorn</ThingDef>
+		</descriptionHyperlinks>
 		<isBad>false</isBad>
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
@@ -427,8 +431,8 @@
 	</HediffDef>
 
 	<ThingDef ParentName="BodyPartNaturalBase">
-		<label>horn</label>
 		<defName>Pony_UnicornHorn</defName>
+		<label>unicorn horn</label>
 		<description>A natural unicorn horn. Gives the ability to cast magic.</description>
 		<descriptionHyperlinks><RecipeDef>Pony_InstallUnicornHorn</RecipeDef></descriptionHyperlinks>
 		<statBases>
@@ -438,9 +442,9 @@
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
-		<label>install horn</label>
-		<description>Install a horn.</description>
 		<defName>Pony_InstallUnicornHorn</defName>
+		<label>install unicorn horn</label>
+		<description>Install a unicorn horn.</description>
 		<descriptionHyperlinks>
 			<ThingDef>Pony_UnicornHorn</ThingDef>
 			<HediffDef>Pony_NaturalHorn</HediffDef>
@@ -536,7 +540,9 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Horn</li>
+			<li>Pony_UnicornHorn</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingHorn</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinHorn</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Pony_BionicHorn</addsHediff>
 	</RecipeDef>
@@ -601,7 +607,9 @@
 		</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Pony_Horn</li>
+			<li>Pony_UnicornHorn</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingHorn</li>
+			<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinHorn</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>Pony_ArchotechHorn</addsHediff>
 	</RecipeDef>

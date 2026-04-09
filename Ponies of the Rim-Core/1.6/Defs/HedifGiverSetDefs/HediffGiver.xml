@@ -15,7 +15,9 @@
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityHorn">
 				<hediff>Pony_NaturalHorn</hediff>
 				<partsToAffect>
-					<li>Pony_Horn</li>
+					<li>Pony_UnicornHorn</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingHorn</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinHorn</li>
 				</partsToAffect>
 				<ability>Pony_MagicBurst</ability>
 			</li>
@@ -32,7 +34,9 @@
 			<li Class="HediffGiver_Birthday">
 				<hediff>Pony_Underdeveloped</hediff>
 				<partsToAffect>
-					<li>Pony_Horn</li>
+					<li>Pony_UnicornHorn</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_ChangelingHorn</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_KirinHorn</li>
 				</partsToAffect>
 				<ageFractionChanceCurve>
 				<points>
