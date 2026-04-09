@@ -74,13 +74,13 @@ namespace PoniesOfTheRim
             {
                 if (pawn.IsZebra())
                 {
-                    cutiemarkBodyAddon = list.Find(ba => ba.Name == "Zebra Cutiemark");
-                    tailBodyAddon      = list.Find(ba => ba.Name == "Long tail");
+                    cutiemarkBodyAddon = list.Find(ba => ba.Name == "Pony_Zebra_Cutiemark");
+                    tailBodyAddon      = list.Find(ba => ba.Name == "Pony_Long_Tail");
                 }
                 else
                 {
-                    cutiemarkBodyAddon = list.Find(ba => ba.Name == "Cutiemark");
-                    tailBodyAddon      = list.Find(ba => ba.Name == "Tail");
+                    cutiemarkBodyAddon = list.Find(ba => ba.Name == "Pony_Cutiemark");
+                    tailBodyAddon      = list.Find(ba => ba.Name == "Pony_Tail");
                 }
             }
 
@@ -225,7 +225,7 @@ namespace PoniesOfTheRim
                 return cached;
 
             var result = FindAddonByExactName(pawn,
-                pawn.IsZebra() ? "Zebra Cutiemark" : "Cutiemark");
+                pawn.IsZebra() ? "Pony_Zebra_Cutiemark" : "Pony_Cutiemark");
             CutiemarkCacheInGame[id] = result;
             return result;
         }
@@ -299,7 +299,7 @@ namespace PoniesOfTheRim
                 _hoverCutieTex    = cutieTex;
                 _showHoverPreview = true;
 
-                TooltipHandler.TipRegion(r, "Cutiemark".Translate());
+                TooltipHandler.TipRegion(r, "Pony_Cutiemark".Translate());
             }
         }
 

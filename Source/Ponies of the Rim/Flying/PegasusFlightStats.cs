@@ -63,10 +63,10 @@ namespace PoniesOfTheRim.Flying
             {
                 switch (wing.def.defName)
                 {
-                    case "NaturalWing":          baseVal = 0.50f;  break;
-                    case "SimpleProstheticWing":  baseVal = 0.35f;  break;
-                    case "BionicWing":            baseVal = 0.625f; break;
-                    case "ArchotechWing":         baseVal = 0.75f;  break;
+                    case "Pony_NaturalWing":          baseVal = 0.50f;  break;
+                    case "Pony_SimpleProstheticWing":  baseVal = 0.35f;  break;
+                    case "Pony_BionicWing":            baseVal = 0.625f; break;
+                    case "Pony_ArchotechWing":         baseVal = 0.75f;  break;
                 }
             }
 
@@ -183,9 +183,9 @@ namespace PoniesOfTheRim.Flying
             var sb = new StringBuilder();
             sb.AppendLine("Flight efficiency is calculated from multiple factors:");
             sb.AppendLine();
-            sb.AppendLine("Wings:");
-            sb.AppendLine($"  Left wing ({leftType}): {(leftBase * 2f).ToStringPercent()} × {leftHealth.ToStringPercent()} health = {(leftFinal * 2f).ToStringPercent()}");
-            sb.AppendLine($"  Right wing ({rightType}): {(rightBase * 2f).ToStringPercent()} × {rightHealth.ToStringPercent()} health = {(rightFinal * 2f).ToStringPercent()}");
+            sb.AppendLine("Pony_Wings:");
+            sb.AppendLine($"  Pony_Left_Wing ({leftType}): {(leftBase * 2f).ToStringPercent()} × {leftHealth.ToStringPercent()} health = {(leftFinal * 2f).ToStringPercent()}");
+            sb.AppendLine($"  Pony_Right_Wing ({rightType}): {(rightBase * 2f).ToStringPercent()} × {rightHealth.ToStringPercent()} health = {(rightFinal * 2f).ToStringPercent()}");
             sb.AppendLine($"  Total wing capacity: {totalWings.ToStringPercent()}");
             sb.AppendLine();
 
@@ -209,10 +209,10 @@ namespace PoniesOfTheRim.Flying
                 if (h.Part != part || h.def == null) continue;
                 switch (h.def.defName)
                 {
-                    case "NaturalWing":          return (0.50f,  "Natural");
-                    case "SimpleProstheticWing":  return (0.35f,  "Prosthetic");
-                    case "BionicWing":            return (0.625f, "Bionic");
-                    case "ArchotechWing":         return (0.75f,  "Archotech");
+                    case "Pony_NaturalWing":          return (0.50f,  "Natural");
+                    case "Pony_SimpleProstheticWing":  return (0.35f,  "Prosthetic");
+                    case "Pony_BionicWing":            return (0.625f, "Bionic");
+                    case "Pony_ArchotechWing":         return (0.75f,  "Archotech");
                 }
             }
 

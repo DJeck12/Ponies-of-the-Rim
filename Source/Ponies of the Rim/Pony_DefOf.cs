@@ -6,7 +6,7 @@ namespace PoniesOfTheRim
     [DefOf]
     public static class Pony_DefOf
     {
-        public static FleckDef Hoofprint;
+        public static FleckDef Pony_Hoofprint;
         public static FleckDef Pony_Talonprint;
         public static FleckDef Pony_Pawprint; 
 

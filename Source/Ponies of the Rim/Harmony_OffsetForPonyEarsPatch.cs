@@ -18,7 +18,7 @@ namespace PoniesOfTheRim
                 {
                     bool wearingHeadgear = pawn.apparel.WornApparel.Any(a => a.def.apparel.bodyPartGroups.Any(bpg => bpg == BodyPartGroupDefOf.FullHead || bpg == BodyPartGroupDefOf.UpperHead));
                     float desiredLayerOffset;
-                    if (addon.Name == "Left ear")
+                    if (addon.Name == "Pony_Left_Ear")
                     {
                         if (wearingHeadgear || pawn.IsKirin())
                         {

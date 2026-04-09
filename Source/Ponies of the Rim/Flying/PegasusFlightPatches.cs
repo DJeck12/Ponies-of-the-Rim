@@ -509,11 +509,11 @@ namespace PoniesOfTheRim.Flying
 
         private static void EnsureWingsBoundToParts(Pawn pawn)
         {
-            HediffDef naturalWingDef = DefDatabase<HediffDef>.GetNamed("NaturalWing", errorOnFail: false);
+            HediffDef naturalWingDef = DefDatabase<HediffDef>.GetNamed("Pony_NaturalWing", errorOnFail: false);
             if (naturalWingDef == null) return;
 
             var unbound = pawn.health.hediffSet.hediffs
-                .Where(h => h.def?.defName == "NaturalWing" && h.Part == null)
+                .Where(h => h.def?.defName == "Pony_NaturalWing" && h.Part == null)
                 .ToList();
 
             foreach (Hediff h in unbound)

@@ -106,18 +106,18 @@ namespace PoniesOfTheRim
         {
             if (pawn.IsGriffon())
             {
-                front = Pony_DefOf.Pony_Talonprint   ?? Pony_DefOf.Hoofprint;
-                back  = Pony_DefOf.Pony_Pawprint ?? Pony_DefOf.Hoofprint;
+                front = Pony_DefOf.Pony_Talonprint   ?? Pony_DefOf.Pony_Hoofprint;
+                back  = Pony_DefOf.Pony_Pawprint ?? Pony_DefOf.Pony_Hoofprint;
             }
             else if (pawn.IsHippogriff())
             {
-                front = Pony_DefOf.Pony_Talonprint ?? Pony_DefOf.Hoofprint;
-                back  = Pony_DefOf.Hoofprint;
+                front = Pony_DefOf.Pony_Talonprint ?? Pony_DefOf.Pony_Hoofprint;
+                back  = Pony_DefOf.Pony_Hoofprint;
             }
             else
             {
-                front = Pony_DefOf.Hoofprint;
-                back  = Pony_DefOf.Hoofprint;
+                front = Pony_DefOf.Pony_Hoofprint;
+                back  = Pony_DefOf.Pony_Hoofprint;
             }
         }
 

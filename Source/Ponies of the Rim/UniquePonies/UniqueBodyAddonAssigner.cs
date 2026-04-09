@@ -69,11 +69,11 @@ namespace PoniesOfTheRim.UniquePonies
                         comp.addonVariants ??= new List<int>();
 
                         if (config.CutiemarkVariant.HasValue)
-                            SetVariantByName(addons, comp, "Cutiemark", config.CutiemarkVariant.Value);
+                            SetVariantByName(addons, comp, "Pony_Cutiemark", config.CutiemarkVariant.Value);
                         if (config.HeadVariant.HasValue)
-                            SetVariantByName(addons, comp, "Head", config.HeadVariant.Value);
+                            SetVariantByName(addons, comp, "Pony_Head", config.HeadVariant.Value);
                         if (config.BodyVariant.HasValue)
-                            SetVariantByName(addons, comp, "Body", config.BodyVariant.Value);
+                            SetVariantByName(addons, comp, "Pony_Body", config.BodyVariant.Value);
                     }
                 }
                 return;
@@ -103,7 +103,7 @@ namespace PoniesOfTheRim.UniquePonies
                     var addons = GetAllAddons(alienDef);
                     if (addons == null) return;
                     comp.addonVariants ??= new List<int>();
-                    SetVariantByName(addons, comp, "Cutiemark", cutieVariant);
+                    SetVariantByName(addons, comp, "Pony_Cutiemark", cutieVariant);
                 }
             }
         }
