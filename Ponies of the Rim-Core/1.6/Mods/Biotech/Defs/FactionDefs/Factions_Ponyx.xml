@@ -2,7 +2,7 @@
 <Defs>
 
 	<FactionDef ParentName="OutlanderFactionBase">
-		<defName>PonyxUnion</defName>
+		<defName>Pony_PonyxUnion</defName>
 		<label>ponyx union</label>
 		<description>A union of friendly anthropomorphic ponies. Being the result of genetic experimentation, ponyxes have adapted to live in a harsh post-apocalyptic world.\n\nThey are happy to make contact, but will not tolerate humiliation and will fight with anyone who violates the principles of Friendship.</description>
 		<factionIconPath>World/Factions/PonyxUnion</factionIconPath>
@@ -13,7 +13,7 @@
 			<li>(0.45, 0.40, 0.90)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<structureMemeWeights>
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
@@ -43,7 +43,7 @@
 		</backstoryFilters>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<Ponyx>999</Ponyx>
+				<Pony_Ponyx>999</Pony_Ponyx>
 			</xenotypeChances>
 		</xenotypeSet>
 		<configurationListOrderPriority>10</configurationListOrderPriority>

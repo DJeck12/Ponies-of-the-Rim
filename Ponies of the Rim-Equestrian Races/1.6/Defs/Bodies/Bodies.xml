@@ -278,7 +278,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -337,7 +337,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -356,7 +356,7 @@
 					<customLabel>left wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -364,7 +364,7 @@
 					<customLabel>right wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -372,7 +372,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -393,7 +393,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -430,7 +430,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -453,7 +453,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -489,7 +489,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -646,12 +646,12 @@
 									</parts>
 								</li>
 								<li>
-									<def>Pony_Horn</def>
+									<def>Pony_ChangelingHorn</def>
 									<coverage>0.125</coverage>
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
-										<li>Horn</li>
+										<li>Pony_Horn</li>
 									</groups>
 								</li>
 								<li>
@@ -787,7 +787,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -846,7 +846,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -865,7 +865,7 @@
 					<customLabel>left elytra</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -873,7 +873,7 @@
 					<customLabel>right elytra</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -881,7 +881,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -902,7 +902,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -939,7 +939,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -962,7 +962,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -998,7 +998,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1155,12 +1155,12 @@
 									</parts>
 								</li>
 								<li>
-									<def>Pony_Horn</def>
+									<def>Pony_ChangelingHorn</def>
 									<coverage>0.125</coverage>
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
-										<li>Horn</li>
+										<li>Pony_Horn</li>
 									</groups>
 								</li>
 								<li>
@@ -1296,7 +1296,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1355,7 +1355,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1374,7 +1374,7 @@
 					<customLabel>left elytra</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -1382,7 +1382,7 @@
 					<customLabel>right elytra</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -1390,7 +1390,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -1411,7 +1411,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -1448,7 +1448,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1471,7 +1471,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -1507,7 +1507,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1795,7 +1795,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1854,7 +1854,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1873,7 +1873,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -1894,7 +1894,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -1931,7 +1931,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -1954,7 +1954,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -1990,7 +1990,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -2153,7 +2153,7 @@
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
-										<li>Antlers</li>
+										<li>Pony_Antlers</li>
 									</groups>
 								</li>
 								<li>
@@ -2163,7 +2163,7 @@
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
-										<li>Antlers</li>
+										<li>Pony_Antlers</li>
 									</groups>
 								</li>
 								<li>
@@ -2299,7 +2299,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -2358,7 +2358,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -2377,7 +2377,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -2398,7 +2398,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -2435,7 +2435,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -2458,7 +2458,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -2494,7 +2494,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -2923,7 +2923,7 @@
 					<customLabel>left wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -2931,7 +2931,7 @@
 					<customLabel>right wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -2939,7 +2939,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -2960,7 +2960,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -3044,7 +3044,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -3534,7 +3534,7 @@
 					<customLabel>left wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -3542,7 +3542,7 @@
 					<customLabel>right wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
-						<li>Wings</li>
+						<li>Pony_Wings</li>
 					</groups>
 				</li>
 				<li>
@@ -3550,7 +3550,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -3571,7 +3571,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -3608,7 +3608,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -3631,7 +3631,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -3668,7 +3668,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -3824,12 +3824,12 @@
 									</parts>
 								</li>
 								<li>
-									<def>Pony_Horn</def>
+									<def>Pony_KirinHorn</def>
 									<coverage>0.125</coverage>
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
-										<li>Horn</li>
+										<li>Pony_Horn</li>
 									</groups>
 								</li>
 								<li>
@@ -3965,7 +3965,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4024,7 +4024,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4043,7 +4043,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -4064,7 +4064,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -4101,7 +4101,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4124,7 +4124,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -4160,7 +4160,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4448,7 +4448,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4507,7 +4507,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Hands</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4526,7 +4526,7 @@
 					<coverage>0.001</coverage>
 					<groups>
 						<li>Torso</li>
-						<li>Tail</li>
+						<li>Pony_Tail</li>
 					</groups>
 				</li>
 				<li>
@@ -4547,7 +4547,7 @@
 							<flipGraphic>true</flipGraphic>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -4584,7 +4584,7 @@
 									<flipGraphic>true</flipGraphic>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>
@@ -4607,7 +4607,7 @@
 							<height>Bottom</height>
 							<groups>
 								<li>Legs</li>
-								<li>RearLegs</li>
+								<li>Pony_RearLegs</li>
 							</groups>
 							<parts>
 								<li>
@@ -4643,7 +4643,7 @@
 									<coverage>0.14</coverage>
 									<groups>
 										<li>Feet</li>
-										<li>Hooves</li>
+										<li>Pony_Hooves</li>
 									</groups>
 								</li>
 							</parts>

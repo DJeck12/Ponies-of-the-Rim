@@ -2,13 +2,13 @@
 <Defs>
 
 	<HeadTypeDef ParentName="AverageBase">
-		<defName>Male_Pony</defName>
+		<defName>Pony_Male</defName>
 		<beardOffsetXEast>0.075</beardOffsetXEast>
 		<gender>Male</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="AverageBase">
-		<defName>Female_Pony</defName>
+		<defName>Pony_Female</defName>
 		<beardOffsetXEast>0.075</beardOffsetXEast>
 		<gender>Female</gender>
 	</HeadTypeDef>

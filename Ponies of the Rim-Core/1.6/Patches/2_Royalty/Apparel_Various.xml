@@ -11,7 +11,7 @@
 					<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetCataphractBase"
 					or defName="Apparel_CrownStellic"]/apparel/bodyPartGroups</xpath>
 					<value>
-						<li>CoverEars</li>
+						<li>Pony_CoverEars</li>
 					</value>
 				</li>
 			</operations>

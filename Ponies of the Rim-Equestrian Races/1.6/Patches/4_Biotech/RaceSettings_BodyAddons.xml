@@ -9,7 +9,7 @@
 			<operations>
 			<!-- Head -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Head"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Head"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
 					<value>
 						<Gene For="Pony_GriffonBeak">
 							<path>Races/Heads/Hippogriff/Head_Male</path>
@@ -21,7 +21,7 @@
 				</li>
 				<!--
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Head"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Head"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
 					<value>
 						<Gene For="Pony_DeerPattern">
 							<path>Races/Heads/Deer/Head_Male</path>
@@ -34,7 +34,7 @@
 				-->
 			<!-- Body
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Body"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Body"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
 					<value>
 						<Gene For="Pony_DeerPattern">Races/Bodies/Deer/Body_Deer</Gene>
 					</value>
@@ -42,17 +42,17 @@
 			-->
 			<!-- Nose -->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Nose"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_GriffonBeak</Gene>
 						<Gene>Pony_DeerNose</Gene>
 					</value>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]/extendedGraphics/Race[@For="Pony_Griffon"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Nose"]/extendedGraphics/Race[@For="Pony_Griffon"]</xpath>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Nose"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
 					<value>
 						<Gene For="Pony_GriffonBeak">
 							<path>Races/Nose/Griffon/Beak_Male</path>
@@ -63,7 +63,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Nose"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
 					<value>
 						<Gene For="Pony_DeerNose">
 							<path>Races/Nose/Deer/Nose_Male</path>
@@ -75,7 +75,7 @@
 				</li>
 			<!-- Long tail -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Long tail"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Long_Tail"]/conditions/Or[1]</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_DeerTail</Gene>
@@ -86,7 +86,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Long tail"]/extendedGraphics</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Long_Tail"]/extendedGraphics</xpath>
 					<value>
 						<extendedGraphics>
 							<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
@@ -99,7 +99,7 @@
 				</li>
 			<!-- Tail -->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_ChitinTail</Gene>
 						<Gene>Pony_SkittlebugTail</Gene>
@@ -109,7 +109,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/extendedGraphics/Race[@For="Pony_Changeling"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/extendedGraphics/Race[@For="Pony_Changeling"]</xpath>
 					<value>
 						<Gene For="Pony_ChitinTail">
 							<path>Races/Tails/Changeling/Tail_Changeling</path>
@@ -117,7 +117,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/extendedGraphics/Race[@For="Pony_Changedling"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/extendedGraphics/Race[@For="Pony_Changedling"]</xpath>
 					<value>
 						<Gene For="Pony_SkittlebugTail">
 							<path>Races/Tails/Skittlebug/Tail_Changedling</path>
@@ -125,7 +125,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/extendedGraphics/Race[@For="Pony_Griffon"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/extendedGraphics/Race[@For="Pony_Griffon"]</xpath>
 					<value>
 						<Gene For="Pony_GriffonTail">
 							<path>Races/Tails/Griffon/Tail_Griffon</path>
@@ -133,7 +133,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/extendedGraphics/Race[@For="Pony_Kirin"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/extendedGraphics/Race[@For="Pony_Kirin"]</xpath>
 					<value>
 						<Gene For="Pony_KirinTail">
 							<path>Races/Tails/Kirin/Tail_Kirin</path>
@@ -141,7 +141,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/extendedGraphics/Race[@For="Pony_Zebra"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/extendedGraphics/Race[@For="Pony_Zebra"]</xpath>
 					<value>
 						<Gene For="Pony_ZebraTail">
 							<path>Races/Tails/Zebra/Tail_Zebra</path>
@@ -150,7 +150,7 @@
 				</li>
 			<!-- Right ear -->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/conditions/Or</xpath>
 					<value>
 						<Gene>Pony_FluffyPonyEars</Gene>
 						<Gene>Pony_ChitinEars</Gene>
@@ -160,7 +160,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Race[@For="Pony_Batpony"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/extendedGraphics/Race[@For="Pony_Batpony"]</xpath>
 					<value>
 						<Gene For="Pony_FluffyPonyEars">
 							<path>Races/Ears/Batpony/Normal/Ear_Right</path>
@@ -168,7 +168,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Race[@For="Pony_Changeling"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/extendedGraphics/Race[@For="Pony_Changeling"]</xpath>
 					<value>
 						<Gene For="Pony_ChitinEars">
 							<path>Races/Ears/Changeling/Normal/Ear_Right</path>
@@ -176,7 +176,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Race[@For="Pony_Changedling"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/extendedGraphics/Race[@For="Pony_Changedling"]</xpath>
 					<value>
 						<Gene For="Pony_AntennaeEars">
 							<path>Races/Ears/Skittlebug/Normal/Ear_Right</path>
@@ -184,7 +184,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
 					<value>
 						<Gene For="Pony_FeatherEars">
 							<path>Races/Ears/Griffon/Normal/Ear_Right</path>
@@ -192,7 +192,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Race[@For="Pony_Kirin"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/extendedGraphics/Race[@For="Pony_Kirin"]</xpath>
 					<value>
 						<Gene For="Pony_KirinEars">
 							<path>Races/Ears/Kirin/Normal/Ear_Right</path>
@@ -201,7 +201,7 @@
 				</li>
 				<!--
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
 					<value>
 						<Gene For="Pony_DeerPattern">
 							<path>Races/Ears/Deer/Normal/Ear_Right</path>
@@ -211,7 +211,7 @@
 				-->
 			<!-- Left ear -->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/conditions/Or</xpath>
 					<value>
 						<Gene>Pony_FluffyPonyEars</Gene>
 						<Gene>Pony_ChitinEars</Gene>
@@ -221,7 +221,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Race[@For="Pony_Batpony"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/extendedGraphics/Race[@For="Pony_Batpony"]</xpath>
 					<value>
 						<Gene For="Pony_FluffyPonyEars">
 							<path>Races/Ears/Batpony/Normal/Ear_Left</path>
@@ -229,7 +229,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Race[@For="Pony_Changeling"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/extendedGraphics/Race[@For="Pony_Changeling"]</xpath>
 					<value>
 						<Gene For="Pony_ChitinEars">
 							<path>Races/Ears/Changeling/Normal/Ear_Left</path>
@@ -237,7 +237,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Race[@For="Pony_Changedling"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/extendedGraphics/Race[@For="Pony_Changedling"]</xpath>
 					<value>
 						<Gene For="Pony_AntennaeEars">
 							<path>Races/Ears/Skittlebug/Normal/Ear_Left</path>
@@ -245,7 +245,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/extendedGraphics/Race[@For="Pony_Hippogriff"]</xpath>
 					<value>
 						<Gene For="Pony_FeatherEars">
 							<path>Races/Ears/Griffon/Normal/Ear_Left</path>
@@ -253,7 +253,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Race[@For="Pony_Kirin"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/extendedGraphics/Race[@For="Pony_Kirin"]</xpath>
 					<value>
 						<Gene For="Pony_KirinEars">
 							<path>Races/Ears/Kirin/Normal/Ear_Left</path>
@@ -262,7 +262,7 @@
 				</li>
 				<!--
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/extendedGraphics/Race[@For="Pony_Deer"]</xpath>
 					<value>
 						<Gene For="Pony_DeerPattern">
 							<path>Races/Ears/Deer/Normal/Ear_Left</path>
@@ -273,7 +273,7 @@
 
 			<!-- Zebra mark -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Zebra Cutiemark"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Zebra_Cutiemark"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_Bodymark</Gene>
@@ -282,7 +282,7 @@
 				</li>
 			<!-- Head addon -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Head addon"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Head_Addon"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_Carapace</Gene>
@@ -291,13 +291,13 @@
 				</li>
 			<!-- Griffon ears -->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Right ear"]/conditions</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Right_Ear"]/conditions</xpath>
 					<value>
 						<Gene>Pony_FeatherEars</Gene>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Right ear"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Right_Ear"]</xpath>
 					<value>
 						<extendedGraphics>
 							<Gene For="Pony_FeatherEars">
@@ -307,13 +307,13 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Left ear"]/conditions</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Left_Ear"]/conditions</xpath>
 					<value>
 						<Gene>Pony_FeatherEars</Gene>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Left ear"]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Left_Ear"]</xpath>
 					<value>
 						<extendedGraphics>
 							<Gene For="Pony_FeatherEars">
@@ -324,7 +324,7 @@
 				</li>
 			<!-- Soul gem -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Soul gem"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Soul_Gem"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_SoulGem</Gene>
@@ -333,7 +333,7 @@
 				</li>
 			<!-- Body addon (skin) -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Body addon (skin)"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Body_Addon_Skin"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_Carapace</Gene>
@@ -342,7 +342,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Body addon (skin)"]/extendedGraphics</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Body_Addon_Skin"]/extendedGraphics</xpath>
 					<value>
 						<extendedGraphics>
 							<Gene For="Pony_Chitin">Races/Addons/Changeling/Chitin</Gene>
@@ -352,7 +352,7 @@
 				</li>
 			<!-- Hands -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Hands"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Hands"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_BirdTalons</Gene>
@@ -361,7 +361,7 @@
 				</li>
 			<!-- Antlers -->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Antlers"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Races"]/universalBodyAddons/li[name="Pony_Antlers"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_DeerAntlers</Gene>

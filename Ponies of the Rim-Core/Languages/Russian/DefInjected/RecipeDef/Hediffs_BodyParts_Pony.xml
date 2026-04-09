@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<InstallArtificialTail.label>установить искуственный хвост</InstallArtificialTail.label>
-	<InstallArtificialTail.description>Установить искусственный хвост.</InstallArtificialTail.description>
-	<InstallArtificialTail.jobString>Устанавливает искусственный хвост</InstallArtificialTail.jobString>
+	<Pony_InstallArtificialTail.label>установить искуственный хвост</Pony_InstallArtificialTail.label>
+	<Pony_InstallArtificialTail.description>Установить искусственный хвост.</Pony_InstallArtificialTail.description>
+	<Pony_InstallArtificialTail.jobString>Устанавливает искусственный хвост</Pony_InstallArtificialTail.jobString>
 
-	<InstallPegHoof.label>установить деревянное копыто</InstallPegHoof.label>
-	<InstallPegHoof.description>Установить деревянное копыто.</InstallPegHoof.description>
-	<InstallPegHoof.jobString>Устанавливает деревянное копыто</InstallPegHoof.jobString>
-	<InstallSimpleProstheticHoof.label>установить простой протез копыта</InstallSimpleProstheticHoof.label>
-	<InstallSimpleProstheticHoof.description>Установить простой протез копыта.</InstallSimpleProstheticHoof.description>
-	<InstallSimpleProstheticHoof.jobString>Устанавливает деревянное копыто</InstallSimpleProstheticHoof.jobString>
+	<Pony_InstallPegHoof.label>установить деревянное копыто</Pony_InstallPegHoof.label>
+	<Pony_InstallPegHoof.description>Установить деревянное копыто.</Pony_InstallPegHoof.description>
+	<Pony_InstallPegHoof.jobString>Устанавливает деревянное копыто</Pony_InstallPegHoof.jobString>
+	<Pony_InstallSimpleProstheticHoof.label>установить простой протез копыта</Pony_InstallSimpleProstheticHoof.label>
+	<Pony_InstallSimpleProstheticHoof.description>Установить простой протез копыта.</Pony_InstallSimpleProstheticHoof.description>
+	<Pony_InstallSimpleProstheticHoof.jobString>Устанавливает деревянное копыто</Pony_InstallSimpleProstheticHoof.jobString>
 
-	<InstallSimpleProstheticWing.label>установить простой протез крыла</InstallSimpleProstheticWing.label>
-	<InstallSimpleProstheticWing.description>Установить простой протез крыла.</InstallSimpleProstheticWing.description>
-	<InstallSimpleProstheticWing.jobString>Устанавливает простой протез крыла.</InstallSimpleProstheticWing.jobString>
-	<InstallBionicWing.label>вживить бионическое крыло</InstallBionicWing.label>
-	<InstallBionicWing.description>Вживить бионическое крыло.</InstallBionicWing.description>
-	<InstallBionicWing.jobString>Вживляет бионическое крыло</InstallBionicWing.jobString>
-	<InstallArchotechWing.label>вживить архокрыло</InstallArchotechWing.label>
-	<InstallArchotechWing.description>Вживить архокрыло.</InstallArchotechWing.description>
-	<InstallArchotechWing.jobString>Вживляет архокрыло</InstallArchotechWing.jobString>
+	<Pony_InstallSimpleProstheticWing.label>установить простой протез крыла</Pony_InstallSimpleProstheticWing.label>
+	<Pony_InstallSimpleProstheticWing.description>Установить простой протез крыла.</Pony_InstallSimpleProstheticWing.description>
+	<Pony_InstallSimpleProstheticWing.jobString>Устанавливает простой протез крыла.</Pony_InstallSimpleProstheticWing.jobString>
+	<Pony_InstallBionicWing.label>вживить бионическое крыло</Pony_InstallBionicWing.label>
+	<Pony_InstallBionicWing.description>Вживить бионическое крыло.</Pony_InstallBionicWing.description>
+	<Pony_InstallBionicWing.jobString>Вживляет бионическое крыло</Pony_InstallBionicWing.jobString>
+	<Pony_InstallArchotechWing.label>вживить архокрыло</Pony_InstallArchotechWing.label>
+	<Pony_InstallArchotechWing.description>Вживить архокрыло.</Pony_InstallArchotechWing.description>
+	<Pony_InstallArchotechWing.jobString>Вживляет архокрыло</Pony_InstallArchotechWing.jobString>
 	
-	<InstallNaturalHorn.label>пересадить рог</InstallNaturalHorn.label>
-	<InstallNaturalHorn.description>Пересадить рог.</InstallNaturalHorn.description>
-	<InstallNaturalHorn.jobString>Пересаживает рог</InstallNaturalHorn.jobString>
-	<InstallBionicHorn.label>вживить бионический рог</InstallBionicHorn.label>
-	<InstallBionicHorn.description>Вживить бионический рог.</InstallBionicHorn.description>
-	<InstallBionicHorn.jobString>Вживляет бионический рог</InstallBionicHorn.jobString>
-	<InstallArchotechHorn.label>вживить архорог</InstallArchotechHorn.label>
-	<InstallArchotechHorn.description>Вживить архорог.</InstallArchotechHorn.description>
-	<InstallArchotechHorn.jobString>Вживляет архорог.</InstallArchotechHorn.jobString>
+	<Pony_InstallNaturalHorn.label>пересадить рог</Pony_InstallNaturalHorn.label>
+	<Pony_InstallNaturalHorn.description>Пересадить рог.</Pony_InstallNaturalHorn.description>
+	<Pony_InstallNaturalHorn.jobString>Пересаживает рог</Pony_InstallNaturalHorn.jobString>
+	<Pony_InstallBionicHorn.label>вживить бионический рог</Pony_InstallBionicHorn.label>
+	<Pony_InstallBionicHorn.description>Вживить бионический рог.</Pony_InstallBionicHorn.description>
+	<Pony_InstallBionicHorn.jobString>Вживляет бионический рог</Pony_InstallBionicHorn.jobString>
+	<Pony_InstallArchotechHorn.label>вживить архорог</Pony_InstallArchotechHorn.label>
+	<Pony_InstallArchotechHorn.description>Вживить архорог.</Pony_InstallArchotechHorn.description>
+	<Pony_InstallArchotechHorn.jobString>Вживляет архорог.</Pony_InstallArchotechHorn.jobString>
 
 </LanguageData>

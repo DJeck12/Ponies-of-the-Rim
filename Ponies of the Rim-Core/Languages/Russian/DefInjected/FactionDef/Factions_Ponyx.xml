@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<PonyxUnion.label>Союз пониксов</PonyxUnion.label>
-	<PonyxUnion.description>Союз дружелюбных антропоморфных пони. Будучи результатом генетических экспериментов, пониксы приспособились к жизни в суровом постапокалиптическом мире.\n\nОни охотно рады новым знакомствам, но не потерпят унижений и будут сражаться с любыми нарушителями гармонии.</PonyxUnion.description>
-	<PonyxUnion.leaderTitle>верховный советник</PonyxUnion.leaderTitle>
-	<PonyxUnion.pawnSingular>чужеземец</PonyxUnion.pawnSingular>
-	<PonyxUnion.pawnsPlural>чужеземцы</PonyxUnion.pawnsPlural>
+	<Pony_PonyxUnion.label>Союз пониксов</Pony_PonyxUnion.label>
+	<Pony_PonyxUnion.description>Союз дружелюбных антропоморфных пони. Будучи результатом генетических экспериментов, пониксы приспособились к жизни в суровом постапокалиптическом мире.\n\nОни охотно рады новым знакомствам, но не потерпят унижений и будут сражаться с любыми нарушителями гармонии.</Pony_PonyxUnion.description>
+	<Pony_PonyxUnion.leaderTitle>верховный советник</Pony_PonyxUnion.leaderTitle>
+	<Pony_PonyxUnion.pawnSingular>чужеземец</Pony_PonyxUnion.pawnSingular>
+	<Pony_PonyxUnion.pawnsPlural>чужеземцы</Pony_PonyxUnion.pawnsPlural>
 
 </LanguageData>

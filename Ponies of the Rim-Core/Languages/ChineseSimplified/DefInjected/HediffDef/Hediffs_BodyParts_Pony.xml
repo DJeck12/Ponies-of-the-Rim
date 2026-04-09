@@ -3,54 +3,54 @@
 
 	<!-- Tail -->
 
-	<ArtificialTail.label>假尾巴</ArtificialTail.label>
-	<ArtificialTail.description>已安装的假尾巴</ArtificialTail.description>
-	<ArtificialTail.labelNoun>假尾巴</ArtificialTail.labelNoun>
+	<Pony_ArtificialTail.label>假尾巴</Pony_ArtificialTail.label>
+	<Pony_ArtificialTail.description>已安装的假尾巴</Pony_ArtificialTail.description>
+	<Pony_ArtificialTail.labelNoun>假尾巴</Pony_ArtificialTail.labelNoun>
 
 
 	<!-- Hoof -->
 
-	<PegHoof.label>木蹄</PegHoof.label>
-	<PegHoof.description>已安装的木蹄</PegHoof.description>
-	<PegHoof.labelNoun>木蹄</PegHoof.labelNoun>
+	<Pony_PegHoof.label>木蹄</Pony_PegHoof.label>
+	<Pony_PegHoof.description>已安装的木蹄</Pony_PegHoof.description>
+	<Pony_PegHoof.labelNoun>木蹄</Pony_PegHoof.labelNoun>
 
-	<SimpleProstheticHoof.label>义蹄</SimpleProstheticHoof.label>
-	<SimpleProstheticHoof.description>已安装的义蹄</SimpleProstheticHoof.description>
-	<SimpleProstheticHoof.labelNoun>义蹄</SimpleProstheticHoof.labelNoun>
+	<Pony_SimpleProstheticHoof.label>义蹄</Pony_SimpleProstheticHoof.label>
+	<Pony_SimpleProstheticHoof.description>已安装的义蹄</Pony_SimpleProstheticHoof.description>
+	<Pony_SimpleProstheticHoof.labelNoun>义蹄</Pony_SimpleProstheticHoof.labelNoun>
 
 
 	<!-- Wing -->
 
-	<NaturalWing.label>翅膀</NaturalWing.label>
-	<NaturalWing.description>天然的天马翅膀</NaturalWing.description>
-	<NaturalWing.labelNoun>天马翅膀</NaturalWing.labelNoun>
+	<Pony_NaturalWing.label>翅膀</Pony_NaturalWing.label>
+	<Pony_NaturalWing.description>天然的天马翅膀</Pony_NaturalWing.description>
+	<Pony_NaturalWing.labelNoun>天马翅膀</Pony_NaturalWing.labelNoun>
 
-	<SimpleProstheticWing.label>义翅</SimpleProstheticWing.label>
-	<SimpleProstheticWing.description>已安装的义翅</SimpleProstheticWing.description>
-	<SimpleProstheticWing.labelNoun>义翅</SimpleProstheticWing.labelNoun>
+	<Pony_SimpleProstheticWing.label>义翅</Pony_SimpleProstheticWing.label>
+	<Pony_SimpleProstheticWing.description>已安装的义翅</Pony_SimpleProstheticWing.description>
+	<Pony_SimpleProstheticWing.labelNoun>义翅</Pony_SimpleProstheticWing.labelNoun>
 
-	<BionicWing.label>仿生翅</BionicWing.label>
-	<BionicWing.description>已安装的仿生翅</BionicWing.description>
-	<BionicWing.labelNoun>仿生翅</BionicWing.labelNoun>
+	<Pony_BionicWing.label>仿生翅</Pony_BionicWing.label>
+	<Pony_BionicWing.description>已安装的仿生翅</Pony_BionicWing.description>
+	<Pony_BionicWing.labelNoun>仿生翅</Pony_BionicWing.labelNoun>
 
-	<ArchotechWing.label>超凡仿生翅</ArchotechWing.label>
-	<ArchotechWing.description>已安装的超凡仿生翅</ArchotechWing.description>
-	<ArchotechWing.labelNoun>超凡仿生翅</ArchotechWing.labelNoun>
+	<Pony_ArchotechWing.label>超凡仿生翅</Pony_ArchotechWing.label>
+	<Pony_ArchotechWing.description>已安装的超凡仿生翅</Pony_ArchotechWing.description>
+	<Pony_ArchotechWing.labelNoun>超凡仿生翅</Pony_ArchotechWing.labelNoun>
 
 
 	<!-- Horn -->
 
-	<NaturalHorn.label>角</NaturalHorn.label>
-	<NaturalHorn.description>天然的角</NaturalHorn.description>
-	<NaturalHorn.labelNoun>独角兽的角</NaturalHorn.labelNoun>
+	<Pony_NaturalHorn.label>角</Pony_NaturalHorn.label>
+	<Pony_NaturalHorn.description>天然的角</Pony_NaturalHorn.description>
+	<Pony_NaturalHorn.labelNoun>独角兽的角</Pony_NaturalHorn.labelNoun>
 
-	<BionicHorn.label>仿生角</BionicHorn.label>
-	<BionicHorn.description>已安装的仿生角</BionicHorn.description>
-	<BionicHorn.labelNoun>仿生角</BionicHorn.labelNoun>
+	<Pony_BionicHorn.label>仿生角</Pony_BionicHorn.label>
+	<Pony_BionicHorn.description>已安装的仿生角</Pony_BionicHorn.description>
+	<Pony_BionicHorn.labelNoun>仿生角</Pony_BionicHorn.labelNoun>
 
-	<ArchotechHorn.label>超凡仿生角</ArchotechHorn.label>
-	<ArchotechHorn.description>已安装的超凡仿生角</ArchotechHorn.description>
-	<ArchotechHorn.labelNoun>超凡仿生角</ArchotechHorn.labelNoun>
+	<Pony_ArchotechHorn.label>超凡仿生角</Pony_ArchotechHorn.label>
+	<Pony_ArchotechHorn.description>已安装的超凡仿生角</Pony_ArchotechHorn.description>
+	<Pony_ArchotechHorn.labelNoun>超凡仿生角</Pony_ArchotechHorn.labelNoun>
 
 
 </LanguageData>

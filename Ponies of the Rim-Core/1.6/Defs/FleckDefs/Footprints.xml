@@ -2,7 +2,7 @@
 <Defs>
 
   <FleckDef ParentName="FleckBase">
-    <defName>Hoofprint</defName>
+    <defName>Pony_Hoofprint</defName>
     <graphicData>
       <texPath>Things/Mote/Hoofprint</texPath>
       <renderInstanced>true</renderInstanced>

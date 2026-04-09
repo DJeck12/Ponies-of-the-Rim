@@ -5,7 +5,7 @@
 		<categoryTag>PonyOutlander</categoryTag>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<structureMemeWeights>
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>

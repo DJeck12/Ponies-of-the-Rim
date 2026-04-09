@@ -2,10 +2,10 @@
 <LanguageData>
 
 	<TopHead.label>поверх головы</TopHead.label>
-	<Horn.label>рог</Horn.label>
-	<Wings.label>крылья</Wings.label>
-	<Tail.label>хвост</Tail.label>
-	<RearLegs.label>задние ноги</RearLegs.label>
-	<Hooves.label>копыта</Hooves.label>
+	<Pony_Horn.label>рог</Pony_Horn.label>
+	<Pony_Wings.label>крылья</Pony_Wings.label>
+	<Pony_Tail.label>хвост</Pony_Tail.label>
+	<Pony_RearLegs.label>задние ноги</Pony_RearLegs.label>
+	<Pony_Hooves.label>копыта</Pony_Hooves.label>
 
 </LanguageData>

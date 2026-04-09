@@ -8,7 +8,7 @@
 
 		<!-- Zebra mark -->
 			<li>
-				<name>Zebra Cutiemark</name>
+				<name>Pony_Zebra_Cutiemark</name>
 				<path>Races/Cutiemarks/QTMark_Zebra</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<drawSize>(0.15, 0.15)</drawSize>
@@ -50,7 +50,7 @@
 			</li>
 		<!-- Griffon head -->
 			<li>
-				<name>Head front</name>
+				<name>Pony_Head_Front</name>
 				<path>Races/Heads/Griffon/HeadFront_Male</path>
 				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
@@ -85,7 +85,7 @@
 				</offsets>
 			</li>
 			<li>
-				<name>Head back</name>
+				<name>Pony_Head_Back</name>
 				<path>Races/Heads/Griffon/HeadBack_Male</path>
 				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
@@ -121,7 +121,7 @@
 			</li>
 		<!-- Griffon ears -->
 			<li>
-				<name>Right ear</name>
+				<name>Pony_Right_Ear</name>
 				<path>Races/Ears/Griffon/Normal/Ear_Right</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
@@ -139,7 +139,7 @@
 					</BodyPart>
 					<Apparel>
 						<hiddenUnderApparelFor>
-							<li>CoverEars</li>
+							<li>Pony_CoverEars</li>
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
@@ -159,7 +159,7 @@
 				</offsets>
 			</li>
 			<li>
-				<name>Left ear</name>
+				<name>Pony_Left_Ear</name>
 				<path>Races/Ears/Griffon/Normal/Ear_Left</path>
 				<userCustomizable>false</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
@@ -178,7 +178,7 @@
 					</BodyPart>
 					<Apparel>
 						<hiddenUnderApparelFor>
-							<li>CoverEars</li>
+							<li>Pony_CoverEars</li>
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
@@ -199,7 +199,7 @@
 			</li>
 		<!-- Head addon -->
 			<li>
-				<name>Head addon</name>
+				<name>Pony_Head_Addon</name>
 				<path>Races/Addons/Kirin/Head_Scales</path>
 				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
@@ -229,7 +229,7 @@
 			</li>
 		<!-- Soul gem-->
 			<li>
-				<name>Soul gem</name>
+				<name>Pony_Soul_Gem</name>
 				<path>Races/Addons/Changeling/SoulGem</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -258,7 +258,7 @@
 			</li>
 		<!-- Body addon (skin)-->
 			<li>
-				<name>Body addon (skin)</name>
+				<name>Pony_Body_Addon_Skin</name>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 				<colorChannel>skin</colorChannel>
@@ -292,7 +292,7 @@
 			</li>
 		<!-- Hands -->
 			<li>
-				<name>Hands</name>
+				<name>Pony_Hands</name>
 				<path>Races/Claws/Claws</path>
 				<inFrontOfBody>true</inFrontOfBody>
 				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
@@ -321,7 +321,7 @@
 			</li>
 		<!-- Kirin horn -->
 			<li>
-				<name>Horn</name>
+				<name>Pony_Kirin_Horn</name>
 				<path>Races/Horns/Kirin/Horn_Kirin</path>
 				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>
@@ -334,20 +334,20 @@
 					</Or>
 					<Or>
 						<BodyPart>
-							<bodyPart>Pony_Horn</bodyPart>
+							<bodyPart>Pony_KirinHorn</bodyPart>
 							<drawWithoutPart>true</drawWithoutPart>
 						</BodyPart>
 					</Or>
 					<Apparel>
 						<hiddenUnderApparelFor>
-							<li>CoverHorn</li>
+							<li>Pony_CoverHorn</li>
 						</hiddenUnderApparelFor>
 					</Apparel>
 				</conditions>
 				<extendedGraphics>
 					<Hediff For="MissingBodyPart">Races/Horns/Broken/Horn_Broken</Hediff>
-					<Hediff For="BionicHorn">Races/Horns/Bionic/Horn_Bionic</Hediff>
-					<Hediff For="ArchotechHorn">Races/Horns/Archotech/Horn_Archotech</Hediff>
+					<Hediff For="Pony_BionicHorn">Races/Horns/Bionic/Horn_Bionic</Hediff>
+					<Hediff For="Pony_ArchotechHorn">Races/Horns/Archotech/Horn_Archotech</Hediff>
 				</extendedGraphics>
 				<offsets>
 					<south>
@@ -363,7 +363,7 @@
 			</li>
 		<!-- Antlers -->
 			<li>
-				<name>Antlers</name>
+				<name>Pony_Antlers</name>
 				<path>Races/Horns/Antlers/Antlers_Male</path>
 				<userCustomizable>true</userCustomizable>
 				<inFrontOfBody>true</inFrontOfBody>

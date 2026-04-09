@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Meat_Pony.label>小马肉</Meat_Pony.label>
-	<Meat_Pony.description>新鲜屠宰的生肉。可进一步烹饪为菜肴或生吃，但大部分生物会反感这个想法。对小马和人类来说，吃这些肉都是很残忍的想法。</Meat_Pony.description>
+	<Pony_Meat.label>小马肉</Pony_Meat.label>
+	<Pony_Meat.description>新鲜屠宰的生肉。可进一步烹饪为菜肴或生吃，但大部分生物会反感这个想法。对小马和人类来说，吃这些肉都是很残忍的想法。</Pony_Meat.description>
 
 </LanguageData>

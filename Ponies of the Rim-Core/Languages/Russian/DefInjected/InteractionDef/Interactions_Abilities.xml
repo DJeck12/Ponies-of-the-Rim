@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<GlimpseOfFate.label>проблеск судьбы</GlimpseOfFate.label>
-	<GlimpseOfFate.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameDef] предсказывает будущее [RECIPIENT_nameDef] и предлагает [PAWN_objective] присоединиться к нашему поселению.</GlimpseOfFate.logRulesInitiator.rulesStrings.0>
+	<Pony_GlimpseOfFate.label>проблеск судьбы</Pony_GlimpseOfFate.label>
+	<Pony_GlimpseOfFate.logRulesInitiator.rulesStrings.0>r_logentry->[INITIATOR_nameDef] предсказывает будущее [RECIPIENT_nameDef] и предлагает [PAWN_objective] присоединиться к нашему поселению.</Pony_GlimpseOfFate.logRulesInitiator.rulesStrings.0>
 
 </LanguageData>

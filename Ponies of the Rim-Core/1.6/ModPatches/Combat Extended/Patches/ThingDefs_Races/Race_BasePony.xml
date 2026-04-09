@@ -70,7 +70,7 @@
 								</capacities>
 								<power>9.6</power>
 								<cooldownTime>3.5</cooldownTime>
-								<linkedBodyPartsGroup>RearLegs</linkedBodyPartsGroup>
+								<linkedBodyPartsGroup>Pony_RearLegs</linkedBodyPartsGroup>
 								<surpriseAttack>
 									<extraMeleeDamages>
 										<li>

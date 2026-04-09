@@ -39,7 +39,7 @@ Kirin are a largely reclusive race. Their fiery outbursts make them poor neighbo
 				</capacities>
 				<power>8.2</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Horn</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Pony_Horn</linkedBodyPartsGroup>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>

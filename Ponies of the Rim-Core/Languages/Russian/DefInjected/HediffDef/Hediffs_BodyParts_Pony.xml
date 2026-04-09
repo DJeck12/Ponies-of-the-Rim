@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<ArtificialTail.label>искусственный хвост</ArtificialTail.label>
-	<ArtificialTail.description>Установленный искусственый хвост.</ArtificialTail.description>
-	<ArtificialTail.labelNoun>искусственный хвост</ArtificialTail.labelNoun>
+	<Pony_ArtificialTail.label>искусственный хвост</Pony_ArtificialTail.label>
+	<Pony_ArtificialTail.description>Установленный искусственый хвост.</Pony_ArtificialTail.description>
+	<Pony_ArtificialTail.labelNoun>искусственный хвост</Pony_ArtificialTail.labelNoun>
 
-	<PegHoof.label>деревянное копыто</PegHoof.label>
-	<PegHoof.description>Установленное деревянное копыто.</PegHoof.description>
-	<PegHoof.labelNoun>деревянное копыто</PegHoof.labelNoun>
-	<SimpleProstheticHoof.label>простой протез копыта</SimpleProstheticHoof.label>
-	<SimpleProstheticHoof.description>Установленный простой протез копыта.</SimpleProstheticHoof.description>
-	<SimpleProstheticHoof.labelNoun>простой протез копыта</SimpleProstheticHoof.labelNoun>
+	<Pony_PegHoof.label>деревянное копыто</Pony_PegHoof.label>
+	<Pony_PegHoof.description>Установленное деревянное копыто.</Pony_PegHoof.description>
+	<Pony_PegHoof.labelNoun>деревянное копыто</Pony_PegHoof.labelNoun>
+	<Pony_SimpleProstheticHoof.label>простой протез копыта</Pony_SimpleProstheticHoof.label>
+	<Pony_SimpleProstheticHoof.description>Установленный простой протез копыта.</Pony_SimpleProstheticHoof.description>
+	<Pony_SimpleProstheticHoof.labelNoun>простой протез копыта</Pony_SimpleProstheticHoof.labelNoun>
 
-	<NaturalWing.label>крыло</NaturalWing.label>
-	<NaturalWing.description>Натуральное крыло пегаса.</NaturalWing.description>
-	<NaturalWing.labelNoun>крыло</NaturalWing.labelNoun>
-	<SimpleProstheticWing.label>простой протез крыла</SimpleProstheticWing.label>
-	<SimpleProstheticWing.description>Установленный простой протез крыла.</SimpleProstheticWing.description>
-	<SimpleProstheticWing.labelNoun>простой протез крыла</SimpleProstheticWing.labelNoun>
-	<BionicWing.label>бионическое крыло</BionicWing.label>
-	<BionicWing.description>Вживлённое бионическое крыло.</BionicWing.description>
-	<BionicWing.labelNoun>бионическое крыло</BionicWing.labelNoun>
-	<ArchotechWing.label>архокрыло</ArchotechWing.label>
-	<ArchotechWing.description>Вживлённое архокрыло.</ArchotechWing.description>
-	<ArchotechWing.labelNoun>архокрыло</ArchotechWing.labelNoun>
+	<Pony_NaturalWing.label>крыло</Pony_NaturalWing.label>
+	<Pony_NaturalWing.description>Натуральное крыло пегаса.</Pony_NaturalWing.description>
+	<Pony_NaturalWing.labelNoun>крыло</Pony_NaturalWing.labelNoun>
+	<Pony_SimpleProstheticWing.label>простой протез крыла</Pony_SimpleProstheticWing.label>
+	<Pony_SimpleProstheticWing.description>Установленный простой протез крыла.</Pony_SimpleProstheticWing.description>
+	<Pony_SimpleProstheticWing.labelNoun>простой протез крыла</Pony_SimpleProstheticWing.labelNoun>
+	<Pony_BionicWing.label>бионическое крыло</Pony_BionicWing.label>
+	<Pony_BionicWing.description>Вживлённое бионическое крыло.</Pony_BionicWing.description>
+	<Pony_BionicWing.labelNoun>бионическое крыло</Pony_BionicWing.labelNoun>
+	<Pony_ArchotechWing.label>архокрыло</Pony_ArchotechWing.label>
+	<Pony_ArchotechWing.description>Вживлённое архокрыло.</Pony_ArchotechWing.description>
+	<Pony_ArchotechWing.labelNoun>архокрыло</Pony_ArchotechWing.labelNoun>
 
-	<NaturalHorn.label>рог</NaturalHorn.label>
-	<NaturalHorn.description>Натуральный рог единорога.</NaturalHorn.description>
-	<NaturalHorn.labelNoun>рог</NaturalHorn.labelNoun>
-	<BionicHorn.label>бионический рог</BionicHorn.label>
-	<BionicHorn.description>Вживлённый бионический рог.</BionicHorn.description>
-	<BionicHorn.labelNoun>бионический рог</BionicHorn.labelNoun>
-	<ArchotechHorn.label>архорог</ArchotechHorn.label>
-	<ArchotechHorn.description>Вживлённый архорог.</ArchotechHorn.description>
-	<ArchotechHorn.labelNoun>архорог</ArchotechHorn.labelNoun>
+	<Pony_NaturalHorn.label>рог</Pony_NaturalHorn.label>
+	<Pony_NaturalHorn.description>Натуральный рог единорога.</Pony_NaturalHorn.description>
+	<Pony_NaturalHorn.labelNoun>рог</Pony_NaturalHorn.labelNoun>
+	<Pony_BionicHorn.label>бионический рог</Pony_BionicHorn.label>
+	<Pony_BionicHorn.description>Вживлённый бионический рог.</Pony_BionicHorn.description>
+	<Pony_BionicHorn.labelNoun>бионический рог</Pony_BionicHorn.labelNoun>
+	<Pony_ArchotechHorn.label>архорог</Pony_ArchotechHorn.label>
+	<Pony_ArchotechHorn.description>Вживлённый архорог.</Pony_ArchotechHorn.description>
+	<Pony_ArchotechHorn.labelNoun>архорог</Pony_ArchotechHorn.labelNoun>
 
 </LanguageData>

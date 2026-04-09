@@ -42,7 +42,7 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 				</capacities>
 				<power>8.2</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Horn</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Pony_Horn</linkedBodyPartsGroup>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>

@@ -144,7 +144,7 @@
 			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 			<range>19.9</range>
 			<warmupTime>2.0</warmupTime>
-			<soundCast>Magic_UnicornBlast</soundCast>
+			<soundCast>Pony_UnicornBlast</soundCast>
 		</verbProperties>
 		<comps>
 			<li Class="CompProperties_AbilityLaunchProjectile">

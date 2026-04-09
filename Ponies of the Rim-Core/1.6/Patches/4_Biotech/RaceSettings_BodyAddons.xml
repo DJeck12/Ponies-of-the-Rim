@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Cutiemark"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Cutiemark"]/conditions/Or[1]</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_Cutiemark</Gene>
@@ -17,13 +17,13 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/conditions/Or[2]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/conditions/Or[2]</xpath>
 					<value>
 						<Race>Human</Race>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Tail"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Tail"]/conditions/Or[1]</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_PonyTail</Gene>
@@ -32,7 +32,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Nose"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Nose"]/conditions/Or[1]</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_EquineNose</Gene>
@@ -41,7 +41,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right ear"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Ear"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_PonyEars</Gene>
@@ -50,7 +50,7 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left ear"]/conditions/Or</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Ear"]/conditions/Or</xpath>
 					<value>
 						<Or>
 							<Gene>Pony_PonyEars</Gene>
@@ -59,39 +59,39 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Horn"]/conditions/Or[2]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Horn"]/conditions/Or[2]</xpath>
 					<value>
 						<Race>Human</Race>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Horn"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Horn"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_UnicornHorn</Gene>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right wing"]/conditions/Or[2]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Wing"]/conditions/Or[2]</xpath>
 					<value>
 						<Race>Human</Race>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Right wing"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Right_Wing"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_PegasusWings</Gene>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left wing"]/conditions/Or[2]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Wing"]/conditions/Or[2]</xpath>
 					<value>
 						<Race>Human</Race>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Left wing"]/conditions/Or[1]</xpath>
+					<xpath>Defs/AlienRace.RaceSettings[defName="Pony_BodyAddons_Settings"]/universalBodyAddons/li[name="Pony_Left_Wing"]/conditions/Or[1]</xpath>
 					<value>
 						<Gene>Pony_PegasusWings</Gene>
 					</value>

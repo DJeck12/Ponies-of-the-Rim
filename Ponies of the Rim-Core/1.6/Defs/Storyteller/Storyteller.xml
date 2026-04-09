@@ -3,7 +3,7 @@
 <Defs>
 
 	<StorytellerDef ParentName="BaseStoryteller">
-		<defName>Courage</defName>
+		<defName>Pony_CourageTale</defName>
 		<label>Courage Tale</label>
 		<description>Courage always takes fate into her own hooves and this is reflected in her stories. In between major challenges, she will send out many more quests and points of interest than other storytellers. You can try to accept all available quests, or enrich yourself with the simplest ones. Good choice for caravans.</description>
 		<portraitLarge>UI/Storyteller/CannyBush</portraitLarge>

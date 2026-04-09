@@ -18,7 +18,7 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 			<li>(0.5, 0.5, 0.5)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<structureMemeWeights>
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
@@ -167,7 +167,7 @@ This changeling hive has been on this planet for a very long time, they are host
 			<li>(0.2, 0.2, 0.2)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Pony_ChangelingSupremacist</li>
@@ -358,7 +358,7 @@ Centuries later, changedlings continue to reform to this day, forming opposition
 			<li>(0.6, 0.84, 0.4)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
@@ -553,7 +553,7 @@ The Crystal Empire is expanding its influence wherever other ponies live and alt
 			<li>(0.5, 0.88, 0.9)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<structureMemeWeights>
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
@@ -686,7 +686,7 @@ At the moment, the deer are in an active war with the Kirin and will not tolerat
 			<li>(0, 0.5, 0.2)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
@@ -855,7 +855,7 @@ Hint: You can hire griffon mercenaries using the comms console for a certain pri
 			<li>(0.9, 0.54, 0.18)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
@@ -995,7 +995,7 @@ Hippogriffs still live in isolation from all other settlements, maintaining an a
 			<li>(0.2, 0.46, 0.75)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
@@ -1125,7 +1125,7 @@ Today's Kirin tribes have advanced to medieval technology, building stone fortre
 			<li>(0.9, 0.25, 0.25)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<structureMemeWeights>
 			<Pony_Harmonism MayRequire="Ludeon.RimWorld.Ideology">4</Pony_Harmonism>
@@ -1297,7 +1297,7 @@ Their alchemical arsenal and ritual skills provide them with protection from mec
 			<li>(0.75, 0.75, 0.75)</li>
 		</colorSpectrum>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>

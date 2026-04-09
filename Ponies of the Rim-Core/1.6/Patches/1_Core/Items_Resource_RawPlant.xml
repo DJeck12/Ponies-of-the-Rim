@@ -9,7 +9,7 @@
 			<tasteThought></tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			<specialThoughtAsIngredient>AteHayAsIngredient</specialThoughtAsIngredient>
+			<specialThoughtAsIngredient>Pony_AteHayAsIngredient</specialThoughtAsIngredient>
 		</value>
 	</Operation>
 

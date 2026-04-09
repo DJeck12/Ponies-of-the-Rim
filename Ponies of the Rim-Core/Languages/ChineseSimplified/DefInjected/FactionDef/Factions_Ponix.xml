@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<PonyxUnion.label>X小马联盟</PonyxUnion.label>
-	<PonyxUnion.description>一群友善的小马。作为基因实验的产物，小马已经适应了严酷的末日后世界。它们乐于与其他生物接触，但不会容忍羞辱，并会与任何违反友谊原则的人战斗。</PonyxUnion.description>
-	<PonyxUnion.leaderTitle>最高顾问</PonyxUnion.leaderTitle>
-	<PonyxUnion.pawnSingular>陌生马</PonyxUnion.pawnSingular>
-	<PonyxUnion.pawnsPlural>陌生马</PonyxUnion.pawnsPlural>
+	<Pony_PonyxUnion.label>X小马联盟</Pony_PonyxUnion.label>
+	<Pony_PonyxUnion.description>一群友善的小马。作为基因实验的产物，小马已经适应了严酷的末日后世界。它们乐于与其他生物接触，但不会容忍羞辱，并会与任何违反友谊原则的人战斗。</Pony_PonyxUnion.description>
+	<Pony_PonyxUnion.leaderTitle>最高顾问</Pony_PonyxUnion.leaderTitle>
+	<Pony_PonyxUnion.pawnSingular>陌生马</Pony_PonyxUnion.pawnSingular>
+	<Pony_PonyxUnion.pawnsPlural>陌生马</Pony_PonyxUnion.pawnsPlural>
 
 </LanguageData>

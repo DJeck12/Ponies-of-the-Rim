@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<SimpleProstheticHoof.label>义蹄</SimpleProstheticHoof.label>
-	<SimpleProstheticHoof.description>一条人造蹄子，虽然没有配备神经接口，但复杂的关节结构使其能极大程度的模拟自然活动，不过尽管如此，它依旧不如生物原本的肢体。</SimpleProstheticHoof.description>
+	<Pony_SimpleProstheticHoof.label>义蹄</Pony_SimpleProstheticHoof.label>
+	<Pony_SimpleProstheticHoof.description>一条人造蹄子，虽然没有配备神经接口，但复杂的关节结构使其能极大程度的模拟自然活动，不过尽管如此，它依旧不如生物原本的肢体。</Pony_SimpleProstheticHoof.description>
 
-	<SimpleProstheticWing.label>义翅</SimpleProstheticWing.label>
-	<SimpleProstheticWing.description>一只人造翅膀，虽然没有配备神经接口，但复杂的关节结构使其能极大程度的模拟自然活动，不过尽管如此，它依旧不如生物原本的肢体。</SimpleProstheticWing.description>
-	<BionicWing.label>仿生翅</BionicWing.label>
-	<BionicWing.description>一只先进的人造仿生翅膀，纳米尼龙网搭配微型伺服装置让它能在各种天气条件下精确控制翅膀运动。又得益于晶格尘埃自愈系统，它在各方面的表现都优于生物原本的肢体。</BionicWing.description>
-	<ArchotechWing.label>超凡仿生翅</ArchotechWing.label>
-	<ArchotechWing.description>一只超凡智能制造的仿生翅膀。拥有一对这样的翅膀，使用者可以以超音速飞行，甚至在太空中飞行。这只翅膀几乎没有重量，而且比玻璃钢更坚固。即使它受到伤害，也会随着时间的推移自我修复。但它不会赋予非天马使用者天马魔法，也无法被无翼生物使用。它的内部结构对于所有生物来说都是个谜。</ArchotechWing.description>
+	<Pony_SimpleProstheticWing.label>义翅</Pony_SimpleProstheticWing.label>
+	<Pony_SimpleProstheticWing.description>一只人造翅膀，虽然没有配备神经接口，但复杂的关节结构使其能极大程度的模拟自然活动，不过尽管如此，它依旧不如生物原本的肢体。</Pony_SimpleProstheticWing.description>
+	<Pony_BionicWing.label>仿生翅</Pony_BionicWing.label>
+	<Pony_BionicWing.description>一只先进的人造仿生翅膀，纳米尼龙网搭配微型伺服装置让它能在各种天气条件下精确控制翅膀运动。又得益于晶格尘埃自愈系统，它在各方面的表现都优于生物原本的肢体。</Pony_BionicWing.description>
+	<Pony_ArchotechWing.label>超凡仿生翅</Pony_ArchotechWing.label>
+	<Pony_ArchotechWing.description>一只超凡智能制造的仿生翅膀。拥有一对这样的翅膀，使用者可以以超音速飞行，甚至在太空中飞行。这只翅膀几乎没有重量，而且比玻璃钢更坚固。即使它受到伤害，也会随着时间的推移自我修复。但它不会赋予非天马使用者天马魔法，也无法被无翼生物使用。它的内部结构对于所有生物来说都是个谜。</Pony_ArchotechWing.description>
 	
-	<NaturalHorn.label>角</NaturalHorn.label>
-	<NaturalHorn.description>天然独角兽的角。可以释放魔法。</NaturalHorn.description>
-	<BionicHorn.label>仿生角</BionicHorn.label>
-	<BionicHorn.description>一根先进的人造角。由强大的能量水晶雕刻而成，通过生物凝胶神经直接连接到大脑，扩大佩戴者的魔法极限。得益于灵活可定制的神经传感器，所有独角兽都可以使用这款肢体。</BionicHorn.description>
-	<ArchotechHorn.label>超凡仿生角</ArchotechHorn.label>
-	<ArchotechHorn.description>一根超凡智能制造的仿生角。赋予所有者堪比龙马的魔力。内置的次级人格AI会自动分析和保存所有可能的法术组合，并收集和显示所有可见魔法的来源信息。但它不会赋予非独角兽使用者独角兽魔法，也无法被无角生物使用。它的内部结构对于所有生物来说都是个谜。</ArchotechHorn.description>
+	<Pony_NaturalHorn.label>角</Pony_NaturalHorn.label>
+	<Pony_NaturalHorn.description>天然独角兽的角。可以释放魔法。</Pony_NaturalHorn.description>
+	<Pony_BionicHorn.label>仿生角</Pony_BionicHorn.label>
+	<Pony_BionicHorn.description>一根先进的人造角。由强大的能量水晶雕刻而成，通过生物凝胶神经直接连接到大脑，扩大佩戴者的魔法极限。得益于灵活可定制的神经传感器，所有独角兽都可以使用这款肢体。</Pony_BionicHorn.description>
+	<Pony_ArchotechHorn.label>超凡仿生角</Pony_ArchotechHorn.label>
+	<Pony_ArchotechHorn.description>一根超凡智能制造的仿生角。赋予所有者堪比龙马的魔力。内置的次级人格AI会自动分析和保存所有可能的法术组合，并收集和显示所有可见魔法的来源信息。但它不会赋予非独角兽使用者独角兽魔法，也无法被无角生物使用。它的内部结构对于所有生物来说都是个谜。</Pony_ArchotechHorn.description>
 
 </LanguageData>

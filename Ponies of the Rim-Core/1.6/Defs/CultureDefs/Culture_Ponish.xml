@@ -2,7 +2,7 @@
 <Defs>
 
 	<CultureDef>
-		<defName>Ponish</defName>
+		<defName>Pony_Ponish</defName>
 		<label>ponish</label>
 		<description>A broad collection of cultures originating from Equus, the home planet of ponykind.</description>
 		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>

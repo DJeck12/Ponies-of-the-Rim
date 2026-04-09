@@ -5,7 +5,7 @@
 		<defName>Pony</defName>
 		<hediffGivers>
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityWings">
-				<hediff>NaturalWing</hediff>
+				<hediff>Pony_NaturalWing</hediff>
 				<partsToAffect>
 					<li>Pony_LeftWing</li>
 					<li>Pony_RightWing</li>
@@ -13,7 +13,7 @@
 				<ability>Pony_ShortFlight</ability>
 			</li>
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityHorn">
-				<hediff>NaturalHorn</hediff>
+				<hediff>Pony_NaturalHorn</hediff>
 				<partsToAffect>
 					<li>Pony_Horn</li>
 				</partsToAffect>

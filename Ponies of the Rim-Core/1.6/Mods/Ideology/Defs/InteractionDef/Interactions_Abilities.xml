@@ -2,7 +2,7 @@
 <Defs>
 
 	<InteractionDef>
-		<defName>GlimpseOfFate</defName>
+		<defName>Pony_GlimpseOfFate</defName>
 		<label>glimpse of fate</label>
 		<workerClass>InteractionWorker</workerClass>
 		<ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>

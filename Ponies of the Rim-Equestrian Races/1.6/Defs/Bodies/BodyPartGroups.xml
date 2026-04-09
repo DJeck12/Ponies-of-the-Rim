@@ -2,11 +2,11 @@
 <Defs>
 
 	<BodyPartGroupDef>
-		<defName>CoverAntlers</defName>
+		<defName>Pony_CoverAntlers</defName>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>Antlers</defName>
+		<defName>Pony_Antlers</defName>
 		<label>antlers</label>
 		<listOrder>215</listOrder>
 	</BodyPartGroupDef>

@@ -13,7 +13,7 @@
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
-			<li>Ponish</li>
+			<li>Pony_Ponish</li>
 		</allowedCultures>
 		<backstoryFilters>
 			<li>

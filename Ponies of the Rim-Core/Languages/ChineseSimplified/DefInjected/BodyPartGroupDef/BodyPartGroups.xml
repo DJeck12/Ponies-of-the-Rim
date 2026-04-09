@@ -2,10 +2,10 @@
 <LanguageData>
 
 	<TopHead.label>头顶</TopHead.label>
-	<Horn.label>角</Horn.label>
-	<Wings.label>翅膀</Wings.label>
-	<Tail.label>尾巴</Tail.label>
-	<RearLegs.label>后腿</RearLegs.label>
-	<Hooves.label>蹄子</Hooves.label>
+	<Pony_Horn.label>角</Pony_Horn.label>
+	<Pony_Wings.label>翅膀</Pony_Wings.label>
+	<Pony_Tail.label>尾巴</Pony_Tail.label>
+	<Pony_RearLegs.label>后腿</Pony_RearLegs.label>
+	<Pony_Hooves.label>蹄子</Pony_Hooves.label>
 
 </LanguageData>

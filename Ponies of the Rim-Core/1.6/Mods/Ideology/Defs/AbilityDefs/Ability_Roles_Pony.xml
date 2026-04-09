@@ -73,7 +73,7 @@
 				</workTags>
 			</li>
 			<li Class="CompProperties_AbilitySocialInteraction">
-				<interactionDef>GlimpseOfFate</interactionDef>
+				<interactionDef>Pony_GlimpseOfFate</interactionDef>
 			</li>
 		</comps>
 		<requiredMemes>

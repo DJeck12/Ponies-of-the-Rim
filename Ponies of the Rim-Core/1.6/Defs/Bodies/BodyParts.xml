@@ -4,7 +4,7 @@
 <!--Head-->
 
 	<BodyPartDef>
-		<defName>Pony_Horn</defName>
+		<defName>Pony_UnicornHorn</defName>
 		<label>horn</label>
 		<hitPoints>20</hitPoints>
 		<skinCovered>false</skinCovered>
@@ -13,7 +13,7 @@
 		<alive>false</alive>
 		<bleedRate>0</bleedRate>
 		<forceAlwaysRemovable>true</forceAlwaysRemovable>
-		<spawnThingOnRemoved>NaturalHorn</spawnThingOnRemoved>
+		<spawnThingOnRemoved>Pony_UnicornHorn</spawnThingOnRemoved>
 	</BodyPartDef>
 
 <!--Body-->

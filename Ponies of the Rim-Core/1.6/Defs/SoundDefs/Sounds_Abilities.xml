@@ -55,7 +55,7 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>Magic_UnicornBlast</defName>  
+		<defName>Pony_UnicornBlast</defName>  
 		<context>MapOnly</context>  
 		<maxSimultaneous>1</maxSimultaneous>  
 		<subSounds>

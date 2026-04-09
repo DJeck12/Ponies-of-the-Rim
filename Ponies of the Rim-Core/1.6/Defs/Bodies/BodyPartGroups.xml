@@ -2,43 +2,43 @@
 <Defs>
 
 	<BodyPartGroupDef>
-		<defName>CoverEars</defName>
+		<defName>Pony_CoverEars</defName>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>CoverHorn</defName>
+		<defName>Pony_CoverHorn</defName>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>CoverWings</defName>
+		<defName>Pony_CoverWings</defName>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>Horn</defName>
+		<defName>Pony_Horn</defName>
 		<label>horn</label>
 		<listOrder>210</listOrder>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>Wings</defName>
+		<defName>Pony_Wings</defName>
 		<label>wings</label>
 		<listOrder>65</listOrder>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>Tail</defName>
+		<defName>Pony_Tail</defName>
 		<label>tail</label>
 		<listOrder>45</listOrder>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>Hooves</defName>
+		<defName>Pony_Hooves</defName>
 		<label>hooves</label>
 		<listOrder>5</listOrder>
 	</BodyPartGroupDef>
 
 	<BodyPartGroupDef>
-		<defName>RearLegs</defName>
+		<defName>Pony_RearLegs</defName>
 		<label>rear legs</label>
 	</BodyPartGroupDef>
 

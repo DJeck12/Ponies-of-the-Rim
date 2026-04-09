@@ -11,7 +11,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 					<value>
-						<li>PonyxUnion</li>
+						<li>Pony_PonyxUnion</li>
 					</value>
 				</li>
 			</operations>

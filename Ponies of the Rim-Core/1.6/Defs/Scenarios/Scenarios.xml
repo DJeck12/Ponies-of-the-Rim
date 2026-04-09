@@ -59,7 +59,7 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MealFine_Hay</thingDef>
+					<thingDef>Pony_MealFine_Hay</thingDef>
 					<count>20</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
@@ -237,7 +237,7 @@ Will you show the creatures of the Rimworld a better way? Or will you fall to th
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MealFine_Hay</thingDef>
+					<thingDef>Pony_MealFine_Hay</thingDef>
 					<count>20</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">

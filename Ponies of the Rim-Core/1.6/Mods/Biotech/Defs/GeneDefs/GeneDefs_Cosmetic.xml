@@ -9,8 +9,8 @@
 		<displayOrderInCategory>40</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
 		<forcedHeadTypes>
-			<li>Male_Pony</li>
-			<li>Female_Pony</li>
+			<li>Pony_Male</li>
+			<li>Pony_Female</li>
 		</forcedHeadTypes>
 		<exclusionTags>
 			<li>Head</li>

@@ -12,7 +12,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef/apparel[contains(bodyPartGroups,'Torso')]/bodyPartGroups</xpath>
 		<value>
-			<li>Wings</li>
+			<li>Pony_Wings</li>
 		</value>
 	</Operation>
 
@@ -20,7 +20,7 @@
 		<xpath>Defs/ThingDef[@Name="ApparelArmorPowerBase"
 		or @Name="ApparelArmorReconBase"]/apparel/bodyPartGroups</xpath>
 		<value>
-			<li>CoverWings</li>
+			<li>Pony_CoverWings</li>
 		</value>
 	</Operation>
 
@@ -28,7 +28,7 @@
 		<xpath>Defs/ThingDef[@Name="ApparelArmorHelmetPowerBase"
 		or @Name="ApparelArmorHelmetReconBase"]/apparel/bodyPartGroups</xpath>
 		<value>
-			<li>CoverEars</li>
+			<li>Pony_CoverEars</li>
 		</value>
 	</Operation>
 
