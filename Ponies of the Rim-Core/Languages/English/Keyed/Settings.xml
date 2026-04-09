@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-		<!-- Mod Name -->
-	<SettingsPoniesOfTheRim>Ponies Of The Rim</SettingsPoniesOfTheRim>
-		<!-- Header -->
-	<SettingsHeader>Here are settings for Ponies Of Rim Mod</SettingsHeader>
-	<SettingsEnableAll>Enable All</SettingsEnableAll>
-	<SettingsDisableAll>Disable All</SettingsDisableAll>
-	<SettingsDefulatAll>Defulat All</SettingsDefulatAll>
+	<!-- Mod Name -->
+		<SettingsPoniesOfTheRim>Ponies of the Rim</SettingsPoniesOfTheRim>
+	<!-- Tabs -->
+		<Pony_TabGeneral>General settings</Pony_TabGeneral>
+		<Pony_TabPatches>Patch settings</Pony_TabPatches>
+	<!-- General -->
+		<SettingsHeader>Mod's settings</SettingsHeader>
+		<SettingsDefulatAll>Set to default</SettingsDefulatAll>
+		<Pony_WarnReloadSave>Must reload your save file to apply changes</Pony_WarnReloadSave>
 	<!-- Main -->
-	<SettingsCore>Core</SettingsCore>
-	<!-- Classical -->
-	<SettingsClassical>Classical</SettingsClassical>
-	<SettingsIdeology>Ideology</SettingsIdeology>
-	<SettingsAbilities>Abilities</SettingsAbilities>
-	<SettingsProsthetics>Prosthetics</SettingsProsthetics>
-	<SettingsAnthro>Anthro</SettingsAnthro>
-	<SettingsEnableRegularHorses>Enable Regular Horses</SettingsEnableRegularHorses>
+		<SettingsCore> Ponies of the Rim: Core</SettingsCore>
+		<SettingsClassical>All settings</SettingsClassical>
+		<SettingsAbilities>Abilities</SettingsAbilities>
+		<Pony_SettingsDiet>Unique diets</Pony_SettingsDiet>
+		<Pony_SettingsFoodDebuffs>Food mood debuffs</Pony_SettingsFoodDebuffs>
 	<!-- ToolTips -->
-	<SettingsToolTipClassical>Enable All Recomended Settings</SettingsToolTipClassical>
-	<SettingsToolTipIdeology>Add Ponies Ideology To the Game</SettingsToolTipIdeology>
-	<SettingsToolTipAbilities>Add Ponies Abilities To the Game</SettingsToolTipAbilities>
-	<SettingsToolTipProsthetics>Add Addisional Items That Consist of Prostetics To the Game</SettingsToolTipProsthetics>
-	<SettingsToolTipAnthro>Add Anthro Xenotype</SettingsToolTipAnthro>
-	<SettingsToolTipEnableRegularHorses>Add Regular Horses To The Game</SettingsToolTipEnableRegularHorses>
+		<SettingsToolTipClassical>Enable all recomended settings</SettingsToolTipClassical>
+		<SettingsToolTipAbilities>Enable racial pony abilities</SettingsToolTipAbilities>
+		<Pony_SettingsToolTipDiet>Enable herbivore/carnivore racial diets</Pony_SettingsToolTipDiet>
+		<Pony_SettingsToolTipFoodDebuffs>Enable negative mood debuffs when consumed by herbivores/carnivores</Pony_SettingsToolTipFoodDebuffs>
+
+	<!-- Patches -->
+		<Pony_NoPatchesFound>No patches found</Pony_NoPatchesFound>
+		<Pony_PatchSettingsHeader>XML patches. Doesn't always apply changes to an existing save file. In most cases, new pawns / items / tiles need to be generated</Pony_PatchSettingsHeader>
+	<!-- Reload game-->
+		<Pony_WarnReloadGame>Must reload the game to apply changes</Pony_WarnReloadGame>
+		<Pony_RestartNow>Save and apply changes</Pony_RestartNow>
+		<Pony_RestartConfirm>Mod's settings have been changed. Are you sure you want to reload the game?</Pony_RestartConfirm>
 </LanguageData>
