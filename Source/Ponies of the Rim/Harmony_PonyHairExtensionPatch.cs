@@ -11,7 +11,7 @@ namespace PoniesOfTheRim
     {
         public static void PonyTailPatch(Pawn pawn, AlienPartGenerator.BodyAddon __instance, ref int sharedIndex)
         {
-            if (__instance.Name != "Tail") return;
+            if (__instance.Name != "Pony_Tail") return;
             if (pawn == null || !pawn.IsPony()) return;
             if (pawn.story?.hairDef == null) return;
 

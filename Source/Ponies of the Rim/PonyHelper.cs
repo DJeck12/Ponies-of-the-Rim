@@ -112,7 +112,7 @@ namespace PoniesOfTheRim
 
         public static void PlaceHoofprint(Vector3 loc, Map map, float rot)
         {
-            PlaceFootprintFleck(loc, map, rot, Pony_DefOf.Hoofprint);
+            PlaceFootprintFleck(loc, map, rot, Pony_DefOf.Pony_Hoofprint);
         }
 
         // Безопасно при fleckDef == null — ничего не происходит.

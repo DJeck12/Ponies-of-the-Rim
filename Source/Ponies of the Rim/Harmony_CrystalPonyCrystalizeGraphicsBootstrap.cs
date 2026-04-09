@@ -93,8 +93,8 @@ namespace PoniesOfTheRim
             private static readonly HashSet<string> CrystalizeAddons =
                 new HashSet<string>(StringComparer.OrdinalIgnoreCase)
                 {
-                    "Body", "Head", "Tail",
-                    "Right ear", "Left ear", "Cutiemark"
+                    "Pony_Body", "Pony_Head", "Pony_Tail",
+                    "Pony_Right_Ear", "Pony_Left_Ear", "Pony_Cutiemark"
                 };
 
             

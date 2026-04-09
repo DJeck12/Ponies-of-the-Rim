@@ -117,10 +117,10 @@ namespace PoniesOfTheRim.Flying
 
         public static readonly HashSet<string> WingHediffDefs = new()
         {
-            "NaturalWing",
-            "SimpleProstheticWing",
-            "BionicWing",
-            "ArchotechWing"
+            "Pony_NaturalWing",
+            "Pony_SimpleProstheticWing",
+            "Pony_BionicWing",
+            "Pony_ArchotechWing"
         };
 
         public static bool HasUsableWings(Pawn pawn)
@@ -506,8 +506,8 @@ namespace PoniesOfTheRim.Flying
                     pName != PegasusFlightUtil.RightWingPartDef) continue;
                 switch (h.def?.defName)
                 {
-                    case "BionicWing":    bionic++;    break;
-                    case "ArchotechWing": archotech++; break;
+                    case "Pony_BionicWing":    bionic++;    break;
+                    case "Pony_ArchotechWing": archotech++; break;
                 }
             }
 

@@ -72,7 +72,7 @@ namespace PoniesOfTheRim
                 string addonName = addon.Name;
                 int desired = -1;
 
-                if (addonName == "Body" && ext.bodyMarkVariants > 0)
+                if (addonName == "Pony_Body" && ext.bodyMarkVariants > 0)
                 {
                     int variantCount = (int)_variantCountField.GetValue(addon);
                     if (variantCount <= 1) continue;
@@ -84,7 +84,7 @@ namespace PoniesOfTheRim
                         : 0;
                     Rand.PopState();
                 }
-                else if (addonName == "Head")
+                else if (addonName == "Pony_Head")
                 {
                     int maxVariants = pawn.gender == Gender.Female
                         ? ext.headMarkVariantsFemale
