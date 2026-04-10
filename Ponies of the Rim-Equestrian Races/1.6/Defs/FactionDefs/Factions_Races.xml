@@ -204,6 +204,7 @@ This changeling hive has been on this planet for a very long time, they are host
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
+					<Pony_ChangelingTribal_Drone>20</Pony_ChangelingTribal_Drone>
 					<Pony_ChangelingTribal_Penitent>5</Pony_ChangelingTribal_Penitent>
 					<Pony_ChangelingTribal_Warrior>5</Pony_ChangelingTribal_Warrior>
 					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
@@ -230,6 +231,7 @@ This changeling hive has been on this planet for a very long time, they are host
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>
 				<options>
+					<Pony_ChangelingTribal_Drone>20</Pony_ChangelingTribal_Drone>
 					<Pony_ChangelingTribal_Penitent>10</Pony_ChangelingTribal_Penitent>
 					<Pony_ChangelingTribal_Warrior>10</Pony_ChangelingTribal_Warrior>
 					<Pony_ChangelingTribal_Berserker>10</Pony_ChangelingTribal_Berserker>
@@ -241,6 +243,7 @@ This changeling hive has been on this planet for a very long time, they are host
 				<kindDef>Combat</kindDef>
 				<commonality>5</commonality>
 				<options>
+					<Pony_ChangelingTribal_Drone>10</Pony_ChangelingTribal_Drone>
 					<Pony_ChangelingTribal_Breacher>5</Pony_ChangelingTribal_Breacher>
 					<Pony_ChangelingTribal_Penitent>5</Pony_ChangelingTribal_Penitent>
 					<Pony_ChangelingTribal_Warrior>5</Pony_ChangelingTribal_Warrior>
@@ -256,6 +259,7 @@ This changeling hive has been on this planet for a very long time, they are host
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>
 				<options>
+					<Pony_ChangelingTribal_Drone>10</Pony_ChangelingTribal_Drone>
 					<Pony_ChangelingTribal_Warrior>20</Pony_ChangelingTribal_Warrior>
 					<Pony_ChangelingTribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Pony_ChangelingTribal_Child>
 					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
@@ -288,6 +292,7 @@ This changeling hive has been on this planet for a very long time, they are host
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
+					<Pony_ChangelingTribal_Drone>5</Pony_ChangelingTribal_Drone>
 					<Pony_ChangelingTribal_Warrior>7</Pony_ChangelingTribal_Warrior>
 					<Pony_ChangelingTribal_Archer>10</Pony_ChangelingTribal_Archer>
 					<Pony_ChangelingTribal_Hunter>10</Pony_ChangelingTribal_Hunter>

@@ -333,6 +333,13 @@
 		<label>elite mercenary</label>
 		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Griffon</race>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -349,6 +356,13 @@
 		<label>elite mercenary</label>
 		<labelPlural>elite mercenaries</labelPlural>
 		<race>Pony_Griffon</race>
+		<apparelTags Inherit="False">
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>

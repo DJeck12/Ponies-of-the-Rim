@@ -4,9 +4,29 @@
 <!-- Changeling -->
 
 	<PawnKindDef ParentName="TribalPenitentBase">
+		<defName>Pony_ChangelingTribal_Drone</defName>
+		<label>drone</label>
+		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
+		<weaponMoney>0</weaponMoney>
+		<weaponTags Inherit="False" />
+		<backstoryFilters Inherit="False">
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Pony_Everypony_Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TribalPenitentBase">
 		<defName>Pony_ChangelingTribal_Penitent</defName>
 		<label>penitent</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -21,6 +41,8 @@
 		<defName>Pony_ChangelingTribal_Archer</defName>
 		<label>archer</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -35,6 +57,8 @@
 		<defName>Pony_ChangelingTribal_Warrior</defName>
 		<label>warrior</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -49,6 +73,8 @@
 		<defName>Pony_ChangelingTribal_Hunter</defName>
 		<label>hunter</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
@@ -64,6 +90,8 @@
 		<defName>Pony_ChangelingTribal_Trader</defName>
 		<label>trader</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
@@ -79,6 +107,8 @@
 		<defName>Pony_ChangelingTribal_Berserker</defName>
 		<label>berserker</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -93,6 +123,8 @@
 		<defName>Pony_ChangelingTribal_HeavyArcher</defName>
 		<label>heavy archer</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -107,6 +139,8 @@
 		<defName>Pony_ChangelingTribal_ChiefMelee</defName>
 		<label>berserker chief</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -121,6 +155,8 @@
 		<defName>Pony_ChangelingTribal_ChiefRanged</defName>
 		<label>archer chief</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -135,6 +171,8 @@
 		<defName>Pony_ChangelingTribal_Breacher</defName>
 		<label>breacher</label>
 		<race>Pony_Changeling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -151,6 +189,8 @@
 		<defName>Pony_ChangedlingTribal_Penitent</defName>
 		<label>penitent</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -165,6 +205,8 @@
 		<defName>Pony_ChangedlingTribal_Archer</defName>
 		<label>archer</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -179,6 +221,8 @@
 		<defName>Pony_ChangedlingTribal_Warrior</defName>
 		<label>warrior</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -193,6 +237,8 @@
 		<defName>Pony_ChangedlingTribal_Hunter</defName>
 		<label>hunter</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
@@ -208,6 +254,8 @@
 		<defName>Pony_ChangedlingTribal_Trader</defName>
 		<label>trader</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFiltersOverride Inherit="False">
 			<li>
 				<categories>
@@ -223,6 +271,8 @@
 		<defName>Pony_ChangedlingTribal_Berserker</defName>
 		<label>berserker</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -237,6 +287,8 @@
 		<defName>Pony_ChangedlingTribal_HeavyArcher</defName>
 		<label>heavy archer</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -251,6 +303,8 @@
 		<defName>Pony_ChangedlingTribal_ChiefMelee</defName>
 		<label>berserker chief</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -265,6 +319,8 @@
 		<defName>Pony_ChangedlingTribal_ChiefRanged</defName>
 		<label>archer chief</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
@@ -279,6 +335,8 @@
 		<defName>Pony_ChangedlingTribal_Breacher</defName>
 		<label>breacher</label>
 		<race>Pony_Changedling</race>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired Inherit="False" />
 		<backstoryFilters Inherit="False">
 			<li>
 				<categories>
