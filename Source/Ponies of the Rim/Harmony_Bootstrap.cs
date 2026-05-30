@@ -247,6 +247,12 @@ namespace PoniesOfTheRim
         private static void RegisterCompatibilityPatches()
         {
             RegisterRooCompatibility();
+            RegisterFurCompatibility();
+        }
+
+        private static void RegisterFurCompatibility()
+        {
+            FurCompatibilityPatch.EnsurePonyFurPaths();
         }
 
         private static void RegisterRooCompatibility()
@@ -264,12 +270,12 @@ namespace PoniesOfTheRim
                 return;
             }
 
-            TryPatch(
-                AccessTools.Method(typeof(PawnRenderNode_Fur), "GraphicFor"),
-                prefix: new HarmonyMethod(typeof(PonyRooCompatPatch), nameof(PonyRooCompatPatch.DisableFurForPonyMinotaur))
-                    { priority = Priority.HigherThanNormal },
-                label: "PawnRenderNode_Fur.GraphicFor"
-            );
+            //TryPatch(
+            //    AccessTools.Method(typeof(PawnRenderNode_Fur), "GraphicFor"),
+            //    prefix: new HarmonyMethod(typeof(PonyRooCompatPatch), nameof(PonyRooCompatPatch.DisableFurForPonyMinotaur))
+            //        { priority = Priority.HigherThanNormal },
+            //    label: "PawnRenderNode_Fur.GraphicFor"
+            //);
         }
 
         private static void TryPatch(

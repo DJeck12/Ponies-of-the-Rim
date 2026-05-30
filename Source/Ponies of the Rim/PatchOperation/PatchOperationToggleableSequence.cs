@@ -4,19 +4,19 @@ using Verse;
 
 namespace PoniesOfTheRim.PatchOperation
 {
-    public class PatchOperationToggleableSequence : PatchOperationSequence
+    public class PatchOperationToggleableSequence : Verse.PatchOperation
     {
-        public string settingId;
         public List<Verse.PatchOperation> operations;
         public Verse.PatchOperation lastFailedOperation;
+
+        public string settingId;
         public bool defaultState;
         public string label;
         public string description;
 
         protected bool CanRun()
         {
-            bool enabled = PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, true);
-            return enabled;
+            return PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, defaultState);
         }
 
         protected override bool ApplyWorker(XmlDocument xml)
@@ -26,30 +26,33 @@ namespace PoniesOfTheRim.PatchOperation
                 return true;
             }
 
+            if (operations == null)
+            {
+                Log.Warning($"[PoniesOfTheRim] PatchOperationToggleableSequence '{settingId}': список operations равен null. Пропуск.");
+                return false;
+            }
+
             bool result = true;
             foreach (Verse.PatchOperation operation in operations)
             {
-                result &= operation.Apply(xml);
+                if (!operation.Apply(xml))
+                {
+                    lastFailedOperation = operation;
+                    result = false;
+                }
             }
             return result;
         }
 
         public override string ToString()
-	    {
-		    int num = ((operations != null) ? operations.Count : 0);
-		    string text = string.Format("{0}(count={1}", base.ToString(), num);
-		    if (lastFailedOperation != null)
-		    {
-			    string text2 = text;
-			    Verse.PatchOperation patchOperation = lastFailedOperation;
-			    text = text2 + ", lastFailedOperation=" + ((patchOperation != null) ? patchOperation.ToString() : null);
-		    }
-		    return text + ")";
-	    }
-
-        public override void Complete(string modIdentifier)
         {
-            base.Complete(modIdentifier);
+            int count = (operations != null) ? operations.Count : 0;
+            string text = $"{base.ToString()}(settingId={settingId}, count={count}";
+            if (lastFailedOperation != null)
+            {
+                text += $", lastFailedOperation={lastFailedOperation}";
+            }
+            return text + ")";
         }
     }
 }
