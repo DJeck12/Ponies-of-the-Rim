@@ -3,6 +3,8 @@ using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -98,9 +100,10 @@ namespace PoniesOfTheRim.Flying
                 postfix: Postfix(typeof(Patch_PawnCapacityUtility_BodyCanEverDoCapacity)));
 
             h.Patch(
-                AccessTools.Method(typeof(ITab_Pawn_Health), "FillTab"),
-                prefix:  Prefix(typeof(Patch_ITab_Pawn_Health_FillTab)),
-                postfix: Postfix(typeof(Patch_ITab_Pawn_Health_FillTab)));
+                AccessTools.Method(typeof(HealthCardUtility), "DrawOverviewTab",
+                    new[] { typeof(Rect), typeof(Pawn), typeof(float) }),
+                prefix: Prefix(typeof(Patch_HealthCardUtility_DrawOverviewTab)));
+
 
             Log.Message("[PoniesOfTheRim] Pegasus flight system initialized.");
         }
@@ -778,6 +781,222 @@ namespace PoniesOfTheRim.Flying
                 "  25–50%   +35% sleep need,  −5% consciousness\n" +
                 "  < 25%  +50% sleep need, −15% consciousness\n" +
                 "  0%     Flight disabled until rested\n\n";
+        }
+    }
+
+    public static class Patch_HealthCardUtility_DrawOverviewTab
+    {
+        private const float RowHeight = 22f;
+
+        private static Vector2 _capsScrollPos = Vector2.zero;
+
+        private static readonly MethodInfo DrawLeftRowMI =
+            AccessTools.Method(typeof(HealthCardUtility), "DrawLeftRow");
+        private static readonly MethodInfo GetPainTipMI =
+            AccessTools.Method(typeof(HealthCardUtility), "GetPainTip");
+
+        public static bool Prefix(Rect rect, Pawn pawn, float curY, ref float __result)
+        {
+            if (!pawn.HasWings()) return true;
+            try
+            {
+                __result = DrawOverviewTabImpl(rect, pawn, curY);
+                return false;
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[PoniesOfTheRim] Patch_DrawOverviewTab.Prefix: {e}");
+                return true;
+            }
+        }
+
+        private static float DrawOverviewTabImpl(Rect rect, Pawn pawn, float curY)
+        {
+            curY += 4f;
+            bool anyTopRow = false;
+            Text.Font   = GameFont.Small;
+            Text.Anchor = TextAnchor.UpperLeft;
+            GUI.color   = new Color(0.9f, 0.9f, 0.9f);
+
+            if (pawn.foodRestriction != null
+                && pawn.foodRestriction.Configurable
+                && !pawn.DevelopmentalStage.Baby()
+                && pawn.needs?.food != null
+                && (!pawn.IsMutant || !pawn.mutant.Def.disablePolicies))
+            {
+                Rect row = new Rect(0f, curY, rect.width, 23f);
+                anyTopRow = true;
+                TooltipHandler.TipRegionByKey(row, "FoodRestrictionDescription");
+                Widgets.DrawHighlightIfMouseover(row);
+                Rect lHalf = row; lHalf.xMax = row.center.x - 4f;
+                Rect rHalf = row; rHalf.xMin = row.center.x + 4f;
+                Text.Anchor = TextAnchor.MiddleLeft;
+                Widgets.Label(lHalf, $"{"AllowFood".Translate()}:");
+                Text.Anchor = TextAnchor.UpperLeft;
+                if (Widgets.ButtonText(rHalf, pawn.foodRestriction.CurrentFoodPolicy.label))
+                {
+                    var opts = new List<FloatMenuOption>();
+                    foreach (FoodPolicy fp in Current.Game.foodRestrictionDatabase.AllFoodRestrictions)
+                    {
+                        FoodPolicy local = fp;
+                        opts.Add(new FloatMenuOption(local.label,
+                            () => pawn.foodRestriction.CurrentFoodPolicy = local));
+                    }
+                    opts.Add(new FloatMenuOption("ManageFoodPolicies".Translate() + "...",
+                        () => Find.WindowStack.Add(
+                            new Dialog_ManageFoodPolicies(pawn.foodRestriction.CurrentFoodPolicy))));
+                    Find.WindowStack.Add(new FloatMenu(opts));
+                }
+                curY += row.height + 4f;
+            }
+
+            bool playerFaction = pawn.Faction == Faction.OfPlayer
+                              || pawn.HostFaction == Faction.OfPlayer;
+            bool wildInBed     = pawn.NonHumanlikeOrWildMan() && pawn.InBed()
+                              && pawn.CurrentBed()?.Faction == Faction.OfPlayer;
+            if (pawn.RaceProps.IsFlesh && (playerFaction || wildInBed)
+                && (!pawn.IsMutant || pawn.mutant.Def.entitledToMedicalCare)
+                && pawn.playerSettings != null && !pawn.Dead
+                && Current.ProgramState == ProgramState.Playing)
+            {
+                Rect row = new Rect(0f, curY, rect.width, 23f);
+                anyTopRow = true;
+                TooltipHandler.TipRegionByKey(row, "MedicineQualityDescription");
+                Widgets.DrawHighlightIfMouseover(row);
+                Rect lHalf = row; lHalf.xMax = row.center.x - 4f;
+                Rect rHalf = row; rHalf.xMin = row.center.x + 4f;
+                Text.Anchor = TextAnchor.MiddleLeft;
+                Widgets.Label(lHalf, $"{"AllowMedicine".Translate()}:");
+                Text.Anchor = TextAnchor.UpperLeft;
+                Widgets.DrawButtonGraphic(rHalf);
+                MedicalCareUtility.MedicalCareSelectButton(rHalf, pawn);
+                curY += row.height + 4f;
+            }
+
+            if (Current.ProgramState == ProgramState.Playing && pawn.IsColonist
+                && !pawn.Dead && !pawn.DevelopmentalStage.Baby()
+                && pawn.playerSettings != null)
+            {
+                Rect row = new Rect(0f, curY, rect.width, 23f);
+                anyTopRow = true;
+                TooltipHandler.TipRegion(row,
+                    "AllowSelfTendTip".Translate(
+                        Faction.OfPlayer.def.pawnsPlural,
+                        0.7f.ToStringPercent()).CapitalizeFirst());
+                Widgets.DrawHighlightIfMouseover(row);
+                Rect lHalf  = row; lHalf.xMax  = row.center.x - 4f;
+                Rect cbRect = row; cbRect.xMin = row.center.x + 4f;
+                cbRect.width = cbRect.height;
+                cbRect = cbRect.ContractedBy(4f);
+                Text.Anchor = TextAnchor.MiddleLeft;
+                Widgets.Label(lHalf, $"{"AllowSelfTend".Translate()}:");
+                Text.Anchor = TextAnchor.UpperLeft;
+                bool wasOn = pawn.playerSettings.selfTend;
+                Widgets.Checkbox(cbRect.x, cbRect.y,
+                    ref pawn.playerSettings.selfTend, cbRect.height);
+                if (pawn.playerSettings.selfTend && !wasOn)
+                {
+                    if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Doctor))
+                    {
+                        pawn.playerSettings.selfTend = false;
+                        Messages.Message(
+                            "MessageCannotSelfTendEver".Translate(pawn.LabelShort, pawn),
+                            MessageTypeDefOf.RejectInput, false);
+                    }
+                    else if (pawn.workSettings.GetPriority(WorkTypeDefOf.Doctor) == 0)
+                    {
+                        Messages.Message(
+                            "MessageSelfTendUnsatisfied".Translate(pawn.LabelShort, pawn),
+                            MessageTypeDefOf.CautionInput, false);
+                    }
+                }
+                curY += row.height + 10f;
+            }
+
+            if (anyTopRow)
+                Widgets.DrawLineHorizontal(rect.x - 8f, curY, rect.width, Color.gray);
+            curY += 10f;
+
+            if (pawn.def.race.IsFlesh)
+            {
+                var painLabel = HealthCardUtility.GetPainLabel(pawn);
+                string painTip = GetPainTipMI != null
+                    ? (string)GetPainTipMI.Invoke(null, new object[] { pawn })
+                    : "";
+                DrawLeftRowReflected(rect, ref curY,
+                    "PainLevel".Translate(), painLabel.First, painLabel.Second,
+                    new TipSignal(painTip));
+            }
+            curY += 6f;
+
+            if (!pawn.Dead)
+            {
+                var caps       = GetApplicableCapacities(pawn);
+                float startY   = curY;
+                float available = rect.height - startY;
+                float totalH   = caps.Count * RowHeight;
+                bool scroll    = totalH > available && available > RowHeight;
+
+                if (scroll)
+                {
+                    Rect outRect  = new Rect(0f, startY, rect.width, available);
+                    Rect viewRect = new Rect(0f, 0f, rect.width - 16f, totalH);
+                    Widgets.BeginScrollView(outRect, ref _capsScrollPos, viewRect);
+                    float sy = 0f;
+                    DrawCapRows(rect, pawn, caps, ref sy);
+                    Widgets.EndScrollView();
+                    curY = startY + available;
+                }
+                else
+                {
+                    DrawCapRows(rect, pawn, caps, ref curY);
+                }
+            }
+
+            GUI.color   = Color.white;
+            Text.Anchor = TextAnchor.UpperLeft;
+            Text.Font   = GameFont.Small;
+            return curY;
+        }
+
+        private static void DrawCapRows(
+            Rect rect, Pawn pawn, List<PawnCapacityDef> caps, ref float curY)
+        {
+            foreach (PawnCapacityDef cap in caps)
+            {
+                PawnCapacityDef local = cap;
+                var eff = HealthCardUtility.GetEfficiencyLabel(pawn, cap);
+                var tip = new TipSignal(
+                    () => pawn.Dead ? "" : HealthCardUtility.GetPawnCapacityTip(pawn, local),
+                    pawn.thingIDNumber ^ local.index);
+                DrawLeftRowReflected(rect, ref curY,
+                    cap.GetLabelFor(pawn).CapitalizeFirst(),
+                    eff.First, eff.Second, tip);
+            }
+        }
+
+        private static List<PawnCapacityDef> GetApplicableCapacities(Pawn pawn)
+        {
+            IEnumerable<PawnCapacityDef> src;
+            if      (pawn.def.race.Humanlike)       src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnHumanlikes);
+            else if (pawn.def.race.Animal)           src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnAnimals);
+            else if (pawn.def.race.IsAnomalyEntity)  src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnAnomalyEntities);
+            else if (pawn.def.race.IsDrone)          src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnDrones);
+            else                                     src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnMechanoids);
+
+            return src
+                .OrderBy(c => c.listOrder)
+                .Where(c => PawnCapacityUtility.BodyCanEverDoCapacity(pawn.RaceProps.body, c))
+                .ToList();
+        }
+
+        private static void DrawLeftRowReflected(
+            Rect rect, ref float curY,
+            string left, string right, Color color, TipSignal tip)
+        {
+            object[] args = { rect, curY, left, right, color, tip };
+            DrawLeftRowMI.Invoke(null, args);
+            curY = (float)args[1];
         }
     }
 }

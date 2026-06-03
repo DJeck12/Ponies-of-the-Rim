@@ -5,12 +5,14 @@
 		<defName>Pony_Male</defName>
 		<beardOffsetXEast>0.075</beardOffsetXEast>
 		<gender>Male</gender>
+		<graphicPath>Transparent/Transparent</graphicPath>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>Pony_Female</defName>
 		<beardOffsetXEast>0.075</beardOffsetXEast>
 		<gender>Female</gender>
+		<graphicPath>Transparent/Transparent</graphicPath>
 	</HeadTypeDef>
 
 </Defs>

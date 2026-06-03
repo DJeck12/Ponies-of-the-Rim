@@ -442,6 +442,12 @@ namespace PoniesOfTheRim
                             int idx = row + x;
                             var baseC = bgPx[idx];
 
+                            if (baseC.a == 0)
+                            {
+                                outPx[idx] = baseC;
+                                continue;
+                            }
+
                             int oxx = x - startX;
                             int oyy = y - startY;
 
@@ -454,20 +460,13 @@ namespace PoniesOfTheRim
                                 {
                                     outPx[idx] = baseC;
                                 }
-                                else if (a == 255)
-                                {
-                                    outPx[idx] = overC;
-                                }
                                 else
                                 {
                                     int invA = 255 - a;
                                     byte r = (byte)((baseC.r * invA + overC.r * a) / 255);
                                     byte g = (byte)((baseC.g * invA + overC.g * a) / 255);
                                     byte b = (byte)((baseC.b * invA + overC.b * a) / 255);
-                                    byte oa = (byte)Mathf.Clamp(
-                                        baseC.a + (a * (255 - baseC.a)) / 255, 0, 255);
-
-                                    outPx[idx] = new Color32(r, g, b, oa);
+                                    outPx[idx] = new Color32(r, g, b, baseC.a);
                                 }
                             }
                             else
