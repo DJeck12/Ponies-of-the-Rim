@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PoniesOfTheRim.PatchOperation.PatchOperationToggleableSequence">
+		<settingId>Baseliners</settingId>
+		<label>Disable xenotypes</label>
+		<description>Forces ponies to only spawn as baseliners</description>
+		<defaultState>false</defaultState>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+				<value>
+					<whiteXenotypeList>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li>
+					</whiteXenotypeList>
+					<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

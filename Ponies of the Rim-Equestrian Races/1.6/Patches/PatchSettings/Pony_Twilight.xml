@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PoniesOfTheRim.PatchOperation.PatchOperationToggleableSequence">
+		<settingId>AlicornTwilight</settingId>
+		<label>Alicorn Twilight Sparkle</label>
+		<description>Changes Twilight Sparkles's race to alicorn</description>
+		<defaultState>true</defaultState>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Pony_TwilightSparkle"]/race</xpath>
+				<value>
+					<race>Pony_Alicorn</race>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

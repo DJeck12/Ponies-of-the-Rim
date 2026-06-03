@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PoniesOfTheRim.PatchOperation.PatchOperationToggleableSequence">
+		<settingId>ChangelingColor</settingId>
+		<label>Unified changeling color</label>
+		<description>Replaces the secondary color of changelings (eyes, wings, chitin) with the color of their faction, making them the same color</description>
+		<defaultState>false</defaultState>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Changeling"]/alienRace/alienPartGenerator/colorChannels/li[1]/second</xpath>
+				<value>
+					<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+						<colorChannel>ideo</colorChannel>
+					</second>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

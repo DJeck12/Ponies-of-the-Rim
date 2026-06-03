@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PoniesOfTheRim.PatchOperation.PatchOperationToggleableSequence">
+		<settingId>Shipping</settingId>
+		<label>Shipping mode</label>
+		<description>Turns all characters bisexual for maximum shipping paring</description>
+		<defaultState>false</defaultState>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/alienRace/generalSettings/forcedRaceTraitEntries</xpath>
+				<value>
+					<forcedRaceTraitEntries>
+						<li>
+							<defName>Bisexual</defName>
+							<chance>100</chance>
+						</li>
+					</forcedRaceTraitEntries>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
