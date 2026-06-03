@@ -10,9 +10,11 @@
 		<displayOrderInCategory>31</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
-		<statOffsets>
+		<statFactors>
 			<WorkSpeedGlobal>0.95</WorkSpeedGlobal>
-			<AimingDelayFactor>0.1</AimingDelayFactor>
+			<AimingDelayFactor>1.1</AimingDelayFactor>
+		</statFactors>
+		<statOffsets>
 			<MoveSpeed>0.1</MoveSpeed>
 		</statOffsets>
 		<symbolPack>
