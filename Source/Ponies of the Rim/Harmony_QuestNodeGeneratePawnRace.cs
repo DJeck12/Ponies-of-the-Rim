@@ -60,25 +60,29 @@ namespace PoniesOfTheRim
             try
             {
                 var kindDefRef = (SlateRef<PawnKindDef>)_kindDefField.GetValue(__instance);
-                var factionRef  = (SlateRef<Faction>)_factionField.GetValue(__instance);
+                var factionRef = (SlateRef<Faction>)_factionField.GetValue(__instance);
 
                 PawnKindDef kindDef = kindDefRef.GetValue(slate);
-                Faction     faction  = factionRef.GetValue(slate);
+                Faction faction = factionRef.GetValue(slate);
 
                 if (kindDef == null || faction == null) return;
 
                 if (kindDef.race != ThingDefOf.Human) return;
 
-                ThingDef alienRace = GetFactionPrimaryAlienRace(faction.def);
-                if (alienRace == null) return;      
+                ThingDef factionPrimaryAlienRace = GetFactionPrimaryAlienRace(faction.def);
+                if (factionPrimaryAlienRace == null || !PonyHelper.IsPonyRace(factionPrimaryAlienRace))
+                {
+                    return;
+                }
 
-                PawnKindDef replacement = FindBestAlienKind(faction, alienRace);
+                PawnKindDef replacement = FindBestAlienKind(faction, factionPrimaryAlienRace);
                 if (replacement == null)
                 {
-                    Log.Warning(
-                        $"[PoniesOfTheRim] Patch_QuestNode_GeneratePawn_RaceAware: " +
-                        $"No alien PawnKindDef found for faction '{faction.def.defName}' " +
-                        $"(race: {alienRace.defName}). Quest pawn will remain human.");
+                    Log.WarningOnce(
+                        "[PoniesOfTheRim] Patch_QuestNode_GeneratePawn_RaceAware: No alien PawnKindDef found for faction '" +
+                        faction.def.defName + "' (race: " + factionPrimaryAlienRace.defName +
+                        "). Quest pawn will remain human.",
+                        faction.def.defName.GetHashCode() ^ 0x51E571);
                     return;
                 }
 
@@ -90,21 +94,23 @@ namespace PoniesOfTheRim
                         slate.Set(varName, replacement);
                         overridden = true;
 
-                        Log.Message(
-                            $"[PoniesOfTheRim] Quest pawn kind fixed: " +
-                            $"slate['{varName}'] {kindDef.defName} → {replacement.defName} " +
-                            $"(faction: {faction.def.defName})");
+                        if (Prefs.DevMode)
+                        {
+                            Log.Message("[PoniesOfTheRim] Quest pawn kind fixed: slate['" + varName + "'] " +
+                                        kindDef.defName + " → " + replacement.defName +
+                                        " (faction: " + faction.def.defName + ")");
+                        }
                         break;
                     }
                 }
 
                 if (!overridden)
                 {
-                    Log.Warning(
-                        $"[PoniesOfTheRim] Patch_QuestNode_GeneratePawn_RaceAware: " +
-                        $"Could not locate slate variable for kindDef '{kindDef.defName}' " +
-                        $"in faction '{faction.def.defName}'. " +
-                        $"Add the variable name to KnownKindSlateVars if this repeats.");
+                    Log.WarningOnce(
+                        "[PoniesOfTheRim] Patch_QuestNode_GeneratePawn_RaceAware: Could not locate slate variable for kindDef '" +
+                        kindDef.defName + "' in faction '" + faction.def.defName +
+                        "'. Add the variable name to KnownKindSlateVars if this repeats.",
+                        (faction.def.defName + "|" + kindDef.defName).GetHashCode());
                 }
             }
             catch (Exception ex)
@@ -139,7 +145,7 @@ namespace PoniesOfTheRim
                     ?.Key;
             }
 
-            _raceCache[factionDef] = result;        
+            _raceCache[factionDef] = result;
             return result;
         }
 

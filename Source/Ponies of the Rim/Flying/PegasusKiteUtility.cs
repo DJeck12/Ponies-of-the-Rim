@@ -6,9 +6,9 @@ using Verse;
 
 namespace PoniesOfTheRim.Flying
 {
-    public static class PegasusKiteUtil
+    public static class PegasusKiteUtility
     {
-        private static bool      _cached;
+        private static bool _cached;
         private static FieldInfo _fiTouch;
         private static FieldInfo _fiShort;
         private static FieldInfo _fiMedium;
@@ -20,13 +20,13 @@ namespace PoniesOfTheRim.Flying
             _cached = true;
             var t = typeof(VerbProperties);
             const BindingFlags F = BindingFlags.Public | BindingFlags.Instance;
-            _fiTouch  = t.GetField("accuracyTouch",  F);
-            _fiShort  = t.GetField("accuracyShort",  F);
+            _fiTouch = t.GetField("accuracyTouch", F);
+            _fiShort = t.GetField("accuracyShort", F);
             _fiMedium = t.GetField("accuracyMedium", F);
-            _fiLong   = t.GetField("accuracyLong",   F);
+            _fiLong = t.GetField("accuracyLong", F);
         }
 
-        public const float MIN_KITE_DIST = 5f;          
+        public const float MIN_KITE_DIST = 5f;
 
         public static float GetOptimalAccuracyRange(VerbProperties vp)
         {
@@ -38,13 +38,13 @@ namespace PoniesOfTheRim.Flying
             if (_fiTouch == null)
                 return Mathf.Clamp(maxRange * 0.66f, MIN_KITE_DIST, maxRange);
 
-            float aTouch  = (float)(_fiTouch.GetValue(vp)  ?? 0f);
-            float aShort  = (float)(_fiShort.GetValue(vp)  ?? 0f);
+            float aTouch = (float)(_fiTouch.GetValue(vp) ?? 0f);
+            float aShort = (float)(_fiShort.GetValue(vp) ?? 0f);
             float aMedium = (float)(_fiMedium.GetValue(vp) ?? 0f);
-            float aLong   = (float)(_fiLong.GetValue(vp)   ?? 0f);
+            float aLong = (float)(_fiLong.GetValue(vp) ?? 0f);
 
-            float bestAcc  = -1f;
-            float bestDist =  0f;
+            float bestAcc = -1f;
+            float bestDist = 0f;
 
             void Check(float acc, float dist)
             {
@@ -53,9 +53,9 @@ namespace PoniesOfTheRim.Flying
                 if (acc > bestAcc) { bestAcc = acc; bestDist = d; }
             }
 
-            Check(aShort,  12f);
+            Check(aShort, 12f);
             Check(aMedium, 25f);
-            Check(aLong,   Mathf.Min(40f, maxRange));
+            Check(aLong, Mathf.Min(40f, maxRange));
 
             if (bestDist >= MIN_KITE_DIST) return bestDist;
 
@@ -107,13 +107,13 @@ namespace PoniesOfTheRim.Flying
             {
                 if (!c.InBounds(map) || c.Roofed(map)) return false;
                 if (walkableOnly) return c.Walkable(map);
-                return !PegasusFlightUtil.IsImpassableMountain(c, map);
+                return !PegasusFlightUtility.IsImpassableMountain(c, map);
             }
 
             if (Valid(ideal)) return ideal;
 
-            IntVec3 best      = IntVec3.Invalid;
-            float   bestDelta = float.MaxValue;
+            IntVec3 best = IntVec3.Invalid;
+            float bestDelta = float.MaxValue;
             foreach (IntVec3 c in GenRadial.RadialCellsAround(ideal, 4f, true))
             {
                 if (!Valid(c)) continue;

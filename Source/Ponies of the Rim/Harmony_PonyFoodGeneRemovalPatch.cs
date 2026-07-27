@@ -1,5 +1,4 @@
-﻿using HarmonyLib;
-using Verse;
+﻿using Verse;
 
 namespace PoniesOfTheRim
 {

@@ -15,8 +15,7 @@ namespace PoniesOfTheRim.PatchOperation
 
         protected bool CanRun()
         {
-            bool enabled = PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, true);
-            return enabled;
+            return PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, defaultState);
         }
 
         protected override bool ApplyWorker(XmlDocument xml)

@@ -1,10 +1,10 @@
 ﻿using AlienRace;
-using HarmonyLib;
 using RimWorld;
-using System.Collections.Generic;
-using Verse;
-using UnityEngine;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using Verse;
 using Verse.Sound;
 
 namespace PoniesOfTheRim
@@ -13,6 +13,26 @@ namespace PoniesOfTheRim
     {
         public static bool DoAddonList_PonyPatch(ref Rect inRect, ref List<AlienPartGenerator.BodyAddon> addons, ref int ___selectedIndexAddons, ref Vector2 ___addonsScrollPos, ref Pawn ___pawn, ref AlienPartGenerator.AlienComp ___alienComp)
         {
+            if (!___pawn.IsPony())
+            {
+                return true;
+            }
+            if (___alienComp.addonVariants == null)
+            {
+                ___alienComp.addonVariants = new List<int>();
+            }
+            while (___alienComp.addonVariants.Count < addons.Count)
+            {
+                ___alienComp.addonVariants.Add(0);
+            }
+            if (___alienComp.addonColors == null)
+            {
+                ___alienComp.addonColors = new List<AlienPartGenerator.ExposableValueTuple<Color?, Color?>>();
+            }
+            while (___alienComp.addonColors.Count < addons.Count)
+            {
+                ___alienComp.addonColors.Add(new AlienPartGenerator.ExposableValueTuple<Color?, Color?>(null, null));
+            }
             int num = addons.Count((AlienPartGenerator.BodyAddon ba) => ba.userCustomizable);
             if (___selectedIndexAddons >= addons.Count)
             {
@@ -49,18 +69,18 @@ namespace PoniesOfTheRim
                     GUI.DrawTexture(rect, BaseContent.WhiteTex);
                     GUI.color = Color.white;
                     bool flag = false;
-                    int num3 = num2;
-                    while (num3 >= 0 && addons[num3].linkVariantIndexWithPrevious)
+                    int num4 = i;
+                    while (num4 >= 0 && addons[num4].linkVariantIndexWithPrevious)
                     {
-                        num3--;
-                        if (___selectedIndexAddons == num3)
+                        num4--;
+                        if (___selectedIndexAddons == num4)
                         {
                             flag = true;
                         }
                     }
-                    for (num3 = i + 1; num3 <= addons.Count - 1 && addons[num3].linkVariantIndexWithPrevious; num3++)
+                    for (num4 = i + 1; num4 <= addons.Count - 1 && addons[num4].linkVariantIndexWithPrevious; num4++)
                     {
-                        if (___selectedIndexAddons == num3)
+                        if (___selectedIndexAddons == num4)
                         {
                             flag = true;
                         }
@@ -80,26 +100,17 @@ namespace PoniesOfTheRim
                 }
                 Rect position = rect.LeftPartPixels(rect.height).ContractedBy(2f);
                 int sharedIndex = ___alienComp.addonVariants[i];
-                if (___pawn.IsPony())
+                string texPath = addons[i].GetPath(___pawn, ref sharedIndex, sharedIndex);
+                Texture2D image = ContentFinder<Texture2D>.Get(texPath + "_east", reportFailure: false) ?? ContentFinder<Texture2D>.Get(texPath + "_south", reportFailure: false);
+                GUI.color = Widgets.MenuSectionBGFillColor;
+                GUI.DrawTexture(position, BaseContent.WhiteTex);
+                GUI.color = Color.white;
+                if (image != null)
                 {
-                    Texture2D image = ContentFinder<Texture2D>.Get(addons[i].GetPath(___pawn, ref sharedIndex, sharedIndex) + "_east");
-                    GUI.color = Widgets.MenuSectionBGFillColor;
-                    GUI.DrawTexture(position, BaseContent.WhiteTex);
-                    GUI.color = Color.white;
                     GUI.DrawTexture(position, image);
-                    rect.xMin += rect.height;
-                    Widgets.Label(rect.ContractedBy(4f), addons[i].Name);
                 }
-                else
-                {
-                    Texture2D image = ContentFinder<Texture2D>.Get(addons[i].GetPath(___pawn, ref sharedIndex, sharedIndex) + "_south");
-                    GUI.color = Widgets.MenuSectionBGFillColor;
-                    GUI.DrawTexture(position, BaseContent.WhiteTex);
-                    GUI.color = Color.white;
-                    GUI.DrawTexture(position, image);
-                    rect.xMin += rect.height;
-                    Widgets.Label(rect.ContractedBy(4f), addons[i].Name);
-                }
+                rect.xMin += rect.height;
+                Widgets.Label(rect.ContractedBy(4f), addons[i].Name);
 
                 if (addons[i].linkVariantIndexWithPrevious)
                 {
@@ -124,6 +135,26 @@ namespace PoniesOfTheRim
 
         public static bool DoAddonInfo_PonyPatch(ref Rect inRect, AlienPartGenerator.BodyAddon addon, ref List<AlienPartGenerator.BodyAddon> addons, ref AlienPartGenerator.AlienComp ___alienComp, ref int ___selectedIndexAddons, ref bool ___editingFirstColor, ref Vector2 ___colorsScrollPos, ref ThingDef_AlienRace ___alienRaceDef, ref Texture2D ___ClearTex, ref Vector2 ___variantsScrollPos, ref Pawn ___pawn)
         {
+            if (!___pawn.IsPony())
+            {
+                return true;
+            }
+            if (___alienComp.addonVariants == null)
+            {
+                ___alienComp.addonVariants = new List<int>();
+            }
+            while (___alienComp.addonVariants.Count < addons.Count)
+            {
+                ___alienComp.addonVariants.Add(0);
+            }
+            if (___alienComp.addonColors == null)
+            {
+                ___alienComp.addonColors = new List<AlienPartGenerator.ExposableValueTuple<Color?, Color?>>();
+            }
+            while (___alienComp.addonColors.Count < addons.Count)
+            {
+                ___alienComp.addonColors.Add(new AlienPartGenerator.ExposableValueTuple<Color?, Color?>(null, null));
+            }
             AlienPartGenerator.ExposableValueTuple<Color, Color> channel = ___alienComp.GetChannel(addon.ColorChannel);
             ValueTuple<Color, Color> valueTuple = new ValueTuple<Color, Color>(___alienComp.addonColors[___selectedIndexAddons].first ?? addon.colorOverrideOne ?? channel.first, ___alienComp.addonColors[___selectedIndexAddons].second ?? addon.colorOverrideTwo ?? channel.second);
             Rect rect2;
@@ -271,21 +302,11 @@ namespace PoniesOfTheRim
                 {
                     Widgets.DrawBox(rect7);
                 }
-                if (___pawn.IsPony())
+                string texPath = addon.GetPath(___pawn, ref sharedIndex, j);
+                Texture2D texture2D = ContentFinder<Texture2D>.Get(texPath + "_east", reportFailure: false) ?? ContentFinder<Texture2D>.Get(texPath + "_south", reportFailure: false);
+                if (texture2D != null)
                 {
-                    Texture2D texture2D = ContentFinder<Texture2D>.Get(addon.GetPath(___pawn, ref sharedIndex, j) + "_east", false);
-                    if (texture2D != null)
-                    {
-                        GUI.DrawTexture(rect7, (Texture)texture2D);
-                    }
-                }
-                else
-                {
-                    Texture2D texture2D = ContentFinder<Texture2D>.Get(addon.GetPath(___pawn, ref sharedIndex, j) + "_south", false);
-                    if (texture2D != null)
-                    {
-                        GUI.DrawTexture(rect7, (Texture)texture2D);
-                    }
+                    GUI.DrawTexture(rect7, texture2D);
                 }
                 if (Widgets.ButtonInvisible(rect7))
                 {

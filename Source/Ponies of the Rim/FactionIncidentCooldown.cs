@@ -10,9 +10,9 @@ namespace PoniesOfTheRim
     public class FactionIncidentCooldown : WorldComponent
     {
         
-                public Dictionary<CooldownKey, float> lastTimes = new Dictionary<CooldownKey, float>();
-                public List<DelayedQuest> delayedQuests = new List<DelayedQuest>();
-                private List<Faction> cd_factions = new List<Faction>();
+        public Dictionary<CooldownKey, float> lastTimes = new Dictionary<CooldownKey, float>();
+        public List<DelayedQuest> delayedQuests = new List<DelayedQuest>();
+        private List<Faction> cd_factions = new List<Faction>();
         private List<string> cd_defNames = new List<string>();
         private List<float> cd_ticks = new List<float>();
 
@@ -20,7 +20,7 @@ namespace PoniesOfTheRim
 
         public override void ExposeData()
         {
-                        if (Scribe.mode == LoadSaveMode.Saving)
+            if (Scribe.mode == LoadSaveMode.Saving)
             {
                 cd_factions = new List<Faction>();
                 cd_defNames = new List<string>();
@@ -28,8 +28,7 @@ namespace PoniesOfTheRim
 
                 foreach (var kvp in lastTimes)
                 {
-                                        if (kvp.Key.faction == null) continue;
-
+                    if (kvp.Key.faction == null) continue;
                     cd_factions.Add(kvp.Key.faction);
                     cd_defNames.Add(kvp.Key.defName);
                     cd_ticks.Add(kvp.Value);

@@ -3,7 +3,6 @@ using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using Verse;
 
@@ -38,15 +37,21 @@ namespace PoniesOfTheRim.UniquePonies
         public static void DoAddonInfo_Postfix()
         {
             InitCacheIfNeeded();
-            if (_pawnField == null) return;
+            if (_pawnField == null || !(_pawnField.GetValue(null) is Pawn pawn))
+            {
+                return;
+            }
+            if (!pawn.IsPony())
+            {
+                return;
+            }
+            AlienPartGenerator.AlienComp alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
+            if (alienComp == null)
+            {
+                return;
+            }
 
-            var pawn = _pawnField.GetValue(null) as Pawn;
-            if (pawn == null) return;
-
-            var comp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
-            if (comp == null) return;
-
-            var curSig = string.Join(",", comp.addonVariants ?? new List<int>());
+            var curSig = string.Join(",", alienComp.addonVariants ?? new List<int>());
             int pawnId = pawn.thingIDNumber;
 
             if (!_signatureCache.TryGetValue(pawnId, out var prev) || prev != curSig)
@@ -56,7 +61,7 @@ namespace PoniesOfTheRim.UniquePonies
                 PortraitsCache.SetDirty(pawn);
             }
 
-                        if (++_cleanupCounter >= CleanupInterval)
+            if (++_cleanupCounter >= CleanupInterval)
             {
                 _cleanupCounter = 0;
                 if (_signatureCache.Count > 20)

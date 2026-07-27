@@ -1,11 +1,10 @@
 ﻿using RimWorld;
-using Verse;
 
 namespace PoniesOfTheRim.UniquePonies
 {
     public static class PerfectMemoryPatch
     {
-                        public static void Interval_Postfix(SkillRecord __instance)
+        public static void Interval_Postfix(SkillRecord __instance)
         {
             var pawn = __instance.Pawn;
             if (pawn?.story?.traits == null)

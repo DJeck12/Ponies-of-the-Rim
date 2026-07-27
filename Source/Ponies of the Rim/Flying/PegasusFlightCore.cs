@@ -3,8 +3,6 @@ using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -46,17 +44,9 @@ namespace PoniesOfTheRim.Flying
                 Patch_PathFinder_CreateRequest.FindTargetMethod(),
                 prefix: Prefix(typeof(Patch_PathFinder_CreateRequest)));
 
-            h.Patch(
-                AccessTools.Method(typeof(GenGrid), nameof(GenGrid.WalkableBy)),
-                prefix: Prefix(typeof(Patch_GenGrid_WalkableBy)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn_PathFollower), "BuildingBlockingNextPathCell"),
-                prefix: Prefix(typeof(Patch_BuildingBlockingNextPathCell)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn_PathFollower), "NextCellDoorToWaitForOrManuallyOpen"),
-                prefix: Prefix(typeof(Patch_NextCellDoor)));
+            h.Patch(AccessTools.Method(typeof(GenGrid), "WalkableBy"), null, Postfix(typeof(Patch_GenGrid_WalkableBy)));
+            h.Patch(AccessTools.Method(typeof(Pawn_PathFollower), "BuildingBlockingNextPathCell"), null, Postfix(typeof(Patch_BuildingBlockingNextPathCell)));
+            h.Patch(AccessTools.Method(typeof(Pawn_PathFollower), "NextCellDoorToWaitForOrManuallyOpen"), null, Postfix(typeof(Patch_NextCellDoor)));
 
             h.Patch(
                 AccessTools.Method(typeof(Pawn_PathFollower), "TryEnterNextPathCell"),
@@ -83,7 +73,7 @@ namespace PoniesOfTheRim.Flying
 
             h.Patch(
                 AccessTools.Method(typeof(Pawn), nameof(Pawn.ExposeData)),
-                prefix:  Prefix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
+                prefix: Prefix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
                 postfix: Postfix(typeof(Patch_Pawn_ExposeData_SavePositionFix)));
 
             h.Patch(
@@ -94,167 +84,22 @@ namespace PoniesOfTheRim.Flying
                 AccessTools.Method(typeof(Game), nameof(Game.DeinitAndRemoveMap)),
                 postfix: Postfix(typeof(Patch_Game_DeinitAndRemoveMap)));
 
-            h.Patch(
-                AccessTools.Method(typeof(PawnCapacityUtility),
-                    nameof(PawnCapacityUtility.BodyCanEverDoCapacity)),
-                postfix: Postfix(typeof(Patch_PawnCapacityUtility_BodyCanEverDoCapacity)));
 
-            h.Patch(
-                AccessTools.Method(typeof(HealthCardUtility), "DrawOverviewTab",
-                    new[] { typeof(Rect), typeof(Pawn), typeof(float) }),
-                prefix: Prefix(typeof(Patch_HealthCardUtility_DrawOverviewTab)));
 
 
             Log.Message("[PoniesOfTheRim] Pegasus flight system initialized.");
         }
 
-        private static HarmonyMethod Prefix(Type type)  => new(AccessTools.Method(type, "Prefix"));
+        private static HarmonyMethod Prefix(Type type) => new(AccessTools.Method(type, "Prefix"));
         private static HarmonyMethod Postfix(Type type) => new(AccessTools.Method(type, "Postfix"));
     }
 
 
-    public static class PegasusFlightUtil
+    public class WingHediffExtension : DefModExtension
     {
-        public const string LeftWingPartDef  = "Pony_LeftWing";
-        public const string RightWingPartDef = "Pony_RightWing";
-
-        public static readonly HashSet<string> WingHediffDefs = new()
-        {
-            "Pony_NaturalWing",
-            "Pony_SimpleProstheticWing",
-            "Pony_BionicWing",
-            "Pony_ArchotechWing"
-        };
-
-        public static bool HasUsableWings(Pawn pawn)
-        {
-            if (!pawn.HasWings())
-                return false;
-
-            if (pawn.health?.hediffSet == null || pawn.RaceProps?.body?.AllParts == null)
-                return false;
-
-            BodyPartRecord leftWing  = null;
-            BodyPartRecord rightWing = null;
-
-            var allParts = pawn.RaceProps.body.AllParts;
-            for (int i = 0; i < allParts.Count; i++)
-            {
-                var defName = allParts[i].def?.defName;
-                if (defName == LeftWingPartDef)       leftWing  = allParts[i];
-                else if (defName == RightWingPartDef) rightWing = allParts[i];
-
-                if (leftWing != null && rightWing != null) break;
-            }
-
-            if (leftWing == null && rightWing == null)
-                return true;
-
-            if (leftWing == null || rightWing == null)
-                return false;
-
-            return !pawn.health.hediffSet.PartIsMissing(leftWing)
-                && !pawn.health.hediffSet.PartIsMissing(rightWing);
-        }
-
-        public static bool IsPegasusConstantFlight(Pawn p)
-        {
-            if (p == null || !p.Spawned || p.Dead || p.Downed)
-                return false;
-            if (!p.HasWings())
-                return false;
-
-            var comp = p.TryGetComp<CompPegasusFlightToggle>();
-            if (comp == null || !comp.FlightEnabled)
-                return false;
-
-            if (!HasUsableWings(p))
-                return false;
-
-            if (p.Position.Roofed(p.Map))
-                return false;
-
-            var timerComp = p.TryGetComp<CompPegasusFlightTimer>();
-            if (timerComp != null && !timerComp.CanFly)
-                return false;
-
-            return true;
-        }
-
-        public static bool CanFlyToCell(Pawn pawn, IntVec3 c, Map map)
-        {
-            if (!IsPegasusConstantFlight(pawn))
-                return false;
-            if (c.Roofed(map))
-                return false;
-            if (c.Fogged(map))
-                return false;
-            if (!c.Walkable(map) && IsImpassableMountain(c, map))
-                return false;
-            return true;
-        }
-
-        public static bool IsImpassableMountain(IntVec3 c, Map map)
-        {
-            var edifice = c.GetEdifice(map);
-            if (edifice != null && edifice.def?.building != null && edifice.def.building.isNaturalRock)
-                return true;
-            var terrain = c.GetTerrain(map);
-            if (terrain != null && terrain.passability == Traversability.Impassable)
-                return true;
-            return false;
-        }
-
-        public static void SafeLand(Pawn pawn)
-        {
-            if (pawn == null || !pawn.Spawned || pawn.Map == null)
-                return;
-
-            if (pawn.Position.Walkable(pawn.Map))
-                return;
-
-            Map map = pawn.Map;
-            IntVec3 bestCell = IntVec3.Invalid;
-            int bestScore = -1;
-
-            for (int radius = 1; radius <= 15; radius++)
-            {
-                foreach (IntVec3 cell in GenRadial.RadialCellsAround(pawn.Position, radius, radius == 1))
-                {
-                    if (!cell.InBounds(map) || !cell.Walkable(map))
-                        continue;
-
-                    int score = 0;
-                    if (!cell.Fogged(map)) score += 2;
-                    if (!cell.Roofed(map)) score += 1;
-
-                    if (score > bestScore)
-                    {
-                        bestScore = score;
-                        bestCell = cell;
-                    }
-                }
-
-                if (bestCell.IsValid)
-                    break;
-            }
-
-            if (bestCell.IsValid)
-            {
-                pawn.Position = bestCell;
-                pawn.Notify_Teleported(true, false);
-            }
-            else
-            {
-                IntVec3 fallback;
-                if (CellFinder.TryFindRandomCellNear(pawn.Position, map, 30,
-                    c => c.Walkable(map) && !c.Fogged(map), out fallback))
-                {
-                    pawn.Position = fallback;
-                    pawn.Notify_Teleported(true, false);
-                }
-            }
-        }
+        public float efficiency = 0.5f;
+        public float drainMultiplier = 1f;
+        public string typeLabel;
     }
 
 
@@ -322,7 +167,7 @@ namespace PoniesOfTheRim.Flying
                 if (Pawn.Dead || Pawn.Downed)
                 {
                     flightEnabled = false;
-                    PegasusFlightUtil.SafeLand(Pawn);
+                    PegasusFlightUtility.SafeLand(Pawn);
 
                     if (!Pawn.Dead && Pawn.IsColonistPlayerControlled)
                     {
@@ -333,10 +178,10 @@ namespace PoniesOfTheRim.Flying
                     return;
                 }
 
-                if (!PegasusFlightUtil.HasUsableWings(Pawn))
+                if (!PegasusFlightUtility.HasUsableWings(Pawn))
                 {
                     flightEnabled = false;
-                    PegasusFlightUtil.SafeLand(Pawn);
+                    PegasusFlightUtility.SafeLand(Pawn);
 
                     if (Pawn.IsColonistPlayerControlled)
                     {
@@ -350,7 +195,7 @@ namespace PoniesOfTheRim.Flying
                 if (Pawn.Position.Roofed(Pawn.Map))
                 {
                     flightEnabled = false;
-                    PegasusFlightUtil.SafeLand(Pawn);
+                    PegasusFlightUtility.SafeLand(Pawn);
 
                     if (Pawn.IsColonistPlayerControlled)
                     {
@@ -373,16 +218,16 @@ namespace PoniesOfTheRim.Flying
             if (Pawn.drafter?.Drafted != true)
                 yield break;
 
-            if (!PegasusFlightUtil.HasUsableWings(Pawn))
+            if (!PegasusFlightUtility.HasUsableWings(Pawn))
                 yield break;
 
-            var timerComp = Pawn.TryGetComp<CompPegasusFlightTimer>();
+            var timerComp = PonyFlightCache.GetTimer(Pawn);
 
             var gizmo = new Command_Action
             {
                 defaultLabel = flightEnabled ? "Disable flight" : "Enable flight",
-                defaultDesc  = $"Toggle pegasus constant flying.\n\nStamina: {timerComp?.CurrentStaminaPercent.ToStringPercent() ?? "N/A"}",
-                icon         = GetFlightIcon(Pawn),
+                defaultDesc = $"Toggle pegasus constant flying.\n\nStamina: {timerComp?.CurrentStaminaPercent.ToStringPercent() ?? "N/A"}",
+                icon = GetFlightIcon(Pawn),
                 action = delegate
                 {
                     if (!flightEnabled && Pawn.Position.Roofed(Pawn.Map))
@@ -446,27 +291,27 @@ namespace PoniesOfTheRim.Flying
 
     public class CompPegasusFlightTimer : ThingComp
     {
-        private const int   BaseFlightDurationTicks = 600;
+        private const int BaseFlightDurationTicks = 600;
         private const float BaseRestFallPerInterval = 0.00575f;
 
-        private float currentFlightStamina  = 1f;
-        private bool  isFlying              = false;
-        private bool  _wasFlying            = false;
+        private float currentFlightStamina = 1f;
+        private bool isFlying = false;
+        private bool _wasFlying = false;
 
-        private int   _flightCooldownEndTick = -1;
+        private int _flightCooldownEndTick = -1;
         private const int FlightCooldownTicks = 300;
 
         private HediffDef _fatigueDef;
         private HediffDef FatigueDef =>
             _fatigueDef ??= DefDatabase<HediffDef>.GetNamed("Pony_FlightFatigue", errorOnFail: false);
 
-        private float _cachedDrainMult      = 1f;
-        private int   _drainMultCacheTick   = -999;
+        private float _cachedDrainMult = 1f;
+        private int _drainMultCacheTick = -999;
 
         public CompPropertiesPegasusFlightTimer Props => (CompPropertiesPegasusFlightTimer)props;
 
         public float CurrentStaminaPercent => currentFlightStamina;
-        public bool  IsFlying              => isFlying;
+        public bool IsFlying => isFlying;
 
         public bool CanFly
         {
@@ -479,13 +324,29 @@ namespace PoniesOfTheRim.Flying
             }
         }
 
+        private static PawnCapacityDef _flightCapDef;
+        private static bool _flightCapDefResolved;
+
+        private static PawnCapacityDef FlightCapDef
+        {
+            get
+            {
+                if (!_flightCapDefResolved)
+                {
+                    _flightCapDefResolved = true;
+                    _flightCapDef = DefDatabase<PawnCapacityDef>.GetNamed("Pegasus_Flight", errorOnFail: false);
+                }
+                return _flightCapDef;
+            }
+        }
+
         public int MaxFlightDurationTicks
         {
             get
             {
                 Pawn pawn = parent as Pawn;
                 if (pawn == null) return BaseFlightDurationTicks;
-                PawnCapacityDef cap = DefDatabase<PawnCapacityDef>.GetNamed("Pegasus_Flight", errorOnFail: false);
+                PawnCapacityDef cap = FlightCapDef;
                 if (cap == null) return BaseFlightDurationTicks;
                 float eff = Mathf.Clamp(pawn.health.capacities.GetLevel(cap), 0f, 2f);
                 return Mathf.RoundToInt(BaseFlightDurationTicks * eff);
@@ -502,26 +363,32 @@ namespace PoniesOfTheRim.Flying
             if (pawn?.health?.hediffSet == null) return _cachedDrainMult = 1f;
 
             int bionic = 0, archotech = 0;
+            float extMult = 1f;
             foreach (Hediff h in pawn.health.hediffSet.hediffs)
             {
                 string pName = h.Part?.def?.defName;
-                if (pName != PegasusFlightUtil.LeftWingPartDef &&
-                    pName != PegasusFlightUtil.RightWingPartDef) continue;
+                if (pName != PegasusFlightUtility.LeftWingPartDef &&
+                    pName != PegasusFlightUtility.RightWingPartDef) continue;
+
+                WingHediffExtension ext = PegasusFlightUtility.GetWingExtension(h.def);
+                if (ext != null) extMult *= ext.drainMultiplier;
+
                 switch (h.def?.defName)
                 {
-                    case "Pony_BionicWing":    bionic++;    break;
+                    case "Pony_BionicWing": bionic++; break;
                     case "Pony_ArchotechWing": archotech++; break;
                 }
             }
 
-            _cachedDrainMult =
-                archotech >= 2                ? 1f / 10f :
-                archotech == 1 && bionic >= 1 ? 1f / 7f  :
-                archotech == 1                ? 1f / 5f  :
-                bionic >= 2                   ? 1f / 4f  :
-                bionic == 1                   ? 1f / 2f  :
+            float tier =
+                archotech >= 2 ? 1f / 10f :
+                archotech == 1 && bionic >= 1 ? 1f / 7f :
+                archotech == 1 ? 1f / 5f :
+                bionic >= 2 ? 1f / 4f :
+                bionic == 1 ? 1f / 2f :
                                                 1f;
-            return _cachedDrainMult;
+
+            return _cachedDrainMult = tier * extMult;
         }
 
         private float BaseStaminaDrainPerSecond
@@ -549,8 +416,8 @@ namespace PoniesOfTheRim.Flying
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref currentFlightStamina,   "flightStamina",         1f);
-            Scribe_Values.Look(ref isFlying,               "isFlying",              false);
+            Scribe_Values.Look(ref currentFlightStamina, "flightStamina", 1f);
+            Scribe_Values.Look(ref isFlying, "isFlying", false);
             Scribe_Values.Look(ref _flightCooldownEndTick, "flightCooldownEndTick", -1);
         }
 
@@ -561,7 +428,7 @@ namespace PoniesOfTheRim.Flying
             Pawn pawn = parent as Pawn;
             if (pawn == null || !pawn.Spawned) return;
 
-            var flightComp = pawn.TryGetComp<CompPegasusFlightToggle>();
+            var flightComp = PonyFlightCache.GetToggle(pawn);
             isFlying = flightComp?.FlightEnabled ?? false;
 
             if (_wasFlying && !isFlying)
@@ -578,7 +445,7 @@ namespace PoniesOfTheRim.Flying
                     if (flightComp != null)
                     {
                         flightComp.FlightEnabled = false;
-                        PegasusFlightUtil.SafeLand(pawn);
+                        PegasusFlightUtility.SafeLand(pawn);
                         if (pawn.IsColonistPlayerControlled)
                             Messages.Message(
                                 $"{pawn.LabelShort} exhausted - flight ended!",
@@ -591,7 +458,7 @@ namespace PoniesOfTheRim.Flying
                 if (currentFlightStamina < 1f)
                 {
                     currentFlightStamina += StaminaRecoveryPerSecond / 60f;
-                    currentFlightStamina  = Mathf.Min(currentFlightStamina, 1f);
+                    currentFlightStamina = Mathf.Min(currentFlightStamina, 1f);
                 }
             }
 
@@ -648,7 +515,7 @@ namespace PoniesOfTheRim.Flying
             if (maxDuration <= 0)
                 return "Can't fly now.";
 
-            float maxSeconds     = maxDuration / 60f;
+            float maxSeconds = maxDuration / 60f;
             float currentSeconds = maxSeconds * currentFlightStamina;
 
             string mult = GetWingDrainMultiplier() < 1f
@@ -660,17 +527,17 @@ namespace PoniesOfTheRim.Flying
 
     public class Gizmo_FlightStamina : Gizmo
     {
-        private readonly Pawn                   _pawn;
+        private readonly Pawn _pawn;
         private readonly CompPegasusFlightTimer _timer;
 
-        private const float GizmoWidth  = 200f;
+        private const float GizmoWidth = 200f;
         private const float GizmoHeight = 75f;
 
         public Gizmo_FlightStamina(Pawn pawn, CompPegasusFlightTimer timer)
         {
-            _pawn  = pawn;
+            _pawn = pawn;
             _timer = timer;
-            Order  = -98f;
+            Order = -98f;
         }
 
         public override float GetWidth(float maxWidth) => Mathf.Min(GizmoWidth, maxWidth);
@@ -678,7 +545,7 @@ namespace PoniesOfTheRim.Flying
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
             float width = Mathf.Min(GizmoWidth, maxWidth);
-            Rect  outer = new Rect(topLeft.x, topLeft.y, width, GizmoHeight);
+            Rect outer = new Rect(topLeft.x, topLeft.y, width, GizmoHeight);
 
             Widgets.DrawWindowBackground(outer);
 
@@ -688,9 +555,9 @@ namespace PoniesOfTheRim.Flying
             float pct = _timer.CurrentStaminaPercent;
 
             Rect titleR = new Rect(inner.x, inner.y, inner.width, 16f);
-            Text.Font   = GameFont.Tiny;
+            Text.Font = GameFont.Tiny;
             Text.Anchor = TextAnchor.MiddleCenter;
-            GUI.color   = Color.white;
+            GUI.color = Color.white;
             Widgets.Label(titleR, "Flight Stamina");
 
             Rect barBG = new Rect(inner.x, titleR.yMax + 3f, inner.width, 18f);
@@ -713,21 +580,21 @@ namespace PoniesOfTheRim.Flying
             DrawMarker(barBG, 0.50f);
             DrawMarker(barBG, 0.75f);
 
-            Text.Font   = GameFont.Tiny;
+            Text.Font = GameFont.Tiny;
             Text.Anchor = TextAnchor.MiddleCenter;
-            GUI.color   = Color.white;
+            GUI.color = Color.white;
             Widgets.Label(barBG, pct.ToStringPercent("F0"));
 
             Rect descR = new Rect(inner.x, barBG.yMax + 3f,
                                   inner.width, inner.yMax - barBG.yMax - 3f);
-            Text.Font   = GameFont.Tiny;
+            Text.Font = GameFont.Tiny;
             Text.Anchor = TextAnchor.UpperCenter;
-            GUI.color   = GetTierColor(pct);
+            GUI.color = GetTierColor(pct);
             Widgets.Label(descR, GetTierLabel(pct));
 
-            GUI.color   = Color.white;
+            GUI.color = Color.white;
             Text.Anchor = TextAnchor.UpperLeft;
-            Text.Font   = GameFont.Small;
+            Text.Font = GameFont.Small;
 
             if (Mouse.IsOver(outer))
                 TooltipHandler.TipRegion(outer, BuildTooltip());
@@ -737,9 +604,9 @@ namespace PoniesOfTheRim.Flying
 
         private static void DrawMarker(Rect bar, float threshold)
         {
-            float x      = bar.x + bar.width * threshold;
-            Rect  marker = new Rect(x - 0.5f, bar.y, 1f, bar.height);
-            var   prev   = GUI.color;
+            float x = bar.x + bar.width * threshold;
+            Rect marker = new Rect(x - 0.5f, bar.y, 1f, bar.height);
+            var prev = GUI.color;
             GUI.color = new Color(0f, 0f, 0f, 0.85f);
             GUI.DrawTexture(marker, BaseContent.WhiteTex);
             GUI.color = prev;
@@ -766,7 +633,7 @@ namespace PoniesOfTheRim.Flying
             if (pct >= 0.75f) return "Safe flight";
             if (pct >= 0.50f) return "+20% sleep need";
             if (pct >= 0.25f) return "+35% sleep, -5% consciousness";
-            if (pct > 0f)     return "+50% sleep, -15% consciousness";
+            if (pct > 0f) return "+50% sleep, -15% consciousness";
             return "EXHAUSTED — flight disabled";
         }
 
@@ -781,222 +648,6 @@ namespace PoniesOfTheRim.Flying
                 "  25–50%   +35% sleep need,  −5% consciousness\n" +
                 "  < 25%  +50% sleep need, −15% consciousness\n" +
                 "  0%     Flight disabled until rested\n\n";
-        }
-    }
-
-    public static class Patch_HealthCardUtility_DrawOverviewTab
-    {
-        private const float RowHeight = 22f;
-
-        private static Vector2 _capsScrollPos = Vector2.zero;
-
-        private static readonly MethodInfo DrawLeftRowMI =
-            AccessTools.Method(typeof(HealthCardUtility), "DrawLeftRow");
-        private static readonly MethodInfo GetPainTipMI =
-            AccessTools.Method(typeof(HealthCardUtility), "GetPainTip");
-
-        public static bool Prefix(Rect rect, Pawn pawn, float curY, ref float __result)
-        {
-            if (!pawn.HasWings()) return true;
-            try
-            {
-                __result = DrawOverviewTabImpl(rect, pawn, curY);
-                return false;
-            }
-            catch (Exception e)
-            {
-                Log.Warning($"[PoniesOfTheRim] Patch_DrawOverviewTab.Prefix: {e}");
-                return true;
-            }
-        }
-
-        private static float DrawOverviewTabImpl(Rect rect, Pawn pawn, float curY)
-        {
-            curY += 4f;
-            bool anyTopRow = false;
-            Text.Font   = GameFont.Small;
-            Text.Anchor = TextAnchor.UpperLeft;
-            GUI.color   = new Color(0.9f, 0.9f, 0.9f);
-
-            if (pawn.foodRestriction != null
-                && pawn.foodRestriction.Configurable
-                && !pawn.DevelopmentalStage.Baby()
-                && pawn.needs?.food != null
-                && (!pawn.IsMutant || !pawn.mutant.Def.disablePolicies))
-            {
-                Rect row = new Rect(0f, curY, rect.width, 23f);
-                anyTopRow = true;
-                TooltipHandler.TipRegionByKey(row, "FoodRestrictionDescription");
-                Widgets.DrawHighlightIfMouseover(row);
-                Rect lHalf = row; lHalf.xMax = row.center.x - 4f;
-                Rect rHalf = row; rHalf.xMin = row.center.x + 4f;
-                Text.Anchor = TextAnchor.MiddleLeft;
-                Widgets.Label(lHalf, $"{"AllowFood".Translate()}:");
-                Text.Anchor = TextAnchor.UpperLeft;
-                if (Widgets.ButtonText(rHalf, pawn.foodRestriction.CurrentFoodPolicy.label))
-                {
-                    var opts = new List<FloatMenuOption>();
-                    foreach (FoodPolicy fp in Current.Game.foodRestrictionDatabase.AllFoodRestrictions)
-                    {
-                        FoodPolicy local = fp;
-                        opts.Add(new FloatMenuOption(local.label,
-                            () => pawn.foodRestriction.CurrentFoodPolicy = local));
-                    }
-                    opts.Add(new FloatMenuOption("ManageFoodPolicies".Translate() + "...",
-                        () => Find.WindowStack.Add(
-                            new Dialog_ManageFoodPolicies(pawn.foodRestriction.CurrentFoodPolicy))));
-                    Find.WindowStack.Add(new FloatMenu(opts));
-                }
-                curY += row.height + 4f;
-            }
-
-            bool playerFaction = pawn.Faction == Faction.OfPlayer
-                              || pawn.HostFaction == Faction.OfPlayer;
-            bool wildInBed     = pawn.NonHumanlikeOrWildMan() && pawn.InBed()
-                              && pawn.CurrentBed()?.Faction == Faction.OfPlayer;
-            if (pawn.RaceProps.IsFlesh && (playerFaction || wildInBed)
-                && (!pawn.IsMutant || pawn.mutant.Def.entitledToMedicalCare)
-                && pawn.playerSettings != null && !pawn.Dead
-                && Current.ProgramState == ProgramState.Playing)
-            {
-                Rect row = new Rect(0f, curY, rect.width, 23f);
-                anyTopRow = true;
-                TooltipHandler.TipRegionByKey(row, "MedicineQualityDescription");
-                Widgets.DrawHighlightIfMouseover(row);
-                Rect lHalf = row; lHalf.xMax = row.center.x - 4f;
-                Rect rHalf = row; rHalf.xMin = row.center.x + 4f;
-                Text.Anchor = TextAnchor.MiddleLeft;
-                Widgets.Label(lHalf, $"{"AllowMedicine".Translate()}:");
-                Text.Anchor = TextAnchor.UpperLeft;
-                Widgets.DrawButtonGraphic(rHalf);
-                MedicalCareUtility.MedicalCareSelectButton(rHalf, pawn);
-                curY += row.height + 4f;
-            }
-
-            if (Current.ProgramState == ProgramState.Playing && pawn.IsColonist
-                && !pawn.Dead && !pawn.DevelopmentalStage.Baby()
-                && pawn.playerSettings != null)
-            {
-                Rect row = new Rect(0f, curY, rect.width, 23f);
-                anyTopRow = true;
-                TooltipHandler.TipRegion(row,
-                    "AllowSelfTendTip".Translate(
-                        Faction.OfPlayer.def.pawnsPlural,
-                        0.7f.ToStringPercent()).CapitalizeFirst());
-                Widgets.DrawHighlightIfMouseover(row);
-                Rect lHalf  = row; lHalf.xMax  = row.center.x - 4f;
-                Rect cbRect = row; cbRect.xMin = row.center.x + 4f;
-                cbRect.width = cbRect.height;
-                cbRect = cbRect.ContractedBy(4f);
-                Text.Anchor = TextAnchor.MiddleLeft;
-                Widgets.Label(lHalf, $"{"AllowSelfTend".Translate()}:");
-                Text.Anchor = TextAnchor.UpperLeft;
-                bool wasOn = pawn.playerSettings.selfTend;
-                Widgets.Checkbox(cbRect.x, cbRect.y,
-                    ref pawn.playerSettings.selfTend, cbRect.height);
-                if (pawn.playerSettings.selfTend && !wasOn)
-                {
-                    if (pawn.WorkTypeIsDisabled(WorkTypeDefOf.Doctor))
-                    {
-                        pawn.playerSettings.selfTend = false;
-                        Messages.Message(
-                            "MessageCannotSelfTendEver".Translate(pawn.LabelShort, pawn),
-                            MessageTypeDefOf.RejectInput, false);
-                    }
-                    else if (pawn.workSettings.GetPriority(WorkTypeDefOf.Doctor) == 0)
-                    {
-                        Messages.Message(
-                            "MessageSelfTendUnsatisfied".Translate(pawn.LabelShort, pawn),
-                            MessageTypeDefOf.CautionInput, false);
-                    }
-                }
-                curY += row.height + 10f;
-            }
-
-            if (anyTopRow)
-                Widgets.DrawLineHorizontal(rect.x - 8f, curY, rect.width, Color.gray);
-            curY += 10f;
-
-            if (pawn.def.race.IsFlesh)
-            {
-                var painLabel = HealthCardUtility.GetPainLabel(pawn);
-                string painTip = GetPainTipMI != null
-                    ? (string)GetPainTipMI.Invoke(null, new object[] { pawn })
-                    : "";
-                DrawLeftRowReflected(rect, ref curY,
-                    "PainLevel".Translate(), painLabel.First, painLabel.Second,
-                    new TipSignal(painTip));
-            }
-            curY += 6f;
-
-            if (!pawn.Dead)
-            {
-                var caps       = GetApplicableCapacities(pawn);
-                float startY   = curY;
-                float available = rect.height - startY;
-                float totalH   = caps.Count * RowHeight;
-                bool scroll    = totalH > available && available > RowHeight;
-
-                if (scroll)
-                {
-                    Rect outRect  = new Rect(0f, startY, rect.width, available);
-                    Rect viewRect = new Rect(0f, 0f, rect.width - 16f, totalH);
-                    Widgets.BeginScrollView(outRect, ref _capsScrollPos, viewRect);
-                    float sy = 0f;
-                    DrawCapRows(rect, pawn, caps, ref sy);
-                    Widgets.EndScrollView();
-                    curY = startY + available;
-                }
-                else
-                {
-                    DrawCapRows(rect, pawn, caps, ref curY);
-                }
-            }
-
-            GUI.color   = Color.white;
-            Text.Anchor = TextAnchor.UpperLeft;
-            Text.Font   = GameFont.Small;
-            return curY;
-        }
-
-        private static void DrawCapRows(
-            Rect rect, Pawn pawn, List<PawnCapacityDef> caps, ref float curY)
-        {
-            foreach (PawnCapacityDef cap in caps)
-            {
-                PawnCapacityDef local = cap;
-                var eff = HealthCardUtility.GetEfficiencyLabel(pawn, cap);
-                var tip = new TipSignal(
-                    () => pawn.Dead ? "" : HealthCardUtility.GetPawnCapacityTip(pawn, local),
-                    pawn.thingIDNumber ^ local.index);
-                DrawLeftRowReflected(rect, ref curY,
-                    cap.GetLabelFor(pawn).CapitalizeFirst(),
-                    eff.First, eff.Second, tip);
-            }
-        }
-
-        private static List<PawnCapacityDef> GetApplicableCapacities(Pawn pawn)
-        {
-            IEnumerable<PawnCapacityDef> src;
-            if      (pawn.def.race.Humanlike)       src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnHumanlikes);
-            else if (pawn.def.race.Animal)           src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnAnimals);
-            else if (pawn.def.race.IsAnomalyEntity)  src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnAnomalyEntities);
-            else if (pawn.def.race.IsDrone)          src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnDrones);
-            else                                     src = DefDatabase<PawnCapacityDef>.AllDefs.Where(x => x.showOnMechanoids);
-
-            return src
-                .OrderBy(c => c.listOrder)
-                .Where(c => PawnCapacityUtility.BodyCanEverDoCapacity(pawn.RaceProps.body, c))
-                .ToList();
-        }
-
-        private static void DrawLeftRowReflected(
-            Rect rect, ref float curY,
-            string left, string right, Color color, TipSignal tip)
-        {
-            object[] args = { rect, curY, left, right, color, tip };
-            DrawLeftRowMI.Invoke(null, args);
-            curY = (float)args[1];
         }
     }
 }

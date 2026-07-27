@@ -8,7 +8,7 @@ namespace PoniesOfTheRim
     {
         public static FleckDef Pony_Hoofprint;
         public static FleckDef Pony_Talonprint;
-        public static FleckDef Pony_Pawprint; 
+        public static FleckDef Pony_Pawprint;
 
         public static BodyTypeDef Pony;
         public static BodyTypeDef PonyChild;
@@ -29,6 +29,8 @@ namespace PoniesOfTheRim
         public static TraitDef Pony_Joyous;
         public static TraitDef Pony_Elegance;
 
+        public static PawnCapacityDef Pegasus_Flight;
+
 
         [MayRequireBiotech]
         public static GeneDef Pony_Cutiemark;
@@ -36,7 +38,7 @@ namespace PoniesOfTheRim
         public static GeneDef Pony_Herbivore;
         [MayRequireBiotech]
         public static GeneDef Pony_Carnivore;
-        
+
         [MayRequire("Pony.PoniesOfTheRim.Races")]
         public static BodyDef Pony_ZebraBody;
         [MayRequire("Pony.PoniesOfTheRim.Races")]

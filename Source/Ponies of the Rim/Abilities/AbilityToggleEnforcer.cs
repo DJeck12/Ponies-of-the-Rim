@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -60,7 +59,7 @@ namespace PoniesOfTheRim.Abilities
                 return;
 
             List<AbilityDef> disabled = new List<AbilityDef>();
-            List<AbilityDef> enabled  = new List<AbilityDef>();
+            List<AbilityDef> enabled = new List<AbilityDef>();
 
             foreach (KeyValuePair<string, bool> kv in settings.abilityToggles)
             {
@@ -69,7 +68,7 @@ namespace PoniesOfTheRim.Abilities
                     continue;
 
                 if (kv.Value) enabled.Add(def);
-                else          disabled.Add(def);
+                else disabled.Add(def);
             }
 
             if (disabled.Count == 0 && enabled.Count == 0)
@@ -83,7 +82,10 @@ namespace PoniesOfTheRim.Abilities
                     continue;
 
                 foreach (AbilityDef def in disabled)
-                    pawn.abilities.RemoveAbility(def);
+                {
+                    if (!IsGrantedByActiveSource(pawn, def))
+                        pawn.abilities.RemoveAbility(def);
+                }
 
                 foreach (AbilityDef def in enabled)
                 {
@@ -94,7 +96,7 @@ namespace PoniesOfTheRim.Abilities
                 affected++;
             }
 
-            if (affected > 0)
+            if (affected > 0 && Prefs.DevMode)
                 Log.Message($"[PoniesOfTheRim] AbilityToggleEnforcer: обработано {affected} пешек после загрузки.");
         }
 
@@ -115,7 +117,8 @@ namespace PoniesOfTheRim.Abilities
 
                 if (!kv.Value)
                 {
-                    pawn.abilities.RemoveAbility(def);
+                    if (!IsGrantedByActiveSource(pawn, def))
+                        pawn.abilities.RemoveAbility(def);
                 }
                 else if (ShouldGrantToPawn(def, pawn))
                 {
@@ -133,6 +136,35 @@ namespace PoniesOfTheRim.Abilities
                 return false;
 
             return races.Contains(pawn.def.defName);
+        }
+
+        public static bool IsGrantedByActiveSource(Pawn pawn, AbilityDef def)
+        {
+            if (ModsConfig.BiotechActive && pawn.genes != null)
+            {
+                List<Gene> genes = pawn.genes.GenesListForReading;
+                for (int i = 0; i < genes.Count; i++)
+                {
+                    Gene gene = genes[i];
+                    if (gene.Active && gene.def.abilities != null && gene.def.abilities.Contains(def))
+                    {
+                        return true;
+                    }
+                }
+            }
+            List<Hediff> hediffs = pawn.health?.hediffSet?.hediffs;
+            if (hediffs != null)
+            {
+                for (int i = 0; i < hediffs.Count; i++)
+                {
+                    HediffCompProperties_GiveAbility props = hediffs[i].def?.CompProps<HediffCompProperties_GiveAbility>();
+                    if (props != null && props.abilityDef == def)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         private static IEnumerable<Pawn> AllRelevantPawns()

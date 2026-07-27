@@ -1,6 +1,4 @@
-﻿using AlienRace;
-using HarmonyLib;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace PoniesOfTheRim

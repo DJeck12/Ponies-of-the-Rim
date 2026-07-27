@@ -55,9 +55,9 @@ namespace PoniesOfTheRim.UniquePonies
 
             if (!isPony) y += 47f;
 
-            LastUniquePawnsRect = new Rect(x, y,                                              ElemWidth, h);
+            LastUniquePawnsRect = new Rect(x, y, ElemWidth, h);
             LastCutiemarkRect = new Rect(cutieX, y + h + ElemSpacing, iw, iw);
-            LastTailRect        = new Rect(x, y + h + iw          + ElemSpacing * 2f,        ElemWidth, h);
+            LastTailRect        = new Rect(x, y + h + iw + ElemSpacing * 2f, ElemWidth, h);
         }
 
         public static void DoWindowContents_Postfix(Page_ConfigureStartingPawns __instance, Rect rect)

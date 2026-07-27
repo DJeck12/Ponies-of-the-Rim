@@ -1,6 +1,6 @@
-﻿using RimWorld;
+﻿using System.Collections.Generic;
+using RimWorld;
 using RimWorld.Planet;
-using System.Linq;
 using Verse;
 using Verse.AI.Group;
 
@@ -11,14 +11,28 @@ namespace PoniesOfTheRim.Thoughts
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
             Lord lord = p.GetLord();
-            if (lord != null && lord.ownedPawns.Any((Pawn c) => c.def.defName.Contains("Pony_")))
+            if (lord != null)
             {
-                return true;
+                List<Pawn> owned = lord.ownedPawns;
+                for (int i = 0; i < owned.Count; i++)
+                {
+                    if (owned[i].IsPony())
+                    {
+                        return true;
+                    }
+                }
             }
             Caravan car = p.GetCaravan();
-            if (car != null && car.PawnsListForReading.Any((Pawn c) => c.def.defName.Contains("Pony_")))
+            if (car != null)
             {
-                return true;
+                List<Pawn> pawns = car.PawnsListForReading;
+                for (int i = 0; i < pawns.Count; i++)
+                {
+                    if (pawns[i].IsPony())
+                    {
+                        return true;
+                    }
+                }
             }
             Map map = p.MapHeld;
             if (map != null)
@@ -26,14 +40,26 @@ namespace PoniesOfTheRim.Thoughts
                 Faction fac = p.Faction;
                 if (fac != null)
                 {
-                    if (map.mapPawns.SpawnedPawnsInFaction(fac).Any((Pawn c) => c.def.defName.Contains("Pony_")))
+                    List<Pawn> list = map.mapPawns.SpawnedPawnsInFaction(fac);
+                    for (int i = 0; i < list.Count; i++)
                     {
-                        return true;
+                        if (list[i].IsPony())
+                        {
+                            return true;
+                        }
                     }
                 }
-                else if (map.mapPawns.AllPawnsSpawned.Any((Pawn c) => c.def.defName.Contains("Pony_") && !p.HostileTo(c)))
+                else
                 {
-                    return true;
+                    List<Pawn> list = (List<Pawn>)map.mapPawns.AllPawnsSpawned;
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        Pawn c = list[i];
+                        if (c.IsPony() && !p.HostileTo(c))
+                        {
+                            return true;
+                        }
+                    }
                 }
             }
             return false;

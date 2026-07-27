@@ -123,50 +123,105 @@ namespace PoniesOfTheRim
 
         private void InitializePatchToggles(ModContentPack content)
         {
-            string patchesDir = Path.Combine(content.RootDir, "1.6", "Patches");
-            if (!Directory.Exists(patchesDir))
+            int togglesFound = 0;
+            int filesParsed = 0;
+            foreach (ModContentPack mod in LoadedModManager.RunningModsListForReading)
             {
-                Log.Warning($"[PoniesOfTheRim] Директория патчей не найдена: {patchesDir}");
-                return;
+                foreach (string patchDir in CandidatePatchDirs(mod))
+                {
+                    if (!Directory.Exists(patchDir))
+                    {
+                        continue;
+                    }
+                    string[] files;
+                    try
+                    {
+                        files = Directory.GetFiles(patchDir, "*.xml", SearchOption.AllDirectories);
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Error("[PoniesOfTheRim] Ошибка перечисления патчей в " + patchDir + ": " + ex.Message);
+                        continue;
+                    }
+                    foreach (string file in files)
+                    {
+                        try
+                        {
+                            string raw = File.ReadAllText(file);
+                            if (!raw.Contains("PoniesOfTheRim.PatchOperationToggleable"))
+                            {
+                                continue;
+                            }
+                            filesParsed++;
+                            XmlDocument doc = new XmlDocument();
+                            doc.LoadXml(raw);
+                            XmlNodeList ops = doc.SelectNodes("//*[starts-with(@Class,'PoniesOfTheRim.PatchOperationToggleable')]");
+                            if (ops == null)
+                            {
+                                continue;
+                            }
+                            foreach (XmlNode op in ops)
+                            {
+                                string id = op.SelectSingleNode("settingId")?.InnerText?.Trim();
+                                if (string.IsNullOrEmpty(id))
+                                {
+                                    continue;
+                                }
+                                bool defaultState = true;
+                                XmlNode defNode = op.SelectSingleNode("defaultState");
+                                if (defNode != null)
+                                {
+                                    bool.TryParse(defNode.InnerText.Trim(), out defaultState);
+                                }
+                                string label = op.SelectSingleNode("label")?.InnerText?.Trim();
+                                string description = op.SelectSingleNode("description")?.InnerText?.Trim();
+                                if (Prefs.DevMode && defaultPatchToggles.TryGetValue(id, out bool prev) && prev != defaultState)
+                                {
+                                    Log.Warning("[PoniesOfTheRim] settingId '" + id + "' объявлен с разными defaultState в разных файлах — использую последний.");
+                                }
+                                patchLabels[id] = ((!string.IsNullOrEmpty(label)) ? label : id);
+                                patchDescriptions[id] = description ?? string.Empty;
+                                defaultPatchToggles[id] = defaultState;
+                                if (!settings.patchToggles.ContainsKey(id))
+                                {
+                                    settings.patchToggles[id] = defaultState;
+                                }
+                                togglesFound++;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Error("[PoniesOfTheRim] Ошибка чтения патч-XML " + file + ": " + ex.Message);
+                        }
+                    }
+                }
             }
-
-            foreach (string file in Directory.GetFiles(patchesDir, "*.xml", SearchOption.AllDirectories))
+            if (Prefs.DevMode)
             {
-                try
-                {
-                    XmlDocument doc = new();
-                    doc.Load(file);
-
-                    XmlNode opNode = doc.DocumentElement?.SelectSingleNode("Operation");
-                    if (opNode == null)
-                        continue;
-
-                    string settingId = opNode.SelectSingleNode("settingId")?.InnerText?.Trim();
-                    if (string.IsNullOrEmpty(settingId))
-                        continue;
-
-                    bool defaultState = true;
-                    XmlNode defaultNode = opNode.SelectSingleNode("defaultState");
-                    if (defaultNode != null)
-                        bool.TryParse(defaultNode.InnerText.Trim(), out defaultState);
-
-                    string label       = opNode.SelectSingleNode("label")?.InnerText?.Trim();
-                    string description = opNode.SelectSingleNode("description")?.InnerText?.Trim();
-
-                    patchLabels[settingId]       = !string.IsNullOrEmpty(label) ? label : settingId;
-                    patchDescriptions[settingId] = description ?? string.Empty;
-
-                    defaultPatchToggles[settingId] = defaultState;
-                    if (!settings.patchToggles.ContainsKey(settingId))
-                        settings.patchToggles[settingId] = defaultState;
-                }
-                catch (Exception ex)
-                {
-                    Log.Error($"[PoniesOfTheRim] Ошибка чтения патч-XML {file}: {ex.Message}");
-                }
+                Log.Message("[PoniesOfTheRim] Тумблеры патчей: " + togglesFound + " записей из " + filesParsed + " файлов по всем модам.");
             }
-
             _patchSnapshot = new Dictionary<string, bool>(settings.patchToggles);
+        }
+
+        private static IEnumerable<string> CandidatePatchDirs(ModContentPack mod)
+        {
+            string root = mod.RootDir;
+            yield return Path.Combine(root, "Patches");
+            yield return Path.Combine(root, "ModPatches");
+            string[] subDirs;
+            try
+            {
+                subDirs = Directory.GetDirectories(root);
+            }
+            catch
+            {
+                yield break;
+            }
+            foreach (string sub in subDirs)
+            {
+                yield return Path.Combine(sub, "Patches");
+                yield return Path.Combine(sub, "ModPatches");
+            }
         }
 
         public override string SettingsCategory() => "SettingsPoniesOfTheRim".Translate();

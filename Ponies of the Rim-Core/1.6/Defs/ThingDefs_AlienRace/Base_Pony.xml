@@ -446,6 +446,9 @@
 				<requiresImprisonment>true</requiresImprisonment>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyRaceExtension" />
+		</modExtensions>
 
 	</AlienRace.ThingDef_AlienRace>
 

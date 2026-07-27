@@ -7,7 +7,7 @@ namespace PoniesOfTheRim.Thoughts
     {
         protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
         {
-            return otherPawn.def.defName.Contains("Pony_");
+            return otherPawn.IsPony();
         }
     }
 }
