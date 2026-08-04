@@ -9,7 +9,7 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-            public static class CommsQuestContext
+    public static class CommsQuestContext
     {
         [ThreadStatic]
         public static Faction TargetFaction;
@@ -30,8 +30,8 @@ namespace PoniesOfTheRim
 
             try
             {
-                                                                                                                MethodInfo isGoodFaction = AccessTools.Method(
-                    typeof(QuestNode_GetFaction), "IsGoodFaction");
+                MethodInfo isGoodFaction = AccessTools.Method(
+                typeof(QuestNode_GetFaction), "IsGoodFaction");
 
                 if (isGoodFaction != null)
                 {
@@ -47,7 +47,7 @@ namespace PoniesOfTheRim
                     Log.Warning("[PoniesOfTheRim] Could not find QuestNode_GetFaction.IsGoodFaction.");
                 }
 
-                                                                                                                Type settlementNodeType = typeof(QuestNode_GetNearbySettlement);
+                Type settlementNodeType = typeof(QuestNode_GetNearbySettlement);
                 MethodInfo runInt = AccessTools.Method(settlementNodeType, "RunInt");
 
                 if (runInt != null)
@@ -88,7 +88,7 @@ namespace PoniesOfTheRim
         {
             if (CommsQuestContext.TargetFaction == null) return;
 
-                        __result = (faction == CommsQuestContext.TargetFaction);
+            __result = (faction == CommsQuestContext.TargetFaction);
         }
 
                                                                         
@@ -141,7 +141,7 @@ namespace PoniesOfTheRim
                 return false;
             }
 
-                        string storeAs = ReadSlateRef(fi_Settlement_storeAs, __instance, slate) ?? "settlement";
+            string storeAs = ReadSlateRef(fi_Settlement_storeAs, __instance, slate) ?? "settlement";
             string storeLeaderAs = ReadSlateRef(fi_Settlement_storeFactionLeaderAs, __instance, slate);
             string storeCanCaravanAs = ReadSlateRef(fi_Settlement_storeCanCaravanAs, __instance, slate);
 
@@ -162,7 +162,7 @@ namespace PoniesOfTheRim
         }
 
                         
-                        private static Settlement FindBestSettlement(Faction faction)
+        private static Settlement FindBestSettlement(Faction faction)
         {
             Map playerMap = Find.CurrentMap;
             if (playerMap == null) return null;

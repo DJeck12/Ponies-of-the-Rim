@@ -19,51 +19,83 @@ namespace PoniesOfTheRim.Abilities
         {
             if (!Settings.IsAbilityEnabled(ability.defName))
             {
-                pawn.abilities.RemoveAbility(ability);
+                if (!AbilityToggleEnforcer.IsGrantedByActiveSource(pawn, ability))
+                {
+                    pawn.abilities.RemoveAbility(ability);
+                }
                 return;
             }
-
-            int numNaturalHorn    = GetNumNaturalHorn(pawn, partsToAffect);
+            int numNaturalHorn = GetNumNaturalHorn(pawn, partsToAffect);
             int numProstheticHorn = GetNumProstheticHorn(pawn, partsToAffect);
-
             if (numNaturalHorn == 1 || numProstheticHorn == 1)
+            {
                 pawn.abilities.GainAbility(ability);
-            else if (numNaturalHorn == 0 && numProstheticHorn == 0)
+            }
+            else if (numNaturalHorn == 0 && numProstheticHorn == 0 &&
+                     !AbilityToggleEnforcer.IsGrantedByActiveSource(pawn, ability))
+            {
                 pawn.abilities.RemoveAbility(ability);
-
+            }
             HornCheck(pawn, partsToAffect);
         }
 
         public int GetNumNaturalHorn(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
-            return partsToAffect.Count(p =>
-                !pawn.health.hediffSet.IsBionicOrImplant(p) &&
-                pawn.RaceProps.body.AllParts.Any(part =>
-                    part.def == p && !pawn.health.hediffSet.PartIsMissing(part)));
+            int num = 0;
+            HediffSet set = pawn.health.hediffSet;
+            foreach (BodyPartDef partDef in partsToAffect)
+            {
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts)
+                {
+                    if (record.def == partDef && !set.PartIsMissing(record) && !set.PartHasProsthetic(record))
+                    {
+                        num++;
+                    }
+                }
+            }
+            return num;
         }
 
         public int GetNumProstheticHorn(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
-            return partsToAffect.Count(p =>
-                pawn.health.hediffSet.IsBionicOrImplant(p) &&
-                pawn.RaceProps.body.AllParts.Any(part =>
-                    part.def == p && !pawn.health.hediffSet.PartIsMissing(part)));
+            int num = 0;
+            HediffSet set = pawn.health.hediffSet;
+            foreach (BodyPartDef partDef in partsToAffect)
+            {
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts)
+                {
+                    if (record.def == partDef && !set.PartIsMissing(record) && set.PartHasProsthetic(record))
+                    {
+                        num++;
+                    }
+                }
+            }
+            return num;
         }
 
         public bool HornCheck(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
+            HediffSet set = pawn.health.hediffSet;
             foreach (BodyPartDef affectedPart in partsToAffect)
             {
-                if (pawn.health.hediffSet.IsBionicOrImplant(affectedPart))
-                    continue;
-
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
-                    .Where(part => part.def == affectedPart))
+                foreach (BodyPartRecord item in pawn.RaceProps.body.AllParts.Where((BodyPartRecord part) => part.def == affectedPart))
                 {
-                    if (!pawn.health.hediffSet.PartIsMissing(record) &&
-                        !pawn.health.hediffSet.HasHediff(hediff, record))
+                    if (set.PartIsMissing(item))
                     {
-                        pawn.health.AddHediff(hediff, record);
+                        continue;
+                    }
+                    if (set.PartHasProsthetic(item))
+                    {
+                        Hediff stacked = set.hediffs.FirstOrDefault((Hediff h) => h.Part == item && h.def == hediff);
+                        if (stacked != null)
+                        {
+                            pawn.health.RemoveHediff(stacked);
+                        }
+                        continue;
+                    }
+                    if (!set.HasHediff(hediff, item))
+                    {
+                        pawn.health.AddHediff(hediff, item);
                         return true;
                     }
                 }

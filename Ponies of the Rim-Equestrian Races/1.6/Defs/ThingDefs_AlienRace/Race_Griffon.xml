@@ -177,6 +177,12 @@ Griffons can be found all over the world, but they typically favor more temperat
 			<nameGeneratorFemale>NameGeneratorGriffonFemale</nameGeneratorFemale>
 			<body>Pony_GriffonBody</body>
 		</race>
+		
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyRaceExtension">
+				<hasMane>false</hasMane>
+			</li>
+		</modExtensions>
 
 	</AlienRace.ThingDef_AlienRace>
 

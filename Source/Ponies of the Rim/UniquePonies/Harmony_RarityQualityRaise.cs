@@ -7,7 +7,7 @@ namespace PoniesOfTheRim.UniquePonies
     {
         public static void PostProcessProduct_Postfix(Thing product, Pawn worker)
         {
-                        if (worker?.story?.traits == null)
+            if (worker?.story?.traits == null)
                 return;
 
             if (!worker.story.traits.HasTrait(Pony_DefOf.Pony_Elegance))

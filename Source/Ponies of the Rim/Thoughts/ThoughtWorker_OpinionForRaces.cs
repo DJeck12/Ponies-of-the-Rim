@@ -5,9 +5,32 @@ namespace PoniesOfTheRim.Thoughts
 {
     public class ThoughtWorker_OpinionForRaces : ThoughtWorker
     {
+        private ThoughtExtension cachedExtension;
+        private bool extensionCached;
+
+        private ThoughtExtension Extension
+        {
+            get
+            {
+                if (!extensionCached)
+                {
+                    extensionCached = true;
+                    cachedExtension = def.GetModExtension<ThoughtExtension>();
+
+                    if (cachedExtension == null)
+                    {
+                        Log.ErrorOnce(
+                            "[PoniesOfTheRim] ThoughtWorker_OpinionForRaces: ThoughtExtension не найден на ThoughtDef '"
+                            + def.defName + "'.", def.shortHash);
+                    }
+                }
+                return cachedExtension;
+            }
+        }
+
         protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
         {
-            var extension = def.GetModExtension<ThoughtExtension>();
+            var extension = Extension;
             if (extension == null || extension.bodies.NullOrEmpty())
             {
                 return false;

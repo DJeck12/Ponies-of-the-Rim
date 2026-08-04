@@ -19,38 +19,37 @@ namespace PoniesOfTheRim.Abilities
         {
             if (!Settings.IsAbilityEnabled(ability.defName))
             {
-                pawn.abilities.RemoveAbility(ability);
+                if (!AbilityToggleEnforcer.IsGrantedByActiveSource(pawn, ability))
+                {
+                    pawn.abilities.RemoveAbility(ability);
+                }
                 return;
             }
-
-            int numNaturalWing    = GetNumNaturalWing(pawn, partsToAffect);
+            int numNaturalWing = GetNumNaturalWing(pawn, partsToAffect);
             int numProstheticWing = GetNumProstheticWing(pawn, partsToAffect);
-
-            bool hasEnoughWings = numNaturalWing    == 2
-                || (numNaturalWing == 1 && numProstheticWing == 1)
-                || numProstheticWing == 2;
-
-            if (hasEnoughWings)
+            if (numNaturalWing == 2 || (numNaturalWing == 1 && numProstheticWing == 1) || numProstheticWing == 2)
+            {
                 pawn.abilities.GainAbility(ability);
-            else
+            }
+            else if (!AbilityToggleEnforcer.IsGrantedByActiveSource(pawn, ability))
+            {
                 pawn.abilities.RemoveAbility(ability);
-
+            }
             WingCheck(pawn, partsToAffect);
         }
 
         public int GetNumNaturalWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             int count = 0;
+            HediffSet set = pawn.health.hediffSet;
             foreach (BodyPartDef partDef in partsToAffect)
             {
-                if (pawn.health.hediffSet.IsBionicOrImplant(partDef))
-                    continue;
-
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
-                    .Where(p => p.def == partDef))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts)
                 {
-                    if (!pawn.health.hediffSet.PartIsMissing(record))
+                    if (record.def == partDef && !set.PartIsMissing(record) && !set.PartHasProsthetic(record))
+                    {
                         count++;
+                    }
                 }
             }
             return count;
@@ -59,16 +58,15 @@ namespace PoniesOfTheRim.Abilities
         public int GetNumProstheticWing(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
             int count = 0;
+            HediffSet set = pawn.health.hediffSet;
             foreach (BodyPartDef partDef in partsToAffect)
             {
-                if (!pawn.health.hediffSet.IsBionicOrImplant(partDef))
-                    continue;
-
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
-                    .Where(p => p.def == partDef))
+                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts)
                 {
-                    if (!pawn.health.hediffSet.PartIsMissing(record))
+                    if (record.def == partDef && !set.PartIsMissing(record) && set.PartHasProsthetic(record))
+                    {
                         count++;
+                    }
                 }
             }
             return count;
@@ -76,24 +74,33 @@ namespace PoniesOfTheRim.Abilities
 
         public bool WingCheck(Pawn pawn, List<BodyPartDef> partsToAffect)
         {
-            bool anyAdded = false;
+            bool result = false;
+            HediffSet set = pawn.health.hediffSet;
             foreach (BodyPartDef partDef in partsToAffect)
             {
-                if (pawn.health.hediffSet.IsBionicOrImplant(partDef))
-                    continue;
-
-                foreach (BodyPartRecord record in pawn.RaceProps.body.AllParts
-                    .Where(p => p.def == partDef))
+                foreach (BodyPartRecord item in pawn.RaceProps.body.AllParts.Where((BodyPartRecord p) => p.def == partDef))
                 {
-                    if (!pawn.health.hediffSet.PartIsMissing(record) &&
-                        !pawn.health.hediffSet.HasHediff(hediff, record))
+                    if (set.PartIsMissing(item))
                     {
-                        pawn.health.AddHediff(hediff, record);
-                        anyAdded = true;
+                        continue;
+                    }
+                    if (set.PartHasProsthetic(item))
+                    {
+                        Hediff stacked = set.hediffs.FirstOrDefault((Hediff h) => h.Part == item && h.def == hediff);
+                        if (stacked != null)
+                        {
+                            pawn.health.RemoveHediff(stacked);
+                        }
+                        continue;
+                    }
+                    if (!set.HasHediff(hediff, item))
+                    {
+                        pawn.health.AddHediff(hediff, item);
+                        result = true;
                     }
                 }
             }
-            return anyAdded;
+            return result;
         }
     }
 }

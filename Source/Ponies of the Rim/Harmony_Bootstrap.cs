@@ -1,6 +1,6 @@
 ﻿using AlienRace;
 using HarmonyLib;
-using PoniesOfTheRim.UniquePonies;
+using PoniesOfTheRim.Flying;
 using RimWorld;
 using System;
 using System.Reflection;
@@ -26,6 +26,8 @@ namespace PoniesOfTheRim
 
         private static void RegisterCoreSetup()
         {
+            PonyHelper.BuildRaceCache();
+            PonyFlightCache.BuildStaticCaches();
             try
             {
                 StatDefOf.GlobalLearningFactor.parts ??= new System.Collections.Generic.List<StatPart>();
@@ -66,12 +68,6 @@ namespace PoniesOfTheRim
                 AccessTools.Method(typeof(PawnFootprintMaker), "TryPlaceFootprint"),
                 prefix: new HarmonyMethod(typeof(HoofprintPatch), nameof(HoofprintPatch.TryPlaceHoofprint)),
                 label: "PawnFootprintMaker.TryPlaceFootprint"
-            );
-
-            TryPatch(
-                AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"),
-                prefix:  new HarmonyMethod(typeof(UniqueStartingPawnUI), nameof(UniqueStartingPawnUI.DoWindowContents_Prefix)),
-                postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI), nameof(UniqueStartingPawnUI.DoWindowContents_Postfix))
             );
 
             TryPatch(
@@ -141,12 +137,6 @@ namespace PoniesOfTheRim
             );
 
             TryPatch(
-                AccessTools.Method(typeof(JumpUtility), "CanHitTargetFrom"),
-                prefix: new HarmonyMethod(typeof(JumpUtility_CanHitTargetFrom_Patch), nameof(JumpUtility_CanHitTargetFrom_Patch.CanHitTargetFrom_Patch)),
-                label: "JumpUtility.CanHitTargetFrom"
-            );
-
-            TryPatch(
                 AccessTools.Method(typeof(LoadedModManager), "ApplyPatches"),
                 prefix: new HarmonyMethod(
                     typeof(PatchesForPonySettings.LoadedModManager_ApplyPatches_Patch),
@@ -186,6 +176,7 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(typeof(PonyBabyHairPatch), nameof(PonyBabyHairPatch.PonyBabyHairPostfix)),
                 label: "PawnRenderNode_Hair.GraphicFor (baby hair)"
             );
+            TryPatch(AccessTools.Method(typeof(PawnGenerator), "GeneratePawn", new Type[1] { typeof(PawnGenerationRequest) }), null, new HarmonyMethod(typeof(PonyBabyHairPatch), "GeneratePawn_Postfix"), null, "PawnGenerator.GeneratePawn (baby hair)");
             TryPatch(
                 AccessTools.Method(typeof(Page_ConfigureStartingPawns), "PreOpen"),
                 postfix: new HarmonyMethod(
@@ -209,12 +200,6 @@ namespace PoniesOfTheRim
                 Log.Message("[PoniesOfTheRim] Biotech не активен — соответствующие патчи пропущены.");
                 return;
             }
-
-            TryPatch(
-                AccessTools.Method(typeof(Hediff), "Tick"),
-                prefix: new HarmonyMethod(typeof(Patch_Hediff_Pregnant_Tick), nameof(Patch_Hediff_Pregnant_Tick.Prefix)),
-                label: "Hediff.Tick (egg birth)"
-            );
 
             TryPatch(
                 AccessTools.Method(typeof(PregnancyUtility), "ApplyBirthOutcome"),
@@ -269,13 +254,6 @@ namespace PoniesOfTheRim
                 Log.Message("[PoniesOfTheRim] Roo моды не обнаружены — патч пропущен.");
                 return;
             }
-
-            //TryPatch(
-            //    AccessTools.Method(typeof(PawnRenderNode_Fur), "GraphicFor"),
-            //    prefix: new HarmonyMethod(typeof(PonyRooCompatPatch), nameof(PonyRooCompatPatch.DisableFurForPonyMinotaur))
-            //        { priority = Priority.HigherThanNormal },
-            //    label: "PawnRenderNode_Fur.GraphicFor"
-            //);
         }
 
         private static void TryPatch(

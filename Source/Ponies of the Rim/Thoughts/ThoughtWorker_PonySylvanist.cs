@@ -13,6 +13,28 @@ namespace PoniesOfTheRim.Thoughts
     {
         private SylvanistExtension cachedExtension;
         private bool extensionCached = false;
+        private static TraitDef _sylvanistTrait;
+        private static bool _sylvanistTraitResolved;
+
+        private static TraitDef SylvanistTrait
+        {
+            get
+            {
+                if (!_sylvanistTraitResolved)
+                {
+                    _sylvanistTraitResolved = true;
+                    _sylvanistTrait = DefDatabase<TraitDef>.GetNamed("Pony_Sylvanist", errorOnFail: false);
+
+                    if (_sylvanistTrait == null)
+                    {
+                        Log.ErrorOnce(
+                            "[PoniesOfTheRim] ThoughtWorker_Pony_Sylvanist: TraitDef 'Pony_Sylvanist' не найден.",
+                            738214551);
+                    }
+                }
+                return _sylvanistTrait;
+            }
+        }
 
         private SylvanistExtension Extension
         {
@@ -38,7 +60,8 @@ namespace PoniesOfTheRim.Thoughts
 
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            if (p.story?.traits == null || !p.story.traits.HasTrait(TraitDef.Named("Pony_Sylvanist")))
+            TraitDef trait = SylvanistTrait;
+            if (trait == null || p.story?.traits == null || !p.story.traits.HasTrait(trait))
                 return ThoughtState.Inactive;
 
             if (p.Map == null)

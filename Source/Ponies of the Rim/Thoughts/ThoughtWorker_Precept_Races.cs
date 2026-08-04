@@ -1,6 +1,6 @@
-﻿using RimWorld;
+﻿using System.Collections.Generic;
+using RimWorld;
 using RimWorld.Planet;
-using System.Linq;
 using Verse;
 using Verse.AI.Group;
 
@@ -8,17 +8,61 @@ namespace PoniesOfTheRim.Thoughts
 {
     public class ThoughtWorker_Precept_Races : ThoughtWorker_Precept
     {
+        private ThoughtExtension cachedExtension;
+        private bool extensionCached;
+
+        private ThoughtExtension Extension
+        {
+            get
+            {
+                if (!extensionCached)
+                {
+                    extensionCached = true;
+                    cachedExtension = def.GetModExtension<ThoughtExtension>();
+
+                    if (cachedExtension == null)
+                    {
+                        Log.ErrorOnce(
+                            "[PoniesOfTheRim] ThoughtWorker_Precept_Races: ThoughtExtension не найден на ThoughtDef '"
+                            + def.defName + "'.", def.shortHash);
+                    }
+                }
+                return cachedExtension;
+            }
+        }
+
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
-            Lord lord = p.GetLord();
-            if (lord != null && lord.ownedPawns.Any((Pawn c) => c.def == def.GetModExtension<ThoughtExtension>().race && c.IsFreeNonSlaveColonist == true))
+            ThingDef race = Extension?.race;
+            if (race == null)
             {
-                return true;
+                return false;
+            }
+            Lord lord = p.GetLord();
+            if (lord != null)
+            {
+                List<Pawn> owned = lord.ownedPawns;
+                for (int i = 0; i < owned.Count; i++)
+                {
+                    Pawn c = owned[i];
+                    if (c.def == race && c.IsFreeNonSlaveColonist)
+                    {
+                        return true;
+                    }
+                }
             }
             Caravan car = p.GetCaravan();
-            if (car != null && car.PawnsListForReading.Any((Pawn c) => c.def == def.GetModExtension<ThoughtExtension>().race && c.IsFreeNonSlaveColonist == true))
+            if (car != null)
             {
-                return true;
+                List<Pawn> pawns = car.PawnsListForReading;
+                for (int i = 0; i < pawns.Count; i++)
+                {
+                    Pawn c = pawns[i];
+                    if (c.def == race && c.IsFreeNonSlaveColonist)
+                    {
+                        return true;
+                    }
+                }
             }
             Map map = p.MapHeld;
             if (map != null)
@@ -26,14 +70,27 @@ namespace PoniesOfTheRim.Thoughts
                 Faction fac = p.Faction;
                 if (fac != null)
                 {
-                    if (map.mapPawns.SpawnedPawnsInFaction(fac).Any((Pawn c) => c.def == def.GetModExtension<ThoughtExtension>().race && c.IsFreeColonist == true))
+                    List<Pawn> list = map.mapPawns.SpawnedPawnsInFaction(fac);
+                    for (int i = 0; i < list.Count; i++)
                     {
-                        return true;
+                        Pawn c = list[i];
+                        if (c.def == race && c.IsFreeColonist)
+                        {
+                            return true;
+                        }
                     }
                 }
-                else if (map.mapPawns.AllPawnsSpawned.Any((Pawn c) => c.def == def.GetModExtension<ThoughtExtension>().race && !p.HostileTo(c) && c.IsFreeNonSlaveColonist == true))
+                else
                 {
-                    return true;
+                    List<Pawn> list = (List<Pawn>)map.mapPawns.AllPawnsSpawned;
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        Pawn c = list[i];
+                        if (c.def == race && !p.HostileTo(c) && c.IsFreeNonSlaveColonist)
+                        {
+                            return true;
+                        }
+                    }
                 }
             }
             return false;

@@ -49,6 +49,11 @@ namespace PoniesOfTheRim.Flying
     public class PonyRenderNodePegasusWings : PawnRenderNode
     {
         private readonly PonyRenderNodePropertiesPegasusWings wingsProps;
+        private Graphic[] _frames;
+        private Color _framesColor;
+        private int _lastRequestedFrame = -1;
+        private AlienPartGenerator.AlienComp _alienComp;
+        private bool _alienCompResolved;
 
         public PonyRenderNodePegasusWings(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
             : base(pawn, props, tree)
@@ -56,25 +61,78 @@ namespace PoniesOfTheRim.Flying
             wingsProps = (PonyRenderNodePropertiesPegasusWings)props;
         }
 
-        protected override IEnumerable<Graphic> GraphicsFor(Pawn pawn)
+        private int CurrentFrameIndex
         {
-            yield return GetCurrentFrameGraphic(pawn);
+            get
+            {
+                int frameCount = wingsProps?.frameCount ?? 0;
+                int ticksPerFrame = wingsProps?.ticksPerFrame ?? 0;
+                if (frameCount <= 0 || ticksPerFrame <= 0)
+                    return 0;
+                return Find.TickManager.TicksGame / ticksPerFrame % frameCount;
+            }
         }
 
-        public override Graphic GraphicFor(Pawn pawn) => GetCurrentFrameGraphic(pawn);
-
-        private Graphic GetCurrentFrameGraphic(Pawn pawn)
+        public void RequestRecacheIfFrameChanged()
         {
-            if (wingsProps?.frameCount <= 0 || wingsProps.ticksPerFrame <= 0 || pawn == null)
+            int idx = CurrentFrameIndex;
+            if (idx != _lastRequestedFrame)
+            {
+                _lastRequestedFrame = idx;
+                requestRecache = true;
+            }
+        }
+
+        protected override IEnumerable<Graphic> GraphicsFor(Pawn pawn)
+        {
+            yield return GraphicFor(pawn);
+        }
+
+        public override Graphic GraphicFor(Pawn pawn)
+        {
+            if (pawn == null || wingsProps == null || wingsProps.frameCount <= 0 || wingsProps.ticksPerFrame <= 0)
                 return BaseContent.BadGraphic;
+            EnsureFrames(pawn);
+            return _frames[CurrentFrameIndex];
+        }
 
-            int frameIndex = (Find.TickManager.TicksGame / wingsProps.ticksPerFrame) % wingsProps.frameCount;
+        private void EnsureFrames(Pawn pawn)
+        {
+            Color color = ResolveSkinColor(pawn);
+            if (_frames != null && _framesColor == color)
+                return;
 
-            return GraphicDatabase.Get<GraphicPegasusWingsColored>(
-                $"{wingsProps.framePathPrefix}{frameIndex}",
-                ShaderDatabase.CutoutSkin,
-                Vector2.one,
-                Color.white);
+            int frameCount = wingsProps.frameCount;
+            Graphic[] frames = (_frames != null && _frames.Length == frameCount) ? _frames : new Graphic[frameCount];
+            for (int i = 0; i < frameCount; i++)
+            {
+                frames[i] = GraphicDatabase.Get<Graphic_Multi>(
+                    wingsProps.framePathPrefix + i,
+                    ShaderDatabase.CutoutSkin,
+                    Vector2.one,
+                    color);
+            }
+            _frames = frames;
+            _framesColor = color;
+        }
+
+        private Color ResolveSkinColor(Pawn pawn)
+        {
+            if (!_alienCompResolved)
+            {
+                _alienCompResolved = true;
+                _alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
+            }
+            Color color = Color.clear;
+            if (_alienComp != null)
+            {
+                var skinChannel = _alienComp.GetChannel("skin");
+                if (skinChannel != null)
+                    color = skinChannel.first;
+            }
+            if (color == Color.clear || color.a <= 0f)
+                color = pawn.story?.SkinColor ?? Color.white;
+            return color;
         }
 
         protected override bool EnsureInitializationWithoutRecache => true;
@@ -84,17 +142,14 @@ namespace PoniesOfTheRim.Flying
     {
         public override bool CanDrawNowSub(PawnRenderNode node, PawnDrawParms parms)
         {
-            Pawn pawn = parms.pawn;
-            if (!pawn.HasWings())
-                return false;
-
-            var comp = pawn.TryGetComp<CompPegasusFlightToggle>();
-            if (comp?.FlightEnabled != true)
-                return false;
-
             if (parms.Portrait)
                 return false;
-
+            Pawn pawn = parms.pawn;
+            if (pawn == null || !pawn.HasWings())
+                return false;
+            CompPegasusFlightToggle comp = PonyFlightCache.GetToggle(pawn);
+            if (comp == null || !comp.FlightEnabled)
+                return false;
             return pawn.GetPosture() == PawnPosture.Standing;
         }
     }
@@ -110,6 +165,33 @@ namespace PoniesOfTheRim.Flying
 
     public class CompPegasusWingsRenderer : ThingComp
     {
+        private static PawnRenderNodeTagDef _wingTagDef;
+        private static bool _wingTagDefResolved;
+        private static bool _missingTagWarned;
+        private PonyRenderNodePegasusWings _node;
+        private bool _lastFlightEnabled;
+
+        public override void CompTick()
+        {
+            base.CompTick();
+            PonyRenderNodePegasusWings node = _node;
+            if (node == null)
+                return;
+            Pawn pawn = parent as Pawn;
+            if (pawn == null || !pawn.Spawned)
+                return;
+            CompPegasusFlightToggle toggle = PonyFlightCache.GetToggle(pawn);
+            bool flying = toggle != null && toggle.FlightEnabled;
+            if (flying != _lastFlightEnabled)
+            {
+                _lastFlightEnabled = flying;
+                node.requestRecache = true;
+            }
+            if (!flying)
+                return;
+            node.RequestRecacheIfFrameChanged();
+        }
+
         public override List<PawnRenderNode> CompRenderNodes()
         {
             Pawn pawn = parent as Pawn;
@@ -120,33 +202,39 @@ namespace PoniesOfTheRim.Flying
             if (tree == null)
                 return null;
 
-            var wingTagDef = DefDatabase<PawnRenderNodeTagDef>.GetNamed("PegasusWings", errorOnFail: false);
-            if (wingTagDef == null)
+            if (!_wingTagDefResolved)
             {
-                Log.Warning("[PoniesOfTheRim] PawnRenderNodeTagDef 'PegasusWings' не найден — " +
-                            "анимация крыльев отключена. Убедитесь, что def объявлен в XML.");
+                _wingTagDefResolved = true;
+                _wingTagDef = DefDatabase<PawnRenderNodeTagDef>.GetNamed("PegasusWings", errorOnFail: false);
+            }
+            if (_wingTagDef == null)
+            {
+                if (!_missingTagWarned)
+                {
+                    _missingTagWarned = true;
+                    Log.Warning("[PoniesOfTheRim] PawnRenderNodeTagDef 'PegasusWings' не найден — " +
+                                "анимация крыльев отключена. Убедитесь, что def объявлен в XML.");
+                }
                 return null;
             }
 
             var props = new PonyRenderNodePropertiesPegasusWings
             {
-                tagDef         = wingTagDef,
-                parentTagDef   = PawnRenderNodeTagDefOf.Body,
-                pawnType       = PawnRenderNodeProperties.RenderNodePawnType.HumanlikeOnly,
-                useGraphic     = true,
+                tagDef = _wingTagDef,
+                parentTagDef = PawnRenderNodeTagDefOf.Body,
+                pawnType = PawnRenderNodeProperties.RenderNodePawnType.HumanlikeOnly,
+                useGraphic = true,
                 framePathPrefix = "Races/Bodies/Wings/PegasusWings",
-                frameCount     = PegasusWingAnimation.FrameCount,
-                ticksPerFrame  = PegasusWingAnimation.TicksPerFrame,
+                frameCount = PegasusWingAnimation.FrameCount,
+                ticksPerFrame = PegasusWingAnimation.TicksPerFrame,
                 subworkerClasses = new List<Type>
                 {
                     typeof(PonyRenderSubWorkerPegasusWings)
                 }
             };
 
-            return new List<PawnRenderNode>
-            {
-                new PonyRenderNodePegasusWings(pawn, props, tree)
-            };
+            _node = new PonyRenderNodePegasusWings(pawn, props, tree);
+            return new List<PawnRenderNode> { _node };
         }
     }
 

@@ -41,10 +41,10 @@ namespace PoniesOfTheRim.Flying
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref _flyingForTerrain,    "potrAI_flyTerrain",    false);
-            Scribe_Values.Look(ref _flyingForCombat,     "potrAI_flyCombat",     false);
-            Scribe_Values.Look(ref _flyingForWater,      "potrAI_flyWater",      false);
-            Scribe_Values.Look(ref _kiteJobCooldownTick, "potrAI_kiteCooldown",  -1);
+            Scribe_Values.Look(ref _flyingForTerrain, "potrAI_flyTerrain", false);
+            Scribe_Values.Look(ref _flyingForCombat, "potrAI_flyCombat", false);
+            Scribe_Values.Look(ref _flyingForWater, "potrAI_flyWater", false);
+            Scribe_Values.Look(ref _kiteJobCooldownTick, "potrAI_kiteCooldown", -1);
         }
 
         public override void CompTick()
@@ -52,7 +52,10 @@ namespace PoniesOfTheRim.Flying
             base.CompTick();
 
             Pawn pawn = Pawn;
-            if (pawn == null || !pawn.Spawned || pawn.Dead || pawn.Downed)
+            if (pawn == null || !pawn.IsHashIntervalTick(EVAL_INTERVAL))
+                return;
+
+            if (!pawn.Spawned || pawn.Dead || pawn.Downed)
                 return;
 
             if (!pawn.HasWings())
@@ -61,11 +64,8 @@ namespace PoniesOfTheRim.Flying
             if (pawn.IsColonistPlayerControlled)
                 return;
 
-            if (!pawn.IsHashIntervalTick(EVAL_INTERVAL))
-                return;
-
-            var toggle = pawn.TryGetComp<CompPegasusFlightToggle>();
-            var timer  = pawn.TryGetComp<CompPegasusFlightTimer>();
+            var toggle = PonyFlightCache.GetToggle(pawn);
+            var timer = PonyFlightCache.GetTimer(pawn);
             if (toggle == null)
                 return;
 
@@ -74,22 +74,22 @@ namespace PoniesOfTheRim.Flying
                 if (toggle.FlightEnabled)
                 {
                     toggle.FlightEnabled = false;
-                    _flyingForTerrain    = false;
-                    _flyingForCombat     = false;
-                    _flyingForWater      = false;
+                    _flyingForTerrain = false;
+                    _flyingForCombat = false;
+                    _flyingForWater = false;
                 }
                 return;
             }
 
-            bool wantTerrain  = EvaluateTerrain(pawn, toggle, timer);
-            bool wantCombat   = EvaluateCombat(pawn, toggle, timer);
-            bool wantWater    = EvaluateWaterPath(pawn, toggle, timer);
-            bool wantBlocked  = EvaluateGroundBlocked(pawn, toggle, timer);
-            bool wantRetreat  = EvaluateRetreat(pawn, toggle, timer);
+            bool wantTerrain = EvaluateTerrain(pawn, toggle, timer);
+            bool wantCombat = EvaluateCombat(pawn, toggle, timer);
+            bool wantWater = EvaluateWaterPath(pawn, toggle, timer);
+            bool wantBlocked = EvaluateGroundBlocked(pawn, toggle, timer);
+            bool wantRetreat = EvaluateRetreat(pawn, toggle, timer);
 
             _flyingForTerrain = wantTerrain;
-            _flyingForCombat  = wantCombat;
-            _flyingForWater   = wantWater;
+            _flyingForCombat = wantCombat;
+            _flyingForWater = wantWater;
 
             bool shouldFly = wantTerrain || wantCombat || wantWater || wantBlocked || wantRetreat;
 
@@ -127,7 +127,7 @@ namespace PoniesOfTheRim.Flying
 
         private static bool CanPhysicallyFly(Pawn pawn, CompPegasusFlightTimer timer)
         {
-            if (!PegasusFlightUtil.HasUsableWings(pawn))
+            if (!PegasusFlightUtility.HasUsableWings(pawn))
                 return false;
 
             if (pawn.Map == null || pawn.Position.Roofed(pawn.Map))
@@ -180,7 +180,7 @@ namespace PoniesOfTheRim.Flying
             if (target == null || !target.Spawned)
                 return false;
 
-            float dist        = pawn.Position.DistanceTo(target.Position);
+            float dist = pawn.Position.DistanceTo(target.Position);
             float desiredDist = weaponRange * APPROACH_FACTOR;
 
             if (dist <= desiredDist)
@@ -195,8 +195,8 @@ namespace PoniesOfTheRim.Flying
                     return false;
 
                 float remainingTicks = timer.CurrentStaminaPercent * timer.MaxFlightDurationTicks;
-                float flightRange    = remainingTicks / Mathf.Max(1f, pawn.TicksPerMoveCardinal);
-                float neededRange    = (dist - desiredDist) * 1.3f;
+                float flightRange = remainingTicks / Mathf.Max(1f, pawn.TicksPerMoveCardinal);
+                float neededRange = (dist - desiredDist) * 1.3f;
 
                 if (flightRange < neededRange)
                     return false;
@@ -218,8 +218,8 @@ namespace PoniesOfTheRim.Flying
             int nodesLeft = path.NodesLeftCount;
             if (nodesLeft == 0) return false;
 
-            PathGrid grid     = pawn.Map.pathing.Normal.pathGrid;
-            int      lookahead = Mathf.Min(PATH_LOOKAHEAD, nodesLeft);
+            PathGrid grid = pawn.Map.pathing.Normal.pathGrid;
+            int lookahead = Mathf.Min(PATH_LOOKAHEAD, nodesLeft);
 
             int normalCost = Mathf.RoundToInt(pawn.TicksPerMoveCardinal);
             int totalSaving = 0;
@@ -250,23 +250,23 @@ namespace PoniesOfTheRim.Flying
             if (timer != null && !toggle.FlightEnabled && timer.CurrentStaminaPercent < MIN_STAMINA_TO_START)
                 return null;
 
-            VerbProperties vp = PegasusKiteUtil.GetRangedVerbProps(pawn);
+            VerbProperties vp = PegasusKiteUtility.GetRangedVerbProps(pawn);
             if (vp == null) return null;
 
-            float optRange = PegasusKiteUtil.GetOptimalAccuracyRange(vp);
+            float optRange = PegasusKiteUtility.GetOptimalAccuracyRange(vp);
             if (optRange < 1f) return null;
 
             Thing target = pawn.mindState?.enemyTarget;
             if (target == null || !target.Spawned) return null;
 
-            float dist    = pawn.Position.DistanceTo(target.Position);
-            float lo      = optRange * 0.9f;
-            float hi      = optRange * 1.1f;
-            bool  inMelee = PegasusKiteUtil.IsInMeleeCombat(pawn);
+            float dist = pawn.Position.DistanceTo(target.Position);
+            float lo = optRange * 0.9f;
+            float hi = optRange * 1.1f;
+            bool inMelee = PegasusKiteUtility.IsInMeleeCombat(pawn);
 
             if (!inMelee && dist >= lo && dist <= hi) return null;
 
-            IntVec3 pos = PegasusKiteUtil.FindKitePosition(
+            IntVec3 pos = PegasusKiteUtility.FindKitePosition(
                 pawn, target.Position, optRange, pawn.Map, walkableOnly: true);
 
             return pos.IsValid ? pos : (IntVec3?)null;
@@ -306,7 +306,7 @@ namespace PoniesOfTheRim.Flying
             float dist = pawn.Position.DistanceTo(target.Position);
 
             float weaponRange = GetRangedWeaponRange(pawn);
-            float threshold   = weaponRange > 0f ? weaponRange * MAX_CHASE_FACTOR : 20f;
+            float threshold = weaponRange > 0f ? weaponRange * MAX_CHASE_FACTOR : 20f;
             if (dist > threshold) return false;
 
             var tp = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors);
@@ -322,7 +322,7 @@ namespace PoniesOfTheRim.Flying
             if (target == null || pawn.Map == null) return false;
 
             IntVec3 from = pawn.Position;
-            IntVec3 to   = target.Position;
+            IntVec3 to = target.Position;
             int dx = to.x - from.x;
             int dz = to.z - from.z;
             int steps = Mathf.Max(Mathf.Abs(dx), Mathf.Abs(dz));
@@ -336,7 +336,7 @@ namespace PoniesOfTheRim.Flying
                     from.z + Mathf.RoundToInt(dz * i / (float)steps));
 
                 if (!cell.InBounds(pawn.Map)) continue;
-                if (cell.Walkable(pawn.Map))  continue;
+                if (cell.Walkable(pawn.Map)) continue;
 
                 var edifice = cell.GetEdifice(pawn.Map);
                 if (edifice?.def?.building == null) continue;

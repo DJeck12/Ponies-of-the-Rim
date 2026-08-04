@@ -69,7 +69,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                                private static void AddIncidentOptions(DiaNode result, DiaNode localResult, CommsConsoleExtension conExt, Pawn negotiator, Faction faction, bool canNegotiate, ref int disconnectIndex)
+        private static void AddIncidentOptions(DiaNode result, DiaNode localResult, CommsConsoleExtension conExt, Pawn negotiator, Faction faction, bool canNegotiate, ref int disconnectIndex)
         {
             if (conExt.incidents == null) return;
             FactionIncidentCooldown cooldownComp = Find.World.GetComponent<FactionIncidentCooldown>();
@@ -141,7 +141,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                                private static void AddQuestOptions(DiaNode result, DiaNode localResult, CommsConsoleExtension conExt, Pawn negotiator, Faction faction, bool canNegotiate, ref int disconnectIndex)
+        private static void AddQuestOptions(DiaNode result, DiaNode localResult, CommsConsoleExtension conExt, Pawn negotiator, Faction faction, bool canNegotiate, ref int disconnectIndex)
         {
             if (conExt.quests == null) return;
 
@@ -215,7 +215,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                                private static void ExecuteIncident(IncidentDef incidentDef, IncidentSettings incident, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
+        private static void ExecuteIncident(IncidentDef incidentDef, IncidentSettings incident, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
         {
             IncidentParms parms = StorytellerUtility.DefaultParmsNow(incidentDef.category, Find.CurrentMap);
             parms.faction = faction;
@@ -277,7 +277,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                                        public static void GenerateQuestWithFaction(QuestScriptDef questScriptDef, Faction faction)
+        public static void GenerateQuestWithFaction(QuestScriptDef questScriptDef, Faction faction)
         {
             try
             {
@@ -313,7 +313,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                        private static Settlement FindBestSettlementForFaction(Faction faction)
+        private static Settlement FindBestSettlementForFaction(Faction faction)
         {
             Map playerMap = Find.CurrentMap;
             if (playerMap == null) return null;
@@ -326,7 +326,7 @@ namespace PoniesOfTheRim
                 .FirstOrDefault();
         }
 
-                                private static string GetOptionText(DiaOption option)
+        private static string GetOptionText(DiaOption option)
         {
             return (string)diaOptionTextField.GetValue(option);
         }
@@ -357,7 +357,7 @@ namespace PoniesOfTheRim
             );
         }
 
-                private static void CheckCanNegotiate(bool canNegotiate, ref bool canTrigger, ref string disableReason)
+        private static void CheckCanNegotiate(bool canNegotiate, ref bool canTrigger, ref string disableReason)
         {
             if (!canTrigger) return;
 
@@ -368,7 +368,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                                        private static void CheckGoodwillCondition(Faction faction, int minGoodwill, int goodwillCost, ref bool canTrigger, ref string disableReason)
+        private static void CheckGoodwillCondition(Faction faction, int minGoodwill, int goodwillCost, ref bool canTrigger, ref string disableReason)
         {
             if (!canTrigger) return;
 
@@ -377,7 +377,7 @@ namespace PoniesOfTheRim
                 canTrigger = false;
                 disableReason = "PonyComms_MinGoodwillRequired".Translate(minGoodwill, faction.PlayerGoodwill);
             }
-                    }
+        }
 
         private static void CheckCooldownCondition(FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey, float cooldownDays, ref bool canTrigger, ref string disableReason)
         {

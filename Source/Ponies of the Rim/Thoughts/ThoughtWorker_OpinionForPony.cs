@@ -7,7 +7,7 @@ namespace PoniesOfTheRim.Thoughts
     {
         protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
         {
-            if (!otherPawn.def.defName.Contains("Pony_") || !RelationsUtility.PawnsKnowEachOther(p, otherPawn))
+            if (!otherPawn.IsPony() || !RelationsUtility.PawnsKnowEachOther(p, otherPawn))
             {
                 return false;
             }

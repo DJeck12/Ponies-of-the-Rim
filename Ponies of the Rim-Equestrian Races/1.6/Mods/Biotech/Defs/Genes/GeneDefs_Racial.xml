@@ -73,6 +73,7 @@
 			<li>Lays eggs instead of pregnancy and live birth.</li>
 			<li>Laying eggs makes the pawn temporarily infertile.</li>
 		</customEffectDescriptions>
+		<geneClass>PoniesOfTheRim.Gene_Oviparous</geneClass>
 	</GeneDef>
 
 	<GeneDef ParentName="GenePonyBase">

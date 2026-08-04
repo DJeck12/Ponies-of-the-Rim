@@ -6,8 +6,8 @@ namespace PoniesOfTheRim
 {
 public class Gene_HiveMind : Gene
 {
-    private const float BONUS_SMALL_HIVE = 0.05f; // +5% при <11 носителях
-    private const float BONUS_LARGE_HIVE = 0.03f;  // +3% при >=11 носителях
+    private const float BONUS_SMALL_HIVE = 0.05f;
+    private const float BONUS_LARGE_HIVE = 0.03f;
     private const int LARGE_HIVE_THRESHOLD = 11;
     private const int CHECK_INTERVAL = 250;
 
@@ -21,8 +21,6 @@ public class Gene_HiveMind : Gene
         get
         {
             if (cachedHiveMemberCount <= 0) return 0f;
-
-            // totalWithGene = сородичи + сам носитель
             int totalWithGene = cachedHiveMemberCount + 1;
             float bonusPerMember = totalWithGene < LARGE_HIVE_THRESHOLD
                 ? BONUS_SMALL_HIVE
@@ -38,10 +36,7 @@ public class Gene_HiveMind : Gene
 
         if (Find.TickManager.TicksGame - lastCheckTick < CHECK_INTERVAL)
             return;
-
         lastCheckTick = Find.TickManager.TicksGame;
-
-        // Безфракционные не получают бонуса
         if (pawn.Map == null || pawn.Faction == null)
         {
             cachedHiveMemberCount = 0;
@@ -87,8 +82,6 @@ public class Gene_HiveMind : Gene
         public override void MapComponentTick()
         {
             base.MapComponentTick();
-
-            // Не тикаем если Biotech активен
             if (ModsConfig.BiotechActive)
                 return;
 

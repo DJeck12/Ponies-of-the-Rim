@@ -1,76 +1,54 @@
-﻿using HarmonyLib;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace PoniesOfTheRim
 {
     public static class Patch_PregnancyUtility_ApplyBirthOutcome
     {
-        private static GeneDef _ovipGene;
-        private static GeneDef OvipGene =>
-            _ovipGene ??= DefDatabase<GeneDef>.GetNamed("Pony_Oviparous", errorOnFail: false);
-
-        private static ThingDef _eggDef;
-        private static ThingDef EggDef =>
-            _eggDef ??= DefDatabase<ThingDef>.GetNamed("Pony_AvianEgg", errorOnFail: false);
-
         public static bool Prefix(Pawn geneticMother, ref Thing __result)
         {
-            Log.Message($"[PoniesOfTheRim] ApplyBirthOutcome.Prefix вызван. geneticMother={geneticMother?.LabelShort ?? "null"}");
-
             if (!ModsConfig.BiotechActive)
-                return true;
-
-            Pawn mother = geneticMother;
-
-            if (mother?.genes == null)
             {
-                Log.Message("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: genes == null → пропуск.");
                 return true;
             }
-
-            if (OvipGene == null)
+            if (geneticMother?.genes == null)
+            {
+                return true;
+            }
+            GeneDef ovip = Gene_Oviparous.OvipGeneDef;
+            if (ovip == null)
             {
                 Log.Error("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: GeneDef 'Pony_Oviparous' не найден!");
                 return true;
             }
-
-            bool hasGene = mother.genes.HasActiveGene(OvipGene);
-            Log.Message($"[PoniesOfTheRim] ApplyBirthOutcome.Prefix: HasActiveGene(Pony_Oviparous) = {hasGene}");
-
-            if (!hasGene)
-                return true;
-
-            if (EggDef == null)
+            if (!geneticMother.genes.HasActiveGene(ovip))
             {
-                Log.Error("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: ThingDef 'Pony_AvianEgg' не найден!");
+                return true;
+            }
+            if (geneticMother.MapHeld == null)
+            {
+                if (Prefs.DevMode)
+                {
+                    Log.Message("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: " + geneticMother.LabelShort +
+                                " вне карты (караван) — ванильное рождение.");
+                }
                 return true;
             }
 
-            var hediff = mother.health?.hediffSet?
-                .GetFirstHediffOfDef(HediffDefOf.PregnantHuman) as Hediff_Pregnant;
+            Hediff source = Gene_Oviparous.FindParentSourceHediff(geneticMother);
+            Gene_Oviparous.ExtractParents(source, out Pawn father, out GeneSet geneSet);
 
-            Pawn father  = hediff != null
-                ? Traverse.Create(hediff).Field("father").GetValue<Pawn>()
-                : null;
-            GeneSet genes = hediff != null
-                ? Traverse.Create(hediff).Field("geneSet").GetValue<GeneSet>()
-                : null;
-
-            Thing egg = ThingMaker.MakeThing(EggDef);
-            Comp_EggHatcher comp = egg.TryGetComp<Comp_EggHatcher>();
-
-            if (comp != null)
+            Thing egg = Gene_Oviparous.TrySpawnEgg(geneticMother, father, geneSet);
+            if (egg == null)
             {
-                comp.mother   = mother;
-                comp.father   = father;
-                comp.xenotype = mother.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
-                comp.geneSet  = genes;
+                return true;
             }
 
-            GenSpawn.Spawn(egg, mother.PositionHeld, mother.MapHeld);
-            Log.Message("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: яйцо заспавнено, ванильный исход заблокирован.");
-
+            if (Prefs.DevMode)
+            {
+                Log.Message("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: яйцо заспавнено, ванильный исход заблокирован (отец: " +
+                            (father?.LabelShort ?? "нет") + ").");
+            }
             __result = egg;
             return false;
         }

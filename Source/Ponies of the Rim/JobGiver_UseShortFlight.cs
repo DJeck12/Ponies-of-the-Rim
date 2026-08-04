@@ -27,7 +27,7 @@ namespace PoniesOfTheRim
             if (verb == null)
                 return null;
 
-            VerbProperties rangedProps = PegasusKiteUtil.GetRangedVerbProps(pawn);
+            VerbProperties rangedProps = PegasusKiteUtility.GetRangedVerbProps(pawn);
 
             return rangedProps != null
                 ? TryGiveKiteJob(pawn, verb, rangedProps)
@@ -63,18 +63,18 @@ namespace PoniesOfTheRim
             Pawn enemy = FindEnemy(pawn, maxDist: rangedProps.range * 3f);
             if (enemy == null) return null;
 
-            float optRange = PegasusKiteUtil.GetOptimalAccuracyRange(rangedProps);
+            float optRange = PegasusKiteUtility.GetOptimalAccuracyRange(rangedProps);
             if (optRange < 1f) return null;
 
             float dist    = pawn.Position.DistanceTo(enemy.Position);
             float lo      = optRange * (1f - KITE_BAND);
             float hi      = optRange * (1f + KITE_BAND);
-            bool  inMelee = PegasusKiteUtil.IsInMeleeCombat(pawn);
+            bool  inMelee = PegasusKiteUtility.IsInMeleeCombat(pawn);
 
             if (!inMelee && dist >= lo && dist <= hi)
                 return null;
 
-            IntVec3 kitePos = PegasusKiteUtil.FindKitePosition(
+            IntVec3 kitePos = PegasusKiteUtility.FindKitePosition(
                 pawn, enemy.Position, optRange, pawn.Map, walkableOnly: true);
 
             if (!kitePos.IsValid) return null;
