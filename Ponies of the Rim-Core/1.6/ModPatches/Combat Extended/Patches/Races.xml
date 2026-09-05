@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/tools/li</xpath>
+    <attribute>Class</attribute>
+    <value>CombatExtended.ToolCE</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/tools/li[labelNoLocation="hoof"]</xpath>
+    <value>
+      <armorPenetrationBlunt>2.4</armorPenetrationBlunt>
+      <armorPenetrationSharp>0</armorPenetrationSharp>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/tools/li[label="rear legs"]</xpath>
+    <value>
+      <armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+      <armorPenetrationSharp>0</armorPenetrationSharp>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/tools/li[label="teeth"]</xpath>
+    <value>
+      <armorPenetrationBlunt>1.6</armorPenetrationBlunt>
+      <armorPenetrationSharp>0.12</armorPenetrationSharp>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/tools/li[label="head"]</xpath>
+    <value>
+      <armorPenetrationBlunt>1.8</armorPenetrationBlunt>
+      <armorPenetrationSharp>0</armorPenetrationSharp>
+    </value>
+  </Operation>
+
+  <!-- A. конкретные расы со своим <tools> -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li</xpath>
+    <match Class="PatchOperationAttributeSet">
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li</xpath>
+      <attribute>Class</attribute>
+      <value>CombatExtended.ToolCE</value>
+    </match>
+  </Operation>
+
+  <!-- C. по содержимому: любой инструмент, привязанный к группе мода -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+    <match Class="PatchOperationAttributeSet">
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+      <attribute>Class</attribute>
+      <value>CombatExtended.ToolCE</value>
+    </match>
+  </Operation>
+
+  <!-- Бронепробитие рога — один раз, где бы он ни был объявлен -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+      <value>
+        <armorPenetrationSharp>1.6</armorPenetrationSharp>
+        <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>POTR_Pony</bodyShape>
+        <overrideFactors>false</overrideFactors>
+        <horiScale>1.55</horiScale>
+        <vertScale>0.66</vertScale>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"
+        or defName="Pony_Alicorn"
+        or defName="Pony_Batpony"
+        or defName="Pony_Changeling"
+        or defName="Pony_Changedling"
+        or defName="Pony_Griffon"
+        or defName="Pony_Hippogriff"]</xpath>
+    <value>
+      <li Class="PoniesOfTheRim.Compatibility.CombatExtendedFlightExtension">
+        <flyingWidthFactor>1.45</flyingWidthFactor>
+        <flyingHeightFactor>1.0</flyingHeightFactor>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/comps</xpath>
+    <value>
+      <li Class="CombatExtended.CompProperties_Inventory" />
+      <li Class="CombatExtended.CompProperties_Suppressable" />
+      <li Class="CombatExtended.CompProperties_TacticalManager" />
+      <li>
+        <compClass>CombatExtended.CompPawnGizmo</compClass>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/statBases</xpath>
+    <value>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2</ArmorRating_Blunt>
+      <BodyPartSharpArmor>1</BodyPartSharpArmor>
+      <BodyPartBluntArmor>2</BodyPartBluntArmor>
+
+      <MeleeCritChance>1.55</MeleeCritChance>
+      <MeleeParryChance>1.25</MeleeParryChance>
+      <MeleeDodgeChance>1.2</MeleeDodgeChance>
+      <Suppressability>0.6</Suppressability>
+      <SmokeSensitivity>0.2</SmokeSensitivity>
+      <NightVisionEfficiency>0.4</NightVisionEfficiency>
+      <CarryBulk>26</CarryBulk>
+      <CarryWeight>45</CarryWeight>
+    </value>
+  </Operation>
+
+</Patch>

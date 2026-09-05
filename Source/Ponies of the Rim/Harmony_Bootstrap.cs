@@ -1,6 +1,8 @@
 ﻿using AlienRace;
 using HarmonyLib;
 using PoniesOfTheRim.Flying;
+using PoniesOfTheRim.Food;
+using PoniesOfTheRim.Genetics;
 using RimWorld;
 using System;
 using System.Reflection;
@@ -16,18 +18,46 @@ namespace PoniesOfTheRim
 
         static POTR_Bootstrap()
         {
+            Harmony = new Harmony("Rimworld.PoniesOfTheRim.Core");
             Log.Message("[PoniesOfTheRim] Bootstrap: запуск.");
-            RegisterCoreSetup();
-            RegisterCorePatches();
-            RegisterBiotechPatches();
-            RegisterCompatibilityPatches();
+            RunStage(RegisterCoreSetup, "CoreSetup");
+            RunStage(RegisterCorePatches, "CorePatches");
+            RunStage(RegisterBiotechPatches, "BiotechPatches");
+            RunStage(RegisterCompatibilityPatches, "CompatibilityPatches");
             Log.Message("[PoniesOfTheRim] Bootstrap: завершён.");
+        }
+
+        private static void RunStage(Action stage, string label)
+        {
+            try
+            {
+                stage();
+            }
+            catch (Exception arg)
+            {
+                Log.Error($"[PoniesOfTheRim] Bootstrap: этап '{label}' прерван исключением — часть патчей этапа не зарегистрирована:\n{arg}");
+            }
+        }
+
+        private static void RegisterIdeologyPatches()
+        {
+            if (!ModsConfig.IdeologyActive)
+            {
+                Log.Message("[PoniesOfTheRim] Ideology не активен — соответствующие патчи пропущены.");
+                return;
+            }
+            if (!Patch_FoodUtility_ThoughtsFromIngesting.IsReady)
+            {
+                return;
+            }
+            TryPatch(AccessTools.Method(typeof(FoodUtility), "ThoughtsFromIngesting"), null, new HarmonyMethod(typeof(Patch_FoodUtility_ThoughtsFromIngesting), "Postfix"), null, "FoodUtility.ThoughtsFromIngesting (фрукты в составе блюда)");
         }
 
         private static void RegisterCoreSetup()
         {
             PonyHelper.BuildRaceCache();
             PonyFlightCache.BuildStaticCaches();
+            PonyFoodCache.Build();
             try
             {
                 StatDefOf.GlobalLearningFactor.parts ??= new System.Collections.Generic.List<StatPart>();
@@ -206,6 +236,8 @@ namespace PoniesOfTheRim
                 prefix: new HarmonyMethod(typeof(Patch_PregnancyUtility_ApplyBirthOutcome), nameof(Patch_PregnancyUtility_ApplyBirthOutcome.Prefix)),
                 label: "PregnancyUtility.ApplyBirthOutcome (egg birth)"
             );
+
+            Patch_PregnancyUtility_RacialGenes.Register(Harmony);
 
             TryPatch(
                 AccessTools.Method(typeof(LifeStageWorker_HumanlikeChild), "Notify_LifeStageStarted"),

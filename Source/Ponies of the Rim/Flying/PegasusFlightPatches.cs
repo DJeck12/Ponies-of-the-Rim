@@ -1,7 +1,9 @@
 ﻿using AlienRace;
 using HarmonyLib;
+using PoniesOfTheRim.Multiplayer;
 using RimWorld;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -14,12 +16,34 @@ namespace PoniesOfTheRim.Flying
 {
     public static class Patch_Pawn_Flying
     {
+        private static readonly AccessTools.FieldRef<Pawn, Pawn_FlightTracker> flightRef = CreateFlightRef();
+
+        private static bool _suppressionLogged;
+
+        private static AccessTools.FieldRef<Pawn, Pawn_FlightTracker> CreateFlightRef()
+        {
+            try { return AccessTools.FieldRefAccess<Pawn, Pawn_FlightTracker>("flight"); }
+            catch { return null; }
+        }
+
         public static void Postfix(Pawn __instance, ref bool __result)
         {
             try
             {
                 if (__result) return;
                 if (!PegasusFlightUtility.IsPegasusConstantFlight(__instance)) return;
+
+                if (flightRef != null && flightRef(__instance) == null)
+                {
+                    if (!_suppressionLogged)
+                    {
+                        _suppressionLogged = true;
+                        Log.Warning($"[PoniesOfTheRim] Pawn.flight отсутствует у {__instance.LabelShortCap} — " +
+                                    "флаг Flying не выставлен во избежание NRE в сторонних модах.");
+                    }
+                    return;
+                }
+
                 __result = true;
             }
             catch (Exception e)
@@ -376,55 +400,56 @@ namespace PoniesOfTheRim.Flying
     }
 
 
-    public static class Patch_RenderNode_ForceWingsRefresh
-    {
-        public static void Prefix(PawnRenderNode __instance)
-        {
-            if (__instance is PonyRenderNodePegasusWings wings)
-                wings.RequestRecacheIfFrameChanged();
-        }
-    }
-
-
     public static class Patch_BodyAddon_CanDrawAddon
     {
-        private static readonly string[] OurWingPathFragments =
+        private static int _threadReported;
+        private static readonly string[] OurWingPathFragments = new string[4]
         {
-        "wing_pegasus_",
-        "wing_broken_",
-        "wing_archotech_",
-        "wing_bionic_",
-    };
+            "wing_pegasus_", "wing_broken_", "wing_archotech_", "wing_bionic_"
+        };
 
-        private static readonly Dictionary<AlienPartGenerator.BodyAddon, bool> WingAddonVerdict =
-            new Dictionary<AlienPartGenerator.BodyAddon, bool>();
+        private static readonly ConcurrentDictionary<string, bool> WingAddonVerdict =
+            new ConcurrentDictionary<string, bool>(StringComparer.Ordinal);
+
+        private static readonly Func<string, bool> ComputeIsOurWingDelegate = ComputeIsOurWing;
 
         public static void Postfix(AlienPartGenerator.BodyAddon __instance, Pawn pawn, ref bool __result)
         {
-            if (!__result || pawn == null) return;
 
-            if (!pawn.HasWings()) return;
-
-            if (!WingAddonVerdict.TryGetValue(__instance, out bool isOurWing))
+            PonyThreadGuard.ReportIfOffMain("BodyAddon.CanDrawAddon postfix", ref _threadReported);
+            if (!__result || pawn == null || __instance == null || !pawn.HasWings())
             {
-                isOurWing = ComputeIsOurWing(__instance.path);
-                WingAddonVerdict[__instance] = isOurWing;
+                return;
             }
-            if (!isOurWing) return;
-
-            var comp = PonyFlightCache.GetToggle(pawn);
-            if (comp != null && comp.FlightEnabled)
+            string path = __instance.path;
+            if (string.IsNullOrEmpty(path))
+            {
+                return;
+            }
+            if (!WingAddonVerdict.GetOrAdd(path, ComputeIsOurWingDelegate))
+            {
+                return;
+            }
+            CompPegasusFlightToggle toggle = PonyFlightCache.GetToggle(pawn);
+            if (toggle != null && toggle.FlightEnabled)
+            {
                 __result = false;
+            }
+        }
+
+        public static void ClearCache()
+        {
+            WingAddonVerdict.Clear();
         }
 
         private static bool ComputeIsOurWing(string path)
         {
-            if (string.IsNullOrEmpty(path)) return false;
-            string pathLower = path.ToLowerInvariant();
             for (int i = 0; i < OurWingPathFragments.Length; i++)
             {
-                if (pathLower.Contains(OurWingPathFragments[i]))
+                if (path.IndexOf(OurWingPathFragments[i], StringComparison.OrdinalIgnoreCase) >= 0)
+                {
                     return true;
+                }
             }
             return false;
         }
@@ -532,6 +557,8 @@ namespace PoniesOfTheRim.Flying
         {
             try
             {
+                PonyFlightCache.Warmup(__instance);
+
                 if (__instance?.health?.hediffSet == null) return;
                 if (!__instance.HasWings()) return;
                 EnsureWingsBoundToParts(__instance);
@@ -541,6 +568,7 @@ namespace PoniesOfTheRim.Flying
                 Log.Error($"[PoniesOfTheRim] EnsureNaturalWings failed: {e}");
             }
         }
+
 
         private static void EnsureWingsBoundToParts(Pawn pawn)
         {
@@ -581,7 +609,13 @@ namespace PoniesOfTheRim.Flying
         private static readonly Dictionary<int, CachedGrid> gridCache = new();
 
         private const int DisposeGraceTicks = 600;
+        private const int RebuildIntervalTicks = 120;
+        private const int NeverBuilt = -999999;
+
         private static readonly List<(int dueTick, NativeArray<ushort> grid)> pendingDisposal = new();
+
+        private static int _offMainReported;
+        private static bool InSimulation => MultiplayerCompat.TickCacheWritable;
 
         public static void ScheduleDispose(NativeArray<ushort> grid)
         {
@@ -592,13 +626,22 @@ namespace PoniesOfTheRim.Flying
         public static void FlushDueDisposals()
         {
             if (pendingDisposal.Count == 0) return;
+            if (!InSimulation) return;
+
             int now = Find.TickManager.TicksGame;
             for (int i = pendingDisposal.Count - 1; i >= 0; i--)
             {
-                if (now >= pendingDisposal[i].dueTick)
+                var entry = pendingDisposal[i];
+                if (entry.dueTick - now > DisposeGraceTicks)
                 {
-                    if (pendingDisposal[i].grid.IsCreated)
-                        pendingDisposal[i].grid.Dispose();
+                    pendingDisposal[i] = (now + DisposeGraceTicks, entry.grid);
+                    continue;
+                }
+
+                if (now >= entry.dueTick)
+                {
+                    if (entry.grid.IsCreated)
+                        entry.grid.Dispose();
                     pendingDisposal.RemoveAt(i);
                 }
             }
@@ -622,18 +665,24 @@ namespace PoniesOfTheRim.Flying
 
         private static void EnsureGrid(Map map)
         {
+            PonyThreadGuard.ReportIfOffMain(
+                "PegasusFlightPathGridCustomizer.EnsureGrid", ref _offMainReported);
+
             FlushDueDisposals();
 
             int id = map.uniqueID;
-            int tick = Find.TickManager.TicksGame;
+            bool sim = InSimulation;
+            int stamp = sim ? Find.TickManager.TicksGame : NeverBuilt;
 
-            if (gridCache.TryGetValue(id, out var cached))
+            if (gridCache.TryGetValue(id, out var cached) && cached.grid.IsCreated)
             {
-                if (cached.grid.IsCreated && tick - cached.builtAtTick < 120)
+                if (!sim)
+                    return;
+
+                if (stamp - cached.builtAtTick < RebuildIntervalTicks)
                     return;
             }
-
-            RebuildGrid(map, id, tick);
+            RebuildGrid(map, id, stamp);
         }
 
         private static void RebuildGrid(Map map, int mapId, int tick)
@@ -687,7 +736,7 @@ namespace PoniesOfTheRim.Flying
         public static void InvalidateCache(int mapId)
         {
             if (gridCache.TryGetValue(mapId, out var cached))
-                gridCache[mapId] = new CachedGrid(cached.grid, -9999);
+                gridCache[mapId] = new CachedGrid(cached.grid, NeverBuilt);
         }
 
         private readonly struct CachedGrid

@@ -30,6 +30,7 @@
 		<displayOrderInCategory>20</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-2</biostatMet>
+		<randomChosen>true</randomChosen>
 		<abilities>
 			<li>Pony_NatureMuse</li>
 		</abilities>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Pony_SaddleBag"]/statBases</xpath>
+    <value>
+      <Bulk>3</Bulk>
+      <WornBulk>1.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Pony_SaddleBag"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryBulk>15</CarryBulk>
+      <CarryWeight>20</CarryWeight>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Pony_BattleSaddle"]/statBases</xpath>
+    <value>
+      <Bulk>5</Bulk>
+      <WornBulk>2.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Pony_BattleSaddle"]/equippedStatOffsets</xpath>
+    <value>
+      <AimingAccuracy>0.12</AimingAccuracy>
+    </value>
+  </Operation>
+
+</Patch>

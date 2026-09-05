@@ -11,6 +11,42 @@ using static AlienRace.AlienPartGenerator;
 
 namespace PoniesOfTheRim
 {
+    public class PonyMarkTracker : GameComponent
+    {
+        private HashSet<int> generatedFor = new HashSet<int>();
+
+        public PonyMarkTracker(Game game)
+        {
+        }
+
+        public static bool TryClaim(Pawn pawn)
+        {
+            if (pawn == null)
+                return false;
+
+            PonyMarkTracker tracker = Current.Game?.GetComponent<PonyMarkTracker>();
+            if (tracker == null)
+                return true;
+
+            return tracker.generatedFor.Add(pawn.thingIDNumber);
+        }
+
+        public static void Release(Pawn pawn)
+        {
+            if (pawn == null)
+                return;
+            Current.Game?.GetComponent<PonyMarkTracker>()?.generatedFor.Remove(pawn.thingIDNumber);
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Collections.Look(ref generatedFor, "potrMarksGeneratedFor", LookMode.Value);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && generatedFor == null)
+                generatedFor = new HashSet<int>();
+        }
+    }
+
     public static class PonyMarkVariantSelector
     {
         private static FieldInfo _variantCountField;
@@ -42,9 +78,11 @@ namespace PoniesOfTheRim
         private static void ApplyMarkVariants(AlienComp comp)
         {
             if (_variantCountField == null) return;
+            if (!UnityData.IsInMainThread) return;
 
             Pawn pawn = comp.parent as Pawn;
             if (pawn?.def == null) return;
+            if (pawn.thingIDNumber <= 0) return;
 
             MarkGenerationExtension ext =
                 pawn.def.GetModExtension<MarkGenerationExtension>();
@@ -55,6 +93,7 @@ namespace PoniesOfTheRim
 
             ThingDef_AlienRace alienDef = pawn.def as ThingDef_AlienRace;
             if (alienDef == null) return;
+            if (!PonyMarkTracker.TryClaim(pawn)) return;
 
             bool isExcluded =
                 ext.noMarkBackstories.Count > 0 && IsExcludedByBackstory(pawn, ext);

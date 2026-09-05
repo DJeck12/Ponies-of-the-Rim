@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Threading;
+using PoniesOfTheRim.Multiplayer;
 using Verse;
 
 namespace PoniesOfTheRim.Flying
@@ -7,10 +9,6 @@ namespace PoniesOfTheRim.Flying
 
     public static class PonyFlightCache
     {
-        // ------------------------------------------------------------------
-        // Статические кэши по дефам. Заполняются один раз после загрузки дефов.
-        // ------------------------------------------------------------------
-
         private static readonly HashSet<BodyDef> WingedBodies = new HashSet<BodyDef>();
 
         private static readonly HashSet<BodyDef> CutiemarkBodies = new HashSet<BodyDef>();
@@ -148,13 +146,31 @@ namespace PoniesOfTheRim.Flying
             return data;
         }
 
+        private static int _rebuildOffMainReported;
+
         private static void Rebuild(Pawn pawn, PawnFlightData data, BodyDef body)
         {
+            PonyThreadGuard.ReportIfOffMain("PonyFlightCache.Rebuild", ref _rebuildOffMainReported);
+
             data.toggle = pawn.TryGetComp<CompPegasusFlightToggle>();
             data.timer = pawn.TryGetComp<CompPegasusFlightTimer>();
             data.usableWingsCheckedAtTick = NeverChecked;
-            data.body = body;
+            Volatile.Write(ref data.body, body);
         }
+
+        public static void Warmup(Pawn pawn)
+        {
+            if (pawn == null)
+            {
+                return;
+            }
+            BodyDef body = pawn.kindDef?.race?.race?.body;
+            if (IsWingedBody(body))
+            {
+                GetValidated(pawn, body);
+            }
+        }
+
 
         public static CompPegasusFlightToggle GetToggle(Pawn pawn)
         {
@@ -231,16 +247,31 @@ namespace PoniesOfTheRim.Flying
             return UsableWingsCached(pawn, GetValidated(pawn, body));
         }
 
+        private static int _usableWingsOffMainReported;
+
         private static bool UsableWingsCached(Pawn pawn, PawnFlightData d)
         {
+            bool mayWrite = UnityData.IsInMainThread && MultiplayerCompat.TickCacheWritable;
+
+            if (!mayWrite)
+            {
+                return d.usableWingsCheckedAtTick != NeverChecked
+                    ? d.usableWings
+                    : ComputeUsableWings(pawn);
+            }
+
             int now = Find.TickManager.TicksGame;
             if (now - d.usableWingsCheckedAtTick < UsableWingsTtlTicks)
             {
                 return d.usableWings;
             }
-            d.usableWingsCheckedAtTick = now;
-            d.usableWings = ComputeUsableWings(pawn);
-            return d.usableWings;
+            PonyThreadGuard.ReportIfOffMain(
+                "PonyFlightCache.UsableWingsCached (пересчёт)", ref _usableWingsOffMainReported);
+
+            bool result = ComputeUsableWings(pawn);
+            d.usableWings = result;
+            Volatile.Write(ref d.usableWingsCheckedAtTick, now);
+            return result;
         }
 
         private static bool ComputeUsableWings(Pawn pawn)

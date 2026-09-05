@@ -263,7 +263,7 @@ namespace PoniesOfTheRim
             }
             else
             {
-                                GenerateQuestWithFaction(chosenQuest, faction);
+                GenerateQuestWithFaction(chosenQuest, faction);
             }
 
             if (questSet.cooldownDays > 0)

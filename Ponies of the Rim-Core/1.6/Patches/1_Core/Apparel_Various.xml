@@ -31,6 +31,12 @@
 			<li>Pony_CoverEars</li>
 		</value>
 	</Operation>
-
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Apparel_Burka"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Pony_Hooves</li>
+		</value>
+	</Operation>
 
 </Patch>
