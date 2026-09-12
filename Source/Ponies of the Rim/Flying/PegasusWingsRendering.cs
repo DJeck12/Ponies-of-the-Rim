@@ -11,6 +11,8 @@ namespace PoniesOfTheRim.Flying
 {
     public class GraphicPegasusWingsColored : Graphic_Multi
     {
+        private static int _coloredVersionOffMainReported;
+
         public override Material MatAt(Rot4 rot, Thing thing = null)
         {
             var baseMat = base.MatAt(rot, thing);
@@ -26,6 +28,9 @@ namespace PoniesOfTheRim.Flying
 
             if (skinColor == Color.clear || skinColor.a <= 0f)
                 skinColor = pawn.story?.SkinColor ?? Color.white;
+            PonyThreadGuard.ReportIfOffMain(
+                "GraphicPegasusWingsColored.MatAt (GetColoredVersion)",
+                ref _coloredVersionOffMainReported);
 
             Graphic coloredGraphic = this.GetColoredVersion(this.Shader, skinColor, this.ColorTwo);
             return coloredGraphic.MatAt(rot);
@@ -55,6 +60,9 @@ namespace PoniesOfTheRim.Flying
         private AlienPartGenerator.AlienComp _alienComp;
         private bool _alienCompResolved;
 
+        private static int _ensureFramesOffMainReported;
+        private static int _recacheOffMainReported;
+
         public PonyRenderNodePegasusWings(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
             : base(pawn, props, tree)
         {
@@ -76,11 +84,14 @@ namespace PoniesOfTheRim.Flying
         public void RequestRecacheIfFrameChanged()
         {
             int idx = CurrentFrameIndex;
-            if (idx != _lastRequestedFrame)
-            {
-                _lastRequestedFrame = idx;
-                requestRecache = true;
-            }
+            if (idx == _lastRequestedFrame)
+                return;
+            PonyThreadGuard.ReportIfOffMain(
+                "PonyRenderNodePegasusWings.RequestRecacheIfFrameChanged",
+                ref _recacheOffMainReported);
+
+            _lastRequestedFrame = idx;
+            requestRecache = true;
         }
 
         protected override IEnumerable<Graphic> GraphicsFor(Pawn pawn)
@@ -101,6 +112,9 @@ namespace PoniesOfTheRim.Flying
             Color color = ResolveSkinColor(pawn);
             if (_frames != null && _framesColor == color)
                 return;
+            PonyThreadGuard.ReportIfOffMain(
+                "PonyRenderNodePegasusWings.EnsureFrames (GraphicDatabase.Get)",
+                ref _ensureFramesOffMainReported);
 
             int frameCount = wingsProps.frameCount;
             Graphic[] frames = (_frames != null && _frames.Length == frameCount) ? _frames : new Graphic[frameCount];
@@ -120,8 +134,8 @@ namespace PoniesOfTheRim.Flying
         {
             if (!_alienCompResolved)
             {
-                _alienCompResolved = true;
                 _alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
+                _alienCompResolved = true;
             }
             Color color = Color.clear;
             if (_alienComp != null)
@@ -154,7 +168,6 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-
     public class CompProperties_PegasusWingsRenderer : CompProperties
     {
         public CompProperties_PegasusWingsRenderer()
@@ -170,6 +183,8 @@ namespace PoniesOfTheRim.Flying
         private static bool _missingTagWarned;
         private PonyRenderNodePegasusWings _node;
         private bool _lastFlightEnabled;
+
+        private static int _renderNodesOffMainReported;
 
         public override void CompTick()
         {
@@ -204,8 +219,11 @@ namespace PoniesOfTheRim.Flying
 
             if (!_wingTagDefResolved)
             {
-                _wingTagDefResolved = true;
+                PonyThreadGuard.ReportIfOffMain(
+                    "CompPegasusWingsRenderer.CompRenderNodes (резолв тега)",
+                    ref _renderNodesOffMainReported);
                 _wingTagDef = DefDatabase<PawnRenderNodeTagDef>.GetNamed("PegasusWings", errorOnFail: false);
+                _wingTagDefResolved = true;
             }
             if (_wingTagDef == null)
             {
@@ -213,7 +231,7 @@ namespace PoniesOfTheRim.Flying
                 {
                     _missingTagWarned = true;
                     Log.Warning("[PoniesOfTheRim] PawnRenderNodeTagDef 'PegasusWings' не найден — " +
-                                "анимация крыльев отключена. Убедитесь, что def объявлен в XML.");
+                                "анимация крыльев отключена. Проверьте, что def объявлен в XML.");
                 }
                 return null;
             }
@@ -237,7 +255,6 @@ namespace PoniesOfTheRim.Flying
             return new List<PawnRenderNode> { _node };
         }
     }
-
 
     public class ConditionPegasusFlightEnabled : Condition
     {

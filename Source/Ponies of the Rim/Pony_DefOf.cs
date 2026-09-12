@@ -31,6 +31,7 @@ namespace PoniesOfTheRim
 
         public static PawnCapacityDef Pegasus_Flight;
 
+        public static Food.PonyFoodGroupDef Pony_FoodGroup_Fruits;
 
         [MayRequireBiotech]
         public static GeneDef Pony_Cutiemark;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <CombatExtended.BodyShapeDef>
+    <defName>POTR_Pony</defName>
+    <label>pony</label>
+    <width>1.0</width>
+    <height>1.0</height>
+    <widthLaying>1.4</widthLaying>
+    <heightLaying>0.55</heightLaying>
+  </CombatExtended.BodyShapeDef>
+
+</Defs>

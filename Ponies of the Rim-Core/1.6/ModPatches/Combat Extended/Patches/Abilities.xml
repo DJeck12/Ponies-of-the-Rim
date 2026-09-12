@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/AbilityDef[defName="Pony_MagicBurst"]/verbProperties</xpath>
+    <value>
+      <verbProperties Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_AbilityShootCE</verbClass>
+        <defaultProjectile>MagicBurst</defaultProjectile>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <range>19.9</range>
+        <warmupTime>2.0</warmupTime>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Pony_UnicornBlast</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <recoilAmount>0</recoilAmount>
+        <ejectsCasings>false</ejectsCasings>
+        <useEquipmentStatValues>false</useEquipmentStatValues>
+        <ticksToTruePosition>0</ticksToTruePosition>
+      </verbProperties>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/AbilityDef[defName="Pony_MagicBurst"]/comps</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MagicBurst"]</xpath>
+    <value>
+      <thingClass>CombatExtended.BulletCE</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="MagicBurst"]/projectile</xpath>
+    <value>
+      <projectile Class="CombatExtended.ProjectilePropertiesCE">
+        <damageDef>Magic</damageDef>
+        <damageAmountBase>10</damageAmountBase>
+        <armorPenetrationSharp>0</armorPenetrationSharp>
+        <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
+        <speed>80</speed>
+        <gravityFactor>1</gravityFactor>
+        <damageFalloff>false</damageFalloff>
+        <castShadow>false</castShadow>
+        <dropsCasings>false</dropsCasings>
+        <pelletCount>1</pelletCount>
+        <suppressionFactor>1.0</suppressionFactor>
+      </projectile>
+    </value>
+  </Operation>
+
+</Patch>

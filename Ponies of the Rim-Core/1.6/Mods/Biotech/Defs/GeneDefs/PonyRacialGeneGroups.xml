@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PoniesOfTheRim.Genetics.PonyRacialGeneGroupDef>
+		<defName>Pony_PonyxMagic</defName>
+		<label>pony magic power</label>
+		<chooserGene>Pony_PonyMagic</chooserGene>
+		<markerGenes>
+			<li>Pony_Cutiemark</li>
+			<li>Pony_EquineHead</li>
+		</markerGenes>
+		<requiredRaces>
+			<li>Human</li>
+		</requiredRaces>
+		<inheritMultipleFromParent>true</inheritMultipleFromParent>
+		<racialGenes>
+			<li>Pony_NaturePower</li>
+			<li>Pony_PegasusWings</li>
+			<li>Pony_UnicornHorn</li>
+		</racialGenes>
+	</PoniesOfTheRim.Genetics.PonyRacialGeneGroupDef>
+
+</Defs>

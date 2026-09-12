@@ -110,11 +110,15 @@ namespace PoniesOfTheRim.UniquePonies
         {
             get
             {
-                if (_byKindDef != null) return _byKindDef;
-                _byKindDef = new Dictionary<string, UniqueCharacterConfig>();
+                Dictionary<string, UniqueCharacterConfig> cached = _byKindDef;
+                if (cached != null) return cached;
+
+                Dictionary<string, UniqueCharacterConfig> built = new();
                 foreach (var c in Characters)
-                    _byKindDef[c.KindDefName] = c;
-                return _byKindDef;
+                    built[c.KindDefName] = c;
+
+                _byKindDef = built;
+                return built;
             }
         }
 
@@ -123,12 +127,16 @@ namespace PoniesOfTheRim.UniquePonies
         {
             get
             {
-                if (_byBackstory != null) return _byBackstory;
-                _byBackstory = new Dictionary<string, UniqueCharacterConfig>();
+                Dictionary<string, UniqueCharacterConfig> cached = _byBackstory;
+                if (cached != null) return cached;
+
+                Dictionary<string, UniqueCharacterConfig> built = new();
                 foreach (var c in Characters)
                     if (!string.IsNullOrEmpty(c.AdultBackstoryDefName))
-                        _byBackstory[c.AdultBackstoryDefName] = c;
-                return _byBackstory;
+                        built[c.AdultBackstoryDefName] = c;
+
+                _byBackstory = built;
+                return built;
             }
         }
 

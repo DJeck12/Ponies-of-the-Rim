@@ -3,6 +3,7 @@ using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -63,18 +64,14 @@ namespace PoniesOfTheRim.Flying
                 postfix: Postfix(typeof(Patch_GetPathContext)));
 
             h.Patch(
-                AccessTools.Method(typeof(PawnRenderNode), "AppendRequests"),
-                prefix: Prefix(typeof(Patch_RenderNode_ForceWingsRefresh)));
-
-            h.Patch(
                 AccessTools.Method(typeof(AlienPartGenerator.BodyAddon), "CanDrawAddon",
                     new[] { typeof(Pawn) }),
                 postfix: Postfix(typeof(Patch_BodyAddon_CanDrawAddon)));
-
             h.Patch(
                 AccessTools.Method(typeof(Pawn), nameof(Pawn.ExposeData)),
                 prefix: Prefix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
-                postfix: Postfix(typeof(Patch_Pawn_ExposeData_SavePositionFix)));
+                postfix: Postfix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
+                finalizer: Finalizer(typeof(Patch_Pawn_ExposeData_SavePositionFix)));
 
             h.Patch(
                 AccessTools.Method(typeof(Pawn), nameof(Pawn.SpawnSetup)),
@@ -92,6 +89,12 @@ namespace PoniesOfTheRim.Flying
 
         private static HarmonyMethod Prefix(Type type) => new(AccessTools.Method(type, "Prefix"));
         private static HarmonyMethod Postfix(Type type) => new(AccessTools.Method(type, "Postfix"));
+
+        private static HarmonyMethod Finalizer(Type type)
+        {
+            MethodInfo m = AccessTools.Method(type, "Finalizer");
+            return m == null ? null : new HarmonyMethod(m);
+        }
     }
 
 
@@ -120,7 +123,7 @@ namespace PoniesOfTheRim.Flying
             { "Pony_Pegasus",    "UI/Abilities/Ability_Pegasus"    },
             { "Pony_Alicorn",    "UI/Abilities/Ability_Pegasus"    },
             { "Pony_Batpony",    "UI/Abilities/Ability_Batpony"    },
-            { "Pony_Griffon",    "UI/Abilities/Ability_Griffon"    },
+            { "Pony_Griffon",    "UI/Abilities/Ability_Griffon" },
             { "Pony_Hippogriff", "UI/Abilities/Ability_Griffon" },
             { "Pony_Changedling", "UI/Abilities/Ability_Changedling" },
             { "Pony_Changeling",  "UI/Abilities/Ability_Changeling"  },
@@ -144,10 +147,39 @@ namespace PoniesOfTheRim.Flying
         public bool FlightEnabled
         {
             get => flightEnabled;
-            set => flightEnabled = value;
+            set => SetFlightEnabledInternal(value);
         }
 
         public Pawn Pawn => parent as Pawn;
+
+        public void SetFlightEnabledInternal(bool value)
+        {
+            if (flightEnabled == value) return;
+            flightEnabled = value;
+            UpdateAnimation();
+        }
+
+        public void SetFlightEnabledSynced(bool value)
+        {
+            if (value && !CanTakeOffNow()) return;
+            SetFlightEnabledInternal(value);
+        }
+
+        public bool CanTakeOffNow()
+        {
+            Pawn pawn = Pawn;
+            if (pawn == null || !pawn.Spawned || pawn.Dead || pawn.Downed || pawn.Map == null)
+                return false;
+
+            if (!PegasusFlightUtility.HasUsableWings(pawn))
+                return false;
+
+            if (pawn.Position.Roofed(pawn.Map))
+                return false;
+
+            var timer = PonyFlightCache.GetTimer(pawn);
+            return timer == null || timer.CanFly;
+        }
 
         public override void PostExposeData()
         {
@@ -166,7 +198,7 @@ namespace PoniesOfTheRim.Flying
             {
                 if (Pawn.Dead || Pawn.Downed)
                 {
-                    flightEnabled = false;
+                    SetFlightEnabledInternal(false);
                     PegasusFlightUtility.SafeLand(Pawn);
 
                     if (!Pawn.Dead && Pawn.IsColonistPlayerControlled)
@@ -180,7 +212,7 @@ namespace PoniesOfTheRim.Flying
 
                 if (!PegasusFlightUtility.HasUsableWings(Pawn))
                 {
-                    flightEnabled = false;
+                    SetFlightEnabledInternal(false);
                     PegasusFlightUtility.SafeLand(Pawn);
 
                     if (Pawn.IsColonistPlayerControlled)
@@ -194,7 +226,7 @@ namespace PoniesOfTheRim.Flying
 
                 if (Pawn.Position.Roofed(Pawn.Map))
                 {
-                    flightEnabled = false;
+                    SetFlightEnabledInternal(false);
                     PegasusFlightUtility.SafeLand(Pawn);
 
                     if (Pawn.IsColonistPlayerControlled)
@@ -246,8 +278,8 @@ namespace PoniesOfTheRim.Flying
                         return;
                     }
 
-                    flightEnabled = !flightEnabled;
                     SoundDefOf.Tick_High.PlayOneShotOnCamera();
+                    SetFlightEnabledSynced(!flightEnabled);
                 }
             };
 
@@ -300,18 +332,21 @@ namespace PoniesOfTheRim.Flying
 
         private int _flightCooldownEndTick = -1;
         private const int FlightCooldownTicks = 300;
+        private const int DrainMultRecacheInterval = 300;
 
         private HediffDef _fatigueDef;
         private HediffDef FatigueDef =>
             _fatigueDef ??= DefDatabase<HediffDef>.GetNamed("Pony_FlightFatigue", errorOnFail: false);
 
         private float _cachedDrainMult = 1f;
-        private int _drainMultCacheTick = -999;
+        private bool _drainMultInitialized = false;
 
         public CompPropertiesPegasusFlightTimer Props => (CompPropertiesPegasusFlightTimer)props;
 
         public float CurrentStaminaPercent => currentFlightStamina;
         public bool IsFlying => isFlying;
+
+        public float WingDrainMultiplier => _cachedDrainMult;
 
         public bool CanFly
         {
@@ -353,14 +388,16 @@ namespace PoniesOfTheRim.Flying
             }
         }
 
-        private float GetWingDrainMultiplier()
+        private void RecacheWingDrainMultiplier()
         {
-            int now = Find.TickManager.TicksGame;
-            if (now - _drainMultCacheTick < 300) return _cachedDrainMult;
-            _drainMultCacheTick = now;
+            _drainMultInitialized = true;
 
             Pawn pawn = parent as Pawn;
-            if (pawn?.health?.hediffSet == null) return _cachedDrainMult = 1f;
+            if (pawn?.health?.hediffSet == null)
+            {
+                _cachedDrainMult = 1f;
+                return;
+            }
 
             int bionic = 0, archotech = 0;
             float extMult = 1f;
@@ -388,7 +425,7 @@ namespace PoniesOfTheRim.Flying
                 bionic == 1 ? 1f / 2f :
                                                 1f;
 
-            return _cachedDrainMult = tier * extMult;
+            _cachedDrainMult = tier * extMult;
         }
 
         private float BaseStaminaDrainPerSecond
@@ -400,7 +437,7 @@ namespace PoniesOfTheRim.Flying
             }
         }
 
-        private float StaminaDrainPerSecond => BaseStaminaDrainPerSecond * GetWingDrainMultiplier();
+        private float StaminaDrainPerSecond => BaseStaminaDrainPerSecond * _cachedDrainMult;
 
         private float StaminaRecoveryPerSecond
         {
@@ -418,6 +455,7 @@ namespace PoniesOfTheRim.Flying
             base.PostExposeData();
             Scribe_Values.Look(ref currentFlightStamina, "flightStamina", 1f);
             Scribe_Values.Look(ref isFlying, "isFlying", false);
+            Scribe_Values.Look(ref _wasFlying, "wasFlying", false);
             Scribe_Values.Look(ref _flightCooldownEndTick, "flightCooldownEndTick", -1);
         }
 
@@ -427,6 +465,9 @@ namespace PoniesOfTheRim.Flying
 
             Pawn pawn = parent as Pawn;
             if (pawn == null || !pawn.Spawned) return;
+
+            if (!_drainMultInitialized || pawn.IsHashIntervalTick(DrainMultRecacheInterval))
+                RecacheWingDrainMultiplier();
 
             var flightComp = PonyFlightCache.GetToggle(pawn);
             isFlying = flightComp?.FlightEnabled ?? false;
@@ -444,7 +485,7 @@ namespace PoniesOfTheRim.Flying
                     currentFlightStamina = 0f;
                     if (flightComp != null)
                     {
-                        flightComp.FlightEnabled = false;
+                        flightComp.SetFlightEnabledInternal(false);
                         PegasusFlightUtility.SafeLand(pawn);
                         if (pawn.IsColonistPlayerControlled)
                             Messages.Message(
@@ -517,10 +558,8 @@ namespace PoniesOfTheRim.Flying
 
             float maxSeconds = maxDuration / 60f;
             float currentSeconds = maxSeconds * currentFlightStamina;
-
-            string mult = GetWingDrainMultiplier() < 1f
-                ? $" (drain ×{GetWingDrainMultiplier():F2})"
-                : "";
+            float drain = _cachedDrainMult;
+            string mult = drain < 1f ? $" (drain ×{drain:F2})" : "";
             return $"Flight stamina: {currentFlightStamina.ToStringPercent()} ({currentSeconds:F1}s / {maxSeconds:F1}s){mult}";
         }
     }

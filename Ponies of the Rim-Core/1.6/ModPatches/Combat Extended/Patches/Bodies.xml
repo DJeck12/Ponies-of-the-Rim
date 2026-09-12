@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- === Корпус === -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BodyDef[starts-with(defName, "Pony_")]/corePart/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+
+
+  <!-- === Все внешние части: голова, шея, ноги, копыта, крылья, рога, когти, лапы, клюв, хвост, глаза, уши === -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BodyDef[starts-with(defName, "Pony_")]//li[def][not(depth="Inside")]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+
+
+  <!-- === Плечи === -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BodyDef[starts-with(defName, "Pony_")]//li[customLabel="left shoulder"]/groups</xpath>
+    <value>
+      <li>LeftShoulder</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BodyDef[starts-with(defName, "Pony_")]//li[customLabel="right shoulder"]/groups</xpath>
+    <value>
+      <li>RightShoulder</li>
+    </value>
+  </Operation>
+
+
+  <!-- === Передние ноги -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BodyDef[starts-with(defName, "Pony_")]//li[customLabel="front left leg"]/groups</xpath>
+    <value>
+      <li>LeftArm</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BodyDef[starts-with(defName, "Pony_")]//li[customLabel="front right leg"]/groups</xpath>
+    <value>
+      <li>RightArm</li>
+    </value>
+  </Operation>
+
+</Patch>

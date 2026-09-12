@@ -22,8 +22,8 @@ namespace PoniesOfTheRim
         public string incidentResponseText;
         public string incidentDef;
         public float cooldownDays = 0f;
-                                public int minGoodwill = int.MinValue;
-                public int goodwillCost = 0;
+        public int minGoodwill = int.MinValue;
+        public int goodwillCost = 0;
         public float delayDaysMin = 0f;
         public float delayDaysMax = 0f;
     }
@@ -33,13 +33,13 @@ namespace PoniesOfTheRim
         public string questButtonText;
         public string questResponseText;
 
-                public string questScriptDef;
+        public string questScriptDef;
 
-                public List<string> questScriptDefs;
+        public List<string> questScriptDefs;
 
         public float cooldownDays = 0f;
-                        public int minGoodwill = int.MinValue;
-                public int goodwillCost = 0;
+        public int minGoodwill = int.MinValue;
+        public int goodwillCost = 0;
         public float delayDaysMin = 0f;
         public float delayDaysMax = 0f;
         public List<string> AllQuestDefs

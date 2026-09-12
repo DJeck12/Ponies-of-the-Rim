@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ScenarioDef[defName="Pony_Expedition"]/scenario/parts</xpath>
+    <value>
+      <li Class="ScenPart_StartingThing_Defined">
+        <def>StartingThing_Defined</def>
+        <thingDef>Ammo_303British_FMJ</thingDef>
+        <count>150</count>
+      </li>
+      <li Class="ScenPart_StartingThing_Defined">
+        <def>StartingThing_Defined</def>
+        <thingDef>Ammo_12Gauge_Buck</thingDef>
+        <count>150</count>
+      </li>
+      <li Class="ScenPart_StartingThing_Defined">
+        <def>StartingThing_Defined</def>
+        <thingDef>Ammo_44Magnum_FMJ</thingDef>
+        <count>150</count>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/FactionDef[defName="PonyColony"]/apparelStuffFilter/thingDefs</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="PonyColony"]/apparelStuffFilter/thingDefs</xpath>
+      <value>
+        <li>Steel</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

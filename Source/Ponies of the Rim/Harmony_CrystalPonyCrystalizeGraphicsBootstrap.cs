@@ -61,18 +61,23 @@ namespace PoniesOfTheRim
             }
         }
 
-        
+
         internal static class CrystalponyPortraitFix
-{
-    private static readonly HashSet<int> queued = new();
+        {
+            private static readonly HashSet<int> queued = new();
+            private static int _queuedOffMainReported;
 
             public static void MarkDirtyLater(Pawn pawn)
             {
                 if (pawn == null) return;
+
+                PonyThreadGuard.ReportIfOffMain(
+                    "CrystalponyPortraitFix.MarkDirtyLater", ref _queuedOffMainReported);
+
                 int key = pawn.thingIDNumber;
                 if (!queued.Add(key)) return;
 
-                                refreshFramesLeft = 2;
+                refreshFramesLeft = 2;
 
                 LongEventHandler.ExecuteWhenFinished(() =>
                 {
@@ -86,6 +91,10 @@ namespace PoniesOfTheRim
         [StaticConstructorOnStartup]
         internal static class CrystalponyGraphicBaker
         {
+            private static int _propsFieldsOffMainReported;
+            private static int _crystalLoadOffMainReported;
+            private static int _updateGraphicCacheOffMainReported;
+            private static int _overlayCacheOffMainReported;
             private const string TargetRaceDefName = "Pony_Crystalpony";
             private const string CrystalOverlayPath = "Races/Addons/Crystal/CrystalOverlay";
             private const string BakedSuffix = "_CrystalponyBaked";
@@ -117,11 +126,17 @@ namespace PoniesOfTheRim
                 if (propsType == cachedPropsType)
                     return cachedF_addon != null && cachedF_graphic != null;
 
+                PonyThreadGuard.ReportIfOffMain("CrystalponyGraphicBaker.ResolvePropsFields", ref _propsFieldsOffMainReported);
+                FieldInfo addon = AccessTools.Field(propsType, "addon");
+                FieldInfo graphic = AccessTools.Field(propsType, "graphic");
+                FieldInfo node = AccessTools.Field(propsType, "node");
+
+                cachedF_addon = addon;
+                cachedF_graphic = graphic;
+                cachedF_node = node;
                 cachedPropsType = propsType;
-                cachedF_addon   = AccessTools.Field(propsType, "addon");
-                cachedF_graphic = AccessTools.Field(propsType, "graphic");
-                cachedF_node    = AccessTools.Field(propsType, "node");
-                return cachedF_addon != null && cachedF_graphic != null;
+
+                return addon != null && graphic != null;
             }
 
             private static readonly Dictionary<Type, MethodInfo> updateGraphicCache = new();
@@ -279,10 +294,15 @@ namespace PoniesOfTheRim
                 }
             }
 
-                                    
+
             private static Texture2D GetCrystalOverlay()
             {
                 if (crystalCached != null) return crystalCached;
+
+                PonyThreadGuard.ReportIfOffMain(
+                    "CrystalponyGraphicBaker.GetCrystalOverlay (ContentFinder)",
+                    ref _crystalLoadOffMainReported);
+
                 crystalCached = ContentFinder<Texture2D>.Get(CrystalOverlayPath, reportFailure: false);
                 return crystalCached;
             }
@@ -317,6 +337,10 @@ namespace PoniesOfTheRim
                 Type nodeType = nodeObj.GetType();
                 if (!updateGraphicCache.TryGetValue(nodeType, out var mi))
                 {
+                    PonyThreadGuard.ReportIfOffMain(
+                        "CrystalponyGraphicBaker.TryUpdateNodeGraphic (запись кэша)",
+                        ref _updateGraphicCacheOffMainReported);
+
                     mi = AccessTools.Method(nodeType, "UpdateGraphic");
                     updateGraphicCache[nodeType] = mi;
                 }
@@ -381,8 +405,7 @@ namespace PoniesOfTheRim
                 return true;
             }
 
-            private static Texture2D ApplyOverlayCached(
-                Texture2D baseTex, Texture2D overlay, int ox, int oy)
+            private static Texture2D ApplyOverlayCached(Texture2D baseTex, Texture2D overlay, int ox, int oy)
             {
                 if (baseTex == null || overlay == null) return null;
 
@@ -391,10 +414,11 @@ namespace PoniesOfTheRim
 
                 if (overlayCache.TryGetValue(key, out var cached) && cached != null)
                     return cached;
+                PonyThreadGuard.ReportIfOffMain("CrystalponyGraphicBaker.ApplyOverlayCached (создание текстуры)",ref _overlayCacheOffMainReported);
 
                 if (overlayCache.Count >= MaxCacheSize)
                 {
-                    Log.Warning("[CrystalponyGraphicBaker] Cache limit reached, clearing old entries");
+                    Log.Warning("[PoniesOfTheRim] CrystalponyGraphicBaker: достигнут лимит кэша наложений, очистка.");
                     overlayCache.Clear();
                 }
 

@@ -11,6 +11,10 @@ namespace PoniesOfTheRim
     {
         private static readonly Dictionary<HairDef, int[]> _allowedTailsCache = new Dictionary<HairDef, int[]>();
 
+        private static int _addonVariantsOffMainReported;
+        private static int _randOffMainReported;
+        private static int _tailsCacheOffMainReported;
+
         public static void PonyTailPatch(Pawn pawn, AlienPartGenerator.BodyAddon __instance, ref int sharedIndex)
         {
             if (__instance.Name != "Pony_Tail" || pawn == null || !pawn.IsPony() || pawn.story?.hairDef == null)
@@ -40,6 +44,10 @@ namespace PoniesOfTheRim
                         AlienPartGenerator.AlienComp alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
                         if (alienComp != null)
                         {
+                            PonyThreadGuard.ReportIfOffMain(
+                                "PonyHairExtensionPatch.PonyTailPatch (запись alienComp.addonVariants)",
+                                ref _addonVariantsOffMainReported);
+
                             if (alienComp.addonVariants == null)
                             {
                                 alienComp.addonVariants = new List<int>();
@@ -68,6 +76,10 @@ namespace PoniesOfTheRim
                         return;
                     }
                 }
+                PonyThreadGuard.ReportIfOffMain(
+                    "PonyHairExtensionPatch.PonyTailPatch (Rand.PushState)",
+                    ref _randOffMainReported);
+
                 Rand.PushState(pawn.thingIDNumber ^ 0x7A11);
                 sharedIndex = allowed[Rand.Range(0, allowed.Length)];
                 Rand.PopState();
@@ -80,6 +92,10 @@ namespace PoniesOfTheRim
             {
                 return cached;
             }
+            PonyThreadGuard.ReportIfOffMain(
+                "PonyHairExtensionPatch.GetAllowedTails (запись кэша)",
+                ref _tailsCacheOffMainReported);
+
             int[] result = null;
             PonyHairExtension ext = hairDef.GetModExtension<PonyHairExtension>();
             if (ext?.ponyTailType != null)
