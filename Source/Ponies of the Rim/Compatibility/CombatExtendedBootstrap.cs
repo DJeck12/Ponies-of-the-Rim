@@ -41,9 +41,17 @@ namespace PoniesOfTheRim.Compatibility
                 new HarmonyMethod(typeof(Patch_CE_GetCollisionBodyFactors), "Postfix"),
                 null,
                 "CE_Utility.GetCollisionBodyFactors (габариты в полёте)");
+
+            TryPatch(
+                Patch_CE_CollisionVerticalLift.TargetMethod(),
+                new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Prefix"),
+                new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Postfix"),
+                null,
+                "CollisionVertical.CalculateHeightRange (подъём в полёте)",
+                new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Finalizer"));
         }
 
-        private static void TryPatch(MethodInfo original, HarmonyMethod prefix = null, HarmonyMethod postfix = null, HarmonyMethod transpiler = null, string label = "")
+        private static void TryPatch(MethodInfo original, HarmonyMethod prefix = null, HarmonyMethod postfix = null, HarmonyMethod transpiler = null, string label = "", HarmonyMethod finalizer = null)
         {
             if (original == null)
             {
@@ -53,7 +61,7 @@ namespace PoniesOfTheRim.Compatibility
 
             try
             {
-                Harmony.Patch(original, prefix, postfix, transpiler);
+                Harmony.Patch(original, prefix, postfix, transpiler, finalizer);
                 Log.Message("[PoniesOfTheRim] CE Bootstrap: ✓ " + label);
             }
             catch (Exception arg)

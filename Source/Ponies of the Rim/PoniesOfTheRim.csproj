@@ -109,7 +109,7 @@
     <Compile Include="Compatibility\CombatExtendedCompatibility.cs" />
     <Compile Include="Compatibility\CombatExtendedFlightExtension.cs" />
     <Compile Include="Compatibility\Harmony_CECollisionBodyFactors .cs" />
-    <Compile Include="Multiplayer\FileName.cs" />
+    <Compile Include="Compatibility\Harmony_CollisionVerticalLift.cs" />
     <Compile Include="Multiplayer\MultiplayerBootstrap.cs" />
     <Compile Include="Multiplayer\MultiplayerCompat.cs" />
     <Compile Include="Multiplayer\StylingStation_MultiplayerFixes.cs" />

@@ -30,6 +30,12 @@ namespace PoniesOfTheRim.Flying
         {
             try
             {
+                if (PoniesOfTheRim.Compatibility.Patch_CE_CollisionVerticalLift.IsGroundedForCalculation(__instance))
+                {
+                    __result = false;
+                    return;
+                }
+
                 if (__result) return;
                 if (!PegasusFlightUtility.IsPegasusConstantFlight(__instance)) return;
 

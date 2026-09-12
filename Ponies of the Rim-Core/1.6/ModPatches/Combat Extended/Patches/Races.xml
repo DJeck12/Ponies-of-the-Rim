@@ -39,7 +39,7 @@
     </value>
   </Operation>
 
-  <!-- A. конкретные расы со своим <tools> -->
+  <!-- Конкретные расы со своим <tools> -->
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li</xpath>
     <match Class="PatchOperationAttributeSet">
@@ -49,7 +49,7 @@
     </match>
   </Operation>
 
-  <!-- C. по содержимому: любой инструмент, привязанный к группе мода -->
+  <!-- Любой tool, привязанный к группе мода -->
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
     <match Class="PatchOperationAttributeSet">
@@ -59,7 +59,7 @@
     </match>
   </Operation>
 
-  <!-- Бронепробитие рога — один раз, где бы он ни был объявлен -->
+  <!-- Бронепробитие рога, один раз везде -->
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
     <match Class="PatchOperationAdd">
@@ -93,8 +93,9 @@
         or defName="Pony_Hippogriff"]</xpath>
     <value>
       <li Class="PoniesOfTheRim.Compatibility.CombatExtendedFlightExtension">
-        <flyingWidthFactor>1.45</flyingWidthFactor>
+        <flyingWidthFactor>0.6</flyingWidthFactor>
         <flyingHeightFactor>1.0</flyingHeightFactor>
+        <neutralizeFlightLift>true</neutralizeFlightLift>
       </li>
     </value>
   </Operation>
