@@ -74,10 +74,7 @@ namespace PoniesOfTheRim.Flying
                 WingPartsByBody[body] = new WingParts(left, right);
             }
 
-            if (Prefs.DevMode)
-            {
-                Log.Message($"[PoniesOfTheRim] PonyFlightCache: крылатых тел — {WingedBodies.Count}, записей частей крыльев — {WingPartsByBody.Count}.");
-            }
+            PonyLog.Trace($"PonyFlightCache: крылатых тел — {WingedBodies.Count}, записей частей крыльев — {WingPartsByBody.Count}.");
         }
 
         private static void AddBody(HashSet<BodyDef> set, BodyDef body)

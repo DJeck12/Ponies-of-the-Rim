@@ -28,7 +28,7 @@ namespace PoniesOfTheRim.Genetics
                 }
             }
             _groups = list.ToArray();
-            Log.Message("[PoniesOfTheRim] Genetics: групп расовых генов загружено — " + _groups.Length + ".");
+            PonyLog.Trace("Genetics: групп расовых генов загружено — " + _groups.Length + ".");
         }
 
         public static void Normalize(List<GeneDef> genes, Pawn mother, Pawn father)
@@ -51,7 +51,7 @@ namespace PoniesOfTheRim.Genetics
                 }
                 catch (Exception e)
                 {
-                    Log.Error("[PoniesOfTheRim] Genetics: сбой нормализации группы '" + group.defName + "':\n" + e);
+                    PonyLog.ErrorCaught("Genetics: сбой нормализации группы '" + group.defName + "'", e);
                 }
             }
         }
@@ -100,10 +100,7 @@ namespace PoniesOfTheRim.Genetics
                     return;
                 }
                 genes.Add(pick);
-                if (Prefs.DevMode)
-                {
-                    Log.Message("[PoniesOfTheRim] Genetics: ребёнку добавлен расовый ген '" + pick.defName + "' (группа '" + group.defName + "').");
-                }
+                PonyLog.Trace("Genetics: ребёнку добавлен расовый ген '" + pick.defName + "' (группа '" + group.defName + "').");
                 return;
             }
 
@@ -130,10 +127,7 @@ namespace PoniesOfTheRim.Genetics
             }
 
             EnforceLimit(group, genes, distinct, maxAllowed);
-            if (Prefs.DevMode)
-            {
-                Log.Message("[PoniesOfTheRim] Genetics: расовых генов у ребёнка было " + totalRacial + ", лимит " + maxAllowed + " (группа '" + group.defName + "').");
-            }
+            PonyLog.Trace("Genetics: расовых генов у ребёнка было " + totalRacial + ", лимит " + maxAllowed + " (группа '" + group.defName + "').");
         }
 
         private static void EnforceLimit(PonyRacialGeneGroupDef group, List<GeneDef> genes, List<GeneDef> distinct, int maxAllowed)

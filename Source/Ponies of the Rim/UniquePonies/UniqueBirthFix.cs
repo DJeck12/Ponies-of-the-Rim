@@ -30,9 +30,9 @@ namespace PoniesOfTheRim.UniquePonies
                         return;
                     }
 
-                    Log.Warning($"[PoniesOfTheRim] UniqueBirthFix: FallbackKindDefName " +
-                                $"'{config.FallbackKindDefName}' для '{kindDef.defName}' не найден. " +
-                                $"Используется авто-определение.");
+                    PonyLog.WarnOnce("UniqueBirthFix.MissingFallback|" + kindDef.defName,
+                        $"Уникальные пони: FallbackKindDefName '{config.FallbackKindDefName}' для '{kindDef.defName}' " +
+                        "не найден — используется автоопределение.");
                 }
 
                 var race = kindDef.race;
@@ -50,15 +50,15 @@ namespace PoniesOfTheRim.UniquePonies
                 }
                 else
                 {
-                    Log.Warning($"[PoniesOfTheRim] UniqueBirthFix: Не найден обычный kindDef " +
-                                $"для расы '{race.defName}'. Ребёнок '{kindDef.defName}' " +
-                                $"может унаследовать внешность уникальной пешки. " +
-                                $"Установите FallbackKindDefName в UniquePoniesConfig.");
+                    PonyLog.WarnOnce("UniqueBirthFix.NoFallback|" + kindDef.defName,
+                        $"Уникальные пони: не найден обычный kindDef для расы '{race.defName}' — ребёнок " +
+                        $"'{kindDef.defName}' может унаследовать внешность уникальной пешки. " +
+                        "Укажите FallbackKindDefName в UniquePoniesConfig.");
                 }
             }
             catch (Exception ex)
             {
-                Log.Warning($"[PoniesOfTheRim] UniqueBirthFix.GeneratePawn_Prefix: {ex.Message}");
+                PonyLog.WarnCaught("Уникальные пони: сбой при генерации новорождённого.", ex);
             }
         }
     }

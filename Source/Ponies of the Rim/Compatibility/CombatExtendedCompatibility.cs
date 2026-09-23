@@ -69,8 +69,8 @@ namespace PoniesOfTheRim.Compatibility
 
             if (!_active)
             {
-                Log.Warning("[PoniesOfTheRim] Combat Extended обнаружен, но его публичные типы не разрешились. " +
-                            "Патч совместимости отключён.");
+                PonyLog.Warn("Combat Extended обнаружен, но его публичные типы не разрешились. " +
+                             "Патч совместимости отключён.");
             }
         }
 
@@ -87,7 +87,7 @@ namespace PoniesOfTheRim.Compatibility
             }
             catch (Exception arg)
             {
-                Log.Warning($"[PoniesOfTheRim] CE: не удалось обновить инвентарь для {pawn.LabelShortCap}:\n{arg}");
+                PonyLog.WarnCaught($"CE: не удалось обновить инвентарь пешки {pawn.LabelShortCap}.", arg);
             }
         }
 
@@ -111,7 +111,7 @@ namespace PoniesOfTheRim.Compatibility
 
             if (dictionary.Count > 0)
             {
-                Log.Message($"[PoniesOfTheRim] CE: полётные множители коллизии загружены для {dictionary.Count} рас(ы).");
+                PonyLog.Trace($"CE: полётные множители коллизии загружены для {dictionary.Count} рас(ы).");
             }
         }
 
@@ -140,7 +140,7 @@ namespace PoniesOfTheRim.Compatibility
 
             if (tInventory == null || tSuppressable == null || tTactical == null || tGizmo == null)
             {
-                Log.Warning("[PoniesOfTheRim] CE: типы компонентов не разрешились — нормализация пропущена.");
+                PonyLog.Warn("CE: типы компонентов не разрешились — нормализация пропущена.");
                 return;
             }
 
@@ -182,8 +182,8 @@ namespace PoniesOfTheRim.Compatibility
 
             if (racesTouched > 0)
             {
-                Log.Message($"[PoniesOfTheRim] CE: компоненты нормализованы у {racesTouched} рас(ы) — " +
-                            $"удалено дубликатов {removed}, добавлено недостающих {added}.");
+                PonyLog.Trace($"CE: компоненты нормализованы у {racesTouched} рас(ы) — " +
+                              $"удалено дубликатов {removed}, добавлено недостающих {added}.");
             }
         }
 
@@ -246,7 +246,7 @@ namespace PoniesOfTheRim.Compatibility
             }
             catch (Exception arg)
             {
-                Log.Warning($"[PoniesOfTheRim] CE: не удалось добавить {compType.Name} к {def.defName}:\n{arg}");
+                PonyLog.Warn($"CE: не удалось добавить {compType.Name} к {def.defName}:\n{arg}");
                 return 0;
             }
         }
@@ -292,7 +292,7 @@ namespace PoniesOfTheRim.Compatibility
             if (unpatchedTools.Count == 0 && duplicateExtensions.Count == 0 && missingExtension.Count == 0
                 && missingBodyShape.Count == 0 && duplicateComps.Count == 0 && missingComps.Count == 0)
             {
-                Log.Message($"[PoniesOfTheRim] CE-аудит: проверено рас — {racesChecked}, замечаний нет.");
+                PonyLog.Trace($"CE-аудит: проверено рас — {racesChecked}, замечаний нет.");
             }
         }
 
@@ -364,7 +364,8 @@ namespace PoniesOfTheRim.Compatibility
             Type compType = AccessTools.TypeByName(compTypeName);
             if (compType == null)
             {
-                Log.Warning("[PoniesOfTheRim] CE-аудит: тип " + compTypeName + " не найден — проверка пропущена.");
+                PonyLog.WarnOnce("CEAudit.MissingType|" + compTypeName,
+                                 "CE-аудит: тип " + compTypeName + " не найден — проверка пропущена.");
                 return;
             }
 
@@ -398,8 +399,8 @@ namespace PoniesOfTheRim.Compatibility
                 return;
             }
 
-            Log.Warning("[PoniesOfTheRim] CE-аудит: " + entries.Count + " записей " + what + ":\n  " +
-                        string.Join("\n  ", entries.ToArray()));
+            PonyLog.Warn("CE-аудит: " + entries.Count + " записей " + what + ":\n  " +
+                         string.Join("\n  ", entries.ToArray()));
         }
     }
 }

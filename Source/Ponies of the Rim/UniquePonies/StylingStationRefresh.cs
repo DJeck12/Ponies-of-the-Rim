@@ -33,7 +33,7 @@ namespace PoniesOfTheRim.UniquePonies
             }
             catch (Exception ex)
             {
-                Log.Warning($"[PoniesOfTheRim] StylingStation reflection init failed: {ex.Message}");
+                PonyLog.WarnCaught("Не удалось подготовить обновление стайлинг-станции HAR.", ex);
             }
         }
 

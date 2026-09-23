@@ -51,7 +51,7 @@ namespace PoniesOfTheRim.Multiplayer
             }
             if (type == null || string.IsNullOrEmpty(methodName))
             {
-                Log.Error("[PoniesOfTheRim] Multiplayer: RegisterSyncMethod вызван с пустым типом или именем метода.");
+                PonyLog.Error("Multiplayer: RegisterSyncMethod вызван с пустым типом или именем метода.");
                 return false;
             }
             return Invoke(_registerSyncMethodByName, new object[3] { type, methodName, null }, type.Name + "." + methodName);
@@ -66,7 +66,7 @@ namespace PoniesOfTheRim.Multiplayer
             }
             if (method == null)
             {
-                Log.Error("[PoniesOfTheRim] Multiplayer: RegisterSyncMethod вызван с null MethodInfo.");
+                PonyLog.Error("Multiplayer: RegisterSyncMethod вызван с null MethodInfo.");
                 return false;
             }
             return Invoke(_registerSyncMethodByInfo, new object[2] { method, null },
@@ -84,7 +84,7 @@ namespace PoniesOfTheRim.Multiplayer
             catch (Exception ex)
             {
                 Exception inner = (ex as TargetInvocationException)?.InnerException ?? ex;
-                Log.Error($"[PoniesOfTheRim] Multiplayer: не удалось зарегистрировать sync-метод '{label}':\n{inner}");
+                PonyLog.Error($"Multiplayer: не удалось зарегистрировать sync-метод '{label}':\n{inner}");
                 return false;
             }
         }
@@ -126,7 +126,7 @@ namespace PoniesOfTheRim.Multiplayer
                 Type bridgeType = mp.GetType(BridgeTypeName);
                 if (bridgeType == null)
                 {
-                    Log.Warning("[PoniesOfTheRim] Multiplayer: сборка найдена, но тип " + BridgeTypeName + " отсутствует — патч совместимости отключён.");
+                    PonyLog.Warn("Multiplayer: сборка найдена, но тип " + BridgeTypeName + " отсутствует — патч совместимости отключён.");
                     return;
                 }
 
@@ -134,7 +134,7 @@ namespace PoniesOfTheRim.Multiplayer
                 object api = instanceField?.GetValue(null);
                 if (api == null)
                 {
-                    Log.Warning("[PoniesOfTheRim] Multiplayer: MultiplayerAPIBridge.Instance недоступен — патч совместимости отключён.");
+                    PonyLog.Warn("Multiplayer: MultiplayerAPIBridge.Instance недоступен — патч совместимости отключён.");
                     return;
                 }
 
@@ -167,7 +167,7 @@ namespace PoniesOfTheRim.Multiplayer
 
                 if (_registerSyncMethodByName == null && _registerSyncMethodByInfo == null)
                 {
-                    Log.Warning("[PoniesOfTheRim] Multiplayer: не найдено ни одной перегрузки RegisterSyncMethod — версия API несовместима, патч совместимости отключён.");
+                    PonyLog.Warn("Multiplayer: не найдено ни одной перегрузки RegisterSyncMethod — версия API несовместима, патч совместимости отключён.");
                     return;
                 }
 
@@ -176,7 +176,7 @@ namespace PoniesOfTheRim.Multiplayer
             catch (Exception ex)
             {
                 _api = null;
-                Log.Error($"[PoniesOfTheRim] Multiplayer: ошибка инициализации моста совместимости:\n{ex}");
+                PonyLog.ErrorCaught("Multiplayer: ошибка инициализации моста совместимости — патч совместимости отключён.", ex);
             }
         }
 
@@ -193,7 +193,7 @@ namespace PoniesOfTheRim.Multiplayer
             }
             catch (Exception ex)
             {
-                Log.Warning($"[PoniesOfTheRim] Multiplayer: не удалось связать свойство '{propertyName}': {ex.Message}");
+                PonyLog.Warn($"Multiplayer: не удалось связать свойство '{propertyName}': {ex.Message}");
                 return null;
             }
         }

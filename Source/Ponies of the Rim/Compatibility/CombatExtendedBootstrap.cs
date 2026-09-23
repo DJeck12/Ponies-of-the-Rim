@@ -10,17 +10,20 @@ namespace PoniesOfTheRim.Compatibility
     {
         public static readonly Harmony Harmony;
 
+        private static int _patched;
+        private static int _failed;
+
         static CombatExtendedBootstrap()
         {
             Harmony = new Harmony("rimworld.poniesoftherim.combatextended");
 
             if (!CombatExtendedCompatability.Active)
             {
-                Log.Message("[PoniesOfTheRim] Combat Extended не обнаружен — патч совместимости пропущен.");
+                PonyLog.Trace("Combat Extended не обнаружен — патч совместимости пропущен.");
                 return;
             }
 
-            Log.Message("[PoniesOfTheRim] CE Bootstrap: запуск.");
+            PonyLog.Trace("CE Bootstrap: запуск.");
 
             CombatExtendedCompatability.BuildFlightExtensionCache();
             RegisterCollisionPatches();
@@ -28,8 +31,13 @@ namespace PoniesOfTheRim.Compatibility
             LongEventHandler.ExecuteWhenFinished(delegate
             {
                 CombatExtendedCompatability.EnsureRaceComps();
-                CombatExtendedCompatability.AuditRaces();
-                Log.Message("[PoniesOfTheRim] CE Bootstrap: завершён.");
+
+                if (Prefs.DevMode)
+                {
+                    CombatExtendedCompatability.AuditRaces();
+                }
+
+                PonyLog.Trace($"CE Bootstrap: завершён, патчей установлено {_patched}, ошибок {_failed}.");
             });
         }
 
@@ -55,18 +63,20 @@ namespace PoniesOfTheRim.Compatibility
         {
             if (original == null)
             {
-                Log.Error("[PoniesOfTheRim] CE Bootstrap: метод не найден — '" + label + "'.");
+                _failed++;
+                PonyLog.Error("CE Bootstrap: метод не найден — '" + label + "'.");
                 return;
             }
 
             try
             {
                 Harmony.Patch(original, prefix, postfix, transpiler, finalizer);
-                Log.Message("[PoniesOfTheRim] CE Bootstrap: ✓ " + label);
+                _patched++;
             }
             catch (Exception arg)
             {
-                Log.Error($"[PoniesOfTheRim] CE Bootstrap: ошибка патча '{label}':\n{arg}");
+                _failed++;
+                PonyLog.Error($"CE Bootstrap: ошибка патча '{label}':\n{arg}");
             }
         }
     }

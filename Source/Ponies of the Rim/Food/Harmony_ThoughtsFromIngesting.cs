@@ -27,7 +27,7 @@ namespace PoniesOfTheRim.Food
             {
                 AddThoughtsFromIdeo = null;
                 VanillaBuffer = null;
-                Log.Error($"[PoniesOfTheRim] ThoughtsFromIngesting: нет доступа к FoodUtility.AddThoughtsFromIdeo:\n{arg}");
+                PonyLog.ErrorCaught("Еда: нет доступа к FoodUtility.AddThoughtsFromIdeo — мысли о фруктах в составе блюд работать не будут.", arg);
             }
         }
 

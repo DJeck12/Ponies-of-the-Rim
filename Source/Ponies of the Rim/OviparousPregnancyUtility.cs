@@ -18,7 +18,7 @@ namespace PoniesOfTheRim
             GeneDef ovip = Gene_Oviparous.OvipGeneDef;
             if (ovip == null)
             {
-                Log.Error("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: GeneDef 'Pony_Oviparous' не найден!");
+                PonyLog.ErrorOnce("ApplyBirthOutcome.NoOvipGene", "Яйцекладка: GeneDef 'Pony_Oviparous' не найден — рождение идёт по ванильному сценарию.");
                 return true;
             }
             if (!geneticMother.genes.HasActiveGene(ovip))
@@ -27,11 +27,7 @@ namespace PoniesOfTheRim
             }
             if (geneticMother.MapHeld == null)
             {
-                if (Prefs.DevMode)
-                {
-                    Log.Message("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: " + geneticMother.LabelShort +
-                                " вне карты (караван) — ванильное рождение.");
-                }
+                PonyLog.Trace("Яйцекладка: " + geneticMother.LabelShort + " вне карты (караван) — ванильное рождение.");
                 return true;
             }
 
@@ -44,11 +40,7 @@ namespace PoniesOfTheRim
                 return true;
             }
 
-            if (Prefs.DevMode)
-            {
-                Log.Message("[PoniesOfTheRim] ApplyBirthOutcome.Prefix: яйцо заспавнено, ванильный исход заблокирован (отец: " +
-                            (father?.LabelShort ?? "нет") + ").");
-            }
+            PonyLog.Trace("Яйцекладка: яйцо создано вместо ванильного рождения (отец: " + (father?.LabelShort ?? "нет") + ").");
             __result = egg;
             return false;
         }

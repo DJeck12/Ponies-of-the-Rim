@@ -50,7 +50,7 @@ namespace PoniesOfTheRim.Compatibility
 
         public static void Report(Pawn pawn, PawnKindDef kindToInspect, string context)
         {
-            if (!Prefs.DevMode || pawn == null || !CombatExtendedCompatability.Active)
+            if (!PonyLog.Verbose || pawn == null || !CombatExtendedCompatability.Active)
             {
                 return;
             }
@@ -58,18 +58,18 @@ namespace PoniesOfTheRim.Compatibility
             try
             {
                 Resolve();
-                Log.Message(Build(pawn, kindToInspect, context));
+                PonyLog.Trace(Build(pawn, kindToInspect, context));
             }
             catch (Exception arg)
             {
-                Log.Warning($"[PoniesOfTheRim] Разбор боезапаса не удался (на генерацию не влияет):\n{arg}");
+                PonyLog.WarnCaught("CE: разбор боезапаса не удался (на генерацию не влияет).", arg);
             }
         }
 
         private static string Build(Pawn pawn, PawnKindDef kindToInspect, string context)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("[PoniesOfTheRim] Разбор боезапаса CE: " + pawn.LabelShortCap + " (" + context + ")");
+            sb.AppendLine("Разбор боезапаса CE: " + pawn.LabelShortCap + " (" + context + ")");
             sb.AppendLine("  боевой kindDef: " + (kindToInspect?.defName ?? "—"));
 
             bool hasExt = false;

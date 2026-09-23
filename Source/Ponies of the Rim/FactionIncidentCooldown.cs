@@ -9,7 +9,7 @@ namespace PoniesOfTheRim
 {
     public class FactionIncidentCooldown : WorldComponent
     {
-        
+
         public Dictionary<CooldownKey, float> lastTimes = new Dictionary<CooldownKey, float>();
         public List<DelayedQuest> delayedQuests = new List<DelayedQuest>();
         private List<Faction> cd_factions = new List<Faction>();
@@ -40,7 +40,7 @@ namespace PoniesOfTheRim
             Scribe_Collections.Look(ref cd_ticks, "cd_ticks", LookMode.Value);
             Scribe_Collections.Look(ref delayedQuests, "delayedQuests", LookMode.Deep);
 
-                        if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 lastTimes = new Dictionary<CooldownKey, float>();
 
@@ -57,7 +57,7 @@ namespace PoniesOfTheRim
                     }
                 }
 
-                                cd_factions = null;
+                cd_factions = null;
                 cd_defNames = null;
                 cd_ticks = null;
             }
@@ -75,25 +75,40 @@ namespace PoniesOfTheRim
             for (int i = delayedQuests.Count - 1; i >= 0; i--)
             {
                 DelayedQuest delayed = delayedQuests[i];
-                if (Find.TickManager.TicksGame >= delayed.fireTick)
+                if (delayed == null)
+                {
+                    delayedQuests.RemoveAt(i);
+                    continue;
+                }
+                if (Find.TickManager.TicksGame < delayed.fireTick)
+                {
+                    continue;
+                }
+
+                delayedQuests.RemoveAt(i);
+
+                try
                 {
                     QuestScriptDef questScript = DefDatabase<QuestScriptDef>.GetNamed(delayed.questDefName, false);
                     if (questScript != null && delayed.faction != null)
                     {
-                                                CommsConsolePatch.GenerateQuestWithFaction(questScript, delayed.faction);
+                        CommsConsolePatch.GenerateQuestWithFaction(questScript, delayed.faction);
                     }
                     else if (questScript != null)
                     {
-                                                Slate slate = new Slate();
+                        Slate slate = new Slate();
                         Quest quest = QuestGen.Generate(questScript, slate);
                         Find.QuestManager.Add(quest);
                         QuestUtility.SendLetterQuestAvailable(quest);
                     }
                     else
                     {
-                        Log.Warning($"[PoniesOfTheRim] Delayed quest '{delayed.questDefName}' not found in DefDatabase.");
+                        PonyLog.Warn($"Отложенный квест '{delayed.questDefName}' не найден в DefDatabase — удалён из очереди.");
                     }
-                    delayedQuests.RemoveAt(i);
+                }
+                catch (Exception ex)
+                {
+                    PonyLog.ErrorCaught($"Не удалось запустить отложенный квест '{delayed.questDefName}' — квест пропущен.", ex);
                 }
             }
         }

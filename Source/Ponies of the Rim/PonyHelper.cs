@@ -32,18 +32,18 @@ namespace PoniesOfTheRim
 
         private static readonly HashSet<string> KnownPonyDefNames = new HashSet<string>
         {
-            "Pony_Earthpony", 
-            "Pony_Unicorn", 
-            "Pony_Pegasus", 
-            "Pony_Zebra", 
-            "Pony_Crystalpony", 
-            "Pony_Batpony", 
-            "Pony_Alicorn", 
-            "Pony_Kirin", 
-            "Pony_Changedling", 
+            "Pony_Earthpony",
+            "Pony_Unicorn",
+            "Pony_Pegasus",
+            "Pony_Zebra",
+            "Pony_Crystalpony",
+            "Pony_Batpony",
+            "Pony_Alicorn",
+            "Pony_Kirin",
+            "Pony_Changedling",
             "Pony_Changeling",
-            "Pony_Deer", 
-            "Pony_Griffon", 
+            "Pony_Deer",
+            "Pony_Griffon",
             "Pony_Hippogriff"
         };
 
@@ -89,10 +89,7 @@ namespace PoniesOfTheRim
                 }
             }
             _ponyRaceCache = hashSet;
-            if (Prefs.DevMode)
-            {
-                Log.Message("[PoniesOfTheRim] Кэш пони-рас: " + hashSet.Count + " записей.");
-            }
+            PonyLog.Trace("Кэш пони-рас: " + hashSet.Count + " записей.");
         }
 
         public static bool IsPony(this Pawn pawn)

@@ -38,7 +38,7 @@ namespace PoniesOfTheRim.PatchOperation
             }
             catch (Exception ex)
             {
-                Log.Error($"Error applying remove patch: {ex.Message}");
+                PonyLog.Error($"PatchOperationToggleableRemove: {ex.Message}");
             }
             return result;
         }

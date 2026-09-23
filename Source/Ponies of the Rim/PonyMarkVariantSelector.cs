@@ -65,8 +65,8 @@ namespace PoniesOfTheRim
                 AccessTools.Field(typeof(Pawn_StoryTracker), "Adulthood");
 
             if (_variantCountField == null)
-                Log.Error("[PoniesOfTheRim] PonyMarkVariantSelector: " +
-                          "поле variantCount не найдено на BodyAddon.");
+                PonyLog.Error("Метки пони: поле variantCount не найдено на BodyAddon — " +
+                              "варианты меток на теле и голове назначаться не будут.");
         }
 
         public static void CompRenderNodes_Postfix(AlienComp __instance)
@@ -177,8 +177,7 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception ex)
                 {
-                    Log.Warning($"[PoniesOfTheRim] PonyMarkVariantSelector: " +
-                                $"ошибка при обновлении графики {pawn?.Name}: {ex.Message}");
+                    PonyLog.WarnCaught($"Метки пони: не удалось обновить графику пешки {pawn?.LabelShortCap}.", ex);
                 }
             }
 

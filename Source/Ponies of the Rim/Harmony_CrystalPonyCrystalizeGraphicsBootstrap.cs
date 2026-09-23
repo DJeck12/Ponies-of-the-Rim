@@ -37,7 +37,7 @@ namespace PoniesOfTheRim
             }
         }
 
-                                        
+
         private static int refreshFramesLeft = -1;
 
         public static class Patch_ConfigureStartingPawns_PreOpen
@@ -106,7 +106,7 @@ namespace PoniesOfTheRim
                     "Pony_Right_Ear", "Pony_Left_Ear", "Pony_Cutiemark"
                 };
 
-            
+
             private static readonly FieldInfo FI_nodeProps =
                 AccessTools.Field(typeof(AlienPartGenerator.AlienComp), "nodeProps");
 
@@ -156,7 +156,7 @@ namespace PoniesOfTheRim
                 return pawn.def == cachedTargetDef;
             }
 
-            
+
             private readonly struct MatCloneKey : IEquatable<MatCloneKey>
             {
                 public readonly int srcMatId;
@@ -217,7 +217,7 @@ namespace PoniesOfTheRim
 
             private const int MaxCacheSize = 4096;
 
-                                    
+
             public static void TryBakeAddons(AlienPartGenerator.AlienComp comp)
             {
                 try
@@ -267,7 +267,7 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception e)
                 {
-                    Log.Warning($"[CrystalponyGraphicBaker] addon bake failed: {e}");
+                    PonyLog.WarnCaught("Кристальные пони: не удалось наложить кристальный эффект на части тела.", e);
                 }
             }
 
@@ -290,7 +290,7 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception e)
                 {
-                    Log.Warning($"[CrystalponyGraphicBaker] hair bake failed: {e}");
+                    PonyLog.WarnCaught("Кристальные пони: не удалось наложить кристальный эффект на гриву.", e);
                 }
             }
 
@@ -414,11 +414,11 @@ namespace PoniesOfTheRim
 
                 if (overlayCache.TryGetValue(key, out var cached) && cached != null)
                     return cached;
-                PonyThreadGuard.ReportIfOffMain("CrystalponyGraphicBaker.ApplyOverlayCached (создание текстуры)",ref _overlayCacheOffMainReported);
+                PonyThreadGuard.ReportIfOffMain("CrystalponyGraphicBaker.ApplyOverlayCached (создание текстуры)", ref _overlayCacheOffMainReported);
 
                 if (overlayCache.Count >= MaxCacheSize)
                 {
-                    Log.Warning("[PoniesOfTheRim] CrystalponyGraphicBaker: достигнут лимит кэша наложений, очистка.");
+                    PonyLog.WarnOnce("CrystalponyGraphicBaker.CacheLimit", "Кристальные пони: достигнут лимит кэша наложений — кэш очищен.");
                     overlayCache.Clear();
                 }
 
@@ -508,13 +508,13 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception e)
                 {
-                    Log.Warning($"[CrystalponyGraphicBaker] texture combine failed: {e}");
+                    PonyLog.WarnCaught("Кристальные пони: не удалось совместить текстуры.", e);
                     return null;
                 }
                 finally
                 {
                     if (bg != null && bg != background) UnityEngine.Object.Destroy(bg);
-                    if (ov != null && ov != overlay)     UnityEngine.Object.Destroy(ov);
+                    if (ov != null && ov != overlay) UnityEngine.Object.Destroy(ov);
                 }
             }
         }
