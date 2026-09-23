@@ -8,6 +8,7 @@
 		<iconPath>UI/Genes/PonyHead</iconPath>
 		<displayOrderInCategory>40</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
 		<forcedHeadTypes>
 			<li>Pony_Male</li>
 			<li>Pony_Female</li>
@@ -26,6 +27,7 @@
 		<displayOrderInCategory>41</displayOrderInCategory>
 		<prerequisite>Pony_EquineHead</prerequisite>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
 		<exclusionTags>
 			<li>Nose</li>
 		</exclusionTags>
@@ -140,6 +142,7 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>70</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
+		<randomChosen>true</randomChosen>
 		<soundCall>Pawn_Horse_Call</soundCall>
 		<soundDeath>Pawn_Horse_Death</soundDeath>
 		<soundWounded>Pawn_Horse_Wounded</soundWounded>

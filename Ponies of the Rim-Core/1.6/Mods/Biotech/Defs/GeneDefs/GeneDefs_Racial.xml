@@ -31,7 +31,6 @@
 				<li><symbol>pony</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
-		<randomChosen>true</randomChosen>
 		<exclusionTags>
 			<li>Hands</li>
 		</exclusionTags>
