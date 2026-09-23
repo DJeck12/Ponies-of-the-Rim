@@ -23,7 +23,7 @@ namespace PoniesOfTheRim
             }
             if (ponyBodyTypes.Count == 0)
             {
-                Log.Warning("[PoniesOfTheRim] Типы тел пони не найдены — патч совместимости шерсти пропущен.");
+                PonyLog.Warn("Типы тел пони не найдены — патч совместимости шерсти пропущен.");
                 return;
             }
 
@@ -62,18 +62,23 @@ namespace PoniesOfTheRim
 
             if (byMod.Count == 0)
             {
-                Log.Message("[PoniesOfTheRim] Совместимость шерсти: все FurDef уже имеют текстуры для тел пони.");
+                PonyLog.Trace("Совместимость шерсти: все FurDef уже имеют текстуры для тел пони.");
+                return;
+            }
+
+            if (!PonyLog.Verbose)
+            {
                 return;
             }
 
             StringBuilder sb = new StringBuilder();
-            sb.Append("[PoniesOfTheRim] Совместимость шерсти: заглушка добавлена в bodyTypeGraphicPaths для FurDef:");
+            sb.Append("Совместимость шерсти: заглушка добавлена в bodyTypeGraphicPaths для FurDef:");
             foreach (KeyValuePair<string, List<string>> kv in byMod.OrderBy(k => k.Key))
             {
                 sb.AppendLine();
                 sb.Append($"  - {kv.Key}: {string.Join(", ", kv.Value)}");
             }
-            Log.Message(sb.ToString());
+            PonyLog.Trace(sb.ToString());
         }
     }
 }

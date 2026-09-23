@@ -15,7 +15,7 @@ namespace PoniesOfTheRim
         public static Faction TargetFaction;
     }
 
-                            
+
     public static class QuestFactionPatches
     {
         private static bool patchApplied = false;
@@ -40,11 +40,11 @@ namespace PoniesOfTheRim
                         postfix: new HarmonyMethod(typeof(QuestFactionPatches),
                             nameof(IsGoodFaction_Postfix))
                     );
-                    Log.Message("[PoniesOfTheRim] QuestNode_GetFaction.IsGoodFaction patch applied.");
+                    PonyLog.Trace("Квесты: ✓ QuestNode_GetFaction.IsGoodFaction.");
                 }
                 else
                 {
-                    Log.Warning("[PoniesOfTheRim] Could not find QuestNode_GetFaction.IsGoodFaction.");
+                    PonyLog.Warn("Квесты: не найден QuestNode_GetFaction.IsGoodFaction — патч пропущен.");
                 }
 
                 Type settlementNodeType = typeof(QuestNode_GetNearbySettlement);
@@ -57,10 +57,14 @@ namespace PoniesOfTheRim
                         prefix: new HarmonyMethod(typeof(QuestFactionPatches),
                             nameof(GetNearbySettlement_RunInt_Prefix))
                     );
-                    Log.Message("[PoniesOfTheRim] QuestNode_GetNearbySettlement.RunInt patch applied.");
+                    PonyLog.Trace("Квесты: ✓ QuestNode_GetNearbySettlement.RunInt.");
+                }
+                else
+                {
+                    PonyLog.Warn("Квесты: не найден QuestNode_GetNearbySettlement.RunInt — патч пропущен.");
                 }
 
-                                MethodInfo testRunInt = AccessTools.Method(settlementNodeType, "TestRunInt");
+                MethodInfo testRunInt = AccessTools.Method(settlementNodeType, "TestRunInt");
                 if (testRunInt != null)
                 {
                     harmony.Patch(
@@ -68,6 +72,11 @@ namespace PoniesOfTheRim
                         prefix: new HarmonyMethod(typeof(QuestFactionPatches),
                             nameof(GetNearbySettlement_TestRunInt_Prefix))
                     );
+                    PonyLog.Trace("Квесты: ✓ QuestNode_GetNearbySettlement.TestRunInt.");
+                }
+                else
+                {
+                    PonyLog.Warn("Квесты: не найден QuestNode_GetNearbySettlement.TestRunInt — патч пропущен.");
                 }
 
                 fi_GetFaction_storeAs = AccessTools.Field(typeof(QuestNode_GetFaction), "storeAs");
@@ -79,11 +88,11 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Failed to apply quest faction patches: {ex}");
+                PonyLog.Error($"Квесты: не удалось применить патчи квестовых фракций:\n{ex}");
             }
         }
 
-                                                                                        
+
         public static void IsGoodFaction_Postfix(ref bool __result, Faction faction, Slate slate)
         {
             if (CommsQuestContext.TargetFaction == null) return;
@@ -91,7 +100,7 @@ namespace PoniesOfTheRim
             __result = (faction == CommsQuestContext.TargetFaction);
         }
 
-                                                                        
+
         public static bool GetNearbySettlement_RunInt_Prefix(QuestNode __instance)
         {
             if (CommsQuestContext.TargetFaction == null)
@@ -99,10 +108,12 @@ namespace PoniesOfTheRim
 
             Faction target = CommsQuestContext.TargetFaction;
 
-                        Settlement settlement = FindBestSettlement(target);
+            Settlement settlement = FindBestSettlement(target);
             if (settlement == null)
             {
-                Log.Warning($"[PoniesOfTheRim] No settlement found for '{target.Name}'. Falling back to original quest logic.");
+                PonyLog.WarnOnce(
+                    "QuestFactionPatches.NoSettlement|" + target.Name,
+                    "Квесты: для фракции '" + target.Name + "' не найдено поселение — используется ванильная логика.");
                 return true;
             }
 
@@ -127,6 +138,7 @@ namespace PoniesOfTheRim
 
             return false;
         }
+
         public static bool GetNearbySettlement_TestRunInt_Prefix(ref bool __result, QuestNode __instance, Slate slate)
         {
             if (CommsQuestContext.TargetFaction == null)
@@ -137,7 +149,7 @@ namespace PoniesOfTheRim
             Settlement settlement = FindBestSettlement(target);
             if (settlement == null)
             {
-                                __result = false;
+                __result = false;
                 return false;
             }
 
@@ -161,7 +173,7 @@ namespace PoniesOfTheRim
             return false;
         }
 
-                        
+
         private static Settlement FindBestSettlement(Faction faction)
         {
             Map playerMap = Find.CurrentMap;

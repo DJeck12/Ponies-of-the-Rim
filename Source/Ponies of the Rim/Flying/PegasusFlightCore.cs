@@ -1,102 +1,12 @@
-﻿using AlienRace;
-using HarmonyLib;
-using RimWorld;
-using System;
+﻿using RimWorld;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using Verse;
-using Verse.AI;
 using Verse.Sound;
 
 namespace PoniesOfTheRim.Flying
 {
     [StaticConstructorOnStartup]
-    public static class PegasusFlightBootstrap
-    {
-        private static readonly Harmony Harmony = new("PoniesOfTheRim.Flying");
-
-        static PegasusFlightBootstrap()
-        {
-            var h = Harmony;
-
-            h.Patch(
-                AccessTools.PropertyGetter(typeof(Pawn_DrawTracker), "DrawPos"),
-                postfix: Postfix(typeof(Patch_PawnDrawTracker_DrawPos_BodyBob)));
-
-            h.Patch(
-                AccessTools.PropertyGetter(typeof(Pawn), nameof(Pawn.Flying)),
-                postfix: Postfix(typeof(Patch_Pawn_Flying)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn_FlightTracker), "FlightTick"),
-                prefix: Prefix(typeof(Patch_FlightTracker_FlightTick)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn_FlightTracker), "ForceLand"),
-                prefix: Prefix(typeof(Patch_FlightTracker_ForceLand)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn_PathFollower), "CostToMoveIntoCell",
-                    new[] { typeof(Pawn), typeof(IntVec3) }),
-                postfix: Postfix(typeof(Patch_CostToMoveIntoCell)));
-
-            h.Patch(
-                Patch_PathFinder_CreateRequest.FindTargetMethod(),
-                prefix: Prefix(typeof(Patch_PathFinder_CreateRequest)));
-
-            h.Patch(AccessTools.Method(typeof(GenGrid), "WalkableBy"), null, Postfix(typeof(Patch_GenGrid_WalkableBy)));
-            h.Patch(AccessTools.Method(typeof(Pawn_PathFollower), "BuildingBlockingNextPathCell"), null, Postfix(typeof(Patch_BuildingBlockingNextPathCell)));
-            h.Patch(AccessTools.Method(typeof(Pawn_PathFollower), "NextCellDoorToWaitForOrManuallyOpen"), null, Postfix(typeof(Patch_NextCellDoor)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn_PathFollower), "TryEnterNextPathCell"),
-                prefix: Prefix(typeof(Patch_TryEnterNextPathCell_BlockFog)));
-
-            h.Patch(
-                AccessTools.Method(typeof(TraverseParms), nameof(TraverseParms.For),
-                    new[] { typeof(Pawn), typeof(Danger), typeof(TraverseMode),
-                            typeof(bool), typeof(bool), typeof(bool), typeof(bool) }),
-                postfix: Postfix(typeof(Patch_TraverseParms_AvoidFog)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn), nameof(Pawn.GetPathContext)),
-                postfix: Postfix(typeof(Patch_GetPathContext)));
-
-            h.Patch(
-                AccessTools.Method(typeof(AlienPartGenerator.BodyAddon), "CanDrawAddon",
-                    new[] { typeof(Pawn) }),
-                postfix: Postfix(typeof(Patch_BodyAddon_CanDrawAddon)));
-            h.Patch(
-                AccessTools.Method(typeof(Pawn), nameof(Pawn.ExposeData)),
-                prefix: Prefix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
-                postfix: Postfix(typeof(Patch_Pawn_ExposeData_SavePositionFix)),
-                finalizer: Finalizer(typeof(Patch_Pawn_ExposeData_SavePositionFix)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Pawn), nameof(Pawn.SpawnSetup)),
-                postfix: Postfix(typeof(Patch_SpawnSetup_EnsureNaturalWings)));
-
-            h.Patch(
-                AccessTools.Method(typeof(Game), nameof(Game.DeinitAndRemoveMap)),
-                postfix: Postfix(typeof(Patch_Game_DeinitAndRemoveMap)));
-
-
-
-
-            Log.Message("[PoniesOfTheRim] Pegasus flight system initialized.");
-        }
-
-        private static HarmonyMethod Prefix(Type type) => new(AccessTools.Method(type, "Prefix"));
-        private static HarmonyMethod Postfix(Type type) => new(AccessTools.Method(type, "Postfix"));
-
-        private static HarmonyMethod Finalizer(Type type)
-        {
-            MethodInfo m = AccessTools.Method(type, "Finalizer");
-            return m == null ? null : new HarmonyMethod(m);
-        }
-    }
-
 
     public class WingHediffExtension : DefModExtension
     {

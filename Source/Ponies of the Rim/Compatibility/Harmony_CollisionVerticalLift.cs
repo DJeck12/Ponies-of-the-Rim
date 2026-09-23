@@ -14,8 +14,6 @@ namespace PoniesOfTheRim.Compatibility
 
         private static readonly AccessTools.FieldRef<Pawn, Pawn_FlightTracker> FlightRef = CreateFlightRef();
 
-        private static bool _errorLogged;
-
         private static AccessTools.FieldRef<Pawn, Pawn_FlightTracker> CreateFlightRef()
         {
             try
@@ -79,7 +77,7 @@ namespace PoniesOfTheRim.Compatibility
             {
                 __state = 0f;
                 _groundedForCalculation = null;
-                LogOnce(arg);
+                PonyLog.WarnCaught("CE: не удалось рассчитать высоту летящей пешки для попаданий.", arg);
             }
         }
 
@@ -94,17 +92,6 @@ namespace PoniesOfTheRim.Compatibility
         public static void Finalizer()
         {
             _groundedForCalculation = null;
-        }
-
-        private static void LogOnce(Exception arg)
-        {
-            if (_errorLogged)
-            {
-                return;
-            }
-
-            _errorLogged = true;
-            Log.Warning($"[PoniesOfTheRim] CE CollisionVertical lift patch: {arg}");
         }
     }
 }

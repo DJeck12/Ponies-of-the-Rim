@@ -96,8 +96,8 @@ namespace PoniesOfTheRim.Abilities
                 affected++;
             }
 
-            if (affected > 0 && Prefs.DevMode)
-                Log.Message($"[PoniesOfTheRim] AbilityToggleEnforcer: обработано {affected} пешек после загрузки.");
+            if (affected > 0)
+                PonyLog.Trace($"Способности: после загрузки обработано пешек — {affected}.");
         }
 
         public static void EnforcePawn(Pawn pawn)

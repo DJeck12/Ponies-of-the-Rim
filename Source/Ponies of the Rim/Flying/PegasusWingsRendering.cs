@@ -180,7 +180,6 @@ namespace PoniesOfTheRim.Flying
     {
         private static PawnRenderNodeTagDef _wingTagDef;
         private static bool _wingTagDefResolved;
-        private static bool _missingTagWarned;
         private PonyRenderNodePegasusWings _node;
         private bool _lastFlightEnabled;
 
@@ -227,12 +226,9 @@ namespace PoniesOfTheRim.Flying
             }
             if (_wingTagDef == null)
             {
-                if (!_missingTagWarned)
-                {
-                    _missingTagWarned = true;
-                    Log.Warning("[PoniesOfTheRim] PawnRenderNodeTagDef 'PegasusWings' не найден — " +
-                                "анимация крыльев отключена. Проверьте, что def объявлен в XML.");
-                }
+                PonyLog.WarnOnce("CompPegasusWingsRenderer.NoWingTag",
+                    "Полёт: PawnRenderNodeTagDef 'PegasusWings' не найден — анимация крыльев отключена. " +
+                    "Проверьте, что def объявлен в XML.");
                 return null;
             }
 

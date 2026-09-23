@@ -12,14 +12,14 @@ namespace PoniesOfTheRim
 {
     public class PoniesOfTheRimSettingsData : ModSettings
     {
-        public bool classical           = true;
-        public bool ideology            = true;
-        public bool abilities           = true;
-        public bool prosthetics         = true;
-        public bool anthro              = true;
+        public bool classical = true;
+        public bool ideology = true;
+        public bool abilities = true;
+        public bool prosthetics = true;
+        public bool anthro = true;
         public bool enableRegularHorses = true;
-        public bool enableFoodGenes     = true;
-        public bool enableFoodDebuffs   = true;
+        public bool enableFoodGenes = true;
+        public bool enableFoodDebuffs = true;
 
         public Dictionary<string, bool> patchToggles = new();
 
@@ -34,10 +34,10 @@ namespace PoniesOfTheRim
 
         public void ClassicalSettingsToggle(bool action)
         {
-            ideology            = action;
-            abilities           = action;
-            prosthetics         = action;
-            anthro              = action;
+            ideology = action;
+            abilities = action;
+            prosthetics = action;
+            anthro = action;
             enableRegularHorses = action;
         }
 
@@ -45,21 +45,21 @@ namespace PoniesOfTheRim
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref classical,            "classical",            true, true);
-            Scribe_Values.Look(ref ideology,             "ideology",             true, true);
-            Scribe_Values.Look(ref abilities,            "abilities",            true, true);
-            Scribe_Values.Look(ref prosthetics,          "prosthetics",          true, true);
-            Scribe_Values.Look(ref anthro,               "anthro",               true, true);
-            Scribe_Values.Look(ref enableRegularHorses,  "enableRegularHorses",  true, true);
-            Scribe_Values.Look(ref enableFoodGenes,      "enableFoodGenes",      true, true);
-            Scribe_Values.Look(ref enableFoodDebuffs,    "enableFoodDebuffs",    true, true);
+            Scribe_Values.Look(ref classical, "classical", true, true);
+            Scribe_Values.Look(ref ideology, "ideology", true, true);
+            Scribe_Values.Look(ref abilities, "abilities", true, true);
+            Scribe_Values.Look(ref prosthetics, "prosthetics", true, true);
+            Scribe_Values.Look(ref anthro, "anthro", true, true);
+            Scribe_Values.Look(ref enableRegularHorses, "enableRegularHorses", true, true);
+            Scribe_Values.Look(ref enableFoodGenes, "enableFoodGenes", true, true);
+            Scribe_Values.Look(ref enableFoodDebuffs, "enableFoodDebuffs", true, true);
 
-            Scribe_Collections.Look(ref patchToggles,   "patchToggles",   LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref patchToggles, "patchToggles", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref abilityToggles, "abilityToggles", LookMode.Value, LookMode.Value);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                patchToggles   ??= new();
+                patchToggles ??= new();
                 abilityToggles ??= new();
             }
 
@@ -84,7 +84,7 @@ namespace PoniesOfTheRim
             }
 
             if (registered > 0)
-                Log.Message($"[PoniesOfTheRim] Зарегистрировано {registered} переключаемых способностей в настройках.");
+                PonyLog.Trace($"Зарегистрировано {registered} переключаемых способностей в настройках.");
         }
     }
 
@@ -92,26 +92,27 @@ namespace PoniesOfTheRim
     {
         public static PoniesOfTheRimSettingsData settings;
 
-        public static Dictionary<string, bool>   defaultPatchToggles   = new();
+        public static Dictionary<string, bool> defaultPatchToggles = new();
 
-        public static Dictionary<string, bool>   defaultAbilityToggles = new();
+        public static Dictionary<string, bool> defaultAbilityToggles = new();
 
-        public static Dictionary<string, string> patchLabels           = new();
+        public static Dictionary<string, string> patchLabels = new();
 
-        public static Dictionary<string, string> patchDescriptions     = new();
+        public static Dictionary<string, string> patchDescriptions = new();
 
         private Dictionary<string, bool> _patchSnapshot = new();
 
-        private int      currentTab        = 0;
-        private Vector2  generalScroll     = Vector2.zero;
-        private Vector2  patchScroll       = Vector2.zero;
-        private bool     abilitiesExpanded = true;
-        private bool     dietExpanded      = true;
+        private bool _patchTogglesScanned;
+
+        private int currentTab = 0;
+        private Vector2 generalScroll = Vector2.zero;
+        private Vector2 patchScroll = Vector2.zero;
+        private bool abilitiesExpanded = true;
+        private bool dietExpanded = true;
 
         public PoniesOfTheRimSettings(ModContentPack content) : base(content)
         {
             settings = GetSettings<PoniesOfTheRimSettingsData>();
-            InitializePatchToggles(content);
         }
 
         public static void RegisterAbilityToggle(string defName, bool defaultEnabled)
@@ -121,7 +122,7 @@ namespace PoniesOfTheRim
                 settings.abilityToggles[defName] = defaultEnabled;
         }
 
-        private void InitializePatchToggles(ModContentPack content)
+        private void InitializePatchToggles()
         {
             int togglesFound = 0;
             int filesParsed = 0;
@@ -140,7 +141,7 @@ namespace PoniesOfTheRim
                     }
                     catch (Exception ex)
                     {
-                        Log.Error("[PoniesOfTheRim] Ошибка перечисления патчей в " + patchDir + ": " + ex.Message);
+                        PonyLog.Error("Ошибка перечисления патчей в " + patchDir + ": " + ex.Message);
                         continue;
                     }
                     foreach (string file in files)
@@ -148,14 +149,14 @@ namespace PoniesOfTheRim
                         try
                         {
                             string raw = File.ReadAllText(file);
-                            if (!raw.Contains("PoniesOfTheRim.PatchOperationToggleable"))
+                            if (!raw.Contains("PoniesOfTheRim.PatchOperation.PatchOperationToggleable"))
                             {
                                 continue;
                             }
                             filesParsed++;
                             XmlDocument doc = new XmlDocument();
                             doc.LoadXml(raw);
-                            XmlNodeList ops = doc.SelectNodes("//*[starts-with(@Class,'PoniesOfTheRim.PatchOperationToggleable')]");
+                            XmlNodeList ops = doc.SelectNodes("//*[starts-with(@Class,'PoniesOfTheRim.PatchOperation.PatchOperationToggleable')]");
                             if (ops == null)
                             {
                                 continue;
@@ -177,7 +178,7 @@ namespace PoniesOfTheRim
                                 string description = op.SelectSingleNode("description")?.InnerText?.Trim();
                                 if (Prefs.DevMode && defaultPatchToggles.TryGetValue(id, out bool prev) && prev != defaultState)
                                 {
-                                    Log.Warning("[PoniesOfTheRim] settingId '" + id + "' объявлен с разными defaultState в разных файлах — использую последний.");
+                                    PonyLog.Warn("settingId '" + id + "' объявлен с разными defaultState в разных файлах — использую последний.");
                                 }
                                 patchLabels[id] = ((!string.IsNullOrEmpty(label)) ? label : id);
                                 patchDescriptions[id] = description ?? string.Empty;
@@ -191,15 +192,12 @@ namespace PoniesOfTheRim
                         }
                         catch (Exception ex)
                         {
-                            Log.Error("[PoniesOfTheRim] Ошибка чтения патч-XML " + file + ": " + ex.Message);
+                            PonyLog.Error("Ошибка чтения патч-XML " + file + ": " + ex.Message);
                         }
                     }
                 }
             }
-            if (Prefs.DevMode)
-            {
-                Log.Message("[PoniesOfTheRim] Тумблеры патчей: " + togglesFound + " записей из " + filesParsed + " файлов по всем модам.");
-            }
+            PonyLog.Trace("Тумблеры патчей: " + togglesFound + " записей из " + filesParsed + " файлов по всем модам.");
             _patchSnapshot = new Dictionary<string, bool>(settings.patchToggles);
         }
 
@@ -228,6 +226,12 @@ namespace PoniesOfTheRim
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
+            if (!_patchTogglesScanned)
+            {
+                _patchTogglesScanned = true;
+                InitializePatchToggles();
+            }
+
             List<TabRecord> tabs = new()
             {
                 new TabRecord("Pony_TabGeneral".Translate(), () => currentTab = 0, currentTab == 0),
@@ -235,7 +239,7 @@ namespace PoniesOfTheRim
             };
 
             Rect contentRect = inRect;
-            contentRect.yMin += 32f;             
+            contentRect.yMin += 32f;
             TabDrawer.DrawTabs(contentRect, tabs);
 
             if (currentTab == 0)
@@ -247,13 +251,13 @@ namespace PoniesOfTheRim
 
         private void DrawGeneralTab(Rect rect)
         {
-            float lineHeight   = Text.LineHeight + 4f;
-            float baseLines    = 8f;
+            float lineHeight = Text.LineHeight + 4f;
+            float baseLines = 8f;
             float abilityLines = settings.abilities && abilitiesExpanded
                 ? settings.abilityToggles.Count + 1f : 1f;
-            float dietLines    = settings.classical && settings.enableFoodGenes && dietExpanded
+            float dietLines = settings.classical && settings.enableFoodGenes && dietExpanded
                 ? 2f : 1f;
-            float totalHeight  = (baseLines + abilityLines + dietLines) * lineHeight + 60f;
+            float totalHeight = (baseLines + abilityLines + dietLines) * lineHeight + 60f;
 
             Rect viewRect = new Rect(0f, 0f, rect.width - 16f, Mathf.Max(totalHeight, rect.height));
             Widgets.BeginScrollView(rect, ref generalScroll, viewRect);
@@ -280,7 +284,7 @@ namespace PoniesOfTheRim
         {
             ls.Label("SettingsHeader".Translate());
 
-            Rect row  = ls.GetRect(28f);
+            Rect row = ls.GetRect(28f);
             float btnW = row.width * 0.25f;
 
             if (Widgets.ButtonText(new Rect(row.x, row.y, btnW, 28f), "SettingsDefulatAll".Translate()))
@@ -321,7 +325,7 @@ namespace PoniesOfTheRim
             bool prev = masterEnabled;
             Widgets.Checkbox(row.xMax - 24f, row.y, ref masterEnabled);
             if (!prev && masterEnabled)
-                expanded = true;    
+                expanded = true;
 
             if (!tooltip.NullOrEmpty())
                 TooltipHandler.TipRegion(row, tooltip);
@@ -339,7 +343,7 @@ namespace PoniesOfTheRim
             if (!settings.classical)
             {
                 settings.ClassicalSettingsToggle(false);
-                settings.enableFoodGenes   = false;
+                settings.enableFoodGenes = false;
                 settings.enableFoodDebuffs = false;
                 return;
             }
@@ -399,7 +403,7 @@ namespace PoniesOfTheRim
 
         private void DrawPatchTab(Rect rect)
         {
-            if (settings.patchToggles.Count == 0)
+            if (defaultPatchToggles.Count == 0)
             {
                 Listing_Standard ls = new();
                 ls.Begin(rect);
@@ -410,9 +414,9 @@ namespace PoniesOfTheRim
 
             bool restartNeeded = PatchSettingsChanged();
 
-            float lineHeight  = Text.LineHeight + 4f;
+            float lineHeight = Text.LineHeight + 4f;
             float extraHeight = restartNeeded ? 40f : 0f;
-            float totalHeight = settings.patchToggles.Count * lineHeight + 60f + extraHeight;
+            float totalHeight = defaultPatchToggles.Count * lineHeight + 60f + extraHeight;
 
             Rect viewRect = new Rect(0f, 0f, rect.width - 16f, Mathf.Max(totalHeight, rect.height));
             Widgets.BeginScrollView(rect, ref patchScroll, viewRect);
@@ -430,7 +434,7 @@ namespace PoniesOfTheRim
             {
                 ls2.Gap(4f);
                 Rect btnRow = ls2.GetRect(28f);
-                GUI.color = new Color(1f, 0.65f, 0.1f);   
+                GUI.color = new Color(1f, 0.65f, 0.1f);
                 if (Widgets.ButtonText(btnRow, "\u26a0 " + "Pony_RestartNow".Translate()))
                 {
                     GUI.color = Color.white;
@@ -438,8 +442,8 @@ namespace PoniesOfTheRim
                         "Pony_RestartConfirm".Translate(),
                         () =>
                         {
-                            WriteSettings();                  
-                            GenCommandLine.Restart();       
+                            WriteSettings();
+                            GenCommandLine.Restart();
                         },
                         destructive: false));
                 }
@@ -449,9 +453,9 @@ namespace PoniesOfTheRim
 
             ls2.GapLine(6f);
 
-            foreach (string settingId in settings.patchToggles.Keys.ToList())
+            foreach (string settingId in defaultPatchToggles.Keys)
             {
-                bool value = settings.patchToggles[settingId];
+                bool value = settings.patchToggles.GetWithFallback(settingId, defaultPatchToggles[settingId]);
 
                 string displayLabel = patchLabels.TryGetValue(settingId, out string lbl) && !lbl.NullOrEmpty()
                     ? lbl.Translate()
@@ -492,7 +496,7 @@ namespace PoniesOfTheRim
         {
             settings.classical = true;
             settings.ClassicalSettingsDefault();
-            settings.enableFoodGenes   = true;
+            settings.enableFoodGenes = true;
             settings.enableFoodDebuffs = true;
 
             foreach (string key in defaultAbilityToggles.Keys)

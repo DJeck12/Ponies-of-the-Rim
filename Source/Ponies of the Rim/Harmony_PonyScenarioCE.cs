@@ -29,7 +29,7 @@ namespace PoniesOfTheRim
             }
             catch (Exception arg)
             {
-                Log.Warning($"[PoniesOfTheRim] ScenPart_StartingThing_Defined.{field} не найдено:\n{arg}");
+                PonyLog.Warn($"ScenPart_StartingThing_Defined.{field} не найдено — сценарии не проверены:\n{arg}");
                 return null;
             }
         }
@@ -44,7 +44,7 @@ namespace PoniesOfTheRim
             ModContentPack owner = OwnModContentPack();
             if (owner == null)
             {
-                Log.Warning("[PoniesOfTheRim] Не удалось определить собственный мод — сценарии не проверены.");
+                PonyLog.Warn("Не удалось определить собственный мод — сценарии не проверены.");
                 return;
             }
 
@@ -92,14 +92,14 @@ namespace PoniesOfTheRim
 
             if (assigned.Count > 0)
             {
-                Log.Message("[PoniesOfTheRim] Сценарии: материал назначен для " + assigned.Count + " предмет(ов):\n  " +
-                            string.Join("\n  ", assigned.ToArray()));
+                PonyLog.Trace("Сценарии: материал назначен для " + assigned.Count + " предмет(ов):\n  " +
+                              string.Join("\n  ", assigned.ToArray()));
             }
 
             if (cleared.Count > 0)
             {
-                Log.Message("[PoniesOfTheRim] Сценарии: материал снят с " + cleared.Count + " предмет(ов):\n  " +
-                            string.Join("\n  ", cleared.ToArray()));
+                PonyLog.Trace("Сценарии: материал снят с " + cleared.Count + " предмет(ов):\n  " +
+                              string.Join("\n  ", cleared.ToArray()));
             }
         }
 

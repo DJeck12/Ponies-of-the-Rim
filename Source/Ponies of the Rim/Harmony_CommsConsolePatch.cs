@@ -21,7 +21,7 @@ namespace PoniesOfTheRim
             string disconnectText = "(" + "Disconnect".Translate() + ")";
             int disconnectIndex = __result.options.FindIndex(o => GetOptionText(o) == disconnectText);
 
-                        bool canNegotiate;
+            bool canNegotiate;
             if (StatDefOf.NegotiationAbility.Worker.IsDisabledFor(negotiator))
             {
                 canNegotiate = false;
@@ -36,7 +36,7 @@ namespace PoniesOfTheRim
             AddQuestOptions(__result, localResult, conExt, negotiator, faction, canNegotiate, ref disconnectIndex);
         }
 
-                                private static void AddTextOptions(DiaNode result, DiaNode localResult, CommsConsoleExtension conExt, Pawn negotiator, Faction faction, bool canNegotiate, ref int disconnectIndex)
+        private static void AddTextOptions(DiaNode result, DiaNode localResult, CommsConsoleExtension conExt, Pawn negotiator, Faction faction, bool canNegotiate, ref int disconnectIndex)
         {
             if (conExt.texts == null) return;
 
@@ -75,11 +75,9 @@ namespace PoniesOfTheRim
             FactionIncidentCooldown cooldownComp = Find.World.GetComponent<FactionIncidentCooldown>();
             if (cooldownComp == null)
             {
-                Log.ErrorOnce(
-                    "[PoniesOfTheRim] FactionIncidentCooldown WorldComponent not found! " +
-                    "This should be auto-registered by RimWorld. Check that the assembly is loaded correctly.",
-                    "PoniesOfTheRim_NoCooldownComp".GetHashCode()
-                );
+                PonyLog.ErrorOnce("CommsConsole.NoCooldownComp",
+                    "Консоль связи: WorldComponent FactionIncidentCooldown не найден — события фракций через консоль недоступны. " +
+                    "Он регистрируется RimWorld автоматически; проверьте, что сборка мода загружена корректно.");
                 return;
             }
 
@@ -91,16 +89,14 @@ namespace PoniesOfTheRim
                 IncidentDef incidentDef = DefDatabase<IncidentDef>.GetNamed(incident.incidentDef, false);
                 if (incidentDef == null)
                 {
-                    Log.WarningOnce(
-                        $"[PoniesOfTheRim] IncidentDef '{incident.incidentDef}' not found.",
-                        incident.incidentDef.GetHashCode()
-                    );
+                    PonyLog.WarnOnce("CommsConsole.NoIncident|" + incident.incidentDef,
+                        $"Консоль связи: IncidentDef '{incident.incidentDef}' не найден — кнопка события пропущена.");
                     continue;
                 }
 
                 var cooldownKey = new CooldownKey(faction, incident.incidentDef);
 
-                                bool canTrigger = true;
+                bool canTrigger = true;
                 string disableReason = null;
 
                 CheckCanNegotiate(canNegotiate, ref canTrigger, ref disableReason);
@@ -123,7 +119,7 @@ namespace PoniesOfTheRim
                     };
                     incidentNode.options.Add(okOption);
 
-                                        var capturedIncident = incident;
+                    var capturedIncident = incident;
                     var capturedDef = incidentDef;
                     var capturedKey = cooldownKey;
 
@@ -153,7 +149,7 @@ namespace PoniesOfTheRim
                 if (string.IsNullOrEmpty(questSet.questButtonText) || !questSet.HasAnyQuest)
                     continue;
 
-                                List<QuestScriptDef> validQuests = new List<QuestScriptDef>();
+                List<QuestScriptDef> validQuests = new List<QuestScriptDef>();
                 foreach (string defName in questSet.AllQuestDefs)
                 {
                     QuestScriptDef qDef = DefDatabase<QuestScriptDef>.GetNamed(defName, false);
@@ -163,16 +159,14 @@ namespace PoniesOfTheRim
                     }
                     else
                     {
-                        Log.WarningOnce(
-                            $"[PoniesOfTheRim] QuestScriptDef '{defName}' not found.",
-                            defName.GetHashCode()
-                        );
+                        PonyLog.WarnOnce("CommsConsole.NoQuest|" + defName,
+                            $"Консоль связи: QuestScriptDef '{defName}' не найден — квест пропущен.");
                     }
                 }
 
                 if (validQuests.Count == 0) continue;
 
-                                var cooldownKey = new CooldownKey(faction, "questpool_" + questSet.questButtonText);
+                var cooldownKey = new CooldownKey(faction, "questpool_" + questSet.questButtonText);
 
                 bool canTrigger = true;
                 string disableReason = null;
@@ -247,13 +241,13 @@ namespace PoniesOfTheRim
 
         private static void ExecuteQuest(List<QuestScriptDef> validQuests, QuestSettings questSet, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
         {
-                        QuestScriptDef chosenQuest = validQuests.RandomElement();
+            QuestScriptDef chosenQuest = validQuests.RandomElement();
 
             int delayTicks = CalculateDelayTicks(questSet.delayDaysMin, questSet.delayDaysMax);
 
             if (delayTicks > 0)
             {
-                                DelayedQuest delayed = new DelayedQuest
+                DelayedQuest delayed = new DelayedQuest
                 {
                     questDefName = chosenQuest.defName,
                     faction = faction,
@@ -285,7 +279,7 @@ namespace PoniesOfTheRim
 
                 Slate slate = new Slate();
 
-                                slate.Set("faction", faction);
+                slate.Set("faction", faction);
                 slate.Set("commsFaction", faction);
 
                 if (faction.leader != null)
@@ -293,7 +287,7 @@ namespace PoniesOfTheRim
                     slate.Set("asker", faction.leader);
                 }
 
-                                Settlement settlement = FindBestSettlementForFaction(faction);
+                Settlement settlement = FindBestSettlementForFaction(faction);
                 if (settlement != null)
                 {
                     slate.Set("settlement", settlement);
@@ -305,7 +299,7 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Failed to generate quest '{questScriptDef.defName}' for faction '{faction?.Name}': {ex}");
+                PonyLog.Error($"Консоль связи: не удалось создать квест '{questScriptDef?.defName}' для фракции '{faction?.Name}':\n{ex}");
             }
             finally
             {
@@ -341,7 +335,7 @@ namespace PoniesOfTheRim
             return text;
         }
 
-                                                                                        
+
         private static TaggedString TranslateWithContext(string key, Pawn negotiator, Faction faction)
         {
             if (string.IsNullOrEmpty(key)) return "";
@@ -372,7 +366,7 @@ namespace PoniesOfTheRim
         {
             if (!canTrigger) return;
 
-                        if (minGoodwill != int.MinValue && faction.PlayerGoodwill < minGoodwill)
+            if (minGoodwill != int.MinValue && faction.PlayerGoodwill < minGoodwill)
             {
                 canTrigger = false;
                 disableReason = "PonyComms_MinGoodwillRequired".Translate(minGoodwill, faction.PlayerGoodwill);
@@ -423,7 +417,7 @@ namespace PoniesOfTheRim
 
         private static void InsertOptionSafely(DiaNode result, DiaOption newOption, ref int disconnectIndex)
         {
-                        string newText = GetOptionText(newOption);
+            string newText = GetOptionText(newOption);
             if (result.options.Any(o => GetOptionText(o) == newText))
                 return;
 

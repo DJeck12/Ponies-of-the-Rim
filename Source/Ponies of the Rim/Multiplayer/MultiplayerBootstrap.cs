@@ -19,19 +19,26 @@ namespace PoniesOfTheRim.Multiplayer
         private static readonly Harmony Harmony = new(HarmonyId);
         public static bool Active { get; private set; }
 
+        private static int _patched;
+        private static int _failed;
+
         static MultiplayerBootstrap()
         {
             if (!MultiplayerCompat.Loaded)
                 return;
 
             Active = true;
-            Log.Message("[PoniesOfTheRim] Multiplayer: обнаружен — устанавливаю патч совместимости.");
+            PonyLog.Trace("Multiplayer: обнаружен — устанавливаю патч совместимости.");
 
             RunStage(RegisterSyncMethods, "sync-методы");
             RunStage(PatchStylingStationDummyPawn, "стайлинг-станция (дубль пешки)");
-            RunStage(PatchAbilityIdAudit, "аудит выдачи способностей");
+            if (Prefs.DevMode)
+            {
+                RunStage(PatchAbilityIdAudit, "аудит выдачи способностей");
+            }
 
-            Log.Message($"[PoniesOfTheRim] Multiplayer: патч совместимости готов, sync-методов — {MultiplayerCompat.Registered.Count}.");
+            PonyLog.Trace($"Multiplayer: готово — sync-методов {MultiplayerCompat.Registered.Count}, " +
+                          $"патчей установлено {_patched}, ошибок {_failed}.");
         }
 
         private static void RegisterSyncMethods()
@@ -42,10 +49,11 @@ namespace PoniesOfTheRim.Multiplayer
 
         private static void TrySync(Type type, string methodName)
         {
-            if (MultiplayerCompat.RegisterSyncMethod(type, methodName))
-                Log.Message($"[PoniesOfTheRim] Multiplayer: ✓ sync {type.Name}.{methodName}");
-            else
-                Log.Warning($"[PoniesOfTheRim] Multiplayer: ✗ sync {type.Name}.{methodName} — метод не зарегистрирован.");
+            if (!MultiplayerCompat.RegisterSyncMethod(type, methodName))
+            {
+                _failed++;
+                PonyLog.Warn($"Multiplayer: ✗ sync {type.Name}.{methodName} — метод не зарегистрирован.");
+            }
         }
 
         private static void PatchStylingStationDummyPawn()
@@ -90,7 +98,8 @@ namespace PoniesOfTheRim.Multiplayer
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Multiplayer: этап '{label}' завершился с ошибкой:\n{ex}");
+                _failed++;
+                PonyLog.Error($"Multiplayer: этап '{label}' завершился с ошибкой:\n{ex}");
             }
         }
 
@@ -99,17 +108,19 @@ namespace PoniesOfTheRim.Multiplayer
         {
             if (original == null)
             {
-                Log.Error($"[PoniesOfTheRim] Multiplayer: метод не найден — '{label}'.");
+                _failed++;
+                PonyLog.Error($"Multiplayer: метод не найден — '{label}'.");
                 return;
             }
             try
             {
                 Harmony.Patch(original, prefix, postfix, transpiler);
-                Log.Message($"[PoniesOfTheRim] Multiplayer: ✓ {label}");
+                _patched++;
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Multiplayer: ошибка патча '{label}':\n{ex}");
+                _failed++;
+                PonyLog.Error($"Multiplayer: ошибка патча '{label}':\n{ex}");
             }
         }
     }
@@ -139,8 +150,8 @@ namespace PoniesOfTheRim.Multiplayer
                     if (!Reported.Add(key))
                         return;
 
-                    Log.Warning(
-                        $"[PoniesOfTheRim] Multiplayer: способность '{def.defName}' выдана пешке " +
+                    PonyLog.Warn(
+                        $"Multiplayer: способность '{def.defName}' выдана пешке " +
                         $"'{__instance.pawn?.LabelShortCap ?? "?"}' вне синхронизированного контекста " +
                         $"(Id = {ability.Id}, InInterface = {MultiplayerCompat.InInterface}). " +
                         $"Такой Id локален и приведёт к рассинхрону. Стек вызова:\n{Environment.StackTrace}");
@@ -149,7 +160,7 @@ namespace PoniesOfTheRim.Multiplayer
             }
             catch (Exception ex)
             {
-                Log.Warning($"[PoniesOfTheRim] Multiplayer: Patch_AbilityGrantAudit.Postfix: {ex.Message}");
+                PonyLog.WarnCaught("Multiplayer: сбой проверки выдачи способности.", ex);
             }
         }
     }

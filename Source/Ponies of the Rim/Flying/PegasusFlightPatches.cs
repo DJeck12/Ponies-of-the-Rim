@@ -18,8 +18,6 @@ namespace PoniesOfTheRim.Flying
     {
         private static readonly AccessTools.FieldRef<Pawn, Pawn_FlightTracker> flightRef = CreateFlightRef();
 
-        private static bool _suppressionLogged;
-
         private static AccessTools.FieldRef<Pawn, Pawn_FlightTracker> CreateFlightRef()
         {
             try { return AccessTools.FieldRefAccess<Pawn, Pawn_FlightTracker>("flight"); }
@@ -41,12 +39,9 @@ namespace PoniesOfTheRim.Flying
 
                 if (flightRef != null && flightRef(__instance) == null)
                 {
-                    if (!_suppressionLogged)
-                    {
-                        _suppressionLogged = true;
-                        Log.Warning($"[PoniesOfTheRim] Pawn.flight отсутствует у {__instance.LabelShortCap} — " +
-                                    "флаг Flying не выставлен во избежание NRE в сторонних модах.");
-                    }
+                    PonyLog.WarnOnce("Patch_Pawn_Flying.NoFlightTracker",
+                        $"Полёт: у пешки {__instance.LabelShortCap} нет Pawn.flight — флаг Flying не выставлен, " +
+                        "чтобы не вызвать NRE в сторонних модах.");
                     return;
                 }
 
@@ -54,7 +49,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                Log.Warning($"[PoniesOfTheRim] Patch_Pawn_Flying.Postfix: {e}");
+                PonyLog.WarnCaught("Полёт: сбой проверки, летит ли пешка.", e);
             }
         }
     }
@@ -70,8 +65,6 @@ namespace PoniesOfTheRim.Flying
 
         private static object _flyingEnumValue;
         private static readonly object BoxedZero = 0;
-
-        private static bool _errorLogged;
 
         private static AccessTools.FieldRef<Pawn_FlightTracker, Pawn> CreatePawnRef()
         {
@@ -104,11 +97,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                if (!_errorLogged)
-                {
-                    _errorLogged = true;
-                    Log.Warning($"[PoniesOfTheRim] Patch_FlightTracker_FlightTick.Prefix: {e}");
-                }
+                PonyLog.WarnCaught("Полёт: сбой обновления полёта пешки.", e);
                 return true;
             }
         }
@@ -137,7 +126,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                Log.Warning($"[PoniesOfTheRim] Patch_FlightTracker_ForceLand.Prefix: {e}");
+                PonyLog.WarnCaught("Полёт: сбой принудительной посадки.", e);
                 return true;
             }
         }
@@ -288,7 +277,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                Log.Error($"[PoniesOfTheRim] Patch_PathFinder_CreateRequest.Prefix: {e}");
+                PonyLog.ErrorCaught("Полёт: не удалось построить маршрут для летящей пешки.", e);
                 return true;
             }
             finally
@@ -499,7 +488,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                Log.Error($"[PoniesOfTheRim] ExposeData save position fix Prefix failed: {e}");
+                PonyLog.ErrorCaught("Полёт: сбой при сохранении позиции летящей пешки.", e);
             }
         }
 
@@ -516,7 +505,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                Log.Error($"[PoniesOfTheRim] ExposeData save position fix Postfix failed: {e}");
+                PonyLog.ErrorCaught("Полёт: сбой при восстановлении позиции летящей пешки.", e);
             }
         }
 
@@ -571,7 +560,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                Log.Error($"[PoniesOfTheRim] EnsureNaturalWings failed: {e}");
+                PonyLog.ErrorCaught("Полёт: не удалось восстановить природные крылья пешки.", e);
             }
         }
 
@@ -816,8 +805,6 @@ namespace PoniesOfTheRim.Flying
 
         private const float BobAmplitude = 0.012f;
 
-        private static bool _errorLogged;
-
         public static void Postfix(Pawn_DrawTracker __instance, ref Vector3 __result)
         {
             try
@@ -839,11 +826,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                if (!_errorLogged)
-                {
-                    _errorLogged = true;
-                    Log.Warning($"[PoniesOfTheRim] DrawPos body bob: {e}");
-                }
+                PonyLog.WarnCaught("Полёт: сбой анимации покачивания в полёте.", e);
             }
         }
     }

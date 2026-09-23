@@ -7,8 +7,6 @@ namespace PoniesOfTheRim.Compatibility
 {
     public static class Patch_CE_GetCollisionBodyFactors
     {
-        private static bool _errorLogged;
-
         public static void Postfix(Pawn pawn, ref Vector2 __result)
         {
             try
@@ -38,11 +36,7 @@ namespace PoniesOfTheRim.Compatibility
             }
             catch (Exception arg)
             {
-                if (!_errorLogged)
-                {
-                    _errorLogged = true;
-                    Log.Warning($"[PoniesOfTheRim] CE GetCollisionBodyFactors postfix: {arg}");
-                }
+                PonyLog.WarnCaught("CE: не удалось рассчитать габариты летящей пешки.", arg);
             }
         }
     }

@@ -25,7 +25,7 @@ namespace PoniesOfTheRim.Food
             List<PonyFoodGroupDef> groups = DefDatabase<PonyFoodGroupDef>.AllDefsListForReading;
             if (groups.Count == 0)
             {
-                Log.Warning("[PoniesOfTheRim] PonyFoodCache: не найдено ни одной PonyFoodGroupDef.");
+                PonyLog.Warn("PonyFoodCache: не найдено ни одной PonyFoodGroupDef — пищевые группы пони не работают.");
                 return;
             }
             for (int i = 0; i < groups.Count; i++)
@@ -39,7 +39,7 @@ namespace PoniesOfTheRim.Food
             }
             ApplyFoodEvents();
             fruits = MembersOf(Pony_DefOf.Pony_FoodGroup_Fruits);
-            Log.Message($"[PoniesOfTheRim] PonyFoodCache: групп {GroupMembers.Count}, фруктов и ягод {fruits.Count}.");
+            PonyLog.Trace($"PonyFoodCache: групп {GroupMembers.Count}, фруктов и ягод {fruits.Count}.");
         }
 
         public static bool IsPonyFruit(this ThingDef def)
@@ -227,7 +227,7 @@ namespace PoniesOfTheRim.Food
             AnyIngredientEvents = IngredientEvents.Count > 0;
             if (occupied > 0)
             {
-                Log.Message($"[PoniesOfTheRim] PonyFoodCache: ateEvent проставлен для {applied} дефов, пропущено {occupied} (поле занято другим модом).");
+                PonyLog.Trace($"PonyFoodCache: ateEvent проставлен для {applied} дефов, пропущено {occupied} (поле занято другим модом).");
             }
         }
     }

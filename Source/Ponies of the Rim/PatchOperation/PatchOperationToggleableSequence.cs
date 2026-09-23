@@ -28,7 +28,7 @@ namespace PoniesOfTheRim.PatchOperation
 
             if (operations == null)
             {
-                Log.Warning($"[PoniesOfTheRim] PatchOperationToggleableSequence '{settingId}': список operations равен null. Пропуск.");
+                PonyLog.Warn($"PatchOperationToggleableSequence '{settingId}': список operations равен null — пропуск.");
                 return false;
             }
 

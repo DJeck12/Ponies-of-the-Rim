@@ -5,6 +5,7 @@ using PoniesOfTheRim.Food;
 using PoniesOfTheRim.Genetics;
 using RimWorld;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Verse;
 
@@ -16,15 +17,19 @@ namespace PoniesOfTheRim
         public static readonly Harmony Harmony =
             new Harmony("Rimworld.PoniesOfTheRim.Core");
 
+        private static int _patched;
+        private static int _failed;
+
         static POTR_Bootstrap()
         {
-            Harmony = new Harmony("Rimworld.PoniesOfTheRim.Core");
-            Log.Message("[PoniesOfTheRim] Bootstrap: запуск.");
+            PonyLog.InstallMainThreadPump();
+            PonyLog.Trace("Bootstrap: запуск.");
             RunStage(RegisterCoreSetup, "CoreSetup");
             RunStage(RegisterCorePatches, "CorePatches");
             RunStage(RegisterBiotechPatches, "BiotechPatches");
+            RunStage(RegisterIdeologyPatches, "IdeologyPatches");
             RunStage(RegisterCompatibilityPatches, "CompatibilityPatches");
-            Log.Message("[PoniesOfTheRim] Bootstrap: завершён.");
+            PonyLog.Trace($"Bootstrap: завершён, патчей установлено {_patched}, ошибок {_failed}.");
         }
 
         private static void RunStage(Action stage, string label)
@@ -35,7 +40,8 @@ namespace PoniesOfTheRim
             }
             catch (Exception arg)
             {
-                Log.Error($"[PoniesOfTheRim] Bootstrap: этап '{label}' прерван исключением — часть патчей этапа не зарегистрирована:\n{arg}");
+                _failed++;
+                PonyLog.Error($"Bootstrap: этап '{label}' прерван исключением — часть патчей этапа не зарегистрирована:\n{arg}");
             }
         }
 
@@ -43,14 +49,19 @@ namespace PoniesOfTheRim
         {
             if (!ModsConfig.IdeologyActive)
             {
-                Log.Message("[PoniesOfTheRim] Ideology не активен — соответствующие патчи пропущены.");
+                PonyLog.Trace("Ideology не активен — соответствующие патчи пропущены.");
                 return;
             }
             if (!Patch_FoodUtility_ThoughtsFromIngesting.IsReady)
             {
                 return;
             }
-            TryPatch(AccessTools.Method(typeof(FoodUtility), "ThoughtsFromIngesting"), null, new HarmonyMethod(typeof(Patch_FoodUtility_ThoughtsFromIngesting), "Postfix"), null, "FoodUtility.ThoughtsFromIngesting (фрукты в составе блюда)");
+            TryPatch(
+                AccessTools.Method(typeof(FoodUtility), "ThoughtsFromIngesting"),
+                postfix: new HarmonyMethod(typeof(Patch_FoodUtility_ThoughtsFromIngesting),
+                                           nameof(Patch_FoodUtility_ThoughtsFromIngesting.Postfix)),
+                label: "FoodUtility.ThoughtsFromIngesting (фрукты в составе блюда)"
+            );
         }
 
         private static void RegisterCoreSetup()
@@ -60,13 +71,18 @@ namespace PoniesOfTheRim
             PonyFoodCache.Build();
             try
             {
-                StatDefOf.GlobalLearningFactor.parts ??= new System.Collections.Generic.List<StatPart>();
-                StatDefOf.GlobalLearningFactor.parts.Add(new StatPart_HiveMind());
-                Log.Message("[PoniesOfTheRim] Bootstrap: ✓ StatPart_HiveMind.");
+                StatDefOf.GlobalLearningFactor.parts ??= new List<StatPart>();
+                StatPart_HiveMind part = new StatPart_HiveMind
+                {
+                    parentStat = StatDefOf.GlobalLearningFactor
+                };
+                StatDefOf.GlobalLearningFactor.parts.Add(part);
+                PonyLog.Trace("Bootstrap: ✓ StatPart_HiveMind.");
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Bootstrap: ошибка StatPart_HiveMind:\n{ex}");
+                _failed++;
+                PonyLog.Error($"Bootstrap: ошибка StatPart_HiveMind:\n{ex}");
             }
         }
 
@@ -84,7 +100,8 @@ namespace PoniesOfTheRim
             TryPatch(
                 AccessTools.PropertyGetter(typeof(NameTriple), nameof(NameTriple.IsValid)),
                 postfix: new HarmonyMethod(typeof(Patch_DialogNamePawn_SingleName),
-                                           nameof(Patch_DialogNamePawn_SingleName.IsValid_Postfix))
+                                           nameof(Patch_DialogNamePawn_SingleName.IsValid_Postfix)),
+                label: "NameTriple.IsValid (одиночные имена)"
             );
 
             TryPatch(
@@ -167,14 +184,6 @@ namespace PoniesOfTheRim
             );
 
             TryPatch(
-                AccessTools.Method(typeof(LoadedModManager), "ApplyPatches"),
-                prefix: new HarmonyMethod(
-                    typeof(PatchesForPonySettings.LoadedModManager_ApplyPatches_Patch),
-                    nameof(PatchesForPonySettings.LoadedModManager_ApplyPatches_Patch.Prefix)),
-                label: "LoadedModManager.ApplyPatches"
-            );
-
-            TryPatch(
                 AccessTools.Method(typeof(MainMenuDrawer), nameof(MainMenuDrawer.DoExpansionIcons)),
                 postfix: new HarmonyMethod(typeof(MainMenuDiscordIconPatch), nameof(MainMenuDiscordIconPatch.Postfix)),
                 label: "MainMenuDrawer.DoExpansionIcons"
@@ -206,7 +215,11 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(typeof(PonyBabyHairPatch), nameof(PonyBabyHairPatch.PonyBabyHairPostfix)),
                 label: "PawnRenderNode_Hair.GraphicFor (baby hair)"
             );
-            TryPatch(AccessTools.Method(typeof(PawnGenerator), "GeneratePawn", new Type[1] { typeof(PawnGenerationRequest) }), null, new HarmonyMethod(typeof(PonyBabyHairPatch), "GeneratePawn_Postfix"), null, "PawnGenerator.GeneratePawn (baby hair)");
+            TryPatch(
+                AccessTools.Method(typeof(PawnGenerator), nameof(PawnGenerator.GeneratePawn), new[] { typeof(PawnGenerationRequest) }),
+                postfix: new HarmonyMethod(typeof(PonyBabyHairPatch), nameof(PonyBabyHairPatch.GeneratePawn_Postfix)),
+                label: "PawnGenerator.GeneratePawn (baby hair)"
+            );
             TryPatch(
                 AccessTools.Method(typeof(Page_ConfigureStartingPawns), "PreOpen"),
                 postfix: new HarmonyMethod(
@@ -227,7 +240,7 @@ namespace PoniesOfTheRim
         {
             if (!ModsConfig.BiotechActive)
             {
-                Log.Message("[PoniesOfTheRim] Biotech не активен — соответствующие патчи пропущены.");
+                PonyLog.Trace("Biotech не активен — соответствующие патчи пропущены.");
                 return;
             }
 
@@ -237,7 +250,14 @@ namespace PoniesOfTheRim
                 label: "PregnancyUtility.ApplyBirthOutcome (egg birth)"
             );
 
-            Patch_PregnancyUtility_RacialGenes.Register(Harmony);
+            PonyRacialGeneUtility.BuildCache();
+            TryPatch(
+                AccessTools.Method(typeof(PregnancyUtility), nameof(PregnancyUtility.GetInheritedGenes),
+                    new[] { typeof(Pawn), typeof(Pawn), typeof(bool).MakeByRefType() }),
+                postfix: new HarmonyMethod(typeof(Patch_PregnancyUtility_RacialGenes),
+                                           nameof(Patch_PregnancyUtility_RacialGenes.Postfix)),
+                label: "PregnancyUtility.GetInheritedGenes (расовый ген ребёнка)"
+            );
 
             TryPatch(
                 AccessTools.Method(typeof(LifeStageWorker_HumanlikeChild), "Notify_LifeStageStarted"),
@@ -258,56 +278,35 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(typeof(PonyFoodGeneRemovalPatch), nameof(PonyFoodGeneRemovalPatch.PonyFoodGeneRemovalForGeneratePawn)),
                 label: "PawnGenerator.GeneratePawn"
             );
-
         }
 
         private static void RegisterCompatibilityPatches()
         {
-            RegisterRooCompatibility();
-            RegisterFurCompatibility();
-        }
-
-        private static void RegisterFurCompatibility()
-        {
             FurCompatibilityPatch.EnsurePonyFurPaths();
-        }
-
-        private static void RegisterRooCompatibility()
-        {
-            bool anyActive =
-                ModsConfig.IsActive("tug.Minotaur")          ||
-                ModsConfig.IsActive("tug.Minotaur.Expanded") ||
-                ModsConfig.IsActive("V.Rooboid.Faun")        ||
-                ModsConfig.IsActive("tug.Satyr")             ||
-                ModsConfig.IsActive("tug.SatyrFaun.Expanded");
-
-            if (!anyActive)
-            {
-                Log.Message("[PoniesOfTheRim] Roo моды не обнаружены — патч пропущен.");
-                return;
-            }
         }
 
         private static void TryPatch(
             MethodInfo original,
-            HarmonyMethod prefix      = null,
-            HarmonyMethod postfix     = null,
-            HarmonyMethod transpiler  = null,
-            string label              = "")
+            HarmonyMethod prefix = null,
+            HarmonyMethod postfix = null,
+            HarmonyMethod transpiler = null,
+            string label = "")
         {
             if (original == null)
             {
-                Log.Error($"[PoniesOfTheRim] Bootstrap: метод не найден — '{label}'.");
+                _failed++;
+                PonyLog.Error($"Bootstrap: метод не найден — '{label}'.");
                 return;
             }
             try
             {
                 Harmony.Patch(original, prefix, postfix, transpiler);
-                Log.Message($"[PoniesOfTheRim] Bootstrap: ✓ {label}");
+                _patched++;
             }
             catch (Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Bootstrap: ошибка патча '{label}':\n{ex}");
+                _failed++;
+                PonyLog.Error($"Bootstrap: ошибка патча '{label}':\n{ex}");
             }
         }
     }

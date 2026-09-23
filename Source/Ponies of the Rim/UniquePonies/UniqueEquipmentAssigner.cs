@@ -24,7 +24,7 @@ namespace PoniesOfTheRim.UniquePonies
             }
             catch (Exception ex)
             {
-                Log.Warning("[PoniesOfTheRim] UniqueEquipmentAssigner error: " + ex.Message);
+                PonyLog.WarnCaught("Уникальные пони: не удалось выдать снаряжение.", ex);
             }
         }
 
@@ -81,7 +81,7 @@ namespace PoniesOfTheRim.UniquePonies
             }
             catch (Exception ex)
             {
-                Log.Warning("[PoniesOfTheRim] Failed to equip " + pawn.LabelShort + ": " + ex.Message);
+                PonyLog.WarnCaught($"Уникальные пони: не удалось экипировать {pawn.LabelShort}.", ex);
             }
             finally
             {

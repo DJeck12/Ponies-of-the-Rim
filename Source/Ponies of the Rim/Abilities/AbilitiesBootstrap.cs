@@ -24,7 +24,7 @@ namespace PoniesOfTheRim.Abilities
             }
             catch (System.Exception ex)
             {
-                Log.Error($"[PoniesOfTheRim] Abilities: ошибка регистрации патча '{patchName}': {ex}");
+                PonyLog.Error($"Способности: ошибка регистрации патча '{patchName}':\n{ex}");
             }
         }
     }

@@ -19,9 +19,9 @@ namespace PoniesOfTheRim.UniquePonies
         private static readonly bool _isPersonalitiesActive =
             ModLister.GetActiveModWithIdentifier("hahkethomemah.simplepersonalities") != null;
 
-        public const  float ElemWidth   = 93f;
-        public const  float ElemSpacing = 0f;
-        private static float BtnHeight => Page.StandardSize.y - 744f;    
+        public const float ElemWidth = 93f;
+        public const float ElemSpacing = 0f;
+        private static float BtnHeight => Page.StandardSize.y - 744f;
 
         public static Rect LastUniquePawnsRect;
         public static Rect LastCutiemarkRect;
@@ -45,19 +45,19 @@ namespace PoniesOfTheRim.UniquePonies
         {
             float modX = 0f;
             if (_isRandomPlusActive && !_isPersonalitiesActive) modX = -50f;
-            else if (_isPersonalitiesActive)                    modX =  100f;
+            else if (_isPersonalitiesActive) modX = 100f;
 
-            float h  = BtnHeight;                   
-            float iw = ElemWidth - 13f;                    
-            float x  = pageRect.x + 657f + modX;
-            float y  = pageRect.yMax - Page.StandardSize.y + 85;
+            float h = BtnHeight;
+            float iw = ElemWidth - 13f;
+            float x = pageRect.x + 657f + modX;
+            float y = pageRect.yMax - Page.StandardSize.y + 85;
             float cutieX = x + (ElemWidth - iw) / 2f;
 
             if (!isPony) y += 47f;
 
             LastUniquePawnsRect = new Rect(x, y, ElemWidth, h);
             LastCutiemarkRect = new Rect(cutieX, y + h + ElemSpacing, iw, iw);
-            LastTailRect        = new Rect(x, y + h + iw + ElemSpacing * 2f, ElemWidth, h);
+            LastTailRect = new Rect(x, y + h + iw + ElemSpacing * 2f, ElemWidth, h);
         }
 
         public static void DoWindowContents_Postfix(Page_ConfigureStartingPawns __instance, Rect rect)
@@ -103,10 +103,10 @@ namespace PoniesOfTheRim.UniquePonies
 
             if (ModsConfig.BiotechActive)
             {
-                req.ForcedCustomXenotype  = null;
-                req.AllowedXenotypes      = null;
-                req.ForceBaselinerChance  = 0f;
-                req.ForcedXenotype        = kind.xenotypeSet != null ? null : XenotypeDefOf.Baseliner;
+                req.ForcedCustomXenotype = null;
+                req.AllowedXenotypes = null;
+                req.ForceBaselinerChance = 0f;
+                req.ForcedXenotype = kind.xenotypeSet != null ? null : XenotypeDefOf.Baseliner;
             }
 
             req.Context = PawnGenerationContext.PlayerStarter;
@@ -121,9 +121,9 @@ namespace PoniesOfTheRim.UniquePonies
 
             if (oldPawn != null && !oldPawn.Destroyed)
             {
-                try   { oldPawn.Discard(silentlyRemoveReferences: true); }
+                try { oldPawn.Discard(silentlyRemoveReferences: true); }
                 catch (Exception ex)
-                { Log.Warning($"[PoniesOfTheRim] Failed to discard old pawn: {ex.Message}"); }
+                { PonyLog.WarnCaught("Не удалось убрать старую пешку с экрана выбора персонажей.", ex); }
             }
 
             PortraitsCache.Clear();

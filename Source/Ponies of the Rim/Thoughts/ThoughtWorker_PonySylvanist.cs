@@ -27,9 +27,8 @@ namespace PoniesOfTheRim.Thoughts
 
                     if (_sylvanistTrait == null)
                     {
-                        Log.ErrorOnce(
-                            "[PoniesOfTheRim] ThoughtWorker_Pony_Sylvanist: TraitDef 'Pony_Sylvanist' не найден.",
-                            738214551);
+                        PonyLog.ErrorOnce("ThoughtWorker_Pony_Sylvanist.NoTrait",
+                            "Мысли: TraitDef 'Pony_Sylvanist' не найден — мысль сильваниста не будет работать.");
                     }
                 }
                 return _sylvanistTrait;
@@ -46,10 +45,9 @@ namespace PoniesOfTheRim.Thoughts
 
                     if (cachedExtension == null)
                     {
-                        Log.ErrorOnce(
-                            "[PoniesOfTheRim] ThoughtWorker_Pony_Sylvanist: SylvanistExtension не найден на ThoughtDef '"
-                            + def.defName + "'. Добавьте <modExtensions><li Class=\"PoniesOfTheRim.SylvanistExtension\"> в XML.",
-                            def.shortHash);
+                        PonyLog.ErrorOnce("ThoughtWorker_Pony_Sylvanist|" + def.defName,
+                            "Мысли: у ThoughtDef '" + def.defName + "' нет SylvanistExtension — мысль не будет работать. " +
+                            "Добавьте <modExtensions><li Class=\"PoniesOfTheRim.Thoughts.SylvanistExtension\"> в XML.");
                     }
 
                     extensionCached = true;

@@ -19,9 +19,8 @@ namespace PoniesOfTheRim.Thoughts
 
                     if (cachedExtension == null)
                     {
-                        Log.ErrorOnce(
-                            "[PoniesOfTheRim] ThoughtWorker_OpinionForRaces: ThoughtExtension не найден на ThoughtDef '"
-                            + def.defName + "'.", def.shortHash);
+                        PonyLog.ErrorOnce("ThoughtWorker_OpinionForRaces|" + def.defName,
+                            "Мысли: у ThoughtDef '" + def.defName + "' нет ThoughtExtension — мысль не будет работать.");
                     }
                 }
                 return cachedExtension;

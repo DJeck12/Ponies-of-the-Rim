@@ -18,7 +18,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>True</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -108,8 +108,9 @@
     <Compile Include="Compatibility\CombatExtendedBootstrap.cs" />
     <Compile Include="Compatibility\CombatExtendedCompatibility.cs" />
     <Compile Include="Compatibility\CombatExtendedFlightExtension.cs" />
-    <Compile Include="Compatibility\Harmony_CECollisionBodyFactors .cs" />
+    <Compile Include="Compatibility\Harmony_CECollisionBodyFactors.cs" />
     <Compile Include="Compatibility\Harmony_CollisionVerticalLift.cs" />
+    <Compile Include="Flying\PegasusFlightBootstrap.cs" />
     <Compile Include="Multiplayer\MultiplayerBootstrap.cs" />
     <Compile Include="Multiplayer\MultiplayerCompat.cs" />
     <Compile Include="Multiplayer\StylingStation_MultiplayerFixes.cs" />
@@ -137,10 +138,11 @@
     <Compile Include="Harmony_CrystalPonyCrystalizeGraphicsBootstrap.cs" />
     <Compile Include="Harmony_HiveMind.cs" />
     <Compile Include="Gene_HiveMind.cs" />
-    <Compile Include="Compatibility\СEdiag.cs" />
+    <Compile Include="Compatibility\CEdiag.cs" />
     <Compile Include="PatchSingleName.cs" />
     <Compile Include="Flying\PegasusFlightUtility.cs" />
-    <Compile Include="Flying\PegasusFlightCache .cs" />
+    <Compile Include="Flying\PegasusFlightCache.cs" />
+    <Compile Include="PonyLog.cs" />
     <Compile Include="PonyMarkGenerationExtension.cs" />
     <Compile Include="OviparousPregnancyUtility.cs" />
     <Compile Include="Harmony_Bootstrap.cs" />
@@ -155,7 +157,7 @@
     <Compile Include="UniquePonies\UniqueEquipmentAssigner.cs" />
     <Compile Include="UniquePonies\UniqueNameAssigner.cs" />
     <Compile Include="UniquePonies\UniquePoniesBootstrap.cs" />
-    <Compile Include="UniquePonies\UniquePoniesConfig .cs" />
+    <Compile Include="UniquePonies\UniquePoniesConfig.cs" />
     <Compile Include="UniquePonies\UniqueStartingPoniesUI.cs" />
     <Compile Include="UniquePonies\UniqueBodyAddonAssigner.cs" />
     <Compile Include="UniquePonies\Harmony_PerfectMemoryPonyPatch.cs" />
@@ -168,7 +170,6 @@
     <Compile Include="CommsConsoleExtension.cs" />
     <Compile Include="FactionIncidentCooldown.cs" />
     <Compile Include="PonyMarkVariantSelector.cs" />
-    <Compile Include="Harmony_PatchesForPonySettings.cs" />
     <Compile Include="PatchOperation\PatchOperationToggleableAdd.cs" />
     <Compile Include="PatchOperation\PatchOperationToggleableReplace.cs" />
     <Compile Include="PatchOperation\PatchOperationToggleableSequence.cs" />

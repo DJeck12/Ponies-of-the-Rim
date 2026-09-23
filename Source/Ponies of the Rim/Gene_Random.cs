@@ -16,7 +16,8 @@ namespace PoniesOfTheRim
             GeneExtension extension = def.GetModExtension<GeneExtension>();
             if (extension == null || extension.genes == null || extension.genes.Count == 0)
             {
-                Log.Error("[PoniesOfTheRim] Gene_Random: у гена '" + def.defName + "' нет GeneExtension со списком genes — случайный выбор невозможен.");
+                PonyLog.ErrorOnce("Gene_Random.NoExtension|" + def.defName,
+                    "Гены: у гена '" + def.defName + "' нет GeneExtension со списком genes — случайный выбор невозможен.");
                 return;
             }
 
@@ -28,7 +29,8 @@ namespace PoniesOfTheRim
             }
             else
             {
-                Log.Warning("[PoniesOfTheRim] Gene_Random: для расы '" + pawn.def.defName + "' ни один вариант гена '" + def.defName + "' не разрешён — ничего не добавлено.");
+                PonyLog.WarnOnce("Gene_Random.NoneAllowed|" + def.defName + "|" + pawn.def.defName,
+                    "Гены: для расы '" + pawn.def.defName + "' ни один вариант гена '" + def.defName + "' не разрешён — ничего не добавлено.");
             }
             RemoveSelfIfNeeded(extension);
         }

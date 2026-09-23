@@ -79,11 +79,7 @@ namespace PoniesOfTheRim
             }
 
             pawn.health.RemoveHediff(pregnant);
-            if (Prefs.DevMode)
-            {
-                Log.Message("[PoniesOfTheRim] Gene_Oviparous: " + pawn.LabelShort +
-                            " отложила яйцо (отец: " + (father?.LabelShort ?? "нет") + ").");
-            }
+            PonyLog.Trace("Яйцекладка: " + pawn.LabelShort + " отложила яйцо (отец: " + (father?.LabelShort ?? "нет") + ").");
         }
 
         public static Hediff FindParentSourceHediff(Pawn mother)
@@ -124,8 +120,7 @@ namespace PoniesOfTheRim
                 ParentFieldCache[t] = fields;
                 if (Prefs.DevMode && (fields.father == null || fields.geneSet == null))
                 {
-                    Log.Warning("[PoniesOfTheRim] ExtractParents: у " + t.Name +
-                                " не найдены поля father/geneSet — яйцо будет без этих данных.");
+                    PonyLog.Warn("Яйцекладка: у " + t.Name + " не найдены поля father/geneSet — яйцо будет без данных об отце и генах.");
                 }
             }
             father = fields.father?.GetValue(source) as Pawn;
@@ -139,13 +134,12 @@ namespace PoniesOfTheRim
         {
             if (mother?.MapHeld == null)
             {
-                Log.Warning("[PoniesOfTheRim] TrySpawnEgg: " + (mother?.LabelShort ?? "null") +
-                            " не на карте — яйцо не создано.");
+                PonyLog.Warn("Яйцекладка: " + (mother?.LabelShort ?? "null") + " не на карте — яйцо не создано.");
                 return null;
             }
             if (EggDef == null)
             {
-                Log.Error("[PoniesOfTheRim] TrySpawnEgg: ThingDef 'Pony_AvianEgg' не найден!");
+                PonyLog.ErrorOnce("Gene_Oviparous.NoEggDef", "Яйцекладка: ThingDef 'Pony_AvianEgg' не найден — яйца не создаются.");
                 return null;
             }
             Thing thing = ThingMaker.MakeThing(EggDef);
@@ -211,7 +205,7 @@ namespace PoniesOfTheRim
             }
             if (migrated > 0)
             {
-                Log.Message("[PoniesOfTheRim] Миграция Pony_Oviparous: заменено " + migrated + " экз. гена старого класса из сейва.");
+                PonyLog.Trace("Миграция Pony_Oviparous: заменено " + migrated + " экз. гена старого класса из сейва.");
             }
         }
     }
