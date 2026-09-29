@@ -72,4 +72,15 @@
 		</rulePack>
 	</RulePackDef>
 
+	<RulePackDef>
+		<defName>Pony_Littlepip</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Only]</li>
+
+				<li>Only->Littlepip</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
 </Defs>

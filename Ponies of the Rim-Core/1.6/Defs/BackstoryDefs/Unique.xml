@@ -374,4 +374,69 @@
 		<linkedBackstory>Pony_TwilightSparkle_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
+<!-- Littlepip -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Vault_Dweller</defName>
+		<title>Vault dweller</title>
+		<titleShort>vaulter</titleShort>
+		<baseDesc>temp</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>-2</Animals>
+			<Crafting>8</Crafting>
+			<Social>2</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<passions>
+			<Crafting>1</Crafting>
+			<Intellectual>1</Intellectual>
+		</passions>
+		<forcedTraits>
+			<Neurotic>1</Neurotic>
+		</forcedTraits>
+		<requiredWorkTags>Crafting</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Pony_Wasteland_Adventurer</defName>
+		<title>Wasteland adventurer</title>
+		<titleShort>adventurer</titleShort>
+		<baseDesc>temp</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Pony_Unique</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>5</Melee>
+			<Medicine>4</Medicine>
+			<Social>6</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<passions>
+			<Shooting>2</Shooting>
+		</passions>
+		<forcedTraits>
+			<Kind>0</Kind>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+		<relationSettings>
+			<relationChanceModifierLover>0</relationChanceModifierLover>
+			<relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+    	</relationSettings>
+		<requiredWorkTags>PlantWork</requiredWorkTags>
+	</AlienRace.AlienBackstoryDef>
+
 </Defs>

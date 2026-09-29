@@ -176,4 +176,35 @@
 		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="ColonistPlayerBase">
+		<defName>Pony_LittlePip</defName>
+		<label>Littlepip</label>
+		<race>Pony_Unicorn</race>
+		<defaultFactionType>PonyColony</defaultFactionType>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<techHediffsChance>0</techHediffsChance>
+		<fixedChildBackstories>
+			<li>Pony_Vault_Dweller</li>
+		</fixedChildBackstories>
+		<fixedAdultBackstories>
+			<li>Pony_Wasteland_Adventurer</li>
+		</fixedAdultBackstories>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelDisallowTags>
+			<li>IndustrialBasic</li>
+		</apparelDisallowTags>
+		<forcedTraits>
+			<Gay>0</Gay>
+		</forcedTraits>
+		<forcedHair>Pony_DashHair</forcedHair>
+		<forcedHairColor>RGB(156,96,23)</forcedHairColor>
+		<skinColorOverride>RGB(190,197,216)</skinColorOverride>
+		<fixedGender>Female</fixedGender>
+		<nameMakerFemale>Pony_Littlepip</nameMakerFemale>
+		<generateInitialNonFamilyRelations>false</generateInitialNonFamilyRelations>
+	</PawnKindDef>
+
 </Defs>
