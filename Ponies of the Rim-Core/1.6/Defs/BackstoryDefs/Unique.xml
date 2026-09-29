@@ -146,6 +146,9 @@
 		<passions>
 			<Animals>2</Animals>
 		</passions>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+		</forcedTraits>
 		<!--<forcedTraits>
 			<Pony_CreatureTalk>1</Pony_CreatureTalk>
 		</forcedTraits>-->
@@ -162,14 +165,14 @@
 			<li>Pony_Unique</li>
 		</spawnCategories>
 		<skillGains>
-			<Shooting>8</Shooting>
+			<Shooting>4</Shooting>
 			<Cooking>4</Cooking>
 			<Animals>10</Animals>
 			<Medicine>8</Medicine>
 			<Intellectual>6</Intellectual>
 		</skillGains>
 		<passions>
-			<Medicine>1</Medicine>
+			<Medicine>2</Medicine>
 		</passions>
 		<forcedTraits>
 			<Kind>0</Kind>
