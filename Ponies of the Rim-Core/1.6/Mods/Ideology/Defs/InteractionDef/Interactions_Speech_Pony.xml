@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+<!--
 	<InteractionDef>
 		<defName>Pony_Fortune_Interaction</defName>
 		<label>oracle speech</label>
@@ -26,5 +26,5 @@
 			</rulesStrings>
 		</logRulesInitiator>
 	</InteractionDef>
-
+-->
 </Defs>

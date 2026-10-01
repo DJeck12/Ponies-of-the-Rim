@@ -2848,15 +2848,6 @@
 									</groups>
 								</li>
 								<li>
-									<def>Pony_CannonBone</def>
-									<customLabel>front right cannon bone</customLabel>
-									<coverage>0.075</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Arms</li>
-									</groups>
-								</li>
-								<li>
 									<def>Hand</def>
 									<customLabel>right hand</customLabel>
 									<coverage>0.14</coverage>
@@ -3453,15 +3444,6 @@
 									<def>Radius</def>
 									<customLabel>right radius</customLabel>
 									<coverage>0.1</coverage>
-									<depth>Inside</depth>
-									<groups>
-										<li>Arms</li>
-									</groups>
-								</li>
-								<li>
-									<def>Pony_CannonBone</def>
-									<customLabel>front right cannon bone</customLabel>
-									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
 										<li>Arms</li>
