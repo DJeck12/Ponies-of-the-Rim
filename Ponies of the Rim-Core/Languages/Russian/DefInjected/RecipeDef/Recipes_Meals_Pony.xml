@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_CookMealFine_Hay.label>Приготовить вкусное блюдо из сена</Pony_CookMealFine_Hay.label>
+	<Pony_CookMealFine_Hay.description>Приготовить вкусное блюдо из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой.</Pony_CookMealFine_Hay.description>
+	<Pony_CookMealFine_Hay.jobString>Готовит вкусное блюдо из сена</Pony_CookMealFine_Hay.jobString>
+	<Pony_CookMealFine_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</Pony_CookMealFine_Hay.ingredients.0.filter.customSummary>
+
+	<Pony_CookMealFineBulk_Hay.label>Приготовить вкусное блюдо из сена x4</Pony_CookMealFineBulk_Hay.label>
+	<Pony_CookMealFineBulk_Hay.description>Приготовить 4 вкусных блюда из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой.</Pony_CookMealFineBulk_Hay.description>
+	<Pony_CookMealFineBulk_Hay.jobString>Готовит 4 вкусных блюда из сена</Pony_CookMealFineBulk_Hay.jobString>
+	<Pony_CookMealFineBulk_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</Pony_CookMealFineBulk_Hay.ingredients.0.filter.customSummary>
+
+	<Pony_CookMealLavish_Hay.label>Приготовить шикарное блюдо из сена</Pony_CookMealLavish_Hay.label>
+	<Pony_CookMealLavish_Hay.description>Приготовить сложное изысканное блюдо из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой. Большая часть ингредиентов уйдёт впустую ради создания неповторимой палитры вкусов.</Pony_CookMealLavish_Hay.description>
+	<Pony_CookMealLavish_Hay.jobString>Готовит шикарное блюдо из сена</Pony_CookMealLavish_Hay.jobString>
+	<Pony_CookMealLavish_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</Pony_CookMealLavish_Hay.ingredients.0.filter.customSummary>
+
+	<Pony_CookMealLavishBulk_Hay.label>Приготовить шикарное блюдо из сена x4</Pony_CookMealLavishBulk_Hay.label>
+	<Pony_CookMealLavishBulk_Hay.description>Приготовить 4 сложных изысканных блюда из ингридиентов растительного происхождения и сена. Подойдёт для существ с преимущественно травоядной диетой. Большая часть ингредиентов уйдёт впустую ради создания неповторимой палитры вкусов.</Pony_CookMealLavishBulk_Hay.description>
+	<Pony_CookMealLavishBulk_Hay.jobString>Готовит 4 шикарных блюда из сена</Pony_CookMealLavishBulk_Hay.jobString>
+	<Pony_CookMealLavishBulk_Hay.ingredients.0.filter.customSummary>вегетарианские ингредиенты</Pony_CookMealLavishBulk_Hay.ingredients.0.filter.customSummary>
+
+</LanguageData>

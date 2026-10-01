@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_AteMeatAsHerbivore.stages.Ate_meat_as_herbivore.label>{PAWN_gender ? Съел : Съела} мясо</Pony_AteMeatAsHerbivore.stages.Ate_meat_as_herbivore.label>
+	<Pony_AteMeatAsHerbivore.stages.Ate_meat_as_herbivore.description>Мне пришлось есть еду с мясом, тьфу! Что это было? Бекон?!</Pony_AteMeatAsHerbivore.stages.Ate_meat_as_herbivore.description>
+
+	<Pony_AtePlantAsCarnivore.stages.Ate_plant_as_carnivore.label>{PAWN_gender ? Съел : Съела} растение</Pony_AtePlantAsCarnivore.stages.Ate_plant_as_carnivore.label>
+	<Pony_AtePlantAsCarnivore.stages.Ate_plant_as_carnivore.description>Мне пришлось есть растительную еду, тьфу! Что это было? Сено?!</Pony_AtePlantAsCarnivore.stages.Ate_plant_as_carnivore.description>
+
+</LanguageData>

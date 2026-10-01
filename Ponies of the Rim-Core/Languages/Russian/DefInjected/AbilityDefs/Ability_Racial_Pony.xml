@@ -3,10 +3,15 @@
 
 	<Pony_NatureMuse.label>природная муза</Pony_NatureMuse.label>
 	<Pony_NatureMuse.description>Прибегнуть к силам природы, наполняющим тело энергией для увеличения скорости работы.</Pony_NatureMuse.description>
+	<Pony_NatureMuse.modExtensions.0.settingLabel>Природная муза</Pony_NatureMuse.modExtensions.0.settingLabel>
+
 	<Pony_ShortFlight.label>короткий полёт</Pony_ShortFlight.label>
 	<Pony_ShortFlight.description>Пролететь на небольшое расстояние, используя крылья.</Pony_ShortFlight.description>
 	<Pony_ShortFlight.verbProperties.label>полёт</Pony_ShortFlight.verbProperties.label>
+	<Pony_ShortFlight.modExtensions.1.settingLabel>Короткий полёт</Pony_ShortFlight.modExtensions.1.settingLabel>
+
 	<Pony_MagicBurst.label>магический выстрел</Pony_MagicBurst.label>
 	<Pony_MagicBurst.description>Запустить при помощи рога в указанную точку сгусток магической энергии, наносящий урон и пробивающий броню.</Pony_MagicBurst.description>
+	<Pony_MagicBurst.modExtensions.0.settingLabel>Магический выстрел</Pony_MagicBurst.modExtensions.0.settingLabel>
 
 </LanguageData>

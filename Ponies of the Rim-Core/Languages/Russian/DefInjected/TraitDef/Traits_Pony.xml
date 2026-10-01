@@ -21,4 +21,17 @@
 	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.label>противник рогатых пони</Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.label>
 	<Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.description>[PAWN_nameDef] считает единорогов опасными и проявляет недоверие к их расе. [PAWN_pronoun] считает, что их магия - не что иное, как бомба замедленного действия.</Pony_RelationsForUnicorn.degreeDatas.horned_pony_hater.description>
 
+	<Pony_Ironhooves.degreeDatas.ironhooves.label>стальное копыто</Pony_Ironhooves.degreeDatas.ironhooves.label>
+	<Pony_Ironhooves.degreeDatas.ironhooves.description>{PAWN_nameDef} - {PAWN_gender ? самый : самая} {PAWN_gender ? сильный : сильная} {PAWN_gender ? жеребец : кобыла} из всех! [PAWN_pronoun] может сбить быка голыми копытами.</Pony_Ironhooves.degreeDatas.ironhooves.description>
+	<Pony_AnimalWhisperer.degreeDatas.animal_whisperer.label>заклинатель животных</Pony_AnimalWhisperer.degreeDatas.animal_whisperer.label>
+	<Pony_AnimalWhisperer.degreeDatas.animal_whisperer.description>Благодаря [PAWN_possessive] любви и страсти к животным, а также [PAWN_possessive] доброте, животные, находящиеся рядом с {PAWN_nameDef}, естественным образом становятся более послушными. При работе со всеми животными - будь то стрижка или доение - они дают больше продукции.</Pony_AnimalWhisperer.degreeDatas.animal_whisperer.description>
+	<Pony_Superfast.degreeDatas.superfast.label>сверхбыстрота</Pony_Superfast.degreeDatas.superfast.label>
+	<Pony_Superfast.degreeDatas.superfast.description>Ещё с детства {PAWN_nameDef} усердно {PAWN_gender ? тренировался : тренировалась} и ни разу не {PAWN_gender ? проиграл : проиграла} ни одной лётной гонки, за что {PAWN_gender ? заслужил : заслужила} звание самого быстрого пегаса.</Pony_Superfast.degreeDatas.superfast.description>
+	<Pony_Elegance.degreeDatas.elegance.label>элегантность</Pony_Elegance.degreeDatas.elegance.label>
+	<Pony_Elegance.degreeDatas.elegance.description>{PAWN_nameDef} всегда с особой тщательностью подходит ко всему, чем [PAWN_pronoun] занимается, что находит отражение в {PAWN_possessive} мастерстве и художественном исполнении. Любой предмет или мебель, изготовленные {PAWN_nameDef}, будут на +1 выше по качеству.</Pony_Elegance.degreeDatas.elegance.description>
+	<Pony_PerfectMemory.degreeDatas.perfect_memory.label>безупречная память</Pony_PerfectMemory.degreeDatas.perfect_memory.label>
+	<Pony_PerfectMemory.degreeDatas.perfect_memory.description>{PAWN_nameDef} обладает отличной памятью как на информацию, так и на физические движения. {PAWN_possessive} навыки никогда не притупятся.</Pony_PerfectMemory.degreeDatas.perfect_memory.description>
+	<Pony_Joyous.degreeDatas.joyous.label>лучик счастья</Pony_Joyous.degreeDatas.joyous.label>
+	<Pony_Joyous.degreeDatas.joyous.description>{PAWN_nameDef} обладает даром поднимать окружающим настроение, воодушевлять их работать над собой и идти к новым совершениям.</Pony_Joyous.degreeDatas.joyous.description>
+
 </LanguageData>

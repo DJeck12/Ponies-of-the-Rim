@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_FlightFatigue.label>усталость от полёта</Pony_FlightFatigue.label>
+	<Pony_FlightFatigue.description>Усталость от длительного перелета. Снижение выносливости приводит к помутнению сознания и усиливает потребность в отдыхе.</Pony_FlightFatigue.description>
+	<Pony_FlightFatigue.stages.tired.label>уставший</Pony_FlightFatigue.stages.tired.label>
+	<Pony_FlightFatigue.stages.exhausted.label>утомлённый</Pony_FlightFatigue.stages.exhausted.label>
+	<Pony_FlightFatigue.stages.critically_exhausted.label>обессиленный</Pony_FlightFatigue.stages.critically_exhausted.label>
+
+</LanguageData>
