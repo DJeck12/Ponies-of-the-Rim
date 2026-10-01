@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PoniesOfTheRim.PatchOperation.PatchOperationToggleableSequence">
+		<settingId>FlightAbility</settingId>
+		<label>Simplify flight ability</label>
+		<description>Replace the flight ability of flighing races to the simplified "Short Flight" ability</description>
+		<defaultState>false</defaultState>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/alienRace/generalSettings</xpath>
+				<value>
+					<abilities>
+						<li>Pony_ShortFlight</li>
+					</abilities>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

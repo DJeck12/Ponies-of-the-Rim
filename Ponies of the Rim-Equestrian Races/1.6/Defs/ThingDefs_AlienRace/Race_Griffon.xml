@@ -34,9 +34,6 @@ Griffons can be found all over the world, but they typically favor more temperat
 
 		<alienRace>
 			<generalSettings>
-				<abilities>
-					<li>Pony_ShortFlight</li>
-				</abilities>
 			<!-- Genes -->
 				<raceGenes>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_GriffonBeak</li>

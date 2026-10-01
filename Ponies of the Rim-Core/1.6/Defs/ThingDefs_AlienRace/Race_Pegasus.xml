@@ -37,9 +37,6 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 
 		<alienRace>
 			<generalSettings>
-				<abilities>
-					<li>Pony_ShortFlight</li>
-				</abilities>
 			<!-- Genes -->
 				<raceGenes>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineHead</li>
