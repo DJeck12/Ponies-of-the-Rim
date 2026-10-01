@@ -9,7 +9,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[not(@Abstract="True")]/modExtensions</xpath>
+		<xpath>Defs/FactionDef[not(@Abstract="True") and not(isPlayer="true")]/modExtensions</xpath>
 		<value>
 			<li Class="PoniesOfTheRim.CommsConsoleExtension">
 				<quests>

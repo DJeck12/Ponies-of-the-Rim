@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="SimpleProstheticArm"]/comps</xpath>
-		<value>
-			<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-				<prefix>Modified</prefix>
-				<inBrackets>&lt;color=#F096C8&gt;Pony&lt;/color&gt;</inBrackets>
-				<tipStringExtra>&lt;color=#F096C8&gt;This humanoid prosthesis is modified to match the anatomy of a quadruped.&lt;/color&gt;</tipStringExtra>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/HediffDef[@ParentName="AddedBodyPartBase" and not(comps)]</xpath>
+				<value>
+					<comps />
+				</value>
 			</li>
-		</value>
-	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="SimpleProstheticLeg"]</xpath>
-		<value>
-			<comps>
-				<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-					<prefix>Modified</prefix>
-					<inBrackets>&lt;color=#F096C8&gt;Pony&lt;/color&gt;</inBrackets>
-					<tipStringExtra>&lt;color=#F096C8&gt;This humanoid prosthesis is modified to match the anatomy of a quadruped.&lt;/color&gt;</tipStringExtra>
-				</li>
-			</comps>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/HediffDef[defName="PowerClaw"]/comps</xpath>
-		<value>
-			<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
-				<prefix>Modified</prefix>
-				<inBrackets>&lt;color=#F096C8&gt;Pony&lt;/color&gt;</inBrackets>
-				<tipStringExtra>&lt;color=#F096C8&gt;This humanoid prosthesis is modified to match the anatomy of a quadruped.&lt;/color&gt;</tipStringExtra>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/HediffDef[(contains(defName, "Arm")
+				or contains(defName, "Hand")
+				or contains(defName, "Leg")
+				or contains(defName, "Foot")
+				or contains(defName, "Claw")
+				or contains(defName, "Talon")
+				or contains(defName, "Knee")
+				or contains(defName, "Elbow"))
+				and not(defName="Pony_BirdTalons")]/comps</xpath>
+				<value>
+					<li Class="PoniesOfTheRim.HediffCompProperties_PonyProsthetic">
+						<prefix>Modified</prefix>
+						<inBrackets>&lt;color=#F096C8&gt;Pony&lt;/color&gt;</inBrackets>
+						<tipStringExtra>&lt;color=#F096C8&gt;This humanoid prosthesis is modified to match the anatomy of a quadruped.&lt;/color&gt;</tipStringExtra>
+					</li>
+				</value>
 			</li>
-		</value>
+		</operations>
 	</Operation>
 
 </Patch>

@@ -53,6 +53,7 @@
 	<FactionDef ParentName="PonyFactionBase">
 		<defName>Pony_LonelyAlicorn</defName>
 		<basicMemberKind>Pony_LonelyAlicorn</basicMemberKind>
+		<isPlayer>true</isPlayer>
 	</FactionDef>
 	
 </Defs>

@@ -24,6 +24,9 @@
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Changeling"
 					or defName="Pony_Changedling"]/alienRace/generalSettings/alienPartGenerator/oldHairAgeCurve</xpath>
 				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Griffon"]/tools/li[label="claws"]</xpath>
+				</li>
 			</operations>
 		</match>
 	</Operation>

@@ -7,11 +7,21 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/FurDef[defName="Furskin"]/bodyTypeGraphicPaths</xpath>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FurDef[defName="Furskin"]/bodyTypeGraphicPaths/Pony</xpath>
 					<value>
 						<Pony>Races/Bodies/Furskin/Body_Furskin</Pony>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FurDef[defName="Furskin"]/bodyTypeGraphicPaths/PonyChild</xpath>
+					<value>
 						<PonyChild>Races/Bodies/Furskin/Body_Furskin</PonyChild>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FurDef[defName="Furskin"]/bodyTypeGraphicPaths/PonyBaby</xpath>
+					<value>
 						<PonyBaby>Races/Bodies/Furskin/Body_Furskin</PonyBaby>
 					</value>
 				</li>

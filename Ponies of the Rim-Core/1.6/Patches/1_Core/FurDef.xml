@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FurDef/bodyTypeGraphicPaths</xpath>
+		<value>
+			<Pony>Races/Bodies/Normal/Body_Pony</Pony>
+			<PonyChild>Races/Bodies/Normal/Body_Pony</PonyChild>
+			<PonyBaby>Races/Bodies/Normal/Body_Pony</PonyBaby>
+		</value>
+	</Operation>
+
+</Patch>

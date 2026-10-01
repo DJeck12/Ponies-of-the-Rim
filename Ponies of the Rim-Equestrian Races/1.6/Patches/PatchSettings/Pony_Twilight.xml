@@ -13,6 +13,14 @@
 					<race>Pony_Alicorn</race>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Pony_TwilightSparkle_Child"]/forcedTraits</xpath>
+				<value>
+					<forcedTraits>
+						<FastLearner>0</FastLearner>
+					</forcedTraits>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 
