@@ -19,6 +19,7 @@
 						</capacities>
 						<power>14</power>
 						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
 					</li>
 				</tools>
 			</li>

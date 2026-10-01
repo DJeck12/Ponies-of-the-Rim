@@ -392,11 +392,10 @@
 			<Animals>-2</Animals>
 			<Crafting>8</Crafting>
 			<Social>2</Social>
-			<Intellectual>6</Intellectual>
+			<Intellectual>4</Intellectual>
 		</skillGains>
 		<passions>
 			<Crafting>1</Crafting>
-			<Intellectual>1</Intellectual>
 		</passions>
 		<forcedTraits>
 			<Neurotic>1</Neurotic>
@@ -416,12 +415,16 @@
 		<skillGains>
 			<Shooting>10</Shooting>
 			<Melee>5</Melee>
+			<Construction>2</Construction>
+			<Cooking>2</Cooking>
+			<Plants>2</Plants>
 			<Medicine>4</Medicine>
-			<Social>6</Social>
-			<Intellectual>6</Intellectual>
+			<Social>8</Social>
+			<Intellectual>4</Intellectual>
 		</skillGains>
 		<passions>
 			<Shooting>2</Shooting>
+			<Social>1</Social>
 		</passions>
 		<forcedTraits>
 			<Kind>0</Kind>
