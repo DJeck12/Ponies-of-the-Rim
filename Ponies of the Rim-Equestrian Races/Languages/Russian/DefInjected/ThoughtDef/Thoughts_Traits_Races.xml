@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Sylvanist_Mood.stages.in_a_forest.label>в лесу</Pony_Sylvanist_Mood.stages.in_a_forest.label>
+	<Pony_Sylvanist_Mood.stages.in_a_forest.description>Мне нравится бывать в местах, где можно любоваться живой природой.</Pony_Sylvanist_Mood.stages.in_a_forest.description>
+	<Pony_Sylvanist_Mood.stages.outside_a_forest.label>не в лесу</Pony_Sylvanist_Mood.stages.outside_a_forest.label>
+	<Pony_Sylvanist_Mood.stages.outside_a_forest.description>Я так далеко от леса... Не выношу эту засушливую пустошь.</Pony_Sylvanist_Mood.stages.outside_a_forest.description>
+
+</LanguageData>

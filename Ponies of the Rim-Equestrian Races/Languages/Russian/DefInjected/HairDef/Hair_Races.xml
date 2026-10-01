@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_OcellusHair.label>(Перевёртыш) Оцелус</Pony_OcellusHair.label>
+	<Pony_ThornHair.label>(Чейнджлинг) Гребень</Pony_ThornHair.label>
+	<Pony_CurledHair.label>(Кирин) Кудрявый</Pony_CurledHair.label>
+	<Pony_MoodyHair.label>(Кирин) Угрюмый</Pony_MoodyHair.label>
+	<Pony_NaturalHair.label>(Кирин) Природный</Pony_NaturalHair.label>
+	<Pony_CelestialHair.label>(Пони) Небесный</Pony_CelestialHair.label>
+	<Pony_Mohawk.label>(Зебра) Мохок</Pony_Mohawk.label>
+	<Pony_Dreamer.label>(Зебра) Мечтатель</Pony_Dreamer.label>
+
+</LanguageData>

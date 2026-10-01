@@ -6,7 +6,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_GriffonBeak</defName>
 		<label>beak</label>
-		<description>Carriers of this gene have a bird-like beak on their mouth, which does not interfere with eating or communication.</description>
+		<description>Carriers of this gene have a bird-like beak that functions just as well as a normal mouth.</description>
 		<iconPath>UI/Genes/GriffonBeak</iconPath>
 		<displayOrderInCategory>40</displayOrderInCategory>
 		<biostatCpx>0</biostatCpx>
@@ -168,7 +168,7 @@
 	<GeneDef ParentName="GenePonyBase">
 		<defName>Pony_GriffonTail</defName>
 		<label>griffon tail</label>
-		<description>Carriers of this gene grow a whip-like griffon tail.</description>
+		<description>Carriers of this gene grow a cat-like griffon tail.</description>
 		<iconPath>UI/Genes/GriffonTail</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<displayOrderInCategory>50</displayOrderInCategory>

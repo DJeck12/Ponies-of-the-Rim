@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_BirdTalons.label>птичьи когти</Pony_BirdTalons.label>
+	<Pony_BirdTalons.description>Носители этого гена имеют руки, напоминающие птичьи лапы. Их острые когти позволяют наносить острый урон вместо ударного при безоружной схватке, что компенсирует их ограниченные возможности к манипулированию предметами.</Pony_BirdTalons.description>
+	<Pony_BirdTalons.comps.HediffComp_VerbGiver.tools.claws.label>claws</Pony_BirdTalons.comps.HediffComp_VerbGiver.tools.claws.label>
+	<Pony_Crystallize.label>кристализация</Pony_Crystallize.label>
+	<Pony_Crystallize.description>Сила кристаллов укрепляет тело, делая его более выносливым, но при этом снижая его подвижность.</Pony_Crystallize.description>
+	<Pony_BatVision.label>зрение летучей мыши</Pony_BatVision.label>
+	<Pony_BatVision.description>Глаза этого существа приспособлены к жизни в темноте.</Pony_BatVision.description>
+
+</LanguageData>

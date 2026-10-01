@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Kirin.label>кирин</Pony_Kirin.label>
+	<Pony_Kirin.description><![CDATA[<color=#FF3838>Kirin</color> are a race of magical quadrupeds with equine and draconic traits. They have a single magic-channeling horn similar to unicorns, but with considerably less precision, limiting most to only the simplest expressions of magic. Despite this, their innate affinity for fire has made them renowned conflagrators and pyromancers, with few able to contend with a kirin’s natural talent. However, due to their draconic roots, their tempers are short and volatile. When pushed to the limit, a kirin will transform into a ‘nirik’—a dark, blazing state in which their emotions spiral out of control and their dragonfire is unleashed.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their cloven hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Unlike ponies, they are omnivorous and will not object to eating meat.\n\nKirin are a largely reclusive race. Their fiery outbursts make them poor neighbors, and many choose isolation or vows of silence over the risk of burning down yet another village; be it their own, or another’s. As a result, their settlements are often tucked away in secluded valleys or dense forests… at least until the trees burn down.]]></Pony_Kirin.description>
+	<Pony_Kirin.tools.front_left_hoof.label>переднее левое копыто</Pony_Kirin.tools.front_left_hoof.label>
+	<Pony_Kirin.tools.front_left_hoof.labelNoLocation>копыто</Pony_Kirin.tools.front_left_hoof.labelNoLocation>
+	<Pony_Kirin.tools.front_right_hoof.label>переднее правое копыто</Pony_Kirin.tools.front_right_hoof.label>
+	<Pony_Kirin.tools.front_right_hoof.labelNoLocation>копыто</Pony_Kirin.tools.front_right_hoof.labelNoLocation>
+	<Pony_Kirin.tools.rear_legs.label>задние копыта</Pony_Kirin.tools.rear_legs.label>
+	<Pony_Kirin.tools.teeth.label>зубы</Pony_Kirin.tools.teeth.label>
+	<Pony_Kirin.tools.head.label>голова</Pony_Kirin.tools.head.label>
+	<Pony_Kirin.tools.horn.label>рог</Pony_Kirin.tools.horn.label>
+
+</LanguageData>

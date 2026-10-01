@@ -155,7 +155,7 @@ Being in relative isolation from the other races, bat ponies did not want to be 
 	<FactionDef ParentName="TribeBase">
 		<defName>Pony_ChangelingHive</defName>
 		<label>rough changeling hive</label>
-		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insects, half-horses, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build huge ant-like hives in hidden locations near other pony settlements.
+		<description>Shortly after the birth of the first alicorns of Equus, the world began to fill with many magical creatures, but not all of them were friendly to each other. Half-insects, half-horses, changelings, being intelligent but driven by instinct, are parasites on ponies, feeding on their emotions to sate their hunger. Linked together by a hive mind network and controlled by a hive queen, changelings are unable to survive without emotion hosts and build ant-like hives in hidden locations near other pony settlements.
 
 Some call the wild changelings barbaric due to their frequent raids and pillaging of other ponies to sate their hunger, but their goal is not to kill or enslave other races, putting them in a state of cold war with other factions. Countless attempts to contact the changelings led the ponies to the conclusion that the bugs are not evil, but rather victims of their circumstances, as there have been cases of changelings escaping from their home hives to reform and start a new life.
 
@@ -986,8 +986,8 @@ Hint: You can hire griffon mercenaries using the comms console for a certain pri
 <!-- Hippogriff -->
 
 	<FactionDef ParentName="OutlanderFactionBase">
-		<defName>Pony_HippogriffKingdom</defName>
-		<label>hippogriff kingdom</label>
+		<defName>Pony_HippogriffNation</defName>
+		<label>hippogriff nation</label>
 		<description>Half-griffons, half-ponies, hippogriffs once lived in peace and isolation from all other factions on a lonely hill island, until the Storm King came and destroyed their home, forcing them to disappear from existance. At least that's what the King himself thought, because hippogriffs possessed a saving artifact that allowed them to turn any of their hosts into a sea pony. For a long time, the Hippogriffs hid in ignorance at the bottom of the ocean, until Equestria helped save their home and drive out their enemy.
 
 Since then, hippogriffs continue to lead a dual lifestyle, where most of their population still lives underwater in the form of sea ponies. Soon, under the wing of the Hippogriffs, a new state of sea ponies was formed, dividing the culture of the two cooperating factions. 
@@ -995,7 +995,7 @@ Since then, hippogriffs continue to lead a dual lifestyle, where most of their p
 Hippogriffs still live in isolation from all other settlements, maintaining an alliance with the union of sea ponies. They are not averse to making contact with outsiders, but will refuse to share the artifact that once saved them from extinction.</description>
 		<factionNameMaker>Pony_NameFactionHippogriff</factionNameMaker>
 		<categoryTag>PonyOutlander</categoryTag>
-		<factionIconPath>World/Factions/HippogriffKingdom</factionIconPath>
+		<factionIconPath>World/Factions/HippogriffNation</factionIconPath>
 		<colorSpectrum>
 			<li>(0.2, 0.46, 0.75)</li>
 		</colorSpectrum>

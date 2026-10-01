@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Changedling.label>перевёртыш</Pony_Changedling.label>
+	<Pony_Changedling.description><![CDATA[<color=#22BD5B>Changedling</color> are changelings who have undergone metamorphosis. They are much more colorful than their siblings, but beyond their more varied appearance, the largest difference is in their behavior. Where regular changelings disguise themselves and feed from the second-hand love of others, changedlings remain undisguised and sustain themselves with the mutual affection of their community. As a result, they are viewed much more favorably by others.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. In addition to their shapeshifting, their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands.\n\nUnlike their wild relatives, changedling have learned to experience a wider range of strong emotions, and though their way of life has changed, they still retain a hive-mind through which thoughts and emotions are shared freely.]]></Pony_Changedling.description>
+	<Pony_Changedling.tools.front_left_hoof.label>переднее левое копыто</Pony_Changedling.tools.front_left_hoof.label>
+	<Pony_Changedling.tools.front_left_hoof.labelNoLocation>копыто</Pony_Changedling.tools.front_left_hoof.labelNoLocation>
+	<Pony_Changedling.tools.front_right_hoof.label>переднее правое копыто</Pony_Changedling.tools.front_right_hoof.label>
+	<Pony_Changedling.tools.front_right_hoof.labelNoLocation>копыто</Pony_Changedling.tools.front_right_hoof.labelNoLocation>
+	<Pony_Changedling.tools.rear_legs.label>задние копыта</Pony_Changedling.tools.rear_legs.label>
+	<Pony_Changedling.tools.teeth.label>зубы</Pony_Changedling.tools.teeth.label>
+	<Pony_Changedling.tools.head.label>голова</Pony_Changedling.tools.head.label>
+	<Pony_Changedling.tools.horn.label>рог</Pony_Changedling.tools.horn.label>
+
+</LanguageData>

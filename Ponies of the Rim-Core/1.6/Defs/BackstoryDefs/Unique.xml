@@ -132,7 +132,7 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Pony_Fluttershy_Child</defName>
-		<title>Nervous flyer</title>
+		<title>Shy flyer</title>
 		<titleShort>anxious</titleShort>
 		<baseDesc>Fluttershy was never the strongest flyer, and she was often bullied by the other pegasi because of it. Her seclusion led to her finding her calling at an early age: she loved animals, and could communicate with them on a different level than others. She often preferred the company of her ‘little friends’ to other ponies.</baseDesc>
 		<slot>Childhood</slot>
@@ -383,7 +383,7 @@
 		<defName>Pony_Vault_Dweller</defName>
 		<title>Vault dweller</title>
 		<titleShort>vaulter</titleShort>
-		<baseDesc>temp</baseDesc>
+		<baseDesc>Littlepip was born in the Stable-Tec bunker, completely safe and isolated from the unknown outside world. Surrounded by sophisticated technology and robots, she became fascinated with mechanics and computers, learning to pick locks and bypass electronic security systems. Life in the shelter offered her little variety in terms of entertainment, so she grew up shy, struggled to make friends, and often threw herself wholeheartedly into whatever she set out to do.</baseDesc>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Pony_Unique</li>
@@ -408,7 +408,7 @@
 		<defName>Pony_Wasteland_Adventurer</defName>
 		<title>Wasteland adventurer</title>
 		<titleShort>adventurer</titleShort>
-		<baseDesc>temp</baseDesc>
+		<baseDesc>Leaving her home vault behind, Littlepip set out to wander the wastelands, determined to make this world at least a little better. Along the way, she made loyal friends and faced dangerous enemies, demonstrated leadership, survived in harsh conditions, rescued ponies in need, and mastered new skills. Her adventures are far from over.</baseDesc>
 		<slot>Adulthood</slot>
 		<spawnCategories>
 			<li>Pony_Unique</li>

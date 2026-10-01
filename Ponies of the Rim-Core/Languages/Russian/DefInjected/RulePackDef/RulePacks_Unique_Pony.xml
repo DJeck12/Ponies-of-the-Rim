@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Applejack.rulePack.rulesStrings>
+		<li>Only->Эплджек</li>
+	</Pony_Applejack.rulePack.rulesStrings>
+
+	<Pony_Rarity.rulePack.rulesStrings>
+		<li>Only->Рэрити</li>
+	</Pony_Rarity.rulePack.rulesStrings>
+
+	<Pony_Fluttershy.rulePack.rulesStrings>
+		<li>Only->Флатершай</li>
+	</Pony_Fluttershy.rulePack.rulesStrings>
+
+	<Pony_PinkiePie.rulePack.rulesStrings>
+		<li>First->Пинки</li>
+		<li>Last->Пай</li>
+	</Pony_PinkiePie.rulePack.rulesStrings>
+
+	<Pony_RainbowDash.rulePack.rulesStrings>
+		<li>First->Рэйнбоу</li>
+		<li>Last->Дэш</li>
+	</Pony_RainbowDash.rulePack.rulesStrings>
+
+	<Pony_TwilightSparkle.rulePack.rulesStrings>
+		<li>First->Твайлайт</li>
+		<li>Last->Спаркл</li>
+	</Pony_TwilightSparkle.rulePack.rulesStrings>
+
+	<Pony_Littlepip.rulePack.rulesStrings>
+		<li>Only->Литлпип</li>
+	</Pony_Littlepip.rulePack.rulesStrings>
+
+</LanguageData>

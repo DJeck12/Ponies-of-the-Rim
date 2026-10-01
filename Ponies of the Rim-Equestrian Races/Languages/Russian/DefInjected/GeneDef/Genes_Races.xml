@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_GriffonBeak.label>клюв</Pony_GriffonBeak.label>
+	<Pony_GriffonBeak.description>Носители этого гена имеют птичий клюв, который функционирует так же хорошо, как и обычный рот.</Pony_GriffonBeak.description>
+	<Pony_DeerNose.label>олений нос</Pony_DeerNose.label>
+	<Pony_DeerNose.description>Носители этого гена обладают оленьим нос.</Pony_DeerNose.description>
+	<Pony_DeerAntlers.label>рога</Pony_DeerAntlers.label>
+	<Pony_DeerAntlers.description>Носители этого гена обладают парой разветвлённых оленьих рогов.</Pony_DeerAntlers.description>
+	<Pony_Bodymark.label>боковая метка</Pony_Bodymark.label>
+	<Pony_Bodymark.description>Носители этого гена обладают символом или картинкой на своём боку, обозначающей их профессию, талант или интересы. В отличие от кьютимарок, эти метки имеют более абстрактные узоры и напоминают религиозные татуировки.</Pony_Bodymark.description>
+	<Pony_Carapace.label>панцирь</Pony_Carapace.label>
+	<Pony_Carapace.description>У носителей этого гена на спине растут драконьи чешуйки.</Pony_Carapace.description>
+	<Pony_Chitin.label>хитин</Pony_Chitin.label>
+	<Pony_Chitin.description>У носителей этого гена вместо кожи имеется экзоскелет, состоящий из хитина.</Pony_Chitin.description>
+	<Pony_SoulGem.label>камень души</Pony_SoulGem.label>
+	<Pony_SoulGem.description>У носителей этого гена на груди встроена жемчужина в форме слёзы. Этот орган используется чейнджлингами для хранения запомненных образов других существ, необходимых для изменения облика.</Pony_SoulGem.description>
+	<Pony_ChitinTail.label>хитиновый хвост</Pony_ChitinTail.label>
+	<Pony_ChitinTail.description>Носители этого гена обладают перепончатым хвостом чейнджлингов.</Pony_ChitinTail.description>
+	<Pony_SkittlebugTail.label>жучиный хвост</Pony_SkittlebugTail.label>
+	<Pony_SkittlebugTail.description>Носители этого гена обладают мембранным хвостом перевёртышей.</Pony_SkittlebugTail.description>
+	<Pony_DeerTail.label>олений хвост</Pony_DeerTail.label>
+	<Pony_DeerTail.description>Носители этого гена обладают пушистым оленьим хвостом.</Pony_DeerTail.description>
+	<Pony_GriffonTail.label>грифоний хвост</Pony_GriffonTail.label>
+	<Pony_GriffonTail.description>Носители этого гена обладают грифоньим кошачьим хвостом.</Pony_GriffonTail.description>
+	<Pony_KirinTail.label>хвост кирина</Pony_KirinTail.label>
+	<Pony_KirinTail.description>Носители этого гена обладают кистеобразным хвостом кирина.</Pony_KirinTail.description>
+	<Pony_ZebraTail.label>хвост зебры</Pony_ZebraTail.label>
+	<Pony_ZebraTail.description>Носители этого гена обладают хвостом расы зебр.</Pony_ZebraTail.description>
+	<Pony_FluffyPonyEars.label>пушистые уши</Pony_FluffyPonyEars.label>
+	<Pony_FluffyPonyEars.description>Носители этого гена обладают ушами расы пони с пушком на кончиках.</Pony_FluffyPonyEars.description>
+	<Pony_ChitinEars.label>хитиновые уши</Pony_ChitinEars.label>
+	<Pony_ChitinEars.description>Носители этого гена обладают хитиновыми ушами расы чейнджлингов.</Pony_ChitinEars.description>
+	<Pony_AntennaeEars.label>уши-антенны</Pony_AntennaeEars.label>
+	<Pony_AntennaeEars.description>Носители этого гена обладают ушами-антеннами расы перевёртышей.</Pony_AntennaeEars.description>
+	<Pony_FeatherEars.label>уши-перья</Pony_FeatherEars.label>
+	<Pony_FeatherEars.description>У носителей этого гена на ушах растут перьевые наросты, напоминающие птичий хохолок.</Pony_FeatherEars.description>
+	<Pony_KirinEars.label>уши кирина</Pony_KirinEars.label>
+	<Pony_KirinEars.description>Носители этого гена обладают ушами расы киринов с уникальной окраской.</Pony_KirinEars.description>
+	<Pony_IronWilled.label>железные нервы</Pony_IronWilled.label>
+	<Pony_IronWilled.description>Носители этого гена обладают волей, крепкой, как железный щит. Они не теряют самообладания даже в тех ситуациях, когда другие сдаются и опускают руки.</Pony_IronWilled.description>
+	<Pony_Steadfast.label>стрессоустойчивость</Pony_Steadfast.label>
+	<Pony_Steadfast.description>Носители этого гена обладают психической устойчивостью к стрессам, которые большинство не выдерживает.</Pony_Steadfast.description>
+	<Pony_Nervous.label>нервозность</Pony_Nervous.label>
+	<Pony_Nervous.description>Носители этого гена могут сорваться при сильном эмоциональном напряжении.</Pony_Nervous.description>
+	<Pony_Volatile.label>эмоциональная нестабильность</Pony_Volatile.label>
+	<Pony_Volatile.description>Носители этого гена всегда на взводе. Малейшее эмоциональное напряжение может закончиться нервным срывом.</Pony_Volatile.description>
+	<Pony_Farsighted.label>дальнозоркость</Pony_Farsighted.label>
+	<Pony_Farsighted.description>Носители этого гена испытывают трудности со зрением на близком расстоянии. Их меткость стрельбы снижается на коротких дистанциях и в упор.</Pony_Farsighted.description>
+	<Pony_Farsighted.symbolPack.prefixSymbols.0.symbol>слеп</Pony_Farsighted.symbolPack.prefixSymbols.0.symbol>
+	<Pony_Farsighted.symbolPack.prefixSymbols.1.symbol>блюр</Pony_Farsighted.symbolPack.prefixSymbols.1.symbol>
+	<Pony_Farsighted.symbolPack.prefixSymbols.2.symbol>щур</Pony_Farsighted.symbolPack.prefixSymbols.2.symbol>
+	<Pony_Farsighted.symbolPack.prefixSymbols.3.symbol>глядо</Pony_Farsighted.symbolPack.prefixSymbols.3.symbol>
+	<Pony_Farsighted.symbolPack.prefixSymbols.4.symbol>пере</Pony_Farsighted.symbolPack.prefixSymbols.4.symbol>
+	<Pony_Farsighted.symbolPack.suffixSymbols.0.symbol>цель</Pony_Farsighted.symbolPack.suffixSymbols.0.symbol>
+	<Pony_Farsighted.symbolPack.suffixSymbols.1.symbol>гляд</Pony_Farsighted.symbolPack.suffixSymbols.1.symbol>
+	<Pony_Hawkeyed.label>орлиный глаз</Pony_Hawkeyed.label>
+	<Pony_Hawkeyed.description>Носители этого гена обладают острым, хищным зрением. Их меткость стрельбы повышается по мере увеличения расстояния до цели.</Pony_Hawkeyed.description>
+	<Pony_Nocturnal.label>ночной</Pony_Nocturnal.label>
+	<Pony_Nocturnal.description>Носители этого гена предпочитают бодрствовать ночью. Они чувствуют себя счастливее, когда не спят ночью, и несчастны, когда не спят днём.</Pony_Nocturnal.description>
+	<Pony_Nocturnal.symbolPack.prefixSymbols.0.symbol>писк</Pony_Nocturnal.symbolPack.prefixSymbols.0.symbol>
+	<Pony_Nocturnal.symbolPack.prefixSymbols.1.symbol>гляд</Pony_Nocturnal.symbolPack.prefixSymbols.1.symbol>
+	<Pony_Nocturnal.symbolPack.suffixSymbols.0.symbol>мышь</Pony_Nocturnal.symbolPack.suffixSymbols.0.symbol>
+	<Pony_Nocturnal.symbolPack.suffixSymbols.1.symbol>ночь</Pony_Nocturnal.symbolPack.suffixSymbols.1.symbol>
+	<Pony_CrystallineSkin.label>кристальная кожа</Pony_CrystallineSkin.label>
+	<Pony_CrystallineSkin.description>Организм носителей этого гена сливается с органической кристаллической структурой. Их кожа приобретает кристаллическую форму, переливается в свете и становится устойчивой к любым видам тупых повреждений.</Pony_CrystallineSkin.description>
+	<Pony_HiveMind.label>разум улья</Pony_HiveMind.label>
+	<Pony_HiveMind.description>Носители этого гена обладают уникальной формой коллективного интеллекта, которая связывает их с другими членами той же колонии. Участники коллективного разума гораздо быстрее осваивают новые навыки, обмениваясь друг с другом опытом.</Pony_HiveMind.description>
+	<Pony_HiveMind.customEffectDescriptions.0>Увеличивает скорость освоения навыков колонистами, связанными с ульем, на 5 %.</Pony_HiveMind.customEffectDescriptions.0>
+	<Pony_HiveMind.customEffectDescriptions.1>Снижается до 3 % после 12 колонистов, связанных с ульем.</Pony_HiveMind.customEffectDescriptions.1>
+	<Pony_Oviparous.label>яйцекладущий</Pony_Oviparous.label>
+	<Pony_Oviparous.description>Носители этого гена откладывают яйца вместо рождения живых детёнышей. Для вылупления яиц требуются время и подходящие условия.</Pony_Oviparous.description>
+	<Pony_Oviparous.customEffectDescriptions.0>Откладывает яйца вместо беременности и родов.</Pony_Oviparous.customEffectDescriptions.0>
+	<Pony_Oviparous.customEffectDescriptions.1>Откладывание яиц временно лишает колониста способности к размножению.</Pony_Oviparous.customEffectDescriptions.1>
+	<Pony_BirdTalons.label>птичьи когти</Pony_BirdTalons.label>
+	<Pony_BirdTalons.description>У носителей этого гена руки напоминают птичьи лапы. Их острые когти позволяют им наносить острый урон вместо тупого, когда они сражаются без оружия, но делает труднее манипуляцию с предметами.</Pony_BirdTalons.description>
+	<Pony_BirdTalons.symbolPack.prefixSymbols.0.symbol>птиц</Pony_BirdTalons.symbolPack.prefixSymbols.0.symbol>
+	<Pony_BirdTalons.symbolPack.prefixSymbols.1.symbol>гриф</Pony_BirdTalons.symbolPack.prefixSymbols.1.symbol>
+	<Pony_BirdTalons.symbolPack.prefixSymbols.2.symbol>остро</Pony_BirdTalons.symbolPack.prefixSymbols.2.symbol>
+	<Pony_BirdTalons.symbolPack.suffixSymbols.0.symbol>коготь</Pony_BirdTalons.symbolPack.suffixSymbols.0.symbol>
+	<Pony_BirdTalons.symbolPack.suffixSymbols.1.symbol>крюк</Pony_BirdTalons.symbolPack.suffixSymbols.1.symbol>
+	<Pony_BirdTalons.symbolPack.suffixSymbols.2.symbol>хищник</Pony_BirdTalons.symbolPack.suffixSymbols.2.symbol>
+	<Pony_BirdTalons.symbolPack.wholeNameSymbols.0.symbol>авиан</Pony_BirdTalons.symbolPack.wholeNameSymbols.0.symbol>
+
+</LanguageData>

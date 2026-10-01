@@ -3,7 +3,7 @@
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePony">
 		<defName>Pony_Hippogriff</defName>
-		<label>Hippogriff</label>
+		<label>hippogriff</label>
 		<description><![CDATA[<color=#3363FF>Hippogriffs</color> are a race of winged quadrupeds with avian and equine characteristics. Although they lack magical abilities of their own, hippogriffs make up for it with the use of amulets and magical artifacts. For the long part of their history, hippogriffs have been forced to live in aquatic form in order to preserve their ancestry, exploring the riches of ocean and consequently making their culture being tied to marine harvesting, fishing and underwater treasure hunting.
 
 Although members of this race do not walk on two legs, they have adapted most types of clothing and prosthetics to suit themselves. Their clawed fingers give them dexterity comparable to that of any creature with hands, and in close combat they serve as effective weapons. Unlike griffons, they are omnivorous and will not object to eating plant-based food.

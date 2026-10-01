@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Alicorn.label>аликорн</Pony_Alicorn.label>
+	<Pony_Alicorn.description><![CDATA[Ponies are a race of magical quadrupeds from the planet Foenum. Their ancestry is incredibly complex, divided into numerous subspecies, each with their own unique traits. As a whole, ponykind practices harmony and cooperation; however, the harsh reality of the rim has led many to abandon those ideals in the pursuit of survival.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Each individual also bears a cutiemark on their flank—a unique symbol signifying their profession, talent, or personality. While most ponies are herbivores and exhibit a strong aversion to meat, some subspecies have a more carnivorous diet.\n\n<color=#A069FF>Alicorns</color> are ponies who have undergone ascension, granting them the physical and magical traits of a unicorn, pegasus, and earth pony, along with an immortal lifespan. They are often the subject of both myth and worship, their presence alone a herald of change within the world. Ancient alicorns are seen less as individuals and more as living forces of nature—revered as divine rulers by some, and harbingers of destruction by others.]]></Pony_Alicorn.description>
+	<Pony_Alicorn.tools.front_left_hoof.label>переднее левое копыто</Pony_Alicorn.tools.front_left_hoof.label>
+	<Pony_Alicorn.tools.front_left_hoof.labelNoLocation>копыто</Pony_Alicorn.tools.front_left_hoof.labelNoLocation>
+	<Pony_Alicorn.tools.front_right_hoof.label>переднее правое копыто</Pony_Alicorn.tools.front_right_hoof.label>
+	<Pony_Alicorn.tools.front_right_hoof.labelNoLocation>копыто</Pony_Alicorn.tools.front_right_hoof.labelNoLocation>
+	<Pony_Alicorn.tools.rear_legs.label>задние копыта</Pony_Alicorn.tools.rear_legs.label>
+	<Pony_Alicorn.tools.teeth.label>зубы</Pony_Alicorn.tools.teeth.label>
+	<Pony_Alicorn.tools.head.label>голова</Pony_Alicorn.tools.head.label>
+	<Pony_Alicorn.tools.horn.label>рог</Pony_Alicorn.tools.horn.label>
+
+</LanguageData>

@@ -608,7 +608,6 @@
 				</li>
 				<li>
 					<def>Neck</def>
-					<customLabel>pronotum</customLabel>
 					<coverage>0.075</coverage>
 					<height>Top</height>
 					<groups>
@@ -773,7 +772,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>front left tarsus</customLabel>
+									<customLabel>front left cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -833,7 +832,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>front right tarsus</customLabel>
+									<customLabel>front right cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -862,7 +861,7 @@
 				</li>
 				<li>
 					<def>Pony_LeftWing</def>
-					<customLabel>left elytra</customLabel>
+					<customLabel>left wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
 						<li>Pony_Wings</li>
@@ -870,7 +869,7 @@
 				</li>
 				<li>
 					<def>Pony_RightWing</def>
-					<customLabel>right elytra</customLabel>
+					<customLabel>right wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
 						<li>Pony_Wings</li>
@@ -925,7 +924,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>rear left tarsus</customLabel>
+									<customLabel>rear left cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -985,7 +984,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>rear right tarsus</customLabel>
+									<customLabel>rear right cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -1117,7 +1116,6 @@
 				</li>
 				<li>
 					<def>Neck</def>
-					<customLabel>pronotum</customLabel>
 					<coverage>0.075</coverage>
 					<height>Top</height>
 					<groups>
@@ -1282,7 +1280,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>front left tarsus</customLabel>
+									<customLabel>front left cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -1342,7 +1340,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>front right tarsus</customLabel>
+									<customLabel>front right cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -1371,7 +1369,7 @@
 				</li>
 				<li>
 					<def>Pony_LeftWing</def>
-					<customLabel>left elytra</customLabel>
+					<customLabel>left wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
 						<li>Pony_Wings</li>
@@ -1379,7 +1377,7 @@
 				</li>
 				<li>
 					<def>Pony_RightWing</def>
-					<customLabel>right elytra</customLabel>
+					<customLabel>right wing</customLabel>
 					<coverage>0.05</coverage>
 					<groups>
 						<li>Pony_Wings</li>
@@ -1434,7 +1432,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>rear left tarsus</customLabel>
+									<customLabel>rear left cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>
@@ -1494,7 +1492,7 @@
 								</li>
 								<li>
 									<def>Pony_CannonBone</def>
-									<customLabel>rear right tarsus</customLabel>
+									<customLabel>rear right cannon bone</customLabel>
 									<coverage>0.075</coverage>
 									<depth>Inside</depth>
 									<groups>

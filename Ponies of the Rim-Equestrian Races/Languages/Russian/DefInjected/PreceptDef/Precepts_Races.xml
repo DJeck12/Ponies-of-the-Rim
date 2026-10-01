@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Alicorn_Abhorrent.label>отвратительны</Pony_Alicorn_Abhorrent.label>
+	<Pony_Alicorn_Abhorrent.description>Аликорны - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Alicorn_Abhorrent.description>
+	<Pony_Alicorn_Horrible.label>осуждаются</Pony_Alicorn_Horrible.label>
+	<Pony_Alicorn_Horrible.description>Аликорны отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Alicorn_Horrible.description>
+	<Pony_Alicorn_Stricted.label>строго</Pony_Alicorn_Stricted.label>
+	<Pony_Alicorn_Stricted.description>Аликорны - единственная раса, приемлемая в нашем обществе.</Pony_Alicorn_Stricted.description>
+	<Pony_Alicorn_Respected.label>уважаются</Pony_Alicorn_Respected.label>
+	<Pony_Alicorn_Respected.description>Аликорны очень уникальны и заслуживают нашего восхищения.</Pony_Alicorn_Respected.description>
+	<Pony_Alicorn_Exalted.label>превозносятся</Pony_Alicorn_Exalted.label>
+	<Pony_Alicorn_Exalted.description>Аликорны - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Alicorn_Exalted.description>
+
+	<Pony_Batpony_Abhorrent.label>отвратительны</Pony_Batpony_Abhorrent.label>
+	<Pony_Batpony_Abhorrent.description>Бэтпони - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Batpony_Abhorrent.description>
+	<Pony_Batpony_Horrible.label>осуждаются</Pony_Batpony_Horrible.label>
+	<Pony_Batpony_Horrible.description>Бэтпони отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Batpony_Horrible.description>
+	<Pony_Batpony_Stricted.label>строго</Pony_Batpony_Stricted.label>
+	<Pony_Batpony_Stricted.description>Бэтпони - единственная раса, приемлемая в нашем обществе.</Pony_Batpony_Stricted.description>
+	<Pony_Batpony_Respected.label>уважаются</Pony_Batpony_Respected.label>
+	<Pony_Batpony_Respected.description>Бэтпони очень уникальны и заслуживают нашего восхищения.</Pony_Batpony_Respected.description>
+	<Pony_Batpony_Exalted.label>превозносятся</Pony_Batpony_Exalted.label>
+	<Pony_Batpony_Exalted.description>Бэтпони - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Batpony_Exalted.description>
+
+	<Pony_Changedling_Abhorrent.label>отвратительны</Pony_Changedling_Abhorrent.label>
+	<Pony_Changedling_Abhorrent.description>Перевёртыши - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Changedling_Abhorrent.description>
+	<Pony_Changedling_Horrible.label>осуждаются</Pony_Changedling_Horrible.label>
+	<Pony_Changedling_Horrible.description>Перевёртыши отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Changedling_Horrible.description>
+	<Pony_Changedling_Stricted.label>строго</Pony_Changedling_Stricted.label>
+	<Pony_Changedling_Stricted.description>Перевёртыши - единственная раса, приемлемая в нашем обществе.</Pony_Changedling_Stricted.description>
+	<Pony_Changedling_Respected.label>уважаются</Pony_Changedling_Respected.label>
+	<Pony_Changedling_Respected.description>Перевёртыши очень уникальны и заслуживают нашего восхищения.</Pony_Changedling_Respected.description>
+	<Pony_Changedling_Exalted.label>превозносятся</Pony_Changedling_Exalted.label>
+	<Pony_Changedling_Exalted.description>Перевёртыши - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Changedling_Exalted.description>
+
+	<Pony_Changeling_Abhorrent.label>отвратительны</Pony_Changeling_Abhorrent.label>
+	<Pony_Changeling_Abhorrent.description>Чейнджлинги - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Changeling_Abhorrent.description>
+	<Pony_Changeling_Horrible.label>осуждаются</Pony_Changeling_Horrible.label>
+	<Pony_Changeling_Horrible.description>Чейнджлинги отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Changeling_Horrible.description>
+	<Pony_Changeling_Stricted.label>строго</Pony_Changeling_Stricted.label>
+	<Pony_Changeling_Stricted.description>Чейнджлинги - единственная раса, приемлемая в нашем обществе.</Pony_Changeling_Stricted.description>
+	<Pony_Changeling_Respected.label>уважаются</Pony_Changeling_Respected.label>
+	<Pony_Changeling_Respected.description>Чейнджлинги очень уникальны и заслуживают нашего восхищения.</Pony_Changeling_Respected.description>
+	<Pony_Changeling_Exalted.label>превозносятся</Pony_Changeling_Exalted.label>
+	<Pony_Changeling_Exalted.description>Чейнджлинги - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Changeling_Exalted.description>
+
+	<Pony_Crystalpony_Abhorrent.label>отвратительны</Pony_Crystalpony_Abhorrent.label>
+	<Pony_Crystalpony_Abhorrent.description>Кристальные пони - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Crystalpony_Abhorrent.description>
+	<Pony_Crystalpony_Horrible.label>осуждаются</Pony_Crystalpony_Horrible.label>
+	<Pony_Crystalpony_Horrible.description>Кристальные пони отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Crystalpony_Horrible.description>
+	<Pony_Crystalpony_Stricted.label>строго</Pony_Crystalpony_Stricted.label>
+	<Pony_Crystalpony_Stricted.description>Кристальные пони - единственная раса, приемлемая в нашем обществе.</Pony_Crystalpony_Stricted.description>
+	<Pony_Crystalpony_Respected.label>уважаются</Pony_Crystalpony_Respected.label>
+	<Pony_Crystalpony_Respected.description>Кристальные пони очень уникальны и заслуживают нашего восхищения.</Pony_Crystalpony_Respected.description>
+	<Pony_Crystalpony_Exalted.label>превозносятся</Pony_Crystalpony_Exalted.label>
+	<Pony_Crystalpony_Exalted.description>Кристальные пони - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Crystalpony_Exalted.description>
+
+	<Pony_Deer_Abhorrent.label>отвратительны</Pony_Deer_Abhorrent.label>
+	<Pony_Deer_Abhorrent.description>Олени - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Deer_Abhorrent.description>
+	<Pony_Deer_Horrible.label>осуждаются</Pony_Deer_Horrible.label>
+	<Pony_Deer_Horrible.description>Олени отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Deer_Horrible.description>
+	<Pony_Deer_Stricted.label>строго</Pony_Deer_Stricted.label>
+	<Pony_Deer_Stricted.description>Олени - единственная раса, приемлемая в нашем обществе.</Pony_Deer_Stricted.description>
+	<Pony_Deer_Respected.label>уважаются</Pony_Deer_Respected.label>
+	<Pony_Deer_Respected.description>Олени очень уникальны и заслуживают нашего восхищения.</Pony_Deer_Respected.description>
+	<Pony_Deer_Exalted.label>превозносятся</Pony_Deer_Exalted.label>
+	<Pony_Deer_Exalted.description>Олени - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Deer_Exalted.description>
+
+	<Pony_Griffon_Abhorrent.label>отвратительны</Pony_Griffon_Abhorrent.label>
+	<Pony_Griffon_Abhorrent.description>Грифоны - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Griffon_Abhorrent.description>
+	<Pony_Griffon_Horrible.label>осуждаются</Pony_Griffon_Horrible.label>
+	<Pony_Griffon_Horrible.description>Грифоны отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Griffon_Horrible.description>
+	<Pony_Griffon_Stricted.label>строго</Pony_Griffon_Stricted.label>
+	<Pony_Griffon_Stricted.description>Грифоны - единственная раса, приемлемая в нашем обществе.</Pony_Griffon_Stricted.description>
+	<Pony_Griffon_Respected.label>уважаются</Pony_Griffon_Respected.label>
+	<Pony_Griffon_Respected.description>Грифоны очень уникальны и заслуживают нашего восхищения.</Pony_Griffon_Respected.description>
+	<Pony_Griffon_Exalted.label>превозносятся</Pony_Griffon_Exalted.label>
+	<Pony_Griffon_Exalted.description>Грифоны - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Griffon_Exalted.description>
+
+	<Pony_Hippogriff_Abhorrent.label>отвратительны</Pony_Hippogriff_Abhorrent.label>
+	<Pony_Hippogriff_Abhorrent.description>Гиппогрифы - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Hippogriff_Abhorrent.description>
+	<Pony_Hippogriff_Horrible.label>осуждаются</Pony_Hippogriff_Horrible.label>
+	<Pony_Hippogriff_Horrible.description>Гиппогрифы отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Hippogriff_Horrible.description>
+	<Pony_Hippogriff_Stricted.label>строго</Pony_Hippogriff_Stricted.label>
+	<Pony_Hippogriff_Stricted.description>Гиппогрифы - единственная раса, приемлемая в нашем обществе.</Pony_Hippogriff_Stricted.description>
+	<Pony_Hippogriff_Respected.label>уважаются</Pony_Hippogriff_Respected.label>
+	<Pony_Hippogriff_Respected.description>Гиппогрифы очень уникальны и заслуживают нашего восхищения.</Pony_Hippogriff_Respected.description>
+	<Pony_Hippogriff_Exalted.label>превозносятся</Pony_Hippogriff_Exalted.label>
+	<Pony_Hippogriff_Exalted.description>Гиппогрифы - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Hippogriff_Exalted.description>
+
+	<Pony_Kirin_Abhorrent.label>отвратительны</Pony_Kirin_Abhorrent.label>
+	<Pony_Kirin_Abhorrent.description>Кирины - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Kirin_Abhorrent.description>
+	<Pony_Kirin_Horrible.label>осуждаются</Pony_Kirin_Horrible.label>
+	<Pony_Kirin_Horrible.description>Кирины отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Kirin_Horrible.description>
+	<Pony_Kirin_Stricted.label>строго</Pony_Kirin_Stricted.label>
+	<Pony_Kirin_Stricted.description>Кирины - единственная раса, приемлемая в нашем обществе.</Pony_Kirin_Stricted.description>
+	<Pony_Kirin_Respected.label>уважаются</Pony_Kirin_Respected.label>
+	<Pony_Kirin_Respected.description>Кирины очень уникальны и заслуживают нашего восхищения.</Pony_Kirin_Respected.description>
+	<Pony_Kirin_Exalted.label>превозносятся</Pony_Kirin_Exalted.label>
+	<Pony_Kirin_Exalted.description>Кирины - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Kirin_Exalted.description>
+
+	<Pony_Zebra_Abhorrent.label>отвратительны</Pony_Zebra_Abhorrent.label>
+	<Pony_Zebra_Abhorrent.description>Зебры - низшая раса, недостойная нашего внимания. Мы не должны даже думать о том, чтобы дружить с ними.</Pony_Zebra_Abhorrent.description>
+	<Pony_Zebra_Horrible.label>осуждаются</Pony_Zebra_Horrible.label>
+	<Pony_Zebra_Horrible.description>Зебры отличаются от нас, даже чересчур. Мы должны быть начеку и не доверять им.</Pony_Zebra_Horrible.description>
+	<Pony_Zebra_Stricted.label>строго</Pony_Zebra_Stricted.label>
+	<Pony_Zebra_Stricted.description>Зебры - единственная раса, приемлемая в нашем обществе.</Pony_Zebra_Stricted.description>
+	<Pony_Zebra_Respected.label>уважаются</Pony_Zebra_Respected.label>
+	<Pony_Zebra_Respected.description>Зебры очень уникальны и заслуживают нашего восхищения.</Pony_Zebra_Respected.description>
+	<Pony_Zebra_Exalted.label>превозносятся</Pony_Zebra_Exalted.label>
+	<Pony_Zebra_Exalted.description>Зебры - восхитительные существа, и мы обязаны относиться к ним с уважением, которого они заслуживают.</Pony_Zebra_Exalted.description>
+
+</LanguageData>

@@ -14,10 +14,10 @@
 	</HairDef>
 
 	<HairDef>
-		<defName>Pony_Upendo</defName>
-		<label>(Zebra) Upendo</label>
+		<defName>Pony_Dreamer</defName>
+		<label>(Zebra) Dreamer</label>
 		<styleGender>Any</styleGender>
-		<texPath>Races/Hairstyles/Zebra/Upendo</texPath>
+		<texPath>Races/Hairstyles/Zebra/Dreamer</texPath>
 		<category>Zebra</category>
         <styleTags>
             <li>Zebra</li>

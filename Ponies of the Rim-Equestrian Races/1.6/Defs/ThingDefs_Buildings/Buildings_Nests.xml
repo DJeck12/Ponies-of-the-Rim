@@ -70,7 +70,7 @@
 			</defaultStorageSettings>
 		</building>
 		<researchPrerequisites>
-			<li>Pony_Hatching</li>
+			<li>Pony_Incubation</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_HeatPusher">

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Griffon.label>грифон</Pony_Griffon.label>
+	<Pony_Griffon.description><![CDATA[<color=#F8FF33>Griffons</color> are a race of winged quadrupeds with avian and lion characteristics. Although they lack magical abilities of their own, griffons make up for it with their ingenuity on and off the battlefield. In their culture, self-reliance and craftsmanship are prized above all else, producing many skilled artisans, merchants, and mercenaries known for their predatory wit and skill.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their clawed digits grant them dexterity similar to that of any creature with hands, and in close combat make for effective weapons. Many griffons choose to rely solely on them when hunting in order to satiate their carnivorous diet and pride.\n\nGriffons can be found all over the world, but they typically favor more temperate regions with open skies and vast mountain ranges. Their settlements line cliffsides or high plateaus within these areas, built to take advantage of the terrain’s natural defences and strong air currents.]]></Pony_Griffon.description>
+	<Pony_Griffon.tools.left_fist.label>левый кулак</Pony_Griffon.tools.left_fist.label>
+	<Pony_Griffon.tools.left_fist.labelNoLocation>кулак</Pony_Griffon.tools.left_fist.labelNoLocation>
+	<Pony_Griffon.tools.right_fist.label>правый кулак</Pony_Griffon.tools.right_fist.label>
+	<Pony_Griffon.tools.right_fist.labelNoLocation>кулак</Pony_Griffon.tools.right_fist.labelNoLocation>
+	<Pony_Griffon.tools.teeth.label>зубы</Pony_Griffon.tools.teeth.label>
+	<Pony_Griffon.tools.head.label>голова</Pony_Griffon.tools.head.label>
+
+</LanguageData>

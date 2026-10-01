@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Clothing.label>лошадиная одежда</Pony_Clothing.label>
+	<Pony_Clothing.description>Пошив одежды, предназначенной для четвероногих существ, таких как седельные сумки.</Pony_Clothing.description>
+	<Pony_Clothing.generalRules.rulesStrings>
+		<li>subject->портняжное дело</li>
+		<li>subject->кройка и шитьё</li>
+		<li>subject_gen->портняжного дела</li>
+		<li>subject_gen->кройки и шитья</li>
+		<li>subject_dat->портняжному делу</li>
+		<li>subject_dat->кройке и шитью</li>
+		<li>subject_pre_about->о портняжном деле</li>
+		<li>subject_pre_about->о кройке и шитье</li>
+		<li>subject_story->{ANYPAWN_gender ? принялся : принялась} шить износостойкую одежду для жителей городских миров</li>
+		<li>subject_story->{ANYPAWN_gender ? нашёл : нашла} отраду в шитье под рассказывание историй деревенским детям</li>
+		<li>subject_story->{ANYPAWN_gender ? научился : научилась} изготавливать костюмы для грандиозных представлений своей труппы</li>
+		<li>subject_gerund->пошива одежды</li>
+	</Pony_Clothing.generalRules.rulesStrings>
+
+	<Pony_Prosthetics.label>лошадиное протезирование</Pony_Prosthetics.label>
+	<Pony_Prosthetics.description>Конструирование протезов, предназначенные для четвероногих существ, для замены утраченных рогов или крыльев. Для установки требуется опытный врач.</Pony_Prosthetics.description>
+	<Pony_Prosthetics.generalRules.rulesStrings>
+		<li>subject->протезирование</li>
+		<li>subject_gen->протезирования</li>
+		<li>subject_dat->протезированию</li>
+		<li>subject_pre_about->о протезировании</li>
+		<li>subject_story->{ANYPAWN_gender ? заменил : заменила} свою конечность протезом с целью показать, насколько это просто</li>
+		<li>subject_story->{ANYPAWN_gender ? открыл : открыла} клинику протезирования</li>
+		<li>subject_story->{ANYPAWN_gender ? начал : начала} изготавливать на заказ искусственные конечности для многочисленных ветеранов войны</li>
+		<li>subject_gerund->создания протезов</li>
+	</Pony_Prosthetics.generalRules.rulesStrings>
+
+</LanguageData>

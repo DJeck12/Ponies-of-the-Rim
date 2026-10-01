@@ -32,7 +32,7 @@
 	<Pony_UnicornPrince.title>высокомерный принц</Pony_UnicornPrince.title>
 	<Pony_UnicornPrince.titleFemale>высокомерная принцесса</Pony_UnicornPrince.titleFemale>
 	<Pony_UnicornPrince.titleShort>принц</Pony_UnicornPrince.titleShort>
-	<Pony_UnicornPrince.titleShort>принцесса</Pony_UnicornPrince.titleShort>
+	<Pony_UnicornPrince.titleShortFemale>принцесса</Pony_UnicornPrince.titleShortFemale>
 	<Pony_UnicornPrince.description>[PAWN_nameDef] {PAWN_gender ? появился : появилась} на свет в состоятельной семье и не знал ни нужды, ни тревог. Все [PAWN_possessive] желания мгновенно исполнялись. [PAWN_pronoun] был слишком высокомерен, чтобы снисходить до общения с окружающими или выполнять даже самую простую работу.</Pony_UnicornPrince.description>
 
 	<Pony_UnicornDamagedHorn.title>повреждённый рог</Pony_UnicornDamagedHorn.title>

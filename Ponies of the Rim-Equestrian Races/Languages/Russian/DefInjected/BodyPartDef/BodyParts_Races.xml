@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_ChangelingHorn.label>рог</Pony_ChangelingHorn.label>
+	<Pony_KirinHorn.label>рог</Pony_KirinHorn.label>
+	<Pony_Beak.label>клюв</Pony_Beak.label>
+	<Pony_Antler.label>рог</Pony_Antler.label>
+	<Pony_FrontClaw.label>передний коготь</Pony_FrontClaw.label>
+	<Pony_FrontClaw.labelShort>коготь</Pony_FrontClaw.labelShort>
+	<Pony_RearClaw.label>задний коготь</Pony_RearClaw.label>
+	<Pony_RearClaw.labelShort>коготь</Pony_RearClaw.labelShort>
+	<Pony_FrontPaw.label>передняя лапа</Pony_FrontPaw.label>
+	<Pony_FrontPaw.labelShort>лапа</Pony_FrontPaw.labelShort>
+	<Pony_RearPaw.label>задняя лапа</Pony_RearPaw.label>
+	<Pony_RearPaw.labelShort>лапа</Pony_RearPaw.labelShort>
+	<Pony_FishTail.label>рыбный хвост</Pony_FishTail.label>
+
+</LanguageData>

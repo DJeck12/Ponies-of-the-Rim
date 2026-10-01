@@ -39,11 +39,11 @@
 	<Pony_PegasusInventor.titleFemale>летчица-изобретательница</Pony_PegasusInventor.titleFemale>
 	<Pony_PegasusInventor.titleShort>изобретатель</Pony_PegasusInventor.titleShort>
 	<Pony_PegasusInventor.titleShortFemale>изобретательница</Pony_PegasusInventor.titleShortFemale>
-	<Pony_PegasusInventor.description>Однажды [PAWN_nameDef] {PAWN_gender ? встретил : встретила} пегаса, который не мог летать. [PAWN_possessive] сердце было полно сострадания, и [PAWN_pronoun] не {PAWN_gender ? мог : могла} спокойно жить, зная, что рядом есть кто-то, кто обделен чем-то настолько важным. Тогда [PAWN_nameDef] {PAWN_gender ? решил : решила} стать {PAWN_gender ? изобретателем : изобретательницей} и {PAWN_gender ? поставил : поставила} перед собой важную жизненную цель — сделать вновь счастливыми всех несчастных пони.</Pony_PegasusInventor.description>
+	<Pony_PegasusInventor.description>Однажды [PAWN_nameDef] {PAWN_gender ? встретил : встретила} пегаса, который не мог летать. [PAWN_possessive] сердце было полно сострадания, и [PAWN_pronoun] не {PAWN_gender ? мог : могла} спокойно жить, зная, что рядом есть кто-то, кто обделен чем-то настолько важным. Тогда [PAWN_nameDef] {PAWN_gender ? решил : решила} стать {PAWN_gender ? изобретателем : изобретательницей} и {PAWN_gender ? поставил : поставила} перед собой важную жизненную цель - сделать вновь счастливыми всех несчастных пони.</Pony_PegasusInventor.description>
 
 	<Pony_PegasusWeatherController.title>контролер погоды</Pony_PegasusWeatherController.title>
 	<Pony_PegasusWeatherController.titleShort>погодник</Pony_PegasusWeatherController.titleShort>
-	<Pony_PegasusWeatherController.description>Большую часть своей жизни [PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} управлению погодой и часто {PAWN_gender ? работал : работала} вместе с местными метеорологами. [PAWN_pronoun] {PAWN_gender ? был : была} {PAWN_gender ? уверен : уверена}, что этот вид деятельности — [PAWN_possessive] истинное призвание.</Pony_PegasusWeatherController.description>
+	<Pony_PegasusWeatherController.description>Большую часть своей жизни [PAWN_nameDef] {PAWN_gender ? посвятил : посвятила} управлению погодой и часто {PAWN_gender ? работал : работала} вместе с местными метеорологами. [PAWN_pronoun] {PAWN_gender ? был : была} {PAWN_gender ? уверен : уверена}, что этот вид деятельности - [PAWN_possessive] истинное призвание.</Pony_PegasusWeatherController.description>
 
 	<Pony_PegasusMeteorologist.title>метеоролог</Pony_PegasusMeteorologist.title>
 	<Pony_PegasusMeteorologist.titleShort>метеоролог</Pony_PegasusMeteorologist.titleShort>

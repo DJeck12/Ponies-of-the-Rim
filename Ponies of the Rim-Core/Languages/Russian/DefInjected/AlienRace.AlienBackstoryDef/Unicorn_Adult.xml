@@ -21,7 +21,7 @@
 	<Pony_UnicornMagicTeacher.titleFemale>преподавательница магии</Pony_UnicornMagicTeacher.titleFemale>
 	<Pony_UnicornMagicTeacher.titleShort>учитель</Pony_UnicornMagicTeacher.titleShort>
 	<Pony_UnicornMagicTeacher.titleShortFemale>учительница</Pony_UnicornMagicTeacher.titleShortFemale>
-	<Pony_UnicornMagicTeacher.description>Будучи выдающимся заклинателем, [PAWN_nameDef] {PAWN_gender ? решил : решила}, что [PAWN_possessive] призвание — учить других магии. [PAWN_pronoun] {PAWN_gender ? связал : связала} свою жизнь с этим делом и {PAWN_gender ? стал : стала} обучать тех, кто желал постичь искусство волшебства.</Pony_UnicornMagicTeacher.description>
+	<Pony_UnicornMagicTeacher.description>Будучи выдающимся заклинателем, [PAWN_nameDef] {PAWN_gender ? решил : решила}, что [PAWN_possessive] призвание - учить других магии. [PAWN_pronoun] {PAWN_gender ? связал : связала} свою жизнь с этим делом и {PAWN_gender ? стал : стала} обучать тех, кто желал постичь искусство волшебства.</Pony_UnicornMagicTeacher.description>
 
 	<Pony_UnicornCrystalMiner.title>копатель кристалов</Pony_UnicornCrystalMiner.title>
 	<Pony_UnicornCrystalMiner.titleShort>щахтёр</Pony_UnicornCrystalMiner.titleShort>
@@ -29,7 +29,7 @@
 
 	<Pony_UnicornJeweler.title>крисиальный ювелир</Pony_UnicornJeweler.title>
 	<Pony_UnicornJeweler.titleShort>ювелир</Pony_UnicornJeweler.titleShort>
-	<Pony_UnicornJeweler.description>[PAWN_nameDef] {PAWN_gender ? продолжил : продолжила} семейную традицию — все [PAWN_possessive] родственники были выдающимися ювелирами в городе. [PAWN_pronoun] {PAWN_gender ? научился : научилась} мастерству у отца и достиг небывалых высот в ювелирном деле.</Pony_UnicornJeweler.description>
+	<Pony_UnicornJeweler.description>[PAWN_nameDef] {PAWN_gender ? продолжил : продолжила} семейную традицию - все [PAWN_possessive] родственники были выдающимися ювелирами в городе. [PAWN_pronoun] {PAWN_gender ? научился : научилась} мастерству у отца и достиг небывалых высот в ювелирном деле.</Pony_UnicornJeweler.description>
 
 	<Pony_UnicornCrystalMagnate.title>кристальный магнат</Pony_UnicornCrystalMagnate.title>
 	<Pony_UnicornCrystalMagnate.titleShort>магнат</Pony_UnicornCrystalMagnate.titleShort>

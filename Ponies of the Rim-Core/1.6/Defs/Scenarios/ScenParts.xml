@@ -3,7 +3,7 @@
 
 	<ScenPartDef>
 		<defName>Pony_ConfigurePawnsKindDefs</defName>
-		<label>starting people</label>
+		<label>starting colonists</label>
 		<category>Fixed</category>
 		<scenPartClass>PoniesOfTheRim.ScenPart_ConfigPage_ConfigureStartingPawns_KindDefsCustom</scenPartClass>
 		<pageClass>Page_ConfigureStartingPawns</pageClass>

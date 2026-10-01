@@ -754,7 +754,7 @@
 			</li>
 		</requireOne>
 		<factionWhitelist>
-			<li>Pony_HippogriffKingdom</li>
+			<li>Pony_HippogriffNation</li>
 		</factionWhitelist>
 		<generalRules>
 			<rulesStrings>

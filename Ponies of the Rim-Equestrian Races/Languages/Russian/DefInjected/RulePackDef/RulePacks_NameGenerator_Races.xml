@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<NameGeneratorBatpony.rulePack.rulesStrings.0>r_name->[Bat_First] [Bat_Last]</NameGeneratorBatpony.rulePack.rulesStrings.0>
+	<NameGeneratorBatpony.rulePack.rulesStrings.1>r_name->[Bat_First] [Bat_Word]</NameGeneratorBatpony.rulePack.rulesStrings.1>
+	<NameGeneratorBatpony.rulePack.rulesStrings.2>r_name->[Bat_Word] [Bat_Last]</NameGeneratorBatpony.rulePack.rulesStrings.2>
+	<NameGeneratorBatpony.rulePack.rulesStrings.3>r_name->[First] [Bat_Last]</NameGeneratorBatpony.rulePack.rulesStrings.3>
+	<NameGeneratorBatpony.rulePack.rulesStrings.4>r_name->[First] [Bat_Word]</NameGeneratorBatpony.rulePack.rulesStrings.4>
+	<NameGeneratorBatpony.rulePack.rulesStrings.5>r_name->[Word] [Bat_Last]</NameGeneratorBatpony.rulePack.rulesStrings.5>
+	<NameGeneratorBatpony.rulePack.rulesStrings.6>r_name->[Bat_First] [Last]</NameGeneratorBatpony.rulePack.rulesStrings.6>
+	<NameGeneratorBatpony.rulePack.rulesStrings.7>r_name->[Bat_First] [Word]</NameGeneratorBatpony.rulePack.rulesStrings.7>
+	<NameGeneratorBatpony.rulePack.rulesStrings.8>r_name->[Bat_Word] [Last]</NameGeneratorBatpony.rulePack.rulesStrings.8>
+
+	<NameGeneratorChangeling.rulePack.rulesStrings.0>r_name->[Changeling_Name]</NameGeneratorChangeling.rulePack.rulesStrings.0>
+
+	<NameGeneratorZebraMale.rulePack.rulesStrings.0>r_name->[Zebra_Name_Male]</NameGeneratorZebraMale.rulePack.rulesStrings.0>
+	<NameGeneratorZebraMale.rulePack.rulesStrings.1>r_name->[Zebra_Name_Unisex]</NameGeneratorZebraMale.rulePack.rulesStrings.1>
+	<NameGeneratorZebraFemale.rulePack.rulesStrings.0>r_name->[Zebra_Name_Female]</NameGeneratorZebraFemale.rulePack.rulesStrings.0>
+	<NameGeneratorZebraFemale.rulePack.rulesStrings.1>r_name->[Zebra_Name_Unisex]</NameGeneratorZebraFemale.rulePack.rulesStrings.1>
+
+	<NameGeneratorGriffonMale.rulePack.rulesStrings.0>r_name->[Griffon_Name_Male]</NameGeneratorGriffonMale.rulePack.rulesStrings.0>
+	<NameGeneratorGriffonMale.rulePack.rulesStrings.1>r_name->[Griffon_Name_Unisex]</NameGeneratorGriffonMale.rulePack.rulesStrings.1>
+	<NameGeneratorGriffonFemale.rulePack.rulesStrings.0>r_name->[Griffon_Name_Female]</NameGeneratorGriffonFemale.rulePack.rulesStrings.0>
+	<NameGeneratorGriffonFemale.rulePack.rulesStrings.1>r_name->[Griffon_Name_Unisex]</NameGeneratorGriffonFemale.rulePack.rulesStrings.1>
+
+	<NameGeneratorDeerMale.rulePack.rulesStrings.0>r_name->[Deer_Name_Male]</NameGeneratorDeerMale.rulePack.rulesStrings.0>
+	<NameGeneratorDeerMale.rulePack.rulesStrings.1>r_name->[Deer_Name_Unisex]</NameGeneratorDeerMale.rulePack.rulesStrings.1>
+	<NameGeneratorDeerFemale.rulePack.rulesStrings.0>r_name->[Deer_Name_Female]</NameGeneratorDeerFemale.rulePack.rulesStrings.0>
+	<NameGeneratorDeerFemale.rulePack.rulesStrings.1>r_name->[Deer_Name_Unisex]</NameGeneratorDeerFemale.rulePack.rulesStrings.1>
+
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Crystalpony.label>кристальный пони</Pony_Crystalpony.label>
+	<Pony_Crystalpony.description><![CDATA[Ponies are a race of magical quadrupeds from the planet Foenum. Their ancestry is incredibly complex, divided into numerous subspecies, each with their own unique traits. As a whole, ponykind practices harmony and cooperation; however, the harsh reality of the rim has led many to abandon those ideals in the pursuit of survival.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Each individual also bears a cutiemark on their flank—a unique symbol signifying their profession, talent, or personality. While most ponies are herbivores and exhibit a strong aversion to meat, some subspecies have a more carnivorous diet.\n\n<color=#FF5781>Crystal ponies</color> are a lesser-known subspecies known for their lithomancy. They are capable of manipulating crystals to numerous effects, and their coats sparkle with the latent magic of their namesake. Crystal ponies prefer colder climates where crystallized snow and ice are abundant, and are commonly found within those regions.]]></Pony_Crystalpony.description>
+	<Pony_Crystalpony.tools.front_left_hoof.label>переднее левое копыто</Pony_Crystalpony.tools.front_left_hoof.label>
+	<Pony_Crystalpony.tools.front_left_hoof.labelNoLocation>копыто</Pony_Crystalpony.tools.front_left_hoof.labelNoLocation>
+	<Pony_Crystalpony.tools.front_right_hoof.label>переднее правое копыто</Pony_Crystalpony.tools.front_right_hoof.label>
+	<Pony_Crystalpony.tools.front_right_hoof.labelNoLocation>копыто</Pony_Crystalpony.tools.front_right_hoof.labelNoLocation>
+	<Pony_Crystalpony.tools.rear_legs.label>задние копыта</Pony_Crystalpony.tools.rear_legs.label>
+	<Pony_Crystalpony.tools.teeth.label>зубы</Pony_Crystalpony.tools.teeth.label>
+	<Pony_Crystalpony.tools.head.label>голова</Pony_Crystalpony.tools.head.label>
+
+</LanguageData>

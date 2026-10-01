@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<!-- Колонист -->
+
+	<Pony_LonelyAlicorn.label>аликорн</Pony_LonelyAlicorn.label>
+	<Pony_LonelyAlicorn.labelPlural>аликорны</Pony_LonelyAlicorn.labelPlural>
+	<Pony_LonelyAlicorn.labelFemale>кобылка</Pony_LonelyAlicorn.labelFemale>
+	<Pony_LonelyAlicorn.labelMale>жеребец</Pony_LonelyAlicorn.labelMale>
+	<Pony_LonelyAlicorn.labelFemalePlural>кобылки</Pony_LonelyAlicorn.labelFemalePlural>
+	<Pony_LonelyAlicorn.labelmalePlural>жеребцы</Pony_LonelyAlicorn.labelmalePlural>
+
+	<Pony_AlicornColonist.label>аликорн</Pony_AlicornColonist.label>
+	<Pony_AlicornColonist.labelPlural>аликорны</Pony_AlicornColonist.labelPlural>
+	<Pony_AlicornColonist.labelFemale>кобылка</Pony_AlicornColonist.labelFemale>
+	<Pony_AlicornColonist.labelMale>жеребец</Pony_AlicornColonist.labelMale>
+	<Pony_AlicornColonist.labelFemalePlural>кобылки</Pony_AlicornColonist.labelFemalePlural>
+	<Pony_AlicornColonist.labelmalePlural>жеребцы</Pony_AlicornColonist.labelmalePlural>
+
+	<Pony_BatponyColonist.label>бэтпони</Pony_BatponyColonist.label>
+	<Pony_BatponyColonist.labelPlural>бэтпони</Pony_BatponyColonist.labelPlural>
+	<Pony_BatponyColonist.labelFemale>кобылка</Pony_BatponyColonist.labelFemale>
+	<Pony_BatponyColonist.labelMale>жеребец</Pony_BatponyColonist.labelMale>
+	<Pony_BatponyColonist.labelFemalePlural>кобылки</Pony_BatponyColonist.labelFemalePlural>
+	<Pony_BatponyColonist.labelmalePlural>жеребцы</Pony_BatponyColonist.labelmalePlural>
+
+	<Pony_ChangedlingColonist.label>перевёртыш</Pony_ChangedlingColonist.label>
+	<Pony_ChangedlingColonist.labelPlural>перевёртыши</Pony_ChangedlingColonist.labelPlural>
+	<Pony_ChangedlingColonist.labelFemale>кобылка</Pony_ChangedlingColonist.labelFemale>
+	<Pony_ChangedlingColonist.labelMale>жеребец</Pony_ChangedlingColonist.labelMale>
+	<Pony_ChangedlingColonist.labelFemalePlural>кобылки</Pony_ChangedlingColonist.labelFemalePlural>
+	<Pony_ChangedlingColonist.labelmalePlural>жеребцы</Pony_ChangedlingColonist.labelmalePlural>
+
+	<Pony_ChangelingColonist.label>чейнджлинг</Pony_ChangelingColonist.label>
+	<Pony_ChangelingColonist.labelPlural>чейнджлинги</Pony_ChangelingColonist.labelPlural>
+	<Pony_ChangelingColonist.labelFemale>кобылка</Pony_ChangelingColonist.labelFemale>
+	<Pony_ChangelingColonist.labelMale>жеребец</Pony_ChangelingColonist.labelMale>
+	<Pony_ChangelingColonist.labelFemalePlural>кобылки</Pony_ChangelingColonist.labelFemalePlural>
+	<Pony_ChangelingColonist.labelmalePlural>жеребцы</Pony_ChangelingColonist.labelmalePlural>
+
+	<Pony_CrystalColonist.label>кристальный пони</Pony_CrystalColonist.label>
+	<Pony_CrystalColonist.labelPlural>кристальные пони</Pony_CrystalColonist.labelPlural>
+	<Pony_CrystalColonist.labelFemale>кобылка</Pony_CrystalColonist.labelFemale>
+	<Pony_CrystalColonist.labelMale>жеребец</Pony_CrystalColonist.labelMale>
+	<Pony_CrystalColonist.labelFemalePlural>кобылки</Pony_CrystalColonist.labelFemalePlural>
+	<Pony_CrystalColonist.labelmalePlural>жеребцы</Pony_CrystalColonist.labelmalePlural>
+
+	<Pony_DeerColonist.label>олень</Pony_DeerColonist.label>
+	<Pony_DeerColonist.labelPlural>олени</Pony_DeerColonist.labelPlural>
+	<Pony_DeerColonist.labelFemale>кобылка</Pony_DeerColonist.labelFemale>
+	<Pony_DeerColonist.labelMale>жеребец</Pony_DeerColonist.labelMale>
+	<Pony_DeerColonist.labelFemalePlural>кобылки</Pony_DeerColonist.labelFemalePlural>
+	<Pony_DeerColonist.labelmalePlural>жеребцы</Pony_DeerColonist.labelmalePlural>
+
+	<Pony_GriffonColonist.label>грифон</Pony_GriffonColonist.label>
+	<Pony_GriffonColonist.labelPlural>грифоны</Pony_GriffonColonist.labelPlural>
+	<Pony_GriffonColonist.labelFemale>грифонесса</Pony_GriffonColonist.labelFemale>
+	<Pony_GriffonColonist.labelMale>грифон</Pony_GriffonColonist.labelMale>
+	<Pony_GriffonColonist.labelFemalePlural>грифонессы</Pony_GriffonColonist.labelFemalePlural>
+	<Pony_GriffonColonist.labelmalePlural>грифоны</Pony_GriffonColonist.labelmalePlural>
+
+	<Pony_HippogriffColonist.label>гиппогриф</Pony_HippogriffColonist.label>
+	<Pony_HippogriffColonist.labelPlural>гиппогрифы</Pony_HippogriffColonist.labelPlural>
+	<Pony_HippogriffColonist.labelFemale>кобылка</Pony_HippogriffColonist.labelFemale>
+	<Pony_HippogriffColonist.labelMale>жеребец</Pony_HippogriffColonist.labelMale>
+	<Pony_HippogriffColonist.labelFemalePlural>кобылка</Pony_HippogriffColonist.labelFemalePlural>
+	<Pony_HippogriffColonist.labelmalePlural>жеребцы</Pony_HippogriffColonist.labelmalePlural>
+
+	<Pony_KirinColonist.label>кирин</Pony_KirinColonist.label>
+	<Pony_KirinColonist.labelPlural>кирины</Pony_KirinColonist.labelPlural>
+	<Pony_KirinColonist.labelFemale>кобылка</Pony_KirinColonist.labelFemale>
+	<Pony_KirinColonist.labelMale>жеребец</Pony_KirinColonist.labelMale>
+	<Pony_KirinColonist.labelFemalePlural>кобылки</Pony_KirinColonist.labelFemalePlural>
+	<Pony_KirinColonist.labelmalePlural>жеребцы</Pony_KirinColonist.labelmalePlural>
+
+	<Pony_ZebraColonist.label>зебра</Pony_ZebraColonist.label>
+	<Pony_ZebraColonist.labelPlural>зебры</Pony_ZebraColonist.labelPlural>
+	<Pony_ZebraColonist.labelFemale>кобылка</Pony_ZebraColonist.labelFemale>
+	<Pony_ZebraColonist.labelMale>жеребец</Pony_ZebraColonist.labelMale>
+	<Pony_ZebraColonist.labelFemalePlural>кобылки</Pony_ZebraColonist.labelFemalePlural>
+	<Pony_ZebraColonist.labelmalePlural>жеребцы</Pony_ZebraColonist.labelmalePlural>
+
+<!-- Племенной житель -->
+
+	<Pony_AlicornTribe.label>аликорн</Pony_AlicornTribe.label>
+	<Pony_AlicornTribe.labelPlural>аликорны</Pony_AlicornTribe.labelPlural>
+	<Pony_AlicornTribe.labelFemale>кобылка</Pony_AlicornTribe.labelFemale>
+	<Pony_AlicornTribe.labelMale>жеребец</Pony_AlicornTribe.labelMale>
+	<Pony_AlicornTribe.labelFemalePlural>кобылки</Pony_AlicornTribe.labelFemalePlural>
+	<Pony_AlicornTribe.labelmalePlural>жеребцы</Pony_AlicornTribe.labelmalePlural>
+
+	<Pony_BatponyTribe.label>бэтпони</Pony_BatponyTribe.label>
+	<Pony_BatponyTribe.labelPlural>бэтпони</Pony_BatponyTribe.labelPlural>
+	<Pony_BatponyTribe.labelFemale>кобылка</Pony_BatponyTribe.labelFemale>
+	<Pony_BatponyTribe.labelMale>жеребец</Pony_BatponyTribe.labelMale>
+	<Pony_BatponyTribe.labelFemalePlural>кобылки</Pony_BatponyTribe.labelFemalePlural>
+	<Pony_BatponyTribe.labelmalePlural>жеребцы</Pony_BatponyTribe.labelmalePlural>
+
+	<Pony_ChangedlingTribe.label>перевёртыш</Pony_ChangedlingTribe.label>
+	<Pony_ChangedlingTribe.labelPlural>перевёртыши</Pony_ChangedlingTribe.labelPlural>
+	<Pony_ChangedlingTribe.labelFemale>кобылка</Pony_ChangedlingTribe.labelFemale>
+	<Pony_ChangedlingTribe.labelMale>жеребец</Pony_ChangedlingTribe.labelMale>
+	<Pony_ChangedlingTribe.labelFemalePlural>кобылки</Pony_ChangedlingTribe.labelFemalePlural>
+	<Pony_ChangedlingTribe.labelmalePlural>жеребцы</Pony_ChangedlingTribe.labelmalePlural>
+
+	<Pony_ChangelingTribe.label>чейнджлинг</Pony_ChangelingTribe.label>
+	<Pony_ChangelingTribe.labelPlural>чейнджлинги</Pony_ChangelingTribe.labelPlural>
+	<Pony_ChangelingTribe.labelFemale>кобылка</Pony_ChangelingTribe.labelFemale>
+	<Pony_ChangelingTribe.labelMale>жеребец</Pony_ChangelingTribe.labelMale>
+	<Pony_ChangelingTribe.labelFemalePlural>кобылки</Pony_ChangelingTribe.labelFemalePlural>
+	<Pony_ChangelingTribe.labelmalePlural>жеребцы</Pony_ChangelingTribe.labelmalePlural>
+
+	<Pony_CrystalTribe.label>кристальный пони</Pony_CrystalTribe.label>
+	<Pony_CrystalTribe.labelPlural>кристальные пони</Pony_CrystalTribe.labelPlural>
+	<Pony_CrystalTribe.labelFemale>кобылка</Pony_CrystalTribe.labelFemale>
+	<Pony_CrystalTribe.labelMale>жеребец</Pony_CrystalTribe.labelMale>
+	<Pony_CrystalTribe.labelFemalePlural>кобылки</Pony_CrystalTribe.labelFemalePlural>
+	<Pony_CrystalTribe.labelmalePlural>жеребцы</Pony_CrystalTribe.labelmalePlural>
+
+	<Pony_DeerTribe.label>олень</Pony_DeerTribe.label>
+	<Pony_DeerTribe.labelPlural>олени</Pony_DeerTribe.labelPlural>
+	<Pony_DeerTribe.labelFemale>кобылка</Pony_DeerTribe.labelFemale>
+	<Pony_DeerTribe.labelMale>жеребец</Pony_DeerTribe.labelMale>
+	<Pony_DeerTribe.labelFemalePlural>кобылки</Pony_DeerTribe.labelFemalePlural>
+	<Pony_DeerTribe.labelmalePlural>жеребцы</Pony_DeerTribe.labelmalePlural>
+
+	<Pony_GriffonTribe.label>грифон</Pony_GriffonTribe.label>
+	<Pony_GriffonTribe.labelPlural>грифоны</Pony_GriffonTribe.labelPlural>
+	<Pony_GriffonTribe.labelFemale>грифонесса</Pony_GriffonTribe.labelFemale>
+	<Pony_GriffonTribe.labelMale>грифон</Pony_GriffonTribe.labelMale>
+	<Pony_GriffonTribe.labelFemalePlural>грифонессы</Pony_GriffonTribe.labelFemalePlural>
+	<Pony_GriffonTribe.labelmalePlural>грифоны</Pony_GriffonTribe.labelmalePlural>
+
+	<Pony_HippogriffTribe.label>гиппогриф</Pony_HippogriffTribe.label>
+	<Pony_HippogriffTribe.labelPlural>гиппогрифы</Pony_HippogriffTribe.labelPlural>
+	<Pony_HippogriffTribe.labelFemale>кобылка</Pony_HippogriffTribe.labelFemale>
+	<Pony_HippogriffTribe.labelMale>жеребец</Pony_HippogriffTribe.labelMale>
+	<Pony_HippogriffTribe.labelFemalePlural>кобылка</Pony_HippogriffTribe.labelFemalePlural>
+	<Pony_HippogriffTribe.labelmalePlural>жеребцы</Pony_HippogriffTribe.labelmalePlural>
+
+	<Pony_KirinTribe.label>кирин</Pony_KirinTribe.label>
+	<Pony_KirinTribe.labelPlural>кирины</Pony_KirinTribe.labelPlural>
+	<Pony_KirinTribe.labelFemale>кобылка</Pony_KirinTribe.labelFemale>
+	<Pony_KirinTribe.labelMale>жеребец</Pony_KirinTribe.labelMale>
+	<Pony_KirinTribe.labelFemalePlural>кобылки</Pony_KirinTribe.labelFemalePlural>
+	<Pony_KirinTribe.labelmalePlural>жеребцы</Pony_KirinTribe.labelmalePlural>
+
+	<Pony_ZebraTribe.label>зебра</Pony_ZebraTribe.label>
+	<Pony_ZebraTribe.labelPlural>зебры</Pony_ZebraTribe.labelPlural>
+	<Pony_ZebraTribe.labelFemale>кобылка</Pony_ZebraTribe.labelFemale>
+	<Pony_ZebraTribe.labelMale>жеребец</Pony_ZebraTribe.labelMale>
+	<Pony_ZebraTribe.labelFemalePlural>кобылки</Pony_ZebraTribe.labelFemalePlural>
+	<Pony_ZebraTribe.labelmalePlural>жеребцы</Pony_ZebraTribe.labelmalePlural>
+
+</LanguageData>

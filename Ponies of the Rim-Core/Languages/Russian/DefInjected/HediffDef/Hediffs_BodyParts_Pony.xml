@@ -35,4 +35,7 @@
 	<Pony_ArchotechHorn.description>Вживлённый архорог.</Pony_ArchotechHorn.description>
 	<Pony_ArchotechHorn.labelNoun>архорог</Pony_ArchotechHorn.labelNoun>
 
+	<Pony_Underdeveloped.label>недоразвитость</Pony_Underdeveloped.label>
+	<Pony_Underdeveloped.description>Хроническое заболевание, при котором развитие какой-либо части тела останавливается в раннем возрасте.</Pony_Underdeveloped.description>
+
 </LanguageData>

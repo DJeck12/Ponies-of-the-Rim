@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<MaxFlightTime.label>Макс. время полёта</MaxFlightTime.label>
+	<MaxFlightTime.description>Максимальное время, в течение которого это существо может находиться в полете перед приземлением.</MaxFlightTime.description>
+	<MaxFlightTime.formatString>{0}с.</MaxFlightTime.formatString>
+	<FlightCooldown.label>время восстановления полёта</FlightCooldown.label>
+	<FlightCooldown.description>Время отдыха, необходимое этому существу перед повторным полётом.</FlightCooldown.description>
+	<FlightCooldown.formatString>{0}с.</FlightCooldown.formatString>
+	<PegasusFlightDurationSeconds.label>полёт (сек.)</PegasusFlightDurationSeconds.label>
+	<PegasusFlightDurationSeconds.description>Сколько секунд пегас может летать непрерывно при полном запасе выносливости.</PegasusFlightDurationSeconds.description>
+
+</LanguageData>

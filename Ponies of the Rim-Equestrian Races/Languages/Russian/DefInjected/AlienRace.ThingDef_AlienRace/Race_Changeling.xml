@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Changeling.label>чейнджлинг</Pony_Changeling.label>
+	<Pony_Changeling.description><![CDATA[<color=#277330>Changeling</color> are a race of insect-like quadrupeds. They are capable of shapeshifting into virtually anything, but most often use this ability to inspire trust in order to kidnap unsuspecting victims. This behavior has earned them a reputation as dangerous and deceitful parasites.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. In addition to their shapeshifting, their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Unlike other races, changelings are emotivores, feeding off of emotions rather than regular food; the most desirable among them being love.\n\nChangelings inhabit vast subterranean networks, living and working alongside others of their kind for the betterment of their hive. Despite being linked via a hive-mind, each changeling maintains a distinct sense of self with independent thought, though most rarely exercise it.]]></Pony_Changeling.description>
+	<Pony_Changeling.tools.front_left_hoof.label>переднее левое копыто</Pony_Changeling.tools.front_left_hoof.label>
+	<Pony_Changeling.tools.front_left_hoof.labelNoLocation>копыто</Pony_Changeling.tools.front_left_hoof.labelNoLocation>
+	<Pony_Changeling.tools.front_right_hoof.label>переднее правое копыто</Pony_Changeling.tools.front_right_hoof.label>
+	<Pony_Changeling.tools.front_right_hoof.labelNoLocation>копыто</Pony_Changeling.tools.front_right_hoof.labelNoLocation>
+	<Pony_Changeling.tools.rear_legs.label>задние копыта</Pony_Changeling.tools.rear_legs.label>
+	<Pony_Changeling.tools.teeth.label>зубы</Pony_Changeling.tools.teeth.label>
+	<Pony_Changeling.tools.head.label>голова</Pony_Changeling.tools.head.label>
+	<Pony_Changeling.tools.horn.label>рог</Pony_Changeling.tools.horn.label>
+
+</LanguageData>

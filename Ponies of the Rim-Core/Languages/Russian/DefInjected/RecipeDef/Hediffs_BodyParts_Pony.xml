@@ -22,9 +22,9 @@
 	<Pony_InstallArchotechWing.description>Вживить архокрыло.</Pony_InstallArchotechWing.description>
 	<Pony_InstallArchotechWing.jobString>Вживляет архокрыло</Pony_InstallArchotechWing.jobString>
 	
-	<Pony_InstallNaturalHorn.label>пересадить рог</Pony_InstallNaturalHorn.label>
-	<Pony_InstallNaturalHorn.description>Пересадить рог.</Pony_InstallNaturalHorn.description>
-	<Pony_InstallNaturalHorn.jobString>Пересаживает рог</Pony_InstallNaturalHorn.jobString>
+	<Pony_InstallUnicornHorn.label>пересадить рог</Pony_InstallUnicornHorn.label>
+	<Pony_InstallUnicornHorn.description>Пересадить рог.</Pony_InstallUnicornHorn.description>
+	<Pony_InstallUnicornHorn.jobString>Пересаживает рог</Pony_InstallUnicornHorn.jobString>
 	<Pony_InstallBionicHorn.label>вживить бионический рог</Pony_InstallBionicHorn.label>
 	<Pony_InstallBionicHorn.description>Вживить бионический рог.</Pony_InstallBionicHorn.description>
 	<Pony_InstallBionicHorn.jobString>Вживляет бионический рог</Pony_InstallBionicHorn.jobString>

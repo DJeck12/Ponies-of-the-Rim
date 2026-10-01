@@ -2,8 +2,8 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>Pony_Hatching</defName>
-		<label>egg hatching</label>
+		<defName>Pony_Incubation</defName>
+		<label>egg incubation</label>
 		<description>Develop improved methods for safe and faster incubation of eggs for both animals and griffons.</description>
 		<tab>Pony</tab>
 		<baseCost>300</baseCost>
@@ -12,7 +12,7 @@
 		<researchViewY>1.40</researchViewY>
 		<generalRules>
 			<rulesStrings>
-				<li>subject->egg hatching</li>
+				<li>subject->egg incubation</li>
 
 				<li>subject_story->worked as a poultry farmer raising chicks</li>
 				<li>subject_story->built nesting systems for raising griffons</li>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_PlayerChangelingHive.label>Рой чейнджлингов</Pony_PlayerChangelingHive.label>
+	<Pony_PlayerChangelingHive.description>Ваш рой чейнджлингов.</Pony_PlayerChangelingHive.description>
+	<Pony_PlayerChangelingHive.leaderTitle>вождь</Pony_PlayerChangelingHive.leaderTitle>
+	<Pony_PlayerChangelingHive.messageDefendersAttacking>{0} из фракции {1} атакуют ваших {lookup: {2}; Case; 3}.</Pony_PlayerChangelingHive.messageDefendersAttacking>
+	<Pony_PlayerChangelingHive.pawnSingular>абориген</Pony_PlayerChangelingHive.pawnSingular>
+	<Pony_PlayerChangelingHive.pawnsPlural>аборигены</Pony_PlayerChangelingHive.pawnsPlural>
+
+	<Pony_LonelyAlicorn.label>Поселение пони</Pony_LonelyAlicorn.label>
+	<Pony_LonelyAlicorn.description>Ваше поселение пони.</Pony_LonelyAlicorn.description>
+	<Pony_LonelyAlicorn.leaderTitle>лидер</Pony_LonelyAlicorn.leaderTitle>
+	<Pony_LonelyAlicorn.messageDefendersAttacking>{0} из фракции {1} атакуют ваших {lookup: {2}; Case; 3}.</Pony_LonelyAlicorn.messageDefendersAttacking>
+	<Pony_LonelyAlicorn.pawnSingular>поселенец</Pony_LonelyAlicorn.pawnSingular>
+	<Pony_LonelyAlicorn.pawnsPlural>поселенцы</Pony_LonelyAlicorn.pawnsPlural>
+
+</LanguageData>

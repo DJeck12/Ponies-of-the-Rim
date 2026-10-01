@@ -3,7 +3,7 @@
 
 	<PoniesOfTheRim.Genetics.PonyRacialGeneGroupDef>
 		<defName>Pony_PonyxMagic</defName>
-		<label>pony magic power</label>
+		<label>pony magic</label>
 		<chooserGene>Pony_PonyMagic</chooserGene>
 		<markerGenes>
 			<li>Pony_Cutiemark</li>

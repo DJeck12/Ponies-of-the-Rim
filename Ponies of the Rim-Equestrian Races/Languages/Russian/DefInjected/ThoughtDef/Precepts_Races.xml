@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Alicorn_Abhorrent.stages.hatred_for_alicorns.label>ненависть к аликорнам</Pony_Alicorn_Abhorrent.stages.hatred_for_alicorns.label>
+	<Pony_Alicorn_Abhorrent.stages.hatred_for_alicorns.description>Аликорны абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Alicorn_Abhorrent.stages.hatred_for_alicorns.description>
+	<Pony_Alicorn_Abhorrent_Social.stages.disgusting_alicorn.label>противный аликорн!</Pony_Alicorn_Abhorrent_Social.stages.disgusting_alicorn.label>
+	<Pony_Alicorn_Horrible_Social.stages.distrust_for_alicorns.label>недоверие к аликорнам</Pony_Alicorn_Horrible_Social.stages.distrust_for_alicorns.label>
+	<Pony_Alicorn_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Alicorn_Stricted.stages.other_races_among_us.label>
+	<Pony_Alicorn_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся аликорнами. Мы должны заставить их уйти тем или иным способом.</Pony_Alicorn_Stricted.stages.other_races_among_us.description>
+	<Pony_Alicorn_Stricted_Social.stages.not_an_alicorn.label>не аликорн</Pony_Alicorn_Stricted_Social.stages.not_an_alicorn.label>
+	<Pony_Alicorn_Respected_Social.stages.respect_for_alicorns.label>уважение к аликорнам</Pony_Alicorn_Respected_Social.stages.respect_for_alicorns.label>
+	<Pony_Alicorn_Exalted.stages.love_for_alicorns.label>любовь к аликорнам</Pony_Alicorn_Exalted.stages.love_for_alicorns.label>
+	<Pony_Alicorn_Exalted.stages.love_for_alicorns.description>Я чувствую себя очень счастливо, зная, что мы живем среди аликорнов.</Pony_Alicorn_Exalted.stages.love_for_alicorns.description>
+	<Pony_Alicorn_Exalted_Social.stages.amazing_alicorn.label>чудесный аликорн!</Pony_Alicorn_Exalted_Social.stages.amazing_alicorn.label>
+
+	<Pony_Batpony_Abhorrent.stages.hatred_for_bat_ponies.label>ненависть к бэтпони</Pony_Batpony_Abhorrent.stages.hatred_for_bat_ponies.label>
+	<Pony_Batpony_Abhorrent.stages.hatred_for_bat_ponies.description>Бэтпони абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Batpony_Abhorrent.stages.hatred_for_bat_ponies.description>
+	<Pony_Batpony_Abhorrent_Social.stages.disgusting_bat_pony.label>противный бэтпони!</Pony_Batpony_Abhorrent_Social.stages.disgusting_bat_pony.label>
+	<Pony_Batpony_Horrible_Social.stages.distrust_for_bat_ponies.label>недоверие к бэтпони</Pony_Batpony_Horrible_Social.stages.distrust_for_bat_ponies.label>
+	<Pony_Batpony_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Batpony_Stricted.stages.other_races_among_us.label>
+	<Pony_Batpony_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся бэтпони. Мы должны заставить их уйти тем или иным способом.</Pony_Batpony_Stricted.stages.other_races_among_us.description>
+	<Pony_Batpony_Stricted_Social.stages.not_a_bat_pony.label>не бэтпони</Pony_Batpony_Stricted_Social.stages.not_a_bat_pony.label>
+	<Pony_Batpony_Respected_Social.stages.respect_for_bat_ponies.label>уважение к бэтпони</Pony_Batpony_Respected_Social.stages.respect_for_bat_ponies.label>
+	<Pony_Batpony_Exalted.stages.love_for_bat_ponies.label>любовь к бэтпони</Pony_Batpony_Exalted.stages.love_for_bat_ponies.label>
+	<Pony_Batpony_Exalted.stages.love_for_bat_ponies.description>Я чувствую себя очень счастливо, зная, что мы живем среди бэтпони.</Pony_Batpony_Exalted.stages.love_for_bat_ponies.description>
+	<Pony_Batpony_Exalted_Social.stages.amazing_bat_pony.label>чудесный бэтпони!</Pony_Batpony_Exalted_Social.stages.amazing_bat_pony.label>
+
+	<Pony_Changedling_Abhorrent.stages.hatred_for_changedlings.label>ненависть к перевёртышам</Pony_Changedling_Abhorrent.stages.hatred_for_changedlings.label>
+	<Pony_Changedling_Abhorrent.stages.hatred_for_changedlings.description>Перевёртыши абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Changedling_Abhorrent.stages.hatred_for_changedlings.description>
+	<Pony_Changedling_Abhorrent_Social.stages.disgusting_changedling.label>противный перевёртыш!</Pony_Changedling_Abhorrent_Social.stages.disgusting_changedling.label>
+	<Pony_Changedling_Horrible_Social.stages.distrust_for_changedlings.label>недоверие к перевёртышам</Pony_Changedling_Horrible_Social.stages.distrust_for_changedlings.label>
+	<Pony_Changedling_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Changedling_Stricted.stages.other_races_among_us.label>
+	<Pony_Changedling_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся перевёртышами. Мы должны заставить их уйти тем или иным способом.</Pony_Changedling_Stricted.stages.other_races_among_us.description>
+	<Pony_Changedling_Stricted_Social.stages.not_a_changedling.label>не перевёртыш</Pony_Changedling_Stricted_Social.stages.not_a_changedling.label>
+	<Pony_Changedling_Respected_Social.stages.respect_for_changedlings.label>уважение к перевёртышам</Pony_Changedling_Respected_Social.stages.respect_for_changedlings.label>
+	<Pony_Changedling_Exalted.stages.love_for_changedlings.label>любовь к перевёртышам</Pony_Changedling_Exalted.stages.love_for_changedlings.label>
+	<Pony_Changedling_Exalted.stages.love_for_changedlings.description>Я чувствую себя очень счастливо, зная, что мы живем среди перевёртышей.</Pony_Changedling_Exalted.stages.love_for_changedlings.description>
+	<Pony_Changedling_Exalted_Social.stages.amazing_changedling.label>чудесный перевёртыш!</Pony_Changedling_Exalted_Social.stages.amazing_changedling.label>
+
+	<Pony_Changeling_Abhorrent.stages.hatred_for_changelings.label>ненависть к чейнджлингам</Pony_Changeling_Abhorrent.stages.hatred_for_changelings.label>
+	<Pony_Changeling_Abhorrent.stages.hatred_for_changelings.description>Чейнджлинги абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Changeling_Abhorrent.stages.hatred_for_changelings.description>
+	<Pony_Changeling_Abhorrent_Social.stages.disgusting_changeling.label>противный чейнджлинг!</Pony_Changeling_Abhorrent_Social.stages.disgusting_changeling.label>
+	<Pony_Changeling_Horrible_Social.stages.distrust_for_changelings.label>недоверие к чейнджлингам</Pony_Changeling_Horrible_Social.stages.distrust_for_changelings.label>
+	<Pony_Changeling_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Changeling_Stricted.stages.other_races_among_us.label>
+	<Pony_Changeling_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся чейнджлингами. Мы должны заставить их уйти тем или иным способом.</Pony_Changeling_Stricted.stages.other_races_among_us.description>
+	<Pony_Changeling_Stricted_Social.stages.not_a_changeling.label>не чейнджлинг</Pony_Changeling_Stricted_Social.stages.not_a_changeling.label>
+	<Pony_Changeling_Respected_Social.stages.respect_for_changelings.label>уважение к чейнджлингам</Pony_Changeling_Respected_Social.stages.respect_for_changelings.label>
+	<Pony_Changeling_Exalted.stages.love_for_changelings.label>любовь к чейнджлингам</Pony_Changeling_Exalted.stages.love_for_changelings.label>
+	<Pony_Changeling_Exalted.stages.love_for_changelings.description>Я чувствую себя очень счастливо, зная, что мы живем среди чейнджлингов.</Pony_Changeling_Exalted.stages.love_for_changelings.description>
+	<Pony_Changeling_Exalted_Social.stages.amazing_changeling.label>чудесный чейнджлинг!</Pony_Changeling_Exalted_Social.stages.amazing_changeling.label>
+
+	<Pony_Crystalpony_Abhorrent.stages.hatred_for_crystal_ponies.label>ненависть к кристальным пони</Pony_Crystalpony_Abhorrent.stages.hatred_for_crystal_ponies.label>
+	<Pony_Crystalpony_Abhorrent.stages.hatred_for_crystal_ponies.description>Кристальные пони абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Crystalpony_Abhorrent.stages.hatred_for_crystal_ponies.description>
+	<Pony_Crystalpony_Abhorrent_Social.stages.disgusting_crystal_pony.label>противный кристальный пони!</Pony_Crystalpony_Abhorrent_Social.stages.disgusting_crystal_pony.label>
+	<Pony_Crystalpony_Horrible_Social.stages.distrust_for_crystal_ponies.label>недоверие к кристальным пони</Pony_Crystalpony_Horrible_Social.stages.distrust_for_crystal_ponies.label>
+	<Pony_Crystalpony_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Crystalpony_Stricted.stages.other_races_among_us.label>
+	<Pony_Crystalpony_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся кристальными пони. Мы должны заставить их уйти тем или иным способом.</Pony_Crystalpony_Stricted.stages.other_races_among_us.description>
+	<Pony_Crystalpony_Stricted_Social.stages.not_a_crystal_pony.label>не кристальный пони</Pony_Crystalpony_Stricted_Social.stages.not_a_crystal_pony.label>
+	<Pony_Crystalpony_Respected_Social.stages.respect_for_crystal_ponies.label>уважение к кристальным пони</Pony_Crystalpony_Respected_Social.stages.respect_for_crystal_ponies.label>
+	<Pony_Crystalpony_Exalted.stages.love_for_crystal_ponies.label>любовь к кристальным пони</Pony_Crystalpony_Exalted.stages.love_for_crystal_ponies.label>
+	<Pony_Crystalpony_Exalted.stages.love_for_crystal_ponies.description>Я чувствую себя очень счастливо, зная, что мы живем среди кристальных пони.</Pony_Crystalpony_Exalted.stages.love_for_crystal_ponies.description>
+	<Pony_Crystalpony_Exalted_Social.stages.amazing_crystal_pony.label>чудесный кристальный пони!</Pony_Crystalpony_Exalted_Social.stages.amazing_crystal_pony.label>
+
+	<Pony_Deer_Abhorrent.stages.hatred_for_deers.label>ненависть к оленям</Pony_Deer_Abhorrent.stages.hatred_for_deers.label>
+	<Pony_Deer_Abhorrent.stages.hatred_for_deers.description>Олени абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Deer_Abhorrent.stages.hatred_for_deers.description>
+	<Pony_Deer_Abhorrent_Social.stages.disgusting_deer.label>противный олень!</Pony_Deer_Abhorrent_Social.stages.disgusting_deer.label>
+	<Pony_Deer_Horrible_Social.stages.distrust_for_deers.label>недоверие к оленям</Pony_Deer_Horrible_Social.stages.distrust_for_deers.label>
+	<Pony_Deer_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Deer_Stricted.stages.other_races_among_us.label>
+	<Pony_Deer_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся оленями. Мы должны заставить их уйти тем или иным способом.</Pony_Deer_Stricted.stages.other_races_among_us.description>
+	<Pony_Deer_Stricted_Social.stages.not_a_deer.label>не олень</Pony_Deer_Stricted_Social.stages.not_a_deer.label>
+	<Pony_Deer_Respected_Social.stages.respect_for_deers.label>уважение к оленям</Pony_Deer_Respected_Social.stages.respect_for_deers.label>
+	<Pony_Deer_Exalted.stages.love_for_deers.label>любовь к оленям</Pony_Deer_Exalted.stages.love_for_deers.label>
+	<Pony_Deer_Exalted.stages.love_for_deers.description>Я чувствую себя очень счастливо, зная, что мы живем среди оленей.</Pony_Deer_Exalted.stages.love_for_deers.description>
+	<Pony_Deer_Exalted_Social.stages.amazing_deer.label>чудесный олень!</Pony_Deer_Exalted_Social.stages.amazing_deer.label>
+
+	<Pony_Griffon_Abhorrent.stages.hatred_for_griffons.label>ненависть к грифонам</Pony_Griffon_Abhorrent.stages.hatred_for_griffons.label>
+	<Pony_Griffon_Abhorrent.stages.hatred_for_griffons.description>Грифоны абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Griffon_Abhorrent.stages.hatred_for_griffons.description>
+	<Pony_Griffon_Abhorrent_Social.stages.disgusting_griffon.label>противный грифон!</Pony_Griffon_Abhorrent_Social.stages.disgusting_griffon.label>
+	<Pony_Griffon_Horrible_Social.stages.distrust_for_griffons.label>недоверие к грифонам</Pony_Griffon_Horrible_Social.stages.distrust_for_griffons.label>
+	<Pony_Griffon_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Griffon_Stricted.stages.other_races_among_us.label>
+	<Pony_Griffon_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся грифонами. Мы должны заставить их уйти тем или иным способом.</Pony_Griffon_Stricted.stages.other_races_among_us.description>
+	<Pony_Griffon_Stricted_Social.stages.not_a_griffon.label>не грифон</Pony_Griffon_Stricted_Social.stages.not_a_griffon.label>
+	<Pony_Griffon_Respected_Social.stages.respect_for_griffons.label>уважение к грифонам</Pony_Griffon_Respected_Social.stages.respect_for_griffons.label>
+	<Pony_Griffon_Exalted.stages.love_for_griffons.label>любовь к грифонам</Pony_Griffon_Exalted.stages.love_for_griffons.label>
+	<Pony_Griffon_Exalted.stages.love_for_griffons.description>Я чувствую себя очень счастливо, зная, что мы живем среди грифонов.</Pony_Griffon_Exalted.stages.love_for_griffons.description>
+	<Pony_Griffon_Exalted_Social.stages.amazing_griffon.label>чудесный грифон!</Pony_Griffon_Exalted_Social.stages.amazing_griffon.label>
+
+	<Pony_Hippogriff_Abhorrent.stages.hatred_for_hippogriffs.label>ненависть к гиппогрифам</Pony_Hippogriff_Abhorrent.stages.hatred_for_hippogriffs.label>
+	<Pony_Hippogriff_Abhorrent.stages.hatred_for_hippogriffs.description>Гиппогрифы абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Hippogriff_Abhorrent.stages.hatred_for_hippogriffs.description>
+	<Pony_Hippogriff_Abhorrent_Social.stages.disgusting_hippogriff.label>противный гиппогриф!</Pony_Hippogriff_Abhorrent_Social.stages.disgusting_hippogriff.label>
+	<Pony_Hippogriff_Horrible_Social.stages.distrust_for_hippogriffs.label>недоверие к гиппогрифам</Pony_Hippogriff_Horrible_Social.stages.distrust_for_hippogriffs.label>
+	<Pony_Hippogriff_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Hippogriff_Stricted.stages.other_races_among_us.label>
+	<Pony_Hippogriff_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся гиппогрифами. Мы должны заставить их уйти тем или иным способом.</Pony_Hippogriff_Stricted.stages.other_races_among_us.description>
+	<Pony_Hippogriff_Stricted_Social.stages.not_a_hippogriff.label>не гиппогриф</Pony_Hippogriff_Stricted_Social.stages.not_a_hippogriff.label>
+	<Pony_Hippogriff_Respected_Social.stages.respect_for_hippogriffs.label>уважение к гиппогрифам</Pony_Hippogriff_Respected_Social.stages.respect_for_hippogriffs.label>
+	<Pony_Hippogriff_Exalted.stages.love_for_hippogriffs.label>любовь к гиппогрифам</Pony_Hippogriff_Exalted.stages.love_for_hippogriffs.label>
+	<Pony_Hippogriff_Exalted.stages.love_for_hippogriffs.description>Я чувствую себя очень счастливо, зная, что мы живем среди гиппогрифов.</Pony_Hippogriff_Exalted.stages.love_for_hippogriffs.description>
+	<Pony_Hippogriff_Exalted_Social.stages.amazing_hippogriff.label>чудесный гиппогриф!</Pony_Hippogriff_Exalted_Social.stages.amazing_hippogriff.label>
+
+	<Pony_Kirin_Abhorrent.stages.hatred_for_kirins.label>ненависть к киринам</Pony_Kirin_Abhorrent.stages.hatred_for_kirins.label>
+	<Pony_Kirin_Abhorrent.stages.hatred_for_kirins.description>Кирины абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Kirin_Abhorrent.stages.hatred_for_kirins.description>
+	<Pony_Kirin_Abhorrent_Social.stages.disgusting_kirin.label>противный кирин!</Pony_Kirin_Abhorrent_Social.stages.disgusting_kirin.label>
+	<Pony_Kirin_Horrible_Social.stages.distrust_for_kirins.label>недоверие к киринам</Pony_Kirin_Horrible_Social.stages.distrust_for_kirins.label>
+	<Pony_Kirin_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Kirin_Stricted.stages.other_races_among_us.label>
+	<Pony_Kirin_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся киринами. Мы должны заставить их уйти тем или иным способом.</Pony_Kirin_Stricted.stages.other_races_among_us.description>
+	<Pony_Kirin_Stricted_Social.stages.not_a_kirin.label>не кирин</Pony_Kirin_Stricted_Social.stages.not_a_kirin.label>
+	<Pony_Kirin_Respected_Social.stages.respect_for_kirins.label>уважение к киринам</Pony_Kirin_Respected_Social.stages.respect_for_kirins.label>
+	<Pony_Kirin_Exalted.stages.love_for_kirins.label>любовь к киринам</Pony_Kirin_Exalted.stages.love_for_kirins.label>
+	<Pony_Kirin_Exalted.stages.love_for_kirins.description>Я чувствую себя очень счастливо, зная, что мы живем среди киринов.</Pony_Kirin_Exalted.stages.love_for_kirins.description>
+	<Pony_Kirin_Exalted_Social.stages.amazing_kirin.label>чудесный кирин!</Pony_Kirin_Exalted_Social.stages.amazing_kirin.label>
+
+	<Pony_Zebra_Abhorrent.stages.hatred_for_zebras.label>ненависть к зебрам</Pony_Zebra_Abhorrent.stages.hatred_for_zebras.label>
+	<Pony_Zebra_Abhorrent.stages.hatred_for_zebras.description>Зебры абсолютно отвратительны, и я не могу позволить им злоупотреблять нашим доверием.</Pony_Zebra_Abhorrent.stages.hatred_for_zebras.description>
+	<Pony_Zebra_Abhorrent_Social.stages.disgusting_zebra.label>противный зебра!</Pony_Zebra_Abhorrent_Social.stages.disgusting_zebra.label>
+	<Pony_Zebra_Horrible_Social.stages.distrust_for_zebras.label>недоверие к зебрам</Pony_Zebra_Horrible_Social.stages.distrust_for_zebras.label>
+	<Pony_Zebra_Stricted.stages.other_races_among_us.label>есть другие расы</Pony_Zebra_Stricted.stages.other_races_among_us.label>
+	<Pony_Zebra_Stricted.stages.other_races_among_us.description>Мы живём среди представителей рас, не являющихся зебрами. Мы должны заставить их уйти тем или иным способом.</Pony_Zebra_Stricted.stages.other_races_among_us.description>
+	<Pony_Zebra_Stricted_Social.stages.not_a_zebra.label>не зебра</Pony_Zebra_Stricted_Social.stages.not_a_zebra.label>
+	<Pony_Zebra_Respected_Social.stages.respect_for_zebras.label>уважение к зебрам</Pony_Zebra_Respected_Social.stages.respect_for_zebras.label>
+	<Pony_Zebra_Exalted.stages.love_for_zebras.label>любовь к зебрам</Pony_Zebra_Exalted.stages.love_for_zebras.label>
+	<Pony_Zebra_Exalted.stages.love_for_zebras.description>Я чувствую себя очень счастливо, зная, что мы живем среди зебр.</Pony_Zebra_Exalted.stages.love_for_zebras.description>
+	<Pony_Zebra_Exalted_Social.stages.amazing_zebra.label>чудесный зебра!</Pony_Zebra_Exalted_Social.stages.amazing_zebra.label>
+
+</LanguageData>

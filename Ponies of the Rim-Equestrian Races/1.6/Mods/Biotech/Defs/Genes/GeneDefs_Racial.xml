@@ -15,13 +15,12 @@
 		</forcedTraits>
 		<symbolPack>
 			<prefixSymbols>
-				<li><symbol>horse</symbol></li>
-				<li><symbol>pon</symbol></li>
-				<li><symbol>bat</symbol></li>
+				<li><symbol>squeak</symbol></li>
+				<li><symbol>peek</symbol></li>
 			</prefixSymbols>
 			<suffixSymbols>
-				<li><symbol>neigh</symbol></li>
-				<li><symbol>pony</symbol></li>
+				<li><symbol>bat</symbol></li>
+				<li><symbol>night</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
@@ -71,7 +70,7 @@
 		</exclusionTags>
 		<customEffectDescriptions>
 			<li>Lays eggs instead of pregnancy and live birth.</li>
-			<li>Laying eggs makes the pawn temporarily infertile.</li>
+			<li>Laying eggs makes the colonist temporarily infertile.</li>
 		</customEffectDescriptions>
 		<geneClass>PoniesOfTheRim.Gene_Oviparous</geneClass>
 	</GeneDef>

@@ -7,6 +7,9 @@
 	<Pony_PonyEars.label>понячьи уши</Pony_PonyEars.label>
 	<Pony_PonyEars.description>Носители этого гена обладают ушами расы пони.</Pony_PonyEars.description>
 
+	<Pony_EquineNose.label>лошадиный нос</Pony_EquineNose.label>
+	<Pony_EquineNose.description>Носители этого гена обладают носом, характерный для лошадиных рас.</Pony_EquineNose.description>
+
 	<Pony_PonyTail.label>понячий хвост</Pony_PonyTail.label>
 	<Pony_PonyTail.description>Носители этого гена обладают хвостом расы пони.</Pony_PonyTail.description>
 
@@ -77,5 +80,8 @@
 
 	<Pony_Carnivore.label>плотоядность</Pony_Carnivore.label>
 	<Pony_Carnivore.description>Носители этого гена строго плотоядные. Они не могут есть и переваривать фрукты или овощи, если они не приготовлены в составе блюда.</Pony_Carnivore.description>
+
+	<Pony_Omnivore.label>всеядность</Pony_Omnivore.label>
+	<Pony_Omnivore.description>Носители этого гена придерживаются всеядного рациона, характерного для большинства разумных рас.</Pony_Omnivore.description>
 
 </LanguageData>

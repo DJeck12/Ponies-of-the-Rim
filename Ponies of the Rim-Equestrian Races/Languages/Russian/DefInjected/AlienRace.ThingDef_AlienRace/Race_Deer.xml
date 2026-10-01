@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Deer.label>олень</Pony_Deer.label>
+	<Pony_Deer.description><![CDATA[<color=#825030>Deer</color> are a race of magical quadrupeds from the planet Foenum. Their antlers serve as natural conduits for magic, similar to a unicorn’s horn, but are attuned specifically to nature. This affinity allows them to work alongside their environment to produce various magical phenomena. As a result, deer are natural gardeners and cultivators, able to nurture and shape plant life with ease. Many of the great forests today are said to have originated from their care.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their cloven hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Like ponies, they are herbivores, and react with discomfort and distaste when presented with meat.\n\nMost deer dwell in secluded forests, far from other civilizations, preferring solitude over the risk of outsiders disturbing their homes. While typically peaceful, they regard themselves as guardians of the natural world, and will defend it fiercely if threatened.]]></Pony_Deer.description>
+	<Pony_Deer.tools.front_left_hoof.label>переднее левое копыто</Pony_Deer.tools.front_left_hoof.label>
+	<Pony_Deer.tools.front_left_hoof.labelNoLocation>копыто</Pony_Deer.tools.front_left_hoof.labelNoLocation>
+	<Pony_Deer.tools.front_right_hoof.label>переднее правое копыто</Pony_Deer.tools.front_right_hoof.label>
+	<Pony_Deer.tools.front_right_hoof.labelNoLocation>копыто</Pony_Deer.tools.front_right_hoof.labelNoLocation>
+	<Pony_Deer.tools.rear_legs.label>задние копыта</Pony_Deer.tools.rear_legs.label>
+	<Pony_Deer.tools.teeth.label>зубы</Pony_Deer.tools.teeth.label>
+	<Pony_Deer.tools.head.label>голова</Pony_Deer.tools.head.label>
+
+</LanguageData>

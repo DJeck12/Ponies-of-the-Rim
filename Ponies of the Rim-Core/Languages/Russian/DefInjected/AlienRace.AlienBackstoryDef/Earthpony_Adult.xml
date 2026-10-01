@@ -21,7 +21,7 @@
 	<Pony_EarthponyDruid.titleShort>друид</Pony_EarthponyDruid.titleShort>
 	<Pony_EarthponyDruid.description>Благодаря выдающемуся магическому таланту, [PAWN_nameDef] {PAWN_gender ? мог : могла} проводить сложнейшие ритуалы, направленные на манипуляцию природными силами. С [PAWN_possessive] мастерством не могли сравниться даже единороги.</Pony_EarthponyDruid.description>
 
-	<Pony_EarthponyAnimalHandler.title>уУкротитель магических животных</Pony_EarthponyAnimalHandler.title>
+	<Pony_EarthponyAnimalHandler.title>укротитель магических животных</Pony_EarthponyAnimalHandler.title>
 	<Pony_EarthponyAnimalHandler.titleFemale>укротительница магических животных</Pony_EarthponyAnimalHandler.titleFemale>
 	<Pony_EarthponyAnimalHandler.titleShort>зверолов</Pony_EarthponyAnimalHandler.titleShort>
 	<Pony_EarthponyAnimalHandler.titleShortFemale>звероловка</Pony_EarthponyAnimalHandler.titleShortFemale>

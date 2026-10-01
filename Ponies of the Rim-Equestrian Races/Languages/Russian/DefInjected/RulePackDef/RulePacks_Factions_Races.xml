@@ -1,0 +1,48 @@
+<?xml version="1" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_NameFactionBatpony.rulePack.rulesStrings>
+		<li>r_name->Королевство [Name]</li>
+		<li>Name->Ноктис</li>
+		<li>Name->Найтшейдс</li>
+		<li>Name->Нокс</li>
+		<li>Name->Тантибус</li>
+	</Pony_NameFactionBatpony.rulePack.rulesStrings>
+
+	<Pony_NameFactionDeer.rulePack.rulesStrings>
+		<li>r_name->Королевство [Name]</li>
+		<li>Name->Фикет</li>
+		<li>Name->Оления</li>
+		<li>Name->Хейвудс</li>
+	</Pony_NameFactionDeer.rulePack.rulesStrings>
+
+	<Pony_NameFactionGriffon.rulePack.rulesStrings>
+		<li>r_name->Королевство [Name]</li>
+		<li>Name->Грифонстоун</li>
+		<li>Name->Грифус</li>
+		<li>Name->Грифсвольд</li>
+	</Pony_NameFactionGriffon.rulePack.rulesStrings>
+
+	<Pony_NameFactionHippogriff.rulePack.rulesStrings>
+		<li>r_name->[Name]</li>
+		<li>Name->Гиппогрифия</li>
+		<li>Name->Маритима</li>
+		<li>Name->Нова Азура</li>
+		<li>Name->Коастика</li>
+	</Pony_NameFactionHippogriff.rulePack.rulesStrings>
+
+	<Pony_NameFactionKirin.rulePack.rulesStrings>
+		<li>r_name->Королевство [Name]</li>
+		<li>Name->Кирия</li>
+		<li>Name->Киринлайн</li>
+		<li>Name->Шакира</li>
+	</Pony_NameFactionKirin.rulePack.rulesStrings>
+
+	<Pony_NameFactionZebra.rulePack.rulesStrings>
+		<li>r_name->[Name]</li>
+		<li>Name->Фараси</li>
+		<li>Name->Зебрика</li>
+		<li>Name->Азир</li>
+	</Pony_NameFactionZebra.rulePack.rulesStrings>
+
+</LanguageData>

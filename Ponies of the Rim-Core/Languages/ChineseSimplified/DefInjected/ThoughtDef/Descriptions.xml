@@ -12,7 +12,7 @@
 	<AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.label>吃了生的智慧生物的肉</AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.label>
 	<AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.description>我像野兽一样生吃了智慧生物的肉。那肉实在是鲜美多汁，太棒了。</AteHumanlikeMeatDirectCannibal.stages.raw_cannibalism.description>
 
-	<AteRawHumanlikeMeat.stages.ate_raw_humanlike_meat.labelSocial>生吃过智慧生物的肉</AteRawHumanlikeMeat.stages.ate_raw_humanlike_meat.labelSocial>
+	<AteRawHumanlikeMeat.stages.ate_raw_sapient_creature_meat.label>生吃过智慧生物的肉</AteRawHumanlikeMeat.stages.ate_raw_sapient_creature_meat.label>
 
 	<HumanLeatherApparelSad.stages.human_leather.label>智慧生物的皮{0}</HumanLeatherApparelSad.stages.human_leather.label>
 	<HumanLeatherApparelSad.stages.human_leather.description>穿着某个智慧生物身体的一部分真是渗人。谁能做到？</HumanLeatherApparelSad.stages.human_leather.description>

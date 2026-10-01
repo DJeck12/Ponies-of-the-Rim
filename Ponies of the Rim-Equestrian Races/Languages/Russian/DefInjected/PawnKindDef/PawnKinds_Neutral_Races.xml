@@ -1,0 +1,49 @@
+<?xmlversion="1.0"encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_BatponyMiner.label>шахтёр</Pony_BatponyMiner.label>
+	<Pony_BatponyHunter.label>охотник</Pony_BatponyHunter.label>
+	<Pony_BatponyLogger.label>лесник</Pony_BatponyLogger.label>
+	<Pony_BatponyFarmer.label>фермер</Pony_BatponyFarmer.label>
+
+	<Pony_ChangelingMiner.label>шахтёр</Pony_ChangelingMiner.label>
+	<Pony_ChangelingHunter.label>охотник</Pony_ChangelingHunter.label>
+	<Pony_ChangelingLogger.label>лесник</Pony_ChangelingLogger.label>
+	<Pony_ChangelingFarmer.label>фермер</Pony_ChangelingFarmer.label>
+
+	<Pony_ChangedlingMiner.label>шахтёр</Pony_ChangedlingMiner.label>
+	<Pony_ChangedlingHunter.label>охотник</Pony_ChangedlingHunter.label>
+	<Pony_ChangedlingLogger.label>лесник</Pony_ChangedlingLogger.label>
+	<Pony_ChangedlingFarmer.label>фермер</Pony_ChangedlingFarmer.label>
+
+	<Pony_CrystalMiner.label>шахтёр</Pony_CrystalMiner.label>
+	<Pony_CrystalHunter.label>охотник</Pony_CrystalHunter.label>
+	<Pony_CrystalLogger.label>лесник</Pony_CrystalLogger.label>
+	<Pony_CrystalFarmer.label>фермер</Pony_CrystalFarmer.label>
+
+	<Pony_DeerMiner.label>шахтёр</Pony_DeerMiner.label>
+	<Pony_DeerHunter.label>охотник</Pony_DeerHunter.label>
+	<Pony_DeerLogger.label>лесник</Pony_DeerLogger.label>
+	<Pony_DeerFarmer.label>фермер</Pony_DeerFarmer.label>
+
+	<Pony_GriffonMiner.label>шахтёр</Pony_GriffonMiner.label>
+	<Pony_GriffonHunter.label>охотник</Pony_GriffonHunter.label>
+	<Pony_GriffonLogger.label>лесник</Pony_GriffonLogger.label>
+	<Pony_GriffonFarmer.label>фермер</Pony_GriffonFarmer.label>
+
+	<Pony_HippogriffMiner.label>шахтёр</Pony_HippogriffMiner.label>
+	<Pony_HippogriffHunter.label>охотник</Pony_HippogriffHunter.label>
+	<Pony_HippogriffLogger.label>лесник</Pony_HippogriffLogger.label>
+	<Pony_HippogriffFarmer.label>фермер</Pony_HippogriffFarmer.label>
+
+	<Pony_KirinMiner.label>шахтёр</Pony_KirinMiner.label>
+	<Pony_KirinHunter.label>охотник</Pony_KirinHunter.label>
+	<Pony_KirinLogger.label>лесник</Pony_KirinLogger.label>
+	<Pony_KirinFarmer.label>фермер</Pony_KirinFarmer.label>
+
+	<Pony_ZebraMiner.label>шахтёр</Pony_ZebraMiner.label>
+	<Pony_ZebraHunter.label>охотник</Pony_ZebraHunter.label>
+	<Pony_ZebraLogger.label>лесник</Pony_ZebraLogger.label>
+	<Pony_ZebraFarmer.label>фермер</Pony_ZebraFarmer.label>
+
+</LanguageData>

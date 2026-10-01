@@ -1,0 +1,19 @@
+<?xmlversion="1.0"encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_EarthponyMiner.label>шахтёр</Pony_EarthponyMiner.label>
+	<Pony_EarthponyHunter.label>охотник</Pony_EarthponyHunter.label>
+	<Pony_EarthponyLogger.label>лесник</Pony_EarthponyLogger.label>
+	<Pony_EarthponyFarmer.label>фермер</Pony_EarthponyFarmer.label>
+
+	<Pony_PegasusMiner.label>шахтёр</Pony_PegasusMiner.label>
+	<Pony_PegasusHunter.label>охотник</Pony_PegasusHunter.label>
+	<Pony_PegasusLogger.label>лесник</Pony_PegasusLogger.label>
+	<Pony_PegasusFarmer.label>фермер</Pony_PegasusFarmer.label>
+
+	<Pony_UnicornMiner.label>шахтёр</Pony_UnicornMiner.label>
+	<Pony_UnicornHunter.label>охотник</Pony_UnicornHunter.label>
+	<Pony_UnicornLogger.label>лесник</Pony_UnicornLogger.label>
+	<Pony_UnicornFarmer.label>фермер</Pony_UnicornFarmer.label>
+
+</LanguageData>

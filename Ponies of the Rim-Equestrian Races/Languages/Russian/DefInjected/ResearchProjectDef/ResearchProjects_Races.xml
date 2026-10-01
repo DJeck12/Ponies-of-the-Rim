@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Incubation.label>Инкубация яиц</Pony_Incubation.label>
+	<Pony_Incubation.description>Разработать усовершенствованные методы безопасной и более быстрой инкубации яиц животных и грифонов.</Pony_Incubation.description>
+	<Pony_Incubation.generalRules.rulesStrings>
+		<li>subject->инкубация</li>
+		<li>subject->выведение яиц</li>
+		<li>subject_gen->инкубации</li>
+		<li>subject_gen->выведении яиц</li>
+		<li>subject_dat->инкубацию</li>
+		<li>subject_dat->выведению яиц</li>
+		<li>subject_pre_about->о инкубации</li>
+		<li>subject_pre_about->о выведении яиц</li>
+		<li>subject_story->{ANYPAWN_gender ? работал : работала} в птичнике, помогая выращивать птенцов</li>
+		<li>subject_story->{ANYPAWN_gender ? строил : строила} систему гнёзд для грифонов</li>
+		<li>subject_story->{ANYPAWN_gender ? был ответственен : была ответственна} за заботу о яйцах и оберегании их от экстримальных температур</li>
+		<li>subject_gerund->строительства гнёзд</li>
+	</Pony_Incubation.generalRules.rulesStrings>
+
+</LanguageData>

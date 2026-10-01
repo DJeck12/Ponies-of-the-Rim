@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_Zebra.label>зебра</Pony_Zebra.label>
+	<Pony_Zebra.description><![CDATA[Zebras are a striped equine race from the planet Foenum. Although outwardly resembling ponies, they are a separate race entirely, having little innate magic of their own. Instead, zebras are known for their knowledge of natural sciences and alchemy, disciplines through which they achieve effects often mistaken for magic.\n\nThough not bipedal, members of this race have adapted most clothing and prostheses to accommodate themselves. Their hooves possess an unusual degree of dexterity, allowing them to manipulate objects as easily as any creature with hands. Each individual also bears a cutiemark on their flank—a unique, abstract symbol signifying their calling. Like ponies, they are herbivores, and react with discomfort and distaste when presented with meat.\n\n<color=#808080>Zebras</color> inhabit settlements primarily in the warmer, arid regions of the world. They are often seen traveling between distant lands as merchants or wanderers, offering their alchemical expertise and crafted remedies in exchange for goods or coin.]]></Pony_Zebra.description>
+	<Pony_Zebra.tools.front_left_hoof.label>переднее левое копыто</Pony_Zebra.tools.front_left_hoof.label>
+	<Pony_Zebra.tools.front_left_hoof.labelNoLocation>копыто</Pony_Zebra.tools.front_left_hoof.labelNoLocation>
+	<Pony_Zebra.tools.front_right_hoof.label>переднее правое копыто</Pony_Zebra.tools.front_right_hoof.label>
+	<Pony_Zebra.tools.front_right_hoof.labelNoLocation>копыто</Pony_Zebra.tools.front_right_hoof.labelNoLocation>
+	<Pony_Zebra.tools.rear_legs.label>задние копыта</Pony_Zebra.tools.rear_legs.label>
+	<Pony_Zebra.tools.teeth.label>зубы</Pony_Zebra.tools.teeth.label>
+	<Pony_Zebra.tools.head.label>голова</Pony_Zebra.tools.head.label>
+
+</LanguageData>

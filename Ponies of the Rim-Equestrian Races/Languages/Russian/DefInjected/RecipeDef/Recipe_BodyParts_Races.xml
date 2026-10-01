@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Pony_InstallChangelingHorn.label>пересадить рог</Pony_InstallChangelingHorn.label>
+	<Pony_InstallChangelingHorn.description>Пересадить рог.</Pony_InstallChangelingHorn.description>
+	<Pony_InstallChangelingHorn.jobString>Пересадить рог.</Pony_InstallChangelingHorn.jobString>
+	<Pony_InstallKirinHorn.label>пересадить рог</Pony_InstallKirinHorn.label>
+	<Pony_InstallKirinHorn.description>Пересадить рог.</Pony_InstallKirinHorn.description>
+	<Pony_InstallKirinHorn.jobString>Пересадить рог.</Pony_InstallKirinHorn.jobString>
+
+</LanguageData>

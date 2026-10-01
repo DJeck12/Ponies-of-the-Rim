@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<!-- Аликорны -->
+
+	<Pony_AlicornSupremacist.label>превосходство аликорнов</Pony_AlicornSupremacist.label>
+	<Pony_AlicornSupremacist.description>Аликорны - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_AlicornSupremacist.description>
+
+	<Pony_AlicornSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_AlicornSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_AlicornSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_AlicornSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_AlicornSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_AlicornSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_AlicornSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_AlicornSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_AlicornSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_AlicornSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_AlicornSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_AlicornSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_AlicornSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_AlicornSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_AlicornSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_AlicornSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_AlicornSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_AlicornSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_AlicornSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_AlicornSupremacist.generalRules.rulesStrings>
+
+	<Pony_AlicornSupremacist.symbolPacks.0.adjective>доминаторский</Pony_AlicornSupremacist.symbolPacks.0.adjective>
+	<Pony_AlicornSupremacist.symbolPacks.0.member>доминатор</Pony_AlicornSupremacist.symbolPacks.0.member>
+	<Pony_AlicornSupremacist.symbolPacks.0.theme>доминирования</Pony_AlicornSupremacist.symbolPacks.0.theme>
+	<Pony_AlicornSupremacist.symbolPacks.1.adjective>виктористский</Pony_AlicornSupremacist.symbolPacks.1.adjective>
+	<Pony_AlicornSupremacist.symbolPacks.1.member>викторист</Pony_AlicornSupremacist.symbolPacks.1.member>
+	<Pony_AlicornSupremacist.symbolPacks.1.theme>победы</Pony_AlicornSupremacist.symbolPacks.1.theme>
+	<Pony_AlicornSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_AlicornSupremacist.symbolPacks.2.adjective>
+	<Pony_AlicornSupremacist.symbolPacks.2.member>пауэрист</Pony_AlicornSupremacist.symbolPacks.2.member>
+	<Pony_AlicornSupremacist.symbolPacks.2.theme>власти</Pony_AlicornSupremacist.symbolPacks.2.theme>
+
+<!-- Бэтпони -->
+
+	<Pony_BatponySupremacist.label>превосходство бэтпони</Pony_BatponySupremacist.label>
+	<Pony_BatponySupremacist.description>Бэтпони - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_BatponySupremacist.description>
+
+	<Pony_BatponySupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_BatponySupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_BatponySupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_BatponySupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_BatponySupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_BatponySupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_BatponySupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_BatponySupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_BatponySupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_BatponySupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_BatponySupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_BatponySupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_BatponySupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_BatponySupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_BatponySupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_BatponySupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_BatponySupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_BatponySupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_BatponySupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_BatponySupremacist.generalRules.rulesStrings>
+
+	<Pony_BatponySupremacist.symbolPacks.0.adjective>доминаторский</Pony_BatponySupremacist.symbolPacks.0.adjective>
+	<Pony_BatponySupremacist.symbolPacks.0.member>доминатор</Pony_BatponySupremacist.symbolPacks.0.member>
+	<Pony_BatponySupremacist.symbolPacks.0.theme>доминирования</Pony_BatponySupremacist.symbolPacks.0.theme>
+	<Pony_BatponySupremacist.symbolPacks.1.adjective>виктористский</Pony_BatponySupremacist.symbolPacks.1.adjective>
+	<Pony_BatponySupremacist.symbolPacks.1.member>викторист</Pony_BatponySupremacist.symbolPacks.1.member>
+	<Pony_BatponySupremacist.symbolPacks.1.theme>победы</Pony_BatponySupremacist.symbolPacks.1.theme>
+	<Pony_BatponySupremacist.symbolPacks.2.adjective>пауэеристский</Pony_BatponySupremacist.symbolPacks.2.adjective>
+	<Pony_BatponySupremacist.symbolPacks.2.member>пауэрист</Pony_BatponySupremacist.symbolPacks.2.member>
+	<Pony_BatponySupremacist.symbolPacks.2.theme>власти</Pony_BatponySupremacist.symbolPacks.2.theme>
+
+<!-- Перевёртыши -->
+
+	<Pony_ChangedlingSupremacist.label>превосходство перевёртышей</Pony_ChangedlingSupremacist.label>
+	<Pony_ChangedlingSupremacist.description>Перевёртыши - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_ChangedlingSupremacist.description>
+
+	<Pony_ChangedlingSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_ChangedlingSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_ChangedlingSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_ChangedlingSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_ChangedlingSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_ChangedlingSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_ChangedlingSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_ChangedlingSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_ChangedlingSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_ChangedlingSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_ChangedlingSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_ChangedlingSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_ChangedlingSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_ChangedlingSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_ChangedlingSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_ChangedlingSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_ChangedlingSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_ChangedlingSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_ChangedlingSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_ChangedlingSupremacist.generalRules.rulesStrings>
+
+	<Pony_ChangedlingSupremacist.symbolPacks.0.adjective>доминаторский</Pony_ChangedlingSupremacist.symbolPacks.0.adjective>
+	<Pony_ChangedlingSupremacist.symbolPacks.0.member>доминатор</Pony_ChangedlingSupremacist.symbolPacks.0.member>
+	<Pony_ChangedlingSupremacist.symbolPacks.0.theme>доминирования</Pony_ChangedlingSupremacist.symbolPacks.0.theme>
+	<Pony_ChangedlingSupremacist.symbolPacks.1.adjective>виктористский</Pony_ChangedlingSupremacist.symbolPacks.1.adjective>
+	<Pony_ChangedlingSupremacist.symbolPacks.1.member>викторист</Pony_ChangedlingSupremacist.symbolPacks.1.member>
+	<Pony_ChangedlingSupremacist.symbolPacks.1.theme>победы</Pony_ChangedlingSupremacist.symbolPacks.1.theme>
+	<Pony_ChangedlingSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_ChangedlingSupremacist.symbolPacks.2.adjective>
+	<Pony_ChangedlingSupremacist.symbolPacks.2.member>пауэрист</Pony_ChangedlingSupremacist.symbolPacks.2.member>
+	<Pony_ChangedlingSupremacist.symbolPacks.2.theme>власти</Pony_ChangedlingSupremacist.symbolPacks.2.theme>
+
+<!-- Чейнджлинги -->
+
+	<Pony_ChangelingSupremacist.label>превосходство чейнджлингов</Pony_ChangelingSupremacist.label>
+	<Pony_ChangelingSupremacist.description>Чейнджлинги - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_ChangelingSupremacist.description>
+
+	<Pony_ChangelingSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_ChangelingSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_ChangelingSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_ChangelingSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_ChangelingSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_ChangelingSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_ChangelingSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_ChangelingSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_ChangelingSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_ChangelingSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_ChangelingSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_ChangelingSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_ChangelingSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_ChangelingSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_ChangelingSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_ChangelingSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_ChangelingSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_ChangelingSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_ChangelingSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_ChangelingSupremacist.generalRules.rulesStrings>
+
+	<Pony_ChangelingSupremacist.symbolPacks.0.adjective>доминаторский</Pony_ChangelingSupremacist.symbolPacks.0.adjective>
+	<Pony_ChangelingSupremacist.symbolPacks.0.member>доминатор</Pony_ChangelingSupremacist.symbolPacks.0.member>
+	<Pony_ChangelingSupremacist.symbolPacks.0.theme>доминирования</Pony_ChangelingSupremacist.symbolPacks.0.theme>
+	<Pony_ChangelingSupremacist.symbolPacks.1.adjective>виктористский</Pony_ChangelingSupremacist.symbolPacks.1.adjective>
+	<Pony_ChangelingSupremacist.symbolPacks.1.member>викторист</Pony_ChangelingSupremacist.symbolPacks.1.member>
+	<Pony_ChangelingSupremacist.symbolPacks.1.theme>победы</Pony_ChangelingSupremacist.symbolPacks.1.theme>
+	<Pony_ChangelingSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_ChangelingSupremacist.symbolPacks.2.adjective>
+	<Pony_ChangelingSupremacist.symbolPacks.2.member>пауэрист</Pony_ChangelingSupremacist.symbolPacks.2.member>
+	<Pony_ChangelingSupremacist.symbolPacks.2.theme>власти</Pony_ChangelingSupremacist.symbolPacks.2.theme>
+
+<!-- Кристальные -->
+
+	<Pony_CrystalponySupremacist.label>превосходство кристальных пони</Pony_CrystalponySupremacist.label>
+	<Pony_CrystalponySupremacist.description>Кристальные пони - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_CrystalponySupremacist.description>
+
+	<Pony_CrystalponySupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_CrystalponySupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_CrystalponySupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_CrystalponySupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_CrystalponySupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_CrystalponySupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_CrystalponySupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_CrystalponySupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_CrystalponySupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_CrystalponySupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_CrystalponySupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_CrystalponySupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_CrystalponySupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_CrystalponySupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_CrystalponySupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_CrystalponySupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_CrystalponySupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_CrystalponySupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_CrystalponySupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_CrystalponySupremacist.generalRules.rulesStrings>
+
+	<Pony_CrystalponySupremacist.symbolPacks.0.adjective>доминаторский</Pony_CrystalponySupremacist.symbolPacks.0.adjective>
+	<Pony_CrystalponySupremacist.symbolPacks.0.member>доминатор</Pony_CrystalponySupremacist.symbolPacks.0.member>
+	<Pony_CrystalponySupremacist.symbolPacks.0.theme>доминирования</Pony_CrystalponySupremacist.symbolPacks.0.theme>
+	<Pony_CrystalponySupremacist.symbolPacks.1.adjective>виктористский</Pony_CrystalponySupremacist.symbolPacks.1.adjective>
+	<Pony_CrystalponySupremacist.symbolPacks.1.member>викторист</Pony_CrystalponySupremacist.symbolPacks.1.member>
+	<Pony_CrystalponySupremacist.symbolPacks.1.theme>победы</Pony_CrystalponySupremacist.symbolPacks.1.theme>
+	<Pony_CrystalponySupremacist.symbolPacks.2.adjective>пауэеристский</Pony_CrystalponySupremacist.symbolPacks.2.adjective>
+	<Pony_CrystalponySupremacist.symbolPacks.2.member>пауэрист</Pony_CrystalponySupremacist.symbolPacks.2.member>
+	<Pony_CrystalponySupremacist.symbolPacks.2.theme>власти</Pony_CrystalponySupremacist.symbolPacks.2.theme>
+
+<!-- Олени -->
+
+	<Pony_DeerSupremacist.label>превосходство оленей</Pony_DeerSupremacist.label>
+	<Pony_DeerSupremacist.description>Олени - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_DeerSupremacist.description>
+
+	<Pony_DeerSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_DeerSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_DeerSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_DeerSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_DeerSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_DeerSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_DeerSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_DeerSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_DeerSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_DeerSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_DeerSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_DeerSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_DeerSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_DeerSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_DeerSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_DeerSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_DeerSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_DeerSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_DeerSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_DeerSupremacist.generalRules.rulesStrings>
+
+	<Pony_DeerSupremacist.symbolPacks.0.adjective>доминаторский</Pony_DeerSupremacist.symbolPacks.0.adjective>
+	<Pony_DeerSupremacist.symbolPacks.0.member>доминатор</Pony_DeerSupremacist.symbolPacks.0.member>
+	<Pony_DeerSupremacist.symbolPacks.0.theme>доминирования</Pony_DeerSupremacist.symbolPacks.0.theme>
+	<Pony_DeerSupremacist.symbolPacks.1.adjective>виктористский</Pony_DeerSupremacist.symbolPacks.1.adjective>
+	<Pony_DeerSupremacist.symbolPacks.1.member>викторист</Pony_DeerSupremacist.symbolPacks.1.member>
+	<Pony_DeerSupremacist.symbolPacks.1.theme>победы</Pony_DeerSupremacist.symbolPacks.1.theme>
+	<Pony_DeerSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_DeerSupremacist.symbolPacks.2.adjective>
+	<Pony_DeerSupremacist.symbolPacks.2.member>пауэрист</Pony_DeerSupremacist.symbolPacks.2.member>
+	<Pony_DeerSupremacist.symbolPacks.2.theme>власти</Pony_DeerSupremacist.symbolPacks.2.theme>
+
+<!-- Грифоны -->
+
+	<Pony_GriffonSupremacist.label>превосходство грифонов</Pony_GriffonSupremacist.label>
+	<Pony_GriffonSupremacist.description>Грифоны - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_GriffonSupremacist.description>
+
+	<Pony_GriffonSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_GriffonSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_GriffonSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_GriffonSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_GriffonSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_GriffonSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_GriffonSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_GriffonSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_GriffonSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_GriffonSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_GriffonSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_GriffonSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_GriffonSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_GriffonSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_GriffonSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_GriffonSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_GriffonSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_GriffonSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_GriffonSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_GriffonSupremacist.generalRules.rulesStrings>
+
+	<Pony_GriffonSupremacist.symbolPacks.0.adjective>доминаторский</Pony_GriffonSupremacist.symbolPacks.0.adjective>
+	<Pony_GriffonSupremacist.symbolPacks.0.member>доминатор</Pony_GriffonSupremacist.symbolPacks.0.member>
+	<Pony_GriffonSupremacist.symbolPacks.0.theme>доминирования</Pony_GriffonSupremacist.symbolPacks.0.theme>
+	<Pony_GriffonSupremacist.symbolPacks.1.adjective>виктористский</Pony_GriffonSupremacist.symbolPacks.1.adjective>
+	<Pony_GriffonSupremacist.symbolPacks.1.member>викторист</Pony_GriffonSupremacist.symbolPacks.1.member>
+	<Pony_GriffonSupremacist.symbolPacks.1.theme>победы</Pony_GriffonSupremacist.symbolPacks.1.theme>
+	<Pony_GriffonSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_GriffonSupremacist.symbolPacks.2.adjective>
+	<Pony_GriffonSupremacist.symbolPacks.2.member>пауэрист</Pony_GriffonSupremacist.symbolPacks.2.member>
+	<Pony_GriffonSupremacist.symbolPacks.2.theme>власти</Pony_GriffonSupremacist.symbolPacks.2.theme>
+
+<!-- Гиппогрифы -->
+
+	<Pony_HippogriffSupremacist.label>превосходство гиппогрифов</Pony_HippogriffSupremacist.label>
+	<Pony_HippogriffSupremacist.description>Гиппогрифы - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_HippogriffSupremacist.description>
+
+	<Pony_HippogriffSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_HippogriffSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_HippogriffSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_HippogriffSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_HippogriffSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_HippogriffSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_HippogriffSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_HippogriffSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_HippogriffSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_HippogriffSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_HippogriffSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_HippogriffSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_HippogriffSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_HippogriffSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_HippogriffSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_HippogriffSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_HippogriffSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_HippogriffSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_HippogriffSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_HippogriffSupremacist.generalRules.rulesStrings>
+
+	<Pony_HippogriffSupremacist.symbolPacks.0.adjective>доминаторский</Pony_HippogriffSupremacist.symbolPacks.0.adjective>
+	<Pony_HippogriffSupremacist.symbolPacks.0.member>доминатор</Pony_HippogriffSupremacist.symbolPacks.0.member>
+	<Pony_HippogriffSupremacist.symbolPacks.0.theme>доминирования</Pony_HippogriffSupremacist.symbolPacks.0.theme>
+	<Pony_HippogriffSupremacist.symbolPacks.1.adjective>виктористский</Pony_HippogriffSupremacist.symbolPacks.1.adjective>
+	<Pony_HippogriffSupremacist.symbolPacks.1.member>викторист</Pony_HippogriffSupremacist.symbolPacks.1.member>
+	<Pony_HippogriffSupremacist.symbolPacks.1.theme>победы</Pony_HippogriffSupremacist.symbolPacks.1.theme>
+	<Pony_HippogriffSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_HippogriffSupremacist.symbolPacks.2.adjective>
+	<Pony_HippogriffSupremacist.symbolPacks.2.member>пауэрист</Pony_HippogriffSupremacist.symbolPacks.2.member>
+	<Pony_HippogriffSupremacist.symbolPacks.2.theme>власти</Pony_HippogriffSupremacist.symbolPacks.2.theme>
+
+<!-- Кирины -->
+
+	<Pony_KirinSupremacist.label>превосходство киринов</Pony_KirinSupremacist.label>
+	<Pony_KirinSupremacist.description>Кирины - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_KirinSupremacist.description>
+
+	<Pony_KirinSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_KirinSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_KirinSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_KirinSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_KirinSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_KirinSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_KirinSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_KirinSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_KirinSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_KirinSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_KirinSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_KirinSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_KirinSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_KirinSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_KirinSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_KirinSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_KirinSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_KirinSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_KirinSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_KirinSupremacist.generalRules.rulesStrings>
+
+	<Pony_KirinSupremacist.symbolPacks.0.adjective>доминаторский</Pony_KirinSupremacist.symbolPacks.0.adjective>
+	<Pony_KirinSupremacist.symbolPacks.0.member>доминатор</Pony_KirinSupremacist.symbolPacks.0.member>
+	<Pony_KirinSupremacist.symbolPacks.0.theme>доминирования</Pony_KirinSupremacist.symbolPacks.0.theme>
+	<Pony_KirinSupremacist.symbolPacks.1.adjective>виктористский</Pony_KirinSupremacist.symbolPacks.1.adjective>
+	<Pony_KirinSupremacist.symbolPacks.1.member>викторист</Pony_KirinSupremacist.symbolPacks.1.member>
+	<Pony_KirinSupremacist.symbolPacks.1.theme>победы</Pony_KirinSupremacist.symbolPacks.1.theme>
+	<Pony_KirinSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_KirinSupremacist.symbolPacks.2.adjective>
+	<Pony_KirinSupremacist.symbolPacks.2.member>пауэрист</Pony_KirinSupremacist.symbolPacks.2.member>
+	<Pony_KirinSupremacist.symbolPacks.2.theme>власти</Pony_KirinSupremacist.symbolPacks.2.theme>
+
+<!-- Зебры -->
+
+	<Pony_ZebraSupremacist.label>превосходство зебр</Pony_ZebraSupremacist.label>
+	<Pony_ZebraSupremacist.description>Зебры - высшая раса, которая должна доминировать над всеми остальными разумными существами.</Pony_ZebraSupremacist.description>
+
+	<Pony_ZebraSupremacist.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_Pony_ZebraSupremacist)        ->Утопали обитатели [place_summary_gen] [place_name] в распрях бесконечных. И [supremacist_deity0_tired] [deity0_name] от беспорядка этого, и [supremacist_deity0_gave] избранным своим власть законную. И стали [memberNamePlural] упрочивать власть эту.</li>
+		<li>episode(uses=1,tag=meme_Pony_ZebraSupremacist)  ->И противостояли верные неверным, и [supremacist_deity0_said] [deity0_name] им: «Сражайтесь во имя Моё с ними повсюду, пока не будут поклоняться Мне во всей вселенной и пока не воцарится в ней мир истинный».</li>
+		<li>intro(tag=meme_Pony_ZebraSupremacist)           ->Народ [place_summary] [place_name] почитал [deity0_name]. [deity0_pronoun] [deity_saw], что они были верными последователями [memeConcept], и [deity_ordained] им править всеми остальными.</li>
+		<li>conflict(tag=meme_Pony_ZebraSupremacist)        ->[foeLeader] принял закон, воспрещающий занимать [memberNamePlural] высшие позиции на [place_name].</li>
+		<li>founderJoin(tag=meme_Pony_ZebraSupremacist)     ->[founder_warrior] по имени [founderName] [founder_used] [place_massWeapon], чтобы уничтожить [place_community]. [deity0_name] [deity_saw] безжалостность [founderName] и [deity_made] [founder_possessive] [founder_ruler] всего человечества.</li>
+		<li>victory(tag=meme_Pony_ZebraSupremacist)         ->[founderName] [founder_destroyed] столицу [place_name] с помощью [place_massWeapon], убив при этом [foeLeader]. [founder_pronoun] [founder_took] место правителя [place_name] и всей вселенной вокруг.</li>
+		<li>setup(tag=meme_Pony_ZebraSupremacist)           ->[founderName] [supremacist_founder_created] армию, распространявшую [founder_possessive] власть и величие. Те, кто отказывался подчиняться, всё равно попадали под [founder_possessive] праведное правление.</li>
+		<li>story(uses=1,tag=meme_Pony_ZebraSupremacist)    ->Когда [founderName] [supremacist_founder_ordered] всем чужакам повиноваться, первый же отказавшийся город вместе со своими жителями был стёрт с лица земли при помощи [place_massWeapon_gen].</li>
+		<li>lessonIntro(tag=meme_Pony_ZebraSupremacist)         ->Я [supremacist_founder_looked] на этого [foeLeader_acc] с [foeLeader_possessive] жалкими [foeSoldiers_ins] и с [foeLeader_possessive] смешной властью. Я [supremacist_founder_tried] убедить [foeLeader_possessive], что</li>
+		<li>lesson(tag=meme_Pony_ZebraSupremacist)              ->у нас уже давно достаточно сил, чтобы по праву господствовать в этой вселенной</li>
+		<li>lessonReinforcement(tag=meme_Pony_ZebraSupremacist) ->Именно поэтому мы гордо выражаем силу наших сердец языком силы.</li>
+		<li>archistBasis(tag=meme_Pony_ZebraSupremacist)    ->Арохотеков создавали самые превосходные из людей, именно поэтому архотеки превосходят всех и вся.</li>
+		<li>archistFact(tag=meme_Pony_ZebraSupremacist)     ->Архотеки справедливо смотрят на нас с презрением, равно как и мы на остальных.</li>
+		<li>archistProphecy(tag=meme_Pony_ZebraSupremacist) ->Архотеки возьмут нас с собой, только когда мы добьёмся мирового господства.</li>
+		<li>animistFact(tag=meme_Pony_ZebraSupremacist)     ->Могущественные духи решают, кому править. Они же дают силы тем, кто подчиняет своей воле других.</li>
+		<li>animistProphecy(tag=meme_Pony_ZebraSupremacist) ->[itIsSaid], что новый порядок будет создан, когда один верховный лидер объединит под собой всё человечество.</li>
+		<li>supremacist_deity0_tired(deity0_gender==None)->устало</li>
+		<li>supremacist_deity0_tired(deity0_gender==Male)->устал</li>
+		<li>supremacist_deity0_tired(deity0_gender==Female)->устала</li>
+		<li>supremacist_deity0_gave(deity0_gender==None)->ниспослало</li>
+		<li>supremacist_deity0_gave(deity0_gender==Male)->ниспослал</li>
+		<li>supremacist_deity0_gave(deity0_gender==Female)->ниспослала</li>
+		<li>supremacist_deity0_said(deity0_gender==None)->сказало</li>
+		<li>supremacist_deity0_said(deity0_gender==Male)->сказал</li>
+		<li>supremacist_deity0_said(deity0_gender==Female)->сказала</li>
+		<li>deity_saw(deity0_gender==None)->увидело</li>
+		<li>deity_saw(deity0_gender==Male)->увидел</li>
+		<li>deity_saw(deity0_gender==Female)->увидела</li>
+		<li>deity_ordained(deity0_gender==None)->повелело</li>
+		<li>deity_ordained(deity0_gender==Male)->повелел</li>
+		<li>deity_ordained(deity0_gender==Female)->повелела</li>
+		<li>deity_made(deity0_gender==None)->сделало</li>
+		<li>deity_made(deity0_gender==Male)->сделал</li>
+		<li>deity_made(deity0_gender==Female)->сделала</li>
+		<li>founder_warrior(founder_gender==Male)->Воин</li>
+		<li>founder_warrior(founder_gender==Female)->Воительница</li>
+		<li>founder_used(founder_gender==Male)->использовал</li>
+		<li>founder_used(founder_gender==Female)->использовала</li>
+		<li>founder_ruler(founder_gender==Male)->законным правителем</li>
+		<li>founder_ruler(founder_gender==Female)->законной правительницей</li>
+		<li>founder_destroyed(founder_gender==Male)->уничтожил</li>
+		<li>founder_destroyed(founder_gender==Female)->уничтожила</li>
+		<li>founder_took(founder_gender==Male)->занял</li>
+		<li>founder_took(founder_gender==Female)->заняла</li>
+		<li>supremacist_founder_created(founder_gender==Male)->создал</li>
+		<li>supremacist_founder_created(founder_gender==Female)->создала</li>
+		<li>supremacist_founder_ordered(founder_gender==Male)->повелел</li>
+		<li>supremacist_founder_ordered(founder_gender==Female)->повелела</li>
+		<li>supremacist_founder_looked(founder_gender==Male)->взглянул</li>
+		<li>supremacist_founder_looked(founder_gender==Female)->взглянула</li>
+		<li>supremacist_founder_tried(founder_gender==Male)->попытался</li>
+		<li>supremacist_founder_tried(founder_gender==Female)->попыталась</li>
+	</Pony_ZebraSupremacist.descriptionMaker.rules.rulesStrings>
+
+	<Pony_ZebraSupremacist.generalRules.rulesStrings>
+		<li>memeAdjective_masc->высший</li>
+		<li>memeAdjective_masc->верховный</li>
+		<li>memeAdjective_masc->великий</li>
+		<li>memeAdjective_masc->главный</li>
+		<li>memeAdjective_masc->идеальный</li>
+		<li>memeAdjective_masc->первый</li>
+		<li>memeAdjective_masc->сильный</li>
+		<li>memeAdjective_fem->высшая</li>
+		<li>memeAdjective_fem->верховная</li>
+		<li>memeAdjective_fem->великая</li>
+		<li>memeAdjective_fem->главная</li>
+		<li>memeAdjective_fem->идеальная</li>
+		<li>memeAdjective_fem->первая</li>
+		<li>memeAdjective_fem->сильная</li>
+		<li>memeAdjective_neutral->высшее</li>
+		<li>memeAdjective_neutral->верховное</li>
+		<li>memeAdjective_neutral->великое</li>
+		<li>memeAdjective_neutral->главное</li>
+		<li>memeAdjective_neutral->идеальное</li>
+		<li>memeAdjective_neutral->первое</li>
+		<li>memeAdjective_neutral->сильное</li>
+		<li>memeAdjective_plural->высшие</li>
+		<li>memeAdjective_plural->верховные</li>
+		<li>memeAdjective_plural->великие</li>
+		<li>memeAdjective_plural->главные</li>
+		<li>memeAdjective_plural->идеальные</li>
+		<li>memeAdjective_plural->первые</li>
+		<li>memeAdjective_plural->сильные</li>
+		<li>memeCreed_fem->армия</li>
+		<li>memeCreed_masc->легион</li>
+		<li>memeHyphenPrefix->супер</li>
+		<li>memeConcept->войны</li>
+		<li>memeConcept->беспощадности</li>
+		<li>memeConcept->господства</li>
+		<li>memeLeaderNoun->генерал</li>
+		<li>memeLeaderNoun->командир</li>
+		<li>memeLeaderNoun->маршал</li>
+		<li>memeLeaderNoun->владыка</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeLeaderNoun->диктатор</li>
+		<li>memeLeaderNoun->завоеватель</li>
+		<li>memeLeaderNoun->победитель</li>
+	</Pony_ZebraSupremacist.generalRules.rulesStrings>
+
+	<Pony_ZebraSupremacist.symbolPacks.0.adjective>доминаторский</Pony_ZebraSupremacist.symbolPacks.0.adjective>
+	<Pony_ZebraSupremacist.symbolPacks.0.member>доминатор</Pony_ZebraSupremacist.symbolPacks.0.member>
+	<Pony_ZebraSupremacist.symbolPacks.0.theme>доминирования</Pony_ZebraSupremacist.symbolPacks.0.theme>
+	<Pony_ZebraSupremacist.symbolPacks.1.adjective>виктористский</Pony_ZebraSupremacist.symbolPacks.1.adjective>
+	<Pony_ZebraSupremacist.symbolPacks.1.member>викторист</Pony_ZebraSupremacist.symbolPacks.1.member>
+	<Pony_ZebraSupremacist.symbolPacks.1.theme>победы</Pony_ZebraSupremacist.symbolPacks.1.theme>
+	<Pony_ZebraSupremacist.symbolPacks.2.adjective>пауэеристский</Pony_ZebraSupremacist.symbolPacks.2.adjective>
+	<Pony_ZebraSupremacist.symbolPacks.2.member>пауэрист</Pony_ZebraSupremacist.symbolPacks.2.member>
+	<Pony_ZebraSupremacist.symbolPacks.2.theme>власти</Pony_ZebraSupremacist.symbolPacks.2.theme>
+
+</LanguageData>

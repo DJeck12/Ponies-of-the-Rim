@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+<!-- Аликорн -->
+
+	<Pony_AlicornBody.label>аликорн</Pony_AlicornBody.label>
+	<Pony_AlicornBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_AlicornBody.corePart.parts.left_lung.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_AlicornBody.corePart.parts.right_lung.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_AlicornBody.corePart.parts.left_kidney.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_AlicornBody.corePart.parts.right_kidney.customLabel>
+	<Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_AlicornBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_AlicornBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_AlicornBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_AlicornBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_AlicornBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_wing.customLabel>левое крыло</Pony_AlicornBody.corePart.parts.left_wing.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_wing.customLabel>правое крыло</Pony_AlicornBody.corePart.parts.right_wing.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_AlicornBody.corePart.parts.left_thigh.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_AlicornBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_AlicornBody.corePart.parts.right_thigh.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_AlicornBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Бэтпони -->
+
+	<Pony_BatponyBody.label>бэтпони</Pony_BatponyBody.label>
+	<Pony_BatponyBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_BatponyBody.corePart.parts.left_lung.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_BatponyBody.corePart.parts.right_lung.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_BatponyBody.corePart.parts.left_kidney.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_BatponyBody.corePart.parts.right_kidney.customLabel>
+	<Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_BatponyBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_BatponyBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_BatponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_BatponyBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_BatponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_wing.customLabel>левое крыло</Pony_BatponyBody.corePart.parts.left_wing.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_wing.customLabel>правое крыло</Pony_BatponyBody.corePart.parts.right_wing.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_BatponyBody.corePart.parts.left_thigh.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_BatponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_BatponyBody.corePart.parts.right_thigh.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_BatponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Перевёртыш -->
+
+	<Pony_ChangedlingBody.label>перевёртыш</Pony_ChangedlingBody.label>
+	<Pony_ChangedlingBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_ChangedlingBody.corePart.parts.left_lung.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_ChangedlingBody.corePart.parts.right_lung.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_ChangedlingBody.corePart.parts.left_kidney.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_ChangedlingBody.corePart.parts.right_kidney.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_ChangedlingBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_ChangedlingBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_ChangedlingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_ChangedlingBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_ChangedlingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_wing.customLabel>левое крыло</Pony_ChangedlingBody.corePart.parts.left_wing.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_wing.customLabel>правое крыло</Pony_ChangedlingBody.corePart.parts.right_wing.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_ChangedlingBody.corePart.parts.left_thigh.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_ChangedlingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_ChangedlingBody.corePart.parts.right_thigh.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_ChangedlingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Чейнджлинг -->
+
+	<Pony_ChangelingBody.label>чейнджлинг</Pony_ChangelingBody.label>
+	<Pony_ChangelingBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_ChangelingBody.corePart.parts.left_lung.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_ChangelingBody.corePart.parts.right_lung.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_ChangelingBody.corePart.parts.left_kidney.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_ChangelingBody.corePart.parts.right_kidney.customLabel>
+	<Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_ChangelingBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_ChangelingBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_ChangelingBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_ChangelingBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_ChangelingBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_wing.customLabel>левое крыло</Pony_ChangelingBody.corePart.parts.left_wing.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_wing.customLabel>правое крыло</Pony_ChangelingBody.corePart.parts.right_wing.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_ChangelingBody.corePart.parts.left_thigh.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_ChangelingBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_ChangelingBody.corePart.parts.right_thigh.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_ChangelingBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Кристальный пони -->
+
+	<Pony_CrystalponyBody.label>кристальный пони</Pony_CrystalponyBody.label>
+	<Pony_CrystalponyBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_CrystalponyBody.corePart.parts.left_lung.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_CrystalponyBody.corePart.parts.right_lung.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_CrystalponyBody.corePart.parts.left_kidney.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_CrystalponyBody.corePart.parts.right_kidney.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_CrystalponyBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_CrystalponyBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_CrystalponyBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_CrystalponyBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_CrystalponyBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_CrystalponyBody.corePart.parts.left_thigh.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_CrystalponyBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_CrystalponyBody.corePart.parts.right_thigh.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_CrystalponyBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Олень -->
+
+	<Pony_DeerBody.label>олень</Pony_DeerBody.label>
+	<Pony_DeerBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_DeerBody.corePart.parts.left_lung.customLabel>
+	<Pony_DeerBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_DeerBody.corePart.parts.right_lung.customLabel>
+	<Pony_DeerBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_DeerBody.corePart.parts.left_kidney.customLabel>
+	<Pony_DeerBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_DeerBody.corePart.parts.right_kidney.customLabel>
+	<Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.left_antler.customLabel>левый рог</Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.left_antler.customLabel>
+	<Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.right_antler.customLabel>правый рог</Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.right_antler.customLabel>
+	<Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_DeerBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_DeerBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_DeerBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_DeerBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_DeerBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_DeerBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_DeerBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_DeerBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_DeerBody.corePart.parts.left_thigh.customLabel>
+	<Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_DeerBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_DeerBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_DeerBody.corePart.parts.right_thigh.customLabel>
+	<Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_DeerBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Грифон -->
+
+	<Pony_GriffonBody.label>грифон</Pony_GriffonBody.label>
+	<Pony_GriffonBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_GriffonBody.corePart.parts.left_lung.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_GriffonBody.corePart.parts.right_lung.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_GriffonBody.corePart.parts.left_kidney.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_GriffonBody.corePart.parts.right_kidney.customLabel>
+	<Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_GriffonBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_GriffonBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.customLabel>передняя левая лапа</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_outer_talon.customLabel>левый наружный коготь</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_outer_talon.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_middle_talon.customLabel>левый центральный коготь</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_middle_talon.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_inner_talon.customLabel>левый внутренний коготь</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_inner_talon.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_hallux.customLabel>левый большой коготь</Pony_GriffonBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_hallux.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_GriffonBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.customLabel>передняя правая лапа</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_outer_talon.customLabel>правый наружный коготь</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_outer_talon.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_middle_talon.customLabel>правый центральный коготь</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_middle_talon.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_inner_talon.customLabel>правый внутренний коготь</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_inner_talon.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_hallux.customLabel>правый большой коготь</Pony_GriffonBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_hallux.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_wing.customLabel>левое крыло</Pony_GriffonBody.corePart.parts.left_wing.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_wing.customLabel>правое крыло</Pony_GriffonBody.corePart.parts.right_wing.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_GriffonBody.corePart.parts.left_thigh.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.customLabel>задняя левая лапа</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_fourth_claw.customLabel>левый четвёртый палец</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_fourth_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_third_claw.customLabel>левый третий палец</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_third_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_second_claw.customLabel>левый второй палец</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_second_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_first_claw.customLabel>левый первый палец</Pony_GriffonBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_paw.parts.left_first_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_GriffonBody.corePart.parts.right_thigh.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.customLabel>задняя правая лапа</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_fourth_claw.customLabel>правый четвёртый палец</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_fourth_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_third_claw.customLabel>правый третий палец</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_third_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_second_claw.customLabel>правый второй палец</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_second_claw.customLabel>
+	<Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_first_claw.customLabel>правый первый палец</Pony_GriffonBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_paw.parts.right_first_claw.customLabel>
+
+<!-- Гиппогриф -->
+
+	<Pony_HippogriffBody.label>гиппогриф</Pony_HippogriffBody.label>
+	<Pony_HippogriffBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_HippogriffBody.corePart.parts.left_lung.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_HippogriffBody.corePart.parts.right_lung.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_HippogriffBody.corePart.parts.left_kidney.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_HippogriffBody.corePart.parts.right_kidney.customLabel>
+	<Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_HippogriffBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_HippogriffBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.customLabel>левая лапа</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_outer_talon.customLabel>левый наружный коготь</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_outer_talon.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_middle_talon.customLabel>левый центральный коготь</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_middle_talon.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_inner_talon.customLabel>левый внутренний коготь</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_inner_talon.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_hallux.customLabel>левый большой коготь</Pony_HippogriffBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_hand.parts.left_hallux.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_HippogriffBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.customLabel>правая лапа</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_outer_talon.customLabel>правый наружный коготь</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_outer_talon.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_middle_talon.customLabel>правый центральный коготь</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_middle_talon.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_inner_talon.customLabel>правый внутренний коготь</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_inner_talon.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_hallux.customLabel>правый большой коготь</Pony_HippogriffBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_hand.parts.right_hallux.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_wing.customLabel>левое крыло</Pony_HippogriffBody.corePart.parts.left_wing.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_wing.customLabel>правое крыло</Pony_HippogriffBody.corePart.parts.right_wing.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_HippogriffBody.corePart.parts.left_thigh.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_HippogriffBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_HippogriffBody.corePart.parts.right_thigh.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_HippogriffBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Кирин -->
+
+	<Pony_KirinBody.label>кирин</Pony_KirinBody.label>
+	<Pony_KirinBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_KirinBody.corePart.parts.left_lung.customLabel>
+	<Pony_KirinBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_KirinBody.corePart.parts.right_lung.customLabel>
+	<Pony_KirinBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_KirinBody.corePart.parts.left_kidney.customLabel>
+	<Pony_KirinBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_KirinBody.corePart.parts.right_kidney.customLabel>
+	<Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_KirinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_KirinBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_KirinBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_KirinBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_KirinBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_KirinBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_KirinBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_KirinBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_KirinBody.corePart.parts.left_thigh.customLabel>
+	<Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_KirinBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_KirinBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_KirinBody.corePart.parts.right_thigh.customLabel>
+	<Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_KirinBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+<!-- Зебра -->
+
+	<Pony_ZebraBody.label>зебра</Pony_ZebraBody.label>
+	<Pony_ZebraBody.corePart.parts.left_lung.customLabel>левое лёгкое</Pony_ZebraBody.corePart.parts.left_lung.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_lung.customLabel>правое лёгкое</Pony_ZebraBody.corePart.parts.right_lung.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_kidney.customLabel>левая почка</Pony_ZebraBody.corePart.parts.left_kidney.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_kidney.customLabel>правая почка</Pony_ZebraBody.corePart.parts.right_kidney.customLabel>
+	<Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>левый глаз</Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+	<Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>правый глаз</Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+	<Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>левое ухо</Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+	<Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>правое ухо</Pony_ZebraBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_shoulder.customLabel>левое плечо</Pony_ZebraBody.corePart.parts.left_shoulder.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>передняя левая нога</Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>левая плечевая кость</Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_humerus.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>левая лучевая кость</Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.left_radius.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>передняя левая плюсневая кость</Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_cannon_bone.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>переднее левое копыто</Pony_ZebraBody.corePart.parts.left_shoulder.parts.front_left_leg.parts.front_left_hoof.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_shoulder.customLabel>правое плечо</Pony_ZebraBody.corePart.parts.right_shoulder.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>передняя правая нога</Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>правая плечевая кость</Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_humerus.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>правая лучевая кость</Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.right_radius.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>передняя правая плюсневая кость</Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_cannon_bone.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>переднее правое копыто</Pony_ZebraBody.corePart.parts.right_shoulder.parts.front_right_leg.parts.front_right_hoof.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_thigh.customLabel>левое бедро</Pony_ZebraBody.corePart.parts.left_thigh.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>задняя левая нога</Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>левая бедренная кость</Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_femur.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>левая берцовая кость</Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.left_tibia.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>задняя левая плюсневая кость</Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_cannon_bone.customLabel>
+	<Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>заднее левое копыто</Pony_ZebraBody.corePart.parts.left_thigh.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_thigh.customLabel>правое бедро</Pony_ZebraBody.corePart.parts.right_thigh.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>задняя правая нога</Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>правая бедренная кость</Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_femur.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>правая берцовая кость</Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.right_tibia.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>задняя правая плюсневая кость</Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_cannon_bone.customLabel>
+	<Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>заднее правое копыто</Pony_ZebraBody.corePart.parts.right_thigh.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+
+
+</LanguageData>
