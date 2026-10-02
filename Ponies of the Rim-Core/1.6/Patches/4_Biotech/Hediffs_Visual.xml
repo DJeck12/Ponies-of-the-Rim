@@ -28,7 +28,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 					<value>
-						<li Class="PawnRenderNodeProperties_Eye">
+						<li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 							<texPath>Races/Eyes/Eye_Red_Male</texPath>
 							<texPathFemale>Races/Eyes/Eye_Red_Female</texPathFemale>
 							<anchorTag>RightEye</anchorTag>
@@ -38,8 +38,8 @@
 							<side>Right</side>
 							<drawData>
 								<defaultData>
-									<layer>54</layer>
-									<offset>(0, 0, -0.25)</offset>
+									<layer>56</layer>
+									<offset>(0, 0, -0.24)</offset>
 								</defaultData>
 							</drawData>
 							<subworkerClasses>
@@ -52,7 +52,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 					<value>
-						<li Class="PawnRenderNodeProperties_Eye">
+						<li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 							<texPath>Races/Eyes/Eye_Red_Male</texPath>
 							<texPathFemale>Races/Eyes/Eye_Red_Female</texPathFemale>
 							<anchorTag>LeftEye</anchorTag>
@@ -62,8 +62,8 @@
 							<side>Left</side>
 							<drawData>
 								<defaultData>
-									<layer>54</layer>
-									<offset>(0, 0, -0.25)</offset>
+									<layer>56</layer>
+									<offset>(0, 0, -0.24)</offset>
 									<flip>true</flip>
 								</defaultData>
 								<dataWest>
@@ -80,7 +80,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 					<value>
-						<li Class="PawnRenderNodeProperties_Eye">
+						<li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 							<texPath>Races/Eyes/Eye_Gray_Male</texPath>
 							<texPathFemale>Races/Eyes/Eye_Gray_Female</texPathFemale>
 							<anchorTag>RightEye</anchorTag>
@@ -90,8 +90,8 @@
 							<side>Right</side>
 							<drawData>
 								<defaultData>
-									<layer>54</layer>
-									<offset>(0, 0, -0.25)</offset>
+									<layer>56</layer>
+									<offset>(0, 0, -0.24)</offset>
 								</defaultData>
 							</drawData>
 							<subworkerClasses>
@@ -104,7 +104,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 					<value>
-						<li Class="PawnRenderNodeProperties_Eye">
+						<li Class="PoniesOfTheRim.PonyRenderNodeProperties_Eye">
 							<texPath>Races/Eyes/Eye_Gray_Male</texPath>
 							<texPathFemale>Races/Eyes/Eye_Gray_Female</texPathFemale>
 							<anchorTag>LeftEye</anchorTag>
@@ -114,8 +114,8 @@
 							<side>Left</side>
 							<drawData>
 								<defaultData>
-									<layer>54</layer>
-									<offset>(0, 0, -0.25)</offset>
+									<layer>56</layer>
+									<offset>(0, 0, -0.24)</offset>
 									<flip>true</flip>
 								</defaultData>
 								<dataWest>
