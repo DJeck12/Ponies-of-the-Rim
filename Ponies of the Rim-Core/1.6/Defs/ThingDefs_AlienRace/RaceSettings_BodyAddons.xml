@@ -104,6 +104,12 @@
 						</extendedGraphics>
 					</Gene>
 				<!-- Races -->
+					<Race For="Human">
+						<path>Races/Heads/Markless/Head_Male</path>
+						<extendedGraphics>
+							<Gender For="Female">Races/Heads/Markless/Head_Female</Gender>
+						</extendedGraphics>
+					</Race>
 					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
 						<path>Races/Heads/Changeling/Head_Male</path>
 						<extendedGraphics>
