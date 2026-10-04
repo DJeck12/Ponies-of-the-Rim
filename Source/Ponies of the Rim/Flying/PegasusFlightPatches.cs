@@ -250,20 +250,39 @@ namespace PoniesOfTheRim.Flying
 
         public static bool Prefix(PathFinder __instance, ref object __result,
             IntVec3 start, LocalTargetInfo target, IntVec3? dest,
-            Pawn pawn, PathEndMode peMode, PathRequest.IPathGridCustomizer customizer)
+            Pawn pawn, PathEndMode peMode, ref PathRequest.IPathGridCustomizer customizer)
         {
             if (!PegasusFlightUtility.IsPegasusConstantFlight(pawn))
                 return true;
             if (CreateRequestOverload == null || CachedTuningNullable == null)
                 return true;
 
+            if (!FlightCanReachTarget(pawn, start, target, peMode))
+            {
+                if (pawn.Drafted && PonyFlightCache.GetToggle(pawn)?.RejectOrderNextTick(pawn.CurJob) == true)
+                    return true;
+
+                if (PonyLog.Verbose)
+                    PonyLog.TraceOnce("Flight.GroundPathFallback",
+                        $"Полёт: {pawn.LabelShortCap} не долетит до {DescribeTarget(target)} (крыша, туман или скала на пути) — " +
+                        "путь строится по земле. Сообщение выводится один раз.");
+                return true;
+            }
+
             var roofAndMountainBlocker = new PegasusFlightPathGridCustomizer(pawn.Map);
 
-            CombinedPathGridCustomizer combined = null;
+            if (!PegasusFlightUtility.CanFlyOverObstacles(pawn))
+            {
+                customizer = customizer != null
+                    ? new CombinedPathGridCustomizer(customizer, roofAndMountainBlocker, pawn.Map)
+                    : roofAndMountainBlocker;
+                return true;
+            }
+
             try
             {
                 PathRequest.IPathGridCustomizer finalCustomizer = customizer != null
-                    ? (combined = new CombinedPathGridCustomizer(customizer, roofAndMountainBlocker))
+                    ? new CombinedPathGridCustomizer(customizer, roofAndMountainBlocker, pawn.Map)
                     : (PathRequest.IPathGridCustomizer)roofAndMountainBlocker;
 
                 var tp = TraverseParms.For(
@@ -280,10 +299,140 @@ namespace PoniesOfTheRim.Flying
                 PonyLog.ErrorCaught("Полёт: не удалось построить маршрут для летящей пешки.", e);
                 return true;
             }
-            finally
+        }
+
+        private static bool FlightCanReachTarget(Pawn pawn, IntVec3 start, LocalTargetInfo target, PathEndMode peMode)
+        {
+            Map map = pawn.Map;
+            if (map == null || !target.IsValid)
+                return true;
+
+            try
             {
-                combined?.Dispose();
+                return PegasusFlightUtility.CanFlyOverObstacles(pawn)
+                    ? PegasusFlightReachability.CanReachByFlight(map, start, target, peMode)
+                    : PegasusFlightReachability.CanReachUnderOpenSky(map, start, target, peMode);
             }
+            catch (Exception e)
+            {
+                PonyLog.WarnCaught("Полёт: сбой проверки цели маршрута по воздуху — маршрут строится как раньше.", e);
+                return true;
+            }
+        }
+
+        private static string DescribeTarget(LocalTargetInfo target)
+        {
+            Thing thing = target.Thing;
+            return thing != null ? $"{thing.LabelShortCap} ({thing.ThingID})" : target.Cell.ToString();
+        }
+    }
+
+    public static class Patch_Reachability_CanReach
+    {
+        public static void Postfix(Reachability __instance, IntVec3 start, LocalTargetInfo dest,
+            PathEndMode peMode, TraverseParms traverseParams, ref bool __result)
+        {
+            Pawn pawn = traverseParams.pawn;
+            if (pawn == null)
+            {
+                pawn = PegasusFlightReachability.TakePatherContext();
+                if (pawn == null || start != pawn.Position)
+                    return;
+            }
+
+            if (__result || PegasusFlightReachability.GroundOnlyActive)
+                return;
+            if (traverseParams.mode != TraverseMode.ByPawn && traverseParams.mode != TraverseMode.PassDoors)
+                return;
+            if (!PegasusFlightUtility.IsFlyingOverObstacles(pawn))
+                return;
+
+            Map map = pawn.Map;
+            if (map == null || map.reachability != __instance)
+                return;
+
+            try
+            {
+                if (PegasusFlightReachability.CanReachByFlight(map, start, dest, peMode))
+                    __result = true;
+            }
+            catch (Exception e)
+            {
+                PonyLog.WarnCaught("Полёт: сбой проверки достижимости по воздуху — оставлен ванильный результат.", e);
+            }
+        }
+    }
+
+    public static class Patch_Reachability_CanReachMapEdge
+    {
+        private static bool _flipTraced;
+
+        public static void Postfix(Reachability __instance, IntVec3 c, TraverseParms traverseParms, ref bool __result)
+        {
+            if (__result || PegasusFlightReachability.GroundOnlyActive)
+                return;
+
+            Pawn pawn = traverseParms.pawn;
+            if (pawn == null)
+                return;
+            if (traverseParms.mode != TraverseMode.ByPawn && traverseParms.mode != TraverseMode.PassDoors)
+                return;
+            if (!PegasusFlightUtility.IsFlyingOverObstacles(pawn))
+                return;
+
+            Map map = pawn.Map;
+            if (map == null || map.reachability != __instance)
+                return;
+
+            try
+            {
+                if (!PegasusFlightReachability.CanReachMapEdgeByFlight(map, c))
+                    return;
+
+                __result = true;
+
+                if (!_flipTraced && PonyLog.Verbose)
+                {
+                    _flipTraced = true;
+                    PonyLog.Trace($"Полёт: у {pawn.LabelShortCap} нет пути к краю карты по земле, но есть по воздуху — " +
+                                  "CanReachMapEdge засчитан как «да» (сообщение выводится один раз).");
+                }
+            }
+            catch (Exception e)
+            {
+                PonyLog.WarnCaught("Полёт: сбой проверки выхода к краю карты по воздуху — оставлен ванильный результат.", e);
+            }
+        }
+    }
+
+    public static class Patch_PathFollower_StartPath
+    {
+        public static MethodBase FindTargetMethod()
+        {
+            MethodInfo fallback = null;
+            foreach (MethodInfo m in AccessTools.GetDeclaredMethods(typeof(Pawn_PathFollower)))
+            {
+                if (m.Name != nameof(Pawn_PathFollower.StartPath))
+                    continue;
+                ParameterInfo[] ps = m.GetParameters();
+                if (ps.Length >= 2 &&
+                    ps[0].ParameterType == typeof(LocalTargetInfo) &&
+                    ps[1].ParameterType == typeof(PathEndMode))
+                    return m;
+                fallback ??= m;
+            }
+            return fallback;
+        }
+
+        public static void Prefix(Pawn ___pawn, out Pawn __state)
+        {
+            __state = PegasusFlightReachability.ExchangePatherContext(
+                PegasusFlightUtility.IsPegasusConstantFlight(___pawn) ? ___pawn : null);
+        }
+
+        public static void Finalizer(Pawn __state)
+        {
+            PegasusFlightReachability.RestorePatherContext(__state);
         }
     }
 
@@ -296,9 +445,32 @@ namespace PoniesOfTheRim.Flying
             {
                 return;
             }
-            if (PegasusFlightUtility.CanFlyToCell(pawn, c, map))
+            if (PegasusFlightUtility.CanFlyToCell(pawn, c, map) && PegasusFlightUtility.CanFlyOverObstacles(pawn))
             {
                 __result = true;
+            }
+        }
+    }
+
+    public static class Patch_CastPositionFinder_EvaluateCell
+    {
+        public static bool Prefix(IntVec3 c, ref CastPositionRequest ___req)
+        {
+            try
+            {
+                if (___req.maxRegions <= 0)
+                    return true;
+
+                Pawn caster = ___req.caster;
+                if (caster == null || !caster.Spawned || !caster.Flying)
+                    return true;
+
+                return c.GetRegion(caster.Map, RegionType.Set_Passable) != null;
+            }
+            catch (Exception e)
+            {
+                PonyLog.WarnCaught("Полёт: сбой проверки клетки при поиске позиции для стрельбы.", e);
+                return true;
             }
         }
     }
@@ -307,7 +479,7 @@ namespace PoniesOfTheRim.Flying
     {
         public static void Postfix(Pawn ___pawn, ref Building __result)
         {
-            if (__result == null || !PegasusFlightUtility.IsPegasusConstantFlight(___pawn))
+            if (__result == null || !PegasusFlightUtility.IsFlyingOverObstacles(___pawn))
             {
                 return;
             }
@@ -323,7 +495,7 @@ namespace PoniesOfTheRim.Flying
     {
         public static void Postfix(Pawn ___pawn, ref Building_Door __result)
         {
-            if (__result == null || !PegasusFlightUtility.IsPegasusConstantFlight(___pawn))
+            if (__result == null || !PegasusFlightUtility.IsFlyingOverObstacles(___pawn))
             {
                 return;
             }
@@ -603,7 +775,7 @@ namespace PoniesOfTheRim.Flying
     {
         private static readonly Dictionary<int, CachedGrid> gridCache = new();
 
-        private const int DisposeGraceTicks = 600;
+        internal const int DisposeGraceTicks = 600;
         private const int RebuildIntervalTicks = 120;
         private const int NeverBuilt = -999999;
 
@@ -669,23 +841,35 @@ namespace PoniesOfTheRim.Flying
             bool sim = InSimulation;
             int stamp = sim ? Find.TickManager.TicksGame : NeverBuilt;
 
-            if (gridCache.TryGetValue(id, out var cached) && cached.grid.IsCreated)
+            if (gridCache.TryGetValue(id, out var cached) && cached.grid.IsCreated && cached.IsFor(map))
             {
                 if (!sim)
                     return;
 
-                if (stamp - cached.builtAtTick < RebuildIntervalTicks)
+                if (IsFresh(cached.builtAtTick, stamp))
                     return;
             }
             RebuildGrid(map, id, stamp);
+        }
+
+        internal static bool IsFresh(int builtAtTick, int now)
+        {
+            return now >= builtAtTick && now - builtAtTick < RebuildIntervalTicks;
         }
 
         private static void RebuildGrid(Map map, int mapId, int tick)
         {
             int numCells = map.cellIndices.NumGridCells;
 
-            if (gridCache.TryGetValue(mapId, out var old) && old.grid.IsCreated)
-                ScheduleDispose(old.grid);
+            System.WeakReference<Map> mapRef = null;
+            if (gridCache.TryGetValue(mapId, out var old))
+            {
+                if (old.grid.IsCreated)
+                    ScheduleDispose(old.grid);
+                if (old.IsFor(map))
+                    mapRef = old.MapRef;
+            }
+            mapRef ??= new System.WeakReference<Map>(map);
 
             var grid = new NativeArray<ushort>(numCells, Allocator.Persistent);
             RoofGrid roofGrid = map.roofGrid;
@@ -715,7 +899,7 @@ namespace PoniesOfTheRim.Flying
                 grid[i] = blocked ? (ushort)10000 : (ushort)0;
             }
 
-            gridCache[mapId] = new CachedGrid(grid, tick);
+            gridCache[mapId] = new CachedGrid(grid, tick, mapRef);
         }
 
         public static void DisposeForMap(int mapId)
@@ -727,11 +911,35 @@ namespace PoniesOfTheRim.Flying
             }
             FlushDueDisposals();
         }
+        public static void DisposeAll()
+        {
+            var grids = new List<NativeArray<ushort>>(gridCache.Count + pendingDisposal.Count);
+            foreach (CachedGrid cached in gridCache.Values)
+                grids.Add(cached.grid);
+            foreach (var entry in pendingDisposal)
+                grids.Add(entry.grid);
+
+            gridCache.Clear();
+            pendingDisposal.Clear();
+
+            int disposed = 0;
+            for (int i = 0; i < grids.Count; i++)
+            {
+                NativeArray<ushort> grid = grids[i];
+                if (!grid.IsCreated)
+                    continue;
+                grid.Dispose();
+                disposed++;
+            }
+
+            if (disposed > 0)
+                PonyLog.Trace($"Полёт: при выгрузке игры освобождено сеток полёта — {disposed}.");
+        }
 
         public static void InvalidateCache(int mapId)
         {
             if (gridCache.TryGetValue(mapId, out var cached))
-                gridCache[mapId] = new CachedGrid(cached.grid, NeverBuilt);
+                gridCache[mapId] = cached.WithTick(NeverBuilt);
         }
 
         private readonly struct CachedGrid
@@ -739,51 +947,108 @@ namespace PoniesOfTheRim.Flying
             public readonly NativeArray<ushort> grid;
             public readonly int builtAtTick;
 
-            public CachedGrid(NativeArray<ushort> grid, int builtAtTick)
+            public readonly System.WeakReference<Map> MapRef;
+
+            public CachedGrid(NativeArray<ushort> grid, int builtAtTick, System.WeakReference<Map> mapRef)
             {
                 this.grid = grid;
                 this.builtAtTick = builtAtTick;
+                MapRef = mapRef;
             }
+
+            public CachedGrid WithTick(int tick) => new CachedGrid(grid, tick, MapRef);
+
+            public bool IsFor(Map map) =>
+                MapRef != null && MapRef.TryGetTarget(out Map cachedMap) && ReferenceEquals(cachedMap, map);
         }
     }
 
-    public class CombinedPathGridCustomizer : PathRequest.IPathGridCustomizer, IDisposable
+    public class CombinedPathGridCustomizer : PathRequest.IPathGridCustomizer
     {
+        private readonly PathRequest.IPathGridCustomizer first;
+        private readonly PathRequest.IPathGridCustomizer second;
+        private readonly int numCells;
+
         private NativeArray<ushort> combinedGrid;
+        private int combinedAtTick;
 
         public CombinedPathGridCustomizer(
             PathRequest.IPathGridCustomizer first,
-            PathRequest.IPathGridCustomizer second)
+            PathRequest.IPathGridCustomizer second,
+            Map map)
         {
-            var grid1 = first.GetOffsetGrid();
-            var grid2 = second.GetOffsetGrid();
-
-            if (!grid1.IsCreated || !grid2.IsCreated || grid1.Length != grid2.Length)
-            {
-                var src = grid1.IsCreated ? grid1 : grid2;
-                combinedGrid = src.IsCreated
-                    ? new NativeArray<ushort>(src, Allocator.Persistent)
-                    : default;
-                return;
-            }
-
-            combinedGrid = new NativeArray<ushort>(grid1.Length, Allocator.Persistent);
-
-            for (int i = 0; i < combinedGrid.Length; i++)
-            {
-                int combined = grid1[i] + grid2[i];
-                combinedGrid[i] = (ushort)Mathf.Min(combined, ushort.MaxValue);
-            }
+            this.first = first;
+            this.second = second;
+            numCells = map.cellIndices.NumGridCells;
         }
 
-        public NativeArray<ushort> GetOffsetGrid() => combinedGrid;
-        public void Dispose()
+        public NativeArray<ushort> GetOffsetGrid()
         {
             if (combinedGrid.IsCreated)
+                return IsStillAlive(combinedAtTick, Find.TickManager.TicksGame) ? combinedGrid : default;
+
+            NativeArray<ushort> a = first.GetOffsetGrid();
+            NativeArray<ushort> b = second.GetOffsetGrid();
+            TraceWrongSize(first, a);
+            TraceWrongSize(second, b);
+
+            switch (ChooseSource(a.IsCreated, a.Length, b.IsCreated, b.Length, numCells))
             {
-                PegasusFlightPathGridCustomizer.ScheduleDispose(combinedGrid);
-                combinedGrid = default;
+                case GridSource.First:
+                    return a;
+                case GridSource.Second:
+                    return b;
+                case GridSource.Sum:
+                    break;
+                default:
+                    return default;
             }
+
+            combinedGrid = new NativeArray<ushort>(numCells, Allocator.Persistent);
+            for (int i = 0; i < numCells; i++)
+            {
+                int sum = a[i] + b[i];
+                combinedGrid[i] = sum > ushort.MaxValue ? ushort.MaxValue : (ushort)sum;
+            }
+            combinedAtTick = Find.TickManager.TicksGame;
+            PegasusFlightPathGridCustomizer.ScheduleDispose(combinedGrid);
+
+            PonyLog.TraceOnce("CombinedPathGridCustomizer|" + first.GetType().FullName,
+                $"Полёт: сетка полёта объединена с чужой ({first.GetType().FullName}).");
+            return combinedGrid;
+        }
+
+        internal static bool IsStillAlive(int createdAtTick, int now) =>
+            now >= createdAtTick && now - createdAtTick < PegasusFlightPathGridCustomizer.DisposeGraceTicks;
+
+        private void TraceWrongSize(PathRequest.IPathGridCustomizer source, NativeArray<ushort> grid)
+        {
+            if (grid.IsCreated && grid.Length > 0 && grid.Length != numCells)
+                PonyLog.TraceOnce("CombinedPathGridCustomizer.WrongSize|" + source.GetType().FullName,
+                    $"Полёт: сетка {source.GetType().FullName} не совпадает с размером карты ({grid.Length} вместо {numCells}) — не используется.");
+        }
+
+        internal enum GridSource
+        {
+            None,
+            First,
+            Second,
+            Sum
+        }
+
+        internal static GridSource ChooseSource(bool firstCreated, int firstLength,
+            bool secondCreated, int secondLength, int numCells)
+        {
+            bool hasFirst = firstCreated && firstLength == numCells && numCells > 0;
+            bool hasSecond = secondCreated && secondLength == numCells && numCells > 0;
+
+            if (hasFirst && hasSecond)
+                return GridSource.Sum;
+            if (hasFirst)
+                return GridSource.First;
+            if (hasSecond)
+                return GridSource.Second;
+            return GridSource.None;
         }
     }
 
@@ -794,6 +1059,21 @@ namespace PoniesOfTheRim.Flying
         {
             if (map != null)
                 PegasusFlightPathGridCustomizer.DisposeForMap(map.uniqueID);
+        }
+    }
+
+    public static class Patch_Game_Dispose
+    {
+        public static void Postfix()
+        {
+            try
+            {
+                PegasusFlightPathGridCustomizer.DisposeAll();
+            }
+            catch (Exception e)
+            {
+                PonyLog.WarnCaught("Полёт: не удалось освободить сетки полёта при выгрузке игры.", e);
+            }
         }
     }
 

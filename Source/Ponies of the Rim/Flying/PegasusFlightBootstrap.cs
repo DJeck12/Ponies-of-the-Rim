@@ -50,9 +50,32 @@ namespace PoniesOfTheRim.Flying
                 label: "PathFinder.CreateRequest");
 
             TryPatch(
+                AccessTools.Method(typeof(Reachability), nameof(Reachability.CanReach),
+                    new[] { typeof(IntVec3), typeof(LocalTargetInfo), typeof(PathEndMode), typeof(TraverseParms) }),
+                postfix: Postfix(typeof(Patch_Reachability_CanReach)),
+                label: "Reachability.CanReach (перелёт через стены)");
+
+            TryPatch(
+                AccessTools.Method(typeof(Reachability), nameof(Reachability.CanReachMapEdge),
+                    new[] { typeof(IntVec3), typeof(TraverseParms) }),
+                postfix: Postfix(typeof(Patch_Reachability_CanReachMapEdge)),
+                label: "Reachability.CanReachMapEdge (вылет к краю карты)");
+
+            TryPatch(
+                Patch_PathFollower_StartPath.FindTargetMethod(),
+                prefix: Prefix(typeof(Patch_PathFollower_StartPath)),
+                finalizer: Finalizer(typeof(Patch_PathFollower_StartPath)),
+                label: "Pawn_PathFollower.StartPath (контекст полёта)");
+
+            TryPatch(
                 AccessTools.Method(typeof(GenGrid), "WalkableBy"),
                 postfix: Postfix(typeof(Patch_GenGrid_WalkableBy)),
                 label: "GenGrid.WalkableBy");
+
+            TryPatch(
+                AccessTools.Method(typeof(CastPositionFinder), "EvaluateCell"),
+                prefix: Prefix(typeof(Patch_CastPositionFinder_EvaluateCell)),
+                label: "CastPositionFinder.EvaluateCell (клетки без региона у летящих)");
 
             TryPatch(
                 AccessTools.Method(typeof(Pawn_PathFollower), "BuildingBlockingNextPathCell"),
@@ -103,6 +126,11 @@ namespace PoniesOfTheRim.Flying
                 AccessTools.Method(typeof(Game), nameof(Game.DeinitAndRemoveMap)),
                 postfix: Postfix(typeof(Patch_Game_DeinitAndRemoveMap)),
                 label: "Game.DeinitAndRemoveMap");
+
+            TryPatch(
+                AccessTools.Method(typeof(Game), nameof(Game.Dispose)),
+                postfix: Postfix(typeof(Patch_Game_Dispose)),
+                label: "Game.Dispose (освобождение сеток полёта)");
 
             PonyLog.Trace($"Pegasus flight: патчей установлено {_patched}, ошибок {_failed}.");
         }

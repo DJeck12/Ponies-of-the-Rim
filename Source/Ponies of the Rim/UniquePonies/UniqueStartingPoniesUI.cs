@@ -11,125 +11,136 @@ namespace PoniesOfTheRim.UniquePonies
     public static class UniqueStartingPawnUI
     {
         private static FieldInfo _curPawnIndexField;
-        private static FieldInfo CurPawnIndexField =>
-            _curPawnIndexField ??= AccessTools.Field(typeof(Page_ConfigureStartingPawns), "curPawnIndex");
 
-        private static readonly bool _isRandomPlusActive =
-            ModLister.GetActiveModWithIdentifier("mastertea.RandomPlus") != null;
-        private static readonly bool _isPersonalitiesActive =
-            ModLister.GetActiveModWithIdentifier("hahkethomemah.simplepersonalities") != null;
+        private static readonly bool _isRandomPlusActive = ModLister.GetActiveModWithIdentifier("mastertea.RandomPlus") != null;
+
+        private static readonly bool _isPersonalitiesActive = ModLister.GetActiveModWithIdentifier("hahkethomemah.simplepersonalities") != null;
 
         public const float ElemWidth = 93f;
+
         public const float ElemSpacing = 0f;
-        private static float BtnHeight => Page.StandardSize.y - 744f;
 
         public static Rect LastUniquePawnsRect;
+
         public static Rect LastCutiemarkRect;
+
         public static Rect LastTailRect;
+
+        private static FieldInfo CurPawnIndexField => _curPawnIndexField ?? (_curPawnIndexField = AccessTools.Field(typeof(Page_ConfigureStartingPawns), "curPawnIndex"));
+
+        private static float BtnHeight => Page.StandardSize.y - 744f;
 
         public static void DoWindowContents_Prefix(Page_ConfigureStartingPawns __instance, Rect rect)
         {
-            if (CurPawnIndexField == null) return;
-
+            if (CurPawnIndexField == null)
+            {
+                return;
+            }
             int index = (int)CurPawnIndexField.GetValue(__instance);
-            var pawns = Find.GameInitData?.startingAndOptionalPawns;
-            bool isPony = pawns != null
-                          && index >= 0 && index < pawns.Count
-                          && pawns[index] != null
-                          && pawns[index].IsPony();
-
-            RebuildLayout(rect, isPony);
+            List<Pawn> pawns = Find.GameInitData?.startingAndOptionalPawns;
+            Pawn pawn = (pawns != null && index >= 0 && index < pawns.Count) ? pawns[index] : null;
+            bool usePonyLayout = pawn != null && (pawn.IsPony() || CutiemarkAddonResolver.HasVisibleCutiemark(pawn));
+            RebuildLayout(rect, usePonyLayout);
         }
 
-        private static void RebuildLayout(Rect pageRect, bool isPony)
+        private static void RebuildLayout(Rect pageRect, bool usePonyLayout)
         {
-            float modX = 0f;
-            if (_isRandomPlusActive && !_isPersonalitiesActive) modX = -50f;
-            else if (_isPersonalitiesActive) modX = 100f;
-
-            float h = BtnHeight;
-            float iw = ElemWidth - 13f;
-            float x = pageRect.x + 657f + modX;
-            float y = pageRect.yMax - Page.StandardSize.y + 85;
-            float cutieX = x + (ElemWidth - iw) / 2f;
-
-            if (!isPony) y += 47f;
-
-            LastUniquePawnsRect = new Rect(x, y, ElemWidth, h);
-            LastCutiemarkRect = new Rect(cutieX, y + h + ElemSpacing, iw, iw);
-            LastTailRect = new Rect(x, y + h + iw + ElemSpacing * 2f, ElemWidth, h);
+            float modOffsetX = 0f;
+            if (_isRandomPlusActive && !_isPersonalitiesActive)
+            {
+                modOffsetX = -50f;
+            }
+            else if (_isPersonalitiesActive)
+            {
+                modOffsetX = 100f;
+            }
+            float btnHeight = BtnHeight;
+            float cutiemarkSize = 80f;
+            float x = pageRect.x + 657f + modOffsetX;
+            float y = pageRect.yMax - Page.StandardSize.y + 85f;
+            float cutiemarkX = x + (ElemWidth - cutiemarkSize) / 2f;
+            if (!usePonyLayout)
+            {
+                y += 47f;
+            }
+            LastUniquePawnsRect = new Rect(x, y, ElemWidth, btnHeight);
+            LastCutiemarkRect = new Rect(cutiemarkX, y + btnHeight + ElemSpacing, cutiemarkSize, cutiemarkSize);
+            LastTailRect = new Rect(x, y + btnHeight + cutiemarkSize + ElemSpacing, ElemWidth, btnHeight);
         }
 
         public static void DoWindowContents_Postfix(Page_ConfigureStartingPawns __instance, Rect rect)
         {
-            if (CurPawnIndexField == null) return;
-
-            if (!Widgets.ButtonText(LastUniquePawnsRect, "Unique pawns"))
-                return;
-
-            var options = new List<FloatMenuOption>();
-            foreach (var config in UniquePawnConfig.Characters)
+            if (CurPawnIndexField == null || !Widgets.ButtonText(LastUniquePawnsRect, "Unique pawns"))
             {
-                var kind = DefDatabase<PawnKindDef>.GetNamed(config.KindDefName, errorOnFail: false);
-                if (kind == null) continue;
-
-                string label = kind.label.NullOrEmpty()
-                    ? kind.defName
-                    : kind.label.CapitalizeFirst();
-
-                var capturedKind = kind;
-                options.Add(new FloatMenuOption(label, () => ReplaceSelectedWith(__instance, capturedKind)));
+                return;
             }
-
+            List<FloatMenuOption> options = new List<FloatMenuOption>();
+            foreach (UniqueCharacterConfig character in UniquePawnConfig.Characters)
+            {
+                PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(character.KindDefName, errorOnFail: false);
+                if (named != null)
+                {
+                    string label = (named.label.NullOrEmpty() ? named.defName : named.label.CapitalizeFirst());
+                    PawnKindDef capturedKind = named;
+                    options.Add(new FloatMenuOption(label, delegate
+                    {
+                        ReplaceSelectedWith(__instance, capturedKind);
+                    }));
+                }
+            }
             if (options.Count == 0)
-                Messages.Message("No Unique PawnKindDef found.", MessageTypeDefOf.RejectInput, false);
+            {
+                Messages.Message("No Unique PawnKindDef found.", MessageTypeDefOf.RejectInput, historical: false);
+            }
             else
+            {
                 Find.WindowStack.Add(new FloatMenu(options));
+            }
         }
 
         private static void ReplaceSelectedWith(Page_ConfigureStartingPawns page, PawnKindDef kind)
         {
-            if (CurPawnIndexField == null) return;
-
+            if (CurPawnIndexField == null)
+            {
+                return;
+            }
             int index = (int)CurPawnIndexField.GetValue(page);
-            var list = Find.GameInitData?.startingAndOptionalPawns;
-            if (list == null || index < 0 || index >= list.Count) return;
-
-            var oldPawn = list[index];
-
-            var req = StartingPawnUtility.GetGenerationRequest(index);
-            req.PawnKindDefGetter = null;
-            req.KindDef = kind;
-
+            List<Pawn> pawns = Find.GameInitData?.startingAndOptionalPawns;
+            if (pawns == null || index < 0 || index >= pawns.Count)
+            {
+                return;
+            }
+            Pawn oldPawn = pawns[index];
+            PawnGenerationRequest generationRequest = StartingPawnUtility.GetGenerationRequest(index);
+            generationRequest.PawnKindDefGetter = null;
+            generationRequest.KindDef = kind;
             if (ModsConfig.BiotechActive)
             {
-                req.ForcedCustomXenotype = null;
-                req.AllowedXenotypes = null;
-                req.ForceBaselinerChance = 0f;
-                req.ForcedXenotype = kind.xenotypeSet != null ? null : XenotypeDefOf.Baseliner;
+                generationRequest.ForcedCustomXenotype = null;
+                generationRequest.AllowedXenotypes = null;
+                generationRequest.ForceBaselinerChance = 0f;
+                generationRequest.ForcedXenotype = ((kind.xenotypeSet != null) ? null : XenotypeDefOf.Baseliner);
             }
-
-            req.Context = PawnGenerationContext.PlayerStarter;
-            StartingPawnUtility.SetGenerationRequest(index, req);
-
-            var newPawn = PawnGenerator.GeneratePawn(req);
+            generationRequest.Context = PawnGenerationContext.PlayerStarter;
+            StartingPawnUtility.SetGenerationRequest(index, generationRequest);
+            Pawn newPawn = PawnGenerator.GeneratePawn(generationRequest);
             newPawn.relations.everSeenByPlayer = true;
             PawnComponentsUtility.AddComponentsForSpawn(newPawn);
             StartingPawnUtility.GeneratePossessions(newPawn);
-
-            list[index] = newPawn;
-
+            pawns[index] = newPawn;
             if (oldPawn != null && !oldPawn.Destroyed)
             {
-                try { oldPawn.Discard(silentlyRemoveReferences: true); }
+                try
+                {
+                    oldPawn.Discard(silentlyRemoveReferences: true);
+                }
                 catch (Exception ex)
-                { PonyLog.WarnCaught("Не удалось убрать старую пешку с экрана выбора персонажей.", ex); }
+                {
+                    PonyLog.WarnCaught("Не удалось убрать старую пешку с экрана выбора персонажей.", ex);
+                }
             }
-
             PortraitsCache.Clear();
-            Messages.Message(
-                $"Replaced pawn at slot {index + 1} with {kind.LabelCap}.",
-                MessageTypeDefOf.NeutralEvent, false);
+            Messages.Message($"Replaced pawn at slot {index + 1} with {kind.LabelCap}.", MessageTypeDefOf.NeutralEvent, historical: false);
         }
     }
 }

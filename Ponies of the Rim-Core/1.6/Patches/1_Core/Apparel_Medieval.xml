@@ -2,6 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Apparel_Parka"
 		or defName="Apparel_Pants"
 		or defName="Apparel_BasicShirt"
@@ -11,12 +12,34 @@
 		or defName="Apparel_PlateArmor"
 		or defName="Apparel_Cape"
 		or defName="Apparel_Robe"
-		
+
 		or defName="Apparel_CowboyHat"
 		or defName="Apparel_BowlerHat"
 		or defName="Apparel_Tuque"
 		or defName="Apparel_SimpleHelmet"
-		or defName="Apparel_HatHood"]/apparel</xpath>
+		or defName="Apparel_HatHood"]/apparel/tags[not(li="Medieval")]</xpath>
+		<value>
+			<li>Medieval</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="Apparel_Parka"
+		or defName="Apparel_Pants"
+		or defName="Apparel_BasicShirt"
+		or defName="Apparel_CollarShirt"
+		or defName="Apparel_Duster"
+		or defName="Apparel_Jacket"
+		or defName="Apparel_PlateArmor"
+		or defName="Apparel_Cape"
+		or defName="Apparel_Robe"
+
+		or defName="Apparel_CowboyHat"
+		or defName="Apparel_BowlerHat"
+		or defName="Apparel_Tuque"
+		or defName="Apparel_SimpleHelmet"
+		or defName="Apparel_HatHood") and not(apparel/tags)]/apparel</xpath>
 		<value>
 			<tags>
 				<li>Medieval</li>

@@ -4,6 +4,7 @@ using PoniesOfTheRim.Flying;
 using PoniesOfTheRim.Food;
 using PoniesOfTheRim.Genetics;
 using RimWorld;
+using RimWorld.QuestGen;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -26,6 +27,7 @@ namespace PoniesOfTheRim
             PonyLog.Trace("Bootstrap: запуск.");
             RunStage(RegisterCoreSetup, "CoreSetup");
             RunStage(RegisterCorePatches, "CorePatches");
+            RunStage(RegisterScenarioPatches, "ScenarioPatches");
             RunStage(RegisterBiotechPatches, "BiotechPatches");
             RunStage(RegisterIdeologyPatches, "IdeologyPatches");
             RunStage(RegisterCompatibilityPatches, "CompatibilityPatches");
@@ -62,6 +64,13 @@ namespace PoniesOfTheRim
                                            nameof(Patch_FoodUtility_ThoughtsFromIngesting.Postfix)),
                 label: "FoodUtility.ThoughtsFromIngesting (фрукты в составе блюда)"
             );
+        }
+
+        private static void RegisterScenarioPatches()
+        {
+            TryPatch(Patch_StartingPawns_ScenarioReset.ResolveTarget(),
+                postfix: new HarmonyMethod(typeof(Patch_StartingPawns_ScenarioReset), nameof(Patch_StartingPawns_ScenarioReset.Postfix)),
+                label: "Page_SelectScenario.BeginScenarioConfiguration (сброс запросов стартовых пешек)");
         }
 
         private static void RegisterCoreSetup()
@@ -163,8 +172,30 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(typeof(CommsConsolePatch), nameof(CommsConsolePatch.CommsConsolePostfix)),
                 label: "FactionDialogMaker.FactionDialogFor"
             );
-            QuestFactionPatches.Apply(Harmony);
-            Patch_QuestNode_GeneratePawn_RaceAware.Register(Harmony);
+            TryPatch(
+                AccessTools.Method(typeof(QuestNode_GetFaction), "IsGoodFaction"),
+                postfix: new HarmonyMethod(typeof(QuestFactionPatches),
+                                           nameof(QuestFactionPatches.IsGoodFaction_Postfix)),
+                label: "QuestNode_GetFaction.IsGoodFaction (фракция квеста из консоли)"
+            );
+            TryPatch(
+                AccessTools.Method(typeof(QuestNode_GetNearbySettlement), "RunInt"),
+                prefix: new HarmonyMethod(typeof(QuestFactionPatches),
+                                          nameof(QuestFactionPatches.GetNearbySettlement_RunInt_Prefix)),
+                label: "QuestNode_GetNearbySettlement.RunInt (поселение фракции из консоли)"
+            );
+            TryPatch(
+                AccessTools.Method(typeof(QuestNode_GetNearbySettlement), "TestRunInt"),
+                prefix: new HarmonyMethod(typeof(QuestFactionPatches),
+                                          nameof(QuestFactionPatches.GetNearbySettlement_TestRunInt_Prefix)),
+                label: "QuestNode_GetNearbySettlement.TestRunInt (поселение фракции из консоли)"
+            );
+            TryPatch(
+                AccessTools.Method(typeof(QuestNode_GeneratePawn), "RunInt"),
+                prefix: new HarmonyMethod(typeof(Patch_QuestNode_GeneratePawn_RaceAware),
+                                          nameof(Patch_QuestNode_GeneratePawn_RaceAware.Prefix)),
+                label: "QuestNode_GeneratePawn.RunInt (раса квестовой пешки)"
+            );
 
             TryPatch(
                 AccessTools.Method(typeof(CharacterCardUtility), "DrawCharacterCard"),

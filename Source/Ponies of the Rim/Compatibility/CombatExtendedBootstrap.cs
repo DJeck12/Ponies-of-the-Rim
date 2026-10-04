@@ -10,20 +10,17 @@ namespace PoniesOfTheRim.Compatibility
     {
         public static readonly Harmony Harmony;
 
-        private static int _patched;
-        private static int _failed;
-
         static CombatExtendedBootstrap()
         {
             Harmony = new Harmony("rimworld.poniesoftherim.combatextended");
 
             if (!CombatExtendedCompatability.Active)
             {
-                PonyLog.Trace("Combat Extended не обнаружен — патч совместимости пропущен.");
+                Log.Message("[PoniesOfTheRim] Combat Extended не обнаружен — патч совместимости пропущен.");
                 return;
             }
 
-            PonyLog.Trace("CE Bootstrap: запуск.");
+            Log.Message("[PoniesOfTheRim] CE Bootstrap: запуск.");
 
             CombatExtendedCompatability.BuildFlightExtensionCache();
             RegisterCollisionPatches();
@@ -31,13 +28,8 @@ namespace PoniesOfTheRim.Compatibility
             LongEventHandler.ExecuteWhenFinished(delegate
             {
                 CombatExtendedCompatability.EnsureRaceComps();
-
-                if (Prefs.DevMode)
-                {
-                    CombatExtendedCompatability.AuditRaces();
-                }
-
-                PonyLog.Trace($"CE Bootstrap: завершён, патчей установлено {_patched}, ошибок {_failed}.");
+                CombatExtendedCompatability.AuditRaces();
+                Log.Message("[PoniesOfTheRim] CE Bootstrap: завершён.");
             });
         }
 
@@ -57,26 +49,35 @@ namespace PoniesOfTheRim.Compatibility
                 null,
                 "CollisionVertical.CalculateHeightRange (подъём в полёте)",
                 new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Finalizer"));
+
+            TryPatch(
+                Patch_CE_CollisionVerticalLift.TargetMethod(),
+                null,
+                new HarmonyMethod(typeof(Patch_CE_PonyCoverPeek), "Postfix"),
+                null,
+                "CollisionVertical.CalculateHeightRange (пони выглядывают из-за укрытий)");
+            TryPatch(
+                Patch_CE_SuppressionOffMap.TargetMethod(),
+                prefix: new HarmonyMethod(typeof(Patch_CE_SuppressionOffMap), "Prefix"),
+                label: "CompSuppressable.CompTickInterval (подавление вне карты)");
         }
 
         private static void TryPatch(MethodInfo original, HarmonyMethod prefix = null, HarmonyMethod postfix = null, HarmonyMethod transpiler = null, string label = "", HarmonyMethod finalizer = null)
         {
             if (original == null)
             {
-                _failed++;
-                PonyLog.Error("CE Bootstrap: метод не найден — '" + label + "'.");
+                Log.Error("[PoniesOfTheRim] CE Bootstrap: метод не найден — '" + label + "'.");
                 return;
             }
 
             try
             {
                 Harmony.Patch(original, prefix, postfix, transpiler, finalizer);
-                _patched++;
+                Log.Message("[PoniesOfTheRim] CE Bootstrap: ✓ " + label);
             }
             catch (Exception arg)
             {
-                _failed++;
-                PonyLog.Error($"CE Bootstrap: ошибка патча '{label}':\n{arg}");
+                Log.Error($"[PoniesOfTheRim] CE Bootstrap: ошибка патча '{label}':\n{arg}");
             }
         }
     }
