@@ -15,11 +15,19 @@
 		<SettingsAbilities>Abilities</SettingsAbilities>
 		<Pony_SettingsDiet>Unique diets</Pony_SettingsDiet>
 		<Pony_SettingsFoodDebuffs>Food mood debuffs</Pony_SettingsFoodDebuffs>
+		<Pony_SettingsFlight>Winged Pawn Settings</Pony_SettingsFlight>
+		<Pony_SettingsFlyOverObstaclesPlayer>Your winged pawns fly over the walls</Pony_SettingsFlyOverObstaclesPlayer>
+		<Pony_SettingsFlyOverObstaclesAI>AI winged pawns fly over the walls</Pony_SettingsFlyOverObstaclesAI>
+		<Pony_SettingsCombatManeuversAI>AI winged pawns use combat maneuvers while flying</Pony_SettingsCombatManeuversAI>
 	<!-- ToolTips -->
 		<SettingsToolTipClassical>Enable all recomended settings</SettingsToolTipClassical>
 		<SettingsToolTipAbilities>Enable racial pony abilities</SettingsToolTipAbilities>
 		<Pony_SettingsToolTipDiet>Enable herbivore/carnivore racial diets</Pony_SettingsToolTipDiet>
 		<Pony_SettingsToolTipFoodDebuffs>Enable negative mood debuffs when consumed by herbivores/carnivores</Pony_SettingsToolTipFoodDebuffs>
+		<Pony_SettingsToolTipFlight>Options for the behavior of winged pawns.</Pony_SettingsToolTipFlight>
+		<Pony_SettingsToolTipFlyOverObstaclesPlayer>Your faction's winged pawns can fly and move over walls, doors, and other outdoor structures. If this ability is disabled, they still fly but navigate around obstacles just like walking pawns. Roofs, fog, and mountains always block flight. \nThe effect takes effect immediately.</Pony_SettingsToolTipFlyOverObstaclesPlayer>
+		<Pony_SettingsToolTipFlyOverObstaclesAI>AI pawns with wings (raiders, visitors, traders, allies) can fly over walls, doors, and other outdoor structures. If the ability is disabled, they still fly but navigate around obstacles just like ordinary walking characters. Roofs, fog, and mountains always block flight. \nThe effect takes effect immediately.</Pony_SettingsToolTipFlyOverObstaclesAI>
+		<Pony_SettingsToolTipCombatManeuversAI>AI-controlled winged pawns equipped with ranged weapons use short flights during combat: they break away from melee opponents—who would otherwise obstruct their firing—and dash for cover if caught under fire in the open. Each such maneuver consumes flight energy. \nThis feature automatically disables when using the Combat Extended mod, which independently manages combat positioning. \nTakes effect immediately.</Pony_SettingsToolTipCombatManeuversAI>
 
 	<!-- Patches -->
 		<Pony_NoPatchesFound>No patches found</Pony_NoPatchesFound>
@@ -28,4 +36,5 @@
 		<Pony_WarnReloadGame>Must reload the game to apply changes</Pony_WarnReloadGame>
 		<Pony_RestartNow>Save and apply changes</Pony_RestartNow>
 		<Pony_RestartConfirm>Mod's settings have been changed. Are you sure you want to reload the game?</Pony_RestartConfirm>
+
 </LanguageData>

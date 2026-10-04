@@ -20,6 +20,9 @@ namespace PoniesOfTheRim
         public bool enableRegularHorses = true;
         public bool enableFoodGenes = true;
         public bool enableFoodDebuffs = true;
+        public bool pegasusFlyOverObstaclesPlayer = true;
+        public bool pegasusFlyOverObstaclesAI = true;
+        public bool pegasusCombatManeuversAI = true;
 
         public Dictionary<string, bool> patchToggles = new();
 
@@ -53,6 +56,9 @@ namespace PoniesOfTheRim
             Scribe_Values.Look(ref enableRegularHorses, "enableRegularHorses", true, true);
             Scribe_Values.Look(ref enableFoodGenes, "enableFoodGenes", true, true);
             Scribe_Values.Look(ref enableFoodDebuffs, "enableFoodDebuffs", true, true);
+            Scribe_Values.Look(ref pegasusFlyOverObstaclesPlayer, "pegasusFlyOverObstaclesPlayer", true, true);
+            Scribe_Values.Look(ref pegasusFlyOverObstaclesAI, "pegasusFlyOverObstaclesAI", true, true);
+            Scribe_Values.Look(ref pegasusCombatManeuversAI, "pegasusCombatManeuversAI", true, true);
 
             Scribe_Collections.Look(ref patchToggles, "patchToggles", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref abilityToggles, "abilityToggles", LookMode.Value, LookMode.Value);
@@ -109,6 +115,7 @@ namespace PoniesOfTheRim
         private Vector2 patchScroll = Vector2.zero;
         private bool abilitiesExpanded = true;
         private bool dietExpanded = true;
+        private bool flightExpanded = true;
 
         public PoniesOfTheRimSettings(ModContentPack content) : base(content)
         {
@@ -224,6 +231,20 @@ namespace PoniesOfTheRim
 
         public override string SettingsCategory() => "SettingsPoniesOfTheRim".Translate();
 
+        public override void WriteSettings()
+        {
+            base.WriteSettings();
+
+            try
+            {
+                Flying.PegasusFlightUtility.LandPegasiOverObstacles();
+            }
+            catch (Exception ex)
+            {
+                PonyLog.WarnCaught("Полёт: не удалось посадить пегасов после смены настройки перелёта.", ex);
+            }
+        }
+
         public override void DoSettingsWindowContents(Rect inRect)
         {
             if (!_patchTogglesScanned)
@@ -257,7 +278,8 @@ namespace PoniesOfTheRim
                 ? settings.abilityToggles.Count + 1f : 1f;
             float dietLines = settings.classical && settings.enableFoodGenes && dietExpanded
                 ? 2f : 1f;
-            float totalHeight = (baseLines + abilityLines + dietLines) * lineHeight + 60f;
+            float flightLines = settings.classical && flightExpanded ? 4f : 1f;
+            float totalHeight = (baseLines + abilityLines + dietLines + flightLines) * lineHeight + 60f;
 
             Rect viewRect = new Rect(0f, 0f, rect.width - 16f, Mathf.Max(totalHeight, rect.height));
             Widgets.BeginScrollView(rect, ref generalScroll, viewRect);
@@ -278,6 +300,93 @@ namespace PoniesOfTheRim
 
             ls.End();
             Widgets.EndScrollView();
+        }
+
+        private void DrawFlightGroup(Listing_Standard ls)
+        {
+            bool maneuversAvailable = !Compatibility.CombatExtendedCompatability.Active;
+
+            MultiCheckboxState state = FlightGroupState(
+                settings.pegasusFlyOverObstaclesPlayer,
+                settings.pegasusFlyOverObstaclesAI,
+                settings.pegasusCombatManeuversAI,
+                maneuversAvailable);
+
+            MultiCheckboxState clicked = DrawCollapsibleGroupHeader(
+                ls,
+                "   " + "Pony_SettingsFlight".Translate(),
+                "Pony_SettingsToolTipFlight".Translate(),
+                state,
+                ref flightExpanded,
+                indent: 30f);
+
+            if (clicked != state)
+            {
+                bool on = clicked == MultiCheckboxState.On;
+                settings.pegasusFlyOverObstaclesPlayer = on;
+                settings.pegasusFlyOverObstaclesAI = on;
+                if (maneuversAvailable)
+                    settings.pegasusCombatManeuversAI = on;
+                if (on)
+                    flightExpanded = true;
+            }
+
+            if (!flightExpanded)
+                return;
+
+            ls.CheckboxLabeled(
+                "         ├► " + "Pony_SettingsFlyOverObstaclesPlayer".Translate(),
+                ref settings.pegasusFlyOverObstaclesPlayer,
+                "Pony_SettingsToolTipFlyOverObstaclesPlayer".Translate(), 0, 1);
+
+            ls.CheckboxLabeled(
+                "         ├► " + "Pony_SettingsFlyOverObstaclesAI".Translate(),
+                ref settings.pegasusFlyOverObstaclesAI,
+                "Pony_SettingsToolTipFlyOverObstaclesAI".Translate(), 0, 1);
+
+            string maneuversLabel = "         └► " + "Pony_SettingsCombatManeuversAI".Translate();
+            string maneuversTip = "Pony_SettingsToolTipCombatManeuversAI".Translate();
+            if (maneuversAvailable)
+                ls.CheckboxLabeled(maneuversLabel, ref settings.pegasusCombatManeuversAI, maneuversTip, 0, 1);
+            else
+                CheckboxLabeledLocked(ls, maneuversLabel, maneuversTip);
+        }
+
+        private static void CheckboxLabeledLocked(Listing_Standard ls, string label, string tooltip)
+        {
+            Rect rect = ls.GetRect(Text.CalcHeight(label, ls.ColumnWidth));
+            rect.width = Mathf.Min(rect.width + 24f, ls.ColumnWidth);
+
+            if (!tooltip.NullOrEmpty())
+            {
+                if (Mouse.IsOver(rect))
+                    Widgets.DrawHighlight(rect);
+                TooltipHandler.TipRegion(rect, tooltip);
+            }
+
+            bool shown = false;
+            GUI.color = Color.gray;
+            Widgets.CheckboxLabeled(rect, label, ref shown, disabled: true);
+            GUI.color = Color.white;
+
+            ls.Gap(ls.verticalSpacing);
+        }
+
+        private static void SetAllFlightOptions(bool on)
+        {
+            settings.pegasusFlyOverObstaclesPlayer = on;
+            settings.pegasusFlyOverObstaclesAI = on;
+            settings.pegasusCombatManeuversAI = on;
+        }
+
+        internal static MultiCheckboxState FlightGroupState(bool flyOverPlayer, bool flyOverAI, bool maneuversAI,
+            bool maneuversAvailable)
+        {
+            int total = maneuversAvailable ? 3 : 2;
+            int on = (flyOverPlayer ? 1 : 0) + (flyOverAI ? 1 : 0) + (maneuversAvailable && maneuversAI ? 1 : 0);
+            if (on == total)
+                return MultiCheckboxState.On;
+            return on == 0 ? MultiCheckboxState.Off : MultiCheckboxState.Partial;
         }
 
         private void DrawHeader(Listing_Standard ls)
@@ -333,6 +442,34 @@ namespace PoniesOfTheRim
             ls.Gap(2f);
         }
 
+        private MultiCheckboxState DrawCollapsibleGroupHeader(
+            Listing_Standard ls,
+            string label,
+            string tooltip,
+            MultiCheckboxState state,
+            ref bool expanded,
+            float indent = 22f)
+        {
+            Rect row = ls.GetRect(Text.LineHeight);
+
+            Rect arrowRect = new Rect(row.x + indent, row.y, 20f, row.height);
+            if (Widgets.ButtonText(arrowRect, expanded ? "▼" : "►"))
+                expanded = !expanded;
+
+            Rect labelRect = new Rect(
+                arrowRect.xMax + 4f, row.y,
+                row.xMax - arrowRect.xMax - 4f - 28f, row.height);
+            Widgets.Label(labelRect, label);
+
+            MultiCheckboxState result = Widgets.CheckboxMulti(new Rect(row.xMax - 24f, row.y, 24f, 24f), state);
+
+            if (!tooltip.NullOrEmpty())
+                TooltipHandler.TipRegion(row, tooltip);
+
+            ls.Gap(2f);
+            return result;
+        }
+
         private void DrawClassicalSettings(Listing_Standard ls)
         {
             ls.CheckboxLabeled(
@@ -345,6 +482,7 @@ namespace PoniesOfTheRim
                 settings.ClassicalSettingsToggle(false);
                 settings.enableFoodGenes = false;
                 settings.enableFoodDebuffs = false;
+                SetAllFlightOptions(false);
                 return;
             }
 
@@ -399,6 +537,8 @@ namespace PoniesOfTheRim
             {
                 settings.enableFoodDebuffs = false;
             }
+
+            DrawFlightGroup(ls);
         }
 
         private void DrawPatchTab(Rect rect)
@@ -498,6 +638,9 @@ namespace PoniesOfTheRim
             settings.ClassicalSettingsDefault();
             settings.enableFoodGenes = true;
             settings.enableFoodDebuffs = true;
+            settings.pegasusFlyOverObstaclesPlayer = true;
+            settings.pegasusFlyOverObstaclesAI = true;
+            settings.pegasusCombatManeuversAI = true;
 
             foreach (string key in defaultAbilityToggles.Keys)
                 settings.abilityToggles[key] = defaultAbilityToggles[key];

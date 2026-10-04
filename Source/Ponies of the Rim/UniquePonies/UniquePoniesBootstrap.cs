@@ -20,66 +20,24 @@ namespace PoniesOfTheRim.UniquePonies
 
         static UniquePawnsBootstrap()
         {
-            var generatePawnMethod = AccessTools.Method(
-                typeof(PawnGenerator),
-                nameof(PawnGenerator.GeneratePawn),
-                new[] { typeof(PawnGenerationRequest) });
+            Harmony = new Harmony(HarmonyId);
 
-            TryPatch(generatePawnMethod,
-                prefix: new HarmonyMethod(typeof(UniqueBirthFix),
-                    nameof(UniqueBirthFix.GeneratePawn_Prefix))
-                { priority = Priority.High },
-                label: "PawnGenerator.GeneratePawn (UniqueBirthFix)");
+            MethodInfo generatePawn = AccessTools.Method(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) });
+            TryPatch(generatePawn, new HarmonyMethod(typeof(UniqueBirthFix), "GeneratePawn_Prefix") { priority = 600 }, null, null, "PawnGenerator.GeneratePawn (UniqueBirthFix)");
+            TryPatch(generatePawn, null, new HarmonyMethod(typeof(UniqueBodyAddonAssigner), "GeneratePawn_Postfix") { priority = 600 }, null, "PawnGenerator.GeneratePawn (UniqueBodyAddonAssigner)");
+            TryPatch(generatePawn, null, new HarmonyMethod(typeof(UniqueEquipmentAssigner), "GeneratePawn_Postfix") { priority = 400 }, null, "PawnGenerator.GeneratePawn (UniqueEquipmentAssigner)");
+            TryPatch(generatePawn, null, new HarmonyMethod(typeof(UniqueNameAssigner), "GeneratePawn_Postfix") { priority = 100 }, null, "PawnGenerator.GeneratePawn (UniqueNameAssigner)");
 
-            TryPatch(generatePawnMethod,
-                postfix: new HarmonyMethod(typeof(UniqueBodyAddonAssigner),
-                    nameof(UniqueBodyAddonAssigner.GeneratePawn_Postfix))
-                { priority = Priority.High },
-                label: "PawnGenerator.GeneratePawn (UniqueBodyAddonAssigner)");
+            TryPatch(UniqueCleanGeneration.OldAgeInjuriesTarget(), new HarmonyMethod(typeof(UniqueCleanGeneration), "OldAgeInjuries_Prefix") { priority = 600 }, null, null, "AgeInjuryUtility.GenerateRandomOldAgeInjuries (unique clean)");
+            TryPatch(UniqueCleanGeneration.TechHediffsTarget(), new HarmonyMethod(typeof(UniqueCleanGeneration), "TechHediffs_Prefix") { priority = 600 }, null, null, "PawnTechHediffsGenerator.GenerateTechHediffsFor (unique clean)");
+            TryPatch(UniqueCleanGeneration.AddictionsTarget(), new HarmonyMethod(typeof(UniqueCleanGeneration), "Addictions_Prefix") { priority = 600 }, null, null, "PawnAddictionHediffsGenerator.GenerateAddictionsAndTolerancesFor (unique clean)");
 
-            TryPatch(generatePawnMethod,
-                postfix: new HarmonyMethod(typeof(UniqueEquipmentAssigner),
-                    nameof(UniqueEquipmentAssigner.GeneratePawn_Postfix))
-                { priority = Priority.Normal },
-                label: "PawnGenerator.GeneratePawn (UniqueEquipmentAssigner)");
-
-            TryPatch(generatePawnMethod,
-                postfix: new HarmonyMethod(typeof(UniqueNameAssigner),
-                    nameof(UniqueNameAssigner.GeneratePawn_Postfix))
-                { priority = Priority.VeryLow },
-                label: "PawnGenerator.GeneratePawn (UniqueNameAssigner)");
-
-            TryPatch(
-                AccessTools.Method(typeof(Page_ConfigureStartingPawns),
-                    nameof(Page_ConfigureStartingPawns.DoWindowContents)),
-                prefix: new HarmonyMethod(typeof(UniqueStartingPawnUI),
-                    nameof(UniqueStartingPawnUI.DoWindowContents_Prefix)),
-                postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI),
-                    nameof(UniqueStartingPawnUI.DoWindowContents_Postfix)),
-                label: "Page_ConfigureStartingPawns.DoWindowContents (unique)");
-
-            TryPatch(
-                AccessTools.Method(typeof(Game), nameof(Game.FinalizeInit)),
-                postfix: new HarmonyMethod(typeof(UniqueWorldSpawner),
-                    nameof(UniqueWorldSpawner.FinalizeInit_Postfix)),
-                label: "Game.FinalizeInit (UniqueWorldSpawner)");
-
-            TryPatch(
-                AccessTools.Method(typeof(SkillRecord), "Interval"),
-                postfix: new HarmonyMethod(typeof(PerfectMemoryPatch),
-                    nameof(PerfectMemoryPatch.Interval_Postfix)),
-                label: "SkillRecord.Interval (PerfectMemory)");
-
-            TryPatch(
-                AccessTools.Method(typeof(GenRecipe), "PostProcessProduct"),
-                postfix: new HarmonyMethod(typeof(EleganceQualityPatch),
-                    nameof(EleganceQualityPatch.PostProcessProduct_Postfix)),
-                label: "GenRecipe.PostProcessProduct (EleganceQuality)");
-
+            TryPatch(AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"), new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Prefix"), new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Postfix"), null, "Page_ConfigureStartingPawns.DoWindowContents (unique)");
+            TryPatch(AccessTools.Method(typeof(Game), "FinalizeInit"), null, new HarmonyMethod(typeof(UniqueWorldSpawner), "FinalizeInit_Postfix"), null, "Game.FinalizeInit (UniqueWorldSpawner)");
+            TryPatch(AccessTools.Method(typeof(SkillRecord), "Interval"), null, new HarmonyMethod(typeof(PerfectMemoryPatch), "Interval_Postfix"), null, "SkillRecord.Interval (PerfectMemory)");
+            TryPatch(AccessTools.Method(typeof(GenRecipe), "PostProcessProduct"), null, new HarmonyMethod(typeof(EleganceQualityPatch), "PostProcessProduct_Postfix"), null, "GenRecipe.PostProcessProduct (EleganceQuality)");
             PatchStylingStationIfAvailable();
-
             LongEventHandler.ExecuteWhenFinished(ForceInitUniversalAddons);
-
             PonyLog.Trace($"Unique pawns: патчей установлено {_patched}, ошибок {_failed}.");
         }
 

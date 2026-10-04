@@ -18,7 +18,7 @@
 				<minSeverity>0.5</minSeverity>
 				<label>exhausted</label>
 				<statOffsets>
-					<RestFallRateFactor>0.75</RestFallRateFactor>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -31,7 +31,7 @@
 				<minSeverity>0.75</minSeverity>
 				<label>critically exhausted</label>
 				<statOffsets>
-					<RestFallRateFactor>0.5</RestFallRateFactor>
+					<RestFallRateFactor>0.75</RestFallRateFactor>
 				</statOffsets>
 				<capMods>
 					<li>

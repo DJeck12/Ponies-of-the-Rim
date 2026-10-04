@@ -103,6 +103,18 @@ namespace PoniesOfTheRim.UniquePonies
                 BodyVariant           = 0,
                 FallbackKindDefName   = "Pony_UnicornColonist",       
             },
+            new UniqueCharacterConfig
+            {
+                KindDefName           = "Pony_LittlePip",
+                UseSingleName         = true,
+                NickName              = "Littlepip",
+                AdultBackstoryDefName = "Pony_Wasteland_Adventurer",
+                CutiemarkVariant      = 144,
+                TailVariant           = 0,
+                HeadVariant           = 0,
+                BodyVariant           = 0,
+                FallbackKindDefName   = "Pony_UnicornColonist",
+            },
         };
 
         private static Dictionary<string, UniqueCharacterConfig> _byKindDef;

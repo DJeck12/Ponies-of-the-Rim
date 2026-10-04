@@ -109,8 +109,14 @@
     <Compile Include="Compatibility\CombatExtendedCompatibility.cs" />
     <Compile Include="Compatibility\CombatExtendedFlightExtension.cs" />
     <Compile Include="Compatibility\Harmony_CECollisionBodyFactors.cs" />
+    <Compile Include="Compatibility\Harmony_CEPonyCoverPeek.cs" />
+    <Compile Include="Compatibility\Harmony_CESuppressionFix.cs" />
     <Compile Include="Compatibility\Harmony_CollisionVerticalLift.cs" />
+    <Compile Include="CutiemarkAddonResolver.cs" />
+    <Compile Include="Flying\PegasusCombatManeuvers.cs" />
     <Compile Include="Flying\PegasusFlightBootstrap.cs" />
+    <Compile Include="Flying\PegasusFlightReachability.cs" />
+    <Compile Include="Harmony_StartingPawnsReset.cs" />
     <Compile Include="Multiplayer\MultiplayerBootstrap.cs" />
     <Compile Include="Multiplayer\MultiplayerCompat.cs" />
     <Compile Include="Multiplayer\StylingStation_MultiplayerFixes.cs" />
@@ -154,6 +160,7 @@
     <Compile Include="Thoughts\ThoughtWorker_PonySylvanist.cs" />
     <Compile Include="UniquePonies\StylingStationRefresh.cs" />
     <Compile Include="UniquePonies\UniqueBirthFix.cs" />
+    <Compile Include="UniquePonies\UniqueCleanGeneration .cs" />
     <Compile Include="UniquePonies\UniqueEquipmentAssigner.cs" />
     <Compile Include="UniquePonies\UniqueNameAssigner.cs" />
     <Compile Include="UniquePonies\UniquePoniesBootstrap.cs" />

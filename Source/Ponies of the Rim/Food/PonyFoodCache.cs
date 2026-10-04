@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using RimWorld;
 using Verse;
 
@@ -12,8 +13,6 @@ namespace PoniesOfTheRim.Food
 
         private static readonly HashSet<ThingDef> EmptySet = new HashSet<ThingDef>();
 
-        private static HashSet<ThingDef> fruits = EmptySet;
-
         public static bool AnyIngredientEvents;
 
         public static void Build()
@@ -21,11 +20,10 @@ namespace PoniesOfTheRim.Food
             GroupMembers.Clear();
             IngredientEvents.Clear();
             AnyIngredientEvents = false;
-            fruits = EmptySet;
             List<PonyFoodGroupDef> groups = DefDatabase<PonyFoodGroupDef>.AllDefsListForReading;
             if (groups.Count == 0)
             {
-                PonyLog.Warn("PonyFoodCache: не найдено ни одной PonyFoodGroupDef — пищевые группы пони не работают.");
+                PonyLog.Trace("PonyFoodCache: PonyFoodGroupDef не загружены (дополнение с пищевыми группами не активно) — кэш пуст.");
                 return;
             }
             for (int i = 0; i < groups.Count; i++)
@@ -38,43 +36,12 @@ namespace PoniesOfTheRim.Food
                 RemoveExcluded(groups[i]);
             }
             ApplyFoodEvents();
-            fruits = MembersOf(Pony_DefOf.Pony_FoodGroup_Fruits);
-            PonyLog.Trace($"PonyFoodCache: групп {GroupMembers.Count}, фруктов и ягод {fruits.Count}.");
-        }
-
-        public static bool IsPonyFruit(this ThingDef def)
-        {
-            return def != null && fruits.Contains(def);
+            TraceSummary(groups.Count);
         }
 
         public static bool IsInFoodGroup(this ThingDef def, PonyFoodGroupDef group)
         {
             return def != null && group != null && MembersOf(group).Contains(def);
-        }
-
-        public static bool ContainsPonyFruit(this Thing thing)
-        {
-            if (thing == null)
-            {
-                return false;
-            }
-            if (fruits.Contains(thing.def))
-            {
-                return true;
-            }
-            List<ThingDef> ingredients = thing.TryGetComp<CompIngredients>()?.ingredients;
-            if (ingredients == null)
-            {
-                return false;
-            }
-            for (int i = 0; i < ingredients.Count; i++)
-            {
-                if (fruits.Contains(ingredients[i]))
-                {
-                    return true;
-                }
-            }
-            return false;
         }
 
         public static bool TryGetIngredientEvent(ThingDef def, out HistoryEventDef ateEvent)
@@ -229,6 +196,24 @@ namespace PoniesOfTheRim.Food
             {
                 PonyLog.Trace($"PonyFoodCache: ateEvent проставлен для {applied} дефов, пропущено {occupied} (поле занято другим модом).");
             }
+        }
+
+        private static void TraceSummary(int groupCount)
+        {
+            if (!PonyLog.Verbose)
+            {
+                return;
+            }
+            StringBuilder roots = new StringBuilder();
+            foreach (KeyValuePair<PonyFoodGroupDef, HashSet<ThingDef>> pair in GroupMembers)
+            {
+                if (roots.Length > 0)
+                {
+                    roots.Append(", ");
+                }
+                roots.Append(pair.Key.defName).Append(" — ").Append(pair.Value.Count);
+            }
+            PonyLog.Trace($"PonyFoodCache: групп {groupCount}, корневых {GroupMembers.Count} ({roots}), событий для ингредиентов {IngredientEvents.Count}.");
         }
     }
 }

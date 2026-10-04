@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using HarmonyLib;
 using RimWorld;
 using RimWorld.QuestGen;
 using Verse;
 
 namespace PoniesOfTheRim
 {
+
     public static class Patch_QuestNode_GeneratePawn_RaceAware
     {
-        private static FieldInfo _kindDefField;
-        private static FieldInfo _factionField;
-
         private static readonly Dictionary<FactionDef, ThingDef> _raceCache =
             new Dictionary<FactionDef, ThingDef>();
 
@@ -25,55 +21,21 @@ namespace PoniesOfTheRim
             "pawnKind",
         };
 
-        public static void Register(Harmony harmony)
-        {
-            _kindDefField = AccessTools.Field(typeof(QuestNode_GeneratePawn), "kindDef");
-            _factionField = AccessTools.Field(typeof(QuestNode_GeneratePawn), "faction");
-
-            if (_kindDefField == null || _factionField == null)
-            {
-                PonyLog.Error("Patch_QuestNode_GeneratePawn_RaceAware: не удалось получить поля 'kindDef' или " +
-                              "'faction' у QuestNode_GeneratePawn. Исправление расы квестовых пешек не применено.");
-                return;
-            }
-
-            MethodInfo runInt = AccessTools.Method(typeof(QuestNode_GeneratePawn), "RunInt");
-            if (runInt == null)
-            {
-                PonyLog.Error("Bootstrap: метод не найден — 'QuestNode_GeneratePawn.RunInt'.");
-                return;
-            }
-
-            try
-            {
-                harmony.Patch(
-                    runInt,
-                    prefix: new HarmonyMethod(
-                        typeof(Patch_QuestNode_GeneratePawn_RaceAware), nameof(Prefix)));
-                PonyLog.Trace("Bootstrap: ✓ QuestNode_GeneratePawn.RunInt (race-aware)");
-            }
-            catch (Exception ex)
-            {
-                PonyLog.Error($"Bootstrap: ошибка патча 'QuestNode_GeneratePawn.RunInt':\n{ex}");
-            }
-        }
-
-        private static void Prefix(QuestNode_GeneratePawn __instance)
+        public static void Prefix(QuestNode_GeneratePawn __instance)
         {
             Slate slate = QuestGen.slate;
-            if (slate == null) return;
-
+            if (slate == null)
+            {
+                return;
+            }
             try
             {
-                var kindDefRef = (SlateRef<PawnKindDef>)_kindDefField.GetValue(__instance);
-                var factionRef = (SlateRef<Faction>)_factionField.GetValue(__instance);
-
-                PawnKindDef kindDef = kindDefRef.GetValue(slate);
-                Faction faction = factionRef.GetValue(slate);
-
-                if (kindDef == null || faction == null) return;
-
-                if (kindDef.race != ThingDefOf.Human) return;
+                PawnKindDef kindDef = __instance.kindDef.GetValue(slate);
+                Faction faction = __instance.faction.GetValue(slate);
+                if (kindDef == null || faction == null || kindDef.race != ThingDefOf.Human)
+                {
+                    return;
+                }
 
                 ThingDef factionPrimaryAlienRace = GetFactionPrimaryAlienRace(faction.def);
                 if (factionPrimaryAlienRace == null || !PonyHelper.IsPonyRace(factionPrimaryAlienRace))
@@ -86,35 +48,27 @@ namespace PoniesOfTheRim
                 {
                     PonyLog.WarnOnce(
                         "QuestPawnRace.NoAlienKind|" + faction.def.defName,
-                        "Patch_QuestNode_GeneratePawn_RaceAware: для фракции '" + faction.def.defName +
-                        "' не найден PawnKindDef расы " + factionPrimaryAlienRace.defName +
-                        ". Квестовая пешка останется человеком.");
+                        "Квесты: для фракции '" + faction.def.defName + "' не найден PawnKindDef расы "
+                        + factionPrimaryAlienRace.defName + " — квестовая пешка останется человеком.");
                     return;
                 }
 
-                bool overridden = false;
-                foreach (string varName in KnownKindSlateVars)
+                for (int i = 0; i < KnownKindSlateVars.Length; i++)
                 {
+                    string varName = KnownKindSlateVars[i];
                     if (slate.TryGet(varName, out PawnKindDef existing) && existing == kindDef)
                     {
                         slate.Set(varName, replacement);
-                        overridden = true;
-
-                        PonyLog.Trace("Quest pawn kind fixed: slate['" + varName + "'] " +
-                                      kindDef.defName + " → " + replacement.defName +
-                                      " (faction: " + faction.def.defName + ")");
-                        break;
+                        PonyLog.Trace("Квесты: вид квестовой пешки заменён: slate['" + varName + "'] "
+                            + kindDef.defName + " → " + replacement.defName + " (фракция " + faction.def.defName + ").");
+                        return;
                     }
                 }
 
-                if (!overridden)
-                {
-                    PonyLog.WarnOnce(
-                        "QuestPawnRace.NoSlateVar|" + faction.def.defName + "|" + kindDef.defName,
-                        "Patch_QuestNode_GeneratePawn_RaceAware: не найдена slate-переменная для kindDef '" +
-                        kindDef.defName + "' во фракции '" + faction.def.defName +
-                        "'. Если повторяется — добавьте имя переменной в KnownKindSlateVars.");
-                }
+                PonyLog.WarnOnce(
+                    "QuestPawnRace.NoSlateVar|" + faction.def.defName + "|" + kindDef.defName,
+                    "Квесты: не найдена slate-переменная для kindDef '" + kindDef.defName + "' во фракции '"
+                    + faction.def.defName + "'. Если повторяется — добавьте имя переменной в KnownKindSlateVars.");
             }
             catch (Exception ex)
             {

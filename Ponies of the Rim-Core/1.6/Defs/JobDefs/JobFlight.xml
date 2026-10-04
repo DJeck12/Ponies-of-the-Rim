@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>Pony_FlightManeuver</defName>
+		<driverClass>JobDriver_Goto</driverClass>
+		<reportString>maneuvering in flight.</reportString>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+	</JobDef>
+
+</Defs>

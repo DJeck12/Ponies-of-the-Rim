@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using Verse.Sound;
 
 namespace PoniesOfTheRim.Flying
@@ -97,9 +98,53 @@ namespace PoniesOfTheRim.Flying
             Scribe_Values.Look(ref flightEnabled, "PegasusFlightEnabled", false);
         }
 
+        private Job orderToReject;
+        private int orderToRejectId;
+
+        internal bool RejectOrderNextTick(Job job)
+        {
+            if (job == null)
+                return false;
+            orderToReject = job;
+            orderToRejectId = job.loadID;
+            return true;
+        }
+
+        internal static bool IsSameOrder(Job current, Job pending, int pendingId)
+        {
+            return current != null && current == pending && current.loadID == pendingId;
+        }
+
+        private void RejectPendingOrder()
+        {
+            Job job = orderToReject;
+            int jobId = orderToRejectId;
+            orderToReject = null;
+
+            Pawn pawn = Pawn;
+            if (pawn == null || !pawn.Spawned || pawn.jobs == null || !pawn.Drafted ||
+                !IsSameOrder(pawn.CurJob, job, jobId))
+                return;
+            if (!PegasusFlightUtility.IsPegasusConstantFlight(pawn))
+                return;
+
+            pawn.pather?.StopDead();
+            pawn.jobs.EndCurrentJob(JobCondition.Incompletable);
+            Messages.Message("Pony_FlightCannotReachByAir".Translate(pawn.LabelShortCap),
+                pawn, MessageTypeDefOf.RejectInput, historical: false);
+
+            if (PonyLog.Verbose)
+                PonyLog.TraceOnce("Flight.OrderRejected",
+                    $"Полёт: приказ «{job.def?.defName}» для {pawn.LabelShortCap} отклонён — по открытому небу туда не добраться, " +
+                    "пешка осталась на месте. Сообщение выводится один раз.");
+        }
+
         public override void CompTick()
         {
             base.CompTick();
+
+            if (orderToReject != null)
+                RejectPendingOrder();
 
             if (!flightEnabled || Pawn == null || !Pawn.Spawned)
                 return;
@@ -234,7 +279,6 @@ namespace PoniesOfTheRim.Flying
     public class CompPegasusFlightTimer : ThingComp
     {
         private const int BaseFlightDurationTicks = 600;
-        private const float BaseRestFallPerInterval = 0.00575f;
 
         private float currentFlightStamina = 1f;
         private bool isFlying = false;
@@ -243,6 +287,13 @@ namespace PoniesOfTheRim.Flying
         private int _flightCooldownEndTick = -1;
         private const int FlightCooldownTicks = 300;
         private const int DrainMultRecacheInterval = 300;
+        private const float FullRecoveryTicks = 12f * GenDate.TicksPerHour;
+        private const float SleepRecoveryFactor = 2f;
+        private const int RecoveryIntervalTicks = 60;
+
+        internal const float FreeLoadFractionOfCapacity = 0.30f;
+        internal const float RecoveryPenaltyPerKg = 0.03f;
+        internal const float MinLoadRecoveryFactor = 0.20f;
 
         private HediffDef _fatigueDef;
         private HediffDef FatigueDef =>
@@ -258,11 +309,13 @@ namespace PoniesOfTheRim.Flying
 
         public float WingDrainMultiplier => _cachedDrainMult;
 
+        public const float MinStaminaToFly = 0.05f;
+
         public bool CanFly
         {
             get
             {
-                if (currentFlightStamina <= 0.05f) return false;
+                if (currentFlightStamina <= MinStaminaToFly) return false;
                 if (_flightCooldownEndTick > 0 &&
                     Find.TickManager.TicksGame < _flightCooldownEndTick) return false;
                 return true;
@@ -349,15 +402,31 @@ namespace PoniesOfTheRim.Flying
 
         private float StaminaDrainPerSecond => BaseStaminaDrainPerSecond * _cachedDrainMult;
 
-        private float StaminaRecoveryPerSecond
+        public float LoadRecoveryFactor
         {
             get
             {
-                float r = BaseStaminaDrainPerSecond * 0.25f;
                 Pawn pawn = parent as Pawn;
-                if (pawn != null && !pawn.Awake()) r *= 2f;
-                return r;
+                if (pawn == null)
+                    return 1f;
+                return RecoveryFactorForLoad(MassUtility.GearAndInventoryMass(pawn), MassUtility.Capacity(pawn));
             }
+        }
+
+        internal static float RecoveryFactorForLoad(float loadKg, float capacityKg)
+        {
+            float excessKg = loadKg - Mathf.Max(0f, capacityKg) * FreeLoadFractionOfCapacity;
+            if (excessKg <= 0f)
+                return 1f;
+            return Mathf.Max(MinLoadRecoveryFactor, 1f - excessKg * RecoveryPenaltyPerKg);
+        }
+
+        private static float RecoveryPerTick(Pawn pawn, float loadFactor)
+        {
+            float perTick = loadFactor / FullRecoveryTicks;
+            if (pawn != null && !pawn.Awake())
+                perTick *= SleepRecoveryFactor;
+            return perTick;
         }
 
         public override void PostExposeData()
@@ -404,20 +473,14 @@ namespace PoniesOfTheRim.Flying
                     }
                 }
             }
-            else
+            else if (currentFlightStamina < 1f && pawn.IsHashIntervalTick(RecoveryIntervalTicks))
             {
-                if (currentFlightStamina < 1f)
-                {
-                    currentFlightStamina += StaminaRecoveryPerSecond / 60f;
-                    currentFlightStamina = Mathf.Min(currentFlightStamina, 1f);
-                }
+                currentFlightStamina = Mathf.Min(1f,
+                    currentFlightStamina + RecoveryPerTick(pawn, LoadRecoveryFactor) * RecoveryIntervalTicks);
             }
 
             if (pawn.IsHashIntervalTick(60))
                 UpdateFatigueHediff(pawn);
-
-            if (pawn.IsHashIntervalTick(150))
-                ApplyExtraRestFall(pawn);
         }
 
         private void UpdateFatigueHediff(Pawn pawn)
@@ -442,19 +505,6 @@ namespace PoniesOfTheRim.Flying
             fatigue.Severity = spent;
         }
 
-        private void ApplyExtraRestFall(Pawn pawn)
-        {
-            if (pawn.needs?.rest == null) return;
-            float spent = 1f - currentFlightStamina;
-            float bonus =
-                spent >= 0.75f ? 0.50f :
-                spent >= 0.50f ? 0.35f :
-                spent >= 0.25f ? 0.20f : 0f;
-            if (bonus <= 0f) return;
-            pawn.needs.rest.CurLevel =
-                Mathf.Max(0f, pawn.needs.rest.CurLevel - BaseRestFallPerInterval * bonus);
-        }
-
         public override string CompInspectStringExtra()
         {
             if (parent is not Pawn pawn || !pawn.HasWings())
@@ -470,7 +520,17 @@ namespace PoniesOfTheRim.Flying
             float currentSeconds = maxSeconds * currentFlightStamina;
             float drain = _cachedDrainMult;
             string mult = drain < 1f ? $" (drain ×{drain:F2})" : "";
-            return $"Flight stamina: {currentFlightStamina.ToStringPercent()} ({currentSeconds:F1}s / {maxSeconds:F1}s){mult}";
+
+            string recovery = "";
+            if (!isFlying && currentFlightStamina < 1f)
+            {
+                float load = LoadRecoveryFactor;
+                float hours = (1f - currentFlightStamina) / RecoveryPerTick(pawn, load) / GenDate.TicksPerHour;
+                recovery = $", full in {hours:F1}h";
+                if (load < 1f)
+                    recovery += $" (load: recovery ×{load:F2})";
+            }
+            return $"Flight stamina: {currentFlightStamina.ToStringPercent()} ({currentSeconds:F1}s / {maxSeconds:F1}s){mult}{recovery}";
         }
     }
 
@@ -580,10 +640,10 @@ namespace PoniesOfTheRim.Flying
         private static string GetTierLabel(float pct)
         {
             if (pct >= 0.75f) return "Safe flight";
-            if (pct >= 0.50f) return "+20% sleep need";
-            if (pct >= 0.25f) return "+35% sleep, -5% consciousness";
-            if (pct > 0f) return "+50% sleep, -15% consciousness";
-            return "EXHAUSTED — flight disabled";
+            if (pct >= 0.50f) return "Tired, no penalties";
+            if (pct >= 0.25f) return "+50% sleep, -5% consciousness";
+            if (pct > CompPegasusFlightTimer.MinStaminaToFly) return "+75% sleep, -15% consciousness";
+            return "EXHAUSTED — can't fly";
         }
 
         private static string BuildTooltip()
@@ -592,11 +652,13 @@ namespace PoniesOfTheRim.Flying
                 "Flight Stamina\n" +
                 "Shows remaining flight endurance.\n\n" +
                 "Stamina zones:\n" +
-                "  \u2265 75%  (0–25% spent)    Safe flight, no penalties\n" +
-                "  50–75%   +20% sleep need rate\n" +
-                "  25–50%   +35% sleep need,  −5% consciousness\n" +
-                "  < 25%  +50% sleep need, −15% consciousness\n" +
-                "  0%     Flight disabled until rested\n\n";
+                "  \u2265 75%   Safe flight, no penalties\n" +
+                "  50–75%   Tired, no penalties yet\n" +
+                "  25–50%   +50% sleep need, −5% consciousness\n" +
+                "  < 25%    +75% sleep need, −15% consciousness\n" +
+                "  \u2264 5%     Can't take off\n\n" +
+                "Recovers while not flying: from empty to full in 12 hours, twice as fast while asleep, " +
+                "slower when the load is over 30% of carrying capacity.";
         }
     }
 }

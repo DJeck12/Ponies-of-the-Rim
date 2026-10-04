@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace PoniesOfTheRim.Flying
@@ -86,6 +87,86 @@ namespace PoniesOfTheRim.Flying
         public static bool IsPegasusConstantFlight(Pawn p)
         {
             return PonyFlightCache.IsPegasusConstantFlight(p);
+        }
+
+        public static bool CanFlyOverObstacles(Pawn pawn)
+        {
+            PoniesOfTheRimSettingsData settings = PoniesOfTheRimSettings.settings;
+            if (settings == null || pawn == null)
+                return true;
+
+            return pawn.Faction != null && pawn.Faction.IsPlayer
+                ? settings.pegasusFlyOverObstaclesPlayer
+                : settings.pegasusFlyOverObstaclesAI;
+        }
+
+        public static bool IsFlyingOverObstacles(Pawn p)
+        {
+            return IsPegasusConstantFlight(p) && CanFlyOverObstacles(p);
+        }
+
+        public static float FlightCellsForStamina(Pawn pawn, CompPegasusFlightTimer timer, float share)
+        {
+            if (pawn == null || timer == null)
+                return 0f;
+
+            float speedFactor = pawn.flight != null ? pawn.RaceProps.flightSpeedFactor : 1f;
+            return FlightCellsForStamina(share, timer.MaxFlightDurationTicks, timer.WingDrainMultiplier,
+                pawn.TicksPerMoveCardinal, speedFactor);
+        }
+
+        internal static float FlightCellsForStamina(float share, int maxFlightTicks, float drainMultiplier,
+            float ticksPerMoveCardinal, float flightSpeedFactor)
+        {
+            if (share <= 0f || maxFlightTicks <= 0)
+                return 0f;
+            if (drainMultiplier <= 0f)
+                return float.MaxValue;
+
+            float flightTicks = share * maxFlightTicks / drainMultiplier;
+            float speed = flightSpeedFactor > 0f ? flightSpeedFactor : 1f;
+            float ticksPerCell = Mathf.Max(1f, ticksPerMoveCardinal / speed);
+            return flightTicks / ticksPerCell;
+        }
+
+        public static float FlightRangeCells(Pawn pawn, CompPegasusFlightTimer timer)
+        {
+            if (timer == null)
+                return 0f;
+            return FlightCellsForStamina(pawn, timer, timer.CurrentStaminaPercent - CompPegasusFlightTimer.MinStaminaToFly);
+        }
+
+        public static void LandPegasiOverObstacles()
+        {
+            if (Current.ProgramState != ProgramState.Playing || Current.Game == null)
+                return;
+            if (PoniesOfTheRim.Multiplayer.MultiplayerCompat.InMultiplayer)
+                return;
+
+            int landed = 0;
+            List<Map> maps = Find.Maps;
+            for (int m = 0; m < maps.Count; m++)
+            {
+                Map map = maps[m];
+                List<Pawn> pawns = new List<Pawn>(map.mapPawns.AllPawnsSpawned);
+                for (int i = 0; i < pawns.Count; i++)
+                {
+                    Pawn pawn = pawns[i];
+                    if (pawn == null || !pawn.Spawned || pawn.Map != map)
+                        continue;
+                    CompPegasusFlightToggle toggle = PonyFlightCache.GetToggle(pawn);
+                    if (toggle == null || !toggle.FlightEnabled || CanFlyOverObstacles(pawn))
+                        continue;
+                    if (pawn.Position.Walkable(map))
+                        continue;
+
+                    SafeLand(pawn);
+                    landed++;
+                }
+            }
+
+            if (landed > 0)
+                PonyLog.Trace($"Полёт: перелёт через препятствия выключен — посажено пегасов, зависших над постройками: {landed}.");
         }
 
         public static bool CanFlyToCell(Pawn pawn, IntVec3 c, Map map)
