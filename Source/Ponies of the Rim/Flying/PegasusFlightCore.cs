@@ -180,17 +180,20 @@ namespace PoniesOfTheRim.Flying
                 }
 
                 if (Pawn.Position.Roofed(Pawn.Map))
-                {
-                    SetFlightEnabledInternal(false);
-                    PegasusFlightUtility.SafeLand(Pawn);
+                    LandUnderRoof();
+            }
+        }
 
-                    if (Pawn.IsColonistPlayerControlled)
-                    {
-                        Messages.Message(
-                            $"{Pawn.LabelShort} landed - cannot fly under roof!",
-                            Pawn, MessageTypeDefOf.SilentInput, historical: false);
-                    }
-                }
+        internal void LandUnderRoof()
+        {
+            SetFlightEnabledInternal(false);
+            PegasusFlightUtility.SafeLand(Pawn);
+
+            if (Pawn.IsColonistPlayerControlled)
+            {
+                Messages.Message(
+                    $"{Pawn.LabelShort} landed - cannot fly under roof!",
+                    Pawn, MessageTypeDefOf.SilentInput, historical: false);
             }
         }
 
@@ -287,6 +290,7 @@ namespace PoniesOfTheRim.Flying
         private int _flightCooldownEndTick = -1;
         private const int FlightCooldownTicks = 300;
         private const int DrainMultRecacheInterval = 300;
+
         private const float FullRecoveryTicks = 12f * GenDate.TicksPerHour;
         private const float SleepRecoveryFactor = 2f;
         private const int RecoveryIntervalTicks = 60;

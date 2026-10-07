@@ -477,7 +477,7 @@ namespace PoniesOfTheRim.Flying
 
     public static class Patch_BuildingBlockingNextPathCell
     {
-        public static void Postfix(Pawn ___pawn, ref Building __result)
+        public static void Postfix(Pawn ___pawn, IntVec3 ___nextCell, PawnPath ___curPath, ref Building __result)
         {
             if (__result == null || !PegasusFlightUtility.IsFlyingOverObstacles(___pawn))
             {
@@ -487,22 +487,44 @@ namespace PoniesOfTheRim.Flying
             {
                 return;
             }
+            if (!CanFlyOverPathCell(___pawn, ___nextCell, ___curPath))
+            {
+                return;
+            }
             __result = null;
+        }
+
+        internal static bool CanFlyOverPathCell(Pawn pawn, IntVec3 cell, PawnPath path)
+        {
+            Map map = pawn?.Map;
+            if (map == null || !cell.IsValid || !cell.InBounds(map) || !PegasusFlightUtility.CanFlyToCell(pawn, cell, map))
+            {
+                return false;
+            }
+            if (path == null || !path.Found || path.NodesLeftCount < 2 || path.Peek(0) != cell)
+            {
+                return true;
+            }
+            IntVec3 after = path.Peek(1);
+            return !after.InBounds(map) || PegasusFlightUtility.CanFlyToCell(pawn, after, map);
         }
     }
 
     public static class Patch_NextCellDoor
     {
-        public static void Postfix(Pawn ___pawn, ref Building_Door __result)
+        public static void Postfix(Pawn ___pawn, IntVec3 ___nextCell, PawnPath ___curPath, ref Building_Door __result)
         {
             if (__result == null || !PegasusFlightUtility.IsFlyingOverObstacles(___pawn))
+            {
+                return;
+            }
+            if (!Patch_BuildingBlockingNextPathCell.CanFlyOverPathCell(___pawn, ___nextCell, ___curPath))
             {
                 return;
             }
             __result = null;
         }
     }
-
 
     public static class Patch_TryEnterNextPathCell_BlockFog
     {
@@ -542,7 +564,28 @@ namespace PoniesOfTheRim.Flying
                 return false;
             }
 
+            if (next.InBounds(pawn.Map) && next.Roofed(pawn.Map))
+                return LandAtRoofEdge(pawn);
+
             return true;
+        }
+
+        private static bool LandAtRoofEdge(Pawn pawn)
+        {
+            CompPegasusFlightToggle toggle = PonyFlightCache.GetToggle(pawn);
+            if (toggle == null)
+                return true;
+
+            bool overGround = pawn.Position.Walkable(pawn.Map);
+            toggle.LandUnderRoof();
+
+            if (PonyLog.Verbose)
+                PonyLog.TraceOnce("Flight.LandAtRoofEdge",
+                    $"Полёт: {pawn.LabelShortCap} сел у края крыши — " +
+                    (overGround ? "дальше идёт пешком." : "висел над постройкой, перенесён на землю.") +
+                    " Сообщение выводится один раз.");
+
+            return overGround;
         }
     }
 
@@ -911,6 +954,7 @@ namespace PoniesOfTheRim.Flying
             }
             FlushDueDisposals();
         }
+
         public static void DisposeAll()
         {
             var grids = new List<NativeArray<ushort>>(gridCache.Count + pendingDisposal.Count);
