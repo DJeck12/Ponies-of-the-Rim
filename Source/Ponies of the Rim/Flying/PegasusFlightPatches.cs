@@ -256,7 +256,6 @@ namespace PoniesOfTheRim.Flying
                 return true;
             if (CreateRequestOverload == null || CachedTuningNullable == null)
                 return true;
-
             if (!FlightCanReachTarget(pawn, start, target, peMode))
             {
                 if (pawn.Drafted && PonyFlightCache.GetToggle(pawn)?.RejectOrderNextTick(pawn.CurJob) == true)
@@ -451,7 +450,6 @@ namespace PoniesOfTheRim.Flying
             }
         }
     }
-
     public static class Patch_CastPositionFinder_EvaluateCell
     {
         public static bool Prefix(IntVec3 c, ref CastPositionRequest ___req)
@@ -883,7 +881,6 @@ namespace PoniesOfTheRim.Flying
             int id = map.uniqueID;
             bool sim = InSimulation;
             int stamp = sim ? Find.TickManager.TicksGame : NeverBuilt;
-
             if (gridCache.TryGetValue(id, out var cached) && cached.grid.IsCreated && cached.IsFor(map))
             {
                 if (!sim)
@@ -920,6 +917,7 @@ namespace PoniesOfTheRim.Flying
             EdificeGrid edificeGrid = map.edificeGrid;
             PathGrid pathGrid = map.pathing.Normal.pathGrid;
             TerrainGrid terrainGrid = map.terrainGrid;
+            int sizeX = map.Size.x;
 
             for (int i = 0; i < numCells; i++)
             {
@@ -936,6 +934,8 @@ namespace PoniesOfTheRim.Flying
                 {
                     TerrainDef terrain = terrainGrid.TerrainAt(i);
                     if (terrain != null && terrain.passability == Traversability.Impassable)
+                        blocked = true;
+                    else if (PegasusFlightReachability.BordersRoofedRoom(map, i % sizeX, i / sizeX))
                         blocked = true;
                 }
 

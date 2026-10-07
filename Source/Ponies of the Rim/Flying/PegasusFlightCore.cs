@@ -179,7 +179,9 @@ namespace PoniesOfTheRim.Flying
                     return;
                 }
 
-                if (Pawn.Position.Roofed(Pawn.Map))
+                IntVec3 pos = Pawn.Position;
+                if (pos.Roofed(Pawn.Map) ||
+                    (!pos.Walkable(Pawn.Map) && PegasusFlightReachability.BordersRoofedRoom(Pawn.Map, pos.x, pos.z)))
                     LandUnderRoof();
             }
         }

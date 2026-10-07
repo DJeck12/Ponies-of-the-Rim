@@ -183,7 +183,7 @@ namespace PoniesOfTheRim.Flying
             {
                 return false;
             }
-            if (!c.Walkable(map) && IsImpassableMountain(c, map))
+            if (!c.Walkable(map) && (IsImpassableMountain(c, map) || PegasusFlightReachability.BordersRoofedRoom(map, c.x, c.z)))
             {
                 return false;
             }
