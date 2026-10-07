@@ -205,6 +205,7 @@ namespace PoniesOfTheRim.Flying
             return !map.roofGrid.Roofed(i) && !map.fogGrid.IsFogged(i);
         }
 
+
         private static MapSnapshot GetSnapshot(Map map)
         {
             MapSnapshot snap = Snapshots.GetValue(map, CreateSnapshot);
@@ -282,6 +283,7 @@ namespace PoniesOfTheRim.Flying
             FogGrid fogGrid = map.fogGrid;
             EdificeGrid edificeGrid = map.edificeGrid;
             PathGrid pathGrid = map.pathing.Normal.pathGrid;
+            int sizeX = map.Size.x;
 
             for (int i = 0; i < numCells; i++)
             {
@@ -300,11 +302,33 @@ namespace PoniesOfTheRim.Flying
                 if (edifice is Building_Door)
                     f |= FlagDoor;
 
-                if (!naturalRock && (walkable || destroyableBlocker) && !roofGrid.Roofed(i) && !fogGrid.IsFogged(i))
+                if (!naturalRock && (walkable || destroyableBlocker) && !roofGrid.Roofed(i) && !fogGrid.IsFogged(i) &&
+                    (walkable || !BordersRoofedRoom(map, i % sizeX, i / sizeX)))
                     f |= FlagFlyable;
 
                 flags[i] = f;
             }
+        }
+
+        internal static bool BordersRoofedRoom(Map map, int x, int z)
+        {
+            RoofGrid roofGrid = map.roofGrid;
+            PathGrid pathGrid = map.pathing.Normal.pathGrid;
+            IntVec3 size = map.Size;
+            for (int nz = z - 1; nz <= z + 1; nz++)
+            {
+                if ((uint)nz >= (uint)size.z)
+                    continue;
+                for (int nx = x - 1; nx <= x + 1; nx++)
+                {
+                    if ((uint)nx >= (uint)size.x || (nx == x && nz == z))
+                        continue;
+                    int i = nz * size.x + nx;
+                    if (roofGrid.Roofed(i) && pathGrid.WalkableFast(i))
+                        return true;
+                }
+            }
+            return false;
         }
 
         internal static int BuildZones(byte[] flags, int sizeX, int sizeZ, int[] labels)
