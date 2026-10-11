@@ -153,11 +153,7 @@
 		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<hediffClass>HediffWithComps</hediffClass>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
-		<comps>
-			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>Pony_ShortFlight</abilityDef>
-			</li>
-		</comps>
+		<comps />
 		<stages>
 			<li>
 				<statOffsets>
@@ -188,11 +184,7 @@
 		<descriptionHyperlinks><ThingDef>Pony_SimpleProstheticWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>Pony_SimpleProstheticWing</spawnThingOnRemoved>
 		<hediffClass>HediffWithComps</hediffClass>
-		<comps>
-			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>Pony_ShortFlight</abilityDef>
-			</li>
-		</comps>
+		<comps />
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -274,11 +266,7 @@
 		<descriptionHyperlinks><ThingDef>Pony_BionicWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>Pony_BionicWing</spawnThingOnRemoved>
 		<hediffClass>HediffWithComps</hediffClass>
-		<comps>
-			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>Pony_ShortFlight</abilityDef>
-			</li>
-		</comps>
+		<comps />
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
@@ -361,11 +349,7 @@
 		<descriptionHyperlinks><ThingDef>Pony_ArchotechWing</ThingDef></descriptionHyperlinks>
 		<spawnThingOnRemoved>Pony_ArchotechWing</spawnThingOnRemoved>
 		<hediffClass>HediffWithComps</hediffClass>
-		<comps>
-			<li Class="HediffCompProperties_GiveAbility">
-				<abilityDef>Pony_ShortFlight</abilityDef>
-			</li>
-		</comps>
+		<comps />
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>

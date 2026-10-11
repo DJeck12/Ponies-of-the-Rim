@@ -4,14 +4,6 @@
 	<HediffGiverSetDef>
 		<defName>Pony</defName>
 		<hediffGivers>
-			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityWings">
-				<hediff>Pony_NaturalWing</hediff>
-				<partsToAffect>
-					<li>Pony_LeftWing</li>
-					<li>Pony_RightWing</li>
-				</partsToAffect>
-				<ability>Pony_ShortFlight</ability>
-			</li>
 			<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityHorn">
 				<hediff>Pony_NaturalHorn</hediff>
 				<partsToAffect>
@@ -26,9 +18,9 @@
 				<ability>Pony_NatureMuse</ability>
 				<allowedRaces>
 					<li>Pony_Earthpony</li>
-					<li>Pony_Deer</li>
-					<li>Pony_Zebra</li>
-					<li>Pony_Alicorn</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_Deer</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_Zebra</li>
+					<li MayRequire="Pony.PoniesOfTheRim.Races">Pony_Alicorn</li>
 				</allowedRaces>
 			</li>
 			<li Class="HediffGiver_Birthday">
