@@ -51,9 +51,6 @@ Unlike their wild relatives, changedling have learned to experience a wider rang
 
 		<alienRace>
 			<generalSettings>
-				<abilities>
-					<li>Pony_ShortFlight</li>
-				</abilities>
 			<!-- Genes -->
 				<raceGenes>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Pony_EquineHead</li>

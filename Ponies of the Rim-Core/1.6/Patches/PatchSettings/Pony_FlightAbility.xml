@@ -8,23 +8,78 @@
 		<defaultState>false</defaultState>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer"]</xpath>
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"
+				or defName="Pony_Alicorn"
+				or defName="Pony_Batpony"
+				or defName="Pony_Changedling"
+				or defName="Pony_Changeling"
+				or defName="Pony_Griffon"
+				or defName="Pony_Hippogriff"]/comps/li[@Class="PoniesOfTheRim.Flying.CompProperties_PegasusWingsRenderer"]</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle"]</xpath>
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"
+				or defName="Pony_Alicorn"
+				or defName="Pony_Batpony"
+				or defName="Pony_Changedling"
+				or defName="Pony_Changeling"
+				or defName="Pony_Griffon"
+				or defName="Pony_Hippogriff"]/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle"]</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer"]</xpath>
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"
+				or defName="Pony_Alicorn"
+				or defName="Pony_Batpony"
+				or defName="Pony_Changedling"
+				or defName="Pony_Changeling"
+				or defName="Pony_Griffon"
+				or defName="Pony_Hippogriff"]/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightTimer"]</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/comps/li[@Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI"]</xpath>
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"
+				or defName="Pony_Alicorn"
+				or defName="Pony_Batpony"
+				or defName="Pony_Changedling"
+				or defName="Pony_Changeling"
+				or defName="Pony_Griffon"
+				or defName="Pony_Hippogriff"]/comps/li[@Class="PoniesOfTheRim.Flying.CompProperties_PegasusAI"]</xpath>
 			</li>
+
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"]/alienRace/generalSettings</xpath>
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Pony_Pegasus"
+				or defName="Pony_Alicorn"
+				or defName="Pony_Batpony"
+				or defName="Pony_Changedling"
+				or defName="Pony_Changeling"
+				or defName="Pony_Griffon"
+				or defName="Pony_Hippogriff"]/alienRace/generalSettings</xpath>
 				<value>
 					<abilities>
 						<li>Pony_ShortFlight</li>
 					</abilities>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/HediffDef[defName="Pony_NaturalWing"
+				or defName="Pony_SimpleProstheticWing"
+				or defName="Pony_BionicWing"
+				or defName="Pony_ArchotechWing"]/comps</xpath>
+				<value>
+					<li Class="HediffCompProperties_GiveAbility">
+						<abilityDef>Pony_ShortFlight</abilityDef>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/HediffGiverSetDef[defName="Pony"]/hediffGivers</xpath>
+				<value>
+					<li Class = "PoniesOfTheRim.Abilities.HediffGiver_AbilityWings">
+						<hediff>Pony_NaturalWing</hediff>
+						<partsToAffect>
+							<li>Pony_LeftWing</li>
+							<li>Pony_RightWing</li>
+						</partsToAffect>
+						<ability>Pony_ShortFlight</ability>
+					</li>
 				</value>
 			</li>
 		</operations>
