@@ -132,6 +132,8 @@ namespace PoniesOfTheRim.Flying
                 postfix: Postfix(typeof(Patch_Game_Dispose)),
                 label: "Game.Dispose (освобождение сеток полёта)");
 
+            TryPatch(AccessTools.Method(typeof(PawnGenerator), "GeneratePawn", new Type[1] { typeof(PawnGenerationRequest) }), null, Postfix(typeof(Patch_PawnGenerator_FlightInfoAbility)), null, null, "PawnGenerator.GeneratePawn (значок постоянного полёта)");
+
             PonyLog.Trace($"Pegasus flight: патчей установлено {_patched}, ошибок {_failed}.");
         }
 

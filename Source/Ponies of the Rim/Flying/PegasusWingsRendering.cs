@@ -255,18 +255,20 @@ namespace PoniesOfTheRim.Flying
     public class ConditionPegasusFlightEnabled : Condition
     {
         public new const string XmlNameParseKey = "PegasusFlightEnabled";
+
         public bool enabled = true;
 
         public override void LoadDataFromXmlCustom(XmlNode xmlRoot)
         {
-            if (xmlRoot?.Attributes?["enabled"] != null)
-                enabled = ParseHelper.ParseBool(xmlRoot.Attributes["enabled"].Value);
+            XmlAttribute attribute = xmlRoot?.Attributes?["enabled"];
+            if (attribute != null)
+                enabled = ParseHelper.ParseBool(attribute.Value);
         }
 
         public override bool Satisfied(ExtendedGraphicsPawnWrapper pawn, ref ResolveData data)
         {
-            var comp = pawn?.WrappedPawn?.TryGetComp<CompPegasusFlightToggle>();
-            return (comp?.FlightEnabled ?? false) == enabled;
+            bool flightEnabled = pawn?.WrappedPawn?.TryGetComp<CompPegasusFlightToggle>()?.FlightEnabled ?? false;
+            return flightEnabled == enabled;
         }
     }
 }
