@@ -123,6 +123,29 @@
 			</li>
 		</modExtensions>
 	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>Pony_ConstantFlight</defName>
+		<label>constant flight</label>
+		<description>Can fly instead of walking for as long as flight stamina lasts. Stamina recovers on the ground. Can't take off under a roof or when exhausted.\n\nTurned on and off with the flight button while drafted.</description>
+		<iconPath>UI/Abilities/Ability_Pegasus</iconPath>
+		<abilityClass>PoniesOfTheRim.Abilities.Ability_FlightInfo</abilityClass>
+		<aiCanUse>false</aiCanUse>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0</range>
+			<warmupTime>0</warmupTime>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetLocations>false</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
 
 	<AbilityDef>
 		<defName>Pony_MagicBurst</defName>

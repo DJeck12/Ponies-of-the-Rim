@@ -49,5 +49,26 @@
       <li>RightArm</li>
     </value>
   </Operation>
+  
+    <!-- Когти грифонов и гиппогрифов ToolCE -->
+<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/HediffDef[defName="Pony_BirdTalons"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+	<match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/HediffDef[defName="Pony_BirdTalons"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+				<attribute>Class</attribute>
+				<value>CombatExtended.ToolCE</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="Pony_BirdTalons"]/comps/li[@Class="HediffCompProperties_VerbGiver"]/tools/li</xpath>
+				<value>
+					<armorPenetrationSharp>0.4</armorPenetrationSharp>
+					<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
 
 </Patch>

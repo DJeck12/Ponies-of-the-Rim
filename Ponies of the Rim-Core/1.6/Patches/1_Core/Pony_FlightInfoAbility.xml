@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<Operation Class="PatchOperationConditional">
+		<xpath>Defs/*/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle"][not(infoAbility)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/*/comps/li[@Class="PoniesOfTheRim.Flying.CompPropertiesPegasusFlightToggle"][not(infoAbility)]</xpath>
+			<value>
+				<infoAbility>Pony_ConstantFlight</infoAbility>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

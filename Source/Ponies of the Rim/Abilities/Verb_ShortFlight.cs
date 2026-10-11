@@ -27,9 +27,14 @@ namespace PoniesOfTheRim.Abilities
 
         public override bool Available()
         {
-            if (caster.Position.Roofed(caster.Map))
+            if (!CanTakeOffAt(caster.Map, caster.Position))
                 return false;
             return base.Available();
+        }
+
+        internal static bool CanTakeOffAt(Map map, IntVec3 cell)
+        {
+            return map != null && cell.InBounds(map) && !cell.Roofed(map) && !cell.Fogged(map);
         }
 
         protected override bool TryCastShot()
@@ -42,9 +47,18 @@ namespace PoniesOfTheRim.Abilities
 
         public override bool CanHitTargetFrom(IntVec3 root, LocalTargetInfo targ)
         {
-            float distSq = (root - targ.Cell).LengthHorizontalSquared;
-            return distSq <= EffectiveRange * EffectiveRange && targ.Cell.Walkable(caster.Map) &&
-                   FlightLineClear(caster.Map, root, targ.Cell);
+            if (caster == null || !targ.IsValid)
+                return false;
+
+            IntVec3 dest = targ.Cell;
+            if ((root - dest).LengthHorizontalSquared > EffectiveRange * EffectiveRange)
+                return false;
+            if (!TryFindShootLineFromTo(root, targ, out _))
+                return false;
+
+            Map map = caster.Map;
+            return CanTakeOffAt(map, root) && dest.InBounds(map) && dest.Walkable(map) &&
+                   FlightLineClear(map, root, dest);
         }
 
         internal static bool FlightLineClear(Map map, IntVec3 from, IntVec3 to)
@@ -163,6 +177,8 @@ namespace PoniesOfTheRim.Abilities
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
             if (caster == null)
+                return false;
+            if (!CanTakeOffAt(caster.Map, caster.Position))
                 return false;
             if (!JumpUtility.ValidJumpTarget(caster, caster.Map, target.Cell))
                 return false;

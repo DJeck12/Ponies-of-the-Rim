@@ -256,6 +256,7 @@ namespace PoniesOfTheRim.Flying
                 return true;
             if (CreateRequestOverload == null || CachedTuningNullable == null)
                 return true;
+
             if (!FlightCanReachTarget(pawn, start, target, peMode))
             {
                 if (pawn.Drafted && PonyFlightCache.GetToggle(pawn)?.RejectOrderNextTick(pawn.CurJob) == true)
@@ -450,6 +451,7 @@ namespace PoniesOfTheRim.Flying
             }
         }
     }
+
     public static class Patch_CastPositionFinder_EvaluateCell
     {
         public static bool Prefix(IntVec3 c, ref CastPositionRequest ___req)
@@ -553,6 +555,9 @@ namespace PoniesOfTheRim.Flying
 
             if (next.Fogged(pawn.Map))
             {
+                if (!pawn.IsColonistPlayerControlled)
+                    return LandAtEdge(pawn, fog: true);
+
                 pawn.pather?.StopDead();
                 pawn.jobs?.EndCurrentJob(JobCondition.InterruptForced, true);
 
@@ -563,23 +568,31 @@ namespace PoniesOfTheRim.Flying
             }
 
             if (next.InBounds(pawn.Map) && next.Roofed(pawn.Map))
-                return LandAtRoofEdge(pawn);
+                return LandAtEdge(pawn, fog: false);
 
             return true;
         }
 
-        private static bool LandAtRoofEdge(Pawn pawn)
+        private static bool LandAtEdge(Pawn pawn, bool fog)
         {
             CompPegasusFlightToggle toggle = PonyFlightCache.GetToggle(pawn);
             if (toggle == null)
                 return true;
 
             bool overGround = pawn.Position.Walkable(pawn.Map);
-            toggle.LandUnderRoof();
+            if (fog)
+            {
+                toggle.SetFlightEnabledInternal(false);
+                PegasusFlightUtility.SafeLand(pawn);
+            }
+            else
+            {
+                toggle.LandUnderRoof();
+            }
 
             if (PonyLog.Verbose)
-                PonyLog.TraceOnce("Flight.LandAtRoofEdge",
-                    $"Полёт: {pawn.LabelShortCap} сел у края крыши — " +
+                PonyLog.TraceOnce(fog ? "Flight.LandAtFogEdge" : "Flight.LandAtRoofEdge",
+                    $"Полёт: {pawn.LabelShortCap} сел у края {(fog ? "неразведанной области" : "крыши")} — " +
                     (overGround ? "дальше идёт пешком." : "висел над постройкой, перенесён на землю.") +
                     " Сообщение выводится один раз.");
 
@@ -881,6 +894,7 @@ namespace PoniesOfTheRim.Flying
             int id = map.uniqueID;
             bool sim = InSimulation;
             int stamp = sim ? Find.TickManager.TicksGame : NeverBuilt;
+
             if (gridCache.TryGetValue(id, out var cached) && cached.grid.IsCreated && cached.IsFor(map))
             {
                 if (!sim)

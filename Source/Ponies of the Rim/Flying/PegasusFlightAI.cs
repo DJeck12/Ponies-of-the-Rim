@@ -18,6 +18,7 @@ namespace PoniesOfTheRim.Flying
     public class CompPegasusAI : ThingComp
     {
         private const float MIN_STAMINA_TO_START = 0.20f;
+
         internal const float COMFORT_MIN_STAMINA_TO_START = 0.70f;
         internal const float COMFORT_MIN_STAMINA_TO_CONTINUE = 0.50f;
 
@@ -282,7 +283,7 @@ namespace PoniesOfTheRim.Flying
             if (!PegasusFlightUtility.HasUsableWings(pawn))
                 return false;
 
-            if (pawn.Map == null || pawn.Position.Roofed(pawn.Map))
+            if (pawn.Map == null || pawn.Position.Roofed(pawn.Map) || pawn.Position.Fogged(pawn.Map))
                 return false;
 
             if (timer != null && !timer.CanFly)
@@ -611,12 +612,15 @@ namespace PoniesOfTheRim.Flying
             float weaponRange = GetRangedWeaponRange(pawn);
             float threshold = weaponRange > 0f ? weaponRange * MAX_CHASE_FACTOR : 20f;
             if (dist > threshold) return false;
+
             var tp = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.PassDoors);
             bool reachableOnGround;
             using (PegasusFlightReachability.GroundOnly())
                 reachableOnGround = pawn.Map.reachability.CanReach(pawn.Position, target, PathEndMode.Touch, tp);
+            if (reachableOnGround)
+                return false;
 
-            return !reachableOnGround;
+            return PegasusFlightReachability.CanReachByFlight(pawn.Map, pawn.Position, target, PathEndMode.Touch);
         }
 
         private static bool HasStructureBlockingTarget(Pawn pawn)

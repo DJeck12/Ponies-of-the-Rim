@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 using PoniesOfTheRim.Flying;
 using RimWorld;
 using UnityEngine;
@@ -19,11 +19,7 @@ namespace PoniesOfTheRim
             if (pawn.IsColonistPlayerControlled)
                 return null;
 
-            Abilities.Verb_ShortFlight verb = pawn.abilities?.AllAbilitiesForReading
-                .Select(a => a.verb)
-                .OfType<Abilities.Verb_ShortFlight>()
-                .FirstOrDefault(v => v.Available());
-
+            Abilities.Verb_ShortFlight verb = FindReadyVerb(pawn);
             if (verb == null)
                 return null;
 
@@ -34,21 +30,36 @@ namespace PoniesOfTheRim
                 : TryGiveMeleeJob(pawn, verb);
         }
 
+        private static Abilities.Verb_ShortFlight FindReadyVerb(Pawn pawn)
+        {
+            List<Ability> abilities = pawn.abilities?.AllAbilitiesForReading;
+            if (abilities == null)
+                return null;
+
+            for (int i = 0; i < abilities.Count; i++)
+            {
+                Ability ability = abilities[i];
+                if (ability?.verb is Abilities.Verb_ShortFlight verb && ability.CanCast.Accepted && verb.Available())
+                    return verb;
+            }
+            return null;
+        }
+
         private static Job TryGiveMeleeJob(Pawn pawn, Abilities.Verb_ShortFlight verb)
         {
             Pawn enemy = FindEnemy(pawn, maxDist: verb.EffectiveRange * 2f);
             if (enemy == null) return null;
 
-            IntVec3 best      = IntVec3.Invalid;
-            float   bestScore = float.MaxValue;
+            IntVec3 best = IntVec3.Invalid;
+            float bestScore = float.MaxValue;
 
             foreach (IntVec3 offset in GenAdj.AdjacentCellsAndInside)
             {
                 IntVec3 c = enemy.Position + offset;
                 if (!c.InBounds(pawn.Map) || c.Roofed(pawn.Map)) continue;
-                if (!c.Walkable(pawn.Map))                         continue;
+                if (!c.Walkable(pawn.Map)) continue;
                 if (!JumpUtility.ValidJumpTarget(pawn, pawn.Map, c)) continue;
-                if (!verb.CanHitTargetFrom(pawn.Position, c))      continue;
+                if (!verb.CanHitTargetFrom(pawn.Position, c)) continue;
 
                 float score = pawn.Position.DistanceTo(c);
                 if (score < bestScore) { bestScore = score; best = c; }
@@ -66,10 +77,10 @@ namespace PoniesOfTheRim
             float optRange = PegasusKiteUtility.GetOptimalAccuracyRange(rangedProps);
             if (optRange < 1f) return null;
 
-            float dist    = pawn.Position.DistanceTo(enemy.Position);
-            float lo      = optRange * (1f - KITE_BAND);
-            float hi      = optRange * (1f + KITE_BAND);
-            bool  inMelee = PegasusKiteUtility.IsInMeleeCombat(pawn);
+            float dist = pawn.Position.DistanceTo(enemy.Position);
+            float lo = optRange * (1f - KITE_BAND);
+            float hi = optRange * (1f + KITE_BAND);
+            bool inMelee = PegasusKiteUtility.IsInMeleeCombat(pawn);
 
             if (!inMelee && dist >= lo && dist <= hi)
                 return null;
@@ -92,19 +103,19 @@ namespace PoniesOfTheRim
         {
             Vector3 dir = (kitePos.ToVector3() - pawn.Position.ToVector3()).normalized;
 
-            IntVec3 best   = IntVec3.Invalid;
-            float bestDot  = float.MinValue;
+            IntVec3 best = IntVec3.Invalid;
+            float bestDot = float.MinValue;
 
             foreach (IntVec3 c in GenRadial.RadialCellsAround(
                 pawn.Position, verb.EffectiveRange, useCenter: false))
             {
                 if (!c.InBounds(pawn.Map) || c.Roofed(pawn.Map)) continue;
-                if (!c.Walkable(pawn.Map))                         continue;
-                if (!verb.CanHitTargetFrom(pawn.Position, c))      continue;
+                if (!c.Walkable(pawn.Map)) continue;
+                if (!verb.CanHitTargetFrom(pawn.Position, c)) continue;
                 if (!JumpUtility.ValidJumpTarget(pawn, pawn.Map, c)) continue;
 
                 Vector3 toC = (c.ToVector3() - pawn.Position.ToVector3()).normalized;
-                float   dot = Vector3.Dot(dir, toC);
+                float dot = Vector3.Dot(dir, toC);
 
                 if (dot > 0.5f && dot > bestDot) { bestDot = dot; best = c; }
             }

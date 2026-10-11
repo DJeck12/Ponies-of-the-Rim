@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using PoniesOfTheRim.Abilities;
+using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
@@ -19,9 +20,23 @@ namespace PoniesOfTheRim.Flying
 
     public class CompPropertiesPegasusFlightToggle : CompProperties
     {
+        public AbilityDef infoAbility;
+
         public CompPropertiesPegasusFlightToggle()
         {
             compClass = typeof(CompPegasusFlightToggle);
+        }
+
+        public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
+        {
+            foreach (string error in base.ConfigErrors(parentDef))
+            {
+                yield return error;
+            }
+            if (infoAbility != null && (infoAbility.abilityClass == null || !typeof(Ability_FlightInfo).IsAssignableFrom(infoAbility.abilityClass)))
+            {
+                yield return "[PoniesOfTheRim] infoAbility '" + infoAbility.defName + "' должна иметь abilityClass PoniesOfTheRim.Abilities.Ability_FlightInfo, иначе вместо значка появилась бы обычная способность с кнопкой. Значок постоянного полёта для этой расы не выдаётся.";
+            }
         }
     }
 
