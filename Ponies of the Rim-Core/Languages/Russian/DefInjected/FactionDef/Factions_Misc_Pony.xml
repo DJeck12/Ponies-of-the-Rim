@@ -4,11 +4,18 @@
 	<PonyOutlanderCivil.label>мирный союз пони</PonyOutlanderCivil.label>
 	<PonyOutlanderCivil.description>Эти пони живут здесь на протяжении десятилетий или веков. Большая часть технологий, которые привели их сюда, давно утеряна. В работе они обычно используют простые механические инструменты, а защищаются продвинутым огнестрельным оружием.\n\nСфера их интересов — торговля, доверие и выживание.\n\nЭта фракция высоко ценит цивилизованное общение.</PonyOutlanderCivil.description>
 	<PonyOutlanderCivil.leaderTitle>верховный советник</PonyOutlanderCivil.leaderTitle>
+	<PonyOutlanderCivil.messageDefendersAttacking>{0} из фракции {1} атакуют ваших {lookup: {2}; Case; 3}.</PonyOutlanderCivil.messageDefendersAttacking>
+	<PonyOutlanderCivil.modExtensions.0.quests.0.questButtonText>Запросить задание</PonyOutlanderCivil.modExtensions.0.quests.0.questButtonText>
+	<PonyOutlanderCivil.modExtensions.0.quests.0.questResponseText>{LEADER_nameFull} выслушивает предложение {NEGOTIATOR_labelShort} и, подумав пару секунд, {LEADER_pronoun} отвечает:\n\n"Раз уж вы спрашиваете, нам бы не помешала помощь. Есть одно задание, которое вы могли бы взять на себя."</PonyOutlanderCivil.modExtensions.0.quests.0.questResponseText>
 	<PonyOutlanderCivil.pawnSingular>чужеземец</PonyOutlanderCivil.pawnSingular>
 	<PonyOutlanderCivil.pawnsPlural>чужеземцы</PonyOutlanderCivil.pawnsPlural>
+
 	<PonyOutlanderRough.label>воинственный союз пони</PonyOutlanderRough.label>
 	<PonyOutlanderRough.description>Эти пони живут здесь на протяжении десятилетий или веков. Большая часть технологий, которые привели их сюда, давно утеряна. В работе они обычно используют простые механические инструменты, а защищаются продвинутым огнестрельным оружием.\n\nСфера их интересов — торговля, доверие и выживание.\n\nЭта фракция воинственна и склонна к варварству.</PonyOutlanderRough.description>
 	<PonyOutlanderRough.leaderTitle>верховный советник</PonyOutlanderRough.leaderTitle>
+	<PonyOutlanderRough.messageDefendersAttacking>{0} из фракции {1} атакуют ваших {lookup: {2}; Case; 3}.</PonyOutlanderRough.messageDefendersAttacking>
+	<PonyOutlanderRough.modExtensions.0.quests.0.questButtonText>Запросить задание</PonyOutlanderRough.modExtensions.0.quests.0.questButtonText>
+	<PonyOutlanderRough.modExtensions.0.quests.0.questResponseText>{LEADER_nameFull} выслушивает предложение {NEGOTIATOR_labelShort} и, подумав пару секунд, {LEADER_pronoun} отвечает:\n\n"Раз уж вы спрашиваете, нам бы не помешала помощь. Есть одно задание, которое вы могли бы взять на себя."</PonyOutlanderRough.modExtensions.0.quests.0.questResponseText>
 	<PonyOutlanderRough.pawnSingular>чужеземец</PonyOutlanderRough.pawnSingular>
 	<PonyOutlanderRough.pawnsPlural>чужеземцы</PonyOutlanderRough.pawnsPlural>
 
