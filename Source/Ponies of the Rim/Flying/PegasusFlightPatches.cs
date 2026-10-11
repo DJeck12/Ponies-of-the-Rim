@@ -790,8 +790,7 @@ namespace PoniesOfTheRim.Flying
             }
         }
 
-
-        private static void EnsureWingsBoundToParts(Pawn pawn)
+        internal static void EnsureWingsBoundToParts(Pawn pawn)
         {
             HediffDef naturalWingDef = DefDatabase<HediffDef>.GetNamed("Pony_NaturalWing", errorOnFail: false);
             if (naturalWingDef == null) return;

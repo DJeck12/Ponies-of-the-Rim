@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\AbilitiesBootstrap.cs" />
+    <Compile Include="Abilities\AbilityFlightInfo.cs" />
     <Compile Include="Abilities\AbilityRaceIconExtension.cs" />
     <Compile Include="Abilities\AbilityToggleEnforcer.cs" />
     <Compile Include="Abilities\AbilityToggleExtension.cs" />
@@ -113,6 +114,9 @@
     <Compile Include="Compatibility\Harmony_CESuppressionFix.cs" />
     <Compile Include="Compatibility\Harmony_CollisionVerticalLift.cs" />
     <Compile Include="CutiemarkAddonResolver.cs" />
+    <Compile Include="Flying\FlightInfoAbilityUtility.cs" />
+    <Compile Include="Flying\Harmony_NaturalWings.cs" />
+    <Compile Include="Flying\PawnGenerator_FlightInfoAbility.cs" />
     <Compile Include="Flying\PegasusCombatManeuvers.cs" />
     <Compile Include="Flying\PegasusFlightBootstrap.cs" />
     <Compile Include="Flying\PegasusFlightReachability.cs" />
