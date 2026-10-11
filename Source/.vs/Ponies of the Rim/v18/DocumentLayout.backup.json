@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\flying\\flightinfoabilityutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\flying\\flightinfoabilityutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\flying\\harmony_naturalwings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\flying\\harmony_naturalwings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\flying\\pegasusflightpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\flying\\pegasusflightpatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\flying\\pegasusflightbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\flying\\pegasusflightbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\flying\\pegasusflightcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\flying\\pegasusflightcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\abilities\\abilityflightinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\abilities\\abilityflightinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|d:\\poniesoftherim\\ponies-of-the-rim\\source\\ponies of the rim\\flying\\pawngenerator_flightinfoability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533F8ADD-66B4-4B20-8C91-798D8CDE1C33}|Ponies of the Rim\\PoniesOfTheRim.csproj|solutionrelative:ponies of the rim\\flying\\pawngenerator_flightinfoability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlightInfoAbilityUtility.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\FlightInfoAbilityUtility.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Flying\\FlightInfoAbilityUtility.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\FlightInfoAbilityUtility.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Flying\\FlightInfoAbilityUtility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T14:13:03.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PawnGenerator_FlightInfoAbility.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PawnGenerator_FlightInfoAbility.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Flying\\PawnGenerator_FlightInfoAbility.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PawnGenerator_FlightInfoAbility.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Flying\\PawnGenerator_FlightInfoAbility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T14:11:57.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AbilityFlightInfo.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Abilities\\AbilityFlightInfo.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Abilities\\AbilityFlightInfo.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Abilities\\AbilityFlightInfo.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Abilities\\AbilityFlightInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T14:09:30.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PegasusFlightCore.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PegasusFlightCore.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Flying\\PegasusFlightCore.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PegasusFlightCore.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Flying\\PegasusFlightCore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T13:59:16.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PegasusFlightBootstrap.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PegasusFlightBootstrap.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Flying\\PegasusFlightBootstrap.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PegasusFlightBootstrap.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Flying\\PegasusFlightBootstrap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAC5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T13:54:18.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PegasusFlightPatches.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PegasusFlightPatches.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Flying\\PegasusFlightPatches.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\PegasusFlightPatches.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Flying\\PegasusFlightPatches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T13:52:50.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Harmony_NaturalWings.cs",
+              "DocumentMoniker": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\Harmony_NaturalWings.cs",
+              "RelativeDocumentMoniker": "Ponies of the Rim\\Flying\\Harmony_NaturalWings.cs",
+              "ToolTip": "D:\\PoniesOfTheRim\\Ponies-of-the-Rim\\Source\\Ponies of the Rim\\Flying\\Harmony_NaturalWings.cs",
+              "RelativeToolTip": "Ponies of the Rim\\Flying\\Harmony_NaturalWings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T13:52:08.449Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
