@@ -8,9 +8,16 @@
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Alicorn/Celestial</texPath>
 		<category>Alicorn</category>
-        <styleTags>
-            <li>Alicorn</li>
-        </styleTags>
+		<styleTags>
+			<li>Alicorn</li>
+		</styleTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Alicorn</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 
 

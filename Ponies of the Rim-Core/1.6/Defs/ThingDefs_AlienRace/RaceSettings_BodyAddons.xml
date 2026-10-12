@@ -316,9 +316,6 @@
 					<Mutant For="AwokenCorpse" MayRequire="Ludeon.RimWorld.Anomaly">Transparent/Transparent</Mutant>
 					<Mutant For="Ghoul" MayRequire="Ludeon.RimWorld.Anomaly">Races/Tails/Pony/Pony_Tail19</Mutant>
 				<!--Races -->
-					<Race For="Pony_Alicorn" MayRequire="Pony.PoniesOfTheRim.Races">
-						<path>Races/Tails/Alicorn/Tail_Alicorn</path>
-					</Race>
 					<Race For="Pony_Changeling" MayRequire="Pony.PoniesOfTheRim.Races">
 						<path>Races/Tails/Changeling/Tail_Changeling</path>
 					</Race>

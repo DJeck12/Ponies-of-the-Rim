@@ -123,6 +123,9 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Pony</li>
+						</styleTags>
 					</value>
 				</li>
 				<li>

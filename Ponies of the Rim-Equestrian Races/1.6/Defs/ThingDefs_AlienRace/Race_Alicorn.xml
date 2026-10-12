@@ -148,6 +148,7 @@ Though not bipedal, members of this race have adapted most clothing and prosthes
 						<hasStyle>true</hasStyle>
 						<styleTagsOverride>
 							<li>Alicorn</li>
+							<li>Pony</li>
 						</styleTagsOverride>
 					</value>
 				</li>

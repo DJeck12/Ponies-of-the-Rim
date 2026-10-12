@@ -127,6 +127,9 @@ Although the name "<color=#4FFF4F>earth pony</color>" indicates a connection wit
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Pony</li>
+						</styleTags>
 					</value>
 				</li>
 				<li>

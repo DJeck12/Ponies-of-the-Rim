@@ -16,7 +16,7 @@
 		<iconPath>UI/Cultures/Ponish</iconPath>
 		<styleItemTags>
 			<li>
-				<tag>Pony</tag>
+				<tag>Urban</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
@@ -26,8 +26,18 @@
 				<weightFactor>1</weightFactor>
 			</li>
 			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
 				<tag>NoTattoo</tag>
-				<baseWeight>10</baseWeight>
+				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
 		</styleItemTags>

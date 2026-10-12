@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 <!-- Dash -->
-    <HairDef>
-        <defName>Pony_DashHair</defName>
-        <label>(Pony) Dash</label>
-        <styleGender>Any</styleGender>
-        <texPath>Races/Hairstyles/Dash</texPath>
-        <category>Pony</category>
-        <hairTags>
-            <li>Pony</li>
-        </hairTags>
-        <modExtensions>
-            <li Class="PoniesOfTheRim.PonyHairExtension">
-                <ponyTailType>
-                    <li>Sharp</li>
-                </ponyTailType>
-            </li>
-        </modExtensions>
-    </HairDef>
+	<HairDef>
+		<defName>Pony_DashHair</defName>
+		<label>(Pony) Dash</label>
+		<styleGender>Any</styleGender>
+		<texPath>Races/Hairstyles/Dash</texPath>
+		<category>Pony</category>
+		<hairTags>
+			<li>Pony</li>
+		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Sharp</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
+	</HairDef>
 <!--
 	<HairDef>
 		<defName>Pony_DashColorHair</defName>
@@ -51,6 +51,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Sparkle</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -85,13 +92,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
-        <modExtensions>
-            <li Class="PoniesOfTheRim.PonyHairExtension">
-                <ponyTailType>
-                    <li>Apple</li>
-                </ponyTailType>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Apple</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -115,6 +122,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Party</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -138,6 +152,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Rarity</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!-- Flutter -->
 	<HairDef>
@@ -149,6 +170,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Flutter</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -172,6 +200,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Apple</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -195,6 +230,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Cloudy</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -218,6 +260,13 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Edgy</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 <!--
 	<HairDef>
@@ -241,5 +290,12 @@
 		<hairTags>
 			<li>Pony</li>
 		</hairTags>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.PonyHairExtension">
+				<ponyTailType>
+					<li>Aesthetic</li>
+				</ponyTailType>
+			</li>
+		</modExtensions>
 	</HairDef>
 </Defs>
