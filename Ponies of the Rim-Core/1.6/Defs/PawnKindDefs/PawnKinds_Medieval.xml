@@ -11,7 +11,7 @@
 		</apparelTags>
 	</PawnKindDef>
 
-  <!-- Poverty tier - peasant -->
+	<!-- Poverty tier - peasant -->
 
 	<PawnKindDef ParentName="Pony_MedievalBase" Name="Pony_Peasant" Abstract="True">
 		<label>peasant</label>
@@ -119,7 +119,7 @@
 		<initialResistanceRange>16~26</initialResistanceRange>
 	</PawnKindDef>
 
-  <!-- Wealth tier - lord, king -->
+	<!-- Wealth tier - lord, king -->
 
 	<PawnKindDef ParentName="Pony_MedievalBase" Name="Pony_Lord" Abstract="True">
 		<combatPower>120</combatPower>

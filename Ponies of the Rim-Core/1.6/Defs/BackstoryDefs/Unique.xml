@@ -63,7 +63,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<linkedBackstory>Pony_Applejack_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
@@ -124,7 +124,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<linkedBackstory>Pony_Rarity_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
@@ -190,7 +190,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<linkedBackstory>Pony_Fluttershy_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
@@ -245,7 +245,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<linkedBackstory>Pony_PinkiePie_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
@@ -302,7 +302,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<linkedBackstory>Pony_RainbowDash_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
@@ -373,7 +373,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<linkedBackstory>Pony_TwilightSparkle_Child</linkedBackstory>
 	</AlienRace.AlienBackstoryDef>
 
@@ -441,7 +441,7 @@
 			<relationChanceModifierParent>0</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
-    	</relationSettings>
+		</relationSettings>
 		<requiredWorkTags>PlantWork</requiredWorkTags>
 	</AlienRace.AlienBackstoryDef>
 

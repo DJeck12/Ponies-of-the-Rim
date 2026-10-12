@@ -3,7 +3,7 @@
 
 	<FactionDef ParentName="FactionBase" Name="PonyMedievalBase" Abstract="True">
 		<pawnSingular>subject</pawnSingular>
-   		<pawnsPlural>subjects</pawnsPlural>
+		<pawnsPlural>subjects</pawnsPlural>
 		<categoryTag>PonyMedieval</categoryTag>
 		<listOrderPriority>25</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
@@ -269,7 +269,7 @@
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Pemmican</thingDef>
 				<countRange>150~300</countRange>
-			</li>     
+			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>MedicineHerbal</thingDef>
 				<countRange>15~30</countRange>
@@ -635,10 +635,10 @@
 				<thingDef>Pemmican</thingDef>
 				<countRange>500~1000</countRange>
 			</li>
-           <li Class="StockGenerator_SingleDef">
-                <thingDef>Chocolate</thingDef>
-                <countRange>-30~70</countRange>
-            </li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Chocolate</thingDef>
+				<countRange>-30~70</countRange>
+			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Beer</thingDef>
 				<countRange>-40~100</countRange>
@@ -717,7 +717,7 @@
 				</excludedThingDefs>
 				<thingDefCountRange>2</thingDefCountRange>
 				<countRange>-2~1</countRange>
-			</li>  
+			</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
 				<countRange>-2~1</countRange>
 			</li>

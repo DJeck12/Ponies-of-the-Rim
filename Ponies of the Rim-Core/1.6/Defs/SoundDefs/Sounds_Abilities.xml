@@ -55,9 +55,9 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>Pony_UnicornBlast</defName>  
-		<context>MapOnly</context>  
-		<maxSimultaneous>1</maxSimultaneous>  
+		<defName>Pony_UnicornBlast</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>

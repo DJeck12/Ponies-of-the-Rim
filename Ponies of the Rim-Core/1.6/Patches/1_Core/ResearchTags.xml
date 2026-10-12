@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"
-		or defName="Stonecutting"
-		or defName="ComplexClothing"]/tags</xpath>
-        <value>
-            <li>Pony_MedievalStart</li>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"
+			or defName="Stonecutting"
+			or defName="ComplexClothing"]/tags</xpath>
+			<value>
+					<li>Pony_MedievalStart</li>
+			</value>
+	</Operation>
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="Brewing"

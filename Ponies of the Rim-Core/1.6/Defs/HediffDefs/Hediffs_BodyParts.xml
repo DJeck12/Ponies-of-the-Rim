@@ -167,11 +167,11 @@
 			<partEfficiency>1</partEfficiency>
 		</addedPartProps>
 		<modExtensions>
-		  <li Class="PoniesOfTheRim.Flying.WingHediffExtension">
-			<efficiency>0.5</efficiency>
-			<drainMultiplier>1</drainMultiplier>
-			<typeLabel>Natural</typeLabel>
-		  </li>
+			<li Class="PoniesOfTheRim.Flying.WingHediffExtension">
+				<efficiency>0.5</efficiency>
+				<drainMultiplier>1</drainMultiplier>
+				<typeLabel>Natural</typeLabel>
+			</li>
 		</modExtensions>
 	</HediffDef>
 
@@ -198,11 +198,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-		  <li Class="PoniesOfTheRim.Flying.WingHediffExtension">
-			<efficiency>0.35</efficiency>
-			<drainMultiplier>1</drainMultiplier>
-			<!-- <typeLabel>Natural</typeLabel> -->
-		  </li>
+			<li Class="PoniesOfTheRim.Flying.WingHediffExtension">
+				<efficiency>0.35</efficiency>
+				<drainMultiplier>1</drainMultiplier>
+				<!-- <typeLabel>Natural</typeLabel> -->
+			</li>
 		</modExtensions>
 	</HediffDef>
 
@@ -281,11 +281,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-		  <li Class="PoniesOfTheRim.Flying.WingHediffExtension">
-			<efficiency>0.625</efficiency>
-			<drainMultiplier>1</drainMultiplier>
-			<!-- <typeLabel>Natural</typeLabel> -->
-		  </li>
+			<li Class="PoniesOfTheRim.Flying.WingHediffExtension">
+				<efficiency>0.625</efficiency>
+				<drainMultiplier>1</drainMultiplier>
+				<!-- <typeLabel>Natural</typeLabel> -->
+			</li>
 		</modExtensions>
 	</HediffDef>
 
@@ -364,11 +364,11 @@
 			</li>
 		</stages>
 		<modExtensions>
-		  <li Class="PoniesOfTheRim.Flying.WingHediffExtension">
-			<efficiency>0.75</efficiency>
-			<drainMultiplier>1</drainMultiplier>
-			<!-- <typeLabel>Natural</typeLabel> -->
-		  </li>
+			<li Class="PoniesOfTheRim.Flying.WingHediffExtension">
+				<efficiency>0.75</efficiency>
+				<drainMultiplier>1</drainMultiplier>
+				<!-- <typeLabel>Natural</typeLabel> -->
+			</li>
 		</modExtensions>
 	</HediffDef>
 

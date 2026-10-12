@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <FleckDef ParentName="FleckBase">
-    <defName>Pony_Hoofprint</defName>
-    <graphicData>
-      <texPath>Things/Mote/Hoofprint</texPath>
-      <renderInstanced>true</renderInstanced>
-    </graphicData>
-    <altitudeLayer>MoteLow</altitudeLayer>
-    <fadeInTime>0.08</fadeInTime>
-    <solidTime>2.2</solidTime>
-    <fadeOutTime>2.6</fadeOutTime>
-  </FleckDef>
+	<FleckDef ParentName="FleckBase">
+		<defName>Pony_Hoofprint</defName>
+		<graphicData>
+			<texPath>Things/Mote/Hoofprint</texPath>
+			<renderInstanced>true</renderInstanced>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>2.2</solidTime>
+		<fadeOutTime>2.6</fadeOutTime>
+	</FleckDef>
 
-  <FleckDef ParentName="FleckBase">
-    <defName>Pony_Talonprint</defName>
-    <graphicData>
-      <texPath>Things/Mote/Talonprint</texPath>
-      <renderInstanced>true</renderInstanced>
-    </graphicData>
-    <altitudeLayer>MoteLow</altitudeLayer>
-    <fadeInTime>0.08</fadeInTime>
-    <solidTime>2.2</solidTime>
-    <fadeOutTime>2.6</fadeOutTime>
-  </FleckDef>
- 
-  <FleckDef ParentName="FleckBase">
-    <defName>Pony_Pawprint</defName>
-    <graphicData>
-      <texPath>Things/Mote/Pawprint</texPath>
-      <renderInstanced>true</renderInstanced>
-    </graphicData>
-    <altitudeLayer>MoteLow</altitudeLayer>
-    <fadeInTime>0.08</fadeInTime>
-    <solidTime>2.2</solidTime>
-    <fadeOutTime>2.6</fadeOutTime>
-  </FleckDef>
+	<FleckDef ParentName="FleckBase">
+	<defName>Pony_Talonprint</defName>
+		<graphicData>
+			<texPath>Things/Mote/Talonprint</texPath>
+			<renderInstanced>true</renderInstanced>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>2.2</solidTime>
+		<fadeOutTime>2.6</fadeOutTime>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase">
+	<defName>Pony_Pawprint</defName>
+		<graphicData>
+			<texPath>Things/Mote/Pawprint</texPath>
+			<renderInstanced>true</renderInstanced>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<fadeInTime>0.08</fadeInTime>
+		<solidTime>2.2</solidTime>
+		<fadeOutTime>2.6</fadeOutTime>
+	</FleckDef>
 
 </Defs>

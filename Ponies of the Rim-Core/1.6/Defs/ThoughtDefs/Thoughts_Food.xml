@@ -29,7 +29,7 @@
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 		</stages>
-  		<nullifyingTraits>
+		<nullifyingTraits>
 			<li>Cannibal</li>
 		</nullifyingTraits>
 	</ThoughtDef>

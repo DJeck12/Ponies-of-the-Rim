@@ -8,9 +8,9 @@
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Zebra/Mohawk</texPath>
 		<category>Zebra</category>
-        <styleTags>
-            <li>Zebra</li>
-        </styleTags>
+		<styleTags>
+			<li>Zebra</li>
+		</styleTags>
 	</HairDef>
 
 	<HairDef>
@@ -19,9 +19,9 @@
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Zebra/Dreamer</texPath>
 		<category>Zebra</category>
-        <styleTags>
-            <li>Zebra</li>
-        </styleTags>
+		<styleTags>
+			<li>Zebra</li>
+		</styleTags>
 	</HairDef>
 
 </Defs>

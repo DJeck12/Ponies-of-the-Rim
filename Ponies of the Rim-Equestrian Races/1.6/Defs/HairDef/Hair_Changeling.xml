@@ -8,9 +8,9 @@
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Changeling/Thorn</texPath>
 		<category>Changeling</category>
-        <styleTags>
-            <li>Changeling</li>
-        </styleTags>
+		<styleTags>
+			<li>Changeling</li>
+		</styleTags>
 	</HairDef>
 
 

@@ -8,9 +8,9 @@
 		<styleGender>Any</styleGender>
 		<texPath>Races/Hairstyles/Skittlebug/Ocellus</texPath>
 		<category>Changeling</category>
-        <styleTags>
-            <li>Changedling</li>
-        </styleTags>
+		<styleTags>
+			<li>Changedling</li>
+		</styleTags>
 	</HairDef>
 
 

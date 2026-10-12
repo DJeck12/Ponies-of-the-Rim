@@ -93,7 +93,7 @@
 			<li>IndustrialMilitaryBasic</li>
 			<li>IndustrialMilitaryAdvanced</li>
 			<li>BeltDefensePop</li>
-   		</apparelTags>
+		</apparelTags>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsTags>
