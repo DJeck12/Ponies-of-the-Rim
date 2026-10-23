@@ -3,22 +3,11 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-    [StaticConstructorOnStartup]
     internal static class PonyThreadGuard
     {
-        private static readonly int MainThreadId = Thread.CurrentThread.ManagedThreadId;
         public static void ReportIfOffMain(string site, ref int reportedFlag)
         {
-            if (Volatile.Read(ref reportedFlag) != 0)
-            {
-                return;
-            }
-            if (!Prefs.DevMode)
-            {
-                return;
-            }
-            int id = Thread.CurrentThread.ManagedThreadId;
-            if (id == MainThreadId)
+            if (Volatile.Read(ref reportedFlag) != 0 || !Prefs.DevMode || UnityData.IsInMainThread)
             {
                 return;
             }
@@ -26,14 +15,12 @@ namespace PoniesOfTheRim
             {
                 return;
             }
-
             if (Interlocked.CompareExchange(ref reportedFlag, 1, 0) != 0)
             {
                 return;
             }
 
-            PonyLog.Warn($"Потоки: {site} выполнено в потоке #{id}, главный поток #{MainThreadId}. " +
-                         "Всё разделяемое изменяемое состояние на этом пути обязано быть потокобезопасным.");
+            PonyLog.Warn($"Threads: {site} ran off the main thread (thread {Thread.CurrentThread.ManagedThreadId})");
         }
     }
 }

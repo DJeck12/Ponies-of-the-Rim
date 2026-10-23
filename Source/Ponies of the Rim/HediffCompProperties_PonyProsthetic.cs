@@ -1,4 +1,4 @@
-﻿using System.Threading;
+using System.Threading;
 using Verse;
 
 namespace PoniesOfTheRim
@@ -93,7 +93,9 @@ namespace PoniesOfTheRim
             _descriptionExtraResolved = Resolve(descriptionExtraKey, descriptionExtra);
             _tipStringExtraResolved = Resolve(tipStringExtraKey, tipStringExtra);
             Volatile.Write(ref _resolved, true);
-            PonyLog.TraceOnce("PonyProsthetic.Resolved", "Протезы: подписи для языка '" + language.folderName + "' — префикс: " + Show(_prefixResolved) + ", в скобках: " + Show(_inBracketsResolved) + ", подсказка: " + Show(_tipStringExtraResolved) + ".");
+            PonyLog.TraceOnce("PonyProsthetic.Resolved",
+                $"Prosthetics: labels for {language.folderName}: prefix {Show(_prefixResolved)}, " +
+                $"brackets {Show(_inBracketsResolved)}, tip {Show(_tipStringExtraResolved)}");
         }
 
         private static string Resolve(string key, string literal)
@@ -109,7 +111,9 @@ namespace PoniesOfTheRim
                     }
                     return text;
                 }
-                PonyLog.WarnOnce("PonyProsthetic.MissingKey|" + key, "Протезы: ключ перевода '" + key + "' не найден ни в текущем языке, ни в английском — " + (literal.NullOrEmpty() ? "эта часть подписи протеза не выводится." : "выводится строка из XML."));
+                PonyLog.WarnOnce("PonyProsthetic.MissingKey|" + key,
+                    $"Prosthetics: translation key {key} missing in current language and English, " +
+                    (literal.NullOrEmpty() ? "label part skipped" : "XML text used"));
             }
             if (literal.NullOrEmpty())
             {
@@ -120,11 +124,7 @@ namespace PoniesOfTheRim
 
         private static string Show(string text)
         {
-            if (text == null)
-            {
-                return "нет";
-            }
-            return "«" + text + "»";
+            return text == null ? "none" : "'" + text + "'";
         }
     }
 }

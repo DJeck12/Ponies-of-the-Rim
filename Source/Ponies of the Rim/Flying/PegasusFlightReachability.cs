@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -205,7 +205,6 @@ namespace PoniesOfTheRim.Flying
             return !map.roofGrid.Roofed(i) && !map.fogGrid.IsFogged(i);
         }
 
-
         private static MapSnapshot GetSnapshot(Map map)
         {
             MapSnapshot snap = Snapshots.GetValue(map, CreateSnapshot);
@@ -272,8 +271,7 @@ namespace PoniesOfTheRim.Flying
             {
                 sw.Stop();
                 PonyLog.TraceOnce("PegasusFlightReachability.FirstBuild",
-                    $"Полёт: зоны достижимости по воздуху построены — карта {sizeX}×{sizeZ}, " +
-                    $"зон {zones}, {sw.Elapsed.TotalMilliseconds:F2} мс.");
+                    $"Flight: air reachability built for a {sizeX}x{sizeZ} map, {zones} zones, {sw.Elapsed.TotalMilliseconds:F2} ms");
             }
         }
 

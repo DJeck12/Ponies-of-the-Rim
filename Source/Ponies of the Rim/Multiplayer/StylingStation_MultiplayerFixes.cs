@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Reflection;
 using AlienRace.ExtendedGraphics;
 using HarmonyLib;
@@ -12,6 +11,7 @@ namespace PoniesOfTheRim.Multiplayer
     {
         private static bool _resolved;
         private static FieldInfo _origPawnField;
+
         public static void Prefix(Pawn pawn)
         {
             try
@@ -29,11 +29,11 @@ namespace PoniesOfTheRim.Multiplayer
 
                 pawn.genes = clone;
 
-                PonyLog.Trace($"Multiplayer: копии пешки '{pawn.LabelShortCap}' выдан трекер генов для стайлинг-станции.");
+                PonyLog.Trace($"MP: styling dummy of {pawn.LabelShortCap} got a copy of the gene tracker");
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Multiplayer: не удалось выдать гены копии пешки в стайлинг-станции.", ex);
+                PonyLog.WarnCaught("MP: could not give genes to the styling dummy", ex);
             }
         }
 
@@ -45,8 +45,7 @@ namespace PoniesOfTheRim.Multiplayer
                 Type dummyType = AccessTools.TypeByName("Multiplayer.Client.Patches.StylingDialog_DummyPawn");
                 _origPawnField = dummyType == null ? null : AccessTools.Field(dummyType, "origPawn");
                 if (_origPawnField == null)
-                    PonyLog.Warn("Multiplayer: StylingDialog_DummyPawn.origPawn не найден — " +
-                        "версия Multiplayer изменилась, стайлинг-станция может падать на аддонах с ConditionGene.");
+                    PonyLog.Warn("MP: StylingDialog_DummyPawn.origPawn not found, styling station may fail on ConditionGene addons");
             }
             if (_origPawnField == null)
                 return null;
@@ -72,7 +71,7 @@ namespace PoniesOfTheRim.Multiplayer
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Multiplayer: не удалось скопировать гены пешки для стайлинг-станции.", ex);
+                PonyLog.WarnCaught("MP: gene tracker copy failed", ex);
                 return null;
             }
         }
@@ -88,9 +87,7 @@ namespace PoniesOfTheRim.Multiplayer
             __result = false;
 
             PonyLog.WarnOnce("Patch_ExtendedGraphicsPawnWrapper_HasGene.NoGenes",
-                "Multiplayer: HasGene вызван для пешки без трекера генов — условие ConditionGene " +
-                "считается невыполненным. Копия пешки стайлинг-станции не получила гены; " +
-                "проверьте совместимость с текущей версией Multiplayer.");
+                "MP: HasGene on a pawn without genes, ConditionGene treated as false");
             return false;
         }
     }

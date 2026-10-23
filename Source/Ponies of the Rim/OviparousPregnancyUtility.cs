@@ -7,27 +7,18 @@ namespace PoniesOfTheRim
     {
         public static bool Prefix(Pawn geneticMother, ref Thing __result)
         {
-            if (!ModsConfig.BiotechActive)
-            {
-                return true;
-            }
-            if (geneticMother?.genes == null)
+            if (!ModsConfig.BiotechActive || geneticMother?.genes == null)
             {
                 return true;
             }
             GeneDef ovip = Gene_Oviparous.OvipGeneDef;
-            if (ovip == null)
-            {
-                PonyLog.ErrorOnce("ApplyBirthOutcome.NoOvipGene", "Яйцекладка: GeneDef 'Pony_Oviparous' не найден — рождение идёт по ванильному сценарию.");
-                return true;
-            }
-            if (!geneticMother.genes.HasActiveGene(ovip))
+            if (ovip == null || !geneticMother.genes.HasActiveGene(ovip))
             {
                 return true;
             }
             if (geneticMother.MapHeld == null)
             {
-                PonyLog.Trace("Яйцекладка: " + geneticMother.LabelShort + " вне карты (караван) — ванильное рождение.");
+                PonyLog.Trace($"Eggs: {geneticMother.LabelShort} is off map, vanilla birth");
                 return true;
             }
 
@@ -40,7 +31,7 @@ namespace PoniesOfTheRim
                 return true;
             }
 
-            PonyLog.Trace("Яйцекладка: яйцо создано вместо ванильного рождения (отец: " + (father?.LabelShort ?? "нет") + ").");
+            PonyLog.Trace($"Eggs: {geneticMother.LabelShort} laid an egg instead of giving birth (father: {father?.LabelShort ?? "none"})");
             __result = egg;
             return false;
         }

@@ -26,7 +26,7 @@ namespace PoniesOfTheRim.UniquePonies
 
         public static Rect LastTailRect;
 
-        private static FieldInfo CurPawnIndexField => _curPawnIndexField ?? (_curPawnIndexField = AccessTools.Field(typeof(Page_ConfigureStartingPawns), "curPawnIndex"));
+        private static FieldInfo CurPawnIndexField => _curPawnIndexField ??= AccessTools.Field(typeof(Page_ConfigureStartingPawns), "curPawnIndex");
 
         private static float BtnHeight => Page.StandardSize.y - 744f;
 
@@ -136,7 +136,7 @@ namespace PoniesOfTheRim.UniquePonies
                 }
                 catch (Exception ex)
                 {
-                    PonyLog.WarnCaught("Не удалось убрать старую пешку с экрана выбора персонажей.", ex);
+                    PonyLog.WarnCaught("Unique: replaced starting pawn not discarded", ex);
                 }
             }
             PortraitsCache.Clear();

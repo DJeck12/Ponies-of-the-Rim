@@ -1,48 +1,42 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Xml;
 using Verse;
 
 namespace PoniesOfTheRim.PatchOperation
 {
-    public class PatchOperationToggleableReplace : Verse.PatchOperation
+    public class PatchOperationToggleableReplace : PatchOperationToggleable
     {
         public string xpath;
         public XmlContainer value;
-        public string settingId;
-        public bool defaultState;
-        public string label;
-        public string description;
-
-        protected bool CanRun()
-        {
-            return PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, defaultState);
-        }
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (!CanRun())
+            if (!Enabled)
             {
                 return true;
             }
-            XmlNode node = value.node;
-            bool result = false;
-            XmlNode[] array = xml.SelectNodes(xpath).Cast<XmlNode>().ToArray();
-            foreach (XmlNode xmlNode in array)
-            {
-                result = true;
-                XmlNode parentNode = xmlNode.ParentNode;
-                foreach (XmlNode childNode in node.ChildNodes)
-                {
-                    parentNode.InsertBefore(parentNode.OwnerDocument.ImportNode(childNode, true), xmlNode);
-                }
-                parentNode.RemoveChild(xmlNode);
-            }
-            return result;
-        }
 
-        public override void Complete(string modIdentifier)
-        {
-            base.Complete(modIdentifier);
+            bool matched = false;
+            try
+            {
+                XmlNode source = value.node;
+                foreach (XmlNode target in xml.SelectNodes(xpath).Cast<XmlNode>().ToArray())
+                {
+                    matched = true;
+                    XmlNode parent = target.ParentNode;
+                    foreach (XmlNode child in source.ChildNodes)
+                    {
+                        parent.InsertBefore(parent.OwnerDocument.ImportNode(child, true), target);
+                    }
+                    parent.RemoveChild(target);
+                }
+            }
+            catch (Exception ex)
+            {
+                PonyLog.Error($"Patches: toggle {settingId} failed on {xpath}: {ex.Message}");
+            }
+            return matched;
         }
     }
 }

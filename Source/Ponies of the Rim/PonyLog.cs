@@ -164,27 +164,24 @@ namespace PoniesOfTheRim
 
         private static string DescribeCaught(string message, Exception ex, string file, int line, string member)
         {
-            string header = string.IsNullOrEmpty(message) ? "Непредвиденная ошибка." : message;
+            string header = string.IsNullOrEmpty(message) ? "unexpected exception" : message;
 
             string where = FileNameOnly(file) + ":" + line;
             if (!string.IsNullOrEmpty(member))
             {
-                where += ", " + member;
+                where += " " + member;
             }
 
-            string body = (ex == null) ? "(исключение не передано)" : ex.ToString();
+            string body = ex == null ? "(no exception object)" : ex.ToString();
 
-            return header +
-                   "\nМесто: " + where +
-                   "\n" + body +
-                   "\nПовторы этой ошибки до конца сессии скрыты.";
+            return header + " (" + where + ", repeats hidden)\n" + body;
         }
 
         private static string FileNameOnly(string path)
         {
             if (string.IsNullOrEmpty(path))
             {
-                return "<неизвестный файл>";
+                return "?";
             }
             int slash = Math.Max(path.LastIndexOf('\\'), path.LastIndexOf('/'));
             return slash >= 0 ? path.Substring(slash + 1) : path;
@@ -227,8 +224,7 @@ namespace PoniesOfTheRim
             int dropped = Interlocked.Exchange(ref _droppedCount, 0);
             if (dropped > 0)
             {
-                Write(Level.Warning, Prefix + "Пропущено сообщений из фоновых потоков: " + dropped +
-                                     " (переполнение буфера).");
+                Write(Level.Warning, Prefix + dropped + " off-thread messages dropped, buffer full");
             }
         }
 

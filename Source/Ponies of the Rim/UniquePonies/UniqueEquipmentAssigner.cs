@@ -13,82 +13,84 @@ namespace PoniesOfTheRim.UniquePonies
         {
             try
             {
-                if (__result != null)
+                if (__result == null)
+                    return;
+
+                Faction faction = request.Faction ?? __result.Faction;
+                if (faction != null && !faction.IsPlayer
+                    && UniquePawnConfig.ByKindDef.ContainsKey(__result.kindDef.defName)
+                    && request.Context != PawnGenerationContext.PlayerStarter)
                 {
-                    Faction faction = request.Faction ?? __result.Faction;
-                    if (faction != null && !faction.IsPlayer && UniquePawnConfig.ByKindDef.ContainsKey(__result.kindDef.defName) && request.Context != PawnGenerationContext.PlayerStarter)
-                    {
-                        EquipForFaction(__result, faction);
-                    }
+                    EquipForFaction(__result, faction);
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Уникальные пони: не удалось выдать снаряжение.", ex);
+                PonyLog.WarnCaught("Unique: equipment not assigned", ex);
             }
         }
 
         private static void EquipForFaction(Pawn pawn, Faction faction)
         {
-            PawnKindDef pawnKindDef = FindCombatKindForRace(faction.def, pawn.def);
-            if (pawnKindDef == null)
+            PawnKindDef combatKind = FindCombatKindForRace(faction.def, pawn.def);
+            if (combatKind == null)
             {
                 return;
             }
 
-            PawnKindDef kindDef = pawn.kindDef;
+            PawnKindDef originalKind = pawn.kindDef;
             try
             {
-                List<Apparel> list = new List<Apparel>();
+                List<Apparel> oldApparel = new List<Apparel>();
                 if (pawn.apparel != null)
                 {
-                    foreach (Apparel item in pawn.apparel.WornApparel.ToList())
+                    foreach (Apparel apparel in pawn.apparel.WornApparel.ToList())
                     {
-                        pawn.apparel.Remove(item);
-                        list.Add(item);
+                        pawn.apparel.Remove(apparel);
+                        oldApparel.Add(apparel);
                     }
                 }
-                pawn.kindDef = pawnKindDef;
-                PawnGenerationRequest request = new PawnGenerationRequest(pawnKindDef, faction);
+                pawn.kindDef = combatKind;
+                PawnGenerationRequest request = new PawnGenerationRequest(combatKind, faction);
                 PawnApparelGenerator.GenerateStartingApparelFor(pawn, request);
                 PawnInventoryGenerator.GenerateInventoryFor(pawn, request);
                 PawnWeaponGenerator.TryGenerateWeaponFor(pawn, request);
 
-                foreach (Apparel item2 in list)
+                foreach (Apparel old in oldApparel)
                 {
-                    bool flag = false;
+                    bool conflicts = false;
                     if (pawn.apparel != null)
                     {
-                        foreach (Apparel item3 in pawn.apparel.WornApparel)
+                        foreach (Apparel worn in pawn.apparel.WornApparel)
                         {
-                            if (!ApparelUtility.CanWearTogether(item2.def, item3.def, pawn.RaceProps.body))
+                            if (!ApparelUtility.CanWearTogether(old.def, worn.def, pawn.RaceProps.body))
                             {
-                                flag = true;
+                                conflicts = true;
                                 break;
                             }
                         }
                     }
 
-                    if (!flag && pawn.apparel != null && ApparelUtility.HasPartsToWear(pawn, item2.def))
+                    if (!conflicts && pawn.apparel != null && ApparelUtility.HasPartsToWear(pawn, old.def))
                     {
-                        pawn.apparel.Wear(item2, dropReplacedApparel: false);
+                        pawn.apparel.Wear(old, dropReplacedApparel: false);
                     }
                     else
                     {
-                        pawn.inventory?.innerContainer?.TryAdd(item2);
+                        pawn.inventory?.innerContainer?.TryAdd(old);
                     }
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught($"Уникальные пони: не удалось экипировать {pawn.LabelShort}.", ex);
+                PonyLog.WarnCaught($"Unique: could not equip {pawn.LabelShort}", ex);
             }
             finally
             {
-                PawnKindDef combatKind = pawn.kindDef;
-                pawn.kindDef = kindDef;
+                PawnKindDef usedKind = pawn.kindDef;
+                pawn.kindDef = originalKind;
                 CombatExtendedCompatability.TryUpdateInventory(pawn);
-                CombatExtendedLoadoutDiagnostics.Report(pawn, combatKind, "итог");
+                CombatExtendedLoadoutDiagnostics.Report(pawn, usedKind, "Unique equipment");
             }
         }
 
@@ -99,32 +101,34 @@ namespace PoniesOfTheRim.UniquePonies
                 return null;
             }
 
-            List<PawnGenOption> list = new List<PawnGenOption>();
-            List<PawnGenOption> list2 = new List<PawnGenOption>();
-            foreach (PawnGroupMaker pawnGroupMaker in factionDef.pawnGroupMakers)
+            List<PawnGenOption> combatOptions = new List<PawnGenOption>();
+            List<PawnGenOption> otherOptions = new List<PawnGenOption>();
+            foreach (PawnGroupMaker groupMaker in factionDef.pawnGroupMakers)
             {
-                if (pawnGroupMaker?.options != null)
+                if (groupMaker?.options == null)
                 {
-                    List<PawnGenOption> collection = pawnGroupMaker.options.Where((PawnGenOption o) => o?.kind?.race == race).ToList();
-                    if (pawnGroupMaker.kindDef == PawnGroupKindDefOf.Combat)
-                    {
-                        list.AddRange(collection);
-                    }
-                    else
-                    {
-                        list2.AddRange(collection);
-                    }
+                    continue;
+                }
+
+                List<PawnGenOption> raceOptions = groupMaker.options.Where(o => o?.kind?.race == race).ToList();
+                if (groupMaker.kindDef == PawnGroupKindDefOf.Combat)
+                {
+                    combatOptions.AddRange(raceOptions);
+                }
+                else
+                {
+                    otherOptions.AddRange(raceOptions);
                 }
             }
 
-            if (list.Count > 0)
+            if (combatOptions.Count > 0)
             {
-                return list.RandomElementByWeight((PawnGenOption o) => o.selectionWeight).kind;
+                return combatOptions.RandomElementByWeight(o => o.selectionWeight).kind;
             }
 
-            if (list2.Count > 0)
+            if (otherOptions.Count > 0)
             {
-                return list2.RandomElementByWeight((PawnGenOption o) => o.selectionWeight).kind;
+                return otherOptions.RandomElementByWeight(o => o.selectionWeight).kind;
             }
 
             return null;

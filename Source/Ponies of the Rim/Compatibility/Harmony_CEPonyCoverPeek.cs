@@ -15,12 +15,10 @@ namespace PoniesOfTheRim.Compatibility
         private static readonly HashSet<ThingDef> ReportedRaise = new HashSet<ThingDef>();
         private static readonly HashSet<ThingDef> ReportedRaiseInFlight = new HashSet<ThingDef>();
         private static readonly HashSet<ThingDef> ReportedTooHigh = new HashSet<ThingDef>();
-        private static bool _errorLogged;
 
         public static void Postfix(Thing thing, ref FloatRange heightRange, ref float shotHeight)
         {
-            Pawn pawn = thing as Pawn;
-            if (pawn == null || !PonyHelper.IsPonyRace(pawn.def))
+            if (!(thing is Pawn pawn) || !PonyHelper.IsPonyRace(pawn.def))
             {
                 return;
             }
@@ -29,9 +27,9 @@ namespace PoniesOfTheRim.Compatibility
             {
                 Apply(pawn, ref heightRange, ref shotHeight, false);
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
-                LogErrorOnce(arg);
+                PonyLog.WarnCaught("CE: cover peek failed", ex);
             }
         }
 
@@ -46,9 +44,9 @@ namespace PoniesOfTheRim.Compatibility
             {
                 Apply(pawn, ref heightRange, ref shotHeight, true);
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
-                LogErrorOnce(arg);
+                PonyLog.WarnCaught("CE: cover peek in flight failed", ex);
             }
         }
 
@@ -65,8 +63,7 @@ namespace PoniesOfTheRim.Compatibility
                 return;
             }
 
-            float coverTop;
-            Thing cover = FindHighestBlockingCover(pawn, shotHeight, out coverTop);
+            Thing cover = FindHighestBlockingCover(pawn, shotHeight, out float coverTop);
             if (cover == null)
             {
                 return;
@@ -85,12 +82,8 @@ namespace PoniesOfTheRim.Compatibility
             {
                 if (ShouldReport(ReportedTooHigh, cover.def))
                 {
-                    Log.Message($"[PoniesOfTheRim] CE: {CoverLabel(cover)} высотой {coverTop:0.00} ({coverTop * MetersPerCellHeight:0.00} м) " +
-                                $"выше досягаемости {pawn.def.defName}: ствол поднимается максимум до {maxShot:0.00} " +
-                                $"({maxShot * MetersPerCellHeight:0.00} м). Стрелять вплотную из-за него пони не сможет. " +
-                                "Сообщение выводится один раз на тип укрытия.");
+                    PonyLog.Trace($"CE: {cover.def.defName} ({Height(coverTop)}) is too high for {pawn.def.defName}, muzzle reaches {Height(maxShot)}");
                 }
-
                 return;
             }
 
@@ -103,12 +96,11 @@ namespace PoniesOfTheRim.Compatibility
 
             if (ShouldReport(inFlight ? ReportedRaiseInFlight : ReportedRaise, cover.def))
             {
-                Log.Message($"[PoniesOfTheRim] CE: {pawn.def.defName}{(inFlight ? " (в полёте, тело на земле)" : "")} выглядывает из-за {CoverLabel(cover)} высотой {coverTop:0.00} " +
-                            $"({coverTop * MetersPerCellHeight:0.00} м): ствол {oldShot:0.000} → {shotHeight:0.000}, " +
-                            $"верх силуэта {oldTop:0.000} → {heightRange.max:0.000} ({heightRange.max * MetersPerCellHeight:0.00} м). " +
-                            "Сообщение выводится один раз на тип укрытия.");
+                PonyLog.Trace($"CE: {pawn.def.defName}{(inFlight ? " in flight" : "")} peeks over {cover.def.defName} ({Height(coverTop)}), " +
+                              $"Muzzle {oldShot:0.000} -> {shotHeight:0.000}, top {oldTop:0.000} -> {heightRange.max:0.000}");
             }
         }
+
         private static Thing FindHighestBlockingCover(Pawn pawn, float shotHeight, out float coverTop)
         {
             coverTop = 0f;
@@ -136,8 +128,7 @@ namespace PoniesOfTheRim.Compatibility
                     continue;
                 }
 
-                Building_Door door = cover as Building_Door;
-                if (door != null && door.Open)
+                if (cover is Building_Door door && door.Open)
                 {
                     continue;
                 }
@@ -155,25 +146,14 @@ namespace PoniesOfTheRim.Compatibility
             return best;
         }
 
-        private static void LogErrorOnce(Exception arg)
-        {
-            if (_errorLogged)
-            {
-                return;
-            }
-
-            _errorLogged = true;
-            Log.Warning($"[PoniesOfTheRim] CE CoverPeek: {arg}");
-        }
-
         private static bool ShouldReport(HashSet<ThingDef> reported, ThingDef def)
         {
             return Prefs.DevMode && UnityData.IsInMainThread && reported.Add(def);
         }
 
-        private static string CoverLabel(Thing cover)
+        private static string Height(float cells)
         {
-            return "«" + (cover.def.label ?? cover.def.defName) + "» (" + cover.def.defName + ")";
+            return $"{cells:0.00}, {cells * MetersPerCellHeight:0.00} m";
         }
     }
 }

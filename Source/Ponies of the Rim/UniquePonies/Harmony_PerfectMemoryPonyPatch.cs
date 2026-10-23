@@ -13,7 +13,7 @@ namespace PoniesOfTheRim.UniquePonies
             if (!pawn.story.traits.HasTrait(Pony_DefOf.Pony_PerfectMemory))
                 return;
 
-                                    if (__instance.xpSinceLastLevel < 0f)
+            if (__instance.xpSinceLastLevel < 0f)
                 __instance.xpSinceLastLevel = 0f;
         }
     }

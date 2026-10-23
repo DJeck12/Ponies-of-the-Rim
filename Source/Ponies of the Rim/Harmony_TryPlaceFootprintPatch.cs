@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using PoniesOfTheRim.Flying;
+using RimWorld;
 using Verse;
 using UnityEngine;
 
@@ -6,8 +7,8 @@ namespace PoniesOfTheRim
 {
     public static class HoofprintPatch
     {
-        private const float LateralOffset       = 0.28f;
-        private const float LongitudinalOffset   = 0.50f;
+        private const float LateralOffset = 0.28f;
+        private const float LongitudinalOffset = 0.50f;
         private const float QuadrupedMinStepDist = LongitudinalOffset * 2f;
         private const float TrailOffsetMin = 0.02f;
         private const float TrailOffsetMax = 0.12f;
@@ -15,9 +16,9 @@ namespace PoniesOfTheRim
         private const float StalePositionThreshold = LongitudinalOffset * 6f;
 
         public static bool TryPlaceHoofprint(
-            ref Pawn    ___pawn,
+            ref Pawn ___pawn,
             ref Vector3 ___lastFootprintPlacePos,
-            ref bool    ___lastFootprintRight,
+            ref bool ___lastFootprintRight,
             ref Vector3 ___FootprintOffset)
         {
             Pawn pawn = ___pawn;
@@ -25,10 +26,15 @@ namespace PoniesOfTheRim
                 return false;
             if (!pawn.IsPony())
                 return true;
-            Vector3 drawPos   = pawn.Drawer.DrawPos;
-            Vector3 dir       = (drawPos - ___lastFootprintPlacePos).normalized;
-            float   rot       = dir.AngleFlat();
-            float   sizeScale = Mathf.Sqrt(pawn.BodySize);
+            if (PegasusFlightUtility.IsPegasusConstantFlight(pawn))
+            {
+                ___lastFootprintPlacePos = pawn.Drawer.DrawPos;
+                return false;
+            }
+            Vector3 drawPos = pawn.Drawer.DrawPos;
+            Vector3 dir = (drawPos - ___lastFootprintPlacePos).normalized;
+            float rot = dir.AngleFlat();
+            float sizeScale = Mathf.Sqrt(pawn.BodySize);
             float distSq = (drawPos - ___lastFootprintPlacePos).sqrMagnitude;
             if (distSq < QuadrupedMinStepDist * QuadrupedMinStepDist)
                 return false;
@@ -47,7 +53,7 @@ namespace PoniesOfTheRim
             else
                 FootprintCycleTracker.SaveFrontLeft(pawn, frontPos);
             bool hasSaved = rightFrontLeads
-                ? FootprintCycleTracker.TryGetFrontLeft(pawn,  out Vector3 savedOpposite)
+                ? FootprintCycleTracker.TryGetFrontLeft(pawn, out Vector3 savedOpposite)
                 : FootprintCycleTracker.TryGetFrontRight(pawn, out savedOpposite);
 
             if (hasSaved)
@@ -56,15 +62,15 @@ namespace PoniesOfTheRim
                 if (ageSq < StalePositionThreshold * StalePositionThreshold)
                 {
                     Vector3 trailBack = dir * Rand.Range(TrailOffsetMin, TrailOffsetMax) * sizeScale;
-                    Vector3 latJit    = perpDir * Rand.Range(-LateralJitter, LateralJitter) * sizeScale;
-                    Vector3 backPos   = savedOpposite - trailBack + latJit;
+                    Vector3 latJit = perpDir * Rand.Range(-LateralJitter, LateralJitter) * sizeScale;
+                    Vector3 backPos = savedOpposite - trailBack + latJit;
 
                     TryPlaceAt(backPos, pawn, rot, sizeScale, backFleck);
                 }
             }
 
             ___lastFootprintPlacePos = drawPos;
-            ___lastFootprintRight    = !___lastFootprintRight;
+            ___lastFootprintRight = !___lastFootprintRight;
             return false;
         }
 
@@ -72,18 +78,18 @@ namespace PoniesOfTheRim
         {
             if (pawn.IsGriffon())
             {
-                front = Pony_DefOf.Pony_Talonprint   ?? Pony_DefOf.Pony_Hoofprint;
-                back  = Pony_DefOf.Pony_Pawprint ?? Pony_DefOf.Pony_Hoofprint;
+                front = Pony_DefOf.Pony_Talonprint ?? Pony_DefOf.Pony_Hoofprint;
+                back = Pony_DefOf.Pony_Pawprint ?? Pony_DefOf.Pony_Hoofprint;
             }
             else if (pawn.IsHippogriff())
             {
                 front = Pony_DefOf.Pony_Talonprint ?? Pony_DefOf.Pony_Hoofprint;
-                back  = Pony_DefOf.Pony_Hoofprint;
+                back = Pony_DefOf.Pony_Hoofprint;
             }
             else
             {
                 front = Pony_DefOf.Pony_Hoofprint;
-                back  = Pony_DefOf.Pony_Hoofprint;
+                back = Pony_DefOf.Pony_Hoofprint;
             }
         }
 

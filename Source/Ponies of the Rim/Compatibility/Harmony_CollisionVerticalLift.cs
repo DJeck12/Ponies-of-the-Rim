@@ -1,8 +1,8 @@
-﻿using HarmonyLib;
+﻿using System;
+using System.Reflection;
+using HarmonyLib;
 using PoniesOfTheRim.Flying;
 using RimWorld;
-using System;
-using System.Reflection;
 using Verse;
 
 namespace PoniesOfTheRim.Compatibility
@@ -11,22 +11,6 @@ namespace PoniesOfTheRim.Compatibility
     {
         [ThreadStatic]
         private static Pawn _groundedForCalculation;
-
-        private static readonly AccessTools.FieldRef<Pawn, Pawn_FlightTracker> FlightRef = CreateFlightRef();
-
-        private static bool _errorLogged;
-
-        private static AccessTools.FieldRef<Pawn, Pawn_FlightTracker> CreateFlightRef()
-        {
-            try
-            {
-                return AccessTools.FieldRefAccess<Pawn, Pawn_FlightTracker>("flight");
-            }
-            catch
-            {
-                return null;
-            }
-        }
 
         public static bool IsGroundedForCalculation(Pawn pawn)
         {
@@ -60,7 +44,7 @@ namespace PoniesOfTheRim.Compatibility
                     return;
                 }
 
-                Pawn_FlightTracker tracker = FlightRef?.Invoke(pawn);
+                Pawn_FlightTracker tracker = pawn.flight;
                 if (tracker == null)
                 {
                     return;
@@ -75,11 +59,11 @@ namespace PoniesOfTheRim.Compatibility
                 __state = lift;
                 _groundedForCalculation = pawn;
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
                 __state = 0f;
                 _groundedForCalculation = null;
-                LogOnce(arg);
+                PonyLog.WarnCaught("CE: flight lift neutralization failed", ex);
             }
         }
 
@@ -98,17 +82,6 @@ namespace PoniesOfTheRim.Compatibility
         public static void Finalizer()
         {
             _groundedForCalculation = null;
-        }
-
-        private static void LogOnce(Exception arg)
-        {
-            if (_errorLogged)
-            {
-                return;
-            }
-
-            _errorLogged = true;
-            Log.Warning($"[PoniesOfTheRim] CE CollisionVertical lift patch: {arg}");
         }
     }
 }

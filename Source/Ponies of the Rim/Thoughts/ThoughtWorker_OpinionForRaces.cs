@@ -1,4 +1,4 @@
-﻿using RimWorld;
+using RimWorld;
 using Verse;
 
 namespace PoniesOfTheRim.Thoughts
@@ -20,7 +20,7 @@ namespace PoniesOfTheRim.Thoughts
                     if (cachedExtension == null)
                     {
                         PonyLog.ErrorOnce("ThoughtWorker_OpinionForRaces|" + def.defName,
-                            "Мысли: у ThoughtDef '" + def.defName + "' нет ThoughtExtension — мысль не будет работать.");
+                            $"Thoughts: ThoughtDef {def.defName} has no ThoughtExtension, thought disabled");
                     }
                 }
                 return cachedExtension;

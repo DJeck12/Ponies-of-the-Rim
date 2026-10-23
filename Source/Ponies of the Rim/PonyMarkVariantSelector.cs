@@ -50,7 +50,6 @@ namespace PoniesOfTheRim
     public static class PonyMarkVariantSelector
     {
         private static FieldInfo _variantCountField;
-        private static FieldInfo _adulthoodField;
 
         private static readonly HashSet<Pawn> _pendingRefresh = new HashSet<Pawn>();
         private static bool _callbackRegistered;
@@ -60,20 +59,27 @@ namespace PoniesOfTheRim
             _variantCountField = AccessTools.Field(
                 typeof(AlienPartGenerator.BodyAddon), "variantCount");
 
-            _adulthoodField =
-                AccessTools.Field(typeof(Pawn_StoryTracker), "adulthood") ??
-                AccessTools.Field(typeof(Pawn_StoryTracker), "Adulthood");
-
             if (_variantCountField == null)
-                PonyLog.Error("Метки пони: поле variantCount не найдено на BodyAddon — " +
-                              "варианты меток на теле и голове назначаться не будут.");
+                PonyLog.Error("Marks: BodyAddon.variantCount not found, body and head mark variants disabled");
         }
 
         public static void CompRenderNodes_Postfix(AlienComp __instance)
-            => ApplyMarkVariants(__instance);
+            => ApplyMarkVariantsSafe(__instance);
 
         public static void RegenerateAddonsForced_Postfix(AlienComp __instance)
-            => ApplyMarkVariants(__instance);
+            => ApplyMarkVariantsSafe(__instance);
+
+        private static void ApplyMarkVariantsSafe(AlienComp comp)
+        {
+            try
+            {
+                ApplyMarkVariants(comp);
+            }
+            catch (Exception ex)
+            {
+                PonyLog.WarnCaught("Marks: mark variants not applied", ex);
+            }
+        }
 
         private static void ApplyMarkVariants(AlienComp comp)
         {
@@ -177,7 +183,7 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception ex)
                 {
-                    PonyLog.WarnCaught($"Метки пони: не удалось обновить графику пешки {pawn?.LabelShortCap}.", ex);
+                    PonyLog.WarnCaught($"Marks: graphics refresh failed for {pawn?.LabelShortCap}", ex);
                 }
             }
 
@@ -186,8 +192,7 @@ namespace PoniesOfTheRim
 
         private static bool IsExcludedByBackstory(Pawn pawn, MarkGenerationExtension ext)
         {
-            if (_adulthoodField == null || pawn.story == null) return false;
-            BackstoryDef adulthood = _adulthoodField.GetValue(pawn.story) as BackstoryDef;
+            BackstoryDef adulthood = pawn.story?.Adulthood;
             return adulthood != null && ext.noMarkBackstories.Contains(adulthood.defName);
         }
     }

@@ -9,44 +9,6 @@ namespace PoniesOfTheRim
 {
     public static class PonyHelper
     {
-        public class PonyRaceExtension : DefModExtension
-        {
-            public bool hasMane = true;
-            public static PonyRaceExtension Get(Def def)
-            {
-                List<DefModExtension> exts = def?.modExtensions;
-                if (exts == null)
-                {
-                    return null;
-                }
-                for (int i = exts.Count - 1; i >= 0; i--)
-                {
-                    if (exts[i] is PonyRaceExtension ext)
-                    {
-                        return ext;
-                    }
-                }
-                return null;
-            }
-        }
-
-        private static readonly HashSet<string> KnownPonyDefNames = new HashSet<string>
-        {
-            "Pony_Earthpony",
-            "Pony_Unicorn",
-            "Pony_Pegasus",
-            "Pony_Zebra",
-            "Pony_Crystalpony",
-            "Pony_Batpony",
-            "Pony_Alicorn",
-            "Pony_Kirin",
-            "Pony_Changedling",
-            "Pony_Changeling",
-            "Pony_Deer",
-            "Pony_Griffon",
-            "Pony_Hippogriff"
-        };
-
         private static HashSet<ThingDef> _ponyRaceCache;
 
         public static bool PartHasProsthetic(this HediffSet set, BodyPartRecord record)
@@ -73,23 +35,27 @@ namespace PoniesOfTheRim
             {
                 return def != null && _ponyRaceCache.Contains(def);
             }
-            return def is ThingDef_AlienRace && KnownPonyDefNames.Contains(def.defName);
+            return IsPonyRaceDef(def);
         }
 
         public static void BuildRaceCache()
         {
-            HashSet<ThingDef> hashSet = new HashSet<ThingDef>();
-            List<ThingDef> allDefsListForReading = DefDatabase<ThingDef>.AllDefsListForReading;
-            for (int i = 0; i < allDefsListForReading.Count; i++)
+            HashSet<ThingDef> races = new HashSet<ThingDef>();
+            List<ThingDef> defs = DefDatabase<ThingDef>.AllDefsListForReading;
+            for (int i = 0; i < defs.Count; i++)
             {
-                ThingDef thingDef = allDefsListForReading[i];
-                if (thingDef is ThingDef_AlienRace && (thingDef.HasModExtension<PonyRaceExtension>() || KnownPonyDefNames.Contains(thingDef.defName)))
+                if (IsPonyRaceDef(defs[i]))
                 {
-                    hashSet.Add(thingDef);
+                    races.Add(defs[i]);
                 }
             }
-            _ponyRaceCache = hashSet;
-            PonyLog.Trace("Кэш пони-рас: " + hashSet.Count + " записей.");
+            _ponyRaceCache = races;
+            PonyLog.Trace($"Races: {races.Count} cached");
+        }
+
+        private static bool IsPonyRaceDef(ThingDef def)
+        {
+            return def is ThingDef_AlienRace && def.HasModExtension<PonyRaceExtension>();
         }
 
         public static bool IsPony(this Pawn pawn)
@@ -203,9 +169,9 @@ namespace PoniesOfTheRim
         {
             if (fleckDef != null && loc.ShouldSpawnMotesAt(map))
             {
-                FleckCreationData dataStatic = FleckMaker.GetDataStatic(loc, map, fleckDef, 0.5f);
-                dataStatic.rotation = rot;
-                map.flecks.CreateFleck(dataStatic);
+                FleckCreationData data = FleckMaker.GetDataStatic(loc, map, fleckDef, 0.5f);
+                data.rotation = rot;
+                map.flecks.CreateFleck(data);
             }
         }
     }

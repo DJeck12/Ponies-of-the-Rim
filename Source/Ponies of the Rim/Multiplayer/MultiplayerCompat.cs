@@ -22,6 +22,7 @@ namespace PoniesOfTheRim.Multiplayer
         private static MethodInfo _registerSyncMethodByInfo;
 
         private static readonly List<string> RegisteredMembers = new List<string>();
+
         public static bool Loaded
         {
             get
@@ -30,6 +31,7 @@ namespace PoniesOfTheRim.Multiplayer
                 return _api != null;
             }
         }
+
         public static bool InMultiplayer => Read(_getIsInMultiplayer);
 
         public static bool InInterface => Read(_getInInterface);
@@ -45,32 +47,42 @@ namespace PoniesOfTheRim.Multiplayer
         public static bool RegisterSyncMethod(Type type, string methodName)
         {
             EnsureResolved();
-            if (_api == null || _registerSyncMethodByName == null)
+            if (_api == null)
             {
                 return false;
             }
             if (type == null || string.IsNullOrEmpty(methodName))
             {
-                PonyLog.Error("Multiplayer: RegisterSyncMethod вызван с пустым типом или именем метода.");
+                PonyLog.Error("MP: RegisterSyncMethod called without type or method name");
                 return false;
             }
-            return Invoke(_registerSyncMethodByName, new object[3] { type, methodName, null }, type.Name + "." + methodName);
+            if (_registerSyncMethodByName == null)
+            {
+                PonyLog.Warn($"MP: no RegisterSyncMethod(Type, string) in this API version, {type.Name}.{methodName} is not synced");
+                return false;
+            }
+            return Invoke(_registerSyncMethodByName, new object[] { type, methodName, null }, type.Name + "." + methodName);
         }
 
         public static bool RegisterSyncMethod(MethodInfo method)
         {
             EnsureResolved();
-            if (_api == null || _registerSyncMethodByInfo == null)
+            if (_api == null)
             {
                 return false;
             }
             if (method == null)
             {
-                PonyLog.Error("Multiplayer: RegisterSyncMethod вызван с null MethodInfo.");
+                PonyLog.Error("MP: RegisterSyncMethod called with null MethodInfo");
                 return false;
             }
-            return Invoke(_registerSyncMethodByInfo, new object[2] { method, null },
-                (method.DeclaringType?.Name ?? "?") + "." + method.Name);
+            string label = (method.DeclaringType?.Name ?? "?") + "." + method.Name;
+            if (_registerSyncMethodByInfo == null)
+            {
+                PonyLog.Warn($"MP: no RegisterSyncMethod(MethodInfo) in this API version, {label} is not synced");
+                return false;
+            }
+            return Invoke(_registerSyncMethodByInfo, new object[] { method, null }, label);
         }
 
         private static bool Invoke(MethodInfo target, object[] args, string label)
@@ -84,7 +96,7 @@ namespace PoniesOfTheRim.Multiplayer
             catch (Exception ex)
             {
                 Exception inner = (ex as TargetInvocationException)?.InnerException ?? ex;
-                PonyLog.Error($"Multiplayer: не удалось зарегистрировать sync-метод '{label}':\n{inner}");
+                PonyLog.Error($"MP: sync method {label} not registered\n{inner}");
                 return false;
             }
         }
@@ -100,8 +112,9 @@ namespace PoniesOfTheRim.Multiplayer
             {
                 return getter();
             }
-            catch
+            catch (Exception ex)
             {
+                PonyLog.WarnCaught("MP: bridge property read failed", ex);
                 return false;
             }
         }
@@ -116,8 +129,8 @@ namespace PoniesOfTheRim.Multiplayer
             try
             {
                 Assembly mp = LoadedModManager.RunningMods
-                    .SelectMany((ModContentPack m) => m.assemblies.loadedAssemblies)
-                    .FirstOrDefault((Assembly a) => a.GetName().Name == "Multiplayer");
+                    .SelectMany(m => m.assemblies.loadedAssemblies)
+                    .FirstOrDefault(a => a.GetName().Name == "Multiplayer");
                 if (mp == null)
                 {
                     return;
@@ -126,7 +139,7 @@ namespace PoniesOfTheRim.Multiplayer
                 Type bridgeType = mp.GetType(BridgeTypeName);
                 if (bridgeType == null)
                 {
-                    PonyLog.Warn("Multiplayer: сборка найдена, но тип " + BridgeTypeName + " отсутствует — патч совместимости отключён.");
+                    PonyLog.Warn($"MP: {BridgeTypeName} not found in the Multiplayer assembly, compatibility disabled");
                     return;
                 }
 
@@ -134,7 +147,7 @@ namespace PoniesOfTheRim.Multiplayer
                 object api = instanceField?.GetValue(null);
                 if (api == null)
                 {
-                    PonyLog.Warn("Multiplayer: MultiplayerAPIBridge.Instance недоступен — патч совместимости отключён.");
+                    PonyLog.Warn("MP: MultiplayerAPIBridge.Instance is null, compatibility disabled");
                     return;
                 }
 
@@ -151,15 +164,11 @@ namespace PoniesOfTheRim.Multiplayer
                         continue;
                     }
                     ParameterInfo[] ps = m.GetParameters();
-                    if (ps.Length != 2 && ps.Length != 3)
-                    {
-                        continue;
-                    }
-                    if (ps[0].ParameterType == typeof(Type) && ps.Length == 3 && ps[1].ParameterType == typeof(string))
+                    if (ps.Length == 3 && ps[0].ParameterType == typeof(Type) && ps[1].ParameterType == typeof(string))
                     {
                         _registerSyncMethodByName = m;
                     }
-                    else if (ps[0].ParameterType == typeof(MethodInfo) && ps.Length == 2)
+                    else if (ps.Length == 2 && ps[0].ParameterType == typeof(MethodInfo))
                     {
                         _registerSyncMethodByInfo = m;
                     }
@@ -167,7 +176,7 @@ namespace PoniesOfTheRim.Multiplayer
 
                 if (_registerSyncMethodByName == null && _registerSyncMethodByInfo == null)
                 {
-                    PonyLog.Warn("Multiplayer: не найдено ни одной перегрузки RegisterSyncMethod — версия API несовместима, патч совместимости отключён.");
+                    PonyLog.Warn("MP: no usable RegisterSyncMethod overload, compatibility disabled");
                     return;
                 }
 
@@ -176,7 +185,7 @@ namespace PoniesOfTheRim.Multiplayer
             catch (Exception ex)
             {
                 _api = null;
-                PonyLog.ErrorCaught("Multiplayer: ошибка инициализации моста совместимости — патч совместимости отключён.", ex);
+                PonyLog.ErrorCaught("MP: bridge init failed, compatibility disabled", ex);
             }
         }
 
@@ -193,7 +202,7 @@ namespace PoniesOfTheRim.Multiplayer
             }
             catch (Exception ex)
             {
-                PonyLog.Warn($"Multiplayer: не удалось связать свойство '{propertyName}': {ex.Message}");
+                PonyLog.Warn($"MP: could not bind {propertyName}: {ex.Message}");
                 return null;
             }
         }

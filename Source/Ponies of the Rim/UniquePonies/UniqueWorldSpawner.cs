@@ -59,7 +59,7 @@ namespace PoniesOfTheRim.UniquePonies
             }
             catch (Exception ex)
             {
-                PonyLog.ErrorCaught("Уникальные пони: не удалось разместить уникальных пешек в мире.", ex);
+                PonyLog.ErrorCaught("Unique: unique pawns not placed in the world", ex);
             }
         }
 
@@ -70,7 +70,6 @@ namespace PoniesOfTheRim.UniquePonies
 
             var state = world.GetComponent<UniqueOnceState>();
             if (state == null || state.processed) return;
-            state.processed = true;
 
             var factionRaces = BuildFactionRaceMap();
 
@@ -88,78 +87,75 @@ namespace PoniesOfTheRim.UniquePonies
                 if (state.placed.Contains(kind.defName))
                     continue;
 
-                bool chosenByPlayer = playerPawns.Any(p => p.kindDef == kind);
-                if (chosenByPlayer)
+                try
                 {
-                    state.placed.Add(kind.defName);
-                    continue;
+                    TryPlace(kind, state, factionRaces, playerPawns);
                 }
-
-                var targetRace = kind.race;
-                if (targetRace == null) continue;
-
-                var candidateFactions = Find.FactionManager.AllFactionsListForReading
-                    .Where(f =>
-                        !f.IsPlayer &&
-                        !f.Hidden &&
-                        !f.defeated &&
-                        factionRaces.TryGetValue(f.def, out var races) &&
-                        races.Contains(targetRace))
-                    .ToList();
-
-                if (candidateFactions.Count == 0)
-                    continue;
-
-                var targetFaction = candidateFactions.RandomElement();
-
-                var req = new PawnGenerationRequest(
-                    kind,
-                    targetFaction,
-                    PawnGenerationContext.NonPlayer,
-                    tile: -1,
-                    forceGenerateNewPawn: true,
-                    allowDead: false,
-                    allowDowned: false,
-                    canGeneratePawnRelations: false,
-                    mustBeCapableOfViolence: false,
-                    colonistRelationChanceFactor: 0f,
-                    forceAddFreeWarmLayerIfNeeded: false,
-                    allowGay: true,
-                    allowPregnant: true,
-                    allowFood: true,
-                    allowAddictions: false,
-                    inhabitant: false,
-                    certainlyBeenInCryptosleep: false,
-                    forceNoBackstory: false
-                );
-
-                var pawn = PawnGenerator.GeneratePawn(req);
-                if (pawn != null)
+                catch (Exception ex)
                 {
-                    ForceUniqueName(pawn, kind);
-                    Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.KeepForever);
-                    state.placed.Add(kind.defName);
+                    PonyLog.WarnCaught($"Unique: {kind.defName} not placed in the world", ex);
                 }
             }
+
+            state.processed = true;
         }
 
-        private static void ForceUniqueName(Pawn pawn, PawnKindDef kind)
+        private static void TryPlace(PawnKindDef kind, UniqueOnceState state,
+            Dictionary<FactionDef, HashSet<ThingDef>> factionRaces, List<Pawn> playerPawns)
         {
-            if (!UniquePawnConfig.ByKindDef.TryGetValue(kind.defName, out var config))
+            if (playerPawns.Any(p => p.kindDef == kind))
+            {
+                state.placed.Add(kind.defName);
+                return;
+            }
+
+            var targetRace = kind.race;
+            if (targetRace == null) return;
+
+            var candidateFactions = Find.FactionManager.AllFactionsListForReading
+                .Where(f =>
+                    !f.IsPlayer &&
+                    !f.Hidden &&
+                    !f.defeated &&
+                    factionRaces.TryGetValue(f.def, out var races) &&
+                    races.Contains(targetRace))
+                .ToList();
+
+            if (candidateFactions.Count == 0)
                 return;
 
-            if (config.UseSingleName)
-            {
-                pawn.Name = new NameSingle(config.NickName);
-            }
-            else
-            {
-                pawn.Name = new NameTriple(
-                    config.FirstName,
-                    config.NickName,
-                    config.LastName
-                );
-            }
+            var targetFaction = candidateFactions.RandomElement();
+
+            var req = new PawnGenerationRequest(
+                kind,
+                targetFaction,
+                PawnGenerationContext.NonPlayer,
+                tile: -1,
+                forceGenerateNewPawn: true,
+                allowDead: false,
+                allowDowned: false,
+                canGeneratePawnRelations: false,
+                mustBeCapableOfViolence: false,
+                colonistRelationChanceFactor: 0f,
+                forceAddFreeWarmLayerIfNeeded: false,
+                allowGay: true,
+                allowPregnant: true,
+                allowFood: true,
+                allowAddictions: false,
+                inhabitant: false,
+                certainlyBeenInCryptosleep: false,
+                forceNoBackstory: false
+            );
+
+            var pawn = PawnGenerator.GeneratePawn(req);
+            if (pawn == null)
+                return;
+
+            if (UniquePawnConfig.ByKindDef.TryGetValue(kind.defName, out var config))
+                UniqueNameAssigner.ApplyCanonicalName(pawn, config);
+
+            Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.KeepForever);
+            state.placed.Add(kind.defName);
         }
     }
 }

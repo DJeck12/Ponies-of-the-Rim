@@ -23,22 +23,31 @@ namespace PoniesOfTheRim.UniquePonies
 
         private static List<AlienPartGenerator.BodyAddon> GetAllAddons(ThingDef_AlienRace alienDef)
         {
-            try
-            {
-                var raceAddons = alienDef.alienRace.generalSettings.alienPartGenerator.bodyAddons;
-                var universal  = Utilities.UniversalBodyAddons;
-                if (universal == null) return null;
-                return raceAddons.Concat(universal).ToList();
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            var universal = Utilities.UniversalBodyAddons;
+            if (universal == null) return null;
+
+            var all = new List<AlienPartGenerator.BodyAddon>();
+            var raceAddons = alienDef.alienRace?.generalSettings?.alienPartGenerator?.bodyAddons;
+            if (raceAddons != null)
+                all.AddRange(raceAddons);
+            all.AddRange(universal);
+            return all;
         }
 
         public static void GeneratePawn_Postfix(Pawn __result)
         {
-            var pawn = __result;
+            try
+            {
+                Apply(__result);
+            }
+            catch (Exception ex)
+            {
+                PonyLog.WarnCaught("Unique: addon variants not applied to a generated pawn", ex);
+            }
+        }
+
+        private static void Apply(Pawn pawn)
+        {
             if (pawn == null) return;
             if (IsNewborn(pawn)) return;
 

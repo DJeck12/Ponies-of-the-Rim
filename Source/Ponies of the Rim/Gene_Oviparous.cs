@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
@@ -16,11 +16,14 @@ namespace PoniesOfTheRim
         private static HediffDef _laborPushingDef;
         private static bool _laborDefsResolved;
 
+        private static readonly Dictionary<Type, (FieldInfo father, FieldInfo geneSet)> ParentFieldCache =
+            new Dictionary<Type, (FieldInfo, FieldInfo)>();
+
         public static ThingDef EggDef =>
-            _eggDef ?? (_eggDef = DefDatabase<ThingDef>.GetNamed("Pony_AvianEgg", errorOnFail: false));
+            _eggDef ??= DefDatabase<ThingDef>.GetNamed("Pony_AvianEgg", errorOnFail: false);
 
         public static GeneDef OvipGeneDef =>
-            _ovipGeneDef ?? (_ovipGeneDef = DefDatabase<GeneDef>.GetNamed("Pony_Oviparous", errorOnFail: false));
+            _ovipGeneDef ??= DefDatabase<GeneDef>.GetNamed("Pony_Oviparous", errorOnFail: false);
 
         private static void ResolveLaborDefs()
         {
@@ -79,7 +82,7 @@ namespace PoniesOfTheRim
             }
 
             pawn.health.RemoveHediff(pregnant);
-            PonyLog.Trace("Яйцекладка: " + pawn.LabelShort + " отложила яйцо (отец: " + (father?.LabelShort ?? "нет") + ").");
+            PonyLog.Trace($"Eggs: {pawn.LabelShort} laid an egg (father: {father?.LabelShort ?? "none"})");
         }
 
         public static Hediff FindParentSourceHediff(Pawn mother)
@@ -118,28 +121,25 @@ namespace PoniesOfTheRim
             {
                 fields = (AccessTools.Field(t, "father"), AccessTools.Field(t, "geneSet"));
                 ParentFieldCache[t] = fields;
-                if (Prefs.DevMode && (fields.father == null || fields.geneSet == null))
+                if (fields.father == null || fields.geneSet == null)
                 {
-                    PonyLog.Warn("Яйцекладка: у " + t.Name + " не найдены поля father/geneSet — яйцо будет без данных об отце и генах.");
+                    PonyLog.Warn($"Eggs: {t.Name} has no father/geneSet field, eggs get no parent data");
                 }
             }
             father = fields.father?.GetValue(source) as Pawn;
             geneSet = fields.geneSet?.GetValue(source) as GeneSet;
         }
 
-        private static readonly Dictionary<Type, (FieldInfo father, FieldInfo geneSet)> ParentFieldCache =
-            new Dictionary<Type, (FieldInfo, FieldInfo)>();
-
         public static Thing TrySpawnEgg(Pawn mother, Pawn father, GeneSet geneSet)
         {
             if (mother?.MapHeld == null)
             {
-                PonyLog.Warn("Яйцекладка: " + (mother?.LabelShort ?? "null") + " не на карте — яйцо не создано.");
+                PonyLog.Trace($"Eggs: {mother?.LabelShort ?? "null"} is off map, no egg");
                 return null;
             }
             if (EggDef == null)
             {
-                PonyLog.ErrorOnce("Gene_Oviparous.NoEggDef", "Яйцекладка: ThingDef 'Pony_AvianEgg' не найден — яйца не создаются.");
+                PonyLog.ErrorOnce("Gene_Oviparous.NoEggDef", "Eggs: Pony_AvianEgg not found, eggs disabled");
                 return null;
             }
             Thing thing = ThingMaker.MakeThing(EggDef);
@@ -187,7 +187,7 @@ namespace PoniesOfTheRim
                     Gene g = genes[j];
                     if (g.def == def && !(g is Gene_Oviparous))
                     {
-                        (stale ?? (stale = new List<Gene>(1))).Add(g);
+                        (stale ??= new List<Gene>(1)).Add(g);
                     }
                 }
                 if (stale == null || stale.Count == 0)
@@ -205,7 +205,7 @@ namespace PoniesOfTheRim
             }
             if (migrated > 0)
             {
-                PonyLog.Trace("Миграция Pony_Oviparous: заменено " + migrated + " экз. гена старого класса из сейва.");
+                PonyLog.Trace($"Eggs: {migrated} Pony_Oviparous genes from the save migrated to Gene_Oviparous");
             }
         }
     }

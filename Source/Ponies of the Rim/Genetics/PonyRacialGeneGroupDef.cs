@@ -137,14 +137,14 @@ namespace PoniesOfTheRim.Genetics
             }
             if (racialGenes == null || racialGenes.Count == 0)
             {
-                yield return "[PoniesOfTheRim] racialGenes пуст — группа ничего не делает.";
+                yield return "[PoniesOfTheRim] racialGenes is empty, the group does nothing";
                 yield break;
             }
             for (int i = 0; i < racialGenes.Count; i++)
             {
                 if (racialGenes[i] == null || racialGenes[i].gene == null)
                 {
-                    yield return "[PoniesOfTheRim] racialGenes[" + i + "] без валидного gene.";
+                    yield return "[PoniesOfTheRim] racialGenes[" + i + "] has no valid gene";
                 }
             }
         }

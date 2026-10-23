@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using PoniesOfTheRim.Multiplayer;
@@ -42,7 +42,6 @@ namespace PoniesOfTheRim.Flying
         private static readonly ConditionalWeakTable<Pawn, PawnFlightData>.CreateValueCallback CreateDataDelegate = CreateData;
 
         private static int _rebuildOffMainReported;
-        private static int _usableWingsOffMainReported;
 
         public static void BuildStaticCaches()
         {
@@ -85,7 +84,16 @@ namespace PoniesOfTheRim.Flying
                 WingPartsByBody[body] = new WingParts(left, right);
             }
 
-            PonyLog.Trace($"PonyFlightCache: крылатых тел — {WingedBodies.Count}, записей частей крыльев — {WingPartsByBody.Count}.");
+            if (PonyLog.Verbose)
+            {
+                int complete = 0;
+                foreach (WingParts wings in WingPartsByBody.Values)
+                {
+                    if (wings.Left != null && wings.Right != null)
+                        complete++;
+                }
+                PonyLog.Trace($"Flight: {WingedBodies.Count} winged bodies, {complete} with both wing parts");
+            }
         }
 
         private static void AddBody(HashSet<BodyDef> set, BodyDef body)
@@ -194,7 +202,6 @@ namespace PoniesOfTheRim.Flying
 
         private static bool UsableWingsCached(Pawn pawn, PawnFlightData d)
         {
-            // Вне симуляции (интерфейс в MP, фоновый поток) кэш только читаем.
             if (!UnityData.IsInMainThread || !MultiplayerCompat.TickCacheWritable)
             {
                 if (d.usableWingsCheckedAtTick == NeverChecked)
@@ -206,7 +213,6 @@ namespace PoniesOfTheRim.Flying
             if (ticksGame - d.usableWingsCheckedAtTick < UsableWingsTtlTicks)
                 return d.usableWings;
 
-            PonyThreadGuard.ReportIfOffMain("PonyFlightCache.UsableWingsCached (пересчёт)", ref _usableWingsOffMainReported);
             bool result = d.usableWings = ComputeUsableWings(pawn);
             Volatile.Write(ref d.usableWingsCheckedAtTick, ticksGame);
             return result;

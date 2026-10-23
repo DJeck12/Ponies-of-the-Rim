@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Verse;
 
 namespace PoniesOfTheRim.Flying
@@ -16,7 +16,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Полёт: не удалось выдать природные крылья при генерации пешки — они появятся после высадки.", ex);
+                PonyLog.WarnCaught("Flight: natural wings not added on generation, they will be added on spawn", ex);
             }
         }
     }
