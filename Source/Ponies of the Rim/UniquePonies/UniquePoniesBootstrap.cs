@@ -1,9 +1,10 @@
-﻿using AlienRace;
-using HarmonyLib;
-using RimWorld;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using AlienRace;
+using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace PoniesOfTheRim.UniquePonies
@@ -20,38 +21,66 @@ namespace PoniesOfTheRim.UniquePonies
 
         static UniquePawnsBootstrap()
         {
-            Harmony = new Harmony(HarmonyId);
+            MethodInfo generatePawn = AccessTools.Method(typeof(PawnGenerator), nameof(PawnGenerator.GeneratePawn),
+                new[] { typeof(PawnGenerationRequest) });
+            TryPatch(generatePawn,
+                prefix: new HarmonyMethod(typeof(UniqueBirthFix), "GeneratePawn_Prefix") { priority = 600 });
+            TryPatch(generatePawn,
+                postfix: new HarmonyMethod(typeof(UniqueBodyAddonAssigner), "GeneratePawn_Postfix") { priority = 600 });
+            TryPatch(generatePawn,
+                postfix: new HarmonyMethod(typeof(UniqueEquipmentAssigner), "GeneratePawn_Postfix") { priority = 400 });
+            TryPatch(generatePawn,
+                postfix: new HarmonyMethod(typeof(UniqueNameAssigner), "GeneratePawn_Postfix") { priority = 100 });
 
-            MethodInfo generatePawn = AccessTools.Method(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) });
-            TryPatch(generatePawn, new HarmonyMethod(typeof(UniqueBirthFix), "GeneratePawn_Prefix") { priority = 600 }, null, null, "PawnGenerator.GeneratePawn (UniqueBirthFix)");
-            TryPatch(generatePawn, null, new HarmonyMethod(typeof(UniqueBodyAddonAssigner), "GeneratePawn_Postfix") { priority = 600 }, null, "PawnGenerator.GeneratePawn (UniqueBodyAddonAssigner)");
-            TryPatch(generatePawn, null, new HarmonyMethod(typeof(UniqueEquipmentAssigner), "GeneratePawn_Postfix") { priority = 400 }, null, "PawnGenerator.GeneratePawn (UniqueEquipmentAssigner)");
-            TryPatch(generatePawn, null, new HarmonyMethod(typeof(UniqueNameAssigner), "GeneratePawn_Postfix") { priority = 100 }, null, "PawnGenerator.GeneratePawn (UniqueNameAssigner)");
+            TryPatch(UniqueCleanGeneration.OldAgeInjuriesTarget(),
+                prefix: new HarmonyMethod(typeof(UniqueCleanGeneration), "OldAgeInjuries_Prefix") { priority = 600 });
+            TryPatch(UniqueCleanGeneration.TechHediffsTarget(),
+                prefix: new HarmonyMethod(typeof(UniqueCleanGeneration), "TechHediffs_Prefix") { priority = 600 });
+            TryPatch(UniqueCleanGeneration.AddictionsTarget(),
+                prefix: new HarmonyMethod(typeof(UniqueCleanGeneration), "Addictions_Prefix") { priority = 600 });
 
-            TryPatch(UniqueCleanGeneration.OldAgeInjuriesTarget(), new HarmonyMethod(typeof(UniqueCleanGeneration), "OldAgeInjuries_Prefix") { priority = 600 }, null, null, "AgeInjuryUtility.GenerateRandomOldAgeInjuries (unique clean)");
-            TryPatch(UniqueCleanGeneration.TechHediffsTarget(), new HarmonyMethod(typeof(UniqueCleanGeneration), "TechHediffs_Prefix") { priority = 600 }, null, null, "PawnTechHediffsGenerator.GenerateTechHediffsFor (unique clean)");
-            TryPatch(UniqueCleanGeneration.AddictionsTarget(), new HarmonyMethod(typeof(UniqueCleanGeneration), "Addictions_Prefix") { priority = 600 }, null, null, "PawnAddictionHediffsGenerator.GenerateAddictionsAndTolerancesFor (unique clean)");
+            TryPatch(AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"),
+                prefix: new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Prefix"),
+                postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Postfix"));
+            TryPatch(AccessTools.Method(typeof(Game), "FinalizeInit"),
+                postfix: new HarmonyMethod(typeof(UniqueWorldSpawner), "FinalizeInit_Postfix"));
+            TryPatch(AccessTools.Method(typeof(SkillRecord), "Interval"),
+                postfix: new HarmonyMethod(typeof(PerfectMemoryPatch), "Interval_Postfix"));
+            TryPatch(AccessTools.Method(typeof(GenRecipe), "PostProcessProduct"),
+                postfix: new HarmonyMethod(typeof(EleganceQualityPatch), "PostProcessProduct_Postfix"));
+            TryPatch(AccessTools.Method(typeof(AlienRace.StylingStation), "DoAddonInfo",
+                    new[] { typeof(UnityEngine.Rect), typeof(AlienPartGenerator.BodyAddon), typeof(List<AlienPartGenerator.BodyAddon>) }),
+                postfix: new HarmonyMethod(typeof(StylingStationRefresh), nameof(StylingStationRefresh.DoAddonInfo_Postfix)));
 
-            TryPatch(AccessTools.Method(typeof(Page_ConfigureStartingPawns), "DoWindowContents"), new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Prefix"), new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Postfix"), null, "Page_ConfigureStartingPawns.DoWindowContents (unique)");
-            TryPatch(AccessTools.Method(typeof(Game), "FinalizeInit"), null, new HarmonyMethod(typeof(UniqueWorldSpawner), "FinalizeInit_Postfix"), null, "Game.FinalizeInit (UniqueWorldSpawner)");
-            TryPatch(AccessTools.Method(typeof(SkillRecord), "Interval"), null, new HarmonyMethod(typeof(PerfectMemoryPatch), "Interval_Postfix"), null, "SkillRecord.Interval (PerfectMemory)");
-            TryPatch(AccessTools.Method(typeof(GenRecipe), "PostProcessProduct"), null, new HarmonyMethod(typeof(EleganceQualityPatch), "PostProcessProduct_Postfix"), null, "GenRecipe.PostProcessProduct (EleganceQuality)");
-            PatchStylingStationIfAvailable();
             LongEventHandler.ExecuteWhenFinished(ForceInitUniversalAddons);
-            PonyLog.Trace($"Unique pawns: патчей установлено {_patched}, ошибок {_failed}.");
+
+            PonyLog.Trace($"Unique: {_patched} patched, {_failed} failed");
+        }
+
+        private static void ForceInitUniversalAddons()
+        {
+            try
+            {
+                var addons = Utilities.UniversalBodyAddons;
+                int variants = addons?.Sum(a => a.GetVariantCount()) ?? 0;
+                PonyLog.Trace($"Addons: {addons?.Count ?? 0} universal, {variants} variants");
+            }
+            catch (Exception ex)
+            {
+                PonyLog.WarnCaught("Addons: HAR universal addons init failed, some may not render", ex);
+            }
         }
 
         private static void TryPatch(
             MethodBase original,
             HarmonyMethod prefix = null,
             HarmonyMethod postfix = null,
-            HarmonyMethod transpiler = null,
-            string label = "")
+            HarmonyMethod transpiler = null)
         {
             if (original == null)
             {
                 _failed++;
-                PonyLog.Error($"Unique pawns: метод не найден — '{label}'.");
+                PonyLog.Error($"Unique: target of {Describe(prefix ?? postfix ?? transpiler)} not found, skipped");
                 return;
             }
             try
@@ -62,51 +91,14 @@ namespace PoniesOfTheRim.UniquePonies
             catch (Exception ex)
             {
                 _failed++;
-                PonyLog.Error($"Unique pawns: ошибка патча '{label}':\n{ex}");
+                PonyLog.Error($"Unique: {Describe(prefix ?? postfix ?? transpiler)} failed on {original.DeclaringType?.Name}.{original.Name}\n{ex}");
             }
         }
 
-        private static void ForceInitUniversalAddons()
+        private static string Describe(HarmonyMethod patch)
         {
-            try
-            {
-                var addons = Utilities.UniversalBodyAddons;
-                int total = addons?.Sum(a => a.GetVariantCount()) ?? 0;
-
-                PonyLog.Trace($"Universal addons: {addons?.Count ?? 0} аддонов, {total} вариантов.");
-            }
-            catch (Exception ex)
-            {
-                PonyLog.WarnCaught("Не удалось пересобрать универсальные аддоны HAR — часть внешности может не отображаться.", ex);
-            }
-        }
-
-        private static void PatchStylingStationIfAvailable()
-        {
-            try
-            {
-                var stylingType = AccessTools.TypeByName("AlienRace.StylingStation");
-                if (stylingType == null) return;
-
-                var doAddonInfo = AccessTools.Method(
-                    stylingType,
-                    "DoAddonInfo",
-                    new[] { typeof(UnityEngine.Rect),
-                            typeof(AlienPartGenerator.BodyAddon),
-                            typeof(System.Collections.Generic.List<AlienPartGenerator.BodyAddon>) });
-
-                if (doAddonInfo == null) return;
-
-                TryPatch(
-                    doAddonInfo,
-                    postfix: new HarmonyMethod(typeof(StylingStationRefresh),
-                        nameof(StylingStationRefresh.DoAddonInfo_Postfix)),
-                    label: "StylingStation.DoAddonInfo (refresh)");
-            }
-            catch (Exception ex)
-            {
-                PonyLog.Warn($"Не удалось пропатчить HAR StylingStation (некритично): {ex.Message}");
-            }
+            MethodInfo method = patch?.method;
+            return method == null ? "?" : method.DeclaringType?.Name + "." + method.Name;
         }
     }
 }

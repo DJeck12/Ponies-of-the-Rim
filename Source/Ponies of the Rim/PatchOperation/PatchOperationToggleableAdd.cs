@@ -4,61 +4,47 @@ using Verse;
 
 namespace PoniesOfTheRim.PatchOperation
 {
-    public class PatchOperationToggleableAdd : Verse.PatchOperation
+    public class PatchOperationToggleableAdd : PatchOperationToggleable
     {
         public string xpath;
         public XmlContainer value;
-        public string settingId;
-        public bool defaultState;
-        public string label;
-        public string description;
-
-        protected bool CanRun()
-        {
-            return PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, defaultState);
-        }
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (!CanRun())
+            if (!Enabled)
             {
                 return true;
             }
 
-            bool result = false;
+            bool matched = false;
             try
             {
                 foreach (object item in xml.SelectNodes(xpath))
                 {
-                    if (item is not XmlNode node)
+                    if (item is not XmlNode target)
                     {
                         continue;
                     }
-                    XmlNode xmlNode = value.node;
-                    if (xmlNode.HasChildNodes)
+                    XmlNode source = value.node;
+                    if (source.HasChildNodes)
                     {
-                        foreach (XmlNode childNode in xmlNode.ChildNodes)
+                        foreach (XmlNode child in source.ChildNodes)
                         {
-                            node.AppendChild(node.OwnerDocument.ImportNode(childNode, true));
+                            target.AppendChild(target.OwnerDocument.ImportNode(child, true));
                         }
                     }
                     else
                     {
-                        node.AppendChild(node.OwnerDocument.ImportNode(xmlNode, true));
+                        target.AppendChild(target.OwnerDocument.ImportNode(source, true));
                     }
-                    result = true;
+                    matched = true;
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.Error($"PatchOperationToggleableAdd: {ex.Message}");
+                PonyLog.Error($"Patches: toggle {settingId} failed on {xpath}: {ex.Message}");
             }
-            return result;
-        }
-
-        public override void Complete(string modIdentifier)
-        {
-            base.Complete(modIdentifier);
+            return matched;
         }
     }
 }

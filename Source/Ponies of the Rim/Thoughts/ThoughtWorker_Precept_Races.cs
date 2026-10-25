@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using RimWorld;
 using RimWorld.Planet;
 using Verse;
@@ -23,7 +23,7 @@ namespace PoniesOfTheRim.Thoughts
                     if (cachedExtension == null)
                     {
                         PonyLog.ErrorOnce("ThoughtWorker_Precept_Races|" + def.defName,
-                            "Мысли: у ThoughtDef '" + def.defName + "' нет ThoughtExtension — мысль не будет работать.");
+                            $"Thoughts: ThoughtDef {def.defName} has no ThoughtExtension, thought disabled");
                     }
                 }
                 return cachedExtension;

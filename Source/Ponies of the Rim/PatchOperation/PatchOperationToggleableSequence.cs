@@ -1,56 +1,47 @@
 ﻿using System.Collections.Generic;
 using System.Xml;
-using Verse;
 
 namespace PoniesOfTheRim.PatchOperation
 {
-    public class PatchOperationToggleableSequence : Verse.PatchOperation
+    public class PatchOperationToggleableSequence : PatchOperationToggleable
     {
         public List<Verse.PatchOperation> operations;
         public Verse.PatchOperation lastFailedOperation;
 
-        public string settingId;
-        public bool defaultState;
-        public string label;
-        public string description;
-
-        protected bool CanRun()
-        {
-            return PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, defaultState);
-        }
+        private readonly List<Verse.PatchOperation> failedOperations = new List<Verse.PatchOperation>();
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (!CanRun())
+            if (!Enabled)
             {
                 return true;
             }
 
             if (operations == null)
             {
-                PonyLog.Warn($"PatchOperationToggleableSequence '{settingId}': список operations равен null — пропуск.");
+                PonyLog.Warn($"Patches: toggle {settingId} has no operations");
                 return false;
             }
 
-            bool result = true;
+            failedOperations.Clear();
             foreach (Verse.PatchOperation operation in operations)
             {
                 if (!operation.Apply(xml))
                 {
                     lastFailedOperation = operation;
-                    result = false;
+                    failedOperations.Add(operation);
                 }
             }
-            return result;
+            return failedOperations.Count == 0;
         }
 
         public override string ToString()
         {
-            int count = (operations != null) ? operations.Count : 0;
+            int count = operations?.Count ?? 0;
             string text = $"{base.ToString()}(settingId={settingId}, count={count}";
-            if (lastFailedOperation != null)
+            if (failedOperations.Count > 0)
             {
-                text += $", lastFailedOperation={lastFailedOperation}";
+                text += $", failed={string.Join("; ", failedOperations)}";
             }
             return text + ")";
         }

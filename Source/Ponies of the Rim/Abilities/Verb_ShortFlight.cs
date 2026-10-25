@@ -99,7 +99,6 @@ namespace PoniesOfTheRim.Abilities
                 Building edifice = map.edificeGrid[i];
                 if (edifice?.def?.building != null && edifice.def.building.isNaturalRock)
                     return true;
-                // Стена или амбразура крытого помещения: рядом с ней пол под крышей.
                 return !pathGrid.WalkableFast(i) && PegasusFlightReachability.BordersRoofedRoom(map, x, z);
             }
         }

@@ -103,12 +103,12 @@ namespace PoniesOfTheRim
                     }
                     else
                     {
-                        PonyLog.Warn($"Отложенный квест '{delayed.questDefName}' не найден в DefDatabase — удалён из очереди.");
+                        PonyLog.Warn($"Comms: delayed quest {delayed.questDefName} not found, removed from queue");
                     }
                 }
                 catch (Exception ex)
                 {
-                    PonyLog.ErrorCaught($"Не удалось запустить отложенный квест '{delayed.questDefName}' — квест пропущен.", ex);
+                    PonyLog.ErrorCaught($"Comms: delayed quest {delayed.questDefName} failed to start, skipped", ex);
                 }
             }
         }

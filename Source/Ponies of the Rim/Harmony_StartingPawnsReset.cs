@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
@@ -51,7 +51,7 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception ex)
                 {
-                    PonyLog.WarnCaught("Сценарии: не удалось прочитать запросы стартовых пешек — сброс пропущен.", ex);
+                    PonyLog.WarnCaught("Scenarios: starting pawn requests not readable, reset skipped", ex);
                     continue;
                 }
                 if (requests == null || requests.Count == 0)
@@ -76,18 +76,16 @@ namespace PoniesOfTheRim
             string scenario = Current.Game?.Scenario?.name ?? "?";
             if (!HasStaticRequestList)
             {
-                PonyLog.TraceOnce("ScenarioReset.NoStaticList", "Сценарии: StartingPawnUtility не хранит запросы стартовых пешек в статическом поле — сбрасывать нечего.");
+                PonyLog.TraceOnce("ScenarioReset.NoStaticList", "Scenarios: StartingPawnUtility keeps no static request list, nothing to reset");
             }
             else if (cleared > 0)
             {
-                PonyLog.Trace("Сценарии: перед настройкой «" + scenario + "» сброшено запросов стартовых пешек от прошлой настройки: " + cleared + " (" + JoinSummary(summary) + ").");
+                PonyLog.Trace($"Scenarios: {cleared} starting pawn requests from the previous setup cleared before {scenario} ({JoinSummary(summary)})");
             }
             PawnKindDef restriction = ReadHarRestriction();
             if (restriction != null)
             {
-                PonyLog.Trace("Сценарии: в HAR выбрана стартовая раса «" + (restriction.label ?? restriction.defName) + "» (" + restriction.defName + "). "
-                    + "HAR применяет её в каждом сценарии, где этот вид указан в startingColonists фракции игрока (даже с шансом 0), "
-                    + "пока на иконке рядом с «Случайно» не выбрано «Нет».");
+                PonyLog.Trace($"Scenarios: HAR starting race restriction is {restriction.defName}, it applies to every scenario that lists this kind");
             }
         }
 
@@ -99,14 +97,13 @@ namespace PoniesOfTheRim
                 try
                 {
                     PawnGenerationRequest request = requests[i];
-                    key = (request.KindDef?.defName ?? "без вида") + " / " + (request.Faction?.def?.defName ?? "без фракции");
+                    key = (request.KindDef?.defName ?? "no kind") + "/" + (request.Faction?.def?.defName ?? "no faction");
                 }
                 catch (Exception)
                 {
-                    key = "не прочитан";
+                    key = "unreadable";
                 }
-                int count;
-                summary.TryGetValue(key, out count);
+                summary.TryGetValue(key, out int count);
                 summary[key] = count + 1;
             }
         }
@@ -124,7 +121,7 @@ namespace PoniesOfTheRim
                 {
                     builder.Append(", ");
                 }
-                builder.Append(pair.Key).Append(" ×").Append(pair.Value);
+                builder.Append(pair.Key).Append(" x").Append(pair.Value);
             }
             return builder.ToString();
         }
@@ -141,7 +138,7 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                PonyLog.TraceOnce("ScenarioReset.HarRestrictionRead", "Сценарии: не удалось прочитать выбор стартовой расы HAR: " + ex.Message);
+                PonyLog.TraceOnce("ScenarioReset.HarRestrictionRead", $"Scenarios: HAR starting race restriction not readable ({ex.Message})");
                 return null;
             }
         }
@@ -163,8 +160,8 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Сценарии: не удалось найти запросы стартовых пешек в StartingPawnUtility — сброс при смене сценария отключён.", ex);
-                return new FieldInfo[0];
+                PonyLog.WarnCaught("Scenarios: request lists in StartingPawnUtility not found, reset on scenario change disabled", ex);
+                return Array.Empty<FieldInfo>();
             }
         }
 
@@ -175,14 +172,14 @@ namespace PoniesOfTheRim
                 FieldInfo field = AccessTools.Field(typeof(AlienRace.HarmonyPatches), "startingPawnKindRestriction");
                 if (field == null || !field.IsStatic || field.FieldType != typeof(PawnKindDef))
                 {
-                    PonyLog.Trace("Сценарии: поле HAR startingPawnKindRestriction не найдено — диагностика выбора стартовой расы отключена.");
+                    PonyLog.Trace("Scenarios: HAR startingPawnKindRestriction not found, starting race diagnostics off");
                     return null;
                 }
                 return AccessTools.StaticFieldRefAccess<PawnKindDef>(field);
             }
             catch (Exception ex)
             {
-                PonyLog.Trace("Сценарии: нет доступа к выбору стартовой расы HAR (" + ex.Message + ") — диагностика отключена.");
+                PonyLog.Trace($"Scenarios: HAR startingPawnKindRestriction not accessible ({ex.Message}), starting race diagnostics off");
                 return null;
             }
         }

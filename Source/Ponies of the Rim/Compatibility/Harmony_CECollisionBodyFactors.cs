@@ -34,9 +34,9 @@ namespace PoniesOfTheRim.Compatibility
                 __result.x *= ext.flyingWidthFactor;
                 __result.y *= ext.flyingHeightFactor;
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
-                PonyLog.WarnCaught("CE: не удалось рассчитать габариты летящей пешки.", arg);
+                PonyLog.WarnCaught("CE: flying body size failed", ex);
             }
         }
     }

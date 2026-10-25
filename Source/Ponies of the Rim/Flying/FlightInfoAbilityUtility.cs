@@ -12,7 +12,7 @@ namespace PoniesOfTheRim.Flying
         {
             Pawn_AbilityTracker tracker = pawn?.abilities;
             List<Ability> abilities = tracker?.abilities;
-            if (abilities == null)
+            if (abilities == null || MultiplayerCompat.InInterface)
             {
                 return false;
             }
@@ -31,7 +31,7 @@ namespace PoniesOfTheRim.Flying
                 }
                 else
                 {
-                    (stale ?? (stale = new List<AbilityDef>(1))).Add(info.def);
+                    (stale ??= new List<AbilityDef>(1)).Add(info.def);
                 }
             }
             bool changed = false;
@@ -45,7 +45,7 @@ namespace PoniesOfTheRim.Flying
                 changed = true;
             }
 
-            if (wanted != null && !has && !MultiplayerCompat.InInterface)
+            if (wanted != null && !has)
             {
                 tracker.GainAbility(wanted);
                 changed = true;

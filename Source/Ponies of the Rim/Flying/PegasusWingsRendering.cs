@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Xml;
 using AlienRace;
@@ -219,7 +219,7 @@ namespace PoniesOfTheRim.Flying
             if (!_wingTagDefResolved)
             {
                 PonyThreadGuard.ReportIfOffMain(
-                    "CompPegasusWingsRenderer.CompRenderNodes (резолв тега)",
+                    "CompPegasusWingsRenderer.CompRenderNodes tag resolve",
                     ref _renderNodesOffMainReported);
                 _wingTagDef = DefDatabase<PawnRenderNodeTagDef>.GetNamed("PegasusWings", errorOnFail: false);
                 _wingTagDefResolved = true;
@@ -227,8 +227,7 @@ namespace PoniesOfTheRim.Flying
             if (_wingTagDef == null)
             {
                 PonyLog.WarnOnce("CompPegasusWingsRenderer.NoWingTag",
-                    "Полёт: PawnRenderNodeTagDef 'PegasusWings' не найден — анимация крыльев отключена. " +
-                    "Проверьте, что def объявлен в XML.");
+                    "Flight: PawnRenderNodeTagDef PegasusWings not found, wing animation disabled");
                 return null;
             }
 

@@ -23,7 +23,6 @@ namespace PoniesOfTheRim.Food
             List<PonyFoodGroupDef> groups = DefDatabase<PonyFoodGroupDef>.AllDefsListForReading;
             if (groups.Count == 0)
             {
-                PonyLog.Trace("PonyFoodCache: PonyFoodGroupDef не загружены (дополнение с пищевыми группами не активно) — кэш пуст.");
                 return;
             }
             for (int i = 0; i < groups.Count; i++)
@@ -60,14 +59,12 @@ namespace PoniesOfTheRim.Food
             {
                 return EmptySet;
             }
-            HashSet<ThingDef> members;
-            return GroupMembers.TryGetValue(group.Root, out members) ? members : EmptySet;
+            return GroupMembers.TryGetValue(group.Root, out HashSet<ThingDef> members) ? members : EmptySet;
         }
 
         private static HashSet<ThingDef> MembersForWrite(PonyFoodGroupDef root)
         {
-            HashSet<ThingDef> members;
-            if (!GroupMembers.TryGetValue(root, out members))
+            if (!GroupMembers.TryGetValue(root, out HashSet<ThingDef> members))
             {
                 members = new HashSet<ThingDef>();
                 GroupMembers[root] = members;
@@ -194,7 +191,7 @@ namespace PoniesOfTheRim.Food
             AnyIngredientEvents = IngredientEvents.Count > 0;
             if (occupied > 0)
             {
-                PonyLog.Trace($"PonyFoodCache: ateEvent проставлен для {applied} дефов, пропущено {occupied} (поле занято другим модом).");
+                PonyLog.Trace($"Food: ateEvent set on {applied} defs, {occupied} skipped (already set by another mod)");
             }
         }
 
@@ -211,9 +208,9 @@ namespace PoniesOfTheRim.Food
                 {
                     roots.Append(", ");
                 }
-                roots.Append(pair.Key.defName).Append(" — ").Append(pair.Value.Count);
+                roots.Append(pair.Key.defName).Append(": ").Append(pair.Value.Count);
             }
-            PonyLog.Trace($"PonyFoodCache: групп {groupCount}, корневых {GroupMembers.Count} ({roots}), событий для ингредиентов {IngredientEvents.Count}.");
+            PonyLog.Trace($"Food: {groupCount} groups, {GroupMembers.Count} roots ({roots}), {IngredientEvents.Count} ingredient events");
         }
     }
 }

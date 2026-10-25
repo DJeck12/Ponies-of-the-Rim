@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -220,10 +220,10 @@ namespace PoniesOfTheRim.Flying
 
             if (PonyLog.Verbose)
             {
-                string what = kind == PegasusManeuverKind.Disengage ? "отрыв от ближнего боя" : "рывок в укрытие";
+                string what = kind == PegasusManeuverKind.Disengage ? "disengage" : "dash to cover";
                 PonyLog.TraceOnce("Flight.Maneuver." + kind,
-                    $"Полёт: манёвр «{what}» — {pawn.LabelShortCap} летит на {pawn.Position.DistanceTo(dest):F0} клеток " +
-                    $"(угроза: {threat?.LabelShortCap ?? "?"}). Сообщение выводится один раз.");
+                    $"Flight: {pawn.LabelShortCap} {what}, {pawn.Position.DistanceTo(dest):F0} cells " +
+                    $"(threat: {threat?.LabelShortCap ?? "?"})");
             }
         }
 
@@ -542,8 +542,7 @@ namespace PoniesOfTheRim.Flying
                 if (!airborne && !_hostilesByAirTraced && PonyLog.Verbose)
                 {
                     _hostilesByAirTraced = true;
-                    PonyLog.Trace($"Полёт: {pawn.LabelShortCap} не может дойти до врагов по земле — взлетает " +
-                                  $"(по воздуху достижим {byAir.LabelShortCap}). Сообщение выводится один раз.");
+                    PonyLog.Trace($"Flight: {pawn.LabelShortCap} takes off, enemies reachable only by air ({byAir.LabelShortCap})");
                 }
                 return true;
             }

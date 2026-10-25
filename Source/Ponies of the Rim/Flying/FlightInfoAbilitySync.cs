@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
@@ -28,12 +28,12 @@ namespace PoniesOfTheRim.Flying
                 }
                 catch (Exception ex)
                 {
-                    PonyLog.WarnCaught("Полёт: не удалось сверить значок постоянного полёта у пешки " + (pawn?.LabelShortCap ?? "?") + ".", ex);
+                    PonyLog.WarnCaught($"Flight: flight icon check failed for {pawn?.LabelShortCap ?? "?"}", ex);
                 }
             }
             if (changed > 0)
             {
-                PonyLog.Trace("Полёт: значок постоянного полёта сверен с расой, изменено пешек: " + changed + ".");
+                PonyLog.Trace($"Flight: flight icon synced with race on {changed} pawns");
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -7,7 +7,6 @@ using Verse;
 
 namespace PoniesOfTheRim
 {
-
     public static class Patch_QuestNode_GeneratePawn_RaceAware
     {
         private static readonly Dictionary<FactionDef, ThingDef> _raceCache =
@@ -48,8 +47,7 @@ namespace PoniesOfTheRim
                 {
                     PonyLog.WarnOnce(
                         "QuestPawnRace.NoAlienKind|" + faction.def.defName,
-                        "Квесты: для фракции '" + faction.def.defName + "' не найден PawnKindDef расы "
-                        + factionPrimaryAlienRace.defName + " — квестовая пешка останется человеком.");
+                        $"Quests: faction {faction.def.defName} has no {factionPrimaryAlienRace.defName} PawnKindDef, quest pawn stays human");
                     return;
                 }
 
@@ -59,20 +57,18 @@ namespace PoniesOfTheRim
                     if (slate.TryGet(varName, out PawnKindDef existing) && existing == kindDef)
                     {
                         slate.Set(varName, replacement);
-                        PonyLog.Trace("Квесты: вид квестовой пешки заменён: slate['" + varName + "'] "
-                            + kindDef.defName + " → " + replacement.defName + " (фракция " + faction.def.defName + ").");
+                        PonyLog.Trace($"Quests: slate {varName} {kindDef.defName} replaced with {replacement.defName} ({faction.def.defName})");
                         return;
                     }
                 }
 
-                PonyLog.WarnOnce(
+                PonyLog.TraceOnce(
                     "QuestPawnRace.NoSlateVar|" + faction.def.defName + "|" + kindDef.defName,
-                    "Квесты: не найдена slate-переменная для kindDef '" + kindDef.defName + "' во фракции '"
-                    + faction.def.defName + "'. Если повторяется — добавьте имя переменной в KnownKindSlateVars.");
+                    $"Quests: {kindDef.defName} is not in a known slate variable ({faction.def.defName}), quest pawn stays human");
             }
             catch (Exception ex)
             {
-                PonyLog.ErrorCaught("Квесты: не удалось подобрать расу для квестовой пешки.", ex);
+                PonyLog.ErrorCaught("Quests: race for a quest pawn not chosen", ex);
             }
         }
 

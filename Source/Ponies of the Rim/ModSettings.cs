@@ -90,7 +90,7 @@ namespace PoniesOfTheRim
             }
 
             if (registered > 0)
-                PonyLog.Trace($"Зарегистрировано {registered} переключаемых способностей в настройках.");
+                PonyLog.Trace($"Settings: {registered} ability toggles");
         }
     }
 
@@ -148,7 +148,7 @@ namespace PoniesOfTheRim
                     }
                     catch (Exception ex)
                     {
-                        PonyLog.Error("Ошибка перечисления патчей в " + patchDir + ": " + ex.Message);
+                        PonyLog.Warn($"Settings: cannot list patches in {patchDir}: {ex.Message}");
                         continue;
                     }
                     foreach (string file in files)
@@ -185,7 +185,7 @@ namespace PoniesOfTheRim
                                 string description = op.SelectSingleNode("description")?.InnerText?.Trim();
                                 if (Prefs.DevMode && defaultPatchToggles.TryGetValue(id, out bool prev) && prev != defaultState)
                                 {
-                                    PonyLog.Warn("settingId '" + id + "' объявлен с разными defaultState в разных файлах — использую последний.");
+                                    PonyLog.Warn($"Settings: {id} has different defaultState values in different files, using the last one");
                                 }
                                 patchLabels[id] = ((!string.IsNullOrEmpty(label)) ? label : id);
                                 patchDescriptions[id] = description ?? string.Empty;
@@ -199,12 +199,12 @@ namespace PoniesOfTheRim
                         }
                         catch (Exception ex)
                         {
-                            PonyLog.Error("Ошибка чтения патч-XML " + file + ": " + ex.Message);
+                            PonyLog.Warn($"Settings: cannot read {file}: {ex.Message}");
                         }
                     }
                 }
             }
-            PonyLog.Trace("Тумблеры патчей: " + togglesFound + " записей из " + filesParsed + " файлов по всем модам.");
+            PonyLog.Trace($"Settings: {togglesFound} patch toggles in {filesParsed} files");
             _patchSnapshot = new Dictionary<string, bool>(settings.patchToggles);
         }
 
@@ -241,7 +241,7 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Полёт: не удалось посадить пегасов после смены настройки перелёта.", ex);
+                PonyLog.WarnCaught("Flight: could not land pegasi after the setting changed", ex);
             }
         }
 
@@ -267,7 +267,6 @@ namespace PoniesOfTheRim
                 DrawGeneralTab(contentRect);
             else
                 DrawPatchTab(contentRect);
-
         }
 
         private void DrawGeneralTab(Rect rect)
@@ -396,7 +395,7 @@ namespace PoniesOfTheRim
             Rect row = ls.GetRect(28f);
             float btnW = row.width * 0.25f;
 
-            if (Widgets.ButtonText(new Rect(row.x, row.y, btnW, 28f), "SettingsDefulatAll".Translate()))
+            if (Widgets.ButtonText(new Rect(row.x, row.y, btnW, 28f), "SettingsDefaultAll".Translate()))
                 DefaultAllData();
 
             ls.Gap(6f);

@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using AlienRace;
-using RimWorld;
 using Verse;
 
 namespace PoniesOfTheRim.Genetics
 {
     public static class PonyRacialGeneUtility
     {
-        private static PonyRacialGeneGroupDef[] _groups = new PonyRacialGeneGroupDef[0];
+        private static PonyRacialGeneGroupDef[] _groups = Array.Empty<PonyRacialGeneGroupDef>();
 
         public static void BuildCache()
         {
             if (!ModsConfig.BiotechActive)
             {
-                _groups = new PonyRacialGeneGroupDef[0];
+                _groups = Array.Empty<PonyRacialGeneGroupDef>();
                 return;
             }
             List<PonyRacialGeneGroupDef> list = new List<PonyRacialGeneGroupDef>();
@@ -28,7 +27,7 @@ namespace PoniesOfTheRim.Genetics
                 }
             }
             _groups = list.ToArray();
-            PonyLog.Trace("Genetics: групп расовых генов загружено — " + _groups.Length + ".");
+            PonyLog.Trace($"Genetics: {_groups.Length} racial gene groups");
         }
 
         public static void Normalize(List<GeneDef> genes, Pawn mother, Pawn father)
@@ -37,7 +36,7 @@ namespace PoniesOfTheRim.Genetics
             {
                 return;
             }
-            ThingDef childRace = ((mother != null) ? mother.def : null) ?? ((father != null) ? father.def : null);
+            ThingDef childRace = mother?.def ?? father?.def;
             for (int i = 0; i < _groups.Length; i++)
             {
                 PonyRacialGeneGroupDef group = _groups[i];
@@ -49,9 +48,9 @@ namespace PoniesOfTheRim.Genetics
                 {
                     NormalizeGroup(group, genes, childRace, mother, father);
                 }
-                catch (Exception e)
+                catch (Exception ex)
                 {
-                    PonyLog.ErrorCaught("Genetics: сбой нормализации группы '" + group.defName + "'", e);
+                    PonyLog.ErrorCaught($"Genetics: failed to normalize group {group.defName}", ex);
                 }
             }
         }
@@ -100,7 +99,7 @@ namespace PoniesOfTheRim.Genetics
                     return;
                 }
                 genes.Add(pick);
-                PonyLog.Trace("Genetics: ребёнку добавлен расовый ген '" + pick.defName + "' (группа '" + group.defName + "').");
+                PonyLog.Trace($"Genetics: child got {pick.defName} ({group.defName})");
                 return;
             }
 
@@ -112,12 +111,12 @@ namespace PoniesOfTheRim.Genetics
             int maxAllowed = 1;
             if (group.inheritMultipleFromParent)
             {
-                int m = CountInheritableRacialGenes(group, mother);
-                int f = CountInheritableRacialGenes(group, father);
-                int parentMax = ((m > f) ? m : f);
-                if (parentMax > maxAllowed)
+                int fromParents = Math.Max(
+                    CountInheritableRacialGenes(group, mother),
+                    CountInheritableRacialGenes(group, father));
+                if (fromParents > maxAllowed)
                 {
-                    maxAllowed = parentMax;
+                    maxAllowed = fromParents;
                 }
             }
 
@@ -127,7 +126,7 @@ namespace PoniesOfTheRim.Genetics
             }
 
             EnforceLimit(group, genes, distinct, maxAllowed);
-            PonyLog.Trace("Genetics: расовых генов у ребёнка было " + totalRacial + ", лимит " + maxAllowed + " (группа '" + group.defName + "').");
+            PonyLog.Trace($"Genetics: child had {totalRacial} racial genes, limit {maxAllowed} ({group.defName})");
         }
 
         private static void EnforceLimit(PonyRacialGeneGroupDef group, List<GeneDef> genes, List<GeneDef> distinct, int maxAllowed)
@@ -167,12 +166,12 @@ namespace PoniesOfTheRim.Genetics
             {
                 return candidates.RandomElement();
             }
-            return group.RandomGeneByWeight((GeneDef g) => CanHaveGene(g, childRace));
+            return group.RandomGeneByWeight(g => CanHaveGene(g, childRace));
         }
 
         private static void CollectFromParent(PonyRacialGeneGroupDef group, Pawn parent, ThingDef childRace, List<GeneDef> outList)
         {
-            if (parent == null || parent.genes == null)
+            if (parent?.genes == null)
             {
                 return;
             }
@@ -193,7 +192,7 @@ namespace PoniesOfTheRim.Genetics
 
         private static int CountInheritableRacialGenes(PonyRacialGeneGroupDef group, Pawn parent)
         {
-            if (parent == null || parent.genes == null)
+            if (parent?.genes == null)
             {
                 return 0;
             }
@@ -228,8 +227,9 @@ namespace PoniesOfTheRim.Genetics
             {
                 return RaceRestrictionSettings.CanHaveGene(gene, race, xeno: false);
             }
-            catch
+            catch (Exception ex)
             {
+                PonyLog.WarnCaught("Genetics: HAR gene restriction check failed, gene allowed", ex);
                 return true;
             }
         }

@@ -1,4 +1,4 @@
-﻿using AlienRace;
+using AlienRace;
 using HarmonyLib;
 using PoniesOfTheRim.Multiplayer;
 using RimWorld;
@@ -16,14 +16,6 @@ namespace PoniesOfTheRim.Flying
 {
     public static class Patch_Pawn_Flying
     {
-        private static readonly AccessTools.FieldRef<Pawn, Pawn_FlightTracker> flightRef = CreateFlightRef();
-
-        private static AccessTools.FieldRef<Pawn, Pawn_FlightTracker> CreateFlightRef()
-        {
-            try { return AccessTools.FieldRefAccess<Pawn, Pawn_FlightTracker>("flight"); }
-            catch { return null; }
-        }
-
         public static void Postfix(Pawn __instance, ref bool __result)
         {
             try
@@ -37,11 +29,10 @@ namespace PoniesOfTheRim.Flying
                 if (__result) return;
                 if (!PegasusFlightUtility.IsPegasusConstantFlight(__instance)) return;
 
-                if (flightRef != null && flightRef(__instance) == null)
+                if (__instance.flight == null)
                 {
                     PonyLog.WarnOnce("Patch_Pawn_Flying.NoFlightTracker",
-                        $"Полёт: у пешки {__instance.LabelShortCap} нет Pawn.flight — флаг Flying не выставлен, " +
-                        "чтобы не вызвать NRE в сторонних модах.");
+                        $"Flight: {__instance.LabelShortCap} has no Pawn.flight, Flying left false");
                     return;
                 }
 
@@ -49,15 +40,13 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой проверки, летит ли пешка.", e);
+                PonyLog.WarnCaught("Flight: Flying check failed", e);
             }
         }
     }
 
     public static class Patch_FlightTracker_FlightTick
     {
-        private static readonly AccessTools.FieldRef<Pawn_FlightTracker, Pawn> pawnRef = CreatePawnRef();
-
         private static readonly FieldInfo fiFlightState =
             AccessTools.Field(typeof(Pawn_FlightTracker), "flightState");
         private static readonly FieldInfo fiCooldown =
@@ -66,27 +55,38 @@ namespace PoniesOfTheRim.Flying
         private static object _flyingEnumValue;
         private static readonly object BoxedZero = 0;
 
-        private static AccessTools.FieldRef<Pawn_FlightTracker, Pawn> CreatePawnRef()
+        static Patch_FlightTracker_FlightTick()
         {
-            try { return AccessTools.FieldRefAccess<Pawn_FlightTracker, Pawn>("pawn"); }
-            catch { return null; }
+            if (fiFlightState != null && fiCooldown != null)
+                return;
+
+            List<string> missing = new List<string>();
+            if (fiFlightState == null)
+                missing.Add("flightState");
+            if (fiCooldown == null)
+                missing.Add("flightCooldownTicks");
+
+            Type type = typeof(Pawn_FlightTracker);
+            List<string> fields = new List<string>();
+            foreach (FieldInfo field in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
+                fields.Add(field.Name);
+
+            PonyLog.Warn($"Flight: {string.Join(", ", missing)} not found on {type.Name} " +
+                         $"(fields: {string.Join(", ", fields)}), vanilla flight state is not overridden");
         }
 
-        public static bool Prefix(Pawn_FlightTracker __instance)
+        public static bool Prefix(Pawn_FlightTracker __instance, Pawn ___pawn)
         {
             try
             {
-                if (pawnRef == null) return true;
-                Pawn pawn = pawnRef(__instance);
-                if (!PegasusFlightUtility.IsPegasusConstantFlight(pawn))
+                if (!PegasusFlightUtility.IsPegasusConstantFlight(___pawn))
                     return true;
-                if (pawn.Dead || pawn.Downed)
+                if (___pawn.Dead || ___pawn.Downed)
                     return true;
 
                 if (fiFlightState != null)
                 {
-                    if (_flyingEnumValue == null)
-                        _flyingEnumValue = Enum.Parse(fiFlightState.FieldType, "Flying");
+                    _flyingEnumValue ??= Enum.Parse(fiFlightState.FieldType, "Flying");
                     fiFlightState.SetValue(__instance, _flyingEnumValue);
                 }
 
@@ -97,36 +97,24 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой обновления полёта пешки.", e);
+                PonyLog.WarnCaught("Flight: flight tracker tick failed", e);
                 return true;
             }
         }
     }
 
-
     public static class Patch_FlightTracker_ForceLand
     {
-        private static readonly AccessTools.FieldRef<Pawn_FlightTracker, Pawn> pawnRef = CreatePawnRef();
-
-        private static AccessTools.FieldRef<Pawn_FlightTracker, Pawn> CreatePawnRef()
-        {
-            try { return AccessTools.FieldRefAccess<Pawn_FlightTracker, Pawn>("pawn"); }
-            catch { return null; }
-        }
-
-        public static bool Prefix(Pawn_FlightTracker __instance)
+        public static bool Prefix(Pawn ___pawn)
         {
             try
             {
-                if (pawnRef == null) return true;
-                Pawn pawn = pawnRef(__instance);
-                if (!PegasusFlightUtility.IsPegasusConstantFlight(pawn)) return true;
-                if (pawn.Dead || pawn.Downed) return true;
-                return false;
+                if (!PegasusFlightUtility.IsPegasusConstantFlight(___pawn)) return true;
+                return ___pawn.Dead || ___pawn.Downed;
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой принудительной посадки.", e);
+                PonyLog.WarnCaught("Flight: forced landing check failed", e);
                 return true;
             }
         }
@@ -225,11 +213,15 @@ namespace PoniesOfTheRim.Flying
                     FI_costDanger?.SetValue(tuning, 0);
                     CachedTuningNullable = Activator.CreateInstance(TuningNullableType, tuning);
                 }
-                catch
+                catch (Exception e)
                 {
                     CachedTuningNullable = null;
+                    PonyLog.Warn($"Flight: path cost tuning not created, flying over obstacles uses ground paths ({e.Message})");
                 }
             }
+
+            if (CreateRequestOverload == null)
+                PonyLog.Warn("Flight: PathFinder.CreateRequest with cost tuning not found, flying over obstacles uses ground paths");
         }
 
         public static MethodBase FindTargetMethod()
@@ -264,8 +256,7 @@ namespace PoniesOfTheRim.Flying
 
                 if (PonyLog.Verbose)
                     PonyLog.TraceOnce("Flight.GroundPathFallback",
-                        $"Полёт: {pawn.LabelShortCap} не долетит до {DescribeTarget(target)} (крыша, туман или скала на пути) — " +
-                        "путь строится по земле. Сообщение выводится один раз.");
+                        $"Flight: {pawn.LabelShortCap} cannot fly to {DescribeTarget(target)} (roof, fog or rock in the way), ground path used");
                 return true;
             }
 
@@ -296,7 +287,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.ErrorCaught("Полёт: не удалось построить маршрут для летящей пешки.", e);
+                PonyLog.ErrorCaught("Flight: path request for a flying pawn failed", e);
                 return true;
             }
         }
@@ -315,7 +306,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой проверки цели маршрута по воздуху — маршрут строится как раньше.", e);
+                PonyLog.WarnCaught("Flight: air reachability check failed, normal path used", e);
                 return true;
             }
         }
@@ -358,7 +349,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой проверки достижимости по воздуху — оставлен ванильный результат.", e);
+                PonyLog.WarnCaught("Flight: air reachability failed, vanilla result kept", e);
             }
         }
     }
@@ -394,13 +385,12 @@ namespace PoniesOfTheRim.Flying
                 if (!_flipTraced && PonyLog.Verbose)
                 {
                     _flipTraced = true;
-                    PonyLog.Trace($"Полёт: у {pawn.LabelShortCap} нет пути к краю карты по земле, но есть по воздуху — " +
-                                  "CanReachMapEdge засчитан как «да» (сообщение выводится один раз).");
+                    PonyLog.Trace($"Flight: {pawn.LabelShortCap} has no ground route to the map edge but has one by air, CanReachMapEdge returns true");
                 }
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой проверки выхода к краю карты по воздуху — оставлен ванильный результат.", e);
+                PonyLog.WarnCaught("Flight: map edge check by air failed, vanilla result kept", e);
             }
         }
     }
@@ -436,7 +426,6 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-
     public static class Patch_GenGrid_WalkableBy
     {
         public static void Postfix(IntVec3 c, Map map, Pawn pawn, ref bool __result)
@@ -469,7 +458,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой проверки клетки при поиске позиции для стрельбы.", e);
+                PonyLog.WarnCaught("Flight: cast position cell check failed", e);
                 return true;
             }
         }
@@ -528,29 +517,12 @@ namespace PoniesOfTheRim.Flying
 
     public static class Patch_TryEnterNextPathCell_BlockFog
     {
-        private static readonly AccessTools.FieldRef<Pawn_PathFollower, Pawn> pawnRef = CreatePawnRef();
-        private static readonly AccessTools.FieldRef<Pawn_PathFollower, IntVec3> nextCellRef = CreateNextCellRef();
-
-        private static AccessTools.FieldRef<Pawn_PathFollower, Pawn> CreatePawnRef()
+        public static bool Prefix(Pawn ___pawn, IntVec3 ___nextCell)
         {
-            try { return AccessTools.FieldRefAccess<Pawn_PathFollower, Pawn>("pawn"); }
-            catch { return null; }
-        }
-
-        private static AccessTools.FieldRef<Pawn_PathFollower, IntVec3> CreateNextCellRef()
-        {
-            try { return AccessTools.FieldRefAccess<Pawn_PathFollower, IntVec3>("nextCell"); }
-            catch { return null; }
-        }
-
-        public static bool Prefix(Pawn_PathFollower __instance)
-        {
-            if (pawnRef == null || nextCellRef == null) return true;
-
-            Pawn pawn = pawnRef(__instance);
+            Pawn pawn = ___pawn;
             if (!PegasusFlightUtility.IsPegasusConstantFlight(pawn)) return true;
 
-            IntVec3 next = nextCellRef(__instance);
+            IntVec3 next = ___nextCell;
             if (!next.IsValid || pawn.Map == null) return true;
 
             if (next.Fogged(pawn.Map))
@@ -592,14 +564,12 @@ namespace PoniesOfTheRim.Flying
 
             if (PonyLog.Verbose)
                 PonyLog.TraceOnce(fog ? "Flight.LandAtFogEdge" : "Flight.LandAtRoofEdge",
-                    $"Полёт: {pawn.LabelShortCap} сел у края {(fog ? "неразведанной области" : "крыши")} — " +
-                    (overGround ? "дальше идёт пешком." : "висел над постройкой, перенесён на землю.") +
-                    " Сообщение выводится один раз.");
+                    $"Flight: {pawn.LabelShortCap} landed at the edge of {(fog ? "fog" : "a roof")}, " +
+                    (overGround ? "continues on foot" : "was over a building, moved to ground"));
 
             return overGround;
         }
     }
-
 
     public static class Patch_TraverseParms_AvoidFog
     {
@@ -610,7 +580,6 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-
     public static class Patch_GetPathContext
     {
         public static void Postfix(Pawn __instance, Pathing pathing, ref PathingContext __result)
@@ -620,11 +589,9 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-
     public static class Patch_BodyAddon_CanDrawAddon
     {
-        private static int _threadReported;
-        private static readonly string[] OurWingPathFragments = new string[4]
+        private static readonly string[] OurWingPathFragments =
         {
             "wing_pegasus_", "wing_broken_", "wing_archotech_", "wing_bionic_"
         };
@@ -636,8 +603,6 @@ namespace PoniesOfTheRim.Flying
 
         public static void Postfix(AlienPartGenerator.BodyAddon __instance, Pawn pawn, ref bool __result)
         {
-
-            PonyThreadGuard.ReportIfOffMain("BodyAddon.CanDrawAddon postfix", ref _threadReported);
             if (!__result || pawn == null || __instance == null || !pawn.HasWings())
             {
                 return;
@@ -676,7 +641,6 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-
     public static class Patch_Pawn_ExposeData_SavePositionFix
     {
         private static readonly FieldInfo fiPositionInt =
@@ -714,24 +678,23 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.ErrorCaught("Полёт: сбой при сохранении позиции летящей пешки.", e);
+                PonyLog.ErrorCaught("Flight: could not move a flying pawn to ground for saving", e);
             }
         }
 
-        public static void Postfix(Pawn __instance)
+        public static void Finalizer(Pawn __instance)
         {
             try
             {
-                if (savedOriginalPositions.TryGetValue(__instance, out IntVec3 original))
-                {
-                    savedOriginalPositions.Remove(__instance);
-                    if (fiPositionInt != null)
-                        fiPositionInt.SetValue(__instance, original);
-                }
+                if (!savedOriginalPositions.TryGetValue(__instance, out IntVec3 original))
+                    return;
+
+                savedOriginalPositions.Remove(__instance);
+                fiPositionInt?.SetValue(__instance, original);
             }
             catch (Exception e)
             {
-                PonyLog.ErrorCaught("Полёт: сбой при восстановлении позиции летящей пешки.", e);
+                PonyLog.ErrorCaught("Flight: could not restore a flying pawn's position after saving", e);
             }
         }
 
@@ -786,7 +749,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.ErrorCaught("Полёт: не удалось восстановить природные крылья пешки.", e);
+                PonyLog.ErrorCaught("Flight: natural wings not restored", e);
             }
         }
 
@@ -990,7 +953,7 @@ namespace PoniesOfTheRim.Flying
             }
 
             if (disposed > 0)
-                PonyLog.Trace($"Полёт: при выгрузке игры освобождено сеток полёта — {disposed}.");
+                PonyLog.Trace($"Flight: {disposed} flight grids freed on game unload");
         }
 
         public static void InvalidateCache(int mapId)
@@ -1071,7 +1034,7 @@ namespace PoniesOfTheRim.Flying
             PegasusFlightPathGridCustomizer.ScheduleDispose(combinedGrid);
 
             PonyLog.TraceOnce("CombinedPathGridCustomizer|" + first.GetType().FullName,
-                $"Полёт: сетка полёта объединена с чужой ({first.GetType().FullName}).");
+                $"Flight: flight grid combined with {first.GetType().FullName}");
             return combinedGrid;
         }
 
@@ -1082,7 +1045,7 @@ namespace PoniesOfTheRim.Flying
         {
             if (grid.IsCreated && grid.Length > 0 && grid.Length != numCells)
                 PonyLog.TraceOnce("CombinedPathGridCustomizer.WrongSize|" + source.GetType().FullName,
-                    $"Полёт: сетка {source.GetType().FullName} не совпадает с размером карты ({grid.Length} вместо {numCells}) — не используется.");
+                    $"Flight: {source.GetType().FullName} grid has {grid.Length} cells, map has {numCells}, ignored");
         }
 
         internal enum GridSource
@@ -1109,7 +1072,6 @@ namespace PoniesOfTheRim.Flying
         }
     }
 
-
     public static class Patch_Game_DeinitAndRemoveMap
     {
         public static void Postfix(Map map)
@@ -1129,24 +1091,20 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: не удалось освободить сетки полёта при выгрузке игры.", e);
+                PonyLog.WarnCaught("Flight: flight grids not freed on game unload", e);
             }
         }
     }
 
-
     public static class Patch_PawnDrawTracker_DrawPos_BodyBob
     {
-        private static readonly AccessTools.FieldRef<Pawn_DrawTracker, Pawn> PawnRef =
-            AccessTools.FieldRefAccess<Pawn_DrawTracker, Pawn>("pawn");
-
         private const float BobAmplitude = 0.012f;
 
-        public static void Postfix(Pawn_DrawTracker __instance, ref Vector3 __result)
+        public static void Postfix(Pawn ___pawn, ref Vector3 __result)
         {
             try
             {
-                Pawn pawn = PawnRef(__instance);
+                Pawn pawn = ___pawn;
                 if (pawn == null || !pawn.HasWings())
                     return;
 
@@ -1163,9 +1121,8 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception e)
             {
-                PonyLog.WarnCaught("Полёт: сбой анимации покачивания в полёте.", e);
+                PonyLog.WarnCaught("Flight: body bob failed", e);
             }
         }
     }
-
 }

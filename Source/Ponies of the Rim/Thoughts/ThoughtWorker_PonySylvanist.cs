@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -28,7 +28,7 @@ namespace PoniesOfTheRim.Thoughts
                     if (_sylvanistTrait == null)
                     {
                         PonyLog.ErrorOnce("ThoughtWorker_Pony_Sylvanist.NoTrait",
-                            "Мысли: TraitDef 'Pony_Sylvanist' не найден — мысль сильваниста не будет работать.");
+                            "Thoughts: TraitDef Pony_Sylvanist not found, sylvanist thought disabled");
                     }
                 }
                 return _sylvanistTrait;
@@ -46,8 +46,7 @@ namespace PoniesOfTheRim.Thoughts
                     if (cachedExtension == null)
                     {
                         PonyLog.ErrorOnce("ThoughtWorker_Pony_Sylvanist|" + def.defName,
-                            "Мысли: у ThoughtDef '" + def.defName + "' нет SylvanistExtension — мысль не будет работать. " +
-                            "Добавьте <modExtensions><li Class=\"PoniesOfTheRim.Thoughts.SylvanistExtension\"> в XML.");
+                            $"Thoughts: ThoughtDef {def.defName} has no SylvanistExtension, thought disabled");
                     }
 
                     extensionCached = true;

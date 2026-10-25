@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -83,7 +83,7 @@ namespace PoniesOfTheRim
         {
             if (TmpMaxStackHeightField == null)
             {
-                PonyLog.Warn("Карточка персонажа: поле tmpMaxElementStackHeight не найдено — метка не будет показана в строке информации пешки.");
+                PonyLog.Warn("Card: CharacterCardUtility.tmpMaxElementStackHeight not found, no cutiemark in the info row");
                 foreach (CodeInstruction instruction in instructions)
                 {
                     yield return instruction;
@@ -105,7 +105,7 @@ namespace PoniesOfTheRim
             }
             if (!injected)
             {
-                PonyLog.Warn("Карточка персонажа: точка вставки в DoTopStack не найдена — метка не будет показана в строке информации пешки.");
+                PonyLog.Warn("Card: insertion point in CharacterCardUtility.DoTopStack not found, no cutiemark in the info row");
             }
         }
 
@@ -131,7 +131,7 @@ namespace PoniesOfTheRim
             }
             if (TmpStackElementsField == null)
             {
-                PonyLog.WarnOnce("DrawCharacterCardPatch.NoTmpStackElements", "Карточка персонажа: поле tmpStackElements не найдено — метка не будет показана.");
+                PonyLog.WarnOnce("DrawCharacterCardPatch.NoTmpStackElements", "Card: CharacterCardUtility.tmpStackElements not found, no cutiemark in the info row");
             }
             else if (TmpStackElementsField.GetValue(null) is List<GenUI.AnonymousStackElement> stackElements)
             {
@@ -150,11 +150,11 @@ namespace PoniesOfTheRim
 
         private static void ClearCacheIfStale()
         {
-            int num = ((Current.ProgramState == ProgramState.Playing) ? GenTicks.TicksGame : (-1));
-            if (num < 0 || num - _lastCacheClearTick > CacheTTLTicks)
+            int now = Current.ProgramState == ProgramState.Playing ? GenTicks.TicksGame : -1;
+            if (now < 0 || now - _lastCacheClearTick > CacheTTLTicks)
             {
                 CutiemarkCacheInGame.Clear();
-                _lastCacheClearTick = num;
+                _lastCacheClearTick = now;
             }
         }
 
@@ -193,29 +193,29 @@ namespace PoniesOfTheRim
             {
                 Widgets.DrawHighlight(r);
             }
-            Texture2D texture2D = null;
+            Texture2D texture = null;
             try
             {
                 int sharedIndex = alienComp.addonVariants[cutieIndex];
                 string path = addon.GetPath(pawn, ref sharedIndex, sharedIndex);
                 if (!path.NullOrEmpty())
                 {
-                    texture2D = ContentFinder<Texture2D>.Get(path + "_east", reportFailure: false);
+                    texture = ContentFinder<Texture2D>.Get(path + "_east", reportFailure: false);
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Не удалось отрисовать метку на карточке персонажа.", ex);
+                PonyLog.WarnCaught("Card: cutiemark not drawn on the character card", ex);
             }
-            if (texture2D != null)
+            if (texture != null)
             {
-                GUI.DrawTexture(r.ContractedBy(1f), texture2D);
+                GUI.DrawTexture(r.ContractedBy(1f), texture);
             }
-            if (Mouse.IsOver(r) && texture2D != null)
+            if (Mouse.IsOver(r) && texture != null)
             {
-                Vector2 vector = GUIUtility.GUIToScreenPoint(new Vector2(r.center.x, r.yMax));
-                _hoverScreenRect = new Rect(vector.x - 64f, vector.y + 4f, 128f, 128f);
-                _hoverCutieTex = texture2D;
+                Vector2 screenPoint = GUIUtility.GUIToScreenPoint(new Vector2(r.center.x, r.yMax));
+                _hoverScreenRect = new Rect(screenPoint.x - 64f, screenPoint.y + 4f, 128f, 128f);
+                _hoverCutieTex = texture;
                 _showHoverPreview = true;
                 TooltipHandler.TipRegion(r, "Pony_Cutiemark".Translate());
             }

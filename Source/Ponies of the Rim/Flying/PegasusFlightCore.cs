@@ -1,4 +1,4 @@
-﻿using PoniesOfTheRim.Abilities;
+using PoniesOfTheRim.Abilities;
 using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +8,6 @@ using Verse.Sound;
 
 namespace PoniesOfTheRim.Flying
 {
-    [StaticConstructorOnStartup]
-
     public class WingHediffExtension : DefModExtension
     {
         public float efficiency = 0.5f;
@@ -35,7 +33,8 @@ namespace PoniesOfTheRim.Flying
             }
             if (infoAbility != null && (infoAbility.abilityClass == null || !typeof(Ability_FlightInfo).IsAssignableFrom(infoAbility.abilityClass)))
             {
-                yield return "[PoniesOfTheRim] infoAbility '" + infoAbility.defName + "' должна иметь abilityClass PoniesOfTheRim.Abilities.Ability_FlightInfo, иначе вместо значка появилась бы обычная способность с кнопкой. Значок постоянного полёта для этой расы не выдаётся.";
+                yield return "[PoniesOfTheRim] infoAbility " + infoAbility.defName +
+                             " needs abilityClass PoniesOfTheRim.Abilities.Ability_FlightInfo, no flight icon for this race";
             }
         }
     }
@@ -150,8 +149,7 @@ namespace PoniesOfTheRim.Flying
 
             if (PonyLog.Verbose)
                 PonyLog.TraceOnce("Flight.OrderRejected",
-                    $"Полёт: приказ «{job.def?.defName}» для {pawn.LabelShortCap} отклонён — по открытому небу туда не добраться, " +
-                    "пешка осталась на месте. Сообщение выводится один раз.");
+                    $"Flight: order {job.def?.defName} for {pawn.LabelShortCap} rejected, no open-sky route, pawn stays put");
         }
 
         public override void CompTick()

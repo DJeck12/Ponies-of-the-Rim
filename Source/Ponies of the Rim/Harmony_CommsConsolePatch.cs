@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
 using RimWorld.QuestGen;
@@ -76,8 +76,7 @@ namespace PoniesOfTheRim
             if (cooldownComp == null)
             {
                 PonyLog.ErrorOnce("CommsConsole.NoCooldownComp",
-                    "Консоль связи: WorldComponent FactionIncidentCooldown не найден — события фракций через консоль недоступны. " +
-                    "Он регистрируется RimWorld автоматически; проверьте, что сборка мода загружена корректно.");
+                    "Comms: FactionIncidentCooldown world component missing, console incidents disabled");
                 return;
             }
 
@@ -90,7 +89,7 @@ namespace PoniesOfTheRim
                 if (incidentDef == null)
                 {
                     PonyLog.WarnOnce("CommsConsole.NoIncident|" + incident.incidentDef,
-                        $"Консоль связи: IncidentDef '{incident.incidentDef}' не найден — кнопка события пропущена.");
+                        $"Comms: IncidentDef {incident.incidentDef} not found, button skipped");
                     continue;
                 }
 
@@ -160,7 +159,7 @@ namespace PoniesOfTheRim
                     else
                     {
                         PonyLog.WarnOnce("CommsConsole.NoQuest|" + defName,
-                            $"Консоль связи: QuestScriptDef '{defName}' не найден — квест пропущен.");
+                            $"Comms: QuestScriptDef {defName} not found, skipped");
                     }
                 }
 
@@ -299,7 +298,7 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                PonyLog.Error($"Консоль связи: не удалось создать квест '{questScriptDef?.defName}' для фракции '{faction?.Name}':\n{ex}");
+                PonyLog.Error($"Comms: quest {questScriptDef?.defName} for {faction?.Name} not created\n{ex}");
             }
             finally
             {

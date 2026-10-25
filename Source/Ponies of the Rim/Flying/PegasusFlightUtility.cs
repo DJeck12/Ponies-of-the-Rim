@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using PoniesOfTheRim.Multiplayer;
 using UnityEngine;
 using Verse;
@@ -152,7 +152,7 @@ namespace PoniesOfTheRim.Flying
             }
 
             if (landed > 0)
-                PonyLog.Trace($"Полёт: перелёт через препятствия выключен — посажено пегасов, зависших над постройками: {landed}.");
+                PonyLog.Trace($"Flight: obstacle flight turned off, {landed} pegasi over buildings landed");
         }
 
         public static bool CanFlyToCell(Pawn pawn, IntVec3 c, Map map)

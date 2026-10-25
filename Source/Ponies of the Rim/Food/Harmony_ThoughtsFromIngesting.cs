@@ -23,21 +23,15 @@ namespace PoniesOfTheRim.Food
                 AddThoughtsFromIdeo = AccessTools.MethodDelegate<AddThoughtsFromIdeoDelegate>(AccessTools.Method(typeof(FoodUtility), "AddThoughtsFromIdeo"));
                 VanillaBuffer = AccessTools.StaticFieldRefAccess<List<FoodUtility.ThoughtFromIngesting>>(AccessTools.Field(typeof(FoodUtility), "ingestThoughts"));
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
                 AddThoughtsFromIdeo = null;
                 VanillaBuffer = null;
-                PonyLog.ErrorCaught("Еда: нет доступа к FoodUtility.AddThoughtsFromIdeo — мысли о фруктах в составе блюд работать не будут.", arg);
+                PonyLog.ErrorCaught("Food: FoodUtility.AddThoughtsFromIdeo not accessible, ingredient thoughts disabled", ex);
             }
         }
 
-        public static bool IsReady
-        {
-            get
-            {
-                return AddThoughtsFromIdeo != null && VanillaBuffer != null;
-            }
-        }
+        public static bool IsReady => AddThoughtsFromIdeo != null && VanillaBuffer != null;
 
         public static void Postfix(Pawn ingester, Thing foodSource, ThingDef foodDef, List<FoodUtility.ThoughtFromIngesting> __result)
         {
@@ -55,8 +49,7 @@ namespace PoniesOfTheRim.Food
             for (int i = 0; i < ingredients.Count; i++)
             {
                 ThingDef ingredient = ingredients[i];
-                HistoryEventDef ingredientEvent;
-                if (ingredient == null || !PonyFoodCache.TryGetIngredientEvent(ingredient, out ingredientEvent))
+                if (ingredient == null || !PonyFoodCache.TryGetIngredientEvent(ingredient, out HistoryEventDef ingredientEvent))
                 {
                     continue;
                 }

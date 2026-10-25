@@ -1,51 +1,34 @@
 ﻿using System;
 using System.Linq;
 using System.Xml;
-using Verse;
 
 namespace PoniesOfTheRim.PatchOperation
 {
-    public class PatchOperationToggleableRemove : Verse.PatchOperation
+    public class PatchOperationToggleableRemove : PatchOperationToggleable
     {
         public string xpath;
-        public string settingId;
-        public bool defaultState;
-        public string label;
-        public string description;
-
-        protected bool CanRun()
-        {
-            return PoniesOfTheRimSettings.settings.patchToggles.GetWithFallback(settingId, defaultState);
-        }
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (!CanRun())
+            if (!Enabled)
             {
                 return true;
             }
 
-            bool result = false;
+            bool matched = false;
             try
             {
-                XmlNode[] array = xml.SelectNodes(xpath).Cast<XmlNode>().ToArray();
-                foreach (XmlNode xmlNode in array)
+                foreach (XmlNode target in xml.SelectNodes(xpath).Cast<XmlNode>().ToArray())
                 {
-                    result = true;
-                    XmlNode parentNode = xmlNode.ParentNode;
-                    parentNode.RemoveChild(xmlNode);
+                    matched = true;
+                    target.ParentNode.RemoveChild(target);
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.Error($"PatchOperationToggleableRemove: {ex.Message}");
+                PonyLog.Error($"Patches: toggle {settingId} failed on {xpath}: {ex.Message}");
             }
-            return result;
-        }
-
-        public override void Complete(string modIdentifier)
-        {
-            base.Complete(modIdentifier);
+            return matched;
         }
     }
 }

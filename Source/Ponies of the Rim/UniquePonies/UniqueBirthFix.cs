@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Verse;
 
@@ -31,8 +31,7 @@ namespace PoniesOfTheRim.UniquePonies
                     }
 
                     PonyLog.WarnOnce("UniqueBirthFix.MissingFallback|" + kindDef.defName,
-                        $"Уникальные пони: FallbackKindDefName '{config.FallbackKindDefName}' для '{kindDef.defName}' " +
-                        "не найден — используется автоопределение.");
+                        $"Unique: fallback kind {config.FallbackKindDefName} for {kindDef.defName} not found, picking one by race");
                 }
 
                 var race = kindDef.race;
@@ -51,14 +50,12 @@ namespace PoniesOfTheRim.UniquePonies
                 else
                 {
                     PonyLog.WarnOnce("UniqueBirthFix.NoFallback|" + kindDef.defName,
-                        $"Уникальные пони: не найден обычный kindDef для расы '{race.defName}' — ребёнок " +
-                        $"'{kindDef.defName}' может унаследовать внешность уникальной пешки. " +
-                        "Укажите FallbackKindDefName в UniquePoniesConfig.");
+                        $"Unique: no regular {race.defName} kind for a newborn of {kindDef.defName}, it may get the unique look");
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Уникальные пони: сбой при генерации новорождённого.", ex);
+                PonyLog.WarnCaught("Unique: newborn kind fix failed", ex);
             }
         }
     }

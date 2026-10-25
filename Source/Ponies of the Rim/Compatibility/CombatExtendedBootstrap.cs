@@ -5,80 +5,77 @@ using Verse;
 
 namespace PoniesOfTheRim.Compatibility
 {
-    [StaticConstructorOnStartup]
-    public static class CombatExtendedBootstrap
-    {
-        public static readonly Harmony Harmony;
+	[StaticConstructorOnStartup]
+	public static class CombatExtendedBootstrap
+	{
+		public static readonly Harmony Harmony = new Harmony("rimworld.poniesoftherim.combatextended");
 
-        static CombatExtendedBootstrap()
-        {
-            Harmony = new Harmony("rimworld.poniesoftherim.combatextended");
+		private static int _patched;
+		private static int _failed;
 
-            if (!CombatExtendedCompatability.Active)
-            {
-                Log.Message("[PoniesOfTheRim] Combat Extended не обнаружен — патч совместимости пропущен.");
-                return;
-            }
+		static CombatExtendedBootstrap()
+		{
+			if (!CombatExtendedCompatability.Active)
+			{
+				return;
+			}
 
-            Log.Message("[PoniesOfTheRim] CE Bootstrap: запуск.");
+			CombatExtendedCompatability.BuildFlightExtensionCache();
+			RegisterCollisionPatches();
+			PonyLog.Trace($"CE: {_patched} patched, {_failed} failed");
 
-            CombatExtendedCompatability.BuildFlightExtensionCache();
-            RegisterCollisionPatches();
+			LongEventHandler.ExecuteWhenFinished(() =>
+			{
+				CombatExtendedCompatability.EnsureRaceComps();
+				CombatExtendedCompatability.AuditRaces();
+			});
+		}
 
-            LongEventHandler.ExecuteWhenFinished(delegate
-            {
-                CombatExtendedCompatability.EnsureRaceComps();
-                CombatExtendedCompatability.AuditRaces();
-                Log.Message("[PoniesOfTheRim] CE Bootstrap: завершён.");
-            });
-        }
+		private static void RegisterCollisionPatches()
+		{
+			TryPatch(AccessTools.Method("CombatExtended.CE_Utility:GetCollisionBodyFactors"),
+				postfix: new HarmonyMethod(typeof(Patch_CE_GetCollisionBodyFactors), "Postfix"));
 
-        private static void RegisterCollisionPatches()
-        {
-            TryPatch(
-                AccessTools.Method("CombatExtended.CE_Utility:GetCollisionBodyFactors"),
-                null,
-                new HarmonyMethod(typeof(Patch_CE_GetCollisionBodyFactors), "Postfix"),
-                null,
-                "CE_Utility.GetCollisionBodyFactors (габариты в полёте)");
+			var heightRange = Patch_CE_CollisionVerticalLift.TargetMethod();
+			TryPatch(heightRange,
+				prefix: new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Prefix"),
+				postfix: new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Postfix"),
+				finalizer: new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Finalizer"));
+			TryPatch(heightRange,
+				postfix: new HarmonyMethod(typeof(Patch_CE_PonyCoverPeek), "Postfix"));
 
-            TryPatch(
-                Patch_CE_CollisionVerticalLift.TargetMethod(),
-                new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Prefix"),
-                new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Postfix"),
-                null,
-                "CollisionVertical.CalculateHeightRange (подъём в полёте)",
-                new HarmonyMethod(typeof(Patch_CE_CollisionVerticalLift), "Finalizer"));
+			TryPatch(Patch_CE_SuppressionOffMap.TargetMethod(),
+				prefix: new HarmonyMethod(typeof(Patch_CE_SuppressionOffMap), "Prefix"));
+		}
 
-            TryPatch(
-                Patch_CE_CollisionVerticalLift.TargetMethod(),
-                null,
-                new HarmonyMethod(typeof(Patch_CE_PonyCoverPeek), "Postfix"),
-                null,
-                "CollisionVertical.CalculateHeightRange (пони выглядывают из-за укрытий)");
-            TryPatch(
-                Patch_CE_SuppressionOffMap.TargetMethod(),
-                prefix: new HarmonyMethod(typeof(Patch_CE_SuppressionOffMap), "Prefix"),
-                label: "CompSuppressable.CompTickInterval (подавление вне карты)");
-        }
+		private static void TryPatch(
+			MethodBase original,
+			HarmonyMethod prefix = null,
+			HarmonyMethod postfix = null,
+			HarmonyMethod finalizer = null)
+		{
+			if (original == null)
+			{
+				_failed++;
+				PonyLog.Error($"CE: target of {Describe(prefix ?? postfix ?? finalizer)} not found, skipped");
+				return;
+			}
+			try
+			{
+				Harmony.Patch(original, prefix, postfix, null, finalizer);
+				_patched++;
+			}
+			catch (Exception ex)
+			{
+				_failed++;
+				PonyLog.Error($"CE: {Describe(prefix ?? postfix ?? finalizer)} failed on {original.DeclaringType?.Name}.{original.Name}\n{ex}");
+			}
+		}
 
-        private static void TryPatch(MethodInfo original, HarmonyMethod prefix = null, HarmonyMethod postfix = null, HarmonyMethod transpiler = null, string label = "", HarmonyMethod finalizer = null)
-        {
-            if (original == null)
-            {
-                Log.Error("[PoniesOfTheRim] CE Bootstrap: метод не найден — '" + label + "'.");
-                return;
-            }
-
-            try
-            {
-                Harmony.Patch(original, prefix, postfix, transpiler, finalizer);
-                Log.Message("[PoniesOfTheRim] CE Bootstrap: ✓ " + label);
-            }
-            catch (Exception arg)
-            {
-                Log.Error($"[PoniesOfTheRim] CE Bootstrap: ошибка патча '{label}':\n{arg}");
-            }
-        }
-    }
+		private static string Describe(HarmonyMethod patch)
+		{
+			MethodInfo method = patch?.method;
+			return method == null ? "?" : method.DeclaringType?.Name + "." + method.Name;
+		}
+	}
 }

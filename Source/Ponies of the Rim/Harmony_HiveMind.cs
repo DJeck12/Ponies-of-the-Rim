@@ -8,7 +8,7 @@ namespace PoniesOfTheRim
     {
         private const float BONUS_SMALL_HIVE = 0.05f;
         private const float BONUS_LARGE_HIVE = 0.03f;
-        private const int LARGE_HIVE_THRESHOLD = 12;
+        private const int LARGE_HIVE_MATES = 11;
 
         public override void TransformValue(StatRequest req, ref float val)
         {
@@ -40,8 +40,7 @@ namespace PoniesOfTheRim
         {
             if (count <= 0) return 0f;
 
-            int total = count + 1;
-            float rate = total < LARGE_HIVE_THRESHOLD
+            float rate = count < LARGE_HIVE_MATES
                 ? BONUS_SMALL_HIVE
                 : BONUS_LARGE_HIVE;
 

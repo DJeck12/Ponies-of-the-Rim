@@ -25,6 +25,14 @@ namespace PoniesOfTheRim.Compatibility
         private const string TypePropsSuppressable = "CombatExtended.CompProperties_Suppressable";
         private const string TypePropsTacticalManager = "CombatExtended.CompProperties_TacticalManager";
 
+        private static readonly string[] AuditedCompTypes =
+        {
+            TypeCompInventory,
+            TypeCompSuppressable,
+            TypeCompTacticalManager,
+            TypeCompPawnGizmo
+        };
+
         private static bool _resolved;
         private static bool _active;
 
@@ -63,14 +71,13 @@ namespace PoniesOfTheRim.Compatibility
             _tRaceExtension = AccessTools.TypeByName(TypeRaceExtension);
             _tToolCe = AccessTools.TypeByName(TypeToolCe);
             _fiBodyShape = _tRaceExtension != null ? AccessTools.Field(_tRaceExtension, "bodyShape") : null;
-            _miTryUpdateInventory = AccessTools.Method(ceUtility, "TryUpdateInventory", new Type[1] { typeof(Pawn) });
+            _miTryUpdateInventory = AccessTools.Method(ceUtility, "TryUpdateInventory", new[] { typeof(Pawn) });
 
             _active = _tRaceExtension != null && _tToolCe != null;
 
             if (!_active)
             {
-                PonyLog.Warn("Combat Extended обнаружен, но его публичные типы не разрешились. " +
-                             "Патч совместимости отключён.");
+                PonyLog.Warn("CE: CE is loaded but RacePropertiesExtensionCE or ToolCE was not found, compatibility disabled");
             }
         }
 
@@ -83,17 +90,17 @@ namespace PoniesOfTheRim.Compatibility
 
             try
             {
-                _miTryUpdateInventory.Invoke(null, new object[1] { pawn });
+                _miTryUpdateInventory.Invoke(null, new object[] { pawn });
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
-                PonyLog.WarnCaught($"CE: не удалось обновить инвентарь пешки {pawn.LabelShortCap}.", arg);
+                PonyLog.WarnCaught($"CE: inventory update failed for {pawn.LabelShortCap}", ex);
             }
         }
 
         public static void BuildFlightExtensionCache()
         {
-            Dictionary<ThingDef, CombatExtendedFlightExtension> dictionary =
+            Dictionary<ThingDef, CombatExtendedFlightExtension> byRace =
                 new Dictionary<ThingDef, CombatExtendedFlightExtension>();
 
             List<ThingDef> allDefs = DefDatabase<ThingDef>.AllDefsListForReading;
@@ -103,15 +110,15 @@ namespace PoniesOfTheRim.Compatibility
                 CombatExtendedFlightExtension ext = def.GetModExtension<CombatExtendedFlightExtension>();
                 if (ext != null)
                 {
-                    dictionary[def] = ext;
+                    byRace[def] = ext;
                 }
             }
 
-            _flightExtByRace = dictionary;
+            _flightExtByRace = byRace;
 
-            if (dictionary.Count > 0)
+            if (byRace.Count > 0)
             {
-                PonyLog.Trace($"CE: полётные множители коллизии загружены для {dictionary.Count} рас(ы).");
+                PonyLog.Trace($"CE: flight collision factors for {byRace.Count} races");
             }
         }
 
@@ -140,13 +147,16 @@ namespace PoniesOfTheRim.Compatibility
 
             if (tInventory == null || tSuppressable == null || tTactical == null || tGizmo == null)
             {
-                PonyLog.Warn("CE: типы компонентов не разрешились — нормализация пропущена.");
+                PonyLog.Warn("CE: CE comp types not found, race comps not normalized");
                 return;
             }
 
             int removed = 0;
             int added = 0;
             int racesTouched = 0;
+
+            Dictionary<string, int> removedByType = new Dictionary<string, int>();
+            Dictionary<string, int> addedByType = new Dictionary<string, int>();
 
             List<ThingDef> allDefs = DefDatabase<ThingDef>.AllDefsListForReading;
             for (int i = 0; i < allDefs.Count; i++)
@@ -164,15 +174,15 @@ namespace PoniesOfTheRim.Compatibility
 
                 int before = removed + added;
 
-                removed += RemoveExtraComps(def, tInventory);
-                removed += RemoveExtraComps(def, tSuppressable);
-                removed += RemoveExtraComps(def, tTactical);
-                removed += RemoveExtraComps(def, tGizmo);
+                removed += Tally(removedByType, tInventory, RemoveExtraComps(def, tInventory));
+                removed += Tally(removedByType, tSuppressable, RemoveExtraComps(def, tSuppressable));
+                removed += Tally(removedByType, tTactical, RemoveExtraComps(def, tTactical));
+                removed += Tally(removedByType, tGizmo, RemoveExtraComps(def, tGizmo));
 
-                added += EnsureComp(def, tInventory, TypePropsInventory);
-                added += EnsureComp(def, tSuppressable, TypePropsSuppressable);
-                added += EnsureComp(def, tTactical, TypePropsTacticalManager);
-                added += EnsureComp(def, tGizmo, null);
+                added += Tally(addedByType, tInventory, EnsureComp(def, tInventory, TypePropsInventory));
+                added += Tally(addedByType, tSuppressable, EnsureComp(def, tSuppressable, TypePropsSuppressable));
+                added += Tally(addedByType, tTactical, EnsureComp(def, tTactical, TypePropsTacticalManager));
+                added += Tally(addedByType, tGizmo, EnsureComp(def, tGizmo, null));
 
                 if (removed + added != before)
                 {
@@ -182,9 +192,34 @@ namespace PoniesOfTheRim.Compatibility
 
             if (racesTouched > 0)
             {
-                PonyLog.Trace($"CE: компоненты нормализованы у {racesTouched} рас(ы) — " +
-                              $"удалено дубликатов {removed}, добавлено недостающих {added}.");
+                PonyLog.Trace($"CE: comps normalized on {racesTouched} races, " +
+                              $"{removed} duplicates removed{FormatByType(removedByType)}, {added} added{FormatByType(addedByType)}");
             }
+        }
+
+        private static int Tally(Dictionary<string, int> byType, Type compType, int n)
+        {
+            if (n > 0)
+            {
+                byType.TryGetValue(compType.Name, out int total);
+                byType[compType.Name] = total + n;
+            }
+            return n;
+        }
+
+        private static string FormatByType(Dictionary<string, int> byType)
+        {
+            if (byType.Count == 0)
+            {
+                return string.Empty;
+            }
+
+            List<string> parts = new List<string>(byType.Count);
+            foreach (KeyValuePair<string, int> pair in byType)
+            {
+                parts.Add(pair.Key + " " + pair.Value);
+            }
+            return " (" + string.Join(", ", parts) + ")";
         }
 
         private static int RemoveExtraComps(ThingDef def, Type compType)
@@ -244,9 +279,9 @@ namespace PoniesOfTheRim.Compatibility
                 def.comps.Add(created);
                 return 1;
             }
-            catch (Exception arg)
+            catch (Exception ex)
             {
-                PonyLog.Warn($"CE: не удалось добавить {compType.Name} к {def.defName}:\n{arg}");
+                PonyLog.Warn($"CE: could not add {compType.Name} to {def.defName}\n{ex}");
                 return 0;
             }
         }
@@ -257,6 +292,8 @@ namespace PoniesOfTheRim.Compatibility
             {
                 return;
             }
+
+            List<Type> compTypes = ResolveAuditedCompTypes();
 
             List<string> unpatchedTools = new List<string>();
             List<string> duplicateExtensions = new List<string>();
@@ -279,21 +316,37 @@ namespace PoniesOfTheRim.Compatibility
                 racesChecked++;
                 AuditTools(def, unpatchedTools);
                 AuditExtensions(def, duplicateExtensions, missingExtension, missingBodyShape);
-                AuditComps(def, duplicateComps, missingComps);
+                AuditComps(def, compTypes, duplicateComps, missingComps);
             }
 
-            Report("не сконвертированы в ToolCE (автопатчер CE перехватит расу)", unpatchedTools);
-            Report("получили несколько RacePropertiesExtensionCE", duplicateExtensions);
-            Report("остались без RacePropertiesExtensionCE", missingExtension);
-            Report("имеют RacePropertiesExtensionCE без bodyShape (NRE при крит-нокдауне)", missingBodyShape);
-            Report("получили дублирующиеся компоненты CE", duplicateComps);
-            Report("остались без компонентов CE", missingComps);
+            Report("Tools not converted to ToolCE, the CE autopatcher will take over these races", unpatchedTools);
+            Report("Races with more than one RacePropertiesExtensionCE", duplicateExtensions);
+            Report("Races without RacePropertiesExtensionCE", missingExtension);
+            Report("Races with RacePropertiesExtensionCE but no bodyShape (NRE on critical knockdown)", missingBodyShape);
+            Report("Duplicate CE comps", duplicateComps);
+            Report("Missing CE comps", missingComps);
 
             if (unpatchedTools.Count == 0 && duplicateExtensions.Count == 0 && missingExtension.Count == 0
                 && missingBodyShape.Count == 0 && duplicateComps.Count == 0 && missingComps.Count == 0)
             {
-                PonyLog.Trace($"CE-аудит: проверено рас — {racesChecked}, замечаний нет.");
+                PonyLog.Trace($"CE audit: {racesChecked} races, no issues");
             }
+        }
+
+        private static List<Type> ResolveAuditedCompTypes()
+        {
+            List<Type> types = new List<Type>(AuditedCompTypes.Length);
+            foreach (string name in AuditedCompTypes)
+            {
+                Type type = AccessTools.TypeByName(name);
+                if (type == null)
+                {
+                    PonyLog.Warn($"CE audit: type {name} not found, check skipped");
+                    continue;
+                }
+                types.Add(type);
+            }
+            return types;
         }
 
         private static void AuditTools(ThingDef def, List<string> unpatchedTools)
@@ -308,7 +361,7 @@ namespace PoniesOfTheRim.Compatibility
                 Tool tool = def.tools[i];
                 if (tool != null && !_tToolCe.IsInstanceOfType(tool))
                 {
-                    unpatchedTools.Add(def.defName + " → " + (tool.label ?? tool.id ?? "<без имени>"));
+                    unpatchedTools.Add(def.defName + ": " + (tool.label ?? tool.id ?? "?"));
                 }
             }
         }
@@ -342,7 +395,7 @@ namespace PoniesOfTheRim.Compatibility
 
             if (count > 1)
             {
-                duplicates.Add(def.defName + " (x" + count + ")");
+                duplicates.Add(def.defName + " x" + count);
             }
 
             if (_fiBodyShape != null && _fiBodyShape.GetValue(first) == null)
@@ -351,24 +404,16 @@ namespace PoniesOfTheRim.Compatibility
             }
         }
 
-        private static void AuditComps(ThingDef def, List<string> duplicates, List<string> missing)
+        private static void AuditComps(ThingDef def, List<Type> compTypes, List<string> duplicates, List<string> missing)
         {
-            CountComp(def, TypeCompInventory, duplicates, missing);
-            CountComp(def, TypeCompSuppressable, duplicates, missing);
-            CountComp(def, TypeCompTacticalManager, duplicates, missing);
-            CountComp(def, TypeCompPawnGizmo, duplicates, missing);
+            for (int i = 0; i < compTypes.Count; i++)
+            {
+                CountComp(def, compTypes[i], duplicates, missing);
+            }
         }
 
-        private static void CountComp(ThingDef def, string compTypeName, List<string> duplicates, List<string> missing)
+        private static void CountComp(ThingDef def, Type compType, List<string> duplicates, List<string> missing)
         {
-            Type compType = AccessTools.TypeByName(compTypeName);
-            if (compType == null)
-            {
-                PonyLog.WarnOnce("CEAudit.MissingType|" + compTypeName,
-                                 "CE-аудит: тип " + compTypeName + " не найден — проверка пропущена.");
-                return;
-            }
-
             int count = 0;
             if (def.comps != null)
             {
@@ -384,11 +429,11 @@ namespace PoniesOfTheRim.Compatibility
 
             if (count == 0)
             {
-                missing.Add(def.defName + " → " + compType.Name);
+                missing.Add(def.defName + ": " + compType.Name);
             }
             else if (count > 1)
             {
-                duplicates.Add(def.defName + " → " + compType.Name + " (x" + count + ")");
+                duplicates.Add(def.defName + ": " + compType.Name + " x" + count);
             }
         }
 
@@ -399,8 +444,7 @@ namespace PoniesOfTheRim.Compatibility
                 return;
             }
 
-            PonyLog.Warn("CE-аудит: " + entries.Count + " записей " + what + ":\n  " +
-                         string.Join("\n  ", entries.ToArray()));
+            PonyLog.Warn($"CE audit: {entries.Count} {what}:\n  " + string.Join("\n  ", entries));
         }
     }
 }

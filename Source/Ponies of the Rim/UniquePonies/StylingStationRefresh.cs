@@ -1,7 +1,6 @@
-﻿using AlienRace;
+using AlienRace;
 using HarmonyLib;
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
@@ -12,39 +11,22 @@ namespace PoniesOfTheRim.UniquePonies
 {
     public static class StylingStationRefresh
     {
-        private static bool _cacheInitialized;
-        private static FieldInfo _pawnField;
+        private static readonly FieldInfo PawnField = AccessTools.Field(typeof(AlienRace.StylingStation), "pawn");
 
         private static readonly Dictionary<int, string> _signatureCache = new();
         private static readonly StringBuilder _sigBuilder = new StringBuilder(128);
         private static int _cleanupCounter;
         private const int CleanupInterval = 300;
 
-        private static void InitCacheIfNeeded()
-        {
-            if (_cacheInitialized) return;
-            _cacheInitialized = true;
-
-            try
-            {
-                var stylingType = AccessTools.TypeByName("AlienRace.StylingStation");
-                if (stylingType != null)
-                    _pawnField = AccessTools.Field(stylingType, "pawn");
-            }
-            catch (Exception ex)
-            {
-                PonyLog.WarnCaught("Не удалось подготовить обновление стайлинг-станции HAR.", ex);
-            }
-        }
-
         public static void DoAddonInfo_Postfix()
         {
-            InitCacheIfNeeded();
-            if (_pawnField == null || !(_pawnField.GetValue(null) is Pawn pawn))
+            if (PawnField == null)
             {
+                PonyLog.WarnOnce("StylingStationRefresh.NoPawnField",
+                    "Styling: HAR StylingStation.pawn not found, addon changes are not redrawn");
                 return;
             }
-            if (!pawn.IsPony())
+            if (!(PawnField.GetValue(null) is Pawn pawn) || !pawn.IsPony())
             {
                 return;
             }

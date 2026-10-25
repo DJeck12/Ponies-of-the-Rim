@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 using AlienRace;
 using Verse;
 
@@ -17,7 +18,7 @@ namespace PoniesOfTheRim
             if (extension == null || extension.genes == null || extension.genes.Count == 0)
             {
                 PonyLog.ErrorOnce("Gene_Random.NoExtension|" + def.defName,
-                    "Гены: у гена '" + def.defName + "' нет GeneExtension со списком genes — случайный выбор невозможен.");
+                    $"Genetics: gene {def.defName} has no GeneExtension with genes, nothing to pick");
                 return;
             }
 
@@ -30,7 +31,7 @@ namespace PoniesOfTheRim
             else
             {
                 PonyLog.WarnOnce("Gene_Random.NoneAllowed|" + def.defName + "|" + pawn.def.defName,
-                    "Гены: для расы '" + pawn.def.defName + "' ни один вариант гена '" + def.defName + "' не разрешён — ничего не добавлено.");
+                    $"Genetics: no variant of {def.defName} allowed for {pawn.def.defName}, nothing added");
             }
             RemoveSelfIfNeeded(extension);
         }
@@ -50,8 +51,9 @@ namespace PoniesOfTheRim
                 {
                     canHave = RaceRestrictionSettings.CanHaveGene(candidate, pawn.def, xenogene);
                 }
-                catch
+                catch (Exception ex)
                 {
+                    PonyLog.WarnCaught("Genetics: HAR gene restriction check failed, gene allowed", ex);
                     canHave = true;
                 }
                 if (canHave)

@@ -42,7 +42,7 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Program Files\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\Program Files\Steam\steamapps\workshop\content\294100\2009463077\1.6\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="AlienRace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -114,12 +114,18 @@
     <Compile Include="Compatibility\Harmony_CESuppressionFix.cs" />
     <Compile Include="Compatibility\Harmony_CollisionVerticalLift.cs" />
     <Compile Include="CutiemarkAddonResolver.cs" />
+    <Compile Include="Flying\FlightInfoAbilitySync.cs" />
     <Compile Include="Flying\FlightInfoAbilityUtility.cs" />
     <Compile Include="Flying\Harmony_NaturalWings.cs" />
     <Compile Include="Flying\PawnGenerator_FlightInfoAbility.cs" />
     <Compile Include="Flying\PegasusCombatManeuvers.cs" />
+    <Compile Include="Flying\PegasusFilthInFlight.cs" />
     <Compile Include="Flying\PegasusFlightBootstrap.cs" />
     <Compile Include="Flying\PegasusFlightReachability.cs" />
+    <Compile Include="Flying\PegasusKickInFlight.cs" />
+    <Compile Include="Flying\PegasusSnowInFlight.cs" />
+    <Compile Include="Flying\PegasusTerrainThoughtInFlight.cs" />
+    <Compile Include="Flying\PegasusToxicWaterInFlight.cs" />
     <Compile Include="Harmony_StartingPawnsReset.cs" />
     <Compile Include="Multiplayer\MultiplayerBootstrap.cs" />
     <Compile Include="Multiplayer\MultiplayerCompat.cs" />
@@ -149,6 +155,7 @@
     <Compile Include="Harmony_HiveMind.cs" />
     <Compile Include="Gene_HiveMind.cs" />
     <Compile Include="Compatibility\CEdiag.cs" />
+    <Compile Include="PatchOperation\PatchOperationToggleable.cs" />
     <Compile Include="PatchSingleName.cs" />
     <Compile Include="Flying\PegasusFlightUtility.cs" />
     <Compile Include="Flying\PegasusFlightCache.cs" />
@@ -164,7 +171,7 @@
     <Compile Include="Thoughts\ThoughtWorker_PonySylvanist.cs" />
     <Compile Include="UniquePonies\StylingStationRefresh.cs" />
     <Compile Include="UniquePonies\UniqueBirthFix.cs" />
-    <Compile Include="UniquePonies\UniqueCleanGeneration .cs" />
+    <Compile Include="UniquePonies\UniqueCleanGeneration.cs" />
     <Compile Include="UniquePonies\UniqueEquipmentAssigner.cs" />
     <Compile Include="UniquePonies\UniqueNameAssigner.cs" />
     <Compile Include="UniquePonies\UniquePoniesBootstrap.cs" />

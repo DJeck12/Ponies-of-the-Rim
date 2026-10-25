@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -9,26 +8,7 @@ namespace PoniesOfTheRim.Abilities
     {
         private static Dictionary<string, List<string>> _grantToRacesCache;
 
-        public static void Register(Harmony harmony)
-        {
-            BuildGrantToRacesCache();
-
-            harmony.Patch(
-                AccessTools.Method(typeof(Pawn), nameof(Pawn.SpawnSetup)),
-                postfix: new HarmonyMethod(
-                    typeof(AbilityToggleEnforcer),
-                    nameof(SpawnSetup_Postfix))
-            );
-
-            harmony.Patch(
-                AccessTools.Method(typeof(Game), nameof(Game.FinalizeInit)),
-                postfix: new HarmonyMethod(
-                    typeof(AbilityToggleEnforcer),
-                    nameof(FinalizeInit_Postfix))
-            );
-        }
-
-        private static void BuildGrantToRacesCache()
+        internal static void BuildGrantToRacesCache()
         {
             _grantToRacesCache = new Dictionary<string, List<string>>();
             foreach (AbilityDef def in DefDatabase<AbilityDef>.AllDefs)
@@ -41,7 +21,7 @@ namespace PoniesOfTheRim.Abilities
             }
         }
 
-        private static void SpawnSetup_Postfix(Pawn __instance, bool respawningAfterLoad)
+        internal static void SpawnSetup_Postfix(Pawn __instance, bool respawningAfterLoad)
         {
             if (respawningAfterLoad)
                 return;
@@ -52,7 +32,7 @@ namespace PoniesOfTheRim.Abilities
             EnforcePawn(__instance);
         }
 
-        private static void FinalizeInit_Postfix()
+        internal static void FinalizeInit_Postfix()
         {
             PoniesOfTheRimSettingsData settings = PoniesOfTheRimSettings.settings;
             if (settings == null)
@@ -74,7 +54,7 @@ namespace PoniesOfTheRim.Abilities
             if (disabled.Count == 0 && enabled.Count == 0)
                 return;
 
-            int affected = 0;
+            int checkedPawns = 0;
 
             foreach (Pawn pawn in AllRelevantPawns())
             {
@@ -93,11 +73,11 @@ namespace PoniesOfTheRim.Abilities
                         pawn.abilities.GainAbility(def);
                 }
 
-                affected++;
+                checkedPawns++;
             }
 
-            if (affected > 0)
-                PonyLog.Trace($"Способности: после загрузки обработано пешек — {affected}.");
+            if (checkedPawns > 0)
+                PonyLog.Trace($"Abilities: toggles checked on {checkedPawns} pawns after load");
         }
 
         public static void EnforcePawn(Pawn pawn)

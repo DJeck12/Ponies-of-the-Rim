@@ -39,31 +39,28 @@
     </value>
   </Operation>
 
-  <!-- Конкретные расы со своим <tools> -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li</xpath>
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li[not(@Class)]</xpath>
     <match Class="PatchOperationAttributeSet">
-      <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li</xpath>
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace[starts-with(defName, "Pony_")]/tools/li[not(@Class)]</xpath>
       <attribute>Class</attribute>
       <value>CombatExtended.ToolCE</value>
     </match>
   </Operation>
 
-  <!-- Любой tool, привязанный к группе мода -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_") and not(@Class)]</xpath>
     <match Class="PatchOperationAttributeSet">
-      <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[starts-with(linkedBodyPartsGroup, "Pony_") and not(@Class)]</xpath>
       <attribute>Class</attribute>
       <value>CombatExtended.ToolCE</value>
     </match>
   </Operation>
 
-  <!-- Бронепробитие рога, один раз везде -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_") and not(armorPenetrationSharp or armorPenetrationBlunt)]</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_")]</xpath>
+      <xpath>/Defs/AlienRace.ThingDef_AlienRace/tools/li[label="horn" and starts-with(linkedBodyPartsGroup, "Pony_") and not(armorPenetrationSharp or armorPenetrationBlunt)]</xpath>
       <value>
         <armorPenetrationSharp>1.6</armorPenetrationSharp>
         <armorPenetrationBlunt>1.0</armorPenetrationBlunt>
@@ -103,9 +100,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="BasePony"]/comps</xpath>
     <value>
-      <li Class="CombatExtended.CompProperties_Inventory" />
       <li Class="CombatExtended.CompProperties_Suppressable" />
-      <li Class="CombatExtended.CompProperties_TacticalManager" />
       <li>
         <compClass>CombatExtended.CompPawnGizmo</compClass>
       </li>

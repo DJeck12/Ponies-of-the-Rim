@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -28,17 +28,15 @@ namespace PoniesOfTheRim.Multiplayer
                 return;
 
             Active = true;
-            PonyLog.Trace("Multiplayer: обнаружен — устанавливаю патч совместимости.");
 
-            RunStage(RegisterSyncMethods, "sync-методы");
-            RunStage(PatchStylingStationDummyPawn, "стайлинг-станция (дубль пешки)");
+            RunStage(RegisterSyncMethods);
+            RunStage(PatchStylingStationDummyPawn);
             if (Prefs.DevMode)
             {
-                RunStage(PatchAbilityIdAudit, "аудит выдачи способностей");
+                RunStage(PatchAbilityIdAudit);
             }
 
-            PonyLog.Trace($"Multiplayer: готово — sync-методов {MultiplayerCompat.Registered.Count}, " +
-                          $"патчей установлено {_patched}, ошибок {_failed}.");
+            PonyLog.Trace($"MP: {MultiplayerCompat.Registered.Count} sync methods, {_patched} patched, {_failed} failed");
         }
 
         private static void RegisterSyncMethods()
@@ -52,29 +50,24 @@ namespace PoniesOfTheRim.Multiplayer
             if (!MultiplayerCompat.RegisterSyncMethod(type, methodName))
             {
                 _failed++;
-                PonyLog.Warn($"Multiplayer: ✗ sync {type.Name}.{methodName} — метод не зарегистрирован.");
             }
         }
 
         private static void PatchStylingStationDummyPawn()
         {
             TryPatch(
-                AccessTools.Constructor(typeof(Dialog_StylingStation), new Type[2] { typeof(Pawn), typeof(Thing) }),
-                prefix: new HarmonyMethod(typeof(Patch_StylingDialogDummyPawn_Genes), nameof(Patch_StylingDialogDummyPawn_Genes.Prefix)),
-                label: "Dialog_StylingStation..ctor (гены дубля)");
-
+                AccessTools.Constructor(typeof(Dialog_StylingStation), new[] { typeof(Pawn), typeof(Thing) }),
+                prefix: new HarmonyMethod(typeof(Patch_StylingDialogDummyPawn_Genes), nameof(Patch_StylingDialogDummyPawn_Genes.Prefix)));
             TryPatch(
                 AccessTools.Method(typeof(ExtendedGraphicsPawnWrapper), nameof(ExtendedGraphicsPawnWrapper.HasGene)),
-                prefix: new HarmonyMethod(typeof(Patch_ExtendedGraphicsPawnWrapper_HasGene), nameof(Patch_ExtendedGraphicsPawnWrapper_HasGene.Prefix)),
-                label: "ExtendedGraphicsPawnWrapper.HasGene (нулгард)");
+                prefix: new HarmonyMethod(typeof(Patch_ExtendedGraphicsPawnWrapper_HasGene), nameof(Patch_ExtendedGraphicsPawnWrapper_HasGene.Prefix)));
         }
 
         private static void PatchAbilityIdAudit()
         {
             TryPatch(
                 ResolveGainAbility(),
-                postfix: new HarmonyMethod(typeof(Patch_AbilityGrantAudit), nameof(Patch_AbilityGrantAudit.Postfix)),
-                label: "Pawn_AbilityTracker.GainAbility (аудит Id)");
+                postfix: new HarmonyMethod(typeof(Patch_AbilityGrantAudit), nameof(Patch_AbilityGrantAudit.Postfix)));
         }
 
         private static MethodInfo ResolveGainAbility()
@@ -90,7 +83,7 @@ namespace PoniesOfTheRim.Multiplayer
                 .FirstOrDefault();
         }
 
-        private static void RunStage(Action stage, string label)
+        private static void RunStage(Action stage)
         {
             try
             {
@@ -99,17 +92,20 @@ namespace PoniesOfTheRim.Multiplayer
             catch (Exception ex)
             {
                 _failed++;
-                PonyLog.Error($"Multiplayer: этап '{label}' завершился с ошибкой:\n{ex}");
+                PonyLog.Error($"MP: {stage.Method.Name} aborted\n{ex}");
             }
         }
 
-        private static void TryPatch(MethodBase original, HarmonyMethod prefix = null, HarmonyMethod postfix = null,
-            HarmonyMethod transpiler = null, string label = "")
+        private static void TryPatch(
+            MethodBase original,
+            HarmonyMethod prefix = null,
+            HarmonyMethod postfix = null,
+            HarmonyMethod transpiler = null)
         {
             if (original == null)
             {
                 _failed++;
-                PonyLog.Error($"Multiplayer: метод не найден — '{label}'.");
+                PonyLog.Error($"MP: target of {Describe(prefix ?? postfix ?? transpiler)} not found, skipped");
                 return;
             }
             try
@@ -120,8 +116,14 @@ namespace PoniesOfTheRim.Multiplayer
             catch (Exception ex)
             {
                 _failed++;
-                PonyLog.Error($"Multiplayer: ошибка патча '{label}':\n{ex}");
+                PonyLog.Error($"MP: {Describe(prefix ?? postfix ?? transpiler)} failed on {original.DeclaringType?.Name}.{original.Name}\n{ex}");
             }
+        }
+
+        private static string Describe(HarmonyMethod patch)
+        {
+            MethodInfo method = patch?.method;
+            return method == null ? "?" : method.DeclaringType?.Name + "." + method.Name;
         }
     }
 
@@ -151,16 +153,14 @@ namespace PoniesOfTheRim.Multiplayer
                         return;
 
                     PonyLog.Warn(
-                        $"Multiplayer: способность '{def.defName}' выдана пешке " +
-                        $"'{__instance.pawn?.LabelShortCap ?? "?"}' вне синхронизированного контекста " +
-                        $"(Id = {ability.Id}, InInterface = {MultiplayerCompat.InInterface}). " +
-                        $"Такой Id локален и приведёт к рассинхрону. Стек вызова:\n{Environment.StackTrace}");
+                        $"MP: {def.defName} granted to {__instance.pawn?.LabelShortCap ?? "?"} outside a synced context " +
+                        $"(Id {ability.Id}, InInterface {MultiplayerCompat.InInterface}), will desync\n{Environment.StackTrace}");
                     return;
                 }
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Multiplayer: сбой проверки выдачи способности.", ex);
+                PonyLog.WarnCaught("MP: ability grant audit failed", ex);
             }
         }
     }

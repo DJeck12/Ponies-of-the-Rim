@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using RimWorld;
 using RimWorld.Planet;
@@ -36,7 +36,7 @@ namespace PoniesOfTheRim
             {
                 PonyLog.WarnOnce(
                     "QuestFactionPatches.NoSettlement|" + target.Name,
-                    "Квесты: для фракции '" + target.Name + "' не найдено поселение — используется ванильная логика.");
+                    $"Quests: no settlement of {target.Name}, vanilla logic used");
                 return true;
             }
 
@@ -46,8 +46,7 @@ namespace PoniesOfTheRim
             string storeCanCaravanAs = __instance.storeCanCaravanAs.GetValue(slate);
             if (!storeCanCaravanAs.NullOrEmpty())
             {
-                Map map;
-                slate.TryGet<Map>("map", out map);
+                slate.TryGet("map", out Map map);
                 bool canCaravan = map != null
                     && settlement.Tile.Valid && map.Tile.Valid
                     && settlement.Tile.Layer == map.Tile.Layer

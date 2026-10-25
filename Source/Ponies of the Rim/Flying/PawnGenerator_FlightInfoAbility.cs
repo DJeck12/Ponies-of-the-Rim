@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Verse;
 
 namespace PoniesOfTheRim.Flying
@@ -17,7 +17,7 @@ namespace PoniesOfTheRim.Flying
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Полёт: не удалось выдать значок постоянного полёта при генерации пешки — на карточке персонажа его не будет.", ex);
+                PonyLog.WarnCaught("Flight: flight info icon not set on a generated pawn", ex);
             }
         }
     }

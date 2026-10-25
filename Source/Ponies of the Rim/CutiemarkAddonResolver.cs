@@ -92,7 +92,7 @@ namespace PoniesOfTheRim
             }
             catch (Exception ex)
             {
-                PonyLog.WarnCaught("Карточка персонажа: не удалось проверить условия аддона '" + addon.Name + "' — кнопки метки и хвоста для этой пешки скрыты.", ex);
+                PonyLog.WarnCaught($"Card: conditions of addon {addon.Name} not checked, cutiemark and tail buttons hidden", ex);
                 return false;
             }
         }

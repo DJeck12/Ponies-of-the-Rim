@@ -21,27 +21,15 @@ namespace PoniesOfTheRim.Compatibility
 
         public static bool Prefix(ThingComp __instance)
         {
-            if (!(__instance?.parent is Pawn pawn) || pawn.Spawned)
+            if (!(__instance?.parent is Pawn pawn) || pawn.Spawned || !pawn.IsPony())
                 return true;
 
             if (!_traced && PonyLog.Verbose)
             {
                 _traced = true;
-                TraceFirstSkip(pawn);
+                PonyLog.Trace($"CE: suppression does not tick for {pawn.LabelShortCap} while off map");
             }
             return false;
-        }
-        private static void TraceFirstSkip(Pawn pawn)
-        {
-            try
-            {
-                PonyLog.Trace($"CE: подавление у {pawn.LabelShortCap} не тикает, пока пешки нет на карте " +
-                              "(полёт, переноска, караван) — иначе CE падает с NullReferenceException. " +
-                              "Сообщение выводится один раз.");
-            }
-            catch
-            {
-            }
         }
     }
 }
