@@ -127,6 +127,9 @@
     <Compile Include="Flying\PegasusTerrainThoughtInFlight.cs" />
     <Compile Include="Flying\PegasusToxicWaterInFlight.cs" />
     <Compile Include="Harmony_StartingPawnsReset.cs" />
+    <Compile Include="Ideology\FriendshipPreceptExtension.cs" />
+    <Compile Include="Ideology\FriendshipPrecepts.cs" />
+    <Compile Include="Ideology\Harmony_FriendshipRecruitment.cs" />
     <Compile Include="Multiplayer\MultiplayerBootstrap.cs" />
     <Compile Include="Multiplayer\MultiplayerCompat.cs" />
     <Compile Include="Multiplayer\StylingStation_MultiplayerFixes.cs" />

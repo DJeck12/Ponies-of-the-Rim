@@ -211,7 +211,9 @@ namespace PoniesOfTheRim
             private static readonly Dictionary<OverlayKey, Texture2D> overlayCache =
                 new Dictionary<OverlayKey, Texture2D>(256);
 
-            private const int MaxCacheSize = 4096;
+            private static readonly ConditionalWeakTable<Graphic, Graphic> bakedBySource =
+                new ConditionalWeakTable<Graphic, Graphic>();
+            private static readonly object bakeLock = new object();
 
             public static void TryBakeAddons(AlienPartGenerator.AlienComp comp)
             {
@@ -347,56 +349,63 @@ namespace PoniesOfTheRim
                 result = null;
 
                 if (src == null || crystal == null) return false;
-                if (!TryGetMats(src, out var mats) || mats.Length != 4) return false;
+                if (bakedBySource.TryGetValue(src, out result)) return true;
 
-                var newMats = new Material[4];
-                var cloneCache = new Dictionary<MatCloneKey, Material>(16);
-
-                bool anyApplied = false;
-
-                for (int dir = 0; dir < 4; dir++)
+                lock (bakeLock)
                 {
-                    var baseMat = mats[dir];
-                    if (baseMat == null) { newMats[dir] = null; continue; }
+                    if (bakedBySource.TryGetValue(src, out result)) return true;
+                    if (!TryGetMats(src, out var mats) || mats.Length != 4) return false;
 
-                    var baseTex = baseMat.mainTexture as Texture2D;
-
-                    if (baseTex == null)
+                    var bakedTextures = new Texture2D[4];
+                    bool anyApplied = false;
+                    for (int dir = 0; dir < 4; dir++)
                     {
-                        var k0 = new MatCloneKey(baseMat.GetInstanceID(), 0);
-                        if (!cloneCache.TryGetValue(k0, out var nm0))
+                        var baseMat = mats[dir];
+                        if (baseMat != null && baseMat.mainTexture is Texture2D baseTex)
                         {
-                            nm0 = UnityEngine.Object.Instantiate(baseMat);
-                            nm0.name = baseMat.name + BakedSuffix;
-                            cloneCache[k0] = nm0;
+                            bakedTextures[dir] = ApplyOverlayCached(baseTex, crystal, 0, 0);
+                            anyApplied |= bakedTextures[dir] != null;
+                        }
+                    }
+                    if (!anyApplied) return false;
+
+                    var newMats = new Material[4];
+                    var cloneCache = new Dictionary<MatCloneKey, Material>(4);
+                    try
+                    {
+                        var newGraphic = (Graphic)MI_memberwiseClone.Invoke(src, null);
+                        for (int dir = 0; dir < 4; dir++)
+                        {
+                            var baseMat = mats[dir];
+                            if (baseMat == null) continue;
+
+                            Texture2D finalTex = bakedTextures[dir] ?? (baseMat.mainTexture as Texture2D);
+                            var key = new MatCloneKey(
+                                baseMat.GetInstanceID(), finalTex != null ? finalTex.GetInstanceID() : 0);
+                            if (!cloneCache.TryGetValue(key, out var clone))
+                            {
+                                clone = UnityEngine.Object.Instantiate(baseMat);
+                                cloneCache[key] = clone;
+                                clone.name = baseMat.name + BakedSuffix;
+                                if (finalTex != null) clone.mainTexture = finalTex;
+                            }
+                            newMats[dir] = clone;
                         }
 
-                        newMats[dir] = nm0;
-                        continue;
+                        FI_graphicMulti_mats.SetValue(newGraphic, newMats);
+                        bakedBySource.Add(src, newGraphic);
+                        result = newGraphic;
+                        return true;
                     }
-
-                    var over = ApplyOverlayCached(baseTex, crystal, 0, 0);
-                    if (over != null) anyApplied = true;
-
-                    Texture2D finalTex = over ?? baseTex;
-
-                    var key = new MatCloneKey(baseMat.GetInstanceID(), finalTex.GetInstanceID());
-                    if (!cloneCache.TryGetValue(key, out var nm))
+                    catch
                     {
-                        nm = UnityEngine.Object.Instantiate(baseMat);
-                        nm.name = baseMat.name + BakedSuffix;
-                        nm.mainTexture = finalTex;
-                        cloneCache[key] = nm;
+                        foreach (var clone in cloneCache.Values)
+                        {
+                            if (clone != null) UnityEngine.Object.Destroy(clone);
+                        }
+                        throw;
                     }
-
-                    newMats[dir] = nm;
                 }
-
-                if (!anyApplied) return false;
-
-                result = (Graphic)MI_memberwiseClone.Invoke(src, null);
-                FI_graphicMulti_mats.SetValue(result, newMats);
-                return true;
             }
 
             private static Texture2D ApplyOverlayCached(Texture2D baseTex, Texture2D overlay, int ox, int oy)
@@ -409,12 +418,6 @@ namespace PoniesOfTheRim
                 if (overlayCache.TryGetValue(key, out var cached) && cached != null)
                     return cached;
                 PonyThreadGuard.ReportIfOffMain("CrystalponyGraphicBaker.ApplyOverlayCached texture create", ref _overlayCacheOffMainReported);
-
-                if (overlayCache.Count >= MaxCacheSize)
-                {
-                    PonyLog.Trace($"Crystal: overlay cache reached {MaxCacheSize} textures, cleared");
-                    overlayCache.Clear();
-                }
 
                 var t = CombineTexturesAlpha(baseTex, overlay, ox, oy);
                 if (t != null) overlayCache[key] = t;
@@ -433,6 +436,7 @@ namespace PoniesOfTheRim
             {
                 Texture2D bg = null;
                 Texture2D ov = null;
+                Texture2D outTex = null;
 
                 try
                 {
@@ -494,7 +498,7 @@ namespace PoniesOfTheRim
                         }
                     }
 
-                    var outTex = new Texture2D(w, h, TextureFormat.RGBA32, false);
+                    outTex = new Texture2D(w, h, TextureFormat.RGBA32, false);
                     outTex.hideFlags = HideFlags.HideAndDontSave;
                     outTex.SetPixels32(outPx);
                     outTex.Apply(false, false);
@@ -502,6 +506,7 @@ namespace PoniesOfTheRim
                 }
                 catch (Exception e)
                 {
+                    if (outTex != null) UnityEngine.Object.Destroy(outTex);
                     PonyLog.WarnCaught("Crystal: texture blend failed", e);
                     return null;
                 }
