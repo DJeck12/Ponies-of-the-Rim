@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- Issue -->
+
+	<IssueDef>
+		<defName>Pony_Prisonners</defName>
+		<label>prisonners</label>
+		<iconPath>UI/Transparent/Transparent</iconPath>
+	</IssueDef>
+
+<!-- Precepts -->
+
+<!-- Standard -->
+
+	<PreceptDef>
+		<defName>Pony_Prisonners_Neutral</defName>
+		<issue>Pony_Prisonners</issue>
+		<label>neutral</label>
+		<description>temp</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+
+<!-- Positive -->
+
+	<PreceptDef>
+		<defName>Pony_Prisonners_Compassion</defName>
+		<issue>Pony_Prisonners</issue>
+		<label>compassion</label>
+		<description>temp</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>60</displayOrderInIssue>
+		<associatedMemes>
+			<li>Pony_Friendship</li>
+		</associatedMemes>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Ideology.FriendshipPreceptExtension">
+				<recruitedPrisonerSocialThought>Pony_Prisonners_Compassion_Social</recruitedPrisonerSocialThought>
+			</li>
+		</modExtensions>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Prisonners_Compassion_Social</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<!-- <workerClass>temp</workerClass> -->
+		<durationDays>15</durationDays>
+		<stackLimit>999</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>compassion for a captive</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+<!-- Issue -->
+
+	<IssueDef>
+		<defName>Pony_Violence</defName>
+		<label>violence</label>
+		<iconPath>UI/Transparent/Transparent</iconPath>
+	</IssueDef>
+
+<!-- Precepts -->
+
+<!-- Standard -->
+
+	<PreceptDef>
+		<defName>Pony_Violence_Justifieble</defName>
+		<issue>Pony_Violence</issue>
+		<label>justifieble</label>
+		<description>temp</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+
+<!-- Negative -->
+
+	<PreceptDef>
+		<defName>Pony_Violence_Prohibited</defName>
+		<issue>Pony_Violence</issue>
+		<label>prohibited</label>
+		<description>temp</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>60</displayOrderInIssue>
+		<associatedMemes>
+			<li>Pony_Friendship</li>
+		</associatedMemes>
+		<modExtensions>
+			<li Class="PoniesOfTheRim.Ideology.FriendshipPreceptExtension">
+				<violenceMoodThought>Pony_Violence_Prohibited</violenceMoodThought>
+				<violenceSocialThought>Pony_Violence_Prohibited_Social</violenceSocialThought>
+			</li>
+		</modExtensions>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>Pony_Violence_Prohibited</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>3</durationDays>
+		<stackLimit>1</stackLimit>
+		<lerpMoodToZero>false</lerpMoodToZero>
+		<!-- <workerClass>temp</workerClass> -->
+		<stages>
+			<li>
+				<label>committed acts of violence</label>
+				<description>temp</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Pony_Violence_Prohibited_Social</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>3</durationDays>
+		<stackLimit>999</stackLimit>
+		<stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>resorted to violence</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

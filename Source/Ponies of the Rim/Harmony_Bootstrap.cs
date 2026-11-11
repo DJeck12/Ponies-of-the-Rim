@@ -6,6 +6,7 @@ using HarmonyLib;
 using PoniesOfTheRim.Flying;
 using PoniesOfTheRim.Food;
 using PoniesOfTheRim.Genetics;
+using PoniesOfTheRim.Ideology;
 using RimWorld;
 using RimWorld.QuestGen;
 using Verse;
@@ -156,7 +157,10 @@ namespace PoniesOfTheRim
                 AccessTools.Method(typeof(PawnRenderNode_Hair), nameof(PawnRenderNode_Hair.GraphicFor)),
                 postfix: new HarmonyMethod(
                     typeof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_PawnRenderNodeHair_GraphicForPawn),
-                    nameof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_PawnRenderNodeHair_GraphicForPawn.Postfix)));
+                    nameof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_PawnRenderNodeHair_GraphicForPawn.Postfix))
+                {
+                    priority = Priority.Low
+                });
             TryPatch(
                 AccessTools.Method(typeof(Page_ConfigureStartingPawns), "PreOpen"),
                 postfix: new HarmonyMethod(
@@ -168,7 +172,7 @@ namespace PoniesOfTheRim
                     typeof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_ConfigureStartingPawns_DoWindowContents),
                     nameof(Crystalpony_CrystalizeGraphics_Bootstrap.Patch_ConfigureStartingPawns_DoWindowContents.Postfix)));
 
-            // foals; the hair postfix runs after the crystal one
+            // foals; the crystal hair postfix runs afterwards (Priority.Low)
             TryPatch(
                 AccessTools.Method(typeof(PawnRenderNode_Hair), nameof(PawnRenderNode_Hair.GraphicFor)),
                 postfix: new HarmonyMethod(typeof(PonyBabyHairPatch), nameof(PonyBabyHairPatch.PonyBabyHairPostfix)));
@@ -206,9 +210,6 @@ namespace PoniesOfTheRim
                 postfix: new HarmonyMethod(typeof(Patch_PregnancyUtility_RacialGenes), nameof(Patch_PregnancyUtility_RacialGenes.Postfix)));
 
             TryPatch(
-                AccessTools.Method(typeof(LifeStageWorker_HumanlikeChild), "Notify_LifeStageStarted"),
-                postfix: new HarmonyMethod(typeof(Patch_LifeStageWorker_HumanlikeChild_Notify), nameof(Patch_LifeStageWorker_HumanlikeChild_Notify.Postfix)));
-            TryPatch(
                 AccessTools.Method(typeof(Thing), "Ingested", new[] { typeof(Pawn), typeof(float) }),
                 postfix: new HarmonyMethod(typeof(PonyFoodGenesPatch), nameof(PonyFoodGenesPatch.IngestedPonyFoodGenesPatch)));
             TryPatch(
@@ -218,15 +219,35 @@ namespace PoniesOfTheRim
 
         private static void RegisterIdeologyPatches()
         {
-            if (!ModsConfig.IdeologyActive || !Patch_FoodUtility_ThoughtsFromIngesting.IsReady
-                || !PonyFoodCache.AnyIngredientEvents)
+            if (!ModsConfig.IdeologyActive)
             {
                 return;
             }
 
-            TryPatch(
-                AccessTools.Method(typeof(FoodUtility), "ThoughtsFromIngesting"),
-                postfix: new HarmonyMethod(typeof(Patch_FoodUtility_ThoughtsFromIngesting), nameof(Patch_FoodUtility_ThoughtsFromIngesting.Postfix)));
+            FriendshipPrecepts.BuildCaches();
+            if (FriendshipPrecepts.HasRecruitmentRules)
+            {
+                TryPatch(
+                    AccessTools.Method(typeof(RecruitUtility), nameof(RecruitUtility.Recruit),
+                        new[] { typeof(Pawn), typeof(Faction), typeof(Pawn) }),
+                    prefix: new HarmonyMethod(typeof(Patch_FriendshipRecruitment), nameof(Patch_FriendshipRecruitment.Prefix)),
+                    postfix: new HarmonyMethod(typeof(Patch_FriendshipRecruitment), nameof(Patch_FriendshipRecruitment.Postfix)));
+            }
+
+            if (FriendshipPrecepts.HasViolenceRules)
+            {
+                TryPatch(
+                    AccessTools.Method(typeof(Thing), nameof(Thing.TakeDamage),
+                        new[] { typeof(DamageInfo) }),
+                    postfix: new HarmonyMethod(typeof(Patch_FriendshipViolence), nameof(Patch_FriendshipViolence.Postfix)));
+            }
+
+            if (Patch_FoodUtility_ThoughtsFromIngesting.IsReady && PonyFoodCache.AnyIngredientEvents)
+            {
+                TryPatch(
+                    AccessTools.Method(typeof(FoodUtility), "ThoughtsFromIngesting"),
+                    postfix: new HarmonyMethod(typeof(Patch_FoodUtility_ThoughtsFromIngesting), nameof(Patch_FoodUtility_ThoughtsFromIngesting.Postfix)));
+            }
         }
 
         private static void RegisterCompatibilityPatches()

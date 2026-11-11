@@ -44,10 +44,8 @@ namespace PoniesOfTheRim.UniquePonies
                 postfix: new HarmonyMethod(typeof(UniqueStartingPawnUI), "DoWindowContents_Postfix"));
             TryPatch(AccessTools.Method(typeof(Game), "FinalizeInit"),
                 postfix: new HarmonyMethod(typeof(UniqueWorldSpawner), "FinalizeInit_Postfix"));
-            TryPatch(AccessTools.Method(typeof(SkillRecord), "Interval"),
-                postfix: new HarmonyMethod(typeof(PerfectMemoryPatch), "Interval_Postfix"));
-            TryPatch(AccessTools.Method(typeof(GenRecipe), "PostProcessProduct"),
-                postfix: new HarmonyMethod(typeof(EleganceQualityPatch), "PostProcessProduct_Postfix"));
+            TryPatch(AccessTools.Method(typeof(SkillRecord), "Interval"), new HarmonyMethod(typeof(PerfectMemoryPatch), nameof(PerfectMemoryPatch.Interval_Prefix)));
+            TryPatch(AccessTools.Method(typeof(QualityUtility), "GenerateQualityCreatedByPawn", new[] { typeof(Pawn), typeof(SkillDef), typeof(bool) }), null, new HarmonyMethod(typeof(EleganceQualityPatch), nameof(EleganceQualityPatch.GenerateQuality_Postfix)));
             TryPatch(AccessTools.Method(typeof(AlienRace.StylingStation), "DoAddonInfo",
                     new[] { typeof(UnityEngine.Rect), typeof(AlienPartGenerator.BodyAddon), typeof(List<AlienPartGenerator.BodyAddon>) }),
                 postfix: new HarmonyMethod(typeof(StylingStationRefresh), nameof(StylingStationRefresh.DoAddonInfo_Postfix)));

@@ -25,6 +25,12 @@
 			<li>
 				<li>Execution_Abhorrent</li>
 			</li>
+		    <li>
+				<li>Pony_Prisonners_Compassion</li>
+			</li>
+			<li>
+				<li>Pony_Violence_Prohibited</li>
+			</li>
 		</requireOne>
 		<agreeableTraits>
 			<li>Kind</li>

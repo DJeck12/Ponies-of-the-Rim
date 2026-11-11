@@ -5,24 +5,12 @@ namespace PoniesOfTheRim.UniquePonies
 {
     public static class EleganceQualityPatch
     {
-        public static void PostProcessProduct_Postfix(Thing product, Pawn worker)
+        public static void GenerateQuality_Postfix(Pawn pawn, ref QualityCategory __result)
         {
-            if (worker?.story?.traits == null)
-                return;
-
-            if (!worker.story.traits.HasTrait(Pony_DefOf.Pony_Elegance))
-                return;
-
-            CompQuality comp = product.TryGetComp<CompQuality>();
-            if (comp == null)
-                return;
-
-            if (comp.Quality < QualityCategory.Legendary)
+            if (__result < QualityCategory.Legendary && pawn?.story?.traits != null && pawn.story.traits.HasTrait(Pony_DefOf.Pony_Elegance))
             {
-                comp.SetQuality(
-                    (QualityCategory)((int)comp.Quality + 1),
-                    ArtGenerationContext.Colony
-                );
+                QualityCategory before = __result;
+                __result = (QualityCategory)((int)__result + 1);
             }
         }
     }

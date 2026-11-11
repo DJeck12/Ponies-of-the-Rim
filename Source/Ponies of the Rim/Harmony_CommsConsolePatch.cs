@@ -121,14 +121,18 @@ namespace PoniesOfTheRim
                     var capturedIncident = incident;
                     var capturedDef = incidentDef;
                     var capturedKey = cooldownKey;
+                    bool requestSucceeded = false;
 
                     incidentOption.action = () =>
                     {
-                        ExecuteIncident(capturedDef, capturedIncident, faction, cooldownComp, capturedKey);
-                        DisableAfterUse(incidentOption, faction, capturedIncident.minGoodwill, capturedIncident.goodwillCost, cooldownComp, capturedKey, capturedIncident.cooldownDays);
+                        requestSucceeded = ExecuteIncident(capturedDef, capturedIncident, faction, cooldownComp, capturedKey);
+                        if (requestSucceeded)
+                        {
+                            DisableAfterUse(incidentOption, faction, capturedIncident.minGoodwill, capturedIncident.goodwillCost, cooldownComp, capturedKey, capturedIncident.cooldownDays);
+                        }
                     };
 
-                    incidentOption.link = incidentNode;
+                    incidentOption.linkLateBind = () => requestSucceeded ? incidentNode : localResult;
                     incidentOption.resolveTree = false;
                 }
 
@@ -193,14 +197,18 @@ namespace PoniesOfTheRim
                     var capturedQuestSet = questSet;
                     var capturedValidQuests = validQuests;
                     var capturedKey = cooldownKey;
+                    bool requestSucceeded = false;
 
                     questOption.action = () =>
                     {
-                        ExecuteQuest(capturedValidQuests, capturedQuestSet, faction, cooldownComp, capturedKey);
-                        DisableAfterUse(questOption, faction, capturedQuestSet.minGoodwill, capturedQuestSet.goodwillCost, cooldownComp, capturedKey, capturedQuestSet.cooldownDays);
+                        requestSucceeded = ExecuteQuest(capturedValidQuests, capturedQuestSet, faction, cooldownComp, capturedKey);
+                        if (requestSucceeded)
+                        {
+                            DisableAfterUse(questOption, faction, capturedQuestSet.minGoodwill, capturedQuestSet.goodwillCost, cooldownComp, capturedKey, capturedQuestSet.cooldownDays);
+                        }
                     };
 
-                    questOption.link = questNode;
+                    questOption.linkLateBind = () => requestSucceeded ? questNode : localResult;
                     questOption.resolveTree = false;
                 }
 
@@ -208,23 +216,31 @@ namespace PoniesOfTheRim
             }
         }
 
-        private static void ExecuteIncident(IncidentDef incidentDef, IncidentSettings incident, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
+        private static bool ExecuteIncident(IncidentDef incidentDef, IncidentSettings incident, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
         {
-            IncidentParms parms = StorytellerUtility.DefaultParmsNow(incidentDef.category, Find.CurrentMap);
-            parms.faction = faction;
-            parms.forced = true;
-
-            int delayTicks = CalculateDelayTicks(incident.delayDaysMin, incident.delayDaysMax);
-
-            if (delayTicks > 0)
+            try
             {
-                FiringIncident firingInc = new FiringIncident(incidentDef, null, parms);
-                QueuedIncident qi = new QueuedIncident(firingInc, Find.TickManager.TicksGame + delayTicks);
-                Find.Storyteller.incidentQueue.Add(qi);
+                IncidentParms parms = StorytellerUtility.DefaultParmsNow(incidentDef.category, Find.CurrentMap);
+                parms.faction = faction;
+                parms.forced = true;
+
+                int delayTicks = CalculateDelayTicks(incident.delayDaysMin, incident.delayDaysMax);
+
+                if (delayTicks > 0)
+                {
+                    FiringIncident firingInc = new FiringIncident(incidentDef, null, parms);
+                    QueuedIncident qi = new QueuedIncident(firingInc, Find.TickManager.TicksGame + delayTicks);
+                    Find.Storyteller.incidentQueue.Add(qi);
+                }
+                else if (!incidentDef.Worker.TryExecute(parms))
+                {
+                    return false;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                incidentDef.Worker.TryExecute(parms);
+                PonyLog.ErrorCaught($"Comms: incident request {incidentDef?.defName} for {faction?.Name} failed", ex);
+                return false;
             }
 
             if (incident.cooldownDays > 0)
@@ -236,27 +252,35 @@ namespace PoniesOfTheRim
             {
                 faction.TryAffectGoodwillWith(Faction.OfPlayer, -incident.goodwillCost);
             }
+            return true;
         }
 
-        private static void ExecuteQuest(List<QuestScriptDef> validQuests, QuestSettings questSet, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
+        private static bool ExecuteQuest(List<QuestScriptDef> validQuests, QuestSettings questSet, Faction faction, FactionIncidentCooldown cooldownComp, CooldownKey cooldownKey)
         {
-            QuestScriptDef chosenQuest = validQuests.RandomElement();
-
-            int delayTicks = CalculateDelayTicks(questSet.delayDaysMin, questSet.delayDaysMax);
-
-            if (delayTicks > 0)
+            try
             {
-                DelayedQuest delayed = new DelayedQuest
+                QuestScriptDef chosenQuest = validQuests.RandomElement();
+                int delayTicks = CalculateDelayTicks(questSet.delayDaysMin, questSet.delayDaysMax);
+
+                if (delayTicks > 0)
                 {
-                    questDefName = chosenQuest.defName,
-                    faction = faction,
-                    fireTick = Find.TickManager.TicksGame + delayTicks
-                };
-                cooldownComp.delayedQuests.Add(delayed);
+                    DelayedQuest delayed = new DelayedQuest
+                    {
+                        questDefName = chosenQuest.defName,
+                        faction = faction,
+                        fireTick = Find.TickManager.TicksGame + delayTicks
+                    };
+                    cooldownComp.delayedQuests.Add(delayed);
+                }
+                else if (!TryGenerateQuestWithFaction(chosenQuest, faction))
+                {
+                    return false;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                GenerateQuestWithFaction(chosenQuest, faction);
+                PonyLog.ErrorCaught($"Comms: quest request for {faction?.Name} failed", ex);
+                return false;
             }
 
             if (questSet.cooldownDays > 0)
@@ -268,10 +292,18 @@ namespace PoniesOfTheRim
             {
                 faction.TryAffectGoodwillWith(Faction.OfPlayer, -questSet.goodwillCost);
             }
+            return true;
         }
 
         public static void GenerateQuestWithFaction(QuestScriptDef questScriptDef, Faction faction)
         {
+            TryGenerateQuestWithFaction(questScriptDef, faction);
+        }
+
+        private static bool TryGenerateQuestWithFaction(QuestScriptDef questScriptDef, Faction faction)
+        {
+            Faction previousFaction = CommsQuestContext.TargetFaction;
+            bool questAdded = false;
             try
             {
                 CommsQuestContext.TargetFaction = faction;
@@ -293,16 +325,25 @@ namespace PoniesOfTheRim
                 }
 
                 Quest quest = QuestGen.Generate(questScriptDef, slate);
+                if (quest == null)
+                {
+                    PonyLog.Trace($"Comms: quest {questScriptDef?.defName} for {faction?.Name} returned no quest");
+                    return false;
+                }
                 Find.QuestManager.Add(quest);
+                questAdded = true;
                 QuestUtility.SendLetterQuestAvailable(quest);
+                return true;
             }
             catch (Exception ex)
             {
-                PonyLog.Error($"Comms: quest {questScriptDef?.defName} for {faction?.Name} not created\n{ex}");
+                string failure = questAdded ? "created, but notification failed" : "not created";
+                PonyLog.Error($"Comms: quest {questScriptDef?.defName} for {faction?.Name} {failure}\n{ex}");
+                return questAdded;
             }
             finally
             {
-                CommsQuestContext.TargetFaction = null;
+                CommsQuestContext.TargetFaction = previousFaction;
             }
         }
 

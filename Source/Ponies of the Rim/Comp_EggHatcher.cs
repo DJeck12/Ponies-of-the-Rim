@@ -144,26 +144,20 @@ namespace PoniesOfTheRim
             hatchee.ageTracker.AgeBiologicalTicks = 0L;
             hatchee.ageTracker.BirthAbsTicks = Find.TickManager.TicksAbs;
 
-            HairDef   savedHair   = hatchee.story?.hairDef;
-            BeardDef  savedBeard  = hatchee.style?.beardDef;
-            TattooDef savedTattoo = hatchee.style?.FaceTattoo;
-
-            if (!PawnUtility.TrySpawnHatchedOrBornPawn(hatchee, parent))
-            {
-                return;
-            }
-
-            if (hatchee.story != null && savedHair != null)
-                hatchee.story.hairDef = savedHair;
-            if (hatchee.style != null)
-            {
-                if (savedBeard != null)
-                    hatchee.style.beardDef = savedBeard;
-                if (savedTattoo != null)
-                    hatchee.style.FaceTattoo = savedTattoo;
-            }
-
             Pawn spawnedHatchee = hatchee;
+            EggHatchStylePreserver.Save(spawnedHatchee);
+            try
+            {
+                if (!PawnUtility.TrySpawnHatchedOrBornPawn(spawnedHatchee, parent))
+                {
+                    return;
+                }
+            }
+            finally
+            {
+                EggHatchStylePreserver.TryRestore(spawnedHatchee);
+            }
+
             hatchee = null;
 
             if (mother != null)
